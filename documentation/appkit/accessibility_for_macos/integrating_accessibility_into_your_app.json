@@ -1,0 +1,1071 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Make your app more accessible to users with disabilities by adding accessibility features."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2880142,
+  "kind": "article",
+  "metadata": {
+    "title": "Integrating Accessibility into Your App",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.13",
+        "current": "11.1"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app",
+        "documentation/accessibility/accessibility_for_macos/integrating_accessibility_into_your_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app",
+        "documentation/accessibility/accessibility_for_macos/integrating_accessibility_into_your_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
+      "title": "Accessibility for macOS",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+      "url": "/documentation/appkit/accessibility_for_macos",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accessibility": {
+      "title": "Accessibility",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility",
+      "url": "/documentation/accessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421887": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421887",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421887"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421888": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421888",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421888"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
+      "title": "NSAccessibility",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The complete list of properties and methods implemented by accessible elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535005-accessibilityrole": {
+      "title": "accessibilityRole",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535005-accessibilityrole",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/1535005-accessibilityrole"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement": {
+      "title": "isAccessibilityElement()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbutton": {
+      "title": "NSButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbutton"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitybutton": {
+      "title": "NSAccessibilityButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitybutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitybutton"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsslider": {
+      "title": "NSSlider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsslider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsslider"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider": {
+      "title": "NSAccessibilitySlider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityslider"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421890": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421890",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421890"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421891": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421891",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app#3421891"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement": {
+      "title": "accessibilityAddChildElement:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityAddChildElement:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535018-accessibilitychildren": {
+      "title": "accessibilityChildren",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535018-accessibilitychildren",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/1535018-accessibilitychildren"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1569648-accessibilityframeinparentspace": {
+      "title": "accessibilityFrameInParentSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1569648-accessibilityframeinparentspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityelement/1569648-accessibilityframeinparentspace"
+    },
+    "doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement/1528055-accessibilityframe": {
+      "title": "accessibilityFrame",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement/1528055-accessibilityframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/1534023-nsaccessibilityelement/1528055-accessibilityframe",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityFrame"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/1528628-nsaccessibilityframeinview": {
+      "title": "NSAccessibilityFrameInView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1528628-nsaccessibilityframeinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/1528628-nsaccessibilityframeinview"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534939-accessibilityframe": {
+      "title": "accessibilityFrame",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534939-accessibilityframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/1534939-accessibilityframe"
+    },
+    "doc://com.apple.documentation/documentation/appkit/1534336-nsaccessibilitypointinview": {
+      "title": "NSAccessibilityPointInView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1534336-nsaccessibilitypointinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/1534336-nsaccessibilitypointinview"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532336-accessibilityactivationpoint": {
+      "title": "accessibilityActivationPoint()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532336-accessibilityactivationpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1532336-accessibilityactivationpoint"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement": {
+      "title": "NSAccessibilityElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityelement"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app": {
+      "title": "Integrating Accessibility into Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/appkit/accessibility_for_macos/integrating_accessibility_into_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make your app more accessible to users with disabilities by adding accessibility features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accessibility/accessibility_design_for_mac_catalyst": {
+      "title": "Accessibility Design for Mac Catalyst",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility/accessibility_design_for_mac_catalyst",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accessibility/accessibility_design_for_mac_catalyst",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve navigation in your app by using keyboard shortcuts and accessibility containers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui": {
+      "title": "NSAccessibilityContainsTransientUI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycontainstransientui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that support accessibility in a UI that changes dynamically—usually in response to mouse-hover events."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/74dce47050/IntegratingAccessibilityIntoYourApp.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/74dce47050/IntegratingAccessibilityIntoYourApp.zip",
+      "checksum": "6a22f30b347d9a7950740abbc2ff917704d22ab95c196d2f977abc82fe42f64e5efd4c6e2c7a08923d83dbc10e6ec86c0f2c2b4e14e7e4b430972add7d7a2434",
+      "url": "https://docs-assets.developer.apple.com/published/74dce47050/IntegratingAccessibilityIntoYourApp.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/74dce47050/IntegratingAccessibilityIntoYourApp.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accessibility/accessibility_design_for_mac_catalyst",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycontainstransientui"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By adding accessibility features to your app, you make it available to a wider range of users. This sample shows how to implement accessibility for several common UI controls. The examples make the controls accessible by using accessibility properties, accessibility protocols, and the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement"
+            },
+            {
+              "type": "text",
+              "text": " class."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In macOS 10.10, the Accessibility API moved to a protocol-based approach, in contrast to the key-based API from macOS 10.9 and earlier. With the protocol-based API, you can:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Simplify the implementation of accessibility"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "More closely align macOS accessibility features with those of iOS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Ensure compatibility with existing macOS apps and code"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Accessibility API features in macOS versions earlier than 10.10 are deprecated, but can coexist alongside the new API. No changes are required for apps or accessibility clients that use earlier versions of the Accessibility API. If both the new and old APIs are implemented on the same class, the new API takes precedence for that class. For cell-based controls, always provide Accessibility API implementations on the cell."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Accessibility Attributes",
+          "anchor": "3421897"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Most accessibility attributes from macOS 10.9 and earlier are now properties in the following AppKit classes:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "NSApplication"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "NSWindow"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "NSView"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "NSDrawer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "NSPopover"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "NSCell"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To set an accessibility attribute value on an instance of one of these classes (or a subclass), simply assign the value to the property:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "button.setAccessibilityLabel(NSLocalizedString(\"My label\", comment: \"label to use for this button\"))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3421887",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, you can override the getter in the subclass’s implementation:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func accessibilityLabel() -> String? {",
+            "    return NSLocalizedString(\"Play\", comment: \"accessibility label of the Play button\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3421888",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
+            },
+            {
+              "type": "text",
+              "text": " contains the full list of accessibility properties."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Accessibility Protocols to Custom Controls",
+          "anchor": "3421898"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The new Accessibility API protocols define the required accessibility functions for many common accessibility elements. Conformance to an accessibility protocol is not required to use the new API, but it’s recommended when making custom controls accessible. Conforming to an accessibility protocol results in a warning for each unimplemented required function and allows the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535005-accessibilityrole"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement"
+            },
+            {
+              "type": "text",
+              "text": " properties to be automatically inferred."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Standard AppKit controls conform to the related accessibility protocol (for example, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsbutton"
+            },
+            {
+              "type": "text",
+              "text": " conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitybutton"
+            },
+            {
+              "type": "text",
+              "text": " protocol, and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsslider"
+            },
+            {
+              "type": "text",
+              "text": " conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider"
+            },
+            {
+              "type": "text",
+              "text": " protocol). Whenever possible, subclass from the appropriate AppKit control to leverage the built-in accessibility."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add accessibility to a custom control:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Conform to the appropriate protocol."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement all the required functions. A warning appears for each unimplemented required function."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Test using VoiceOver and the Accessibility Inspector."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the following example creates a custom control that subclasses NSView and draws and behaves like a button:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class CustomButtonView: NSView {"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3421890",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If a custom control does not conform to an accessibility protocol, you must implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535005-accessibilityrole"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement"
+            },
+            {
+              "type": "text",
+              "text": " functions:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func accessibilityRole() -> NSAccessibility.Role? {",
+            "    return NSAccessibility.Role.button",
+            "}",
+            "",
+            "override func isAccessibilityElement() -> Bool {",
+            "    return true",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3421891",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create an Accessibility Element",
+          "anchor": "3421899"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For objects that do not have a backing view (for example, a single view that draws several images, each of which should be individually accessible), create an instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSAccessibilityElement"
+            },
+            {
+              "type": "text",
+              "text": " for each object, and return an array of the instances from the accessibility parent’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "accessibilityChildren"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Simplify Your Accessibility Code",
+          "anchor": "3421900"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSAccessibilityElement"
+            },
+            {
+              "type": "text",
+              "text": " has two convenience methods that simplify its use:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — This function sets the specified element as a child of the receiver’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535018-accessibilitychildren"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and the receiver as the parent to the specified element. This behavior is useful when you create hierarchies of accessibility elements."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1569648-accessibilityframeinparentspace"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — This property allows the accessibility element to specify its frame relative to its accessibility parent, so that the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement/1528055-accessibilityframe"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property value (given in screen coordinates) can be automatically recalculated whenever the element or any of its parents changes location."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The new Accessibility API includes two new convenience methods in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppKit/NSAccessibility.h"
+            },
+            {
+              "type": "text",
+              "text": " to simplify common accessibility tasks:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/1528628-nsaccessibilityframeinview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — This convenience method converts "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "frame"
+                    },
+                    {
+                      "type": "text",
+                      "text": " from the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "parentView"
+                    },
+                    {
+                      "type": "text",
+                      "text": " coordinate space to the screen coordinate space. This is useful when you calculate an object’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534939-accessibilityframe"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/1534336-nsaccessibilitypointinview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — This convenience method converts "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "point"
+                    },
+                    {
+                      "type": "text",
+                      "text": " from the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "parentView"
+                    },
+                    {
+                      "type": "text",
+                      "text": " coordinate space to the screen coordinate space. This is useful when you calculate an object’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532336-accessibilityactivationpoint"
+                    },
+                    {
+                      "type": "text",
+                      "text": " coordinates."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Test the Accessibility Features on Your App",
+          "anchor": "3421901"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Accessibility Inspector is a tool that displays all accessibility information for the element currently under the mouse, including the accessibility hierarchy, accessibility attributes, and accessibility actions. It also shows warnings for common accessibility problems, such as a missing accessibility label. Launch the Accessibility Inspector from the Xcode > Developer Tools menu."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To test VoiceOver, you must enable it by choosing System Preferences > Accessibility > VoiceOver > Enable VoiceOver, or by pressing Command-F5. To learn how to use VoiceOver, choose System Preferences > Accessibility > VoiceOver > Open VoiceOver Training."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Redraws the dock tile’s content. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/menus_cursors_and_the_dock",
+        "doc://com.apple.documentation/documentation/appkit/nsdocktile"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nsdocktile/1527292-display",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1527292,
+  "kind": "symbol",
+  "metadata": {
+    "title": "display",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.5",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSDockTile(im)display",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsdocktile/1527292-display"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsdocktile/1527292-display"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/menus_cursors_and_the_dock": {
+      "title": "Menus, Cursors, and the Dock",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/menus_cursors_and_the_dock",
+      "url": "/documentation/appkit/menus_cursors_and_the_dock",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdocktile": {
+      "title": "NSDockTile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocktile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdocktile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The visual representation of your app’s miniaturized windows and app icon as they appear in the Dock. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdocktile/1527292-display": {
+      "title": "display",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocktile/1527292-display",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdocktile/1527292-display",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Redraws the dock tile’s content. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "display"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "display"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If a custom content view is provided, Cocoa calls the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "drawRect:"
+            },
+            {
+              "type": "text",
+              "text": " method of that view (and its subviews) to draw the tile’s content. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can call this method to force the redrawing of the dock tile contents. You might do this if the contents of the underlying application or window change in a way that would require a refreshing of the tile. Some types of system activity, such as resizing the dock, may trigger automatic redraws of the tile. In most cases, however, your application is responsible for triggering redraws. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Cocoa does not automatically redraw the contents of your dock tile. Instead, your application must explicitly send "
+            },
+            {
+              "type": "codeVoice",
+              "code": "display"
+            },
+            {
+              "type": "text",
+              "text": " messages to the dock tile object whenever the contents of your view change and need to be redrawn."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

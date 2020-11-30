@@ -1,0 +1,253 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/drawing",
+        "doc://com.apple.documentation/documentation/appkit/nsopenglpixelformat",
+        "doc://com.apple.documentation/documentation/appkit/1436213-opengl_pixel_format_attributes"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/1436213-opengl_pixel_format_attributes/nsopenglpfamultisample",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1436191,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSOpenGLPFAMultisample",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "10.14",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:@Ea@NSOpenGLPFAAllRenderers@NSOpenGLPFAMultisample",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/1436213-opengl_pixel_format_attributes/nsopenglpfamultisample"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsopenglpfamultisample"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/drawing": {
+      "title": "Drawing",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/drawing",
+      "url": "/documentation/appkit/drawing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsopenglpixelformat": {
+      "title": "NSOpenGLPixelFormat",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsopenglpixelformat",
+      "url": "/documentation/appkit/nsopenglpixelformat",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/1436213-opengl_pixel_format_attributes": {
+      "title": "OpenGL Pixel Format Attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1436213-opengl_pixel_format_attributes",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/appkit/1436213-opengl_pixel_format_attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Pixel format attributes for OpenGL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/1436213-opengl_pixel_format_attributes/nsopenglpfamultisample#2555742": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1436213-opengl_pixel_format_attributes/nsopenglpfamultisample#2555742",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/1436213-opengl_pixel_format_attributes/nsopenglpfamultisample#2555742"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "NSOpenGLPFAMultisample"
+            },
+            {
+              "kind": "text",
+              "text": " = 59"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A Boolean attribute. If present and used with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSOpenGLPFASampleBuffers"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSOpenGLPFASamples"
+            },
+            {
+              "type": "text",
+              "text": ", this attribute hints to OpenGL to prefer multi-sampling. Multi-sampling will sample textures at the back buffer dimensions vice the multi-sample buffer dimensions and use that single sample for all fragments with coverage on the back buffer location. This means less total texture samples than with super-sampling (by a factor of the number of samples requested) and will likely be faster though less accurate (texture sample wise) than super-sampling. If the underlying video card does not have enough VRAM to support this feature, this hint does nothing.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSOpenGLPFASampleBuffers"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSOpenGLPFASamples"
+            },
+            {
+              "type": "text",
+              "text": " attributes must be configured to request anti-aliasing as follows:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSOpenGLPFAMultisample,",
+            "NSOpenGLPFASampleBuffers, (NSOpenGLPixelFormatAttribute)1",
+            "NSOpenGLPFASamples, (NSOpenGLPixelFormatAttribute)4,"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2555742",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If after adding these options, multisamping still does not work, try removing the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSOpenGLPFAPixelBuffer"
+            },
+            {
+              "type": "text",
+              "text": " attribute (if present). Some graphics cards may not support this option in specific versions of macOS. If removing the attribute still does not enable multisampling, try adding the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSOpenGLPFANoRecovery"
+            },
+            {
+              "type": "text",
+              "text": " attribute. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

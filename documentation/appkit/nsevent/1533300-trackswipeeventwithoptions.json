@@ -1,0 +1,867 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Allows tracking and user interface feedback of scroll wheel events."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/mouse_keyboard_and_trackpad",
+        "doc://com.apple.documentation/documentation/appkit/nsevent"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nsevent/1533300-trackswipeeventwithoptions",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1533300,
+  "kind": "symbol",
+  "metadata": {
+    "title": "trackSwipeEventWithOptions:dampenAmountThresholdMin:max:usingHandler:",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSEvent(im)trackSwipeEventWithOptions:dampenAmountThresholdMin:max:usingHandler:",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsevent/1533300-trackswipeeventwithoptions"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsevent/1533300-trackswipeevent"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/mouse_keyboard_and_trackpad": {
+      "title": "Mouse, Keyboard, and Trackpad",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/mouse_keyboard_and_trackpad",
+      "url": "/documentation/appkit/mouse_keyboard_and_trackpad",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent": {
+      "title": "NSEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about an input action, such as a mouse click or a key press. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions": {
+      "title": "NSEventSwipeTrackingOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventswipetrackingoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify swipe-tracking options."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/1525151-directioninvertedfromdevice": {
+      "title": "directionInvertedFromDevice",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1525151-directioninvertedfromdevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/1525151-directioninvertedfromdevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the user has changed the device inversion."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventphase": {
+      "title": "NSEventPhase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventphase",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that represent the possible phases during an event phase."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphaseended": {
+      "title": "NSEventPhaseEnded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphaseended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventphase/nseventphaseended"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphasemaybegin": {
+      "title": "NSEventPhaseMayBegin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphasemaybegin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventphase/nseventphasemaybegin"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphasenone": {
+      "title": "NSEventPhaseNone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphasenone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventphase/nseventphasenone"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgfloat": {
+      "title": "CGFloat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfloat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgfloat"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/1525758-hasprecisescrollingdeltas": {
+      "title": "hasPreciseScrollingDeltas",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1525758-hasprecisescrollingdeltas",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/1525758-hasprecisescrollingdeltas",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether precise scrolling deltas are available."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/1524505-scrollingdeltax": {
+      "title": "scrollingDeltaX",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1524505-scrollingdeltax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/1524505-scrollingdeltax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scroll wheel’s horizontal delta."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/1535387-scrollingdeltay": {
+      "title": "scrollingDeltaY",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1535387-scrollingdeltay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/1535387-scrollingdeltay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scroll wheel’s vertical delta."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/1525439-momentumphase": {
+      "title": "momentumPhase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1525439-momentumphase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/1525439-momentumphase",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The momentum phase for a scroll or flick gesture."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/1533550-phase": {
+      "title": "phase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1533550-phase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/1533550-phase",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The phase of a gesture event, such as a magnify, scroll, or pressure change."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/2870067-swipetrackingfromscrolleventsena": {
+      "title": "swipeTrackingFromScrollEventsEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/2870067-swipetrackingfromscrolleventsena",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/2870067-swipetrackingfromscrolleventsena"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent/1533300-trackswipeeventwithoptions": {
+      "title": "trackSwipeEventWithOptions:dampenAmountThresholdMin:max:usingHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1533300-trackswipeeventwithoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent/1533300-trackswipeeventwithoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows tracking and user interface feedback of scroll wheel events."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "trackSwipeEventWithOptions:dampenAmountThresholdMin:max:usingHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsevent/1525758-hasprecisescrollingdeltas",
+        "doc://com.apple.documentation/documentation/appkit/nsevent/1524505-scrollingdeltax",
+        "doc://com.apple.documentation/documentation/appkit/nsevent/1535387-scrollingdeltay",
+        "doc://com.apple.documentation/documentation/appkit/nsevent/1525439-momentumphase",
+        "doc://com.apple.documentation/documentation/appkit/nsevent/1533550-phase",
+        "doc://com.apple.documentation/documentation/appkit/nseventphase",
+        "doc://com.apple.documentation/documentation/appkit/nsevent/2870067-swipetrackingfromscrolleventsena",
+        "doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions",
+        "doc://com.apple.documentation/documentation/appkit/nsevent/1525151-directioninvertedfromdevice"
+      ],
+      "title": "Scroll Wheel and Flick Events",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "trackSwipeEventWithOptions:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@NSEventSwipeTrackingOptions",
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions",
+              "text": "NSEventSwipeTrackingOptions"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "options"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "dampenAmountThresholdMin:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CGFloat",
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfloat",
+              "text": "CGFloat"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "minDampenThreshold"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "max:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CGFloat",
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfloat",
+              "text": "CGFloat"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "maxDampenThreshold"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "usingHandler:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " (^)("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CGFloat",
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfloat",
+              "text": "CGFloat"
+            },
+            {
+              "kind": "text",
+              "text": " gestureAmount, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@NSEventPhase",
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase",
+              "text": "NSEventPhase"
+            },
+            {
+              "kind": "text",
+              "text": " phase, "
+            },
+            {
+              "kind": "keyword",
+              "text": "BOOL"
+            },
+            {
+              "kind": "text",
+              "text": " isComplete, "
+            },
+            {
+              "kind": "keyword",
+              "text": "BOOL"
+            },
+            {
+              "kind": "text",
+              "text": " *stop)"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "trackingHandler"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "options",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The swipe tracking events. See "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions"
+                },
+                {
+                  "type": "text",
+                  "text": " for possible values."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "minDampenThreshold",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The minimum dampen threshold. This value is considered to encompass the “current view content area” and is referred to as a page. This is the number of pages with a negative position relative to the current page. The value must be less than or equal to zero."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "maxDampenThreshold",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The maximum dampen threshold. This value is considered to encompass the “current view content area” and is referred to as a page. This is the number of pages with a positive position relative to the current page. The value must be greater than or equal to zero."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "trackingHandler",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The Block used as the tracking handler."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The Block takes four arguments:"
+                }
+              ]
+            },
+            {
+              "type": "termList",
+              "items": [
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "gestureAmount"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "The amount of gesture that you should display in the user interface. This may be a fractional amount. "
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "The direction of the gestureAmount matches the user's \"scroll content\" preference setting as set in "
+                          },
+                          {
+                            "type": "reference",
+                            "isActive": true,
+                            "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent/1525151-directioninvertedfromdevice"
+                          },
+                          {
+                            "type": "text",
+                            "text": ", which is based on a user preference."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "Upon completion, the gesture amount will animate to one of the following values: -1, 0, 1."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "phase"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "The phase of the physical gesture as performed by the user. See "
+                          },
+                          {
+                            "type": "reference",
+                            "isActive": true,
+                            "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase"
+                          },
+                          {
+                            "type": "text",
+                            "text": " for possible values. When the phase is either "
+                          },
+                          {
+                            "type": "reference",
+                            "isActive": true,
+                            "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphaseended"
+                          },
+                          {
+                            "type": "text",
+                            "text": ", or "
+                          },
+                          {
+                            "type": "reference",
+                            "isActive": true,
+                            "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphasemaybegin"
+                          },
+                          {
+                            "type": "text",
+                            "text": ", the user has physically ended the gesture successfully or un-successfully, respectively."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "Your handler will continue to be called with updated progress values to complete the fluid swipe animation with a phase of "
+                          },
+                          {
+                            "type": "reference",
+                            "isActive": true,
+                            "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase/nseventphasenone"
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "isComplete"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "Signifies the swipe and animation are complete and you should release any temporary animation objects. "
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "The "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "trackingHandler"
+                          },
+                          {
+                            "type": "text",
+                            "text": " is released and will not be called further."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "stop"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "A reference to a Boolean value. The Block can set the value to "
+                          },
+                          {
+                            "type": "reference",
+                            "isActive": false,
+                            "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                          },
+                          {
+                            "type": "text",
+                            "text": " to stop further processing of the array. The "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "stop"
+                          },
+                          {
+                            "type": "text",
+                            "text": " argument is an out-only argument. You should only ever set this Boolean to "
+                          },
+                          {
+                            "type": "reference",
+                            "isActive": false,
+                            "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                          },
+                          {
+                            "type": "text",
+                            "text": " within the Block"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Scroll wheel swipes are tracked not only to the end of the physical gesture phase by the user, but also to the completion of any user interface animation that should be performed. Using this method allows your implementation to maintain a consistent fluid feel with other applications. Any gesture amount outside of the supplied minimum and maximum dampen amount is pre-dampened for you to provide an elastic feel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The swipe "
+            },
+            {
+              "type": "codeVoice",
+              "code": "gestureAmount"
+            },
+            {
+              "type": "text",
+              "text": " that would fall outside of the range specified by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "minDampenThreshold"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "maxDampenThreshold"
+            },
+            {
+              "type": "text",
+              "text": " are automatically dampened. For example, the user’s physical swipe action results in a value of .50, however, there is no page in that direction to swipe to. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "gestureAmount"
+            },
+            {
+              "type": "text",
+              "text": " reported is adjusted by a damping factor resulting in something like .125. As a developer, you simply treat the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "gestureAmount"
+            },
+            {
+              "type": "text",
+              "text": " like you normally do, and the result is an elastic feedback effect to let the user know that there is nothing to swipe to in that direction."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This method returns immediately and tracking is performed asynchronously."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

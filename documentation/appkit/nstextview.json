@@ -1,0 +1,4828 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A view that draws text and handles user interactions with that text. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/text_display"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nstextview",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1449142,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSTextView",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSTextView",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nstextview"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nstextview"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+      "url": "/documentation/appkit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/text_display": {
+      "title": "Text Display",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/text_display",
+      "url": "/documentation/appkit/text_display",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449165-selectiongranularity": {
+      "title": "selectionGranularity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449165-selectiongranularity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449165-selectiongranularity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The selection granularity for subsequent extension of a selection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449188-selectionrangeforproposedrange": {
+      "title": "selectionRangeForProposedRange:granularity:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449188-selectionrangeforproposedrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449188-selectionrangeforproposedrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an adjusted selected range based on the selection granularity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectionRangeForProposedRange:granularity:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449291-selectionaffinity": {
+      "title": "selectionAffinity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449291-selectionaffinity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449291-selectionaffinity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferred direction of selection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449462-setselectedrange": {
+      "title": "setSelectedRange:affinity:stillSelecting:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449462-setselectedrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449462-setselectedrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the selection to a range of characters in response to user action."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSelectedRange:affinity:stillSelecting:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449525-performfindpanelaction": {
+      "title": "performFindPanelAction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449525-performfindpanelaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449525-performfindpanelaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a find panel action specified by the sender's tag."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performFindPanelAction:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsfindpanelsearchoptionspboardtype": {
+      "title": "NSFindPanelSearchOptionsPboardType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsfindpanelsearchoptionspboardtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsfindpanelsearchoptionspboardtype"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstext": {
+      "title": "NSText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstext"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstext#1670079": {
+      "title": "Notifications",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstext#1670079",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/appkit/nstext#1670079"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate": {
+      "title": "NSTextViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextviewdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods that text view delegates can use to manage selection, set text attributes, work with the spell checker, and more."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextdelegate": {
+      "title": "NSTextDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextdelegate"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview": {
+      "title": "NSTextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that draws text and handles user interactions with that text. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield": {
+      "title": "NSTextField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextstorage": {
+      "title": "NSTextStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextstorage"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
+      "title": "NSLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanager"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextcontainer": {
+      "title": "NSTextContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontainer"
+    },
+    "devLink-1741721": {
+      "identifier": "devLink-1741721",
+      "type": "link",
+      "title": "Cocoa Text Architecture Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459"
+    },
+    "devLink-1695968": {
+      "identifier": "devLink-1695968",
+      "type": "link",
+      "title": "Text System User Interface Layer Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextUILayer/TextUILayer.html#//apple_ref/doc/uid/10000090i"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider": {
+      "title": "NSTextLayoutOrientationProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutorientationprovider"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextinput": {
+      "title": "NSTextInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextinput"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdraggingsource": {
+      "title": "NSDraggingSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdraggingsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdraggingsource"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextinputclient": {
+      "title": "NSTextInputClient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextinputclient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextinputclient"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynavigablestatictext": {
+      "title": "NSAccessibilityNavigableStaticText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynavigablestatictext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitynavigablestatictext"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsuserinterfacevalidations": {
+      "title": "NSUserInterfaceValidations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsuserinterfacevalidations",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsuserinterfacevalidations"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscolorchanging": {
+      "title": "NSColorChanging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscolorchanging",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscolorchanging"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsmenuitemvalidation": {
+      "title": "NSMenuItemValidation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenuitemvalidation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsmenuitemvalidation"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding": {
+      "title": "NSStandardKeyBindingResponding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstandardkeybindingresponding"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextcontent": {
+      "title": "NSTextContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextcontent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextcontent"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449347-initwithframe": {
+      "title": "initWithFrame:textContainer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449347-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449347-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:textContainer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449262-initwithframe": {
+      "title": "initWithFrame:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449262-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449262-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449521-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449521-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449521-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The delegate for all text views sharing the receiver’s layout manager."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449507-registerforservices": {
+      "title": "registerForServices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449507-registerforservices",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449507-registerforservices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers send and return types for the Services facility."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerForServices"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449364-textcontainer": {
+      "title": "textContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449364-textcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449364-textcontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The receiver’s text container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449479-replacetextcontainer": {
+      "title": "replaceTextContainer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449479-replacetextcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449479-replacetextcontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replaces the text container for the group of text system objects containing the receiver, keeping the association between the receiver and its layout manager intact."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "replaceTextContainer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449168-textcontainerinset": {
+      "title": "textContainerInset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449168-textcontainerinset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449168-textcontainerinset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The empty space the receiver leaves around its associated text container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449477-textcontainerorigin": {
+      "title": "textContainerOrigin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449477-textcontainerorigin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449477-textcontainerorigin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The origin of the receiver’s text container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449546-invalidatetextcontainerorigin": {
+      "title": "invalidateTextContainerOrigin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449546-invalidatetextcontainerorigin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449546-invalidatetextcontainerorigin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invalidates the calculated origin of the text container."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "invalidateTextContainerOrigin"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449148-layoutmanager": {
+      "title": "layoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449148-layoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449148-layoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The layout manager that lays out text for the receiver’s text container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449196-textstorage": {
+      "title": "textStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449196-textstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449196-textstorage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The receiver’s text storage object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449501-backgroundcolor": {
+      "title": "backgroundColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449501-backgroundcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449501-backgroundcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The receiver’s background color."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449530-drawsbackground": {
+      "title": "drawsBackground",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449530-drawsbackground",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449530-drawsbackground",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver draws its background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449397-allowsdocumentbackgroundcolorcha": {
+      "title": "allowsDocumentBackgroundColorChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449397-allowsdocumentbackgroundcolorcha",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449397-allowsdocumentbackgroundcolorcha",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver allows its background color to change."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449475-changedocumentbackgroundcolor": {
+      "title": "changeDocumentBackgroundColor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449475-changedocumentbackgroundcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449475-changedocumentbackgroundcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An action method used to set the background color."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "changeDocumentBackgroundColor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449279-setneedsdisplayinrect": {
+      "title": "setNeedsDisplayInRect:avoidAdditionalLayout:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449279-setneedsdisplayinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449279-setneedsdisplayinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Marks the receiver as requiring display."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setNeedsDisplayInRect:avoidAdditionalLayout:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449152-shoulddrawinsertionpoint": {
+      "title": "shouldDrawInsertionPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449152-shoulddrawinsertionpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449152-shoulddrawinsertionpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the receiver should draw its insertion point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449232-drawinsertionpointinrect": {
+      "title": "drawInsertionPointInRect:color:turnedOn:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449232-drawinsertionpointinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449232-drawinsertionpointinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws or erases the insertion point."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawInsertionPointInRect:color:turnedOn:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449135-drawviewbackgroundinrect": {
+      "title": "drawViewBackgroundInRect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449135-drawviewbackgroundinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449135-drawviewbackgroundinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the background of the text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawViewBackgroundInRect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449230-setconstrainedframesize": {
+      "title": "setConstrainedFrameSize:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449230-setconstrainedframesize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449230-setconstrainedframesize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attempts to set the frame size as if by user action."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setConstrainedFrameSize:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449202-cleanupafterdragoperation": {
+      "title": "cleanUpAfterDragOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449202-cleanupafterdragoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449202-cleanupafterdragoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases the drag information still existing after the dragging session has completed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cleanUpAfterDragOperation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449540-showfindindicatorforrange": {
+      "title": "showFindIndicatorForRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449540-showfindindicatorforrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449540-showfindindicatorforrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Causes a temporary highlighting effect to appear around the visible portion (or portions) of the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "showFindIndicatorForRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449174-inserttext": {
+      "title": "insertText:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449174-inserttext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449174-inserttext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts "
+        },
+        {
+          "type": "codeVoice",
+          "code": "aString"
+        },
+        {
+          "type": "text",
+          "text": " into the receiver’s text at the insertion point if there is one, otherwise replacing the selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertText:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449370-allowedinputsourcelocales": {
+      "title": "allowedInputSourceLocales",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449370-allowedinputsourcelocales",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449370-allowedinputsourcelocales",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of locale identifiers representing input sources that are allowed to be enabled when the receiver has the keyboard focus."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449450-allowsundo": {
+      "title": "allowsUndo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449450-allowsundo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449450-allowsundo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver allows undo."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449345-editable": {
+      "title": "editable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449345-editable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449345-editable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to edit text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449297-selectable": {
+      "title": "selectable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449297-selectable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449297-selectable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to select text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449156-fieldeditor": {
+      "title": "fieldEditor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449156-fieldeditor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449156-fieldeditor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text views sharing the receiver’s layout manager behave as field editors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449538-richtext": {
+      "title": "richText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449538-richtext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449538-richtext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to apply attributes to specific ranges of text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449266-importsgraphics": {
+      "title": "importsGraphics",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449266-importsgraphics",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449266-importsgraphics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to import files by dragging."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449146-setbasewritingdirection": {
+      "title": "setBaseWritingDirection:range:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449146-setbasewritingdirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449146-setbasewritingdirection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the base writing direction of a range of text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setBaseWritingDirection:range:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449465-togglebasewritingdirection": {
+      "title": "toggleBaseWritingDirection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449465-togglebasewritingdirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449465-togglebasewritingdirection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the base writing direction of a paragraph between left-to-right and right-to-left."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleBaseWritingDirection:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449271-defaultparagraphstyle": {
+      "title": "defaultParagraphStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449271-defaultparagraphstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449271-defaultparagraphstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The receiver’s default paragraph style."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449386-outline": {
+      "title": "outline:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449386-outline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449386-outline",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds the outline attribute to the selected text attributes if absent; removes the attribute if present."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "outline:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449425-allowsimageediting": {
+      "title": "allowsImageEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449425-allowsimageediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449425-allowsimageediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether image attachments should permit editing of their images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449258-automaticquotesubstitutionenable": {
+      "title": "automaticQuoteSubstitutionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449258-automaticquotesubstitutionenable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449258-automaticquotesubstitutionenable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that enables and disables automatic quotation mark substitution."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449444-toggleautomaticquotesubstitution": {
+      "title": "toggleAutomaticQuoteSubstitution:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449444-toggleautomaticquotesubstitution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449444-toggleautomaticquotesubstitution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the state of automatic quotation mark substitution from enabled to disabled and vice versa."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleAutomaticQuoteSubstitution:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449170-automaticlinkdetectionenabled": {
+      "title": "automaticLinkDetectionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449170-automaticlinkdetectionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449170-automaticlinkdetectionenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that enables or disables automatic link detection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449353-toggleautomaticlinkdetection": {
+      "title": "toggleAutomaticLinkDetection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449353-toggleautomaticlinkdetection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449353-toggleautomaticlinkdetection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the state of automatic link detection from enabled to disabled and vice versa."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleAutomaticLinkDetection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449204-displayslinktooltips": {
+      "title": "displaysLinkToolTips",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449204-displayslinktooltips",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449204-displayslinktooltips",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the text view automatically supplies the destination of a link as a tooltip for text that has a link attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449218-usesruler": {
+      "title": "usesRuler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449218-usesruler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449218-usesruler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text views sharing the receiver’s layout manager use a ruler."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449406-rulervisible": {
+      "title": "rulerVisible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449406-rulervisible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449406-rulervisible",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the scroll view enclosing text views sharing the receiver’s layout manager displays the ruler."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449407-usesinspectorbar": {
+      "title": "usesInspectorBar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449407-usesinspectorbar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449407-usesinspectorbar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether this text view uses the inspector bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449129-selectedranges": {
+      "title": "selectedRanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449129-selectedranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449129-selectedranges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array containing the ranges of characters selected in the receiver’s layout manager."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449256-setselectedrange": {
+      "title": "setSelectedRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449256-setselectedrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449256-setselectedrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the selection to the characters in an array of ranges."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSelectedRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449208-setselectedranges": {
+      "title": "setSelectedRanges:affinity:stillSelecting:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449208-setselectedranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449208-setselectedranges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the selection to the characters in an array of ranges in response to user action."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSelectedRanges:affinity:stillSelecting:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449309-insertionpointcolor": {
+      "title": "insertionPointColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449309-insertionpointcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449309-insertionpointcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The color of the insertion point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449268-updateinsertionpointstateandrest": {
+      "title": "updateInsertionPointStateAndRestartTimer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449268-updateinsertionpointstateandrest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449268-updateinsertionpointstateandrest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the insertion point’s location and optionally restarts the blinking cursor timer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateInsertionPointStateAndRestartTimer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449270-selectedtextattributes": {
+      "title": "selectedTextAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449270-selectedtextattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449270-selectedtextattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The attributes used to indicate the selection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449179-markedtextattributes": {
+      "title": "markedTextAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449179-markedtextattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449179-markedtextattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The attributes used to draw marked text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449452-linktextattributes": {
+      "title": "linkTextAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449452-linktextattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449452-linktextattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The attributes used to draw the onscreen presentation of link text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449505-characterindexforinsertionatpoin": {
+      "title": "characterIndexForInsertionAtPoint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449505-characterindexforinsertionatpoin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449505-characterindexforinsertionatpoin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a character index appropriate for placing a zero-length selection for an insertion point associated with the mouse at the given point."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "characterIndexForInsertionAtPoint:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449131-preferredpasteboardtypefromarray": {
+      "title": "preferredPasteboardTypeFromArray:restrictedToTypesFromArray:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449131-preferredpasteboardtypefromarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449131-preferredpasteboardtypefromarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whatever type on the pasteboard would be most preferred for copying data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "preferredPasteboardTypeFromArray:restrictedToTypesFromArray:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449469-readselectionfrompasteboard": {
+      "title": "readSelectionFromPasteboard:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449469-readselectionfrompasteboard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449469-readselectionfrompasteboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads the text view’s preferred type of data from the specified pasteboard."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "readSelectionFromPasteboard:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449190-readselectionfrompasteboard": {
+      "title": "readSelectionFromPasteboard:type:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449190-readselectionfrompasteboard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449190-readselectionfrompasteboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads data of the given type from the specified pasteboard."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "readSelectionFromPasteboard:type:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449361-readablepasteboardtypes": {
+      "title": "readablePasteboardTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449361-readablepasteboardtypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449361-readablepasteboardtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The types this text view can read immediately from the pasteboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449222-writablepasteboardtypes": {
+      "title": "writablePasteboardTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449222-writablepasteboardtypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449222-writablepasteboardtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The pasteboard types that can be provided from the current selection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449187-writeselectiontopasteboard": {
+      "title": "writeSelectionToPasteboard:type:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449187-writeselectiontopasteboard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449187-writeselectiontopasteboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Writes the current selection to the specified pasteboard using the given type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "writeSelectionToPasteboard:type:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449277-writeselectiontopasteboard": {
+      "title": "writeSelectionToPasteboard:types:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449277-writeselectiontopasteboard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449277-writeselectiontopasteboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Writes the current selection to the specified pasteboard under each given type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "writeSelectionToPasteboard:types:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449301-validrequestorforsendtype": {
+      "title": "validRequestorForSendType:returnType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449301-validrequestorforsendtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449301-validrequestorforsendtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns "
+        },
+        {
+          "type": "codeVoice",
+          "code": "self"
+        },
+        {
+          "type": "text",
+          "text": " if the text view can provide and accept the specified data types, or "
+        },
+        {
+          "type": "codeVoice",
+          "code": "nil"
+        },
+        {
+          "type": "text",
+          "text": " if it can't."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "validRequestorForSendType:returnType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449515-alignjustified": {
+      "title": "alignJustified:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449515-alignjustified",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449515-alignjustified",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies full justification to selected paragraphs (or all text, if the receiver is a plain text object)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "alignJustified:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449216-changeattributes": {
+      "title": "changeAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449216-changeattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449216-changeattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the attributes of the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "changeAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449282-changecolor": {
+      "title": "changeColor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449282-changecolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449282-changecolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the color of the selected text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "changeColor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449536-setalignment": {
+      "title": "setAlignment:range:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449536-setalignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449536-setalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the alignment of the paragraphs containing characters in the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAlignment:range:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449487-typingattributes": {
+      "title": "typingAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449487-typingattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449487-typingattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The receiver’s typing attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449491-usestandardkerning": {
+      "title": "useStandardKerning:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449491-usestandardkerning",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449491-usestandardkerning",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set the receiver to use pair kerning data for the glyphs in its selection, or for all glyphs if the receiver is a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "useStandardKerning:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449289-lowerbaseline": {
+      "title": "lowerBaseline:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449289-lowerbaseline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449289-lowerbaseline",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Lowers the baseline offset of selected text by 1 point, or of all text if the receiver is a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lowerBaseline:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449198-raisebaseline": {
+      "title": "raiseBaseline:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449198-raisebaseline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449198-raisebaseline",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Raises the baseline offset of selected text by 1 point, or of all text if the receiver is a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "raiseBaseline:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449464-turnoffkerning": {
+      "title": "turnOffKerning:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449464-turnoffkerning",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449464-turnoffkerning",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the receiver to use nominal glyph spacing for the glyphs in its selection, or for all glyphs if the receiver is a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "turnOffKerning:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449183-loosenkerning": {
+      "title": "loosenKerning:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449183-loosenkerning",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449183-loosenkerning",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Increases the space between glyphs in the receiver’s selection, or in all text if the receiver is a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loosenKerning:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449137-tightenkerning": {
+      "title": "tightenKerning:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449137-tightenkerning",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449137-tightenkerning",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decreases the space between glyphs in the receiver’s selection, or for all glyphs if the receiver is a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tightenKerning:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449144-usestandardligatures": {
+      "title": "useStandardLigatures:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449144-usestandardligatures",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449144-usestandardligatures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the receiver to use the standard ligatures available for the fonts and languages used when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "useStandardLigatures:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449436-turnoffligatures": {
+      "title": "turnOffLigatures:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449436-turnoffligatures",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449436-turnoffligatures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the receiver to use only required ligatures when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "turnOffLigatures:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449213-useallligatures": {
+      "title": "useAllLigatures:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449213-useallligatures",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449213-useallligatures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the receiver to use all ligatures available for the fonts and languages used when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "useAllLigatures:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449292-toggletraditionalcharactershape": {
+      "title": "toggleTraditionalCharacterShape:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449292-toggletraditionalcharactershape",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449292-toggletraditionalcharactershape",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Toggles the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSCharacterShapeAttributeName"
+        },
+        {
+          "type": "text",
+          "text": " attribute at the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleTraditionalCharacterShape:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449497-clickedonlink": {
+      "title": "clickedOnLink:atIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449497-clickedonlink",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449497-clickedonlink",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Causes the text view to act as if the user clicked on some text with the given link as the value of a link attribute associated with the text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "clickedOnLink:atIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449250-pasteasplaintext": {
+      "title": "pasteAsPlainText:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449250-pasteasplaintext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449250-pasteasplaintext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts the contents of the pasteboard into the receiver’s text as plain text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pasteAsPlainText:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449395-pasteasrichtext": {
+      "title": "pasteAsRichText:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449395-pasteasrichtext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449395-pasteasrichtext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This action method inserts the contents of the pasteboard into the receiver’s text as rich text, maintaining its attributes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pasteAsRichText:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449384-breakundocoalescing": {
+      "title": "breakUndoCoalescing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449384-breakundocoalescing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449384-breakundocoalescing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Informs the receiver that it should begin coalescing successive typing operations in a new undo grouping."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "breakUndoCoalescing"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449368-coalescingundo": {
+      "title": "coalescingUndo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449368-coalescingundo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449368-coalescingundo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether undo coalescing is in progress."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449401-updatefontpanel": {
+      "title": "updateFontPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449401-updatefontpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449401-updatefontpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the Font panel to contain the font attributes of the selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateFontPanel"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449323-updateruler": {
+      "title": "updateRuler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449323-updateruler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449323-updateruler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the ruler view in the receiver’s enclosing scroll view to reflect the selection’s paragraph and marker attributes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateRuler"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449234-acceptabledragtypes": {
+      "title": "acceptableDragTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449234-acceptabledragtypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449234-acceptabledragtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data types that the receiver accepts as the destination view of a dragging operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449181-updatedragtyperegistration": {
+      "title": "updateDragTypeRegistration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449181-updatedragtyperegistration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449181-updatedragtyperegistration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the acceptable drag types of all text views associated with the receiver's layout manager."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateDragTypeRegistration"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449392-rangeforusercharacterattributech": {
+      "title": "rangeForUserCharacterAttributeChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449392-rangeforusercharacterattributech",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449392-rangeforusercharacterattributech",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The range of characters affected by an action method that changes character (not paragraph) attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449503-rangesforusercharacterattributec": {
+      "title": "rangesForUserCharacterAttributeChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449503-rangesforusercharacterattributec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449503-rangesforusercharacterattributec",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array containing the ranges of characters affected by an action method that changes character (not paragraph) attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449252-rangeforuserparagraphattributech": {
+      "title": "rangeForUserParagraphAttributeChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449252-rangeforuserparagraphattributech",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449252-rangeforuserparagraphattributech",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The range of characters affected by an action method that changes paragraph (not character) attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449161-rangesforuserparagraphattributec": {
+      "title": "rangesForUserParagraphAttributeChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449161-rangesforuserparagraphattributec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449161-rangesforuserparagraphattributec",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array containing the ranges of characters affected by a method that changes paragraph (not character) attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449315-rangeforusertextchange": {
+      "title": "rangeForUserTextChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449315-rangeforusertextchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449315-rangeforusertextchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The range of characters affected by a method that changes characters (as opposed to attributes)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449434-rangesforusertextchange": {
+      "title": "rangesForUserTextChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449434-rangesforusertextchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449434-rangesforusertextchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array containing the ranges of characters affected by a method that changes characters (as opposed to attributes)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449532-shouldchangetextinrange": {
+      "title": "shouldChangeTextInRange:replacementString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449532-shouldchangetextinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449532-shouldchangetextinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiates a series of delegate messages (and general notifications) to determine whether modifications can be made to the characters and attributes of the receiver’s text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldChangeTextInRange:replacementString:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449311-shouldchangetextinranges": {
+      "title": "shouldChangeTextInRanges:replacementStrings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449311-shouldchangetextinranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449311-shouldchangetextinranges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiates a series of delegate messages (and general notifications) to determine whether modifications can be made to the characters and attributes of the receiver’s text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldChangeTextInRanges:replacementStrings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449296-didchangetext": {
+      "title": "didChangeText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449296-didchangetext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449296-didchangetext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends out necessary notifications when a text change completes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didChangeText"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449236-smartinsertdeleteenabled": {
+      "title": "smartInsertDeleteEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449236-smartinsertdeleteenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449236-smartinsertdeleteenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the receiver inserts or deletes space around selected words so as to preserve proper spacing and punctuation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449428-smartdeleterangeforproposedrange": {
+      "title": "smartDeleteRangeForProposedRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449428-smartdeleterangeforproposedrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449428-smartdeleterangeforproposedrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an extended range that includes adjacent whitespace that should be deleted along with the proposed range in order to preserve proper spacing and punctuation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "smartDeleteRangeForProposedRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449467-smartinsertafterstringforstring": {
+      "title": "smartInsertAfterStringForString:replacingRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449467-smartinsertafterstringforstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449467-smartinsertafterstringforstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns any whitespace that needs to be added after the string to preserve proper spacing and punctuation when the string replaces the characters in the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "smartInsertAfterStringForString:replacingRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449242-smartinsertbeforestringforstring": {
+      "title": "smartInsertBeforeStringForString:replacingRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449242-smartinsertbeforestringforstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449242-smartinsertbeforestringforstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns any whitespace that needs to be added before the string to preserve proper spacing and punctuation when the string replaces the characters in the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "smartInsertBeforeStringForString:replacingRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449544-smartinsertforstring": {
+      "title": "smartInsertForString:replacingRange:beforeString:afterString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449544-smartinsertforstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449544-smartinsertforstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether whitespace needs to be added around the string to preserve proper spacing and punctuation when it replaces the characters in the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "smartInsertForString:replacingRange:beforeString:afterString:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449273-togglesmartinsertdelete": {
+      "title": "toggleSmartInsertDelete:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449273-togglesmartinsertdelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449273-togglesmartinsertdelete",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the state of smart insert and delete from enabled to disabled and vice versa."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleSmartInsertDelete:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449430-continuousspellcheckingenabled": {
+      "title": "continuousSpellCheckingEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449430-continuousspellcheckingenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449430-continuousspellcheckingenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver has continuous spell checking enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449513-spellcheckerdocumenttag": {
+      "title": "spellCheckerDocumentTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449513-spellcheckerdocumenttag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449513-spellcheckerdocumenttag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A tag identifying the text view's text as a document for the spell checker server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449471-togglecontinuousspellchecking": {
+      "title": "toggleContinuousSpellChecking:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449471-togglecontinuousspellchecking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449471-togglecontinuousspellchecking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Toggles whether continuous spell checking is enabled for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleContinuousSpellChecking:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449166-grammarcheckingenabled": {
+      "title": "grammarCheckingEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449166-grammarcheckingenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449166-grammarcheckingenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables and disables grammar checking."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449393-togglegrammarchecking": {
+      "title": "toggleGrammarChecking:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449393-togglegrammarchecking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449393-togglegrammarchecking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the state of grammar checking from enabled to disabled and vice versa."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleGrammarChecking:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449493-setspellingstate": {
+      "title": "setSpellingState:range:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449493-setspellingstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449493-setspellingstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the spelling state, which controls the display of the spelling and grammar indicators on the given text range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSpellingState:range:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449150-orderfrontsharingservicepicker": {
+      "title": "orderFrontSharingServicePicker:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449150-orderfrontsharingservicepicker",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449150-orderfrontsharingservicepicker",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and displays a new instance of the sharing service picker."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "orderFrontSharingServicePicker:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449159-rulerview": {
+      "title": "rulerView:didMoveMarker:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449159-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449159-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modifies the paragraph style of the paragraphs containing the selection to record the new location of the marker."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:didMoveMarker:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449287-rulerview": {
+      "title": "rulerView:willMoveMarker:toLocation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449287-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449287-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a potentially modified location to which the marker should be moved."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:willMoveMarker:toLocation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449390-rulerview": {
+      "title": "rulerView:shouldMoveMarker:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449390-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449390-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether the marker should be moved."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:shouldMoveMarker:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449299-rulerview": {
+      "title": "rulerView:didRemoveMarker:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449299-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449299-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modifies the paragraph style of the paragraphs containing the selection—if possible—by removing the specified marker."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:didRemoveMarker:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449366-rulerview": {
+      "title": "rulerView:shouldRemoveMarker:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449366-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449366-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether the marker should be removed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:shouldRemoveMarker:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449523-rulerview": {
+      "title": "rulerView:didAddMarker:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449523-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449523-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modifies the paragraph style of the paragraphs containing the selection to accommodate a new marker."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:didAddMarker:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449446-rulerview": {
+      "title": "rulerView:shouldAddMarker:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449446-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449446-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether a new marker can be added."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:shouldAddMarker:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449351-rulerview": {
+      "title": "rulerView:willAddMarker:atLocation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449351-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449351-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a potentially modified location to which the marker should be added."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:willAddMarker:atLocation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449399-rulerview": {
+      "title": "rulerView:handleMouseDown:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449399-rulerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449399-rulerview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a left tab marker to the ruler at the location clicked."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerView:handleMouseDown:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449423-dragimageforselectionwithevent": {
+      "title": "dragImageForSelectionWithEvent:origin:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449423-dragimageforselectionwithevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449423-dragimageforselectionwithevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an appropriate drag image for the drag initiated by the specified event."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragImageForSelectionWithEvent:origin:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449176-dragoperationfordragginginfo": {
+      "title": "dragOperationForDraggingInfo:type:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449176-dragoperationfordragginginfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449176-dragoperationfordragginginfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type of drag operation that should be performed if the image were released now."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragOperationForDraggingInfo:type:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449413-dragselectionwithevent": {
+      "title": "dragSelectionWithEvent:offset:slideBack:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449413-dragselectionwithevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449413-dragselectionwithevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Begins dragging the current selected text range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragSelectionWithEvent:offset:slideBack:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449163-acceptsglyphinfo": {
+      "title": "acceptsGlyphInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449163-acceptsglyphinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449163-acceptsglyphinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver accepts the glyph info attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449519-startspeaking": {
+      "title": "startSpeaking:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449519-startspeaking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449519-startspeaking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Speaks the selected text, or all text if no selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startSpeaking:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449172-stopspeaking": {
+      "title": "stopSpeaking:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449172-stopspeaking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449172-stopspeaking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stops the speaking of text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopSpeaking:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449534-usesfontpanel": {
+      "title": "usesFontPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449534-usesfontpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449534-usesfontpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text views sharing the receiver’s layout manager use the Font panel and Font menu."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449293-usesfindpanel": {
+      "title": "usesFindPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449293-usesfindpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449293-usesfindpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver allows for a find panel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449238-orderfrontlinkpanel": {
+      "title": "orderFrontLinkPanel:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449238-orderfrontlinkpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449238-orderfrontlinkpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Brings forward a panel allowing the user to manipulate links in the text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "orderFrontLinkPanel:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449349-orderfrontlistpanel": {
+      "title": "orderFrontListPanel:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449349-orderfrontlistpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449349-orderfrontlistpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Brings forward a panel allowing the user to manipulate text lists in the text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "orderFrontListPanel:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449438-orderfrontspacingpanel": {
+      "title": "orderFrontSpacingPanel:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449438-orderfrontspacingpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449438-orderfrontspacingpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Brings forward a panel allowing the user to manipulate text line heights, interline spacing, and paragraph spacing, in the text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "orderFrontSpacingPanel:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449442-orderfronttablepanel": {
+      "title": "orderFrontTablePanel:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449442-orderfronttablepanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449442-orderfronttablepanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Brings forward a panel allowing the user to manipulate text tables in the text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "orderFrontTablePanel:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449327-orderfrontsubstitutionspanel": {
+      "title": "orderFrontSubstitutionsPanel:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449327-orderfrontsubstitutionspanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449327-orderfrontsubstitutionspanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Brings forward a panel allowing the user to specify string substitutions in the text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "orderFrontSubstitutionsPanel:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449359-complete": {
+      "title": "complete:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449359-complete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449359-complete",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invokes completion in a text view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "complete:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449405-completionsforpartialwordrange": {
+      "title": "completionsForPartialWordRange:indexOfSelectedItem:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449405-completionsforpartialwordrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449405-completionsforpartialwordrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of potential completions, in the order to be presented, representing possible word completions available from a partial word."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "completionsForPartialWordRange:indexOfSelectedItem:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449448-insertcompletion": {
+      "title": "insertCompletion:forPartialWordRange:movement:isFinal:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449448-insertcompletion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449448-insertcompletion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts the selected completion into the text at the appropriate location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertCompletion:forPartialWordRange:movement:isFinal:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449329-rangeforusercompletion": {
+      "title": "rangeForUserCompletion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449329-rangeforusercompletion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449329-rangeforusercompletion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The partial range from the most recent beginning of a word up to the insertion point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449440-checktextindocument": {
+      "title": "checkTextInDocument:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449440-checktextindocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449440-checktextindocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the default text checking on the entire document."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "checkTextInDocument:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449382-checktextinselection": {
+      "title": "checkTextInSelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449382-checktextinselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449382-checktextinselection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the default text checking on the current selection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "checkTextInSelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449240-checktextinrange": {
+      "title": "checkTextInRange:types:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449240-checktextinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449240-checktextinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Check and replace the text in the range using the specified checking types and options."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "checkTextInRange:types:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449473-handletextcheckingresults": {
+      "title": "handleTextCheckingResults:forRange:types:options:orthography:wordCount:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449473-handletextcheckingresults",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449473-handletextcheckingresults",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handles the text checking results returned by the text view"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handleTextCheckingResults:forRange:types:options:orthography:wordCount:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449529-enabledtextcheckingtypes": {
+      "title": "enabledTextCheckingTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449529-enabledtextcheckingtypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449529-enabledtextcheckingtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The default text checking types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449403-automaticdashsubstitutionenabled": {
+      "title": "automaticDashSubstitutionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449403-automaticdashsubstitutionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449403-automaticdashsubstitutionenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether automatic dash substitution is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449305-toggleautomaticdashsubstitution": {
+      "title": "toggleAutomaticDashSubstitution:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449305-toggleautomaticdashsubstitution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449305-toggleautomaticdashsubstitution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Toggles the state of the automatic dash substitution."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleAutomaticDashSubstitution:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449192-automaticdatadetectionenabled": {
+      "title": "automaticDataDetectionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449192-automaticdatadetectionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449192-automaticdatadetectionenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether automatic data detection is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449499-toggleautomaticdatadetection": {
+      "title": "toggleAutomaticDataDetection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449499-toggleautomaticdatadetection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449499-toggleautomaticdatadetection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Toggles the state of the automatic data detection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleAutomaticDataDetection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449254-automaticspellingcorrectionenabl": {
+      "title": "automaticSpellingCorrectionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449254-automaticspellingcorrectionenabl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449254-automaticspellingcorrectionenabl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether automatic spelling correction is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449178-toggleautomaticspellingcorrectio": {
+      "title": "toggleAutomaticSpellingCorrection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449178-toggleautomaticspellingcorrectio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449178-toggleautomaticspellingcorrectio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Toggles the state of the automatic spelling correction."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleAutomaticSpellingCorrection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449210-automatictextreplacementenabled": {
+      "title": "automaticTextReplacementEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449210-automatictextreplacementenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449210-automatictextreplacementenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether automatic text replacement is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449200-toggleautomatictextreplacement": {
+      "title": "toggleAutomaticTextReplacement:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449200-toggleautomatictextreplacement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449200-toggleautomatictextreplacement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Toggles the state of the automatic text replacement."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleAutomaticTextReplacement:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1807130-becomefirstresponder": {
+      "title": "becomeFirstResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1807130-becomefirstresponder",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/appkit/nstextview/1807130-becomefirstresponder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Informs the receiver that it’s becoming the first responder."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1807135-resignfirstresponder": {
+      "title": "resignFirstResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1807135-resignfirstresponder",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/appkit/nstextview/1807135-resignfirstresponder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notifies the receiver that it’s been asked to relinquish its status as first responder."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449409-updatequicklookpreviewpanel": {
+      "title": "updateQuickLookPreviewPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449409-updatequicklookpreviewpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449409-updatequicklookpreviewpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notifies the QuickLook panel that an update may be required."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateQuickLookPreviewPanel"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449415-togglequicklookpreviewpanel": {
+      "title": "toggleQuickLookPreviewPanel:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449415-togglequicklookpreviewpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449415-togglequicklookpreviewpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An action message that toggles the visibility state of the Quick Look preview panel."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleQuickLookPreviewPanel:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449426-quicklookpreviewableitemsinrange": {
+      "title": "quickLookPreviewableItemsInRanges:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449426-quicklookpreviewableitemsinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449426-quicklookpreviewableitemsinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of URLs for items that can be displayed by QuickLook in the specified ranges."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "quickLookPreviewableItemsInRanges:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449286-changelayoutorientation": {
+      "title": "changeLayoutOrientation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449286-changelayoutorientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449286-changelayoutorientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An action method that sets the layout orientation of the text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "changeLayoutOrientation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449483-setlayoutorientation": {
+      "title": "setLayoutOrientation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449483-setlayoutorientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449483-setlayoutorientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the receiver's layout orientation and invalidates the contents."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setLayoutOrientation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449456-usesfindbar": {
+      "title": "usesFindBar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449456-usesfindbar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449456-usesfindbar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether to use the find bar for this text view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449458-incrementalsearchingenabled": {
+      "title": "incrementalSearchingEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449458-incrementalsearchingenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449458-incrementalsearchingenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether incremental searching is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsselectiongranularity": {
+      "title": "NSSelectionGranularity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsselectiongranularity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsselectiongranularity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants specify how much the text view extends the selection when the user drags the mouse. They’re used by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449165-selectiongranularity"
+        },
+        {
+          "type": "text",
+          "text": ", and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449188-selectionrangeforproposedrange"
+        },
+        {
+          "type": "text",
+          "text": ":"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsselectionaffinity": {
+      "title": "NSSelectionAffinity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsselectionaffinity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsselectionaffinity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants specify the preferred direction of selection. They’re used by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449291-selectionaffinity"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449462-setselectedrange"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsfindpanelaction": {
+      "title": "NSFindPanelAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsfindpanelaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsfindpanelaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants define the tags for "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449525-performfindpanelaction"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/input_sources_locale_identifiers": {
+      "title": "Input Sources Locale Identifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/input_sources_locale_identifiers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/nstextview/input_sources_locale_identifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Locale identifiers represent the input sources available."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/find_panel_search_metadata": {
+      "title": "Find Panel Search Metadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/find_panel_search_metadata",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/nstextview/find_panel_search_metadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "In addition to communicating search strings via the find pasteboard, the standard Find panel for "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSTextView"
+        },
+        {
+          "type": "text",
+          "text": " also communicates search option metadata, including case sensitivity and substring matching options. This metadata is stored in a property list as the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsfindpanelsearchoptionspboardtype"
+        },
+        {
+          "type": "text",
+          "text": " value on the global find pasteboard. As such, third party applications may store additional keys in this property list to communicate additional metadata as desired to support the various search options common to many third-party applications' Find panels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsfindpanelsubstringmatchtype": {
+      "title": "NSFindPanelSubstringMatchType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsfindpanelsubstringmatchtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsfindpanelsubstringmatchtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of substring matching used by the Find panel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextviewdidchangeselectionnotification": {
+      "title": "NSTextViewDidChangeSelectionNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdidchangeselectionnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextviewdidchangeselectionnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the selected range of characters changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextviewwillchangenotifyingtextviewnotification": {
+      "title": "NSTextViewWillChangeNotifyingTextViewNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewwillchangenotifyingtextviewnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextviewwillchangenotifyingtextviewnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a new text view is established as the text view that sends notifications."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextviewdidchangetypingattributesnotification": {
+      "title": "NSTextViewDidChangeTypingAttributesNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdidchangetypingattributesnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextviewdidchangetypingattributesnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when there is a change in the typing attributes within a text view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449489-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449489-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449489-initwithcoder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2544680-allowscharacterpickertouchbarite": {
+      "title": "allowsCharacterPickerTouchBarItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2544680-allowscharacterpickertouchbarite",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2544680-allowscharacterpickertouchbarite"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2544750-candidatelisttouchbaritem": {
+      "title": "candidateListTouchBarItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2544750-candidatelisttouchbaritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2544750-candidatelisttouchbaritem"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2544655-automatictextcompletionenabled": {
+      "title": "automaticTextCompletionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2544655-automatictextcompletionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2544655-automatictextcompletionenabled"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/3237223-usesadaptivecolormappingfordarka": {
+      "title": "usesAdaptiveColorMappingForDarkAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/3237223-usesadaptivecolormappingfordarka",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/3237223-usesadaptivecolormappingfordarka"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/1449357-usesrolloverbuttonforselection": {
+      "title": "usesRolloverButtonForSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/1449357-usesrolloverbuttonforselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/1449357-usesrolloverbuttonforselection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2269433-stronglyreferencestextstorage": {
+      "title": "stronglyReferencesTextStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2269433-stronglyreferencestextstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2269433-stronglyreferencestextstorage"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2990526-performvalidatedreplacementinran": {
+      "title": "performValidatedReplacementInRange:withAttributedString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2990526-performvalidatedreplacementinran",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2990526-performvalidatedreplacementinran",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performValidatedReplacementInRange:withAttributedString:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2544841-toggleautomatictextcompletion": {
+      "title": "toggleAutomaticTextCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2544841-toggleautomatictextcompletion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2544841-toggleautomatictextcompletion",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "toggleAutomaticTextCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2544833-updatecandidates": {
+      "title": "updateCandidates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2544833-updatecandidates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2544833-updatecandidates",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateCandidates"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2544676-updatetexttouchbaritems": {
+      "title": "updateTextTouchBarItems",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2544676-updatetexttouchbaritems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2544676-updatetexttouchbaritems",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateTextTouchBarItems"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2544834-updatetouchbaritemidentifiers": {
+      "title": "updateTouchBarItemIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2544834-updatetouchbaritemidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2544834-updatetouchbaritemidentifiers",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateTouchBarItemIdentifiers"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2990525-fieldeditor": {
+      "title": "fieldEditor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2990525-fieldeditor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2990525-fieldeditor",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "fieldEditor"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2990527-scrollabledocumentcontenttextvie": {
+      "title": "scrollableDocumentContentTextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2990527-scrollabledocumentcontenttextvie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2990527-scrollabledocumentcontenttextvie",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollableDocumentContentTextView"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2990528-scrollableplaindocumentcontentte": {
+      "title": "scrollablePlainDocumentContentTextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2990528-scrollableplaindocumentcontentte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2990528-scrollableplaindocumentcontentte",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollablePlainDocumentContentTextView"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview/2990529-scrollabletextview": {
+      "title": "scrollableTextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview/2990529-scrollabletextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview/2990529-scrollabletextview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollableTextView"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/browser_view": {
+      "title": "Browser View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/browser_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/browser_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a column-based interface for viewing and navigating hierarchical information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view": {
+      "title": "Collection View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/collection_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display one or more subviews in a highly configurable arrangement.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/outline_view": {
+      "title": "Outline View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/outline_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/outline_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display a list-based interface for hierarchical data, where each level of hierarchy is indented from the previous one."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/table_view": {
+      "title": "Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/table_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display custom data in rows and columns. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsopenglview": {
+      "title": "NSOpenGLView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsopenglview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsopenglview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that displays OpenGL content in a view. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 beta 1"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstext"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynavigablestatictext",
+        "doc://com.apple.documentation/documentation/appkit/nscolorchanging",
+        "doc://com.apple.documentation/documentation/appkit/nsdraggingsource",
+        "doc://com.apple.documentation/documentation/appkit/nsmenuitemvalidation",
+        "doc://com.apple.documentation/documentation/appkit/nsstandardkeybindingresponding",
+        "doc://com.apple.documentation/documentation/appkit/nstextcontent",
+        "doc://com.apple.documentation/documentation/appkit/nstextinput",
+        "doc://com.apple.documentation/documentation/appkit/nstextinputclient",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider",
+        "doc://com.apple.documentation/documentation/appkit/nsuserinterfacevalidations"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Text View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449347-initwithframe",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449262-initwithframe"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Text View's Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449521-delegate",
+        "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Registering Services Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449507-registerforservices"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Text System Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449364-textcontainer",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449479-replacetextcontainer",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449168-textcontainerinset",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449477-textcontainerorigin",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449546-invalidatetextcontainerorigin",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449148-layoutmanager",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449196-textstorage"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Graphics Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449501-backgroundcolor",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449530-drawsbackground",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449397-allowsdocumentbackgroundcolorcha",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449475-changedocumentbackgroundcolor"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Controlling Display",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449279-setneedsdisplayinrect",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449152-shoulddrawinsertionpoint",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449232-drawinsertionpointinrect",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449135-drawviewbackgroundinrect",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449230-setconstrainedframesize",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449202-cleanupafterdragoperation",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449540-showfindindicatorforrange"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inserting Text",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449174-inserttext",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449370-allowedinputsourcelocales"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Behavioral Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449450-allowsundo",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449345-editable",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449297-selectable",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449156-fieldeditor",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449538-richtext",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449266-importsgraphics",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449146-setbasewritingdirection",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449465-togglebasewritingdirection",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449271-defaultparagraphstyle",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449386-outline",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449425-allowsimageediting",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449258-automaticquotesubstitutionenable",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449444-toggleautomaticquotesubstitution",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449170-automaticlinkdetectionenabled",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449353-toggleautomaticlinkdetection",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449204-displayslinktooltips"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using Text Formatting Controls",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449218-usesruler",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449406-rulervisible",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449407-usesinspectorbar"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Selection",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449129-selectedranges",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449256-setselectedrange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449462-setselectedrange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449208-setselectedranges",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449291-selectionaffinity",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449165-selectiongranularity",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449309-insertionpointcolor",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449268-updateinsertionpointstateandrest",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449270-selectedtextattributes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449179-markedtextattributes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449452-linktextattributes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449505-characterindexforinsertionatpoin"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Pasteboard",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449131-preferredpasteboardtypefromarray",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449469-readselectionfrompasteboard",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449190-readselectionfrompasteboard",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449361-readablepasteboardtypes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449222-writablepasteboardtypes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449187-writeselectiontopasteboard",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449277-writeselectiontopasteboard",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449301-validrequestorforsendtype"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Text Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449515-alignjustified",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449216-changeattributes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449282-changecolor",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449536-setalignment",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449487-typingattributes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449491-usestandardkerning",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449289-lowerbaseline",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449198-raisebaseline",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449464-turnoffkerning",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449183-loosenkerning",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449137-tightenkerning",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449144-usestandardligatures",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449436-turnoffligatures",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449213-useallligatures",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449292-toggletraditionalcharactershape"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Clicking and Pasting",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449497-clickedonlink",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449250-pasteasplaintext",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449395-pasteasrichtext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Undo Support",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449384-breakundocoalescing",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449368-coalescingundo"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Methods for Subclasses to Use or Override",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449401-updatefontpanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449323-updateruler",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449234-acceptabledragtypes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449181-updatedragtyperegistration",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449188-selectionrangeforproposedrange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449392-rangeforusercharacterattributech",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449503-rangesforusercharacterattributec",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449252-rangeforuserparagraphattributech",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449161-rangesforuserparagraphattributec",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449315-rangeforusertextchange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449434-rangesforusertextchange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449532-shouldchangetextinrange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449311-shouldchangetextinranges",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449296-didchangetext",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449236-smartinsertdeleteenabled",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449428-smartdeleterangeforproposedrange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449467-smartinsertafterstringforstring",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449242-smartinsertbeforestringforstring",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449544-smartinsertforstring",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449273-togglesmartinsertdelete"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working With the Spelling Checker",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449430-continuousspellcheckingenabled",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449513-spellcheckerdocumenttag",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449471-togglecontinuousspellchecking",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449166-grammarcheckingenabled",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449393-togglegrammarchecking",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449493-setspellingstate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with the Sharing Service Picker",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449150-orderfrontsharingservicepicker"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "NSRulerView Client Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449159-rulerview",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449287-rulerview",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449390-rulerview",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449299-rulerview",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449366-rulerview",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449523-rulerview",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449446-rulerview",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449351-rulerview",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449399-rulerview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Dragging",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449423-dragimageforselectionwithevent",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449176-dragoperationfordragginginfo",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449413-dragselectionwithevent",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449163-acceptsglyphinfo"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Speaking Text",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449519-startspeaking",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449172-stopspeaking"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Panels",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449534-usesfontpanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449293-usesfindpanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449525-performfindpanelaction",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449238-orderfrontlinkpanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449349-orderfrontlistpanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449438-orderfrontspacingpanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449442-orderfronttablepanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449327-orderfrontsubstitutionspanel"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Text Completion",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449359-complete",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449405-completionsforpartialwordrange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449448-insertcompletion",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449329-rangeforusercompletion"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Text Checking and Substitutions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449440-checktextindocument",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449382-checktextinselection",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449240-checktextinrange",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449473-handletextcheckingresults",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449529-enabledtextcheckingtypes",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449403-automaticdashsubstitutionenabled",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449305-toggleautomaticdashsubstitution",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449192-automaticdatadetectionenabled",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449499-toggleautomaticdatadetection",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449254-automaticspellingcorrectionenabl",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449178-toggleautomaticspellingcorrectio",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449210-automatictextreplacementenabled",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449200-toggleautomatictextreplacement"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Changing First Responder Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1807130-becomefirstresponder",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1807135-resignfirstresponder"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting QuickLook",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449409-updatequicklookpreviewpanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449415-togglequicklookpreviewpanel",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449426-quicklookpreviewableitemsinrange"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Changing Layout Orientation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449286-changelayoutorientation",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449483-setlayoutorientation"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using the Find Bar",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449456-usesfindbar",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449458-incrementalsearchingenabled"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsselectiongranularity",
+        "doc://com.apple.documentation/documentation/appkit/nsselectionaffinity",
+        "doc://com.apple.documentation/documentation/appkit/nsfindpanelaction",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/input_sources_locale_identifiers",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/find_panel_search_metadata",
+        "doc://com.apple.documentation/documentation/appkit/nsfindpanelsubstringmatchtype"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Notifications",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextviewdidchangeselectionnotification",
+        "doc://com.apple.documentation/documentation/appkit/nstextviewwillchangenotifyingtextviewnotification",
+        "doc://com.apple.documentation/documentation/appkit/nstextviewdidchangetypingattributesnotification"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "codeVoice",
+                "code": "NSTextView"
+              },
+              {
+                "type": "text",
+                "text": " posts the following notifications as well as those declared by its superclasses, particularly "
+              },
+              {
+                "type": "reference",
+                "isActive": true,
+                "identifier": "doc://com.apple.documentation/documentation/appkit/nstext"
+              },
+              {
+                "type": "text",
+                "text": ". See the "
+              },
+              {
+                "type": "reference",
+                "isActive": true,
+                "identifier": "doc://com.apple.documentation/documentation/appkit/nstext#1670079"
+              },
+              {
+                "type": "text",
+                "text": " section in the "
+              },
+              {
+                "type": "reference",
+                "isActive": true,
+                "identifier": "doc://com.apple.documentation/documentation/appkit/nstext"
+              },
+              {
+                "type": "text",
+                "text": " class specification for those other notifications."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449489-initwithcoder"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2544680-allowscharacterpickertouchbarite",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2544750-candidatelisttouchbaritem",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2544655-automatictextcompletionenabled",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/3237223-usesadaptivecolormappingfordarka",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/1449357-usesrolloverbuttonforselection"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2269433-stronglyreferencestextstorage"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2990526-performvalidatedreplacementinran",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2544841-toggleautomatictextcompletion",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2544833-updatecandidates",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2544676-updatetexttouchbaritems",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2544834-updatetouchbaritemidentifiers"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2990525-fieldeditor",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2990527-scrollabledocumentcontenttextvie",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2990528-scrollableplaindocumentcontentte",
+        "doc://com.apple.documentation/documentation/appkit/nstextview/2990529-scrollabletextview"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/browser_view",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/outline_view",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/table_view",
+        "doc://com.apple.documentation/documentation/appkit/nsopenglview"
+      ],
+      "title": "Content Views",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSTextView"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSText",
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstext",
+              "text": "NSText"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " class is the front-end class to the AppKit text system. The class draws the text managed by the back-end components and handles user events to select and modify its text, in addition to supporting rich text, attachments, input management and key binding, and marked text attributes. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you need only to implement a simple editable text field, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " is the principal means to obtain a text object that caters to almost all needs for displaying and managing text at the user interface level. While "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " is a subclass of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstext"
+            },
+            {
+              "type": "text",
+              "text": " class—which declares the most general Cocoa interface to the text system—"
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " adds major features beyond the capabilities of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstext"
+            },
+            {
+              "type": "text",
+              "text": ". You can also do more powerful and more creative text manipulation (such as displaying text in a circle) using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer"
+            },
+            {
+              "type": "text",
+              "text": ", and related classes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You are more likely to use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " class than the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstext"
+            },
+            {
+              "type": "text",
+              "text": " class. It is also important to remember that "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " conforms to a large number of protocols, the methods of which are available to instances of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " class."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview"
+            },
+            {
+              "type": "text",
+              "text": " communicates with its delegate through methods declared both by the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate"
+            },
+            {
+              "type": "text",
+              "text": " and by its superclass’s protocol, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextdelegate"
+            },
+            {
+              "type": "text",
+              "text": ". All delegation messages come from the first text view. To fully understand how to use this class, read "
+            },
+            {
+              "type": "link",
+              "title": "Cocoa Text Architecture Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "link",
+              "title": "Text System User Interface Layer Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextUILayer/TextUILayer.html#//apple_ref/doc/uid/10000090i"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "About Delegate Methods",
+          "anchor": "1668019"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSTextView"
+            },
+            {
+              "type": "text",
+              "text": " class communicates with its delegate through methods declared both by the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextviewdelegate"
+            },
+            {
+              "type": "text",
+              "text": " and by its superclass’s protocol, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextdelegate"
+            },
+            {
+              "type": "text",
+              "text": ".  All delegation messages come from the first text view."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

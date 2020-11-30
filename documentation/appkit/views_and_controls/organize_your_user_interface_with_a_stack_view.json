@@ -1,0 +1,808 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Group individual views in your app’s user interface into a scrollable stack view."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3178780,
+  "kind": "article",
+  "metadata": {
+    "title": "Organize Your User Interface with a Stack View",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.13",
+        "current": "11.1"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "10.2",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+      "url": "/documentation/appkit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233438": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233438",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233438"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindowrestoration": {
+      "title": "NSWindowRestoration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowrestoration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindowrestoration"
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233440": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233440",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233440"
+    },
+    "link-3221826": {
+      "title": "Xcode Help",
+      "type": "section",
+      "identifier": "link-3221826",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/xcode/mac/current/#/dev04b3a04ba"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstackview": {
+      "title": "NSStackView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstackview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstackview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that arranges an array of views horizontally or vertically and updates their placement and sizing when the window size changes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233434": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233434",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233434"
+    },
+    "link-media-3233433": {
+      "identifier": "link-media-3233433",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view#3233433"
+    },
+    "media-3233433": {
+      "identifier": "media-3233433",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 353,
+            "height": 446
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a0a3083661/3927e651-1ac8-4179-936c-5ad469ef8e7f.png"
+        }
+      ],
+      "alt": "Illustration showing a stack view with four stack item containers. The one on top is expanded and shows the stack item header and stack item body. The bottom three stack item containers are collapsed.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/grid_view": {
+      "title": "Grid View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/grid_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/grid_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Arrange views in a flexible grid, and handle the layout associated with those views. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nssplitview": {
+      "title": "NSSplitView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssplitview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nssplitview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that arranges two or more views in a linear stack running horizontally or vertically. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view": {
+      "title": "Organize Your User Interface with a Stack View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Group individual views in your app’s user interface into a scrollable stack view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstabview": {
+      "title": "NSTabView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstabview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstabview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A multipage interface that displays one page at a time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/scroll_view": {
+      "title": "Scroll View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/scroll_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/scroll_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide an interface for navigating content that is too large to fit in the available space. "
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/546e67c2cf/OrganizeYourUserInterfaceWithAStackView.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/546e67c2cf/OrganizeYourUserInterfaceWithAStackView.zip",
+      "checksum": "b00851b8276c3a3cd76354a26d0b6757a7d15a171674d2d7eeaf7ef259730db59ffcc35033914affd3777912df1545d7fc2ce91f7dcffe97e777465787d914df",
+      "url": "https://docs-assets.developer.apple.com/published/546e67c2cf/OrganizeYourUserInterfaceWithAStackView.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/546e67c2cf/OrganizeYourUserInterfaceWithAStackView.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/grid_view",
+        "doc://com.apple.documentation/documentation/appkit/nssplitview",
+        "doc://com.apple.documentation/documentation/appkit/nsstackview",
+        "doc://com.apple.documentation/documentation/appkit/nstabview",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/scroll_view"
+      ],
+      "title": "Container Views",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsstackview"
+            },
+            {
+              "type": "text",
+              "text": " simplifies the process of stacking arbitrary views together in one place. You embed a stack view inside an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSScrollView"
+            },
+            {
+              "type": "text",
+              "text": " object, making the stack’s content scrollable when the user resizes the window. This sample shows how to use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSStackView"
+            },
+            {
+              "type": "text",
+              "text": " with each individual view either disclosed (expanded) or hidden (collapsed)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample’s architecture uses the following protocols:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "StackItemHeader"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Represents the header’s view and its ability to expand and collapse its corresponding stack item body."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "StackItemBody"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Represents the stack item’s primary interface."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "StackItemContainer"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Represents each stack item, combining both the header view and the body view."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "StackItemHost"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Discloses each stack item container."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StackItemContainer"
+            },
+            {
+              "type": "text",
+              "text": " class and its associated header and body components:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class StackItemContainer {",
+            "    // Disclosure state of this container.",
+            "    var state: NSControl.StateValue",
+            "    ",
+            "    let header: StackItemHeader",
+            "    let body: StackItemBody",
+            "    ",
+            "    init(header: StackItemHeader, body: StackItemBody) {",
+            "        self.header = header",
+            "        self.body = body",
+            "        self.state = .on",
+            "    }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3233434",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This design simplifies adding stack items as view controllers. When you adopt these protocols, all stack items behave the same way and follow the same management rules."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following illustration shows an example stack view:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3233433",
+              "metadata": {
+                "anchor": "3233433",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Sample Code Project",
+          "anchor": "3233444"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In Xcode, choose your development team on the macOS target’s General tab."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the System",
+          "anchor": "3233445"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample uses window state restoration so that when the app is relaunched, the user interface returns to the state the user left it in. For state restoration to work, you must deselect the “Close windows when quitting an app” checkbox on the General Pane in System Preferences. To reset state restoration, use Command-Option-Quit when quitting the sample."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Stack View",
+          "anchor": "3233446"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each stack item’s header and body view controllers are loaded from a storyboard and added to the stack view in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "addViewController()"
+            },
+            {
+              "type": "text",
+              "text": " setup function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/// Used to add a particular view controller as an item to the stack view.",
+            "private func addViewController(withIdentifier identifier: String) {",
+            "    let storyboard = NSStoryboard(name: \"StackItems\", bundle: nil)",
+            "    guard let viewController =",
+            "        storyboard.instantiateController(withIdentifier: identifier) as? BaseViewController else { return }",
+            "",
+            "    // Set up the view controller's item container.",
+            "    let stackItemContainer = viewController.stackItemContainer!",
+            "    ",
+            "    // Set the appropriate action function for toggling the disclosure state of each header.",
+            "    stackItemContainer.header.disclose = {",
+            "     self.disclose(viewController.stackItemContainer!)",
+            "    }",
+            "    ",
+            "    // Add the header view.",
+            "    stackView.addArrangedSubview(stackItemContainer.header.viewController.view)",
+            "    ",
+            "    // Add the main body content view.",
+            "    stackView.addArrangedSubview(stackItemContainer.body.viewController.view)",
+            "",
+            "    // Set the default disclosure states (state restoration may restore them to their requested value).",
+            "show(stackItemContainer, animated: false)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3233438",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Restore the User Interface",
+          "anchor": "3233447"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To restore the stack view’s window on relaunch, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowrestoration"
+            },
+            {
+              "type": "text",
+              "text": " protocol. The disclosure states of all stack view containers are also restored. Each body view controller saves and restores various parts of its user interface."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To restore the states of stack view items, add the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSRestorableState"
+            },
+            {
+              "type": "text",
+              "text": " to each item’s view controller:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "FormViewController"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Restores the form field text content."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "TableViewController"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Restores the table view’s selection."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "CollectionViewController"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Restores the collection view’s selection."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For "
+            },
+            {
+              "type": "codeVoice",
+              "code": "FormViewController"
+            },
+            {
+              "type": "text",
+              "text": ", restoration looks like this:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/// Encode state. Helps save the restorable state of this view controller.",
+            "override func encodeRestorableState(with coder: NSCoder) {",
+            "    ",
+            "    coder.encode(textField.stringValue, forKey: FormViewController.formTextKey)",
+            "    super.encodeRestorableState(with: coder)",
+            "}",
+            "",
+            "/// Decode state. Helps restore any previously stored state.",
+            "override func restoreState(with coder: NSCoder) {",
+            "    ",
+            "    super.restoreState(with: coder)",
+            "    if let restoredText = coder.decodeObject(forKey: FormViewController.formTextKey) as? String {",
+            "        textField.stringValue = restoredText",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3233440",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Choose a Disclosure Appearance",
+          "anchor": "3233448"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample provides two disclosure options:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A triangle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A rounded button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample project conditionally decides which type of header disclosure control to use by referencing the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DisclosureTriangleAppearance"
+            },
+            {
+              "type": "text",
+              "text": " compilation flag. This flag is predefined in the “Active Compilation Conditions” build settings for passing conditional compilation flags to the Swift compiler. For more about configuring Xcode build settings, see "
+            },
+            {
+              "type": "link",
+              "title": "Xcode Help",
+              "destination": "https://help.apple.com/xcode/mac/current/#/dev04b3a04ba"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If a disclosure appearance is defined, each section in the stack view gets the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSButton"
+            },
+            {
+              "type": "text",
+              "text": " disclosure style (a triangle). If you prefer the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "roundedDisclosure"
+            },
+            {
+              "type": "text",
+              "text": " style (a rounded button with up and down arrows), remove the compilation flag from the Xcode target’s build settings."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

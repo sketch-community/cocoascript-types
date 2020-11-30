@@ -1,0 +1,251 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A rectangle that you can use to position the image during layout."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/images_and_pdf",
+        "doc://com.apple.documentation/documentation/appkit/nsimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nsimage/1519905-alignmentrect",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1519905,
+  "kind": "symbol",
+  "metadata": {
+    "title": "alignmentRect",
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.5",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSImage(py)alignmentRect",
+    "symbolKind": "instp"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsimage/1519905-alignmentrect"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsimage/1519905-alignmentrect"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/images_and_pdf": {
+      "title": "Images and PDF",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/images_and_pdf",
+      "url": "/documentation/appkit/images_and_pdf",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimage": {
+      "title": "NSImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A high-level interface for manipulating image data. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscell": {
+      "title": "NSCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscell"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrect": {
+      "title": "NSRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrect"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimage/1519905-alignmentrect": {
+      "title": "alignmentRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimage/1519905-alignmentrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimage/1519905-alignmentrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A rectangle that you can use to position the image during layout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@property"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@NSRect",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsrect",
+              "text": "NSRect"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "alignmentRect"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alignment rectangles specify baselines that you can use to position the content of an image more accurately. These baselines are merely hints that your own code can use to determine positioning. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSImage"
+            },
+            {
+              "type": "text",
+              "text": " class does not use this rectangle during drawing; however, instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nscell"
+            },
+            {
+              "type": "text",
+              "text": " typically use this information when laying out images within their boundaries. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, if you have a 20 x 20 pixel icon that includes a glow effect, you might set the alignment rectangle to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "{{2, 2}, {16, 16}}"
+            },
+            {
+              "type": "text",
+              "text": " to indicate the position of the underlying icon without the glow effect. This property defaults to a rectangle with an origin of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "{0, 0}"
+            },
+            {
+              "type": "text",
+              "text": " and a size that matches the size of the image."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

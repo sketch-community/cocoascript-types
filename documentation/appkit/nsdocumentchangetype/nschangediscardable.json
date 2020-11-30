@@ -1,0 +1,196 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/documents_data_and_pasteboard",
+        "doc://com.apple.documentation/documentation/appkit/nsdocument",
+        "doc://com.apple.documentation/documentation/appkit/nsdocumentchangetype"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nsdocumentchangetype/nschangediscardable",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1515161,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSChangeDiscardable",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@E@NSDocumentChangeType@NSChangeDiscardable",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsdocumentchangetype/nschangediscardable"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsdocument/changetype/changediscardable"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/documents_data_and_pasteboard": {
+      "title": "Documents, Data, and Pasteboard",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/documents_data_and_pasteboard",
+      "url": "/documentation/appkit/documents_data_and_pasteboard",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdocument": {
+      "title": "NSDocument",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocument",
+      "url": "/documentation/appkit/nsdocument",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdocumentchangetype": {
+      "title": "NSDocumentChangeType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocumentchangetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdocumentchangetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate a document’s edit status. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "NSChangeDiscardable"
+            },
+            {
+              "kind": "text",
+              "text": " = 256"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A discardable change has been done. Discardable changes cause the document to be edited. In a locked document, for example, discardable changes may be thrown away instead of prompting the user to save them. Combine this value with the appropriate kind of change, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSChangeDone"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSChangeUndone"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSChangeRedone"
+            },
+            {
+              "type": "text",
+              "text": ", using the C bitwise OR operator. For example, a discardable change is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSChangeDone | NSChangeDiscardable"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Handle events related to mouse, keyboard, and trackpad input."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/mouse_keyboard_and_trackpad",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2870797,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Mouse, Keyboard, and Trackpad",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/mouse_keyboard_and_trackpad"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/mouse_keyboard_and_trackpad"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder": {
+      "title": "NSResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that forms the basis of event and command processing in AppKit. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplication": {
+      "title": "NSApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplication"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow": {
+      "title": "NSWindow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsview": {
+      "title": "NSView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsview"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsevent": {
+      "title": "NSEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about an input action, such as a mouse click or a key press. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstouch": {
+      "title": "NSTouch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstouch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A snapshot of a particular touch at an instant in time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nspressureconfiguration": {
+      "title": "NSPressureConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nspressureconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nspressureconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An encapsulation of the behavior and progression of a Force Touch trackpad as it responds to specific events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nshapticfeedbackmanager": {
+      "title": "NSHapticFeedbackManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nshapticfeedbackmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nshapticfeedbackmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides access to the haptic feedback management attributes on a system with a Force Touch trackpad."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventmask": {
+      "title": "NSEventMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that you use to filter out specific event types from the stream of incoming events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventbuttonmask": {
+      "title": "NSEventButtonMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventbuttonmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventbuttonmask"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventmodifierflags": {
+      "title": "NSEventModifierFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventmodifierflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventmodifierflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags that represent key states in an event object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventphase": {
+      "title": "NSEventPhase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventphase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventphase",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that represent the possible phases during an event phase."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions": {
+      "title": "NSEventSwipeTrackingOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventswipetrackingoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify swipe-tracking options."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/1525407-nseventmaskfromtype": {
+      "title": "NSEventMaskFromType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1525407-nseventmaskfromtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/1525407-nseventmaskfromtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the event mask for the specified type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/mouse_keyboard_and_trackpad": {
+      "title": "Mouse, Keyboard, and Trackpad",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/mouse_keyboard_and_trackpad",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/mouse_keyboard_and_trackpad",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handle events related to mouse, keyboard, and trackpad input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/menus_cursors_and_the_dock": {
+      "title": "Menus, Cursors, and the Dock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/menus_cursors_and_the_dock",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/menus_cursors_and_the_dock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement menus and cursors to facilitate interactions with your app, and use your app's Dock tile to convey updated information. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/gestures": {
+      "title": "Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/gestures",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encapsulate your app's event-handling logic in gesture recognizers so that you can reuse that code throughout your app. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/touch_bar": {
+      "title": "Touch Bar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/touch_bar",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/touch_bar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display interactive content and controls in the Touch Bar. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/drag_and_drop": {
+      "title": "Drag and Drop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/drag_and_drop",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/drag_and_drop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Support the direct manipulation of your app's content using drag and drop. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
+      "title": "Accessibility for macOS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/accessibility_for_macos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make your apps accessible to everyone who uses macOS apps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 beta 1"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Responder Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsresponder"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Mouse, Keyboard, and Touch Events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsevent",
+        "doc://com.apple.documentation/documentation/appkit/nstouch"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Trackpad",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nspressureconfiguration",
+        "doc://com.apple.documentation/documentation/appkit/nshapticfeedbackmanager"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nseventmask",
+        "doc://com.apple.documentation/documentation/appkit/nseventbuttonmask",
+        "doc://com.apple.documentation/documentation/appkit/nseventmodifierflags",
+        "doc://com.apple.documentation/documentation/appkit/nseventphase",
+        "doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions",
+        "doc://com.apple.documentation/documentation/appkit/1525407-nseventmaskfromtype"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/menus_cursors_and_the_dock",
+        "doc://com.apple.documentation/documentation/appkit/gestures",
+        "doc://com.apple.documentation/documentation/appkit/touch_bar",
+        "doc://com.apple.documentation/documentation/appkit/drag_and_drop",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+      ],
+      "title": "User Interactions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder"
+            },
+            {
+              "type": "text",
+              "text": " class defines the responder chain, an ordered list of objects that respond to user events. When the user clicks the mouse button, taps on the trackpad, or presses a key, an event is generated and passed up the responder chain in search of an object that can respond to it. Any object that handles events must inherit from the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder"
+            },
+            {
+              "type": "text",
+              "text": " class. The core AppKit classes, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsview"
+            },
+            {
+              "type": "text",
+              "text": ", inherit from "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication"
+            },
+            {
+              "type": "text",
+              "text": " object maintains a list of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow"
+            },
+            {
+              "type": "text",
+              "text": " objects—one for each window belonging to the app—and each "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow"
+            },
+            {
+              "type": "text",
+              "text": " object maintains a hierarchy of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsview"
+            },
+            {
+              "type": "text",
+              "text": " objects. This view hierarchy is used for both drawing the user interface and for handling events. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow"
+            },
+            {
+              "type": "text",
+              "text": " object handles window-level events and distributes other events to its views. An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow"
+            },
+            {
+              "type": "text",
+              "text": " object also has a delegate allowing you to customize its behavior."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

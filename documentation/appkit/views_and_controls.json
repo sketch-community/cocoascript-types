@@ -1,0 +1,980 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Present your content onscreen and define the interactions allowed with that content."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2870789,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Views and Controls",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/views_and_controls"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/views_and_controls"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsview": {
+      "title": "NSView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The infrastructure for drawing, printing, and handling events in an app. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimage": {
+      "title": "NSImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimage"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscontrol": {
+      "title": "NSControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A definition of the fundamental behavior for controls, which are specialized views that notify your app of relevant events by using the target-action design pattern. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscell": {
+      "title": "NSCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mechanism for displaying text or images in a view object without the overhead of a full "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsview"
+        },
+        {
+          "type": "text",
+          "text": " subclass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsactioncell": {
+      "title": "NSActionCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsactioncell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsactioncell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An active area inside a control. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/grid_view": {
+      "title": "Grid View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/grid_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/grid_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Arrange views in a flexible grid, and handle the layout associated with those views. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nssplitview": {
+      "title": "NSSplitView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssplitview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nssplitview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that arranges two or more views in a linear stack running horizontally or vertically. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view": {
+      "title": "Organize Your User Interface with a Stack View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Group individual views in your app’s user interface into a scrollable stack view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstackview": {
+      "title": "NSStackView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstackview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstackview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that arranges an array of views horizontally or vertically and updates their placement and sizing when the window size changes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstabview": {
+      "title": "NSTabView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstabview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstabview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A multipage interface that displays one page at a time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/scroll_view": {
+      "title": "Scroll View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/scroll_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/scroll_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide an interface for navigating content that is too large to fit in the available space. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/browser_view": {
+      "title": "Browser View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/browser_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/browser_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a column-based interface for viewing and navigating hierarchical information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view": {
+      "title": "Collection View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/collection_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display one or more subviews in a highly configurable arrangement.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/outline_view": {
+      "title": "Outline View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/outline_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/outline_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display a list-based interface for hierarchical data, where each level of hierarchy is indented from the previous one."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/table_view": {
+      "title": "Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/table_view",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display custom data in rows and columns. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextview": {
+      "title": "NSTextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that draws text and handles user interactions with that text. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsopenglview": {
+      "title": "NSOpenGLView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsopenglview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsopenglview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that displays OpenGL content in a view. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbutton": {
+      "title": "NSButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A control that defines an area on the screen that can be used to trigger actions. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscolorwell": {
+      "title": "NSColorWell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscolorwell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscolorwell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A control that displays a color value and lets the user change that color value. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/date_picker": {
+      "title": "Date Picker",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/date_picker",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/date_picker",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display a calendar date and provide controls for editing the date value. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimageview": {
+      "title": "NSImageView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimageview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimageview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A display of image data from an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsimage"
+        },
+        {
+          "type": "text",
+          "text": " object in a frame. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nslevelindicator": {
+      "title": "NSLevelIndicator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nslevelindicator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nslevelindicator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A visual representation of a level or quantity, using discrete values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/path_control": {
+      "title": "Path Control",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/path_control",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/path_control",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A display of a file system path or virtual path information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nspopupbutton": {
+      "title": "NSPopUpButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nspopupbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nspopupbutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A control for selecting an item from a list."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsprogressindicator": {
+      "title": "NSProgressIndicator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsprogressindicator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsprogressindicator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface that provides visual feedback to the user about the status of an ongoing task. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsruleeditor": {
+      "title": "NSRuleEditor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsruleeditor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsruleeditor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for configuring a rule-based list of options. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nspredicateeditor": {
+      "title": "NSPredicateEditor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nspredicateeditor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nspredicateeditor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A defined set of rules that allows the editing of predicate objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/search_field": {
+      "title": "Search Field",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/search_field",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/search_field",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a text field that is optimized for text-based search interfaces.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol": {
+      "title": "NSSegmentedControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nssegmentedcontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display one or more buttons in a single horizontal group. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/slider": {
+      "title": "Slider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/slider",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/slider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display a range of values from which the user selects a single value. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsstepper": {
+      "title": "NSStepper",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsstepper",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsstepper",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface with up and down arrow buttons for incrementing or decrementing a value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/text_field": {
+      "title": "Text Field",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/text_field",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/text_field",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a simple interface for displaying and editing text, including support for password fields and secure forms of text entry.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/token_field": {
+      "title": "Token Field",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/token_field",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/token_field",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a text field whose text can be rendered in a visually distinct way so that users can recognize portions more easily. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar": {
+      "title": "Toolbar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/mac_catalyst/toolbar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a space for controls under a window's title bar and above your custom content.    "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/combo_box": {
+      "title": "Combo Box",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/combo_box",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls/combo_box",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display a list of values in a pop-up menu that lets the user select a value or type in a custom value. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsmatrix": {
+      "title": "NSMatrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmatrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsmatrix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A legacy interface for grouping radio buttons or other types of cells together. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsswitch": {
+      "title": "NSSwitch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsswitch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsswitch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A control that offers a binary choice."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsdictionaryofvariablebindings": {
+      "title": "NSDictionaryOfVariableBindings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdictionaryofvariablebindings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdictionaryofvariablebindings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a dictionary wherein the keys are string representations of the corresponding values’ variable names."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsuserinterfacecompression": {
+      "title": "NSUserInterfaceCompression",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsuserinterfacecompression",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsuserinterfacecompression",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that describes how a UI control should redisplay when space is restricted. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsvisualeffectview": {
+      "title": "NSVisualEffectView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsvisualeffectview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsvisualeffectview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that adds translucency and vibrancy effects to the views in your interface. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsbox": {
+      "title": "NSBox",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsbox",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsbox",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A stylized rectangular box with an optional title."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsuserinterfacevalidations": {
+      "title": "NSUserInterfaceValidations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsuserinterfacevalidations",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsuserinterfacevalidations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that a custom class can adopt to manage the enabled state of a UI element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsvalidateduserinterfaceitem": {
+      "title": "NSValidatedUserInterfaceItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsvalidateduserinterfaceitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsvalidateduserinterfaceitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that a custom class can adopt to manage the automatic enablement of a UI control."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsviewtooltipowner": {
+      "title": "NSViewToolTipOwner",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsviewtooltipowner",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsviewtooltipowner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods for dynamically associating a tool tip with a view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls": {
+      "title": "Views and Controls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Present your content onscreen and define the interactions allowed with that content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/view_management": {
+      "title": "View Management",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/view_management",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/view_management",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage your user interface, including the size and position of views in a window. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/view_layout": {
+      "title": "View Layout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/view_layout",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/view_layout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Position and size views using a stack view or Auto Layout constraints. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/appearance_customization": {
+      "title": "Appearance Customization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/appearance_customization",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/appearance_customization",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add Dark Mode support to your app, and use appearance proxies to modify your UI."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/animation": {
+      "title": "Animation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/animation",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/animation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Animate your views and other content to create a more engaging experience for users. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/windows_panels_and_screens": {
+      "title": "Windows, Panels, and Screens",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/windows_panels_and_screens",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/windows_panels_and_screens",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Organize your view hierarchies and facilitate their display onscreen. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/sound_speech_and_haptics": {
+      "title": "Sound, Speech, and Haptics",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/sound_speech_and_haptics",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/sound_speech_and_haptics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Play sounds and haptic feedback, and incorporate speech recognition and synthesis into your interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/xcode/localizing_your_app": {
+      "title": "Localizing Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xcode/localizing_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/xcode/localizing_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make your app available to an international audience by adapting it to multiple languages, regions, and cultures."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app": {
+      "title": "Supporting Continuity Camera in Your Mac App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/appkit/supporting_continuity_camera_in_your_mac_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Incorporate scanned documents and pictures taken with a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 beta 1"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "View Fundamentals",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsview",
+        "doc://com.apple.documentation/documentation/appkit/nscontrol",
+        "doc://com.apple.documentation/documentation/appkit/nscell",
+        "doc://com.apple.documentation/documentation/appkit/nsactioncell"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Container Views",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/grid_view",
+        "doc://com.apple.documentation/documentation/appkit/nssplitview",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/organize_your_user_interface_with_a_stack_view",
+        "doc://com.apple.documentation/documentation/appkit/nsstackview",
+        "doc://com.apple.documentation/documentation/appkit/nstabview",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/scroll_view"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use container views to arrange the views of your interface and to facilitate navigation among those views. "
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Content Views",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/browser_view",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/outline_view",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/table_view",
+        "doc://com.apple.documentation/documentation/appkit/nstextview",
+        "doc://com.apple.documentation/documentation/appkit/nsopenglview"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use content views to organize and display your app's data. "
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Controls",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsbutton",
+        "doc://com.apple.documentation/documentation/appkit/nscolorwell",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/date_picker",
+        "doc://com.apple.documentation/documentation/appkit/nsimageview",
+        "doc://com.apple.documentation/documentation/appkit/nslevelindicator",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/path_control",
+        "doc://com.apple.documentation/documentation/appkit/nspopupbutton",
+        "doc://com.apple.documentation/documentation/appkit/nsprogressindicator",
+        "doc://com.apple.documentation/documentation/appkit/nsruleeditor",
+        "doc://com.apple.documentation/documentation/appkit/nspredicateeditor",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/search_field",
+        "doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/slider",
+        "doc://com.apple.documentation/documentation/appkit/nsstepper",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/text_field",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/token_field",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst/toolbar",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/combo_box",
+        "doc://com.apple.documentation/documentation/appkit/nsmatrix",
+        "doc://com.apple.documentation/documentation/appkit/nsswitch"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use controls to handle specific types of user interactions. Controls are specialized views that use the target-action design pattern to notify your app of interactions with their content."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "View Layout",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsdictionaryofvariablebindings",
+        "doc://com.apple.documentation/documentation/appkit/nsuserinterfacecompression"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Visual Adornments",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsvisualeffectview",
+        "doc://com.apple.documentation/documentation/appkit/nsbox"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add purely decorative elements to your user interface."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "UI Validation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsuserinterfacevalidations",
+        "doc://com.apple.documentation/documentation/appkit/nsvalidateduserinterfaceitem"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Tool Tips",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsviewtooltipowner"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/view_management",
+        "doc://com.apple.documentation/documentation/appkit/view_layout",
+        "doc://com.apple.documentation/documentation/appkit/appearance_customization",
+        "doc://com.apple.documentation/documentation/appkit/animation",
+        "doc://com.apple.documentation/documentation/appkit/windows_panels_and_screens",
+        "doc://com.apple.documentation/documentation/appkit/sound_speech_and_haptics",
+        "doc://com.apple.documentation/documentation/xcode/localizing_your_app",
+        "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app"
+      ],
+      "title": "User Interface",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

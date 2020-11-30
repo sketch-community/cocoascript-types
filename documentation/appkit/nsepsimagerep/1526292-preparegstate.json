@@ -1,0 +1,230 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Implemented by subclasses to configure the graphics state prior to drawing."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/images_and_pdf",
+        "doc://com.apple.documentation/documentation/appkit/nsepsimagerep"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nsepsimagerep/1526292-preparegstate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1526292,
+  "kind": "symbol",
+  "metadata": {
+    "title": "prepareGState",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "10.10",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:objc(cs)NSEPSImageRep(im)prepareGState",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsepsimagerep/1526292-preparegstate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsepsimagerep/1526292-preparegstate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/images_and_pdf": {
+      "title": "Images and PDF",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/images_and_pdf",
+      "url": "/documentation/appkit/images_and_pdf",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsepsimagerep": {
+      "title": "NSEPSImageRep",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsepsimagerep",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsepsimagerep"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimagerep/1526674-draw": {
+      "title": "draw",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimagerep/1526674-draw",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimagerep/1526674-draw",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "draw"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsepsimagerep/1526292-preparegstate": {
+      "title": "prepareGState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsepsimagerep/1526292-preparegstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsepsimagerep/1526292-preparegstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implemented by subclasses to configure the graphics state prior to drawing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareGState"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "prepareGState"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsimagerep/1526674-draw"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsepsimagerep"
+            },
+            {
+              "type": "text",
+              "text": " sends this message to itself just before rendering the EPS code. The default implementation of this method does nothing. You can override it in your subclass to prepare the graphics state as needed."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

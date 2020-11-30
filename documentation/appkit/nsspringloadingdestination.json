@@ -1,0 +1,422 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A set of methods that the destination object (or recipient) of a dragged object can implement to support spring-loading."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/drag_and_drop"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1416052,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSSpringLoadingDestination",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.11",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(pl)NSSpringLoadingDestination",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsspringloadingdestination"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsspringloadingdestination"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/drag_and_drop": {
+      "title": "Drag and Drop",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/drag_and_drop",
+      "url": "/documentation/appkit/drag_and_drop",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416106-springloadingactivated": {
+      "title": "springLoadingActivated:draggingInfo:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416106-springloadingactivated",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspringloadingdestination/1416106-springloadingactivated",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Responds to the activation or deactivation of spring-loading on a destination."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "springLoadingActivated:draggingInfo:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416062-springloadinghighlightchanged": {
+      "title": "springLoadingHighlightChanged:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416062-springloadinghighlightchanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspringloadingdestination/1416062-springloadinghighlightchanged",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the destination’s user interface to display a new highlighting style during a spring-loading operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "springLoadingHighlightChanged:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415996-springloadingentered": {
+      "title": "springLoadingEntered:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415996-springloadingentered",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspringloadingdestination/1415996-springloadingentered",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether to enable or disable spring-loading when a drag enters the bounds of the spring-loading destination."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "springLoadingEntered:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415976-springloadingupdated": {
+      "title": "springLoadingUpdated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415976-springloadingupdated",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspringloadingdestination/1415976-springloadingupdated",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether to enable or disable spring-loading as a drag moves within the bounds of the spring-loading destination or "
+        },
+        {
+          "type": "codeVoice",
+          "code": "draggingInfo"
+        },
+        {
+          "type": "text",
+          "text": " changes during the drag."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "springLoadingUpdated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415972-springloadingexited": {
+      "title": "springLoadingExited:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415972-springloadingexited",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspringloadingdestination/1415972-springloadingexited",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Responds when a drag exits the bounds of the spring-loading destination."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "springLoadingExited:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416047-draggingended": {
+      "title": "draggingEnded:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416047-draggingended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspringloadingdestination/1416047-draggingended",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Responds to the end of a drag operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "draggingEnded:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspringloadingoptions": {
+      "title": "NSSpringLoadingOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspringloadingoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspringloadingoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants denote the type of spring-loading behavior configured for the destination object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdraggingdestination": {
+      "title": "NSDraggingDestination",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdraggingdestination",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdraggingdestination",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that the destination object (or recipient) of a dragged image must implement. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsdragginginfo": {
+      "title": "NSDraggingInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdragginginfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsdragginginfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that supply information about a dragging session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination": {
+      "title": "NSSpringLoadingDestination",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspringloadingdestination",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that the destination object (or recipient) of a dragged object can implement to support spring-loading."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Respond to Spring-loading Events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416106-springloadingactivated",
+        "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416062-springloadinghighlightchanged",
+        "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415996-springloadingentered",
+        "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415976-springloadingupdated",
+        "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1415972-springloadingexited",
+        "doc://com.apple.documentation/documentation/appkit/nsspringloadingdestination/1416047-draggingended"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsspringloadingoptions"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsdraggingdestination",
+        "doc://com.apple.documentation/documentation/appkit/nsdragginginfo"
+      ],
+      "title": "Drop Targets",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSSpringLoadingDestination"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Spring-loading is the act of dragging an object onto a destination object and hovering or force-clicking to activate the destination object A view can be configured as a drag-and-drop destination, a spring-loading destination, or both. If a view implements both drag-and-drop and spring-loading, then it will receive messages for both operations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that the view beneath the cursor during a drag receives priority. For example, if a parent view implements drag-and-drop and a subview implements spring-loading, then the parent view will not receive drag-and-drop messages while the cursor is over the subview."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

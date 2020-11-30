@@ -1,0 +1,949 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Incorporate scanned documents and pictures taken with a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/images_and_pdf"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3122956,
+  "kind": "article",
+  "metadata": {
+    "title": "Supporting Continuity Camera in Your Mac App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/supporting_continuity_camera_in_your_mac_app",
+        "documentation/appkit/images_and_pdf/supporting_continuity_camera_in_your_mac_app",
+        "documentation/avfoundation/cameras_and_media_capture/supporting_continuity_camera_in_your_mac_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/supporting_continuity_camera_in_your_mac_app",
+        "documentation/appkit/images_and_pdf/supporting_continuity_camera_in_your_mac_app",
+        "documentation/avfoundation/cameras_and_media_capture/supporting_continuity_camera_in_your_mac_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/images_and_pdf": {
+      "title": "Images and PDF",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/images_and_pdf",
+      "url": "/documentation/appkit/images_and_pdf",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1524638-validrequestorforsendtype": {
+      "title": "validRequestorForSendType:returnType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1524638-validrequestorforsendtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1524638-validrequestorforsendtype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "validRequestorForSendType:returnType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3130973": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3130973",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3130973"
+    },
+    "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3138005": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3138005",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3138005"
+    },
+    "link-media-3150811": {
+      "identifier": "link-media-3150811",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3150811"
+    },
+    "media-3150811": {
+      "identifier": "media-3150811",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1360,
+            "height": 545
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4cc360e57f/4aa09710-13c8-4b26-a3df-f2fe5f3f511e.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1360,
+            "height": 545
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1d27bcf333/12fc405b-60b5-40f7-b229-2cb3fe5ecd4f.png"
+        }
+      ],
+      "alt": "Screenshot of a storyboard for an app's menus, showing the settings described in the preceding steps.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1524634-mousedown": {
+      "title": "mouseDown:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1524634-mousedown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1524634-mousedown",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "mouseDown:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsmenu/1518170-popupcontextmenu": {
+      "title": "popUpContextMenu:withEvent:forView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenu/1518170-popupcontextmenu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsmenu/1518170-popupcontextmenu",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "popUpContextMenu:withEvent:forView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3137968": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3137968",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3137968"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsservicesmenurequestor/1428481-readselectionfrompasteboard": {
+      "title": "readSelectionFromPasteboard:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsservicesmenurequestor/1428481-readselectionfrompasteboard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsservicesmenurequestor/1428481-readselectionfrompasteboard",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "readSelectionFromPasteboard:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3136371": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3136371",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3136371"
+    },
+    "link-media-3162218": {
+      "identifier": "link-media-3162218",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/appkit/supporting_continuity_camera_in_your_mac_app#3162218"
+    },
+    "media-3162218": {
+      "identifier": "media-3162218",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 603,
+            "height": 387
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1f2e3b7ad0/26a6f7ea-b5d3-4b19-b58a-5b1b284d4fa4.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 603,
+            "height": 387
+          },
+          "url": "https://docs-assets.developer.apple.com/published/efa7c58033/d102c7a9-53de-4f75-a97f-221b5f927348.png"
+        }
+      ],
+      "alt": "Screenshot showing a text view in which the user has control-clicked to display the Continuity Camera dialog for taking a photo on an iOS device. The dialog shows the name of the iOS device where the photo will be taken and a cancel button to allow the user to dismiss the dialog without actually taking a photo.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls": {
+      "title": "Views and Controls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/views_and_controls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Present your content onscreen and define the interactions allowed with that content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/view_management": {
+      "title": "View Management",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/view_management",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/view_management",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage your user interface, including the size and position of views in a window. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/view_layout": {
+      "title": "View Layout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/view_layout",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/view_layout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Position and size views using a stack view or Auto Layout constraints. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/appearance_customization": {
+      "title": "Appearance Customization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/appearance_customization",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/appearance_customization",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add Dark Mode support to your app, and use appearance proxies to modify your UI."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/animation": {
+      "title": "Animation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/animation",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/animation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Animate your views and other content to create a more engaging experience for users. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/windows_panels_and_screens": {
+      "title": "Windows, Panels, and Screens",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/windows_panels_and_screens",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/windows_panels_and_screens",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Organize your view hierarchies and facilitate their display onscreen. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/sound_speech_and_haptics": {
+      "title": "Sound, Speech, and Haptics",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/sound_speech_and_haptics",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/sound_speech_and_haptics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Play sounds and haptic feedback, and incorporate speech recognition and synthesis into your interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/xcode/localizing_your_app": {
+      "title": "Localizing Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xcode/localizing_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/xcode/localizing_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make your app available to an international audience by adapting it to multiple languages, regions, and cultures."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app": {
+      "title": "Supporting Continuity Camera in Your Mac App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/supporting_continuity_camera_in_your_mac_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/appkit/supporting_continuity_camera_in_your_mac_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Incorporate scanned documents and pictures taken with a user's iPhone, iPad, or iPod touch into your Mac app using Continuity Camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+        "doc://com.apple.documentation/documentation/appkit/view_management",
+        "doc://com.apple.documentation/documentation/appkit/view_layout",
+        "doc://com.apple.documentation/documentation/appkit/appearance_customization",
+        "doc://com.apple.documentation/documentation/appkit/animation",
+        "doc://com.apple.documentation/documentation/appkit/windows_panels_and_screens",
+        "doc://com.apple.documentation/documentation/appkit/sound_speech_and_haptics",
+        "doc://com.apple.documentation/documentation/xcode/localizing_your_app"
+      ],
+      "title": "User Interface",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With Continuity Camera in macOS 10.14 and later, and iOS 12 and later, you can use your iPhone, iPad, or iPod touch to scan documents or take a picture of something nearby and then access those documents or pictures instantly from your app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app works with images, this feature can be a convenient way to get images into the app. For example, a text-editing app could use this feature to easily incorporate images into a document. It could also be a handy way to bring images into a social media app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apps using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSTextView"
+            },
+            {
+              "type": "text",
+              "text": " get Continuity Camera support automatically. When the user control-clicks in an app’s text view, a Continuity Camera menu item is automatically displayed. The user can then capture a photo or scan a document on their iPhone or iPad. Once a photo or scan is taken, it automatically appears in the text view. The image is then accessible as an attachment in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSTextView"
+            },
+            {
+              "type": "text",
+              "text": " text storage object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3162218",
+              "metadata": {
+                "anchor": "3162218",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you’re not using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSTextView"
+            },
+            {
+              "type": "text",
+              "text": ", you need to add support to your macOS interface to enable Continuity Camera and to merge photos taken from the user’s iOS device."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable Support in Your Responder Objects",
+          "anchor": "3130972"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You must tell AppKit that your app can take advantage of any image data originating from Continuity Camera. You do this in responder objects; for example, in a view controller."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the Continuity Camera menu item is displayed, AppKit calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1524638-validrequestorforsendtype"
+            },
+            {
+              "type": "text",
+              "text": " method of your responder objects in the current responder chain to find an object that can handle image data generated by Continuity Camera. Override this method to let AppKit know that your responder object supports image data produced by Continuity Camera. When the user actually captures a photo or scans a document using Continuity Camera, AppKit places the image data on the pasteboard and calls the designated responder object to handle the data. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your responder’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validRequestor(forSendType:returnType:)"
+            },
+            {
+              "type": "text",
+              "text": " implementation must verify that it can receive pasteboard image data of the specified type, then return the object to receive the image data when it's placed on the pasteboard by AppKit. Your "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validRequestor(forSendType:returnType:)"
+            },
+            {
+              "type": "text",
+              "text": " method can designate the same receiver object to handle the image data. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here’s an example implementation:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any? {",
+            "    if let pasteboardType = returnType,",
+            "        // Service is image related.",
+            "        NSImage.imageTypes.contains(pasteboardType.rawValue) {",
+            "        return self  // This object can receive image data.",
+            "    } else {",
+            "        // Let objects in the responder chain handle the message.",
+            "        return super.validRequestor(forSendType: sendType, returnType: returnType)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3130973",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that your "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validRequestor(forSendType:returnType:)"
+            },
+            {
+              "type": "text",
+              "text": " method can return a different object to receive the image data. For example, implement the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validRequestor(forSendType:returnType:)"
+            },
+            {
+              "type": "text",
+              "text": " method in your view controller and perform the checks, but return a view object to actually incorporate the data. You could also return a parent or managing object instead. To illustrate, this code implements "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validRequestor(forSendType:returnType:)"
+            },
+            {
+              "type": "text",
+              "text": " in a window controller but returns the active view controller to target the pasted image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any? {",
+            "    if let pasteboardType = returnType,",
+            "        // Service is image related.",
+            "        NSImage.imageTypes.contains(pasteboardType.rawValue) {",
+            "        // Specify the active view controller to receive the image data.",
+            "        return self.contentViewController  ",
+            "    } else {",
+            "        // Let objects in the responder chain handle the message.",
+            "        return super.validRequestor(forSendType: sendType, returnType: returnType)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138005",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you implement "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validRequestor(forSendType:returnType:)"
+            },
+            {
+              "type": "text",
+              "text": " and specify an object to receive the image data, AppKit enables the Continuity Camera menu item for the designated menus in your app, including contextual menus associated with your view."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Continuity Camera Menu Item",
+          "anchor": "3122952"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The user initiates Continuity Camera by using a menu item in one of your app’s menu-bar menus or contextual menus. You can add a Continuity Camera menu item to any of your app’s menu-bar menus, or have AppKit automatically add a Continuity Camera menu item to one of your app's contextual menus. A good place to include a Continuity Camera menu item is in menus that contain options for performing editing-related activities (for example, the File and Insert menus)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add a Continuity Camera menu item to one of your app’s menu-bar menus, locate the storyboard file where your menu bar is defined, and follow these steps in Interface Builder:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add an item to your app’s menu."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the name of the item; for example, “Take Picture.” AppKit provides the actual name later."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Identity inspector, set the Identifier property of the menu item to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSMenuItemImportFromDeviceIdentifier "
+                    },
+                    {
+                      "type": "text",
+                      "text": "(defined in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSMenuItem.h"
+                    },
+                    {
+                      "type": "text",
+                      "text": "). "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here’s how it looks:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3150811",
+              "metadata": {
+                "anchor": "3150811",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You don’t add a Continuity Camera menu item directly to your app’s contextual menus. Instead, you enable the appropriate support in your app’s responder objects as described in the previous section, and AppKit adds the menu item for you. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the following code demonstrates how to display a contextual menu in response to a mouse-down event, and have AppKit insert the menu item. This code overrides the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1524634-mousedown"
+            },
+            {
+              "type": "text",
+              "text": " method and creates a menu. It then invokes the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSMenu"
+            },
+            {
+              "type": "text",
+              "text": " class method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsmenu/1518170-popupcontextmenu"
+            },
+            {
+              "type": "text",
+              "text": ", passing the event object related to the mouse-down event and the view owning the contextual menu. AppKit automatically inserts the Continuity Camera menu item in the contextual menu for you."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func mouseDown(with event: NSEvent) {    ",
+            "    let theMenu = NSMenu(title: \"Contextual Menu\")",
+            "    /*",
+            "     Display a contextual menu over the view for the mouse-down event.",
+            "     AppKit automatically inserts the Continuity Camera menu item.",
+            "     */",
+            "    NSMenu.popUpContextMenu(theMenu, with: event, for: self.view)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3137968",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user selects the Continuity Camera menu item, the system automatically launches the Continuity Camera interface on the user's device. After the user captures an image, AppKit places that image on the app's pasteboard. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Incorporate the Image Data from the Pasteboard",
+          "anchor": "3130974"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You need to incorporate images captured from Continuity Camera into your app. Images captured from the user’s iOS device using Continuity Camera are placed on the pasteboard. AppKit then calls the active responder object’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsservicesmenurequestor/1428481-readselectionfrompasteboard"
+            },
+            {
+              "type": "text",
+              "text": " method to read the image data. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "readSelection(from:)"
+            },
+            {
+              "type": "text",
+              "text": " method supports Continuity Camera image data and other types of data in your app. Use that method to determine if the image is in a format your app supports, and incorporate that image data into your app. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here's an example implementation of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "readSelection(from:)"
+            },
+            {
+              "type": "text",
+              "text": " method:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func readSelection(from pasteboard: NSPasteboard) -> Bool {",
+            "    // Verify that the pasteboard contains image data.",
+            "    guard pasteboard.canReadItem(withDataConformingToTypes: NSImage.imageTypes) else {",
+            "        return false",
+            "    }",
+            "    // Load the image.",
+            "    guard let image = NSImage(pasteboard: pasteboard) else {",
+            "        return false",
+            "    }",
+            "    // Incorporate the image into the app.",
+            "    self.myImageView.image = image",
+            "    // This method has successfully read the pasteboard data.",
+            "    return true",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3136371",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

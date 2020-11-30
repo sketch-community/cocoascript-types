@@ -1,0 +1,968 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that manages the timing and progress of animations in the user interface."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/animation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nsanimation",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1526948,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSAnimation",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSAnimation",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsanimation"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nsanimation"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/animation": {
+      "title": "Animation",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/animation",
+      "url": "/documentation/appkit/animation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimationprogressmarknotification": {
+      "title": "NSAnimationProgressMarkNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimationprogressmarknotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimationprogressmarknotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the current progress of a running animation reaches one of its progress marks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1530843-currentprogress": {
+      "title": "currentProgress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1530843-currentprogress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1530843-currentprogress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current progress of the animation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1531043-currentvalue": {
+      "title": "currentValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1531043-currentvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1531043-currentvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current value of the animation effect, based on the current progress"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimationdelegate/1528965-animation": {
+      "title": "animation:valueForProgress:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimationdelegate/1528965-animation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimationdelegate/1528965-animation",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "animation:valueForProgress:"
+        }
+      ]
+    },
+    "devLink-1729539": {
+      "identifier": "devLink-1729539",
+      "type": "link",
+      "title": "Animation Programming Guide for Cocoa",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AnimationGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003592"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation": {
+      "title": "NSAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages the timing and progress of animations in the user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nstimer": {
+      "title": "NSTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nstimer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nstimer"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscoding": {
+      "title": "NSCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1530069-initwithduration": {
+      "title": "initWithDuration:animationCurve:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1530069-initwithduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1530069-initwithduration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSAnimation"
+        },
+        {
+          "type": "text",
+          "text": " object initialized with the specified duration and animation-curve values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithDuration:animationCurve:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1533725-animationblockingmode": {
+      "title": "animationBlockingMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1533725-animationblockingmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1533725-animationblockingmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The blocking mode of the animation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1526965-runloopmodesforanimating": {
+      "title": "runLoopModesForAnimating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1526965-runloopmodesforanimating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1526965-runloopmodesforanimating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of strings representing the run loop modes in which the animation can run."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1535321-animationcurve": {
+      "title": "animationCurve",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1535321-animationcurve",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1535321-animationcurve",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The timing curve for the animation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1535110-duration": {
+      "title": "duration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1535110-duration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1535110-duration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The duration of the animation, in seconds."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1526694-framerate": {
+      "title": "frameRate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1526694-framerate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1526694-framerate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of frame updates per second to generate for the animation. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1524439-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1524439-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1524439-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The animation delegate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1529209-startanimation": {
+      "title": "startAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1529209-startanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1529209-startanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts the animation represented by the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startAnimation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1528672-stopanimation": {
+      "title": "stopAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1528672-stopanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1528672-stopanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stops the animation represented by the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopAnimation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1527492-animating": {
+      "title": "animating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1527492-animating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1527492-animating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether the animation is in progress."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1526360-addprogressmark": {
+      "title": "addProgressMark:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1526360-addprogressmark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1526360-addprogressmark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds the progress mark to the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addProgressMark:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1528288-removeprogressmark": {
+      "title": "removeProgressMark:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1528288-removeprogressmark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1528288-removeprogressmark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes progress mark from the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeProgressMark:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1533642-progressmarks": {
+      "title": "progressMarks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1533642-progressmarks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1533642-progressmarks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of floating-point numbers representing current progress marks. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1526774-startwhenanimation": {
+      "title": "startWhenAnimation:reachesProgress:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1526774-startwhenanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1526774-startwhenanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts running the animation represented by the receiver when another animation reaches a specific progress mark."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startWhenAnimation:reachesProgress:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1530363-stopwhenanimation": {
+      "title": "stopWhenAnimation:reachesProgress:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1530363-stopwhenanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1530363-stopwhenanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stops running the animation represented by the receiver when another animation reaches a specific progress mark."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopWhenAnimation:reachesProgress:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1535932-clearstartanimation": {
+      "title": "clearStartAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1535932-clearstartanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1535932-clearstartanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Clears linkage to another animation that causes the receiver to start."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "clearStartAnimation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1524448-clearstopanimation": {
+      "title": "clearStopAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1524448-clearstopanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1524448-clearstopanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Clears linkage to another animation that causes the receiver to stop. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "clearStopAnimation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimationcurve": {
+      "title": "NSAnimationCurve",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimationcurve",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimationcurve",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants describe the curve of an animation—that is, the relative speed of an animation from start to finish."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimationblockingmode": {
+      "title": "NSAnimationBlockingMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimationblockingmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimationblockingmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants indicate the blocking mode of an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSAnimation"
+        },
+        {
+          "type": "text",
+          "text": " object when it is running. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimationprogress": {
+      "title": "NSAnimationProgress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimationprogress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimationprogress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The animation progress, as a floating-point number between "
+        },
+        {
+          "type": "codeVoice",
+          "code": "0.0"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "1.0"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/nsanimationprogressmark_notification_key": {
+      "title": "NSAnimationProgressMark Notification Key",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/nsanimationprogressmark_notification_key",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/appkit/nsanimation/nsanimationprogressmark_notification_key",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This constant is returned in the userInfo dictionary of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimationprogressmarknotification"
+        },
+        {
+          "type": "text",
+          "text": " notification."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimation/1643460-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1643460-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimation/1643460-initwithcoder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsanimationdelegate": {
+      "title": "NSAnimationDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimationdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsanimationdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods implemented by delegates of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation"
+        },
+        {
+          "type": "text",
+          "text": " objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 beta 1"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscoding",
+        "doc://com.apple.documentation/documentation/foundation/nscopying"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializing an NSAnimation Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1530069-initwithduration"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring an Animation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1533725-animationblockingmode",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1526965-runloopmodesforanimating",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1535321-animationcurve",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1535110-duration",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1526694-framerate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Delegate",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1524439-delegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Controlling and Monitoring an Animation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1529209-startanimation",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1528672-stopanimation",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1527492-animating",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1530843-currentprogress",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1531043-currentvalue"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Progress Marks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1526360-addprogressmark",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1528288-removeprogressmark",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1533642-progressmarks"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Linking Animations Together",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1526774-startwhenanimation",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1530363-stopwhenanimation",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1535932-clearstartanimation",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1524448-clearstopanimation"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimationcurve",
+        "doc://com.apple.documentation/documentation/appkit/nsanimationblockingmode",
+        "doc://com.apple.documentation/documentation/appkit/nsanimationprogress",
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/nsanimationprogressmark_notification_key"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Notifications",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimationprogressmarknotification"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimation/1643460-initwithcoder"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsanimationdelegate"
+      ],
+      "title": "Custom Animations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSAnimation"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation"
+            },
+            {
+              "type": "text",
+              "text": " also lets you link together multiple animations so that when one animation ends another one starts. It does not provide any drawing support for animation and does not directly deal with views, targets, or actions. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For simple tasks requiring a timing mechanism, consider using "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nstimer"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation"
+            },
+            {
+              "type": "text",
+              "text": " objects have several characteristics, including duration, frame rate, and animation curve, which describes the relative speed of the animation over its course. You can set progress marks in an animation, each of which specifies a percentage of the animation completed; when an animation reaches a progress mark, it notifies its delegate and posts a notification to any observers. Animations execute in one of three blocking modes: blocking, non-blocking on the main thread, and non-blocking on a separate thread. The non-blocking modes permit the handling of user events while the animation is running."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1651628"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The usual usage pattern for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSAnimation"
+            },
+            {
+              "type": "text",
+              "text": " is to make a subclass that overrides (at least) the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1530843-currentprogress"
+            },
+            {
+              "type": "text",
+              "text": " property to invoke the superclass implementation and then perform whatever animation action is needed. The method implementation might use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimation/1531043-currentvalue"
+            },
+            {
+              "type": "text",
+              "text": " property and then use that value to update some drawing; as a consequence of getting the current value, the method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsanimationdelegate/1528965-animation"
+            },
+            {
+              "type": "text",
+              "text": " is sent to the delegate (if there is a delegate that implements the method). For more information on subclassing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSAnimation"
+            },
+            {
+              "type": "text",
+              "text": ", see "
+            },
+            {
+              "type": "link",
+              "title": "Animation Programming Guide for Cocoa",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AnimationGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003592"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}
