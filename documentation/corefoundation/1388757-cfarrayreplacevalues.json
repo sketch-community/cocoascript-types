@@ -1,0 +1,592 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Replaces a range of values in an array."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/1388757-cfarrayreplacevalues",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1388757,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFArrayReplaceValues",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@CFArrayReplaceValues",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/1388757-cfarrayreplacevalues"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/1388757-cfarrayreplacevalues"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray": {
+      "title": "CFMutableArray",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray",
+      "url": "/documentation/corefoundation/cfmutablearray",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablearrayref": {
+      "title": "CFMutableArrayRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablearrayref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfmutablearrayref"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrange": {
+      "title": "CFRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfrange"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfindex": {
+      "title": "CFIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfindex"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388803-cfarrayappendarray": {
+      "title": "CFArrayAppendArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388803-cfarrayappendarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388803-cfarrayappendarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds the values from one array to another array."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388802-cfarrayappendvalue": {
+      "title": "CFArrayAppendValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388802-cfarrayappendvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388802-cfarrayappendvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a value to an array giving it the new largest index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388770-cfarraycreatemutable": {
+      "title": "CFArrayCreateMutable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388770-cfarraycreatemutable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388770-cfarraycreatemutable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new empty mutable array."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388800-cfarraycreatemutablecopy": {
+      "title": "CFArrayCreateMutableCopy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388800-cfarraycreatemutablecopy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388800-cfarraycreatemutablecopy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new mutable array with the values from another array."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388739-cfarrayexchangevaluesatindices": {
+      "title": "CFArrayExchangeValuesAtIndices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388739-cfarrayexchangevaluesatindices",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388739-cfarrayexchangevaluesatindices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Exchanges the values at two indices of an array."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388747-cfarrayinsertvalueatindex": {
+      "title": "CFArrayInsertValueAtIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388747-cfarrayinsertvalueatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388747-cfarrayinsertvalueatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a value into an array at a given index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388798-cfarrayremoveallvalues": {
+      "title": "CFArrayRemoveAllValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388798-cfarrayremoveallvalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388798-cfarrayremoveallvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes all the values from an array, making it empty."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388765-cfarrayremovevalueatindex": {
+      "title": "CFArrayRemoveValueAtIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388765-cfarrayremovevalueatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388765-cfarrayremovevalueatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the value at a given index from an array."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388757-cfarrayreplacevalues": {
+      "title": "CFArrayReplaceValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388757-cfarrayreplacevalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388757-cfarrayreplacevalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replaces a range of values in an array."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388759-cfarraysetvalueatindex": {
+      "title": "CFArraySetValueAtIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388759-cfarraysetvalueatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388759-cfarraysetvalueatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the value at a given index in an array."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1388749-cfarraysortvalues": {
+      "title": "CFArraySortValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1388749-cfarraysortvalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1388749-cfarraysortvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sorts the values in an array using a given comparison function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1388803-cfarrayappendarray",
+        "doc://com.apple.documentation/documentation/corefoundation/1388802-cfarrayappendvalue",
+        "doc://com.apple.documentation/documentation/corefoundation/1388770-cfarraycreatemutable",
+        "doc://com.apple.documentation/documentation/corefoundation/1388800-cfarraycreatemutablecopy",
+        "doc://com.apple.documentation/documentation/corefoundation/1388739-cfarrayexchangevaluesatindices",
+        "doc://com.apple.documentation/documentation/corefoundation/1388747-cfarrayinsertvalueatindex",
+        "doc://com.apple.documentation/documentation/corefoundation/1388798-cfarrayremoveallvalues",
+        "doc://com.apple.documentation/documentation/corefoundation/1388765-cfarrayremovevalueatindex",
+        "doc://com.apple.documentation/documentation/corefoundation/1388759-cfarraysetvalueatindex",
+        "doc://com.apple.documentation/documentation/corefoundation/1388749-cfarraysortvalues"
+      ],
+      "title": "CFMutableArray Miscellaneous Functions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "CFArrayReplaceValues"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFMutableArrayRef",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablearrayref",
+              "text": "CFMutableArrayRef"
+            },
+            {
+              "kind": "text",
+              "text": " theArray, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFRange",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrange",
+              "text": "CFRange"
+            },
+            {
+              "kind": "text",
+              "text": " range, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " **newValues, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFIndex",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+              "text": "CFIndex"
+            },
+            {
+              "kind": "text",
+              "text": " newCount);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "theArray",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The array in which some values are to be replaced. If this parameter is not a valid CFMutableArray object, the behavior is undefined. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "range",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The range of values within "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "theArray"
+                },
+                {
+                  "type": "text",
+                  "text": " to replace. The range location or end point (defined by the location plus length minus 1) must not lie outside the index space of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "theArray"
+                },
+                {
+                  "type": "text",
+                  "text": " ("
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0"
+                },
+                {
+                  "type": "text",
+                  "text": " to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "N-1"
+                },
+                {
+                  "type": "text",
+                  "text": " inclusive, where "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "N"
+                },
+                {
+                  "type": "text",
+                  "text": " is the count of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "theArray"
+                },
+                {
+                  "type": "text",
+                  "text": "). The range length must not be negative. The range may be empty (length 0), in which case the new values are merely inserted at the range location. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "newValues",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A C array of the pointer-sized values to be placed into "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "theArray"
+                },
+                {
+                  "type": "text",
+                  "text": ". The new values in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "theArray"
+                },
+                {
+                  "type": "text",
+                  "text": " are ordered in the same order in which they appear in this C array. This parameter may be "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "newCount"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter is 0. This C array is not changed or freed by this function. If this parameter is not a valid pointer to a C array of at least "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "newCount"
+                },
+                {
+                  "type": "text",
+                  "text": " pointers, the behavior is undefined."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "newCount",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of values to copy from the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "newValues"
+                },
+                {
+                  "type": "text",
+                  "text": " C array into "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "theArray"
+                },
+                {
+                  "type": "text",
+                  "text": ". If this parameter is different from the range length, the excess "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "newCount"
+                },
+                {
+                  "type": "text",
+                  "text": " values are inserted after the range or the excess range values are deleted. This parameter may be 0, in which case no new values are replaced into "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "theArray"
+                },
+                {
+                  "type": "text",
+                  "text": " and the values in the range are simply removed. If this parameter is negative or greater than the number of values actually in the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "newValues"
+                },
+                {
+                  "type": "text",
+                  "text": " C array, the behavior is undefined. "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

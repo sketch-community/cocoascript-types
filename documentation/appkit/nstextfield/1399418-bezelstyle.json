@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The receiver’s bezel style."
+      "text": "The text field’s bezel style, square or rounded."
     }
   ],
   "documentVersion": 0,
@@ -103,7 +103,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text that the user can select or edit and that sends its action message to its target when the user presses the Return key."
+          "text": "Text the user can select or edit to send an action message to a target when the user presses the Return key."
         }
       ]
     },
@@ -123,14 +123,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle": {
-      "title": "NSTextFieldBezelStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextfieldbezelstyle"
-    },
     "doc://com.apple.documentation/documentation/appkit/nstextfield/1399435-bezeled": {
       "title": "bezeled",
       "type": "topic",
@@ -141,7 +133,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean that controls whether the receiver draws a bezeled border around its contents."
+          "text": "A Boolean value that controls whether the text field draws a bezeled background around its contents."
         }
       ]
     },
@@ -153,6 +145,56 @@
       "role": "symbol",
       "url": "/documentation/objectivec/yes"
     },
+    "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle": {
+      "title": "NSTextFieldBezelStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfieldbezelstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style of bezel the text field displays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle/nstextfieldroundedbezel": {
+      "title": "NSTextFieldRoundedBezel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle/nstextfieldroundedbezel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfieldbezelstyle/nstextfieldroundedbezel"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399389-backgroundcolor": {
+      "title": "backgroundColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399389-backgroundcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield/1399389-backgroundcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The color of the background the text field’s cell draws behind the text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399416-drawsbackground": {
+      "title": "drawsBackground",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399416-drawsbackground",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield/1399416-drawsbackground",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text field’s cell draws a background color behind the text."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nstextfield/1399418-bezelstyle": {
       "title": "bezelStyle",
       "type": "topic",
@@ -163,21 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The receiver’s bezel style."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399403-bordered": {
-      "title": "bordered",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399403-bordered",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextfield/1399403-bordered",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean that controls whether the receiver draws a solid black border around its contents."
+          "text": "The text field’s bezel style, square or rounded."
         }
       ]
     },
@@ -192,10 +220,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextfield/1399389-backgroundcolor",
+        "doc://com.apple.documentation/documentation/appkit/nstextfield/1399416-drawsbackground",
         "doc://com.apple.documentation/documentation/appkit/nstextfield/1399435-bezeled",
-        "doc://com.apple.documentation/documentation/appkit/nstextfield/1399403-bordered"
+        "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle"
       ],
-      "title": "Setting a Border",
+      "title": "Controlling the Background",
       "generated": true
     }
   ],
@@ -255,24 +285,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Possible values for "
-            },
-            {
-              "type": "codeVoice",
-              "code": "style"
-            },
-            {
-              "type": "text",
-              "text": " are described in "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle"
-            },
-            {
-              "type": "text",
-              "text": ". You must have already sent the receiver "
+              "text": "To enable a bezel for a text field, set "
             },
             {
               "type": "reference",
@@ -281,14 +294,52 @@
             },
             {
               "type": "text",
-              "text": " with an argument of "
+              "text": " to "
             },
             {
               "type": "reference",
               "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ", then set the bezel style. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle"
+            },
+            {
+              "type": "text",
+              "text": " for available bezel styles."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "When you set this property to "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle/nstextfieldroundedbezel"
+                },
+                {
+                  "type": "text",
+                  "text": ", the text field doesn’t wrap the text. It displays using a single line."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
         }
       ]
     }

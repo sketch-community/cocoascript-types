@@ -1,0 +1,507 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Extend the standard drag-and-drop support for text views to include custom types of content."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/drag_and_drop_customization",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2891977,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Drag and Drop Customization",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/text_display_and_fonts/drag_and_drop_customization"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/text_display_and_fonts/drag_and_drop_customization"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
+      "title": "Text Display and Fonts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+      "url": "/documentation/uikit/text_display_and_fonts",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield": {
+      "title": "UITextField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that displays an editable text area in your interface.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextview": {
+      "title": "UITextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A scrollable, multiline text region. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdragdelegate": {
+      "title": "UITextDragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdragdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for customizing the behavior of a drag activity for a text view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdropdelegate": {
+      "title": "UITextDropDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdropdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdropdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for configuring a text view’s drop behavior."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdraggable": {
+      "title": "UITextDraggable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdraggable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdraggable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface that determines if a text view is a drag source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdragoptions": {
+      "title": "UITextDragOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdragoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdragoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of options that determine the behavior of a draggable text view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdroppable": {
+      "title": "UITextDroppable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdroppable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdroppable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface that determines if a text view is a drop destination."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdropeditability": {
+      "title": "UITextDropEditability",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdropeditability",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdropeditability",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text-drop editability styles for noneditable text views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdragrequest": {
+      "title": "UITextDragRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdragrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdragrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for describing the attributes of a drag activity originating in a text view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdragpreviewrenderer": {
+      "title": "UITextDragPreviewRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdragpreviewrenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdragpreviewrenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Renders previews of text dragged by the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdroprequest": {
+      "title": "UITextDropRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdroprequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdroprequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for specifying the attributes of a drop request for a text view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdropproposal": {
+      "title": "UITextDropProposal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdropproposal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdropproposal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A proposed configuration for the behavior of a text drop interaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdropaction": {
+      "title": "UITextDropAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdropaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdropaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text drop action styles for text views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdropperformer": {
+      "title": "UITextDropPerformer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdropperformer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdropperformer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The performers that are responsible for handling the drop operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextdropprogressmode": {
+      "title": "UITextDropProgressMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdropprogressmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextdropprogressmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text drop progress styles for user-visible progress indication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextpasteitem": {
+      "title": "UITextPasteItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextpasteitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextpasteitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for obtaining information about, and interacting with, a text item for pasting or dropping."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchtextfieldpasteitem": {
+      "title": "UISearchTextFieldPasteItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtextfieldpasteitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchtextfieldpasteitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that supports pasting tokens."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextpastedelegate": {
+      "title": "UITextPasteDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextpastedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextpastedelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for handling pasting and dropping of text, using item providers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextpasteconfigurationsupporting": {
+      "title": "UITextPasteConfigurationSupporting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextpasteconfigurationsupporting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextpasteconfigurationsupporting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for text-oriented responder objects to participate in the unified paste and drop system in iOS."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilabel": {
+      "title": "UILabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that displays one or more lines of informational text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/drag_and_drop_customization": {
+      "title": "Drag and Drop Customization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/drag_and_drop_customization",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/text_display_and_fonts/drag_and_drop_customization",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extend the standard drag-and-drop support for text views to include custom types of content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Text View Additions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextdragdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uitextdropdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uitextdraggable",
+        "doc://com.apple.documentation/documentation/uikit/uitextdragoptions",
+        "doc://com.apple.documentation/documentation/uikit/uitextdroppable",
+        "doc://com.apple.documentation/documentation/uikit/uitextdropeditability"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drag Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextdragrequest",
+        "doc://com.apple.documentation/documentation/uikit/uitextdragpreviewrenderer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drop Management",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextdroprequest",
+        "doc://com.apple.documentation/documentation/uikit/uitextdropproposal",
+        "doc://com.apple.documentation/documentation/uikit/uitextdropaction",
+        "doc://com.apple.documentation/documentation/uikit/uitextdropperformer",
+        "doc://com.apple.documentation/documentation/uikit/uitextdropprogressmode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Pasteboard Support",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextpasteitem",
+        "doc://com.apple.documentation/documentation/uikit/uisearchtextfieldpasteitem",
+        "doc://com.apple.documentation/documentation/uikit/uitextpastedelegate",
+        "doc://com.apple.documentation/documentation/uikit/uitextpasteconfigurationsupporting"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uilabel",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield",
+        "doc://com.apple.documentation/documentation/uikit/uitextview"
+      ],
+      "title": "Text Views",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview"
+            },
+            {
+              "type": "text",
+              "text": " classes provide built-in support for dragging and dropping text and images. You can extend this support to your own custom data types by adding a text drag delegate or text drop delegate to your views. Your text drag delegate adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdragdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol and is responsible for providing the items to be dragged. Your text drop delegate adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextdropdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol and handles drops containing items with your custom data types. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

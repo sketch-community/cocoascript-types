@@ -1,0 +1,886 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Capture Apple Pencil and touch input in views."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3038751,
+  "kind": "article",
+  "metadata": {
+    "title": "Illustrating the Force, Altitude, and Azimuth Properties of Touch Input",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "10.1",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3138971": {
+      "identifier": "link-media-3138971",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138971"
+    },
+    "media-3138971": {
+      "identifier": "media-3138971",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 213,
+            "height": 204
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e12509da0d/a5fd5d35-e055-482d-91a3-d305159aab60.png"
+        }
+      ],
+      "alt": "Diagram of how the sample project visualizes force for line width",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch/1618110-force": {
+      "title": "force",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618110-force",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch/1618110-force"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch": {
+      "title": "UITouch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing the location, size, movement, and force of a touch occurring on the screen. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138972": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138972",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138972"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138973": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138973",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138973"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138974": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138974",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138974"
+    },
+    "link-media-3138976": {
+      "identifier": "link-media-3138976",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138976"
+    },
+    "media-3138976": {
+      "identifier": "media-3138976",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 213,
+            "height": 185
+          },
+          "url": "https://docs-assets.developer.apple.com/published/892da3c0eb/c13b56ca-d89b-4bc5-b673-8f965b7ce63a.png"
+        }
+      ],
+      "alt": "Diagram of how the sample project visualizes Apple Pencil’s altitude and azimuth",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch/1618118-altitudeangle": {
+      "title": "altitudeAngle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618118-altitudeangle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch/1618118-altitudeangle"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138977": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138977",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138977"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138978": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138978",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138978"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch/1618131-azimuthangleinview": {
+      "title": "azimuthAngleInView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618131-azimuthangleinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch/1618131-azimuthangleinview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "azimuthAngleInView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch/1618133-azimuthunitvectorinview": {
+      "title": "azimuthUnitVectorInView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618133-azimuthunitvectorinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch/1618133-azimuthunitvectorinview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "azimuthUnitVectorInView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138979": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138979",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138979"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138980": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138980",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138980"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uievent": {
+      "title": "UIEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uievent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uievent"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uievent/1613814-predictedtouchesfortouch": {
+      "title": "predictedTouchesForTouch:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uievent/1613814-predictedtouchesfortouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uievent/1613814-predictedtouchesfortouch",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "predictedTouchesForTouch:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uievent/1613808-coalescedtouchesfortouch": {
+      "title": "coalescedTouchesForTouch:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uievent/1613808-coalescedtouchesfortouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uievent/1613808-coalescedtouchesfortouch",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "coalescedTouchesForTouch:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/pencil_interactions": {
+      "title": "Pencil Interactions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/pencil_interactions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/pencil_interactions"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138982": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138982",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input#3138982"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps": {
+      "title": "Leveraging Touch Input for Drawing Apps",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Capture touches as a series of strokes and render them efficiently on a drawing canvas."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view": {
+      "title": "Handling Touches in Your View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use touch events directly on a view subclass if touch handling is intricately linked to the view's content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/pencil_interactions/handling_input_from_apple_pencil": {
+      "title": "Handling Input from Apple Pencil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/pencil_interactions/handling_input_from_apple_pencil",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/pencil_interactions/handling_input_from_apple_pencil",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to detect and respond to touches from Apple Pencil."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/tracking_the_force_of_3d_touch_events": {
+      "title": "Tracking the Force of 3D Touch Events",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/tracking_the_force_of_3d_touch_events",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/tracking_the_force_of_3d_touch_events",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manipulate your content based on the force of touches. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input": {
+      "title": "Illustrating the Force, Altitude, and Azimuth Properties of Touch Input",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Capture Apple Pencil and touch input in views."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/1456e25a59/IllustratingTheForceAltitudeAndAzimuthPropertiesOfTouchInput.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/1456e25a59/IllustratingTheForceAltitudeAndAzimuthPropertiesOfTouchInput.zip",
+      "checksum": "25fce8362783a268c8c13140874fe7ac7ea41c201513ad3b0e60fb99bd2f01e5c0642b678956abed425ef4edd8e73916c64f44f1d13ceeb53144371162bfee9a",
+      "url": "https://docs-assets.developer.apple.com/published/1456e25a59/IllustratingTheForceAltitudeAndAzimuthPropertiesOfTouchInput.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/1456e25a59/IllustratingTheForceAltitudeAndAzimuthPropertiesOfTouchInput.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+        "doc://com.apple.documentation/documentation/uikit/pencil_interactions/handling_input_from_apple_pencil",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/tracking_the_force_of_3d_touch_events",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps",
+        "doc://com.apple.documentation/documentation/uikit/uitouch"
+      ],
+      "title": "Touches",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Touch Canvas illustrates responsive handling of Apple Pencil and touch input, focusing on the force, altitude, and azimuth properties of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITouch"
+            },
+            {
+              "type": "text",
+              "text": ". The sample creates a visualization of force using line thickness, and creates a visualization of altitude and azimuth with an interactive diagram. To build on the concepts demonstrated in this sample and learn about using Apple Pencil and touch input in a drawing app, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Calculate the Force of a Touch",
+          "anchor": "3138985"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use the force of a touch applied by a finger on 3D Touch-enabled devices or from the tip of Apple Pencil to create effects in your app. For example, the force of a touch can change the width of a line on a canvas."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3138971",
+              "metadata": {
+                "anchor": "3138971",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The current force is reported by the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618110-force"
+            },
+            {
+              "type": "text",
+              "text": " property of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "force = touch.force"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138972",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The force value input affects the result of handling a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITouch"
+            },
+            {
+              "type": "text",
+              "text": ". In this sample, force is interpreted as a value representing the magnitude of a point in a line,  including a lower bound on the force value usable by the app."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var magnitude: CGFloat {",
+            "    return max(force, 0.025)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138973",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample uses the magnitude value to affect drawing on the canvas, including the line width value."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "context.setLineWidth(point.magnitude)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138974",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Visualization of Apple Pencil’s Altitude and Azimuth",
+          "anchor": "3138986"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Touch Canvas contains a visualization of the altitude and azimuth for Apple Pencil as you draw on the screen when the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Debug"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " mode is enabled.  This visualization is a diagram which continuously updates based on Apple Pencil’s motion."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3138976",
+              "metadata": {
+                "anchor": "3138976",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apple Pencil reports its altitude as an angle relative to the device surface through the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618118-altitudeangle"
+            },
+            {
+              "type": "text",
+              "text": " property on "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITouch"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let altitudeAngle = touch.altitudeAngle"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138977",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this sample project, the line length extends to the edge of the diagram when Apple Pencil is fully horizontal. If Apple Pencil is perfectly vertical, the line length reduces to a dot under Apple Pencil’s tip. The line length calculation transforms the altitude angle relative to the radius of the diagram."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/*",
+            " Make the length of the indicator's line representative of the `altitudeAngle`. When the angle is",
+            " zero radians (parallel to the screen surface) the line will be at its longest. At `.pi` / 2 radians,",
+            " only the dot on top of the indicator will be visible directly beneath the touch location.",
+            " */",
+            "let altitudeRadius = (1.0 - altitudeAngle / ( CGFloat.pi / 2)) * radius",
+            "var lineTransform = CGAffineTransform(scaleX: altitudeRadius, y: 1)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138978",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apple Pencil reports its direction, or azimuth, relative to the view Apple Pencil interacts with. A drawing app might use azimuth information to change the shape or strength of a particular drawing tool. Access the azimuth information with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618131-azimuthangleinview"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618133-azimuthunitvectorinview"
+            },
+            {
+              "type": "text",
+              "text": " methods of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITouch"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let azimuthAngle = touch.azimuthAngle(in: canvasView)",
+            "let azimuthUnitVector = touch.azimuthUnitVector(in: canvasView)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138979",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The interactive diagram demonstrates how altitude, azimuth angle, and azimuth unit vector values can be used together. Here, the azimuth angle rotates around the diagram opposite the actual azimuth value, and the dot at the end of the altitude line moves by combining the altitude and azimuth unit vector properties. A transform efficiently applies the calculated rotation of the line and position of the dot to the diagram so that it remains responsive to small changes in Apple Pencil’s position."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Draw the azimuth indicator line as opposite the azimuth by rotating `.pi` radians, for easy visualization.",
+            "var rotationTransform = CGAffineTransform(rotationAngle: azimuthAngle)",
+            "rotationTransform = rotationTransform.rotated(by: CGFloat.pi)",
+            "",
+            "var dotPositionTransform = CGAffineTransform(translationX: -azimuthUnitVector.dx * altitudeRadius, y: -azimuthUnitVector.dy * altitudeRadius)",
+            "dotPositionTransform = dotPositionTransform.concatenating(centeringTransform)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138980",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Toggle Debug Drawing",
+          "anchor": "3138987"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Touch Canvas contains a debug drawing mode that allows you to view the operation of the properties in detail for different types of input, such as the difference between strokes drawn at different speeds with Apple Pencil. The debug mode enables the interactive diagram for altitude and azimuth, and changes the color of individual line segments to identify if the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uievent"
+            },
+            {
+              "type": "text",
+              "text": " for the line segment included data from "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uievent/1613814-predictedtouchesfortouch"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uievent/1613808-coalescedtouchesfortouch"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample uses the double-tap feature of the second generation Apple Pencil to toggle "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Debug"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " mode when the user configures the preferred double tap action to switch tools. The sample app ignores the other preferred actions. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/pencil_interactions"
+            },
+            {
+              "type": "text",
+              "text": " for more information."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func pencilInteractionDidTap(_ interaction: UIPencilInteraction) {",
+            "    guard UIPencilInteraction.preferredTapAction == .switchPrevious else { return }",
+            "    ",
+            "    /* The tap interaction is a quick way for the user to switch tools within an app.",
+            "     Toggling the debug drawing mode from Apple Pencil is a discoverable action, as the button",
+            "     for debug mode is on screen and visually changes to indicate what the tap interaction did.",
+            "     */",
+            "    toggleDebugDrawing(sender: debugButton)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138982",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

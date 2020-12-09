@@ -1,0 +1,1345 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A general-purpose recorder of operations that enables undo and redo. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/task_management"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsundomanager",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1412398,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSUndoManager",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "3.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSUndoManager",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsundomanager"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/undomanager"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management": {
+      "title": "Task Management",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management",
+      "url": "/documentation/foundation/task_management",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1410826-undonestedgroup": {
+      "title": "undoNestedGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1410826-undonestedgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1410826-undonestedgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the undo operations in the last undo group (whether top-level or nested), recording the operations on the redo stack as a single group."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "undoNestedGroup"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1414001-registerundowithtarget": {
+      "title": "registerUndoWithTarget:selector:object:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1414001-registerundowithtarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1414001-registerundowithtarget",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers the selector of the specified target to implement a single undo operation that the target receives."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerUndoWithTarget:selector:object:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412189-undo": {
+      "title": "undo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412189-undo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1412189-undo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Closes the top-level undo group if necessary and invokes "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1410826-undonestedgroup"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "undo"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417030-redo": {
+      "title": "redo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417030-redo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1417030-redo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the operations in the last group on the redo stack, if there are any, recording them on the undo stack as a single group."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "redo"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415212-canredo": {
+      "title": "canRedo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415212-canredo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1415212-canredo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver has any actions to redo."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409894-beginundogrouping": {
+      "title": "beginUndoGrouping",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409894-beginundogrouping",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1409894-beginundogrouping",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Marks the beginning of an undo group."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "beginUndoGrouping"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1416490-endundogrouping": {
+      "title": "endUndoGrouping",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1416490-endundogrouping",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1416490-endundogrouping",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Marks the end of an undo group."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "endUndoGrouping"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager#1663976": {
+      "title": "Registering Undo Operations",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager#1663976",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/foundation/nsundomanager#1663976"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager": {
+      "title": "NSUndoManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general-purpose recorder of operations that enables undo and redo. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1437863-registerundowithtarget": {
+      "title": "registerUndoWithTarget:handler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1437863-registerundowithtarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1437863-registerundowithtarget",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Records a single undo operation for a given target so that when an undo is performed, it executes the specified block."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerUndoWithTarget:handler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409564-preparewithinvocationtarget": {
+      "title": "prepareWithInvocationTarget:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409564-preparewithinvocationtarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1409564-preparewithinvocationtarget",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prepares the undo manager for invocation-based undo with the given target as the subject of the next undo operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareWithInvocationTarget:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412394-canundo": {
+      "title": "canUndo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412394-canundo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1412394-canundo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver has any actions to undo."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409753-levelsofundo": {
+      "title": "levelsOfUndo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409753-levelsofundo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1409753-levelsofundo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The maximum number of top-level undo groups the receiver holds."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417407-groupsbyevent": {
+      "title": "groupsByEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417407-groupsbyevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1417407-groupsbyevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver automatically creates undo groups around each pass of the run loop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409006-groupinglevel": {
+      "title": "groupingLevel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409006-groupinglevel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1409006-groupinglevel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of nested undo groups (or redo groups, if Redo was invoked last) in the current event loop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412239-disableundoregistration": {
+      "title": "disableUndoRegistration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412239-disableundoregistration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1412239-disableundoregistration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disables the recording of undo operations, whether by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1414001-registerundowithtarget"
+        },
+        {
+          "type": "text",
+          "text": " or by invocation-based undo."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "disableUndoRegistration"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1408957-enableundoregistration": {
+      "title": "enableUndoRegistration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1408957-enableundoregistration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1408957-enableundoregistration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables the recording of undo operations."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enableUndoRegistration"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415464-undoregistrationenabled": {
+      "title": "undoRegistrationEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415464-undoregistrationenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1415464-undoregistrationenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the recording of undo operations is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407345-undoing": {
+      "title": "undoing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407345-undoing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1407345-undoing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the receiver is in the process of performing its "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412189-undo"
+        },
+        {
+          "type": "text",
+          "text": " or "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1410826-undonestedgroup"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1411654-redoing": {
+      "title": "redoing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1411654-redoing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1411654-redoing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the receiver is in the process of performing its "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417030-redo"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407442-removeallactions": {
+      "title": "removeAllActions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407442-removeallactions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1407442-removeallactions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Clears the undo and redo stacks and re-enables the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAllActions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409896-removeallactionswithtarget": {
+      "title": "removeAllActionsWithTarget:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409896-removeallactionswithtarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1409896-removeallactionswithtarget",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Clears the undo and redo stacks of all operations involving the specified target as the recipient of the undo message."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAllActionsWithTarget:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415127-undoactionname": {
+      "title": "undoActionName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415127-undoactionname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1415127-undoactionname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name identifying the undo action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417487-redoactionname": {
+      "title": "redoActionName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417487-redoactionname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1417487-redoactionname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name identifying the redo action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412915-setactionname": {
+      "title": "setActionName:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412915-setactionname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1412915-setactionname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the name of the action associated with the Undo or Redo command."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setActionName:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412953-undomenuitemtitle": {
+      "title": "undoMenuItemTitle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412953-undomenuitemtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1412953-undomenuitemtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The complete title of the Undo menu command, for example, “Undo Paste.”"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409938-redomenuitemtitle": {
+      "title": "redoMenuItemTitle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409938-redomenuitemtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1409938-redomenuitemtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The complete title of the Redo menu command, for example, “Redo Paste.”"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1413122-undomenutitleforundoactionname": {
+      "title": "undoMenuTitleForUndoActionName:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1413122-undomenutitleforundoactionname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1413122-undomenutitleforundoactionname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the complete, localized title of the Undo menu command for the action identified by the given name."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "undoMenuTitleForUndoActionName:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407438-redomenutitleforundoactionname": {
+      "title": "redoMenuTitleForUndoActionName:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407438-redomenutitleforundoactionname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1407438-redomenutitleforundoactionname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the complete, localized title of the Redo menu command for the action identified by the given name."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "redoMenuTitleForUndoActionName:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409504-runloopmodes": {
+      "title": "runLoopModes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409504-runloopmodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1409504-runloopmodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The modes governing the types of input handled during a cycle of the run loop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412159-setactionisdiscardable": {
+      "title": "setActionIsDiscardable:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412159-setactionisdiscardable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1412159-setactionisdiscardable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets whether the next undo or redo action is discardable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setActionIsDiscardable:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415261-undoactionisdiscardable": {
+      "title": "undoActionIsDiscardable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415261-undoactionisdiscardable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1415261-undoactionisdiscardable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Boolean value that indicates whether the next undo action is discardable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanager/1413488-redoactionisdiscardable": {
+      "title": "redoActionIsDiscardable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1413488-redoactionisdiscardable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanager/1413488-redoactionisdiscardable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Boolean value that indicates whether the next redo action is discardable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundoclosegroupingrunloopordering": {
+      "title": "NSUndoCloseGroupingRunLoopOrdering",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundoclosegroupingrunloopordering",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundoclosegroupingrunloopordering",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " provides this constant as a convenience; you can use it to compare to values returned by some "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " methods."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagergroupisdiscardablekey": {
+      "title": "NSUndoManagerGroupIsDiscardableKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagergroupisdiscardablekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagergroupisdiscardablekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key has a corresponding value of "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+        },
+        {
+          "type": "text",
+          "text": ", wrapped as a Boolean NSNumber object, if the undo group as a whole is discardable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagercheckpointnotification": {
+      "title": "NSUndoManagerCheckpointNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagercheckpointnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagercheckpointnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted whenever an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " object opens or closes an undo group (except when it opens a top-level group) and when checking the redo stack in "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415212-canredo"
+        },
+        {
+          "type": "text",
+          "text": ". "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidopenundogroupnotification": {
+      "title": "NSUndoManagerDidOpenUndoGroupNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidopenundogroupnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagerdidopenundogroupnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted whenever an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " object opens an undo group, which occurs in the implementation of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409894-beginundogrouping"
+        },
+        {
+          "type": "text",
+          "text": " method. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidredochangenotification": {
+      "title": "NSUndoManagerDidRedoChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidredochangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagerdidredochangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted just after an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " object performs a redo operation ("
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417030-redo"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidundochangenotification": {
+      "title": "NSUndoManagerDidUndoChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidundochangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagerdidundochangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted just after an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " object performs an undo operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillcloseundogroupnotification": {
+      "title": "NSUndoManagerWillCloseUndoGroupNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillcloseundogroupnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagerwillcloseundogroupnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted before an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " object closes an undo group, which occurs in the implementation of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1416490-endundogrouping"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidcloseundogroupnotification": {
+      "title": "NSUndoManagerDidCloseUndoGroupNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidcloseundogroupnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagerdidcloseundogroupnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted after an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " object closes an undo group, which occurs in the implementation of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1416490-endundogrouping"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillredochangenotification": {
+      "title": "NSUndoManagerWillRedoChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillredochangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagerwillredochangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted just before an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " object performs a redo operation ("
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417030-redo"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillundochangenotification": {
+      "title": "NSUndoManagerWillUndoChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillundochangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsundomanagerwillundochangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted just before an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUndoManager"
+        },
+        {
+          "type": "text",
+          "text": " object performs an undo operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Registering Undo Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1437863-registerundowithtarget",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1414001-registerundowithtarget",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409564-preparewithinvocationtarget"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Checking Undo Ability",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412394-canundo",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415212-canredo"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Performing Undo and Redo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412189-undo",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1410826-undonestedgroup",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417030-redo"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Limiting the Undo Stack",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409753-levelsofundo"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Undo Groups",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409894-beginundogrouping",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1416490-endundogrouping",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417407-groupsbyevent",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409006-groupinglevel"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Enabling and Disabling Undo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412239-disableundoregistration",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1408957-enableundoregistration",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415464-undoregistrationenabled"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Checking Whether Undo or Redo Is Being Performed",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407345-undoing",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1411654-redoing"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Clearing Undo Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407442-removeallactions",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409896-removeallactionswithtarget"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Action Name",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415127-undoactionname",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417487-redoactionname",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412915-setactionname"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting and Localizing the Menu Item Title",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412953-undomenuitemtitle",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409938-redomenuitemtitle",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1413122-undomenutitleforundoactionname",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1407438-redomenutitleforundoactionname"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Run Loops",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1409504-runloopmodes"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Discardable Undo and Redo Actions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412159-setactionisdiscardable",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1415261-undoactionisdiscardable",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanager/1413488-redoactionisdiscardable"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundoclosegroupingrunloopordering",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagergroupisdiscardablekey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Notifications",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagercheckpointnotification",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidopenundogroupnotification",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidredochangenotification",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidundochangenotification",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillcloseundogroupnotification",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagerdidcloseundogroupnotification",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillredochangenotification",
+        "doc://com.apple.documentation/documentation/foundation/nsundomanagerwillundochangenotification"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSUndoManager"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You register an undo operation by calling one of the methods described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager#1663976"
+            },
+            {
+              "type": "text",
+              "text": ". You specify the name of the object that’s changing (or the owner of that object) and provide a closure, method, or invocation to revert its state."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you register an undo operation, you can call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1412189-undo"
+            },
+            {
+              "type": "text",
+              "text": " on the undo manager to revert to the state of the last undo operation. When undoing an action, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager"
+            },
+            {
+              "type": "text",
+              "text": " saves the operations you reverted to so that you can call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager/1417030-redo"
+            },
+            {
+              "type": "text",
+              "text": " automatically."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager"
+            },
+            {
+              "type": "text",
+              "text": " is typically used by apps with UI interactions. For example, UIKit implements undo and redo in its text view object, making it easy for you to undo and redo actions in objects along the responder chain. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsundomanager"
+            },
+            {
+              "type": "text",
+              "text": " also serves as a general-purpose state manager, which can be used to undo and redo many kinds of actions. For example, an interactive command-line utility could use this class to undo the last command run, or a networking library could undo a request by sending another request that invalidates the previous one."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

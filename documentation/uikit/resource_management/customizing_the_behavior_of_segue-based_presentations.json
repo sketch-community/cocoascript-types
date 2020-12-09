@@ -1,0 +1,767 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Pass data between view controllers during a segue, and programmatically control when segues occur."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/resource_management"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3370709,
+  "kind": "article",
+  "metadata": {
+    "title": "Customizing the Behavior of Segue-Based Presentations",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations",
+        "documentation/uikit/view_controllers/showing_and_hiding_view_controllers/customizing_the_behavior_of_segue-based_presentations"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations",
+        "documentation/uikit/view_controllers/showing_and_hiding_view_controllers/customizing_the_behavior_of_segue-based_presentations"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/resource_management": {
+      "title": "Resource Management",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/resource_management",
+      "url": "/documentation/uikit/resource_management",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers": {
+      "title": "View Controllers",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers",
+      "url": "/documentation/uikit/view_controllers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers": {
+      "title": "Showing and Hiding View Controllers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/showing_and_hiding_view_controllers"
+    },
+    "doc://com.apple.documentation/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations#3371415": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations#3371415",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations#3371415"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers#3370705": {
+      "title": "Let the Current Context Define the Presentation Technique",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers#3370705",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/view_controllers/showing_and_hiding_view_controllers#3370705"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621377-showviewcontroller": {
+      "title": "showViewController:sender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621377-showviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621377-showviewcontroller",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "showViewController:sender:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uinavigationcontroller": {
+      "title": "UINavigationController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uinavigationcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621432-showdetailviewcontroller": {
+      "title": "showDetailViewController:sender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621432-showdetailviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621432-showdetailviewcontroller",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "showDetailViewController:sender:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisplitviewcontroller": {
+      "title": "UISplitViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisplitviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisplitviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621502-shouldperformseguewithidentifier": {
+      "title": "shouldPerformSegueWithIdentifier:sender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621502-shouldperformseguewithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621502-shouldperformseguewithidentifier",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldPerformSegueWithIdentifier:sender:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621490-prepareforsegue": {
+      "title": "prepareForSegue:sender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621490-prepareforsegue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621490-prepareforsegue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareForSegue:sender:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uistoryboardsegue": {
+      "title": "UIStoryboardSegue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uistoryboardsegue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uistoryboardsegue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that prepares for and performs the visual transition between two view controllers. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations#3370710": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations#3370710",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations#3370710"
+    },
+    "link-media-3379644": {
+      "identifier": "link-media-3379644",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations#3379644"
+    },
+    "media-3379644": {
+      "identifier": "media-3379644",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 722,
+            "height": 346
+          },
+          "url": "https://docs-assets.developer.apple.com/published/69f9c4416f/da891d08-6a39-45a0-a2ac-3dc67a3d6f5c.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 722,
+            "height": 346
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fbd512f311/4a1adacc-4756-4fc9-8697-f5b3c169ca0c.png"
+        }
+      ],
+      "alt": "An illustration of the flow of events that occur when the user triggers a segue. UIKit calls methods of the current view controller to modify the segue's behavior. ",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers#3370707": {
+      "title": "Specify Presentations Visually in Your Storyboard File",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers#3370707",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/view_controllers/showing_and_hiding_view_controllers#3370707"
+    },
+    "doc://com.apple.documentation/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations": {
+      "title": "Customizing the Behavior of Segue-Based Presentations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/resource_management/customizing_the_behavior_of_segue-based_presentations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Pass data between view controllers during a segue, and programmatically control when segues occur."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue": {
+      "title": "Dismissing a View Controller with an Unwind Segue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure an unwind segue in your storyboard file that dynamically chooses the most appropriate view controller to display next."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uistoryboard": {
+      "title": "UIStoryboard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uistoryboard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uistoryboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An encapsulation of the design-time view controller graph represented in an Interface Builder storyboard resource file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uistoryboardunwindseguesource": {
+      "title": "UIStoryboardUnwindSegueSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uistoryboardunwindseguesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uistoryboardunwindseguesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An encapsulation of information about an unwind segue."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uistoryboardviewcontrollercreator": {
+      "title": "UIStoryboardViewControllerCreator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uistoryboardviewcontrollercreator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uistoryboardviewcontrollercreator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A handler block containing the custom initialization code for a view controller you instantiate from a storyboard. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue",
+        "doc://com.apple.documentation/documentation/uikit/uistoryboard",
+        "doc://com.apple.documentation/documentation/uikit/uistoryboardsegue",
+        "doc://com.apple.documentation/documentation/uikit/uistoryboardunwindseguesource",
+        "doc://com.apple.documentation/documentation/uikit/uistoryboardviewcontrollercreator"
+      ],
+      "title": "Storyboards",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user triggers a segue, UIKit presents the view controller using the options found in your storyboard. UIKit also provides opportunities for you to modify the segue process dynamically, either by preventing the segue from occurring or by doing extra work when a segue occurs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information on how to create a segue, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers#3370707"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Presentation Style of the Transition",
+          "anchor": "3370714"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The segue’s type determines what kind of animations UIKit uses when presenting and dismissing the segue, as the table below shows. You specify the type when you create the segue, but you can also change it in the attributes inspector later."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Segue type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Behavior"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Show (Push)"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Displays the view controller modally unless a parent view controller implements the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621377-showviewcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " action method, in which case that view controller defines the presentation behavior. For example, a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uinavigationcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " pushes the new view controller onto its navigation stack."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Show Detail (Replace)"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Displays the view controller modally unless a parent view controller implements the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621432-showdetailviewcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " action method, in which case that view controller defines the presentation behavior. For example, a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uisplitviewcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " replaces its second child view controller (the detail controller) with the new view controller."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Present Modally"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Displays the view controller modally using the specified presentation and transition styles."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Present as Popover"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In a horizontally regular environment, UIKit presents the view controller in a popover. In a horizontally compact environment, UIKit presents the view controller modally."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3371415",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about how UIKit performs segues involving the Show and Show Detail presentation styles, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/showing_and_hiding_view_controllers#3370705"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prevent a Segue Based on Dynamic Conditions",
+          "anchor": "3370711"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you don’t want the user to leave the current view controller, tell UIKit not to perform a segue by returning false from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621502-shouldperformseguewithidentifier"
+            },
+            {
+              "type": "text",
+              "text": " method of the source view controller. Use that method to perform any checks you need to determine whether the segue can proceed. For example, return "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": " if the view controller’s content is invalid and requires corrective user actions. Returning true lets the segue continue, but returning "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": " causes the segue to fail silently."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Pass Data to the Presented View Controller",
+          "anchor": "3370713"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because UIKit creates and presents the view controller automatically during a segue, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621490-prepareforsegue"
+            },
+            {
+              "type": "text",
+              "text": " method to pass any data to that view controller before the segue occurs. Implement the method on the view controller containing the object that initiated the segue. Fetch the new view controller from the provided "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uistoryboardsegue"
+            },
+            {
+              "type": "text",
+              "text": " object, along with information about which segue was triggered. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the following code example, the current view controller fetches the image associated with the selected table row and passes that image to the new view controller. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func prepare(for segue: UIStoryboardSegue, sender: Any?) {",
+            "  // Get the new view controller.",
+            "   if let imageVC = segue.destination as? ImageViewController {",
+            "",
+            "      // Fetch the image for the selected row. ",
+            "      let image = getImageForSelectedRow()",
+            "      imageVC.currentImage = image",
+            "   }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3370710",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the delegate design pattern to pass data from a presented view controller back to the originating view controller. Configure that delegate relationship in your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621490-prepareforsegue"
+            },
+            {
+              "type": "text",
+              "text": " method. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Understand the Sequence of Events During a Segue",
+          "anchor": "3370712"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although UIKit handles segues automatically, there are many places where you can perform work related to displaying the new view controller. The following figure shows the flow of events that happens from the time the user triggers a segue until the process is complete. The main place to perform perform segue-related actions is the current view controller’s prepareForSegue:sender: method, but you also may perform tasks during the creation of the new view controller. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3379644",
+              "metadata": {
+                "anchor": "3379644",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

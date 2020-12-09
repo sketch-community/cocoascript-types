@@ -1,0 +1,675 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provide automatic search completions based on a user’s partial search query, and search the map for relevant locations nearby."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3026242,
+  "kind": "article",
+  "metadata": {
+    "title": "Searching for Nearby Points of Interest",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "MapKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/mapkit/searching_for_nearby_points_of_interest"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/mapkit/searching_for_nearby_points_of_interest"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkit": {
+      "title": "MapKit",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit",
+      "url": "/documentation/mapkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter": {
+      "title": "MKLocalSearchCompleter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompleter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object for generating a list of completion strings based on a partial search string that you provide.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452555-queryfragment": {
+      "title": "queryFragment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452555-queryfragment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompleter/1452555-queryfragment"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchresultsupdating": {
+      "title": "UISearchResultsUpdating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchresultsupdating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchresultsupdating"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest#3539979": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest#3539979",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/searching_for_nearby_points_of_interest#3539979"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion": {
+      "title": "MKLocalSearchCompletion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompletion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A fully-formed string that completes a partial string. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterdelegate": {
+      "title": "MKLocalSearchCompleterDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompleterdelegate"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest#3539981": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest#3539981",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/searching_for_nearby_points_of_interest#3539981"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1451935-titlehighlightranges": {
+      "title": "titleHighlightRanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1451935-titlehighlightranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompletion/1451935-titlehighlightranges"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1452489-subtitlehighlightranges": {
+      "title": "subtitleHighlightRanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1452489-subtitlehighlightranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompletion/1452489-subtitlehighlightranges"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring": {
+      "title": "NSAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest#3539983": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest#3539983",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/searching_for_nearby_points_of_interest#3539983"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest": {
+      "title": "MKLocalSearchRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchrequest"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapitem": {
+      "title": "MKMapItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapitem"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearch/1452652-startwithcompletionhandler": {
+      "title": "startWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearch/1452652-startwithcompletionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearch/1452652-startwithcompletionhandler",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearch": {
+      "title": "MKLocalSearch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object for initiating map-based searches and processing the results. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest#3539985": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest#3539985",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/searching_for_nearby_points_of_interest#3539985"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest": {
+      "title": "Searching for Nearby Points of Interest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/mapkit/searching_for_nearby_points_of_interest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide automatic search completions based on a user’s partial search query, and search the map for relevant locations nearby."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest": {
+      "title": "MKLocalPointsOfInterestRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalpointsofinterestrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structured request to use when searching for points of interest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchresulttype": {
+      "title": "MKLocalSearchResultType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchresulttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchresulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that indicate types of search results."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype": {
+      "title": "MKLocalSearchCompleterResultType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompleterresulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that indicate types of search completions."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/6fdf16580d/SearchingForNearbyPointsOfInterest.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/6fdf16580d/SearchingForNearbyPointsOfInterest.zip",
+      "checksum": "6e92dd7b077683b28ab548f36e3fad28ca8469e2813cce69127f4efa7ca7ab3da0842295564decebafc623e3ed87c23872f6d826082e0de7b1ef05a6360b58b5",
+      "url": "https://docs-assets.developer.apple.com/published/6fdf16580d/SearchingForNearbyPointsOfInterest.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/6fdf16580d/SearchingForNearbyPointsOfInterest.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearch",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearchresulttype",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion"
+      ],
+      "title": "Local Search",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The MapSearch code sample demonstrates how to programmatically search for map-based addresses and points of interest using a natural language string. The places found are centered around the user’s current location."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Request Search Completions",
+          "anchor": "3539988"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter"
+            },
+            {
+              "type": "text",
+              "text": " retrieves auto-complete suggestions for a partial search query within a map region. A user can type “cof,” and a search completion will suggest “coffee” as the query string. As the user types a query into a search bar, your app updates the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452555-queryfragment"
+            },
+            {
+              "type": "text",
+              "text": " through the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchresultsupdating"
+            },
+            {
+              "type": "text",
+              "text": " protocol."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func updateSearchResults(for searchController: UISearchController) {",
+            "    // Ask `MKLocalSearchCompleter` for new completion suggestions based on the change in the text entered in `UISearchBar`.",
+            "    searchCompleter?.queryFragment = searchController.searchBar.text ?? \"\"",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539979",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Receive Completion Results",
+          "anchor": "3539989"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Completion results represent fully formed query strings based on the query fragment typed by the user. You can use completion results to populate UI elements like a table view, to quickly fill in a search query. You receive the latest completion results as an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion"
+            },
+            {
+              "type": "text",
+              "text": " objects by adopting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {",
+            "    // As the user types, new completion suggestions are continuously returned to this method.",
+            "    // Overwrite the existing results, and then refresh the UI with the new results.",
+            "    completerResults = completer.results",
+            "    tableView.reloadData()",
+            "}",
+            "",
+            "func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {",
+            "    // Handle any errors returned from MKLocalSearchCompleter.",
+            "    if let error = error as NSError? {",
+            "        print(\"MKLocalSearchCompleter encountered an error: \\(error.localizedDescription). The query fragment is: \\\"\\(completer.queryFragment)\\\"\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539981",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Highlight the Relationship of a Query Fragment to the Suggestion",
+          "anchor": "3539990"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Within the UI elements representing each query result, you can use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1451935-titlehighlightranges"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1452489-subtitlehighlightranges"
+            },
+            {
+              "type": "text",
+              "text": " on a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MKLocalSearchCompletion"
+            },
+            {
+              "type": "text",
+              "text": " to show how the query entered by the user relates to the suggested result. For example, apply a highlight with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {",
+            "    let cell = tableView.dequeueReusableCell(withIdentifier: SuggestedCompletionTableViewCell.reuseID, for: indexPath)",
+            "",
+            "    if let suggestion = completerResults?[indexPath.row] {",
+            "        // Each suggestion is a MKLocalSearchCompletion with a title, subtitle, and ranges describing what part of the title",
+            "        // and subtitle matched the current query string. The ranges can be used to apply helpful highlighting of the text in",
+            "        // the completion suggestion that matches the current query fragment.",
+            "        cell.textLabel?.attributedText = createHighlightedString(text: suggestion.title, rangeValues: suggestion.titleHighlightRanges)",
+            "        cell.detailTextLabel?.attributedText = createHighlightedString(text: suggestion.subtitle, rangeValues: suggestion.subtitleHighlightRanges)",
+            "    }",
+            "",
+            "    return cell",
+            "}",
+            "",
+            "private func createHighlightedString(text: String, rangeValues: [NSValue]) -> NSAttributedString {",
+            "    let attributes = [NSAttributedString.Key.backgroundColor: UIColor(named: \"suggestionHighlight\")! ]",
+            "    let highlightedString = NSMutableAttributedString(string: text)",
+            "    ",
+            "    // Each `NSValue` wraps an `NSRange` that can be used as a style attribute's range with `NSAttributedString`.",
+            "    let ranges = rangeValues.map { $0.rangeValue }",
+            "    ranges.forEach { (range) in",
+            "        highlightedString.addAttributes(attributes, range: range)",
+            "    }",
+            "    ",
+            "    return highlightedString",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539983",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Search for Map Items",
+          "anchor": "3539991"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest"
+            },
+            {
+              "type": "text",
+              "text": " takes either an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion"
+            },
+            {
+              "type": "text",
+              "text": " or a natural language query string, and returns an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapitem"
+            },
+            {
+              "type": "text",
+              "text": " objects. Each "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MKMapItem"
+            },
+            {
+              "type": "text",
+              "text": " represents a geographic location, like a specific address, matching the search query. You asynchronously retrieve the array of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MKMapItem"
+            },
+            {
+              "type": "text",
+              "text": " objects by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearch/1452652-startwithcompletionhandler"
+            },
+            {
+              "type": "text",
+              "text": " on "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearch"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private func search(using searchRequest: MKLocalSearch.Request) {",
+            "    // Confine the map search area to an area around the user's current location.",
+            "    searchRequest.region = boundingRegion",
+            "    ",
+            "    // Include only point of interest results. This excludes results based on address matches.",
+            "    searchRequest.resultTypes = .pointOfInterest",
+            "    ",
+            "    localSearch = MKLocalSearch(request: searchRequest)",
+            "    localSearch?.start { [unowned self] (response, error) in",
+            "        guard error == nil else {",
+            "            self.displaySearchError(error)",
+            "            return",
+            "        }",
+            "        ",
+            "        self.places = response?.mapItems",
+            "        ",
+            "        // Used when setting the map's region in `prepareForSegue`.",
+            "        if let updatedRegion = response?.boundingRegion {",
+            "            self.boundingRegion = updatedRegion",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539985",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

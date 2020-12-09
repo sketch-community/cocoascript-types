@@ -1,0 +1,916 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Configure your view controller to replace or augment the default interface in Siri or Maps."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2882504,
+  "kind": "article",
+  "metadata": {
+    "title": "Configuring the View Controller for Your Custom Interface",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension": {
+      "title": "Creating an Intents UI Extension",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inparameter": {
+      "title": "INParameter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inparameter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inparameter"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ininteraction": {
+      "title": "INInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ininteraction"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/2915897-configureviewforparameters": {
+      "title": "configureViewForParameters:ofInteraction:interactiveBehavior:context:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/2915897-configureviewforparameters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inuihostedviewcontrolling/2915897-configureviewforparameters",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "configureViewForParameters:ofInteraction:interactiveBehavior:context:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/1649168-configurewithinteraction": {
+      "title": "configureWithInteraction:context:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/1649168-configurewithinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inuihostedviewcontrolling/1649168-configurewithinteraction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "configureWithInteraction:context:completion:"
+        }
+      ]
+    },
+    "link-media-2864766": {
+      "identifier": "link-media-2864766",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface#2864766"
+    },
+    "media-2864766": {
+      "identifier": "media-2864766",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 597
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b0271f8ff5/5f270d25-5eff-472c-84a7-7c2e4612c0cf.png"
+        }
+      ],
+      "alt": "Loading an Intents UI extension and calling the methods of your view controller to configure your interface.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Life cycle of an Intents UI app extension"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621423-viewdidappear": {
+      "title": "viewDidAppear:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621423-viewdidappear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621423-viewdidappear",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "viewDidAppear:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621485-viewwilldisappear": {
+      "title": "viewWillDisappear:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621485-viewwilldisappear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621485-viewwilldisappear",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "viewWillDisappear:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1411706-userinfo"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgrectzero": {
+      "title": "CGRectZero",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrectzero",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgrectzero"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontext/inuihostedviewcontextmapscard": {
+      "title": "INUIHostedViewContextMapsCard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontext/inuihostedviewcontextmapscard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inuihostedviewcontext/inuihostedviewcontextmapscard"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapview": {
+      "title": "MKMapView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapview"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inuihostedviewsiriproviding": {
+      "title": "INUIHostedViewSiriProviding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewsiriproviding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inuihostedviewsiriproviding"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inuihostedviewsiriproviding/1649161-displaysmap": {
+      "title": "displaysMap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewsiriproviding/1649161-displaysmap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inuihostedviewsiriproviding/1649161-displaysmap"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target": {
+      "title": "Configuring Your Intents UI App Extension Target",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your Xcode project to include an Intents UI app extension that you use to customize the Siri and Maps interfaces."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface": {
+      "title": "Configuring the View Controller for Your Custom Interface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your view controller to replace or augment the default interface in Siri or Maps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target"
+      ],
+      "title": "Configuration",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When displaying responses to the user, SiriKit provides a default interface for displaying the content of your response. Replace some or all of this default interface with custom views, which you might do to fully customize the user’s Siri-based interactions with your app. Another option is to augment the default interface with a single view, hiding portions of the default UI that your content might duplicate."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Requirements and Limitations",
+          "anchor": "2904033"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For all customizations, you provide a view controller whose views contain the information that you want to display. When replacing the default interface, SiriKit may create multiple instances of your view controller, and you must configure each one appropriately for the type of displayed content. When augmenting the default interface, SiriKit creates a single instance of your view controller. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "While onscreen, your view controllers remain part of the foreground Siri or Maps interface until the user dismisses it. You can update your view controllers as needed using timers or other programmatic means. Your view controllers also receive the normal callbacks when they’re loaded, shown, and hidden. However, your view controllers don’t receive touch events or any other events while they’re onscreen, and you can’t add gesture recognizers to them. Therefore, never create an interface with controls or views that require user interactions."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Replace Some or All of the Default Interface",
+          "anchor": "2882505"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In iOS 11 and later, you can replace some or all of the default Siri or Maps interface. Before displaying an interface to the user, Siri builds a list of parameters—that is, instances of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inparameter"
+            },
+            {
+              "type": "text",
+              "text": " class—representing the data it wants to display. Each parameter identifies a property of the intent or response object contained in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction"
+            },
+            {
+              "type": "text",
+              "text": " object that SiriKit provides.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After building the list of parameters, SiriKit creates one or more instances of your view controller and calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/2915897-configureviewforparameters"
+            },
+            {
+              "type": "text",
+              "text": " method of each one, passing it a specific set of parameters. When the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/2915897-configureviewforparameters"
+            },
+            {
+              "type": "text",
+              "text": " method is called, you must decide whether you want to provide a custom interface for the specified parameters. If you do, add subviews to the view controller's root view and update those views with the parameter's content."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although SiriKit often passes only one parameter at a time to your "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/2915897-configureviewforparameters"
+            },
+            {
+              "type": "text",
+              "text": " method, you can configure a view that displays content for any number of parameters. When calling the completion handler of your configuration method, provide SiriKit with the set of parameters that your interface displays. Before creating a new view controller with the next set of parameters, SiriKit checks to see if you already displayed those parameters. If you did, SiriKit does not ask you to display them again.  "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Augment the Default Interface",
+          "anchor": "2864306"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you want to keep the default Siri or Maps interface and only augment it with your custom content, implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/1649168-configurewithinteraction"
+            },
+            {
+              "type": "text",
+              "text": " method of your view controller. SiriKit instantiates your view controller and calls that method to configure your view controller's view. The context parameter tells you where your view controller will be displayed, giving you an opportunity to display your content differently in Siri and Maps."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-2864766"
+            },
+            {
+              "type": "text",
+              "text": " shows the high-level life cycle of your view controller when you configure it to augment the default interface. The system creates your view controller and calls its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/1649168-configurewithinteraction"
+            },
+            {
+              "type": "text",
+              "text": " method, passing it the interaction object you need to configure your interface. Once configured, your view controller is presented onscreen with the rest of the Siri or Maps content. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2864766",
+              "metadata": {
+                "anchor": "2864766",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Life cycle of an Intents UI app extension"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "While a view controller is onscreen, Maps may call the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/1649168-configurewithinteraction"
+                },
+                {
+                  "type": "text",
+                  "text": " method again to deliver updated information for you to display. For example, Maps calls this method when your Intents extension provides a status update for a booked ride. Use any follow-up calls to update your view controller’s interface."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user dismisses the Siri or Maps interface, the system releases its reference to your view controller and your Intents UI extension. Your view controllers should only display information. Do not try to save data or communicate with your app when your view controller moves offscreen. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In iOS 11 and later, if your view controller implements both the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/2915897-configureviewforparameters"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/1649168-configurewithinteraction"
+                },
+                {
+                  "type": "text",
+                  "text": " methods, SiriKit calls only the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling/2915897-configureviewforparameters"
+                },
+                {
+                  "type": "text",
+                  "text": " method. "
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Tips for Implementing Your View Controller",
+          "anchor": "2882506"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here are some tips for implementing the view controller for your Intents UI extension:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Incorporate your brand into your interface."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Using your app’s color, imagery, and other design elements is a great way to add familiarity and convey the presence of your app within the Siri or Maps interfaces. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Configure any animated content to run only when your view controller is visible."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Wait until your view controller’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621423-viewdidappear"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method is called to start animations. Stop animations in your view controller’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621485-viewwilldisappear"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Configure your view controller’s view as quickly as possible so that Siri can display it."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Your view controller may not be onscreen for very long, so use local resources and the provided "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object for the bulk of your configuration. If you need to fetch more information from a server, always do so asynchronously and update your interface later."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Configure your interface using only the provided interaction object."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " The provided "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object contains the original intent and the response provided by your Intents extension, which runs in a separate process. Using only the provided interaction object ensures that your view controller’s interface accurately reflects the information provided by your Intents extension. To communicate more information to your Intents UI app extension, your Intents app extension can include a custom "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object with its response and put the additional information in that object’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+                    },
+                    {
+                      "type": "text",
+                      "text": " dictionary."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Do not include advertising in your interface."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " You may include branding and information that is relevant to the user, but advertising is prohibited."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Return a zero size when you want to hide your custom interface."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " When calling the handler block of your configuration method, specify "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrectzero"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for the size when you do not want the view controller to be shown onscreen. You might hide the view controller when there is no additional information to display for the specified intent."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Do not include a map view when your view controller is shown in a Maps context."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " When the context parameter is set to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontext/inuihostedviewcontextmapscard"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", do not include an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " in your view controller’s interface. Maps already displays a map, so having two maps showing similar information would be confusing to users."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Use child view controllers to switch between different types of content."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Your Intents UI app extension has only one initial view controller. Using child view controllers lets you encapsulate the behavior for for different intents or different views of an intent in one place. During configuration of your initial view controller, all you have to do is instantiate the appropriate child view controller and install its view in your interface. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Hiding Portions of the Default Interface",
+          "anchor": "2864307"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SiriKit lets you hide some types of content in the default interfaces using properties of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewsiriproviding"
+            },
+            {
+              "type": "text",
+              "text": " protocol. If you are only augmenting the default interface with custom content, use these properties to avoid duplicating the content shown by Siri or Maps. For example, a ride booking app that adds a map to the default interface could implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewsiriproviding/1649161-displaysmap"
+            },
+            {
+              "type": "text",
+              "text": " property and use it to hide the map in the default interface. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about hiding portions of the default interface, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewsiriproviding"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

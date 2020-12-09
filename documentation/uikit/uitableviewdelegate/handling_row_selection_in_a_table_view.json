@@ -1,0 +1,952 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Detect when a user taps a table view cell so your app can take the next indicated action."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+        "doc://com.apple.documentation/documentation/uikit/uitableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3342764,
+  "kind": "article",
+  "metadata": {
+    "title": "Handling Row Selection in a Table View",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+        "documentation/uikit/views_and_controls/table_views/handling_row_selection_in_a_table_view"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+        "documentation/uikit/views_and_controls/table_views/handling_row_selection_in_a_table_view"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate": {
+      "title": "UITableViewDelegate",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate",
+      "url": "/documentation/uikit/uitableviewdelegate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "url": "/documentation/uikit/uitableview",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614911-allowsselection": {
+      "title": "allowsSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614911-allowsselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614911-allowsselection"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614938-allowsmultipleselection": {
+      "title": "allowsMultipleSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614938-allowsmultipleselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614938-allowsmultipleselection"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614889-allowsselectionduringediting": {
+      "title": "allowsSelectionDuringEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614889-allowsselectionduringediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614889-allowsselectionduringediting"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614944-allowsmultipleselectionduringedi": {
+      "title": "allowsMultipleSelectionDuringEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614944-allowsmultipleselectionduringedi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614944-allowsmultipleselectionduringedi"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview": {
+      "title": "tableView:didSelectRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614877-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didSelectRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342835": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342835",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342835"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller": {
+      "title": "UITableViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller/1614758-clearsselectiononviewwillappear": {
+      "title": "clearsSelectionOnViewWillAppear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller/1614758-clearsselectiononviewwillappear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcontroller/1614758-clearsselectiononviewwillappear"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621510-viewwillappear": {
+      "title": "viewWillAppear:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621510-viewwillappear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621510-viewwillappear",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "viewWillAppear:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342834": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342834",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342834"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614996-tableview": {
+      "title": "tableView:accessoryButtonTappedForRowWithIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614996-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614996-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:accessoryButtonTappedForRowWithIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table": {
+      "title": "Configuring the Cells for Your Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614875-selectrowatindexpath": {
+      "title": "selectRowAtIndexPath:animated:scrollPosition:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614875-selectrowatindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614875-selectrowatindexpath",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectRowAtIndexPath:animated:scrollPosition:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614943-tableview": {
+      "title": "tableView:willSelectRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614943-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614943-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willSelectRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewselectiondidchangenotification": {
+      "title": "UITableViewSelectionDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewselectiondidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewselectiondidchangenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614989-deselectrowatindexpath": {
+      "title": "deselectRowAtIndexPath:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614989-deselectrowatindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614989-deselectrowatindexpath",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deselectRowAtIndexPath:animated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype": {
+      "title": "accessoryType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623228-accessorytype"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype/uitableviewcellaccessorycheckmark": {
+      "title": "UITableViewCellAccessoryCheckmark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype/uitableviewcellaccessorycheckmark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellaccessorytype/uitableviewcellaccessorycheckmark"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342908": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342908",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3342908"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3358202": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3358202",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view#3358202"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view": {
+      "title": "Handling Row Selection in a Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect when a user taps a table view cell so your app can take the next indicated action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture": {
+      "title": "Selecting Multiple Items with a Two-Finger Pan Gesture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Accelerate user selection of multiple items using the multiselect gesture on table and collection views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture"
+      ],
+      "title": "Selection Management",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a user taps a row of a table view, an action of some kind usually follows, such as another view sliding into place, or the row indicating the selected state with a checkmark. In order for your app to perform the action, it must know when the user taps the row and respond accordingly."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Row Selection Behavior",
+          "anchor": "3342768"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the following properties to configure how row selection behaves in a table view:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614911-allowsselection"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Determines whether users can select a row when the table isn’t in editing mode. The default is "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": false,
+                        "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614938-allowsmultipleselection"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Determines whether users can select more than one row when the table isn’t in editing mode. The default is "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": false,
+                        "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614889-allowsselectionduringediting"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Determines whether user can select a row while the table view is in editing mode. The default is "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": false,
+                        "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614944-allowsmultipleselectionduringedi"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Determines whether users can select a more than one row while in editing mode. The default is "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": false,
+                        "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Respond to Row Selections",
+          "anchor": "3342765"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user taps a row, the table view calls the delegate method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview"
+            },
+            {
+              "type": "text",
+              "text": ". At this point, your app performs the action, such as displaying the details of the selected hiking trail:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {",
+            "    let selectedTrail = trails[indexPath.row]",
+            "    ",
+            "    if let viewController = storyboard?.instantiateViewController(identifier: \"TrailViewController\") as? TrailViewController {",
+            "        viewController.trail = selectedTrail",
+            "        navigationController?.pushViewController(viewController, animated: true)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3342835",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you respond to the cell selection by pushing a new view controller onto the navigation stack, deselect the cell when the view controller pops off the stack. If you’re using a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " to display a table view, you get the behavior by setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller/1614758-clearsselectiononviewwillappear"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ". Otherwise, you can clear the selection in your view controller’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621510-viewwillappear"
+            },
+            {
+              "type": "text",
+              "text": " method:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func viewWillAppear(_ animated: Bool) {",
+            "    super.viewWillAppear(animated)",
+            "    if let selectedIndexPath = tableView.indexPathForSelectedRow {",
+            "        tableView.deselectRow(at: selectedIndexPath, animated: animated)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3342834",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the row displays the detail button accessory view and the user taps it, the table view calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614996-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method instead of calling the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method. To learn more about accessory views, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Select a Row Programmatically",
+          "anchor": "3342769"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The selection of a row may originate within the app itself rather than from a tap in the table view. For example, a user might add a new person to an address book, then return to the list of contacts. After returning to the contact list, the app scrolls the list to show the row of the newly added person. In this situation, use the table view method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614875-selectrowatindexpath"
+            },
+            {
+              "type": "text",
+              "text": " to select and scroll to the new row."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Selecting a row programmatically doesn't call the delegate methods "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614943-tableview"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview"
+                },
+                {
+                  "type": "text",
+                  "text": ", nor does it send "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewselectiondidchangenotification"
+                },
+                {
+                  "type": "text",
+                  "text": " notifications to observers."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Manage Selection Lists",
+          "anchor": "3342907"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also use cell selection to maintain inclusive and exclusive lists of selected items. An inclusive list can have one or more selected items while an exclusive list has at most one."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When providing a selection list in your app, don’t use the cell’s selected state to indicate the state of the item. Instead, display a checkmark or an accessory view. To indicate the state using a checkmark, implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview"
+            },
+            {
+              "type": "text",
+              "text": " delegate method, then deselect the cell with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614989-deselectrowatindexpath"
+            },
+            {
+              "type": "text",
+              "text": ", followed by setting the cell's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype/uitableviewcellaccessorycheckmark"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, an app for backpackers may let users create a packing list—an inclusive list of camping gear like sleeping bags and tents. When the user taps an item to indicate that they packed that piece of gear, the app unselects the row, updates the item's data model, and displays a checkmark in the row for packed items. Tapping the item again marks the item as unpacked and removes the checkmark. Here’s an example:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {",
+            "    // Unselect the row, and instead, show the state with a checkmark.",
+            "    tableView.deselectRow(at: indexPath, animated: false)",
+            "    ",
+            "    guard let cell = tableView.cellForRow(at: indexPath) else { return }",
+            "    ",
+            "    // Update the selected item to indicate whether the user packed it or not.",
+            "    let item = packingList[indexPath.row]",
+            "    let newItem = PackingItem(name: item.name, isPacked: !item.isPacked)",
+            "    packingList.remove(at: indexPath.row)",
+            "    packingList.insert(newItem, at: indexPath.row)",
+            "    ",
+            "    // Show a check mark next to packed items.",
+            "    if newItem.isPacked {",
+            "        cell.accessoryType = .checkmark",
+            "    } else {",
+            "        cell.accessoryType = .none",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3342908",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Managing an exclusive list is similar. Deselect the row and display a checkmark or an accessory view to indicate the selected state. But unlike an inclusive list, limit the exclusive list to only one selected item at a time. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For instance, the backpacker's app may let users filter the list of hiking trails based on a single difficulty level: easy, moderate, and hard. With this kind of exclusive list, the app must remove the checkmark from the previous selection, and display a checkmark for the current selection. The app must also remember which item is the currently selected item. For example:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {",
+            "    // Unselect the row.",
+            "    tableView.deselectRow(at: indexPath, animated: false)",
+            "    ",
+            "    // Did the user tap on a selected filter item? If so, do nothing.",
+            "    let selectedFilterRow = selectedFilters[indexPath.section]",
+            "    if selectedFilterRow == indexPath.row {",
+            "        return",
+            "    }",
+            "",
+            "    // Remove the checkmark from the previously selected filter item.",
+            "    if let previousCell = tableView.cellForRow(at: IndexPath(row: selectedFilterRow, section: indexPath.section)) {",
+            "        previousCell.accessoryType = .none",
+            "    }",
+            "    ",
+            "    // Mark the newly selected filter item with a checkmark.",
+            "    if let cell = tableView.cellForRow(at: indexPath) {",
+            "        cell.accessoryType = .checkmark",
+            "    }",
+            "    ",
+            "    // Remember this selected filter item.",
+            "    selectedFilters[indexPath.section] = indexPath.row",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3358202",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

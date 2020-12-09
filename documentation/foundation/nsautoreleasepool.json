@@ -1,0 +1,936 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that supports Cocoa’s reference-counted memory management system."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1520549,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSAutoreleasePool",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSAutoreleasePool",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsautoreleasepool"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime": {
+      "title": "Object Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime",
+      "url": "/documentation/foundation/object_runtime",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsthread/1410702-ismultithreaded": {
+      "title": "isMultiThreaded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsthread/1410702-ismultithreaded",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsthread/1410702-ismultithreaded",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "isMultiThreaded"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520553-drain": {
+      "title": "drain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520553-drain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsautoreleasepool/1520553-drain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "In a reference-counted environment, releases and pops the receiver; in a garbage-collected environment, triggers garbage collection if the memory allocated since the last collection is greater than the current threshold."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drain"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807014-release": {
+      "title": "release",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807014-release",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/foundation/nsautoreleasepool/1807014-release",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases and pops the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#2555515": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#2555515",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsautoreleasepool#2555515"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#2555516": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#2555516",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsautoreleasepool#2555516"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool": {
+      "title": "NSAutoreleasePool",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsautoreleasepool",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that supports Cocoa’s reference-counted memory management system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571951-autorelease": {
+      "title": "autorelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571951-autorelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1571951-autorelease",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "autorelease"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571957-release": {
+      "title": "release",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571957-release",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1571957-release",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "release"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#1651537": {
+      "title": "Garbage Collection",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#1651537",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/foundation/nsautoreleasepool#1651537"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807026-retain": {
+      "title": "retain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807026-retain",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/foundation/nsautoreleasepool/1807026-retain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Raises an exception."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807021-autorelease": {
+      "title": "autorelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807021-autorelease",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/foundation/nsautoreleasepool/1807021-autorelease",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Raises an exception."
+        }
+      ]
+    },
+    "devLink-1696551": {
+      "identifier": "devLink-1696551",
+      "type": "link",
+      "title": "Using Autorelease Pool Blocks",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmAutoreleasePools.html#//apple_ref/doc/uid/20000047"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#1651513": {
+      "title": "Threads",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#1651513",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/foundation/nsautoreleasepool#1651513"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520551-addobject": {
+      "title": "addObject:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520551-addobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsautoreleasepool/1520551-addobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a given object to the active autorelease pool in the current thread. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "addObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520555-addobject": {
+      "title": "addObject:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520555-addobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsautoreleasepool/1520555-addobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a given object to the receiver "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1539124-showpools": {
+      "title": "showPools",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1539124-showpools",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsautoreleasepool/1539124-showpools",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays the state of the current thread's autorelease pool stack to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "stderr"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "showPools"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime/memory_management_functions": {
+      "title": "Memory Management Functions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime/memory_management_functions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/object_runtime/memory_management_functions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform low-level memory management tasks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Managing a Pool",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807014-release",
+        "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520553-drain",
+        "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807021-autorelease",
+        "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807026-retain"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Adding an Object to a Pool",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520551-addobject",
+        "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520555-addobject"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Debugging",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1539124-showpools"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/object_runtime/memory_management_functions"
+      ],
+      "title": "Memory Management",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSAutoreleasePool"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An autorelease pool stores objects that are sent a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "release"
+            },
+            {
+              "type": "text",
+              "text": " message when the pool itself is drained."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you use Automatic Reference Counting (ARC), you cannot use autorelease pools directly. Instead, you use "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "@autoreleasepool"
+                },
+                {
+                  "type": "text",
+                  "text": " blocks. For example, in place of:"
+                }
+              ]
+            },
+            {
+              "type": "codeListing",
+              "code": [
+                "NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];",
+                "// Code benefitting from a local autorelease pool.",
+                "[pool release];"
+              ],
+              "syntax": "occ",
+              "metadata": {
+                "anchor": "2555515",
+                "title": "Listing 1"
+              }
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "you would write:"
+                }
+              ]
+            },
+            {
+              "type": "codeListing",
+              "code": [
+                "@autoreleasepool {",
+                "    // Code benefitting from a local autorelease pool.",
+                "}"
+              ],
+              "syntax": "occ",
+              "metadata": {
+                "anchor": "2555516",
+                "title": "Listing 2"
+              }
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "codeVoice",
+                  "code": "@autoreleasepool"
+                },
+                {
+                  "type": "text",
+                  "text": " blocks are more efficient than using an instance of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool"
+                },
+                {
+                  "type": "text",
+                  "text": " directly; you can also use them even if you do not use ARC."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a reference-counted environment (as opposed to one which uses garbage collection), an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool"
+            },
+            {
+              "type": "text",
+              "text": " object contains objects that have received an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571951-autorelease"
+            },
+            {
+              "type": "text",
+              "text": " message and when drained it sends a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571957-release"
+            },
+            {
+              "type": "text",
+              "text": " message to each of those objects. Thus, sending "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571951-autorelease"
+            },
+            {
+              "type": "text",
+              "text": " instead of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571957-release"
+            },
+            {
+              "type": "text",
+              "text": " to an object extends the lifetime of that object at least until the pool itself is drained (it may be longer if the object is subsequently retained). An object can be put into the same pool several times, in which case it receives a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571957-release"
+            },
+            {
+              "type": "text",
+              "text": " message for each time it was put into the pool. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a reference counted environment, Cocoa expects there to be an autorelease pool always available. If a pool is not available, autoreleased objects do not get released and you leak memory. In this situation, your program will typically log suitable warning messages."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Application Kit creates an autorelease pool on the main thread at the beginning of every cycle of the event loop, and drains it at the end, thereby releasing any autoreleased objects generated while processing an event. If you use the Application Kit, you therefore typically don’t have to create your own pools. If your application creates a lot of temporary autoreleased objects within the event loop, however, it may be beneficial to create “local” autorelease pools to help to minimize the peak memory footprint."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You create an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool"
+            },
+            {
+              "type": "text",
+              "text": " object with the usual "
+            },
+            {
+              "type": "codeVoice",
+              "code": "alloc"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "init"
+            },
+            {
+              "type": "text",
+              "text": " messages and dispose of it with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520553-drain"
+            },
+            {
+              "type": "text",
+              "text": " (or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807014-release"
+            },
+            {
+              "type": "text",
+              "text": "—to understand the difference, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#1651537"
+            },
+            {
+              "type": "text",
+              "text": "). Since you cannot retain an autorelease pool (or autorelease it—see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807026-retain"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807021-autorelease"
+            },
+            {
+              "type": "text",
+              "text": "), draining a pool ultimately has the effect of deallocating it. You should always drain an autorelease pool in the same context (invocation of a method or function, or body of a loop) that it was created. See "
+            },
+            {
+              "type": "link",
+              "title": "Using Autorelease Pool Blocks",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmAutoreleasePools.html#//apple_ref/doc/uid/20000047"
+            },
+            {
+              "type": "text",
+              "text": " for more details."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each thread (including the main thread) maintains its own stack of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool"
+            },
+            {
+              "type": "text",
+              "text": " objects (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool#1651513"
+            },
+            {
+              "type": "text",
+              "text": "). As new pools are created, they get added to the top of the stack. When pools are deallocated, they are removed from the stack. Autoreleased objects are placed into the top autorelease pool for the current thread. When a thread terminates, it automatically drains all of the autorelease pools associated with itself."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Threads",
+          "anchor": "1651513"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you are making Cocoa calls outside of the Application Kit’s main thread—for example if you create a Foundation-only application or if you detach a thread—you need to create your own autorelease pool."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your application or thread is long-lived and potentially generates a lot of autoreleased objects, you should periodically drain and create autorelease pools (like the Application Kit does on the main thread); otherwise, autoreleased objects accumulate and your memory footprint grows. If, however, your detached thread does not make Cocoa calls, you do not need to create an autorelease pool."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you are creating secondary threads using the POSIX thread APIs instead of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSThread"
+                },
+                {
+                  "type": "text",
+                  "text": " objects, you cannot use Cocoa, including "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSAutoreleasePool"
+                },
+                {
+                  "type": "text",
+                  "text": ", unless Cocoa is in multithreading mode. Cocoa enters multithreading mode only after detaching its first "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSThread"
+                },
+                {
+                  "type": "text",
+                  "text": " object. To use Cocoa on secondary POSIX threads, your application must first detach at least one "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSThread"
+                },
+                {
+                  "type": "text",
+                  "text": " object, which can immediately exit. You can test whether Cocoa is in multithreading mode with the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSThread"
+                },
+                {
+                  "type": "text",
+                  "text": " class method "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsthread/1410702-ismultithreaded"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Garbage Collection",
+          "anchor": "1651537"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a garbage-collected environment, there is no need for autorelease pools. You may, however, write a framework that is designed to work in both a garbage-collected and reference-counted environment. In this case, you can use autorelease pools to hint to the collector that collection may be appropriate. In a garbage-collected environment, sending a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520553-drain"
+            },
+            {
+              "type": "text",
+              "text": " message to a pool triggers garbage collection if necessary; "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807014-release"
+            },
+            {
+              "type": "text",
+              "text": ", however, is a no-op. In a reference-counted environment, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520553-drain"
+            },
+            {
+              "type": "text",
+              "text": " has the same effect as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807014-release"
+            },
+            {
+              "type": "text",
+              "text": ". Typically, therefore, you should use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1520553-drain"
+            },
+            {
+              "type": "text",
+              "text": " instead of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsautoreleasepool/1807014-release"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

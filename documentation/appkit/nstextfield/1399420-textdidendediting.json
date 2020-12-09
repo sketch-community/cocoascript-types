@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Handles an end of editing. "
+      "text": "Posts a notification when the text is no longer in edit mode."
     }
   ],
   "documentVersion": 0,
@@ -103,7 +103,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text that the user can select or edit and that sends its action message to its target when the user presses the Return key."
+          "text": "Text the user can select or edit to send an action message to a target when the user presses the Return key."
         }
       ]
     },
@@ -229,77 +229,13 @@
       "role": "symbol",
       "url": "/documentation/appkit/nscontrol"
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399397-textdidchange": {
-      "title": "textDidChange:",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification": {
+      "title": "NSNotification",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399397-textdidchange",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nstextfield/1399397-textdidchange",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posts a notification that the text has changed and forwards this message to the receiver’s cell if it responds. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "textDidChange:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399426-textdidbeginediting": {
-      "title": "textDidBeginEditing:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399426-textdidbeginediting",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextfield/1399426-textdidbeginediting",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posts a notification that the text is about to begin editing to the default notification center."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "textDidBeginEditing:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399434-textshouldendediting": {
-      "title": "textShouldEndEditing:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399434-textshouldendediting",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextfield/1399434-textshouldendediting",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Performs validation on the receiver’s new value."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "textShouldEndEditing:"
-        }
-      ]
+      "url": "/documentation/foundation/nsnotification"
     },
     "doc://com.apple.documentation/documentation/appkit/nstextfield/1399399-textshouldbeginediting": {
       "title": "textShouldBeginEditing:",
@@ -325,13 +261,77 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsnotification": {
-      "title": "NSNotification",
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399426-textdidbeginediting": {
+      "title": "textDidBeginEditing:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399426-textdidbeginediting",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsnotification"
+      "url": "/documentation/appkit/nstextfield/1399426-textdidbeginediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts a notification to the default notification center that the text is about to go into edit mode."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textDidBeginEditing:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399397-textdidchange": {
+      "title": "textDidChange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399397-textdidchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield/1399397-textdidchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts a notification when the text changes, and forwards the message to the text field’s cell if it responds."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textDidChange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399434-textshouldendediting": {
+      "title": "textShouldEndEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399434-textshouldendediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield/1399434-textshouldendediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs validation on the text field’s new value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textShouldEndEditing:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstextfield/1399420-textdidendediting": {
       "title": "textDidEndEditing:",
@@ -343,7 +343,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Handles an end of editing. "
+          "text": "Posts a notification when the text is no longer in edit mode."
         }
       ],
       "fragments": [
@@ -373,7 +373,7 @@
         "doc://com.apple.documentation/documentation/appkit/nstextfield/1399397-textdidchange",
         "doc://com.apple.documentation/documentation/appkit/nstextfield/1399434-textshouldendediting"
       ],
-      "title": "NSText Delegate Method Implementations",
+      "title": "Implementing Delegate Methods",
       "generated": true
     }
   ],
@@ -449,7 +449,16 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The notification that editing has ended."
+                  "text": "The "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nscontroltextdidendeditingnotification"
+                },
+                {
+                  "type": "text",
+                  "text": " to post to the default notification center."
                 }
               ]
             }
@@ -471,7 +480,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "After validating the new value, posts an "
+              "text": "After validating the new value, this method posts a "
             },
             {
               "type": "reference",
@@ -480,7 +489,7 @@
             },
             {
               "type": "text",
-              "text": " to the default notification center. This posting causes the receiver’s delegate to receive a "
+              "text": " to the default notification center, which causes the text field’s delegate to receive a "
             },
             {
               "type": "reference",
@@ -489,7 +498,7 @@
             },
             {
               "type": "text",
-              "text": " message. After this message, sends "
+              "text": " message. This method then sends "
             },
             {
               "type": "reference",
@@ -498,7 +507,7 @@
             },
             {
               "type": "text",
-              "text": " to the receiver’ cell and handles the key that caused editing to end:"
+              "text": " to the text field’s cell and handles the key that causes editing to end as follows:"
             }
           ]
         },
@@ -512,7 +521,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "If the user ended editing by pressing Return, this method tries to send the receiver’s action to its target; if unsuccessful, it sends "
+                      "text": "If the user ends editing by pressing Return, this method tries to send the text field’s action to its target. If unsuccessful, it sends "
                     },
                     {
                       "type": "reference",
@@ -529,7 +538,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " (for example, to handle the default button on a panel); if that also fails, the receiver simply selects its text."
+                      "text": ", for example, to handle the default button on a panel. If that also fails, the text field selects its text."
                     }
                   ]
                 }
@@ -542,7 +551,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "If the user ended editing by pressing Tab or Shift-Tab, the receiver tries to have its "
+                      "text": "If the user ends editing by pressing Tab or Shift-Tab, the text field tries to have its "
                     },
                     {
                       "type": "codeVoice",
@@ -576,7 +585,7 @@
                     },
                     {
                       "type": "text",
-                      "text": ". If unsuccessful in doing this, the receiver simply selects its text."
+                      "text": ". If unsuccessful, the text field selects its text."
                     }
                   ]
                 }
@@ -589,7 +598,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "See the "
+              "text": "See "
             },
             {
               "type": "reference",
@@ -598,7 +607,7 @@
             },
             {
               "type": "text",
-              "text": " class specification for more information on the text delegate method."
+              "text": " for more information about the text delegate method."
             }
           ]
         }

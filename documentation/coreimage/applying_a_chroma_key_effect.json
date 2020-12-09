@@ -1,0 +1,936 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Replace a color in one image with the background from another."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2951342,
+  "kind": "article",
+  "metadata": {
+    "title": "Applying a Chroma Key Effect",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Image"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreimage/applying_a_chroma_key_effect"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreimage/applying_a_chroma_key_effect"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreimage": {
+      "title": "Core Image",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage",
+      "url": "/documentation/coreimage",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-media-2952814": {
+      "identifier": "link-media-2952814",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect#2952814"
+    },
+    "media-2952814": {
+      "identifier": "media-2952814",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 344,
+            "height": 304
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cf1c45c984/6aac5329-8f16-46a7-ae6a-135098ed1f4a.png"
+        }
+      ],
+      "alt": "A hue color wheel highlighting hues between 108° and 144° to show the slice of green to filter out of the source image",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Color wheel showing the hue values to filter out of a source image with green background"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951406": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951406",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect#2951406"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor": {
+      "title": "UIColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951414": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951414",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect#2951414",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converting RGB to HSV"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951407": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951407",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect#2951407"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951408": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951408",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect#2951408"
+    },
+    "link-media-2952813": {
+      "identifier": "link-media-2952813",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect#2952813"
+    },
+    "media-2952813": {
+      "identifier": "media-2952813",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 628,
+            "height": 291
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cd3b98a234/d799ef80-cf8e-4db2-aec8-7f398dbc4a2b.png"
+        }
+      ],
+      "alt": "The chroma key effect replaces the greenscreen background behind a paper airplane foreground with the image of a beach landscape to show paper airplane flying on a beach.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applying a chroma key effect to swap background images"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect": {
+      "title": "Applying a Chroma Key Effect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replace a color in one image with the background from another."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image": {
+      "title": "Selectively Focusing on an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Focus on a part of an image by applying Gaussian blur and gradient masks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions": {
+      "title": "Customizing Image Transitions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/customizing_image_transitions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transition between images in creative ways using Core Image filters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film": {
+      "title": "Simulating Scratchy Analog Film",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/simulating_scratchy_analog_film",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Degrade the quality of an image to make it look like dated, scratchy analog film."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image",
+        "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions",
+        "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film"
+      ],
+      "title": "Filter Recipes",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The chroma key effect, also known as bluescreening or greenscreening, sets a color or range of colors in an image to transparent ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "alpha = 0"
+            },
+            {
+              "type": "text",
+              "text": ") so that you can substitute a different background image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2952813",
+              "metadata": {
+                "anchor": "2952813",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Applying a chroma key effect to swap background images"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You apply this technique in three steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a cube map that the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CIColorCube"
+                    },
+                    {
+                      "type": "text",
+                      "text": " filter will consult to determine which colors to set transparent."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Make all pixels of the specified color in the source image transparent by applying a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CIColorCube"
+                    },
+                    {
+                      "type": "text",
+                      "text": " filter based on the cube map."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Composite the source and the background image with the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CISourceOverCompositing"
+                    },
+                    {
+                      "type": "text",
+                      "text": " filter."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Cube Map",
+          "anchor": "2951341"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A color cube is a 3D color-lookup table that assigns a transparency value to RGB colors.  For example, to filter out green from the input image, create a custom color cube with the green portion of its values set to 0."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To specify a range of colors to exclude, model colors with an HSV (hue-saturation-brightness) representation.  HSV represents hue as an angle around the central axis, as in a color wheel.  In order to make a chroma key color from the source image transparent, set its lookup table value to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " when its hue is in the screen color's range."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2952814",
+              "metadata": {
+                "anchor": "2952814",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Color wheel showing the hue values to filter out of a source image with green background"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The value for green in the source image falls within the slice beginning at 108° ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "108/360"
+            },
+            {
+              "type": "text",
+              "text": " = "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.3"
+            },
+            {
+              "type": "text",
+              "text": ") and ending at 144° ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "144/360"
+            },
+            {
+              "type": "text",
+              "text": " = "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.4"
+            },
+            {
+              "type": "text",
+              "text": "). You will set transparency to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " for this range in the color cube."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The value for green in the source image falls within the slice beginning at 108° ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "108/360"
+            },
+            {
+              "type": "codeVoice",
+              "code": " = 0.3"
+            },
+            {
+              "type": "text",
+              "text": ") and ending at 144° ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "144/360 = 0.4"
+            },
+            {
+              "type": "text",
+              "text": "). You will set transparency to 0 for this range in the color cube."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create the color cube, iterate across all values of red, green, and blue, entering a value of 0 for combinations that the filter should make transparent. Refer to the numbered list for details on each step to the routine."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "- (CIFilter*) chromaKeyFilterHuesFrom:(CGFloat)minHue to:(CGFloat)maxHue",
+            "{",
+            "    // 1",
+            "    const unsigned int size = 64;",
+            "    const size_t cubeDataSize = size * size * size * 4;",
+            "    NSMutableData* cubeData = [[NSMutableData alloc] initWithCapacity:(cubeDataSize * sizeof(float))];",
+            "    ",
+            "    // 2",
+            "    for (int z = 0; z < size; z++) {",
+            "        CGFloat blue = ((double)z)/(size-1);",
+            "        for (int y = 0; y < size; y++) {",
+            "            CGFloat green = ((double)y)/(size-1);",
+            "            for (int x = 0; x < size; x++) {",
+            "                CGFloat red = ((double)x)/(size-1);",
+            "                ",
+            "                // 3",
+            "                CGFloat hue = [self hueFromRed:red green:green blue:blue];",
+            "                float alpha = (hue >= minHue && hue <= maxHue) ? 0 : 1;",
+            "                // 4",
+            "                float premultipliedRed = red * alpha;",
+            "                float premultipliedGreen = green * alpha;",
+            "                float premultipliedBlue = blue * alpha;",
+            "                [cubeData appendBytes:&premultipliedRed length:sizeof(float)];",
+            "                [cubeData appendBytes:&premultipliedGreen length:sizeof(float)];",
+            "                [cubeData appendBytes:&premultipliedBlue length:sizeof(float)];",
+            "                [cubeData appendBytes:&alpha length:sizeof(float)];",
+            "            }",
+            "        }",
+            "    }",
+            "",
+            "    // 5",
+            "    CIFilter* chromaKeyFilter = [CIFilter filterWithName:@\"CIColorCube\"];",
+            "    [chromaKeyFilter setValue:@(size) forKey:@\"inputCubeDimension\"];",
+            "    [chromaKeyFilter setValue:cubeData forKey:@\"inputCubeData\"];",
+            "    return chromaKeyFilter;",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2951406",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Allocate memory.  The color cube has three dimensions, each with four elements of data (RGBA). "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use a for-loop to iterate through each color combination of red, green, and blue, simulating a color gradient."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Convert RGB to HSV, as in "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect#2951414"
+                    },
+                    {
+                      "type": "text",
+                      "text": ".  Even though the color cube exists in RGB color space, it is easier to isolate and remove color based on hue.  Input "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for green hues to indicate complete removal; use "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for other hues to leave those colors intact. To specify green as a hue value, convert its angle in the hue pie chart to a range of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". The green in the sample image has hue between "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0.3"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "108"
+                    },
+                    {
+                      "type": "text",
+                      "text": " out of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "360"
+                    },
+                    {
+                      "type": "text",
+                      "text": " degrees"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": ")"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0.4"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "144"
+                    },
+                    {
+                      "type": "text",
+                      "text": " out of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "360"
+                    },
+                    {
+                      "type": "text",
+                      "text": " degrees). Your shade of green may differ, so adjust the range accordingly."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CIColorCube"
+                    },
+                    {
+                      "type": "text",
+                      "text": " filter requires premultiplied alpha values, meaning that the values in the lookup table have their transparency baked into their stored entries rather than applied when accessed."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a Core Image filter from the cube data by invoking the name "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CIColorCube"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The framework does not have built-in direct conversion between color spaces, but you can access the hue of a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor"
+                },
+                {
+                  "type": "text",
+                  "text": " created with RGB values.  Create a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor"
+                },
+                {
+                  "type": "text",
+                  "text": " from the raw RGB values and then read the hue from it."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "- (CGFloat) hueFromRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue",
+            "{",
+            "    UIColor* color = [UIColor colorWithRed:red green:green blue:blue alpha:1];",
+            "    ",
+            "    CGFloat hue, saturation, brightness;",
+            "    [color getHue:&hue saturation:&saturation brightness:&brightness alpha:nil];",
+            "    ",
+            "    return hue;",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2951414",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Converting RGB to HSV"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Remove Green from the Source Image",
+          "anchor": "2951338"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apply the color cube filter to a foreground image by setting its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputImage"
+            },
+            {
+              "type": "text",
+              "text": " parameter and then accessing the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "outputImage"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CIFilter* chromaKeyFilter = [self chromaKeyFilterHuesFrom:0.3 to:0.4];",
+            "[chromaKeyFilter setValue:foregroundCIImage forKey:kCIInputImageKey];",
+            "CIImage* sourceCIImageWithoutBackground = chromaKeyFilter;"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2951407",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The output image contains the foreground with all green pixels made transparent.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The filter passes through each pixel in the input image, looks up its color in the color cube, and replaces the source color with the color in the color cube at the nearest position."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Composite over a Background Image",
+          "anchor": "2951340"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Chain a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CISourceOverCompositing"
+            },
+            {
+              "type": "text",
+              "text": " filter to the color cube filter to composite a background image to the greenscreened output.  The transparency in the colorcube-filtered image allows the composited background image to show through."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CIFilter* compositor = [CIFilter filterWithName:@\"CISourceOverCompositing\"];",
+            "[compositor setValue:sourceCIImageWithoutBackground forKey:kCIInputImageKey];",
+            "[compositor setValue:backgroundCIImage forKey:kCIInputBackgroundImageKey];",
+            "CIImage* compositedCIImage = compositor.outputImage;"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2951408",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The foreground of the source image now appears in front of the background landscape without any trace of the green screen."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

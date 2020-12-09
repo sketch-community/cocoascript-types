@@ -1,0 +1,388 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Describe and index your app content so it is searchable."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corespotlight"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corespotlight/making_content_searchable",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2962769,
+  "kind": "article",
+  "metadata": {
+    "title": "Making Content Searchable",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Spotlight"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corespotlight/making_content_searchable"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corespotlight/making_content_searchable"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corespotlight": {
+      "title": "Core Spotlight",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight",
+      "url": "/documentation/corespotlight",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset": {
+      "title": "CSSearchableItemAttributeSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem": {
+      "title": "CSSearchableItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An item that can be indexed and made available to users when they search on their devices. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier": {
+      "title": "relatedUniqueIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621672-uniqueidentifier": {
+      "title": "uniqueIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621672-uniqueidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitem/1621672-uniqueidentifier"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/making_content_searchable": {
+      "title": "Making Content Searchable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/making_content_searchable",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corespotlight/making_content_searchable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describe and index your app content so it is searchable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Core Spotlight APIs help you provide a comprehensive description of an item and to add it to the on-device index. They support indexing items at any time, such as when your app loads."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To start indexing app content, perform these steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object and specify properties that describe the item you want to index."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object to represent the item. A "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object has a unique identifier that lets you refer to it later."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If needed, specify a domain identifier so that you can gather multiple items together and manage them as a group."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Associate the attribute set with the searchable item."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the searchable item to the index."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As you use Core Spotlight to make your app content searchable, you can also use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " to make app states and navigation points searchable and to help users return to an activity or app location when they tap on a search result. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Both Core Spotlight and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " use a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset"
+            },
+            {
+              "type": "text",
+              "text": " object to describe a searchable item, provide rich metadata that is displayed in search results, and prevent duplication of items in search results. Unlike the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " API, however, Core Spotlight APIs don’t require users to visit the content before it gets indexed. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you use both APIs, you can improve the ranking of your items in search results and prevent item duplication by specifying the same value in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621569-relateduniqueidentifier"
+            },
+            {
+              "type": "text",
+              "text": " ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": ") and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621672-uniqueidentifier"
+            },
+            {
+              "type": "text",
+              "text": " ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitem"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app has related content on a website, you should also mark up your website and support universal links to ensure that users can open your native app when they tap a search result supplied by your website (if your app isn’t installed, tapping the result opens Safari). "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

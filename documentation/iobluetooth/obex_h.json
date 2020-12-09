@@ -1,0 +1,953 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Public OBEX technology interfaces."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/iobluetooth"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/iobluetooth/obex_h",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1675752,
+  "kind": "symbol",
+  "metadata": {
+    "title": "OBEX.h",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "IOBluetooth"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth/obex_h"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth/obex_h"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/iobluetooth": {
+      "title": "IOBluetooth",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth",
+      "url": "/documentation/iobluetooth",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/get_header_id_is_null_terminated_unicode_text": {
+      "title": "GET_HEADER_ID_IS_NULL_TERMINATED_UNICODE_TEXT",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/get_header_id_is_null_terminated_unicode_text",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/get_header_id_is_null_terminated_unicode_text",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convenience Macros for working with OBEX Header Identifiers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obex_convenience_macros": {
+      "title": "OBEX Convenience Macros.",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obex_convenience_macros",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obex_convenience_macros",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convenience Macros for working with OBEX Header Identifiers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1431183-obexaddapplicationparameterheade": {
+      "title": "OBEXAddApplicationParameterHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1431183-obexaddapplicationparameterheade",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1431183-obexaddapplicationparameterheade",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add bytes representing an application parameter to a dictionary of OBEX headers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1430140-obexaddauthorizationchallengehea": {
+      "title": "OBEXAddAuthorizationChallengeHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1430140-obexaddauthorizationchallengehea",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1430140-obexaddauthorizationchallengehea",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add an authorization challenge header to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1429184-obexaddauthorizationresponsehead": {
+      "title": "OBEXAddAuthorizationResponseHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1429184-obexaddauthorizationresponsehead",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1429184-obexaddauthorizationresponsehead",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add an authorization Response header to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1432916-obexaddbodyheader": {
+      "title": "OBEXAddBodyHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1432916-obexaddbodyheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1432916-obexaddbodyheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add bytes of data to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1430060-obexaddbytesequenceheader": {
+      "title": "OBEXAddByteSequenceHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1430060-obexaddbytesequenceheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1430060-obexaddbytesequenceheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a byte sequence header to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1429724-obexaddconnectionidheader": {
+      "title": "OBEXAddConnectionIDHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1429724-obexaddconnectionidheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1429724-obexaddconnectionidheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add bytes representing a connection ID to a dictionary of OBEX headers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1434952-obexaddcountheader": {
+      "title": "OBEXAddCountHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1434952-obexaddcountheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1434952-obexaddcountheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a CFStringRef to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1434254-obexadddescriptionheader": {
+      "title": "OBEXAddDescriptionHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1434254-obexadddescriptionheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1434254-obexadddescriptionheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a CFStringRef to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1429461-obexaddhttpheader": {
+      "title": "OBEXAddHTTPHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1429461-obexaddhttpheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1429461-obexaddhttpheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add bytes of data to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1428856-obexaddlengthheader": {
+      "title": "OBEXAddLengthHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1428856-obexaddlengthheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1428856-obexaddlengthheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a CFStringRef to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1434664-obexaddnameheader": {
+      "title": "OBEXAddNameHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1434664-obexaddnameheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1434664-obexaddnameheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a CFStringRef to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1432387-obexaddobjectclassheader": {
+      "title": "OBEXAddObjectClassHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1432387-obexaddobjectclassheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1432387-obexaddobjectclassheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add an object class header to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1433690-obexaddtargetheader": {
+      "title": "OBEXAddTargetHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1433690-obexaddtargetheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1433690-obexaddtargetheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add bytes of data to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1431426-obexaddtime4byteheader": {
+      "title": "OBEXAddTime4ByteHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1431426-obexaddtime4byteheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1431426-obexaddtime4byteheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a CFStringRef to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1428680-obexaddtimeisoheader": {
+      "title": "OBEXAddTimeISOHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1428680-obexaddtimeisoheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1428680-obexaddtimeisoheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add bytes to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1432027-obexaddtypeheader": {
+      "title": "OBEXAddTypeHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1432027-obexaddtypeheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1432027-obexaddtypeheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a CFStringRef to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1433921-obexadduserdefinedheader": {
+      "title": "OBEXAddUserDefinedHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1433921-obexadduserdefinedheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1433921-obexadduserdefinedheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a user-defined custom header to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1429834-obexaddwhoheader": {
+      "title": "OBEXAddWhoHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1429834-obexaddwhoheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1429834-obexaddwhoheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add bytes of data to a dictionary of OBEXheaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1434819-obexgetheaders": {
+      "title": "OBEXGetHeaders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1434819-obexgetheaders",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1434819-obexgetheaders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Take a data blob and looks for OBEX headers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/1434193-obexheaderstobytes": {
+      "title": "OBEXHeadersToBytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/1434193-obexheaderstobytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/1434193-obexheaderstobytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a dictionary of headers to a data pointer, from which you can extract as bytes and pass to the OBEX command/response functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/1941159-obexsessiongetavailablecommandpa": {
+      "title": "OBEXSessionGetAvailableCommandPayloadLength(OBEXSessionRef, OBEXOpCode, OBEXMaxPacketLength *)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/1941159-obexsessiongetavailablecommandpa",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/1941159-obexsessiongetavailablecommandpa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets space available for your data for a particular command response you are trying to send."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexsessionevent": {
+      "title": "OBEXSessionEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexsessionevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexsessionevent"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexabortcommanddata": {
+      "title": "OBEXAbortCommandData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexabortcommanddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexabortcommanddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexabortcommandresponsedata": {
+      "title": "OBEXAbortCommandResponseData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexabortcommandresponsedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexabortcommandresponsedata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexconnectcommanddata": {
+      "title": "OBEXConnectCommandData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexconnectcommanddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexconnectcommanddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexconnectcommandresponsedata": {
+      "title": "OBEXConnectCommandResponseData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexconnectcommandresponsedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexconnectcommandresponsedata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexdisconnectcommanddata": {
+      "title": "OBEXDisconnectCommandData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexdisconnectcommanddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexdisconnectcommanddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexdisconnectcommandresponsedata": {
+      "title": "OBEXDisconnectCommandResponseData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexdisconnectcommandresponsedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexdisconnectcommandresponsedata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexerrordata": {
+      "title": "OBEXErrorData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexerrordata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexerrordata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexgetcommanddata": {
+      "title": "OBEXGetCommandData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexgetcommanddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexgetcommanddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexgetcommandresponsedata": {
+      "title": "OBEXGetCommandResponseData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexgetcommandresponsedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexgetcommandresponsedata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexputcommanddata": {
+      "title": "OBEXPutCommandData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexputcommanddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexputcommanddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexputcommandresponsedata": {
+      "title": "OBEXPutCommandResponseData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexputcommandresponsedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexputcommandresponsedata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexsetpathcommanddata": {
+      "title": "OBEXSetPathCommandData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexsetpathcommanddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexsetpathcommanddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexsetpathcommandresponsedata": {
+      "title": "OBEXSetPathCommandResponseData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexsetpathcommandresponsedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexsetpathcommandresponsedata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Part of the OBEXSessionEvent structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexconnectflagvalues": {
+      "title": "OBEXConnectFlagValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexconnectflagvalues",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexconnectflagvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags for Connect command."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexerror": {
+      "title": "OBEXError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Codes for OBEX errors. If the return value was not in the following range, then it is most likely resulting from kernel code/IOKit, and you should consult IOReturn.h for those codes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexheaderidentifiers": {
+      "title": "OBEXHeaderIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexheaderidentifiers",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexheaderidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifiers for OBEX Headers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexnonceflagvalues": {
+      "title": "OBEXNonceFlagValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexnonceflagvalues",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexnonceflagvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags for Nonce command during digest challenge."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcodecommandvalues": {
+      "title": "OBEXOpCodeCommandValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcodecommandvalues",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexopcodecommandvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operation OpCode values for commands."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcoderesponsevalues": {
+      "title": "OBEXOpCodeResponseValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcoderesponsevalues",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexopcoderesponsevalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Response opCode values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcodesessionvalues": {
+      "title": "OBEXOpCodeSessionValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcodesessionvalues",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexopcodesessionvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operation OpCode values for sessions. From the OBEX 1.3 specification."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsetpathflags": {
+      "title": "OBEXSetPathFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsetpathflags",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexsetpathflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags for SetPath command. Not that these are called \"PutFlags\". That is a mistake, they are not used with a Put command. We are not changing the names to maintain backwards compatibility."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexrealmvalues": {
+      "title": "OBEXRealmValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexrealmvalues",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexrealmvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values for Realm during digest response."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsessioneventtypes": {
+      "title": "OBEXSessionEventTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsessioneventtypes",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexsessioneventtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "When a new session event occurs, your selector (or C callback) will be given an OBEXSessionEvent pointer, and in it will be a 'type' field with one of the following types in it. Based on that type, you can then read the corresponding field in the union to get out interesting data for that event type. For example, if the type of an event is a 'kOBEXSessionEventTypeConnectCommandResponseReceived', you should look in the 'OBEXConnectCommandResponseData' part of the structure's union to find more information pased to you in the event. Note that some you will never see, depending on the type of session you are using - a client or server. If you are a client (most likely case), you will never see the \"Command\" events, but instead you will only receive the \"CommandResponse\" events since you will be the issuer oft he commands, not the receiver of them. Both types of sessions will receive error type events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsessionparametertags": {
+      "title": "OBEXSessionParameterTags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsessionparametertags",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexsessionparametertags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tags for SessionParameters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexversions": {
+      "title": "OBEXVersions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexversions",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/iobluetooth/obex_h/obexversions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The available/supported OBEX versions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Miscellaneous",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/get_header_id_is_null_terminated_unicode_text",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obex_convenience_macros",
+        "doc://com.apple.documentation/documentation/iobluetooth/1431183-obexaddapplicationparameterheade",
+        "doc://com.apple.documentation/documentation/iobluetooth/1430140-obexaddauthorizationchallengehea",
+        "doc://com.apple.documentation/documentation/iobluetooth/1429184-obexaddauthorizationresponsehead",
+        "doc://com.apple.documentation/documentation/iobluetooth/1432916-obexaddbodyheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1430060-obexaddbytesequenceheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1429724-obexaddconnectionidheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1434952-obexaddcountheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1434254-obexadddescriptionheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1429461-obexaddhttpheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1428856-obexaddlengthheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1434664-obexaddnameheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1432387-obexaddobjectclassheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1433690-obexaddtargetheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1431426-obexaddtime4byteheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1428680-obexaddtimeisoheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1432027-obexaddtypeheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1433921-obexadduserdefinedheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1429834-obexaddwhoheader",
+        "doc://com.apple.documentation/documentation/iobluetooth/1434819-obexgetheaders",
+        "doc://com.apple.documentation/documentation/iobluetooth/1434193-obexheaderstobytes",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/1941159-obexsessiongetavailablecommandpa"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/obexsessionevent",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexabortcommanddata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexabortcommandresponsedata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexconnectcommanddata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexconnectcommandresponsedata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexdisconnectcommanddata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexdisconnectcommandresponsedata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexerrordata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexgetcommanddata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexgetcommandresponsedata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexputcommanddata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexputcommandresponsedata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexsetpathcommanddata",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexsetpathcommandresponsedata"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "See the Overview for header-level documentation."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexconnectflagvalues",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexerror",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexheaderidentifiers",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexnonceflagvalues",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcodecommandvalues",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcoderesponsevalues",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcodesessionvalues",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsetpathflags",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexrealmvalues",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsessioneventtypes",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsessionparametertags",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexversions"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "See the Overview for header-level documentation."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Contains generic OBEX constants, structs, and C API used for all OBEX communication over any transport. For specific transport API, see that transport's C API. For example, if you wanted to know more about the Bluetooth OBEX implementation, see OBEXBluetooth.h."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The file also contains API that will assist in the construction and deconstruction of OBEX headers to and from raw bytes, as well as the creation of vCards and vEvents."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Included Headers",
+          "anchor": "1944343"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "<stdio.h>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "<stdint.h>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "<CoreServices/CoreServices.h>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "<IOBluetooth/IOBluetoothUserLib.h>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

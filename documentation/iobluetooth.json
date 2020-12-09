@@ -1,0 +1,680 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Gain user-space access to Bluetooth devices."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/iobluetooth",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1612517,
+  "kind": "symbol",
+  "metadata": {
+    "title": "IOBluetooth",
+    "role": "collection",
+    "roleHeading": "Framework",
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth"
+      ]
+    }
+  ],
+  "references": {
+    "devLink-1719483": {
+      "identifier": "devLink-1719483",
+      "type": "link",
+      "title": "Bluetooth Device Access Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/Bluetooth/BT_Intro/BT_Intro.html#//apple_ref/doc/uid/TP30000997"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice": {
+      "title": "IOBluetoothDevice",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothdevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An instance of IOBluetoothDevice represents a single remote Bluetooth device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry": {
+      "title": "IOBluetoothDeviceInquiry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothdeviceinquiry",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair": {
+      "title": "IOBluetoothDevicePair",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothdevicepair",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An instance of IOBluetoothDevicePair represents a pairing attempt to a remote Bluetooth device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceref": {
+      "title": "IOBluetoothDeviceRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothdeviceref"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree": {
+      "title": "IOBluetoothHandsFree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfree",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hands free profile class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway": {
+      "title": "IOBluetoothHandsFreeAudioGateway",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice": {
+      "title": "IOBluetoothHandsFreeDevice",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller": {
+      "title": "IOBluetoothHostController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhostcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This class is a representation of a Bluetooth Host Controller Interface that is present on the local computer (either plugged in externally or available internally)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel": {
+      "title": "IOBluetoothL2CAPChannel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothl2capchannel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An instance of IOBluetoothL2CAPChannel represents a single open L2CAP channel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannelref": {
+      "title": "IOBluetoothL2CAPChannelRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannelref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothl2capchannelref"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession": {
+      "title": "IOBluetoothOBEXSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothobexsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An OBEX Session with a Bluetooth RFCOMM channel as the transport."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobject": {
+      "title": "IOBluetoothObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothobject"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobjectref": {
+      "title": "IOBluetoothObjectRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobjectref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothobjectref"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel": {
+      "title": "IOBluetoothRFCOMMChannel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothrfcommchannel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An instance of this class represents an RFCOMM channel as defined by the Bluetooth SDP spec.."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannelref": {
+      "title": "IOBluetoothRFCOMMChannelRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannelref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothrfcommchannelref"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement": {
+      "title": "IOBluetoothSDPDataElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothsdpdataelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An instance of this class represents a single SDP data element as defined by the Bluetooth SDP spec."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelementref": {
+      "title": "IOBluetoothSDPDataElementRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelementref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothsdpdataelementref"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute": {
+      "title": "IOBluetoothSDPServiceAttribute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothsdpserviceattribute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "IOBluetoothSDPServiceAttribute represents a single SDP service attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord": {
+      "title": "IOBluetoothSDPServiceRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothsdpservicerecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An instance of this class represents a single SDP service record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecordref": {
+      "title": "IOBluetoothSDPServiceRecordRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecordref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothsdpservicerecordref"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid": {
+      "title": "IOBluetoothSDPUUID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothsdpuuid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An NSData subclass that represents a UUID as defined in the Bluetooth SDP spec."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuidref": {
+      "title": "IOBluetoothSDPUUIDRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuidref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothsdpuuidref"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotification": {
+      "title": "IOBluetoothUserNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothusernotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents a registered notification."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotificationref": {
+      "title": "IOBluetoothUserNotificationRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotificationref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothusernotificationref"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices": {
+      "title": "OBEXFileTransferServices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexfiletransferservices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implements advanced OBEX operations in addition to simple PUT and GET."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexsession": {
+      "title": "OBEXSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Object representing an OBEX connection to a remote target."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks": {
+      "title": "IOBluetoothDeviceAsyncCallbacks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothdeviceasynccallbacks"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate": {
+      "title": "IOBluetoothDeviceInquiryDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothdeviceinquirydelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This category on NSObject describes the delegate methods for the IOBluetoothDeviceInquiry object. All methods are optional, but it is highly recommended you implement them all. Do NOT invoke remote name requests on found IOBluetoothDevice objects unless the inquiry object has been stopped. Doing so may deadlock your process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate": {
+      "title": "IOBluetoothDevicePairDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothdevicepairdelegate"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate": {
+      "title": "IOBluetoothHandsFreeAudioGatewayDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedelegate": {
+      "title": "IOBluetoothHandsFreeDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedelegate"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate": {
+      "title": "IOBluetoothHandsFreeDeviceDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontrollerdelegate": {
+      "title": "IOBluetoothHostControllerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontrollerdelegate",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetoothhostcontrollerdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This category on NSObject describes the delegate methods for the IOBluetoothHostController object. All methods are optional, but it is highly recommended you implement them all. Do NOT invoke remote name requests on found IOBluetoothDevice objects unless the controller object has been stopped. Doing so may deadlock your process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate": {
+      "title": "IOBluetoothL2CAPChannelDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothl2capchanneldelegate"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate": {
+      "title": "IOBluetoothRFCOMMChannelDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothrfcommchanneldelegate"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/bluetooth_h_user-space": {
+      "title": "Bluetooth.h User-Space",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/bluetooth_h_user-space",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/bluetooth_h_user-space",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Bluetooth wireless technology"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothuserlib_h": {
+      "title": "IOBluetoothUserLib.h",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothuserlib_h",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetoothuserlib_h",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Public Interfaces for Apple's implementation of Bluetooth technology."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothutilities_h": {
+      "title": "IOBluetoothUtilities.h",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothutilities_h",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetoothutilities_h",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h": {
+      "title": "OBEX.h",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/obex_h",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Public OBEX technology interfaces."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexbluetooth_h": {
+      "title": "OBEXBluetooth.h",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexbluetooth_h",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/obexbluetooth_h",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Object Exchange over Bluetooth."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices_h": {
+      "title": "OBEXFileTransferServices.h",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices_h",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/obexfiletransferservices_h",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_structures": {
+      "title": "IOBluetooth Structures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_structures",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetooth_structures"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_enumerations": {
+      "title": "IOBluetooth Enumerations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_enumerations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetooth_enumerations"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants": {
+      "title": "IOBluetooth Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetooth_constants"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_functions": {
+      "title": "IOBluetooth Functions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_functions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetooth_functions"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_data_types": {
+      "title": "IOBluetooth Data Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_data_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetooth_data_types"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Classes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceref",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannelref",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobject",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobjectref",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannelref",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelementref",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecordref",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuidref",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotification",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotificationref",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexsession"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Protocols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontrollerdelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/bluetooth_h_user-space",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothuserlib_h",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothutilities_h",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexbluetooth_h",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices_h",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_structures",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_enumerations",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_functions",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_data_types"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1719483"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Bluetooth framework supports user-space access to Bluetooth devices, including both C and Objective-C APIs."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

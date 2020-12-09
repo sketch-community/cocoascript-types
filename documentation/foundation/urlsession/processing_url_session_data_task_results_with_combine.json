@@ -1,0 +1,1263 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use a chain of asynchronous operators to receive and process data fetched from a URL."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/urlsession"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3526669,
+  "kind": "article",
+  "metadata": {
+    "title": "Processing URL Session Data Task Results with Combine",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession": {
+      "title": "URLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher": {
+      "title": "URLSession.DataTaskPublisher",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/datataskpublisher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A publisher that delivers the results of performing URL session data tasks."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSession.DataTaskPublisher"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/url": {
+      "title": "URL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/url"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlrequest": {
+      "title": "URLRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlrequest"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3329708-datataskpublisher": {
+      "title": "dataTaskPublisher(for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3329708-datataskpublisher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3329708-datataskpublisher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a publisher that wraps a URL session data task for a given URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTaskPublisher"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": URL) -> URLSession.DataTaskPublisher"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlresponse": {
+      "title": "URLResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlresponse"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/1410330-datatask": {
+      "title": "dataTask(with:completionHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1410330-datatask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/1410330-datatask"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data": {
+      "title": "Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/map(_:)-99evh": {
+      "title": "map(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/map(_:)-99evh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/map(_:)-99evh"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/trymap(_:)": {
+      "title": "tryMap(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/trymap(_:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/trymap(_:)"
+    },
+    "doc://com.apple.documentation/documentation/swift/decodable": {
+      "title": "Decodable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/decodable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/decodable"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/decode(type:decoder:)": {
+      "title": "decode(type:decoder:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/decode(type:decoder:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/decode(type:decoder:)"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3526670": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3526670",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3526670"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/retry(_:)": {
+      "title": "retry(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/retry(_:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/retry(_:)"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/catch(_:)": {
+      "title": "catch(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/catch(_:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/catch(_:)"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/replaceerror(with:)": {
+      "title": "replaceError(with:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/replaceerror(with:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/replaceerror(with:)"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/sink(receivevalue:)": {
+      "title": "sink(receiveValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/sink(receivevalue:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/sink(receivevalue:)"
+    },
+    "doc://com.apple.documentation/documentation/combine/subscribers/completion/failure(_:)": {
+      "title": "Subscribers.Completion.failure(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/subscribers/completion/failure(_:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/subscribers/completion/failure(_:)"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3538239": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3538239",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3538239"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/1411571-delegatequeue": {
+      "title": "delegateQueue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1411571-delegatequeue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/1411571-delegatequeue"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/receive(on:options:)": {
+      "title": "receive(on:options:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/receive(on:options:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/receive(on:options:)"
+    },
+    "doc://com.apple.documentation/documentation/dispatch/dispatchqueue": {
+      "title": "DispatchQueue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/dispatch/dispatchqueue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/dispatch/dispatchqueue"
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop": {
+      "title": "RunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop"
+    },
+    "doc://com.apple.documentation/documentation/combine/scheduler": {
+      "title": "Scheduler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/scheduler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/scheduler"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3527559": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3527559",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3527559"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/share()": {
+      "title": "share()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/share()",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/share()"
+    },
+    "doc://com.apple.documentation/documentation/combine/publishers/multicast": {
+      "title": "Publishers.Multicast",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publishers/multicast",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publishers/multicast"
+    },
+    "doc://com.apple.documentation/documentation/combine/passthroughsubject": {
+      "title": "PassthroughSubject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/passthroughsubject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/passthroughsubject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3527561": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3527561",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine#3527561"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/print(_:to:)": {
+      "title": "print(_:to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/print(_:to:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/print(_:to:)"
+    },
+    "doc://com.apple.documentation/documentation/combine/publisher/makeconnectable()": {
+      "title": "makeConnectable()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/makeconnectable()",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publisher/makeconnectable()"
+    },
+    "doc://com.apple.documentation/documentation/combine/publishers/share": {
+      "title": "Publishers.Share",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/publishers/share",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/publishers/share"
+    },
+    "doc://com.apple.documentation/documentation/combine/connectablepublisher": {
+      "title": "ConnectablePublisher",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/connectablepublisher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/connectablepublisher"
+    },
+    "doc://com.apple.documentation/documentation/combine/connectablepublisher/connect()": {
+      "title": "connect()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine/connectablepublisher/connect()",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/combine/connectablepublisher/connect()"
+    },
+    "doc://com.apple.documentation/documentation/combine": {
+      "title": "Combine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/combine",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/combine"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine": {
+      "title": "Processing URL Session Data Task Results with Combine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a chain of asynchronous operators to receive and process data fetched from a URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3329707-datataskpublisher": {
+      "title": "dataTaskPublisher(for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3329707-datataskpublisher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3329707-datataskpublisher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a publisher that wraps a URL session data task for a given URL request."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTaskPublisher"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": URLRequest) -> URLSession.DataTaskPublisher"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsession/3329707-datataskpublisher",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/3329708-datataskpublisher",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher"
+      ],
+      "title": "Performing Tasks as a Combine Publisher",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Performing tasks with URL sessions is inherently asynchronous; it takes time to fetch data from network endpoints, file systems, and other URL-based sources. The URL Loading System accounts for this by delivering results asynchronously to delegates or completion handlers. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine"
+            },
+            {
+              "type": "text",
+              "text": " framework also handles asynchronicity; using it to process your URL task results simplifies and empowers your code."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Data Task Publisher",
+          "anchor": "3559540"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+            },
+            {
+              "type": "text",
+              "text": " offers a Combine publisher, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher"
+            },
+            {
+              "type": "text",
+              "text": ", which publishes the results of fetching data from a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlrequest"
+            },
+            {
+              "type": "text",
+              "text": ". You create this publisher with the method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3329708-datataskpublisher"
+            },
+            {
+              "type": "text",
+              "text": ". When the task completes, it publishes either:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A tuple that contains the fetched data and a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/urlresponse"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", if the task succeeds."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An error, if the task fails."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Unlike the completion handler passed to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1410330-datatask"
+            },
+            {
+              "type": "text",
+              "text": ", the types received by your code aren’t optionals, since the publisher has already unwrapped the data or error."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+            },
+            {
+              "type": "text",
+              "text": "’s completion handler-based code, you need to do all your work in the handler closure: error-handling, data parsing, and so on. When you instead use the data task publisher, you can move many of these responsibilities to Combine operators."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert Incoming Raw Data to Your Types with Combine Operators",
+          "anchor": "3526671"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a data task completes successfully, it delivers a block of raw "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data"
+            },
+            {
+              "type": "text",
+              "text": " to your app. Most apps need to convert this data to their own types. Combine provides operators to perform these conversions, allowing you to declare a chain of processing operations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The data task publisher produces a tuple that contains a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data"
+            },
+            {
+              "type": "text",
+              "text": " and a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlresponse"
+            },
+            {
+              "type": "text",
+              "text": ". You can use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/map(_:)-99evh"
+            },
+            {
+              "type": "text",
+              "text": " operator to convert the contents of this tuple to another type. If you want to inspect the response before inspecing the data, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/trymap(_:)"
+            },
+            {
+              "type": "text",
+              "text": " and throw an error if the response is unacceptable."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To convert raw data to your own types that conform to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": " protocol, use Combine’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/decode(type:decoder:)"
+            },
+            {
+              "type": "text",
+              "text": " operator."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example combines both these operators to parse JSON data from a URL endpoint into a custom "
+            },
+            {
+              "type": "codeVoice",
+              "code": "User"
+            },
+            {
+              "type": "text",
+              "text": " type:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct User: Codable {",
+            "    let name: String",
+            "    let userID: String",
+            "}",
+            "let url = URL(string: \"https://example.com/endpoint\")!",
+            "cancellable = urlSession",
+            "    .dataTaskPublisher(for: url)",
+            "    .tryMap() { element -> Data in",
+            "        guard let httpResponse = element.response as? HTTPURLResponse,",
+            "            httpResponse.statusCode == 200 else {",
+            "                throw URLError(.badServerResponse)",
+            "            }",
+            "        return element.data",
+            "        }",
+            "    .decode(type: User.self, decoder: JSONDecoder())",
+            "    .sink(receiveCompletion: { print (\"Received completion: \\($0).\") },",
+            "          receiveValue: { user in print (\"Received user: \\(user).\")})"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3526670",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Retry Transient Errors and Catch and Replace Persistent Errors",
+          "anchor": "3526672"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Any app that uses the network should expect to encounter errors, and your app should handle them gracefully. Because transient network errors are fairly common, you may want to immediately retry a failed data task. With "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+            },
+            {
+              "type": "text",
+              "text": "’s completion handler idiom, you need to create a whole new task to perform a retry. With the data task publisher, you can instead use Combine’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/retry(_:)"
+            },
+            {
+              "type": "text",
+              "text": " operator. This handles errors by recreating the subscription to the upstream publisher a specified number of times. However, since network operations are expensive, only retry a small number of times, and ensure all requests are idempotent."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also use Combine operators to replace the error, rather than letting it reach the subscriber:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/catch(_:)"
+                    },
+                    {
+                      "type": "text",
+                      "text": " replaces the error with another publisher. You can use this with another "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", such as one that loads data from a fallback URL."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/combine/publisher/replaceerror(with:)"
+                    },
+                    {
+                      "type": "text",
+                      "text": " replaces the error with an element you provide. If it makes sense in your application, you can use this to provide a substitute for the value you expected to load from the URL."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows both of these techniques, retrying a failed request once, and using a fallback URL after that. If either the original request, the retry, or the fallback request succeeds, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/sink(receivevalue:)"
+            },
+            {
+              "type": "text",
+              "text": " operator receives data from the endpoint. If all three fail, the sink receives a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/subscribers/completion/failure(_:)"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let pub = urlSession",
+            "    .dataTaskPublisher(for: url)",
+            "    .retry(1)",
+            "    .catch() { _ in",
+            "        self.fallbackUrlSession.dataTaskPublisher(for: fallbackURL)",
+            "    }",
+            "cancellable = pub",
+            "    .sink(receiveCompletion: { print(\"Received completion: \\($0).\") },",
+            "          receiveValue: { print(\"Received data: \\($0.data).\") })"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3538239",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Move Work Between Dispatch Queues With Scheduling Operators",
+          "anchor": "3526667"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+            },
+            {
+              "type": "text",
+              "text": "’s delegate and completion handler idioms, the session calls back to your code on a fixed "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1411571-delegatequeue"
+            },
+            {
+              "type": "text",
+              "text": ". Sometimes, this means your callback code has to manually use dispatch queues or other scheduling APIs to put work on a specific queue."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher"
+            },
+            {
+              "type": "text",
+              "text": ", you can use Combine’s scheduling operators instead. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/receive(on:options:)"
+            },
+            {
+              "type": "text",
+              "text": " to specify how you want later operators in the chain and your subscriber, to schedule the work. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/dispatch/dispatchqueue"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/runloop"
+            },
+            {
+              "type": "text",
+              "text": " both implement Combine’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/scheduler"
+            },
+            {
+              "type": "text",
+              "text": " protocol, so you can use them to receive URL session data. The following snippet ensures that the sink logs its results on the main dispatch queue."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "cancellable = urlSession",
+            "    .dataTaskPublisher(for: url)",
+            "    .receive(on: DispatchQueue.main)",
+            "    .sink(receiveCompletion: { print (\"Received completion: \\($0).\") },",
+            "          receiveValue: { print (\"Received data: \\($0.data).\")})"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3527559",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Share the Result of a Data Task Publisher with Multiple Subscribers",
+          "anchor": "3526668"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You may want to use data from the URL endpoint in different parts of your application. Because network requests are expensive, don’t reissue them needlessly. Combine lets you use multiple subscribers to a single "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher"
+            },
+            {
+              "type": "text",
+              "text": ", while allowing the publisher to service all of them with a single request."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To support multiple downstream subscribers, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/share()"
+            },
+            {
+              "type": "text",
+              "text": " operator. This operator works like a combination of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publishers/multicast"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/passthroughsubject"
+            },
+            {
+              "type": "text",
+              "text": " publishers. You can connect multiple operator chains or subscribers to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/share()"
+            },
+            {
+              "type": "text",
+              "text": " operator, and any upstream publisher only sees one downstream. In the case of a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher"
+            },
+            {
+              "type": "text",
+              "text": ", this means it only performs the data task once."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example uses a URL session data task for two unrelated purposes. One subscriber uses the returned data to parse the custom "
+            },
+            {
+              "type": "codeVoice",
+              "code": "User"
+            },
+            {
+              "type": "text",
+              "text": " type seen earlier, and logs it on the main dispatch queue. A second subscriber is only concerned with the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlresponse"
+            },
+            {
+              "type": "text",
+              "text": ", which it inspects to print an HTTP status code, and doesn’t care which queue it uses. By using "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/share()"
+            },
+            {
+              "type": "text",
+              "text": ", the data task publisher can serve both subscribers with a single load from the URL endpoint."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let sharedPublisher = urlSession",
+            "    .dataTaskPublisher(for: url)",
+            "    .share()",
+            "",
+            "cancellable1 = sharedPublisher",
+            "    .tryMap() {",
+            "        guard $0.data.count > 0 else { throw URLError(.zeroByteResource) }",
+            "        return $0.data",
+            "    }",
+            "    .decode(type: User.self, decoder: JSONDecoder())",
+            "    .receive(on: DispatchQueue.main)",
+            "    .sink(receiveCompletion: { print (\"Received completion 1: \\($0).\") },",
+            "          receiveValue: { print (\"Received id: \\($0.userID).\")})",
+            "",
+            "cancellable2 = sharedPublisher",
+            "    .map() {",
+            "        $0.response",
+            "    }",
+            "    .sink(receiveCompletion: { print (\"Received completion 2: \\($0).\") },",
+            "           receiveValue: { response in",
+            "            if let httpResponse = response as? HTTPURLResponse {",
+            "                print (\"Received HTTP status: \\(httpResponse.statusCode).\")",
+            "            } else {",
+            "                print (\"Response was not an HTTPURLResponse.\")",
+            "            }",
+            "    }",
+            ")",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3527561",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To prove that this code only loads the data once, temporarily put a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/print(_:to:)"
+            },
+            {
+              "type": "text",
+              "text": " debugging operator before the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/share()"
+            },
+            {
+              "type": "text",
+              "text": " operator. When the app runs, Xcode’s console output shows it receives only a single value from the data task publisher, even though both subscribers receive their expected results."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Be aware that the URL session starts loading data as soon as the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher"
+            },
+            {
+              "type": "text",
+              "text": " has unsatisfied demand from a downstream subscriber. In this case, that happens when the first sink subscriber attaches. If you need extra time to attach other subscribers, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publisher/makeconnectable()"
+            },
+            {
+              "type": "text",
+              "text": " to wrap the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/publishers/share"
+            },
+            {
+              "type": "text",
+              "text": " publisher with a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/connectablepublisher"
+            },
+            {
+              "type": "text",
+              "text": ". After connecting all subscribers, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/combine/connectablepublisher/connect()"
+            },
+            {
+              "type": "text",
+              "text": " on the connectable publisher to allow the data load to begin."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

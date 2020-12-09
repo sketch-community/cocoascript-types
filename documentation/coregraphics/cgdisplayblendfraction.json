@@ -1,0 +1,208 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The percentage of blend color used in a fade operation."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics",
+        "doc://com.apple.documentation/documentation/coregraphics/core_graphics_data_types"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coregraphics/cgdisplayblendfraction",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1454693,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CGDisplayBlendFraction",
+    "role": "symbol",
+    "roleHeading": "Type Alias",
+    "modules": [
+      {
+        "name": "Core Graphics"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:@T@CGDisplayBlendFraction",
+    "symbolKind": "tdef"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/cgdisplayblendfraction"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/cgdisplayblendfraction"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coregraphics": {
+      "title": "Core Graphics",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics",
+      "url": "/documentation/coregraphics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services": {
+      "title": "Quartz Display Services",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services",
+      "url": "/documentation/coregraphics/quartz_display_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/core_graphics_data_types": {
+      "title": "Core Graphics Data Types",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/core_graphics_data_types",
+      "url": "/documentation/coregraphics/core_graphics_data_types",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "CGDisplayBlendFraction"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The blend fraction ranges from 0 (no color) to 1 (full intensity). If you specify 0, the blend color is not applied. If you specify 1, the user sees only the blend color on the screen."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a fade operation, Quartz blends a color specified by the application with the current contents of the framebuffer. The blend color can be applied both at the beginning and at the end of a fade operation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Color blending during a fade operation is analogous to alpha blending in Quartz 2D, and the appearance is similar. However, the implementation is quite different. In a fade operation, the blend color is applied at the very end of the graphics pipeline, when the framebuffer is transferred to video output."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the Universal Access preference panel in macOS allows you to select a flashing screen effect (sometimes called a visual bell) to accompany the system alert sound. When you select this option, the system uses a Quartz fade operation to produce the flash. The blend color is applied using a blend fraction of 0.5 or 50%."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provide a Preferences window in your Mac app built with Mac Catalyst so users can manage app preferences defined in a Settings bundle."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/displaying_a_preferences_window",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3226820,
+  "kind": "article",
+  "metadata": {
+    "title": "Displaying a Preferences Window",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/mac_catalyst/displaying_a_preferences_window"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/mac_catalyst/displaying_a_preferences_window"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst": {
+      "title": "Mac Catalyst",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst",
+      "url": "/documentation/uikit/mac_catalyst",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3402483": {
+      "identifier": "link-media-3402483",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/mac_catalyst/displaying_a_preferences_window#3402483"
+    },
+    "media-3402483": {
+      "identifier": "media-3402483",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1360,
+            "height": 788
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5d51700df4/15fb0d6c-5683-4f62-82d2-615eed53808e.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1360,
+            "height": 788
+          },
+          "url": "https://docs-assets.developer.apple.com/published/76ec0f84d6/241b0ad5-f64b-47a9-ab74-e6d5630ef1d7.png"
+        }
+      ],
+      "alt": "A screenshot of Xcode showing the selection of the iOS platform, selection of the Setting Bundles template, and the Next button that you click to save the Settings bundle.",
+      "title": "Figure 1"
+    },
+    "devLink-1695740": {
+      "identifier": "devLink-1695740",
+      "type": "link",
+      "title": "Hierarchical Preferences",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html#//apple_ref/doc/uid/10000059i-CH6-SW4"
+    },
+    "devLink-1734716": {
+      "identifier": "devLink-1734716",
+      "type": "link",
+      "title": "Toggle Switch Element",
+      "url": "https://developer.apple.com/library/archive/documentation/PreferenceSettings/Conceptual/SettingsApplicationSchemaReference/Articles/PSToggleSwitchSpecifier.html#//apple_ref/doc/uid/TP40007012"
+    },
+    "devLink-1695725": {
+      "identifier": "devLink-1695725",
+      "type": "link",
+      "title": "Implementing an iOS Settings Bundle",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html#//apple_ref/doc/uid/10000059i-CH6"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/displaying_a_preferences_window": {
+      "title": "Displaying a Preferences Window",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/displaying_a_preferences_window",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/mac_catalyst/displaying_a_preferences_window",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a Preferences window in your Mac app built with Mac Catalyst so users can manage app preferences defined in a Settings bundle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/detecting_changes_in_the_preferences_window": {
+      "title": "Detecting Changes in the Preferences Window",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/detecting_changes_in_the_preferences_window",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/mac_catalyst/detecting_changes_in_the_preferences_window",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Listen for and respond to a user’s preference changes in your Mac app built with Mac Catalyst using Combine."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst/detecting_changes_in_the_preferences_window"
+      ],
+      "title": "User Preferences",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Mac apps typically display app-specific preferences using a Preferences window accessible through the standard Preferences menu item under the app menu in the menu bar. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Mac apps built with Mac Catalyst that include a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Settings.bundle"
+            },
+            {
+              "type": "text",
+              "text": " file automatically get the Preferences menu item and a Preferences window. When a user selects the Preferences menu item, the system displays a Mac-friendly Preferences window based on the options provided in your Settings bundle. To learn about Settings bundles, see "
+            },
+            {
+              "type": "link",
+              "title": "Implementing an iOS Settings Bundle",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html#//apple_ref/doc/uid/10000059i-CH6"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Preferences Window to Your App",
+          "anchor": "3402266"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To include a Preferences window in your Mac app, add a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Settings.bundle"
+            },
+            {
+              "type": "text",
+              "text": " file to your Xcode project by pressing Command-N and selecting the Settings Bundle template from the Resources section under iOS. Then click Next to save the file to your project."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3402483",
+              "metadata": {
+                "anchor": "3402483",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Toolbar Tabs to the Preferences Window",
+          "anchor": "3239152"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A Settings bundle can include one or more child panes that allow you to organize your preferences hierarchically (see "
+            },
+            {
+              "type": "link",
+              "title": "Hierarchical Preferences",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html#//apple_ref/doc/uid/10000059i-CH6-SW4"
+            },
+            {
+              "type": "text",
+              "text": "). In iOS, the Settings app displays a child pane as a preference row. When the user taps the row, the app displays a new view showing the preferences defined in the child pane's property list file."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In macOS, the Preferences window displays a child pane as a tab on the window’s toolbar. When the user clicks the tab, they see the preferences provided in the child pane's property list file."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The tab for a child pane displays the pane’s title and a system-provided icon. To customize the icon, add the following key to the child pane's property list file:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "Icon"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optional. A string with the name of the image file to display as the toolbar tab icon in the Preferences window. "
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You must include the image file in the Settings bundle that contains the child pane's property list file."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Confirm Changes Made with a Toggle Switch ",
+          "anchor": "3239149"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Another element of the Settings bundle is the "
+            },
+            {
+              "type": "link",
+              "title": "Toggle Switch Element",
+              "destination": "https://developer.apple.com/library/archive/documentation/PreferenceSettings/Conceptual/SettingsApplicationSchemaReference/Articles/PSToggleSwitchSpecifier.html#//apple_ref/doc/uid/TP40007012"
+            },
+            {
+              "type": "text",
+              "text": ", which displays an ON/OFF switch that the user can toggle. Your Mac app can prompt the user for a confirmation when they toggle the switch by including the following keys in the toggle switch element:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "TrueConfirmationPrompt"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optional. A dictionary that defines the prompt to present to users when they attempt to turn on the switch."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "FalseConfirmationPrompt"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optional. A dictionary that defines the prompt to present to users when they attempt to turn off the switch."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each dictionary contains the following keys that define the contents of the prompt:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "Type"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Required. Must be set to "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "PSConfirmationPrompt"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "Title"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Required. A string with the title of the prompt. The title might not appear on some devices."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "Prompt"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Required. A string with the body text that the prompt displays."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "ConfirmText"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optional. A string with the text displayed in the prompt's confirmation button. The toggle switch value changes when the user clicks this button."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "DenyText"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optional. A string with the text displayed in the prompt's cancel button. The toggle switch value doesn't change when the user clicks this button."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display Subtitles for Toggle Switches",
+          "anchor": "3239148"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some iOS apps show descriptive text in a subtitle below a toggle switch using a group item with footer text. While the Preferences window supports this approach, the appearance on a Mac isn't ideal. Instead, include the following key in the toggle switch element to show a subtitle:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "Description"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optional. A longer descriptive string to display under a toggle switch."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

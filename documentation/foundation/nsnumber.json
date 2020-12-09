@@ -1,0 +1,3586 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object wrapper for primitive scalar numeric values."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsnumber",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1409820,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSNumber",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSNumber",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsnumber"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsnumber"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values": {
+      "title": "Numbers, Data, and Basic Values",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values",
+      "url": "/documentation/foundation/numbers_data_and_basic_values",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime": {
+      "title": "Object Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime",
+      "url": "/documentation/foundation/object_runtime",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue": {
+      "title": "floatValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1418317-floatvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "float"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue": {
+      "title": "unsignedIntegerValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1413324-unsignedintegervalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUInteger"
+        },
+        {
+          "type": "text",
+          "text": " object, converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1407838-charvalue": {
+      "title": "charValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407838-charvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1407838-charvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "char"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber#2555732": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber#2555732",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/foundation/nsnumber#2555732",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "NSNumber from Boolean Value Conversions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber#2555735": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber#2555735",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/foundation/nsnumber#2555735",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "NSNumber from Integer Value Conversions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber#2555738": {
+      "title": "Table 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber#2555738",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/foundation/nsnumber#2555738",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "NSNumber from Unsigned Integer Value Conversions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber#2555743": {
+      "title": "Table 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber#2555743",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/foundation/nsnumber#2555743",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "NSNumber from Floating Point Value Conversions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1410865-boolvalue": {
+      "title": "boolValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1410865-boolvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1410865-boolvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as a Boolean value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1412554-integervalue": {
+      "title": "integerValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1412554-integervalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1412554-integervalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSInteger"
+        },
+        {
+          "type": "text",
+          "text": " object, converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsvalue/1412365-objctype": {
+      "title": "objCType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue/1412365-objctype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsvalue/1412365-objctype"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
+      "title": "NSNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object wrapper for primitive scalar numeric values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1407153-intvalue": {
+      "title": "intValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407153-intvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1407153-intvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "int"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1413562-compare": {
+      "title": "compare:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1413562-compare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1413562-compare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSComparisonResult"
+        },
+        {
+          "type": "text",
+          "text": " value that indicates whether the number object’s value is greater than, equal to, or less than a given number."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "compare:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumberref": {
+      "title": "CFNumberRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfnumberref"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbooleanref": {
+      "title": "CFBooleanRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbooleanref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfbooleanref"
+    },
+    "devLink-1745091": {
+      "identifier": "devLink-1745091",
+      "type": "link",
+      "title": "Toll-Free Bridging",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdecimal": {
+      "title": "NSDecimal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdecimal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdecimal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure representing a base-10 number."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
+      "title": "NSValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsvalue"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551475-numberwithbool": {
+      "title": "numberWithBool:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551475-numberwithbool",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551475-numberwithbool",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "BOOL"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithBool:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551464-numberwithchar": {
+      "title": "numberWithChar:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551464-numberwithchar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551464-numberwithchar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "char"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithChar:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551463-numberwithdouble": {
+      "title": "numberWithDouble:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551463-numberwithdouble",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551463-numberwithdouble",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "double"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithDouble:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551471-numberwithfloat": {
+      "title": "numberWithFloat:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551471-numberwithfloat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551471-numberwithfloat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "float"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithFloat:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551470-numberwithint": {
+      "title": "numberWithInt:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551470-numberwithint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551470-numberwithint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "int"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithInt:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551473-numberwithinteger": {
+      "title": "numberWithInteger:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551473-numberwithinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551473-numberwithinteger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSInteger"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithInteger:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551474-numberwithlong": {
+      "title": "numberWithLong:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551474-numberwithlong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551474-numberwithlong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "long"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithLong:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551462-numberwithlonglong": {
+      "title": "numberWithLongLong:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551462-numberwithlonglong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551462-numberwithlonglong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "long long"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithLongLong:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551476-numberwithshort": {
+      "title": "numberWithShort:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551476-numberwithshort",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551476-numberwithshort",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing "
+        },
+        {
+          "type": "codeVoice",
+          "code": "value"
+        },
+        {
+          "type": "text",
+          "text": ", treating it as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "short"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithShort:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551468-numberwithunsignedchar": {
+      "title": "numberWithUnsignedChar:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551468-numberwithunsignedchar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551468-numberwithunsignedchar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned char"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithUnsignedChar:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551472-numberwithunsignedint": {
+      "title": "numberWithUnsignedInt:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551472-numberwithunsignedint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551472-numberwithunsignedint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned int"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithUnsignedInt:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551469-numberwithunsignedinteger": {
+      "title": "numberWithUnsignedInteger:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551469-numberwithunsignedinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551469-numberwithunsignedinteger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUInteger"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithUnsignedInteger:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551477-numberwithunsignedlong": {
+      "title": "numberWithUnsignedLong:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551477-numberwithunsignedlong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551477-numberwithunsignedlong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned long"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithUnsignedLong:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551465-numberwithunsignedlonglong": {
+      "title": "numberWithUnsignedLongLong:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551465-numberwithunsignedlonglong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551465-numberwithunsignedlonglong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned long long"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithUnsignedLongLong:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1551467-numberwithunsignedshort": {
+      "title": "numberWithUnsignedShort:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1551467-numberwithunsignedshort",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1551467-numberwithunsignedshort",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object containing a given value, treating it as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned short"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberWithUnsignedShort:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1415728-initwithbool": {
+      "title": "initWithBool:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1415728-initwithbool",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1415728-initwithbool",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "BOOL"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithBool:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1409777-initwithchar": {
+      "title": "initWithChar:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1409777-initwithchar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1409777-initwithchar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "char"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithChar:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1407545-initwithdouble": {
+      "title": "initWithDouble:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407545-initwithdouble",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1407545-initwithdouble",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain "
+        },
+        {
+          "type": "codeVoice",
+          "code": "value"
+        },
+        {
+          "type": "text",
+          "text": ", treated as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "double"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithDouble:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1412999-initwithfloat": {
+      "title": "initWithFloat:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1412999-initwithfloat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1412999-initwithfloat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "float"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFloat:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1407580-initwithint": {
+      "title": "initWithInt:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407580-initwithint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1407580-initwithint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "int"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithInt:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1409397-initwithinteger": {
+      "title": "initWithInteger:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1409397-initwithinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1409397-initwithinteger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSInteger"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithInteger:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1410739-initwithlong": {
+      "title": "initWithLong:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1410739-initwithlong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1410739-initwithlong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "long"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithLong:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1408171-initwithlonglong": {
+      "title": "initWithLongLong:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1408171-initwithlonglong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1408171-initwithlonglong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain "
+        },
+        {
+          "type": "codeVoice",
+          "code": "value"
+        },
+        {
+          "type": "text",
+          "text": ", treated as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "long long"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithLongLong:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1411886-initwithshort": {
+      "title": "initWithShort:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1411886-initwithshort",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1411886-initwithshort",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as a signed "
+        },
+        {
+          "type": "codeVoice",
+          "code": "short"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithShort:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1416533-initwithunsignedchar": {
+      "title": "initWithUnsignedChar:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1416533-initwithunsignedchar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1416533-initwithunsignedchar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned char"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithUnsignedChar:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1414598-initwithunsignedint": {
+      "title": "initWithUnsignedInt:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1414598-initwithunsignedint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1414598-initwithunsignedint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned int"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithUnsignedInt:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1412531-initwithunsignedinteger": {
+      "title": "initWithUnsignedInteger:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1412531-initwithunsignedinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1412531-initwithunsignedinteger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSUInteger"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithUnsignedInteger:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1410728-initwithunsignedlong": {
+      "title": "initWithUnsignedLong:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1410728-initwithunsignedlong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1410728-initwithunsignedlong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned long"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithUnsignedLong:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1416550-initwithunsignedlonglong": {
+      "title": "initWithUnsignedLongLong:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1416550-initwithunsignedlonglong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1416550-initwithunsignedlonglong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned long long"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithUnsignedLongLong:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1407718-initwithunsignedshort": {
+      "title": "initWithUnsignedShort:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407718-initwithunsignedshort",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1407718-initwithunsignedshort",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object initialized to contain a given value, treated as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "unsigned short"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithUnsignedShort:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1407409-decimalvalue": {
+      "title": "decimalValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407409-decimalvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1407409-decimalvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdecimal"
+        },
+        {
+          "type": "text",
+          "text": " structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1414104-doublevalue": {
+      "title": "doubleValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1414104-doublevalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1414104-doublevalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "double"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1416870-longlongvalue": {
+      "title": "longLongValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1416870-longlongvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1416870-longlongvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object’s value expressed as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "long long"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1412566-longvalue": {
+      "title": "longValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1412566-longvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1412566-longvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "long"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1407601-shortvalue": {
+      "title": "shortValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407601-shortvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1407601-shortvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "short"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1409016-unsignedcharvalue": {
+      "title": "unsignedCharValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1409016-unsignedcharvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1409016-unsignedcharvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as an unsigned "
+        },
+        {
+          "type": "codeVoice",
+          "code": "char"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1417875-unsignedintvalue": {
+      "title": "unsignedIntValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1417875-unsignedintvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1417875-unsignedintvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as an unsigned "
+        },
+        {
+          "type": "codeVoice",
+          "code": "int"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1414524-unsignedlonglongvalue": {
+      "title": "unsignedLongLongValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1414524-unsignedlonglongvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1414524-unsignedlonglongvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object’s value expressed as an unsigned "
+        },
+        {
+          "type": "codeVoice",
+          "code": "long long"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1415252-unsignedlongvalue": {
+      "title": "unsignedLongValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1415252-unsignedlongvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1415252-unsignedlongvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as an unsigned "
+        },
+        {
+          "type": "codeVoice",
+          "code": "long"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1410604-unsignedshortvalue": {
+      "title": "unsignedShortValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1410604-unsignedshortvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1410604-unsignedshortvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as an unsigned "
+        },
+        {
+          "type": "codeVoice",
+          "code": "short"
+        },
+        {
+          "type": "text",
+          "text": ", converted as necessary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1409984-descriptionwithlocale": {
+      "title": "descriptionWithLocale:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1409984-descriptionwithlocale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1409984-descriptionwithlocale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string that represents the contents of the number object for a given locale."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "descriptionWithLocale:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1415802-stringvalue": {
+      "title": "stringValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1415802-stringvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1415802-stringvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number object's value expressed as a human-readable string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1411315-isequaltonumber": {
+      "title": "isEqualToNumber:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1411315-isequaltonumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1411315-isequaltonumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the number object’s value and a given number are equal. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isEqualToNumber:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1807278-objctype": {
+      "title": "objCType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1807278-objctype",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/foundation/nsnumber/1807278-objctype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a C string containing the Objective-C type of the data contained in the number object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/1414177-nsdecimalisnotanumber": {
+      "title": "NSDecimalIsNotANumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1414177-nsdecimalisnotanumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/1414177-nsdecimalisnotanumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean that indicates whether a given decimal contains a valid number."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber/1411476-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1411476-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber/1411476-initwithcoder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
+      "title": "NSInteger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsinteger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describes an integer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsuinteger": {
+      "title": "NSUInteger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsuinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsuinteger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describes an unsigned integer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdecimalnumber": {
+      "title": "NSDecimalNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdecimalnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdecimalnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object for representing and performing arithmetic on base-10 numbers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumberformatter": {
+      "title": "NSNumberFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumberformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumberformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that converts between numeric values and their textual representations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsvalue"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating an NSNumber Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551475-numberwithbool",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551464-numberwithchar",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551463-numberwithdouble",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551471-numberwithfloat",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551470-numberwithint",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551473-numberwithinteger",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551474-numberwithlong",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551462-numberwithlonglong",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551476-numberwithshort",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551468-numberwithunsignedchar",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551472-numberwithunsignedint",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551469-numberwithunsignedinteger",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551477-numberwithunsignedlong",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551465-numberwithunsignedlonglong",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1551467-numberwithunsignedshort"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializing an NSNumber Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1415728-initwithbool",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1409777-initwithchar",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1407545-initwithdouble",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1412999-initwithfloat",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1407580-initwithint",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1409397-initwithinteger",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1410739-initwithlong",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1408171-initwithlonglong",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1411886-initwithshort",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1416533-initwithunsignedchar",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1414598-initwithunsignedint",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1412531-initwithunsignedinteger",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1410728-initwithunsignedlong",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1416550-initwithunsignedlonglong",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1407718-initwithunsignedshort"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Numeric Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1410865-boolvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1407838-charvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1407409-decimalvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1414104-doublevalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1407153-intvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1412554-integervalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1416870-longlongvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1412566-longvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1407601-shortvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1409016-unsignedcharvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1417875-unsignedintvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1414524-unsignedlonglongvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1415252-unsignedlongvalue",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1410604-unsignedshortvalue"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retrieving String Representations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1409984-descriptionwithlocale",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1415802-stringvalue"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing NSNumber Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1413562-compare",
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1411315-isequaltonumber"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Type Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1807278-objctype"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Number Validation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/1414177-nsdecimalisnotanumber"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnumber/1411476-initwithcoder"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsinteger",
+        "doc://com.apple.documentation/documentation/objectivec/nsuinteger",
+        "doc://com.apple.documentation/documentation/foundation/nsdecimal",
+        "doc://com.apple.documentation/documentation/foundation/nsdecimalnumber",
+        "doc://com.apple.documentation/documentation/foundation/nsnumberformatter"
+      ],
+      "title": "Numbers",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSNumber"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSValue",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
+              "text": "NSValue"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSNumber"
+            },
+            {
+              "type": "text",
+              "text": " is a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSValue"
+            },
+            {
+              "type": "text",
+              "text": " that offers a value as any C scalar (numeric) type. It defines a set of methods specifically for setting and accessing the value as a signed or unsigned "
+            },
+            {
+              "type": "codeVoice",
+              "code": "char"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "short int"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "int"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "long int"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "long long int"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "float"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "double"
+            },
+            {
+              "type": "text",
+              "text": " or as a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "BOOL"
+            },
+            {
+              "type": "text",
+              "text": ". (Note that number objects do not necessarily preserve the type they are created with.) It also defines a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1413562-compare"
+            },
+            {
+              "type": "text",
+              "text": " method to determine the ordering of two "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSNumber"
+            },
+            {
+              "type": "text",
+              "text": " objects."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSNumber"
+            },
+            {
+              "type": "text",
+              "text": " is “toll-free bridged” with its Core Foundation counterparts: "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberref"
+            },
+            {
+              "type": "text",
+              "text": " for integer and floating point values, and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbooleanref"
+            },
+            {
+              "type": "text",
+              "text": " for Boolean values. See "
+            },
+            {
+              "type": "link",
+              "title": "Toll-Free Bridging",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2"
+            },
+            {
+              "type": "text",
+              "text": " for more information on toll-free bridging."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Value Conversions",
+          "anchor": "1776614"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSNumber"
+            },
+            {
+              "type": "text",
+              "text": " provides readonly properties that return the object’s stored value converted to a particular Boolean, integer, unsigned integer, or floating point C scalar type. Because numeric types have different storage capabilities, attempting to initialize with a value of one type and access the value of another type may produce an erroneous result—for example, initializing with a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "double"
+            },
+            {
+              "type": "text",
+              "text": " value exceeding "
+            },
+            {
+              "type": "codeVoice",
+              "code": "FLT_MAX"
+            },
+            {
+              "type": "text",
+              "text": " and accessing its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue"
+            },
+            {
+              "type": "text",
+              "text": ", or initializing with an negative integer value and accessing its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue"
+            },
+            {
+              "type": "text",
+              "text": ". In some cases, attempting to initialize with a value of a type and access the value of another type may result in loss of precision—for example, initializing with a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "double"
+            },
+            {
+              "type": "text",
+              "text": " value with many significant digits and accessing its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue"
+            },
+            {
+              "type": "text",
+              "text": ", or initializing with a large integer value and accessing its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407838-charvalue"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSNumber"
+            },
+            {
+              "type": "text",
+              "text": " object initialized with a value of a particular type accessing the converted value of a different "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "kind"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " of type, such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "unsigned int"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "float"
+            },
+            {
+              "type": "text",
+              "text": ", will convert its stored value to that converted type in the following ways:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "both",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Value"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1410865-boolvalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1412554-integervalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.0"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2555732",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "NSNumber from Boolean Value Conversions"
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": "both",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Value"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1410865-boolvalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1412554-integervalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.0"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "-1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "-1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "invalid, erroneous result"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "-1.0"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2555735",
+            "title": "Table 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "NSNumber from Integer Value Conversions"
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": "both",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Value"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1410865-boolvalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1412554-integervalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.0"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2555738",
+            "title": "Table 3",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "NSNumber from Unsigned Integer Value Conversions"
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": "both",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Value"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1410865-boolvalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1412554-integervalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1418317-floatvalue"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.0"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "-1.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "-1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "invalid, erroneous result"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "-1.0"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2555743",
+            "title": "Table 4",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "NSNumber from Floating Point Value Conversions"
+              }
+            ]
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1776615"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As with any class cluster, subclasses of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSNumber"
+            },
+            {
+              "type": "text",
+              "text": " must override the primitive methods of its superclass, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSValue"
+            },
+            {
+              "type": "text",
+              "text": ". In addition, there are two requirements around the data type your subclass represents:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your implementation of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue/1412365-objctype"
+                    },
+                    {
+                      "type": "text",
+                      "text": " must return one of “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "c"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "C"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "s"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "S"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "i"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "I"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "l"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "L"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "q"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Q"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "f"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, and “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "d"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”. This is required for the other methods of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to behave correctly."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your subclass must override the accessor method that corresponds to the declared type—for example, if your implementation of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue/1412365-objctype"
+                    },
+                    {
+                      "type": "text",
+                      "text": " returns  “"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "i"
+                    },
+                    {
+                      "type": "text",
+                      "text": "”, you must override "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber/1407153-intvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

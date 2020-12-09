@@ -1,0 +1,1128 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/media"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3669040,
+  "kind": "article",
+  "metadata": {
+    "title": "Improving Siri Media Interactions and App Selection",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/media/improving_siri_media_interactions_and_app_selection"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/media/improving_siri_media_interactions_and_app_selection"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media": {
+      "title": "Media",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media",
+      "url": "/documentation/sirikit/media",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent": {
+      "title": "INPlayMediaIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inplaymediaintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinityintent": {
+      "title": "INUpdateMediaAffinityIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinityintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inupdatemediaaffinityintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inaddmediaintent": {
+      "title": "INAddMediaIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inaddmediaintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inaddmediaintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inplaymediaintentresponsecode/inplaymediaintentresponsecodecontinueinapp": {
+      "title": "INPlayMediaIntentResponseCodeContinueInApp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintentresponsecode/inplaymediaintentresponsecodecontinueinapp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inplaymediaintentresponsecode/inplaymediaintentresponsecodecontinueinapp"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inplaymediaintentresponsecode/inplaymediaintentresponsecodehandleinapp": {
+      "title": "INPlayMediaIntentResponseCodeHandleInApp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintentresponsecode/inplaymediaintentresponsecodehandleinapp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inplaymediaintentresponsecode/inplaymediaintentresponsecodehandleinapp"
+    },
+    "link-media-3670928": {
+      "identifier": "link-media-3670928",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection#3670928"
+    },
+    "media-3670928": {
+      "identifier": "media-3670928",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 1200,
+            "height": 574
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1cd7aa8a15/rendered2x-1596491083.png"
+        }
+      ],
+      "alt": "A screenshot of Xcode’s Project editor with the General pane active and the Supported Intents section expanded. The table of supported intents lists INPlayMediaIntent and INAddMediaIntent. In the Media Categories list, the checkbox for Music is selected.",
+      "title": "Figure 1"
+    },
+    "link-media-3686892": {
+      "identifier": "link-media-3686892",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection#3686892"
+    },
+    "media-3686892": {
+      "identifier": "media-3686892",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 806,
+            "height": 383
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cd2585fd14/rendered2x-1600990553.png"
+        }
+      ],
+      "alt": "The Suggestions section of Xcode’s intent definition editor. In the Supported Combinations list, the item “mediaContainer” is selected.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypenews": {
+      "title": "INMediaItemTypeNews",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypenews",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inmediaitemtype/inmediaitemtypenews"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypemusicvideo": {
+      "title": "INMediaItemTypeMusicVideo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypemusicvideo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inmediaitemtype/inmediaitemtypemusicvideo"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypemovie": {
+      "title": "INMediaItemTypeMovie",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypemovie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inmediaitemtype/inmediaitemtypemovie"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypetvshow": {
+      "title": "INMediaItemTypeTVShow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypetvshow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inmediaitemtype/inmediaitemtypetvshow"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypetvshowepisode": {
+      "title": "INMediaItemTypeTVShowEpisode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypetvshowepisode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inmediaitemtype/inmediaitemtypetvshowepisode"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypeunknown": {
+      "title": "INMediaItemTypeUnknown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypeunknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inmediaitemtype/inmediaitemtypeunknown"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ininteraction": {
+      "title": "INInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ininteraction"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ininteraction/1690400-deleteinteractionswithidentifier": {
+      "title": "deleteInteractionsWithIdentifiers:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction/1690400-deleteinteractionswithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ininteraction/1690400-deleteinteractionswithidentifier",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteInteractionsWithIdentifiers:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ininteraction/1690389-deleteallinteractionswithcomplet": {
+      "title": "deleteAllInteractionsWithCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction/1690389-deleteallinteractionswithcomplet",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ininteraction/1690389-deleteallinteractionswithcomplet",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteAllInteractionsWithCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inmediausercontext": {
+      "title": "INMediaUserContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediausercontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inmediausercontext"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection#3669035": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection#3669035",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection#3669035"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfileprotectioncompleteuntilfirstuserauthentication": {
+      "title": "NSFileProtectionCompleteUntilFirstUserAuthentication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfileprotectioncompleteuntilfirstuserauthentication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfileprotectioncompleteuntilfirstuserauthentication"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection#3669044": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection#3669044",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection#3669044"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620351-deletesearchableitemswithdomaini": {
+      "title": "deleteSearchableItemsWithDomainIdentifiers:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620351-deletesearchableitemswithdomaini",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableindex/1620351-deletesearchableitemswithdomaini",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteSearchableItemsWithDomainIdentifiers:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620342-deleteallsearchableitemswithcomp": {
+      "title": "deleteAllSearchableItemsWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620342-deleteallsearchableitemswithcomp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableindex/1620342-deleteallsearchableitemswithcomp",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteAllSearchableItemsWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference": {
+      "title": "Global Vocabulary Reference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies": {
+      "title": "Parameter Vocabularies",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit": {
+      "title": "Registering Custom Vocabulary with SiriKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
+      "title": "INVocabulary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invocabulary"
+    },
+    "link-3671763": {
+      "title": "Privacy - Features",
+      "type": "topic",
+      "identifier": "link-3671763",
+      "kind": "article",
+      "role": "link",
+      "url": "https://www.apple.com/privacy/features/"
+    },
+    "link-3671764": {
+      "title": "Empower Your Intents",
+      "type": "topic",
+      "identifier": "link-3671764",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/videos/play/wwdc2020/10073/"
+    },
+    "link-3671762": {
+      "title": "Design for Intelligence: Make Friends with “The System”",
+      "type": "topic",
+      "identifier": "link-3671762",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/videos/play/wwdc2020/10087/"
+    },
+    "link-3671765": {
+      "title": "Design High Quality Siri Media Interactions",
+      "type": "topic",
+      "identifier": "link-3671765",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/videos/play/wwdc2020/10060/"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection": {
+      "title": "Improving Siri Media Interactions and App Selection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/media/improving_siri_media_interactions_and_app_selection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user interacts with Siri to request media, the system may send your app an intent that represents the user’s request. To effectively communicate the user’s request to your app, the system relies on the intents your app supports, the names of media items and performers, and the user’s listening habits. The system also uses this information to make proactive suggestions and provide relevant search results. Your app can contribute to this information with Core Spotlight and Intents to improve the accuracy, relevance, and convenience of playing media."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "App Selection streamlines voice-driven interactions. As the system learns about the user’s listening habits, it intelligently predicts when the user intends for your app to handle a request, even if the user didn’t mention your app by name. By adopting these Intents and Core Spotlight APIs, your app also helps refine App Selection’s predictions. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about how Apple protects user privacy when your app shares information with the system, see the Siri section of "
+            },
+            {
+              "type": "link",
+              "title": "Privacy - Features",
+              "destination": "https://www.apple.com/privacy/features/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Session 10073: "
+                },
+                {
+                  "type": "link",
+                  "title": "Empower Your Intents",
+                  "destination": "https://developer.apple.com/videos/play/wwdc2020/10073/"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Session 10087: "
+                },
+                {
+                  "type": "link",
+                  "title": "Design for Intelligence: Make Friends with “The System”",
+                  "destination": "https://developer.apple.com/videos/play/wwdc2020/10087/"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Session 10060: "
+                },
+                {
+                  "type": "link",
+                  "title": "Design High Quality Siri Media Interactions",
+                  "destination": "https://developer.apple.com/videos/play/wwdc2020/10060/"
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Related Sessions from WWDC20"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Support Media Intents",
+          "anchor": "3669039"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent"
+            },
+            {
+              "type": "text",
+              "text": " to receive media intents from Siri and Shortcuts. Support other system-defined media intents, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinityintent"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inaddmediaintent"
+            },
+            {
+              "type": "text",
+              "text": ", that reflect interactions the user can perform directly in your app. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In iOS 14 and later, you can set up handling for "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent"
+                },
+                {
+                  "type": "text",
+                  "text": " directly in your app. To continue supporting earlier versions of iOS, resolve and confirm the intent in an extension, then respond with "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintentresponsecode/inplaymediaintentresponsecodecontinueinapp"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintentresponsecode/inplaymediaintentresponsecodehandleinapp"
+                },
+                {
+                  "type": "text",
+                  "text": " so the system sends the intent to the app to play the media. "
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Tell the system what types of media your app supports in Xcode’s Project editor. In the Supported Intents section of the Project editor, select each Media Category that describes your app’s content. Select "
+            },
+            {
+              "type": "codeVoice",
+              "code": "General"
+            },
+            {
+              "type": "text",
+              "text": " if your app plays media that doesn’t fit any of the other categories, like spooky sound effects or white noise. To opt in to Siri media control, you must choose at least one category for your app. With the settings shown here, users can say “Play some music in ControlAudio” to play music in the ControlAudio app. When App Selection is available, they can simply say “Play some music” and Siri intelligently picks the user’s preferred music app with App Selection."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3670928",
+              "metadata": {
+                "anchor": "3670928",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system can also use your app’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent"
+            },
+            {
+              "type": "text",
+              "text": " donations to offer personalized audio suggestions on Lock Screen, in Control Center, and in the Home app. To opt-in to these suggestions, you need to explicitly indicate that your app can play media container intents with no additional parameters. If you haven’t already customized the PlayMedia system intent, follow these steps to set that up:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If your project doesn’t already have an "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": ".intentDefinition"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file, use File > New File and then choose SiriKit Intent Definition File to add one to your project."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open your "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": ".intentDefinition"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose Customize System Intent > Media > Play Media from the + menu at the bottom of the intent definition editor."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you have the PlayMedia system intent in a SiriKit Intent Definition file, make sure that its list of Supported Combinations includes the entry with “mediaContainer” as the only parameter."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3686892",
+              "metadata": {
+                "anchor": "3686892",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The system offers the user audio suggestions based on donations the system can play in an audio-only situation. The system excludes the following media types when generating audio suggestions: "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypenews"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypemusicvideo"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypemovie"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypetvshow"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypetvshowepisode"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediaitemtype/inmediaitemtypeunknown"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Donate Interactions",
+          "anchor": "3669043"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Improve App Selection, Shortcuts, and Shortcut Suggestions by donating interactions from your app. Each time the user starts playing media directly in your app, create and donate an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction"
+            },
+            {
+              "type": "text",
+              "text": " containing an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent"
+            },
+            {
+              "type": "text",
+              "text": " to tell the system what the user is listening to. Provide as much detail as possible in each donation to help the system interact more accurately with the user in the future. If the user starts a playlist or radio station, donate that information instead of each individual song. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Suggestions improve as the system accumulates donated interactions. If some media becomes irrelevant or unavailable, use "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction/1690400-deleteinteractionswithidentifier"
+                },
+                {
+                  "type": "text",
+                  "text": " to remove interactions associated with those specific media items. Don’t call "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction/1690389-deleteallinteractionswithcomplet"
+                },
+                {
+                  "type": "text",
+                  "text": " unless you really mean to reset what the system has learned about the way the user interacts with your app."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set the Current User Context",
+          "anchor": "3669037"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When your app launches, create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediausercontext"
+            },
+            {
+              "type": "text",
+              "text": ", add the user’s information, and make the context current. The system uses this information to optimize the user experience for App Selection. The following code listing shows how to set the current context for a user with a paid subscription and a few hundred items in their library:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let context = INMediaUserContext()",
+            "context.numberOfLibraryItems = 345",
+            "context.subscriptionStatus = .subscribed",
+            "context.becomeCurrent()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3669035",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Populate the Spotlight Database",
+          "anchor": "3669042"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Add metadata about playlists and individual media items from the user’s local library to the Core Spotlight database. When the user searches for the item, the system can offer to play the media in your app alongside any other search results. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Choose the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfileprotectioncompleteuntilfirstuserauthentication"
+            },
+            {
+              "type": "text",
+              "text": " level of protection for your Spotlight database so the system can access this information even when your app isn’t running."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let attributes = CSSearchableItemAttributeSet(contentType: .audio)",
+            "attributes.title = \"Some Cool Song Title\"",
+            "attributes.artist = \"Hot New Artist\"",
+            "attributes.album = \"Hot New Artist's Exclusive Album\"",
+            "attributes.genre = \"Pop\"",
+            "attributes.playCount = 5",
+            "attributes.lastUsedDate = Date()",
+            "",
+            "let item = CSSearchableItem(uniqueIdentifier: \"<identifier>\", domainIdentifier: domain, attributeSet: attributes)",
+            "",
+            "CSSearchableIndex.default().indexSearchableItems([item]) { ... }",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3669044",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you need to delete items from the index, use "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620351-deletesearchableitemswithdomaini"
+                },
+                {
+                  "type": "text",
+                  "text": ". Calling "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620342-deleteallsearchableitemswithcomp"
+                },
+                {
+                  "type": "text",
+                  "text": " deletes not only the searchable items you’ve added directly to the searchable index, but also every "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction"
+                },
+                {
+                  "type": "text",
+                  "text": " your app has donated or Siri has donated on behalf of your app."
+                }
+              ]
+            }
+          ],
+          "style": "warning"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define Relevant Vocabulary",
+          "anchor": "3669036"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Define vocabulary for Siri, both specific to the individual user and relevant for all users but exclusive to your app. Providing vocabulary helps Siri match a user’s request to media items you’ve added to the Spotlight database or included in donated intents and interactions. Take care to include terms that include numbers or have other unusual spellings. There are two ways to provide vocabulary, and each one helps Siri interpret and route user requests: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Global vocabulary relevant to all users of your app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "User-specific vocabulary that you update as the user interacts with your app. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Define general terms in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference"
+            },
+            {
+              "type": "text",
+              "text": ". Add an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppIntentVocabulary.plist "
+            },
+            {
+              "type": "text",
+              "text": "file to your project and provide any vocabulary that’s unique to your app but relevant for all users in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies"
+            },
+            {
+              "type": "text",
+              "text": " section. For more details, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Provide additional vocabulary programmatically with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary"
+            },
+            {
+              "type": "text",
+              "text": ", like names that are unique or particularly important to the user, such as playlist titles. Put terms that are most important for this user or that Siri most often misunderstands first. You should update the vocabulary as needed, such as when the user renames or deletes a playlist, or begins listening to a particular artist more frequently."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

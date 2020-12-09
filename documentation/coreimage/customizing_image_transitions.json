@@ -1,0 +1,1509 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Transition between images in creative ways using Core Image filters."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2953416,
+  "kind": "article",
+  "metadata": {
+    "title": "Customizing Image Transitions",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Image"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreimage/customizing_image_transitions"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreimage/customizing_image_transitions"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreimage": {
+      "title": "Core Image",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage",
+      "url": "/documentation/coreimage",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953616": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953616",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/customizing_image_transitions#2953616"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/cifilter": {
+      "title": "CIFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/cifilter"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/kcicategorytransition": {
+      "title": "kCICategoryTransition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/kcicategorytransition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/kcicategorytransition"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953672": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953672",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/customizing_image_transitions#2953672"
+    },
+    "link-media-2960171": {
+      "identifier": "link-media-2960171",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coreimage/customizing_image_transitions#2960171"
+    },
+    "media-2960171": {
+      "identifier": "media-2960171",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 994,
+            "height": 220
+          },
+          "url": "https://docs-assets.developer.apple.com/published/867d9d2e27/7b5c7498-5d59-4a05-9553-17420a234c3f.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 994,
+            "height": 220
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6681130e6d/1b8a25f5-9161-4928-b90e-acee7ead76f6.png"
+        }
+      ],
+      "alt": "A graphic of simd_smoothstep, showing a smooth ramp between 0 and 1",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "simd_smoothstep(0, 1, time)"
+        },
+        {
+          "type": "text",
+          "text": ": a smooth ramp between 0 and 1"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953673": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953673",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/customizing_image_transitions#2953673"
+    },
+    "link-media-2960172": {
+      "identifier": "link-media-2960172",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/coreimage/customizing_image_transitions#2960172"
+    },
+    "media-2960172": {
+      "identifier": "media-2960172",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 994,
+            "height": 218
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9e67396e4d/d34c57be-1229-4552-b6d3-3db2c93558a4.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 994,
+            "height": 218
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e4b2d72495/aaf02831-6124-4813-b560-d5a3a1a6678d.png"
+        }
+      ],
+      "alt": "A graphic depicting simd_smoothstep(1, 0, abs(time)), a smoothened triangle ramp between 0 and 1",
+      "title": "Figure 3",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "simd_smoothstep(1, 0, abs(time))"
+        },
+        {
+          "type": "text",
+          "text": ": a smoothened triangle ramp that goes from 0 to 1 to 0"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953694": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953694",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/customizing_image_transitions#2953694"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink": {
+      "title": "CADisplayLink",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimage": {
+      "title": "CIImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimage"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953690": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953690",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/customizing_image_transitions#2953690"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953692": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953692",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/customizing_image_transitions#2953692"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953716": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions#2953716",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/customizing_image_transitions#2953716"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nstimer": {
+      "title": "NSTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nstimer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nstimer"
+    },
+    "link-2960170": {
+      "title": "Core Image Filter Reference",
+      "type": "section",
+      "identifier": "link-2960170",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/content/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW239"
+    },
+    "link-media-2960175": {
+      "identifier": "link-media-2960175",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/coreimage/customizing_image_transitions#2960175"
+    },
+    "media-2960175": {
+      "identifier": "media-2960175",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 908,
+            "height": 458
+          },
+          "url": "https://docs-assets.developer.apple.com/published/90629758f9/18b2120f-ba94-46c2-bb53-8c8e8c7c92e8.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 908,
+            "height": 458
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ccec29d348/b1305653-665d-442d-b4a2-59c24d09b431.png"
+        }
+      ],
+      "alt": "Copy machine transition from a beach at sunset to a beach at daytime with rainbow in the sky",
+      "title": "Figure 4",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "CICopyMachineTransition"
+        },
+        {
+          "type": "text",
+          "text": " from a beach at sunset to a beach at daytime"
+        }
+      ]
+    },
+    "link-media-2960178": {
+      "identifier": "link-media-2960178",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/coreimage/customizing_image_transitions#2960178"
+    },
+    "media-2960178": {
+      "identifier": "media-2960178",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 908,
+            "height": 522
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ecdd6f2d0b/adb2afa0-1ee1-4d56-b572-84f89f858a20.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 908,
+            "height": 522
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4cb0fdb1fd/86b5d694-e471-488c-b8f8-629fe1407f33.png"
+        }
+      ],
+      "alt": "Page curl transition from a photo of a beach at daytime with rainbow in the sky to a photo of a beach at sunset, with a flower image on the back of the page",
+      "title": "Figure 5",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "CIPageCurlWithShadowTransition"
+        },
+        {
+          "type": "text",
+          "text": " from a beach at daytime with rainbow in the sky to a beach at sunset, with a flower image on the back of the page"
+        }
+      ]
+    },
+    "link-media-2960177": {
+      "identifier": "link-media-2960177",
+      "type": "link",
+      "title": "Figure 6",
+      "url": "/documentation/coreimage/customizing_image_transitions#2960177"
+    },
+    "media-2960177": {
+      "identifier": "media-2960177",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 908,
+            "height": 458
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8a5434313e/0abd4390-94e0-46dd-849c-01db7f3a513e.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 908,
+            "height": 458
+          },
+          "url": "https://docs-assets.developer.apple.com/published/af842f1af8/570867c7-218c-46a0-ae11-0ad31aa8196b.png"
+        }
+      ],
+      "alt": "Bar swipe transition from a beach at sunset to a beach at daytime with rainbow in the sky",
+      "title": "Figure 6",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "CIBarsSwipeTransition"
+        },
+        {
+          "type": "text",
+          "text": " from a beach at sunset to a beach at daytime with rainbow in the sky"
+        }
+      ]
+    },
+    "devLink-1717417": {
+      "identifier": "devLink-1717417",
+      "type": "link",
+      "title": "CICategoryTransition",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW239"
+    },
+    "link-media-2960176": {
+      "identifier": "link-media-2960176",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coreimage/customizing_image_transitions#2960176"
+    },
+    "media-2960176": {
+      "identifier": "media-2960176",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 908,
+            "height": 458
+          },
+          "url": "https://docs-assets.developer.apple.com/published/78a5ca63c0/171233e0-66d7-46fc-ad90-a14e683396e3.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 908,
+            "height": 458
+          },
+          "url": "https://docs-assets.developer.apple.com/published/33646cf114/dabf18c7-281a-4b30-a8bc-62783d171cd6.png"
+        }
+      ],
+      "alt": "Pixelated transition from a beach at daytime with rainbow in the sky to a beach at sunset",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CIDissolveTransition"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CIPixellate"
+        },
+        {
+          "type": "text",
+          "text": " to create a custom image transition."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect": {
+      "title": "Applying a Chroma Key Effect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replace a color in one image with the background from another."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image": {
+      "title": "Selectively Focusing on an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Focus on a part of an image by applying Gaussian blur and gradient masks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions": {
+      "title": "Customizing Image Transitions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/customizing_image_transitions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transition between images in creative ways using Core Image filters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film": {
+      "title": "Simulating Scratchy Analog Film",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/simulating_scratchy_analog_film",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Degrade the quality of an image to make it look like dated, scratchy analog film."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect",
+        "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image",
+        "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film"
+      ],
+      "title": "Filter Recipes",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can add visual effects to an image transition by chaining together Core Image "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+            },
+            {
+              "type": "text",
+              "text": " objects in the category "
+            },
+            {
+              "type": "link",
+              "title": "CICategoryTransition",
+              "destination": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW239"
+            },
+            {
+              "type": "text",
+              "text": ".  Each filter from this category represents a single transition effect."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, you can combine an effect that dissolves an image and one that pixelates it as a transition to a second image.  This particular transition chain comprises three steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CIDissolveTransition"
+                    },
+                    {
+                      "type": "text",
+                      "text": " transition filter with time as an input parameter."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CIPixellate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " pixelation transition filter with time as an input parameter."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Initiate the transition by adding a time step to your run loop."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2960176",
+              "metadata": {
+                "anchor": "2960176",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Combine "
+                  },
+                  {
+                    "type": "codeVoice",
+                    "code": "CIDissolveTransition"
+                  },
+                  {
+                    "type": "text",
+                    "text": " and "
+                  },
+                  {
+                    "type": "codeVoice",
+                    "code": "CIPixellate"
+                  },
+                  {
+                    "type": "text",
+                    "text": " to create a custom image transition."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Load Source and Target Images",
+          "anchor": "2953418"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Filters in the transition category require your program to load both source and target images in order to transform the source into the destination."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSURL* sourceURL = [[NSBundle mainBundle] URLForResource:@\"YourSourceImage\" withExtension:@\"JPG\"];",
+            "_sourceImage = [UIImage imageWithContentsOfFile:sourceURL.path];",
+            "_sourceCIImage = [CIImage imageWithContentsOfURL:sourceURL];",
+            "",
+            "NSURL* destinationURL = [[NSBundle mainBundle] URLForResource:@\"YourTargetImage\" withExtension:@\"JPG\"];",
+            "_destinationImage = [UIImage imageWithContentsOfFile:destinationURL.path];",
+            "_finalCIImage = [CIImage imageWithContentsOfURL:destinationURL];"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953616",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Time-Dependent Dissolve Transition",
+          "anchor": "2953417"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The key difference of transition filters from their normal filter chain counterparts is the dependence on time.  After creating a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+            },
+            {
+              "type": "text",
+              "text": " from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/kcicategorytransition"
+            },
+            {
+              "type": "text",
+              "text": " category, you set the value of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputTime"
+            },
+            {
+              "type": "text",
+              "text": " parameter to a float between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": " to indicate how far along the transition has progressed.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Write each transition filter to accept time as an input parameter, and reapply the filter at a regular interval to transform the image from its source state to the target state."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "#import <simd/simd.h>",
+            "",
+            "- (CIImage*) dissolveFilterImage:(CIImage*)inputImage ",
+            "                              to:(CIImage*)targetImage ",
+            "                          atTime:(NSTimeInterval)time",
+            "{",
+            "    NSTimeInterval inputTime = simd_smoothstep(0, 1, time);",
+            "    ",
+            "    CIFilter* filter = [CIFilter filterWithName:@\"CIDissolveTransition\"];",
+            "    ",
+            "    [filter setValue:inputImage forKey:kCIInputImageKey];",
+            "    [filter setValue:targetImage forKey:kCIInputTargetImageKey];",
+            "    [filter setValue:@(inputTime) forKey:kCIInputTimeKey];",
+            "    ",
+            "    return filter.outputImage;",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953672",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You do not need to pass time linearly from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": ".  In fact, you can advance the transition at a variable rate by modulating the time variable with a function, such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "simd_smoothstep"
+            },
+            {
+              "type": "text",
+              "text": ", which is a smooth ramp function clamped between two values, imbuing the dissolve effect with an ease-in ease-out feel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2960171",
+              "metadata": {
+                "anchor": "2960171",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "simd_smoothstep(0, 1, time)"
+                  },
+                  {
+                    "type": "text",
+                    "text": ": a smooth ramp between 0 and 1"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Time-Dependent Pixelate Transition",
+          "anchor": "2953422"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Like the dissolve transition, you can write the pixelate transition filter as a time-dependent function as well."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "#import <simd/simd.h>",
+            "",
+            "- (CIImage*) pixelateFilterImage:(CIImage*)inputImage atTime:(NSTimeInterval)time",
+            "{",
+            "    NSTimeInterval inputScale = simd_smoothstep(1, 0, fabs(time));",
+            "    ",
+            "    CIFilter* filter = [CIFilter filterWithName:@\"CIPixellate\"];",
+            "    ",
+            "    [filter setValue:inputImage forKey:kCIInputImageKey];",
+            "    [filter setValue:@(inputScale) forKey:kCIInputScaleKey];",
+            "    ",
+            "    return filter.outputImage;",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953673",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As with the dissolve filter, you can modify the speed and acceleration of the transition by changing the way time varies between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": ".  In this case, unlike the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIDissolveTransition"
+            },
+            {
+              "type": "text",
+              "text": " filter, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIPixellate"
+            },
+            {
+              "type": "text",
+              "text": " filter accepts an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputScale"
+            },
+            {
+              "type": "text",
+              "text": ", which you can vary over a smoothened triangle function: "
+            },
+            {
+              "type": "codeVoice",
+              "code": "simd_smoothstep(1, 0, abs(time))"
+            },
+            {
+              "type": "text",
+              "text": ".  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2960172",
+              "metadata": {
+                "anchor": "2960172",
+                "title": "Figure 3",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "simd_smoothstep(1, 0, abs(time))"
+                  },
+                  {
+                    "type": "text",
+                    "text": ": a smoothened triangle ramp that goes from 0 to 1 to 0"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function puts the peak of the pixelation at the middle of the transition: the pixels start and end small, closely approximating the source image, but as the transition reaches its halfway point, the pixels scale to their largest size, effectively blocking out the moment farthest from source and target."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Step Time with a Display Link",
+          "anchor": "2953419"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In writing the filter functions to accept a time parameter, you parametrized the transition effect moving from source to target.  Now, you must move time forward when you want to perform the transition."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Adding a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink"
+            },
+            {
+              "type": "text",
+              "text": " to your run loop gives you a way to refresh an image every time a screen redraw occurs, so you can execute on a reliably regular time interval.  In the case of a transition, you need only perform the following steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the display link to call an update function."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add to your app’s main run loop to begin the transition.  Start time at "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0.0"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and track time through the update function."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the update function, update the transition filters’ "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputTime"
+                    },
+                    {
+                      "type": "text",
+                      "text": " value and refresh the filtered image.  Since this example chains two filters for a simultaneous effect, update both filters."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the update function, remove the link once time has expired."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Adding a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nstimer"
+                },
+                {
+                  "type": "text",
+                  "text": " may seem like a logical strategy for stepping time, but the display link fires with greater precision in sync with screen redraws."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Create the Display Link to Call an Update Function",
+          "anchor": "2953691"
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "_displayLink = [CADisplayLink displayLinkWithTarget:self ",
+            "                                           selector:@selector(stepTime)];"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953694",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Keeping the display link around beyond function scope allows you to remove it when the transition is done."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Add the Display Link to Begin the Transition",
+          "anchor": "2953687"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To begin the transition effect, add the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink"
+            },
+            {
+              "type": "text",
+              "text": " to your program's main run loop, so it can execute each time step and redraw the transitioning "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "- (void) beginTransition",
+            "{",
+            "    _time = 0;",
+            "    _dt = 0.005;",
+            "    ",
+            "    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(stepTime)];",
+            "    [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953690",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Write the Transition Update Function",
+          "anchor": "2953689"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink"
+            },
+            {
+              "type": "text",
+              "text": " should call a time-stepping function on each pass through the run loop.  Inside this function, recompute the filtered image with that frame's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "time"
+            },
+            {
+              "type": "text",
+              "text": " variable."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "- (void) stepTime",
+            "{",
+            "    _time += _dt;",
+            "",
+            "    // End transition after 1 second",
+            "    if (_time > 1)",
+            "    {",
+            "        [_displayLink removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];",
+            "    }",
+            "    else",
+            "    {",
+            "        _dissolvedCIImage = [self dissolveFilterImage:_sourceCIImage",
+            "                                                  to:_finalCIImage",
+            "                                              atTime:_time];",
+            "        ",
+            "        _pixellatedCIImage = [self pixellateFilterImage:_dissolvedCIImage",
+            "                                                 atTime:_time];",
+            "        ",
+            "        // imageView and ciContext are ivars of the class, initialized elsewhere.",
+            "        [self showCIImage:_pixellatedCIImage in:_imageView usingContext:_ciContext];",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953692",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As a convenience, the following helper function shows a CIImage in a UIImageView."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "- (void) showCIImage:(CIImage*)ciImage",
+            "         inImageView:(UIImageView*)imageView",
+            "        usingContext:(CIContext*)context",
+            "{",
+            "    CGImageRef cgImage = [context createCGImage:ciImage",
+            "                                       fromRect:ciImage.extent];",
+            "    ",
+            "    UIImage* uiImage = [UIImage imageWithCGImage:cgImage];",
+            "    ",
+            "    imageView.image = uiImage;",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953716",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Explore Other Transition Visual Effects",
+          "anchor": "2953420"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Core Image framework provides a number of distinct visual effects through its built-in catalog of filters.  You can substitute a different transition effect for the dissolve and pixelation effects.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "See filters under the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/kcicategorytransition"
+            },
+            {
+              "type": "text",
+              "text": " in the "
+            },
+            {
+              "type": "link",
+              "title": "Core Image Filter Reference",
+              "destination": "https://developer.apple.com/library/content/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW239"
+            },
+            {
+              "type": "text",
+              "text": " for other effects to try."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CICopyMachineTransition"
+            },
+            {
+              "type": "text",
+              "text": " filter passes a scanning light over the source image as it transforms into the target image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2960175",
+              "metadata": {
+                "anchor": "2960175",
+                "title": "Figure 4",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "CICopyMachineTransition"
+                  },
+                  {
+                    "type": "text",
+                    "text": " from a beach at sunset to a beach at daytime"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIPageCurlWithShadowTransition"
+            },
+            {
+              "type": "text",
+              "text": " filter simulates the turn of a page, peeling the source image toward the right to reveal the target image underneath.  You can include a separate image on the back of the flipped page."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2960178",
+              "metadata": {
+                "anchor": "2960178",
+                "title": "Figure 5",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "CIPageCurlWithShadowTransition"
+                  },
+                  {
+                    "type": "text",
+                    "text": " from a beach at daytime with rainbow in the sky to a beach at sunset, with a flower image on the back of the page"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIBarsSwipeTransition"
+            },
+            {
+              "type": "text",
+              "text": " slices the source image into vertical bars that sequentially slide off the page, revealing the target image underneath."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2960177",
+              "metadata": {
+                "anchor": "2960177",
+                "title": "Figure 6",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "CIBarsSwipeTransition"
+                  },
+                  {
+                    "type": "text",
+                    "text": " from a beach at sunset to a beach at daytime with rainbow in the sky"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can apply transitions such as accordion folding, flash photography, disintegration, and watery rippling.  Substitute the dissolve and pixellate filters with others from the same category, and tweak the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputTime"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputScale"
+            },
+            {
+              "type": "text",
+              "text": " parameter to customize the effect to fit your app."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,655 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Label numeric quantities with physical dimensions to allow locale-aware formatting and conversion between related units."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/units_and_measurement",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2877924,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Units and Measurement",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/units_and_measurement"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/units_and_measurement"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmeasurement": {
+      "title": "NSMeasurement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmeasurement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmeasurement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A numeric quantity labeled with a unit of measure, with support for unit conversion and unit-aware calculations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunit": {
+      "title": "NSUnit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class representing a unit of measure. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdimension": {
+      "title": "NSDimension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdimension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdimension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class representing a dimensional unit of measure. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitconverter": {
+      "title": "NSUnitConverter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitconverter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitconverter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that provides a description of how to convert a unit to and from the base unit of its dimension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitconverterlinear": {
+      "title": "NSUnitConverterLinear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitconverterlinear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitconverterlinear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of how to convert between units using a linear equation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitarea": {
+      "title": "NSUnitArea",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitarea",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitarea",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for area."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitlength": {
+      "title": "NSUnitLength",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitlength",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitlength",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for length."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitvolume": {
+      "title": "NSUnitVolume",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitvolume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitvolume",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for volume."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitangle": {
+      "title": "NSUnitAngle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitangle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitangle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for rotation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitmass": {
+      "title": "NSUnitMass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitmass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitmass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for mass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitpressure": {
+      "title": "NSUnitPressure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitpressure",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitpressure",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for pressure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitacceleration": {
+      "title": "NSUnitAcceleration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitacceleration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitacceleration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for acceleration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitduration": {
+      "title": "NSUnitDuration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitduration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for duration of time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitfrequency": {
+      "title": "NSUnitFrequency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitfrequency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitfrequency",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for frequency."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitspeed": {
+      "title": "NSUnitSpeed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitspeed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitspeed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for speed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitenergy": {
+      "title": "NSUnitEnergy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitenergy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitenergy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for energy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitpower": {
+      "title": "NSUnitPower",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitpower",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitpower",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for power."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunittemperature": {
+      "title": "NSUnitTemperature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunittemperature",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunittemperature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for temperature."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitilluminance": {
+      "title": "NSUnitIlluminance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitilluminance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitilluminance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for luminance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitelectriccharge": {
+      "title": "NSUnitElectricCharge",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitelectriccharge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitelectriccharge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for electric charge."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitelectriccurrent": {
+      "title": "NSUnitElectricCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitelectriccurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitelectriccurrent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for electric current."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitelectricpotentialdifference": {
+      "title": "NSUnitElectricPotentialDifference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitelectricpotentialdifference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitelectricpotentialdifference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for electric potential difference."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitelectricresistance": {
+      "title": "NSUnitElectricResistance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitelectricresistance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitelectricresistance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for electric resistance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitconcentrationmass": {
+      "title": "NSUnitConcentrationMass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitconcentrationmass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitconcentrationmass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for concentration of mass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitdispersion": {
+      "title": "NSUnitDispersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitdispersion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitdispersion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for an amount-of-substance fraction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitfuelefficiency": {
+      "title": "NSUnitFuelEfficiency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitfuelefficiency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitfuelefficiency",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unit of measure for fuel efficiency."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsunitinformationstorage": {
+      "title": "NSUnitInformationStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsunitinformationstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsunitinformationstorage"
+    },
+    "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values": {
+      "title": "Numbers, Data, and Basic Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/numbers_data_and_basic_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Work with primitive values and other fundamental types used throughout Cocoa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/strings_and_text": {
+      "title": "Strings and Text",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/strings_and_text",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/strings_and_text",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and process strings of Unicode characters, use regular expressions to find patterns, and perform natural language analysis of text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/collections": {
+      "title": "Collections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/collections",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/collections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use arrays, dictionaries, sets, and specialized collections to store and iterate groups of objects or values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dates_and_times": {
+      "title": "Dates and Times",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dates_and_times",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/dates_and_times",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compare dates and times, and perform calendar and time zone calculations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/units_and_measurement": {
+      "title": "Units and Measurement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/units_and_measurement",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/units_and_measurement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Label numeric quantities with physical dimensions to allow locale-aware formatting and conversion between related units."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data_formatting": {
+      "title": "Data Formatting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data_formatting",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/data_formatting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert numbers, dates, measurements, and other values to and from locale-aware string representations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filters_and_sorting": {
+      "title": "Filters and Sorting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filters_and_sorting",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/filters_and_sorting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use predicates, expressions, and sort descriptors to examine elements in collections and other services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "First Steps",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsmeasurement",
+        "doc://com.apple.documentation/documentation/foundation/nsunit",
+        "doc://com.apple.documentation/documentation/foundation/nsdimension"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Conversion",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitconverter",
+        "doc://com.apple.documentation/documentation/foundation/nsunitconverterlinear"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Physical Dimension",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitarea",
+        "doc://com.apple.documentation/documentation/foundation/nsunitlength",
+        "doc://com.apple.documentation/documentation/foundation/nsunitvolume",
+        "doc://com.apple.documentation/documentation/foundation/nsunitangle"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Mass, Weight, and Force",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitmass",
+        "doc://com.apple.documentation/documentation/foundation/nsunitpressure"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Time and Motion",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitacceleration",
+        "doc://com.apple.documentation/documentation/foundation/nsunitduration",
+        "doc://com.apple.documentation/documentation/foundation/nsunitfrequency",
+        "doc://com.apple.documentation/documentation/foundation/nsunitspeed"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Energy, Heat, and Light",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitenergy",
+        "doc://com.apple.documentation/documentation/foundation/nsunitpower",
+        "doc://com.apple.documentation/documentation/foundation/nsunittemperature",
+        "doc://com.apple.documentation/documentation/foundation/nsunitilluminance"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Electricity",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitelectriccharge",
+        "doc://com.apple.documentation/documentation/foundation/nsunitelectriccurrent",
+        "doc://com.apple.documentation/documentation/foundation/nsunitelectricpotentialdifference",
+        "doc://com.apple.documentation/documentation/foundation/nsunitelectricresistance"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Concentration and Dispersion",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitconcentrationmass",
+        "doc://com.apple.documentation/documentation/foundation/nsunitdispersion"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Fuel Efficiency",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitfuelefficiency"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Storage",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsunitinformationstorage"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values",
+        "doc://com.apple.documentation/documentation/foundation/strings_and_text",
+        "doc://com.apple.documentation/documentation/foundation/collections",
+        "doc://com.apple.documentation/documentation/foundation/dates_and_times",
+        "doc://com.apple.documentation/documentation/foundation/data_formatting",
+        "doc://com.apple.documentation/documentation/foundation/filters_and_sorting"
+      ],
+      "title": "Fundamentals",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

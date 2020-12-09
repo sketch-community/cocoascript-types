@@ -1,0 +1,792 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A formatter that converts a byte count value into a localized description that is formatted with the appropriate byte modifier (KB, MB, GB and so on)."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/data_formatting"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/bytecountformatter",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1416151,
+  "kind": "symbol",
+  "metadata": {
+    "title": "ByteCountFormatter",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "6.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.8",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSByteCountFormatter",
+    "symbolKind": "cl",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "class "
+      },
+      {
+        "kind": "identifier",
+        "text": "ByteCountFormatter"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsbytecountformatter"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/bytecountformatter"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data_formatting": {
+      "title": "Data Formatting",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data_formatting",
+      "url": "/documentation/foundation/data_formatting",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatter": {
+      "title": "Formatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatter"
+    },
+    "doc://com.apple.documentation/documentation/swift/cvararg": {
+      "title": "CVarArg",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/cvararg"
+    },
+    "doc://com.apple.documentation/documentation/swift/equatable": {
+      "title": "Equatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/equatable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1408178-string": {
+      "title": "string(fromByteCount:countStyle:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1408178-string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1408178-string",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a byte count into the specified string format without creating an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "string"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "fromByteCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Int64, "
+        },
+        {
+          "kind": "identifier",
+          "text": "countStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": ByteCountFormatter.CountStyle) -> String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1415338-string": {
+      "title": "string(fromByteCount:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1415338-string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1415338-string",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a byte count into a string without creating an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSNumber"
+        },
+        {
+          "type": "text",
+          "text": " object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "string"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "fromByteCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Int64) -> String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1412185-formattingcontext": {
+      "title": "formattingContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1412185-formattingcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1412185-formattingcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the formatting context for the formatted string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "formattingContext"
+        },
+        {
+          "kind": "text",
+          "text": ": Formatter.Context"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1417194-countstyle": {
+      "title": "countStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1417194-countstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1417194-countstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the number of bytes to be used for kilobytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "countStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": ByteCountFormatter.CountStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1408929-allowsnonnumericformatting": {
+      "title": "allowsNonnumericFormatting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1408929-allowsnonnumericformatting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1408929-allowsnonnumericformatting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether to allow more natural display of some values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "allowsNonnumericFormatting"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1411068-includesactualbytecount": {
+      "title": "includesActualByteCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1411068-includesactualbytecount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1411068-includesactualbytecount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether to include the number of bytes after the formatted string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "includesActualByteCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1417887-isadaptive": {
+      "title": "isAdaptive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1417887-isadaptive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1417887-isadaptive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the display style of the size representation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isAdaptive"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409137-allowedunits": {
+      "title": "allowedUnits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409137-allowedunits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1409137-allowedunits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the units that can be used in the output."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "allowedUnits"
+        },
+        {
+          "kind": "text",
+          "text": ": ByteCountFormatter.Units"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409874-includescount": {
+      "title": "includesCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409874-includescount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1409874-includescount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether to include the count in the resulting formatted string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "includesCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1415784-includesunit": {
+      "title": "includesUnit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1415784-includesunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1415784-includesunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether to include the units in the resulting formatted string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "includesUnit"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409630-zeropadsfractiondigits": {
+      "title": "zeroPadsFractionDigits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409630-zeropadsfractiondigits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/1409630-zeropadsfractiondigits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether to zero pad fraction digits so a consistent number of characters is displayed in a representation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "zeroPadsFractionDigits"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/units": {
+      "title": "ByteCountFormatter.Units",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/units",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/units",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the units appropriate for the formatter to display. Specifying any units explicitly causes just those units to be used in showing the number."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "ByteCountFormatter.Units"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/countstyle": {
+      "title": "ByteCountFormatter.CountStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/countstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/countstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies display of file or storage byte counts. The display style is platform specific."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "ByteCountFormatter.CountStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172522-string": {
+      "title": "string(for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172522-string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/3172522-string",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "string"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?) -> String?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172523-string": {
+      "title": "string(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172523-string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/3172523-string",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "string"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Measurement<UnitInformationStorage>) -> String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172524-string": {
+      "title": "string(from:countStyle:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172524-string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter/3172524-string",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "string"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Measurement<UnitInformationStorage>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "countStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": ByteCountFormatter.CountStyle) -> String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatter": {
+      "title": "ByteCountFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that converts a byte count value into a localized description that is formatted with the appropriate byte modifier (KB, MB, GB and so on)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "ByteCountFormatter"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatter"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/cvararg",
+        "doc://com.apple.documentation/documentation/swift/equatable",
+        "doc://com.apple.documentation/documentation/swift/hashable"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Strings from Byte Count",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1408178-string",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1415338-string"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Formatting Styles",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1412185-formattingcontext",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1417194-countstyle",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1408929-allowsnonnumericformatting",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1411068-includesactualbytecount",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1417887-isadaptive",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409137-allowedunits",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409874-includescount",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1415784-includesunit",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/1409630-zeropadsfractiondigits"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/units",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/countstyle"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172522-string",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172523-string"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatter/3172524-string"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "ByteCountFormatter"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSFormatter",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/formatter",
+              "text": "Formatter"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

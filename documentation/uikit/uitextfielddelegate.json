@@ -1,0 +1,917 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A set of optional methods to manage the editing and validation of text in a text field object."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1619606,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UITextFieldDelegate",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(pl)UITextFieldDelegate",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitextfielddelegate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitextfielddelegate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield": {
+      "title": "UITextField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
+      "title": "Text Display and Fonts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+      "url": "/documentation/uikit/text_display_and_fonts",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619601-textfieldshouldbeginediting": {
+      "title": "textFieldShouldBeginEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619601-textfieldshouldbeginediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619601-textfieldshouldbeginediting",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether to begin editing in the specified text field."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldShouldBeginEditing:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboardwillshownotification": {
+      "title": "UIKeyboardWillShowNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillshownotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboardwillshownotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboarddidshownotification": {
+      "title": "UIKeyboardDidShowNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidshownotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboarddidshownotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboardwillchangeframenotification": {
+      "title": "UIKeyboardWillChangeFrameNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillchangeframenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboardwillchangeframenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboarddidchangeframenotification": {
+      "title": "UIKeyboardDidChangeFrameNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidchangeframenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboarddidchangeframenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619590-textfielddidbeginediting": {
+      "title": "textFieldDidBeginEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619590-textfielddidbeginediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619590-textfielddidbeginediting",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when editing begins in the specified text field."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldDidBeginEditing:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidbegineditingnotification": {
+      "title": "UITextFieldTextDidBeginEditingNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidbegineditingnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfieldtextdidbegineditingnotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619599-textfield": {
+      "title": "textField:shouldChangeCharactersInRange:replacementString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619599-textfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619599-textfield",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether to change the specified text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textField:shouldChangeCharactersInRange:replacementString:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidchangenotification": {
+      "title": "UITextFieldTextDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfieldtextdidchangenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619594-textfieldshouldclear": {
+      "title": "textFieldShouldClear:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619594-textfieldshouldclear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619594-textfieldshouldclear",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether to remove the text field’s current contents."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldShouldClear:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn": {
+      "title": "textFieldShouldReturn:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether to process the pressing of the Return button for the text field."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldShouldReturn:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619592-textfieldshouldendediting": {
+      "title": "textFieldShouldEndEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619592-textfieldshouldendediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619592-textfieldshouldendediting",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether to stop editing in the specified text field. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldShouldEndEditing:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboardwillhidenotification": {
+      "title": "UIKeyboardWillHideNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillhidenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboardwillhidenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboarddidhidenotification": {
+      "title": "UIKeyboardDidHideNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidhidenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboarddidhidenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619591-textfielddidendediting": {
+      "title": "textFieldDidEndEditing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619591-textfielddidendediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619591-textfielddidendediting",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when editing stops for the specified text field."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldDidEndEditing:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidendeditingnotification": {
+      "title": "UITextFieldTextDidEndEditingNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidendeditingnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfieldtextdidendeditingnotification"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchtextfielddelegate": {
+      "title": "UISearchTextFieldDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchtextfielddelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchtextfielddelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/2352220-textfielddidendediting": {
+      "title": "textFieldDidEndEditing:reason:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/2352220-textfielddidendediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/2352220-textfielddidendediting",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when editing stops for the specified text field, and the reason it stopped."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldDidEndEditing:reason:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreason": {
+      "title": "UITextFieldDidEndEditingReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddidendeditingreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the reason for ending editing in a text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/3114542-textfielddidchangeselection": {
+      "title": "textFieldDidChangeSelection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/3114542-textfielddidchangeselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/3114542-textfielddidchangeselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the text selection changes in the specified text field."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldDidChangeSelection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619595-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619595-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619595-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text field’s delegate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate": {
+      "title": "UITextFieldDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods to manage the editing and validation of text in a text field object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Inherited By",
+      "type": "inheritedBy",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uisearchtextfielddelegate"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Managing Editing",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619601-textfieldshouldbeginediting",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619590-textfielddidbeginediting",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619592-textfieldshouldendediting",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/2352220-textfielddidendediting",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619591-textfielddidendediting",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreason"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Editing the Text Field’s Text",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619599-textfield",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619594-textfieldshouldclear",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Text Selection",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/3114542-textfielddidchangeselection"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619595-delegate"
+      ],
+      "title": "Validating and Handling Edits",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UITextFieldDelegate"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A text field calls the methods of its delegate in response to important changes. You use these methods to validate text that was typed by the user, to respond to specific interactions with the keyboard, and to control the overall editing process. Editing begins shortly before the text field becomes the first responder and displays the keyboard (or its assigned input view). The flow of the editing process is as follows:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Before becoming the first responder, the text field calls its delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619601-textfieldshouldbeginediting"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. Use that method to allow or prevent the editing of the text field’s contents."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The text field becomes the first responder. "
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In response, the system displays the keyboard (or the text field’s input view) and posts the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillshownotification"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidshownotification"
+                    },
+                    {
+                      "type": "text",
+                      "text": " notifications as needed. If the keyboard or another input view was already visible, the system posts the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillchangeframenotification"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidchangeframenotification"
+                    },
+                    {
+                      "type": "text",
+                      "text": " notifications instead. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The text field calls its delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619590-textfielddidbeginediting"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method and posts a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidbegineditingnotification"
+                    },
+                    {
+                      "type": "text",
+                      "text": " notification. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The text field calls various delegate methods during editing:  "
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Whenever the current text changes, it calls the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619599-textfield"
+                            },
+                            {
+                              "type": "text",
+                              "text": " method and posts the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidchangenotification"
+                            },
+                            {
+                              "type": "text",
+                              "text": " notification."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "It calls the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619594-textfieldshouldclear"
+                            },
+                            {
+                              "type": "text",
+                              "text": " method when the user taps the built-in button to clear the text."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "It calls the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn"
+                            },
+                            {
+                              "type": "text",
+                              "text": " method when the user taps the keyboard’s return button."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Before resigning as first responder, the text field calls its delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619592-textfieldshouldendediting"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. Use that method to validate the current text. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The text field resigns as first responder."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In response, the system hides or adjusts the keyboard as needed. When hiding the keyboard, the system posts the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillhidenotification"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidhidenotification"
+                    },
+                    {
+                      "type": "text",
+                      "text": " notifications. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The text field calls its delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619591-textfielddidendediting"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method and posts a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidendeditingnotification"
+                    },
+                    {
+                      "type": "text",
+                      "text": " notification."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about the features of a text field, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield"
+            },
+            {
+              "type": "text",
+              "text": ".  "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

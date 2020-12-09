@@ -1,0 +1,955 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A scriptable class that a macOS app supports."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/scripting_support"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1416211,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSScriptClassDescription",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSScriptClassDescription",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsscriptclassdescription"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsscriptclassdescription"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/scripting_support": {
+      "title": "Scripting Support",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/scripting_support",
+      "url": "/documentation/foundation/scripting_support",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry": {
+      "title": "NSScriptSuiteRegistry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptsuiteregistry",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The top-level repository of scriptability information for an app at runtime."
+        }
+      ]
+    },
+    "devLink-1727353": {
+      "identifier": "devLink-1727353",
+      "type": "link",
+      "title": "Object Specifiers",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_object_specifiers/SAppsObjectSpecifiers.html#//apple_ref/doc/uid/TP40002164-CH3"
+    },
+    "devLink-1727275": {
+      "identifier": "devLink-1727275",
+      "type": "link",
+      "title": "Cocoa Scripting Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsclassdescription": {
+      "title": "NSClassDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsclassdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsclassdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that provides the interface for querying the relationships and properties of a class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410370-initwithsuitename": {
+      "title": "initWithSuiteName:className:dictionary:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410370-initwithsuitename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1410370-initwithsuitename",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes and returns a newly allocated instance of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSScriptClassDescription"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithSuiteName:className:dictionary:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414196-classdescriptionforclass": {
+      "title": "classDescriptionForClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414196-classdescriptionforclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1414196-classdescriptionforclass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the class description for the specified class or, if it is not scriptable, for the first superclass that is."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "classDescriptionForClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1407343-classdescriptionforkey": {
+      "title": "classDescriptionForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1407343-classdescriptionforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1407343-classdescriptionforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the class description instance for the class type of the specified attribute or relationship."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "classDescriptionForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1416243-superclassdescription": {
+      "title": "superclassDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1416243-superclassdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1416243-superclassdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the class description instance for the superclass of the receiver’s class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1418029-classname": {
+      "title": "className",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1418029-classname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1418029-classname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of the class the receiver describes, as provided at initialization time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410261-defaultsubcontainerattributekey": {
+      "title": "defaultSubcontainerAttributeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410261-defaultsubcontainerattributekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1410261-defaultsubcontainerattributekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the value of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "DefaultSubcontainerAttribute"
+        },
+        {
+          "type": "text",
+          "text": " entry of the class dictionary from which the receiver was instantiated."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1409575-implementationclassname": {
+      "title": "implementationClassName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1409575-implementationclassname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1409575-implementationclassname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of the Objective-C class instantiated to implement the scripting class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1416531-islocationrequiredtocreateforkey": {
+      "title": "isLocationRequiredToCreateForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1416531-islocationrequiredtocreateforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1416531-islocationrequiredtocreateforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether an insertion location must be specified when creating a new object in the specified to-many relationship of the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isLocationRequiredToCreateForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410782-suitename": {
+      "title": "suiteName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410782-suitename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1410782-suitename",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of the receiver’s suite."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414920-appleeventcode": {
+      "title": "appleEventCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414920-appleeventcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1414920-appleeventcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the Apple event code associated with the receiver’s class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414657-appleeventcodeforkey": {
+      "title": "appleEventCodeForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414657-appleeventcodeforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1414657-appleeventcodeforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the Apple event code for the specified attribute or relationship in the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "appleEventCodeForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411166-matchesappleeventcode": {
+      "title": "matchesAppleEventCode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411166-matchesappleeventcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1411166-matchesappleeventcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a primary or secondary Apple event code in the receiver matches the passed code."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "matchesAppleEventCode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1413542-hasorderedtomanyrelationshipfork": {
+      "title": "hasOrderedToManyRelationshipForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1413542-hasorderedtomanyrelationshipfork",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1413542-hasorderedtomanyrelationshipfork",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the described class has an ordered to-many relationship identified by the specified key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hasOrderedToManyRelationshipForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1407574-haspropertyforkey": {
+      "title": "hasPropertyForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1407574-haspropertyforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1407574-haspropertyforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the described class has a property identified by the specified key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hasPropertyForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411467-hasreadablepropertyforkey": {
+      "title": "hasReadablePropertyForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411467-hasreadablepropertyforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1411467-hasreadablepropertyforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the described class has a readable property identified by the specified key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hasReadablePropertyForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411935-haswritablepropertyforkey": {
+      "title": "hasWritablePropertyForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411935-haswritablepropertyforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1411935-haswritablepropertyforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the described class has a writable property identified by the specified key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hasWritablePropertyForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1547649-isreadonlykey": {
+      "title": "isReadOnlyKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1547649-isreadonlykey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1547649-isreadonlykey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a specified property in the receiver is read-only."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isReadOnlyKey:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1415315-keywithappleeventcode": {
+      "title": "keyWithAppleEventCode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1415315-keywithappleeventcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1415315-keywithappleeventcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Given an Apple event code that identifies a property or element class, returns the key for the corresponding attribute, one-to-one relationship, or one-to-many relationship."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "keyWithAppleEventCode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1417186-typeforkey": {
+      "title": "typeForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1417186-typeforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1417186-typeforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of the declared type of the attribute or relationship identified by the passed key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "typeForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1409327-selectorforcommand": {
+      "title": "selectorForCommand:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1409327-selectorforcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1409327-selectorforcommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the selector associated with the receiver for the specified command description."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectorForCommand:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411902-supportscommand": {
+      "title": "supportsCommand:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411902-supportscommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription/1411902-supportscommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the receiver or any superclass supports the specified command."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "supportsCommand:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription": {
+      "title": "NSScriptClassDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A scriptable class that a macOS app supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription": {
+      "title": "NSScriptCommandDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptcommanddescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A script command that a macOS app supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsclassdescription"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializing a Script Class Description",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410370-initwithsuitename"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting a Script Class Description",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414196-classdescriptionforclass",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1407343-classdescriptionforkey",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1416243-superclassdescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting basic information about the script class",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1418029-classname",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410261-defaultsubcontainerattributekey",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1409575-implementationclassname",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1416531-islocationrequiredtocreateforkey",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1410782-suitename"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting and comparing Apple event codes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414920-appleeventcode",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414657-appleeventcodeforkey",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411166-matchesappleeventcode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting attribute and relationship information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1413542-hasorderedtomanyrelationshipfork",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1407574-haspropertyforkey",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411467-hasreadablepropertyforkey",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411935-haswritablepropertyforkey",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1547649-isreadonlykey",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1415315-keywithappleeventcode",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1417186-typeforkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting command information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1409327-selectorforcommand",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411902-supportscommand"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry",
+        "doc://com.apple.documentation/documentation/foundation/nsclassdescription",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription"
+      ],
+      "title": "Script Dictionary Description",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSScriptClassDescription"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSClassDescription",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsclassdescription",
+              "text": "NSClassDescription"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A scriptable application provides scriptability information that describes the commands and objects scripters can use in scripts that target the application. That includes information about the classes those scriptable objects are created from."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An application’s scriptability information is collected automatically by an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry"
+            },
+            {
+              "type": "text",
+              "text": ". The registry object creates an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSScriptClassDescription"
+            },
+            {
+              "type": "text",
+              "text": " for each class it finds and caches these objects in memory. Cocoa scripting uses registry information in handling scripting requests that target the application."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A class description instance stores the name, attributes, relationships, and supported commands for a class. For example, a scriptable "
+            },
+            {
+              "type": "codeVoice",
+              "code": "document"
+            },
+            {
+              "type": "text",
+              "text": " class for a drawing application might support attributes such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "file"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "file type"
+            },
+            {
+              "type": "text",
+              "text": ", relationships such as collections of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "circles"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rectangles"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "lines"
+            },
+            {
+              "type": "text",
+              "text": ", and commands such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "align"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rotate"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As with many of the classes in Cocoa’s built-in scripting support, your application may never need to directly work with instances of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSScriptClassDescription"
+            },
+            {
+              "type": "text",
+              "text": ". However, one case where you might need access to a class description is if you override "
+            },
+            {
+              "type": "codeVoice",
+              "code": "objectSpecifier"
+            },
+            {
+              "type": "text",
+              "text": " in a scriptable class. For information on how to do this, see "
+            },
+            {
+              "type": "link",
+              "title": "Object Specifiers",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_object_specifiers/SAppsObjectSpecifiers.html#//apple_ref/doc/uid/TP40002164-CH3"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "Cocoa Scripting Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Another case where your application may need access to class description information is if you override "
+            },
+            {
+              "type": "codeVoice",
+              "code": "indicesOfObjectsByEvaluatingWithContainer:count:"
+            },
+            {
+              "type": "text",
+              "text": " in a specifier class."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although you can subclass "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSScriptClassDescription"
+            },
+            {
+              "type": "text",
+              "text": ", it is unlikely that you would need to do so, or even to create instances of it."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

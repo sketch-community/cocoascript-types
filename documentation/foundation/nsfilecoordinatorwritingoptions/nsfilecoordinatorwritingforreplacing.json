@@ -1,0 +1,205 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/file_system",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions/nsfilecoordinatorwritingforreplacing",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1413885,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSFileCoordinatorWritingForReplacing",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "5.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@E@NSFileCoordinatorWritingOptions@NSFileCoordinatorWritingForReplacing",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsfilecoordinatorwritingoptions/nsfilecoordinatorwritingforreplacing"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsfilecoordinator/writingoptions/1413885-forreplacing"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/file_system": {
+      "title": "File System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/file_system",
+      "url": "/documentation/foundation/file_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator": {
+      "title": "NSFileCoordinator",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator",
+      "url": "/documentation/foundation/nsfilecoordinator",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions": {
+      "title": "NSFileCoordinatorWritingOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinatorwritingoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options to use when changing the contents or attributes of a file or directory."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions/nsfilecoordinatorwritingfordeleting": {
+      "title": "NSFileCoordinatorWritingForDeleting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions/nsfilecoordinatorwritingfordeleting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinatorwritingoptions/nsfilecoordinatorwritingfordeleting"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "NSFileCoordinatorWritingForReplacing"
+            },
+            {
+              "kind": "text",
+              "text": " = 1 << 3"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Specifies whether the act of writing to the file involves actually replacing the file with a different file (or directory). If the current file coordinator is waiting for another object to move or rename the file, this option treats the operation as the creation of a new file (instead of as the replacement of the old file); otherwise, this constant causes the same behavior as the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions/nsfilecoordinatorwritingfordeleting"
+            },
+            {
+              "type": "text",
+              "text": " constant. Use this method when the moving or creating an item should replace any item currently stored at that location. To avoid a race condition, use it regardless of whether an item is actually in the way before the writing begins. Do not use this method when simply updating the contents of the existing file."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

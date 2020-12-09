@@ -1,0 +1,961 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provide app continuity for users by preserving their current activities."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3658131,
+  "kind": "article",
+  "metadata": {
+    "title": "Restoring Your App’s State with SwiftUI",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers": {
+      "title": "View Controllers",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers",
+      "url": "/documentation/uikit/view_controllers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swiftui/scene": {
+      "title": "Scene",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swiftui/scene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swiftui/scene"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/swiftui/scenestorage": {
+      "title": "SceneStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swiftui/scenestorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swiftui/scenestorage"
+    },
+    "doc://com.apple.documentation/documentation/swiftui/state": {
+      "title": "State",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swiftui/state",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swiftui/state"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686240": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686240",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686240"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686241": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686241",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686241"
+    },
+    "doc://com.apple.documentation/documentation/swiftui/view/useractivity(_:isactive:_:)": {
+      "title": "userActivity(_:isActive:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swiftui/view/useractivity(_:isactive:_:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swiftui/view/useractivity(_:isactive:_:)"
+    },
+    "doc://com.apple.documentation/documentation/swiftui/anyview/oncontinueuseractivity(_:perform:)": {
+      "title": "onContinueUserActivity(_:perform:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swiftui/anyview/oncontinueuseractivity(_:perform:)",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swiftui/anyview/oncontinueuseractivity(_:perform:)"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686243": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686243",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui#3686243"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/restoring_your_app_s_state": {
+      "title": "Restoring Your App’s State",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/restoring_your_app_s_state",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uiscenedelegate/restoring_your_app_s_state",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide continuity for the user by preserving current activities."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui": {
+      "title": "Restoring Your App’s State with SwiftUI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/view_controllers/restoring_your_app_s_state_with_swiftui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide app continuity for users by preserving their current activities."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches": {
+      "title": "Preserving Your App's UI Across Launches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Return your app to its previous state after the system terminates it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontrollerrestoration": {
+      "title": "UIViewControllerRestoration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontrollerrestoration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontrollerrestoration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The methods that objects adopt so that they can act as a \"restoration class” for view controllers during state restoration. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiobjectrestoration": {
+      "title": "UIObjectRestoration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiobjectrestoration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiobjectrestoration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface that restoration classes use to restore preserved objects. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uistaterestoring": {
+      "title": "UIStateRestoring",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uistaterestoring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uistaterestoring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for adding objects to your state restoration archives.  "
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/7a3008795f/RestoringYourAppsStateWithSwiftUI.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/7a3008795f/RestoringYourAppsStateWithSwiftUI.zip",
+      "checksum": "c8b4d92c868eafeef1147445dda2e7576172e487a48d589e0b9f481a5f415461284978cd8d1db6abf21ecce3d4c9ed7aad9891cef9f06c877316a00fff9f83a0",
+      "url": "https://docs-assets.developer.apple.com/published/7a3008795f/RestoringYourAppsStateWithSwiftUI.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/7a3008795f/RestoringYourAppsStateWithSwiftUI.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/restoring_your_app_s_state",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches",
+        "doc://com.apple.documentation/documentation/uikit/uiviewcontrollerrestoration",
+        "doc://com.apple.documentation/documentation/uikit/uiobjectrestoration",
+        "doc://com.apple.documentation/documentation/uikit/uistaterestoring"
+      ],
+      "title": "Interface Restoration",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This SwiftUI sample project demonstrates how to preserve your appʼs state information and restore the app to that previous state on subsequent launches. During a subsequent launch, restoring your interface to the previous interaction point provides continuity for the user, and lets them finish active tasks quickly."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When using your app, the user performs actions that affect the user interface. For example, the user might view a specific page of information, and after the user leaves the app, the operating system might terminate it to free up the resources it holds. The user can return to where they left off — and UI state restoration is a core part of making that experience seamless."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample app demonstrates the use of state preservation and restoration for scenarios where the system interrupts the app. The sample project manages a set of products. Each product has a title, an image, and other metadata you can view and edit. The project shows how to preserve and restore a product in its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DetailView"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Sample Code Project",
+          "anchor": "3686247"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In Xcode, select your development team on the iOS target’s Signing and Capabilities tab."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable State Preservation and Restoration",
+          "anchor": "3686248"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample code project uses SwiftUI’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swiftui/scene"
+            },
+            {
+              "type": "text",
+              "text": " to manage the app’s user interface with its life cycle managed by the system. On iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. It’s necessary to save and restore state associated with each one. On the iPad, it’s especially important because an app in the switcher is not necessarily running. Scene-level state restoration preserves the illusion they are running."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To support state preservation and restoration, this sample uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " objects. For each user activity, the app must supply an activity type defined in its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Scene Storage",
+          "anchor": "3686249"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SwiftUI has the concept of “storing scene data” or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swiftui/scenestorage"
+            },
+            {
+              "type": "text",
+              "text": ". Operating similar to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swiftui/state"
+            },
+            {
+              "type": "text",
+              "text": ", scene storage is a property wrapper type that consists of a key/value pair. The key makes it possible for the system to save and restore the value correctly. The value is required to be of a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "plist"
+            },
+            {
+              "type": "text",
+              "text": " type, so the system can save and restore it correctly. iOS ingests this scene storage using the key/value and then reads and writes to persisted, per-scene storage. The OS manages saving and restoring scene storage on the user’s behalf. The underlying data that backs scene storage is not directly available, so the app must access it via "
+            },
+            {
+              "type": "codeVoice",
+              "code": "@SceneStorage"
+            },
+            {
+              "type": "text",
+              "text": " property wrapper. The OS makes no guarantees as to when and how often the data will be persisted. The data in scene storage is not necessarily equivalent to an application’s data model. Scene storage is intended to be used "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "with"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " the data model. Ultimately, consider scene storage a “state scoped to a scene”. Don’t use scene storage with sensitive data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each view that needs its own state preservation implements a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "@SceneStorage"
+            },
+            {
+              "type": "text",
+              "text": " property wrapper. For example "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ContentView"
+            },
+            {
+              "type": "text",
+              "text": " uses one to restore the selected product:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@SceneStorage(\"ContentView.selectedProduct\") private var selectedProduct: String?"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686240",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "DetailView"
+            },
+            {
+              "type": "text",
+              "text": " uses one to restore its current selected tab:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@SceneStorage(\"DetailView.selectedTab\") private var selectedTab = Tabs.detail"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686241",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Each scene storage key must be unique, and properly scoped to the area or use within the app. Because this scene storage is local to the app, it’s not necessary to prefix it with the app’s bundle identifier. Use some disambiguating prefix where needed to ensure its uniqueness."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Restore the App State with an Activity Object",
+          "anchor": "3686250"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivity"
+            },
+            {
+              "type": "text",
+              "text": " object captures the app’s state at the current moment in time. For example, include information about the data the app is currently displaying. The system saves the provided object and returns it to the app the next time it launches. The sample creates a new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivity"
+            },
+            {
+              "type": "text",
+              "text": " object when the user closes the app or the app enters the background."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each SwiftUI view that wants to advertise an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivity"
+            },
+            {
+              "type": "text",
+              "text": " for handoff, Spotlight, etc. must specify a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swiftui/view/useractivity(_:isactive:_:)"
+            },
+            {
+              "type": "text",
+              "text": " view modifier to advertise the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivity"
+            },
+            {
+              "type": "text",
+              "text": ". The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "activityType"
+            },
+            {
+              "type": "text",
+              "text": " parameter is the user activity’s type, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "isActive"
+            },
+            {
+              "type": "text",
+              "text": " parameter indicates whether a user activity of the specified type is advertised (this parameter defaults to true), and whether it uses the specified handler to fill in the user-activity contents. The scope of the user activity applies only to the scene or window in which the view is. Multiple views can advertise the same activity type, and the handlers can all contribute to the contents of the user activity. Note that handlers are only called for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userActivity"
+            },
+            {
+              "type": "text",
+              "text": " view modifiers where the isActive parameter is true. If none of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userActivity"
+            },
+            {
+              "type": "text",
+              "text": " view modifiers specify isActive as true, the user activity will not be advertised by iOS."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each SwiftUI view that wants to handle incoming "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivities"
+            },
+            {
+              "type": "text",
+              "text": " must specify a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swiftui/anyview/oncontinueuseractivity(_:perform:)"
+            },
+            {
+              "type": "text",
+              "text": " view modifier. This takes the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivity"
+            },
+            {
+              "type": "text",
+              "text": " type and a handler to invoke when the view receives the specified activity type for the scene or window in which the view is."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            ".onContinueUserActivity(DetailView.productUserActivityType) { userActivity in",
+            "    if let product = try? userActivity.typedPayload(Product.self) {",
+            "        selectedProduct = product.id.uuidString",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686243",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Test State Restoration",
+          "anchor": "3686251"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample restores the following user interface:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Detail View Controller — Tap a product in the collection view to open its detail information. The app restores the selected product and selected tab."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Detail View Controller’s Edit State — In the detail view, tap Edit. The app restores the edit view and its content."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Secondary Window — (iPad only) Drag a product from the collection view over to the left or right of the device screen to create a second scene window. The app restores that scene and its product."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "State restoration can be tested both on the device and Simulator. When debugging the sample project, the system automatically deletes its preserved state when the user force quits the app. Deleting the preserved state information is a safety precaution. In addition, the system also deletes the preserved state if this app crashes at launch time."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To test the sample app’s ability to restore the sample’s state, don’t use the app switcher to force quit it during debugging. Instead, use Xcode to stop the app or stop the app programmatically. Another technique is to suspend the sample app using the Home button, and then stop the debugger in Xcode. Launch the sample app again using Xcode, and SwiftUI initiates the state restoration process."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use Spotlight with Handoff, follow these steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Xcode set a breakpoint in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "DetailView.swift"
+                    },
+                    {
+                      "type": "text",
+                      "text": " at "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "onContinueUserActivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " closure."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Run the sample project."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Tap a product (“Cherries”) in the collection view to navigate to its detail information."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pull down the system sheet from the top of the screen (to force Spotlight to update its index and request the activity). Note that the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "DetailView"
+                    },
+                    {
+                      "type": "text",
+                      "text": " "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "userActivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " closure is called by iOS."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Go back to the app, and go back to the collection view."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Tap a product other than Cherries (i.e. Mango)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Suspend the app by tapping the Home button."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "At the Home screen, swipe downwards to open the Spotlight window."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Spotlight search field, type “Cherries”. The search results will show “Show Cherries Product”."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Tap it. Note that "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "DetailView"
+                    },
+                    {
+                      "type": "text",
+                      "text": " "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "onContinueUserActivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " closure is called. The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "DetailView"
+                    },
+                    {
+                      "type": "text",
+                      "text": " will show the Cherries product."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

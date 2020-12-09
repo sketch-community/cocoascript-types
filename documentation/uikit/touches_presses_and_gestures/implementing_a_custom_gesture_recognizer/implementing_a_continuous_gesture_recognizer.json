@@ -1,0 +1,903 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "For gestures that do not easily match a specific pattern, or when you want to use a gesture recognizer to gather touch input, create a continuous gesture recognizer."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2881154,
+  "kind": "article",
+  "metadata": {
+    "title": "Implementing a Continuous Gesture Recognizer",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer": {
+      "title": "Implementing a Custom Gesture Recognizer",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch": {
+      "title": "UITouch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881208": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881208",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881208",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Managing the touch data"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscoding/1416145-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding/1416145-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscoding/1416145-initwithcoder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881209": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881209",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881209",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Properties of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "TouchCaptureGesture"
+        },
+        {
+          "type": "text",
+          "text": " class"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan": {
+      "title": "touchesBegan:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesBegan:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881234": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881234",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881234",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Beginning the capture of touches"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved": {
+      "title": "touchesMoved:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621107-touchesmoved",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesMoved:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended": {
+      "title": "touchesEnded:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621084-touchesended",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesEnded:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstateended": {
+      "title": "UIGestureRecognizerStateEnded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstateended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstateended"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized": {
+      "title": "UIGestureRecognizerStateRecognized",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881235": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881235",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881235",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Managing the touch input"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled": {
+      "title": "touchesCancelled:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesCancelled:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset": {
+      "title": "reset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620004-reset",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reset"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881259": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881259",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881259",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancelling and resetting the continuous gesture"
+        }
+      ]
+    },
+    "link-media-3004411": {
+      "identifier": "link-media-3004411",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#3004411"
+    },
+    "media-3004411": {
+      "identifier": "media-3004411",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 192,
+            "height": 356
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7c21d852b9/3523a525-9906-4d84-8bb8-f7fbe4cd2c83.png"
+        }
+      ],
+      "alt": "A diagram depicting a user triggering a free-form custom continuous gesture recogniser",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A free-form gesture"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/about_the_gesture_recognizer_state_machine": {
+      "title": "About the Gesture Recognizer State Machine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/about_the_gesture_recognizer_state_machine",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/about_the_gesture_recognizer_state_machine",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn about the states and transitions of the state machine that underlies gesture recognizers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer": {
+      "title": "Implementing a Discrete Gesture Recognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If your gesture involves a specific pattern of events, consider implementing a discrete gesture recognizer for it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer": {
+      "title": "Implementing a Continuous Gesture Recognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "For gestures that do not easily match a specific pattern, or when you want to use a gesture recognizer to gather touch input, create a continuous gesture recognizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/about_the_gesture_recognizer_state_machine",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer"
+      ],
+      "title": "Creating Custom Gesture Recognizers",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A continuous gesture recognizer lets you encapsulate your event-handling logic in one place and reuse that logic in multiple views. Although continuous gesture recognizers require a little more effort to implement the state machine, they also perform tasks that would be difficult with a discrete gesture recognizer, such as capturing free-form input."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3004411"
+            },
+            {
+              "type": "text",
+              "text": " shows a free-form gesture whose input you might use to draw paths onscreen. Although you could use a pan gesture recognizer to capture the input, your action method would need to handle all of the phases of the capture process, which would add to its complexity. Using a custom gesture recognizer, you can simplify your code by distributing your logic to various methods of your subclass. Using a custom gesture recognizer also means that you can write your code for capturing the path once and reuse it in multiple views."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3004411",
+              "metadata": {
+                "anchor": "3004411",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A free-form gesture"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a custom gesture recognizer that captures touch input, there are no explicit conditions that trigger a failure of the gesture. Instead, the gesture recognizer captures touch input until the touch sequence ends or is cancelled by the system. While the gesture is ongoing, the gesture recognizer places the touch data into a temporary buffer. Clients of the gesture recognizer use their action method to fetch that buffer and apply it temporarily to the app’s content. For example, a client might use that data to draw the path onscreen. Only when the touch sequence ends successfully would those target objects commit the data permanently to the app’s data structures."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Saving Gesture-Related Data",
+          "anchor": "2881170"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A continuous gesture recognizer that tracks touch events needs a way to store that information. You cannot simply store references to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " objects that you receive because UIKit reuses those objects and overwrites any old values. Instead, you must define custom data structures to store the touch information you need."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881208"
+            },
+            {
+              "type": "text",
+              "text": " shows the definition of a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StrokeSample"
+            },
+            {
+              "type": "text",
+              "text": " struct, whose purpose is to store the location associated with a touch. In your own implementation, you might add other properties to this struct to store information such as the timestamp or the force of the touch."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct StrokeSample {",
+            "    let location: CGPoint ",
+            " ",
+            "    init(location: CGPoint) {",
+            "        self.location = location",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881208",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Managing the touch data"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881209"
+            },
+            {
+              "type": "text",
+              "text": " shows the partial definition of a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TouchCaptureGesture"
+            },
+            {
+              "type": "text",
+              "text": " class used to capture touch information. This class stores touch data in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "samples"
+            },
+            {
+              "type": "text",
+              "text": " property, which is an array of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StrokeSample"
+            },
+            {
+              "type": "text",
+              "text": " structs. The class also stores the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " object associated with the first finger so that it can ignore any other touches. The implementation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding/1416145-initwithcoder"
+            },
+            {
+              "type": "text",
+              "text": " method ensures that the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "samples"
+            },
+            {
+              "type": "text",
+              "text": " property is initialized properly when loading the gesture recognizer from an Interface Builder file."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class TouchCaptureGesture: UIGestureRecognizer, NSCoding {",
+            "   var trackedTouch: UITouch? = nil",
+            "   var samples = [StrokeSample]() ",
+            " ",
+            "   required init?(coder aDecoder: NSCoder) {",
+            "      super.init(target: nil, action: nil) ",
+            " ",
+            "      self.samples = [StrokeSample]()",
+            "   } ",
+            "   func encode(with aCoder: NSCoder) { }   ",
+            "   // Overridden methods to come...",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881209",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Properties of the "
+              },
+              {
+                "type": "codeVoice",
+                "code": "TouchCaptureGesture"
+              },
+              {
+                "type": "text",
+                "text": " class"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Processing Touch Events",
+          "anchor": "2881171"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881234"
+            },
+            {
+              "type": "text",
+              "text": " shows the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan"
+            },
+            {
+              "type": "text",
+              "text": " method of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TouchCaptureGesture"
+            },
+            {
+              "type": "text",
+              "text": " class. The gesture fails immediately if the initial event contains two touches. If there is only one touch, the touch object is saved in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "trackedTouch"
+            },
+            {
+              "type": "text",
+              "text": " property and the custom "
+            },
+            {
+              "type": "codeVoice",
+              "code": "addSample"
+            },
+            {
+              "type": "text",
+              "text": " helper method creates a new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StrokeSample"
+            },
+            {
+              "type": "text",
+              "text": " struct with the touch data. After the first touch occurs, any new touches added to the event sequence are ignored."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {",
+            "   if touches.count != 1 {",
+            "      self.state = .failed",
+            "   } ",
+            " ",
+            "   // Capture the first touch and store some information about it.",
+            "   if self.trackedTouch == nil {",
+            "      if let firstTouch = touches.first {",
+            "         self.trackedTouch = firstTouch",
+            "         self.addSample(for: firstTouch)",
+            "         state = .began",
+            "      }",
+            "   } else {",
+            "      // Ignore all but the first touch.",
+            "      for touch in touches {",
+            "         if touch != self.trackedTouch {",
+            "            self.ignore(touch, for: event)",
+            "         }",
+            "      }",
+            "   }",
+            "}",
+            " ",
+            "func addSample(for touch: UITouch) {",
+            "   let newSample = StrokeSample(location: touch.location(in: self.view))",
+            "   self.samples.append(newSample)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881234",
+            "title": "Listing 3",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Beginning the capture of touches"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended"
+            },
+            {
+              "type": "text",
+              "text": " methods (shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881235"
+            },
+            {
+              "type": "text",
+              "text": ") record each new sample and update the gesture recognizer’s state. Setting the state to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstateended"
+            },
+            {
+              "type": "text",
+              "text": " is equivalent to setting the state to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized"
+            },
+            {
+              "type": "text",
+              "text": " and results in a call to the gesture recognizer’s action method."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {",
+            "   self.addSample(for: touches.first!)",
+            "   state = .changed",
+            "}",
+            " ",
+            "override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {",
+            "   self.addSample(for: touches.first!)",
+            "   state = .ended",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881235",
+            "title": "Listing 4",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Managing the touch input"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Resetting the Gesture Recognizer",
+          "anchor": "2881172"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Always implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled"
+            },
+            {
+              "type": "text",
+              "text": " and ["
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset"
+            },
+            {
+              "type": "text",
+              "text": "] methods in your gesture recognizers and use them to perform any cleanup. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer#2881259"
+            },
+            {
+              "type": "text",
+              "text": " shows the implementation of these methods for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TouchCaptureGesture"
+            },
+            {
+              "type": "text",
+              "text": " class. Both methods restore the gesture recognizer’s properties to their initial values."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {",
+            "   self.samples.removeAll()",
+            "   state = .cancelled",
+            "} ",
+            " ",
+            "override func reset() {",
+            "   self.samples.removeAll()",
+            "   self.trackedTouch = nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881259",
+            "title": "Listing 5",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Cancelling and resetting the continuous gesture"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

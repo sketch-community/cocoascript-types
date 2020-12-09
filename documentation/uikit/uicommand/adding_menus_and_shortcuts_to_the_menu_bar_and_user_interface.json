@@ -1,0 +1,1301 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts",
+        "doc://com.apple.documentation/documentation/uikit/uikeycommand"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts",
+        "doc://com.apple.documentation/documentation/uikit/uicommand"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts",
+        "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteraction"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts",
+        "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractiondelegate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts",
+        "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteraction",
+        "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractiondelegate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3330575,
+  "kind": "article",
+  "metadata": {
+    "title": "Adding Menus and Shortcuts to the Menu Bar and User Interface",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.4",
+        "current": "12.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/uikeycommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/mac_catalyst/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/menus_and_shortcuts/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/uicontextmenuinteraction/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/uicontextmenuinteractiondelegate/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/uikeycommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/mac_catalyst/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/menus_and_shortcuts/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/uicontextmenuinteraction/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+        "documentation/uikit/uicontextmenuinteractiondelegate/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts": {
+      "title": "Menus and Shortcuts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts",
+      "url": "/documentation/uikit/menus_and_shortcuts",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst": {
+      "title": "Mac Catalyst",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst",
+      "url": "/documentation/uikit/mac_catalyst",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeycommand": {
+      "title": "UIKeyCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeycommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that specifies a key press perform on a hardware keyboard and the resulting action. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand": {
+      "title": "UICommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A menu element that performs its action in a selector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteraction": {
+      "title": "UIContextMenuInteraction",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteraction",
+      "url": "/documentation/uikit/uicontextmenuinteraction",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractiondelegate": {
+      "title": "UIContextMenuInteractionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontextmenuinteractiondelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uimenusystem": {
+      "title": "UIMenuSystem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uimenusystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uimenusystem"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uimenusystem/3327314-mainsystem": {
+      "title": "mainSystem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uimenusystem/3327314-mainsystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uimenusystem/3327314-mainsystem"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/3327317-buildmenuwithbuilder": {
+      "title": "buildMenuWithBuilder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/3327317-buildmenuwithbuilder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/3327317-buildmenuwithbuilder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "buildMenuWithBuilder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uimenubuilder": {
+      "title": "UIMenuBuilder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uimenubuilder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uimenubuilder"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaction": {
+      "title": "UIAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A menu element that performs its action in a block."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538244": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538244",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538244"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslocalizedstring": {
+      "title": "NSLocalizedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslocalizedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslocalizedstring"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538245": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538245",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538245"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538248": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538248",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538248"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538249": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538249",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538249"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uimenucontroller": {
+      "title": "UIMenuController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uimenucontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uimenucontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621105-canperformaction": {
+      "title": "canPerformAction:withSender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621105-canperformaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621105-canperformaction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canPerformAction:withSender:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractiondelegate/3295939-contextmenuinteraction": {
+      "title": "contextMenuInteraction:previewForHighlightingMenuWithConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractiondelegate/3295939-contextmenuinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontextmenuinteractiondelegate/3295939-contextmenuinteraction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "contextMenuInteraction:previewForHighlightingMenuWithConfiguration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitargetedpreview": {
+      "title": "UITargetedPreview",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitargetedpreview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitargetedpreview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538252": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538252",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538252"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/3229892-validatecommand": {
+      "title": "validateCommand:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/3229892-validatecommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/3229892-validatecommand",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "validateCommand:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538253": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538253",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface#3538253"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/displaying_a_preferences_window": {
+      "title": "Displaying a Preferences Window",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/displaying_a_preferences_window",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/mac_catalyst/displaying_a_preferences_window"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface": {
+      "title": "Adding Menus and Shortcuts to the Menu Bar and User Interface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts/adopting_menus_and_uiactions_in_your_user_interface": {
+      "title": "Adopting Menus and UIActions in your User Interface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts/adopting_menus_and_uiactions_in_your_user_interface",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/menus_and_shortcuts/adopting_menus_and_uiactions_in_your_user_interface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add menus to your user interface, with built-in button support and bar-button items, and create custom menu experiences."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uimenuelement": {
+      "title": "UIMenuElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uimenuelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uimenuelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing a menu, action, or command."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uideferredmenuelement": {
+      "title": "UIDeferredMenuElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uideferredmenuelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uideferredmenuelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A placeholder menu element that the system replaces with the result of the block’s completion handler."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uimenuelementattributes": {
+      "title": "UIMenuElementAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uimenuelementattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uimenuelementattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attributes that determine the style of the menu element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uimenuelementstate": {
+      "title": "UIMenuElementState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uimenuelementstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uimenuelementstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the state of an action- or command-based menu element."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/1b31743f6a/AddingMenusAndShortcutsToTheMenuBarAndUserInterface.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/1b31743f6a/AddingMenusAndShortcutsToTheMenuBarAndUserInterface.zip",
+      "checksum": "3938c1ea1c3e6fe7906e6bb4a95d2c10d0960331ce2003f3ca744fc6445f96ac12ceb3b4c587eee020391d15d9f0316a17650240d68e876320f41eb0fbc41103",
+      "url": "https://docs-assets.developer.apple.com/published/1b31743f6a/AddingMenusAndShortcutsToTheMenuBarAndUserInterface.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/1b31743f6a/AddingMenusAndShortcutsToTheMenuBarAndUserInterface.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/menus_and_shortcuts/adopting_menus_and_uiactions_in_your_user_interface",
+        "doc://com.apple.documentation/documentation/uikit/uimenuelement",
+        "doc://com.apple.documentation/documentation/uikit/uiaction",
+        "doc://com.apple.documentation/documentation/uikit/uicommand",
+        "doc://com.apple.documentation/documentation/uikit/uikeycommand",
+        "doc://com.apple.documentation/documentation/uikit/uideferredmenuelement",
+        "doc://com.apple.documentation/documentation/uikit/uimenuelementattributes",
+        "doc://com.apple.documentation/documentation/uikit/uimenuelementstate"
+      ],
+      "title": "Menu Elements and Keyboard Shortcuts",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample project demonstrates how to add menu commands and keyboard shortcuts to the menu bar. The sample app uses its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MenuController"
+            },
+            {
+              "type": "text",
+              "text": " object to insert a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uimenusystem"
+            },
+            {
+              "type": "text",
+              "text": " object that adds the following menus:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "New — Appears at the beginning of the File menu and contains two operations: Date Item and Text Item."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Cities — Contains a group of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicommand"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeycommand"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Navigation — Contains a group of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "UIKeyCommand"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects for command-key navigation."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Style — Contains a group of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "UICommand"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects that have checkmark states. This grouping looks like a font-style menu for text formatting."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Tools — Contains a group of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "UICommand"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample project also shows you how to add contextual menus to views, and how to handle menu-command selection using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractiondelegate"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Menus to the Menu Bar",
+          "anchor": "3538257"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Mac version of your iPad app comes with a standard menu bar. You use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uimenusystem"
+            },
+            {
+              "type": "text",
+              "text": " class, an object representing the main or contextual menu system, to modify the menu bar."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample also uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIMenuSystem"
+            },
+            {
+              "type": "text",
+              "text": " to add menus to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uimenusystem/3327314-mainsystem"
+            },
+            {
+              "type": "text",
+              "text": " system menu by implementing "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/3327317-buildmenuwithbuilder"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppDelegate"
+            },
+            {
+              "type": "text",
+              "text": ". This function receives a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uimenubuilder"
+            },
+            {
+              "type": "text",
+              "text": " object that the sample then uses to add and remove menus. Because menus can exist with no window or view hierarchy, the system only consults "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIApplication"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIApplicationDelegate"
+            },
+            {
+              "type": "text",
+              "text": " to build the app’s menu bar."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Menu commands consist of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UICommand"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIKeyCommand"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiaction"
+            },
+            {
+              "type": "text",
+              "text": " objects that are grouped in a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIMenu"
+            },
+            {
+              "type": "text",
+              "text": " container."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Menu Command to the File Menu",
+          "anchor": "3538258"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample inserts a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIKeyCommand"
+            },
+            {
+              "type": "text",
+              "text": " called Command-O into the File Menu and creates a corresponding keyboard shortcut:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class func openMenu() -> UIMenu {",
+            "    let openCommand =",
+            "        UIKeyCommand(title: NSLocalizedString(\"OpenTitle\", comment: \"\"),",
+            "                     image: nil,",
+            "                     action: #selector(AppDelegate.openAction),",
+            "                     input: \"O\",",
+            "                     modifierFlags: .command,",
+            "                     propertyList: nil)",
+            "    let openMenu =",
+            "        UIMenu(title: \"\",",
+            "               image: nil,",
+            "               identifier: UIMenu.Identifier(\"com.example.apple-samplecode.menus.openMenu\"),",
+            "               options: .displayInline,",
+            "               children: [openCommand])",
+            "    return openMenu",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3538244",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Notice that the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIKeyCommand"
+            },
+            {
+              "type": "text",
+              "text": " title is a localized string using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nslocalizedstring"
+            },
+            {
+              "type": "text",
+              "text": " function, which can display the menu name in multiple languages."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample inserts the Open command into the middle of the menu bar’s File menu:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "builder.insertChild(MenuController.openMenu(), atStartOfMenu: .file)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3538245",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Contribute to the Edit Menu",
+          "anchor": "3538259"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Editing operations, such as cut, copy, paste, and delete, are commonly used in most apps. In this sample app, you can access these operations through the Edit menu, where you can edit the sample’s left-side content or its master table-view content. These operations represent the first-responder functions: "
+            },
+            {
+              "type": "codeVoice",
+              "code": "cut(_ sender: Any?)"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "copy(_ sender: Any?)"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "paste(_ sender: Any?)"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "delete(_ sender: Any?)"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Commands to Control the User Interface",
+          "anchor": "3538260"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this sample, you can change the primary or left-side table view’s selection by using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIKeyCommands"
+            },
+            {
+              "type": "text",
+              "text": ". These key commands are connected to the up and down arrow keys and are added directly to the table view. The following example shows how to add the down arrow key as a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIKeyCommand"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let downArrowCommand =",
+            "    UIKeyCommand(input: UIKeyCommand.inputDownArrow,",
+            "                 modifierFlags: [],",
+            "                 action: #selector(MasterViewController.downArrowAction(_:)))",
+            "addKeyCommand(downArrowCommand)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3538248",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample also demonstrates how to add menu commands as command-key equivalents. The following example shows how to create a menu with all four arrow keys as Command-keys:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class func navigationMenu() -> UIMenu {",
+            "    let keyCommands = [ UIKeyCommand.inputRightArrow,",
+            "                        UIKeyCommand.inputLeftArrow,",
+            "                        UIKeyCommand.inputUpArrow,",
+            "                        UIKeyCommand.inputDownArrow ]",
+            "    let arrows = Arrows.allCases",
+            "    ",
+            "    let arrowKeyChildrenCommands = zip(keyCommands, arrows).map { (command, arrow) in",
+            "        UIKeyCommand(title: arrow.localizedString(),",
+            "                     image: nil,",
+            "                     action: #selector(AppDelegate.navigationMenuAction(_:)),",
+            "                     input: command,",
+            "                     modifierFlags: .command,",
+            "                     propertyList: [CommandPListKeys.ArrowsKeyIdentifier: arrow.rawValue])",
+            "    }",
+            "    ",
+            "    let arrowKeysGroup = UIMenu(title: \"\",",
+            "                  image: nil,",
+            "                  identifier: UIMenu.Identifier(\"com.example.apple-samplecode.menus.arrowKeysSubMenu\"),",
+            "                  options: .displayInline,",
+            "                  children: arrowKeyChildrenCommands)",
+            "    ",
+            "    return UIMenu(title: NSLocalizedString(\"NavigationTitle\", comment: \"\"),",
+            "                  image: nil,",
+            "                  identifier: UIMenu.Identifier(\"com.example.apple-samplecode.menus.navigationMenu\"),",
+            "                  options: [],",
+            "                  children: [arrowKeysGroup])",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3538249",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display Contextual Menus",
+          "anchor": "3538261"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample contains two kinds of contextual menus. One uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIMenuController"
+            },
+            {
+              "type": "text",
+              "text": ", a menu interface positioned relative to a target rectangle or view. The other uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIContextMenuInteractionDelegate"
+            },
+            {
+              "type": "text",
+              "text": ", an interaction object used to display relevant actions for your content."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For the custom view ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "ResponsiveView"
+            },
+            {
+              "type": "text",
+              "text": "), whose background color is determined by user preference, a long press or a tap-and-hold gesture displays a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uimenucontroller"
+            },
+            {
+              "type": "text",
+              "text": " for editing the master table view items. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621105-canperformaction"
+            },
+            {
+              "type": "text",
+              "text": " to determine which actions appear in that contextual menu."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For the other contextual menu, the user control-clicks or right-mouse clicks, or does a tap and hold on the rest of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DetailViewController"
+            },
+            {
+              "type": "text",
+              "text": " content. The sample uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIContextMenuInteractionDelegate"
+            },
+            {
+              "type": "text",
+              "text": " to display Copy, Rename, and Share commands. This kind of contextual menu is a grouping of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAction"
+            },
+            {
+              "type": "text",
+              "text": " objects. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAction"
+            },
+            {
+              "type": "text",
+              "text": " is a menu element that performs its action in a closure. In iOS, you optionally customize this contextual menu’s highlight preview by using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractiondelegate/3295939-contextmenuinteraction"
+            },
+            {
+              "type": "text",
+              "text": ". This delegate function returns a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitargetedpreview"
+            },
+            {
+              "type": "text",
+              "text": ", the source view used when opening and animating the contextual menu."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Adjust Menu Commands",
+          "anchor": "3538262"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample creates its Edit menu content based on the first responder in the responder chain. You can adjust menu commands by using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621105-canperformaction"
+            },
+            {
+              "type": "text",
+              "text": ". The master view controller overrides this function to enable menu commands based on the table view state or the state of the pasteboard."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {",
+            "    if action == #selector(newAction(_:)) {",
+            "        // User wants to perform a \"New\" operation.",
+            "        return true",
+            "    } else {",
+            "        switch (tableView.indexPathForSelectedRow, action) {",
+            "        ",
+            "        // These Edit commands are supported:",
+            "        case let (_?, action) where action == #selector(cut(_:)) ||",
+            "                                    action == #selector(copy(_:)) ||",
+            "                                    action == #selector(delete(_:)):",
+            "            return true",
+            "        case (_?, _):",
+            "            // Allow the nextResponder to make the determination.",
+            "            return super.canPerformAction(action, withSender: sender)",
+            "            ",
+            "        // Paste is supported if the pasteboard has text.",
+            "        case (.none, action) where action == #selector(paste(_:)):",
+            "            return (UIPasteboard.general.string != nil) ? true :",
+            "                // Allow the nextResponder to make the determination.",
+            "                super.canPerformAction(action, withSender: sender)",
+            "        case (.none, _):",
+            "            return false",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3538252",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To change other menu commands, this sample implements "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/3229892-validatecommand"
+            },
+            {
+              "type": "text",
+              "text": ", where you can adjust those specific commands."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// The font style check states used in the Style menu.",
+            "var fontMenuStyleStates = Set<String>()",
+            "",
+            "// You are requested to update the state of a given command from a menu; Here you adjust the Styles menu.",
+            "// Note: Only command groups that you add will be called to validate.",
+            "override func validate(_ command: UICommand) {",
+            "    // Obtain the plist of the incoming command.",
+            "    if let fontStyleDict = command.propertyList as? [String: String] {",
+            "        // Check if the command comes from the Styles menu.",
+            "        if let fontStyle = fontStyleDict[MenuController.CommandPListKeys.StylesIdentifierKey] {",
+            "            // Update the \"Style\" menu command state (checked or unchecked).",
+            "            command.state = fontMenuStyleStates.contains(fontStyle) ? .on : .off",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3538253",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Preferences Menu",
+          "anchor": "3538263"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Mac apps typically display app-specific preferences using a preferences window. This sample adds a preferences window by adding a Settings bundle to the Xcode project’s target. The window automatically becomes available to the user through the Preferences menu command in the Application menu. To learn more, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/displaying_a_preferences_window"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

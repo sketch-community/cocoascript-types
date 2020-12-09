@@ -1,0 +1,384 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Options you can use to control the parser's treatment of an XML document."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1541981,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFXMLParserOptions",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@T@CFXMLParserOptions",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfxmlparseroptions"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfxmlparseroptions"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser": {
+      "title": "CFXMLParser",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser",
+      "url": "/documentation/corefoundation/cfxmlparser",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparsernooptions": {
+      "title": "kCFXMLParserNoOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparsernooptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfxmlparseroptions/kcfxmlparsernooptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Leaves the XML as \"intact\" as possible (reports all structures; performs no replacements)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseralloptions": {
+      "title": "kCFXMLParserAllOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseralloptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseralloptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Makes the parser do the most work, returning only the pure elementtree."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfoptionflags": {
+      "title": "CFOptionFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfoptionflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfoptionflags"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparservalidatedocument": {
+      "title": "kCFXMLParserValidateDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparservalidatedocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfxmlparseroptions/kcfxmlparservalidatedocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Validates the document against its grammar from the DTD, reporting any errors. Currently not supported."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserskipmetadata": {
+      "title": "kCFXMLParserSkipMetaData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserskipmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserskipmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Silently skip over metadata constructs (the DTD and comments)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserreplacephysicalentities": {
+      "title": "kCFXMLParserReplacePhysicalEntities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserreplacephysicalentities",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserreplacephysicalentities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replaces declared entities like "
+        },
+        {
+          "type": "codeVoice",
+          "code": "&lt"
+        },
+        {
+          "type": "text",
+          "text": ";. Note that other than the 5 predefined entities ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "lt"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "gt"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "quot"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "amp"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "apos"
+        },
+        {
+          "type": "text",
+          "text": "), these must be defined in the DTD. Currently not supported."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserskipwhitespace": {
+      "title": "kCFXMLParserSkipWhitespace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserskipwhitespace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserskipwhitespace"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserresolveexternalentities": {
+      "title": "kCFXMLParserResolveExternalEntities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserresolveexternalentities",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserresolveexternalentities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves all external entities."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseraddimpliedattributes": {
+      "title": "kCFXMLParserAddImpliedAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseraddimpliedattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseraddimpliedattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Where the DTD specifies implied attribute-value pairs for a particular element, add those pairs to any occurrences of the element in the element tree. Currently not supported."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparservalidatedocument",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserskipmetadata",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserreplacephysicalentities",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserskipwhitespace",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparserresolveexternalentities",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseraddimpliedattributes",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseralloptions",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparsernooptions"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " CFXMLParserOptions : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFOptionFlags",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfoptionflags",
+              "text": "CFOptionFlags"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "CFXMLParserOptions"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These are the various options you use to configure the parser. An option flag of 0 ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparsernooptions"
+            },
+            {
+              "type": "text",
+              "text": ") leaves the XML as \"intact\" as possible (reports all structures; performs no replacements). Hence, to make the parser do the most work, returning only the pure element tree, set the option flag to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparseroptions/kcfxmlparseralloptions"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

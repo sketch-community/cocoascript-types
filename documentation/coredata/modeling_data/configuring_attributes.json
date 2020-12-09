@@ -1,0 +1,851 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Describe the properties that compose an entity."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/modeling_data"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3036910,
+  "kind": "article",
+  "metadata": {
+    "title": "Configuring Attributes",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/modeling_data/configuring_attributes"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/modeling_data/configuring_attributes"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data": {
+      "title": "Modeling Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data",
+      "url": "/documentation/coredata/modeling_data",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "link-media-3145039": {
+      "identifier": "link-media-3145039",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata/modeling_data/configuring_attributes#3145039"
+    },
+    "media-3145039": {
+      "identifier": "media-3145039",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 426
+          },
+          "url": "https://docs-assets.developer.apple.com/published/783a542cd6/f5940b24-b6cc-481c-8e19-d269a96d08cf.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 426
+          },
+          "url": "https://docs-assets.developer.apple.com/published/613d08478d/cad35a77-373d-41c8-b09f-7cb7b4c24923.png"
+        }
+      ],
+      "alt": "Screenshot showing the .xcdatamodeld file with the Attributes list at the center top, and Add Attribute button at the bottom.",
+      "title": "Figure 1"
+    },
+    "link-media-3140731": {
+      "identifier": "link-media-3140731",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coredata/modeling_data/configuring_attributes#3140731"
+    },
+    "media-3140731": {
+      "identifier": "media-3140731",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 308
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6deb123876/84136f51-d33a-4809-a651-b47bcd13069a.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 308
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2fb13c2db9/011d1de1-f24d-4546-b310-847b70c14d70.png"
+        }
+      ],
+      "alt": "Screenshot showing the Attribute Type options.",
+      "title": "Figure 2"
+    },
+    "link-media-3122997": {
+      "identifier": "link-media-3122997",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/coredata/modeling_data/configuring_attributes#3122997"
+    },
+    "media-3122997": {
+      "identifier": "media-3122997",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 284
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8047a16dda/08162370-1481-4c5a-8956-934eeda51066.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 284
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8481d7d7f5/f49e13eb-0ea5-4dd7-bc5d-691459db9f7c.png"
+        }
+      ],
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsattributetype": {
+      "title": "NSAttributeType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsattributetype"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
+      "title": "NSNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight": {
+      "title": "Core Spotlight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/corespotlight"
+    },
+    "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration": {
+      "title": "Using Lightweight Migration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/using_lightweight_migration"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_entities": {
+      "title": "Configuring Entities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_entities",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/configuring_entities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Model your app’s objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes": {
+      "title": "Configuring Attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/configuring_attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describe the properties that compose an entity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships": {
+      "title": "Configuring Relationships",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/configuring_relationships",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify how entities relate and how change propagates between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code": {
+      "title": "Generating Code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/generating_code",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Automatically or manually generate managed object subclasses from entities."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_entities",
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships",
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code"
+      ],
+      "title": "Configuring a Core Data Model",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you create an entity as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_entities"
+            },
+            {
+              "type": "text",
+              "text": ", you can add attributes to that entity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An attribute describes a property of an entity. At minimum, you need to specify the property’s name and data type, whether it should be saved in the store, and whether it is required to have a value when it’s saved. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For some attribute types you can also choose whether to use a scalar type to represent the attribute in generated classes, as well as configure the attribute to have a default value, or to apply data validation rules."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Attributes",
+          "anchor": "3122995"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Add an attribute as indicated in the screenshot and the steps that follow."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3145039",
+              "metadata": {
+                "anchor": "3145039",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "With an entity selected, click Add Attribute at the bottom of the editor area. A new attribute with placeholder name "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "attribute"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", of type "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Undefined"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", appears in the Attributes list."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Attributes list, double-click the newly added attribute, and name it in place."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Attributes list, as shown in the second screenshot, click on "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Undefined"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and select the attribute’s data type from the Type dropdown list."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3140731",
+              "metadata": {
+                "anchor": "3140731",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Attributes",
+          "anchor": "3122994"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the data model inspector to configure the attribute as transient or optional, to opt for a scalar representation, to provide a default value, or to apply data validation rules."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122997",
+              "metadata": {
+                "anchor": "3122997",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Transient"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Transient attributes aren’t saved to the persistent store. By default, attributes are saved to the store. Transient attributes are a useful place to temporarily store calculated or derived values. Core Data does track changes to transient property values for undo purposes."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Optional"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optional attributes aren’t required to have a value when saved to the persistent store. Attributes are optional by default."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Core Data optionals aren’t the same as Swift optionals. You can use a Swift optional to represent a required attribute, for example, if you need flexibility to set its value during the time between the object’s initialization and its first save."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Attribute Type"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The attribute’s data type. This field reflects the selection made in the Attributes list’s Type dropdown."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "For the full list of types, see "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributetype"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Default Value"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Most types allow you to supply a default value. New object instances set the attribute to this default value on initialization, unless you specify another value at that time."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Supplying a default value, in combination with making the type non-optional, can provide performance benefits."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Validation"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optionally, set validation rules such as the minimum and maximum values for a numeric type, or regular expressions requirements for strings. The data model inspector shows validation options specific to the selected attribute’s type."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Use Scalar Type"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Optionally, for some types, choose between scalar and non-scalar representations during code generation. For a "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "Double"
+                      },
+                      {
+                        "type": "text",
+                        "text": ", checking the Use Scalar Type checkbox produces a double, while leaving it unchecked produces an "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "For the full list of types, including scalar variants, see "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributetype"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Index in Spotlight"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Adds the field to the Spotlight index for instances created from this entity. "
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "For more information, see "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/corespotlight"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Preserve After Deletion"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Includes the attribute in this entity’s tombstone. When persistent history tracking is enabled and a managed object is deleted, an identifying marker, known as its tombstone, is recorded in the relevant transaction."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "User Info"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A dictionary in which you can store any application-specific information related to the attribute."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Versioning Hash Modifier"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Provide a hash modifier when maintaining multiple model versions if the structure of an attribute is the same, but the format or content of its data has changed."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Versioning Renaming ID"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "If you rename an attribute between model versions, set the renaming identifier in the new model to the name of the corresponding attribute in the previous model. "
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "For more information, see "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

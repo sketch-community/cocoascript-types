@@ -1,0 +1,945 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/app_clips"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3586897,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating an App Clip with Xcode",
+    "role": "article",
+    "roleHeading": "Article"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/creating_an_app_clip_with_xcode"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/creating_an_app_clip_with_xcode"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/app_clips": {
+      "title": "App Clips",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips",
+      "url": "/documentation/app_clips",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-media-3680640": {
+      "identifier": "link-media-3680640",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode#3680640"
+    },
+    "media-3680640": {
+      "identifier": "media-3680640",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 731,
+            "height": 514
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0f33c18468/rendered2x-1598484589.png"
+        }
+      ],
+      "alt": "Screenshot showing the sheet for creating an App Clip target.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_on-demand-install-capable": {
+      "title": "com.apple.developer.on-demand-install-capable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_on-demand-install-capable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_on-demand-install-capable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether a bundle represents an App Clip."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.developer.on-demand-install-capable"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_parent-application-identifiers": {
+      "title": "Parent Application Identifiers Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_parent-application-identifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_parent-application-identifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of parent application identifiers for an App Clip with exactly one entry."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.developer.parent-application-identifiers",
+      "ideTitle": "Parent Application Identifiers Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/swift_packages": {
+      "title": "Swift Packages",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift_packages",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/swift_packages"
+    },
+    "doc://com.apple.documentation/documentation/swift_packages/organizing_your_code_with_local_packages": {
+      "title": "Organizing Your Code with Local Packages",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift_packages/organizing_your_code_with_local_packages",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/swift_packages/organizing_your_code_with_local_packages"
+    },
+    "link-3680642": {
+      "title": "About Asset catalogs",
+      "type": "section",
+      "identifier": "link-3680642",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/xcode/mac/current/index.html?localePath=en.lproj#/dev10510b1f7"
+    },
+    "doc://com.apple.documentation/documentation/xcode/reducing_your_app_s_size": {
+      "title": "Reducing Your App’s Size",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xcode/reducing_your_app_s_size",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/xcode/reducing_your_app_s_size"
+    },
+    "link-media-3640251": {
+      "identifier": "link-media-3640251",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode#3640251"
+    },
+    "media-3640251": {
+      "identifier": "media-3640251",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 554,
+            "height": 99
+          },
+          "url": "https://docs-assets.developer.apple.com/published/26ba52c4d3/original-1592600160.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 554,
+            "height": 99
+          },
+          "url": "https://docs-assets.developer.apple.com/published/34905d1342/rendered2x-1592600162.png"
+        }
+      ],
+      "alt": "Screenshot showing an active compilation condition named APPCLIP.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode#3634040": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode#3634040",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode#3634040"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_associated-domains": {
+      "title": "Associated Domains Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_associated-domains",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_associated-domains"
+    },
+    "link-3671983": {
+      "title": "Handoff",
+      "type": "topic",
+      "identifier": "link-3671983",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/handoff/"
+    },
+    "link-3671985": {
+      "title": "universal links",
+      "type": "topic",
+      "identifier": "link-3671985",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/ios/universal-links/"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience": {
+      "title": "Configuring Your App Clip’s Launch Experience",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/configuring_your_app_clip_s_launch_experience",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make changes to your web server, identify invocation URLs, and configure App Clip experiences in App Store Connect to enable invocations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode": {
+      "title": "Creating an App Clip with Xcode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_parent-application-identifiers",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_on-demand-install-capable"
+      ],
+      "title": "Creation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "App Clip"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is a lightweight version of your app that offers some of its functionality when and where people need it. With Xcode, you can add an App Clip target to your app’s project, share code and assets between the App Clip and the full app, and build, run, and debug your App Clip."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add an App Clip Target",
+          "anchor": "3604100"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "App Clips require a corresponding full app that offers at least the same functionality as the App Clip; you use the same Xcode project for your full app and your App Clip. If you’re starting a new app project, first create a new iOS project with Xcode. If you want to add an App Clip to your existing iOS app, open its Xcode project. Then, add an App Clip target to the Xcode project: "
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add a new target using the App Clip template."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose a product name, select applicable options for your App Clip, and click Finish."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3680640",
+              "metadata": {
+                "anchor": "3680640",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Xcode creates all required files for the options you choose, and adds a target for your App Clip with:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A scheme to build and run your App Clip and its tests."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A new capability named On Demand Install Capable that adds the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_on-demand-install-capable"
+                    },
+                    {
+                      "type": "text",
+                      "text": " entitlement."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_parent-application-identifiers"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An app identifier for the App Clip, using the full app’s app identifier as its prefix, followed by a string. For example, if your full app’s app identifier is "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "$(AppIdentifierPrefix)com.example.MyApp"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", the App Clip’s app identifier would be "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "$(AppIdentifierPrefix)com.example.MyApp.Clip"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "_XCAppClipURL"
+                    },
+                    {
+                      "type": "text",
+                      "text": " environment variable as part of the App Clip’s scheme that allows you to debug invocations."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Support for the same devices as the full app, not including macOS."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition, Xcode creates a new build phase for the app target that embeds the App Clip in the app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before you add code to the App Clip target, run the App Clip in Simulator or on a device. At this point, the App Clip shows an empty white screen, because you haven’t yet added any code and assets to the App Clip target."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Code and Assets",
+          "anchor": "3599711"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "App Clips make use of the same frameworks as full apps, and adding code or assets to an App Clip’s target works just like it does for any other target. Create new source files and assets, or use existing source files and assets, and add them as members to the App Clip’s target. To ensure the project’s maintainability, both the full app and the App Clip should share as much code as possible:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If you create a new app, build it with creating an App Clip in mind, and follow best practices that promote a modular code base. For example, create reusable components, bundle them as "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/swift_packages"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and use the packages in both the full app and the App Clip. For more information, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/swift_packages/organizing_your_code_with_local_packages"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If you add an App Clip to an existing app, set aside time to refactor the app’s code base to be modular and share code between the App Clip and the full app to avoid duplicating code."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add shared assets to a new asset catalog, and use the catalog in both the full app and the App Clip. For more information, see "
+                    },
+                    {
+                      "type": "link",
+                      "title": "About Asset catalogs",
+                      "destination": "https://help.apple.com/xcode/mac/current/index.html?localePath=en.lproj#/dev10510b1f7"
+                    },
+                    {
+                      "type": "text",
+                      "text": " in Xcode Help."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Keep Your App Clip Small in Size",
+          "anchor": "3681387"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "App Clips must be small — no more than 10 MB for the uncompressed App Clip— to launch instantly. If possible, keep your App Clip well below this limit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To measure your App Clip’s size, create an app size report for your App Clip:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Xcode, archive the App Clip’s corresponding app, open the Organizer window, select the archive, and click Distribute App."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Export the App Clip as an Ad Hoc or Development build with App Thinning and Rebuild from Bitcode enabled."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The output folder for your exported App Clip also contains its size report: a file named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "App Thinning Size Report.txt"
+            },
+            {
+              "type": "text",
+              "text": ". Open the text file, and note your App Clip’s uncompressed size, and make adjustments to your project to keep its uncompressed size below 10 MB."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information on measuring your app’s size, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/xcode/reducing_your_app_s_size"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Active Compilation Conditions",
+          "anchor": "3634038"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In many cases, adding an App Clip to your app is a good opportunity to refactor your app’s code to be modular and reusable. Most functionality and frameworks available to your full app are available to your App Clip. However, you may encounter cases where you can’t use some of your app’s code in the App Clip and creating separate modules for app and App Clip code isn’t feasible. In these cases, take advantage of the Active Compilation Conditions build setting, where you can declare a condition to exclude code."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3640251",
+              "metadata": {
+                "anchor": "3640251",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Start by navigating to your App Clip target’s build settings and creating a new value for the Active Compilation Condition build setting; for example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "APPCLIP"
+            },
+            {
+              "type": "text",
+              "text": ". Then, add a check in your shared code, where needed, to exclude code you don’t want to use in your App Clip."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code checks for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "APPCLIP"
+            },
+            {
+              "type": "text",
+              "text": " value you added to the Active Compilation Conditions build setting."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "#if !APPCLIP",
+            "// Code you don't want to use in your App Clip.",
+            "#else",
+            "// Code your App Clip may access.",
+            "#endif"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3634040",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add the Associated Domains Entitlement",
+          "anchor": "3604097"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users launch App Clips from invocations that pass an "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "invocation URL"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " to the App Clip or, if the user installs the app to replace the App Clip, to the full app. The launch mechanism makes use of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_associated-domains"
+            },
+            {
+              "type": "text",
+              "text": " — an entitlement you may already be familiar with if your app supports "
+            },
+            {
+              "type": "link",
+              "title": "Handoff",
+              "destination": "https://developer.apple.com/handoff/"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "link",
+              "title": "universal links",
+              "destination": "https://developer.apple.com/ios/universal-links/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Designing and configuring your App Clip’s launch experience is an important task and a fast launch is key to using App Clips. However, no matter which invocations you choose to support and which invocation URLs you use, you must add the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_associated-domains"
+            },
+            {
+              "type": "text",
+              "text": " to the app and the App Clip target:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open your project in Xcode; then, in your project settings, enable the Associated Domains capability to add the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Associated Domains Entitlement"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For each URL that launches your App Clip or full app, add its domain to the Associated Domains capability using this pattern: "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "appclips:<fully qualified domain>"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". For example, add "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "appclips:example.com"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": " Configure and Respond to Invocations",
+          "anchor": "3634037"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To launch an App Clip, users perform an "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "invocation"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", for example, by scanning an NFC tag or a visual code. In your code, respond to the invocation and the invocation URL that the system passes to the App Clip or full app upon launch. You don’t have to add code to scan NFC tags, visual codes, and so on."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "However, you must make changes to your server before you distribute your App Clip to testers or make it available to users. In addition, you need to think about which invocations you want to support. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1001 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Initiate drags and handle drops from a table view."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2891849,
+  "kind": "article",
+  "metadata": {
+    "title": "Supporting Drag and Drop in Table Views",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897492-tableview": {
+      "title": "tableView:itemsForBeginningDragSession:atIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897492-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdragdelegate/2897492-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:itemsForBeginningDragSession:atIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate": {
+      "title": "UITableViewDragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdragdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for initiating drags from a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider": {
+      "title": "NSItemProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidragitem": {
+      "title": "UIDragItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidragitem"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject": {
+      "title": "localObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidragitem/2890981-localobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897434-tableview": {
+      "title": "tableView:canHandleDropSession:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897434-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropdelegate/2897434-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:canHandleDropSession:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897302-tableview": {
+      "title": "tableView:dropSessionDidUpdate:withDestinationIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897302-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropdelegate/2897302-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:dropSessionDidUpdate:withDestinationIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropproposal": {
+      "title": "UITableViewDropProposal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropproposal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropproposal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your proposed solution for handling a drop in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897427-tableview": {
+      "title": "tableView:performDropWithCoordinator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897427-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropdelegate/2897427-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:performDropWithCoordinator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidragitem/2890975-itemprovider": {
+      "title": "itemProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890975-itemprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidragitem/2890975-itemprovider"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator/2897301-dropitem": {
+      "title": "dropItem:toRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator/2897301-dropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropcoordinator/2897301-dropitem",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropItem:toRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator": {
+      "title": "UITableViewDropCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropcoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for coordinating your custom drop-related actions with the table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholdercontext/2897487-commitinsertionwithdatasourceupd": {
+      "title": "commitInsertionWithDataSourceUpdates:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholdercontext/2897487-commitinsertionwithdatasourceupd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropplaceholdercontext/2897487-commitinsertionwithdatasourceupd",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "commitInsertionWithDataSourceUpdates:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/2897362-dragdelegate": {
+      "title": "dragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/2897362-dragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/2897362-dragdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate": {
+      "title": "UITableViewDropDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for handling drops in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/2897372-dropdelegate": {
+      "title": "dropDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/2897372-dropdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/2897372-dropdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views": {
+      "title": "Supporting Drag and Drop in Table Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate drags and handle drops from a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view": {
+      "title": "Adopting Drag and Drop in a Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Demonstrates how to enable and implement drag and drop for a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropitem": {
+      "title": "UITableViewDropItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data associated with an item being dropped into the table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropitem",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropproposal"
+      ],
+      "title": "Drag and Drop",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Table views support drag and drop through a specialized API that works with the rows being displayed. To support drags, define a drag delegate object—an object that adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol—and assign it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/2897362-dragdelegate"
+            },
+            {
+              "type": "text",
+              "text": " property of your table view. To handle drops, define a drop delegate object—an object that adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol—and assign it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/2897372-dropdelegate"
+            },
+            {
+              "type": "text",
+              "text": " property of your table view. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Dragging Rows from the Table View",
+          "anchor": "2891850"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The table view manages most drag-related interactions, but you need to specify which rows to drag. When the drag gesture occurs, the table view creates a drag session and calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897492-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method of your drag delegate object. (When the user drags a selected row, this method is called once for each row in the selection. If no rows are selected, the method is called only once for the underlying row.) If you return a non empty array, the table view begins dragging the rows that you specify. Return an empty array when you do not allow the user to drag content from the specified index path."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Use the other methods of the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate"
+                },
+                {
+                  "type": "text",
+                  "text": " protocol to manage additional drag-related interactions. For example, you can customize the appearance of the rows being dragged and let the user add items to the current drag session."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your implementation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897492-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create one or more "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects. Use the item providers to represent the data for your table's rows."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Wrap each item provider object in a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Consider assigning a value to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property of each drag item. This step is optional but makes it faster to drag and drop content within the same app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Return the drag items from your method."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the provided index path to determine the row for which to create a drag item. If the target row is one of the currently selected rows, the table view automatically drags all of the selected rows. If the row is not part of the current selection, the table view adds it to the already active drag operation.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about initiating drags, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Receiving Dropped Content",
+          "anchor": "2891851"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When content is dragged inside its bounds, a table view consults its drop delegate to determine whether it can receive the dragged data. Initially, the table view calls only the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897434-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method of the drop delegate to determine whether you can incorporate the specified data into your data source. If you can incorporate the data, the table view begins calling other methods to determine where the data can be dropped."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As the user’s finger moves, the table view tracks the potential drop location and notifies your delegate by calling its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897302-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method for each change. Implementing this method is optional but recommended, because it lets the table view display visual feedback about how dragged content will be incorporated. In your implementation, create a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropproposal"
+            },
+            {
+              "type": "text",
+              "text": " object with information about how you would respond to a drop at the specified index path. For example, you might want to insert the content as a new row into your data source or you might add the data into the existing row at the specified index path. Because the method is called frequently, return your proposal as quickly as possible. If you do not implement this method, the table view does not provide visual feedback about how it handles the drop."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user commits the drop by lifting the associated finger from the screen, the table view calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897427-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method of your drop delegate. You must implement this method to handle the dropped data. In your implementation, fetch the dragged data, update your table view’s data source, and insert any needed rows into the table view itself. If the content originated from the table view, you can delete the dragged rows from their current location and insert them at their new location using the existing table view APIs. For content that came from outside the table view, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject"
+            },
+            {
+              "type": "text",
+              "text": " property (for content that originated inside your app) or the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+            },
+            {
+              "type": "text",
+              "text": " object to fetch the data and insert it. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your implementation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897427-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Iterate over the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "items"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property in the provided drop coordinator object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For each item, determine how you want to handle its content:"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If the "
+                            },
+                            {
+                              "type": "codeVoice",
+                              "code": "sourceIndexPath"
+                            },
+                            {
+                              "type": "text",
+                              "text": " of the item contains a value, the item originated in the table view. Use a batch update to delete the item from its current location and insert it at the new index path. "
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject"
+                            },
+                            {
+                              "type": "text",
+                              "text": " property of the drag item is set, the content originated from elsewhere in your app so you must insert an row or update an existing item."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If no other option is available, use the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+                            },
+                            {
+                              "type": "text",
+                              "text": " in the drag item’s "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890975-itemprovider"
+                            },
+                            {
+                              "type": "text",
+                              "text": " property to fetch the data asynchronously and insert or update the item."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Update your data source and insert or move the necessary items in the table view."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For content that is already local to your app, you can usually update your table view’s data source and interface directly. For example, you might use a batch update to delete and then insert rows that dragged within the table view. When finished, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator/2897301-dropitem"
+            },
+            {
+              "type": "text",
+              "text": " method of the drop coordinator to animate the insertion of the dragged content into the table view. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For data that must be retrieved using an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+            },
+            {
+              "type": "text",
+              "text": " object, insert a placeholder into the table view until you are able to retrieve the actual data. Inserting a placeholder is necessary only when inserting new rows into the table view. The placeholder acts as a temporary row, presenting the default content you want to display until the actual data becomes available. For example, you might provide a placeholder row with a text field stating that the content is currently loading. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To insert a placeholder into the table view, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Call the  "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "dropItem:toPlaceholderInsertedAtIndexPath:withReuseIdentifier:rowHeight:cellUpdateHandler:"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method of the provided "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object to insert your placeholder row into the table view. Use the block in the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "cellUpdateHandler"
+                    },
+                    {
+                      "type": "text",
+                      "text": " parameter to configure the contents of your placeholder cell."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Begin loading the data asynchronously from the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+            },
+            {
+              "type": "text",
+              "text": " object returns the actual data, commit the insertion and exchange the placeholder cell for the final cell. Specifically, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholdercontext/2897487-commitinsertionwithdatasourceupd"
+            },
+            {
+              "type": "text",
+              "text": " method of the context object you received after creating the placeholder. In the block that you pass to that method, update your model object and your table view's data source. When this method returns, the table view automatically deletes the placeholder and inserts the final row, which causes your updated data to be reflected in a new cellInsert placeholders at the location specified by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "destinationIndexPath"
+            },
+            {
+              "type": "text",
+              "text": " property of the drop coordinator."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

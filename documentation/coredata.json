@@ -1,0 +1,832 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Persist or cache data and support undo on a single device."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1612679,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Core Data",
+    "role": "collection",
+    "roleHeading": "Framework",
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "3.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata"
+      ]
+    }
+  ],
+  "references": {
+    "link-media-3119932": {
+      "identifier": "link-media-3119932",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata#3119932"
+    },
+    "media-3119932": {
+      "identifier": "media-3119932",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 218,
+            "height": 186
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5770f06627/73cb5bb3-06ab-4017-89da-84ddacd20279.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 218,
+            "height": 186
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7d6b410668/95d28eec-4652-4824-bac8-a413ede649ea.png"
+        }
+      ],
+      "alt": "Flow diagram showing an app saving data to and loading data from a persistent store.",
+      "title": "Figure 1"
+    },
+    "link-media-3118362": {
+      "identifier": "link-media-3118362",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coredata#3118362"
+    },
+    "media-3118362": {
+      "identifier": "media-3118362",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 552,
+            "height": 203
+          },
+          "url": "https://docs-assets.developer.apple.com/published/843104c2e8/8ff27b5a-9441-4054-91ec-152843782ce2.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 552,
+            "height": 203
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6e6259c804/9ec0237d-0f5c-4f01-ac35-b6b55de236a9.png"
+        }
+      ],
+      "alt": "Figure showing a shake to undo gesture causing an element to be removed from a list.",
+      "title": "Figure 2"
+    },
+    "link-media-3118359": {
+      "identifier": "link-media-3118359",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/coredata#3118359"
+    },
+    "media-3118359": {
+      "identifier": "media-3118359",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 260,
+            "height": 196
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1b9da4c41b/efc8be3c-1e32-4579-9356-4e029b99268a.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 260,
+            "height": 196
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d090c20938/df1bcb18-0917-4fa0-a269-62e23d0ac3c9.png"
+        }
+      ],
+      "alt": "Flow diagram showing data from an endpoint populating objects in the background before updating the UI.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model": {
+      "title": "Creating a Core Data Model",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/creating_a_core_data_model",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a data model file to contain your app’s object structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack": {
+      "title": "Setting Up a Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up the classes that manage and persist your app’s objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage and persist your app’s model layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data": {
+      "title": "Handling Different Data Types in Core Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/handling_different_data_types_in_core_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, store, and present records for a variety of data types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores": {
+      "title": "Linking Data Between Two Core Data Stores",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Organize data in two different stores and implement a link between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data": {
+      "title": "Modeling Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure the data model file to contain your app’s object graph."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_model": {
+      "title": "Core Data Model",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_model",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_model",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describe your app’s object structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsfetchrequest": {
+      "title": "NSFetchRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsfetchrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of search criteria used to retrieve data from a persistent store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchrequest": {
+      "title": "NSAsynchronousFetchRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsasynchronousfetchrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A fetch request that retrieves results asynchronously and supports progress notification."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchresult": {
+      "title": "NSAsynchronousFetchResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsasynchronousfetchresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A fetch result object that encompasses the response from an executed asynchronous fetch request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller": {
+      "title": "NSFetchedResultsController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsfetchedresultscontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A controller that you use to  manage the results of a Core Data fetch request and to display data to the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit": {
+      "title": "Mirroring a Core Data Store with CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Back user interfaces with a local replica of a CloudKit private database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/synchronizing_a_local_store_to_the_cloud": {
+      "title": "Synchronizing a Local Store to the Cloud",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/synchronizing_a_local_store_to_the_cloud",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/synchronizing_a_local_store_to_the_cloud",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Share data between a user’s devices using Core Data with CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer": {
+      "title": "NSPersistentCloudKitContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container that encapsulates the Core Data stack in your app and mirrors select persistent stores to a CloudKit private database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions": {
+      "title": "NSPersistentCloudKitContainerOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontaineroptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that customizes how a store description aligns with a CloudKit database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed": {
+      "title": "Accessing Data When the Store Has Changed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/accessing_data_when_the_store_has_changed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Guarantee that a context won’t see store changes until you tell it to look."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes": {
+      "title": "Consuming Relevant Store Changes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/consuming_relevant_store_changes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter store transactions for changes relevant to the current view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/persistent_history": {
+      "title": "Persistent History",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/persistent_history",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/persistent_history",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use persistent history tracking to determine what changes have occurred in the store since the enabling of persistent history tracking."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/using_core_data_in_the_background": {
+      "title": "Using Core Data in the Background",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/using_core_data_in_the_background",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/using_core_data_in_the_background",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Core Data in both a single-threaded and multithreaded app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed": {
+      "title": "Loading and Displaying a Large Data Feed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Consume data in the background, and lower memory usage by batching imports and preventing duplicate records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/conflict_resolution": {
+      "title": "Conflict Resolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/conflict_resolution",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/conflict_resolution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect and resolve conflicts that occur when data is changed on multiple threads."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/batch_processing": {
+      "title": "Batch Processing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/batch_processing",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/batch_processing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use batch processes to manage large data changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration": {
+      "title": "Using Lightweight Migration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/using_lightweight_migration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Request lightweight (automatic) migration to update your data model to match changes in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/heavyweight_migration": {
+      "title": "Heavyweight Migration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/heavyweight_migration",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/heavyweight_migration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use heavyweight (manual) migration in rare cases when changes to the data model exceed the capabilities of lightweight migration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent": {
+      "title": "NSPersistentCloudKitContainerEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainerevent"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest": {
+      "title": "NSPersistentCloudKitContainerEventRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventrequest"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult": {
+      "title": "NSPersistentCloudKitContainerEventResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventresult"
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_enumerations": {
+      "title": "Core Data Enumerations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_enumerations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_enumerations"
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_constants": {
+      "title": "Core Data Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This document describes the constants defined in the Core Data framework and not described in a document for an individual class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+        "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+        "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Modeling",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/modeling_data",
+        "doc://com.apple.documentation/documentation/coredata/core_data_model"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Fetch Requests",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsfetchrequest",
+        "doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchrequest",
+        "doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchresult",
+        "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Core Data retrieves persisted data to be used by your app."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "CloudKit Mirroring",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+        "doc://com.apple.documentation/documentation/coredata/synchronizing_a_local_store_to_the_cloud",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Change Processing",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed",
+        "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes",
+        "doc://com.apple.documentation/documentation/coredata/persistent_history"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Background Tasks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/using_core_data_in_the_background",
+        "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed",
+        "doc://com.apple.documentation/documentation/coredata/conflict_resolution",
+        "doc://com.apple.documentation/documentation/coredata/batch_processing"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Migration",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration",
+        "doc://com.apple.documentation/documentation/coredata/heavyweight_migration"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Core Data has built-in data migration tools to help keep your app's data up to date with the current data model."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Classes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/core_data_enumerations",
+        "doc://com.apple.documentation/documentation/coredata/core_data_constants"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use Core Data to save your application’s permanent data for offline use, to cache temporary data, and to add undo functionality to your app on a single device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Through Core Data’s Data Model editor, you define your data’s types and relationships, and generate respective class definitions. Core Data can then manage object instances at runtime to provide the following features."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Persistence",
+          "anchor": "3073802"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data abstracts the details of mapping your objects to a store, making it easy to save data from Swift and Objective-C without administering a database directly."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3119932",
+              "metadata": {
+                "anchor": "3119932",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Undo and Redo of Individual or Batched Changes",
+          "anchor": "3073805"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data’s undo manager tracks changes and can roll them back individually, in groups, or all at once, making it easy to add undo and redo support to your app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3118362",
+              "metadata": {
+                "anchor": "3118362",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Background Data Tasks",
+          "anchor": "3073803"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Perform potentially UI-blocking data tasks, like parsing JSON into objects, in the background. You can then cache or store the results to reduce server roundtrips."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3118359",
+              "metadata": {
+                "anchor": "3118359",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "View Synchronization",
+          "anchor": "3108547"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data also helps keep your views and data synchronized by providing data sources for table and collection views."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Versioning and Migration",
+          "anchor": "3108549"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data includes mechanisms for versioning your data model and migrating user data as your app evolves."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,2513 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Access CloudKit records created from Core Data managed objects."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3198853,
+  "kind": "article",
+  "metadata": {
+    "title": "Reading CloudKit Records for Core Data",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit": {
+      "title": "Mirroring a Core Data Store with CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3003387-recordtype": {
+      "title": "recordType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3003387-recordtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/3003387-recordtype"
+    },
+    "link-media-3227969": {
+      "identifier": "link-media-3227969",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3227969"
+    },
+    "media-3227969": {
+      "identifier": "media-3227969",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 171
+          },
+          "url": "https://docs-assets.developer.apple.com/published/92685bd20b/4d306b53-ec51-465b-94fb-258b98e80add.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 171
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9e52417910/f1d465a3-4814-4364-88f3-dbd0b248aeb6.png"
+        }
+      ],
+      "alt": "Layout diagram showing a Post entity with content and title attributes.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222069": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222069",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222069"
+    },
+    "link-media-3227968": {
+      "identifier": "link-media-3227968",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3227968"
+    },
+    "media-3227968": {
+      "identifier": "media-3227968",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 640,
+            "height": 318
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fa63352fd2/5b5fe7da-767a-4588-8c7c-24267735482a.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 640,
+            "height": 318
+          },
+          "url": "https://docs-assets.developer.apple.com/published/efe0160d37/d5fabb23-5b03-4e53-b0a0-bda1e7ec0d97.png"
+        }
+      ],
+      "alt": "Layout diagram showing an ImagePost entity that inherits from Post to add an imageData attribute, and a VideoPost entity that inherits from Post to add a VideoPost attribute.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222070": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222070",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222070"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462206-recordtype": {
+      "title": "recordType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462206-recordtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/1462206-recordtype"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckquery": {
+      "title": "CKQuery",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquery",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckquery"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3198857": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3198857",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3198857"
+    },
+    "link-media-3222599": {
+      "identifier": "link-media-3222599",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222599"
+    },
+    "media-3222599": {
+      "identifier": "media-3222599",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 212
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e2726efd7f/569a240e-cbe7-4fbf-849c-25e2a02ee0c3.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 212
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ffddb5e429/c03450fd-a1b1-48ce-9ce7-73ec222562a5.png"
+        }
+      ],
+      "alt": "Layout diagram showing a Post entity with content and title attributes.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222085": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222085",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222085"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
+      "title": "NSNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdate": {
+      "title": "NSDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdecimalnumber": {
+      "title": "NSDecimalNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdecimalnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdecimalnumber"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuuid": {
+      "title": "NSUUID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuuid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuuid"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl": {
+      "title": "NSURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckasset": {
+      "title": "CKAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckasset"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata": {
+      "title": "NSData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata"
+    },
+    "link-media-3225833": {
+      "identifier": "link-media-3225833",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3225833"
+    },
+    "media-3225833": {
+      "identifier": "media-3225833",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 218
+          },
+          "url": "https://docs-assets.developer.apple.com/published/033ba5f78d/35497107-cb12-4142-bd4c-6727767457d8.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 218
+          },
+          "url": "https://docs-assets.developer.apple.com/published/953e8401d1/a38fc439-2c74-47f5-a02b-3d14451aa002.png"
+        }
+      ],
+      "alt": "Flow diagram showing a one-to-one relationship between an ImageData entity with a data attribute and attachment relationship, to an Attachment entity with thumbnail and uuid attributes and an imageData relationship.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222086": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222086",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222086"
+    },
+    "link-media-3225834": {
+      "identifier": "link-media-3225834",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3225834"
+    },
+    "media-3225834": {
+      "identifier": "media-3225834",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 219
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a5bb808de0/eb1525d9-b45c-4a8c-9e82-40f9eb89e0c9.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 219
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b41cea2f82/1e637ca3-e666-4264-8460-31837bb476b9.png"
+        }
+      ],
+      "alt": "Flow diagram showing a one-to-many relationship between an Post entity with content and title attributes and an attachments relationship; to an Attachment entity with thumbnail and uuid attributes and a post relationship.",
+      "title": "Figure 5"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222087": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222087",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222087"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3221711": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3221711",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3221711"
+    },
+    "link-media-3225832": {
+      "identifier": "link-media-3225832",
+      "type": "link",
+      "title": "Figure 6",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3225832"
+    },
+    "media-3225832": {
+      "identifier": "media-3225832",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 500,
+            "height": 235
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9440a18a96/57f8bccc-5651-4208-8d54-f904e6eff044.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 500,
+            "height": 235
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b71247c4b9/b16a817c-ea8b-4a44-b26e-ee9b694009d9.png"
+        }
+      ],
+      "alt": "Flow diagram showing a many-to-many relationship between a Post entity with content and title attributes and a tags relationship; to a Tag entity with color, name, and uuid attributes and a posts relationship.",
+      "title": "Figure 6"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3225808": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3225808",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3225808"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222091": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222091",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data#3222091"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
+      "title": "CKRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141668-recordformanagedobjectid": {
+      "title": "recordForManagedObjectID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141668-recordformanagedobjectid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3141668-recordformanagedobjectid",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "recordForManagedObjectID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141671-recordsformanagedobjectids": {
+      "title": "recordsForManagedObjectIDs:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141671-recordsformanagedobjectids",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3141671-recordsformanagedobjectids",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "recordsForManagedObjectIDs:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141669-recordidformanagedobjectid": {
+      "title": "recordIDForManagedObjectID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141669-recordidformanagedobjectid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer/3141669-recordidformanagedobjectid",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "recordIDForManagedObjectID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer": {
+      "title": "NSPersistentCloudKitContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer"
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs": {
+      "title": "CloudKit JS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/cloudkitjs"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckreference": {
+      "title": "CKReference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckreference"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit": {
+      "title": "Setting Up Core Data with CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up the classes and capabilities that sync your store to CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit": {
+      "title": "Creating a Core Data Model for CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Design a CloudKit-compatible data model and initialize your CloudKit schema."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit": {
+      "title": "Syncing a Core Data Store with CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Synchronize objects between devices, and handle store changes in the user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data": {
+      "title": "Reading CloudKit Records for Core Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Access CloudKit records created from Core Data managed objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit"
+      ],
+      "title": "Configuring CloudKit Mirroring",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although your Core Data app interacts primarily with managed objects, you can access a managed object’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " directly. This is useful if you’re leveraging CloudKit to add features like sharing. You can also use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkitjs"
+            },
+            {
+              "type": "text",
+              "text": " to access CloudKit records from your web app. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To prevent collision with existing CloudKit record types and reserved names, CloudKit prefixes the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " types and fields it creates for your Core Data entities with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To work with records directly, you need to understand the mappings between entities and record types, attributes and fields, and the ways a record stores relationships."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Core Data doesn’t use CloudKit’s native support for relationships, "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference"
+                },
+                {
+                  "type": "text",
+                  "text": ", because this field limits the number of references to 750, and cannot represent many-to-many relationships. Core Data stores the relationship in CloudKit according to its cardinality (one-to-one, one-to-many, or many-to-many), as described in this article."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Read Entities from Record Types",
+          "anchor": "3198855"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit doesn’t typically support inheritance, so it provides only a single system field, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3003387-recordtype"
+            },
+            {
+              "type": "text",
+              "text": ", to hold type information. Core Data stores the name of the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "root entity"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " from the inheritance hierarchy in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3003387-recordtype"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you initialize a schema, Core Data adds a custom field to the record type, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_entityName"
+            },
+            {
+              "type": "text",
+              "text": ", to store the name of the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "current entity"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3227969",
+              "metadata": {
+                "anchor": "3227969",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, an entity named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " generates the following structure (before adding its attributes), with its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_entityName"
+            },
+            {
+              "type": "text",
+              "text": " set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": ", and its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recordType"
+            },
+            {
+              "type": "text",
+              "text": " set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_Post"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<CKRecord: 0x7fbae9e19510; recordID=CD_Post_UUID:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_entityName\" = Post;",
+            "}, recordType=CD_Post>"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3222069",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Consider a second entity, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ImagePost"
+            },
+            {
+              "type": "text",
+              "text": ", that inherits from Post."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3227968",
+              "metadata": {
+                "anchor": "3227968",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "ImagePost"
+            },
+            {
+              "type": "text",
+              "text": " generates the following structure (before adding its attributes), with its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_entityName"
+            },
+            {
+              "type": "text",
+              "text": " set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ImagePost"
+            },
+            {
+              "type": "text",
+              "text": ", and its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recordType"
+            },
+            {
+              "type": "text",
+              "text": " set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_Post"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<CKRecord: 0x7f9c9fe17780; recordID=CD_ImagePost_UUID:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_entityName\" = ImagePost;",
+            "}, recordType=CD_Post>"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3222070",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Query against "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462206-recordtype"
+            },
+            {
+              "type": "text",
+              "text": " when searching against an entity’s inheritance hierarchy. Query against "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_entityName"
+            },
+            {
+              "type": "text",
+              "text": " when searching for instances of a specific type."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about CloudKit queries, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquery"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Read Attributes from Fields",
+          "anchor": "3198854"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you initialize a schema, Core Data creates fields for each of an entity’s attributes, mapping the attribute name to a field with a key in the form "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_[attribute.name]"
+            },
+            {
+              "type": "text",
+              "text": ". The field’s type may vary between Core Data and CloudKit."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Core Data attribute type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "NSManagedObject"
+                    },
+                    {
+                      "type": "text",
+                      "text": " attribute type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "CKRecord"
+                    },
+                    {
+                      "type": "text",
+                      "text": " attribute type"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Integer 16"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Integer 32"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Integer 64"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Double"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Float"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Boolean"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Date"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Decimal"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdecimalnumber"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "UUID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuuid"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "URI"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "String"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Binary Data"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Transformable"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Undefined "
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "—"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "not supported"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Object ID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "—"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "not supported"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3198857",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All variable length attribute types—String, Binary Data, and Transformable—generate an additional field with a key in the form "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_[attribute.name]_ckAsset"
+            },
+            {
+              "type": "text",
+              "text": ". If a field’s value grows too large to store within the record size limit of 1MB, Core Data automatically converts the value to an external asset. Core Data transitions between the original field and its asset counterpart transparently during serialization. When inspecting a CloudKit record directly, check the length of the original field’s value; if it is zero, look in the asset field."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3222599",
+              "metadata": {
+                "anchor": "3222599",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, an entity named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " with String "
+            },
+            {
+              "type": "codeVoice",
+              "code": "content"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "title"
+            },
+            {
+              "type": "text",
+              "text": " attributes would generate the following fully materialized record, with pairs of fields for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_content and"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_content_ckAsset"
+            },
+            {
+              "type": "text",
+              "text": ", and for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_title"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_title_ckAsset"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<CKRecord: 0x7f9c9fd0f870; recordID=CD_Post_UUID:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_content\" = \"An example core data string\";",
+            "    \"CD_content_ckAsset\" = \"<CKAsset: 0x7f9c9fe1db50; ",
+            "path=/var/folders/*/C9EDC901-385B-4778-9D78-03E9C740AD89.fxd, ",
+            "UUID=C37985B7-F959-4174-AA93-C404F9DCC6A5>\";",
+            "    \"CD_entityName\" = Post;",
+            "    \"CD_title\" = \"An example core data string\";",
+            "    \"CD_title_ckAsset\" = \"<CKAsset: 0x7f9c9fd10140; ",
+            "path=/var/folders/*/C7977A3A-623E-441E-9086-66F2F5B7B746.fxd, ",
+            "UUID=81800071-ECBD-46E1-B4F9-2F7168269497>\";",
+            "}, recordType=CD_Post"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3222085",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Read One-to-One Relationships from Fields",
+          "anchor": "3199892"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "One-to-one relationships store foreign keys in both related records, mapping the relationship name to a field with a key in the form "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_[relationship.name]"
+            },
+            {
+              "type": "text",
+              "text": ". This field stores the foreign key of the related object in the form "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CKRecord.recordID.recordName"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, consider a one-to-one relationship between an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ImageData"
+            },
+            {
+              "type": "text",
+              "text": " entity and an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Attachment"
+            },
+            {
+              "type": "text",
+              "text": " entity. In Core Data, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Attachment"
+            },
+            {
+              "type": "text",
+              "text": " has an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "imageData"
+            },
+            {
+              "type": "text",
+              "text": " relationship, and the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ImageData"
+            },
+            {
+              "type": "text",
+              "text": " has an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "attachment"
+            },
+            {
+              "type": "text",
+              "text": " relationship."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3225833",
+              "metadata": {
+                "anchor": "3225833",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This one-to-one relationship between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ImageData"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Attachment"
+            },
+            {
+              "type": "text",
+              "text": " would generate the following CloudKit records."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<CKRecord: 0x7f9ca1300f50; recordID=CD_Attachment_UUID:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_entityName\" = Attachment;",
+            "    \"CD_imageData\" = \"CD_ImageData_UUID\";",
+            "}, recordType=CD_Attachment>",
+            "<CKRecord: 0x7f9c9fc18610; recordID=CD_ImageData_UUID:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_attachment\" = \"CD_Attachment_UUID\";",
+            "    \"CD_entityName\" = ImageData;",
+            "}, recordType=CD_ImageData>"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3222086",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_imageData"
+            },
+            {
+              "type": "text",
+              "text": " field on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_Attachment"
+            },
+            {
+              "type": "text",
+              "text": " contains the foreign key of the image, and the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_attachment"
+            },
+            {
+              "type": "text",
+              "text": " field on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_ImageData"
+            },
+            {
+              "type": "text",
+              "text": " contains the foreign key of the attachment."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Read One-to-Many Relationships from Fields",
+          "anchor": "3199894"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "One-to-many relationships store a foreign key on each record on the many side of the relationship, mapping the relationship name to a field with a key in the form "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_[relationship name]"
+            },
+            {
+              "type": "text",
+              "text": ". This field stores the foreign key of the related object in the form "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CKRecord.recordID.recordName"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3225834",
+              "metadata": {
+                "anchor": "3225834",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, a one-to-many relationship between a single "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " and multiple "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Attachment"
+            },
+            {
+              "type": "text",
+              "text": " instances would generate multiple "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_Attachment"
+            },
+            {
+              "type": "text",
+              "text": " records. Each record contains the foreign key of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " it belongs to in their "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CD_post"
+            },
+            {
+              "type": "text",
+              "text": " field."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<CKRecord: 0x7f9ca1300f50; recordID=CD_Attachment_UUID:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_entityName\" = Attachment;",
+            "    \"CD_post\" = \"CD_VideoPost_UUID\";",
+            "}, recordType=CD_Attachment>"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3222087",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Generated "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " records don’t contain a reference to their attachments."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Read Many-to-Many Relationships from CDMR Records",
+          "anchor": "3199893"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Many-to-many relationships model the join table using a custom Core Data Mirrored Relationship (CDMR) record type."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit doesn’t support the notion of a join, and it’s inefficient to encode arrays on both records and keep them in sync. Instead, Core Data constructs a CDMR record to accurately and succintly capture all of the criteria of the join. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CDMR records have the following fields."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "CDMR Field"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "CD_entityNames"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An alphabetically sorted, semicolon-separated list of the entities in the relationship, for example, "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "“Post:Tag”"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". The ordering of this field determines the ordering for all other fields."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "CD_recordNames"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The record names of the two related objects, for example, "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "“CD_Post_F587C290-BC2F-441B-98FC-1357BA89C411:CD_Tag_215FA1E0-6A16-4A2B-BFA2-C13202BE6D50”"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", sorted according to the CD_entityNames order."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "CD_relationships"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The relationship names, for example, "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "“tags:posts”"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", sorted according to the CD_entityNames order."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3221711",
+            "title": "Table 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, consider a many-to-many relationship between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Tag"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " entities."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3225832",
+              "metadata": {
+                "anchor": "3225832",
+                "title": "Figure 6"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The individual "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Tag"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " records don’t contain fields for the relationship."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<CKRecord: 0x7f9c9fd0f870; recordID=CD_Post_UUID:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_content\" = \"An example core data string\";",
+            "    \"CD_content_ckAsset\" = \"<CKAsset: 0x7f9c9fe1db50; ",
+            "path=/var/folders/*/C9EDC901-385B-4778-9D78-03E9C740AD89.fxd, ",
+            "UUID=C37985B7-F959-4174-AA93-C404F9DCC6A5>\";",
+            "    \"CD_entityName\" = Post;",
+            "    \"CD_title\" = \"An example core data string\";",
+            "    \"CD_title_ckAsset\" = \"<CKAsset: 0x7f9c9fd10140; ",
+            "path=/var/folders/*/C7977A3A-623E-441E-9086-66F2F5B7B746.fxd, ",
+            "UUID=81800071-ECBD-46E1-B4F9-2F7168269497>\";",
+            "}, recordType=CD_Post>",
+            "<CKRecord: 0x7f9ca10188d0; recordID=CD_Tag_UUID:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_color\" = {length = 17, bytes = 0x536f6d65206578616d706c652064617461};",
+            "    \"CD_color_ckAsset\" = \"<CKAsset: 0x7f9c9fd07790; ",
+            "path=/var/folders/*/5D5DF5B2-DB27-4F01-B311-52A274374F59.fxd, ",
+            "UUID=787F4868-1F4D-4BF7-86D4-3867BEA65172>\";",
+            "    \"CD_entityName\" = Tag;",
+            "    \"CD_name\" = \"An example core data string\";",
+            "    \"CD_name_ckAsset\" = \"<CKAsset: 0x7f9ca1300af0; ",
+            "path=/var/folders/*/C40A1E1F-C2F5-4BA1-A6ED-F5977301A1F7.fxd, ",
+            "UUID=A4C4B698-55FC-4C87-BA8A-D6DD0011DD90>\";",
+            "    \"CD_uuid\" = \"51BAFD98-D1F7-472F-95D6-BBF40D7CBD75\";",
+            "}, recordType=CD_Tag>"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3225808",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The relationship between any two "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Tag"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " records exists in a third CDMR record. The CDMR record describes the entity type, record name, and Core Data relationship between the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Tag"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<CKRecord: 0x7f9ca1301780; recordID=EE64F478-A761-4049-B559-853457ABA997:",
+            "(com.apple.coredata.cloudkit.zone:__defaultOwner__), values={",
+            "    \"CD_entityNames\" = \"Post:Tag\";",
+            "    \"CD_recordNames\" = \"CD_Post_UUID:CD_Tag_UUID\";",
+            "    \"CD_relationships\" = \"tags:posts\";",
+            "}, recordType=CDMR>"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3222091",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The structure of a CDMR record is carefully designed to occupy the minimum necessary footprint, and to require the least effort to decode and work with, making it usable outside the Core Data framework."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Access CloudKit Objects",
+          "anchor": "3191668"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can access a managed object’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " directly through its associated context using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recordForManagedObject:"
+            },
+            {
+              "type": "text",
+              "text": " for a single record, or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recordsForManagedObjects:"
+            },
+            {
+              "type": "text",
+              "text": " for multiple records. To retrieve the record ID only, use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recordIDForManagedObject:"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recordIDsForManagedObjects:"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, use the class functions "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141668-recordformanagedobjectid"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141671-recordsformanagedobjectids"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141669-recordidformanagedobjectid"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recordIDsForManagedObjects:"
+            },
+            {
+              "type": "text",
+              "text": " on "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

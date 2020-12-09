@@ -1,0 +1,505 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Ensure proper configuration of your app environment."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2922734,
+  "kind": "article",
+  "metadata": {
+    "title": "Performing One-Time Setup for Your App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment": {
+      "title": "App and Environment",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+      "url": "/documentation/uikit/app_and_environment",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app": {
+      "title": "Responding to the Launch of Your App",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407726-urlsfordirectory": {
+      "title": "URLsForDirectory:inDomains:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407726-urlsfordirectory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1407726-urlsfordirectory",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLsForDirectory:inDomains:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager": {
+      "title": "NSFileManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app#2922750": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app#2922750",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app#2922750",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Getting the location of app-specific directories"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642996-temporarydirectory": {
+      "title": "temporaryDirectory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642996-temporarydirectory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1642996-temporarydirectory"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application": {
+      "title": "application:willFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623032-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:willFinishLaunchingWithOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
+      "title": "application:didFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didFinishLaunchingWithOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence": {
+      "title": "About the App Launch Sequence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the order that your custom code executes at launch time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app": {
+      "title": "Performing One-Time Setup for Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ensure proper configuration of your app environment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches": {
+      "title": "Preserving Your App's UI Across Launches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Return your app to its previous state after the system terminates it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches"
+      ],
+      "title": "Launch Time",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user launches your app for the first time, you might want to prepare your app environment by performing some one-time tasks. For example, you might want to: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Download required data from your server."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Copy document templates or modifiable data files from your app bundle to a writable directory."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure default preferences for the user."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set up user accounts or gather other required data."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Perform any one-time tasks in your app delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+            },
+            {
+              "type": "text",
+              "text": " method. Never block the app’s main thread for tasks that do not require user input. Instead, start tasks asynchronously using a dispatch queue, and let them run in the background while your app finishes launching. For tasks that require user input, make all changes to your user interface in the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+            },
+            {
+              "type": "text",
+              "text": " method. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Install Files in the Proper Locations",
+          "anchor": "2922749"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app has its own container directory for storing files, and you should always place app-specific files in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "~/Library"
+            },
+            {
+              "type": "text",
+              "text": " subdirectory. Specifically, store your files in the following "
+            },
+            {
+              "type": "codeVoice",
+              "code": "~/Library"
+            },
+            {
+              "type": "text",
+              "text": " subdirectories:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "~/Library/Application Support/"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—Store app-specific files that you want backed up with the user’s other content. (You can create custom subdirectories here as needed.) Use this directory for data files, configuration files, document templates, and so on. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "~/Library/Caches/"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—Store temporary data files that can be easily regenerated or downloaded."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To obtain a URL for one of the directories in your app’s container, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407726-urlsfordirectory"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let appSupportURL = FileManager.default.urls(for: ",
+            "      .applicationSupportDirectory, in: .userDomainMask)",
+            "",
+            "let cachesURL = FileManager.default.urls(for: ",
+            "      .cachesDirectory, in: .userDomainMask)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922750",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Getting the location of app-specific directories"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Place any temporary files in your app’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "tmp/"
+            },
+            {
+              "type": "text",
+              "text": " directory. Temporary files might include compressed files that you intend to delete once their contents have been extracted and installed elsewhere. Retrieve the URL for your app’s temporary directory using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642996-temporarydirectory"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

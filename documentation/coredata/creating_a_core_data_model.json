@@ -1,0 +1,535 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create a data model file to contain your app’s object structure."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3036913,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating a Core Data Model",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/creating_a_core_data_model"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/creating_a_core_data_model"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-media-3039511": {
+      "identifier": "link-media-3039511",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata/creating_a_core_data_model#3039511"
+    },
+    "media-3039511": {
+      "identifier": "media-3039511",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 493
+          },
+          "url": "https://docs-assets.developer.apple.com/published/bbc1147cb0/22fc548e-7697-4dae-a05a-71803b10082e.png"
+        }
+      ],
+      "alt": "Screenshot showing the Use Core Data checkbox in the options for creating a new Xcode project. The checkbox appears after the language dropdown, and before the checkboxes for including Unit Tests and UI Tests.",
+      "title": "Figure 1"
+    },
+    "link-media-3080773": {
+      "identifier": "link-media-3080773",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coredata/creating_a_core_data_model#3080773"
+    },
+    "media-3080773": {
+      "identifier": "media-3080773",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 291
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e5d3bb6b29/b0465cad-f2f6-43b0-b053-238425c79a66.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 291
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b2336d1356/2056f140-119e-4954-92b9-9ab899aedce1.png"
+        }
+      ],
+      "alt": "Screenshot showing the .xcdatamodeld file highlighted in the project navigator.",
+      "title": "Figure 2"
+    },
+    "link-media-3039513": {
+      "identifier": "link-media-3039513",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/coredata/creating_a_core_data_model#3039513"
+    },
+    "media-3039513": {
+      "identifier": "media-3039513",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 493
+          },
+          "url": "https://docs-assets.developer.apple.com/published/df67b17364/51ddb9a7-91de-4f4c-b1ec-7b92cf06e7a5.png"
+        }
+      ],
+      "alt": "Screenshot showing the Data Model template in the Core Data section of the file template chooser.",
+      "title": "Figure 3"
+    },
+    "link-media-3122943": {
+      "identifier": "link-media-3122943",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/coredata/creating_a_core_data_model#3122943"
+    },
+    "media-3122943": {
+      "identifier": "media-3122943",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 367
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6c0b9bce36/ef33d6c0-962a-4694-af08-547e33a8c68e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 367
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0c074b9354/16a1986d-b9c1-4998-9e89-fc6813843cbd.png"
+        }
+      ],
+      "alt": "Screenshot showing the dialog for saving a data model file. The filename is selected and immediately editable.",
+      "title": "Figure 4"
+    },
+    "link-media-3080772": {
+      "identifier": "link-media-3080772",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/coredata/creating_a_core_data_model#3080772"
+    },
+    "media-3080772": {
+      "identifier": "media-3080772",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 293
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1a2a4ab234/09e28005-257f-4dd5-9b78-57083b6765d9.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 293
+          },
+          "url": "https://docs-assets.developer.apple.com/published/90e6a687ce/7f6c3ea9-21b5-409b-9d98-b630b69df3ff.png"
+        }
+      ],
+      "alt": "Screenshot of Xcode showing the new model file selected in the project navigator.",
+      "title": "Figure 5"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes": {
+      "title": "Configuring Attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/configuring_attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describe the properties that compose an entity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships": {
+      "title": "Configuring Relationships",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/configuring_relationships",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify how entities relate and how change propagates between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code": {
+      "title": "Generating Code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/generating_code",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Automatically or manually generate managed object subclasses from entities."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model": {
+      "title": "Creating a Core Data Model",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/creating_a_core_data_model",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a data model file to contain your app’s object structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack": {
+      "title": "Setting Up a Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up the classes that manage and persist your app’s objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage and persist your app’s model layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data": {
+      "title": "Handling Different Data Types in Core Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/handling_different_data_types_in_core_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, store, and present records for a variety of data types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores": {
+      "title": "Linking Data Between Two Core Data Stores",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Organize data in two different stores and implement a link between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+        "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores"
+      ],
+      "title": "Essentials",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes",
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships",
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The first step in working with Core Data is to create a data model file. Here you define the structure of your application’s objects, including their object types, properties, and relationships."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can add a Core Data model file to your Xcode project when you create the project, or you can add it to an existing project."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Core Data to a New Xcode Project",
+          "anchor": "3036914"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the dialog for creating a new project, select the Use Core Data checkbox."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3039511",
+              "metadata": {
+                "anchor": "3039511",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The resulting project includes an "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".xcdatamodeld"
+            },
+            {
+              "type": "text",
+              "text": " file."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3080773",
+              "metadata": {
+                "anchor": "3080773",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Core Data Model to an Existing Project",
+          "anchor": "3036915"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Choose File > New > File and select from the iOS templates. Scroll down to the Core Data section, and choose Data Model:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3039513",
+              "metadata": {
+                "anchor": "3039513",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Click Next. Name your model file, and select its group and targets."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122943",
+              "metadata": {
+                "anchor": "3122943",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".xcdatamodeld"
+            },
+            {
+              "type": "text",
+              "text": " file with the name you specified is added to your project:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3080772",
+              "metadata": {
+                "anchor": "3080772",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

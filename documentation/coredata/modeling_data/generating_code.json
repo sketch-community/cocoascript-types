@@ -1,0 +1,825 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Automatically or manually generate managed object subclasses from entities."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/modeling_data"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3036907,
+  "kind": "article",
+  "metadata": {
+    "title": "Generating Code",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/modeling_data/generating_code"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/modeling_data/generating_code"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data": {
+      "title": "Modeling Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data"
+    },
+    "link-media-3040427": {
+      "identifier": "link-media-3040427",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coredata/modeling_data/generating_code#3040427"
+    },
+    "media-3040427": {
+      "identifier": "media-3040427",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 228
+          },
+          "url": "https://docs-assets.developer.apple.com/published/106b236a23/7c853e86-8970-48d1-a624-72cc405cdf2a.png"
+        }
+      ],
+      "alt": "Screenshot of Editor > Create NSManagedObject Subclass menu.",
+      "title": "Figure 2"
+    },
+    "link-media-3138753": {
+      "identifier": "link-media-3138753",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/coredata/modeling_data/generating_code#3138753"
+    },
+    "media-3138753": {
+      "identifier": "media-3138753",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 318
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cadd2090c4/ee2f75de-315f-4123-bb4d-e57fe3fd5e8f.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 318
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9592fc6374/2fa7b5fc-55a0-49a5-a8a0-17b67892a0f1.png"
+        }
+      ],
+      "alt": "Screenshot showing a Quake+CoreDataClass.swift file in the project navigator.",
+      "title": "Figure 3"
+    },
+    "link-media-3139140": {
+      "identifier": "link-media-3139140",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/coredata/modeling_data/generating_code#3139140"
+    },
+    "media-3139140": {
+      "identifier": "media-3139140",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 228
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7855f7889e/72228124-f7c4-46b0-86ed-0320de4facb0.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 228
+          },
+          "url": "https://docs-assets.developer.apple.com/published/106b236a23/7c853e86-8970-48d1-a624-72cc405cdf2a.png"
+        }
+      ],
+      "alt": "Screenshot of Editor > Create NSManagedObject Subclass menu.",
+      "title": "Figure 4"
+    },
+    "link-media-3138754": {
+      "identifier": "link-media-3138754",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/coredata/modeling_data/generating_code#3138754"
+    },
+    "media-3138754": {
+      "identifier": "media-3138754",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 332
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f4a73122cb/3fa78f79-7104-4382-b599-dd458be944fb.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 332
+          },
+          "url": "https://docs-assets.developer.apple.com/published/477f3f2901/b91a56a5-9ba8-408e-a9af-9d40d5c32bea.png"
+        }
+      ],
+      "alt": "Screenshot showing Quake+CoreDataClass.swift and Quake+CoreDataProperties.swift files in the project navigator.",
+      "title": "Figure 5"
+    },
+    "link-media-3139138": {
+      "identifier": "link-media-3139138",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata/modeling_data/generating_code#3139138"
+    },
+    "media-3139138": {
+      "identifier": "media-3139138",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 384
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9ba105be63/396ba949-1285-40ae-accc-24bee9df2379.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 384
+          },
+          "url": "https://docs-assets.developer.apple.com/published/da2a029385/9d2defdd-b69c-42d2-961d-0bdeae5058c9.png"
+        }
+      ],
+      "alt": "Screenshot showing the .xcdatamodeld file with an entity selected in the Entities list at left, and the Codegen options in the Data model inspector at right.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data#3042025": {
+      "title": "Configuring a Core Data Model",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data#3042025",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/coredata/modeling_data#3042025"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject": {
+      "title": "NSManagedObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code#3139131": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code#3139131",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/modeling_data/generating_code#3139131"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code#3139132": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code#3139132",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/modeling_data/generating_code#3139132"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_entities": {
+      "title": "Configuring Entities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_entities",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/configuring_entities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Model your app’s objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes": {
+      "title": "Configuring Attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/configuring_attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describe the properties that compose an entity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships": {
+      "title": "Configuring Relationships",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/configuring_relationships",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify how entities relate and how change propagates between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code": {
+      "title": "Generating Code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data/generating_code",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data/generating_code",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Automatically or manually generate managed object subclasses from entities."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_entities",
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes",
+        "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_relationships"
+      ],
+      "title": "Configuring a Core Data Model",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you define your entities, their attributes, and relationships as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data#3042025"
+            },
+            {
+              "type": "text",
+              "text": ", specify the classes that you’ll use to create instances of your entities. Core Data optionally generates two files to support your class: a class file and a properties file. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The class file declares the class as a subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "//",
+            "//  Quake+CoreDataClass.swift",
+            "//  ",
+            "//  This file was automatically generated and should not be edited.",
+            "//",
+            "",
+            "import Foundation",
+            "import CoreData",
+            "",
+            "@objc(Quake)",
+            "public class Quake: NSManagedObject {",
+            "",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3139131",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The properties file declares an extension to hold the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "@NSManaged"
+            },
+            {
+              "type": "text",
+              "text": " properties representing attributes and relationships, their accessors, and helper functionality for fetching instances of this type."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "//",
+            "//  Quake+CoreDataProperties.swift",
+            "//",
+            "//  This file was automatically generated and should not be edited.",
+            "//",
+            "",
+            "import Foundation",
+            "import CoreData",
+            "",
+            "extension Quake {",
+            "",
+            "    @nonobjc public class func fetchRequest() -> NSFetchRequest<Quake> {",
+            "        return NSFetchRequest<Quake>(entityName: \"Quake\")",
+            "    }",
+            "",
+            "    @NSManaged public var magnitude: Float",
+            "    @NSManaged public var place: String?",
+            "    @NSManaged public var time: Date?",
+            "    @NSManaged public var countries: NSSet?",
+            "",
+            "}",
+            "",
+            "// MARK: Generated accessors for countries",
+            "extension Quake {",
+            "",
+            "    @objc(addCountriesObject:)",
+            "    @NSManaged public func addToCountries(_ value: Country)",
+            "",
+            "    @objc(removeCountriesObject:)",
+            "    @NSManaged public func removeFromCountries(_ value: Country)",
+            "",
+            "    @objc(addCountries:)",
+            "    @NSManaged public func addToCountries(_ values: NSSet)",
+            "",
+            "    @objc(removeCountries:)",
+            "    @NSManaged public func removeFromCountries(_ values: NSSet)",
+            "",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3139132",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data takes care of generating managed object subclasses for you, but you take control when you need to add logic or edit properties."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Select a Code Generation Option",
+          "anchor": "3039135"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To select a code generation option:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select an entity from the Entities list. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Data Model inspector, under Class, the Codegen list offers three options: Manual/None, Class Definition, and Category/Extension. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3139138",
+              "metadata": {
+                "anchor": "3139138",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sections that follow describe circumstances for choosing each option."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Choose Class Definition If You Won't Need to Edit the Generated Logic or Properties",
+          "anchor": "3039133"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Choose this option when you don’t need to edit the properties or functionality of the managed object subclass and properties files that Core Data generates for you."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The generated source code doesn’t appear in your project’s source list. Xcode produces the class and properties files as part of the build process and places them in your project’s build directory. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These files regenerate whenever the related entity changes in the data model."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Choose Category/Extension to Add Logic to the Managed Object Subclass",
+          "anchor": "3039132"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Choose this option to add additional convenience methods or business logic inside your managed object subclass."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the Category/Extension option you take full control of the class file, while continuing to automatically generate the properties file to keep it up-to-date with the model editor. It’s up to you to create and maintain your class manually."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To generate the class file initially:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose Editor > Create NSManagedObject Subclass from the menu at the top of the screen."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select your data model, then the appropriate entity, and choose where to save the files. Xcode places both class and properties files into your project. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Because the properties file continues to be produced as part of the build process, move this duplicate file from your project source list to the trash."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3040427",
+              "metadata": {
+                "anchor": "3040427",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can now see and edit the class file in your project source list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3138753",
+              "metadata": {
+                "anchor": "3138753",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Choose Manual/None to Edit Properties and Logic in the Managed Object Subclass",
+          "anchor": "3039134"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Choose this option to edit the properties in your managed object subclass, for example, to alter access modifiers, and to add additional convenience methods or business logic."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With Manual/None, Core Data doesn’t generate files to support your class. You create and maintain your class, including its properties, manually. Core Data then locates these files using the values you supply in the class name and module fields."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To generate the class and properties files initially:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose Editor > Create NSManagedObject Subclass from the menu at the top of the screen."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select your data model, then the appropriate entity, and choose where to save the files. Xcode places both a class and a properties file into your project."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3139140",
+              "metadata": {
+                "anchor": "3139140",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can now see and edit both the class and properties files in your project source list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3138754",
+              "metadata": {
+                "anchor": "3138754",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To regenerate class and properties files at any time, choose the Editor > Create NSManagedObject Subclass menu option. Be aware that the new files overwrite any existing files at the target location."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

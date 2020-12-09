@@ -1,0 +1,318 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A prototype for a function callback that reallocates memory of a requested size for an existing block of memory. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocator",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcontext"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcontext/1521222-reallocate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1521222,
+  "kind": "symbol",
+  "metadata": {
+    "title": "reallocate",
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@SA@CFAllocatorContext@FI@reallocate",
+    "symbolKind": "structp"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfallocatorcontext/1521222-reallocate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfallocatorcontext/1521222-reallocate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocator": {
+      "title": "CFAllocator",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocator",
+      "url": "/documentation/corefoundation/cfallocator",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcontext": {
+      "title": "CFAllocatorContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines the context or operating environment for an allocator (CFAllocator) object. Every Core Foundation allocator object must have a context defined for it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreallocatecallback": {
+      "title": "CFAllocatorReallocateCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreallocatecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorreallocatecallback"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFAllocatorReallocateCallBack",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreallocatecallback",
+              "text": "CFAllocatorReallocateCallBack"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "reallocate"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When implementing this function, change the size of the block of memory pointed to by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ptr"
+            },
+            {
+              "type": "text",
+              "text": " to the size specified by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "newsize"
+            },
+            {
+              "type": "text",
+              "text": " and return the pointer to the larger block of memory. Return "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": " on any reallocation failure, leaving the old block of memory untouched. Also return "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": " immediately if any of the following conditions apply:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ptr"
+            },
+            {
+              "type": "text",
+              "text": " parameter is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "newsize"
+            },
+            {
+              "type": "text",
+              "text": " parameter is not greater than 0. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Leave the contents of the old block of memory unchanged up to the lesser of the new or old sizes. If the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ptr"
+            },
+            {
+              "type": "text",
+              "text": " parameter is not a block of memory that has been previously allocated by the allocator, the results are undefined; abnormal program termination can occur. The hint argument is a bitfield that you should currently not use (that is, assign 0). If you set this callback to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": " the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CFAllocatorReallocate(_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": " in most cases when it attempts to use this allocator."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

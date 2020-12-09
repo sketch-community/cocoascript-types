@@ -1,0 +1,732 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Generate ride options for Maps to display to the user."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2865115,
+  "kind": "article",
+  "metadata": {
+    "title": "Generating a List of Ride Options",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+        "documentation/sirikit/ride_booking/handling_the_ride-booking_intents/generating_a_list_of_ride_options"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+        "documentation/sirikit/ride_booking/handling_the_ride-booking_intents/generating_a_list_of_ride_options"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking": {
+      "title": "Ride Booking",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+      "url": "/documentation/sirikit/ride_booking",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents": {
+      "title": "Handling the Ride-Booking Intents",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents",
+      "url": "/documentation/sirikit/ride_booking/handling_the_ride-booking_intents",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent": {
+      "title": "INListRideOptionsIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistrideoptionsintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An intent for getting the types of rides available from a ride-booking service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrideoption": {
+      "title": "INRideOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrideoption"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649961-availablepartysizeoptions": {
+      "title": "availablePartySizeOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649961-availablepartysizeoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrideoption/1649961-availablepartysizeoptions"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649968-availablepartysizeoptionsselecti": {
+      "title": "availablePartySizeOptionsSelectionPrompt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649968-availablepartysizeoptionsselecti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrideoption/1649968-availablepartysizeoptionsselecti"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption": {
+      "title": "INRidePartySizeOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridepartysizeoption"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649957-useractivityforbookinginapplicat": {
+      "title": "userActivityForBookingInApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649957-useractivityforbookinginapplicat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrideoption/1649957-useractivityforbookinginapplicat"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2865116": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2865116",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2865116",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configuring a ride option with minimal information"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649969-pricerange": {
+      "title": "priceRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649969-pricerange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrideoption/1649969-pricerange"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2865117": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2865117",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2865117",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configuring a ride option with party size details"
+        }
+      ]
+    },
+    "link-media-2910040": {
+      "identifier": "link-media-2910040",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2910040"
+    },
+    "media-2910040": {
+      "identifier": "media-2910040",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 324,
+            "height": 566
+          },
+          "url": "https://docs-assets.developer.apple.com/published/381143513b/e6fa8fb6-0d9b-494c-a036-fa44e3acb568.png"
+        }
+      ],
+      "alt": "Displaying party size information in Maps.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displaying party size information in Maps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options": {
+      "title": "Generating a List of Ride Options",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generate ride options for Maps to display to the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling": {
+      "title": "INListRideOptionsIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistrideoptionsintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for fetching the list of rides currently available from your ride-booking service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintentresponse": {
+      "title": "INListRideOptionsIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistrideoptionsintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a list ride options intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent",
+        "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintentresponse"
+      ],
+      "title": "List Ride Options",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user selects Ride as the transportation option, Maps sends an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent"
+            },
+            {
+              "type": "text",
+              "text": " object to any Intents app extensions that support the intent. In your response to that intent, provide one or more "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption"
+            },
+            {
+              "type": "text",
+              "text": " objects representing the rides you are able to offer. Keep your list of rides reasonably short and representative of the types of vehicles and price points that you have available. Do not return an exhaustive list of all vehicles available to pick up the user."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For each ride option, include as much information as possible about the ride, including its pricing, passenger capacity, disclaimers, and an estimated time at which a vehicle of that type could arrive at the user’s location. Make the information as accurate as possible, but understand that you can the information when actually booking the ride. Here are some tips to creating your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption"
+            },
+            {
+              "type": "text",
+              "text": " objects:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Give each ride option a unique, localized name."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Ride option names should convey information about the ride type and be unique so that you can identify them later. When the user selects a ride option for booking, SiriKit passes only the option name back to you. So you must be able to identify the ride type from that string. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Configure the party size options when party size determines pricing."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " If the number of people receiving a ride determines the price, configure the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649961-availablepartysizeoptions"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649968-availablepartysizeoptionsselecti"
+                    },
+                    {
+                      "type": "text",
+                      "text": " properties appropriately. Use your "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects to specify the pricing information for parties of different sizes."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Use fare line items to enumerate individual costs."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " When the cost of a ride is not a single fixed value, provide fare line items so that the user understands how the app computed the fare. Line items can include base charges, per-mile charges, additional fees or tolls, and discounts."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Include an expiration date."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Expiration dates prevent your ride options from becoming stale or outdated. When a ride option expires, SiriKit sends another "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object to your Intents extension. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "If your app must complete the booking, provide an appropriate user activity object."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " You might complete the booking in your app when special circumstances apply, such as when you need to change the precise pickup or drop-off location. Assigning an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649957-useractivityforbookinginapplicat"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property of the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption"
+                    },
+                    {
+                      "type": "text",
+                      "text": " tells Maps that it must launch your app to complete the booking. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2865116"
+            },
+            {
+              "type": "text",
+              "text": " shows the creation of an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption"
+            },
+            {
+              "type": "text",
+              "text": " object for a compact car with fixed pricing options. In this case, the ride-booking service computes the price of the ride and quotes it directly. Because the ride’s price and number of passengers can’t change, it includes a disclaimer message to convey the vehicle capacity rather than assigning a value to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649961-availablepartysizeoptions"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func createCompactRideOption(pickup : CLPlacemark, ",
+            "                            dropOff : CLPlacemark ) -> INRideOption  {   ",
+            "   let ride = INRideOption(name: \"Compact\",",
+            "\t\t          estimatedPickupDate: self.getCompactEstimatedPickupTime()) ",
+            "   ride.disclaimerMessage = \"Vehicle can carry only 1 passenger.\"",
+            "\t\t    ",
+            "\t// Compacts have a fixed charge based on the distance.",
+            "\tlet charges = self.computeCompactCharges(pickup: pickup, dropOff: dropOff)",
+            "\tride.priceRange = INPriceRange(price: NSDecimalNumber(value : charges),",
+            "\t\t                                   currencyCode: \"USD\")",
+            "\treturn ride",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2865116",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Configuring a ride option with minimal information"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options#2865117"
+            },
+            {
+              "type": "text",
+              "text": " shows another example of how to create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption"
+            },
+            {
+              "type": "text",
+              "text": ", in this case for an SUV type of vehicle. In this case, there are three separate pricing tiers according to the number of passengers. Each tier requires a separate "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption"
+            },
+            {
+              "type": "text",
+              "text": " object to include the pricing and information about the number of passengers. The ride option also fills in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption/1649969-pricerange"
+            },
+            {
+              "type": "text",
+              "text": " property based on the prices of the different configurations."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func createSUVRideOption(pickup : CLPlacemark, ",
+            "                        dropOff : CLPlacemark ) -> INRideOption {",
+            "   let ride = INRideOption(name: \"SUV\",",
+            "\t\t   estimatedPickupDate: self.getSUVEstimatedPickupTime())",
+            "\t\t    ",
+            "   // Configure party size options.",
+            "\t\t    ",
+            "   let baseCharge = self.getBaseCharge()",
+            "\tlet perMileCharge = self.getPerMileCharge()",
+            "\tlet suvSurcharge = self.getSUVSurcharge()",
+            "\tlet extraPersonSurcharge = self.getExtraPersonSurcharge()",
+            "\t\t    ",
+            "\t// Compute the base prices for one person.",
+            "\tlet (rideDistance, tollCharges) = self.computeRouteDistanceAndTolls(pickup: pickup,",
+            "\t\t                                                                dropOff: dropOff)",
+            "\tlet distanceCost = perMileCharge * rideDistance",
+            "\tlet minimumCost = distanceCost + baseCharge + suvSurcharge + tollCharges",
+            "\t\t    ",
+            "\t// Configure the one-person party size.",
+            "\tlet onePersonPriceRange = INPriceRange(price: NSDecimalNumber(value : minimumCost),",
+            "\t\t                                           currencyCode: \"USD\")",
+            "\tlet onePersonParty = INRidePartySizeOption(partySizeRange: NSMakeRange(0, 1),",
+            "\t\t               sizeDescription: \"1 person\", priceRange: onePersonPriceRange)",
+            "\t\t    ",
+            "\t// Configure the 2-3 person party size.",
+            "\tlet threePersonPriceRange = INPriceRange(price: NSDecimalNumber(value : minimumCost +",
+            "\t\t        extraPersonSurcharge), currencyCode: \"USD\")",
+            "\tlet threePersonParty = INRidePartySizeOption(partySizeRange: NSMakeRange(2, 1),",
+            "\t\t               sizeDescription: \"2-3 people\", priceRange: threePersonPriceRange)",
+            "\t\t    ",
+            "\t// Configure the 4+ person party size.",
+            "\tlet fourPersonPriceRange = INPriceRange(price: NSDecimalNumber(value : minimumCost +",
+            "\t\t        (2 * extraPersonSurcharge)), currencyCode: \"USD\")",
+            "\tlet fourPersonParty = INRidePartySizeOption(partySizeRange: NSMakeRange(4, 3),",
+            "\t\t               sizeDescription: \"4+ people\", priceRange: fourPersonPriceRange)",
+            "\t\t    ",
+            "\t// Configure the party size options",
+            "\tride.availablePartySizeOptions = [onePersonParty, threePersonParty, fourPersonParty]",
+            "\tride.availablePartySizeOptionsSelectionPrompt = \"Choose a party size\"",
+            "\tride.priceRange = INPriceRange(firstPrice: NSDecimalNumber(value : minimumCost),",
+            "\t\t               secondPrice: NSDecimalNumber(value : minimumCost + ",
+            "                           (2 * extraPersonSurcharge)), currencyCode: \"USD\")",
+            "\t\t    ",
+            "\treturn ride",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2865117",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Configuring a ride option with party size details"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-2910040"
+            },
+            {
+              "type": "text",
+              "text": " shows how Maps reveals the party size details to the user. When selecting a vehicle, Maps displays the base price range initially. When the user actually requests the vehicle, Maps prompts the user to select the number of passengers. Base the information for each price tier on the information you supply in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption"
+            },
+            {
+              "type": "text",
+              "text": " objects."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2910040",
+              "metadata": {
+                "anchor": "2910040",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Displaying party size information in Maps."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1520 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A request to transfer of money to facilitate payment of a bill."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/payments"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2799080,
+  "kind": "symbol",
+  "metadata": {
+    "title": "INPayBillIntent",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Intents"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.3",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "3.2",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)INPayBillIntent",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/inpaybillintent"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/inpaybillintent"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/payments": {
+      "title": "Payments",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
+      "url": "/documentation/sirikit/payments",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent#2826110": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent#2826110",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/sirikit/inpaybillintent#2826110",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Pay bill intent attributes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent#2826108": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent#2826108",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/sirikit/inpaybillintent#2826108",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Siri phrases that trigger the payment of a bill"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
+      "title": "INVocabulary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invocabulary"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent": {
+      "title": "INPayBillIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to transfer of money to facilitate payment of a bill."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling": {
+      "title": "INPayBillIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for paying a bill using money from the user’s account."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse": {
+      "title": "INPayBillIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a request to pay a bill."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintent": {
+      "title": "INIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799077-initwithbillpayee": {
+      "title": "initWithBillPayee:fromAccount:transactionAmount:transactionScheduledDate:transactionNote:billType:dueDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799077-initwithbillpayee",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent/2799077-initwithbillpayee",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes the bill pay intent object with the specified payee and transaction details."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithBillPayee:fromAccount:transactionAmount:transactionScheduledDate:transactionNote:billType:dueDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799063-billpayee": {
+      "title": "billPayee",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799063-billpayee",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent/2799063-billpayee",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The recipient of the payment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799073-billtype": {
+      "title": "billType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799073-billtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent/2799073-billtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of the bill."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799067-duedate": {
+      "title": "dueDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799067-duedate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent/2799067-duedate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The due date of the payment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799079-fromaccount": {
+      "title": "fromAccount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799079-fromaccount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent/2799079-fromaccount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user account containing the funds for the payment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799064-transactionamount": {
+      "title": "transactionAmount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799064-transactionamount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent/2799064-transactionamount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The amount to transfer from the user to the payee."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799062-transactionnote": {
+      "title": "transactionNote",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799062-transactionnote",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent/2799062-transactionnote",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A note to associate with the payment transaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799075-transactionscheduleddate": {
+      "title": "transactionScheduledDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799075-transactionscheduleddate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaybillintent/2799075-transactionscheduleddate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scheduled date for the payment, as requested by the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inintent"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializing the Intent Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799077-initwithbillpayee"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Bill Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799063-billpayee",
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799073-billtype",
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799067-duedate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Transaction Details",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799079-fromaccount",
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799064-transactionamount",
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799062-transactionnote",
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799075-transactionscheduleddate"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse"
+      ],
+      "title": "Pay a Bill",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "INPayBillIntent"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)INIntent",
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent",
+              "text": "INIntent"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Siri creates an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent"
+            },
+            {
+              "type": "text",
+              "text": " object when the user asks to pay a bill for a designated payee. A pay bill intent object includes the payment amount, the payment date, and the recipient of the payment. Use that information to validate the transaction and to schedule the payment. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To handle this intent, the handler object in your Intents extension must adopt the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling"
+            },
+            {
+              "type": "text",
+              "text": " protocol. Your handler should confirm the request and create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse"
+            },
+            {
+              "type": "text",
+              "text": " object with the results of scheduling the bill payment. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This intent object represents a financial transaction between the user and an entity (such as a utility company or credit card bill) defined in your app. You are responsible for configuring and managing the entities that accept the payment of bills."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Additional Intent Attributes",
+          "anchor": "2826111"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent#2826110"
+            },
+            {
+              "type": "text",
+              "text": " lists additional attributes of this intent object. "
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Attribute"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Supported by"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Siri Intents, Siri Suggestions, Shortcuts app."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Always requires unlocked device"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Yes"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2826110",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Pay bill intent attributes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When performing a search, Siri automatically asks the user to unlock a currently locked device. You don’t need to explicitly ask to unlock the device. In addition, Siri always prompts the user to confirm the request before asking your Intents extension to handle it."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Example Phrases",
+          "anchor": "2826112"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users can ask Siri to initiate the payment of a bill in a variety of ways. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent#2826108"
+            },
+            {
+              "type": "text",
+              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Locale"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Example 1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Example 2"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "en"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pay my water bill"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pay my gas bill on November 21st"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "zh_CN"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "付我的水费账单"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "在十一月二十一日付我的煤气账单"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "zh_HK"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "幫我俾保險賬單"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "喺十月九號俾水費賬單"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "zh_TW"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "我想要支付水費帳單"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "付水費帳單於2月21日"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "yue_CN"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "帮我俾保险账单"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "喺十月九号俾水费账单"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ar"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ادفع فاتورة الكهرباء"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ادفع فاتورة الغاز في 21 نوفمبر"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "da"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Betal min vandregning"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Betal min gasregning på den 21 november"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "de"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Zahle meine Wasser Rechnung"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Zahle meine Gas Rechnung am 21. November"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "es"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pagar mi factura del agua"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pagar mi factura del gas el 21 de Noviembre"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "fi"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Maksa vesimaksu"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Maksa sähkölasku marraskuun 21. päivä"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "fr"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Payer ma facture d'eau"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Payer ma facture de gaz le 21 novembre"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "he"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "תשלמי את חשבון המים שלי"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "תשלמי את חשבון הגז שלי ב-21 לנובמבר"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "it"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "paga il conto dell'acqua"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "paga il conto del gas il 21 di Novembre"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ja"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "PG&Eの請求書を払って"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "11月21日にガスの請求書を払って"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ko"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "수도세 내줘"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "가스비 11월 21일에 내줘"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ms"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Bayar bil air saya"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Bayar bil gas saya pada 21 November"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "nb"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Betal vannregningen min"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Betal strømregningen 21. November"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "nl"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Betaal mijn water factuur"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Betaal mijn gasrekening op 21 November"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "pt"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pagar minha conta de água"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pagar minha conta de luz dia 21 de novembro"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ru"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Оплати мой счёт за воду"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Заплатить за газ 21-го ноября"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "sv"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Betala min elräkning"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Betala min gasräkning på 21 november"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "th"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "จ่ายบิลค่าน้ำ"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "วันที่ 21 พฤศจิกายน จ่ายค่าน้ำ"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "tr"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Su faturasını öde Elektrik faturasını öde"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "21 Kasım tarihinde doğalgaz faturasını öde"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2826108",
+            "title": "Table 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Siri phrases that trigger the payment of a bill"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaybillintent#2826108"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "<appName>"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " represents the name of the app whose Intents extension initiates the transaction. If your app uses custom names for contacts, you can tell Siri about those names using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary"
+            },
+            {
+              "type": "text",
+              "text": " class."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

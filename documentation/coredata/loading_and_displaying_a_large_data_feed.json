@@ -1,0 +1,1060 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Consume data in the background, and lower memory usage by batching imports and preventing duplicate records."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3034170,
+  "kind": "article",
+  "metadata": {
+    "title": "Loading and Displaying a Large Data Feed",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.13",
+        "current": "11.1"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.5",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/loading_and_displaying_a_large_data_feed"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/loading_and_displaying_a_large_data_feed"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext": {
+      "title": "NSManagedObjectContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator": {
+      "title": "persistentStoreCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer": {
+      "title": "NSPersistentContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext": {
+      "title": "viewContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637239": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637239",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637239"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext": {
+      "title": "newBackgroundContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "newBackgroundContext"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637240": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637240",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637240"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock": {
+      "title": "performBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506578-performblock",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait": {
+      "title": "performBlockAndWait:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performBlockAndWait:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637241": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637241",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637241"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest": {
+      "title": "NSBatchInsertRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsbatchinsertrequest"
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637242": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637242",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637242"
+    },
+    "doc://com.apple.documentation/documentation/coredata/persistent_history": {
+      "title": "Persistent History",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/persistent_history",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/persistent_history"
+    },
+    "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes": {
+      "title": "Consuming Relevant Store Changes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/consuming_relevant_store_changes"
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637244": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637244",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637244"
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637245": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637245",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637245"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506807-reset": {
+      "title": "reset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506807-reset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506807-reset",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reset"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa": {
+      "title": "automaticallyMergesChangesFromParent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa"
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637247": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637247",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637247"
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637249": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637249",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637249"
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637250": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed#3637250",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed#3637250"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmergebypropertyobjecttrumpmergepolicy": {
+      "title": "NSMergeByPropertyObjectTrumpMergePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmergebypropertyobjecttrumpmergepolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmergebypropertyobjecttrumpmergepolicy"
+    },
+    "link-3636068": {
+      "title": "10017: Core Data: Sundries and Maxims",
+      "type": "topic",
+      "identifier": "link-3636068",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/wwdc20/10017/"
+    },
+    "doc://com.apple.documentation/documentation/coredata/using_core_data_in_the_background": {
+      "title": "Using Core Data in the Background",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/using_core_data_in_the_background",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/using_core_data_in_the_background",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Core Data in both a single-threaded and multithreaded app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed": {
+      "title": "Loading and Displaying a Large Data Feed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/loading_and_displaying_a_large_data_feed",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/loading_and_displaying_a_large_data_feed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Consume data in the background, and lower memory usage by batching imports and preventing duplicate records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/conflict_resolution": {
+      "title": "Conflict Resolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/conflict_resolution",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/conflict_resolution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect and resolve conflicts that occur when data is changed on multiple threads."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/batch_processing": {
+      "title": "Batch Processing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/batch_processing",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/batch_processing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use batch processes to manage large data changes."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/420c1ead9d/LoadingAndDisplayingALargeDataFeed.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/420c1ead9d/LoadingAndDisplayingALargeDataFeed.zip",
+      "checksum": "a608e41cce283734a72c79895047d596bfd38b93c86084df5e1593f4cafc3293ef25d8865148fab02a3ba7d05e553bc12ec09964e5940dc9675b4c2d8bbfa5b5",
+      "url": "https://docs-assets.developer.apple.com/published/420c1ead9d/LoadingAndDisplayingALargeDataFeed.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/420c1ead9d/LoadingAndDisplayingALargeDataFeed.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/using_core_data_in_the_background",
+        "doc://com.apple.documentation/documentation/coredata/conflict_resolution",
+        "doc://com.apple.documentation/documentation/coredata/batch_processing"
+      ],
+      "title": "Background Tasks",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample creates an app that shows a list of earthquakes recorded in the United States in the past 30 days by consuming a U. S. Geological Survey (USGS) real-time data feed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Press the app’s refresh button to load the USGS JSON feed on the URLSession’s default delegate queue, which is an operation queue that runs in the background. Once the feed downloads, the app continues working on this queue to import the large number of feed elements to the store without blocking the main queue."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This sample code project is associated with WWDC20 session "
+                },
+                {
+                  "type": "link",
+                  "title": "10017: Core Data: Sundries and Maxims",
+                  "destination": "https://developer.apple.com/wwdc20/10017/"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Import Data in the Background",
+          "anchor": "3637253"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To import data in the background, apps need two managed object contexts ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext"
+            },
+            {
+              "type": "text",
+              "text": "): a main queue context to provide data to the user interface, and a private queue context to perform the import on a background queue. Both contexts are connected to the same "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator"
+            },
+            {
+              "type": "text",
+              "text": ". This configuration is more efficient than using a nested context."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample creates a main queue context by setting up a Core Data stack using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer"
+            },
+            {
+              "type": "text",
+              "text": ", which initializes a main queue context in its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let container = NSPersistentContainer(name: \"Earthquakes\")"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637239",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a private queue context by calling the persistent container’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let taskContext = persistentContainer.newBackgroundContext()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637240",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the feed download finishes, the sample uses the task context to consume the feed in the background. In Core Data, every queue-based context has its own serial queue, and apps must serialize the tasks that manipulate the context with the queue by wrapping the code with a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait"
+            },
+            {
+              "type": "text",
+              "text": " closure."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// taskContext.performAndWait runs on the URLSession's delegate queue",
+            "// so it won’t block the main thread.",
+            "taskContext.performAndWait {"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637241",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about working with concurrency, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To efficiently handle large data sets, the sample uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest"
+            },
+            {
+              "type": "text",
+              "text": " which accesses the store directly without interacting with the context, triggering any key value observation, or loading data into memory. The closure-style initializer of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSBatchInsertRequest"
+            },
+            {
+              "type": "text",
+              "text": " allows apps to provide one record at a time when Core Data calls the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dictionaryHandler"
+            },
+            {
+              "type": "text",
+              "text": " closure, which helps apps keep their memory footprint low because they don’t need to prepare a buffer for all records."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let batchInsert = self.newBatchInsertRequest(with: geoJSON.quakePropertiesList)",
+            "batchInsert.resultType = .statusOnly",
+            "",
+            "if let batchInsertResult = try? taskContext.execute(batchInsert) as? NSBatchInsertResult,",
+            "    let success = batchInsertResult.result as? Bool, success {",
+            "    return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637242",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update the User Interface",
+          "anchor": "3637254"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSBatchInsertRequest"
+            },
+            {
+              "type": "text",
+              "text": " bypasses the context and doesn’t trigger "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObjectContextDidSavenotification"
+            },
+            {
+              "type": "text",
+              "text": ", apps that need to update the UI with the changes have two options:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Extract the relevant changes by parsing the store’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/persistent_history"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", then merge them to the context. See "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for more details."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Reset the context and re-fetch data from the store."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample resets the context and fetches the data from the store because:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "All the results are presented in one table, with no unique processing needed for any particular elements."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Core Data only fetches a small part of the data set, which is appropriate for current use. When the user scrolls the table, more data is fetched."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "persistentContainer.viewContext.reset()",
+            "do {",
+            "    try fetchedResultsController.performFetch()",
+            "} catch {",
+            "    fatalError(\"Unresolved error \\(error)\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637244",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After executing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSBatchInsertRequest"
+            },
+            {
+              "type": "text",
+              "text": ", the sample dispatches any user-interface state updates back to the main queue."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "dataProvider.fetchQuakes { error in",
+            "    DispatchQueue.main.async {",
+            "        self.exitBusyUI()",
+            "        // Alert the error or refresh the table if no error.",
+            "        self.handleBatchOperationCompletion(error: error)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637245",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Work in Batches to Lower Memory Footprint",
+          "anchor": "3637255"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data caches the objects that apps fetch or create in a context to avoid a round trip to the store file when these objects are needed again. However, that approach grows the memory footprint of an app as it processes more and more objects, and can eventually lead to low-memory warnings or app termination on iOS."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSBatchInsertRequest"
+            },
+            {
+              "type": "text",
+              "text": " doesn’t obviously increase an app’s memory footprint because it doesn’t load data into memory. Apps targeted to run on a system earlier than iOS 13 or macOS 10.15 need to avoid memory footprint growing by processing the objects in batches and calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506807-reset"
+            },
+            {
+              "type": "text",
+              "text": " to reset the context after each batch. In the sample, these two cases are demonstrated in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "importQuakesUsingBIR(from:)"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "importQuakesBeforeBIR(from:)"
+            },
+            {
+              "type": "text",
+              "text": " method respectively."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample sets the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "viewContext"
+            },
+            {
+              "type": "text",
+              "text": "’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "false"
+            },
+            {
+              "type": "text",
+              "text": " to prevent Core Data from automatically merging changes every time the background context is saved."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "container.viewContext.automaticallyMergesChangesFromParent = false"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637247",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prevent Duplicate Data in the Store",
+          "anchor": "3637256"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Every time the sample app refreshes the feed, the data downloaded from the remote server contains all earthquake records for the past month, so it can have many duplicates of already imported data. To avoid creating duplicate records, the app constrains an attribute, or combination of attributes, to be unique across all instances."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "code"
+            },
+            {
+              "type": "text",
+              "text": " attribute uniquely identifies an earthquake record, so constraining the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Quake"
+            },
+            {
+              "type": "text",
+              "text": " entity on "
+            },
+            {
+              "type": "codeVoice",
+              "code": "code"
+            },
+            {
+              "type": "text",
+              "text": " ensures that no two stored records have the same "
+            },
+            {
+              "type": "codeVoice",
+              "code": "code"
+            },
+            {
+              "type": "text",
+              "text": " value."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Select the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Quake"
+            },
+            {
+              "type": "text",
+              "text": " entity in the data model editor. In the data model inspector, add a new constraint by clicking the + button under the Constraints list. A constraint placeholder appears."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "comma, separated, properties"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637249",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Double-click the placeholder to edit it. Enter the name of the attribute (or comma-separated list of attributes) to serve as unique constraints on the entity."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "code"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637250",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When saving a new record, the store now checks whether any record already exists with the same value for the constrained attribute. In the case of a conflict, an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmergebypropertyobjecttrumpmergepolicy"
+            },
+            {
+              "type": "text",
+              "text": " policy comes into play, and the new record overwrites all fields in the existing record."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

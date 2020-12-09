@@ -1,0 +1,919 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified path."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/file_system",
+        "doc://com.apple.documentation/documentation/foundation/filemanager"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/icloud",
+        "doc://com.apple.documentation/documentation/foundation/filemanager"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/filemanager/1408726-enumerator",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1408726,
+  "kind": "symbol",
+  "metadata": {
+    "title": "enumerator(atPath:)",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSFileManager(im)enumeratorAtPath:",
+    "symbolKind": "instm",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "func "
+      },
+      {
+        "kind": "identifier",
+        "text": "enumerator"
+      },
+      {
+        "kind": "text",
+        "text": "("
+      },
+      {
+        "kind": "identifier",
+        "text": "atPath"
+      },
+      {
+        "kind": "text",
+        "text": ": String) -> FileManager.DirectoryEnumerator?"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsfilemanager/1408726-enumeratoratpath"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/filemanager/1408726-enumerator"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/file_system": {
+      "title": "File System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/file_system",
+      "url": "/documentation/foundation/file_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager": {
+      "title": "FileManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager"
+    },
+    "doc://com.apple.documentation/documentation/foundation/icloud": {
+      "title": "iCloud",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/icloud",
+      "url": "/documentation/foundation/icloud",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/directoryenumerator": {
+      "title": "FileManager.DirectoryEnumerator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/directoryenumerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/directoryenumerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that enumerates the contents of a directory."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "FileManager.DirectoryEnumerator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsenumerator/1409616-nextobject": {
+      "title": "nextObject()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsenumerator/1409616-nextobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsenumerator/1409616-nextobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1408726-enumerator#2555651": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1408726-enumerator#2555651",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/filemanager/1408726-enumerator#2555651"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1410452-attributesofitem": {
+      "title": "attributesOfItem(atPath:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1410452-attributesofitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/1410452-attributesofitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the attributes of the item at a given path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "attributesOfItem"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "atPath"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> [FileAttributeKey : Any]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1414584-contentsofdirectory": {
+      "title": "contentsOfDirectory(atPath:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1414584-contentsofdirectory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/1414584-contentsofdirectory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a shallow search of the specified directory and returns the paths of any contained items."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "contentsOfDirectory"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "atPath"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1413742-subpaths": {
+      "title": "subpaths(atPath:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1413742-subpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/1413742-subpaths",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of strings identifying the paths for all items in the specified directory. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "subpaths"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "atPath"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> [String]?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1410766-currentdirectorypath": {
+      "title": "currentDirectoryPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1410766-currentdirectorypath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/1410766-currentdirectorypath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The path to the program’s current directory."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "currentDirectoryPath"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409571-enumeratoraturl": {
+      "title": "enumerator(at:includingPropertiesForKeys:options:errorHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409571-enumeratoraturl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1409571-enumeratoraturl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerator(at:includingPropertiesForKeys:options:errorHandler:)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1409626-mountedvolumeurls": {
+      "title": "mountedVolumeURLs(includingResourceValuesForKeys:options:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1409626-mountedvolumeurls",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/1409626-mountedvolumeurls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of URLs that identify the mounted volumes available on the device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "mountedVolumeURLs"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "includingResourceValuesForKeys"
+        },
+        {
+          "kind": "text",
+          "text": ": [URLResourceKey]?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": FileManager.VolumeEnumerationOptions) -> [URL]?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/string": {
+      "title": "String",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1413768-contentsofdirectory": {
+      "title": "contentsOfDirectory(at:includingPropertiesForKeys:options:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1413768-contentsofdirectory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/1413768-contentsofdirectory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a shallow search of the specified directory and returns URLs for the contained items. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "contentsOfDirectory"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "at"
+        },
+        {
+          "kind": "text",
+          "text": ": URL, "
+        },
+        {
+          "kind": "identifier",
+          "text": "includingPropertiesForKeys"
+        },
+        {
+          "kind": "text",
+          "text": ": [URLResourceKey]?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": FileManager.DirectoryEnumerationOptions) -> [URL]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/2765464-enumerator": {
+      "title": "enumerator(at:includingPropertiesForKeys:options:errorHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/2765464-enumerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/2765464-enumerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerator"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "at"
+        },
+        {
+          "kind": "text",
+          "text": ": URL, "
+        },
+        {
+          "kind": "identifier",
+          "text": "includingPropertiesForKeys"
+        },
+        {
+          "kind": "text",
+          "text": ": [URLResourceKey]?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": FileManager.DirectoryEnumerationOptions, "
+        },
+        {
+          "kind": "identifier",
+          "text": "errorHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": ((URL, Error) -> Bool)?) -> FileManager.DirectoryEnumerator?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1408726-enumerator": {
+      "title": "enumerator(atPath:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1408726-enumerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/1408726-enumerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerator"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "atPath"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> FileManager.DirectoryEnumerator?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/volumeenumerationoptions": {
+      "title": "FileManager.VolumeEnumerationOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/volumeenumerationoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/volumeenumerationoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for enumerating mounted volumes with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1409626-mountedvolumeurls"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "FileManager.VolumeEnumerationOptions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/1417353-subpathsofdirectory": {
+      "title": "subpathsOfDirectory(atPath:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/1417353-subpathsofdirectory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filemanager/1417353-subpathsofdirectory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "subpathsOfDirectory"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "atPath"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/filemanager/1413768-contentsofdirectory",
+        "doc://com.apple.documentation/documentation/foundation/filemanager/1414584-contentsofdirectory",
+        "doc://com.apple.documentation/documentation/foundation/filemanager/2765464-enumerator",
+        "doc://com.apple.documentation/documentation/foundation/filemanager/directoryenumerator",
+        "doc://com.apple.documentation/documentation/foundation/filemanager/1409626-mountedvolumeurls",
+        "doc://com.apple.documentation/documentation/foundation/filemanager/volumeenumerationoptions",
+        "doc://com.apple.documentation/documentation/foundation/filemanager/1417353-subpathsofdirectory",
+        "doc://com.apple.documentation/documentation/foundation/filemanager/1413742-subpaths"
+      ],
+      "title": "Discovering Directory Contents",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/filemanager/1410452-attributesofitem",
+        "doc://com.apple.documentation/documentation/foundation/filemanager/1410766-currentdirectorypath",
+        "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409571-enumeratoraturl"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "enumerator"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "atPath"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "path"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:SS",
+              "identifier": "doc://com.apple.documentation/documentation/swift/string",
+              "text": "String"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSFileManager",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager",
+              "text": "FileManager"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSDirectoryEnumerator",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/directoryenumerator",
+              "text": "DirectoryEnumerator"
+            },
+            {
+              "kind": "text",
+              "text": "?"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The path of the directory to enumerate."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/directoryenumerator"
+            },
+            {
+              "type": "text",
+              "text": " object that enumerates the contents of the directory at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "path"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If "
+            },
+            {
+              "type": "codeVoice",
+              "code": "path"
+            },
+            {
+              "type": "text",
+              "text": " is a filename, the method returns an enumerator object that enumerates no files—the first call to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsenumerator/1409616-nextobject"
+            },
+            {
+              "type": "text",
+              "text": " will return "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the enumeration is deep—that is, it lists the contents of all subdirectories—this enumerator object is useful for performing actions that involve large file-system subtrees. This method does not resolve symbolic links encountered in the traversal process, nor does it recurse through them if they point to a directory."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This code fragment enumerates the subdirectories and files under a user’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Documents"
+            },
+            {
+              "type": "text",
+              "text": " directory and processes all files with an extension of "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".doc"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let docsDir = NSHomeDirectory().appending(\"/Documents\")",
+            "let localFileManager = FileManager()",
+            "",
+            "let dirEnum = localFileManager.enumerator(atPath: docsDir)",
+            "",
+            "while let file = dirEnum?.nextObject() as? String {",
+            "    if file.hasSuffix(\".doc\") {",
+            "        print(docsDir.appending(\"/\\(file)\"))",
+            "    }",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2555651",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/directoryenumerator"
+            },
+            {
+              "type": "text",
+              "text": " class has methods for obtaining the attributes of the existing path and of the parent directory and for skipping descendants of the existing path."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

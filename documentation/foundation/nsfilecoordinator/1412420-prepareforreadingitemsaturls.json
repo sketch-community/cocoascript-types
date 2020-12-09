@@ -1,0 +1,1023 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Prepare to read or write from multiple files in a single batch operation."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/file_system",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1412420-prepareforreadingitemsaturls",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1412420,
+  "kind": "symbol",
+  "metadata": {
+    "title": "prepareForReadingItemsAtURLs:options:writingItemsAtURLs:options:error:byAccessor:",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "5.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSFileCoordinator(im)prepareForReadingItemsAtURLs:options:writingItemsAtURLs:options:error:byAccessor:",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsfilecoordinator/1412420-prepareforreadingitemsaturls"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsfilecoordinator/1412420-prepare"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/file_system": {
+      "title": "File System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/file_system",
+      "url": "/documentation/foundation/file_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator": {
+      "title": "NSFileCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that coordinates the reading and writing of files and directories among file presenters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl": {
+      "title": "NSURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions": {
+      "title": "NSFileCoordinatorReadingOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinatorreadingoptions"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilepresenter/1414407-savepresenteditemchangeswithcomp": {
+      "title": "savePresentedItemChangesWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilepresenter/1414407-savepresenteditemchangeswithcomp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilepresenter/1414407-savepresenteditemchangeswithcomp",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "savePresentedItemChangesWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions": {
+      "title": "NSFileCoordinatorWritingOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinatorwritingoptions"
+    },
+    "devLink-1737716": {
+      "identifier": "devLink-1737716",
+      "type": "link",
+      "title": "Block object",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1407416-coordinatereadingitematurl": {
+      "title": "coordinateReadingItemAtURL:options:error:byAccessor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1407416-coordinatereadingitematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1407416-coordinatereadingitematurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiates a read operation on a single file or directory using the specified options."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "coordinateReadingItemAtURL:options:error:byAccessor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413344-coordinatewritingitematurl": {
+      "title": "coordinateWritingItemAtURL:options:error:byAccessor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413344-coordinatewritingitematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1413344-coordinatewritingitematurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiates a write operation on a single file or directory using the specified options."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "coordinateWritingItemAtURL:options:error:byAccessor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions/nsfilecoordinatorreadingwithoutchanges": {
+      "title": "NSFileCoordinatorReadingWithoutChanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions/nsfilecoordinatorreadingwithoutchanges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinatorreadingoptions/nsfilecoordinatorreadingwithoutchanges"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1408970-coordinatewritingitematurl": {
+      "title": "coordinateWritingItemAtURL:options:writingItemAtURL:options:error:byAccessor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1408970-coordinatewritingitematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1408970-coordinatewritingitematurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiates a write operation that involves a secondary write operation.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "coordinateWritingItemAtURL:options:writingItemAtURL:options:error:byAccessor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1411533-coordinateaccesswithintents": {
+      "title": "coordinateAccessWithIntents:queue:byAccessor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1411533-coordinateaccesswithintents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1411533-coordinateaccesswithintents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a number of coordinated-read or -write operations asynchronously."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "coordinateAccessWithIntents:queue:byAccessor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413385-coordinatereadingitematurl": {
+      "title": "coordinateReadingItemAtURL:options:writingItemAtURL:options:error:byAccessor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413385-coordinatereadingitematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1413385-coordinatereadingitematurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiates a read operation that contains a follow-up write operation.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "coordinateReadingItemAtURL:options:writingItemAtURL:options:error:byAccessor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsarray": {
+      "title": "NSArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nserror": {
+      "title": "NSError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nserror"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1412420-prepareforreadingitemsaturls": {
+      "title": "prepareForReadingItemsAtURLs:options:writingItemsAtURLs:options:error:byAccessor:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1412420-prepareforreadingitemsaturls",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1412420-prepareforreadingitemsaturls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prepare to read or write from multiple files in a single batch operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareForReadingItemsAtURLs:options:writingItemsAtURLs:options:error:byAccessor:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1408668-itematurl": {
+      "title": "itemAtURL:willMoveToURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1408668-itematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1408668-itematurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Announces that your app is moving a file to a new URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "itemAtURL:willMoveToURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1410328-itematurl": {
+      "title": "itemAtURL:didMoveToURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1410328-itematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1410328-itematurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notifies relevant file presenters that the location of a file or directory changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "itemAtURL:didMoveToURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1418457-cancel": {
+      "title": "cancel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1418457-cancel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilecoordinator/1418457-cancel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels any active file coordination calls."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancel"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1407416-coordinatereadingitematurl",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413344-coordinatewritingitematurl",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413385-coordinatereadingitematurl",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1408970-coordinatewritingitematurl",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1408668-itematurl",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1410328-itematurl",
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1418457-cancel"
+      ],
+      "title": "Coordinating File Operations Synchronously",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1411533-coordinateaccesswithintents"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "prepareForReadingItemsAtURLs:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSArray",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+              "text": "NSArray"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSURL",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl",
+              "text": "NSURL"
+            },
+            {
+              "kind": "text",
+              "text": " *> *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "readingURLs"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "options:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@NSFileCoordinatorReadingOptions",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions",
+              "text": "NSFileCoordinatorReadingOptions"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "readingOptions"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "writingItemsAtURLs:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSArray",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+              "text": "NSArray"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSURL",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl",
+              "text": "NSURL"
+            },
+            {
+              "kind": "text",
+              "text": " *> *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "writingURLs"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "options:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@NSFileCoordinatorWritingOptions",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions",
+              "text": "NSFileCoordinatorWritingOptions"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "writingOptions"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "error:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSError",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+              "text": "NSError"
+            },
+            {
+              "kind": "text",
+              "text": " * "
+            },
+            {
+              "kind": "keyword",
+              "text": "_Nullable"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "outError"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "byAccessor:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " (^)("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " (^completionHandler)("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": "))"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "batchAccessor"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "readingURLs",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An array of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl"
+                },
+                {
+                  "type": "text",
+                  "text": " objects identifying the items you want to read. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "readingOptions",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "One of the reading options described in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions"
+                },
+                {
+                  "type": "text",
+                  "text": ". If you pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0"
+                },
+                {
+                  "type": "text",
+                  "text": " for this parameter, the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilepresenter/1414407-savepresenteditemchangeswithcomp"
+                },
+                {
+                  "type": "text",
+                  "text": " method of relevant file presenters is called before your block executes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "writingURLs",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An array of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl"
+                },
+                {
+                  "type": "text",
+                  "text": " objects identifying the items you want to write."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "writingOptions",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "One of the writing options described in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions"
+                },
+                {
+                  "type": "text",
+                  "text": ". The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "outError",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this operation, that error is returned in this parameter and the block in the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "writer"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter is not executed. If you cancel this operation before the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "batchAccessor"
+                },
+                {
+                  "type": "text",
+                  "text": " block is executed, this parameter contains an error object on output."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "batchAccessor",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A "
+                },
+                {
+                  "type": "link",
+                  "title": "Block object",
+                  "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3"
+                },
+                {
+                  "type": "text",
+                  "text": " containing additional calls to methods of this class."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The block takes the following parameter:"
+                }
+              ]
+            },
+            {
+              "type": "termList",
+              "items": [
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "completionHandler"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "A completion handler block. The batch accessor must call the completion handler when it has finished its read and write calls."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this method to prepare the file coordinator for multiple read and write operations. Because file coordination requires interprocess communication, it is much more efficient to batch changes to large numbers of files and directories than to change each item individually. The file coordinator uses the values in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "readingURLs"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "writingURLs"
+            },
+            {
+              "type": "text",
+              "text": " parameters, together with reading and writing options, to prepare any relevant file presenters for the upcoming operations. Specifically, it uses these parameters in the same way as the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1407416-coordinatereadingitematurl"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413344-coordinatewritingitematurl"
+            },
+            {
+              "type": "text",
+              "text": " methods to determine which file presenter methods to call."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This method executes synchronously, blocking the current thread until the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "batchAccessor"
+            },
+            {
+              "type": "text",
+              "text": " block finishes executing. The block you provide for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "batchAccessor"
+            },
+            {
+              "type": "text",
+              "text": " parameter does not perform the actual operations itself. Instead, you must call the individual coordinated read and write methods from inside the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "batchAccessor"
+            },
+            {
+              "type": "text",
+              "text": " block. You must then call the completion handler after all the coordinated reads and writes have completed. You can call the completion handler from any thread."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Don’t simply pass this method all the URLs that are passed into the nested coordinate methods. Instead pass only the top-level files and directories involved in the operation. This method triggers messages to the file presenters of those items and to the file presenters of any items contained by those items."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In most cases, passing the same reading and writing options to both this method and the contained coordination operations is redundant. For example, it is often appropriate to pass "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions/nsfilecoordinatorreadingwithoutchanges"
+            },
+            {
+              "type": "text",
+              "text": " to nested read operations. This method has already triggered a call to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilepresenter/1414407-savepresenteditemchangeswithcomp"
+            },
+            {
+              "type": "text",
+              "text": ". The individual read operations do not need to trigger additional calls."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

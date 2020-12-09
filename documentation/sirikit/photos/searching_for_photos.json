@@ -1,0 +1,1268 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use SiriKit to search for photos managed by your app."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/photos"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2922414,
+  "kind": "article",
+  "metadata": {
+    "title": "Searching for Photos",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "10.1",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/photos/searching_for_photos"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/photos/searching_for_photos"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos": {
+      "title": "Photos",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
+      "url": "/documentation/sirikit/photos",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling": {
+      "title": "INSearchForPhotosIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insearchforphotosintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for searching the user’s photos."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138646": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138646",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138646"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ininteraction": {
+      "title": "INInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ininteraction"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138647": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138647",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138647"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638191-includedattributes": {
+      "title": "includedAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638191-includedattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insearchforphotosintent/1638191-includedattributes"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639186-searchterms": {
+      "title": "searchTerms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639186-searchterms",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartphotoplaybackintent/1639186-searchterms"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138649": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138649",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138649"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638645-datecreated": {
+      "title": "dateCreated",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638645-datecreated",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartphotoplaybackintent/1638645-datecreated"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902445-notrequired": {
+      "title": "notRequired",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902445-notrequired",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresolutionresult/1902445-notrequired",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "notRequired"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902446-needsvalue": {
+      "title": "needsValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902446-needsvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresolutionresult/1902446-needsvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "needsValue"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138651": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138651",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138651"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/2138302-unsupported": {
+      "title": "unsupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/2138302-unsupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresolutionresult/2138302-unsupported",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "unsupported"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138652": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138652",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138652"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indatecomponentsrangeresolutionresult/1906920-successwithresolveddatecomponent": {
+      "title": "successWithResolvedDateComponentsRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indatecomponentsrangeresolutionresult/1906920-successwithresolveddatecomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indatecomponentsrangeresolutionresult/1906920-successwithresolveddatecomponent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "successWithResolvedDateComponentsRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138653": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138653",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138653"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger": {
+      "title": "NSLinguisticTagger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagger"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138655": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138655",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138655"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138657": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos#3138657",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138657"
+    },
+    "doc://com.apple.documentation/documentation/xctest/xcuisiriservice": {
+      "title": "XCUISiriService",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xctest/xcuisiriservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/xctest/xcuisiriservice"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent": {
+      "title": "INSearchForPhotosIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insearchforphotosintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request for the list of photos that match the specified criteria."
+        }
+      ]
+    },
+    "link-media-3138644": {
+      "identifier": "link-media-3138644",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/photos/searching_for_photos#3138644"
+    },
+    "media-3138644": {
+      "identifier": "media-3138644",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 332,
+            "height": 536
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6ecc9d1ddc/aeb24bd7-0903-443e-ab45-690cad82bde2.png"
+        }
+      ],
+      "alt": "Image of the PhotoIntent’s UI",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos": {
+      "title": "Searching for Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/photos/searching_for_photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use SiriKit to search for photos managed by your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse": {
+      "title": "INSearchForPhotosIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insearchforphotosintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a search for photos intent."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/f91b4e8946/SearchingForPhotos.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/f91b4e8946/SearchingForPhotos.zip",
+      "checksum": "e2eaa9dd4829b4a76d9605298434f87749732884a546f56fd860594b90111e27493704b6f354cc97f89024f39193436436626cabc00f4a5793a31a4785ccc1c9",
+      "url": "https://docs-assets.developer.apple.com/published/f91b4e8946/SearchingForPhotos.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/f91b4e8946/SearchingForPhotos.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent",
+        "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse"
+      ],
+      "title": "Search for Photos",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SiriKit delivers the user’s spoken search criteria to your app in the form of an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent"
+            },
+            {
+              "type": "text",
+              "text": " object. This object contains search criteria derived from the user’s spoken words, such as the date range during which the photos were taken."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3138644",
+              "metadata": {
+                "anchor": "3138644",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You must apply the provided search criteria to the photos in your app. Because the user can specify multiple search parameters, you must be prepared to handle both basic and compound searches."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Basic Searches",
+          "anchor": "3138666"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Consider the following command spoken to Siri: "
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "“Show me photos with Vignette.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Siri forwards an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INSearchForPhotosIntent"
+            },
+            {
+              "type": "text",
+              "text": " object to the Intents app extension of the Vignette app. The app extension returns a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SearchForPhotosHandler"
+            },
+            {
+              "type": "text",
+              "text": " object to Siri. This handler adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling"
+            },
+            {
+              "type": "text",
+              "text": " protocol and handles all further interactions to resolve the intent parameters and handle the intent."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For all searches, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SearchForPhotosHandler"
+            },
+            {
+              "type": "text",
+              "text": " object performs the search and provides a response containing the number of results and a request to Siri to display those results in the app."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let userActivity = NSUserActivity(activityType: ActivityKeys.SearchForPhotosActivity)",
+            "userActivity.userInfo = [ActivityKeys.SearchForPhotosActivityResult: foundPhotos.photoIdentifiers]",
+            "let response = INSearchForPhotosIntentResponse(code: .continueInApp, userActivity: userActivity)",
+            "",
+            "// The result count allows the system to confirm launch of the app if needed, such as when there are no photos matching the query.",
+            "response.searchResultsCount = foundPhotos.photoIdentifiers.count",
+            "completion(response)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138646",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After being launched, the app receives a user activity object containing the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction"
+            },
+            {
+              "type": "text",
+              "text": " object with the intent and the app’s response. The app uses the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userActivity"
+            },
+            {
+              "type": "text",
+              "text": " property to retrieve the search results stored by the intent extension and then displays the results."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard userActivity.activityType == ActivityKeys.SearchForPhotosActivity,",
+            "    let photoIdentifiers = userActivity.userInfo?[ActivityKeys.SearchForPhotosActivityResult] as? [String]",
+            "    else {",
+            "        fatalError(\"Cannot proceed with `NSUserActivity`. Verify the `NSUserActivity` has been properly configured.\")",
+            "}",
+            "",
+            "/*",
+            " Reconstructing the query here to show that the content of the Siri intent is present in the user activity.",
+            " This query object is only used to update the UI.",
+            " */",
+            "if let searchForPhotosIntent = userActivity.interaction?.intent as? INSearchForPhotosIntent {",
+            "    let siriQuery = PhotoQuery(intent: searchForPhotosIntent)",
+            "    imagesViewController.updateQueryUI(with: siriQuery)",
+            "}",
+            "",
+            "// Take the results from when the Intent extension ran the query and display the results.",
+            "let photoQueryResult = PhotoQueryResult(identifiers: photoIdentifiers)",
+            "imagesViewController.updatePhotos(with: photoQueryResult)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138647",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Both the app and the Intents app extension use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PhotoQuery"
+            },
+            {
+              "type": "text",
+              "text": " structure to manage the search criteria. This structure allows users to specify many different types of search criteria, and can be initialized directly from an intent object by resolving the optional properties on the intent. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Compound Searches",
+          "anchor": "3138667"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When searching for photos, a user might include multiple search parameters in a spoken command, for instance: "
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "“Search Vignette for my favorite mountain photos.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because Siri recognizes the word "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "favorite"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " as a photo-related attribute, it adds the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "favorite"
+            },
+            {
+              "type": "text",
+              "text": " option to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638191-includedattributes"
+            },
+            {
+              "type": "text",
+              "text": " property of the intent. Siri then adds “mountain” to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639186-searchterms"
+            },
+            {
+              "type": "text",
+              "text": " array of the intent. The code that filters the photos must consider both properties."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let queryResults = photos.filter { photo in",
+            "    guard query.creationDateRange.contains(photo.created) else { return false }",
+            "",
+            "    // Checks if the user specified for a favorite or not favorite photo.",
+            "    if let isFavorite = query.favorite {",
+            "        guard photo.favorite == isFavorite else { return false }",
+            "    }",
+            "",
+            "    if let albumName = query.album {",
+            "        guard photo.albums.contains(albumName.lowercased()) else { return false }",
+            "    }",
+            "",
+            "    /*",
+            "     Finally, now that we've reduced the number of possibilities,",
+            "     check that the query matches based on the photo tags.",
+            "     */",
+            "    return query.matches(photoTags: photo.tags)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138649",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Resolve Dates",
+          "anchor": "3138668"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users can ask Siri to search for photos that fall within a specific date range, and your app must validate that it can do so. For Vignette, there are three possible outcomes:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "It is unable to execute a query with the specified date range."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "It contains photos within the specified date range."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "It does not contain photos within the specified date range."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First, date resolution checks whether the user provided a valid date range request, by inspecting the intent for a non-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " value for its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638645-datecreated"
+            },
+            {
+              "type": "text",
+              "text": " property. If "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dateCreated"
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", the app passes a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902445-notrequired"
+            },
+            {
+              "type": "text",
+              "text": " resolution result to the completion handler, which tells Siri that no value is needed for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dateCreated"
+            },
+            {
+              "type": "text",
+              "text": " in order to search for photos. Siri then begins resolving other intent parameters. If your app does require a value for dateCreated in order to successfully execute a query, you can pass a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902446-needsvalue"
+            },
+            {
+              "type": "text",
+              "text": " resolution result to the completion handler. This result indicates to Siri that your app cannot continue without a value for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dateCreated"
+            },
+            {
+              "type": "text",
+              "text": ", and Siri prompts the user to provide a value."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let dateRange = intent.dateCreated,",
+            "    let dateResolver = DateResolver(dateRange: dateRange) else {",
+            "        completion(.notRequired())",
+            "        return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138651",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Unsupported Resolution"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The app is unable to successfully execute a query for photos if the provided creation date is beyond the known range of creation dates for the app’s photos. If the date is outside of that range, the app passes an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/2138302-unsupported"
+            },
+            {
+              "type": "text",
+              "text": " resolution result to the completion handler."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard dateResolver.isSupportedDateRange else {",
+            "    completion(.unsupported())",
+            "    return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138652",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Successful Resolution"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the user has provided a supported value for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dateCreated"
+            },
+            {
+              "type": "text",
+              "text": ", the parameter is successfully resolved. Here, the app passes a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/indatecomponentsrangeresolutionresult/1906920-successwithresolveddatecomponent"
+            },
+            {
+              "type": "text",
+              "text": " resolution result to the completion handler. This result indicates to Siri that the app is done resolving "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dateCreated"
+            },
+            {
+              "type": "text",
+              "text": " and can begin resolving the next intent parameter."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "completion(.success(with: dateRange))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138653",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The query can still return zero results if the app is unable to find any photos created on the date the user asked for. If the query returns photos for the requested date, the app displays them to the user. Siri notifies the user if the query does not return any photos."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Normalize Search Terms",
+          "anchor": "3138669"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "“Show my "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "animal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " photos with Vignette.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "“Show photos of  "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "animals"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " using Vignette.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Depending on the user’s spoken phrase, different forms of words, such as the singular and plural forms of the word "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "dog"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", appear in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "searchTerms"
+            },
+            {
+              "type": "text",
+              "text": " property of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INSearchForPhotosIntent"
+            },
+            {
+              "type": "text",
+              "text": ". This sample augments the provided data set with multiple word forms as one solution, and uses an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger"
+            },
+            {
+              "type": "text",
+              "text": " object to find the word stems for the search terms as another solution."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let options: NSLinguisticTagger.Options = [.joinNames, .omitPunctuation, .omitWhitespace]",
+            "searchTermString.enumerateLinguisticTags(in: fullRange, scheme: NSLinguisticTagScheme.lemma, options: options, orthography: nil) { tag, subrange, _, _ in",
+            "    let resultString: String",
+            "    if let tag = tag {",
+            "        resultString = tag.rawValue",
+            "    } else {",
+            "        /*",
+            "         If a word stem could not be identified because there is not enough surrounding grammatical context",
+            "         (such as a single word), keep the original word.",
+            "         */",
+            "        resultString = searchTermString.substring(with: subrange)",
+            "    }",
+            "    lemmatizedSearchTerms += resultString + \" \"",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138655",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You may solve this problem in other ways, but every app using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "searchTerms"
+            },
+            {
+              "type": "text",
+              "text": " property needs to handle this scenario."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide User-Specific Vocabulary",
+          "anchor": "3138670"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Photos domain has two types of vocabulary that can be unique to each user: "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "tags"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "album names"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". By providing Siri with the custom values set by your user for these properties, you enable Siri to better recognize these user-specific tags and album names. The vocabulary provided to Siri should be ordered with the most likely terms first."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "INVocabulary.shared().setVocabularyStrings(dataSource.rankedTags, of: .photoTag)",
+            "INVocabulary.shared().setVocabularyStrings(dataSource.rankedAlbumNames, of: .photoAlbumName)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3138657",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Albums Names and People Tags",
+          "anchor": "3138671"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When searching for photos, the user might want to look in a specific album or find people tagged in a photo. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SearchForPhotosIntentHandler"
+            },
+            {
+              "type": "text",
+              "text": " object returns the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notRequired()"
+            },
+            {
+              "type": "text",
+              "text": " resolution for both of these cases, indicating that it does not support searches for these items. The resolution of album names involves matching the string provided by Siri to the album names in your app."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Test Siri Integration",
+          "anchor": "3138672"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample includes a UI test that demonstrates how to use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/xctest/xcuisiriservice"
+            },
+            {
+              "type": "text",
+              "text": " class in a UI test to send test phrases to Siri and verify the results sent to the app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

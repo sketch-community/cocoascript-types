@@ -1,0 +1,1089 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3081127,
+  "kind": "article",
+  "metadata": {
+    "title": "Filling a Table with Data",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views/filling_a_table_with_data"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views/filling_a_table_with_data"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087464": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087464",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087464"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087463": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087463",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087463"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell": {
+      "title": "UITableViewCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell"
+    },
+    "link-media-3148901": {
+      "identifier": "link-media-3148901",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3148901"
+    },
+    "media-3148901": {
+      "identifier": "media-3148901",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 229,
+            "height": 187
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1ce5494645/d4f95e3a-5e8d-47c3-b400-b17963efa41c.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 229,
+            "height": 187
+          },
+          "url": "https://docs-assets.developer.apple.com/published/dfc10ed7b9/d558c039-5fbb-4d4e-9dff-50ac875764d7.png"
+        }
+      ],
+      "alt": "Illustration showing a table with two prototype cells in the Xcode storyboard editor.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table": {
+      "title": "Configuring the Cells for Your Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview": {
+      "title": "tableView:cellForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614861-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:cellForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie": {
+      "title": "dequeueReusableCellWithIdentifier:forIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dequeueReusableCellWithIdentifier:forIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel": {
+      "title": "textLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623210-textlabel"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087460": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087460",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3087460"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching": {
+      "title": "UITableViewDataSourcePrefetching",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasourceprefetching",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller": {
+      "title": "UITableViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource": {
+      "title": "UITableViewDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The methods adopted by the object you use to manage data and provide cells for a table view."
+        }
+      ]
+    },
+    "link-media-3162088": {
+      "identifier": "link-media-3162088",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data#3162088"
+    },
+    "media-3162088": {
+      "identifier": "media-3162088",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 511
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e26f7a30ab/0e35290a-c311-4ed7-8306-3699b467435e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 511
+          },
+          "url": "https://docs-assets.developer.apple.com/published/81df924749/ab74c89e-7d7e-46c0-a848-dee90fe046d2.png"
+        }
+      ],
+      "alt": "Illustration showing the Contacts app. Sections in the main table of the Contacts app correspond to letters of the alphabet. Rows correspond to individual contacts. ",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data": {
+      "title": "Filling a Table with Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource": {
+      "title": "UITableViewDiffableDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdiffabledatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object you use to manage data and provide cells for a table view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot": {
+      "title": "NSDiffableDataSourceSnapshot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdiffabledatasourcesnapshot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of the state of the data in a view at a specific point in time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation": {
+      "title": "UILocalizedIndexedCollation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilocalizedindexedcollation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that organizes, sorts, and localizes the data for a table view that has a section index. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating": {
+      "title": "UIDataSourceTranslating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidatasourcetranslating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An advanced interface for managing a data source object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol": {
+      "title": "UIRefreshControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uirefreshcontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A standard control that can initiate the refreshing of a scroll view’s contents. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource",
+        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot",
+        "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation",
+        "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+        "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol"
+      ],
+      "title": "Data",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Table views are data-driven elements of your interface. You provide your app’s data, along with the views needed to render each piece of that data onscreen, using a data source object—that is, an object that adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource"
+            },
+            {
+              "type": "text",
+              "text": " protocol. The table view arranges your views onscreen and works with your data source object to keep that data up to date.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Table views organize your data into rows and sections. Rows display individual data items, and sections group related rows together. Sections are not required, but they are a good way to organize data that is already hierarchical. For example, the Contacts app displays the name of each contact in a row, and groups rows into sections based on the first letter of the person’s last name."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3162088",
+              "metadata": {
+                "anchor": "3162088",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide the Numbers of Rows and Sections",
+          "anchor": "3087461"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before it appears onscreen, a table view asks you to specify the total number of rows and sections. Your data source object provides this information using two methods:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func numberOfSections(in tableView: UITableView) -> Int  // Optional ",
+            "func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3087464",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your implementations of these methods, return the row and section counts as quickly as possible. Doing so might require you to structure your data in a way that makes it easy to retrieve the row and section information. For example, consider using arrays to manage your table’s data. Arrays are good tools for organizing both sections and rows because they match the natural organization of the table view itself. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example code below shows an implementation of the data source methods that return the number of rows and sections in a multisection table. In this table, each row displays a string, so the implementation stores an array of strings for each section. To manage the sections, the implementation uses an array (called "
+            },
+            {
+              "type": "codeVoice",
+              "code": "hierarchicalData"
+            },
+            {
+              "type": "text",
+              "text": ") of arrays. To get the number of sections, the data source returns the number of items in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "hierarchicalData"
+            },
+            {
+              "type": "text",
+              "text": " array. To get the number of rows in a specific section, the data source returns the number of items in the respective child array. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var hierarchicalData = [[String]]() ",
+            " ",
+            "override func numberOfSections(in tableView: UITableView) -> Int {",
+            "   return hierarchicalData.count",
+            "}",
+            "   ",
+            "override func tableView(_ tableView: UITableView, ",
+            "                        numberOfRowsInSection section: Int) -> Int {",
+            "   return hierarchicalData[section].count",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3087463",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define the Appearance of Rows",
+          "anchor": "3087459"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You define the appearance of your table’s rows in your storyboard file using cells. A cell is a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": " object that acts like a template for the rows of your table. Cells are views, and they can contain any subviews that you need to display your content. You can add labels, image views, and other views to their content area and arrange those views using constraints."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you add a table view to your app’s interface, it includes one prototype cell for you to configure. To add more prototype cells, select the table view and update its Prototype Cells attribute. Each cell has a style, which defines its appearance. You may select one of the standard styles provided by UIKit, or define your own custom styles."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following illustration shows a table with two prototype cells, each of which uses one of the standard cell styles. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3148901",
+              "metadata": {
+                "anchor": "3148901",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your storyboard file, perform the following actions for each prototype cell:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the cell style to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "custom"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", or set it to one of the standard cell styles."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Assign a nonempty string to the cell's Identifier attribute."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For custom cells, add views and constraints to the cell."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify the class of custom cells in the Identity inspector."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When creating a cell with custom views, define a subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": " to manage those views. In your subclass, add outlets for the custom views that display your app’s data, and connect those outlets to the actual views in your storyboard file. You’ll need these outlets to configure the cell at runtime"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about how to configure the appearance of your cells, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create and Configure Cells for Each Row",
+          "anchor": "3087458"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before a table view appears onscreen, it asks its data source object to provide cells for the rows in or near the visible portion of the table. Your data source object's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method must respond quickly. Implement this method with the following pattern:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Call the table view's "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to retrieve a cell object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure the cell's views with your app's custom data."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Return the cell to the table view."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For standard cell styles, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": " contains properties with the views you need to configure. For custom cells, you add views to your cell at design time and outlets to access them. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example code below shows a version of the data source method that configures a cell containing a single text label. The cell uses the Basic style, one of the standard cell styles. For Basic-style cells, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel"
+            },
+            {
+              "type": "text",
+              "text": " property of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": " contains a label view that you configure with your data."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func tableView(_ tableView: UITableView,",
+            "                        cellForRowAt indexPath: IndexPath) -> UITableViewCell {",
+            "   // Ask for a cell of the appropriate type.",
+            "   let cell = tableView.dequeueReusableCell(withIdentifier: \"basicStyleCell\", for: indexPath)",
+            "        ",
+            "   // Configure the cell’s contents with the row and section number.",
+            "   // The Basic cell style guarantees a label view is present in textLabel.",
+            "   cell.textLabel!.text = \"Row \\(indexPath.row)\"",
+            "   return cell",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3087460",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Table views do not ask you to create cells for each of the table’s rows. Instead, table views manage cells lazily, asking you only for those cells that are in or near the visible portion of the table. Creating cells lazily reduces the amount of memory the table uses. However, it also means your data source object must create cells quickly. Do not use your "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method to load your table’s data or perform lengthy operations. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In addition to using the standard cell styles, you can define custom cells that contain any views you want. For detailed information about configuring your cells, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prefetch Data to Improve Performance",
+          "anchor": "3087457"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Scrolling performance for table views is critical. If fetching the data for your table involves an expensive operation, such as fetching it from a database, use a prefetching data source object—an object that adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching"
+            },
+            {
+              "type": "text",
+              "text": " protocol—to begin loading that data asynchronously before it scrolls into view. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about how to implement a prefetching data source, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify Data Statically in the Storyboard",
+          "anchor": "3087462"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use static tables to save time during prototyping or when your table's contents never change. With static tables, you specify all of your table's data up front in your storyboard file; you do not implement a data source object. At runtime, UIKit loads that data from your storyboard and manages it for you. Because you cannot change the data in static tables at runtime, use them sparingly in your shipping apps.   "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Configure static tables in your storyboard file:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object to your storyboard."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select the table view controller's table view."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Change the table view's Content attribute (in the Attributes inspector) to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Static Cells"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify the number of sections for your table using the table view's Sections attribute."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the Row attribute of each section to the number of rows you want."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure each cell with the views and content you want."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Table views with static data require a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller"
+                },
+                {
+                  "type": "text",
+                  "text": " object to manage that data."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Do not use static data if there is a chance you might want to update your table view’s content in the future. It is a programmer error to assign a data source object to a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " whose table view contains static data."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

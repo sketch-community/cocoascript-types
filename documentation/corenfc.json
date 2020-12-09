@@ -1,0 +1,591 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Detect NFC tags, read messages that contain NDEF data, and save data to writable tags."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corenfc",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2874790,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Core NFC",
+    "role": "collection",
+    "roleHeading": "Framework",
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corenfc"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corenfc"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersession/3043845-readingavailable": {
+      "title": "readingAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersession/3043845-readingavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersession/3043845-readingavailable"
+    },
+    "doc://com.apple.documentation/documentation/corenfc/building_an_nfc_tag-reader_app": {
+      "title": "Building an NFC Tag-Reader App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/building_an_nfc_tag-reader_app",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/corenfc/building_an_nfc_tag-reader_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Read NFC tags with NDEF messages in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/adding_support_for_background_tag_reading": {
+      "title": "Adding Support for Background Tag Reading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/adding_support_for_background_tag_reading",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corenfc/adding_support_for_background_tag_reading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allow users to scan NFC tags without an app using background tag reading."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nfcreaderusagedescription": {
+      "title": "NFCReaderUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nfcreaderusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nfcreaderusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the device’s NFC hardware."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NFCReaderUsageDescription",
+      "ideTitle": "Privacy - NFC Scan Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NFCReaderUsageDescription"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcndefreadersession": {
+      "title": "NFCNDEFReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcndefreadersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcndefreadersession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reader session for detecting NFC Data Exchange Format (NDEF) tags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfctagreadersession": {
+      "title": "NFCTagReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfctagreadersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfctagreadersession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reader session for detecting ISO7816, ISO15693, FeliCa, and MIFARE tags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcvasreadersession": {
+      "title": "NFCVASReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcvasreadersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcvasreadersession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reader session for processing Value Added Service (VAS) tags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersession-mnv": {
+      "title": "NFCReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersession-mnv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersession-mnv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class that represents a reader session for detecting NFC tags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersession": {
+      "title": "NFCReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general interface for interacting with a reader session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate": {
+      "title": "NFCReaderSessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersessiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of callbacks that provide information about the status of an NFC reader session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_nfc_readersession_formats": {
+      "title": "Near Field Communication Tag Reader Session Formats Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_nfc_readersession_formats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_nfc_readersession_formats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Near Field Communication data formats an app can read."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.developer.nfc.readersession.formats",
+      "ideTitle": "Near Field Communication Tag Reader Session Formats Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/corenfc/creating_nfc_tags_from_your_iphone": {
+      "title": "Creating NFC Tags from Your iPhone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/creating_nfc_tags_from_your_iphone",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/corenfc/creating_nfc_tags_from_your_iphone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Save data to tags, and interact with them using native tag protocols."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfciso7816tag": {
+      "title": "NFCISO7816Tag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfciso7816tag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfciso7816tag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for interacting with an ISO 7816 tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfciso15693tag": {
+      "title": "NFCISO15693Tag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfciso15693tag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfciso15693tag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for interacting with an ISO 15693 tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcfelicatag": {
+      "title": "NFCFeliCaTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcfelicatag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcfelicatag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for interacting with a FeliCa™ tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcmifaretag": {
+      "title": "NFCMiFareTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcmifaretag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcmifaretag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for interacting with a MIFARE® tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcndeftag": {
+      "title": "NFCNDEFTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcndeftag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcndeftag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for interacting with an NDEF tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfctag": {
+      "title": "NFCTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfctag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfctag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for interacting with an NFC or RFID tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfctagcommandconfiguration": {
+      "title": "NFCTagCommandConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfctagcommandconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfctagcommandconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of parameters you use to define the configuration of an NFC tag command."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcndefmessage": {
+      "title": "NFCNDEFMessage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcndefmessage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcndefmessage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An NFC NDEF message consisting of an array of payload records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcndefpayload": {
+      "title": "NFCNDEFPayload",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcndefpayload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcndefpayload",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A payload record in an NFC NDEF message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror": {
+      "title": "NFCReaderError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reader session and tag error codes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcerrordomain": {
+      "title": "NFCErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The domain for errors associated with Core NFC APIs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfctagresponseunexpectedlengtherrorkey": {
+      "title": "NFCTagResponseUnexpectedLengthErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfctagresponseunexpectedlengtherrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfctagresponseunexpectedlengtherrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user-information dictionary key that indicates an invalid received response packet length."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/corenfc_enumerations": {
+      "title": "CoreNFC Enumerations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/corenfc_enumerations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corenfc/corenfc_enumerations"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/building_an_nfc_tag-reader_app",
+        "doc://com.apple.documentation/documentation/corenfc/adding_support_for_background_tag_reading",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nfcreaderusagedescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reader Sessions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/nfcndefreadersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfctagreadersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfcvasreadersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadersession-mnv",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_nfc_readersession_formats"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a reader session to scan and detect NFC tags."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Tag Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/creating_nfc_tags_from_your_iphone",
+        "doc://com.apple.documentation/documentation/corenfc/nfciso7816tag",
+        "doc://com.apple.documentation/documentation/corenfc/nfciso15693tag",
+        "doc://com.apple.documentation/documentation/corenfc/nfcfelicatag",
+        "doc://com.apple.documentation/documentation/corenfc/nfcmifaretag",
+        "doc://com.apple.documentation/documentation/corenfc/nfcndeftag",
+        "doc://com.apple.documentation/documentation/corenfc/nfctag",
+        "doc://com.apple.documentation/documentation/corenfc/nfctagcommandconfiguration"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Read tag data, and save data to writable tags, by using the appropriate tag type interface."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "NDEF Messages and Payloads",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/nfcndefmessage",
+        "doc://com.apple.documentation/documentation/corenfc/nfcndefpayload"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Errors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror",
+        "doc://com.apple.documentation/documentation/corenfc/nfcerrordomain",
+        "doc://com.apple.documentation/documentation/corenfc/nfctagresponseunexpectedlengtherrorkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/corenfc_enumerations"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app can read tags to give users more information about their physical environment and the real-world objects in it. Using Core NFC, you can read Near Field Communication (NFC) tags of types 1 through 5 that contain data in the NFC Data Exchange Format (NDEF). For example, your app might give users information about products they find in a store or exhibits they visit in a museum."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app can also write data to tags, and interact with protocol specific tag such as ISO 7816, ISO 15693, FeliCa™, and MIFARE® tags."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core NFC is not available for use in app extensions, and it requires a device that supports Near Field Communication. To determine if support is available, check the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersession/3043845-readingavailable"
+            },
+            {
+              "type": "text",
+              "text": " class property before starting a reader session."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Core NFC doesn't support payment-related Application IDs."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

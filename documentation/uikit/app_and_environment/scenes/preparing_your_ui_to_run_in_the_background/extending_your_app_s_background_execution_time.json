@@ -1,0 +1,539 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Ensure that critical tasks finish when your app moves to the background."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2928658,
+  "kind": "article",
+  "metadata": {
+    "title": "Extending Your App's Background Execution Time",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+        "documentation/uikit/windows_and_screens/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+        "documentation/uikit/app_and_environment/multitasking_on_ipad/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+        "documentation/uikit/windows_and_screens/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+        "documentation/uikit/app_and_environment/multitasking_on_ipad/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment": {
+      "title": "App and Environment",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+      "url": "/documentation/uikit/app_and_environment",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes": {
+      "title": "Scenes",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+      "url": "/documentation/uikit/app_and_environment/scenes",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background": {
+      "title": "Preparing Your UI to Run in the Background",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/windows_and_screens": {
+      "title": "Windows and Screens",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+      "url": "/documentation/uikit/windows_and_screens",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad": {
+      "title": "Multitasking on iPad",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+      "url": "/documentation/uikit/app_and_environment/multitasking_on_ipad",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/backgroundtasks": {
+      "title": "Background Tasks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/backgroundtasks",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/backgroundtasks"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground": {
+      "title": "applicationDidEnterBackground:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applicationDidEnterBackground:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname": {
+      "title": "beginBackgroundTaskWithName:expirationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "beginBackgroundTaskWithName:expirationHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623029-backgroundtimeremaining": {
+      "title": "backgroundTimeRemaining",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623029-backgroundtimeremaining",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1623029-backgroundtimeremaining"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask": {
+      "title": "endBackgroundTask:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1622970-endbackgroundtask",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "endBackgroundTask:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time#2928665": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time#2928665",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time#2928665",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extending the app's background execution time"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1617030-performexpiringactivitywithreaso": {
+      "title": "performExpiringActivityWithReason:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1617030-performexpiringactivitywithreaso",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprocessinfo/1617030-performexpiringactivitywithreaso",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performExpiringActivityWithReason:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo": {
+      "title": "NSProcessInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprocessinfo"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh": {
+      "title": "Updating Your App with Background App Refresh",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetch content opportunistically in the background and update your app's interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time": {
+      "title": "Extending Your App's Background Execution Time",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ensure that critical tasks finish when your app moves to the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/about_the_background_execution_sequence": {
+      "title": "About the Background Execution Sequence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/about_the_background_execution_sequence",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/about_the_background_execution_sequence",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the order in which your custom code is executed when your app moves to the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/about_the_background_execution_sequence"
+      ],
+      "title": "Background Execution",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Extending your app’s background execution time ensures that you have adequate time to perform critical tasks. For tasks that require more background time, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/backgroundtasks"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When your app moves to the background, the system calls your app delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground"
+            },
+            {
+              "type": "text",
+              "text": " method. That method has five seconds to perform any tasks and return. Shortly after that method returns, the system puts your app into the suspended state. For most apps, five seconds is enough to perform any crucial tasks, but if you need more time, you can ask UIKit to extend your app’s runtime.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You extend your app’s runtime by calling the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname"
+            },
+            {
+              "type": "text",
+              "text": " method. Calling this method gives you extra time to perform important tasks. (You can find out the maximum background time available using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623029-backgroundtimeremaining"
+            },
+            {
+              "type": "text",
+              "text": " property.) When you finish your tasks, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask"
+            },
+            {
+              "type": "text",
+              "text": " method right away to let the system know that you are done. If you do not end your tasks in a timely manner, the system terminates your app.   "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Don’t wait until your app moves to the background to call the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname"
+                },
+                {
+                  "type": "text",
+                  "text": " method. Call the method before performing any long-running task."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time#2928665"
+            },
+            {
+              "type": "text",
+              "text": " shows an example that configures a background task so that the app may save data to its server, which could take longer than five seconds. The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname"
+            },
+            {
+              "type": "text",
+              "text": " method returns an identifier that you must save and pass to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func sendDataToServer( data : NSData ) {",
+            "   // Perform the task on a background queue.",
+            "   DispatchQueue.global().async {",
+            "      // Request the task assertion and save the ID.",
+            "      self.backgroundTaskID = UIApplication.shared.",
+            "                 beginBackgroundTask (withName: \"Finish Network Tasks\") {",
+            "         // End the task if time expires.",
+            "         UIApplication.shared.endBackgroundTask(self.backgroundTaskID!)",
+            "         self.backgroundTaskID = UIBackgroundTaskInvalid",
+            "      }",
+            "            ",
+            "      // Send the data synchronously.",
+            "      self.sendAppDataToServer( data: data)",
+            "            ",
+            "      // End the task assertion.",
+            "      UIApplication.shared.endBackgroundTask(self.backgroundTaskID!)",
+            "      self.backgroundTaskID = UIBackgroundTaskInvalid",
+            "   }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2928665",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Extending the app's background execution time"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname"
+                },
+                {
+                  "type": "text",
+                  "text": " method cannot be called from an app extension. To request extra execution time from your app extension, call the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1617030-performexpiringactivitywithreaso"
+                },
+                {
+                  "type": "text",
+                  "text": " method of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo"
+                },
+                {
+                  "type": "text",
+                  "text": " instead."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

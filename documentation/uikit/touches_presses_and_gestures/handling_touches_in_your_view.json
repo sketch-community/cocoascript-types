@@ -1,0 +1,619 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use touch events directly on a view subclass if touch handling is intricately linked to the view's content."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2904654,
+  "kind": "article",
+  "metadata": {
+    "title": "Handling Touches in Your View",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan": {
+      "title": "touchesBegan:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesBegan:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved": {
+      "title": "touchesMoved:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621107-touchesmoved",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesMoved:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended": {
+      "title": "touchesEnded:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621084-touchesended",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesEnded:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch": {
+      "title": "UITouch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing the location, size, movement, and force of a touch occurring on the screen. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch/1618113-phase": {
+      "title": "phase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618113-phase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch/1618113-phase"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasebegan": {
+      "title": "UITouchPhaseBegan",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasebegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouchphase/uitouchphasebegan"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasemoved": {
+      "title": "UITouchPhaseMoved",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasemoved",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouchphase/uitouchphasemoved"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphaseended": {
+      "title": "UITouchPhaseEnded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphaseended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouchphase/uitouchphaseended"
+    },
+    "link-media-3004382": {
+      "identifier": "link-media-3004382",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view#3004382"
+    },
+    "media-3004382": {
+      "identifier": "media-3004382",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 656,
+            "height": 333
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7c21d852b9/08b952fe-6f46-41eb-8b8a-4830c1d48842.png"
+        }
+      ],
+      "alt": "A touch begins when the user's finger touches the screen. The system updates the touch when the user's finger moves or the touch parameters change. The touch ends when the user lifts the same finger from the screen. If an interruption such as an incoming call occurs, the system cancels any active touches.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The phases of a touch event"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled": {
+      "title": "touchesCancelled:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesCancelled:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uievent": {
+      "title": "UIEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uievent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uievent"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622519-multipletouchenabled": {
+      "title": "multipleTouchEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622519-multipletouchenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622519-multipletouchenabled"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/implementing_a_multi-touch_app": {
+      "title": "Implementing a Multi-Touch App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/implementing_a_multi-touch_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/implementing_a_multi-touch_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to create a simple app that handles multitouch input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches": {
+      "title": "Getting High-Fidelity Input with Coalesced Touches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to support high-precision touches in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/minimizing_latency_with_predicted_touches": {
+      "title": "Minimizing Latency with Predicted Touches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/minimizing_latency_with_predicted_touches",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/minimizing_latency_with_predicted_touches",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a smooth and responsive drawing experience using UIKit's predictions for touch locations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view": {
+      "title": "Handling Touches in Your View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use touch events directly on a view subclass if touch handling is intricately linked to the view's content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/pencil_interactions/handling_input_from_apple_pencil": {
+      "title": "Handling Input from Apple Pencil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/pencil_interactions/handling_input_from_apple_pencil",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/pencil_interactions/handling_input_from_apple_pencil",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to detect and respond to touches from Apple Pencil."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/tracking_the_force_of_3d_touch_events": {
+      "title": "Tracking the Force of 3D Touch Events",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/tracking_the_force_of_3d_touch_events",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/tracking_the_force_of_3d_touch_events",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manipulate your content based on the force of touches. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input": {
+      "title": "Illustrating the Force, Altitude, and Azimuth Properties of Touch Input",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Capture Apple Pencil and touch input in views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps": {
+      "title": "Leveraging Touch Input for Drawing Apps",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Capture touches as a series of strokes and render them efficiently on a drawing canvas."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Advanced Touch Handling",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/implementing_a_multi-touch_app",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/minimizing_latency_with_predicted_touches"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/pencil_interactions/handling_input_from_apple_pencil",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/tracking_the_force_of_3d_touch_events",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/illustrating_the_force_altitude_and_azimuth_properties_of_touch_input",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/leveraging_touch_input_for_drawing_apps",
+        "doc://com.apple.documentation/documentation/uikit/uitouch"
+      ],
+      "title": "Touches",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you don't plan to use gesture recognizers with a custom view, you can handle touch events directly from the view itself. Because views are responders, they can handle Multi-Touch events and many other types of events. When UIKit determines that a touch event occurred in a view, it calls the view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended"
+            },
+            {
+              "type": "text",
+              "text": " method. You can override these methods in your custom views and use them to provide a response to touch events."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The methods you override in your views (or in any responder) to handle touches correspond to different phases of the touch event–handling process. For example, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3004382"
+            },
+            {
+              "type": "text",
+              "text": " illustrates the different phases of a touch event. When a finger (or Apple Pencil) touches the screen, UIKit creates a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " object, sets the touch location to the appropriate point, and sets its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618113-phase"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasebegan"
+            },
+            {
+              "type": "text",
+              "text": ". When the same finger moves around the screen, UIKit updates the touch location and changes the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618113-phase"
+            },
+            {
+              "type": "text",
+              "text": " property of the touch object to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasemoved"
+            },
+            {
+              "type": "text",
+              "text": ". When the user lifts the finger from the screen, UIKit changes the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618113-phase"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphaseended"
+            },
+            {
+              "type": "text",
+              "text": " and the touch sequence ends."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3004382",
+              "metadata": {
+                "anchor": "3004382",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "The phases of a touch event"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Similarly, the system may cancel an ongoing touch sequence at any time; for example, when an incoming phone call interrupts the app. When it does, UIKit notifies your view by calling the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled"
+            },
+            {
+              "type": "text",
+              "text": " method. You use that method to perform any needed cleanup of your view’s data structures."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "UIKit creates a new "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " object for each new finger that touches the screen. The touches themselves are delivered with the current "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uievent"
+            },
+            {
+              "type": "text",
+              "text": " object. UIKit distinguishes between touches originating from a finger and from Apple Pencil, and you can treat each of them differently."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In its default configuration, a view receives only the first "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+                },
+                {
+                  "type": "text",
+                  "text": " object associated with an event, even if more than one finger is touching the view. To receive the additional touches, you must set the view’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622519-multipletouchenabled"
+                },
+                {
+                  "type": "text",
+                  "text": " property to true. You can also configure this property in Interface Builder using the Attributes inspector."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

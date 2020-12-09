@@ -1,0 +1,1753 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The visual representation of a single row in a table view."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1623212,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UITableViewCell",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)UITableViewCell",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitableviewcell"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitableviewcell"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell": {
+      "title": "UITableViewCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The visual representation of a single row in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3601057-contentconfiguration": {
+      "title": "contentConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3601057-contentconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3601057-contentconfiguration"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3601055-backgroundconfiguration": {
+      "title": "backgroundConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3601055-backgroundconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3601055-backgroundconfiguration"
+    },
+    "link-media-3113230": {
+      "identifier": "link-media-3113230",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/uitableviewcell#3113230"
+    },
+    "media-3113230": {
+      "identifier": "media-3113230",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1360,
+            "height": 1363
+          },
+          "url": "https://docs-assets.developer.apple.com/published/310a87e953/2c2d1f54-d155-4975-86bd-552625e7eac5.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1360,
+            "height": 1363
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2128ef91ee/a27538d0-bc9a-4972-aa83-8616889d7959.png"
+        }
+      ],
+      "alt": "Illustration showing the area of a cell by itself and with an accessory view and edit control. The content area of a cell shrinks as needed to accommodate the accessory view or edit controls.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data": {
+      "title": "Filling a Table with Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscoding": {
+      "title": "NSCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscoding"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerdelegate": {
+      "title": "UIGestureRecognizerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623276-initwithstyle": {
+      "title": "initWithStyle:reuseIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623276-initwithstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623276-initwithstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a table cell with a style and a reuse identifier and returns it to the caller."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithStyle:reuseIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellstyle": {
+      "title": "UITableViewCellStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration for the various styles of cells."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623220-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623220-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623220-initwithcoder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623246-reuseidentifier": {
+      "title": "reuseIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623246-reuseidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623246-reuseidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string used to identify a cell that is reusable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623223-prepareforreuse": {
+      "title": "prepareForReuse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623223-prepareforreuse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623223-prepareforreuse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prepares a reusable cell for reuse by the table view's delegate."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareForReuse"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600586-backgroundconfiguration": {
+      "title": "backgroundConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600586-backgroundconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3600586-backgroundconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current background configuration of the cell. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600584-automaticallyupdatesbackgroundco": {
+      "title": "automaticallyUpdatesBackgroundConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600584-automaticallyupdatesbackgroundco",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3600584-automaticallyupdatesbackgroundco",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the cell automatically updates its background configuration when its state changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623260-backgroundview": {
+      "title": "backgroundView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623260-backgroundview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623260-backgroundview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The view to use as the background of the cell."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623226-selectedbackgroundview": {
+      "title": "selectedBackgroundView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623226-selectedbackgroundview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623226-selectedbackgroundview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The view to use as the background for a selected cell."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623275-multipleselectionbackgroundview": {
+      "title": "multipleSelectionBackgroundView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623275-multipleselectionbackgroundview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623275-multipleselectionbackgroundview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The background view to use for a selected cell when the table view allows multiple row selections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600589-defaultcontentconfiguration": {
+      "title": "defaultContentConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600589-defaultcontentconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3600589-defaultcontentconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a default list content configuration for the cell’s style."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "defaultContentConfiguration"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600588-contentconfiguration": {
+      "title": "contentConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600588-contentconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3600588-contentconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current content configuration of the cell. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600585-automaticallyupdatescontentconfi": {
+      "title": "automaticallyUpdatesContentConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600585-automaticallyupdatescontentconfi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3600585-automaticallyupdatescontentconfi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the cell automatically updates its content configuration when its state changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623229-contentview": {
+      "title": "contentView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623229-contentview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623229-contentview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The content view of the cell object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel": {
+      "title": "textLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623210-textlabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The label to use for the main textual content of the table cell."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623273-detailtextlabel": {
+      "title": "detailTextLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623273-detailtextlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623273-detailtextlabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The secondary label of the table cell, if one exists. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623270-imageview": {
+      "title": "imageView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623270-imageview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623270-imageview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image view of the table cell."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600587-configurationstate": {
+      "title": "configurationState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600587-configurationstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3600587-configurationstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current configuration state of the cell."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600590-setneedsupdateconfiguration": {
+      "title": "setNeedsUpdateConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600590-setneedsupdateconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3600590-setneedsupdateconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Informs the cell to update its configuration for its current state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setNeedsUpdateConfiguration"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600591-updateconfigurationusingstate": {
+      "title": "updateConfigurationUsingState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600591-updateconfigurationusingstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/3600591-updateconfigurationusingstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the cell’s configuration using the current state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateConfigurationUsingState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype": {
+      "title": "accessoryType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623228-accessorytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of standard accessory view the cell should use (normal state)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623219-accessoryview": {
+      "title": "accessoryView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623219-accessoryview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623219-accessoryview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that is used, typically as a control, on the right side of the cell (normal state)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623266-editingaccessorytype": {
+      "title": "editingAccessoryType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623266-editingaccessorytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623266-editingaccessorytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of standard accessory view the cell should use in the table view’s editing state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623264-editingaccessoryview": {
+      "title": "editingAccessoryView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623264-editingaccessoryview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623264-editingaccessoryview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that is used typically as a control on the right side of the cell when it is in editing mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype": {
+      "title": "UITableViewCellAccessoryType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellaccessorytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of standard accessory control used by a cell. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623221-selectionstyle": {
+      "title": "selectionStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623221-selectionstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623221-selectionstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style of selection for a cell."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellselectionstyle": {
+      "title": "UITableViewCellSelectionStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellselectionstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellselectionstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style of selected cells. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623263-selected": {
+      "title": "selected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623263-selected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623263-selected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the cell is selected."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623255-setselected": {
+      "title": "setSelected:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623255-setselected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623255-setselected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the selected state of the cell, optionally animating the transition between states."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSelected:animated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623241-highlighted": {
+      "title": "highlighted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623241-highlighted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623241-highlighted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the cell is highlighted."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623280-sethighlighted": {
+      "title": "setHighlighted:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623280-sethighlighted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623280-sethighlighted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the highlighted state of the cell, optionally animating the transition between states."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setHighlighted:animated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623268-editing": {
+      "title": "editing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623268-editing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623268-editing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the cell is in an editable state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623222-setediting": {
+      "title": "setEditing:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623222-setediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623222-setediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Toggles the receiver into and out of editing mode."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setEditing:animated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623234-editingstyle": {
+      "title": "editingStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623234-editingstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623234-editingstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The editing style of the cell."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcelleditingstyle": {
+      "title": "UITableViewCellEditingStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcelleditingstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcelleditingstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The editing control used by a cell."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623211-showingdeleteconfirmation": {
+      "title": "showingDeleteConfirmation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623211-showingdeleteconfirmation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623211-showingdeleteconfirmation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the cell is currently showing the delete-confirmation button."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623243-showsreordercontrol": {
+      "title": "showsReorderControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623243-showsreordercontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623243-showsreordercontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the cell shows the reordering control."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/2897414-userinteractionenabledwhiledragg": {
+      "title": "userInteractionEnabledWhileDragging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/2897414-userinteractionenabledwhiledragg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/2897414-userinteractionenabledwhiledragg",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether users can interact with a cell while it is being dragged."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/2897452-dragstatedidchange": {
+      "title": "dragStateDidChange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/2897452-dragstatedidchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/2897452-dragstatedidchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notifies the cell that its drag status changed. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragStateDidChange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcelldragstate": {
+      "title": "UITableViewCellDragState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcelldragstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcelldragstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the current state of a row involved in a drag operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623240-willtransitiontostate": {
+      "title": "willTransitionToState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623240-willtransitiontostate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623240-willtransitiontostate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Called to notify the cell that it is about to transition to a new cell state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "willTransitionToState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623274-didtransitiontostate": {
+      "title": "didTransitionToState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623274-didtransitiontostate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623274-didtransitiontostate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Called to notify the cell that it transitioned to a new cell state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didTransitionToState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellstatemask": {
+      "title": "UITableViewCellStateMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellstatemask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellstatemask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants used to determine the new state of a cell as it transitions between states."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623252-indentationlevel": {
+      "title": "indentationLevel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623252-indentationlevel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623252-indentationlevel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The indentation level of the cell’s content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623247-indentationwidth": {
+      "title": "indentationWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623247-indentationwidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623247-indentationwidth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The width for each level of indentation of a cell's content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623214-shouldindentwhileediting": {
+      "title": "shouldIndentWhileEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623214-shouldindentwhileediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623214-shouldindentwhileediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the cell background is indented when the table view is in editing mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623250-separatorinset": {
+      "title": "separatorInset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623250-separatorinset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623250-separatorinset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The inset values for the separator line drawn beneath the cell."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellseparatorstyle": {
+      "title": "UITableViewCellSeparatorStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellseparatorstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellseparatorstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style for cells used as separators."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623248-focusstyle": {
+      "title": "focusStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623248-focusstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623248-focusstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The appearance of the cell when focused."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellfocusstyle": {
+      "title": "UITableViewCellFocusStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellfocusstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellfocusstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style of focused cells."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623218-initwithframe": {
+      "title": "initWithFrame:reuseIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623218-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623218-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes and returns a table cell object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:reuseIdentifier:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623237-text": {
+      "title": "text",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623237-text",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623237-text",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text of the cell."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623236-font": {
+      "title": "font",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623236-font",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623236-font",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The font of the title. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623284-textalignment": {
+      "title": "textAlignment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623284-textalignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623284-textalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that specifies the alignment of text in the cell."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623235-textcolor": {
+      "title": "textColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623235-textcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623235-textcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The color of the title text."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623251-selectedtextcolor": {
+      "title": "selectedTextColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623251-selectedtextcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623251-selectedtextcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The color of the title text when the cell is selected."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623259-linebreakmode": {
+      "title": "lineBreakMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623259-linebreakmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623259-linebreakmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode for wrapping and truncating text in the cell."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623213-image": {
+      "title": "image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623213-image",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623213-image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image to use as content for the cell."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623215-selectedimage": {
+      "title": "selectedImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623215-selectedimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623215-selectedimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image to use a cell content when the cell is selected."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623230-hidesaccessorywhenediting": {
+      "title": "hidesAccessoryWhenEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623230-hidesaccessorywhenediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623230-hidesaccessorywhenediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the accessory view is hidden when the cell is being edited."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623272-target": {
+      "title": "target",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623272-target",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623272-target",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The target object to receive action messages."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623206-editaction": {
+      "title": "editAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623206-editaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623206-editaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The selector defining the action message to invoke when users tap the insert or delete button."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623249-accessoryaction": {
+      "title": "accessoryAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623249-accessoryaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623249-accessoryaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The selector defining the action message to invoke when users tap the accessory view."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table": {
+      "title": "Configuring the Cells for Your Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the appearance and content of your table’s rows by defining one or more prototype cells in your storyboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells": {
+      "title": "Creating Self-Sizing Table View Cells",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections": {
+      "title": "Adding Headers and Footers to Table Sections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Differentiate groups of rows visually by adding header and footer views to your table view’s sections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview": {
+      "title": "UITableViewHeaderFooterView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewheaderfooterview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reusable view that you place at the top or bottom of a table section to display additional information for that section."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiview"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscoding",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerdelegate"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Table View Cell",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623276-initwithstyle",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcellstyle",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623220-initwithcoder"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reusing Cells",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623246-reuseidentifier",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623223-prepareforreuse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring the Background",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600586-backgroundconfiguration",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600584-automaticallyupdatesbackgroundco",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623260-backgroundview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623226-selectedbackgroundview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623275-multipleselectionbackgroundview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600589-defaultcontentconfiguration",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600588-contentconfiguration",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600585-automaticallyupdatescontentconfi",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623229-contentview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623273-detailtextlabel",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623270-imageview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the State",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600587-configurationstate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600590-setneedsupdateconfiguration",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3600591-updateconfigurationusingstate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Accessory Views",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623219-accessoryview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623266-editingaccessorytype",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623264-editingaccessoryview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Cell Selection and Highlighting",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623221-selectionstyle",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcellselectionstyle",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623263-selected",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623255-setselected",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623241-highlighted",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623280-sethighlighted"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Editing the Cell",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623268-editing",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623222-setediting",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623234-editingstyle",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcelleditingstyle",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623211-showingdeleteconfirmation",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623243-showsreordercontrol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Dragging the Row",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/2897414-userinteractionenabledwhiledragg",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/2897452-dragstatedidchange",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcelldragstate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Adjusting to State Transitions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623240-willtransitiontostate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623274-didtransitiontostate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcellstatemask"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Content Indentation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623252-indentationlevel",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623247-indentationwidth",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623214-shouldindentwhileediting",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623250-separatorinset",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcellseparatorstyle"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Focus",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623248-focusstyle",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcellfocusstyle"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623218-initwithframe",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623237-text",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623236-font",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623284-textalignment",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623235-textcolor",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623251-selectedtextcolor",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623259-linebreakmode",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623213-image",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623215-selectedimage",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623230-hidesaccessorywhenediting",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623272-target",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623206-editaction",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623249-accessoryaction"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+        "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview"
+      ],
+      "title": "Cells, Headers, and Footers",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UITableViewCell"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)UIView",
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+              "text": "UIView"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": " object is a specialized type of view that manages the content of a single table row. You use cells primarily to organize and present your app’s custom content, but "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": " provides some specific customizations to support table-related behaviors, including:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Applying a selection or highlight color to the cell."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Adding standard accessory views, such as a detail or disclosure control."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Putting the cell into an editable state."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Indenting the cell's content to create a visual hierarchy in your table."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app’s content occupies most of the cell’s bounds, but the cell may adjust that space to make room for other content. Cells display accessory views on the trailing edge of their content area. When you put your table into edit mode, the cell adds a delete control to the leading edge of its content area, and optionally swaps out an accessory view for a reorder control. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3113230",
+              "metadata": {
+                "anchor": "3113230",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Every table view must have at least one type of cell for displaying content, and tables may have multiple cell types to display different types of content. Your table’s data source object handles the creation and configuration of cells immediately before they appear onscreen. For information about how to create your table’s cells, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configuring Your Cell's Content",
+          "anchor": "3081117"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Configure the content and layout of your cells in your storyboard file. Tables have one cell type by default, but you can add more by changing the value in the table’s Prototype Cells attribute. In addition to configuring the cell’s content, make sure you configure the following attributes:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Identifier. Use this identifier (also known as a reuse identifier) to create the cell. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Style. Choose one of the standard types or define a custom cell."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Class. Specify a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+                    },
+                    {
+                      "type": "text",
+                      "text": " subclass with your custom behavior."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To configure the content and appearance of your cell, you can set its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3601057-contentconfiguration"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/3601055-backgroundconfiguration"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

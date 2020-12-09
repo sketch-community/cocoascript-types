@@ -1,0 +1,771 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Book rides and report their status."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2863950,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Ride Booking",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/ride_booking"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/ride_booking"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents": {
+      "title": "Handling the Ride-Booking Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/ride_booking/handling_the_ride-booking_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Understand how Siri and Maps generate ride-booking intents and learn tips about how to handle those intents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit": {
+      "title": "Booking Rides with SiriKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/ride_booking/booking_rides_with_sirikit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add Intents extensions to your app to handle requests to book rides using Siri and Maps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options": {
+      "title": "Generating a List of Ride Options",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generate ride options for Maps to display to the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling": {
+      "title": "INListRideOptionsIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistrideoptionsintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for fetching the list of rides currently available from your ride-booking service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent": {
+      "title": "INListRideOptionsIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistrideoptionsintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An intent for getting the types of rides available from a ride-booking service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintentresponse": {
+      "title": "INListRideOptionsIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistrideoptionsintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a list ride options intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling": {
+      "title": "INRequestRideIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrequestrideintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for booking a ride for the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent": {
+      "title": "INRequestRideIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrequestrideintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to book the specified ride from your service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponse": {
+      "title": "INRequestRideIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrequestrideintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a request ride intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintenthandling": {
+      "title": "INGetRideStatusIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetridestatusintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for fetching the status of the user’s current ride."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintent": {
+      "title": "INGetRideStatusIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetridestatusintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request for the current status of a previously booked ride."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponse": {
+      "title": "INGetRideStatusIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetridestatusintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a get ride status intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponseobserver": {
+      "title": "INGetRideStatusIntentResponseObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponseobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetridestatusintentresponseobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for providing updated status for an active ride."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incancelrideintenthandling": {
+      "title": "INCancelRideIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incancelrideintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incancelrideintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for canceling a previously booked ride."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incancelrideintent": {
+      "title": "INCancelRideIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incancelrideintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incancelrideintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An intent requesting the cancellation of a previously booked ride."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incancelrideintentresponse": {
+      "title": "INCancelRideIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incancelrideintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incancelrideintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a cancel ride intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintenthandling": {
+      "title": "INSendRideFeedbackIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendridefeedbackintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for sending ride feedback to your service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintent": {
+      "title": "INSendRideFeedbackIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendridefeedbackintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An intent indicating that the user provided feedback for a completed ride."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintentresponse": {
+      "title": "INSendRideFeedbackIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendridefeedbackintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a send ride feedback intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrideoption": {
+      "title": "INRideOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrideoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Details about a type of ride offered by your ride-booking service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridestatus": {
+      "title": "INRideStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridestatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridestatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The status of a ride booked through a ride-booking service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridedriver": {
+      "title": "INRideDriver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridedriver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridedriver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifying information about a driver of a ride service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridevehicle": {
+      "title": "INRideVehicle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridevehicle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridevehicle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specific vehicle used by a ride-booking service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridefarelineitem": {
+      "title": "INRideFareLineItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridefarelineitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridefarelineitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specific type of ride-related charge."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption": {
+      "title": "INRidePartySizeOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridepartysizeoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The price of a ride involving the specified number of people."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus": {
+      "title": "INRideCompletionStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridecompletionstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Additional details about whether a ride completed successfully or someone canceled the ride."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/messaging": {
+      "title": "Messaging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/messaging",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/messaging",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send messages and search the user’s received messages."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
+      "title": "Lists and Notes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/lists_and_notes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage notes and to-do list items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts": {
+      "title": "Workouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/workouts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Start, end, and manage fitness routines."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/payments": {
+      "title": "Payments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/payments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send payments between users or pay bills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/voip_calling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate calls and search the user’s call history."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/visual_codes": {
+      "title": "Visual Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/visual_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convey contact and payment information using Quick Response (QR) codes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos": {
+      "title": "Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search for and display photos."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking": {
+      "title": "Ride Booking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/ride_booking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Book rides and report their status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/car_commands": {
+      "title": "Car Commands",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/car_commands",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/car_commands",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage vehicle door locks and get the vehicle’s status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/carplay": {
+      "title": "CarPlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/carplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with a vehicle’s CarPlay system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations": {
+      "title": "Restaurant Reservations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/restaurant_reservations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage restaurant reservations with help from the Maps app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media": {
+      "title": "Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Listen and control audio through Siri Intents or listen and watch media content from your app with shortcuts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "First Steps",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "List Ride Options",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+        "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent",
+        "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintentresponse"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps uses this intent to obtain a list of ride options from your ride-booking service. Siri does not generate this intent."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Request a Ride",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent",
+        "doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponse"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Book the ride based on the information provided by the user."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Get the Ride Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintent",
+        "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponseobserver"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Return the status of the booked ride that is currently active. "
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Cancel Ride",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/incancelrideintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/incancelrideintent",
+        "doc://com.apple.documentation/documentation/sirikit/incancelrideintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Send Ride Feedback",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintent",
+        "doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inrideoption",
+        "doc://com.apple.documentation/documentation/sirikit/inridestatus",
+        "doc://com.apple.documentation/documentation/sirikit/inridedriver",
+        "doc://com.apple.documentation/documentation/sirikit/inridevehicle",
+        "doc://com.apple.documentation/documentation/sirikit/inridefarelineitem",
+        "doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption",
+        "doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "When crafting your responses, use these objects to specify details about the booking, the vehicle, and the driver providing the ride. "
+        }
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/messaging",
+        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+        "doc://com.apple.documentation/documentation/sirikit/workouts",
+        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+        "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+        "doc://com.apple.documentation/documentation/sirikit/photos",
+        "doc://com.apple.documentation/documentation/sirikit/car_commands",
+        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+        "doc://com.apple.documentation/documentation/sirikit/media"
+      ],
+      "title": "Siri Domains",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users can book rides from either Siri or Maps. When the user requests a ride from your service, SiriKit forwards the information to your Intents app extension for processing. The user can ask you to provide a list of available rides, to initiate the booking of a ride, and to provide status updates for a booked ride. Maps expects you to handle all of the intents in this domain and won’t load your Intents extension if you don’t support all of them."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can provide a custom interface for ride-booking intents using an Intents UI app extension."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

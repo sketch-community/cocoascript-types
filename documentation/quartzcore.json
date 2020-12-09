@@ -1,0 +1,841 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Render, compose, and animate visual elements."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartzcore",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1612788,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Core Animation",
+    "role": "collection",
+    "roleHeading": "Framework",
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.3",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartzcore"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/quartzcore"
+      ]
+    }
+  ],
+  "references": {
+    "devLink-1731528": {
+      "identifier": "devLink-1731528",
+      "type": "link",
+      "title": "Core Animation Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/calayer": {
+      "title": "CALayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/calayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/calayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages image-based content and allows you to perform animations on that content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caanimation": {
+      "title": "CAAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract superclass for animations in Core Animation. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/calayerdelegate": {
+      "title": "CALayerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/calayerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/calayerdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods your app can implement to respond to layer-related events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caconstraint": {
+      "title": "CAConstraint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caconstraint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caconstraint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of a single layout constraint between two layers.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/calayoutmanager": {
+      "title": "CALayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/calayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/calayoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods that allow an object to manage the layout of a layer and its sublayers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caconstraintlayoutmanager": {
+      "title": "CAConstraintLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caconstraintlayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caconstraintlayoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides a constraint-based layout manager.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caaction": {
+      "title": "CAAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface that allows objects to respond to actions triggered by a "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartzcore/calayer"
+        },
+        {
+          "type": "text",
+          "text": " change."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/catextlayer": {
+      "title": "CATextLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catextlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/catextlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that provides simple text layout and rendering of plain or attributed strings. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cashapelayer": {
+      "title": "CAShapeLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cashapelayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cashapelayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that draws a cubic Bezier spline in its coordinate space. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cagradientlayer": {
+      "title": "CAGradientLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cagradientlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cagradientlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that draws a color gradient over its background color, filling the shape of the layer (including rounded corners)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caanimationdelegate": {
+      "title": "CAAnimationDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caanimationdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caanimationdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods your app can implement to respond when animations start and stop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/capropertyanimation": {
+      "title": "CAPropertyAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/capropertyanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/capropertyanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract subclass of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartzcore/caanimation"
+        },
+        {
+          "type": "text",
+          "text": " for creating animations that manipulate the value of layer properties. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cabasicanimation": {
+      "title": "CABasicAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cabasicanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cabasicanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides basic, single-keyframe animation capabilities for a layer property. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation": {
+      "title": "CAKeyframeAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cakeyframeanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides keyframe animation capabilities for a layer object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caspringanimation": {
+      "title": "CASpringAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caspringanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caspringanimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An animation that applies a spring-like force to a layer's properties. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/catransition": {
+      "title": "CATransition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catransition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/catransition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides an animated transition between a layer's states."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cavaluefunction": {
+      "title": "CAValueFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cavaluefunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cavaluefunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides a flexible method of defining animated transformations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caanimationgroup": {
+      "title": "CAAnimationGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caanimationgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caanimationgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that allows multiple animations to be grouped and run concurrently. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/catransaction": {
+      "title": "CATransaction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catransaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/catransaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mechanism for grouping multiple layer-tree operations into atomic updates to the render tree. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/1395996-cacurrentmediatime": {
+      "title": "CACurrentMediaTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/1395996-cacurrentmediatime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/1395996-cacurrentmediatime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current absolute time, in seconds."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction": {
+      "title": "CAMediaTimingFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/camediatimingfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A function that defines the pacing of an animation as a timing curve. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/camediatiming": {
+      "title": "CAMediaTiming",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/camediatiming",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/camediatiming",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods that model a hierarchical timing system, allowing objects to map time between their parent and local time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink": {
+      "title": "CADisplayLink",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A timer object that allows your application to synchronize its drawing to the refresh rate of the display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caemitterlayer": {
+      "title": "CAEmitterLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caemitterlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caemitterlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that emits, animates, and renders a particle system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caemittercell": {
+      "title": "CAEmitterCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caemittercell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caemittercell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The definition of a particle emitted by a CAEmitterLayer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cascrolllayer": {
+      "title": "CAScrollLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cascrolllayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cascrolllayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that displays scrollable content larger than its own bounds."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/catiledlayer": {
+      "title": "CATiledLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catiledlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/catiledlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that provides a way to asynchronously provide tiles of the layer's content, potentially cached at multiple levels of detail."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/catransformlayer": {
+      "title": "CATransformLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catransformlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/catransformlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Objects used to create true 3D layer hierarchies, rather than the flattened hierarchy rendering model used by other "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CALayer"
+        },
+        {
+          "type": "text",
+          "text": " classes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer": {
+      "title": "CAReplicatorLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/careplicatorlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that creates a specified number of sublayer copies with varying geometric, temporal, and color transformations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cametallayer": {
+      "title": "CAMetalLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cametallayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cametallayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Core Animation layer that Metal can render into, typically to be displayed onscreen."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cametaldrawable": {
+      "title": "CAMetalDrawable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cametaldrawable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cametaldrawable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Metal drawable associated with a Core Animation layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caeagllayer": {
+      "title": "CAEAGLLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caeagllayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caeagllayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that supports drawing OpenGL content in iOS and tvOS applications.  "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata": {
+      "title": "CAEDRMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caedrmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Metadata describing how extended dynamic range (EDR) values should be tone mapped."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caopengllayer": {
+      "title": "CAOpenGLLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caopengllayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caopengllayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that provides a layer suitable for rendering OpenGL content."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/carenderer": {
+      "title": "CARenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/carenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/carenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that allows an application to render a layer tree into a Core OpenGL context. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient": {
+      "title": "CARemoteLayerClient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caremotelayerclient"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caremotelayerserver": {
+      "title": "CARemoteLayerServer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caremotelayerserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caremotelayerserver"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/transforms": {
+      "title": "Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartzcore/transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Define transform matrices to apply affine transformations to layers in Core Animation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qccompositionlayer": {
+      "title": "QCCompositionLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qccompositionlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qccompositionlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layer that loads, plays, and controls Quartz Composer compositions in a Core Animation layer hierarchy. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/core_animation_constants": {
+      "title": "Core Animation Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/core_animation_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartzcore/core_animation_constants"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/core_animation_data_types": {
+      "title": "Core Animation Data Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/core_animation_data_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartzcore/core_animation_data_types"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Layer Basics",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/calayer",
+        "doc://com.apple.documentation/documentation/quartzcore/calayerdelegate",
+        "doc://com.apple.documentation/documentation/quartzcore/caconstraint",
+        "doc://com.apple.documentation/documentation/quartzcore/calayoutmanager",
+        "doc://com.apple.documentation/documentation/quartzcore/caconstraintlayoutmanager",
+        "doc://com.apple.documentation/documentation/quartzcore/caaction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Text, Shapes, and Gradients",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/catextlayer",
+        "doc://com.apple.documentation/documentation/quartzcore/cashapelayer",
+        "doc://com.apple.documentation/documentation/quartzcore/cagradientlayer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Animation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/caanimation",
+        "doc://com.apple.documentation/documentation/quartzcore/caanimationdelegate",
+        "doc://com.apple.documentation/documentation/quartzcore/capropertyanimation",
+        "doc://com.apple.documentation/documentation/quartzcore/cabasicanimation",
+        "doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation",
+        "doc://com.apple.documentation/documentation/quartzcore/caspringanimation",
+        "doc://com.apple.documentation/documentation/quartzcore/catransition",
+        "doc://com.apple.documentation/documentation/quartzcore/cavaluefunction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Animation Groups",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/caanimationgroup",
+        "doc://com.apple.documentation/documentation/quartzcore/catransaction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Animation Timing",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/1395996-cacurrentmediatime",
+        "doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction",
+        "doc://com.apple.documentation/documentation/quartzcore/camediatiming",
+        "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Particle Systems",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/caemitterlayer",
+        "doc://com.apple.documentation/documentation/quartzcore/caemittercell"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Advanced Layer Options",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/cascrolllayer",
+        "doc://com.apple.documentation/documentation/quartzcore/catiledlayer",
+        "doc://com.apple.documentation/documentation/quartzcore/catransformlayer",
+        "doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Metal and OpenGL",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/cametallayer",
+        "doc://com.apple.documentation/documentation/quartzcore/cametaldrawable",
+        "doc://com.apple.documentation/documentation/quartzcore/caeagllayer",
+        "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata",
+        "doc://com.apple.documentation/documentation/quartzcore/caopengllayer",
+        "doc://com.apple.documentation/documentation/quartzcore/carenderer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Remote Display of Layer Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient",
+        "doc://com.apple.documentation/documentation/quartzcore/caremotelayerserver"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Transforms",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/transforms"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Quartz Composer",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qccompositionlayer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartzcore/core_animation_constants",
+        "doc://com.apple.documentation/documentation/quartzcore/core_animation_data_types"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1731528"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Animation provides high frame rates and smooth animations without burdening the CPU and slowing down your app. Most of the work required to draw each frame of an animation is done for you. You configure animation parameters such as the start and end points, and Core Animation does the rest, handing off most of the work to dedicated graphics hardware, to accelerate rendering. For more details, see "
+            },
+            {
+              "type": "link",
+              "title": "Core Animation Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

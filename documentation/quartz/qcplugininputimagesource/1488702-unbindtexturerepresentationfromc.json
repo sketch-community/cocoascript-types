@@ -1,0 +1,428 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Unbinds the texture from a texture unit."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/quartz",
+        "doc://com.apple.documentation/documentation/quartz/quartz_composer",
+        "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488702-unbindtexturerepresentationfromc",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1488702,
+  "kind": "symbol",
+  "metadata": {
+    "title": "unbindTextureRepresentationFromCGLContext:textureUnit:",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "Quartz"
+      }
+    ],
+    "required": true,
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.5",
+        "deprecatedAt": "10.14",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:objc(pl)QCPlugInInputImageSource(im)unbindTextureRepresentationFromCGLContext:textureUnit:",
+    "symbolKind": "intfm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qcplugininputimagesource/1488702-unbindtexturerepresentationfromc"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qcplugininputimagesource/1488702-unbindtexturerepresentation"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/quartz": {
+      "title": "Quartz",
+      "identifier": "doc://com.apple.documentation/documentation/quartz",
+      "url": "/documentation/quartz",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/quartz/quartz_composer": {
+      "title": "Quartz Composer",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/quartz_composer",
+      "url": "/documentation/quartz/quartz_composer",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource": {
+      "title": "QCPlugInInputImageSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugininputimagesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugInInputImageSource"
+        },
+        {
+          "type": "text",
+          "text": " protocol eliminates the need to use explicit image types for the image input ports on your custom patch. Not only does using the protocol avoid restrictions of a specific image type, but it avoids impedance mismatches, and provides better performance by deferring pixel computation until it is needed. When you need to access the pixels in an image, you simply convert the image to a representation (texture or buffer) using one of the methods defined by the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugInInputImageSource"
+        },
+        {
+          "type": "text",
+          "text": " protocol. Use a texture representation when you want to use input images on the GPU. Use a buffer representation when you want to use input images on the CPU."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488704-bindtexturerepresentationtocglco": {
+      "title": "bindTextureRepresentationToCGLContext:textureUnit:normalizeCoordinates:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488704-bindtexturerepresentationtocglco",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugininputimagesource/1488704-bindtexturerepresentationtocglco",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Binds the texture to a given texture unit and optionally scales or flips the texture."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "bindTextureRepresentationToCGLContext:textureUnit:normalizeCoordinates:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488736-locktexturerepresentationwithcol": {
+      "title": "lockTextureRepresentationWithColorSpace:forBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488736-locktexturerepresentationwithcol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugininputimagesource/1488736-locktexturerepresentationwithcol",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an OpenGL texture representation from a subregion of the image source using the provided color space."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lockTextureRepresentationWithColorSpace:forBounds:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488856-unlocktexturerepresentation": {
+      "title": "unlockTextureRepresentation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488856-unlocktexturerepresentation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugininputimagesource/1488856-unlocktexturerepresentation",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases the OpenGL texture representation of the image source. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "unlockTextureRepresentation"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488746-lockbufferrepresentationwithpixe": {
+      "title": "lockBufferRepresentationWithPixelFormat:colorSpace:forBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488746-lockbufferrepresentationwithpixe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugininputimagesource/1488746-lockbufferrepresentationwithpixe",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a memory buffer representation from a subregion of the image source using the provided pixel format and color space."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lockBufferRepresentationWithPixelFormat:colorSpace:forBounds:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488702-unbindtexturerepresentationfromc": {
+      "title": "unbindTextureRepresentationFromCGLContext:textureUnit:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488702-unbindtexturerepresentationfromc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugininputimagesource/1488702-unbindtexturerepresentationfromc",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Unbinds the texture from a texture unit."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "unbindTextureRepresentationFromCGLContext:textureUnit:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488764-unlockbufferrepresentation": {
+      "title": "unlockBufferRepresentation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488764-unlockbufferrepresentation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugininputimagesource/1488764-unlockbufferrepresentation",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases the memory buffer representation of the image source. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "unlockBufferRepresentation"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488736-locktexturerepresentationwithcol",
+        "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488856-unlocktexturerepresentation",
+        "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488746-lockbufferrepresentationwithpixe",
+        "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488704-bindtexturerepresentationtocglco",
+        "doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488764-unlockbufferrepresentation"
+      ],
+      "title": "Converting an Image to a Representation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "unbindTextureRepresentationFromCGLContext:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CGLContextObj",
+              "identifier": "symbol-1524146",
+              "text": "CGLContextObj"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "cgl_ctx"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "textureUnit:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@GLenum",
+              "text": "GLenum"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "unit"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "cgl_ctx",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A CGL context.)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "unit",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The texture unit to unbind from (such as, "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "GL_TEXTURE0"
+                },
+                {
+                  "type": "text",
+                  "text": ")"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

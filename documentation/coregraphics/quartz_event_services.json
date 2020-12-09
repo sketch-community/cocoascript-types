@@ -1,0 +1,1606 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provides features for managing "
+    },
+    {
+      "type": "emphasis",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "event taps"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "—filters for observing and altering the stream of low-level user input events in macOS."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1658572,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Quartz Event Services",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Graphics"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/quartz_event_services"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/quartz_event_services"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coregraphics": {
+      "title": "Core Graphics",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics",
+      "url": "/documentation/coregraphics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventfield/kcgmouseeventsubtype": {
+      "title": "kCGMouseEventSubtype",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventfield/kcgmouseeventsubtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventfield/kcgmouseeventsubtype"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454922-cgeventgettypeid": {
+      "title": "CGEventGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454922-cgeventgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454922-cgeventgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier for the opaque type "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CGEventRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454913-cgeventcreate": {
+      "title": "CGEventCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454913-cgeventcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454913-cgeventcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454381-cgeventcreatedata": {
+      "title": "CGEventCreateData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454381-cgeventcreatedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454381-cgeventcreatedata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a flattened data representation of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454249-cgeventcreatefromdata": {
+      "title": "CGEventCreateFromData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454249-cgeventcreatefromdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454249-cgeventcreatefromdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Quartz event created from a flattened data representation of the event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454356-cgeventcreatemouseevent": {
+      "title": "CGEventCreateMouseEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454356-cgeventcreatemouseevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454356-cgeventcreatemouseevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new Quartz mouse event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456564-cgeventcreatekeyboardevent": {
+      "title": "CGEventCreateKeyboardEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456564-cgeventcreatekeyboardevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456564-cgeventcreatekeyboardevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new Quartz keyboard event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541327-cgeventcreatescrollwheelevent": {
+      "title": "CGEventCreateScrollWheelEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541327-cgeventcreatescrollwheelevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541327-cgeventcreatescrollwheelevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new Quartz scrolling event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454071-cgeventcreatecopy": {
+      "title": "CGEventCreateCopy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454071-cgeventcreatecopy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454071-cgeventcreatecopy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a copy of an existing Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455393-cgeventcreatesourcefromevent": {
+      "title": "CGEventCreateSourceFromEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455393-cgeventcreatesourcefromevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455393-cgeventcreatesourcefromevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Quartz event source created from an existing Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455500-cgeventsetsource": {
+      "title": "CGEventSetSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455500-cgeventsetsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455500-cgeventsetsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the event source of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455634-cgeventgettype": {
+      "title": "CGEventGetType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455634-cgeventgettype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455634-cgeventgettype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the event type of a Quartz event (left mouse down, for example)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454300-cgeventsettype": {
+      "title": "CGEventSetType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454300-cgeventsettype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454300-cgeventsettype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the event type of a Quartz event (left mouse down, for example)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455481-cgeventgettimestamp": {
+      "title": "CGEventGetTimestamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455481-cgeventgettimestamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455481-cgeventgettimestamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the timestamp of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456611-cgeventsettimestamp": {
+      "title": "CGEventSetTimestamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456611-cgeventsettimestamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456611-cgeventsettimestamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the timestamp of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455788-cgeventgetlocation": {
+      "title": "CGEventGetLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455788-cgeventgetlocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455788-cgeventgetlocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the location of a Quartz mouse event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455589-cgeventgetunflippedlocation": {
+      "title": "CGEventGetUnflippedLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455589-cgeventgetunflippedlocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455589-cgeventgetunflippedlocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the location of a Quartz mouse event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456389-cgeventsetlocation": {
+      "title": "CGEventSetLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456389-cgeventsetlocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456389-cgeventsetlocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the location of a Quartz mouse event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455642-cgeventgetflags": {
+      "title": "CGEventGetFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455642-cgeventgetflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455642-cgeventgetflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the event flags of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455044-cgeventsetflags": {
+      "title": "CGEventSetFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455044-cgeventsetflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455044-cgeventsetflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the event flags of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456120-cgeventkeyboardgetunicodestring": {
+      "title": "CGEventKeyboardGetUnicodeString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456120-cgeventkeyboardgetunicodestring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456120-cgeventkeyboardgetunicodestring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the Unicode string associated with a Quartz keyboard event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456028-cgeventkeyboardsetunicodestring": {
+      "title": "CGEventKeyboardSetUnicodeString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456028-cgeventkeyboardsetunicodestring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456028-cgeventkeyboardsetunicodestring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the Unicode string associated with a Quartz keyboard event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455885-cgeventgetintegervaluefield": {
+      "title": "CGEventGetIntegerValueField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455885-cgeventgetintegervaluefield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455885-cgeventgetintegervaluefield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the integer value of a field in a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455556-cgeventsetintegervaluefield": {
+      "title": "CGEventSetIntegerValueField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455556-cgeventsetintegervaluefield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455556-cgeventsetintegervaluefield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the integer value of a field in a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455506-cgeventgetdoublevaluefield": {
+      "title": "CGEventGetDoubleValueField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455506-cgeventgetdoublevaluefield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455506-cgeventgetdoublevaluefield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the floating-point value of a field in a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455526-cgeventsetdoublevaluefield": {
+      "title": "CGEventSetDoubleValueField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455526-cgeventsetdoublevaluefield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455526-cgeventsetdoublevaluefield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the floating-point value of a field in a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454426-cgeventtapcreate": {
+      "title": "CGEventTapCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454426-cgeventtapcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454426-cgeventtapcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an event tap."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454828-cgeventtapcreateforpsn": {
+      "title": "CGEventTapCreateForPSN",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454828-cgeventtapcreateforpsn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454828-cgeventtapcreateforpsn",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an event tap for a specified process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455445-cgeventtapenable": {
+      "title": "CGEventTapEnable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455445-cgeventtapenable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455445-cgeventtapenable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables an event tap."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456102-cgeventtapisenabled": {
+      "title": "CGEventTapIsEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456102-cgeventtapisenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456102-cgeventtapisenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether an event tap is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455172-cgeventtappostevent": {
+      "title": "CGEventTapPostEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455172-cgeventtappostevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455172-cgeventtappostevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts a Quartz event from an event tap into the event stream."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456527-cgeventpost": {
+      "title": "CGEventPost",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456527-cgeventpost",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456527-cgeventpost",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts a Quartz event into the event stream at a specified location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455313-cgeventposttopsn": {
+      "title": "CGEventPostToPSN",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455313-cgeventposttopsn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455313-cgeventposttopsn",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts a Quartz event into the event stream for a specific application."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455395-cggeteventtaplist": {
+      "title": "CGGetEventTapList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455395-cggeteventtaplist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455395-cggeteventtaplist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a list of currently installed event taps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventmaskbit": {
+      "title": "CGEventMaskBit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventmaskbit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventmaskbit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generates an event mask for a single type of event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408789-cgeventsourcegettypeid": {
+      "title": "CGEventSourceGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408789-cgeventsourcegettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408789-cgeventsourcegettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier for the opaque type "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CGEventSourceRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408776-cgeventsourcecreate": {
+      "title": "CGEventSourceCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408776-cgeventsourcecreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408776-cgeventsourcecreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Quartz event source created with a specified source state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408787-cgeventsourcegetkeyboardtype": {
+      "title": "CGEventSourceGetKeyboardType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408787-cgeventsourcegetkeyboardtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408787-cgeventsourcegetkeyboardtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the keyboard type to be used with a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408795-cgeventsourcesetkeyboardtype": {
+      "title": "CGEventSourceSetKeyboardType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408795-cgeventsourcesetkeyboardtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408795-cgeventsourcesetkeyboardtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the keyboard type to be used with a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408772-cgeventsourcegetsourcestateid": {
+      "title": "CGEventSourceGetSourceStateID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408772-cgeventsourcegetsourcestateid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408772-cgeventsourcegetsourcestateid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the source state associated with a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408781-cgeventsourcebuttonstate": {
+      "title": "CGEventSourceButtonState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408781-cgeventsourcebuttonstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408781-cgeventsourcebuttonstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating the current button state of a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408768-cgeventsourcekeystate": {
+      "title": "CGEventSourceKeyState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408768-cgeventsourcekeystate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408768-cgeventsourcekeystate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating the current keyboard state of a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408792-cgeventsourceflagsstate": {
+      "title": "CGEventSourceFlagsState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408792-cgeventsourceflagsstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408792-cgeventsourceflagsstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current flags of a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408790-cgeventsourcesecondssincelasteve": {
+      "title": "CGEventSourceSecondsSinceLastEventType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408790-cgeventsourcesecondssincelasteve",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408790-cgeventsourcesecondssincelasteve",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the elapsed time since the last event for a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408794-cgeventsourcecounterforeventtype": {
+      "title": "CGEventSourceCounterForEventType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408794-cgeventsourcecounterforeventtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408794-cgeventsourcecounterforeventtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a count of events of a given type seen since the window server started."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408777-cgeventsourcegetuserdata": {
+      "title": "CGEventSourceGetUserData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408777-cgeventsourcegetuserdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408777-cgeventsourcegetuserdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the 64-bit user-specified data for a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408779-cgeventsourcesetuserdata": {
+      "title": "CGEventSourceSetUserData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408779-cgeventsourcesetuserdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408779-cgeventsourcesetuserdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the 64-bit user-specified data for a Quartz event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408785-cgeventsourcegetlocaleventsfilte": {
+      "title": "CGEventSourceGetLocalEventsFilterDuringSuppressionState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408785-cgeventsourcegetlocaleventsfilte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408785-cgeventsourcegetlocaleventsfilte",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the mask that indicates which classes of local hardware events are enabled during event suppression."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408770-cgeventsourcesetlocaleventsfilte": {
+      "title": "CGEventSourceSetLocalEventsFilterDuringSuppressionState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408770-cgeventsourcesetlocaleventsfilte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408770-cgeventsourcesetlocaleventsfilte",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the mask that indicates which classes of local hardware events are enabled during event suppression."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408774-cgeventsourcegetlocaleventssuppr": {
+      "title": "CGEventSourceGetLocalEventsSuppressionInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408774-cgeventsourcegetlocaleventssuppr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408774-cgeventsourcegetlocaleventssuppr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the interval that local hardware events may be suppressed following the posting of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408783-cgeventsourcesetlocaleventssuppr": {
+      "title": "CGEventSourceSetLocalEventsSuppressionInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408783-cgeventsourcesetlocaleventssuppr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408783-cgeventsourcesetlocaleventssuppr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the interval that local hardware events may be suppressed following the posting of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408775-cgeventsourcegetpixelsperline": {
+      "title": "CGEventSourceGetPixelsPerLine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408775-cgeventsourcegetpixelsperline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408775-cgeventsourcegetpixelsperline",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the scale of pixels per line in a scrolling event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1408766-cgeventsourcesetpixelsperline": {
+      "title": "CGEventSourceSetPixelsPerLine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1408766-cgeventsourcesetpixelsperline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1408766-cgeventsourcesetpixelsperline",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the scale of pixels per line in a scrolling event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventtapcallback": {
+      "title": "CGEventTapCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventtapcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventtapcallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A client-supplied callback function that’s invoked whenever an associated event tap receives a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgbuttoncount": {
+      "title": "CGButtonCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgbuttoncount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgbuttoncount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents the number of buttons being set in a synthetic mouse event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcharcode": {
+      "title": "CGCharCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcharcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgcharcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents a character generated by pressing one or more keys on a keyboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventmask": {
+      "title": "CGEventMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines a mask that identifies the set of Quartz events to be observed in an event tap."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventref": {
+      "title": "CGEventRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque type that represents a low-level hardware event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventsourcekeyboardtype": {
+      "title": "CGEventSourceKeyboardType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventsourcekeyboardtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventsourcekeyboardtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines a code that represents the type of keyboard used with a specified event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventsourceref": {
+      "title": "CGEventSourceRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventsourceref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventsourceref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque type that represents the source of a Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation": {
+      "title": "CGEventTapInformation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventtapinformation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines the structure used to report information about event taps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventtapproxy": {
+      "title": "CGEventTapProxy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventtapproxy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventtapproxy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque type that represents state within the client application that’s associated with an event tap."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventtimestamp": {
+      "title": "CGEventTimestamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventtimestamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventtimestamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines the elapsed time in nanoseconds since startup that a Quartz event occurred."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgkeycode": {
+      "title": "CGKeyCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgkeycode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgkeycode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents the virtual key codes used in keyboard events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgwheelcount": {
+      "title": "CGWheelCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgwheelcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgwheelcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents the number of wheels being set in a scroll wheel event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventfield": {
+      "title": "CGEventField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants used as keys to access specialized fields in low-level events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventfiltermask": {
+      "title": "CGEventFilterMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventfiltermask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventfiltermask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify masks for classes of low-level events that can be filtered during event suppression states."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventflags": {
+      "title": "CGEventFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the modifier key state at the time an event is created, as well as other event-related states."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventsourcestateid": {
+      "title": "CGEventSourceStateID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventsourcestateid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventsourcestateid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the possible source states of an event source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/event_source_token": {
+      "title": "Event Source Token",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/event_source_token",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_event_services/event_source_token",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies any input event type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventsuppressionstate": {
+      "title": "CGEventSuppressionState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventsuppressionstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventsuppressionstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the event suppression states that can occur after posting an event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventtaplocation": {
+      "title": "CGEventTapLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventtaplocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventtaplocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify possible tapping points for events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventtapoptions": {
+      "title": "CGEventTapOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventtapoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventtapoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify whether a new event tap is an active filter or a passive listener."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventtapplacement": {
+      "title": "CGEventTapPlacement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventtapplacement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventtapplacement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify where a new event tap is inserted into the list of active event taps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventtype": {
+      "title": "CGEventType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the different types of input events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/event_type_mask": {
+      "title": "Event Type Mask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/event_type_mask",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_event_services/event_type_mask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies an event mask that represents all event types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgmousebutton": {
+      "title": "CGMouseButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgmousebutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgmousebutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify buttons on a one, two, or three-button mouse."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgeventmousesubtype": {
+      "title": "CGEventMouseSubtype",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventmousesubtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgeventmousesubtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants used with the "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgeventfield/kcgmouseeventsubtype"
+        },
+        {
+          "type": "text",
+          "text": " event field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgscrolleventunit": {
+      "title": "CGScrollEventUnit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgscrolleventunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgscrolleventunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the unit of measurement for a scrolling event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/1807992-cgeventgetsource": {
+      "title": "CGEventGetSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/1807992-cgeventgetsource",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coregraphics/quartz_event_services/1807992-cgeventgetsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Quartz event source created from an existing Quartz event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541792-cgpostkeyboardevent": {
+      "title": "CGPostKeyboardEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541792-cgpostkeyboardevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541792-cgpostkeyboardevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Synthesizes a low-level keyboard event on the local machine."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541785-cgpostmouseevent": {
+      "title": "CGPostMouseEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541785-cgpostmouseevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541785-cgpostmouseevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Synthesizes a low-level mouse-button event on the local machine."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541788-cgpostscrollwheelevent": {
+      "title": "CGPostScrollWheelEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541788-cgpostscrollwheelevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541788-cgpostscrollwheelevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Synthesizes a low-level scrolling event on the local machine."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541787-cgenableeventstatecombining": {
+      "title": "CGEnableEventStateCombining",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541787-cgenableeventstatecombining",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541787-cgenableeventstatecombining",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables the merging of actual key and mouse state with the application-specified state in a synthetic event."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541773-cginhibitlocalevents": {
+      "title": "CGInhibitLocalEvents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541773-cginhibitlocalevents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541773-cginhibitlocalevents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Turns off local hardware events in the current session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541776-cgsetlocaleventsfilterduringsupp": {
+      "title": "CGSetLocalEventsFilterDuringSuppressionState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541776-cgsetlocaleventsfilterduringsupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541776-cgsetlocaleventsfilterduringsupp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filters local hardware events from the keyboard and mouse during the short interval after a synthetic event is posted."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541800-cgsetlocaleventssuppressioninter": {
+      "title": "CGSetLocalEventsSuppressionInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541800-cgsetlocaleventssuppressioninter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541800-cgsetlocaleventssuppressioninter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the time interval in seconds that local hardware events are suppressed after posting a synthetic event. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services": {
+      "title": "Quartz Display Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides direct access to features in the macOS window server for configuring and controlling display hardware."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services": {
+      "title": "Quartz Event Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_event_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides features for managing "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "event taps"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "—filters for observing and altering the stream of low-level user input events in macOS."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_window_services": {
+      "title": "Quartz Window Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_window_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_window_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides information about the windows managed by the macOS window server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Working With Events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454922-cgeventgettypeid",
+        "doc://com.apple.documentation/documentation/coregraphics/1454913-cgeventcreate",
+        "doc://com.apple.documentation/documentation/coregraphics/1454381-cgeventcreatedata",
+        "doc://com.apple.documentation/documentation/coregraphics/1454249-cgeventcreatefromdata",
+        "doc://com.apple.documentation/documentation/coregraphics/1454356-cgeventcreatemouseevent",
+        "doc://com.apple.documentation/documentation/coregraphics/1456564-cgeventcreatekeyboardevent",
+        "doc://com.apple.documentation/documentation/coregraphics/1541327-cgeventcreatescrollwheelevent",
+        "doc://com.apple.documentation/documentation/coregraphics/1454071-cgeventcreatecopy",
+        "doc://com.apple.documentation/documentation/coregraphics/1455393-cgeventcreatesourcefromevent",
+        "doc://com.apple.documentation/documentation/coregraphics/1455500-cgeventsetsource",
+        "doc://com.apple.documentation/documentation/coregraphics/1455634-cgeventgettype",
+        "doc://com.apple.documentation/documentation/coregraphics/1454300-cgeventsettype",
+        "doc://com.apple.documentation/documentation/coregraphics/1455481-cgeventgettimestamp",
+        "doc://com.apple.documentation/documentation/coregraphics/1456611-cgeventsettimestamp",
+        "doc://com.apple.documentation/documentation/coregraphics/1455788-cgeventgetlocation",
+        "doc://com.apple.documentation/documentation/coregraphics/1455589-cgeventgetunflippedlocation",
+        "doc://com.apple.documentation/documentation/coregraphics/1456389-cgeventsetlocation",
+        "doc://com.apple.documentation/documentation/coregraphics/1455642-cgeventgetflags",
+        "doc://com.apple.documentation/documentation/coregraphics/1455044-cgeventsetflags",
+        "doc://com.apple.documentation/documentation/coregraphics/1456120-cgeventkeyboardgetunicodestring",
+        "doc://com.apple.documentation/documentation/coregraphics/1456028-cgeventkeyboardsetunicodestring",
+        "doc://com.apple.documentation/documentation/coregraphics/1455885-cgeventgetintegervaluefield",
+        "doc://com.apple.documentation/documentation/coregraphics/1455556-cgeventsetintegervaluefield",
+        "doc://com.apple.documentation/documentation/coregraphics/1455506-cgeventgetdoublevaluefield",
+        "doc://com.apple.documentation/documentation/coregraphics/1455526-cgeventsetdoublevaluefield"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working With Event Taps",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454426-cgeventtapcreate",
+        "doc://com.apple.documentation/documentation/coregraphics/1454828-cgeventtapcreateforpsn",
+        "doc://com.apple.documentation/documentation/coregraphics/1455445-cgeventtapenable",
+        "doc://com.apple.documentation/documentation/coregraphics/1456102-cgeventtapisenabled",
+        "doc://com.apple.documentation/documentation/coregraphics/1455172-cgeventtappostevent",
+        "doc://com.apple.documentation/documentation/coregraphics/1456527-cgeventpost",
+        "doc://com.apple.documentation/documentation/coregraphics/1455313-cgeventposttopsn",
+        "doc://com.apple.documentation/documentation/coregraphics/1455395-cggeteventtaplist",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventmaskbit"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working With Event Sources",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1408789-cgeventsourcegettypeid",
+        "doc://com.apple.documentation/documentation/coregraphics/1408776-cgeventsourcecreate",
+        "doc://com.apple.documentation/documentation/coregraphics/1408787-cgeventsourcegetkeyboardtype",
+        "doc://com.apple.documentation/documentation/coregraphics/1408795-cgeventsourcesetkeyboardtype",
+        "doc://com.apple.documentation/documentation/coregraphics/1408772-cgeventsourcegetsourcestateid",
+        "doc://com.apple.documentation/documentation/coregraphics/1408781-cgeventsourcebuttonstate",
+        "doc://com.apple.documentation/documentation/coregraphics/1408768-cgeventsourcekeystate",
+        "doc://com.apple.documentation/documentation/coregraphics/1408792-cgeventsourceflagsstate",
+        "doc://com.apple.documentation/documentation/coregraphics/1408790-cgeventsourcesecondssincelasteve",
+        "doc://com.apple.documentation/documentation/coregraphics/1408794-cgeventsourcecounterforeventtype",
+        "doc://com.apple.documentation/documentation/coregraphics/1408777-cgeventsourcegetuserdata",
+        "doc://com.apple.documentation/documentation/coregraphics/1408779-cgeventsourcesetuserdata",
+        "doc://com.apple.documentation/documentation/coregraphics/1408785-cgeventsourcegetlocaleventsfilte",
+        "doc://com.apple.documentation/documentation/coregraphics/1408770-cgeventsourcesetlocaleventsfilte",
+        "doc://com.apple.documentation/documentation/coregraphics/1408774-cgeventsourcegetlocaleventssuppr",
+        "doc://com.apple.documentation/documentation/coregraphics/1408783-cgeventsourcesetlocaleventssuppr",
+        "doc://com.apple.documentation/documentation/coregraphics/1408775-cgeventsourcegetpixelsperline",
+        "doc://com.apple.documentation/documentation/coregraphics/1408766-cgeventsourcesetpixelsperline"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventtapcallback"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgbuttoncount",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcharcode",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventmask",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventref",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventsourcekeyboardtype",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventsourceref",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventtapproxy",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventtimestamp",
+        "doc://com.apple.documentation/documentation/coregraphics/cgkeycode",
+        "doc://com.apple.documentation/documentation/coregraphics/cgwheelcount"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventfield",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventfiltermask",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventflags",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventsourcestateid",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/event_source_token",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventsuppressionstate",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventtaplocation",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventtapoptions",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventtapplacement",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventtype",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/event_type_mask",
+        "doc://com.apple.documentation/documentation/coregraphics/cgmousebutton",
+        "doc://com.apple.documentation/documentation/coregraphics/cgeventmousesubtype",
+        "doc://com.apple.documentation/documentation/coregraphics/cgscrolleventunit"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services/1807992-cgeventgetsource",
+        "doc://com.apple.documentation/documentation/coregraphics/1541792-cgpostkeyboardevent",
+        "doc://com.apple.documentation/documentation/coregraphics/1541785-cgpostmouseevent",
+        "doc://com.apple.documentation/documentation/coregraphics/1541788-cgpostscrollwheelevent",
+        "doc://com.apple.documentation/documentation/coregraphics/1541787-cgenableeventstatecombining",
+        "doc://com.apple.documentation/documentation/coregraphics/1541773-cginhibitlocalevents",
+        "doc://com.apple.documentation/documentation/coregraphics/1541776-cgsetlocaleventsfilterduringsupp",
+        "doc://com.apple.documentation/documentation/coregraphics/1541800-cgsetlocaleventssuppressioninter"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_window_services"
+      ],
+      "title": "Services",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Event taps make it possible to monitor and filter input events from several points within the system, prior to their delivery to a foreground application. Event taps complement and extend the capabilities of the Carbon event monitor mechanism, which allows an application to observe input events delivered to other processes (see the function "
+            },
+            {
+              "type": "codeVoice",
+              "code": "GetEventMonitorTarget"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Event taps are designed to serve as a Section 508 enabling technology. For example, consider a software system to assist a person with language impairments, designed to perform keyboard filtering with spoken review. Such a system could use an event tap to monitor all keystrokes, perform dictionary checks and matches, and recite the assembled word back to the user on detection of a word break in the input stream. If acceptable to the user, as indicated by an additional input keystroke or other gesture, the events would be posted into the system for delivery to the foreground application."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Introduced in OS X version 10.4, event taps provide functionality similar to the Win32 functions "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SetWinEventHook"
+            },
+            {
+              "type": "text",
+              "text": " when used to establish an out-of-context event hook, and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SendInput"
+            },
+            {
+              "type": "text",
+              "text": ". Quartz Event Services also includes an older set of event-related functions declared in the file "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CGRemoteOperation.h"
+            },
+            {
+              "type": "text",
+              "text": ". These functions are still supported, but they are not recommended for new development."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

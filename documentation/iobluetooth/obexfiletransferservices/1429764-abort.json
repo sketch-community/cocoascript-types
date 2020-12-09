@@ -1,0 +1,194 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Abort the current operation"
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/iobluetooth",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1429764-abort",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1429764,
+  "kind": "symbol",
+  "metadata": {
+    "title": "abort",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "IOBluetooth"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.6",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)OBEXFileTransferServices(im)abort",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth/obexfiletransferservices/1429764-abort"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth/obexfiletransferservices/1429764-abort"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/iobluetooth": {
+      "title": "IOBluetooth",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth",
+      "url": "/documentation/iobluetooth",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices": {
+      "title": "OBEXFileTransferServices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexfiletransferservices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implements advanced OBEX operations in addition to simple PUT and GET."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexerror": {
+      "title": "OBEXError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexerror"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@OBEXError",
+              "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexerror",
+              "text": "OBEXError"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "abort"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "kOBEXSuccess, or kOBEXGeneralError if no command is in progress. ABORT commands can only be sent on our turn, meaning we may have to timeout if the target side never responds to the command in progress. In that case this object will call back with a status of kOBEXTimeoutError and an error. Further results returned through the fileTransferServicesAbortComplete: delegate method if initially successful."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Attempts send an abort request to the remote device. Returns the OBEXFileTransferServices object to an idle state though the state of the remote device is not guaranteed."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

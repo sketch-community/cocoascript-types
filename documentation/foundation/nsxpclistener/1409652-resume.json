@@ -1,0 +1,253 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Starts processing of incoming requests."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/xpc",
+        "doc://com.apple.documentation/documentation/foundation/nsxpclistener"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsxpclistener/1409652-resume",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1409652,
+  "kind": "symbol",
+  "metadata": {
+    "title": "resume",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.8",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSXPCListener(im)resume",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsxpclistener/1409652-resume"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsxpclistener/1409652-resume"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/xpc": {
+      "title": "XPC",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/xpc",
+      "url": "/documentation/foundation/xpc",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsxpclistener": {
+      "title": "NSXPCListener",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpclistener",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsxpclistener"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsxpclistener/1408414-servicelistener": {
+      "title": "serviceListener",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpclistener/1408414-servicelistener",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsxpclistener/1408414-servicelistener",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "serviceListener"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "resume"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All listeners start suspended and must be resumed before they begin processing incoming requests."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If called on the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpclistener/1408414-servicelistener"
+            },
+            {
+              "type": "text",
+              "text": " object, this method never returns. Therefore, you should call it as the last step inside the XPC service's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "main"
+            },
+            {
+              "type": "text",
+              "text": " function after setting up any desired initial state and configuring the listener itself."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If called on any other "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpclistener"
+            },
+            {
+              "type": "text",
+              "text": ", the connection is resumed, and the method returns immediately."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1727 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Customize your app’s user interface with views and controls."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/mac_catalyst"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3026824,
+  "kind": "article",
+  "metadata": {
+    "title": "UIKit Catalog: Creating and Customizing Views and Controls",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.2",
+        "current": "12.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls",
+        "documentation/uikit/view_controllers/uikit_catalog_creating_and_customizing_views_and_controls",
+        "documentation/uikit/views_and_controls/uikit_catalog_creating_and_customizing_views_and_controls"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls",
+        "documentation/uikit/view_controllers/uikit_catalog_creating_and_customizing_views_and_controls",
+        "documentation/uikit/views_and_controls/uikit_catalog_creating_and_customizing_views_and_controls"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers": {
+      "title": "View Controllers",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers",
+      "url": "/documentation/uikit/view_controllers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst": {
+      "title": "Mac Catalyst",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst",
+      "url": "/documentation/uikit/mac_catalyst",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690294": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690294",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690294"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690296": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690296",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690296"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690298": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690298",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690298"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690300": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690300",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690300"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690302": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690302",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690302"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690303": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690303",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690303"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690305": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690305",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690305"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaction": {
+      "title": "UIAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaction"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uimenu": {
+      "title": "UIMenu",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uimenu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uimenu"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690307": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690307",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690307"
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690308": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690308",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls#3690308"
+    },
+    "link-3687990": {
+      "title": "Mac Catalyst",
+      "type": "topic",
+      "identifier": "link-3687990",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/mac-catalyst/"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorview": {
+      "title": "UIActivityIndicatorView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityindicatorview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uialertcontroller": {
+      "title": "UIAlertController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uialertcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uialertcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibutton": {
+      "title": "UIButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibutton"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidatepicker": {
+      "title": "UIDatePicker",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatepicker",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidatepicker"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipickerview": {
+      "title": "UIPickerView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolorpickerviewcontroller": {
+      "title": "UIColorPickerViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolorpickerviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolorpickerviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolorwell": {
+      "title": "UIColorWell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolorwell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolorwell"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifontpickerviewcontroller": {
+      "title": "UIFontPickerViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifontpickerviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifontpickerviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller": {
+      "title": "UIImagePickerController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimagepickercontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimageview": {
+      "title": "UIImageView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimageview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimageview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipagecontrol": {
+      "title": "UIPageControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipagecontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipagecontrol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiprogressview": {
+      "title": "UIProgressView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiprogressview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiprogressview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisearchbar": {
+      "title": "UISearchBar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisearchbar"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol": {
+      "title": "UISegmentedControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uislider": {
+      "title": "UISlider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uislider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uislider"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uistackview": {
+      "title": "UIStackView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uistackview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uistackview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uistepper": {
+      "title": "UIStepper",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uistepper",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uistepper"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiswitch": {
+      "title": "UISwitch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswitch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiswitch"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield": {
+      "title": "UITextField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextformattingcoordinator": {
+      "title": "UITextFormattingCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextformattingcoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextformattingcoordinator"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextview": {
+      "title": "UITextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitoolbar": {
+      "title": "UIToolbar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitoolbar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitoolbar"
+    },
+    "doc://com.apple.documentation/documentation/webkit/wkwebview": {
+      "title": "WKWebView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/webkit/wkwebview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/webkit/wkwebview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages the content for a rectangular area on the screen."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls": {
+      "title": "UIKit Catalog: Creating and Customizing Views and Controls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/mac_catalyst/uikit_catalog_creating_and_customizing_views_and_controls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Customize your app’s user interface with views and controls."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/5c11834d2b/UIKitCatalogCreatingAndCustomizingViewsAndControls.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/5c11834d2b/UIKitCatalogCreatingAndCustomizingViewsAndControls.zip",
+      "checksum": "d7806cf169a1c85977104c363ca506469f1b6314d49adbb2719a373a521872de26e7c952346ca47d2a6ef80257d4063bf85b1dc1a5c2374486e9c29d73668a20",
+      "url": "https://docs-assets.developer.apple.com/published/5c11834d2b/UIKitCatalogCreatingAndCustomizingViewsAndControls.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/5c11834d2b/UIKitCatalogCreatingAndCustomizingViewsAndControls.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiview"
+      ],
+      "title": "View Fundamentals",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample guides you through several types of customizations you can make in your iOS app. The sample uses a split-view controller architecture for navigating UIKit views and controls. The primary view controller ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "MasterViewController"
+            },
+            {
+              "type": "text",
+              "text": ") shows the available views and controls. When you select one, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MasterViewController"
+            },
+            {
+              "type": "text",
+              "text": " shows the secondary view controller associated with it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The name of each secondary view controller reflects its "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "target item"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". For example, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AlertControllerViewController"
+            },
+            {
+              "type": "text",
+              "text": " class shows how to use a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAlertController"
+            },
+            {
+              "type": "text",
+              "text": " object. The only exceptions to this rule are "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UISearchBar"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIToolbar"
+            },
+            {
+              "type": "text",
+              "text": "; the sample demonstrates these APIs in multiple view controllers to explain how their controls function and how to customize them. To demonstrate how to manage the complexity of your storyboards, the app hosts all view controllers in a separate storyboard and loaded when needed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample demonstrates the following views and controls (several of which are referenced in the sections below):"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityindicatorview"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uialertcontroller"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatepicker"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerview"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolorpickerviewcontroller"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolorwell"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uifontpickerviewcontroller"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimageview"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uipagecontrol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiprogressview"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uisearchbar"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uislider"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uistackview"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uistepper"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswitch"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextformattingcoordinator"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitoolbar"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/webkit/wkwebview"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Accessibility Support to Your Views",
+          "anchor": "3690312"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "VoiceOver and other system accessibility technologies use the information provided by views and controls to help all users navigate content. UIKit views include default accessibility support. Improve user experience by providing custom accessibility information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this UIKitCatalog sample, several view controllers configure the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "accessibilityType"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "accessibilityLabel"
+            },
+            {
+              "type": "text",
+              "text": " properties of their associated view. Picker view columns don’t have labels, so the picker view asks its delegate for the corresponding accessibility information:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func pickerView(_ pickerView: UIPickerView, accessibilityLabelForComponent component: Int) -> String? {",
+            "    ",
+            "    switch ColorComponent(rawValue: component)! {",
+            "    case .red:",
+            "        return NSLocalizedString(\"Red color component value\", comment: \"\")",
+            "",
+            "    case .green:",
+            "        return NSLocalizedString(\"Green color component value\", comment: \"\")",
+            "",
+            "    case .blue:",
+            "        return NSLocalizedString(\"Blue color component value\", comment: \"\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690294",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display a Custom Alert",
+          "anchor": "3690313"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "AlertControllerViewController"
+            },
+            {
+              "type": "text",
+              "text": " demonstrates several techniques for displaying modal alerts and action sheets from an interface. The configuration process is similar for all alerts:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Determine the message you want to display in the alert."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create and configure a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "UIAlertController"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add handlers for actions the user may take."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Present the alert controller."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "showSimpleAlert"
+            },
+            {
+              "type": "text",
+              "text": " function uses the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSLocalizedString"
+            },
+            {
+              "type": "text",
+              "text": " function to retrieve the alert messages in the user’s preferred language. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "showSimpleAlert"
+            },
+            {
+              "type": "text",
+              "text": " function uses those strings to create and configure the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAlertController"
+            },
+            {
+              "type": "text",
+              "text": " object. Although the button in the alert has the title OK, the sample uses a cancel action to ensure the alert controller applies the proper styling to the button:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func showSimpleAlert() {",
+            "    let title = NSLocalizedString(\"A Short Title is Best\", comment: \"\")",
+            "    let message = NSLocalizedString(\"A message should be a short, complete sentence.\", comment: \"\")",
+            "    let cancelButtonTitle = NSLocalizedString(\"OK\", comment: \"\")",
+            "",
+            "    let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)",
+            "",
+            "    // Create the action.",
+            "    let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { _ in",
+            "        print(\"The simple alert's cancel action occurred.\")",
+            "    }",
+            "",
+            "    // Add the action.",
+            "    alertController.addAction(cancelAction)",
+            "",
+            "    present(alertController, animated: true, completion: nil)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690296",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Customize the Appearance of Sliders",
+          "anchor": "3690314"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample demonstrates different ways to display a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UISlider"
+            },
+            {
+              "type": "text",
+              "text": ", a control you use to select a single value from a continuous range of values. Customize the appearance of a slider by assigning stretchable images for left-side tracking, right-side tracking, and the thumb. In this example, the track image is stretchable and is one pixel wide. Make the track images wider to provide rounded corners, but be sure to set these images’ "
+            },
+            {
+              "type": "codeVoice",
+              "code": "capInsets"
+            },
+            {
+              "type": "text",
+              "text": " property to allow for the corners."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "configureCustomSlider"
+            },
+            {
+              "type": "text",
+              "text": " function sets up a custom slider:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func configureCustomSlider() {",
+            "    let leftTrackImage = UIImage(named: \"slider_blue_track\")",
+            "    customSlider.setMinimumTrackImage(leftTrackImage, for: .normal)",
+            "",
+            "    let rightTrackImage = UIImage(named: \"slider_green_track\")",
+            "    customSlider.setMaximumTrackImage(rightTrackImage, for: .normal)",
+            "",
+            "    // Set the sliding thumb image (normal and highlighted).",
+            "    let thumbImageConfig = UIImage.SymbolConfiguration(scale: .large)",
+            "    let thumbImage = UIImage(systemName: \"circle.fill\", withConfiguration: thumbImageConfig)",
+            "    customSlider.setThumbImage(thumbImage, for: .normal)",
+            "    let thumbImageHighlighted = UIImage(systemName: \"circle\", withConfiguration: thumbImageConfig)",
+            "    customSlider.setThumbImage(thumbImageHighlighted, for: .highlighted)",
+            "",
+            "    customSlider.minimumValue = 0",
+            "    customSlider.maximumValue = 100",
+            "    customSlider.isContinuous = false",
+            "    customSlider.value = 84",
+            "",
+            "    customSlider.addTarget(self, action: #selector(SliderViewController.sliderValueDidChange(_:)), for: .valueChanged)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690298",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Search Bar to an Interface",
+          "anchor": "3690315"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UISearchBar"
+            },
+            {
+              "type": "text",
+              "text": " to receive search-related information from the user. There are various ways to customize the look of the search bar:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add a cancel button."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add a bookmark button."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the bookmark image, both normal and highlighted states."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Change the tint color that applies to key elements in the search bar."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the search bar’s background image."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "configureSearchBar"
+            },
+            {
+              "type": "text",
+              "text": " function sets up a custom search bar:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func configureSearchBar() {",
+            "    searchBar.showsCancelButton = true",
+            "    searchBar.showsBookmarkButton = true",
+            "",
+            "    searchBar.tintColor = UIColor.systemPurple",
+            "",
+            "    searchBar.backgroundImage = UIImage(named: \"search_bar_background\")",
+            "",
+            "    // Set the bookmark image for both normal and highlighted states.",
+            "    let bookImage = UIImage(systemName: \"bookmark\")",
+            "    searchBar.setImage(bookImage, for: .bookmark, state: .normal)",
+            "",
+            "    let bookFillImage = UIImage(systemName: \"bookmark.fill\")",
+            "    searchBar.setImage(bookFillImage, for: .bookmark, state: .highlighted)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690300",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Customize the Appearance of Toolbars",
+          "anchor": "3690316"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample shows how to customize a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIToolbar"
+            },
+            {
+              "type": "text",
+              "text": ", a specialized view that displays one or more buttons along the bottom edge of an interface. Customize a toolbar by determining its bar style (black or default), translucency, tint color, and background color."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following "
+            },
+            {
+              "type": "codeVoice",
+              "code": "viewDidLoad"
+            },
+            {
+              "type": "text",
+              "text": " function in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CustomToolbarViewController"
+            },
+            {
+              "type": "text",
+              "text": " sets up a tinted tool bar:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func viewDidLoad() {",
+            "    super.viewDidLoad()",
+            "",
+            "    // See the `UIBarStyle` enum for more styles, including `.Default`.",
+            "    toolbar.barStyle = .black",
+            "    toolbar.isTranslucent = false",
+            "",
+            "    toolbar.tintColor = UIColor.systemGreen",
+            "    toolbar.backgroundColor = UIColor.systemBlue",
+            "",
+            "    let toolbarButtonItems = [",
+            "        refreshBarButtonItem,",
+            "        flexibleSpaceBarButtonItem,",
+            "        actionBarButtonItem",
+            "    ]",
+            "    toolbar.setItems(toolbarButtonItems, animated: true)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690302",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "CustomToolbarViewController"
+            },
+            {
+              "type": "text",
+              "text": " demonstrates further customization by changing the toolbar’s background image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func viewDidLoad() {",
+            "    super.viewDidLoad()",
+            "",
+            "    let toolbarBackgroundImage = UIImage(named: \"toolbar_background\")",
+            "    toolbar.setBackgroundImage(toolbarBackgroundImage, forToolbarPosition: .bottom, barMetrics: .default)",
+            "",
+            "    let toolbarButtonItems = [",
+            "        customImageBarButtonItem,",
+            "        flexibleSpaceBarButtonItem,",
+            "        customBarButtonItem",
+            "    ]",
+            "    toolbar.setItems(toolbarButtonItems, animated: true)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690303",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Page Control Interface",
+          "anchor": "3690317"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIPageControl"
+            },
+            {
+              "type": "text",
+              "text": " to structure an app’s user interface. A page control is a specialized control that displays a horizontal series of dots, each of which corresponds to a page in the app’s document or other data-model entity. Customize a page control by setting its tint color for all the page-indicator dots, and for the current page-indicator dot."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "configurePageControl"
+            },
+            {
+              "type": "text",
+              "text": " function sets up a customized page control:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func configurePageControl() {",
+            "    // The total number of available pages is based on the number of available colors.",
+            "    pageControl.numberOfPages = colors.count",
+            "    pageControl.currentPage = 2",
+            "",
+            "    pageControl.pageIndicatorTintColor = UIColor.systemGreen",
+            "    pageControl.currentPageIndicatorTintColor = UIColor.systemPurple",
+            "    ",
+            "    pageControl.addTarget(self, action: #selector(PageControlViewController.pageControlValueDidChange), for: .valueChanged)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690305",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Menus to Your Controls",
+          "anchor": "3690318"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Attach menus to controls like "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIButton"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIBarButtonItem"
+            },
+            {
+              "type": "text",
+              "text": ". Create menus with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiaction"
+            },
+            {
+              "type": "text",
+              "text": " class, and attach a menu to each control by setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uimenu"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Attach a menu to a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIButton"
+            },
+            {
+              "type": "text",
+              "text": " as shown here:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func configureMenuButton() {",
+            "    let buttonTitle = NSLocalizedString(\"Button\", comment: \"\")",
+            "    menuButton.setTitle(buttonTitle, for: .normal)",
+            "",
+            "    let items = (1...5).map {",
+            "        UIAction(title: String(format: NSLocalizedString(\"ItemTitle\", comment: \"\"), $0.description), handler: menuHandler)",
+            "    }",
+            "    menuButton.menu = UIMenu(title: NSLocalizedString(\"ChooseItemTitle\", comment: \"\"), children: items)",
+            "    menuButton.showsMenuAsPrimaryAction = true",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690307",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIBarButtonItem"
+            },
+            {
+              "type": "text",
+              "text": " with a menu attached as shown here:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var customTitleBarButtonItem: UIBarButtonItem {",
+            "    let buttonMenu = UIMenu(title: \"\",",
+            "                            children: (1...5).map {",
+            "                               UIAction(title: \"Option \\($0)\", handler: menuHandler)",
+            "                            })",
+            "    return UIBarButtonItem(image: UIImage(systemName: \"list.number\"), menu: buttonMenu)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3690308",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Support Mac Catalyst",
+          "anchor": "3690319"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample app is built with Mac Catalyst, which means the sample runs on both iPad and Mac. This is achieved by selecting the Mac checkbox in Project Settings. For more about how Mac Catalyst works see "
+            },
+            {
+              "type": "link",
+              "title": "Mac Catalyst",
+              "destination": "https://developer.apple.com/mac-catalyst/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When built for Mac Catalyst, this sample achieves:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Interface Optimization for Mac — With Optimize Interface For the Mac project setting turned on, the app has full control of every pixel on the screen, and the app can adopt more controls specific to Mac. Building the sample for Mac Catalyst makes the app take advantage of the system features in macOS.  The option Show Designed for iPad Run Destination allows this sample, as an iPad app, to run “as-is” on Apple silicon Macs. This requires macOS 11 and a Mac with Apple silicon."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Navigation and title bar hiding — The sample app hides these to make the app appear more like a Mac app. It also changes other behaviors by using traitCollection’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "userInterfaceIdiom"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or the compilation conditional block that uses the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "targetEnvironment():"
+                    },
+                    {
+                      "type": "text",
+                      "text": " platform condition."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Translucent background — By setting the split view controller’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "primaryBackgroundStyle"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": ".sidebar"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", the primary view controller or side bar shows a blurred desktop behind its view. Setting this property has no effect when running in iOS."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

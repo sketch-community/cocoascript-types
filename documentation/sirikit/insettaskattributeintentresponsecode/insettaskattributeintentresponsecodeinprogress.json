@@ -1,0 +1,187 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The modification of the task list is still in progress."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+        "doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponsecode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponsecode/insettaskattributeintentresponsecodeinprogress",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2873804,
+  "kind": "symbol",
+  "metadata": {
+    "title": "INSetTaskAttributeIntentResponseCodeInProgress",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Intents"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@E@INSetTaskAttributeIntentResponseCode@INSetTaskAttributeIntentResponseCodeInProgress",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/insettaskattributeintentresponsecode/insettaskattributeintentresponsecodeinprogress"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/insettaskattributeintentresponsecode/inprogress"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
+      "title": "Lists and Notes",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+      "url": "/documentation/sirikit/lists_and_notes",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponse": {
+      "title": "INSetTaskAttributeIntentResponse",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponse",
+      "url": "/documentation/sirikit/insettaskattributeintentresponse",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponsecode": {
+      "title": "INSetTaskAttributeIntentResponseCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponsecode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insettaskattributeintentresponsecode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the state of the response."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "INSetTaskAttributeIntentResponseCodeInProgress"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Return this code if you began adding modifying the task list but did not confirm that the process was complete. You might use this code when a server handles modifications and you have not yet received a confirmation from that server. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When handling the intent, you might want to first configure a timer to fire if your server does not return within a few seconds. Use your timer’s handler block to provide the in-progress response back to Siri."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

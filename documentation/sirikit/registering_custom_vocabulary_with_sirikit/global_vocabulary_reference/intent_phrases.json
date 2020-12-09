@@ -1,0 +1,307 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The keys that you include in your global vocabulary file to show how users engage your app from Siri."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/intent_phrases",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2879990,
+  "kind": "article",
+  "metadata": {
+    "title": "Intent Phrases",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/intent_phrases"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/intent_phrases"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit": {
+      "title": "Registering Custom Vocabulary with SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference": {
+      "title": "Global Vocabulary Reference",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies": {
+      "title": "Parameter Vocabularies",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The keys you include in your global vocabulary file to describe app-specific terms."
+        }
+      ]
+    },
+    "link-media-2910039": {
+      "identifier": "link-media-2910039",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/intent_phrases#2910039"
+    },
+    "media-2910039": {
+      "identifier": "media-2910039",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 587
+          },
+          "url": "https://docs-assets.developer.apple.com/published/381143513b/0eb52020-16e0-48e9-b645-8f6ee3e187b5.png"
+        }
+      ],
+      "alt": "Editing the sample phrases in Xcode",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Editing the sample phrases in Xcode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "IntentPhrases"
+            },
+            {
+              "type": "text",
+              "text": " key contains sample phrases that a user might speak to initiate the handling of one of your intents. The value of this key is an array of dictionaries, each of which defines one of the sample phrases to speak. Each dictionary contains the following keys:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "IntentName"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Required) A string containing the name of the intent class to which the examples apply. For example, you might specify the string \"INRequestRideIntent\" to specify sample phrases for booking a ride."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "IntentExamples"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Required) An array of strings containing the sample phrases that apply to the specified intent. Your sample phrases may be as complex as needed, but should reflect actual phrases that users might say. You may include custom terminology that you defined in the "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies"
+                      },
+                      {
+                        "type": "text",
+                        "text": " portion of your vocabulary file. "
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Apps are expected to provide some example phrases. Siri displays your app's sample phrases in Siri Guide so that users can access them directly from the Siri interface."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Xcode helps you add example phrases to your vocabulary file. When you create a property list file with the name "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppIntentVocabulary.plist"
+            },
+            {
+              "type": "text",
+              "text": ", Xcode knows that the file should contain custom vocabulary, and it makes only the relevant keys available in the property list editor. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-2910039"
+            },
+            {
+              "type": "text",
+              "text": " shows an example of a global vocabulary file in Xcode that contains sample phrases for starting a workout."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2910039",
+              "metadata": {
+                "anchor": "2910039",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Editing the sample phrases in Xcode"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

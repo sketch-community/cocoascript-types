@@ -1,0 +1,699 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Validate the parameters of an intent and make sure that you have the information you need to continue."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864159,
+  "kind": "article",
+  "metadata": {
+    "title": "Resolving the Parameters of an Intent",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
+      "title": "Resolving and Handling Intents",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+      "url": "/documentation/sirikit/resolving_and_handling_intents",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult": {
+      "title": "INIntentResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresolutionresult"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent#2864157": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent#2864157",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent#2864157",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolution result types"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent#2864156": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent#2864156",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent#2864156",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolving the drop off location of a ride"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clplacemark": {
+      "title": "CLPlacemark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clplacemark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clplacemark"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inplacemarkresolutionresult": {
+      "title": "INPlacemarkResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inplacemarkresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inplacemarkresolutionresult"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inperson/2138295-customidentifier": {
+      "title": "customIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/2138295-customidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson/2138295-customidentifier"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inperson": {
+      "title": "INPerson",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent": {
+      "title": "Confirming the Details of an Intent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent": {
+      "title": "Handling an Intent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/handling_an_intent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fulfill the intent and provide feedback to SiriKit about what you did."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent": {
+      "title": "Resolving the Parameters of an Intent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Validate the parameters of an intent and make sure that you have the information you need to continue."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent",
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent"
+      ],
+      "title": "Resolving and Handling Intents",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You must resolve the parameters of an intent to verify that you have the information you need to fulfill the user’s request. When the user talks to Siri, Siri converts the user’s spoken commands into actionable data and places that data in an intent object. During resolution, SiriKit prompts you to verify each parameter individually by calling the resolution methods of your handler object. In each method, you validate the provided data and create a resolution result object indicating your success or failure in resolving the parameter. SiriKit uses your resolution result object to determine how to proceed. For example, if your resolution result asks the user to disambiguate from among two or more choices, SiriKit prompts the user to select one of those choices."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent#2864156"
+            },
+            {
+              "type": "text",
+              "text": " shows how a ride booking app might resolve the drop-off location of the user’s ride. In this example, the user must provide a valid drop-off location before the app can fulfill the ride request. If the user supplies a drop-off location that is within the app’s service area, the method returns a successful resolution result. If the drop-off location is outside the valid service area, the resolution result indicates that the location is unsupported. If the user did not specify a drop-off location at all, the method creates a resolution result indicating that the value is needed."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func resolveDropOffLocation(",
+            "            forRequestRide intent: INRequestRideIntent,",
+            "            with completion: @escaping (INPlacemarkResolutionResult) -> Void) {     ",
+            "   var result: INPlacemarkResolutionResult",
+            "        ",
+            "   if let location = intent.dropOffLocation {",
+            "      // If the location is valid, use it; otherwise,",
+            "      // let the user know it is not supported",
+            "      if self.locationIsInsideServiceArea(location) {",
+            "         result = INPlacemarkResolutionResult.success(with: location)",
+            "      } else {",
+            "         result = INPlacemarkResolutionResult.unsupported()",
+            "      }",
+            "   } else {",
+            "      // Ask for the drop-off location.",
+            "      result = INPlacemarkResolutionResult.needsValue()",
+            "   }",
+            "",
+            "   // Return the result back to SiriKit.",
+            "   completion(result)",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2864156",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Resolving the drop off location of a ride"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each resolvable parameter has a corresponding resolution result class that you use to communicate your results back to SiriKit. For example, resolving the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/clplacemark"
+            },
+            {
+              "type": "text",
+              "text": " object in the preceding example requires the creation of an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inplacemarkresolutionresult"
+            },
+            {
+              "type": "text",
+              "text": " object. All resolution result classes inherit from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult"
+            },
+            {
+              "type": "text",
+              "text": " base class, which defines the common ways to resolve parameters of any type."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When returning a resolution to SiriKit, always include as much information as you can about the actual result. After each resolution attempt, SiriKit updates the intent object with the information you provide. If resolution was unsuccessful and SiriKit needs to call your resolution method again, you can use the extra information to reach a resolution more quickly. For example, if you find two contacts with the same name during resolution, you might populate the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/2138295-customidentifier"
+            },
+            {
+              "type": "text",
+              "text": " property of each "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson"
+            },
+            {
+              "type": "text",
+              "text": " object with a unique string that you can use to look up the selected contact later. Your resolution method can then look for that identifier first and bypass any other contact-matching logic. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Choosing the Correct Resolution Result",
+          "anchor": "2864163"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The resolution result object you give back to SiriKit determines whether any further user interactions will occur. You must resolve all parameters successfully or let SiriKit know that the parameter is not required. All other resolutions require Siri to gather more information from the user.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create a resolution result object, choose the appropriate class method. Each specific resolution result class has methods defining the possible resolutions for the corresponding type. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult"
+            },
+            {
+              "type": "text",
+              "text": " base class also defines a set of common resolutions. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent#2864157"
+            },
+            {
+              "type": "text",
+              "text": " lists the resolution types and their meaning."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Resolution"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Meaning"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Success"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A successful resolution means that you can use the value to handle the user’s request. Use this resolution even if it means making an educated guess about what the user meant. A resolution of this type does not require further user interactions."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Example:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " If the user specified the name “John” for a person and has only one contact with that name, you could resolve the parameter successfully to that contact."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Not required"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify this resolution for parameters that your service does not use. A resolution of this type does not require further user interactions."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Example:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " You might specify this resolution for workout goals that your fitness app does not support."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Needs disambiguation"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify this resolution when you identify two or more possible results and cannot choose one definitively. A resolution of this type causes SiriKit to prompt the user to select one of the provided options."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Example:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " If the user specified the name “John” for a person and there are two equally likely contacts with that name, you could ask the user to choose one of them."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Needs confirmation"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify this resolution when you want the user to confirm the value that you choose. This resolution is for cases where you can choose a single value, but are not completely confident that it is the correct value. A resolution of this type causes SiriKit to prompt the user to confirm the value."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Example:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " If the there are two contacts with the name “John”, one of whom is marked as a favorite and one of whom is used infrequently, select the favorite and ask the user to confirm the choice."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Value required"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify this resolution when no value was specified for the parameter, but you require one. A resolution of this type causes SiriKit to prompt the user for a value."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Example:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Return this resolution if the user requests a payment from another person but does not specify the payment amount."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Unsupported"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify this resolution when the value supplied by the user is invalid or conflicts with the value of other parameters. A resolution of this type causes SiriKit to notify the user that the value is not supported."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Example:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Return this resolution if the user wants to make a payment in Canadian Dollars but your app supports only Euros or US Dollars."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2864157",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Resolution result types"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Try to reach a resolution of “Success” or “Not required” as quickly as possible. Other resolution results lead to additional user interactions and additional calls to your handler. You should also avoid repeatedly asking for clarification of the same parameter, which could frustrate the user. Whenever possible, choose reasonable values based on the user’s patterns and habits, and ask for disambiguation or confirmation only as needed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

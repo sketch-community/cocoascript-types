@@ -1,0 +1,803 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Allow users to control your app with AppleScript and other automation technologies, or run scripts from within your app."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/scripting_support",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2877762,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Scripting Support",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/scripting_support"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/scripting_support"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsapplescript": {
+      "title": "NSAppleScript",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsapplescript",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsapplescript",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides the ability to load, compile, and execute scripts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor": {
+      "title": "NSAppleEventDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventdescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A wrapper for the Apple event descriptor data type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager": {
+      "title": "NSAppleEventManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mechanism for registering handler routines for specific types of Apple events and dispatching events to those handlers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptcommand": {
+      "title": "NSScriptCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptcommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A self-contained scripting statement."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsquitcommand": {
+      "title": "NSQuitCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsquitcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsquitcommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that quits the specified app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssetcommand": {
+      "title": "NSSetCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssetcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssetcommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that sets one or more attributes or relationships to one or more values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmovecommand": {
+      "title": "NSMoveCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmovecommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmovecommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that moves one or more scriptable objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscreatecommand": {
+      "title": "NSCreateCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscreatecommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscreatecommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that creates a scriptable object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdeletecommand": {
+      "title": "NSDeleteCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdeletecommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdeletecommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that deletes a scriptable object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexistscommand": {
+      "title": "NSExistsCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexistscommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexistscommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that determines whether a scriptable object exists."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsgetcommand": {
+      "title": "NSGetCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsgetcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsgetcommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that retrieves a value or object from a scriptable object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsclonecommand": {
+      "title": "NSCloneCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsclonecommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsclonecommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that clones one or more scriptable objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscountcommand": {
+      "title": "NSCountCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscountcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscountcommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that counts the number of objects of a specified class in the specified object container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsclosecommand": {
+      "title": "NSCloseCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsclosecommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsclosecommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A command that closes one or more scriptable objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptobjectspecifier": {
+      "title": "NSScriptObjectSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptobjectspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptobjectspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class used to represent natural language expressions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspropertyspecifier": {
+      "title": "NSPropertySpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspropertyspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspropertyspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier for a simple attribute value, a one-to-one relationship, or all elements of a to-many relationship."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspositionalspecifier": {
+      "title": "NSPositionalSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspositionalspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspositionalspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier for an insertion point in a container relative to another object in the container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrandomspecifier": {
+      "title": "NSRandomSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrandomspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrandomspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier for an arbitrary object in a collection or, if not a one-to-many relationship, the sole object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrangespecifier": {
+      "title": "NSRangeSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrangespecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrangespecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier for a range of objects in a container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuniqueidspecifier": {
+      "title": "NSUniqueIDSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuniqueidspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuniqueidspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier for an object in a collection (or container) by unique ID."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nswhosespecifier": {
+      "title": "NSWhoseSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nswhosespecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nswhosespecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier that indicates every object in a collection matching a condition."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnamespecifier": {
+      "title": "NSNameSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnamespecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnamespecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier for an object in a collection (or container) by name."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmiddlespecifier": {
+      "title": "NSMiddleSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmiddlespecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmiddlespecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier indicating the middle object in a collection or, if not a one-to-many relationship, the sole object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsindexspecifier": {
+      "title": "NSIndexSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexspecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsindexspecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier representing an object in a collection (or container) with an index number."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativespecifier": {
+      "title": "NSRelativeSpecifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativespecifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativespecifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specifier that indicates an object in a collection by its position relative to another object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry": {
+      "title": "NSScriptSuiteRegistry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptsuiteregistry",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The top-level repository of scriptability information for an app at runtime."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription": {
+      "title": "NSScriptClassDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptclassdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A scriptable class that a macOS app supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsclassdescription": {
+      "title": "NSClassDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsclassdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsclassdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that provides the interface for querying the relationships and properties of a class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription": {
+      "title": "NSScriptCommandDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptcommanddescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A script command that a macOS app supports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptwhosetest": {
+      "title": "NSScriptWhoseTest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptwhosetest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptwhosetest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that provides the basis for testing specifiers one at a time or in groups."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsspecifiertest": {
+      "title": "NSSpecifierTest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsspecifiertest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsspecifiertest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A comparison between an object specifier and a test object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslogicaltest": {
+      "title": "NSLogicalTest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslogicaltest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslogicaltest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The logical combination of one or more specifier tests."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/scripting_support/nscomparisonmethods": {
+      "title": "NSComparisonMethods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/scripting_support/nscomparisonmethods",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/scripting_support/nscomparisonmethods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of default comparison methods useful for performing specifier tests. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/nsscriptingcomparisonmethods": {
+      "title": "NSScriptingComparisonMethods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/nsscriptingcomparisonmethods",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/nsscriptingcomparisonmethods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of methods useful for comparing script objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/nsscriptkeyvaluecoding": {
+      "title": "NSScriptKeyValueCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/nsscriptkeyvaluecoding",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/nsscriptkeyvaluecoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of methods that provide additional capabilities for working with key-value coding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/scripting_support/nsscriptobjectspecifiers": {
+      "title": "NSScriptObjectSpecifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/scripting_support/nsscriptobjectspecifiers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/scripting_support/nsscriptobjectspecifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of methods providing additional object specifier functionality. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptcoercionhandler": {
+      "title": "NSScriptCoercionHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptcoercionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptcoercionhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mechanism for converting one kind of scripting data to another."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsscriptexecutioncontext": {
+      "title": "NSScriptExecutionContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsscriptexecutioncontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsscriptexecutioncontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The context in which the current script command is executed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management": {
+      "title": "Task Management",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/task_management",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage your app’s work and how it interacts with system services like Handoff and Shortcuts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/resources": {
+      "title": "Resources",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/resources",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/resources",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Access assets and other data bundled with your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notifications": {
+      "title": "Notifications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notifications",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/notifications",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Design patterns for broadcasting information and for subscribing to broadcasts.   "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/app_extension_support": {
+      "title": "App Extension Support",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/app_extension_support",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/app_extension_support",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage the interaction between an app extension and its hosting app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/errors_and_exceptions": {
+      "title": "Errors and Exceptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/errors_and_exceptions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/errors_and_exceptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Respond to problem situations in your interactions with APIs, and fine-tune your app for better debugging."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/scripting_support": {
+      "title": "Scripting Support",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/scripting_support",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/scripting_support",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allow users to control your app with AppleScript and other automation technologies, or run scripts from within your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Script Execution",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsapplescript"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Apple Event Handling",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Script Commands",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptcommand",
+        "doc://com.apple.documentation/documentation/foundation/nsquitcommand",
+        "doc://com.apple.documentation/documentation/foundation/nssetcommand",
+        "doc://com.apple.documentation/documentation/foundation/nsmovecommand",
+        "doc://com.apple.documentation/documentation/foundation/nscreatecommand",
+        "doc://com.apple.documentation/documentation/foundation/nsdeletecommand",
+        "doc://com.apple.documentation/documentation/foundation/nsexistscommand",
+        "doc://com.apple.documentation/documentation/foundation/nsgetcommand",
+        "doc://com.apple.documentation/documentation/foundation/nsclonecommand",
+        "doc://com.apple.documentation/documentation/foundation/nscountcommand",
+        "doc://com.apple.documentation/documentation/foundation/nsclosecommand"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Object Specifiers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptobjectspecifier",
+        "doc://com.apple.documentation/documentation/foundation/nspropertyspecifier",
+        "doc://com.apple.documentation/documentation/foundation/nspositionalspecifier",
+        "doc://com.apple.documentation/documentation/foundation/nsrandomspecifier",
+        "doc://com.apple.documentation/documentation/foundation/nsrangespecifier",
+        "doc://com.apple.documentation/documentation/foundation/nsuniqueidspecifier",
+        "doc://com.apple.documentation/documentation/foundation/nswhosespecifier",
+        "doc://com.apple.documentation/documentation/foundation/nsnamespecifier",
+        "doc://com.apple.documentation/documentation/foundation/nsmiddlespecifier",
+        "doc://com.apple.documentation/documentation/foundation/nsindexspecifier",
+        "doc://com.apple.documentation/documentation/foundation/nsrelativespecifier"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Script Dictionary Description",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription",
+        "doc://com.apple.documentation/documentation/foundation/nsclassdescription",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Object Matching Tests",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsscriptwhosetest",
+        "doc://com.apple.documentation/documentation/foundation/nsspecifiertest",
+        "doc://com.apple.documentation/documentation/foundation/nslogicaltest"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "NSObject Script Support",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/scripting_support/nscomparisonmethods",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/nsscriptingcomparisonmethods",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/nsscriptkeyvaluecoding",
+        "doc://com.apple.documentation/documentation/foundation/scripting_support/nsscriptobjectspecifiers",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptcoercionhandler",
+        "doc://com.apple.documentation/documentation/foundation/nsscriptexecutioncontext"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/task_management",
+        "doc://com.apple.documentation/documentation/foundation/resources",
+        "doc://com.apple.documentation/documentation/foundation/notifications",
+        "doc://com.apple.documentation/documentation/foundation/app_extension_support",
+        "doc://com.apple.documentation/documentation/foundation/errors_and_exceptions"
+      ],
+      "title": "App Support",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

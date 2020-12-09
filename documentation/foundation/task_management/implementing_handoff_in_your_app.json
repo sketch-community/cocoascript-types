@@ -1,0 +1,1560 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create, send, and receive user activities directly."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/task_management"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3112025,
+  "kind": "article",
+  "metadata": {
+    "title": "Implementing Handoff in Your App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/task_management/implementing_handoff_in_your_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/task_management/implementing_handoff_in_your_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management": {
+      "title": "Task Management",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management",
+      "url": "/documentation/foundation/task_management",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "devLink-1741494": {
+      "identifier": "devLink-1741494",
+      "type": "link",
+      "title": "NSUserActivityTypes",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW28"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3112024": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3112024",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/implementing_handoff_in_your_app#3112024"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of the state of your app at a moment in time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1411706-userinfo"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1417256-requireduserinfokeys": {
+      "title": "requiredUserInfoKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1417256-requireduserinfokeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1417256-requireduserinfokeys"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1413375-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1413375-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1413375-title"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3126005": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3126005",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/implementing_handoff_in_your_app#3126005"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder": {
+      "title": "NSResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder": {
+      "title": "UIResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity": {
+      "title": "userActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621089-useractivity"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsviewcontroller": {
+      "title": "NSViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller": {
+      "title": "UIViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621095-updateuseractivitystate": {
+      "title": "updateUserActivityState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621095-updateuseractivitystate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621095-updateuseractivitystate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateUserActivityState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1534884-updateuseractivitystate": {
+      "title": "updateUserActivityState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1534884-updateuseractivitystate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1534884-updateuseractivitystate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateUserActivityState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsarray": {
+      "title": "NSArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata": {
+      "title": "NSData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdate": {
+      "title": "NSDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
+      "title": "NSDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdictionary"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnull": {
+      "title": "NSNull",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnull",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnull"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
+      "title": "NSNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsset": {
+      "title": "NSSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsset"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl": {
+      "title": "NSURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1410066-adduserinfoentriesfromdictionary": {
+      "title": "addUserInfoEntriesFromDictionary:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1410066-adduserinfoentriesfromdictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1410066-adduserinfoentriesfromdictionary",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addUserInfoEntriesFromDictionary:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3126004": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3126004",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/implementing_handoff_in_your_app#3126004"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity#3174613": {
+      "title": "Working with Continuation Streams",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity#3174613",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/foundation/nsuseractivity#3174613"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622919-application": {
+      "title": "application:willContinueUserActivityWithType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622919-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622919-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:willContinueUserActivityWithType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate": {
+      "title": "UIApplicationDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428364-application": {
+      "title": "application:willContinueUserActivityWithType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428364-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/1428364-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:willContinueUserActivityWithType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate": {
+      "title": "NSApplicationDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622927-application": {
+      "title": "application:didFailToContinueUserActivityWithType:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622927-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622927-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didFailToContinueUserActivityWithType:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428613-application": {
+      "title": "application:didFailToContinueUserActivityWithType:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428613-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/1428613-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didFailToContinueUserActivityWithType:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623072-application": {
+      "title": "application:continueUserActivity:restorationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623072-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623072-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:continueUserActivity:restorationHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application": {
+      "title": "application:continueUserActivity:restorationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsapplicationdelegate/1428471-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:continueUserActivity:restorationHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3126088": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3126088",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/implementing_handoff_in_your_app#3126088"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621111-restoreuseractivitystate": {
+      "title": "restoreUserActivityState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621111-restoreuseractivitystate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621111-restoreuseractivitystate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "restoreUserActivityState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsuseractivityrestoring/3022485-restoreuseractivitystate": {
+      "title": "restoreUserActivityState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsuseractivityrestoring/3022485-restoreuseractivitystate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsuseractivityrestoring/3022485-restoreuseractivitystate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "restoreUserActivityState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1409611-activitytype": {
+      "title": "activityType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1409611-activitytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1409611-activitytype"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3126280": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app#3126280",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/implementing_handoff_in_your_app#3126280"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso": {
+      "title": "startAccessingSecurityScopedResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startAccessingSecurityScopedResource"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou": {
+      "title": "stopAccessingSecurityScopedResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopAccessingSecurityScopedResource"
+        }
+      ]
+    },
+    "link-media-3174632": {
+      "identifier": "link-media-3174632",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/foundation/task_management/implementing_handoff_in_your_app#3174632"
+    },
+    "media-3174632": {
+      "identifier": "media-3174632",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 490,
+            "height": 129
+          },
+          "url": "https://docs-assets.developer.apple.com/published/230283bb40/2bfe74e8-6cfb-4bbf-a298-892a3fa257d4.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 490,
+            "height": 129
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4ba77c3058/f21c09e7-3a45-4ae1-81a3-dc1658607c9f.png"
+        }
+      ],
+      "alt": "Diagram showing an application open on a MacBook. One of three activities, \"create shape\", is selected. This is shown as being delivered to an iPhone, which presents a user interface similar to the one on the MacBook.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities": {
+      "title": "Increasing App Usage with Suggestions Based on User Activities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app": {
+      "title": "Implementing Handoff in Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/task_management/implementing_handoff_in_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, send, and receive user activities directly."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivitydelegate": {
+      "title": "NSUserActivityDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivitydelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivitydelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface through which a user activity instance notifies its delegate of updates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities",
+        "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+        "doc://com.apple.documentation/documentation/foundation/nsuseractivitydelegate"
+      ],
+      "title": "Activity Sharing",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use Handoff to transfer activities the user starts on one iOS, watchOS, or macOS device to a different device. For example, a vector graphics app on macOS can send details about an in-progress editing action to the user’s iPhone so that editing can continue there."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3174632",
+              "metadata": {
+                "anchor": "3174632",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You implement Handoff in your app by:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Representing user activities as instances of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Updating the activity instances as the user performs actions in your app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Receiving activities from Handoff in your app on other devices."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To handoff between apps on different platforms, your apps must share the same developer Team ID. This means you must either distribute your apps through the App Store, or sign them with the same credentials."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Declare Handoff Activities in Your App’s Info.plist",
+          "anchor": "3112023"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Start by identifying which activities make sense to use with Handoff. Choose activities that represent what the user is doing at some point in time, like creating a shape or editing document properties. Choose a universally-unique identifier string for each of your activities, using a reverse-DNS pattern, like "
+            },
+            {
+              "type": "codeVoice",
+              "code": "com.example.app.activity-name"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use your app’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file to declare that your app can receive an activity from Handoff. Create a new top-level entry in this file with the key "
+            },
+            {
+              "type": "link",
+              "title": "NSUserActivityTypes",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW28"
+            },
+            {
+              "type": "text",
+              "text": " and with the type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Array"
+            },
+            {
+              "type": "text",
+              "text": ". Each member of the array should be a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "String"
+            },
+            {
+              "type": "text",
+              "text": " whose value is one of your activity identifiers. The following example shows the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " XML source of a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivityTypes"
+            },
+            {
+              "type": "text",
+              "text": " entry that declares three activities that the app can continue:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<key>NSUserActivityTypes</key>",
+            "<array>",
+            "    <string>com.example.myapp.create-shape</string>",
+            "    <string>com.example.myapp.edit-shape</string>",
+            "    <string>com.example.myapp.edit-document-properties</string>",
+            "</array>"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3112024",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app doesn’t need to send and receive the same set of identifiers on all platforms. For example, you might have a large macOS app and a suite of smaller iOS apps. In this case, the macOS app might handle all your activities, while each iOS app would handle a subset of these activities. Also, while watchOS can send user activities, it cannot receive them, so watchOS apps don’t declare an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivityTypes"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app can have many activities, each of which has different details to send to Handoff. Identify what information you’ll need to recreate the activity on the receiving device. Be careful to only include the transient details of the user activity, and not any information that the app needs to store permanently. For example, if a user is working on a document, the activity should indicate the document—and possibly what part of the document—the user is editing. Don’t include the document itself as part of the activity, since the user could launch your app without Handoff, such as by tapping or clicking its app icon. Instead, use techniques like iCloud Drive to share documents between the user’s devices."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create User Activity Objects\t",
+          "anchor": "3112026"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "At runtime, create instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " for each of your app’s activities. Use the same identifier strings that you used in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " to indicate which activities your app can continue."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " class contains a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary that you use to recreate the activity on other devices. The activity type also has a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1417256-requireduserinfokeys"
+            },
+            {
+              "type": "text",
+              "text": " property that you populate with the minimal set of dictionary keys to make the activity restorable. The activity also contains a user-readable "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1413375-title"
+            },
+            {
+              "type": "text",
+              "text": " property that you should set. If the activity also supports search, the system displays this title in the search results."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let activity = NSUserActivity(activityType: \"com.example.myapp.create-shape\")",
+            "activity?.isEligibleForHandoff = true",
+            "activity?.requiredUserInfoKeys = [\"shape-type\"]",
+            "activity.title = NSLocalizedString(\"Creating shape\", comment: \"Creating shape activity\")"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3126005",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder"
+            },
+            {
+              "type": "text",
+              "text": " (macOS) and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder"
+            },
+            {
+              "type": "text",
+              "text": " (iOS) classes define a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity"
+            },
+            {
+              "type": "text",
+              "text": " property. Since "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " are subclasses of these responder types, you can set this property to represent the activity the controller is managing. Your app can share a single activity across multiple view controllers. Conversely, if a single view controller supports multiple activities, you can reassign the view controller’s "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity"
+            },
+            {
+              "type": "text",
+              "text": " to different "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " instances as needed."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Activities While the User is Active",
+          "anchor": "3113136"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As your user interacts with your app, update the user activity to save the state of their interaction. If you have set the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity"
+            },
+            {
+              "type": "text",
+              "text": " property of a responder, the system automatically calls its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621095-updateuseractivitystate"
+            },
+            {
+              "type": "text",
+              "text": " (iOS) or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1534884-updateuseractivitystate"
+            },
+            {
+              "type": "text",
+              "text": " (macOS) method. Override this method to write new values to the activity’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The keys and values you use in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " must be of the types "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnull"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsset"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl"
+            },
+            {
+              "type": "text",
+              "text": " (or their Swift-bridged equivalents). Create a dictionary with any data needed to recreate the activity on the other device, then call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1410066-adduserinfoentriesfromdictionary"
+            },
+            {
+              "type": "text",
+              "text": " to update the activity. It’s also a good idea to provide a key-value pair that versions the dictionary itself. That way, you can change the activity’s dictionary representation later and be able to detect incompatible versions."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func updateUserActivityState(_ activity: NSUserActivity) {",
+            "    if activity.activityType == \"com.example.myapp.create-shape\" {",
+            "        let updateDict:  [AnyHashable : Any] = [",
+            "            \"shape-type\" : currentShapeType(),",
+            "            \"activity-version\" : 1",
+            "        ]",
+            "        activity.addUserInfoEntries(from: updateDict)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3126004",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Transfer as small a payload in the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " as possible, keeping the total size under 3KB. If you must transfer more data than this, use continuation streams to connect the two devices directly (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity#3174613"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Receive User Activities in the Application Delegate",
+          "anchor": "3112028"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user launches your app from Handoff on another device, the app receives callbacks to methods in its application delegate. You implement these methods to accept the activity and restore its state in your app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After launching your app, Handoff calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622919-application"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate"
+            },
+            {
+              "type": "text",
+              "text": " (iOS), or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428364-application"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate"
+            },
+            {
+              "type": "text",
+              "text": " (macOS). Implement this method by updating your UI to indicate to your user that it is receiving the activity from the other device. If Handoff fails for some reason, the system calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622927-application"
+            },
+            {
+              "type": "text",
+              "text": " (iOS), or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428613-application"
+            },
+            {
+              "type": "text",
+              "text": " (macOS)."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "While watchOS can create "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+                },
+                {
+                  "type": "text",
+                  "text": " objects and send them to other devices, Handoff cannot launch watchOS apps."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Handoff provides the activity to your app in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623072-application"
+            },
+            {
+              "type": "text",
+              "text": " (iOS), or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application"
+            },
+            {
+              "type": "text",
+              "text": " (macOS) delegate method. Implement the method by creating an array of view controllers that need to update for the activity, and provide this array to the completion handler. Return "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " if your implementation successfully handled the activity, or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": " if it did not. The following example shows an iOS app delegate finding its top view controller and providing it to the completion handler."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func application(_ application: UIApplication, continue userActivity: NSUserActivity,",
+            "                 restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {",
+            "    guard let topNav = application.keyWindow?.rootViewController as? UINavigationController,",
+            "        let shapesVC = topNav.viewControllers.first as? MyShapesViewController else {",
+            "            return false",
+            "    }",
+            "    restorationHandler([shapesVC])",
+            "    return true",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3126088",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Continue the Activity in Your App",
+          "anchor": "3113134"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each view controller provided to the completion handler in the previous step receives a call to its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621111-restoreuseractivitystate"
+            },
+            {
+              "type": "text",
+              "text": " (iOS), or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsuseractivityrestoring/3022485-restoreuseractivitystate"
+            },
+            {
+              "type": "text",
+              "text": " (macOS) method. Use this method to update the view controller’s state to match the state of the originating device. If you have several activity types, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1409611-activitytype"
+            },
+            {
+              "type": "text",
+              "text": " to determine which activity you are handling. Then, get the values from the activity’s "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary to update the view controller’s state."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func restoreUserActivityState(_ userActivity: NSUserActivity) {    super.restoreUserActivityState(userActivity)",
+            "    guard userActivity.activityType == \"com.example.myapp.create-shape\",",
+            "        let type = userActivity.userInfo?[\"shape-type\"] as? String,",
+            "        let version = userActivity.userInfo?[\"activity-version\"] as? Int,",
+            "        version >= 1 else {",
+            "            return",
+            "    }",
+            "    ",
+            "    createShape(type: type)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3126280",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For URLs transferred in the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary, you must first call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso"
+            },
+            {
+              "type": "text",
+              "text": " and it must return "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " before you can access the URL. Call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou"
+            },
+            {
+              "type": "text",
+              "text": " when you finish using the URL. Also be aware that the system modifies "
+            },
+            {
+              "type": "codeVoice",
+              "code": "file:"
+            },
+            {
+              "type": "text",
+              "text": " URLs pointing to iCloud documents, so that they point to the same document on the receiving device."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

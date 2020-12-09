@@ -1,0 +1,1058 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Initiate drags and handle drops from a collection view."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2891435,
+  "kind": "article",
+  "metadata": {
+    "title": "Supporting Drag and Drop in Collection Views",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate/2897389-collectionview": {
+      "title": "collectionView:itemsForBeginningDragSession:atIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate/2897389-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdragdelegate/2897389-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:itemsForBeginningDragSession:atIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate": {
+      "title": "UICollectionViewDragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdragdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for initiating drags from a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider": {
+      "title": "NSItemProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidragitem": {
+      "title": "UIDragItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidragitem"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject": {
+      "title": "localObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidragitem/2890981-localobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897386-collectionview": {
+      "title": "collectionView:canHandleDropSession:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897386-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropdelegate/2897386-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:canHandleDropSession:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897375-collectionview": {
+      "title": "collectionView:dropSessionDidUpdate:withDestinationIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897375-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropdelegate/2897375-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:dropSessionDidUpdate:withDestinationIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropproposal": {
+      "title": "UICollectionViewDropProposal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropproposal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropproposal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your proposed solution for handling a drop in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview": {
+      "title": "collectionView:performDropWithCoordinator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:performDropWithCoordinator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidragitem/2890975-itemprovider": {
+      "title": "itemProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890975-itemprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidragitem/2890975-itemprovider"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem": {
+      "title": "dropItem:toItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropItem:toItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2921634-dropitem": {
+      "title": "dropItem:toPlaceholder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2921634-dropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2921634-dropitem",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropItem:toPlaceholder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator": {
+      "title": "UICollectionViewDropCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for coordinating your custom drop-related actions with the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext/2897447-commitinsertionwithdatasourceupd": {
+      "title": "commitInsertionWithDataSourceUpdates:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext/2897447-commitinsertionwithdatasourceupd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropplaceholdercontext/2897447-commitinsertionwithdatasourceupd",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "commitInsertionWithDataSourceUpdates:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897404-dragdelegate": {
+      "title": "dragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897404-dragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2897404-dragdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate": {
+      "title": "UICollectionViewDropDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for handling drops in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897491-dropdelegate": {
+      "title": "dropDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897491-dropdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2897491-dropdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views": {
+      "title": "Supporting Drag and Drop in Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate drags and handle drops from a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholder": {
+      "title": "UICollectionViewDropPlaceholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropplaceholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A placeholder for an item dropped on a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropitem": {
+      "title": "UICollectionViewDropItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data associated with an item being dropped into the collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext": {
+      "title": "UICollectionViewDropPlaceholderContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropplaceholdercontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about a placeholder in the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating": {
+      "title": "UIDataSourceTranslating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidatasourcetranslating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An advanced interface for managing a data source object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewplaceholder": {
+      "title": "UICollectionViewPlaceholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewplaceholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewplaceholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A placeholder for an item dragged or dropped on a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholder",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropproposal",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropitem",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext",
+        "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewplaceholder"
+      ],
+      "title": "Drag and Drop",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Collection views support drag and drop through a specialized API that works with the items being displayed. To support drags, define a drag delegate object—an object that adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol—and assign it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897404-dragdelegate"
+            },
+            {
+              "type": "text",
+              "text": " property of your collection view. To handle drops, define a drop delegate object—an object that adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol—and assign it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897491-dropdelegate"
+            },
+            {
+              "type": "text",
+              "text": " property of your collection view. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Drag Items from the Collection View",
+          "anchor": "2891436"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The collection view manages most drag-related interactions, but you need to specify which items to drag. When the drag gesture occurs, the collection view creates a drag session and calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate/2897389-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " method of your drag delegate object. If you return a non empty array from that method, the collection view begins dragging the items that you specify. Return an empty array when you do not allow the user to drag the items from the specified index path."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Use the other methods of the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate"
+                },
+                {
+                  "type": "text",
+                  "text": " protocol to manage additional drag-related interactions. For example, you can customize the appearance of the items being dragged and let the user add items to the current drag session. "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your implementation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate/2897389-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " method, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create one or more "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects. Use the item providers to represent the data for your collection view’s items."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Wrap each item provider object in a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Consider assigning a value to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property of each drag item. This step is optional but makes it faster to drag and drop content within the same app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Return the drag items from your method. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the provided index path to determine which items to drag. If the item is part of the set of currently selected items, the collection view automatically drags all of the selected items. If the item is not part of the current selection, the collection view adds it to the drag operation.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about initiating drags, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Receive Dropped Content",
+          "anchor": "2891437"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When content is dragged inside its bounds, a collection view consults its drop delegate to determine whether it can receive the dragged data. Initially, the collection view calls only the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897386-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " method of the drop delegate to determine whether you can incorporate the specified data into your data source. If you can incorporate the data, the collection view begins calling other methods to determine where the data can be dropped."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As the user’s finger moves, the collection view tracks the potential drop location and notifies your delegate by calling its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897375-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " method for each change. Implementing this method is optional but recommended, because it lets the collection view display visual feedback about how dragged items will be incorporated. In your implementation, create a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropproposal"
+            },
+            {
+              "type": "text",
+              "text": " object with information about how you would respond to a drop at the specified index path. For example, you might want to insert the content as a new item into your data source or you might add the data into the existing item at the specified index path. Because the method is called frequently, return your proposal as quickly as possible. If you do not implement this method, the collection view does not provide visual feedback about how it handles the drop."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user commits the drop by lifting the associated finger from the screen, the collection view calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " method of your drop delegate. You must implement this method to handle the dropped data. In your implementation, fetch the dragged data, update your collection view’s data source, and insert any needed items into the collection view itself. If the items originated in the collection view itself, you can usually just rearrange the items directly using existing collection view APIs. For content that came from outside the collection view, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject"
+            },
+            {
+              "type": "text",
+              "text": " property (for content that originated inside your app) or the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+            },
+            {
+              "type": "text",
+              "text": " object to fetch the data and insert it. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your implementation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " method, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Iterate over the items property in the provided drop coordinator object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For each item, determine how you want to handle its content:"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If the "
+                            },
+                            {
+                              "type": "codeVoice",
+                              "code": "sourceIndexPath"
+                            },
+                            {
+                              "type": "text",
+                              "text": " of the item contains a value, the item originated in the collection view. Use a batch update to delete the item from its current location and insert it at the new index path. "
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890981-localobject"
+                            },
+                            {
+                              "type": "text",
+                              "text": " property of the drag item is set, the item originated from elsewhere in your app so you must insert an item or update an existing item."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If no other option is available, use the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+                            },
+                            {
+                              "type": "text",
+                              "text": " in the drag item’s "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem/2890975-itemprovider"
+                            },
+                            {
+                              "type": "text",
+                              "text": " property to fetch the data asynchronously and insert or update the item."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Update your data source and insert or move the necessary items in the collection view."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For items that are already local to your app, you can usually update your collection view’s data source and interface directly. For example, you might use a batch update to delete and then insert an item that originated from the collection view. When finished, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem"
+            },
+            {
+              "type": "text",
+              "text": " method of the drop coordinator to animate the insertion of the dragged content into the collection view. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For data that must be retrieved using an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+            },
+            {
+              "type": "text",
+              "text": " object, insert a placeholder into the collection view until you are able to retrieve the actual data. Inserting a placeholder is necessary only when inserting new items into the collection view. The placeholder acts as a temporary item in the collection view, presenting the default content you want to display until the actual data becomes available. For example, you might provide a placeholder cell with a text field stating that the content is currently loading. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To insert a placeholder into the collection view, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2921634-dropitem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method of the provided "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object to insert your placeholder cell into the collection view."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Begin loading the data asynchronously from the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+            },
+            {
+              "type": "text",
+              "text": " object returns the actual data, commit the insertion and exchange the placeholder cell for the final cell. Specifically, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext/2897447-commitinsertionwithdatasourceupd"
+            },
+            {
+              "type": "text",
+              "text": " method of the context object you received after creating the placeholder. In the block that you pass to that method, update your model object and your collection view's data source. When this method returns, the collection view automatically deletes the placeholder and inserts the final item, which causes your updated data to be reflected in a new item."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Insert placeholders at the location specified by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "destinationIndexPath"
+            },
+            {
+              "type": "text",
+              "text": " property of the drop coordinator.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

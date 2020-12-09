@@ -1,0 +1,978 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Display map or satellite imagery within your app, call out points of interest, and determine placemark information for map coordinates."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1612554,
+  "kind": "symbol",
+  "metadata": {
+    "title": "MapKit",
+    "role": "collection",
+    "roleHeading": "Framework",
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "3.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.9",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.2",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/mapkit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/mapkit"
+      ]
+    }
+  ],
+  "references": {
+    "devLink-1741961": {
+      "identifier": "devLink-1741961",
+      "type": "link",
+      "title": "Location and Maps Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapview": {
+      "title": "MKMapView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An embeddable map interface, similar to the one provided by the Maps application.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapitem": {
+      "title": "MKMapItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A point of interest on the map.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkcoordinateregion": {
+      "title": "MKCoordinateRegion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkcoordinateregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkcoordinateregion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A rectangular geographic region centered around a specific latitude and longitude."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkcoordinatespan": {
+      "title": "MKCoordinateSpan",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkcoordinatespan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkcoordinatespan",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The width and height of a map region. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmaprect": {
+      "title": "MKMapRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmaprect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmaprect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A rectangular area on a two-dimensional map projection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmappoint": {
+      "title": "MKMapPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmappoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmappoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A point on a two-dimensional map projection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapsize": {
+      "title": "MKMapSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Width and height information on a two-dimensional map projection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter": {
+      "title": "MKDistanceFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkdistanceformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object that converts between a geographic distance and a string-based expression of that distance. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapcamera": {
+      "title": "MKMapCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapcamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapcamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A virtual camera for defining the appearance of the map.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkcompassbutton": {
+      "title": "MKCompassButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkcompassbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkcompassbutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specialized view that displays the current compass heading for its associated map."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkscaleview": {
+      "title": "MKScaleView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkscaleview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkscaleview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specialized view that displays the current scale information for its associated map."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkzoomcontrol": {
+      "title": "MKZoomControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkzoomcontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkzoomcontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specialized view that displays and controls the zoom level of the map view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol": {
+      "title": "MKPitchControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkpitchcontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specialized view that displays and controls the pitch angle of the map view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton": {
+      "title": "MKUserTrackingButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkusertrackingbutton",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specialized button that allows the user to toggle if the map tracks to the heading the user is facing. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkusertrackingbarbuttonitem": {
+      "title": "MKUserTrackingBarButtonItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkusertrackingbarbuttonitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkusertrackingbarbuttonitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specialized bar button item that allows the user to toggle if the map tracks to the heading the user is facing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
+      "title": "MKPlacemark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkplacemark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user-friendly description of a location on the map.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkannotation": {
+      "title": "MKAnnotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkannotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for associating your content with a specific map location. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkannotationview": {
+      "title": "MKAnnotationView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkannotationview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The visual representation of one of your annotation objects.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkoverlay": {
+      "title": "MKOverlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkoverlay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for associating content with a specific map region.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer": {
+      "title": "MKOverlayRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkoverlayrenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The shared infrastructure used to draw overlays on the map surface. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
+      "title": "MapKit Annotations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/mapkit/mapkit_annotations"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
+      "title": "MapKit Overlays",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/mapkit/mapkit_overlays"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/displaying_an_indoor_map": {
+      "title": "Displaying an Indoor Map",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/displaying_an_indoor_map",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/mapkit/displaying_an_indoor_map",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkgeojsondecoder": {
+      "title": "MKGeoJSONDecoder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkgeojsondecoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkgeojsondecoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that decodes GeoJSON objects into MapKit types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature": {
+      "title": "MKGeoJSONFeature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkgeojsonfeature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The decoded representation of a GeoJSON feature."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkgeojsonobject": {
+      "title": "MKGeoJSONObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkgeojsonobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkgeojsonobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Objects that can be returned by the GeoJSON decoder."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkdirections": {
+      "title": "MKDirections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkdirections",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkdirections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object that computes directions and travel-time information based on the route information you provide.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest": {
+      "title": "MKDirectionsRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkdirectionsrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The start and end points of a route, along with the planned mode of transportation.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkdirectionsresponse": {
+      "title": "MKDirectionsResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkdirectionsresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkdirectionsresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The route information returned by Apple servers in response to one of your requests for directions. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mketaresponse": {
+      "title": "MKETAResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mketaresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mketaresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The travel-time information returned by Apple servers. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkroute": {
+      "title": "MKRoute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkroute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkroute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single route between a requested start and end point. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkroutestep": {
+      "title": "MKRouteStep",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkroutestep",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkroutestep",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "One portion of an overall route. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest": {
+      "title": "Searching for Nearby Points of Interest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/mapkit/searching_for_nearby_points_of_interest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide automatic search completions based on a user’s partial search query, and search the map for relevant locations nearby."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearch": {
+      "title": "MKLocalSearch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object for initiating map-based searches and processing the results. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest": {
+      "title": "MKLocalPointsOfInterestRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalpointsofinterestrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structured request to use when searching for points of interest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchresulttype": {
+      "title": "MKLocalSearchResultType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchresulttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchresulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that indicate types of search results."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter": {
+      "title": "MKLocalSearchCompleter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompleter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object for generating a list of completion strings based on a partial search string that you provide.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype": {
+      "title": "MKLocalSearchCompleterResultType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompleterresulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that indicate types of search completions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion": {
+      "title": "MKLocalSearchCompletion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mklocalsearchcompletion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A fully-formed string that completes a partial string. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/optimizing_map_views_with_filtering_and_camera_constraints": {
+      "title": "Optimizing Map Views with Filtering and Camera Constraints",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/optimizing_map_views_with_filtering_and_camera_constraints",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/mapkit/optimizing_map_views_with_filtering_and_camera_constraints",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display a map that is relevant to the user by filtering points of interest and search results, and constraining the visible region."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter": {
+      "title": "MKPointOfInterestFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkpointofinterestfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A filter that includes or excludes point of interest categories from a map view, local search, or local search completer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategory": {
+      "title": "MKPointOfInterestCategory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkpointofinterestcategory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Point of interest categories."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter": {
+      "title": "MKMapSnapshotter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapsnapshotter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility class for capturing a map and it’s content into an image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshot": {
+      "title": "MKMapSnapshot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapsnapshot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image generated by a snapshotter object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkerrordomain": {
+      "title": "MKErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error domain for MapKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkerrorcode": {
+      "title": "MKErrorCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkerrorcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkerrorcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Error constants for the MapKit framework."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/deprecated_symbols",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/mapkit/deprecated_symbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "MapKit classes, protocols, and entitlements that are no longer supported."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_functions": {
+      "title": "MapKit Functions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_functions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/mapkit/mapkit_functions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The functions of the MapKit framework provide convenient ways to package map-related data structures. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkmapview",
+        "doc://com.apple.documentation/documentation/mapkit/mkmapitem"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Map Coordinates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkcoordinateregion",
+        "doc://com.apple.documentation/documentation/mapkit/mkcoordinatespan",
+        "doc://com.apple.documentation/documentation/mapkit/mkmaprect",
+        "doc://com.apple.documentation/documentation/mapkit/mkmappoint",
+        "doc://com.apple.documentation/documentation/mapkit/mkmapsize",
+        "doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Map Customization",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkmapcamera",
+        "doc://com.apple.documentation/documentation/mapkit/mkcompassbutton",
+        "doc://com.apple.documentation/documentation/mapkit/mkscaleview",
+        "doc://com.apple.documentation/documentation/mapkit/mkzoomcontrol",
+        "doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol",
+        "doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton",
+        "doc://com.apple.documentation/documentation/mapkit/mkusertrackingbarbuttonitem"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Annotations and Overlays",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
+        "doc://com.apple.documentation/documentation/mapkit/mkannotation",
+        "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
+        "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
+        "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Geographical Features",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/displaying_an_indoor_map",
+        "doc://com.apple.documentation/documentation/mapkit/mkgeojsondecoder",
+        "doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature",
+        "doc://com.apple.documentation/documentation/mapkit/mkgeojsonobject"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Directions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkdirections",
+        "doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest",
+        "doc://com.apple.documentation/documentation/mapkit/mkdirectionsresponse",
+        "doc://com.apple.documentation/documentation/mapkit/mketaresponse",
+        "doc://com.apple.documentation/documentation/mapkit/mkroute",
+        "doc://com.apple.documentation/documentation/mapkit/mkroutestep"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Local Search",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/searching_for_nearby_points_of_interest",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearch",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearchresulttype",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype",
+        "doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Points of Interest",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/optimizing_map_views_with_filtering_and_camera_constraints",
+        "doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter",
+        "doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategory"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Static Map Snapshots",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter",
+        "doc://com.apple.documentation/documentation/mapkit/mkmapsnapshot"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Errors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkerrordomain",
+        "doc://com.apple.documentation/documentation/mapkit/mkerrorcode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/deprecated_symbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_functions"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1741961"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use MapKit to give your app a sense of place with maps and location information. You can use the MapKit framework to:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Embed maps directly into your app’s windows and views."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add annotations and overlays to a map for calling out points of interest."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Provide text completion to make it easy for users to search for a destination or point of interest."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app offers transit directions, you can make your directions available to Maps. You can also use Maps to supplement the directions that you provide in your app. For example, if your app only provides directions for subway travel, you can use Maps to provide walking directions to and from subway stations."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

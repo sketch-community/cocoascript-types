@@ -1,0 +1,771 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Ask the user for permission to access their location."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corelocation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3382331,
+  "kind": "article",
+  "metadata": {
+    "title": "Requesting Authorization for Location Services",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Location"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/requesting_authorization_for_location_services"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/requesting_authorization_for_location_services"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corelocation": {
+      "title": "Core Location",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation",
+      "url": "/documentation/corelocation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization": {
+      "title": "requestWhenInUseAuthorization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestWhenInUseAuthorization"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization": {
+      "title": "requestAlwaysAuthorization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestAlwaysAuthorization"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services#3385525": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services#3385525",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/corelocation/requesting_authorization_for_location_services#3385525"
+    },
+    "link-3385524": {
+      "title": "Human Interface Guidelines",
+      "type": "topic",
+      "identifier": "link-3385524",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/requesting-permission/"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription": {
+      "title": "NSLocationWhenInUseUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user’s location information while the app is running in the foreground."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationWhenInUseUsageDescription",
+      "ideTitle": "Privacy - Location When In Use Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationWhenInUseUsageDescription"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription": {
+      "title": "NSLocationAlwaysAndWhenInUseUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user’s location information at all times."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
+      "ideTitle": "Privacy - Location Always and When In Use Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationAlwaysAndWhenInUseUsageDescription"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationusagedescription": {
+      "title": "NSLocationUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user’s location information."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationUsageDescription",
+      "ideTitle": "Privacy - Location Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationUsageDescription"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription": {
+      "title": "NSLocationAlwaysUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user's location at all times."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationAlwaysUsageDescription",
+      "ideTitle": "Privacy - Location Always Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationAlwaysUsageDescription"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways": {
+      "title": "kCLAuthorizationStatusAuthorizedAlways",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedwheninuse": {
+      "title": "kCLAuthorizationStatusAuthorizedWhenInUse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedwheninuse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedwheninuse"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager": {
+      "title": "locationManager:didChangeAuthorizationStatus:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationManager:didChangeAuthorizationStatus:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request": {
+      "title": "Choosing the  Location Services Authorization to Request",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/choosing_the_location_services_authorization_to_request",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determine the authorization your app needs to access location data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services": {
+      "title": "Requesting Authorization for Location Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/requesting_authorization_for_location_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ask the user for permission to access their location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/responding_to_changes_in_authorization_status": {
+      "title": "Responding to Changes in Authorization Status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/responding_to_changes_in_authorization_status",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/responding_to_changes_in_authorization_status",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Receive and respond to changes in your app's authorization status in your delegate's method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus": {
+      "title": "CLAuthorizationStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clauthorizationstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the app's authorization to use location services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/claccuracyauthorization": {
+      "title": "CLAccuracyAuthorization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/claccuracyauthorization",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/claccuracyauthorization",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the level of location accuracy the app has authorization to use."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request",
+        "doc://com.apple.documentation/documentation/corelocation/responding_to_changes_in_authorization_status",
+        "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus",
+        "doc://com.apple.documentation/documentation/corelocation/claccuracyauthorization",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationusagedescription",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription"
+      ],
+      "title": "Authorization",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It’s important to take great care with a user’s location data, and the system requires your app to get the user’s authorization to access this kind of information. To request authorization, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization"
+            },
+            {
+              "type": "text",
+              "text": ", depending on the authorization status your app needs.  See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request"
+            },
+            {
+              "type": "text",
+              "text": " for more information about deciding what type of authorization to request. Your Xcode project must be configured with purpose strings used in the authorization prompts. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Purpose Strings in Xcode",
+          "anchor": "3385303"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To prepare your app for calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization"
+            },
+            {
+              "type": "text",
+              "text": ", you must add keys with purpose strings to your app's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file. The system displays your purpose strings in the authorization request dialogs. Configure the keys in Xcode with the purpose strings that your app requires."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Key"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Required when:"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your app requests When In Use authorization or Always authorization."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your app requests Always authorization."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationusagedescription"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your app runs in macOS and uses location services."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your app supports iOS 10 and earlier and requests Always authorization."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3385525",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "See the "
+            },
+            {
+              "type": "link",
+              "title": "Human Interface Guidelines",
+              "destination": "https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/requesting-permission/"
+            },
+            {
+              "type": "text",
+              "text": " for more information about purpose strings."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You must add the required keys to your app’s "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": " file. If a required key isn’t present, authorization requests fail immediately. "
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ask for Authorization During Location-Related Activities",
+          "anchor": "3385302"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Consider the context of the user's interactions when you request authorization to use their location."
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Request authorization only when your user needs location services to perform a task in your app. If it's not clear to the user why your app is using location services, the user may deny your request."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Don't automatically ask for authorization when your app returns to the foreground. If your app has temporary authorization, it loses it when the user stops using your app. Unless the user expects you to continue using their location, wait until the user needs the location to be updated again before requesting authorization."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Your app must be in the foreground in order to show a location authorization prompt."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization"
+            },
+            {
+              "type": "text",
+              "text": " to request authorization at the point where you need location services. You may request When In Use authorization as needed; there are no limits on calling "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization"
+            },
+            {
+              "type": "text",
+              "text": ". The system does limit calls to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization"
+            },
+            {
+              "type": "text",
+              "text": "; you may request it only one time."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After making an authorization request, it’s safe to start location services before your request resolves. However, you won't receive location events until your app's authorization status changes to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedwheninuse"
+            },
+            {
+              "type": "text",
+              "text": ". Implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager"
+            },
+            {
+              "type": "text",
+              "text": " method in your location manager delegate to be notified when your app's authorization status changes. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

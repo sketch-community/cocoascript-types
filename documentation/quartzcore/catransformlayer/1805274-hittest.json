@@ -1,0 +1,216 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns the farthest descendant of the receiver in the layer hierarchy (including itself) that contains a specified point."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/quartzcore",
+        "doc://com.apple.documentation/documentation/quartzcore/catransformlayer"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartzcore/catransformlayer/1805274-hittest",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1805274,
+  "kind": "symbol",
+  "metadata": {
+    "title": "hitTest:",
+    "role": "pseudoSymbol",
+    "modules": [
+      {
+        "name": "Core Animation"
+      }
+    ],
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartzcore/catransformlayer/1805274-hittest"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/quartzcore": {
+      "title": "Core Animation",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore",
+      "url": "/documentation/quartzcore",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/catransformlayer": {
+      "title": "CATransformLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catransformlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/catransformlayer"
+    },
+    "devLink-1731528": {
+      "identifier": "devLink-1731528",
+      "type": "link",
+      "title": "Core Animation Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/catransformlayer/1805274-hittest": {
+      "title": "hitTest:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catransformlayer/1805274-hittest",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/quartzcore/catransformlayer/1805274-hittest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the farthest descendant of the receiver in the layer hierarchy (including itself) that contains a specified point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1731528"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- (CALayer *)hitTest:(CGPoint)thePoint"
+            }
+          ],
+          "platforms": []
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "thePoint",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A point in the coordinate system of the receiver's superlayer."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The layer that contains "
+            },
+            {
+              "type": "codeVoice",
+              "code": "thePoint"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " if the point lies outside the receiver’s bounds rectangle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Transform layers do not support hit-testing. As a result, you should not send "
+            },
+            {
+              "type": "codeVoice",
+              "code": "hitTest:"
+            },
+            {
+              "type": "text",
+              "text": " messages to transform layers."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

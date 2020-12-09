@@ -1,0 +1,755 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Store and fetch images asynchronously to make your app more responsive."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/images_and_pdf",
+        "doc://com.apple.documentation/documentation/uikit/uiimage"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3226780,
+  "kind": "article",
+  "metadata": {
+    "title": "Asynchronously Loading Images into Table and Collection Views",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views",
+        "documentation/uikit/views_and_controls/table_views/asynchronously_loading_images_into_table_and_collection_views"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/images_and_pdf": {
+      "title": "Images and PDF",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/images_and_pdf",
+      "url": "/documentation/uikit/images_and_pdf",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage": {
+      "title": "UIImage",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage",
+      "url": "/documentation/uikit/uiimage",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession": {
+      "title": "URLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscache": {
+      "title": "NSCache",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscache",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscache"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views#3637623": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views#3637623",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views#3637623"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data": {
+      "title": "Prefetching Collection View Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views#3637625": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views#3637625",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views#3637625"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/providing_images_for_different_appearances": {
+      "title": "Providing Images for Different Appearances",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/providing_images_for_different_appearances",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uiimage/providing_images_for_different_appearances",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Supply image resources appropriate for light and dark appearances and for high-contrast environments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui": {
+      "title": "Configuring and Displaying Symbol Images in Your UI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/xcode/creating_custom_symbol_images_for_your_app": {
+      "title": "Creating Custom Symbol Images for Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xcode/creating_custom_symbol_images_for_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/xcode/creating_custom_symbol_images_for_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create symbol images and augment the set of icons that SF Symbols provides."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/1624154-init": {
+      "title": "init(named:in:compatibleWith:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/1624154-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/1624154-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object using the named image asset that is compatible with the specified trait collection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "identifier",
+          "text": "named"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "in"
+        },
+        {
+          "kind": "text",
+          "text": ": Bundle?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "compatibleWith"
+        },
+        {
+          "kind": "text",
+          "text": ": UITraitCollection?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3294226-init": {
+      "title": "init(named:in:with:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3294226-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3294226-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object using the named image asset that is compatible with the specified configuration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "identifier",
+          "text": "named"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "in"
+        },
+        {
+          "kind": "text",
+          "text": ": Bundle?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": UIImage.Configuration?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/1624146-init": {
+      "title": "init(named:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/1624146-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/1624146-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object from the specified named asset. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "identifier",
+          "text": "named"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/1849766-init": {
+      "title": "init(imageLiteralResourceName:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/1849766-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/1849766-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the image object for the specified resource."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "imageLiteralResourceName"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3294234-init": {
+      "title": "init(systemName:withConfiguration:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3294234-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3294234-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object that contains a system symbol image with the specified configuration. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "identifier",
+          "text": "systemName"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "withConfiguration"
+        },
+        {
+          "kind": "text",
+          "text": ": UIImage.Configuration?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3295943-init": {
+      "title": "init(systemName:compatibleWith:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3295943-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3295943-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object that contains a system symbol image appropriate for the specified traits. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "identifier",
+          "text": "systemName"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "compatibleWith"
+        },
+        {
+          "kind": "text",
+          "text": ": UITraitCollection?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/3294233-init": {
+      "title": "init(systemName:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/3294233-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage/3294233-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an image object that contains a system symbol image."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "identifier",
+          "text": "systemName"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views": {
+      "title": "Asynchronously Loading Images into Table and Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uiimage/asynchronously_loading_images_into_table_and_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Store and fetch images asynchronously to make your app more responsive."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/868c63d87a/AsynchronouslyLoadingImagesIntoTableAndCollectionViews.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/868c63d87a/AsynchronouslyLoadingImagesIntoTableAndCollectionViews.zip",
+      "checksum": "516c5d6533ef9d0573df8a2a815eed63547944a51935ff067d05dbfd33630d4c94cd91028c8287437a1e19610d992bd1133e6482de10e24de2c5813fd6764b71",
+      "url": "https://docs-assets.developer.apple.com/published/868c63d87a/AsynchronouslyLoadingImagesIntoTableAndCollectionViews.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/868c63d87a/AsynchronouslyLoadingImagesIntoTableAndCollectionViews.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiimage/providing_images_for_different_appearances",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui",
+        "doc://com.apple.documentation/documentation/xcode/creating_custom_symbol_images_for_your_app",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/1624154-init",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3294226-init",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/1624146-init",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/1849766-init",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3294234-init",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3295943-init",
+        "doc://com.apple.documentation/documentation/uikit/uiimage/3294233-init"
+      ],
+      "title": "Loading and Caching Images",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Caching images can help you make the table and collection views in your app instantiate fast and respond quickly to scrolling. The app in the sample project demonstrates fetching images with URLs. The images are not part the assets catalog and instead are a part of the app bundle to simulate loading each asynchronously by URL. This ensures the user interface remains responsive. This project also supports Mac Catalyst."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Image Loading and Caching",
+          "anchor": "3637628"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the sample, the class "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ImageCache.swift"
+            },
+            {
+              "type": "text",
+              "text": " demonstrates a basic mechanism for image loading from a URL with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+            },
+            {
+              "type": "text",
+              "text": " and caching the downloaded images using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscache"
+            },
+            {
+              "type": "text",
+              "text": ". Views such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITableView"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UICollectionView"
+            },
+            {
+              "type": "text",
+              "text": " are subclasses of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIScrollView"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As the user scrolls in a view, the app requests the same image repeatedly. This sample holds onto the relevant completion blocks until the image loads, then passes the image to all of the requesting blocks so the API only has to make one call to fetch an image for a given URL. The following code shows how the sample project consructs a basic caching and loading method:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Returns the cached image if available, otherwise asynchronously loads and caches it.",
+            "final func load(url: NSURL, item: Item, completion: @escaping (Item, UIImage?) -> Swift.Void) {",
+            "    // Check for a cached image.",
+            "    if let cachedImage = image(url: url) {",
+            "        DispatchQueue.main.async {",
+            "            completion(item, cachedImage)",
+            "        }",
+            "        return",
+            "    }",
+            "    // In case there are more than one requestor for the image, we append their completion block.",
+            "    if loadingResponses[url] != nil {",
+            "        loadingResponses[url]?.append(completion)",
+            "        return",
+            "    } else {",
+            "        loadingResponses[url] = [completion]",
+            "    }",
+            "    // Go fetch the image.",
+            "    ImageURLProtocol.urlSession().dataTask(with: url as URL) { (data, response, error) in",
+            "        // Check for the error, then data and try to create the image.",
+            "        guard let responseData = data, let image = UIImage(data: responseData),",
+            "            let blocks = self.loadingResponses[url], error == nil else {",
+            "            DispatchQueue.main.async {",
+            "                completion(item, nil)",
+            "            }",
+            "            return",
+            "        }",
+            "        // Cache the image.",
+            "        self.cachedImages.setObject(image, forKey: url, cost: responseData.count)",
+            "        // Iterate over each requestor for the image and pass it back.",
+            "        for block in blocks {",
+            "            DispatchQueue.main.async {",
+            "                block(item, image)",
+            "            }",
+            "            return",
+            "        }",
+            "    }.resume()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637623",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Your Datasource Responsibly",
+          "anchor": "3637629"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An app that loads all of its data on launch risks running out of memory or terminating for taking too long to complete. Unless the app requires all data to be loaded before operation, load your images as the UI requests them."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To ensure items load before becoming visible on screen, make use of prefetching APIs when applicable. See "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data"
+                },
+                {
+                  "type": "text",
+                  "text": " for best practices of prefetching data."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Generally the app should wait until the data source requests a cell to fetch and set an image. The sample project demonstrates one approach to fetching and displaying an image on a reusable view :"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var content = cell.defaultContentConfiguration()",
+            "content.image = item.image",
+            "ImageCache.publicCache.load(url: item.url as NSURL, item: item) { (fetchedItem, image) in",
+            "    if let img = image, img != fetchedItem.image {",
+            "        var updatedSnapshot = self.dataSource.snapshot()",
+            "        if let datasourceIndex = updatedSnapshot.indexOfItem(fetchedItem) {",
+            "            let item = self.imageObjects[datasourceIndex]",
+            "            item.image = img",
+            "            updatedSnapshot.reloadItems([item])",
+            "            self.dataSource.apply(updatedSnapshot, animatingDifferences: true)",
+            "        }",
+            "    }",
+            "}",
+            "cell.contentConfiguration = content"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3637625",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,887 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An abstract superclass defining the API through which Core Data communicates with a store."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1506841,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSIncrementalStore",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "5.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSIncrementalStore",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/nsincrementalstore"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/nsincrementalstore"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "url": "/documentation/coredata/core_data_stack",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506708-loadmetadata": {
+      "title": "loadMetadata:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506708-loadmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506708-loadmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads the metadata for the store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadMetadata:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506653-executerequest": {
+      "title": "executeRequest:withContext:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506653-executerequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506653-executerequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a value as appropriate for the given request, or nil if the request cannot be completed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "executeRequest:withContext:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506729-newvaluesforobjectwithid": {
+      "title": "newValuesForObjectWithID:withContext:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506729-newvaluesforobjectwithid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506729-newvaluesforobjectwithid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an incremental store node encapsulating the persistent external values of the object with a given object ID."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "newValuesForObjectWithID:withContext:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506438-newvalueforrelationship": {
+      "title": "newValueForRelationship:forObjectWithID:withContext:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506438-newvalueforrelationship",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506438-newvalueforrelationship",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the relationship for the given relationship of the object with a given object ID."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "newValueForRelationship:forObjectWithID:withContext:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506348-obtainpermanentidsforobjects": {
+      "title": "obtainPermanentIDsForObjects:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506348-obtainpermanentidsforobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506348-obtainpermanentidsforobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array containing the object IDs for a given array of newly-inserted objects."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "obtainPermanentIDsForObjects:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506781-identifierfornewstoreaturl": {
+      "title": "identifierForNewStoreAtURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506781-identifierfornewstoreaturl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506781-identifierfornewstoreaturl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the identifier for the store at a given URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "identifierForNewStoreAtURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506199-managedobjectcontextdidregistero": {
+      "title": "managedObjectContextDidRegisterObjectsWithIDs:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506199-managedobjectcontextdidregistero",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506199-managedobjectcontextdidregistero",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that objects identified by a given array of object IDs are in use in a managed object context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "managedObjectContextDidRegisterObjectsWithIDs:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506878-managedobjectcontextdidunregiste": {
+      "title": "managedObjectContextDidUnregisterObjectsWithIDs:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506878-managedobjectcontextdidunregiste",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506878-managedobjectcontextdidunregiste",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that objects identified by a given array of object IDs are no longer being used by a managed object context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "managedObjectContextDidUnregisterObjectsWithIDs:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstore": {
+      "title": "NSPersistentStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class for all Core Data persistent stores."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506666-newobjectidforentity": {
+      "title": "newObjectIDForEntity:referenceObject:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506666-newobjectidforentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506666-newobjectidforentity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new object ID that uses given data as the key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "newObjectIDForEntity:referenceObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506828-referenceobjectforobjectid": {
+      "title": "referenceObjectForObjectID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506828-referenceobjectforobjectid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore/1506828-referenceobjectforobjectid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the reference data used to construct a given object ID."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "referenceObjectForObjectID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator": {
+      "title": "NSPersistentStoreCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A coordinator that uses the model to help contexts and persistent stores communicate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription": {
+      "title": "NSPersistentStoreDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstoredescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description object used to create and load a persistent store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest": {
+      "title": "NSPersistentStoreRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorerequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Criteria used to retrieve data from or save data to a persistent store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreresult": {
+      "title": "NSPersistentStoreResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstoreresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class for results returned from a persistent store coordinator."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult": {
+      "title": "NSPersistentStoreAsynchronousResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstoreasynchronousresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete class used to represent the results of an asynchronous request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nssavechangesrequest": {
+      "title": "NSSaveChangesRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nssavechangesrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nssavechangesrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An encapsulation of a collection of changes to be made by an object store in response to a save operation on a managed object context. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsatomicstore": {
+      "title": "NSAtomicStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsatomicstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsatomicstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract superclass that you subclass to create a Core Data atomic store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode": {
+      "title": "NSAtomicStoreCacheNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsatomicstorecachenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete class that you use to represent basic nodes in a Core Data atomic store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore": {
+      "title": "NSIncrementalStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract superclass defining the API through which Core Data communicates with a store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode": {
+      "title": "NSIncrementalStoreNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstorenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete class used to represent basic nodes in a Core Data incremental store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstore"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Manipulating Managed Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506653-executerequest",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506729-newvaluesforobjectwithid",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506438-newvalueforrelationship",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506348-obtainpermanentidsforobjects",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506666-newobjectidforentity",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506828-referenceobjectforobjectid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Responding to Context Changes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506199-managedobjectcontextdidregistero",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506878-managedobjectcontextdidunregiste"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Metadata",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506781-identifierfornewstoreaturl",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506708-loadmetadata"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstore",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstoreresult",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult",
+        "doc://com.apple.documentation/documentation/coredata/nssavechangesrequest",
+        "doc://com.apple.documentation/documentation/coredata/nsatomicstore",
+        "doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode"
+      ],
+      "title": "Store Coordination",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSIncrementalStore"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSPersistentStore",
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore",
+              "text": "NSPersistentStore"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use this interface to create persistent stores that load and save data incrementally, allowing for the management of large and/or shared datasets."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1673853"
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Methods to Override",
+          "anchor": "1673856"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSIncrementalStore"
+            },
+            {
+              "type": "text",
+              "text": ", you "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "must"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " override the following methods to provide behavior appropriate for your store:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506708-loadmetadata"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506653-executerequest"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506729-newvaluesforobjectwithid"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506438-newvalueforrelationship"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506348-obtainpermanentidsforobjects"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also optionally override the following methods:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506781-identifierfornewstoreaturl"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506199-managedobjectcontextdidregistero"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506878-managedobjectcontextdidunregiste"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There is no need to override the methods that you must otherwise override for a subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Methods that Should Not Be Overridden",
+          "anchor": "2903318"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSIncrementalStore"
+            },
+            {
+              "type": "text",
+              "text": ", you should not override the following methods:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506666-newobjectidforentity"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506828-referenceobjectforobjectid"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

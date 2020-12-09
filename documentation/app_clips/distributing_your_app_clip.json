@@ -1,0 +1,324 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Archive an App Clip’s corresponding app, upload it to App Store Connect, and distribute it to testers or publish it on the App Store."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/app_clips"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/app_clips/distributing_your_app_clip",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3599672,
+  "kind": "article",
+  "metadata": {
+    "title": "Distributing Your App Clip",
+    "role": "article",
+    "roleHeading": "Article"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/distributing_your_app_clip"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/distributing_your_app_clip"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/app_clips": {
+      "title": "App Clips",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips",
+      "url": "/documentation/app_clips",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-3678222": {
+      "title": "TestFlight",
+      "type": "topic",
+      "identifier": "link-3678222",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/testflight/"
+    },
+    "link-3678141": {
+      "title": "App Store Connect",
+      "type": "topic",
+      "identifier": "link-3678141",
+      "kind": "article",
+      "role": "link",
+      "url": "https://appstoreconnect.apple.com/login"
+    },
+    "link-media-3678139": {
+      "identifier": "link-media-3678139",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/app_clips/distributing_your_app_clip#3678139"
+    },
+    "media-3678139": {
+      "identifier": "media-3678139",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 746,
+            "height": 444
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4c5b9e477c/rendered2x-1596851483.png"
+        }
+      ],
+      "alt": "Screenshot showing the sheet for choosing the distribution method; App Store Connect is selected.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience": {
+      "title": "Testing Your App Clip’s Launch Experience",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/testing_your_app_clip_s_launch_experience"
+    },
+    "doc://com.apple.documentation/documentation/xcode/distributing_your_app_for_beta_testing_and_releases": {
+      "title": "Distributing Your App for Beta Testing and Releases",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xcode/distributing_your_app_for_beta_testing_and_releases",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/xcode/distributing_your_app_for_beta_testing_and_releases"
+    },
+    "link-3672000": {
+      "title": "TestFlight",
+      "type": "topic",
+      "identifier": "link-3672000",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/testflight/"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/distributing_your_app_clip": {
+      "title": "Distributing Your App Clip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/distributing_your_app_clip",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/distributing_your_app_clip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Archive an App Clip’s corresponding app, upload it to App Store Connect, and distribute it to testers or publish it on the App Store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you submit an App Clip for distribution to testers with "
+            },
+            {
+              "type": "link",
+              "title": "TestFlight",
+              "destination": "https://developer.apple.com/testflight/"
+            },
+            {
+              "type": "text",
+              "text": " or for publishing in the App Store, you don’t submit the App Clip on its own; you export and submit the app bundle of the full app that includes the App Clip."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You may also choose Ad Hoc or Development distribution. Note that you need to export the App Clip and the full app separately in these cases. Enterprise distribution isn’t available to App Clips."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Archive your App and Upload It to App Store Connect",
+          "anchor": "3678137"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Uploading an app archive that contains the full app and the App Clip works just like for an app that doesn’t come with an App Clip. To export an App Clip for distribution to testers:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Xcode, archive the App Clip’s corresponding app, open the Organizer window, select the archive, and click Distribute App."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose App Store Connect as the distribution method, then upload the app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To distribute the app that features an App Clip to testers with "
+                    },
+                    {
+                      "type": "link",
+                      "title": "TestFlight",
+                      "destination": "https://developer.apple.com/testflight/"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or publish it on the App Store, visit "
+                    },
+                    {
+                      "type": "link",
+                      "title": "App Store Connect",
+                      "destination": "https://appstoreconnect.apple.com/login"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3678139",
+              "metadata": {
+                "anchor": "3678139",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For additional information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/xcode/distributing_your_app_for_beta_testing_and_releases"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

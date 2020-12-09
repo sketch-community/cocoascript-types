@@ -1,0 +1,960 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Learn how to make your iOS app more accessible to users who are blind or have low vision by adding VoiceOver support."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3017297,
+  "kind": "article",
+  "metadata": {
+    "title": "Supporting VoiceOver in Your App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app",
+        "documentation/accessibility/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app",
+        "documentation/accessibility/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/uikit"
+    },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
+      "title": "Accessibility for iOS and tvOS",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accessibility": {
+      "title": "Accessibility",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility",
+      "url": "/documentation/accessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-3026819": {
+      "title": "iPhone User Guide",
+      "type": "section",
+      "identifier": "link-3026819",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/iphone/11/#/iph3e2e2281"
+    },
+    "link-media-3023633": {
+      "identifier": "link-media-3023633",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3023633"
+    },
+    "media-3023633": {
+      "identifier": "media-3023633",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 131
+          },
+          "url": "https://docs-assets.developer.apple.com/published/85d2940f3a/33b56e5e-4d24-414d-bf80-08804f9fa1e9.png"
+        }
+      ],
+      "alt": "A screenshot from Xcode, showing the Accessibility pane of the Identity inspector. This pane includes a checkbox to enable accessibility, and three text fields in which you enter text for an object’s Label, Hint, and an Identifier. In this screenshot, the Accessibility checkbox is Enabled. The Label field says “Play song,” and the Hint field says “Play the selected song.” The Identifier field is blank.",
+      "title": "Figure 3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Accessibility pane in the Identity Inspector"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3017288": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3017288",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3017288"
+    },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3023626": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3023626",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3023626"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel": {
+      "title": "accessibilityLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619585-accessibilityhint": {
+      "title": "accessibilityHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619585-accessibilityhint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilityelement/1619585-accessibilityhint"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilabel": {
+      "title": "UILabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilabel"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibutton": {
+      "title": "UIButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibutton"
+    },
+    "link-media-3023631": {
+      "identifier": "link-media-3023631",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3023631"
+    },
+    "media-3023631": {
+      "identifier": "media-3023631",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 533,
+            "height": 134
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ee49778365/bce02f2c-ccd3-4cae-a8fd-22601abc4cb0.png"
+        }
+      ],
+      "alt": "Two side-by-side diagrams, demonstrating how VoiceOver reads ungrouped and grouped labels. On the left, there are two pairs of ungrouped labels—one pair on the left and another pair on the right—used to depict a person’s name and email address. When ungrouped, VoiceOver reads the labels in a top-left, top-right, bottom-left, and bottom-right sequence. On the right, the top- and bottom-left labels are in one group, and the top- and bottom-right labels are in a second group. When grouped, VoiceOver still reads left-to-right and top-to-bottom, but this time it reads the first group (at left) before reading the second group (at right) from top-to-bottom.",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An example of how VoiceOver navigates with and without grouping"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement": {
+      "title": "UIAccessibilityElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilityelement"
+    },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3023627": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3023627",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3023627"
+    },
+    "link-media-3026167": {
+      "identifier": "link-media-3026167",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app#3026167"
+    },
+    "media-3026167": {
+      "identifier": "media-3026167",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 595,
+            "height": 281
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d2e04a7659/3cb6a2ae-f800-4c06-a222-c1cdbd8164e0.png"
+        }
+      ],
+      "alt": "Two iPhones with VoiceOver turned on. The phone on the left has the camera app open and the VoiceOver cursor is highlighting the timer. The phone on the right shows a contact in the phone app for Maria Ruiz. The call home button is highlighted by the VoiceOver cursor.  ",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience": {
+      "title": "Delivering an Exceptional Accessibility Experience",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility": {
+      "title": "UIAccessibility",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that provide accessibility information about views and controls in an app's user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilitycontainer": {
+      "title": "UIAccessibilityContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilitycontainer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibilitycontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app": {
+      "title": "Supporting VoiceOver in Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to make your iOS app more accessible to users who are blind or have low vision by adding VoiceOver support."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilitycontainer"
+      ],
+      "title": "Essentials",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/delivering_an_exceptional_accessibility_experience"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "VoiceOver is a screen reader that enables people to experience the interface on their devices without having to see the screen. People who are blind depend on VoiceOver to provide auditory feedback while using their iOS devices, but VoiceOver is not exclusively for the blind community. For example, someone prone to motion sickness might choose to turn VoiceOver on while they are in a moving vehicle. While VoiceOver assists all types of people, those who are blind rely on VoiceOver whenever they use their devices."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a few steps you can make your app VoiceOver accessible in Xcode or programmatically. By increasing accessibility, you open your app to a wider audience, and make it easier for everyone to use."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3026167",
+              "metadata": {
+                "anchor": "3026167",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Audit Your App with VoiceOver On",
+          "anchor": "3017295"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To test the accessibility of your app, turn on VoiceOver and navigate through the interface. By using your app with VoiceOver on, you can establish a baseline of its accessibility. To start auditing, go to Settings > General > Accessibility > Accessibility Shortcut, and tap to select VoiceOver. Then, open your app and use the specified action for Accessibility Shortcuts whenever you want to test VoiceOver."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Auditing also reveals which elements are accessible with VoiceOver and which aren’t, and shows you if VoiceOver navigation is clear and logical. Keep track of which elements are not accessible and create a list of improvements for adding better VoiceOver support."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Navigate with VoiceOver On",
+          "anchor": "3017300"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To audit your app with VoiceOver on, you'll use VoiceOver's unique set of gestures to navigate your app. For testing, there are five key gestures that you may use:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Swipe left or right to navigate to the next or previous UI element."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "One-finger double-tap to activate the selected element."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Two-finger tap to stop and resume speaking."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Swipe up with two fingers to read everything onscreen."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Three-finger triple-tap to turn screen curtain on and off."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more, see Learn VoiceOver gestures in the "
+            },
+            {
+              "type": "link",
+              "title": "iPhone User Guide",
+              "destination": "https://help.apple.com/iphone/11/#/iph3e2e2281"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To replicate the experience of someone who is solely relying on VoiceOver, test your app using screen curtain. As the name implies, screen curtain blacks out the entire screen. You can still navigate using VoiceOver gestures, but you can’t see the elements on the screen."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Now that you can turn VoiceOver on and know how to navigate though your app, you are ready to start testing your app. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Identify Common Accessibility Issues",
+          "anchor": "3023625"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To audit your app, check that you can access every element and that the ordering of those elements is what you intended. Take note of which elements VoiceOver can or cannot access. Also, pay attention when you find it difficult to perform a task because you assume it is reliant on visuals. For example, when you are navigating back to your app’s initial view, or you are sharing content with another app or user, how can you use VoiceOver to make it accessible? While auditing your app, here are some common issues to look out for:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Add accessibility information for your app's elements."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " VoiceOver doesn’t recognize custom UI elements by default. You need to add additional accessibility information to these elements."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Group elements so that VoiceOver navigates through them in the correct order."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " VoiceOver reads from the leading to the trailing edge. If you want VoiceOver to read your elements in a different order, use groups to facilitate navigation that makes sense for your app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Include descriptive text for VoiceOver to read."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " A UI that depends on visual cues may look nice, but can be unusable for a VoiceOver user. For example, VoiceOver doesn't detect if a confirmation button turns from gray to green when selected. VoiceOver may only describe the element and not it’s current state. Make sure that VoiceOver says whether you have selected the button."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you know which areas need improvements, start adding greater VoiceOver support to your app."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Your App’s Accessibility",
+          "anchor": "3017290"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For elements that were not accessible to VoiceOver, start by improving their accessibility labels and hints:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property provides descriptive text that VoiceOver reads when the user selects an element."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619585-accessibilityhint"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property provides additional context (or actions) for the selected element."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Accessibility labels are very important, because they provide the text that VoiceOver reads. A good accessibility label should be short and informative. It is important to note that a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel"
+            },
+            {
+              "type": "text",
+              "text": " and an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel"
+            },
+            {
+              "type": "text",
+              "text": " are different things. By default, VoiceOver reads the text associated with standard "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit"
+            },
+            {
+              "type": "text",
+              "text": " controls such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton"
+            },
+            {
+              "type": "text",
+              "text": ". However these controls can also have corresponding "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel"
+            },
+            {
+              "type": "text",
+              "text": " properties to add more detail about the label or button.."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Depending on the context, hints aren’t always necessary. In some cases, the label provides enough context. If you feel like you’re saying too much in an accessibility label, consider moving that text into a hint."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To ensure that users understand the intent of your interface, you might need to set some accessibility labels manually. Accessibility labels and hints can either be set in Xcode’s Identity Inspector or programmatically."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Add Accessibility Labels and Hints Using the Identity Inspector ",
+          "anchor": "3017291"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When using standard UIKit controls, assign accessibility labels and hints in Xcode using the Identity Inspector’s Accessibility pane. To improve accessibility, you make an element accessible by checking the accessibility checkbox. For example, the play button in a music app might include the label and hint shown in Figure 2. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3023633",
+              "metadata": {
+                "anchor": "3023633",
+                "title": "Figure 3",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "The Accessibility pane in the Identity Inspector"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Add Accessibility Labels and Hints Programmatically ",
+          "anchor": "3017292"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are times when adding accessibility labels and hints in Xcode is not enough. For example, when you are working with custom UI elements which are not automatically recognized by VoiceOver or if you are using variables as part of your accessibility labels. In these situations, you need to set the accessibility labels or hints programmatically. You first need to specifiy that an element is an accessibility element and then create a corresponding accessibility label and hint. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " To make your element accessible to VoiceOver programmatically, you need to define it as an accessibility element:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "score.isAccessibilityElement = true"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3017288",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An element’s label might not stay the same throughout the entire life cycle of your app. For example, a counter for keeping score as you play a game, you want to change the label as the score increases. You can do this by programmatically setting an accessibility label and hint: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "score.accessibilityLabel = \"score: \\(currentScore)\"",
+            "score.accessibilityHint = \"Your current score\" "
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3023626",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Simplify Your Accessibility Information ",
+          "anchor": "3023624"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "VoiceOver reads in the direction of the language the device is set to. For example, in English-speaking countries, VoiceOver reads from left-to-right, while Arabic and Farsi are read right-to-left. If you vertically stack labels in a UI or display text in a table, VoiceOver may not read the labels in the correct order. You can programmatically group accessibility elements to ensure that VoiceOver reads them as intended. For example, say you are creating an app that stacks a title and a value to display a contact's Name and Email address, as shown in Figure 3. Depending on their order in the interface, VoiceOver may not read those elements together. To ensure that you are creating a clear context, you want to group the elements together. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3023631",
+              "metadata": {
+                "anchor": "3023631",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "An example of how VoiceOver navigates with and without grouping"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On the left, there are four labels that VoiceOver reads from the leading to the trailing edge, in this case left-to-right. While every element is accessible to VoiceOver, this does not provide a great user experience. On the right, VoiceOver reads the grouped labels in the intended order allowing for clear navigation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To group the labels programmatically, start by create a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement"
+            },
+            {
+              "type": "text",
+              "text": ", and then add the information you would like to have grouped together. For example, group to combine the labels as follows:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var elements = [UIAccessibilityElement]()",
+            "let groupedElement = UIAccessibilityElement(accessibilityContainer: self)",
+            "groupedElement.accessibilityLabel = \"\\(nameTitle.text!), \\(nameValue.text!)\"",
+            "groupedElement.accessibilityFrameInContainerSpace = nameTitle.frame.union(nameValue.frame)",
+            "elements.append(groupedElement)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3023627",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Including an accessibility label for each element and grouping elements allows people who depend on VoiceOver to navigate their devices and use your app."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

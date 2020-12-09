@@ -1,0 +1,229 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocket",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallbacktype"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallbacktype/kcfsocketconnectcallback",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1542373,
+  "kind": "symbol",
+  "metadata": {
+    "title": "kCFSocketConnectCallBack",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@E@CFSocketCallBackType@kCFSocketConnectCallBack",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfsocketcallbacktype/kcfsocketconnectcallback"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfsocketcallbacktype/1542373-connectcallback"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket": {
+      "title": "CFSocket",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket",
+      "url": "/documentation/corefoundation/cfsocket",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallbacktype": {
+      "title": "CFSocketCallBackType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallbacktype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfsocketcallbacktype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Types of socket activity that can cause the callback function of a CFSocket object to be called."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542331-cfsocketconnecttoaddress": {
+      "title": "CFSocketConnectToAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542331-cfsocketconnecttoaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542331-cfsocketconnecttoaddress"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets": {
+      "title": "CFSocketCreateConnectedToSocketSignature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "kCFSocketConnectCallBack"
+            },
+            {
+              "kind": "text",
+              "text": " = 4"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If a connection attempt is made in the background by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542331-cfsocketconnecttoaddress"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets"
+            },
+            {
+              "type": "text",
+              "text": " with a negative timeout value, this callback type is made when the connect finishes. In this case the data argument is either "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": " or a pointer to an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SInt32"
+            },
+            {
+              "type": "text",
+              "text": " error code, if the connect failed. This callback will never be sent more than once for a given socket."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

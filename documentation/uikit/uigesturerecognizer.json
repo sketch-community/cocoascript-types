@@ -1,0 +1,2107 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The base class for concrete gesture recognizers."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1624202,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UIGestureRecognizer",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "3.2",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)UIGestureRecognizer",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uigesturerecognizer"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uigesturerecognizer"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer#1658520": {
+      "title": "Methods for Subclasses",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer#1658520",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/uikit/uigesturerecognizer#1658520"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619998-state": {
+      "title": "state",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619998-state",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1619998-state",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current state of the gesture recognizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620010-ignoretouch": {
+      "title": "ignoreTouch:forEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620010-ignoretouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620010-ignoretouch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the gesture recognizer to ignore a specific touch of the given event. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "ignoreTouch:forEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatepossible": {
+      "title": "UIGestureRecognizerStatePossible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatepossible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatepossible"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized": {
+      "title": "UIGestureRecognizerStateRecognized",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatefailed": {
+      "title": "UIGestureRecognizerStateFailed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatefailed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatefailed"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate": {
+      "title": "UIGestureRecognizerState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current state a gesture recognizer is in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer": {
+      "title": "UIGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The base class for concrete gesture recognizers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitapgesturerecognizer": {
+      "title": "UITapGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitapgesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitapgesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipinchgesturerecognizer": {
+      "title": "UIPinchGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipinchgesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipinchgesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uirotationgesturerecognizer": {
+      "title": "UIRotationGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uirotationgesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uirotationgesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer": {
+      "title": "UISwipeGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiswipegesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer": {
+      "title": "UIPanGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipangesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer": {
+      "title": "UIScreenEdgePanGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscreenedgepangesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilongpressgesturerecognizer": {
+      "title": "UILongPressGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilongpressgesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilongpressgesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerdelegate": {
+      "title": "UIGestureRecognizerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods implemented by the delegate of a gesture recognizer to fine-tune an app’s gesture-recognition behavior. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer": {
+      "title": "addGestureRecognizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622496-addgesturerecognizer",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addGestureRecognizer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer#2557367": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer#2557367",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uigesturerecognizer#2557367"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624219-locationinview": {
+      "title": "locationInView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624219-locationinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624219-locationinview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the point computed as the location in a given view of the gesture represented by the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationInView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624201-locationoftouch": {
+      "title": "locationOfTouch:inView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624201-locationoftouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624201-locationoftouch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the location of one of the gesture’s touches in the local coordinate system of a given view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationOfTouch:inView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624218-cancelstouchesinview": {
+      "title": "cancelsTouchesInView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624218-cancelstouchesinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624218-cancelstouchesinview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value affecting whether touches are delivered to a view when a gesture is recognized. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624234-delaystouchesbegan": {
+      "title": "delaysTouchesBegan",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624234-delaystouchesbegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624234-delaystouchesbegan",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value determining whether the receiver delays sending touches in a begin phase to its view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624209-delaystouchesended": {
+      "title": "delaysTouchesEnded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624209-delaystouchesended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624209-delaystouchesended",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value determining whether the receiver delays sending touches in a end phase to its view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled": {
+      "title": "touchesCancelled:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesCancelled:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasebegan": {
+      "title": "UITouchPhaseBegan",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasebegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouchphase/uitouchphasebegan"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan": {
+      "title": "touchesBegan:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesBegan:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved": {
+      "title": "touchesMoved:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621107-touchesmoved",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesMoved:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphaseended": {
+      "title": "UITouchPhaseEnded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphaseended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouchphase/uitouchphaseended"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended": {
+      "title": "touchesEnded:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621084-touchesended",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesEnded:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipress/1620364-force": {
+      "title": "force",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipress/1620364-force",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipress/1620364-force"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624211-initwithtarget": {
+      "title": "initWithTarget:action:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624211-initwithtarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624211-initwithtarget",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes an allocated gesture-recognizer object with a target and an action selector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithTarget:action:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624207-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624207-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624207-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The delegate of the gesture recognizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624230-addtarget": {
+      "title": "addTarget:action:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624230-addtarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624230-addtarget",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a target and an action to a gesture-recognizer object. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addTarget:action:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624226-removetarget": {
+      "title": "removeTarget:action:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624226-removetarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624226-removetarget",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a target and an action from a gesture-recognizer object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeTarget:action:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624200-numberoftouches": {
+      "title": "numberOfTouches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624200-numberoftouches",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624200-numberoftouches",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of touches involved in the gesture represented by the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624212-view": {
+      "title": "view",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624212-view",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624212-view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The view the gesture recognizer is attached to."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624220-enabled": {
+      "title": "enabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624220-enabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624220-enabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean property that indicates whether the gesture recognizer is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538974-buttonmask": {
+      "title": "buttonMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538974-buttonmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/3538974-buttonmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bit mask of the button (or buttons) in the gesture represented by the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538975-modifierflags": {
+      "title": "modifierFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538975-modifierflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/3538975-modifierflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The bit mask of modifier flags in the gesture represented by the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624203-requiregesturerecognizertofail": {
+      "title": "requireGestureRecognizerToFail:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624203-requiregesturerecognizertofail",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624203-requiregesturerecognizertofail",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a dependency relationship between the receiver and another gesture recognizer when the objects are created."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requireGestureRecognizerToFail:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624231-allowedpresstypes": {
+      "title": "allowedPressTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624231-allowedpresstypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624231-allowedpresstypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of press types used to distinguish the type of button press."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624223-allowedtouchtypes": {
+      "title": "allowedTouchTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624223-allowedtouchtypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1624223-allowedtouchtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of touch types used to distinguish type of touches."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1649116-requiresexclusivetouchtype": {
+      "title": "requiresExclusiveTouchType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1649116-requiresexclusivetouchtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1649116-requiresexclusivetouchtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean indicating whether the gesture recognizer considers touches of different types simultaneously."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620009-touchesbegan": {
+      "title": "touchesBegan:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620009-touchesbegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620009-touchesbegan",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the gesture recognizer when one or more fingers touch down in the associated view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesBegan:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619996-touchesmoved": {
+      "title": "touchesMoved:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619996-touchesmoved",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1619996-touchesmoved",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the gesture recognizer when one or more fingers move in the associated view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesMoved:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620005-touchesended": {
+      "title": "touchesEnded:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620005-touchesended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620005-touchesended",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the gesture recognizer when one or more fingers lift from the associated view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesEnded:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620002-touchescancelled": {
+      "title": "touchesCancelled:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620002-touchescancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620002-touchescancelled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the gesture recognizer when a system event (such as an incoming phone call) cancels a touch event."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesCancelled:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619997-touchesestimatedpropertiesupdate": {
+      "title": "touchesEstimatedPropertiesUpdated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619997-touchesestimatedpropertiesupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1619997-touchesestimatedpropertiesupdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the gesture recognizer when the estimated properties for a touch have changed so that they are no longer estimated, or an update is no longer expected."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesEstimatedPropertiesUpdated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset": {
+      "title": "reset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620004-reset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Overridden to reset internal state when a gesture recognition attempt completes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reset"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620003-canbepreventedbygesturerecognize": {
+      "title": "canBePreventedByGestureRecognizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620003-canbepreventedbygesturerecognize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620003-canbepreventedbygesturerecognize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Overridden to indicate that the specified gesture recognizer can prevent the receiver from recognizing a gesture."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canBePreventedByGestureRecognizer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620008-canpreventgesturerecognizer": {
+      "title": "canPreventGestureRecognizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620008-canpreventgesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620008-canpreventgesturerecognizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Overridden to indicate that the receiver can prevent the specified gesture recognizer from recognizing its gesture."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canPreventGestureRecognizer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620006-shouldrequirefailureofgesturerec": {
+      "title": "shouldRequireFailureOfGestureRecognizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620006-shouldrequirefailureofgesturerec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620006-shouldrequirefailureofgesturerec",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Overridden to indicate that the receiver requires the specified gesture recognizer to fail."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldRequireFailureOfGestureRecognizer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619994-shouldberequiredtofailbygesturer": {
+      "title": "shouldBeRequiredToFailByGestureRecognizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619994-shouldberequiredtofailbygesturer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1619994-shouldberequiredtofailbygesturer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Overridden to indicate that the receiver should be required to fail by the specified gesture recognizer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldBeRequiredToFailByGestureRecognizer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620007-ignorepress": {
+      "title": "ignorePress:forEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620007-ignorepress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620007-ignorepress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the gesture recognizer to ignore a specific press of the given event. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "ignorePress:forEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619995-pressesbegan": {
+      "title": "pressesBegan:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619995-pressesbegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1619995-pressesbegan",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the receiver when a physical button is pressed in the associated view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pressesBegan:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620001-presseschanged": {
+      "title": "pressesChanged:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620001-presseschanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620001-presseschanged",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the receiver when the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uipress/1620364-force"
+        },
+        {
+          "type": "text",
+          "text": " of the press has changed in the associated view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pressesChanged:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620000-pressesended": {
+      "title": "pressesEnded:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620000-pressesended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620000-pressesended",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the receiver when a button is released from the associated view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pressesEnded:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619999-pressescancelled": {
+      "title": "pressesCancelled:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619999-pressescancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1619999-pressescancelled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sent to the receiver when a system event (such as a low-memory warning) cancels a press event."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pressesCancelled:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/2890966-name": {
+      "title": "name",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/2890966-name",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/2890966-name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name associated with the gesture recognizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3182937-init": {
+      "title": "init",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3182937-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/3182937-init",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "init"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3043559-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3043559-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/3043559-initwithcoder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538977-shouldreceiveevent": {
+      "title": "shouldReceiveEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538977-shouldreceiveevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/3538977-shouldreceiveevent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldReceiveEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer": {
+      "title": "Implementing a Custom Gesture Recognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Discover when and how to build your own gesture recognizers"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/supporting_gesture_interaction_in_your_apps": {
+      "title": "Supporting Gesture Interaction in Your Apps",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/supporting_gesture_interaction_in_your_apps",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/touches_presses_and_gestures/supporting_gesture_interaction_in_your_apps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enrich your app’s user experience by supporting standard and custom gesture interaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializing a Gesture Recognizer",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624211-initwithtarget"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Gesture-Related Interactions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624207-delegate",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerdelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Adding and Removing Targets and Actions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624230-addtarget",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624226-removetarget"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Touches and Location of a Gesture",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624219-locationinview",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624201-locationoftouch",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624200-numberoftouches"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Recognizer’s State and View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619998-state",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624212-view",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624220-enabled",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538974-buttonmask",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538975-modifierflags"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Canceling and Delaying Touches",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624218-cancelstouchesinview",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624234-delaystouchesbegan",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624209-delaystouchesended"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Specifying Dependencies Between Gesture Recognizers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624203-requiregesturerecognizertofail"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Recognizing Different Gestures",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624231-allowedpresstypes",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624223-allowedtouchtypes",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1649116-requiresexclusivetouchtype"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Methods for Subclasses",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620009-touchesbegan",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619996-touchesmoved",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620005-touchesended",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620002-touchescancelled",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619997-touchesestimatedpropertiesupdate",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620010-ignoretouch",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620003-canbepreventedbygesturerecognize",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620008-canpreventgesturerecognizer",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620006-shouldrequirefailureofgesturerec",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619994-shouldberequiredtofailbygesturer",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620007-ignorepress",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619995-pressesbegan",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620001-presseschanged",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620000-pressesended",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619999-pressescancelled"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "UIGestureRecognizerSubclass.h"
+        },
+        {
+          "type": "text",
+          "text": " header file contains a class extension that declares methods intended to be called or overridden "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "only"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " by subclasses of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "UIGestureRecognizer"
+        },
+        {
+          "type": "text",
+          "text": ". Clients that merely use concrete subclasses of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "UIGestureRecognizer"
+        },
+        {
+          "type": "text",
+          "text": " must never call these methods (except for those noted)."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Debugging Gesture Recognizers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/2890966-name"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3182937-init",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3043559-initwithcoder"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3538977-shouldreceiveevent"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer",
+        "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerdelegate",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/supporting_gesture_interaction_in_your_apps"
+      ],
+      "title": "Custom Gestures",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UIGestureRecognizer"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A gesture-recognizer object—or, simply, a gesture recognizer—decouples the logic for recognizing a sequence of touches (or other input) and acting on that recognition. When one of these objects recognizes a common gesture or, in some cases, a change in the gesture, it sends an action message to each designated target object. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The concrete subclasses of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer"
+            },
+            {
+              "type": "text",
+              "text": " are the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitapgesturerecognizer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uipinchgesturerecognizer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uirotationgesturerecognizer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uilongpressgesturerecognizer"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer"
+            },
+            {
+              "type": "text",
+              "text": " class defines a set of common behaviors that can be configured for all concrete gesture recognizers. It can also communicate with its delegate (an object that adopts the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol), thereby enabling finer-grained customization of some behaviors."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A gesture recognizer operates on touches hit-tested to a specific view and all of that view’s subviews. It thus must be associated with that view. To make that association you must call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer"
+            },
+            {
+              "type": "text",
+              "text": ". A gesture recognizer doesn’t participate in the view’s responder chain. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A gesture recognizer has one or more target-action pairs associated with it. If there are multiple target-action pairs, they are discrete, and not cumulative. Recognition of a gesture results in the dispatch of an action message to a target for each of the associated pairs. The action methods invoked must conform to one of the following signatures: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "- (void)handleGesture;",
+            "- (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2557367",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Methods conforming to the latter signature permit the target in some cases to query the gesture recognizer sending the message for additional information. For example, the target could ask a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uirotationgesturerecognizer"
+            },
+            {
+              "type": "text",
+              "text": " object for the angle of rotation (in radians) since the last invocation of the action method for this gesture. Clients of gesture recognizers can also ask for the location of a gesture by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624219-locationinview"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624201-locationoftouch"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The gesture interpreted by a gesture recognizer can be either discrete or continuous. A discrete gesture, such as a double tap, occurs but once in a multi-touch sequence and results in a single action sent. However, when a gesture recognizer interprets a continuous gesture such as a rotation gesture, it sends an action message for each incremental change until the multi-touch sequence concludes. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A window delivers touch events to a gesture recognizer before it delivers them to the hit-tested view attached to the gesture recognizer. Generally, if a gesture recognizer analyzes the stream of touches in a multi-touch sequence and doesn’t recognize its gesture, the view receives the full complement of touches. If a gesture recognizer recognizes its gesture, the remaining touches for the view are cancelled. The usual sequence of actions in gesture recognition follows a path determined by default values of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624218-cancelstouchesinview"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624234-delaystouchesbegan"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624209-delaystouchesended"
+            },
+            {
+              "type": "text",
+              "text": " properties:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624218-cancelstouchesinview"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—If a gesture recognizer recognizes its gesture, it unbinds the remaining touches of that gesture from their view (so the window won’t deliver them). The window cancels the previously delivered touches with a ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled"
+                    },
+                    {
+                      "type": "text",
+                      "text": ") message. If a gesture recognizer doesn’t recognize its gesture, the view receives all touches in the multi-touch sequence."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624234-delaystouchesbegan"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—As long as a gesture recognizer, when analyzing touch events, has not failed recognition of its gesture, the window withholds delivery of touch objects in the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphasebegan"
+                    },
+                    {
+                      "type": "text",
+                      "text": " phase to the attached view. If the gesture recognizer subsequently recognizes its gesture, the view doesn’t receive these touch objects. If the gesture recognizer doesn’t recognize its gesture, the window delivers these objects in an invocation of the view’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method (and possibly a follow-up "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved"
+                    },
+                    {
+                      "type": "text",
+                      "text": " invocation to inform it of the touches current location)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1624209-delaystouchesended"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—As long as a gesture recognizer, when analyzing touch events, has not failed recognition of its gesture, the window withholds delivery of touch objects in the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouchphase/uitouchphaseended"
+                    },
+                    {
+                      "type": "text",
+                      "text": " phase to the attached view. If the gesture recognizer subsequently recognizes its gesture, the touches are cancelled (in a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled"
+                    },
+                    {
+                      "type": "text",
+                      "text": " message). If the gesture recognizer doesn’t recognize its gesture, the window delivers these objects in an invocation of the view’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that \"recognize” in the above descriptions doesn’t necessarily equate to a transition to the Recognized state."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1968622"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You may create a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIGestureRecognizer"
+            },
+            {
+              "type": "text",
+              "text": " that recognizes a distinctive gesture—for example, a “check mark” gesture. If you are going to create such a concrete gesture recognizer, be sure to import the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIGestureRecognizerSubclass.h"
+            },
+            {
+              "type": "text",
+              "text": " header file. This header file declares all the methods and properties a subclass must either override, call, or reset."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Gesture recognizers operate within a predefined state machine, transitioning to subsequent states as they handle multi-touch events. The states and their possible transitions differ for continuous and discrete gestures. All gesture recognizers begin a multi-touch sequence in the Possible state ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatepossible"
+            },
+            {
+              "type": "text",
+              "text": "). Discrete gestures transition from Possible to either Recognized ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized"
+            },
+            {
+              "type": "text",
+              "text": ") or Failed ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatefailed"
+            },
+            {
+              "type": "text",
+              "text": "), depending on whether they successfully interpret the gesture or not. If the gesture recognizer transitions to Recognized, it sends its action message to its target."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For continuous gestures, the state transitions a gesture recognizer might make are more numerous, as indicated in the following diagram:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Possible ----> Began ----> [Changed] ----> Cancelled"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Possible ----> Began ----> [Changed] ----> Ended"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Changed state is optional and may occur multiple times before the Cancelled or Ended state is reached. The gesture recognizer sends action messages  at each state transition. Thus for a continuous gesture such as a pinch, action messages are sent as the two fingers move toward or away from each other. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "enum"
+            },
+            {
+              "type": "text",
+              "text": " constants representing these states are of type "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate"
+            },
+            {
+              "type": "text",
+              "text": ". (Note that the constants for Recognized and Ended states are synonymous.) "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Subclasses must set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619998-state"
+            },
+            {
+              "type": "text",
+              "text": " property to the appropriate value when they transition between states."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Methods to Override",
+          "anchor": "1968623"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The methods that subclasses must override are described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer#1658520"
+            },
+            {
+              "type": "text",
+              "text": ". Subclasses must also periodically reset the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619998-state"
+            },
+            {
+              "type": "text",
+              "text": " property (as described above) and may call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620010-ignoretouch"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Special Considerations",
+          "anchor": "1968625"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619998-state"
+            },
+            {
+              "type": "text",
+              "text": " property is declared in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIGestureRecognizer.h"
+            },
+            {
+              "type": "text",
+              "text": " as being read-only. This property declaration is intended for clients of gesture recognizers. Subclasses of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIGestureRecognizer"
+            },
+            {
+              "type": "text",
+              "text": " must import "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIGestureRecognizerSubclass.h"
+            },
+            {
+              "type": "text",
+              "text": ". This header file contains a redeclaration of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "state"
+            },
+            {
+              "type": "text",
+              "text": " that makes it read-write."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

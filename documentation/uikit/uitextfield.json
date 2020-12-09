@@ -1,0 +1,3075 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that displays an editable text area in your interface.  "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uitextfield",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1619619,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UITextField",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)UITextField",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitextfield"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitextfield"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
+      "title": "Text Display and Fonts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+      "url": "/documentation/uikit/text_display_and_fonts",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits": {
+      "title": "UITextInputTraits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield#1965766": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1965766",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/uikit/uitextfield#1965766",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keyboard attributes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboardwillshownotification": {
+      "title": "UIKeyboardWillShowNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillshownotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboardwillshownotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboarddidshownotification": {
+      "title": "UIKeyboardDidShowNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidshownotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboarddidshownotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboardwillhidenotification": {
+      "title": "UIKeyboardWillHideNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillhidenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboardwillhidenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboarddidhidenotification": {
+      "title": "UIKeyboardDidHideNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidhidenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboarddidhidenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboardwillchangeframenotification": {
+      "title": "UIKeyboardWillChangeFrameNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillchangeframenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboardwillchangeframenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uikeyboarddidchangeframenotification": {
+      "title": "UIKeyboardDidChangeFrameNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidchangeframenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uikeyboarddidchangeframenotification"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/1409222-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/1409222-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/1409222-userinfo"
+    },
+    "link-media-1965762": {
+      "identifier": "link-media-1965762",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/uikit/uitextfield#1965762"
+    },
+    "media-1965762": {
+      "identifier": "media-1965762",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 416,
+            "height": 404
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ef3a6fcec5/keyboard_adjust_2x_4220aae9-104f-43e5-b753-aae36699e0d3.png"
+        }
+      ],
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adjusting the position of a text field when the keyboard appears"
+        }
+      ]
+    },
+    "devLink-1742574": {
+      "identifier": "devLink-1742574",
+      "type": "link",
+      "title": "Text Programming Guide for iOS",
+      "url": "https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009542"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621113-becomefirstresponder": {
+      "title": "becomeFirstResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621113-becomefirstresponder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621113-becomefirstresponder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "becomeFirstResponder"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield#1652976": {
+      "title": "Responding to Keyboard-Related Notifications",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1652976",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/uitextfield#1652976"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621097-resignfirstresponder": {
+      "title": "resignFirstResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621097-resignfirstresponder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621097-resignfirstresponder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resignFirstResponder"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield#1653000": {
+      "title": "Validating Text and Managing the Editing Process",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1653000",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/uitextfield#1653000"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring": {
+      "title": "NSAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsformatter": {
+      "title": "NSFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsformatter"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619604-font": {
+      "title": "font",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619604-font",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619604-font",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The font of the text. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619617-textcolor": {
+      "title": "textColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619617-textcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619617-textcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The color of the text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619643-textalignment": {
+      "title": "textAlignment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619643-textalignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619643-textalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The technique for aligning the text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619599-textfield": {
+      "title": "textField:shouldChangeCharactersInRange:replacementString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619599-textfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619599-textfield",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textField:shouldChangeCharactersInRange:replacementString:"
+        }
+      ]
+    },
+    "devLink-1695316": {
+      "identifier": "devLink-1695316",
+      "type": "link",
+      "title": "Data Formatting Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619588-leftviewmode": {
+      "title": "leftViewMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619588-leftviewmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619588-leftviewmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mode that controls when the left overlay view appears in the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield#1943759": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1943759",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uitextfield#1943759",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adding an overlay view to a text field"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619607-rightviewmode": {
+      "title": "rightViewMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619607-rightviewmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619607-rightviewmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mode that controls when the right overlay view appears in the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619622-clearbuttonmode": {
+      "title": "clearButtonMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619622-clearbuttonmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619622-clearbuttonmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mode that controls when the standard Clear button appears in the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate": {
+      "title": "UITextFieldDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods to manage the editing and validation of text in a text field object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield#1965765": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1965765",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/uikit/uitextfield#1965765",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Text Field attributes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontrol": {
+      "title": "UIControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontrol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619621-placeholder": {
+      "title": "placeholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619621-placeholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619621-placeholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The string that displays when there is no other text in the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619623-background": {
+      "title": "background",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619623-background",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619623-background",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image that represents the background appearance of the text field when it is in an enabled state. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619611-disabledbackground": {
+      "title": "disabledBackground",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619611-disabledbackground",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619611-disabledbackground",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image that represents the background appearance of the text field when it is in a disabled state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619624-borderstyle": {
+      "title": "borderStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619624-borderstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619624-borderstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The border style for the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619605-minimumfontsize": {
+      "title": "minimumFontSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619605-minimumfontsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619605-minimumfontsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The size of the smallest permissible font when drawing the text field’s text. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624447-autocapitalizationtype": {
+      "title": "autocapitalizationType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624447-autocapitalizationtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits/1624447-autocapitalizationtype"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624453-autocorrectiontype": {
+      "title": "autocorrectionType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624453-autocorrectiontype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits/1624453-autocorrectiontype"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624461-spellcheckingtype": {
+      "title": "spellCheckingType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624461-spellcheckingtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits/1624461-spellcheckingtype"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624457-keyboardtype": {
+      "title": "keyboardType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624457-keyboardtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits/1624457-keyboardtype"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624434-keyboardappearance": {
+      "title": "keyboardAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624434-keyboardappearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits/1624434-keyboardappearance"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624446-returnkeytype": {
+      "title": "returnKeyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624446-returnkeytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits/1624446-returnkeytype"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn": {
+      "title": "textFieldShouldReturn:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFieldShouldReturn:"
+        }
+      ]
+    },
+    "devLink-1696204": {
+      "identifier": "devLink-1696204",
+      "type": "link",
+      "title": "Internationalization and Localization Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i"
+    },
+    "devLink-1740862": {
+      "identifier": "devLink-1740862",
+      "type": "link",
+      "title": "Accessibility Programming Guide for iOS",
+      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622494-restorationidentifier": {
+      "title": "restorationIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622494-restorationidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622494-restorationidentifier"
+    },
+    "devLink-1734732": {
+      "identifier": "devLink-1734732",
+      "type": "link",
+      "title": "App Programming Guide for iOS",
+      "url": "https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072"
+    },
+    "link-3668750": {
+      "title": "Human Interface Guidelines",
+      "type": "topic",
+      "identifier": "link-3668750",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/ios/controls/text-fields/"
+    },
+    "link-media-2557435": {
+      "identifier": "link-media-2557435",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/uitextfield#2557435"
+    },
+    "media-2557435": {
+      "identifier": "media-2557435",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 97,
+            "height": 30
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ef3a6fcec5/uitextfield_intro_2x_a45e1f72-b6db-4bd6-8f82-4438e14dc1da.png"
+        }
+      ],
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscoding": {
+      "title": "NSCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscoding"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinput": {
+      "title": "UITextInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinput"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting": {
+      "title": "UIContentSizeCategoryAdjusting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontentsizecategoryadjusting"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619595-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619595-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619595-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text field’s delegate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619635-text": {
+      "title": "text",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619635-text",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619635-text",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text that the text field displays. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619602-attributedtext": {
+      "title": "attributedText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619602-attributedtext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619602-attributedtext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The styled text that the text field displays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619610-attributedplaceholder": {
+      "title": "attributedPlaceholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619610-attributedplaceholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619610-attributedplaceholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The styled string that displays when there is no other text in the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619618-defaulttextattributes": {
+      "title": "defaultTextAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619618-defaulttextattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619618-defaulttextattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The default attributes to apply to the text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619632-typingattributes": {
+      "title": "typingAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619632-typingattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619632-typingattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The attributes to apply to new text that the user enters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextborderstyle": {
+      "title": "UITextBorderStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextborderstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextborderstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of border around the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619625-adjustsfontsizetofitwidth": {
+      "title": "adjustsFontSizeToFitWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619625-adjustsfontsizetofitwidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619625-adjustsfontsizetofitwidth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether to reduce the font size to fit the text string into the text field’s bounding rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619608-editing": {
+      "title": "editing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619608-editing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619608-editing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the text field is currently in edit mode. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619639-clearsonbeginediting": {
+      "title": "clearsOnBeginEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619639-clearsonbeginediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619639-clearsonbeginediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the text field removes old text when editing begins."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619631-clearsoninsertion": {
+      "title": "clearsOnInsertion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619631-clearsoninsertion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619631-clearsoninsertion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether inserting text replaces the previous contents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619628-allowseditingtextattributes": {
+      "title": "allowsEditingTextAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619628-allowseditingtextattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619628-allowseditingtextattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the user can edit the attributes of the text in the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreason": {
+      "title": "UITextFieldDidEndEditingReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddidendeditingreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the reason for ending editing in a text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreasonkey": {
+      "title": "UITextFieldDidEndEditingReasonKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreasonkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfielddidendeditingreasonkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates the reason for ending editing in a text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidbegineditingnotification": {
+      "title": "UITextFieldTextDidBeginEditingNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidbegineditingnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfieldtextdidbegineditingnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that alerts observers when an editing session begins in a text field. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidchangenotification": {
+      "title": "UITextFieldTextDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfieldtextdidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that alerts observers when the text in a text field changes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidendeditingnotification": {
+      "title": "UITextFieldTextDidEndEditingNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidendeditingnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfieldtextdidendeditingnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that alerts observers when the editing session ends for a text field. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619597-leftview": {
+      "title": "leftView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619597-leftview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619597-leftview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The overlay view that displays on the left (or leading) side of the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619596-rightview": {
+      "title": "rightView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619596-rightview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619596-rightview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The overlay view that displays on the right (or trailing) side of the text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfieldviewmode": {
+      "title": "UITextFieldViewMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfieldviewmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfieldviewmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define when overlay views appear in a text field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619636-textrectforbounds": {
+      "title": "textRectForBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619636-textrectforbounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619636-textrectforbounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the drawing rectangle for the text field’s text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textRectForBounds:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619587-drawtextinrect": {
+      "title": "drawTextInRect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619587-drawtextinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619587-drawtextinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the text field’s text in the specified rectangle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawTextInRect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619615-placeholderrectforbounds": {
+      "title": "placeholderRectForBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619615-placeholderrectforbounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619615-placeholderrectforbounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the drawing rectangle for the text field’s placeholder text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "placeholderRectForBounds:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619637-drawplaceholderinrect": {
+      "title": "drawPlaceholderInRect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619637-drawplaceholderinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619637-drawplaceholderinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the text field’s placeholder text in the specified rectangle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawPlaceholderInRect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619642-borderrectforbounds": {
+      "title": "borderRectForBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619642-borderrectforbounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619642-borderrectforbounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the text field’s border rectangle. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "borderRectForBounds:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619589-editingrectforbounds": {
+      "title": "editingRectForBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619589-editingrectforbounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619589-editingrectforbounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the rectangle for displaying editable text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "editingRectForBounds:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619600-clearbuttonrectforbounds": {
+      "title": "clearButtonRectForBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619600-clearbuttonrectforbounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619600-clearbuttonrectforbounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the drawing rectangle for the built-in Clear button. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "clearButtonRectForBounds:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619586-leftviewrectforbounds": {
+      "title": "leftViewRectForBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619586-leftviewrectforbounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619586-leftviewrectforbounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the drawing rectangle of the text field’s left overlay view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "leftViewRectForBounds:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619638-rightviewrectforbounds": {
+      "title": "rightViewRectForBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619638-rightviewrectforbounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619638-rightviewrectforbounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the drawing location of the text field’s right overlay view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rightViewRectForBounds:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619620-inputview": {
+      "title": "inputView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619620-inputview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619620-inputview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The custom input view to display when the text field becomes the first responder. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield/1619627-inputaccessoryview": {
+      "title": "inputAccessoryView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619627-inputaccessoryview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield/1619627-inputaccessoryview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The custom accessory view to display when the text field becomes the first responder."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilabel": {
+      "title": "UILabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that displays one or more lines of informational text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextfield": {
+      "title": "UITextField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that displays an editable text area in your interface.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextview": {
+      "title": "UITextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A scrollable, multiline text region. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/drag_and_drop_customization": {
+      "title": "Drag and Drop Customization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/drag_and_drop_customization",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/views_and_controls/drag_and_drop_customization",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extend the standard drag and drop support for text views to include custom types of content. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicontrol"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscoding",
+        "doc://com.apple.documentation/documentation/uikit/uicontentsizecategoryadjusting",
+        "doc://com.apple.documentation/documentation/uikit/uitextinput"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Validating and Handling Edits",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619595-delegate",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring the Text Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619635-text",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619602-attributedtext",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619621-placeholder",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619610-attributedplaceholder",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619618-defaulttextattributes",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619604-font",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619617-textcolor",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619643-textalignment",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619632-typingattributes",
+        "doc://com.apple.documentation/documentation/uikit/uitextborderstyle"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Sizing the Text Field’s Text",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619625-adjustsfontsizetofitwidth",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619605-minimumfontsize"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Editing Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619608-editing",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619639-clearsonbeginediting",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619631-clearsoninsertion",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619628-allowseditingtextattributes",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreason",
+        "doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreasonkey",
+        "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidbegineditingnotification",
+        "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidchangenotification",
+        "doc://com.apple.documentation/documentation/uikit/uitextfieldtextdidendeditingnotification"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting the View’s Background Appearance",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619624-borderstyle",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619623-background",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619611-disabledbackground"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Overlay Views",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619622-clearbuttonmode",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619597-leftview",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619588-leftviewmode",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619596-rightview",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619607-rightviewmode",
+        "doc://com.apple.documentation/documentation/uikit/uitextfieldviewmode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing and Positioning Overrides",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619636-textrectforbounds",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619587-drawtextinrect",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619615-placeholderrectforbounds",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619637-drawplaceholderinrect",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619642-borderrectforbounds",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619589-editingrectforbounds",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619600-clearbuttonrectforbounds",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619586-leftviewrectforbounds",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619638-rightviewrectforbounds"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Replacing the System Input Views",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619620-inputview",
+        "doc://com.apple.documentation/documentation/uikit/uitextfield/1619627-inputaccessoryview"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uilabel",
+        "doc://com.apple.documentation/documentation/uikit/uitextview",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/drag_and_drop_customization"
+      ],
+      "title": "Text Views",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UITextField"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)UIControl",
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrol",
+              "text": "UIControl"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use text fields to gather text-based input from the user using the onscreen keyboard. The keyboard is configurable for many different types of input such as plain text, emails, numbers, and so on. Text fields use the target-action mechanism and a delegate object to report changes made during the course of editing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to its basic text-editing behavior, you can add overlay views to a text field to display additional information and provide additional tappable controls. You might add custom overlay views for elements such as a bookmarks button or search icon. Text fields provide a built-in overlay view to clear the current text. The use of custom overlay views is optional. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2557435",
+              "metadata": {
+                "anchor": "2557435",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After adding a text field to your interface, you configure it for use in your app. Configuration involves performing some or all of the following tasks: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure one or more targets and actions for the text field. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure the keyboard-related attributes of the text field."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Assign a delegate object to handle important tasks, such as:"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Determining whether the user should be allowed to edit the text field’s contents."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Validating the text entered by the user."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Responding to taps in the keyboard’s return button."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Forwarding the user-entered text to other parts of your app."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Store a reference to the text field in one of your controller objects."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about the methods of the text field’s delegate object, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Showing and Hiding the Keyboard",
+          "anchor": "1652934"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a text field becomes first responder, the system automatically shows the keyboard and binds its input to the text field. A text field becomes the first responder automatically when the user taps it. You can also force a text field to become the first responder by calling its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621113-becomefirstresponder"
+            },
+            {
+              "type": "text",
+              "text": " method. You might force a text field to become first responder when you require the user to enter some information."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The appearance of the keyboard has the potential to obscure portions of your user interface. You should update your interface as needed to ensure that the text field being edited is visible. Use the keyboard notifications to detect the appearance and disappearance of the keyboard and to make necessary changes to your interface. For more information, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1652976"
+                },
+                {
+                  "type": "text",
+                  "text": ".  "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can ask the system to dismiss the keyboard by calling the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621097-resignfirstresponder"
+            },
+            {
+              "type": "text",
+              "text": " method of your text field. Usually, you dismiss the keyboard in response to specific interactions. For example, you might dismiss the keyboard when the user taps the keyboard’s return key. The system can also dismiss the keyboard in response to user actions. Specifically, the system dismisses the keyboard when the user taps a new control that does not support keyboard input.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The appearance and dismissal of the keyboard affect the editing state of the text field. When the keyboard appears, the text field enters the editing state and sends the appropriate notifications to its delegate. Similarly, when the text field resigns the first responder status, it leaves the editing state and notifies its delegate. For more information about the sequence of events that occur during editing, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1653000"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Configuring the Keyboard’s Appearance",
+          "anchor": "1652963"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You customize your text field’s keyboard using the properties of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits"
+            },
+            {
+              "type": "text",
+              "text": " protocol, which the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITextField"
+            },
+            {
+              "type": "text",
+              "text": " class adopts. UIKit supports standard keyboards for the user’s current language and also supports specialized keyboards for entering numbers, URLs, email addresses, and other specific types of information. You use the properties of this protocol to adjust keyboard traits such as the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The type of keyboard to display"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The autocapitalization behavior of the keyboard"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The autocorrection behavior of the keyboard"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The type of return key to display"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about how to configure keyboard attributes in Interface Builder or in your code, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1965766"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Responding to Keyboard-Related Notifications",
+          "anchor": "1652976"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the system manages the showing and hiding of the keyboard in response to responder changes, it posts the following notifications for tracking the keyboard-related changes:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillshownotification"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidshownotification"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillhidenotification"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidhidenotification"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboardwillchangeframenotification"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uikeyboarddidchangeframenotification"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each notification contains a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/1409222-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary that includes the size of the keyboard. Because the keyboard can hide portions of your interface, you should use the size information to reposition your content on the screen. For content embedded in a scroll view, you can scroll the text field into view, as illustrated in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "link-media-1965762"
+            },
+            {
+              "type": "text",
+              "text": ". In other cases, you can resize your main content view so that it is not covered by the keyboard."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-1965762",
+              "metadata": {
+                "anchor": "1965762",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Adjusting the position of a text field when the keyboard appears"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about managing keyboard interactions, see "
+            },
+            {
+              "type": "link",
+              "title": "Text Programming Guide for iOS",
+              "destination": "https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009542"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Formatting the Text in a Text Field",
+          "anchor": "1968630"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are two types of formatting you can do to a text field’s text:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can change the font, color, and style of the text using properties of this class. Alternatively, you can specify an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for the text field’s content."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can format the content of a text field using an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsformatter"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619604-font"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619617-textcolor"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619643-textalignment"
+            },
+            {
+              "type": "text",
+              "text": " properties, among others, affect the appearance of the text field’s string. Modifying these properties applies the specified characteristic to the entire string. To specify more granular formatting, specify the text field’s text using an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": " object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITextField"
+            },
+            {
+              "type": "text",
+              "text": " class does not provide built-in support for formatting its string using an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsformatter"
+            },
+            {
+              "type": "text",
+              "text": " object, but you can use the text field’s delegate to format the content yourself. To do so, use the text field’s delegate methods to validate text and to format it appropriately. For example, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619599-textfield"
+            },
+            {
+              "type": "text",
+              "text": " method to validate and format text while the user is typing. For information about how to use formatter objects, see "
+            },
+            {
+              "type": "link",
+              "title": "Data Formatting Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Using Overlay Views to Edit Content",
+          "anchor": "1968631"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Overlay views are small views displayed on the left and right sides of the text view’s editable area. Typically, overlay views are image-based buttons that you set up as additional editing controls. For example, you might use an overlay view to implement a bookmarks button. To configure a button as an overlay view, specify an image for the button’s content and configure the target and action of the button to respond to taps. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1943759"
+            },
+            {
+              "type": "text",
+              "text": " shows how to add a button as the left overlay of a text field. In this case, the code creates a button and configure its size and contents. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619588-leftviewmode"
+            },
+            {
+              "type": "text",
+              "text": " property specifies when your button is displayed. When the user taps the button, the button calls the configured action method, which in this case is a custom "
+            },
+            {
+              "type": "codeVoice",
+              "code": "displayBookmarks:"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "UIButton *overlayButton = [UIButton buttonWithType:UIButtonTypeCustom];",
+            "UIImage *bookmarkImage = [UIImage systemImageNamed:@\"bookmark\"];",
+            "[overlayButton setImage:bookmarkImage forState:UIControlStateNormal];",
+            "[overlayButton addTarget:self action:@selector(displayBookmarks)",
+            "        forControlEvents:UIControlEventTouchUpInside];",
+            "[overlayButton sizeToFit];",
+            "",
+            "// Assign the overlay button to the text field",
+            "self.textField.leftView = overlayButton;",
+            "self.textField.leftViewMode = UITextFieldViewModeAlways;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943759",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Adding an overlay view to a text field"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When configuring overlay views, consider whether you want your text field to display the built-in clear button. The clear button provides the user with a convenient way to delete all of the text field’s text. This button is displayed in the right overlay position, but if you provide a custom right overlay view, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619607-rightviewmode"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619622-clearbuttonmode"
+            },
+            {
+              "type": "text",
+              "text": " properties to define when your custom overlay should be displayed and when the clear button should be displayed.  "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Validating Text and Managing the Editing Process",
+          "anchor": "1653000"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A text field manages the editing of its text with the help of its delegate object. As the user interacts with a text field, the text field notifies its delegate and gives it a chance to control what is happening. You can use the delegate methods to prevent the user from starting or stopping the editing process or to validate text as it is typed. You can also use the delegate methods to perform related tasks, such as updating other parts of your interface based on the information typed by the user. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about using the text field’s delegate to manage editing interactions, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate"
+            },
+            {
+              "type": "text",
+              "text": ".  "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Interface Builder Attributes",
+          "anchor": "1968632"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1965765"
+            },
+            {
+              "type": "text",
+              "text": " lists the attributes that you configure for text fields in Interface Builder. "
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Attribute"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Text"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The initial text displayed by the text field. You can specify the text as a plain string or as an attributed string. If you specify an attributed string, Interface Builder provides different options for editing the font, color, and formatting of the string."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Color"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The color of the text field’s text. To set this attribute programmatically, use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619617-textcolor"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Font"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The font of the text field’s text. To set this attribute programmatically, use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619604-font"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Alignment"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The alignment of the text field’s text inside the editing area. This option is available only when formatting plain strings. To set this attribute programmatically, use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619643-textalignment"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Placeholder"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The placeholder text displayed by the text field. When the text field’s string is empty, the text field displays this string instead, formatting the string so as to indicate that it is not the actual text. Typing any text into the text field hides this string. To set this attribute programmatically, use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619621-placeholder"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Background"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The background image to display when the text field is enabled. This image is displayed behind the rest of the text field’s content. To set this attribute programmatically, use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619623-background"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Disabled"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The background image to display when the text field is disabled. This image is displayed behind the rest of the text field’s content. To set this attribute programmatically, use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619611-disabledbackground"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Border Style"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The visual style for the text field’s border. This attribute defines the visual border, if any, drawn around the editable text region. To set this attribute programatically, use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619624-borderstyle"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Clear Button"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The behavior of the clear button. The clear button is a built-in overlay view that the user taps to delete all of the text in a text field. Use this attribute to define when the clear button appears. To set this attribute programatically, use the"
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619622-clearbuttonmode"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Min Font Size"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The minimum font size for the text field’s text. When the Adjust to Fit option is enabled, the text field automatically varies the font size to ensure maximum legibility of the text. You can use this attribute to specify the smallest font size that your consider appropriate for your text. To set this attribute programatically, use the"
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield/1619605-minimumfontsize"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "1965765",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Text Field attributes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfield#1965766"
+            },
+            {
+              "type": "text",
+              "text": " lists the keyboard-related attributes that you configure for text fields. This attributes correspond to properties of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits"
+            },
+            {
+              "type": "text",
+              "text": " protocol that the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITextField"
+            },
+            {
+              "type": "text",
+              "text": " class adopts.  "
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Attribute"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Capitalization"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The automatic capitalization style to apply to typed text. This attribute determines at what time the Shift key is automatically pressed. You can access the value of this attribute programmatically using the text field’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624447-autocapitalizationtype"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Correction"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The autocorrection behavior of the text field. This attribute determines whether autocorrection is enabled or disabled during typing. You can access the value of this attribute programmatically using the text field’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624453-autocorrectiontype"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Spell Checking"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The spell checking behavior of the text field. This attribute determines whether spell checking is enabled or disabled during typing. You can access the value of this attribute programmatically using the text field’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624461-spellcheckingtype"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Keyboard Type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The style of the text field’s keyboard. This property specifies the type of keyboard displayed when the text field is active. You can access the value of this attribute programmatically using the text field’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624457-keyboardtype"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Appearance"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The visual style applied to the text field’s keyboard. Use this property to specify a dark or light keyboard. You can access the value of this attribute programmatically using the text field’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624434-keyboardappearance"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Return Key"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The type of return key to display on the keyboard. Use this property to configure the text and visual style applied to the keyboard’s return key. You can access the value of this attribute programmatically using the text field’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1624446-returnkeytype"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The return key is disabled by default and becomes enabled only when the user types some text into the text field. To respond to taps in the Return key, implement the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method in the delegate you assign to the text field."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "1965766",
+            "title": "Table 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Keyboard attributes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about additional attributes you can configure for a text view, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrol"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Internationalization",
+          "anchor": "1968633"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default language of the device affects the keyboard that pops up with the text field (including the return key). You do not need to do anything to enable this functionality; it is enabled by default. However, your text field should be able to handle input that comes from any language."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When using storyboards to build your interface, use Xcode’s base internationalization feature to configure the localizations your project supports. When you add a localization, Xcode creates a strings file for that localization. When configuring your interface programmatically, use the system’s built-in support for loading localized strings and resources. For more information about internationalizing your interface, see "
+            },
+            {
+              "type": "link",
+              "title": "Internationalization and Localization Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i"
+            },
+            {
+              "type": "text",
+              "text": ".  "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Accessibility",
+          "anchor": "1968634"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Text fields are accessible by default. The default accessibility trait for a text field is User Interaction Enabled."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about making iOS controls accessible, see the accessibility information in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrol"
+            },
+            {
+              "type": "text",
+              "text": ". For general information about making your interface accessible, see "
+            },
+            {
+              "type": "link",
+              "title": "Accessibility Programming Guide for iOS",
+              "destination": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "State Preservation",
+          "anchor": "1653026"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you assign a value to a text field’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622494-restorationidentifier"
+            },
+            {
+              "type": "text",
+              "text": " property, it preserves the selected range of text, if any. During the next launch cycle, the text field attempts to restore that selection. If the selection range cannot be applied to the current text, no selection is made. For more information about how state preservation and restoration works, see "
+            },
+            {
+              "type": "link",
+              "title": "App Programming Guide for iOS",
+              "destination": "https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For design guidance, see "
+            },
+            {
+              "type": "link",
+              "title": "Human Interface Guidelines",
+              "destination": "https://developer.apple.com/design/human-interface-guidelines/ios/controls/text-fields/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

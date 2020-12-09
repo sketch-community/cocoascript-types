@@ -1,0 +1,809 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create and manage restaurant reservations with help from the Maps app."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2863935,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Restaurant Reservations",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/restaurant_reservations"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/restaurant_reservations"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-media-2930921": {
+      "identifier": "link-media-2930921",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/restaurant_reservations#2930921"
+    },
+    "media-2930921": {
+      "identifier": "media-2930921",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 190,
+            "height": 380
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1dc2179507/a3afa009-8d52-43d4-b1ed-05ee938b1574.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 190,
+            "height": 380
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d694803b6e/e5b78bb3-992f-4aa6-8369-fc9193c0213b.png"
+        }
+      ],
+      "alt": "A screenshot showing a restaurant location in Maps and a reservation-making sheet",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Making restaurant reservations using Maps"
+        }
+      ]
+    },
+    "link-2902571": {
+      "title": "http://mapsconnect.apple.com",
+      "type": "topic",
+      "identifier": "link-2902571",
+      "kind": "article",
+      "role": "link",
+      "url": "http://mapsconnect.apple.com"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintenthandling": {
+      "title": "INBookRestaurantReservationIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inbookrestaurantreservationintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface booking a reservation that the user selected."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent": {
+      "title": "INBookRestaurantReservationIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inbookrestaurantreservationintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to create a reservation at the specified restaurant."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintentresponse": {
+      "title": "INBookRestaurantReservationIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inbookrestaurantreservationintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a book restaurant reservation intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintenthandling": {
+      "title": "INGetAvailableRestaurantReservationBookingDefaultsIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for providing default values to the system when pre-fetching an initial set of possible reservation times."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintent": {
+      "title": "INGetAvailableRestaurantReservationBookingDefaultsIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request for the default values to use when fetching potential reservation options."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintentresponse": {
+      "title": "INGetAvailableRestaurantReservationBookingDefaultsIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a get available restaurant reservation booking defaults intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintenthandling": {
+      "title": "INGetAvailableRestaurantReservationBookingsIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetavailablerestaurantreservationbookingsintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for generating a list of potential reservation times from which the user can select."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintent": {
+      "title": "INGetAvailableRestaurantReservationBookingsIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetavailablerestaurantreservationbookingsintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request for the time slots available for making a reservation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentresponse": {
+      "title": "INGetAvailableRestaurantReservationBookingsIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a get available restaurant reservation bookings intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintenthandling": {
+      "title": "INGetRestaurantGuestIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetrestaurantguestintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for fetching information about the person making a reservation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintent": {
+      "title": "INGetRestaurantGuestIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetrestaurantguestintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request for information about the guest who is making reservations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintentresponse": {
+      "title": "INGetRestaurantGuestIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetrestaurantguestintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a get restaurant guest intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintenthandling": {
+      "title": "INGetUserCurrentRestaurantReservationBookingsIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for fetching and delivering the user’s current reservations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintent": {
+      "title": "INGetUserCurrentRestaurantReservationBookingsIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request for the list of the user’s current reservations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintentresponse": {
+      "title": "INGetUserCurrentRestaurantReservationBookingsIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a get user current restaurant reservation bookings intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurant": {
+      "title": "INRestaurant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A restaurant for which your app can make and manage reservations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurantguest": {
+      "title": "INRestaurantGuest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurantguest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurantguest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The person assigned to a reservation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurantguestdisplaypreferences": {
+      "title": "INRestaurantGuestDisplayPreferences",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurantguestdisplaypreferences",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurantguestdisplaypreferences",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options about how to display guest information from system interfaces."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurantoffer": {
+      "title": "INRestaurantOffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurantoffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurantoffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about special offers made by a restaurant."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking": {
+      "title": "INRestaurantReservationBooking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurantreservationbooking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A potential reservation that a user can book."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbooking": {
+      "title": "INRestaurantReservationUserBooking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbooking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurantreservationuserbooking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reservation created by a user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intermsandconditions": {
+      "title": "INTermsAndConditions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intermsandconditions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/intermsandconditions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The terms and conditions of service when making restaurant reservations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbookingstatus": {
+      "title": "INRestaurantReservationUserBookingStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbookingstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurantreservationuserbookingstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the status of a user reservation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurantresolutionresult": {
+      "title": "INRestaurantResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurantresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurantresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the restaurant selected by a user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrestaurantguestresolutionresult": {
+      "title": "INRestaurantGuestResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrestaurantguestresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrestaurantguestresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the identity of a user involved in booking a reservation at a restaurant."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/messaging": {
+      "title": "Messaging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/messaging",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/messaging",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send messages and search the user’s received messages."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
+      "title": "Lists and Notes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/lists_and_notes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage notes and to-do list items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts": {
+      "title": "Workouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/workouts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Start, end, and manage fitness routines."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/payments": {
+      "title": "Payments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/payments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send payments between users or pay bills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/voip_calling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate calls and search the user’s call history."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/visual_codes": {
+      "title": "Visual Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/visual_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convey contact and payment information using Quick Response (QR) codes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos": {
+      "title": "Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search for and display photos."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking": {
+      "title": "Ride Booking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/ride_booking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Book rides and report their status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/car_commands": {
+      "title": "Car Commands",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/car_commands",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/car_commands",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage vehicle door locks and get the vehicle’s status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/carplay": {
+      "title": "CarPlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/carplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with a vehicle’s CarPlay system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations": {
+      "title": "Restaurant Reservations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/restaurant_reservations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage restaurant reservations with help from the Maps app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media": {
+      "title": "Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Listen and control audio through Siri Intents or listen and watch media content from your app with shortcuts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Book Restaurant Reservation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent",
+        "doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Get Available Restaurant Reservation Booking Defaults",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintent",
+        "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Get Available Restaurant Reservation Bookings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintent",
+        "doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Get Restaurant Guest",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintent",
+        "doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Get User Current Restaurant Reservation Bookings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintent",
+        "doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurant",
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurantguest",
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurantguestdisplaypreferences",
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurantoffer",
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking",
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbooking",
+        "doc://com.apple.documentation/documentation/sirikit/intermsandconditions",
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbookingstatus"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Resolution Results",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurantresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/inrestaurantguestresolutionresult"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/messaging",
+        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+        "doc://com.apple.documentation/documentation/sirikit/workouts",
+        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+        "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+        "doc://com.apple.documentation/documentation/sirikit/photos",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+        "doc://com.apple.documentation/documentation/sirikit/car_commands",
+        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/media"
+      ],
+      "title": "Siri Domains",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users can book restaurant reservations and view their current reservations from Maps. You provide Apple with information about the restaurants that you support before implementing support for these intents. When the user books a restaurant, Maps includes your information in the intents that it sends to your Intents app extension, which uses the information to complete the booking."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2930921",
+              "metadata": {
+                "anchor": "2930921",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Making restaurant reservations using Maps"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This API requires you to work with Apple Maps before your app can use it. For information on how to get started, go to "
+            },
+            {
+              "type": "link",
+              "title": "http://mapsconnect.apple.com",
+              "destination": "http://mapsconnect.apple.com"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

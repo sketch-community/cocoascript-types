@@ -1,0 +1,237 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "When a new session event occurs, your selector (or C callback) will be given an OBEXSessionEvent pointer, and in it will be a 'type' field with one of the following types in it. Based on that type, you can then read the corresponding field in the union to get out interesting data for that event type. For example, if the type of an event is a 'kOBEXSessionEventTypeConnectCommandResponseReceived', you should look in the 'OBEXConnectCommandResponseData' part of the structure's union to find more information pased to you in the event. Note that some you will never see, depending on the type of session you are using - a client or server. If you are a client (most likely case), you will never see the \"Command\" events, but instead you will only receive the \"CommandResponse\" events since you will be the issuer oft he commands, not the receiver of them. Both types of sessions will receive error type events."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/iobluetooth",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexsessioneventtypes",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1941182,
+  "kind": "symbol",
+  "metadata": {
+    "title": "OBEXSessionEventTypes",
+    "role": "pseudoSymbol",
+    "modules": [
+      {
+        "name": "IOBluetooth"
+      }
+    ],
+    "symbolKind": "tdef"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth/obex_h/obexsessioneventtypes"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/iobluetooth": {
+      "title": "IOBluetooth",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth",
+      "url": "/documentation/iobluetooth",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h": {
+      "title": "OBEX.h",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h",
+      "url": "/documentation/iobluetooth/obex_h",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "enum OBEXSessionEventTypes {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   // Client event types."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeConnectCommandResponseReceived = 'OCEC',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeDisconnectCommandResponseReceived = 'OCED',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypePutCommandResponseReceived = 'OCEP',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeGetCommandResponseReceived = 'OCEG',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeSetPathCommandResponseReceived = 'OCES',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeAbortCommandResponseReceived = 'OCEA',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   // Server event types."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeConnectCommandReceived = 'OSEC',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeDisconnectCommandReceived = 'OSED',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypePutCommandReceived = 'OSEP',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeGetCommandReceived = 'OSEG',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeSetPathCommandReceived = 'OSES',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeAbortCommandReceived = 'OSEA',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   // Shared (Server/client) event types."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXSessionEventTypeError = 'OGEE',"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "};"
+            }
+          ],
+          "platforms": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

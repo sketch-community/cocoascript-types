@@ -1,0 +1,786 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Share data between iPad apps during a drag and drop operation using an item provider."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948825,
+  "kind": "article",
+  "metadata": {
+    "title": "Data Delivery with Drag and Drop",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop": {
+      "title": "Drag and Drop",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop",
+      "url": "/documentation/uikit/drag_and_drop",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897492-tableview": {
+      "title": "tableView:itemsForBeginningDragSession:atIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897492-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdragdelegate/2897492-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:itemsForBeginningDragSession:atIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidragitem": {
+      "title": "UIDragItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidragitem"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537126": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537126",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537126"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897293-tableview": {
+      "title": "tableView:itemsForAddingToDragSession:atIndexPath:point:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897293-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdragdelegate/2897293-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:itemsForAddingToDragSession:atIndexPath:point:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537127": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537127",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537127"
+    },
+    "link-2958333": {
+      "title": "Simulate drag and drop on iOS",
+      "type": "section",
+      "identifier": "link-2958333",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/simulator/mac/current/index.html?localePath=en.lproj#/devef03b3518"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate": {
+      "title": "UITableViewDragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdragdelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting": {
+      "title": "NSItemProviderWriting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemproviderwriting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The protocol you implement on a class to allow an item provider to retrieve data from an instance of the class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting/2888302-loaddatawithtypeidentifier": {
+      "title": "loadDataWithTypeIdentifier:forItemProviderCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting/2888302-loaddatawithtypeidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemproviderwriting/2888302-loaddatawithtypeidentifier",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadDataWithTypeIdentifier:forItemProviderCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897427-tableview": {
+      "title": "tableView:performDropWithCoordinator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897427-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropdelegate/2897427-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:performDropWithCoordinator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888336-loadobjectofclass": {
+      "title": "loadObjectOfClass:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888336-loadobjectofclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2888336-loadobjectofclass",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadObjectOfClass:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemproviderreading": {
+      "title": "NSItemProviderReading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderreading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemproviderreading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The protocol you implement on a class to allow an item provider to create an instance of the class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemproviderreading/2919479-objectwithitemproviderdata": {
+      "title": "objectWithItemProviderData:typeIdentifier:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderreading/2919479-objectwithitemproviderdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemproviderreading/2919479-objectwithitemproviderdata",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "objectWithItemProviderData:typeIdentifier:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537129": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537129",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537129"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537130": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537130",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop#3537130"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider": {
+      "title": "NSItemProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An item provider for conveying data or a file between processes during drag and drop or copy/paste activities, or from a host app to an app extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop": {
+      "title": "Data Delivery with Drag and Drop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/drag_and_drop/data_delivery_with_drag_and_drop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Share data between iPad apps during a drag and drop operation using an item provider."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiitemproviderpresentationsizeproviding": {
+      "title": "UIItemProviderPresentationSizeProviding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiitemproviderpresentationsizeproviding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiitemproviderpresentationsizeproviding"
+    },
+    "https://docs-assets.developer.apple.com/published/604ef89148/DataDeliveryWithDragAndDrop.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/604ef89148/DataDeliveryWithDragAndDrop.zip",
+      "checksum": "18a13a74cab6175d1ad6322bd5721bf57b06231084e8658fc57925d5e791371aa5528e7cacdd6b17bd9a911c50fb2aa3f790cd655503b6270e4618bbec65468b",
+      "url": "https://docs-assets.developer.apple.com/published/604ef89148/DataDeliveryWithDragAndDrop.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/604ef89148/DataDeliveryWithDragAndDrop.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
+        "doc://com.apple.documentation/documentation/foundation/nsitemproviderreading",
+        "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting",
+        "doc://com.apple.documentation/documentation/uikit/uiitemproviderpresentationsizeproviding"
+      ],
+      "title": "Item Providers",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With drag and drop, users can copy data from one iPad app to another. The data is shared between the apps using an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+            },
+            {
+              "type": "text",
+              "text": " object. This sample code project shows how to use an item provider to:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Share a contact that the user drags from the sample iPad app and drops into another app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Retrieve contact information that the user drags from another app and drops into the sample app."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample iPad app uses a table view to display a list of contacts. The user can drag one or more contacts and drop them into another app such as Contacts or Notes. Also, the user can use another app, like Contacts or Notes, to drag and drop new contacts into the sample app."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Drag Support",
+          "anchor": "3537133"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The table view in the sample app displays a list of contacts. When the user begins dragging a contact, the system calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897492-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method. The method’s implementation retrieves the contact from the list using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "at"
+            },
+            {
+              "type": "text",
+              "text": " parameter to determine the contact’s location within the list. The method then creates an item provider with the contact object and wraps the item provider in a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidragitem"
+            },
+            {
+              "type": "text",
+              "text": " object. The method places the drag item into an array which it returns to the system. Finally, the system adds the drag item to the current drag session."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func tableView(_ tableView: UITableView,",
+            "               itemsForBeginning session: UIDragSession,",
+            "               at indexPath: IndexPath) -> [UIDragItem] {",
+            "    let contactCard = dataSource.clients[indexPath.row]",
+            "    let dragItem = UIDragItem(itemProvider: NSItemProvider(object: contactCard))",
+            "    return [dragItem]",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3537126",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The user may select multiple contacts to drag to another app. Each time the user selects a contact, the system calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate/2897293-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method. Similar to beginning a drag session, this method creates an item provider for the selected contact, creates a drag item that contains the item provider, and returns an array containing the drag item so the system can add the drag item to the drag session."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func tableView(_ tableView: UITableView,",
+            "               itemsForAddingTo session: UIDragSession,",
+            "               at indexPath: IndexPath,",
+            "               point: CGPoint) -> [UIDragItem] {",
+            "    // use this to NOT allow additional items to the drag:",
+            "    // return []",
+            "",
+            "    let contactCard = dataSource.clients[indexPath.row]",
+            "    let dragItem = UIDragItem(itemProvider: NSItemProvider(object: contactCard))",
+            "    dragItem.localObject = true // makes it faster to drag and drop content within the same app",
+            "    return [dragItem]",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3537127",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For information on how to select multiple items for a drag and drop operation using the Simulator, see "
+                },
+                {
+                  "type": "link",
+                  "title": "Simulate drag and drop on iOS",
+                  "destination": "https://help.apple.com/simulator/mac/current/index.html?localePath=en.lproj#/devef03b3518"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In both cases, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate"
+            },
+            {
+              "type": "text",
+              "text": " methods create item providers using instances of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ContactCard"
+            },
+            {
+              "type": "text",
+              "text": " class. This class implements the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting"
+            },
+            {
+              "type": "text",
+              "text": " protocol, making it possible to initialize a new item provider with a contact card object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By conforming to this protocol, a contact card object can tell the item provider the data types it supports; the sample app supports vCard and plain text. A contact card can also load data of a specified type, which an item provider retrieves by calling the contact card’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting/2888302-loaddatawithtypeidentifier"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Drop Support",
+          "anchor": "3537134"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user drops contact information from another app into the sample app, the system calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate/2897427-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ContactsTableViewController"
+            },
+            {
+              "type": "text",
+              "text": " implements this method to handle the drop operation. The implementation of the method uses the drop item’s item provider to call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888336-loadobjectofclass"
+            },
+            {
+              "type": "text",
+              "text": ", which retrieves a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ContactCard"
+            },
+            {
+              "type": "text",
+              "text": " object representing the dropped contact information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "loadObject"
+            },
+            {
+              "type": "text",
+              "text": " method asks the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ContactCard"
+            },
+            {
+              "type": "text",
+              "text": " class for the contact card object. The class, which conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderreading"
+            },
+            {
+              "type": "text",
+              "text": " protocol, implements the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderreading/2919479-objectwithitemproviderdata"
+            },
+            {
+              "type": "text",
+              "text": " class method, which creates and initializes a contact card object with the item provider data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user drops a contact at a specific location within the table view, the completion handler (from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "loadObject"
+            },
+            {
+              "type": "text",
+              "text": " call) creates a placeholder that displays a gap at the drop location. Next, the handler inserts the dropped contact into the list of contacts at the index path of the drop location. And finally, the completion handler replaces the placeholder with a view displaying contact."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "_ = dropItem.dragItem.itemProvider.loadObject(",
+            "    ofClass: ContactCard.self,",
+            "    completionHandler: { (data, error) in",
+            "        if error == nil {",
+            "            DispatchQueue.main.async {",
+            "                let placeHolder = UITableViewDropPlaceholder(",
+            "                    insertionIndexPath: destinationIndexPath!,",
+            "                    reuseIdentifier: ClientsDataSource.tableCellIdentifier,",
+            "                    rowHeight: UITableView.automaticDimension)",
+            "",
+            "                let placeHolderContext = coordinator.drop(dropItem.dragItem, to: placeHolder)",
+            "",
+            "                placeHolderContext.commitInsertion(dataSourceUpdates: { (insertionIndexPath) in",
+            "                    // Update our data source with the newly dropped contact.",
+            "                    if let newContact = data as? ContactCard {",
+            "                        self.dataSource.clients.insert(newContact, at: insertionIndexPath.item)",
+            "                    }",
+            "                })",
+            "            }",
+            "        } else {",
+            "            print(\"\"\"",
+            "                There was an error in loading the drop item: ### \\(#function),",
+            "                \\(String(describing: error?.localizedDescription))",
+            "                \"\"\")",
+            "        }",
+            "    })"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3537129",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user drops the contact on an empty location in the table view, the completion handler adds the dropped contact to the end of the list without displaying a gap."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "_ = dropItem.dragItem.itemProvider.loadObject(",
+            "    ofClass: ContactCard.self,",
+            "    completionHandler: { (data, error) in",
+            "        if error == nil {",
+            "            if let newContact = data as? ContactCard {",
+            "                self.dataSource.clients.append(newContact)",
+            "                DispatchQueue.main.async {",
+            "                    self.tableView.reloadData()",
+            "                }",
+            "            }",
+            "        } else {",
+            "            print(\"\"\"",
+            "                There was an error in loading the drop item: ### \\(#function),",
+            "                \\(String(describing: error?.localizedDescription))",
+            "                \"\"\")",
+            "        }",
+            "    })"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3537130",
+            "title": "Listing 4"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

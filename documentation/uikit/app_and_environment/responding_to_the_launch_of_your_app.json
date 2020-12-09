@@ -1,0 +1,884 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Initialize your app’s data structures, prepare your app to run, and respond to any launch-time requests from the system."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2922731,
+  "kind": "article",
+  "metadata": {
+    "title": "Responding to the Launch of Your App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment": {
+      "title": "App and Environment",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+      "url": "/documentation/uikit/app_and_environment",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-3576156": {
+      "title": "Human Interface Guidelines",
+      "type": "topic",
+      "identifier": "link-3576156",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/launch-screen"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application": {
+      "title": "application:willFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623032-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:willFinishLaunchingWithOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
+      "title": "application:didFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didFinishLaunchingWithOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app": {
+      "title": "Performing One-Time Setup for Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ensure proper configuration of your app environment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app#2922740": {
+      "title": "Determine Why Your App Launched",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app#2922740",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app#2922740"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3197905-application": {
+      "title": "application:configurationForConnectingSceneSession:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3197905-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/3197905-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:configurationForConnectingSceneSession:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app#2922741": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app#2922741",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app#2922741",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Responding to a location event at launch time"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionsremotenotificationkey": {
+      "title": "UIApplicationLaunchOptionsRemoteNotificationKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionsremotenotificationkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationlaunchoptionsremotenotificationkey"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey": {
+      "title": "UIApplicationLaunchOptionsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationlaunchoptionskey"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication": {
+      "title": "UIApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The centralized point of control and coordination for apps running in iOS. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate": {
+      "title": "UIApplicationDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that you use to manage shared behaviors for your app. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence": {
+      "title": "About the App Launch Sequence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the order that your custom code executes at launch time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches": {
+      "title": "Preserving Your App's UI Across Launches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Return your app to its previous state after the system terminates it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle": {
+      "title": "Managing Your App's Life Cycle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Respond to system notifications when your app is in the foreground or background, and handle other significant system-related events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app": {
+      "title": "Responding to the Launch of Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initialize your app’s data structures, prepare your app to run, and respond to any launch-time requests from the system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes": {
+      "title": "Scenes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/app_and_environment/scenes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage multiple instances of your app’s UI simultaneously, and direct resources to the appropriate instance of your UI. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Launch Time",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication",
+        "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes"
+      ],
+      "title": "Life Cycle",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system launches your app when the user taps your app’s icon on the Home screen. If your app requested specific events, the system might also launch your app in the background to handle those events. For a scene-based app, the system similarly launches the app when one of your scenes needs to appear onscreen or do some work. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All apps have an associated process, which the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+            },
+            {
+              "type": "text",
+              "text": " object represents. Apps also have an "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "app delegate object"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "—an object that conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol—which responds to important events happening within that process. Even a scene-based app uses an app delegate to manage fundamental events like launch and termination. At launch time, UIKit automatically creates the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+            },
+            {
+              "type": "text",
+              "text": " object and your app delegate. It then starts your app’s main event loop. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide a Launch Storyboard",
+          "anchor": "3222089"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user first launches your app on a device, the system displays your launch storyboard until your app is ready to display its UI. Displaying the launch storyboard assures the user that your app launched and is doing something. If your app initializes itself and readies its UI quickly, the user may see your launch storyboard only briefly. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Xcode projects automatically include a default launch storyboard for you to customize, and you can add more launch storyboards as necessary. To add new launch storyboards to your project, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open your project in Xcode."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose File > New > File."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add a Launch Screen resource to your project."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Add views to your launch storyboard and use Auto Layout constraints to size and position them so that they adapt to the underlying environment. UIKit displays exactly what you provide, using your constraints to fit your views into the available space. For design guidance, see "
+            },
+            {
+              "type": "link",
+              "title": "Human Interface Guidelines",
+              "destination": "https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/launch-screen"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Don't use a static image for your launch screen. In iOS 14 and later, the launch screen is limited to 25 MB."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize Your App's Data Structures",
+          "anchor": "3222090"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Put your app's launch-time initialization code in one or both of the following methods:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "UIKit calls these methods at the beginning of your app’s launch cycle. Use them to:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Initialize your app's data structures."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Verify that your app has the resources it needs to run. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Perform any one-time setup when your app launches for the first time. For example, install templates or user-modifiable files in a writable directory. See "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Connect to any critical services that your app uses. For example, connect to the Apple Push Notification service if your app supports remote notifications."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Check the launch options dictionary for information about why your app launched. See "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app#2922740"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For apps that aren't scene-based, UIKit loads your default user interface automatically at launch time. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+            },
+            {
+              "type": "text",
+              "text": " method to make additional changes to that interface before it appears onscreen. For example, you might install a different view controller to reflect what the user was doing the last time they used the app. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Move Long-Running Tasks off the Main Thread",
+          "anchor": "3222088"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user launches your app, make a good impression by launching quickly. UIKit doesn't present your app's interface until after the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+            },
+            {
+              "type": "text",
+              "text": " method returns. Performing long-running tasks in that method or your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application"
+            },
+            {
+              "type": "text",
+              "text": " method might make your app appear sluggish to the user. Returning quickly is also important when launching to the background because the system limits your app’s background execution time. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Move tasks that are not critical to your app’s initialization out of the launch-time sequence. For example:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Defer the initialization of features that your app doesn’t need immediately."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Move important, long-running tasks off your app’s main thread. For example, run them asynchronously on a global dispatch queue."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Determine Why Your App Launched",
+          "anchor": "2922740"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When UIKit launches your app, it passes along a launch options dictionary to your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+            },
+            {
+              "type": "text",
+              "text": " methods with information about why your app launched. The keys in that dictionary indicate important tasks to perform immediately. For example, they might reflect actions that the user started elsewhere and wants to continue in your app. Always check the contents of the launch options dictionary for keys that you expect, and respond appropriately to their presence. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For a scene-based app, examine the options that UIKit passes to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3197905-application"
+                },
+                {
+                  "type": "text",
+                  "text": " method to determine why it created your scene. "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app#2922741"
+            },
+            {
+              "type": "text",
+              "text": " shows the app delegate method for an app that handles background location updates. When the location key is present, the app starts location updates immediately instead of deferring them until later. Starting location updates allows the Core Location framework to deliver the new location event. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class AppDelegate: UIResponder, UIApplicationDelegate, ",
+            "               CLLocationManagerDelegate {",
+            "    ",
+            "   let locationManager = CLLocationManager()",
+            "   func application(_ application: UIApplication,",
+            "              didFinishLaunchingWithOptions launchOptions:",
+            "              [UIApplicationLaunchOptionsKey: Any]?) -> Bool {",
+            "       ",
+            "      // If launched because of new location data,",
+            "      //  start the visits service right away.",
+            "      if let keys = launchOptions?.keys {",
+            "         if keys.contains(.location) {",
+            "            locationManager.delegate = self",
+            "            locationManager.startMonitoringVisits()",
+            "         }",
+            "      }",
+            "       ",
+            "      return true",
+            "   }",
+            "   // other methods…",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922741",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Responding to a location event at launch time"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system doesn’t include a key unless your app supports the corresponding feature. For example, the system doesn’t include the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionsremotenotificationkey"
+            },
+            {
+              "type": "text",
+              "text": " key for an app that doesn’t support remote notifications. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a list of launch option keys and information about how to handle them, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

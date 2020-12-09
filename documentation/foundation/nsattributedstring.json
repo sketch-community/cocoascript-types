@@ -1,0 +1,2413 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/strings_and_text"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/text_storage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1416936,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSAttributedString",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "3.2",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSAttributedString",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsattributedstring"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsattributedstring"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/strings_and_text": {
+      "title": "Strings and Text",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/strings_and_text",
+      "url": "/documentation/foundation/strings_and_text",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage": {
+      "title": "Text Storage",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
+      "url": "/documentation/uikit/text_storage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring": {
+      "title": "NSAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring": {
+      "title": "NSMutableAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmutableattributedstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mutable string object that also contains attributes (such as visual style, hyperlinks, or accessibility data) associated with various portions of its text content. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
+      "title": "NSDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdictionary"
+    },
+    "devLink-1695346": {
+      "identifier": "devLink-1695346",
+      "type": "link",
+      "title": "Attributed String Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AttributedStrings/AttributedStrings.html#//apple_ref/doc/uid/10000036i"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextstorage": {
+      "title": "NSTextStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextstorage"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle": {
+      "title": "NSParagraphStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsparagraphstyle"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle": {
+      "title": "NSMutableParagraphStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsmutableparagraphstyle"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418795-isequal": {
+      "title": "isEqual:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418795-isequal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418795-isequal",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isEqual:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfattributedstringref": {
+      "title": "CFAttributedStringRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfattributedstringref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfattributedstringref"
+    },
+    "devLink-1745091": {
+      "identifier": "devLink-1745091",
+      "type": "link",
+      "title": "Toll-Free Bridging",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmutablecopying": {
+      "title": "NSMutableCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutablecopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmutablecopying"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1407481-initwithstring": {
+      "title": "initWithString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1407481-initwithstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1407481-initwithstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string with the characters of the specified string and no attribute information."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithString:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1408136-initwithstring": {
+      "title": "initWithString:attributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1408136-initwithstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1408136-initwithstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string with the specified string and attributes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithString:attributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1415342-initwithattributedstring": {
+      "title": "initWithAttributedString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1415342-initwithattributedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1415342-initwithattributedstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string with the characters and attributes of the specified attributed string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithAttributedString:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524613-initwithdata": {
+      "title": "initWithData:options:documentAttributes:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524613-initwithdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1524613-initwithdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from the data in the specified data object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithData:options:documentAttributes:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534329-initwithdocformat": {
+      "title": "initWithDocFormat:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534329-initwithdocformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1534329-initwithdocformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from Microsoft Word format data in the specified data object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithDocFormat:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525953-initwithhtml": {
+      "title": "initWithHTML:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525953-initwithhtml",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1525953-initwithhtml",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from the HTML in the specified data object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithHTML:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524624-initwithhtml": {
+      "title": "initWithHTML:baseURL:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524624-initwithhtml",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1524624-initwithhtml",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from the HTML in the specified data object and base URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithHTML:baseURL:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535412-initwithhtml": {
+      "title": "initWithHTML:options:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535412-initwithhtml",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1535412-initwithhtml",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from the HTML in the specified data object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithHTML:options:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532912-initwithrtf": {
+      "title": "initWithRTF:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532912-initwithrtf",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1532912-initwithrtf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string by decoding the stream of RTF commands and data in the specified data object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRTF:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530987-initwithrtfd": {
+      "title": "initWithRTFD:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530987-initwithrtfd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1530987-initwithrtfd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string by decoding the stream of RTFD commands and data in the specified data object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRTFD:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533594-initwithrtfdfilewrapper": {
+      "title": "initWithRTFDFileWrapper:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533594-initwithrtfdfilewrapper",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1533594-initwithrtfdfilewrapper",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from the specified file wrapper that contains an RTFD document."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRTFDFileWrapper:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530490-initwithurl": {
+      "title": "initWithURL:options:documentAttributes:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530490-initwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1530490-initwithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from the contents of the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithURL:options:documentAttributes:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1508376-attributedstringwithattachment": {
+      "title": "attributedStringWithAttachment:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1508376-attributedstringwithattachment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1508376-attributedstringwithattachment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string with an attachment."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "attributedStringWithAttachment:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182826-loadfromhtmlwithrequest": {
+      "title": "loadFromHTMLWithRequest:options:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182826-loadfromhtmlwithrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/3182826-loadfromhtmlwithrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string by converting the contents of the specified HTML URL request."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadFromHTMLWithRequest:options:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182825-loadfromhtmlwithfileurl": {
+      "title": "loadFromHTMLWithFileURL:options:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182825-loadfromhtmlwithfileurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/3182825-loadfromhtmlwithfileurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string by converting the contents of a local HTML file at the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadFromHTMLWithFileURL:options:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182827-loadfromhtmlwithstring": {
+      "title": "loadFromHTMLWithString:options:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182827-loadfromhtmlwithstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/3182827-loadfromhtmlwithstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from the specified HTML string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadFromHTMLWithString:options:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182824-loadfromhtmlwithdata": {
+      "title": "loadFromHTMLWithData:options:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182824-loadfromhtmlwithdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/3182824-loadfromhtmlwithdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an attributed string from the specified HTML data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadFromHTMLWithData:options:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/webkit/nsattributedstringcompletionhandler": {
+      "title": "NSAttributedStringCompletionHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/webkit/nsattributedstringcompletionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/webkit/nsattributedstringcompletionhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A completion handler for getting an asynchronous attributed string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412616-string": {
+      "title": "string",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412616-string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1412616-string",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The character contents of the attributed string as a string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1418432-length": {
+      "title": "length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1418432-length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1418432-length",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The length of the attributed string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1415682-attributesatindex": {
+      "title": "attributesAtIndex:effectiveRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1415682-attributesatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1415682-attributesatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the attributes for the character at the specified index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "attributesAtIndex:effectiveRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1410494-attributesatindex": {
+      "title": "attributesAtIndex:longestEffectiveRange:inRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1410494-attributesatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1410494-attributesatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the attributes for the character at the specified index and, by reference, the range where the attributes apply."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "attributesAtIndex:longestEffectiveRange:inRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1408174-attribute": {
+      "title": "attribute:atIndex:effectiveRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1408174-attribute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1408174-attribute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the value for an attribute with the specified name of the character at the specified index and, by reference, the range where the attribute applies. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "attribute:atIndex:effectiveRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412701-attribute": {
+      "title": "attribute:atIndex:longestEffectiveRange:inRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412701-attribute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1412701-attribute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the value for the attribute with the specified name of the character at the specified index and, by reference, the range where the attribute applies."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "attribute:atIndex:longestEffectiveRange:inRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1414808-isequaltoattributedstring": {
+      "title": "isEqualToAttributedString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1414808-isequaltoattributedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1414808-isequaltoattributedstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the attributed string is equal to another attributed string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isEqualToAttributedString:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1414283-attributedsubstringfromrange": {
+      "title": "attributedSubstringFromRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1414283-attributedsubstringfromrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1414283-attributedsubstringfromrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an attributed string consisting of the characters and attributes within the specified range in the attributed string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "attributedSubstringFromRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412461-enumerateattribute": {
+      "title": "enumerateAttribute:inRange:options:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412461-enumerateattribute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1412461-enumerateattribute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Executes the specified block for each range of a particular attribute in the attributed string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateAttribute:inRange:options:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412070-enumerateattributesinrange": {
+      "title": "enumerateAttributesInRange:options:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412070-enumerateattributesinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1412070-enumerateattributesinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Executes the specified block for each range of attributes in the attributed string. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateAttributesInRange:options:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528371-fontattributesinrange": {
+      "title": "fontAttributesInRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528371-fontattributesinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1528371-fontattributesinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the font attributes in effect for the character at the specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fontAttributesInRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524469-rulerattributesinrange": {
+      "title": "rulerAttributesInRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524469-rulerattributesinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1524469-rulerattributesinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the ruler (paragraph) attributes in effect for the characters within the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rulerAttributesInRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534748-doubleclickatindex": {
+      "title": "doubleClickAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534748-doubleclickatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1534748-doubleclickatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range of characters that form a word (or other linguistic unit) surrounding the specified index, taking language characteristics into account."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "doubleClickAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1526887-linebreakbeforeindex": {
+      "title": "lineBreakBeforeIndex:withinRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1526887-linebreakbeforeindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1526887-linebreakbeforeindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the appropriate line break when the character at the index doesn’t fit on the same line as the character at the beginning of the range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lineBreakBeforeIndex:withinRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534114-linebreakbyhyphenatingbeforeinde": {
+      "title": "lineBreakByHyphenatingBeforeIndex:withinRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534114-linebreakbyhyphenatingbeforeinde",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1534114-linebreakbyhyphenatingbeforeinde",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the index of the closest character before the specified index, and within the specified range, that can fit on a new line by hyphenating."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lineBreakByHyphenatingBeforeIndex:withinRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535305-nextwordfromindex": {
+      "title": "nextWordFromIndex:forward:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535305-nextwordfromindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1535305-nextwordfromindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the index of the first character of the word after or before the specified index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "nextWordFromIndex:forward:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1527303-itemnumberintextlist": {
+      "title": "itemNumberInTextList:atIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1527303-itemnumberintextlist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1527303-itemnumberintextlist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the index of the item at the specified location within the list."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "itemNumberInTextList:atIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534045-rangeoftextblock": {
+      "title": "rangeOfTextBlock:atIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534045-rangeoftextblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1534045-rangeoftextblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range of the individual text block that contains the specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rangeOfTextBlock:atIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525314-rangeoftextlist": {
+      "title": "rangeOfTextList:atIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525314-rangeoftextlist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1525314-rangeoftextlist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range of the specified text list that contains the specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rangeOfTextList:atIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534365-rangeoftexttable": {
+      "title": "rangeOfTextTable:atIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534365-rangeoftexttable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1534365-rangeoftexttable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range of the specified text table that contains the specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rangeOfTextTable:atIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534090-datafromrange": {
+      "title": "dataFromRange:documentAttributes:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534090-datafromrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1534090-datafromrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a data object that contains a text stream corresponding to the characters and attributes within the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataFromRange:documentAttributes:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530461-filewrapperfromrange": {
+      "title": "fileWrapperFromRange:documentAttributes:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530461-filewrapperfromrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1530461-filewrapperfromrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a file wrapper object that contains a text stream corresponding to the characters and attributes within the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileWrapperFromRange:documentAttributes:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528592-docformatfromrange": {
+      "title": "docFormatFromRange:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528592-docformatfromrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1528592-docformatfromrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a data object that contains a Microsoft Word–format stream corresponding to the characters and attributes within the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "docFormatFromRange:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535158-rtffromrange": {
+      "title": "RTFFromRange:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535158-rtffromrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1535158-rtffromrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a data object that contains an RTF stream corresponding to the characters and attributes within the specified range, omitting all attachment attributes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "RTFFromRange:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530578-rtfdfromrange": {
+      "title": "RTFDFromRange:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530578-rtfdfromrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1530578-rtfdfromrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a data object that contains an RTFD stream corresponding to the characters and attributes within the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "RTFDFromRange:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1527502-rtfdfilewrapperfromrange": {
+      "title": "RTFDFileWrapperFromRange:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1527502-rtfdfilewrapperfromrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1527502-rtfdfilewrapperfromrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a file wrapper object that contains an RTFD document corresponding to the characters and attributes within the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "RTFDFileWrapperFromRange:documentAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1529478-drawatpoint": {
+      "title": "drawAtPoint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1529478-drawatpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1529478-drawatpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the attributed string starting at the specified point in the current graphics context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawAtPoint:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1531631-drawinrect": {
+      "title": "drawInRect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1531631-drawinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1531631-drawinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the attributed string inside the specified bounding rectangle in the current graphics context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawInRect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524971-drawwithrect": {
+      "title": "drawWithRect:options:context:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524971-drawwithrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1524971-drawwithrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the attributed string in the specified bounding rectangle using the provided options."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawWithRect:options:context:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528362-size": {
+      "title": "size",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528362-size",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1528362-size",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the size necessary to draw the string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "size"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1529154-boundingrectwithsize": {
+      "title": "boundingRectWithSize:options:context:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1529154-boundingrectwithsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1529154-boundingrectwithsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the bounding rectangle necessary to draw the string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "boundingRectWithSize:options:context:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525086-containsattachmentsinrange": {
+      "title": "containsAttachmentsInRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525086-containsattachmentsinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1525086-containsattachmentsinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates if the attributed string contains an attachment in the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "containsAttachmentsInRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535409-texttypes": {
+      "title": "textTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535409-texttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1535409-texttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of UTI strings that identify the file types that attributed strings support, either directly or through a user-installed filter service. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528269-textunfilteredtypes": {
+      "title": "textUnfilteredTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528269-textunfilteredtypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1528269-textunfilteredtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of UTI strings that identify the file types that attributed strings support directly. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey": {
+      "title": "NSAttributedStringKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstringkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attributes that you can apply to text in an attributed string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstexteffectstyle": {
+      "title": "NSTextEffectStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstexteffectstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstexteffectstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for the text effect attribute key. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsspellingstate": {
+      "title": "NSSpellingState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsspellingstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsspellingstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for the spelling state attribute key. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nswritingdirectionformattype": {
+      "title": "NSWritingDirectionFormatType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nswritingdirectionformattype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nswritingdirectionformattype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for the writing direction attribute key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsunderlinestyle": {
+      "title": "NSUnderlineStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsunderlinestyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsunderlinestyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for the underline style and strikethrough style attribute keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/1580760-nsunderlinestrikethroughmask": {
+      "title": "NSUnderlineStrikethroughMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/1580760-nsunderlinestrikethroughmask",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/appkit/1580760-nsunderlinestrikethroughmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define the underline mask."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumentattributekey": {
+      "title": "NSAttributedStringDocumentAttributeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumentattributekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsattributedstringdocumentattributekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attributes that apply to a document. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumenttype": {
+      "title": "NSAttributedStringDocumentType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumenttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsattributedstringdocumenttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for the document type document attribute key.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutsectionkey": {
+      "title": "NSTextLayoutSectionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutsectionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutsectionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for the text layout sections document attribute key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumentreadingoptionkey": {
+      "title": "NSAttributedStringDocumentReadingOptionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumentreadingoptionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsattributedstringdocumentreadingoptionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for importing documents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstringenumerationoptions": {
+      "title": "NSAttributedStringEnumerationOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstringenumerationoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstringenumerationoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for enumerating attributes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/attributes_for_generating_html": {
+      "title": "Attributes for Generating HTML",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/attributes_for_generating_html",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/nsattributedstring/attributes_for_generating_html",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Documentwide attributes that provide control over the form of generated HTML."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580752-textfiletypes": {
+      "title": "textFileTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580752-textfiletypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1580752-textfiletypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of strings that represent file types that can be loaded as text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "textFileTypes"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580756-textunfilteredfiletypes": {
+      "title": "textUnfilteredFileTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580756-textunfilteredfiletypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1580756-textunfilteredfiletypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of strings that represent file types that can be loaded as a text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "textUnfilteredFileTypes"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580755-textpasteboardtypes": {
+      "title": "textPasteboardTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580755-textpasteboardtypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1580755-textpasteboardtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of pasteboard types that can be loaded as text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "textPasteboardTypes"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580753-textunfilteredpasteboardtypes": {
+      "title": "textUnfilteredPasteboardTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580753-textunfilteredpasteboardtypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1580753-textunfilteredpasteboardtypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of pasteboard types that can be loaded as text."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "textUnfilteredPasteboardTypes"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525939-initwithpath": {
+      "title": "initWithPath:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525939-initwithpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1525939-initwithpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a new attribute string object from RTF or RTFD data in the file at the specified path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithPath:documentAttributes:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533913-initwithurl": {
+      "title": "initWithURL:documentAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533913-initwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1533913-initwithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a new attributed string object from the data at the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithURL:documentAttributes:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1620492-initwithfileurl": {
+      "title": "initWithFileURL:options:documentAttributes:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1620492-initwithfileurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1620492-initwithfileurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a new attributed string object from the data at the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFileURL:options:documentAttributes:error:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533869-containsattachments": {
+      "title": "containsAttachments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533869-containsattachments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1533869-containsattachments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the attribute string contains any attachment attributes."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535059-urlatindex": {
+      "title": "URLAtIndex:effectiveRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535059-urlatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1535059-urlatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a URL, either from a link attribute or from text at the specified location that appears to be a URL string, for use in automatic link detection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLAtIndex:effectiveRange:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525782-drawwithrect": {
+      "title": "drawWithRect:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525782-drawwithrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1525782-drawwithrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the attributed string with the specified options within the specified rectangle in the current graphics context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawWithRect:options:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize": {
+      "title": "boundingRectWithSize:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates and returns a bounding rectangle for the attributed string using the options specified within the specified rectangle in the current graphics context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "boundingRectWithSize:options:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextwritingdirection": {
+      "title": "NSTextWritingDirection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextwritingdirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextwritingdirection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for specifying text-writing direction."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsunderlinebywordmask": {
+      "title": "NSUnderlineByWordMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsunderlinebywordmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsunderlinebywordmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draw the underline only underneath words, not underneath whitespace."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nsmutablecopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating an Attributed String",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1407481-initwithstring",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1408136-initwithstring",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1415342-initwithattributedstring",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524613-initwithdata",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534329-initwithdocformat",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525953-initwithhtml",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524624-initwithhtml",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535412-initwithhtml",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532912-initwithrtf",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530987-initwithrtfd",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533594-initwithrtfdfilewrapper",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530490-initwithurl",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1508376-attributedstringwithattachment"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Loading an Attributed String from HTML",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182826-loadfromhtmlwithrequest",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182825-loadfromhtmlwithfileurl",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182827-loadfromhtmlwithstring",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/3182824-loadfromhtmlwithdata",
+        "doc://com.apple.documentation/documentation/webkit/nsattributedstringcompletionhandler"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "To create an attributed string from HTML using these methods, you must import the WebKit framework."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retrieving Character Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412616-string",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1418432-length"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retrieving Attribute Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1415682-attributesatindex",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1410494-attributesatindex",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1408174-attribute",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412701-attribute"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Attributed Strings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1414808-isequaltoattributedstring"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Extracting a Substring",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1414283-attributedsubstringfromrange"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Enumerating over Attributes in a String",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412461-enumerateattribute",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412070-enumerateattributesinrange"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retrieving Font Attribute Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528371-fontattributesinrange",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524469-rulerattributesinrange"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calculating Linguistic Units",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534748-doubleclickatindex",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1526887-linebreakbeforeindex",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534114-linebreakbyhyphenatingbeforeinde",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535305-nextwordfromindex"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calculating Ranges",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1527303-itemnumberintextlist",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534045-rangeoftextblock",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525314-rangeoftextlist",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534365-rangeoftexttable"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Generating Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534090-datafromrange",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530461-filewrapperfromrange",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528592-docformatfromrange",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535158-rtffromrange",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530578-rtfdfromrange",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1527502-rtfdfilewrapperfromrange"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing the String",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1529478-drawatpoint",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1531631-drawinrect",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524971-drawwithrect"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Metrics for the String",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528362-size",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1529154-boundingrectwithsize",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525086-containsattachmentsinrange"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Testing String Data Sources",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535409-texttypes",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528269-textunfilteredtypes"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Specifying Text Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey",
+        "doc://com.apple.documentation/documentation/uikit/nstexteffectstyle",
+        "doc://com.apple.documentation/documentation/appkit/nsspellingstate",
+        "doc://com.apple.documentation/documentation/uikit/nswritingdirectionformattype",
+        "doc://com.apple.documentation/documentation/uikit/nsunderlinestyle",
+        "doc://com.apple.documentation/documentation/appkit/1580760-nsunderlinestrikethroughmask"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Specifying Document Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumentattributekey",
+        "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumenttype",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutsectionkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Specifying Document Reading Options",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumentreadingoptionkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstringenumerationoptions",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/attributes_for_generating_html"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580752-textfiletypes",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580756-textunfilteredfiletypes",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580755-textpasteboardtypes",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1580753-textunfilteredpasteboardtypes",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525939-initwithpath",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533913-initwithurl",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1620492-initwithfileurl",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533869-containsattachments",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535059-urlatindex",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525782-drawwithrect",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize",
+        "doc://com.apple.documentation/documentation/uikit/nstextwritingdirection",
+        "doc://com.apple.documentation/documentation/appkit/nsunderlinebywordmask"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring"
+      ],
+      "title": "Strings with Metadata",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSAttributedString"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": " object manages character strings and associated sets of attributes (for example, font and kerning) that apply to individual characters or ranges of characters in the string. An association of characters and their attributes is called an attributed string. The cluster’s two public classes, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring"
+            },
+            {
+              "type": "text",
+              "text": ", declare the programmatic interface for read-only attributed strings and modifiable attributed strings, respectively."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An attributed string identifies attributes by name, using an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary"
+            },
+            {
+              "type": "text",
+              "text": " object to store a value under the specified name. You can assign any attribute name/value pair you wish to a range of characters—it is up to your application to interpret custom attributes (see "
+            },
+            {
+              "type": "link",
+              "title": "Attributed String Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AttributedStrings/AttributedStrings.html#//apple_ref/doc/uid/10000036i"
+            },
+            {
+              "type": "text",
+              "text": "). If you are using attributed strings with the Core Text framework, you can also use the attribute keys defined by that framework. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use attributed strings with any APIs that accept them, such as Core Text. The AppKit and UIKit frameworks also provide a subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring"
+            },
+            {
+              "type": "text",
+              "text": ", called "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextstorage"
+            },
+            {
+              "type": "text",
+              "text": ", to provide the storage for the extended text-handling system. In iOS 6 and later you can use attributed strings to display formatted text in text views, text fields, and some other controls. Both AppKit and UIKit also define extensions to the basic attributed string interface that allows you to draw their contents in the current graphic context.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default font for "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": " objects is Helvetica 12-point, which may differ from the default system font for the platform. Thus, you might want to create new strings with non-default attributes suitable for your application. You can also use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nsparagraphstyle"
+            },
+            {
+              "type": "text",
+              "text": " class and its subclass "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nsmutableparagraphstyle"
+            },
+            {
+              "type": "text",
+              "text": " to encapsulate the paragraph or ruler attributes used by the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": " classes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Be aware that comparisons of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": " objects using the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418795-isequal"
+            },
+            {
+              "type": "text",
+              "text": " method look for exact equality. The comparison includes both a character-by-character string equality check and an equality check of all attributes. Such a comparison is not likely to yield a match if the string has many attributes, such as attachments, lists, and tables, for example."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+            },
+            {
+              "type": "text",
+              "text": " class is “toll-free bridged” with its Core Foundation counterpart, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfattributedstringref"
+            },
+            {
+              "type": "text",
+              "text": ". See "
+            },
+            {
+              "type": "link",
+              "title": "Toll-Free Bridging",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2"
+            },
+            {
+              "type": "text",
+              "text": " for more information."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

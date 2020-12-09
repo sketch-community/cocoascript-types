@@ -1,0 +1,1095 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Make your messaging app available for share sheet suggestions and use SiriKit intents to populate your app’s share extension."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/app_extension_support"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3343361,
+  "kind": "article",
+  "metadata": {
+    "title": "Supporting Suggestions in Your App’s Share Extension",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/app_extension_support": {
+      "title": "App Extension Support",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/app_extension_support",
+      "url": "/documentation/foundation/app_extension_support",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "devLink-1752533": {
+      "identifier": "devLink-1752533",
+      "type": "link",
+      "title": "Understand Share Extensions",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW2"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension": {
+      "title": "NSExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list/nsextension"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes": {
+      "title": "NSExtensionAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/intentssupported": {
+      "title": "IntentsSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/intentssupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsextension/intentssupported"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent": {
+      "title": "INSendMessageIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent"
+    },
+    "link-media-3358270": {
+      "identifier": "link-media-3358270",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3358270"
+    },
+    "media-3358270": {
+      "identifier": "media-3358270",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 898,
+            "height": 541
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b1fc567406/d544f8e4-1dae-4f6e-b1f5-9573591add01.png"
+        }
+      ],
+      "alt": "A screenshot of Xcode showing the Info.plist file for a Share extension that the developer created using Xcode's share extension template. The entries below the NSExtension key are expanded and show the IntentsSupported key with an item that has the value set to INSendMessageIntent. The NSExtensionActivationRule entry is set to TRUEPREDICATE.",
+      "title": "Figure 3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a new entry under the NSExtensionAttributes key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/nsextensionactivationrule": {
+      "title": "NSExtensionActivationRule",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/nsextensionactivationrule",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/nsextensionactivationrule"
+    },
+    "devLink-1752644": {
+      "identifier": "devLink-1752644",
+      "type": "link",
+      "title": "Declaring Supported Data Types for a Share or Action Extension",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname": {
+      "title": "groupName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/1778199-groupname"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier": {
+      "title": "conversationIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/2866586-conversationidentifier"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inimage": {
+      "title": "INImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inimage"
+    },
+    "doc://com.apple.documentation/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3362245": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3362245",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3362245"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inperson/1639130-image": {
+      "title": "image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/1639130-image",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson/1639130-image"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inperson": {
+      "title": "INPerson",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inperson/1638320-contactidentifier": {
+      "title": "contactIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/1638320-contactidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson/1638320-contactidentifier"
+    },
+    "doc://com.apple.documentation/documentation/social/slcomposeserviceviewcontroller": {
+      "title": "SLComposeServiceViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/social/slcomposeserviceviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/social/slcomposeserviceviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsextensioncontext/3180173-intent": {
+      "title": "intent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsextensioncontext/3180173-intent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsextensioncontext/3180173-intent"
+    },
+    "doc://com.apple.documentation/documentation/social/slcomposeserviceviewcontroller/1623325-configurationitems": {
+      "title": "configurationItems",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/social/slcomposeserviceviewcontroller/1623325-configurationitems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/social/slcomposeserviceviewcontroller/1623325-configurationitems",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "configurationItems"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3343363": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3343363",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3343363"
+    },
+    "link-media-3379658": {
+      "identifier": "link-media-3379658",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3379658"
+    },
+    "media-3379658": {
+      "identifier": "media-3379658",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 375,
+            "height": 739
+          },
+          "url": "https://docs-assets.developer.apple.com/published/99ce72e602/d776eec2-d012-4c0c-8293-e82e3e057701.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 375,
+            "height": 739
+          },
+          "url": "https://docs-assets.developer.apple.com/published/682efb29af/c23647d5-dfff-4316-b527-983430e7b436.png"
+        }
+      ],
+      "alt": "A screenshot of an iPhone. The upper half shows the apple.com website in Safari. The bottom half of the screen shows the share sheet after the user has decided to share the website with someone. iOS suggests conversations in the Messages app and another app.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A share sheet provides a list of suggestions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/social/slcomposeviewcontroller": {
+      "title": "SLComposeViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/social/slcomposeviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/social/slcomposeviewcontroller"
+    },
+    "link-media-3379657": {
+      "identifier": "link-media-3379657",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension#3379657"
+    },
+    "media-3379657": {
+      "identifier": "media-3379657",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 375,
+            "height": 739
+          },
+          "url": "https://docs-assets.developer.apple.com/published/87c78cd028/3e55ab65-b3f0-4276-ac85-a1bda2fbc4e6.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 375,
+            "height": 739
+          },
+          "url": "https://docs-assets.developer.apple.com/published/780ba11531/6d5c5ba9-d704-49af-996e-d487d481d256.png"
+        }
+      ],
+      "alt": "A screenshot of an iPhone with the Safari browser displaying the apple.com homepage. The user tapped the Share button and selected an app from the list of suggestions. The platforms default sharing interface, based on an SLComposeViewController, is visible. Based on the available metadata, the extension has prepopulated the interface with a recipient (Juan Chavez).",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prepopulating the share extension's interface with a conversation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension": {
+      "title": "Supporting Suggestions in Your App’s Share Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/app_extension_support/supporting_suggestions_in_your_app_s_share_extension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make your messaging app available for share sheet suggestions and use SiriKit intents to populate your app’s share extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using the iOS share sheet, users can launch your messaging app instantly from a list of suggestions when sharing content like a link, image, video, or file. The share sheet suggests conversations with people in apps that the user interacts with frequently, and updates its suggestions over time based on the user’s favorite apps and conversations. Figure 1 shows suggestions that include a mix of apps and conversations with contacts. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3379658",
+              "metadata": {
+                "anchor": "3379658",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A share sheet provides a list of suggestions"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To allow iOS to include conversations from your messaging app in the list of suggestions:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add a share extension to your app as described in "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Understand Share Extensions",
+                      "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW2"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Declare support for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+                    },
+                    {
+                      "type": "text",
+                      "text": " intent type."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Donate an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+                    },
+                    {
+                      "type": "text",
+                      "text": " in your messaging app and its share extension."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As the user selects an app from the list of suggestions, the app’s sharing interface, implemented as a share extension, accesses additional metadata. iOS provides the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": " for you to prepopulate the interface of your app’s share extension."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, you can access the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier"
+            },
+            {
+              "type": "text",
+              "text": " property and preselect a conversation with which to share content so the user doesn’t need to search for a contact in a list, or type a friend’s name. Figure 2 shows an app’s sharing interface using the default system UI that’s based on an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/social/slcomposeviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": ", with the recipient (Juan Chavez) already filled in."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3379657",
+              "metadata": {
+                "anchor": "3379657",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Prepopulating the share extension's interface with a conversation"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Share Extension to Your App",
+          "anchor": "3362225"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add a share extension to your app, open your app’s project in Xcode and select File > New > Target from the menu bar. Xcode presents a sheet that contains templates for different kinds of targets. Select the share extension template from the iOS pane and follow the steps in Xcode’s interface to add one to your app. To learn more, see "
+            },
+            {
+              "type": "link",
+              "title": "Understand Share Extensions",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW2"
+            },
+            {
+              "type": "text",
+              "text": " in the App Extension Programming Guide."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Support the Send Message Intent",
+          "anchor": "3343360"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Open the Share extension’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": ", and expand the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes"
+            },
+            {
+              "type": "text",
+              "text": " keys. Next, add a new entry with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/intentssupported"
+            },
+            {
+              "type": "text",
+              "text": " key and select "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Array"
+            },
+            {
+              "type": "text",
+              "text": " for its value type. Add the string "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INSendMessageIntent"
+            },
+            {
+              "type": "text",
+              "text": " as a new value to the array to declare support for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": " intent type, as shown in Figure 3."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3358270",
+              "metadata": {
+                "anchor": "3358270",
+                "title": "Figure 3",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Add a new entry under the NSExtensionAttributes key"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To make debugging easier, the value of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/nsextensionactivationrule"
+            },
+            {
+              "type": "text",
+              "text": " is set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TRUEPREDICATE"
+            },
+            {
+              "type": "text",
+              "text": " when you first add a share extension using Xcode’s template. Replace it with valid activation rules as described in "
+            },
+            {
+              "type": "link",
+              "title": "Declaring Supported Data Types for a Share or Action Extension",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8"
+            },
+            {
+              "type": "text",
+              "text": " before submitting your app for review."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Donate a Send Message Intent",
+          "anchor": "3362244"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Donate an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": " when the user sends a message in your app and its share extension, and not in any other circumstances. For example, don’t donate an intent when the user hasn’t actually sent a message."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As you initialize the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": " object, provide metadata that will be available later when the user choses your app’s share extension from the list of suggestions. The following code donates an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": " with a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname"
+            },
+            {
+              "type": "text",
+              "text": ", a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier"
+            },
+            {
+              "type": "text",
+              "text": ", and an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inimage"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Create an INSendMessageIntent to donate an intent for a conversation with Juan Chavez.",
+            "let groupName = INSpeakableString(spokenPhrase: \"Juan Chavez\")",
+            "let sendMessageIntent = INSendMessageIntent(recipients: nil,",
+            "                                            content: nil,",
+            "                                            speakableGroupName: groupName,",
+            "                                            conversationIdentifier: \"sampleConversationIdentifier\",",
+            "                                            serviceName: nil,",
+            "                                            sender: nil)",
+            "",
+            "// Add the user's avatar to the intent.",
+            "let image = INImage(named: \"Juan Chavez\")",
+            "sendMessageIntent.setImage(image, forParameterNamed: \\.speakableGroupName)",
+            "",
+            "// Donate the intent.",
+            "let interaction = INInteraction(intent: sendMessageIntent, response: nil)",
+            "interaction.donate(completion: { error in",
+            "    if error != nil {",
+            "        // Add error handling here.",
+            "    } else {",
+            "        // Do something, e.g. send the content to a contact.",
+            "    }",
+            "})"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3362245",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When iOS includes a conversation within your app as a suggestion in the share sheet, it displays your app’s icon along with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inimage"
+            },
+            {
+              "type": "text",
+              "text": " you associated with your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": ". If there’s no "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inimage"
+            },
+            {
+              "type": "text",
+              "text": " set on the intent, iOS uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/1639130-image"
+            },
+            {
+              "type": "text",
+              "text": " property from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson"
+            },
+            {
+              "type": "text",
+              "text": " object for each recipient. If the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson"
+            },
+            {
+              "type": "text",
+              "text": " object’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/1639130-image"
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", iOS looks up the corresponding contact in the Contacts app using the person’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/1638320-contactidentifier"
+            },
+            {
+              "type": "text",
+              "text": ". The share sheet then uses the contact’s image."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Both your app and its share extension donate an "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+                },
+                {
+                  "type": "text",
+                  "text": ". Write reusable code by creating an object that donates the intent and is available to both the extension and the app."
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Populate Your Share Extension’s Interface with Metadata",
+          "anchor": "3343362"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user selects your app from the list of suggestions, you can access the metadata that you created when your app donated the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": ". Use it to populate your share extension’s interface."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code listing shows a template implementation for an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/social/slcomposeserviceviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " subclass. It accesses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsextensioncontext/3180173-intent"
+            },
+            {
+              "type": "text",
+              "text": " property, makes sure it’s an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent"
+            },
+            {
+              "type": "text",
+              "text": ", and uses the intent’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier"
+            },
+            {
+              "type": "text",
+              "text": " to create a new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Recipient"
+            },
+            {
+              "type": "text",
+              "text": " object. It then uses the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Recipient"
+            },
+            {
+              "type": "text",
+              "text": " object to populate the share extension’s interface in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/social/slcomposeserviceviewcontroller/1623325-configurationitems"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "import Intents",
+            "import Social",
+            "import UIKit",
+            "",
+            "class ShareViewController: SLComposeServiceViewController {",
+            "",
+            "    var recipient: Recipient = Recipient(withName: \"Placeholder\")",
+            "    ",
+            "    override func viewDidLoad() {",
+            "        super.viewDidLoad()",
+            "        ",
+            "        // Populate the recipient property with the metadata in case the user tapped a suggestion from the share sheet.",
+            "        let intent = self.extensionContext?.intent as? INSendMessageIntent",
+            "        if intent != nil {",
+            "            let conversationIdentifier = intent!.conversationIdentifier",
+            "            self.recipient = recipient(identifier: conversationIdentifier!)",
+            "        }",
+            "    }",
+            "",
+            "    func recipient(identifier: String) -> Recipient {",
+            "        // Create a recipient object, for example by loading it from a data base.",
+            "        return Recipient(withName: identifier)",
+            "    }",
+            "",
+            "    override func isContentValid() -> Bool {",
+            "        // Do validation of contentText and/or NSExtensionContext attachments here",
+            "        return true",
+            "    }",
+            "",
+            "    override func didSelectPost() {",
+            "        // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.",
+            "        ",
+            "        // Inform the host that we're done, so it un-blocks its UI.",
+            "        // Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.",
+            "        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)",
+            "    }",
+            "",
+            "    override func configurationItems() -> [Any]! {",
+            "        // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.",
+            "        ",
+            "        // Use the Recipient object to populate the share sheet.",
+            "        let item = SLComposeSheetConfigurationItem()",
+            "        item?.title = NSLocalizedString(\"To:\", comment: \"The To: label when sharing content.\")",
+            "        item?.value = self.recipient.name",
+            "        item?.tapHandler = {",
+            "            self.validateContent()",
+            "            item!.value = self.recipient.name",
+            "        }",
+            "        ",
+            "        return [item!]",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3343363",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

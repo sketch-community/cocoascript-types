@@ -1,0 +1,936 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use a document picker to access the content of a directory outside your app’s container."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3330190,
+  "kind": "article",
+  "metadata": {
+    "title": "Providing Access to Directories",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/view_controllers/providing_access_to_directories"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/view_controllers/providing_access_to_directories"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers": {
+      "title": "View Controllers",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers",
+      "url": "/documentation/uikit/view_controllers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickermode/uidocumentpickermodeopen": {
+      "title": "UIDocumentPickerModeOpen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickermode/uidocumentpickermodeopen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickermode/uidocumentpickermodeopen"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331288": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331288",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/view_controllers/providing_access_to_directories#3331288"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621380-presentviewcontroller": {
+      "title": "presentViewController:animated:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621380-presentviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621380-presentviewcontroller",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "presentViewController:animated:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3183918-directoryurl": {
+      "title": "directoryURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3183918-directoryurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerviewcontroller/3183918-directoryurl"
+    },
+    "link-media-3332331": {
+      "identifier": "link-media-3332331",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/view_controllers/providing_access_to_directories#3332331"
+    },
+    "media-3332331": {
+      "identifier": "media-3332331",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 387,
+            "height": 386
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d85239d622/f376b1c0-50f1-4143-abaf-6554a481e23e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 387,
+            "height": 386
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7c597f49a5/d4a1872d-dcbc-42c7-b978-8e41ec284c59.png"
+        }
+      ],
+      "alt": "A screenshot of the document picker, with the TextEdit directory selected.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerdelegate/2902364-documentpicker": {
+      "title": "documentPicker:didPickDocumentsAtURLs:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerdelegate/2902364-documentpicker",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerdelegate/2902364-documentpicker",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "documentPicker:didPickDocumentsAtURLs:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331289": {
+      "title": "Access the Directory’s Content",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331289",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/view_controllers/providing_access_to_directories#3331289"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerdelegate/1618679-documentpickerwascancelled": {
+      "title": "documentPickerWasCancelled:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerdelegate/1618679-documentpickerwascancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerdelegate/1618679-documentpickerwascancelled",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "documentPickerWasCancelled:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller": {
+      "title": "UIDocumentBrowserViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view controller for browsing and performing actions on documents stored locally and in the cloud."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller": {
+      "title": "UIDocumentPickerViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerviewcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view controller that provides access to documents or destinations outside your app’s sandbox."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso": {
+      "title": "startAccessingSecurityScopedResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startAccessingSecurityScopedResource"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou": {
+      "title": "stopAccessingSecurityScopedResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopAccessingSecurityScopedResource"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331290": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331290",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/view_controllers/providing_access_to_directories#3331290"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlbookmarkcreationoptions/nsurlbookmarkcreationminimalbookmark": {
+      "title": "NSURLBookmarkCreationMinimalBookmark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlbookmarkcreationoptions/nsurlbookmarkcreationminimalbookmark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlbookmarkcreationoptions/nsurlbookmarkcreationminimalbookmark"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl/1417795-bookmarkdatawithoptions": {
+      "title": "bookmarkDataWithOptions:includingResourceValuesForKeys:relativeToURL:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1417795-bookmarkdatawithoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl/1417795-bookmarkdatawithoptions",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "bookmarkDataWithOptions:includingResourceValuesForKeys:relativeToURL:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331284": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331284",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/view_controllers/providing_access_to_directories#3331284"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331286": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331286",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/view_controllers/providing_access_to_directories#3331286"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url/1779698-startaccessingsecurityscopedreso": {
+      "title": "startAccessingSecurityScopedResource()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url/1779698-startaccessingsecurityscopedreso",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/url/1779698-startaccessingsecurityscopedreso"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app": {
+      "title": "Adding a Document Browser to Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Give users access to their local or remote documents from within your app.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories": {
+      "title": "Providing Access to Directories",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/providing_access_to_directories",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a document picker to access the content of a directory outside your app’s container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/building_a_document_browser-based_app": {
+      "title": "Building a Document Browser-Based App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/building_a_document_browser-based_app",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/view_controllers/building_a_document_browser-based_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a document browser to provide access to the user’s text files."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/building_a_document_browser_app_for_custom_file_formats": {
+      "title": "Building a Document Browser App for Custom File Formats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/building_a_document_browser_app_for_custom_file_formats",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/view_controllers/building_a_document_browser_app_for_custom_file_formats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement a custom document file format to manage user interactions with files on different cloud storage providers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontroller": {
+      "title": "UIDocumentInteractionController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentinteractioncontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view controller that previews, opens, or prints files whose file format cannot be handled directly by your app. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/building_a_document_browser-based_app",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/building_a_document_browser_app_for_custom_file_formats",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontroller"
+      ],
+      "title": "Documents and Directories",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In iOS 12 and earlier, users could open and interact with files outside the app’s container. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " provided access to files stored in the system’s local file provider, in iCloud, or in third-party services that use a File Provider extension. Users could select multiple files at a time—but they needed to select each file individually."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With iOS 13, users can select a directory from any of the available file providers using a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": ". The document picker returns a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "security-scoped URL"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " for the directory. Security-scoped URLs permit your app to access content outside its container. In this case, the URL lets your app recursively access the directory and all of its contents. This includes accessing any new items added to the directory in the future. Your app can even save a bookmark for this URL, letting it access the directory the next time it launches."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ask the User to Select a Directory",
+          "anchor": "3331291"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To prompt the user to select a directory, create a document picker for an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickermode/uidocumentpickermodeopen"
+            },
+            {
+              "type": "text",
+              "text": " operation, setting the document type to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kUTTypeFolder"
+            },
+            {
+              "type": "text",
+              "text": ". Then set the document picker’s delegate and present it. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Create a document picker for directories.",
+            "let documentPicker =",
+            "    UIDocumentPickerViewController(documentTypes: [kUTTypeFolder as String],",
+            "                                   in: .open)",
+            "",
+            "documentPicker.delegate = self",
+            "",
+            "// Set the initial directory.",
+            "documentPicker.directoryURL = startingDirectory",
+            "",
+            "// Present the document picker.",
+            "present(documentPicker, animated: true, completion: nil)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3331288",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As soon as you call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621380-presentviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " method, the system displays the document picker to the user. If you specify the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3183918-directoryurl"
+            },
+            {
+              "type": "text",
+              "text": " property, the document picker starts with the selected directory. Otherwise, it starts with the last directory chosen by the user."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3332331",
+              "metadata": {
+                "anchor": "3332331",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After the user taps Done, the system calls your delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerdelegate/2902364-documentpicker"
+            },
+            {
+              "type": "text",
+              "text": " method, passing an array of security-scoped URLs for the directories chosen by the user. Use a security-scoped URL to enumerate the content of the directory and any of its subdirectories, or to add, remove, or modify any files. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/providing_access_to_directories#3331289"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the user taps Cancel, the system calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerdelegate/1618679-documentpickerwascancelled"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller"
+                },
+                {
+                  "type": "text",
+                  "text": " doesn’t support the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "kUTTypeFolder"
+                },
+                {
+                  "type": "text",
+                  "text": " document type. To provide access to directories, you use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller"
+                },
+                {
+                  "type": "text",
+                  "text": " instead."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Access the Directory’s Content",
+          "anchor": "3331289"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user selects a directory in the document picker, your system gives your app permission to access that directory and all of its contents. The document picker returns a security-scoped URL for the directory. When you use one of these URLs to enumerate the directory’s content, the resulting URLs are also security-scoped. Finally, you can save a security-scoped URL as a bookmark, then later resolve it back into a security-scoped URL."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To access the content of a security-scoped URL, you must do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Before accessing the URL, call "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use a file coordinator to perform read or write operations on the URL’s contents."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "After you’re done accessing the URL, call "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Start accessing a security-scoped resource.",
+            "guard url.startAccessingSecurityScopedResource() else {",
+            "    // Handle the failure here.",
+            "    return",
+            "}",
+            "",
+            "// Make sure you release the security-scoped resource when you are done.",
+            "defer { url.stopAccessingSecurityScopedResource() }",
+            "",
+            "// Use file coordination for reading and writing any of the URL’s content.",
+            "var error: NSError? = nil",
+            "NSFileCoordinator().coordinate(readingItemAt: url, error: &error) { (url) in",
+            "    ",
+            "    let keys : [URLResourceKey] = [.nameKey, .isDirectoryKey]",
+            "    ",
+            "    // Get an enumerator for the directory's content.",
+            "    guard let fileList =",
+            "        FileManager.default.enumerator(at: url, includingPropertiesForKeys: keys) else {",
+            "            output.append(\"*** Unable to access the contents of \\(url.path) ***\\n\")",
+            "            return",
+            "    }",
+            "    ",
+            "    for case let file as URL in fileList {",
+            "        // Also start accessing the content's security-scoped URL.",
+            "        guard url.startAccessingSecurityScopedResource() else {",
+            "            // Handle the failure here.",
+            "            continue",
+            "        }",
+            "                ",
+            "        // Make sure you release the security-scoped resource when you are done.",
+            "        defer { url.stopAccessingSecurityScopedResource() }",
+            "",
+            "        // Do something with the file here.",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3331290",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Save the URL as a Bookmark",
+          "anchor": "3331285"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To access the URL in the future, save the URL as a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlbookmarkcreationoptions/nsurlbookmarkcreationminimalbookmark"
+            },
+            {
+              "type": "text",
+              "text": ", using its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl/1417795-bookmarkdatawithoptions"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "do {",
+            "    // Start accessing a security-scoped resource.",
+            "    guard url.startAccessingSecurityScopedResource() else {",
+            "        // Handle the failure here.",
+            "        return",
+            "    }",
+            "    ",
+            "    // Make sure you release the security-scoped resource when you are done.",
+            "    defer { url.stopAccessingSecurityScopedResource() }",
+            "    ",
+            "    let bookmarkData = try url.bookmarkData(options: .minimalBookmark, includingResourceValuesForKeys: nil, relativeTo: nil)",
+            "    ",
+            "    try bookmarkData.write(to: getMyURLForBookmark())",
+            "}",
+            "catch let error {",
+            "    // Handle the error here.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3331284",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can then read the bookmark, and resolve it to a security-scoped URL again."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "do {",
+            "    let bookmarkData = try Data(contentsOf: getMyURLForBookmark())",
+            "    var isStale = false",
+            "    let url = try URL(resolvingBookmarkData: bookmarkData, bookmarkDataIsStale: &isStale)",
+            "    ",
+            "    guard !isStale else {",
+            "        // Handle stale data here.",
+            "        return",
+            "    }",
+            "    ",
+            "    // Use the URL here.",
+            "}",
+            "catch let error {",
+            "    // Handle the error here.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3331286",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Respond to Permission Changes",
+          "anchor": "3331287"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users always have complete control over the apps that can access directories. After selecting a directory from the document picker, your app appears in Settings > Privacy > Files and Folders. This page lists all the apps that have permission to access shared directories, and users can revoke or restore permission for each app at any time. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This means your app must be ready to handle failures when accessing a directory’s content. Calls to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url/1779698-startaccessingsecurityscopedreso"
+            },
+            {
+              "type": "text",
+              "text": " method can fail, as well as any attempts to read or write to the URL. This is especially true when saving and resolving bookmarks to security-scoped URLs, because using saved bookmarks can greatly increase the amount of time users have to possibly change your app’s permissions."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,476 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Manage your app's interaction with the host operating system and other processes, and implement low-level concurrency features."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/processes_and_threads",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2877775,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Processes and Threads",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/processes_and_threads"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/processes_and_threads"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop": {
+      "title": "NSRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The programmatic interface to objects that manage input sources."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nstimer": {
+      "title": "NSTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nstimer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nstimer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A timer that fires after a certain time interval has elapsed, sending a specified message to a target object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo": {
+      "title": "NSProcessInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprocessinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of information about the current process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsthread": {
+      "title": "NSThread",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsthread",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsthread",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A thread of execution."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslocking": {
+      "title": "NSLocking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslocking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslocking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The elementary methods adopted by classes that define lock objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslock": {
+      "title": "NSLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that coordinates the operation of multiple threads of execution within the same application."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrecursivelock": {
+      "title": "NSRecursiveLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrecursivelock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrecursivelock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A lock that may be acquired multiple times by the same thread without causing a deadlock."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdistributedlock": {
+      "title": "NSDistributedLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdistributedlock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdistributedlock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A lock that multiple applications on multiple hosts can use to restrict access to some shared resource, such as a file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsconditionlock": {
+      "title": "NSConditionLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsconditionlock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsconditionlock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A lock that can be associated with specific, user-defined conditions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscondition": {
+      "title": "NSCondition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscondition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscondition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A condition variable whose semantics follow those used for POSIX-style conditions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue": {
+      "title": "NSOperationQueue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperationqueue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A queue that regulates the execution of operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation": {
+      "title": "NSOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that represents the code and data associated with a single task."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsblockoperation": {
+      "title": "NSBlockOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsblockoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsblockoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that manages the concurrent execution of one or more blocks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsinvocationoperation": {
+      "title": "NSInvocationOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvocationoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsinvocationoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that manages the execution of a single encapsulated task specified as an invocation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nstask": {
+      "title": "NSTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nstask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nstask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing a subprocess of the current process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuserscripttask": {
+      "title": "NSUserScriptTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuserscripttask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuserscripttask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that executes scripts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuserapplescripttask": {
+      "title": "NSUserAppleScriptTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuserapplescripttask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuserapplescripttask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that executes AppleScript scripts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuserautomatortask": {
+      "title": "NSUserAutomatorTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuserautomatortask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuserautomatortask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that executes Automator workflows."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuserunixtask": {
+      "title": "NSUserUnixTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuserunixtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuserunixtask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that executes unix applications."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/xpc": {
+      "title": "XPC",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/xpc",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/xpc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage secure interprocess communication. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime": {
+      "title": "Object Runtime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/object_runtime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Get low-level support for basic Objective-C features, Cocoa design patterns, and Swift integration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/processes_and_threads": {
+      "title": "Processes and Threads",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/processes_and_threads",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/processes_and_threads",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage your app's interaction with the host operating system and other processes, and implement low-level concurrency features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/streams_sockets_and_ports": {
+      "title": "Streams, Sockets, and Ports",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/streams_sockets_and_ports",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/streams_sockets_and_ports",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use low-level Unix features to manage input and output among files, processes, and the network. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Run Loop Scheduling",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsrunloop",
+        "doc://com.apple.documentation/documentation/foundation/nstimer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Process Info",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsprocessinfo"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Threads and Locking",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsthread",
+        "doc://com.apple.documentation/documentation/foundation/nslocking",
+        "doc://com.apple.documentation/documentation/foundation/nslock",
+        "doc://com.apple.documentation/documentation/foundation/nsrecursivelock",
+        "doc://com.apple.documentation/documentation/foundation/nsdistributedlock",
+        "doc://com.apple.documentation/documentation/foundation/nsconditionlock",
+        "doc://com.apple.documentation/documentation/foundation/nscondition"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue",
+        "doc://com.apple.documentation/documentation/foundation/nsoperation",
+        "doc://com.apple.documentation/documentation/foundation/nsblockoperation",
+        "doc://com.apple.documentation/documentation/foundation/nsinvocationoperation"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scripts and External Tasks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nstask",
+        "doc://com.apple.documentation/documentation/foundation/nsuserscripttask",
+        "doc://com.apple.documentation/documentation/foundation/nsuserapplescripttask",
+        "doc://com.apple.documentation/documentation/foundation/nsuserautomatortask",
+        "doc://com.apple.documentation/documentation/foundation/nsuserunixtask"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/xpc",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime",
+        "doc://com.apple.documentation/documentation/foundation/streams_sockets_and_ports"
+      ],
+      "title": "Low-Level Utilities",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

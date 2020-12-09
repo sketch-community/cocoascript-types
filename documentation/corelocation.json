@@ -1,0 +1,947 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Obtain the geographic location and orientation of a device."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corelocation",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1612498,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Core Location",
+    "role": "collection",
+    "roleHeading": "Framework",
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.6",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager": {
+      "title": "CLLocationManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object that you use to start and stop the delivery of location-related events to your app."
+        }
+      ]
+    },
+    "link-media-3379954": {
+      "identifier": "link-media-3379954",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/corelocation#3379954"
+    },
+    "media-3379954": {
+      "identifier": "media-3379954",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 262,
+            "height": 512
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2b4891acf8/189f158a-f24f-49c6-a366-43e23c73c70e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 262,
+            "height": 512
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a26b435665/bd1e2eaa-ea1e-4e61-ba3a-f304e92a697a.png"
+        }
+      ],
+      "alt": "A screenshot of an iPhone showing a prompt asking the user if they allow the \"Find My\" app to have access to their location. The options are \"Allow While Using App\", \"Allow Once\", and \"Don't Allow\".",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate": {
+      "title": "CLLocationManagerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanagerdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The methods that you use to receive events from an associated location manager object."
+        }
+      ]
+    },
+    "devLink-1741961": {
+      "identifier": "devLink-1741961",
+      "type": "link",
+      "title": "Location and Maps Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app": {
+      "title": "Adding Location Services to Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/adding_location_services_to_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement features that can access information about a user’s location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request": {
+      "title": "Choosing the  Location Services Authorization to Request",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/choosing_the_location_services_authorization_to_request",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determine the authorization your app needs to access location data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services": {
+      "title": "Requesting Authorization for Location Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/requesting_authorization_for_location_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ask the user for permission to access their location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/responding_to_changes_in_authorization_status": {
+      "title": "Responding to Changes in Authorization Status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/responding_to_changes_in_authorization_status",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/responding_to_changes_in_authorization_status",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Receive and respond to changes in your app's authorization status in your delegate's method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus": {
+      "title": "CLAuthorizationStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clauthorizationstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the app's authorization to use location services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/claccuracyauthorization": {
+      "title": "CLAccuracyAuthorization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/claccuracyauthorization",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/claccuracyauthorization",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the level of location accuracy the app has authorization to use."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription": {
+      "title": "NSLocationAlwaysAndWhenInUseUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user’s location information at all times."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
+      "ideTitle": "Privacy - Location Always and When In Use Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationAlwaysAndWhenInUseUsageDescription"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription": {
+      "title": "NSLocationWhenInUseUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user’s location information while the app is running in the foreground."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationWhenInUseUsageDescription",
+      "ideTitle": "Privacy - Location When In Use Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationWhenInUseUsageDescription"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationusagedescription": {
+      "title": "NSLocationUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user’s location information."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationUsageDescription",
+      "ideTitle": "Privacy - Location Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationUsageDescription"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription": {
+      "title": "NSLocationAlwaysUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user's location at all times."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationAlwaysUsageDescription",
+      "ideTitle": "Privacy - Location Always Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationAlwaysUsageDescription"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location": {
+      "title": "Getting the User's Location",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/getting_the_user_s_location",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Receive location data in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocation": {
+      "title": "CLLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The latitude, longitude, and course information reported by the system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d": {
+      "title": "CLLocationCoordinate2D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationcoordinate2d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The latitude and longitude associated with a location, specified using the WGS 84 reference frame."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clfloor": {
+      "title": "CLFloor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clfloor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clfloor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The floor of a building on which the user's device is located. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clvisit": {
+      "title": "CLVisit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clvisit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clvisit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about the user's location during a specific period of time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions": {
+      "title": "Monitoring the User's Proximity to Geographic Regions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use region monitoring to determine when the user enters or leaves a geographic region. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clcircularregion": {
+      "title": "CLCircularRegion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clcircularregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clcircularregion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A circular geographic region, specified as a center point and radius."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clregion": {
+      "title": "CLRegion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clregion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A base class representing an area that can be monitored."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/determining_the_proximity_to_an_ibeacon_device": {
+      "title": "Determining the Proximity to an iBeacon Device",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/determining_the_proximity_to_an_ibeacon_device",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/determining_the_proximity_to_an_ibeacon_device",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect beacons and determine the relative distance to them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/turning_an_ios_device_into_an_ibeacon_device": {
+      "title": "Turning an iOS Device into an iBeacon Device",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/turning_an_ios_device_into_an_ibeacon_device",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/turning_an_ios_device_into_an_ibeacon_device",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Broadcast iBeacon signals from an iOS device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clbeacon": {
+      "title": "CLBeacon",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clbeacon",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clbeacon",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about an observed iBeacon device and its relative distance to the user’s device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clbeaconregion": {
+      "title": "CLBeaconRegion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clbeaconregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clbeaconregion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A region used to detect the presence of iBeacon devices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint": {
+      "title": "CLBeaconIdentityConstraint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clbeaconidentityconstraint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identity characteristics that can match one or more beacons."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_heading_and_course_information": {
+      "title": "Getting Heading and Course Information",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_heading_and_course_information",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/getting_heading_and_course_information",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a device’s orientation and course information for navigation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clheading": {
+      "title": "CLHeading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clheading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clheading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The azimuth (orientation) of the user’s device, relative to true or magnetic north."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names": {
+      "title": "Converting Between Coordinates and User-Friendly Place Names",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert between a latitude/longitude pair and a more user-friendly description of that location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clgeocoder": {
+      "title": "CLGeocoder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clgeocoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clgeocoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for converting between geographic coordinates and place names."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clplacemark": {
+      "title": "CLPlacemark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clplacemark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clplacemark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user-friendly description of a geographic coordinate, often containing the name of the place, its address, and other relevant information.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clerror": {
+      "title": "CLError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Error codes returned by the location manager object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey": {
+      "title": "kCLErrorUserInfoAlternateRegionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/kclerroruserinfoalternateregionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key in the user information dictionary of an error relating to a delayed region monitoring response. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/kclerrordomain": {
+      "title": "kCLErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/kclerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/kclerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The domain for Core Location errors. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Authorization",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request",
+        "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services",
+        "doc://com.apple.documentation/documentation/corelocation/responding_to_changes_in_authorization_status",
+        "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus",
+        "doc://com.apple.documentation/documentation/corelocation/claccuracyauthorization",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationusagedescription",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Location Updates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location",
+        "doc://com.apple.documentation/documentation/corelocation/cllocation",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d",
+        "doc://com.apple.documentation/documentation/corelocation/clfloor",
+        "doc://com.apple.documentation/documentation/corelocation/clvisit"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Region Monitoring",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions",
+        "doc://com.apple.documentation/documentation/corelocation/clcircularregion",
+        "doc://com.apple.documentation/documentation/corelocation/clregion"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure geofences and receive notifications when the user's device crosses the fence's boundaries."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "iBeacon",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/determining_the_proximity_to_an_ibeacon_device",
+        "doc://com.apple.documentation/documentation/corelocation/turning_an_ios_device_into_an_ibeacon_device",
+        "doc://com.apple.documentation/documentation/corelocation/clbeacon",
+        "doc://com.apple.documentation/documentation/corelocation/clbeaconregion",
+        "doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Compass Headings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/getting_heading_and_course_information",
+        "doc://com.apple.documentation/documentation/corelocation/clheading"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determine the device’s orientation relative to magnetic or true north."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Geocoding",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names",
+        "doc://com.apple.documentation/documentation/corelocation/clgeocoder",
+        "doc://com.apple.documentation/documentation/corelocation/clplacemark"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Errors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/clerror",
+        "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey",
+        "doc://com.apple.documentation/documentation/corelocation/kclerrordomain"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1741961"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Location provides services that determine a device’s geographic location, altitude, and orientation, or its position relative to a nearby iBeacon device. The framework gathers data using all available components on the device, including the Wi-Fi, GPS, Bluetooth, magnetometer, barometer, and cellular hardware."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use instances of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": " class to configure, start, and stop the Core Location services. A location manager object supports the following location-related activities:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Standard and significant location updates."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Track large or small changes in the user’s current location with a configurable degree of accuracy."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Region monitoring."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Monitor distinct regions of interest and generate location events when the user enters or leaves those regions. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Beacon ranging."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Detect and locate nearby beacons. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Compass headings"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Report heading changes from the onboard compass."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use location services, your app requests authorization and the system prompts the user to grant or deny the request. An initial prompt is shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3379954"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3379954",
+              "metadata": {
+                "anchor": "3379954",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On iOS devices, users can change location service settings at any time in the Settings app, affecting individual apps or the device as a whole. Your app receives events, including authorization changes, in your location manager's delegate object, which conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add a custom font to your app and use it in your app’s interface."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2939837,
+  "kind": "article",
+  "metadata": {
+    "title": "Adding a Custom Font to Your App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
+      "title": "Text Display and Fonts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+      "url": "/documentation/uikit/text_display_and_fonts",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-2940118": {
+      "identifier": "link-media-2940118",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2940118"
+    },
+    "media-2940118": {
+      "identifier": "media-2940118",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 659,
+            "height": 535
+          },
+          "url": "https://docs-assets.developer.apple.com/published/35bc80c902/d373ed5c-a36b-46fe-9bd8-bf49700072be.png"
+        }
+      ],
+      "alt": "On the left, a screenshot of the Project Navigator showing the custom font files added to the CustomFont project. On the right, a screenshot of the File Inspector showing that the selected font file is a target member of the app CustomFont.",
+      "title": "Figure 1"
+    },
+    "link-media-2940110": {
+      "identifier": "link-media-2940110",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2940110"
+    },
+    "media-2940110": {
+      "identifier": "media-2940110",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 360
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1b7e45d9c2/f9329213-4abb-413e-a339-4b91ee4bf554.png"
+        }
+      ],
+      "alt": "Screenshot of Xcode showing the contents of the Info.plist file. The \"Fonts provided by application\" key contains the two file fonts that were added to the project.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilabel": {
+      "title": "UILabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilabel"
+    },
+    "devLink-1734992": {
+      "identifier": "devLink-1734992",
+      "type": "link",
+      "title": "UITextField",
+      "url": "https://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW6"
+    },
+    "link-media-2940122": {
+      "identifier": "link-media-2940122",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2940122"
+    },
+    "media-2940122": {
+      "identifier": "media-2940122",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 360
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0b4daf4aa5/c76a54cd-2270-41fc-b0cb-5a7249418ba7.png"
+        }
+      ],
+      "alt": "Screenshot of Interface Builder showing that the font for the label is “CustomFont-Light 17.0.”",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2939908": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2939908",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2939908"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifont": {
+      "title": "UIFont",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifont",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifont",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A font object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2939909": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2939909",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app#2939909"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifont/scaling_fonts_automatically": {
+      "title": "Scaling Fonts Automatically",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/scaling_fonts_automatically",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uifont/scaling_fonts_automatically",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scale text in your interface automatically using Dynamic Type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app": {
+      "title": "Adding a Custom Font to Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a custom font to your app and use it in your app’s interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifontdescriptor": {
+      "title": "UIFontDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifontdescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifontdescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of attributes that describes a font."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifontdescriptorsymbolictraits": {
+      "title": "UIFontDescriptorSymbolicTraits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifontdescriptorsymbolictraits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifontdescriptorsymbolictraits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe the stylistic aspects of a font."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifontmetrics": {
+      "title": "UIFontMetrics",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifontmetrics",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifontmetrics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object for obtaining custom fonts that scale to support Dynamic Type. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uifont/scaling_fonts_automatically",
+        "doc://com.apple.documentation/documentation/uikit/uifont",
+        "doc://com.apple.documentation/documentation/uikit/uifontdescriptor",
+        "doc://com.apple.documentation/documentation/uikit/uifontdescriptorsymbolictraits",
+        "doc://com.apple.documentation/documentation/uikit/uifontmetrics"
+      ],
+      "title": "Fonts",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app isn't limited to the custom fonts provided by iOS. If your company has its own branded font, for example, you can use it in your app. Add the font file that contains your font to your app bundle, then use your font the same way you use any of the iOS-provided custom fonts."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add the Font File to Your Xcode Project",
+          "anchor": "2939904"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add a font file to your Xcode project, select "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "File > Add Files to “Your Project Name”"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " from the menu bar, or drag the file from Finder and drop it into your Xcode project. You can add True Type Font (.ttf) and Open Type Font (.otf) files. Also, make sure the font file is a target member of your app; otherwise, the font file will not be distributed as part of your app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2940118",
+              "metadata": {
+                "anchor": "2940118",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Register Your Font File with iOS",
+          "anchor": "2939905"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After adding the font file to your project, you need to let iOS know about the font. To do this, add the key \"Fonts provided by application\" to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Info.plist"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " (the raw key name is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAppFonts"
+            },
+            {
+              "type": "text",
+              "text": "). Xcode creates an array value for the key; add the name of the font file as an item of the array. Be sure to include the file extension as part of the name. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2940110",
+              "metadata": {
+                "anchor": "2940110",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each font file you add to your project must be listed in this array; otherwise, the font will not be available to your app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Your Custom Font in Interface Builder",
+          "anchor": "2939907"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you add the font file to your Xcode project and its "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Info.plist"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", you can begin assigning the font to UI objects like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "link",
+              "title": "UITextField",
+              "destination": "https://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW6"
+            },
+            {
+              "type": "text",
+              "text": ". If you’re using Interface Builder, assign the UI object’s "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Font"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " setting to your custom font using the Attribute Inspector."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2940122",
+              "metadata": {
+                "anchor": "2940122",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Your Custom Font in Source Code",
+          "anchor": "2939906"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can create an instance of your custom font in source code. To do this, you need to know the font name.  However, the name of the font isn’t always obvious, and rarely matches the font file name. A quick way to find the font name is to get the list of fonts available to your app, which you can do with the following code:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "for family in UIFont.familyNames.sorted() {",
+            "    let names = UIFont.fontNames(forFamilyName: family)",
+            "    print(\"Family: \\(family) Font names: \\(names)\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2939908",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you know the font name, create an instance of the custom font using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifont"
+            },
+            {
+              "type": "text",
+              "text": ". If your app supports Dynamic Type, you can also get a scaled instance of your font, as shown here:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let customFont = UIFont(name: \"CustomFont-Light\", size: UIFont.labelFontSize) else {",
+            "    fatalError(\"\"\"",
+            "        Failed to load the \"CustomFont-Light\" font.",
+            "        Make sure the font file is included in the project and the font name is spelled correctly.",
+            "        \"\"\"",
+            "    )",
+            "}",
+            "label.font = UIFontMetrics.default.scaledFont(for: customFont)",
+            "label.adjustsFontForContentSizeCategory = true"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2939909",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information on using scaled fonts, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/scaling_fonts_automatically"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,880 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Display data in a single column of customizable rows."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864443,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Table Views",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3148899": {
+      "identifier": "link-media-3148899",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/views_and_controls/table_views#3148899"
+    },
+    "media-3148899": {
+      "identifier": "media-3148899",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 722,
+            "height": 452
+          },
+          "url": "https://docs-assets.developer.apple.com/published/95a98452b2/fe203fce-4b6f-40c4-8bfb-8a9971ea4e13.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 722,
+            "height": 452
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6c67362d82/eb067a17-54f7-415f-ac37-25681879911f.png"
+        }
+      ],
+      "alt": "Illustration showing three table view examples. The first contains only rows, the second contains rows grouped into sections, and the third contains custom cells.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller": {
+      "title": "UITableViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view controller that specializes in managing a table view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource": {
+      "title": "UITableViewDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The methods adopted by the object you use to manage data and provide cells for a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate": {
+      "title": "UITableViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for managing selections, configuring section headers and footers, deleting and reordering cells, and performing other actions in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that presents data using rows arranged in a single column."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data": {
+      "title": "Filling a Table with Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching": {
+      "title": "UITableViewDataSourcePrefetching",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasourceprefetching",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource": {
+      "title": "UITableViewDiffableDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdiffabledatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object you use to manage data and provide cells for a table view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot": {
+      "title": "NSDiffableDataSourceSnapshot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdiffabledatasourcesnapshot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of the state of the data in a view at a specific point in time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation": {
+      "title": "UILocalizedIndexedCollation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilocalizedindexedcollation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that organizes, sorts, and localizes the data for a table view that has a section index. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating": {
+      "title": "UIDataSourceTranslating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidatasourcetranslating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An advanced interface for managing a data source object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol": {
+      "title": "UIRefreshControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uirefreshcontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A standard control that can initiate the refreshing of a scroll view’s contents. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area": {
+      "title": "Estimating the Height of a Table's Scrolling Area",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide height estimates for your table view’s headers, footers, and rows to ensure that scrolling accurately reflects the size of your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewfocusupdatecontext": {
+      "title": "UITableViewFocusUpdateContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewfocusupdatecontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewfocusupdatecontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A context object that provides information relevant to a specific focus update from one view to another."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table": {
+      "title": "Configuring the Cells for Your Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the appearance and content of your table’s rows by defining one or more prototype cells in your storyboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells": {
+      "title": "Creating Self-Sizing Table View Cells",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections": {
+      "title": "Adding Headers and Footers to Table Sections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Differentiate groups of rows visually by adding header and footer views to your table view’s sections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell": {
+      "title": "UITableViewCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The visual representation of a single row in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview": {
+      "title": "UITableViewHeaderFooterView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewheaderfooterview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reusable view that you place at the top or bottom of a table section to display additional information for that section."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiswipeactionsconfiguration": {
+      "title": "UISwipeActionsConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipeactionsconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiswipeactionsconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The set of actions to perform when swiping on rows of a table."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontextualaction": {
+      "title": "UIContextualAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontextualaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicontextualaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An action to display when the user swipes a table row."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewrowaction": {
+      "title": "UITableViewRowAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewrowaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewrowaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single action to present when the user swipes horizontally in a table row. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view": {
+      "title": "Handling Row Selection in a Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect when a user taps a table view cell so your app can take the next indicated action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture": {
+      "title": "Selecting Multiple Items with a Two-Finger Pan Gesture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Accelerate user selection of multiple items using the multiselect gesture on table and collection views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views": {
+      "title": "Supporting Drag and Drop in Table Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate drags and handle drops from a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view": {
+      "title": "Adopting Drag and Drop in a Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Demonstrates how to enable and implement drag and drop for a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate": {
+      "title": "UITableViewDragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdragdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for initiating drags from a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate": {
+      "title": "UITableViewDropDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for handling drops in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator": {
+      "title": "UITableViewDropCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropcoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for coordinating your custom drop-related actions with the table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropitem": {
+      "title": "UITableViewDropItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data associated with an item being dropped into the table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropproposal": {
+      "title": "UITableViewDropProposal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropproposal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropproposal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your proposed solution for handling a drop in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholdercontext": {
+      "title": "UITableViewDropPlaceholderContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholdercontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropplaceholdercontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object for tracking a placeholder cell that you added to your table during a drop operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholder": {
+      "title": "UITableViewDropPlaceholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdropplaceholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A placeholder cell that supports customizing the drop preview parameters. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewplaceholder": {
+      "title": "UITableViewPlaceholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewplaceholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewplaceholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about a placeholder cell being inserted into a table."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display nested views using a configurable and highly customizable layout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display data in a single column of customizable rows."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uistackview": {
+      "title": "UIStackView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uistackview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uistackview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A streamlined interface for laying out a collection of views in either a column or a row. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscrollview": {
+      "title": "UIScrollView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscrollview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscrollview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view that allows the scrolling and zooming of its contained views. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource",
+        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot",
+        "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation",
+        "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+        "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Table Management",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewfocusupdatecontext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Cells, Headers, and Footers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+        "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Row Actions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiswipeactionsconfiguration",
+        "doc://com.apple.documentation/documentation/uikit/uicontextualaction",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewrowaction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Selection Management",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drag and Drop",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdragdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropcoordinator",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropitem",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropproposal"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Placeholder Cells",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholdercontext",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdropplaceholder",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewplaceholder"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+        "doc://com.apple.documentation/documentation/uikit/uistackview",
+        "doc://com.apple.documentation/documentation/uikit/uiscrollview"
+      ],
+      "title": "Container Views",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A table view displays a single column of vertically scrolling content, divided into rows and sections. Each row of a table displays a single piece of information related to your app. Sections let you group related rows together. For example, the Contacts app uses a table to display the names of the user's contacts.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3148899",
+              "metadata": {
+                "anchor": "3148899",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Table views are a collaboration between many different objects, including:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Cells. A cell provides the visual representation for your content. You can use the default cells provided by UIKit or define custom cells to suit the needs of your app. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Table view controller. You typically use a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object to manage a table view. You can use other view controllers too, but a table view controller is required for some table-related features to work. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your data source object. This object adopts the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol and provides the data for the table. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your delegate object. This object adopts the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol and manages user interactions with the table's contents."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

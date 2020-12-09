@@ -1,0 +1,513 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A deallocator you use to customize how the backing store is deallocated for data created with the no-copy initializer."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values",
+        "doc://com.apple.documentation/documentation/foundation/data"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/data/deallocator",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1780107,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Data.Deallocator",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "7.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.9",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "8.0",
+        "current": "12.3"
+      }
+    ],
+    "externalID": "s:10Foundation4DataV11DeallocatorO",
+    "symbolKind": "enum",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "enum "
+      },
+      {
+        "kind": "identifier",
+        "text": "Data.Deallocator"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/data/deallocator"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values": {
+      "title": "Numbers, Data, and Basic Values",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values",
+      "url": "/documentation/foundation/numbers_data_and_basic_values",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data": {
+      "title": "Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/deallocator/custom": {
+      "title": "Data.Deallocator.custom(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/deallocator/custom",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/deallocator/custom",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A custom deallocator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "case "
+        },
+        {
+          "kind": "identifier",
+          "text": "custom"
+        },
+        {
+          "kind": "text",
+          "text": "((UnsafeMutableRawPointer, Int) -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/deallocator/free": {
+      "title": "Data.Deallocator.free",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/deallocator/free",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/deallocator/free",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "codeVoice",
+          "code": "free"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "case "
+        },
+        {
+          "kind": "identifier",
+          "text": "free"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/deallocator/none": {
+      "title": "Data.Deallocator.none",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/deallocator/none",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/deallocator/none",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Do nothing upon deallocation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "case "
+        },
+        {
+          "kind": "identifier",
+          "text": "none"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/deallocator/unmap": {
+      "title": "Data.Deallocator.unmap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/deallocator/unmap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/deallocator/unmap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "codeVoice",
+          "code": "munmap"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "case "
+        },
+        {
+          "kind": "identifier",
+          "text": "unmap"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/deallocator/virtualmemory": {
+      "title": "Data.Deallocator.virtualMemory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/deallocator/virtualmemory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/deallocator/virtualmemory",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "case "
+        },
+        {
+          "kind": "identifier",
+          "text": "virtualMemory"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/1780158-init": {
+      "title": "init(bytes:count:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/1780158-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/1780158-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates data with copied memory content."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "bytes"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeRawPointer, "
+        },
+        {
+          "kind": "identifier",
+          "text": "count"
+        },
+        {
+          "kind": "text",
+          "text": ": Int)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/1779609-init": {
+      "title": "init(buffer:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/1779609-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/1779609-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a data buffer with copied memory content using a buffer pointer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<SourceType>("
+        },
+        {
+          "kind": "identifier",
+          "text": "buffer"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeBufferPointer<SourceType>)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/2201881-init": {
+      "title": "init(buffer:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/2201881-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/2201881-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a data buffer with copied memory content using a mutable buffer pointer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<SourceType>("
+        },
+        {
+          "kind": "identifier",
+          "text": "buffer"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeMutableBufferPointer<SourceType>)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/1780455-init": {
+      "title": "init(bytesNoCopy:count:deallocator:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/1780455-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/1780455-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a data buffer with memory content without copying the bytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "bytesNoCopy"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeMutableRawPointer, "
+        },
+        {
+          "kind": "identifier",
+          "text": "count"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "deallocator"
+        },
+        {
+          "kind": "text",
+          "text": ": Data.Deallocator)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/deallocator": {
+      "title": "Data.Deallocator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/deallocator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/deallocator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A deallocator you use to customize how the backing store is deallocated for data created with the no-copy initializer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "Data.Deallocator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Enumeration Cases",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/data/deallocator/custom",
+        "doc://com.apple.documentation/documentation/foundation/data/deallocator/free",
+        "doc://com.apple.documentation/documentation/foundation/data/deallocator/none",
+        "doc://com.apple.documentation/documentation/foundation/data/deallocator/unmap",
+        "doc://com.apple.documentation/documentation/foundation/data/deallocator/virtualmemory"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/data/1780158-init",
+        "doc://com.apple.documentation/documentation/foundation/data/1779609-init",
+        "doc://com.apple.documentation/documentation/foundation/data/2201881-init",
+        "doc://com.apple.documentation/documentation/foundation/data/1780455-init"
+      ],
+      "title": "Creating Data from Raw Memory",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation4DataV",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data",
+              "text": "Data"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "identifier",
+              "text": "Deallocator"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

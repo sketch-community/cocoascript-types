@@ -1,0 +1,1419 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A task scheduler suitable for low priority operations that can run in the background."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/task_management"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1407311,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSBackgroundActivityScheduler",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.10",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSBackgroundActivityScheduler",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsbackgroundactivityscheduler"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsbackgroundactivityscheduler"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management": {
+      "title": "Task Management",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management",
+      "url": "/documentation/foundation/task_management",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nstimeinterval": {
+      "title": "NSTimeInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nstimeinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nstimeinterval"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1407482-initwithidentifier": {
+      "title": "initWithIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1407482-initwithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1407482-initwithidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a background activity scheduler object with a specified unique identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943054": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943054",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler#1943054",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creating a scheduler"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1409853-repeats": {
+      "title": "repeats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1409853-repeats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1409853-repeats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether the activity should be rescheduled after it completes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408819-interval": {
+      "title": "interval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408819-interval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1408819-interval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An integer providing a suggested interval between scheduling and invoking the activity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408138-tolerance": {
+      "title": "tolerance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408138-tolerance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1408138-tolerance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value of type "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nstimeinterval"
+        },
+        {
+          "type": "text",
+          "text": ", which specifies a range of time during which the background activity may occur."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412688-qualityofservice": {
+      "title": "qualityOfService",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412688-qualityofservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1412688-qualityofservice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value of type "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSQualityOfService"
+        },
+        {
+          "type": "text",
+          "text": ", which controls how aggressively the system schedules the activity."
+        }
+      ]
+    },
+    "devLink-1750695": {
+      "identifier": "devLink-1750695",
+      "type": "link",
+      "title": "Prioritize Work at the Task Level",
+      "url": "https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35"
+    },
+    "devLink-1750536": {
+      "identifier": "devLink-1750536",
+      "type": "link",
+      "title": "Energy Efficiency Guide for Mac Apps",
+      "url": "https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943059": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943059",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler#1943059",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scheduling an activity to fire in the next 10 minutes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943064": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943064",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler#1943064",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scheduling an activity to fire between 15 and 45 minutes from now"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943070": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943070",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler#1943070",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scheduling an activity to fire once each hour"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1415995-beginactivitywithoptions": {
+      "title": "beginActivityWithOptions:reason:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1415995-beginactivitywithoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprocessinfo/1415995-beginactivitywithoptions",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "beginActivityWithOptions:reason:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo": {
+      "title": "NSProcessInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprocessinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of information about the current process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult": {
+      "title": "NSBackgroundActivityResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants indicate whether background activity has been completed successfully or whether additional processing should be deferred until a more optimal time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultfinished": {
+      "title": "NSBackgroundActivityResultFinished",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultfinished",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultfinished"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultdeferred": {
+      "title": "NSBackgroundActivityResultDeferred",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultdeferred",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultdeferred"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943074": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943074",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler#1943074",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scheduling background activity"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412167-shoulddefer": {
+      "title": "shouldDefer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412167-shoulddefer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1412167-shoulddefer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether your app should stop performing background activity and resume at a more optimal time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943080": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943080",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler#1943080",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detecting deferred background activity"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408878-invalidate": {
+      "title": "invalidate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408878-invalidate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1408878-invalidate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prevents the background activity from being scheduled again."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "invalidate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943085": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943085",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler#1943085",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stopping background activity"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler": {
+      "title": "NSBackgroundActivityScheduler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A task scheduler suitable for low priority operations that can run in the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nstimer": {
+      "title": "NSTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nstimer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nstimer"
+    },
+    "devLink-1750665": {
+      "identifier": "devLink-1750665",
+      "type": "link",
+      "title": "Specify Nondeferrable Background Activities",
+      "url": "https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/SchedulingBackgroundActivity.html#//apple_ref/doc/uid/TP40013929-CH32-SW10"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412285-identifier": {
+      "title": "identifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412285-identifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1412285-identifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unique reverse DNS notation string, such as "
+        },
+        {
+          "type": "codeVoice",
+          "code": "com.example.MyApp.updatecheck"
+        },
+        {
+          "type": "text",
+          "text": ", that identifies the activity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412813-schedulewithblock": {
+      "title": "scheduleWithBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412813-schedulewithblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivityscheduler/1412813-schedulewithblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Begins scheduling the background activity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scheduleWithBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivitycompletionhandler": {
+      "title": "NSBackgroundActivityCompletionHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivitycompletionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsbackgroundactivitycompletionhandler"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsqualityofservice": {
+      "title": "NSQualityOfService",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsqualityofservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsqualityofservice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Used to indicate the nature and importance of work to the system. Work with higher quality of service classes receive more resources than work with lower quality of service classes whenever there is resource contention."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Background Scheduler Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412285-identifier",
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1409853-repeats",
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408819-interval",
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412688-qualityofservice",
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412167-shoulddefer",
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408138-tolerance"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializing Schedulers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1407482-initwithidentifier"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scheduling Activity",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412813-schedulewithblock",
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivitycompletionhandler"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Stopping Scheduled Activity",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408878-invalidate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult",
+        "doc://com.apple.documentation/documentation/foundation/nsqualityofservice"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsprocessinfo"
+      ],
+      "title": "System Interaction",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSBackgroundActivityScheduler"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler"
+            },
+            {
+              "type": "text",
+              "text": " object to schedule an arbitrary maintenance or background task. It’s similar to an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nstimer"
+            },
+            {
+              "type": "text",
+              "text": " object, in that it lets you schedule a repeating or non-repeating task. However, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler"
+            },
+            {
+              "type": "text",
+              "text": " gives the system flexibility to determine the most efficient time to execute based on energy usage, thermal conditions, and CPU use."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, use an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler"
+            },
+            {
+              "type": "text",
+              "text": " object to schedule:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Automatic saves"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Backups"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Data maintenance"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Periodic content fetches"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Installation of updates"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Activities occurring in intervals of 10 minutes or more"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Any other deferrable task"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about performing non-deferrable tasks efficiently, see "
+            },
+            {
+              "type": "link",
+              "title": "Specify Nondeferrable Background Activities",
+              "destination": "https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/SchedulingBackgroundActivity.html#//apple_ref/doc/uid/TP40013929-CH32-SW10"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "Energy Efficiency Guide for Mac Apps",
+              "destination": "https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler"
+                },
+                {
+                  "type": "text",
+                  "text": " class interfaces with the XPC Activity API. However, your app doesn’t need to be an XPC service in order to use "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Scheduler",
+          "anchor": "1663251"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To initialize a scheduler, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1407482-initwithidentifier"
+            },
+            {
+              "type": "text",
+              "text": " for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSBackgroundActivityScheduler"
+            },
+            {
+              "type": "text",
+              "text": ", and pass it a unique identifier string in reverse DNS notation ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " and zero-length strings are not allowed) that remains constant across launches of your application. See "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943054"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSBackgroundActivityScheduler *activity = [[NSBackgroundActivityScheduler alloc] initWithIdentifier:@\"com.example.MyApp.updatecheck\"];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943054",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Creating a scheduler"
+              }
+            ]
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The system uses this unique identifier to track the number of times the activity has run and to improve the heuristics for deciding when to run it again in the future."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Scheduler Properties",
+          "anchor": "1663288"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Configure the scheduler with any of the following scheduling properties:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1409853-repeats"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—If set to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", the activity is rescheduled at the specified interval after finishing."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408819-interval"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—For repeating schedulers, the average interval between invocations of the activity. For nonrepeating schedulers, "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "interval"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is the suggested interval of time between scheduling the activity and the invocation of the activity."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408138-tolerance"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—The amount of time before or after the nominal fire date when the activity should be invoked. The nominal fire date is calculated by using the interval combined with the previous fire date or the time when the activity is started. These two properties create a window in time, during which the activity may be scheduled. The system will more aggressively schedule the activity as it nears the end of the grace period after the nominal fire date. The default value is half the interval."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412688-qualityofservice"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—The default value is "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSQualityOfServiceBackground"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". If you upgrade the quality of service above this level, the system schedules the activity more aggressively. The default value is the recommended value for most activities. For information on quality of service, see "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Prioritize Work at the Task Level",
+                      "destination": "https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35"
+                    },
+                    {
+                      "type": "text",
+                      "text": " in "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Energy Efficiency Guide for Mac Apps",
+                      "destination": "https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943059"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943064"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943070"
+            },
+            {
+              "type": "text",
+              "text": " demonstrate different scheduling scenarios."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "activity.tolerance = 10 * 60;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943059",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Scheduling an activity to fire in the next 10 minutes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "activity.interval = 30 * 60;",
+            "activity.tolerance = 15 * 60;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943064",
+            "title": "Listing 3",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Scheduling an activity to fire between 15 and 45 minutes from now"
+              }
+            ]
+          }
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "activity.repeats = YES;",
+            "activity.interval = 60 * 60;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943070",
+            "title": "Listing 4",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Scheduling an activity to fire once each hour"
+              }
+            ]
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Schedule Activity with scheduleWithBlock:",
+          "anchor": "1663318"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you’re ready to schedule the activity, call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "scheduleWithBlock:"
+            },
+            {
+              "type": "text",
+              "text": " and provide a block of code to execute when the scheduler runs, as shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943074"
+            },
+            {
+              "type": "text",
+              "text": ". The block will be called on a serial background queue appropriate for the level of quality of service specified. The system automatically uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1415995-beginactivitywithoptions"
+            },
+            {
+              "type": "text",
+              "text": " method (of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo"
+            },
+            {
+              "type": "text",
+              "text": ") while invoking the block, choosing appropriate options based on the specified quality of service."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When your block is called, it’s passed a completion handler as an argument. Configure the block to invoke this handler, passing it a result of type "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult"
+            },
+            {
+              "type": "text",
+              "text": " to indicate whether the activity finished ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultfinished"
+            },
+            {
+              "type": "text",
+              "text": ") or should be deferred ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultdeferred"
+            },
+            {
+              "type": "text",
+              "text": ") and rescheduled for a later time. Failure to invoke the completion handler results in the activity not being rescheduled. For work that will be deferred and rescheduled, the block may optionally adjust scheduler properties, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408819-interval"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408138-tolerance"
+            },
+            {
+              "type": "text",
+              "text": ", before calling the completion handler."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "[activity",
+            "scheduleWithBlock:^(NSBackgroundActivityCompletionHandler completion) {",
+            "   // Perform the activity",
+            "   self.completion(NSBackgroundActivityResultFinished);",
+            "}];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943074",
+            "title": "Listing 5",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Scheduling background activity"
+              }
+            ]
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Detect Whether to Defer Activity",
+          "anchor": "1663339"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It’s conceivable that while a lengthy activity is running, conditions may change, resulting in the activity now requiring deferral. For example, perhaps the user has unplugged the Mac and it’s now running on battery power. Your activity can call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1412167-shoulddefer"
+            },
+            {
+              "type": "text",
+              "text": " to determine whether this has occurred. A value of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " indicates that the block should finish what it’s currently doing and invoke its completion handler with a value of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult/nsbackgroundactivityresultdeferred"
+            },
+            {
+              "type": "text",
+              "text": ". See "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943080"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if ([activity shouldDefer]) {",
+            "   // Wrap up processing and prepare to defer activity",
+            "   self.completion(NSBackgroundActivityResultDeferred);",
+            "} else {",
+            "   // Continue processing",
+            "   self.completion(NSBackgroundActivityResultFinished);",
+            "};"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943080",
+            "title": "Listing 6",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Detecting deferred background activity"
+              }
+            ]
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Stop Activity",
+          "anchor": "1663370"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler/1408878-invalidate"
+            },
+            {
+              "type": "text",
+              "text": " to stop scheduling an activity, as shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityscheduler#1943085"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "[activity invalidate];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943085",
+            "title": "Listing 7",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Stopping background activity"
+              }
+            ]
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "When an activity is stopped, a block that’s currently executing will still finish executing."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Sets the current transformation matrix to the receiver’s transformation matrix."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values",
+        "doc://com.apple.documentation/documentation/foundation/nsaffinetransform"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsaffinetransform/1462133-set",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1462133,
+  "kind": "symbol",
+  "metadata": {
+    "title": "set",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSAffineTransform(im)set",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsaffinetransform/1462133-set"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsaffinetransform/1462133-set"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values": {
+      "title": "Numbers, Data, and Basic Values",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/numbers_data_and_basic_values",
+      "url": "/documentation/foundation/numbers_data_and_basic_values",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsaffinetransform": {
+      "title": "NSAffineTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsaffinetransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsaffinetransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A graphics coordinate transformation. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsaffinetransform/1462135-concat": {
+      "title": "concat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsaffinetransform/1462135-concat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsaffinetransform/1462135-concat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Appends the receiver’s matrix to the current transformation matrix stored in the current graphics context, replacing the current transformation matrix with the result."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "concat"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsaffinetransform/1462133-set": {
+      "title": "set",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsaffinetransform/1462133-set",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsaffinetransform/1462133-set",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current transformation matrix to the receiver’s transformation matrix."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "set"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsaffinetransform/1462135-concat"
+      ],
+      "title": "Setting and Building the Current Transformation Matrix",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "set"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The current transformation is stored in the current graphics context and is applied to subsequent drawing operations. You should use this method sparingly because it removes the existing transformation matrix, which is an accumulation of transformation matrices for the screen, window, and any superviews. Instead use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsaffinetransform/1462135-concat"
+            },
+            {
+              "type": "text",
+              "text": " method to add this transformation matrix to the current transformation matrix."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

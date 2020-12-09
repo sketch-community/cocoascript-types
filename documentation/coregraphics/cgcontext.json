@@ -1,0 +1,2562 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Quartz 2D drawing destination."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coregraphics/cgcontext",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1666363,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CGContext",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Graphics"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/cgcontext"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coregraphics": {
+      "title": "Core Graphics",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics",
+      "url": "/documentation/coregraphics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpath": {
+      "title": "CGPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpath",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Immutable and mutable types for graphics paths: mathematical descriptions of shapes or lines to be drawn in a graphics context."
+        }
+      ]
+    },
+    "devLink-1719815": {
+      "identifier": "devLink-1719815",
+      "type": "link",
+      "title": "Quartz 2D Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcontextref": {
+      "title": "CGContextRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgcontextref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Quartz 2D drawing environment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454895-cgcontextflush": {
+      "title": "CGContextFlush",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454895-cgcontextflush",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454895-cgcontextflush",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Forces all pending drawing operations in a window context to be rendered immediately to the destination device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455504-cgcontextgettypeid": {
+      "title": "CGContextGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455504-cgcontextgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455504-cgcontextgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1586509-cgcontextrelease": {
+      "title": "CGContextRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1586509-cgcontextrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1586509-cgcontextrelease",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decrements the retain count of a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1586506-cgcontextretain": {
+      "title": "CGContextRetain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1586506-cgcontextretain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1586506-cgcontextretain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Increments the retain count of a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455450-cgcontextsynchronize": {
+      "title": "CGContextSynchronize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455450-cgcontextsynchronize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455450-cgcontextsynchronize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Marks a window context for update."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456156-cgcontextsavegstate": {
+      "title": "CGContextSaveGState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456156-cgcontextsavegstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456156-cgcontextsavegstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Pushes a copy of the current graphics state onto the graphics state stack for the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455391-cgcontextrestoregstate": {
+      "title": "CGContextRestoreGState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455391-cgcontextrestoregstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455391-cgcontextrestoregstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current graphics state to the state most recently saved."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454940-cgcontextgetinterpolationquality": {
+      "title": "CGContextGetInterpolationQuality",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454940-cgcontextgetinterpolationquality",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454940-cgcontextgetinterpolationquality",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current level of interpolation quality for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455798-cgcontextsetflatness": {
+      "title": "CGContextSetFlatness",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455798-cgcontextsetflatness",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455798-cgcontextsetflatness",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the accuracy of curved paths in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455656-cgcontextsetinterpolationquality": {
+      "title": "CGContextSetInterpolationQuality",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455656-cgcontextsetinterpolationquality",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455656-cgcontextsetinterpolationquality",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the level of interpolation quality for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454326-cgcontextsetlinecap": {
+      "title": "CGContextSetLineCap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454326-cgcontextsetlinecap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454326-cgcontextsetlinecap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the style for the endpoints of lines drawn in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455911-cgcontextsetlinedash": {
+      "title": "CGContextSetLineDash",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455911-cgcontextsetlinedash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455911-cgcontextsetlinedash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the pattern for dashed lines in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455973-cgcontextsetlinejoin": {
+      "title": "CGContextSetLineJoin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455973-cgcontextsetlinejoin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455973-cgcontextsetlinejoin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the style for the joins of connected lines in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455270-cgcontextsetlinewidth": {
+      "title": "CGContextSetLineWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455270-cgcontextsetlinewidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455270-cgcontextsetlinewidth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the line width for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456499-cgcontextsetmiterlimit": {
+      "title": "CGContextSetMiterLimit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456499-cgcontextsetmiterlimit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456499-cgcontextsetmiterlimit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the miter limit for the joins of connected lines in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455334-cgcontextsetpatternphase": {
+      "title": "CGContextSetPatternPhase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455334-cgcontextsetpatternphase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455334-cgcontextsetpatternphase",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the pattern phase of a context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456334-cgcontextsetfillpattern": {
+      "title": "CGContextSetFillPattern",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456334-cgcontextsetfillpattern",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456334-cgcontextsetfillpattern",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the fill pattern in the specified graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455544-cgcontextsetrenderingintent": {
+      "title": "CGContextSetRenderingIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455544-cgcontextsetrenderingintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455544-cgcontextsetrenderingintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the rendering intent in the current graphics state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455178-cgcontextsetshouldantialias": {
+      "title": "CGContextSetShouldAntialias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455178-cgcontextsetshouldantialias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455178-cgcontextsetshouldantialias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets antialiasing on or off for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454796-cgcontextsetstrokepattern": {
+      "title": "CGContextSetStrokePattern",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454796-cgcontextsetstrokepattern",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454796-cgcontextsetstrokepattern",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the stroke pattern in the specified graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455994-cgcontextsetblendmode": {
+      "title": "CGContextSetBlendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455994-cgcontextsetblendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455994-cgcontextsetblendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets how sample values are composited by a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456310-cgcontextsetallowsantialiasing": {
+      "title": "CGContextSetAllowsAntialiasing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456310-cgcontextsetallowsantialiasing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456310-cgcontextsetallowsantialiasing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets whether or not to allow antialiasing for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454767-cgcontextsetallowsfontsmoothing": {
+      "title": "CGContextSetAllowsFontSmoothing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454767-cgcontextsetallowsfontsmoothing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454767-cgcontextsetallowsfontsmoothing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets whether or not to allow font smoothing for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455816-cgcontextsetshouldsmoothfonts": {
+      "title": "CGContextSetShouldSmoothFonts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455816-cgcontextsetshouldsmoothfonts",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455816-cgcontextsetshouldsmoothfonts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables font smoothing in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454942-cgcontextsetallowsfontsubpixelpo": {
+      "title": "CGContextSetAllowsFontSubpixelPositioning",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454942-cgcontextsetallowsfontsubpixelpo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454942-cgcontextsetallowsfontsubpixelpo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets whether or not to allow subpixel positioning for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455671-cgcontextsetshouldsubpixelpositi": {
+      "title": "CGContextSetShouldSubpixelPositionFonts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455671-cgcontextsetshouldsubpixelpositi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455671-cgcontextsetshouldsubpixelpositi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables subpixel positioning in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456263-cgcontextsetallowsfontsubpixelqu": {
+      "title": "CGContextSetAllowsFontSubpixelQuantization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456263-cgcontextsetallowsfontsubpixelqu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456263-cgcontextsetallowsfontsubpixelqu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets whether or not to allow subpixel quantization for a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455766-cgcontextsetshouldsubpixelquanti": {
+      "title": "CGContextSetShouldSubpixelQuantizeFonts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455766-cgcontextsetshouldsubpixelquanti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455766-cgcontextsetshouldsubpixelquanti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables subpixel quantization in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455756-cgcontextaddarc": {
+      "title": "CGContextAddArc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455756-cgcontextaddarc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455756-cgcontextaddarc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an arc of a circle to the current path, possibly preceded by a straight line segment"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456238-cgcontextaddarctopoint": {
+      "title": "CGContextAddArcToPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456238-cgcontextaddarctopoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456238-cgcontextaddarctopoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an arc of a circle to the current path, using a radius and tangent points."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456393-cgcontextaddcurvetopoint": {
+      "title": "CGContextAddCurveToPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456393-cgcontextaddcurvetopoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456393-cgcontextaddcurvetopoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Appends a cubic Bézier curve from the current point, using the provided control points and end point ."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455461-cgcontextaddlines": {
+      "title": "CGContextAddLines",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455461-cgcontextaddlines",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455461-cgcontextaddlines",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a sequence of connected straight-line segments to the current path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455213-cgcontextaddlinetopoint": {
+      "title": "CGContextAddLineToPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455213-cgcontextaddlinetopoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455213-cgcontextaddlinetopoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Appends a straight line segment from the current point to the provided point ."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456628-cgcontextaddpath": {
+      "title": "CGContextAddPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456628-cgcontextaddpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456628-cgcontextaddpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a previously created path object to the current path in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455397-cgcontextcopypath": {
+      "title": "CGContextCopyPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455397-cgcontextcopypath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455397-cgcontextcopypath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a path object built from the current path information in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454268-cgcontextaddquadcurvetopoint": {
+      "title": "CGContextAddQuadCurveToPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454268-cgcontextaddquadcurvetopoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454268-cgcontextaddquadcurvetopoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Appends a quadratic Bézier curve from the current point, using a control point and an end point you specify."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456617-cgcontextaddrect": {
+      "title": "CGContextAddRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456617-cgcontextaddrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456617-cgcontextaddrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a rectangular path to the current path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454734-cgcontextaddrects": {
+      "title": "CGContextAddRects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454734-cgcontextaddrects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454734-cgcontextaddrects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a set of rectangular paths to the current path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456635-cgcontextbeginpath": {
+      "title": "CGContextBeginPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456635-cgcontextbeginpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456635-cgcontextbeginpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new empty path in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454508-cgcontextclosepath": {
+      "title": "CGContextClosePath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454508-cgcontextclosepath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454508-cgcontextclosepath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Closes and terminates the current path’s subpath."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454738-cgcontextmovetopoint": {
+      "title": "CGContextMoveToPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454738-cgcontextmovetopoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454738-cgcontextmovetopoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Begins a new subpath at the point you specify."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456420-cgcontextaddellipseinrect": {
+      "title": "CGContextAddEllipseInRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456420-cgcontextaddellipseinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456420-cgcontextaddellipseinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an ellipse that fits inside the specified rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456457-cgcontextclearrect": {
+      "title": "CGContextClearRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456457-cgcontextclearrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456457-cgcontextclearrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints a transparent rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455195-cgcontextdrawpath": {
+      "title": "CGContextDrawPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455195-cgcontextdrawpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455195-cgcontextdrawpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the current path using the provided drawing mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454865-cgcontexteofillpath": {
+      "title": "CGContextEOFillPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454865-cgcontexteofillpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454865-cgcontexteofillpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints the area within the current path, using the even-odd fill rule."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456306-cgcontextfillpath": {
+      "title": "CGContextFillPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456306-cgcontextfillpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456306-cgcontextfillpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints the area within the current path, using the nonzero winding number rule."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454700-cgcontextfillrect": {
+      "title": "CGContextFillRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454700-cgcontextfillrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454700-cgcontextfillrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints the area contained within the provided rectangle, using the fill color in the current graphics state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454132-cgcontextfillrects": {
+      "title": "CGContextFillRects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454132-cgcontextfillrects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454132-cgcontextfillrects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints the areas contained within the provided rectangles, using the fill color in the current graphics state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454371-cgcontextfillellipseinrect": {
+      "title": "CGContextFillEllipseInRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454371-cgcontextfillellipseinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454371-cgcontextfillellipseinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints the area of the ellipse that fits inside the provided rectangle, using the fill color in the current graphics state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454490-cgcontextstrokepath": {
+      "title": "CGContextStrokePath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454490-cgcontextstrokepath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454490-cgcontextstrokepath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints a line along the current path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454675-cgcontextstrokerect": {
+      "title": "CGContextStrokeRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454675-cgcontextstrokerect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454675-cgcontextstrokerect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints a rectangular path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454679-cgcontextstrokerectwithwidth": {
+      "title": "CGContextStrokeRectWithWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454679-cgcontextstrokerectwithwidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454679-cgcontextstrokerectwithwidth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints a rectangular path, using the specified line width."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454517-cgcontextreplacepathwithstrokedp": {
+      "title": "CGContextReplacePathWithStrokedPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454517-cgcontextreplacepathwithstrokedp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454517-cgcontextreplacepathwithstrokedp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replaces the path in the graphics context with the stroked version of the path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455774-cgcontextstrokeellipseinrect": {
+      "title": "CGContextStrokeEllipseInRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455774-cgcontextstrokeellipseinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455774-cgcontextstrokeellipseinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Strokes an ellipse that fits inside the specified rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454389-cgcontextstrokelinesegments": {
+      "title": "CGContextStrokeLineSegments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454389-cgcontextstrokelinesegments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454389-cgcontextstrokelinesegments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Strokes a sequence of line segments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455772-cgcontextispathempty": {
+      "title": "CGContextIsPathEmpty",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455772-cgcontextispathempty",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455772-cgcontextispathempty",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the current path contains any subpaths."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454788-cgcontextgetpathcurrentpoint": {
+      "title": "CGContextGetPathCurrentPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454788-cgcontextgetpathcurrentpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454788-cgcontextgetpathcurrentpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current point in a non-empty path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454577-cgcontextgetpathboundingbox": {
+      "title": "CGContextGetPathBoundingBox",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454577-cgcontextgetpathboundingbox",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454577-cgcontextgetpathboundingbox",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the smallest rectangle that contains the current path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454778-cgcontextpathcontainspoint": {
+      "title": "CGContextPathContainsPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454778-cgcontextpathcontainspoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454778-cgcontextpathcontainspoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Checks to see whether the specified point is contained in the current path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455262-cgcontextclip": {
+      "title": "CGContextClip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455262-cgcontextclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455262-cgcontextclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modifies the current clipping path, using the nonzero winding number rule."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455944-cgcontexteoclip": {
+      "title": "CGContextEOClip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455944-cgcontexteoclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455944-cgcontexteoclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modifies the current clipping path, using the even-odd rule."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454716-cgcontextcliptorect": {
+      "title": "CGContextClipToRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454716-cgcontextcliptorect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454716-cgcontextcliptorect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the clipping path to the intersection of the current clipping path with the area defined by the specified rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454626-cgcontextcliptorects": {
+      "title": "CGContextClipToRects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454626-cgcontextcliptorects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454626-cgcontextcliptorects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455387-cgcontextgetclipboundingbox": {
+      "title": "CGContextGetClipBoundingBox",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455387-cgcontextgetclipboundingbox",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455387-cgcontextgetclipboundingbox",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the bounding box of a clipping path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456497-cgcontextcliptomask": {
+      "title": "CGContextClipToMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456497-cgcontextcliptomask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456497-cgcontextcliptomask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps a mask into the specified rectangle and intersects it with the current clipping area of the graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456404-cgcontextsetalpha": {
+      "title": "CGContextSetAlpha",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456404-cgcontextsetalpha",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456404-cgcontextsetalpha",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the opacity level for objects drawn in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454214-cgcontextsetcmykfillcolor": {
+      "title": "CGContextSetCMYKFillColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454214-cgcontextsetcmykfillcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454214-cgcontextsetcmykfillcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current fill color to a value in the DeviceCMYK color space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455296-cgcontextsetfillcolor": {
+      "title": "CGContextSetFillColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455296-cgcontextsetfillcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455296-cgcontextsetfillcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current fill color."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455358-cgcontextsetcmykstrokecolor": {
+      "title": "CGContextSetCMYKStrokeColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455358-cgcontextsetcmykstrokecolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455358-cgcontextsetcmykstrokecolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current stroke color to a value in the DeviceCMYK color space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455151-cgcontextsetfillcolorspace": {
+      "title": "CGContextSetFillColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455151-cgcontextsetfillcolorspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455151-cgcontextsetfillcolorspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the fill color space in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454079-cgcontextsetfillcolorwithcolor": {
+      "title": "CGContextSetFillColorWithColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454079-cgcontextsetfillcolorwithcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454079-cgcontextsetfillcolorwithcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current fill color in a graphics context, using a CGColor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454255-cgcontextsetgrayfillcolor": {
+      "title": "CGContextSetGrayFillColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454255-cgcontextsetgrayfillcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454255-cgcontextsetgrayfillcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current fill color to a value in the DeviceGray color space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455209-cgcontextsetgraystrokecolor": {
+      "title": "CGContextSetGrayStrokeColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455209-cgcontextsetgraystrokecolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455209-cgcontextsetgraystrokecolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current stroke color to a value in the DeviceGray color space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455624-cgcontextsetrgbfillcolor": {
+      "title": "CGContextSetRGBFillColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455624-cgcontextsetrgbfillcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455624-cgcontextsetrgbfillcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current fill color to a value in the DeviceRGB color space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456378-cgcontextsetrgbstrokecolor": {
+      "title": "CGContextSetRGBStrokeColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456378-cgcontextsetrgbstrokecolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456378-cgcontextsetrgbstrokecolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current stroke color to a value in the DeviceRGB color space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456082-cgcontextsetshadow": {
+      "title": "CGContextSetShadow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456082-cgcontextsetshadow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456082-cgcontextsetshadow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables shadowing in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455205-cgcontextsetshadowwithcolor": {
+      "title": "CGContextSetShadowWithColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455205-cgcontextsetshadowwithcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455205-cgcontextsetshadowwithcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables shadowing with color a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456283-cgcontextsetstrokecolor": {
+      "title": "CGContextSetStrokeColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456283-cgcontextsetstrokecolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456283-cgcontextsetstrokecolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current stroke color."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454396-cgcontextsetstrokecolorspace": {
+      "title": "CGContextSetStrokeColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454396-cgcontextsetstrokecolorspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454396-cgcontextsetstrokecolorspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the stroke color space in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456196-cgcontextsetstrokecolorwithcolor": {
+      "title": "CGContextSetStrokeColorWithColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456196-cgcontextsetstrokecolorwithcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456196-cgcontextsetstrokecolorwithcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current stroke color in a context, using a CGColor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454897-cgcontextconcatctm": {
+      "title": "CGContextConcatCTM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454897-cgcontextconcatctm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454897-cgcontextconcatctm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transforms the user coordinate system in a context using a specified matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454691-cgcontextgetctm": {
+      "title": "CGContextGetCTM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454691-cgcontextgetctm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454691-cgcontextgetctm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current transformation matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456228-cgcontextrotatectm": {
+      "title": "CGContextRotateCTM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456228-cgcontextrotatectm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456228-cgcontextrotatectm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rotates the user coordinate system in a context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454659-cgcontextscalectm": {
+      "title": "CGContextScaleCTM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454659-cgcontextscalectm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454659-cgcontextscalectm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the scale of the user coordinate system in a context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455286-cgcontexttranslatectm": {
+      "title": "CGContextTranslateCTM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455286-cgcontexttranslatectm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455286-cgcontexttranslatectm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the origin of the user coordinate system in a context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456011-cgcontextbegintransparencylayer": {
+      "title": "CGContextBeginTransparencyLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456011-cgcontextbegintransparencylayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456011-cgcontextbegintransparencylayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Begins a transparency layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454368-cgcontextbegintransparencylayerw": {
+      "title": "CGContextBeginTransparencyLayerWithRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454368-cgcontextbegintransparencylayerw",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454368-cgcontextbegintransparencylayerw",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Begins a transparency layer whose contents are bounded by the specified rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456554-cgcontextendtransparencylayer": {
+      "title": "CGContextEndTransparencyLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456554-cgcontextendtransparencylayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456554-cgcontextendtransparencylayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ends a transparency layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456240-cgcontextdrawtiledimage": {
+      "title": "CGContextDrawTiledImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456240-cgcontextdrawtiledimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456240-cgcontextdrawtiledimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Repeatedly draws an image, scaled to the provided rectangle, to fill the current clip region. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454845-cgcontextdrawimage": {
+      "title": "CGContextDrawImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454845-cgcontextdrawimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454845-cgcontextdrawimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws an image into a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456255-cgcontextdrawpdfpage": {
+      "title": "CGContextDrawPDFPage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456255-cgcontextdrawpdfpage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456255-cgcontextdrawpdfpage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the content of a PDF page into the current graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454782-cgcontextdrawlineargradient": {
+      "title": "CGContextDrawLinearGradient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454782-cgcontextdrawlineargradient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454782-cgcontextdrawlineargradient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints a gradient fill that varies along the line defined by the provided starting and ending points."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455923-cgcontextdrawradialgradient": {
+      "title": "CGContextDrawRadialGradient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455923-cgcontextdrawradialgradient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455923-cgcontextdrawradialgradient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints a gradient fill that varies along the area defined by the provided starting and ending circles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456643-cgcontextdrawshading": {
+      "title": "CGContextDrawShading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456643-cgcontextdrawshading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456643-cgcontextdrawshading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fills the clipping path of a context with the specified shading."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454794-cgcontextbeginpage": {
+      "title": "CGContextBeginPage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454794-cgcontextbeginpage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454794-cgcontextbeginpage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts a new page in a page-based graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455027-cgcontextendpage": {
+      "title": "CGContextEndPage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455027-cgcontextendpage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455027-cgcontextendpage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ends the current page in a page-based graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1586500-cgcontextshowglyphs": {
+      "title": "CGContextShowGlyphs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1586500-cgcontextshowglyphs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1586500-cgcontextshowglyphs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays an array of glyphs at the current text position."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1586502-cgcontextshowglyphsatpoint": {
+      "title": "CGContextShowGlyphsAtPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1586502-cgcontextshowglyphsatpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1586502-cgcontextshowglyphsatpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays an array of glyphs at a position you specify."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1586503-cgcontextshowglyphswithadvances": {
+      "title": "CGContextShowGlyphsWithAdvances",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1586503-cgcontextshowglyphswithadvances",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1586503-cgcontextshowglyphswithadvances",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws an array of glyphs with varying offsets."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456200-cgcontextshowglyphsatpositions": {
+      "title": "CGContextShowGlyphsAtPositions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456200-cgcontextshowglyphsatpositions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456200-cgcontextshowglyphsatpositions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws glyphs at the provided position."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456154-cgcontextgettextmatrix": {
+      "title": "CGContextGetTextMatrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456154-cgcontextgettextmatrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456154-cgcontextgettextmatrix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current text matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454687-cgcontextgettextposition": {
+      "title": "CGContextGetTextPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454687-cgcontextgettextposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454687-cgcontextgettextposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the location at which text is drawn."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1586511-cgcontextselectfont": {
+      "title": "CGContextSelectFont",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1586511-cgcontextselectfont",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1586511-cgcontextselectfont",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the font and font size in a graphics context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454786-cgcontextsetcharacterspacing": {
+      "title": "CGContextSetCharacterSpacing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454786-cgcontextsetcharacterspacing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454786-cgcontextsetcharacterspacing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current character spacing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454950-cgcontextsetfont": {
+      "title": "CGContextSetFont",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454950-cgcontextsetfont",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454950-cgcontextsetfont",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the platform font in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456426-cgcontextsetfontsize": {
+      "title": "CGContextSetFontSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456426-cgcontextsetfontsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456426-cgcontextsetfontsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current font size."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454253-cgcontextsettextdrawingmode": {
+      "title": "CGContextSetTextDrawingMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454253-cgcontextsettextdrawingmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454253-cgcontextsettextdrawingmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current text drawing mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455611-cgcontextsettextmatrix": {
+      "title": "CGContextSetTextMatrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455611-cgcontextsettextmatrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455611-cgcontextsettextmatrix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current text matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456069-cgcontextsettextposition": {
+      "title": "CGContextSetTextPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456069-cgcontextsettextposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456069-cgcontextsettextposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the location at which text is drawn."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1586507-cgcontextshowtext": {
+      "title": "CGContextShowText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1586507-cgcontextshowtext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1586507-cgcontextshowtext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays a character array at the current text position, a point specified by the current text matrix."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1586505-cgcontextshowtextatpoint": {
+      "title": "CGContextShowTextAtPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1586505-cgcontextshowtextatpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1586505-cgcontextshowtextatpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays a character string at a position you specify."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455677-cgcontextgetuserspacetodevicespa": {
+      "title": "CGContextGetUserSpaceToDeviceSpaceTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455677-cgcontextgetuserspacetodevicespa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455677-cgcontextgetuserspacetodevicespa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an affine transform that maps user space coordinates to device space coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455916-cgcontextconvertpointtodevicespa": {
+      "title": "CGContextConvertPointToDeviceSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455916-cgcontextconvertpointtodevicespa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455916-cgcontextconvertpointtodevicespa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a point that is transformed from user space coordinates to device space coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456451-cgcontextconvertpointtouserspace": {
+      "title": "CGContextConvertPointToUserSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456451-cgcontextconvertpointtouserspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456451-cgcontextconvertpointtouserspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a point that is transformed from device space coordinates to user space coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456619-cgcontextconvertsizetodevicespac": {
+      "title": "CGContextConvertSizeToDeviceSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456619-cgcontextconvertsizetodevicespac",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456619-cgcontextconvertsizetodevicespac",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a size that is transformed from user space coordinates to device space coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456510-cgcontextconvertsizetouserspace": {
+      "title": "CGContextConvertSizeToUserSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456510-cgcontextconvertsizetouserspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456510-cgcontextconvertsizetouserspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a size that is transformed from device space coordinates to user space coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456017-cgcontextconvertrecttodevicespac": {
+      "title": "CGContextConvertRectToDeviceSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456017-cgcontextconvertrecttodevicespac",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456017-cgcontextconvertrecttodevicespac",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a rectangle that is transformed from user space coordinate to device space coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454165-cgcontextconvertrecttouserspace": {
+      "title": "CGContextConvertRectToUserSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454165-cgcontextconvertrecttouserspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454165-cgcontextconvertrecttouserspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a rectangle that is transformed from device space coordinate to user space coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode": {
+      "title": "CGBlendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compositing operations for images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cginterpolationquality": {
+      "title": "CGInterpolationQuality",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cginterpolationquality",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cginterpolationquality",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Levels of interpolation quality for rendering an image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgtextdrawingmode": {
+      "title": "CGTextDrawingMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgtextdrawingmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgtextdrawingmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modes for rendering text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgtextencoding": {
+      "title": "CGTextEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgtextencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgtextencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Text encodings for fonts."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext": {
+      "title": "CGBitmapContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgbitmapcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " that you can use for drawing bits to memory."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolor": {
+      "title": "CGColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolor",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of components that define a color, with a color space specifying how to interpret them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo": {
+      "title": "CGColorConversionInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolorconversioninfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes how to convert between color spaces for use by other system services. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace": {
+      "title": "CGColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolorspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A profile that specifies how to interpret a color value for display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcontext": {
+      "title": "CGContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Quartz 2D drawing destination."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer": {
+      "title": "CGDataConsumer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgdataconsumer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider": {
+      "title": "CGDataProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgdataprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgfont": {
+      "title": "CGFont",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfont",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgfont",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of character glyphs and layout information for drawing text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgfunction": {
+      "title": "CGFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfunction",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general facility for defining and using callback functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgglcontext": {
+      "title": "CGGLContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgglcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgglcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. A type of  "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " for drawing OpenGL content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cggradient": {
+      "title": "CGGradient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cggradient",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cggradient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A definition for a smooth transition between colors for drawing radial and axial gradient fills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgimage": {
+      "title": "CGImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bitmap image or image mask."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cglayer": {
+      "title": "CGLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cglayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An offscreen context for reusing content drawn with Core Graphics. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpattern": {
+      "title": "CGPattern",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpattern",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpattern",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 2D pattern to be used for drawing graphics paths."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray": {
+      "title": "CGPDFArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array structure within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream": {
+      "title": "CGPDFContentStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfcontentstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of one or more content data streams in a PDF page."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext": {
+      "title": "CGPDFContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " for drawing PDF content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary": {
+      "title": "CGPDFDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfdictionary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary structure within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument": {
+      "title": "CGPDFDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfdocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A document that contains PDF (Portable Document Format) drawing information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject": {
+      "title": "CGPDFObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing content within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable": {
+      "title": "CGPDFOperatorTable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfoperatortable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of callback functions for operators used when scanning content in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage": {
+      "title": "CGPDFPage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfpage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A page in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner": {
+      "title": "CGPDFScanner",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfscanner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A parser object for handling content and operators in a PDF content stream."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream": {
+      "title": "CGPDFStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A stream or sequence of data bytes in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring": {
+      "title": "CGPDFString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A text string in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter": {
+      "title": "CGPSConverter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpsconverter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that converts PostScript data to PDF data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgshading": {
+      "title": "CGShading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgshading",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgshading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A definition for a smooth transition between colors, controlled by a custom function you provide, for drawing radial and axial gradient fills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Managing Graphics Contexts",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454895-cgcontextflush",
+        "doc://com.apple.documentation/documentation/coregraphics/1455504-cgcontextgettypeid",
+        "doc://com.apple.documentation/documentation/coregraphics/1586509-cgcontextrelease",
+        "doc://com.apple.documentation/documentation/coregraphics/1586506-cgcontextretain",
+        "doc://com.apple.documentation/documentation/coregraphics/1455450-cgcontextsynchronize"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Saving and Restoring the Current Graphics State",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456156-cgcontextsavegstate",
+        "doc://com.apple.documentation/documentation/coregraphics/1455391-cgcontextrestoregstate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting and Setting Graphics State Parameters",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454940-cgcontextgetinterpolationquality",
+        "doc://com.apple.documentation/documentation/coregraphics/1455798-cgcontextsetflatness",
+        "doc://com.apple.documentation/documentation/coregraphics/1455656-cgcontextsetinterpolationquality",
+        "doc://com.apple.documentation/documentation/coregraphics/1454326-cgcontextsetlinecap",
+        "doc://com.apple.documentation/documentation/coregraphics/1455911-cgcontextsetlinedash",
+        "doc://com.apple.documentation/documentation/coregraphics/1455973-cgcontextsetlinejoin",
+        "doc://com.apple.documentation/documentation/coregraphics/1455270-cgcontextsetlinewidth",
+        "doc://com.apple.documentation/documentation/coregraphics/1456499-cgcontextsetmiterlimit",
+        "doc://com.apple.documentation/documentation/coregraphics/1455334-cgcontextsetpatternphase",
+        "doc://com.apple.documentation/documentation/coregraphics/1456334-cgcontextsetfillpattern",
+        "doc://com.apple.documentation/documentation/coregraphics/1455544-cgcontextsetrenderingintent",
+        "doc://com.apple.documentation/documentation/coregraphics/1455178-cgcontextsetshouldantialias",
+        "doc://com.apple.documentation/documentation/coregraphics/1454796-cgcontextsetstrokepattern",
+        "doc://com.apple.documentation/documentation/coregraphics/1455994-cgcontextsetblendmode",
+        "doc://com.apple.documentation/documentation/coregraphics/1456310-cgcontextsetallowsantialiasing",
+        "doc://com.apple.documentation/documentation/coregraphics/1454767-cgcontextsetallowsfontsmoothing",
+        "doc://com.apple.documentation/documentation/coregraphics/1455816-cgcontextsetshouldsmoothfonts",
+        "doc://com.apple.documentation/documentation/coregraphics/1454942-cgcontextsetallowsfontsubpixelpo",
+        "doc://com.apple.documentation/documentation/coregraphics/1455671-cgcontextsetshouldsubpixelpositi",
+        "doc://com.apple.documentation/documentation/coregraphics/1456263-cgcontextsetallowsfontsubpixelqu",
+        "doc://com.apple.documentation/documentation/coregraphics/1455766-cgcontextsetshouldsubpixelquanti"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constructing Paths",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455756-cgcontextaddarc",
+        "doc://com.apple.documentation/documentation/coregraphics/1456238-cgcontextaddarctopoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1456393-cgcontextaddcurvetopoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1455461-cgcontextaddlines",
+        "doc://com.apple.documentation/documentation/coregraphics/1455213-cgcontextaddlinetopoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1456628-cgcontextaddpath",
+        "doc://com.apple.documentation/documentation/coregraphics/1455397-cgcontextcopypath",
+        "doc://com.apple.documentation/documentation/coregraphics/1454268-cgcontextaddquadcurvetopoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1456617-cgcontextaddrect",
+        "doc://com.apple.documentation/documentation/coregraphics/1454734-cgcontextaddrects",
+        "doc://com.apple.documentation/documentation/coregraphics/1456635-cgcontextbeginpath",
+        "doc://com.apple.documentation/documentation/coregraphics/1454508-cgcontextclosepath",
+        "doc://com.apple.documentation/documentation/coregraphics/1454738-cgcontextmovetopoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1456420-cgcontextaddellipseinrect"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These functions are used to define the geometry of the current path. For more information on how paths are defined, see "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpath"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Painting Paths",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456457-cgcontextclearrect",
+        "doc://com.apple.documentation/documentation/coregraphics/1455195-cgcontextdrawpath",
+        "doc://com.apple.documentation/documentation/coregraphics/1454865-cgcontexteofillpath",
+        "doc://com.apple.documentation/documentation/coregraphics/1456306-cgcontextfillpath",
+        "doc://com.apple.documentation/documentation/coregraphics/1454700-cgcontextfillrect",
+        "doc://com.apple.documentation/documentation/coregraphics/1454132-cgcontextfillrects",
+        "doc://com.apple.documentation/documentation/coregraphics/1454371-cgcontextfillellipseinrect",
+        "doc://com.apple.documentation/documentation/coregraphics/1454490-cgcontextstrokepath",
+        "doc://com.apple.documentation/documentation/coregraphics/1454675-cgcontextstrokerect",
+        "doc://com.apple.documentation/documentation/coregraphics/1454679-cgcontextstrokerectwithwidth",
+        "doc://com.apple.documentation/documentation/coregraphics/1454517-cgcontextreplacepathwithstrokedp",
+        "doc://com.apple.documentation/documentation/coregraphics/1455774-cgcontextstrokeellipseinrect",
+        "doc://com.apple.documentation/documentation/coregraphics/1454389-cgcontextstrokelinesegments"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These functions are used to stroke along or fill in the current path."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Information About Paths",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455772-cgcontextispathempty",
+        "doc://com.apple.documentation/documentation/coregraphics/1454788-cgcontextgetpathcurrentpoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1454577-cgcontextgetpathboundingbox",
+        "doc://com.apple.documentation/documentation/coregraphics/1454778-cgcontextpathcontainspoint"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Modifying Clipping Paths",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455262-cgcontextclip",
+        "doc://com.apple.documentation/documentation/coregraphics/1455944-cgcontexteoclip",
+        "doc://com.apple.documentation/documentation/coregraphics/1454716-cgcontextcliptorect",
+        "doc://com.apple.documentation/documentation/coregraphics/1454626-cgcontextcliptorects",
+        "doc://com.apple.documentation/documentation/coregraphics/1455387-cgcontextgetclipboundingbox",
+        "doc://com.apple.documentation/documentation/coregraphics/1456497-cgcontextcliptomask"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Color, Color Space, and Shadow Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456404-cgcontextsetalpha",
+        "doc://com.apple.documentation/documentation/coregraphics/1454214-cgcontextsetcmykfillcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1455296-cgcontextsetfillcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1455358-cgcontextsetcmykstrokecolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1455151-cgcontextsetfillcolorspace",
+        "doc://com.apple.documentation/documentation/coregraphics/1454079-cgcontextsetfillcolorwithcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1454255-cgcontextsetgrayfillcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1455209-cgcontextsetgraystrokecolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1455624-cgcontextsetrgbfillcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1456378-cgcontextsetrgbstrokecolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1456082-cgcontextsetshadow",
+        "doc://com.apple.documentation/documentation/coregraphics/1455205-cgcontextsetshadowwithcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1456283-cgcontextsetstrokecolor",
+        "doc://com.apple.documentation/documentation/coregraphics/1454396-cgcontextsetstrokecolorspace",
+        "doc://com.apple.documentation/documentation/coregraphics/1456196-cgcontextsetstrokecolorwithcolor"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Transforming User Space",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454897-cgcontextconcatctm",
+        "doc://com.apple.documentation/documentation/coregraphics/1454691-cgcontextgetctm",
+        "doc://com.apple.documentation/documentation/coregraphics/1456228-cgcontextrotatectm",
+        "doc://com.apple.documentation/documentation/coregraphics/1454659-cgcontextscalectm",
+        "doc://com.apple.documentation/documentation/coregraphics/1455286-cgcontexttranslatectm"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These functions allow you to examine and change the current transformation matrix (CTM) in a graphics context."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using Transparency Layers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456011-cgcontextbegintransparencylayer",
+        "doc://com.apple.documentation/documentation/coregraphics/1454368-cgcontextbegintransparencylayerw",
+        "doc://com.apple.documentation/documentation/coregraphics/1456554-cgcontextendtransparencylayer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing an Image to a Graphics Context",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456240-cgcontextdrawtiledimage",
+        "doc://com.apple.documentation/documentation/coregraphics/1454845-cgcontextdrawimage"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing PDF Content to a Graphics Context",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456255-cgcontextdrawpdfpage"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing With a Gradient",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454782-cgcontextdrawlineargradient",
+        "doc://com.apple.documentation/documentation/coregraphics/1455923-cgcontextdrawradialgradient"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing With a Shading",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456643-cgcontextdrawshading"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Up a Page-Based Graphics Context",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454794-cgcontextbeginpage",
+        "doc://com.apple.documentation/documentation/coregraphics/1455027-cgcontextendpage"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing Glyphs",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1586500-cgcontextshowglyphs",
+        "doc://com.apple.documentation/documentation/coregraphics/1586502-cgcontextshowglyphsatpoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1586503-cgcontextshowglyphswithadvances",
+        "doc://com.apple.documentation/documentation/coregraphics/1456200-cgcontextshowglyphsatpositions"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing Text",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456154-cgcontextgettextmatrix",
+        "doc://com.apple.documentation/documentation/coregraphics/1454687-cgcontextgettextposition",
+        "doc://com.apple.documentation/documentation/coregraphics/1586511-cgcontextselectfont",
+        "doc://com.apple.documentation/documentation/coregraphics/1454786-cgcontextsetcharacterspacing",
+        "doc://com.apple.documentation/documentation/coregraphics/1454950-cgcontextsetfont",
+        "doc://com.apple.documentation/documentation/coregraphics/1456426-cgcontextsetfontsize",
+        "doc://com.apple.documentation/documentation/coregraphics/1454253-cgcontextsettextdrawingmode",
+        "doc://com.apple.documentation/documentation/coregraphics/1455611-cgcontextsettextmatrix",
+        "doc://com.apple.documentation/documentation/coregraphics/1456069-cgcontextsettextposition",
+        "doc://com.apple.documentation/documentation/coregraphics/1586507-cgcontextshowtext",
+        "doc://com.apple.documentation/documentation/coregraphics/1586505-cgcontextshowtextatpoint"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Converting Between Device Space and User Space",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455677-cgcontextgetuserspacetodevicespa",
+        "doc://com.apple.documentation/documentation/coregraphics/1455916-cgcontextconvertpointtodevicespa",
+        "doc://com.apple.documentation/documentation/coregraphics/1456451-cgcontextconvertpointtouserspace",
+        "doc://com.apple.documentation/documentation/coregraphics/1456619-cgcontextconvertsizetodevicespac",
+        "doc://com.apple.documentation/documentation/coregraphics/1456510-cgcontextconvertsizetouserspace",
+        "doc://com.apple.documentation/documentation/coregraphics/1456017-cgcontextconvertrecttodevicespac",
+        "doc://com.apple.documentation/documentation/coregraphics/1454165-cgcontextconvertrecttouserspace"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode",
+        "doc://com.apple.documentation/documentation/coregraphics/cginterpolationquality",
+        "doc://com.apple.documentation/documentation/coregraphics/cgtextdrawingmode",
+        "doc://com.apple.documentation/documentation/coregraphics/cgtextencoding"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider",
+        "doc://com.apple.documentation/documentation/coregraphics/cgfont",
+        "doc://com.apple.documentation/documentation/coregraphics/cgfunction",
+        "doc://com.apple.documentation/documentation/coregraphics/cgglcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cggradient",
+        "doc://com.apple.documentation/documentation/coregraphics/cgimage",
+        "doc://com.apple.documentation/documentation/coregraphics/cglayer",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpath",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpattern",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter",
+        "doc://com.apple.documentation/documentation/coregraphics/cgshading"
+      ],
+      "title": "Opaque Types",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1719815"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A graphics context contains drawing parameters and all device-specific information needed to render the paint on a page to the destination, whether the destination is a window in an application, a bitmap image, a PDF document, or a printer. You can obtain a graphics context by using Quartz graphics context creation functions or by using higher-level functions provided in the Carbon, Cocoa, or Printing frameworks. Quartz provides creation functions for various flavors of Quartz graphics contexts including bitmap images and PDF. The Cocoa framework provides functions for obtaining window graphics contexts. The Printing framework provides functions that obtain a graphics context appropriate for the destination printer."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

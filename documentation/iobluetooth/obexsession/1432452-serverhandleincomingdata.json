@@ -1,0 +1,216 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tranport subclasses need to invoke this from their own data-receive handlers. For example, when data is received over a Bluetooth RFCOMM channel in the IOBluetoothOBEXSession, it in turn calls this to dispatch the data. If you do not handle this case, your server session will not work, guaranteed."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/iobluetooth",
+        "doc://com.apple.documentation/documentation/iobluetooth/obexsession"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/iobluetooth/obexsession/1432452-serverhandleincomingdata",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1432452,
+  "kind": "symbol",
+  "metadata": {
+    "title": "serverHandleIncomingData:",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "IOBluetooth"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)OBEXSession(im)serverHandleIncomingData:",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth/obexsession/1432452-serverhandleincomingdata"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth/obexsession/1432452-serverhandleincomingdata"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/iobluetooth": {
+      "title": "IOBluetooth",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth",
+      "url": "/documentation/iobluetooth",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obexsession": {
+      "title": "OBEXSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obexsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obexsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Object representing an OBEX connection to a remote target."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obextransportevent": {
+      "title": "OBEXTransportEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obextransportevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/obextransportevent"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "serverHandleIncomingData:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@OBEXTransportEvent",
+              "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obextransportevent",
+              "text": "OBEXTransportEvent"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "event"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "event",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "New event received from the transport."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Tranport subclasses must call this for OBEX server sessions to work!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

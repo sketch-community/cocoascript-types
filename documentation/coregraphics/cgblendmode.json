@@ -1,0 +1,823 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Compositing operations for images."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcontext"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1456320,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CGBlendMode",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Core Graphics"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@T@CGBlendMode",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/cgblendmode"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/cgblendmode"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coregraphics": {
+      "title": "Core Graphics",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics",
+      "url": "/documentation/coregraphics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcontext": {
+      "title": "CGContext",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontext",
+      "url": "/documentation/coregraphics/cgcontext",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcontextref": {
+      "title": "CGContextRef",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref",
+      "url": "/documentation/coregraphics/cgcontextref",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedifference": {
+      "title": "kCGBlendModeDifference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedifference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodedifference"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolor": {
+      "title": "kCGBlendModeColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodecolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Uses the luminance values of the background with the hue and saturation values of the source image. This mode preserves the gray levels in the image. You can use this mode to color monochrome images or to tint color images."
+        }
+      ]
+    },
+    "devLink-1719815": {
+      "identifier": "devLink-1719815",
+      "type": "link",
+      "title": "Quartz 2D Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodenormal": {
+      "title": "kCGBlendModeNormal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodenormal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodenormal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Paints the source image samples over the background image samples."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodemultiply": {
+      "title": "kCGBlendModeMultiply",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodemultiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodemultiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiplies the source image samples with the background image samples. This results in colors that are at least as dark as either of the two contributing sample colors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodescreen": {
+      "title": "kCGBlendModeScreen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodescreen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodescreen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiplies the inverse of the source image samples with the inverse of the background image samples, resulting in colors that are at least as light as either of the two contributing sample colors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeoverlay": {
+      "title": "kCGBlendModeOverlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeoverlay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodeoverlay"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedarken": {
+      "title": "kCGBlendModeDarken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedarken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodedarken"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodelighten": {
+      "title": "kCGBlendModeLighten",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodelighten",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodelighten"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolordodge": {
+      "title": "kCGBlendModeColorDodge",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolordodge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodecolordodge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Brightens the background image samples to reflect the source image samples. Source image sample values that specify black do not produce a change."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolorburn": {
+      "title": "kCGBlendModeColorBurn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolorburn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodecolorburn",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Darkens the background image samples to reflect the source image samples. Source image sample values that specify white do not produce a change."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesoftlight": {
+      "title": "kCGBlendModeSoftLight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesoftlight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodesoftlight"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodehardlight": {
+      "title": "kCGBlendModeHardLight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodehardlight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodehardlight"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeexclusion": {
+      "title": "kCGBlendModeExclusion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeexclusion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodeexclusion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Produces an effect similar to that produced by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedifference"
+        },
+        {
+          "type": "text",
+          "text": ", but with lower contrast. Source image sample values that are black don’t produce a change; white inverts the background color values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodehue": {
+      "title": "kCGBlendModeHue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodehue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodehue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Uses the luminance and saturation values of the background with the hue of the source image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesaturation": {
+      "title": "kCGBlendModeSaturation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesaturation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodesaturation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Uses the luminance and hue values of the background with the saturation of the source image. Areas of the background that have no saturation (that is, pure gray areas) don’t produce a change."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeluminosity": {
+      "title": "kCGBlendModeLuminosity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeluminosity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodeluminosity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Uses the hue and saturation of the background with the luminance of the source image. This mode creates an effect that is inverse to the effect created by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolor"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeclear": {
+      "title": "kCGBlendModeClear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeclear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodeclear",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = 0"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecopy": {
+      "title": "kCGBlendModeCopy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecopy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodecopy",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = S"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourcein": {
+      "title": "kCGBlendModeSourceIn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourcein",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodesourcein",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = S*Da"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourceout": {
+      "title": "kCGBlendModeSourceOut",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourceout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodesourceout",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = S*(1 - Da)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourceatop": {
+      "title": "kCGBlendModeSourceAtop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourceatop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodesourceatop",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = S*Da + D*(1 - Sa)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationover": {
+      "title": "kCGBlendModeDestinationOver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationover",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodedestinationover",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = S*(1 - Da) + D"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationin": {
+      "title": "kCGBlendModeDestinationIn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodedestinationin",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = D*Sa"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationout": {
+      "title": "kCGBlendModeDestinationOut",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodedestinationout",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = D*(1 - Sa)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationatop": {
+      "title": "kCGBlendModeDestinationAtop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationatop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodedestinationatop",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = S*(1 - Da) + D*Sa"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodexor": {
+      "title": "kCGBlendModeXOR",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodexor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodexor",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = S*(1 - Da) + D*(1 - Sa)"
+        },
+        {
+          "type": "text",
+          "text": ". This XOR mode is only nominally related to the classical bitmap XOR operation, which is not supported by Core Graphics"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeplusdarker": {
+      "title": "kCGBlendModePlusDarker",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeplusdarker",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodeplusdarker",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = MAX(0, 1 - ((1 - D) + (1 - S)))"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodepluslighter": {
+      "title": "kCGBlendModePlusLighter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodepluslighter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode/kcgblendmodepluslighter",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "R = MIN(1, S + D)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454895-cgcontextflush": {
+      "title": "CGContextFlush",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454895-cgcontextflush",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454895-cgcontextflush",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Forces all pending drawing operations in a window context to be rendered immediately to the destination device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455450-cgcontextsynchronize": {
+      "title": "CGContextSynchronize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455450-cgcontextsynchronize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455450-cgcontextsynchronize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Marks a window context for update."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455994-cgcontextsetblendmode": {
+      "title": "CGContextSetBlendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455994-cgcontextsetblendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455994-cgcontextsetblendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets how sample values are composited by a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgblendmode": {
+      "title": "CGBlendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgblendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgblendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compositing operations for images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455544-cgcontextsetrenderingintent": {
+      "title": "CGContextSetRenderingIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455544-cgcontextsetrenderingintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455544-cgcontextsetrenderingintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the rendering intent in the current graphics state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodenormal",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodemultiply",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodescreen",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeoverlay",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedarken",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodelighten",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolordodge",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolorburn",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesoftlight",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodehardlight",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedifference",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeexclusion",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodehue",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesaturation",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecolor",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeluminosity",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeclear",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodecopy",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourcein",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourceout",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodesourceatop",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationover",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationin",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationout",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodedestinationatop",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodexor",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodeplusdarker",
+        "doc://com.apple.documentation/documentation/coregraphics/cgblendmode/kcgblendmodepluslighter"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454895-cgcontextflush",
+        "doc://com.apple.documentation/documentation/coregraphics/1455450-cgcontextsynchronize",
+        "doc://com.apple.documentation/documentation/coregraphics/1455994-cgcontextsetblendmode",
+        "doc://com.apple.documentation/documentation/coregraphics/1455544-cgcontextsetrenderingintent"
+      ],
+      "title": "Managing a Graphics Context",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " CGBlendMode : "
+            },
+            {
+              "kind": "keyword",
+              "text": "int32_t"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "CGBlendMode"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These blend mode constants represent the Porter-Duff blend modes. The symbols in the equations for these blend modes are:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "R is the premultiplied result"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "S is the source color, and includes alpha"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "D is the destination color, and includes alpha"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Ra, Sa, and Da are the alpha components of R, S, and D"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can find more information on blend modes, including examples of images produced using them, and many mathematical descriptions of the modes, in "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "PDF Reference, Fourth Edition"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", Version 1.5, Adobe Systems, Inc. If you are a former QuickDraw developer, it may be helpful for you to think of blend modes as an alternative to transfer modes"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For examples of using blend modes see \"Setting Blend Modes\" and \"Using Blend Modes With Images\" in "
+            },
+            {
+              "type": "link",
+              "title": "Quartz 2D Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

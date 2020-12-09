@@ -1,0 +1,878 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Moves the file or directory at the specified path to a new location synchronously."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/file_system",
+        "doc://com.apple.documentation/documentation/foundation/nsfilemanager"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/icloud",
+        "doc://com.apple.documentation/documentation/foundation/nsfilemanager"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413529-moveitematpath",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1413529,
+  "kind": "symbol",
+  "metadata": {
+    "title": "moveItemAtPath:toPath:error:",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.5",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSFileManager(im)moveItemAtPath:toPath:error:",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsfilemanager/1413529-moveitematpath"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/filemanager/1413529-moveitem"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/file_system": {
+      "title": "File System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/file_system",
+      "url": "/documentation/foundation/file_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager": {
+      "title": "NSFileManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A convenient interface to the contents of the file system, and the primary means of interacting with it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/icloud": {
+      "title": "iCloud",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/icloud",
+      "url": "/documentation/foundation/icloud",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1411878-filemanager": {
+      "title": "fileManager:shouldMoveItemAtURL:toURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1411878-filemanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanagerdelegate/1411878-filemanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileManager:shouldMoveItemAtURL:toURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1407734-filemanager": {
+      "title": "fileManager:shouldMoveItemAtPath:toPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1407734-filemanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanagerdelegate/1407734-filemanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileManager:shouldMoveItemAtPath:toPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1411289-filemanager": {
+      "title": "fileManager:shouldProceedAfterError:movingItemAtURL:toURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1411289-filemanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanagerdelegate/1411289-filemanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileManager:shouldProceedAfterError:movingItemAtURL:toURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1412865-filemanager": {
+      "title": "fileManager:shouldProceedAfterError:movingItemAtPath:toPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1412865-filemanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanagerdelegate/1412865-filemanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileManager:shouldProceedAfterError:movingItemAtPath:toPath:"
+        }
+      ]
+    },
+    "link-3023437": {
+      "title": "Error Handling",
+      "type": "topic",
+      "identifier": "link-3023437",
+      "kind": "article",
+      "role": "link",
+      "url": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
+    },
+    "link-3023438": {
+      "title": "The Swift Programming Language",
+      "type": "topic",
+      "identifier": "link-3023438",
+      "kind": "article",
+      "role": "link",
+      "url": "https://docs.swift.org/swift-book/"
+    },
+    "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters": {
+      "title": "About Imported Cocoa Error Parameters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1414750-moveitematurl": {
+      "title": "moveItemAtURL:toURL:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1414750-moveitematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1414750-moveitematurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the file or directory at the specified URL to a new location synchronously."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveItemAtURL:toURL:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407903-copyitematpath": {
+      "title": "copyItemAtPath:toPath:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407903-copyitematpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1407903-copyitematpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Copies the item at the specified path to a new location synchronously."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "copyItemAtPath:toPath:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1408573-removeitematpath": {
+      "title": "removeItemAtPath:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1408573-removeitematpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1408573-removeitematpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the file or directory at the specified path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeItemAtPath:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nserror": {
+      "title": "NSError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nserror"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412957-copyitematurl": {
+      "title": "copyItemAtURL:toURL:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412957-copyitematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1412957-copyitematurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Copies the file at the specified URL to a new location synchronously."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "copyItemAtURL:toURL:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413529-moveitematpath": {
+      "title": "moveItemAtPath:toPath:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413529-moveitematpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1413529-moveitematpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the file or directory at the specified path to a new location synchronously."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveItemAtPath:toPath:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412957-copyitematurl",
+        "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407903-copyitematpath",
+        "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1414750-moveitematurl"
+      ],
+      "title": "Moving and Copying Items",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1408573-removeitematpath"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "BOOL"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "moveItemAtPath:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSString",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+              "text": "NSString"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "srcPath"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "toPath:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSString",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+              "text": "NSString"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "dstPath"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "error:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSError",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+              "text": "NSError"
+            },
+            {
+              "kind": "text",
+              "text": " * "
+            },
+            {
+              "kind": "keyword",
+              "text": "_Nullable"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "error"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "srcPath",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The path to the file or directory you want to move. This parameter must not be "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dstPath",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The new path for the item in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "srcPath"
+                },
+                {
+                  "type": "text",
+                  "text": ". This path must include the name of the file or directory in its new location. This parameter must not be "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "error",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On input, a pointer to an error object. If an error occurs, this pointer is set to an actual error object containing the error information. You may specify "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": " for this parameter if you do not want the error information."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " if the item was moved successfully or the file manager’s delegate stopped the operation deliberately. Returns "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": " if an error occurred."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When moving items, the current process must have permission to read the item at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "srcPath"
+            },
+            {
+              "type": "text",
+              "text": " and write the parent directory of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dstPath"
+            },
+            {
+              "type": "text",
+              "text": ". If the item at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "srcPath"
+            },
+            {
+              "type": "text",
+              "text": " is a directory, this method moves the directory and all of its contents, including any hidden files. If an item with the same name already exists at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dstPath"
+            },
+            {
+              "type": "text",
+              "text": ", this method stops the move attempt and returns an appropriate error. If the last component of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "srcPath"
+            },
+            {
+              "type": "text",
+              "text": " is a symbolic link, only the link is moved to the new path; the item pointed to by the link remains at its current location."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Prior to moving the item, the file manager asks its delegate if it should actually move it. It does this by calling the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1411878-filemanager"
+            },
+            {
+              "type": "text",
+              "text": " method; if that method is not implemented it calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1407734-filemanager"
+            },
+            {
+              "type": "text",
+              "text": " method instead. If the item being moved is a directory, the file manager notifies the delegate only for the directory itself and not for any of its contents. If the delegate method returns "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ", or if the delegate does not implement the appropriate methods, the file manager moves the file. If there is an error moving one out of several items, the file manager may also call the delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1411289-filemanager"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanagerdelegate/1412865-filemanager"
+            },
+            {
+              "type": "text",
+              "text": " method to determine how to proceed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the source and destination of the move operation are not on the same volume, this method copies the item first and then removes it from its current location. This behavior may trigger additional delegate notifications related to copying and removing individual items. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In Swift, this method returns "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Void"
+                },
+                {
+                  "type": "text",
+                  "text": " and is marked with the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "throws"
+                },
+                {
+                  "type": "text",
+                  "text": " keyword to indicate that it throws an error in cases of failure."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You call this method in a "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "try"
+                },
+                {
+                  "type": "text",
+                  "text": " expression and handle any errors in the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "catch"
+                },
+                {
+                  "type": "text",
+                  "text": " clauses of a "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "do"
+                },
+                {
+                  "type": "text",
+                  "text": " statement, as described in "
+                },
+                {
+                  "type": "link",
+                  "title": "Error Handling",
+                  "destination": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
+                },
+                {
+                  "type": "text",
+                  "text": " in "
+                },
+                {
+                  "type": "link",
+                  "title": "The Swift Programming Language",
+                  "destination": "https://docs.swift.org/swift-book/"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Handling Errors in Swift:"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

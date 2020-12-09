@@ -1,0 +1,847 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A notification dispatch mechanism that enables the broadcast of information to registered observers."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/notifications"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/notificationcenter",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1407324,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NotificationCenter",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSNotificationCenter",
+    "symbolKind": "cl",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "class "
+      },
+      {
+        "kind": "identifier",
+        "text": "NotificationCenter"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsnotificationcenter"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/notificationcenter"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/notifications": {
+      "title": "Notifications",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notifications",
+      "url": "/documentation/foundation/notifications",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification": {
+      "title": "NSNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification"
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/1415360-addobserver": {
+      "title": "addObserver(_:selector:name:object:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1415360-addobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/1415360-addobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an entry to the notification center to call the provided selector with the notification."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "addObserver"
+        },
+        {
+          "kind": "text",
+          "text": "(Any, "
+        },
+        {
+          "kind": "identifier",
+          "text": "selector"
+        },
+        {
+          "kind": "text",
+          "text": ": Selector, "
+        },
+        {
+          "kind": "identifier",
+          "text": "name"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "object"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/1411723-addobserver": {
+      "title": "addObserver(forName:object:queue:using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1411723-addobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/1411723-addobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an entry to the notification center to receive notifications that passed to the provided block."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "addObserver"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "forName"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "object"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "queue"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": (Notification) -> Void) -> NSObjectProtocol"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/1414169-default": {
+      "title": "default",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1414169-default",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/1414169-default",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The app’s default notification center."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class var "
+        },
+        {
+          "kind": "identifier",
+          "text": "`default`"
+        },
+        {
+          "kind": "text",
+          "text": ": NotificationCenter"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/distributednotificationcenter": {
+      "title": "DistributedNotificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/distributednotificationcenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/distributednotificationcenter"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/swift/cvararg": {
+      "title": "CVarArg",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/cvararg"
+    },
+    "doc://com.apple.documentation/documentation/swift/equatable": {
+      "title": "Equatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/equatable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/1407263-removeobserver": {
+      "title": "removeObserver(_:name:object:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1407263-removeobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/1407263-removeobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes matching entries from the notification center's dispatch table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeObserver"
+        },
+        {
+          "kind": "text",
+          "text": "(Any, "
+        },
+        {
+          "kind": "identifier",
+          "text": "name"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "object"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/1413994-removeobserver": {
+      "title": "removeObserver(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1413994-removeobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/1413994-removeobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes all entries specifying an observer from the notification center's dispatch table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeObserver"
+        },
+        {
+          "kind": "text",
+          "text": "(Any)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/1410472-post": {
+      "title": "post(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1410472-post",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/1410472-post",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts a given notification to the notification center."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "post"
+        },
+        {
+          "kind": "text",
+          "text": "(Notification)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/1410608-post": {
+      "title": "post(name:object:userInfo:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1410608-post",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/1410608-post",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a notification with a given name, sender, and information and posts it to the notification center."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "post"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "name"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name, "
+        },
+        {
+          "kind": "identifier",
+          "text": "object"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [AnyHashable : Any]?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/1415812-post": {
+      "title": "post(name:object:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1415812-post",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/1415812-post",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a notification with a given name and sender and posts it to the notification center."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "post"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "name"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name, "
+        },
+        {
+          "kind": "identifier",
+          "text": "object"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/3329353-publisher": {
+      "title": "publisher(for:object:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/3329353-publisher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/3329353-publisher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a publisher that emits events when broadcasting notifications."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "publisher"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": Notification.Name, "
+        },
+        {
+          "kind": "identifier",
+          "text": "object"
+        },
+        {
+          "kind": "text",
+          "text": ": AnyObject?) -> NotificationCenter.Publisher"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter/publisher": {
+      "title": "NotificationCenter.Publisher",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/publisher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter/publisher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A publisher that emits elements when broadcasting notifications."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NotificationCenter.Publisher"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notification": {
+      "title": "Notification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for information broadcast through a notification center to all registered observers. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Notification"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationcenter": {
+      "title": "NotificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationcenter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification dispatch mechanism that enables the broadcast of information to registered observers."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NotificationCenter"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/notificationqueue": {
+      "title": "NotificationQueue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notificationqueue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notificationqueue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification center buffer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NotificationQueue"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/cvararg",
+        "doc://com.apple.documentation/documentation/swift/equatable",
+        "doc://com.apple.documentation/documentation/swift/hashable"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Default Notification Center",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/1414169-default"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Adding and Removing Notification Observers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/1411723-addobserver",
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/1415360-addobserver",
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/1407263-removeobserver",
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/1413994-removeobserver"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Posting Notifications",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/1410472-post",
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/1410608-post",
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/1415812-post"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Publishing Notifications to Combine",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/3329353-publisher",
+        "doc://com.apple.documentation/documentation/foundation/notificationcenter/publisher"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/notification",
+        "doc://com.apple.documentation/documentation/foundation/notificationqueue"
+      ],
+      "title": "Notifications",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NotificationCenter"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Objects register with a notification center to receive notifications ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification"
+            },
+            {
+              "type": "text",
+              "text": " objects) using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1415360-addobserver"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1411723-addobserver"
+            },
+            {
+              "type": "text",
+              "text": " methods. When an object adds itself as an observer, it specifies which notifications it should receive. An object may therefore call this method several times in order to register itself as an observer for several different notifications."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each running app has a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/notificationcenter/1414169-default"
+            },
+            {
+              "type": "text",
+              "text": " notification center, and you can create new notification centers to organize communications in particular contexts."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A notification center can deliver notifications only within a single program; if you want to post a notification to other processes or receive notifications from other processes, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/distributednotificationcenter"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

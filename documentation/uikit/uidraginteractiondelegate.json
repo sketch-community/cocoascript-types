@@ -1,0 +1,675 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The interface for configuring and controlling a drag interaction."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteraction"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2891035,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UIDragInteractionDelegate",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(pl)UIDragInteractionDelegate",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uidraginteractiondelegate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uidraginteractiondelegate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop": {
+      "title": "Drag and Drop",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop",
+      "url": "/documentation/uikit/drag_and_drop",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteraction": {
+      "title": "UIDragInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interaction to enable dragging of items from a view, employing a delegate to provide drag items and to respond to calls from the drag session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction": {
+      "title": "dragInteraction:itemsForBeginningSession:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the array of drag items for an impending drag interaction."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:itemsForBeginningSession:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890968-draginteraction": {
+      "title": "dragInteraction:itemsForAddingToSession:withTouchAtPoint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890968-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2890968-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the drag items to add to an in-progress drag session, in response to a user gesture to add the items."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:itemsForAddingToSession:withTouchAtPoint:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891004-draginteraction": {
+      "title": "dragInteraction:sessionForAddingItems:withTouchAtPoint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891004-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891004-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate which drag session to add drag items to when there is more than one in-progress session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:sessionForAddingItems:withTouchAtPoint:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891005-draginteraction": {
+      "title": "dragInteraction:willAnimateLiftWithAnimator:session:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891005-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891005-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the system's lift animation is about to start. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:willAnimateLiftWithAnimator:session:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891027-draginteraction": {
+      "title": "dragInteraction:item:willAnimateCancelWithAnimator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891027-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891027-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the system's cancellation animation is about to start."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:item:willAnimateCancelWithAnimator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891055-draginteraction": {
+      "title": "dragInteraction:sessionWillBegin:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891055-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891055-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the lift animation has finished and the user is starting to move the items across the screen."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:sessionWillBegin:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890993-draginteraction": {
+      "title": "dragInteraction:session:willAddItems:forInteraction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890993-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2890993-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate an interaction is about to add items to a drag session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:session:willAddItems:forInteraction:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890988-draginteraction": {
+      "title": "dragInteraction:sessionDidMove:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890988-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2890988-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the user moved the drag items to a new location on the screen."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:sessionDidMove:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891032-draginteraction": {
+      "title": "dragInteraction:session:willEndWithOperation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891032-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891032-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the drag activity will end with the specified operation. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:session:willEndWithOperation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891012-draginteraction": {
+      "title": "dragInteraction:session:didEndWithOperation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891012-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891012-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the drag activity and its related animations have finished."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:session:didEndWithOperation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891014-draginteraction": {
+      "title": "dragInteraction:sessionDidTransferItems:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891014-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891014-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the destination view has received the data for the drag items."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:sessionDidTransferItems:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891057-draginteraction": {
+      "title": "dragInteraction:previewForLiftingItem:session:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891057-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891057-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the targeted drag item preview that will appear during the lift animation. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:previewForLiftingItem:session:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890967-draginteraction": {
+      "title": "dragInteraction:previewForCancellingItem:withDefault:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890967-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2890967-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the targeted drag item preview to show during the cancellation animation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:previewForCancellingItem:withDefault:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891028-draginteraction": {
+      "title": "dragInteraction:prefersFullSizePreviewsForSession:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891028-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891028-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether the preview should appear in its original size or a scaled size."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:prefersFullSizePreviewsForSession:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891063-draginteraction": {
+      "title": "dragInteraction:sessionIsRestrictedToDraggingApplication:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891063-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891063-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether the system should restrict the drag session to the app that started the session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:sessionIsRestrictedToDraggingApplication:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890978-draginteraction": {
+      "title": "dragInteraction:sessionAllowsMoveOperation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890978-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2890978-draginteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether the session allows the move operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:sessionAllowsMoveOperation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate": {
+      "title": "UIDragInteractionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for configuring and controlling a drag interaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate": {
+      "title": "UIDropInteractionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropinteractiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for configuring and controlling a drop interaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropinteraction": {
+      "title": "UIDropInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interaction to enable dropping of items onto a view, employing a delegate to instantiate objects and respond to calls from the drop session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Performing the Drag",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890968-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891004-draginteraction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Animating the Drag Behaviors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891005-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891027-draginteraction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Monitoring Drag Progress",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891055-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890993-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890988-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891032-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891012-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891014-draginteraction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing Drag Previews",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891057-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890967-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891028-draginteraction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Restricting the Drag Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891063-draginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2890978-draginteraction"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate",
+        "doc://com.apple.documentation/documentation/uikit/uidraginteraction",
+        "doc://com.apple.documentation/documentation/uikit/uidropinteraction"
+      ],
+      "title": "Drag-and-Drop Interactions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UIDragInteractionDelegate"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1074 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The abstract superclass for all feedback generators."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/animation_and_haptics"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2369819,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UIFeedbackGenerator",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)UIFeedbackGenerator",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uifeedbackgenerator"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uifeedbackgenerator"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/animation_and_haptics": {
+      "title": "Animation and Haptics",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/animation_and_haptics",
+      "url": "/documentation/uikit/animation_and_haptics",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator": {
+      "title": "UIFeedbackGenerator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifeedbackgenerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract superclass for all feedback generators."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackgenerator": {
+      "title": "UIImpactFeedbackGenerator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackgenerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimpactfeedbackgenerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator"
+        },
+        {
+          "type": "text",
+          "text": " subclass that creates haptics to simulate physical impacts.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator": {
+      "title": "UISelectionFeedbackGenerator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiselectionfeedbackgenerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator"
+        },
+        {
+          "type": "text",
+          "text": " subclass that creates haptics to indicate a change in selection.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uinotificationfeedbackgenerator": {
+      "title": "UINotificationFeedbackGenerator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinotificationfeedbackgenerator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uinotificationfeedbackgenerator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator"
+        },
+        {
+          "type": "text",
+          "text": " subclass that creates haptics to communicate successes, failures, and warnings.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2576673": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2576673",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uifeedbackgenerator#2576673",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Triggering selection feedback"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator/2369818-prepare": {
+      "title": "prepare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator/2369818-prepare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifeedbackgenerator/2369818-prepare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prepares the generator to trigger feedback."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepare"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackgenerator/2374287-impactoccurred": {
+      "title": "impactOccurred",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackgenerator/2374287-impactoccurred",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimpactfeedbackgenerator/2374287-impactoccurred",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "impactOccurred"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator/2374284-selectionchanged": {
+      "title": "selectionChanged",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator/2374284-selectionchanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiselectionfeedbackgenerator/2374284-selectionchanged",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectionChanged"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uinotificationfeedbackgenerator/2369826-notificationoccurred": {
+      "title": "notificationOccurred:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinotificationfeedbackgenerator/2369826-notificationoccurred",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uinotificationfeedbackgenerator/2369826-notificationoccurred",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "notificationOccurred:"
+        }
+      ]
+    },
+    "link-2555413": {
+      "title": "Haptic Feedback",
+      "type": "section",
+      "identifier": "link-2555413",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/ios/human-interface-guidelines/interaction/feedback/#haptics"
+    },
+    "devLink-1734411": {
+      "identifier": "devLink-1734411",
+      "type": "link",
+      "title": "iOS Human Interface Guidelines",
+      "url": "https://developer.apple.com/ios/human-interface-guidelines/"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555404": {
+      "title": "Instantiating the Generator",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555404",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/uifeedbackgenerator#2555404"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555405": {
+      "title": "Preparing the Generator",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555405",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/uifeedbackgenerator#2555405"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555415": {
+      "title": "Triggering Feedback",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555415",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/uifeedbackgenerator#2555415"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555460": {
+      "title": "Releasing the Generator",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555460",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/uifeedbackgenerator#2555460"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Preparing to Generate Feedback",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator/2369818-prepare"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackgenerator",
+        "doc://com.apple.documentation/documentation/uikit/uinotificationfeedbackgenerator",
+        "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator"
+      ],
+      "title": "Haptic Feedback",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UIFeedbackGenerator"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Do not subclass or create instances of this class yourself. Instead, instantiate one of the provided concrete subclasses: "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackgenerator"
+            },
+            {
+              "type": "text",
+              "text": ". Use impact feedback generators to indicate that an impact has occurred. For example, you might trigger impact feedback when a user interface object collides with something or snaps into place."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator"
+            },
+            {
+              "type": "text",
+              "text": ". Use selection feedback generators to indicate a change in selection."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinotificationfeedbackgenerator"
+            },
+            {
+              "type": "text",
+              "text": ". Use notification feedback generators to indicate successes, failures, and warnings."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Using Feedback Generators",
+          "anchor": "2555399"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Haptic feedback provides a tactile response, such as a tap, that draws attention and reinforces both actions and events. While many system-provided interface elements (for example, pickers, switches, and sliders) automatically provide haptic feedback, you can use feedback generators to add your own feedback to custom views and controls."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you want to include sound along with the haptic feedback, you need to manually play the sound and sync it with the haptics."
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When providing feedback:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Always use feedback for its intended purpose. Don’t select a haptic because of the way it feels."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The source of the feedback must be clear to the user. For example, the feedback must match a visual change in the user interface, or must be in response to a user action. Feedback should never come as a surprise."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Don’t overuse feedback. Overuse can cause confusion and diminish the feedback’s significance."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For additional guidance on when and how to use feedback generators, see "
+            },
+            {
+              "type": "link",
+              "title": "Haptic Feedback",
+              "destination": "https://developer.apple.com/ios/human-interface-guidelines/interaction/feedback/#haptics"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "iOS Human Interface Guidelines",
+              "destination": "https://developer.apple.com/ios/human-interface-guidelines/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use a feedback generator, the following are required: "
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555404"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555405"
+                    },
+                    {
+                      "type": "text",
+                      "text": " (optional)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555415"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2555460"
+                    },
+                    {
+                      "type": "text",
+                      "text": " (optional)."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2576673"
+            },
+            {
+              "type": "text",
+              "text": " demonstrates triggering selection feedback from a pan gesture recognizer."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "- (IBAction)gestureHandler:(UIPanGestureRecognizer *)sender {",
+            "    ",
+            "    switch (sender.state) {",
+            "        case UIGestureRecognizerStateBegan:",
+            "            ",
+            "            // Instantiate a new generator.",
+            "            self.feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];",
+            "            ",
+            "            // Prepare the generator when the gesture begins.",
+            "            [self.feedbackGenerator prepare];",
+            "            ",
+            "            break;",
+            "            ",
+            "        case UIGestureRecognizerStateChanged:",
+            "            ",
+            "            // Check to see if the selection has changed...",
+            "            if ([self myCustomHasSelectionChangedMethodWithTranslation:[sender translationInView: self.view]]) {",
+            "                ",
+            "                // Trigger selection feedback.",
+            "                [self.feedbackGenerator selectionChanged];",
+            "                ",
+            "                // Keep the generator in a prepared state.",
+            "                [self.feedbackGenerator prepare];",
+            "    ",
+            "            }",
+            "            ",
+            "            break;",
+            "            ",
+            "        case UIGestureRecognizerStateCancelled:",
+            "        case UIGestureRecognizerStateEnded:",
+            "        case UIGestureRecognizerStateFailed:",
+            "            ",
+            "            // Release the current generator.",
+            "            self.feedbackGenerator = nil;",
+            "            ",
+            "            break;",
+            "            ",
+            "        default:",
+            "            ",
+            "            // Do nothing.",
+            "            break;",
+            "    }",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2576673",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Triggering selection feedback"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Instantiating the Generator",
+          "anchor": "2555404"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create feedback, you must first instantiate one of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator"
+            },
+            {
+              "type": "text",
+              "text": " class’s concrete subclasses ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackgenerator"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinotificationfeedbackgenerator"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2576673"
+            },
+            {
+              "type": "text",
+              "text": " instantiates a new "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator"
+            },
+            {
+              "type": "text",
+              "text": " object whenever a pan gesture begins."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Preparing the Generator",
+          "anchor": "2555405"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Preparing the generator can reduce latency when triggering feedback. This is particularly important when trying to match feedback to sound or visual cues. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Calling the generator’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator/2369818-prepare"
+            },
+            {
+              "type": "text",
+              "text": " method puts the Taptic Engine in a prepared state. To preserve power, the Taptic Engine stays in this state for only a short period of time (on the order of seconds), or until you next trigger feedback."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Think about when and where you can best prepare your generators. If you call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator/2369818-prepare"
+            },
+            {
+              "type": "text",
+              "text": " and then immediately trigger feedback, the system won’t have enough time to get the Taptic Engine into the prepared state, and you may not see a reduction in latency. On the other hand, if you call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator/2369818-prepare"
+            },
+            {
+              "type": "text",
+              "text": " too early, the Taptic Engine may become idle again before you trigger feedback. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2576673"
+            },
+            {
+              "type": "text",
+              "text": " prepares the generator when the pan gesture begins, and then triggers feedback when the gesture changes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information, see the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator/2369818-prepare"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Triggering Feedback",
+          "anchor": "2555415"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each feedback generator subclass has a unique triggering method. To trigger feedback, call the appropriate method: "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackgenerator/2374287-impactoccurred"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiselectionfeedbackgenerator/2374284-selectionchanged"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uinotificationfeedbackgenerator/2369826-notificationoccurred"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that calling these methods does not play haptics directly. Instead, it informs the system of the event. The system then determines whether to play the haptics based on the device, the application’s state, the amount of battery power remaining, and other factors."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, haptic feedback is currently played only:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "On a device with a supported Taptic Engine"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When the app is running in the foreground"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When the System Haptics setting is enabled"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As a general rule, trust the system to determine whether it should play feedback. Don't check the device type or app state to conditionally trigger feedback. After you’ve decided how you want to use feedback, always trigger it when the appropriate events occur. The system ignores any requests that it cannot fulfill."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2576673"
+            },
+            {
+              "type": "text",
+              "text": ", each time the gesture changes the gesture handler checks to see if the selection has changed. If so, the handler triggers feedback and prepares for the next change."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Releasing the Generator",
+          "anchor": "2555460"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you no longer need a prepared generator, remove all references to the generator object and let the system deallocate it. This lets the Taptic Engine return to its idle state."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifeedbackgenerator#2576673"
+            },
+            {
+              "type": "text",
+              "text": ", the pan gesture recognizer releases its generator when the gesture ends, fails, or is canceled. Assigning "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " to the instance variable removes the reference to the old generator. If there are no other references to the generator, the system deallocates it."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

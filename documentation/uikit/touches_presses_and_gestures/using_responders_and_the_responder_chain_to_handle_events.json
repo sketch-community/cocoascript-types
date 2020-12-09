@@ -1,0 +1,1081 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Learn how to handle events that propagate through your app. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2865371,
+  "kind": "article",
+  "metadata": {
+    "title": "Using Responders and the Responder Chain to Handle Events",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events#3013643": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events#3013643",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events#3013643"
+    },
+    "devLink-1735962": {
+      "identifier": "devLink-1735962",
+      "type": "link",
+      "title": "Core Motion Framework",
+      "url": "https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW27"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354193-cut": {
+      "title": "cut:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354193-cut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponderstandardeditactions/2354193-cut",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cut:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354191-copy": {
+      "title": "copy:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354191-copy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponderstandardeditactions/2354191-copy",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "copy:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354189-paste": {
+      "title": "paste:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354189-paste",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponderstandardeditactions/2354189-paste",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "paste:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures": {
+      "title": "Handling UIKit Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622469-hittest": {
+      "title": "hitTest:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622469-hittest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622469-hittest",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hitTest:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622415-clipstobounds": {
+      "title": "clipsToBounds",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622415-clipstobounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622415-clipstobounds"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch": {
+      "title": "UITouch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch/1618109-view": {
+      "title": "view",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618109-view",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch/1618109-view"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621099-nextresponder": {
+      "title": "nextResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621099-nextresponder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621099-nextresponder"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller": {
+      "title": "UIViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiwindow": {
+      "title": "UIWindow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiwindow"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication": {
+      "title": "UIApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder": {
+      "title": "UIResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract interface for responding to and handling events. "
+        }
+      ]
+    },
+    "link-media-3004381": {
+      "identifier": "link-media-3004381",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events#3004381"
+    },
+    "media-3004381": {
+      "identifier": "media-3004381",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 652,
+            "height": 395
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7c21d852b9/f17df5bc-d80b-4e17-81cf-4277b1e0f6e4.png"
+        }
+      ],
+      "alt": "A flow diagram: On the left, a sample app contains a label (UILabel), a text field for the user to input text (UITextField), and a button (UIButton) to  press after entering text in the field. On the right, the flow diagram shows how, after the user pressed the button, the event moves through the responder chain—from UIView, to UIViewController, to UIWindow, UIApplication, and finally to UIApplicationDelegate.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Responder chains in an app"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events": {
+      "title": "Using Responders and the Responder Chain to Handle Events",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to handle events that propagate through your app. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uievent": {
+      "title": "UIEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uievent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uievent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes a single user interaction with your app.   "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiresponder",
+        "doc://com.apple.documentation/documentation/uikit/uievent"
+      ],
+      "title": "First Steps",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apps receive and handle events using "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "responder objects"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". A responder object is any instance of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder"
+            },
+            {
+              "type": "text",
+              "text": " class, and common subclasses include "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+            },
+            {
+              "type": "text",
+              "text": ". Responders receive the raw event data and must either handle the event or forward it to another responder object.  When your app receives an event, UIKit automatically directs that event to the most appropriate responder object, known as the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "first responder"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Unhandled events are passed from responder to responder in the active "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "responder chain"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", which is the dynamic configuration of your app’s responder objects. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3004381"
+            },
+            {
+              "type": "text",
+              "text": " shows the responders in an app whose interface contains a label, a text field, a button, and two background views. The diagram also shows how events move from one responder to the next, following the responder chain."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3004381",
+              "metadata": {
+                "anchor": "3004381",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Responder chains in an app"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " If the text field does not handle an event, UIKit sends the event to the text field’s parent "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " object, followed by the root view of the window. From the root view, the responder chain diverts to the owning view controller before directing the event to the window. If the window cannot handle the event, UIKit delivers the event to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+            },
+            {
+              "type": "text",
+              "text": " object, and possibly to the app delegate if that object is an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder"
+            },
+            {
+              "type": "text",
+              "text": " and not already part of the responder chain.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Determining an Event's First Responder",
+          "anchor": "2865372"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "UIKit designates an object as the first responder to an event based on the type of that event. Event types include:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Event type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "First responder"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Touch events"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The view in which the touch occurred."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Press events"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The object that has focus."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Shake-motion events"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The object that you (or UIKit) designate."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Remote-control events"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The object that you (or UIKit) designate."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Editing menu messages"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The object that you (or UIKit) designate."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3013643",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Motion events related to the accelerometers, gyroscopes, and magnetometer do not follow the responder chain. Instead, Core Motion delivers those events directly to the designated object. For more information, see "
+                },
+                {
+                  "type": "link",
+                  "title": "Core Motion Framework",
+                  "destination": "https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW27"
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Controls communicate directly with their associated target object using action messages. When the user interacts with a control, the control sends an action message to its target object. Action messages are not events, but they may still take advantage of the responder chain. When the target object of a control is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", UIKit starts from the target object and traverses the responder chain until it finds an object that implements the appropriate action method. For example, the UIKit editing menu uses this behavior to search for responder objects that implement methods with names like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354193-cut"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354191-copy"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponderstandardeditactions/2354189-paste"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Gesture recognizers receive touch and press events before their view does. If a view's gesture recognizers fail to recognize a sequence of touches, UIKit sends the touches to the view. If the view does not handle the touches, UIKit passes them up the responder chain. For more information about using gesture recognizer’s to handle events, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Determining Which Responder Contained a Touch Event",
+          "anchor": "2865373"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "UIKit uses view-based hit-testing to determine where touch events occur. Specifically, UIKit compares the touch location to the bounds of view objects in the view hierarchy. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622469-hittest"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " traverses the view hierarchy, looking for the deepest subview that contains the specified touch, which becomes the first responder for the touch event."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If a touch location is outside of a view’s bounds, the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622469-hittest"
+                },
+                {
+                  "type": "text",
+                  "text": " method ignores that view and all of its subviews. As a result, when a view’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622415-clipstobounds"
+                },
+                {
+                  "type": "text",
+                  "text": " property is "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                },
+                {
+                  "type": "text",
+                  "text": ", subviews outside of that view’s bounds are not returned even if they happen to contain the touch. For more information about the hit-testing behavior, see the discussion of the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622469-hittest"
+                },
+                {
+                  "type": "text",
+                  "text": " method in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a touch occurs, UIKit creates a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " object and associates it with a view. As the touch location or other parameters change, UIKit updates the same "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " object with the new information. The only property that does not change is the view. (Even when the touch location moves outside the original view, the value in the touch’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618109-view"
+            },
+            {
+              "type": "text",
+              "text": " property does not change.) When the touch ends, UIKit releases the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " object. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Altering the Responder Chain",
+          "anchor": "2865374"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can alter the responder chain by overriding the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621099-nextresponder"
+            },
+            {
+              "type": "text",
+              "text": " property of your responder objects. When you do this, the next responder is the object that you return."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Many UIKit classes already override this property and return specific objects, including: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects. If the view is the root view of a view controller, the next responder is the view controller; otherwise, the next responder is the view’s superview."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects."
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If the view controller’s view is the root view of a window, the next responder is the window object."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If the view controller was presented by another view controller, the next responder is the presenting view controller."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindow"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects. The window's next responder is the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object. The next responder is the app delegate, but only if the app delegate is an instance of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and is not a view, view controller, or the app object itself."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

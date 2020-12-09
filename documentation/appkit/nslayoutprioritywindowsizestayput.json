@@ -1,0 +1,205 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Priority level for the window’s current size. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/view_layout",
+        "doc://com.apple.documentation/documentation/uikit/nslayoutconstraint",
+        "doc://com.apple.documentation/documentation/appkit/nslayoutpriority"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_layout",
+        "doc://com.apple.documentation/documentation/uikit/nslayoutconstraint",
+        "doc://com.apple.documentation/documentation/appkit/nslayoutpriority"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/appkit/nslayoutprioritywindowsizestayput",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1526895,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSLayoutPriorityWindowSizeStayPut",
+    "role": "symbol",
+    "roleHeading": "Global Variable",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@NSLayoutPriorityWindowSizeStayPut",
+    "symbolKind": "data"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nslayoutprioritywindowsizestayput"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/appkit/nslayoutconstraint/priority/1526895-windowsizestayput"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/view_layout": {
+      "title": "View Layout",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/view_layout",
+      "url": "/documentation/appkit/view_layout",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutconstraint": {
+      "title": "NSLayoutConstraint",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutconstraint",
+      "url": "/documentation/uikit/nslayoutconstraint",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nslayoutpriority": {
+      "title": "NSLayoutPriority",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nslayoutpriority",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nslayoutpriority"
+    },
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_layout": {
+      "title": "View Layout",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_layout",
+      "url": "/documentation/uikit/view_layout",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@NSLayoutPriority",
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nslayoutpriority",
+              "text": "NSLayoutPriority"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSLayoutPriorityWindowSizeStayPut"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It's generally not appropriate to make a constraint at exactly this priority. You want to be higher or lower. Constraints with higher priorities can adjust the window’s size. Constraints with lower priorities must be fulfilled using the current window size."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

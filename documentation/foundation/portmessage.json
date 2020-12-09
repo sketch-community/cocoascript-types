@@ -1,0 +1,875 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A low-level, operating system-independent type for inter-application (and inter-thread) messages."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime/distributed_objects_support"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/portmessage",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1415732,
+  "kind": "symbol",
+  "metadata": {
+    "title": "PortMessage",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSPortMessage",
+    "symbolKind": "cl",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "class "
+      },
+      {
+        "kind": "identifier",
+        "text": "PortMessage"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsportmessage"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/portmessage"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime": {
+      "title": "Object Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime",
+      "url": "/documentation/foundation/object_runtime",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime/distributed_objects_support": {
+      "title": "Distributed Objects Support",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime/distributed_objects_support",
+      "url": "/documentation/foundation/object_runtime/distributed_objects_support",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swift/true": {
+      "title": "true",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/true",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/true"
+    },
+    "doc://com.apple.documentation/documentation/swift/false": {
+      "title": "false",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/false",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/false"
+    },
+    "doc://com.apple.documentation/documentation/foundation/portmessage": {
+      "title": "PortMessage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/portmessage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A low-level, operating system-independent type for inter-application (and inter-thread) messages."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "PortMessage"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/port": {
+      "title": "Port",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/port",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/port"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsarray": {
+      "title": "NSArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata": {
+      "title": "NSData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata"
+    },
+    "doc://com.apple.documentation/documentation/foundation/portmessage/1407464-send": {
+      "title": "send(before:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1407464-send",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/portmessage/1407464-send",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attempts to send the message before "
+        },
+        {
+          "type": "codeVoice",
+          "code": "aDate"
+        },
+        {
+          "type": "text",
+          "text": ", returning "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/swift/true"
+        },
+        {
+          "type": "text",
+          "text": " if successful or "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/swift/false"
+        },
+        {
+          "type": "text",
+          "text": " if the operation times out."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "send"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "before"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsinvocation": {
+      "title": "NSInvocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsinvocation"
+    },
+    "doc://com.apple.documentation/documentation/foundation/portmessage/1407880-msgid": {
+      "title": "msgid",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1407880-msgid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/portmessage/1407880-msgid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the identifier for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "msgid"
+        },
+        {
+          "kind": "text",
+          "text": ": UInt32"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/swift/cvararg": {
+      "title": "CVarArg",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/cvararg"
+    },
+    "doc://com.apple.documentation/documentation/swift/equatable": {
+      "title": "Equatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/equatable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/portmessage/1417387-init": {
+      "title": "init(send:receive:components:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1417387-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/portmessage/1417387-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSPortMessage"
+        },
+        {
+          "type": "text",
+          "text": " object to send given data on a given port and to receiver replies on another given port."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "send"
+        },
+        {
+          "kind": "text",
+          "text": ": Port?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "receive"
+        },
+        {
+          "kind": "text",
+          "text": ": Port?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "components"
+        },
+        {
+          "kind": "text",
+          "text": ": [Any]?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/portmessage/1407377-components": {
+      "title": "components",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1407377-components",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/portmessage/1407377-components",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the data components of the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "components"
+        },
+        {
+          "kind": "text",
+          "text": ": [Any]?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/portmessage/1413908-receiveport": {
+      "title": "receivePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1413908-receiveport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/portmessage/1413908-receiveport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "For an outgoing message, returns the port on which replies to the receiver will arrive. For an incoming message, returns the port the receiver did arrive on."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "receivePort"
+        },
+        {
+          "kind": "text",
+          "text": ": Port?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/portmessage/1417234-sendport": {
+      "title": "sendPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1417234-sendport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/portmessage/1417234-sendport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "For an outgoing message, returns the port the receiver will send itself through. For an incoming message, returns the port replies to the receiver should be sent through."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "sendPort"
+        },
+        {
+          "kind": "text",
+          "text": ": Port?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmachportdelegate": {
+      "title": "NSMachPortDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmachportdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmachportdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for handling incoming Mach messages."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSMachPortDelegate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmachport": {
+      "title": "NSMachPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmachport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmachport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A port that can be used as an endpoint for distributed object connections (or raw messaging)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSMachPort"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/messageport": {
+      "title": "MessagePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/messageport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/messageport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A port that can be used as an endpoint for distributed object connections (or raw messaging)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "MessagePort"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/portdelegate": {
+      "title": "PortDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/portdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/portdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for handling incoming messages."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "PortDelegate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprotocolchecker": {
+      "title": "NSProtocolChecker",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprotocolchecker",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprotocolchecker",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that restricts the messages that can be sent to another object (referred to as the checker’s delegate)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSProtocolChecker"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/cvararg",
+        "doc://com.apple.documentation/documentation/swift/equatable",
+        "doc://com.apple.documentation/documentation/swift/hashable"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Instances",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/portmessage/1417387-init"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Sending the Message",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/portmessage/1407464-send"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/portmessage/1407377-components"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Ports",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/portmessage/1413908-receiveport",
+        "doc://com.apple.documentation/documentation/foundation/portmessage/1417234-sendport"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing the Message ID",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/portmessage/1407880-msgid"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsmachportdelegate",
+        "doc://com.apple.documentation/documentation/foundation/nsmachport",
+        "doc://com.apple.documentation/documentation/foundation/messageport",
+        "doc://com.apple.documentation/documentation/foundation/portdelegate",
+        "doc://com.apple.documentation/documentation/foundation/nsprotocolchecker"
+      ],
+      "title": "Legacy",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "PortMessage"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Port messages are used primarily by the distributed objects system. You should implement inter-application communication using distributed objects whenever possible and use "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage"
+            },
+            {
+              "type": "text",
+              "text": " only when necessary."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage"
+            },
+            {
+              "type": "text",
+              "text": " object has three major parts: the send and receive ports, which are "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/port"
+            },
+            {
+              "type": "text",
+              "text": " objects that link the sender of the message to the receiver, and the components, which form the body of the message. The components are held as an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray"
+            },
+            {
+              "type": "text",
+              "text": " object containing "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/port"
+            },
+            {
+              "type": "text",
+              "text": " objects. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1407464-send"
+            },
+            {
+              "type": "text",
+              "text": " message sends the components out through the send port; any replies to the message arrive on the receive port. See the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/port"
+            },
+            {
+              "type": "text",
+              "text": " class specification for information on handling incoming messages."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage"
+            },
+            {
+              "type": "text",
+              "text": " instance can be initialized with a pair of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/port"
+            },
+            {
+              "type": "text",
+              "text": " objects and an array of components. A port message's body can contain only "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/port"
+            },
+            {
+              "type": "text",
+              "text": " objects or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+            },
+            {
+              "type": "text",
+              "text": " objects. In the distributed objects system the byte/character arrays are usually encoded "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvocation"
+            },
+            {
+              "type": "text",
+              "text": " objects that are being forwarded from a proxy to the corresponding real object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage"
+            },
+            {
+              "type": "text",
+              "text": " object also maintains a message identifier, which can be used to indicate the class of a message, such as an Objective-C method invocation, a connection request, an error, and so on. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1407880-msgid"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/portmessage/1407880-msgid"
+            },
+            {
+              "type": "text",
+              "text": " methods to access the identifier."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

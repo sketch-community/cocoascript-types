@@ -1,0 +1,1013 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "CFStringTokenizer allows you to tokenize strings into words, sentences or paragraphs in a language-neutral way. It supports languages such as Japanese and Chinese that do not delimit words by spaces, as well as de-compounding German compounds. You can obtain Latin transcription for tokens. It also provides language identification API."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1666536,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFStringTokenizer",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfstringtokenizer"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfstringtokenizer-rf8"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542047-cfstringtokenizercreate": {
+      "title": "CFStringTokenizerCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542047-cfstringtokenizercreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542047-cfstringtokenizercreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a tokenizer for a given string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542487-cfstringtokenizergototokenatinde": {
+      "title": "CFStringTokenizerGoToTokenAtIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542487-cfstringtokenizergototokenatinde",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542487-cfstringtokenizergototokenatinde",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Finds a token that includes the character at a given index, and set it as the current token."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542065-cfstringtokenizeradvancetonextto": {
+      "title": "CFStringTokenizerAdvanceToNextToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542065-cfstringtokenizeradvancetonextto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542065-cfstringtokenizeradvancetonextto",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Advances the tokenizer to the next token and sets that as the current token."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1588024-tokenization_modifiers": {
+      "title": "Tokenization Modifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1588024-tokenization_modifiers",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/corefoundation/1588024-tokenization_modifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tokenization options are used with "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542047-cfstringtokenizercreate"
+        },
+        {
+          "type": "text",
+          "text": " to specify how the string should be tokenized"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542136-cfstringtokenizercopybeststringl": {
+      "title": "CFStringTokenizerCopyBestStringLanguage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542136-cfstringtokenizercopybeststringl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542136-cfstringtokenizercopybeststringl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Guesses a language of a given string and returns the guess as a BCP 47 string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542401-cfstringtokenizergetcurrenttoken": {
+      "title": "CFStringTokenizerGetCurrentTokenRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542401-cfstringtokenizergetcurrenttoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542401-cfstringtokenizergetcurrenttoken",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range of the current token."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542839-cfstringtokenizercopycurrenttoke": {
+      "title": "CFStringTokenizerCopyCurrentTokenAttribute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542839-cfstringtokenizercopycurrenttoke",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542839-cfstringtokenizercopycurrenttoke",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a given attribute of the current token."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542209-cfstringtokenizergetcurrentsubto": {
+      "title": "CFStringTokenizerGetCurrentSubTokens",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542209-cfstringtokenizergetcurrentsubto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542209-cfstringtokenizergetcurrentsubto",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the subtokens or derived subtokens contained in the compound token."
+        }
+      ]
+    },
+    "devLink-1696125": {
+      "identifier": "devLink-1696125",
+      "type": "link",
+      "title": "String Programming Guide for Core Foundation",
+      "url": "https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/introCFStrings.html#//apple_ref/doc/uid/10000131i"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542907-cfstringtokenizersetstring": {
+      "title": "CFStringTokenizerSetString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542907-cfstringtokenizersetstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542907-cfstringtokenizersetstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the string for a tokenizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541794-cfstringtokenizergettypeid": {
+      "title": "CFStringTokenizerGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541794-cfstringtokenizergettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541794-cfstringtokenizergettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type ID for CFStringTokenizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizerref": {
+      "title": "CFStringTokenizerRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizerref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringtokenizerref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a CFStringTokenizer object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizertokentype": {
+      "title": "CFStringTokenizerTokenType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizertokentype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringtokenizertokentype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Token types returned by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542487-cfstringtokenizergototokenatinde"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542065-cfstringtokenizeradvancetonextto"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocator": {
+      "title": "CFAllocator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocator",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfallocator"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfarray": {
+      "title": "CFArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfarray",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfarray"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring": {
+      "title": "CFAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfattributedstring"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbag": {
+      "title": "CFBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbag",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbag"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap": {
+      "title": "CFBinaryHeap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbinaryheap"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbitvector": {
+      "title": "CFBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbitvector",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbitvector"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfboolean": {
+      "title": "CFBoolean",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfboolean",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfboolean"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbundle": {
+      "title": "CFBundle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbundle",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbundle"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcalendar": {
+      "title": "CFCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcalendar",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcalendar"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset": {
+      "title": "CFCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcharacterset"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdata": {
+      "title": "CFData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdata",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdata"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdate": {
+      "title": "CFDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdate",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdate"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter": {
+      "title": "CFDateFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdateformatter"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdictionary": {
+      "title": "CFDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionary",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdictionary"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cferror": {
+      "title": "CFError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cferror",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cferror"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor": {
+      "title": "CFFileDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cffiledescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The CFFileDescriptor provides an opaque type to monitor file descriptors for read and write activity via CFRunLoop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cflocale": {
+      "title": "CFLocale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cflocale",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cflocale"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmachport": {
+      "title": "CFMachPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmachport",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmachport"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmessageport": {
+      "title": "CFMessagePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmessageport",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmessageport"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray": {
+      "title": "CFMutableArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablearray"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring": {
+      "title": "CFMutableAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableattributedstring"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag": {
+      "title": "CFMutableBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebag"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector": {
+      "title": "CFMutableBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebitvector"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset": {
+      "title": "CFMutableCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablecharacterset"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata": {
+      "title": "CFMutableData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledata"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary": {
+      "title": "CFMutableDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledictionary"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableset": {
+      "title": "CFMutableSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableset",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableset"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring": {
+      "title": "CFMutableString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablestring"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter": {
+      "title": "CFNotificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnotificationcenter"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnull": {
+      "title": "CFNull",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnull",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnull"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumber": {
+      "title": "CFNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumber",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumber"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter": {
+      "title": "CFNumberFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumberformatter"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugin": {
+      "title": "CFPlugIn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugin",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugin"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance": {
+      "title": "CFPlugInInstance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugininstance"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist": {
+      "title": "CFPropertyList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfpropertylist"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfreadstream": {
+      "title": "CFReadStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfreadstream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfreadstream"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop": {
+      "title": "CFRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloop"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver": {
+      "title": "CFRunLoopObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopobserver"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource": {
+      "title": "CFRunLoopSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopsource"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer": {
+      "title": "CFRunLoopTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunlooptimer"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfset": {
+      "title": "CFSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfset",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfset"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket": {
+      "title": "CFSocket",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfsocket"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstring": {
+      "title": "CFString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstring"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer": {
+      "title": "CFStringTokenizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstringtokenizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "CFStringTokenizer allows you to tokenize strings into words, sentences or paragraphs in a language-neutral way. It supports languages such as Japanese and Chinese that do not delimit words by spaces, as well as de-compounding German compounds. You can obtain Latin transcription for tokens. It also provides language identification API."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftimezone": {
+      "title": "CFTimeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftimezone",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftimezone"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftree": {
+      "title": "CFTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftree",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftree"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftype": {
+      "title": "CFType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftype",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftype"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfurl": {
+      "title": "CFURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurl",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfurl"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification": {
+      "title": "CFUserNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfuuid": {
+      "title": "CFUUID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfuuid",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfuuid"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfwritestream": {
+      "title": "CFWriteStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfwritestream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfwritestream"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode": {
+      "title": "CFXMLNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlnode"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser": {
+      "title": "CFXMLParser",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlparser"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmltree": {
+      "title": "CFXMLTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmltree",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmltree"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Tokenizer",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542047-cfstringtokenizercreate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting the String",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542907-cfstringtokenizersetstring"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Changing the Location",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542065-cfstringtokenizeradvancetonextto",
+        "doc://com.apple.documentation/documentation/corefoundation/1542487-cfstringtokenizergototokenatinde"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Information About the Current Token",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542839-cfstringtokenizercopycurrenttoke",
+        "doc://com.apple.documentation/documentation/corefoundation/1542401-cfstringtokenizergetcurrenttoken",
+        "doc://com.apple.documentation/documentation/corefoundation/1542209-cfstringtokenizergetcurrentsubto"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Identifying a Language",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542136-cfstringtokenizercopybeststringl"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the CFStringTokenizer Type ID",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1541794-cfstringtokenizergettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizerref"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1588024-tokenization_modifiers",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizertokentype"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocator",
+        "doc://com.apple.documentation/documentation/corefoundation/cfarray",
+        "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbag",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbitvector",
+        "doc://com.apple.documentation/documentation/corefoundation/cfboolean",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbundle",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcalendar",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdata",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdate",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdictionary",
+        "doc://com.apple.documentation/documentation/corefoundation/cferror",
+        "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor",
+        "doc://com.apple.documentation/documentation/corefoundation/cflocale",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmachport",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmessageport",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableset",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnull",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumber",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugin",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance",
+        "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist",
+        "doc://com.apple.documentation/documentation/corefoundation/cfreadstream",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloop",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer",
+        "doc://com.apple.documentation/documentation/corefoundation/cfset",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocket",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstring",
+        "doc://com.apple.documentation/documentation/corefoundation/cftimezone",
+        "doc://com.apple.documentation/documentation/corefoundation/cftree",
+        "doc://com.apple.documentation/documentation/corefoundation/cftype",
+        "doc://com.apple.documentation/documentation/corefoundation/cfurl",
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification",
+        "doc://com.apple.documentation/documentation/corefoundation/cfuuid",
+        "doc://com.apple.documentation/documentation/corefoundation/cfwritestream",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmltree"
+      ],
+      "title": "Opaque Types",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1696125"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use a CFStringTokenizer to break a string into tokens (sub-strings) on the basis of words, sentences, or paragraphs. When you create a tokenizer, you can supply options to further modify the tokenization—see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1588024-tokenization_modifiers"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition, with CFStringTokenizer:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can de-compound German compounds"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can identify the language used in a string (using "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542136-cfstringtokenizercopybeststringl"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can obtain Latin transcription for tokens"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To find a token that includes the character specified by character index and set it as the current token, you call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542487-cfstringtokenizergototokenatinde"
+            },
+            {
+              "type": "text",
+              "text": ". To advance to the next token and set it as the current token, you call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542065-cfstringtokenizeradvancetonextto"
+            },
+            {
+              "type": "text",
+              "text": ". To get the range of current token, you call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542401-cfstringtokenizergetcurrenttoken"
+            },
+            {
+              "type": "text",
+              "text": ". You can use         "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542839-cfstringtokenizercopycurrenttoke"
+            },
+            {
+              "type": "text",
+              "text": " to get the attribute of the current token. If the current token is a compound, you can call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542209-cfstringtokenizergetcurrentsubto"
+            },
+            {
+              "type": "text",
+              "text": " to retrieve the subtokens or derived subtokens contained in the compound token. To guess the language of a string, you call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542136-cfstringtokenizercopybeststringl"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

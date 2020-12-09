@@ -1,0 +1,739 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Display and customize watch-specific shortcut information with a default card template."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3030279,
+  "kind": "article",
+  "metadata": {
+    "title": "Displaying Shortcut Information in a Siri Watch Face Card",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face": {
+      "title": "Relevant Shortcuts for the Siri Watch Face",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
+      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintent": {
+      "title": "INIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintent/2976224-setimage": {
+      "title": "setImage:forParameterNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent/2976224-setimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintent/2976224-setimage",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setImage:forParameterNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inimage": {
+      "title": "INImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inimage"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030282": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030282",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030282",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set image for a order soup intent in the Soup Chef sample app"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset": {
+      "title": "CSSearchableItemAttributeSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621584-contentdescription": {
+      "title": "contentDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621584-contentdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621584-contentdescription"
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata": {
+      "title": "thumbnailData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030285": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030285",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030285",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set the title, subtitle, and image for the NSUserActivity object"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993346-watchtemplate": {
+      "title": "watchTemplate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993346-watchtemplate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcut/2993346-watchtemplate"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962954-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962954-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indefaultcardtemplate/2962954-title"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962953-subtitle": {
+      "title": "subtitle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962953-subtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indefaultcardtemplate/2962953-subtitle"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962951-image": {
+      "title": "image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962951-image",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indefaultcardtemplate/2962951-image"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030286": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030286",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030286",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set the template for an order intent in the Soup Chef sample app"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts": {
+      "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make it easy for people to use Siri with your app by providing shortcuts to your app’s actions."
+        }
+      ]
+    },
+    "link-media-3030287": {
+      "identifier": "link-media-3030287",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030287"
+    },
+    "media-3030287": {
+      "identifier": "media-3030287",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 247,
+            "height": 432
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2a76320337/c13e1089-bc22-4ecc-93df-8e6897f03a25.png"
+        }
+      ],
+      "alt": "A screenshot of the Siri watch face suggesting the order lunch relevant shortcut.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Siri watch face suggesting a relevant shortcut from Soup Chef"
+        }
+      ]
+    },
+    "link-media-3030290": {
+      "identifier": "link-media-3030290",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030290"
+    },
+    "media-3030290": {
+      "identifier": "media-3030290",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 657,
+            "height": 305
+          },
+          "url": "https://docs-assets.developer.apple.com/published/11ad1ad1a7/00233f7a-5a19-40c4-87bc-47dce381c630.png"
+        }
+      ],
+      "alt": "An image showing four layouts for a Siri watch face card. The first layouts shows a title, subtitle, and image. The second layout shows a title and subtitle. The third layout shows a title and image. The fourth layout shows the title only, wrapping to two lines.",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Example of the Siri watch face card layouts"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate": {
+      "title": "INDefaultCardTemplate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indefaultcardtemplate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A card template for customizing the Siri watch face for a shortcut."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card": {
+      "title": "Displaying Shortcut Information in a Siri Watch Face Card",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display and customize watch-specific shortcut information with a default card template."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate"
+      ],
+      "title": "Siri Watch Face Cards",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Siri watch face displays a relevant shortcut in a card that can provide the following information:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "App icon and name (supplied by the system)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Title, subtitle, and custom image (supplied by the intent or user activity used to create the shortcut, or by an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display Intent-Based Shortcuts",
+          "anchor": "3030280"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When your app uses an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent"
+            },
+            {
+              "type": "text",
+              "text": " object to create the shortcut, the system retrieves the intent’s title and subtitle from the intent settings defined in the intent definition file. To include an image, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent/2976224-setimage"
+            },
+            {
+              "type": "text",
+              "text": " on the intent and pass in an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inimage"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "orderSoupIntent.setImage(INImage(named: menuItem.iconImageName), forParameterNamed: \\OrderSoupIntent.soup)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3030282",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Set image for a order soup intent in the Soup Chef sample app"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display User Activity-Based Shortcuts",
+          "anchor": "3030281"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When your app uses an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " object to create the shortcut, the system retrieves the title from the title property of the user activity. To specify a subtitle, create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset"
+            },
+            {
+              "type": "text",
+              "text": " with the content type of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kUTTypeItem"
+            },
+            {
+              "type": "text",
+              "text": ", and set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621584-contentdescription"
+            },
+            {
+              "type": "text",
+              "text": " property. To include an image, set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata"
+            },
+            {
+              "type": "text",
+              "text": " on the attribute set."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "import CoreSpotlight",
+            "import MobileCoreServices",
+            "",
+            "let userActivity = NSUserActivity(activityType: \"com.myapp.myactivity\")",
+            "userActivity.title = \"Title\"",
+            "",
+            "let attributes = CSSearchableItemAttributeSet(itemContentType: kUTTypeItem as String)",
+            "attributes.contentDescription = \"Subtitle\"",
+            "attributes.thumbnailData =  imageLiteral(resourceName: \"custom-image\").pngData()",
+            "",
+            "userActivity.contentAttributeSet = attributes"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3030285",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Set the title, subtitle, and image for the NSUserActivity object"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Card Templates",
+          "anchor": "3030283"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you want to show a UI specific to the watch—for example, to display a shortcut's title that is shorter than the one Siri displays on the user's iPhone or iPad—provide the relevant shortcut a default card template by setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993346-watchtemplate"
+            },
+            {
+              "type": "text",
+              "text": " property. The template allows your app to customize the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962954-title"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962953-subtitle"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962951-image"
+            },
+            {
+              "type": "text",
+              "text": ". (You cannot change or remove the app icon and name shown in the card.)"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let order = Order(quantity: 1, menuItem: menuItem, menuItemOptions: [])",
+            "let orderIntent = order.intent",
+            "",
+            "guard let shortcut = INShortcut(intent: orderIntent) else { return nil }",
+            "",
+            "let suggestedShortcut = INRelevantShortcut(shortcut: shortcut)",
+            "",
+            "let localizedTitle = NSString.deferredLocalizedIntentsString(with: \"ORDER_LUNCH_TITLE\") as String",
+            "let template = INDefaultCardTemplate(title: localizedTitle)",
+            "template.subtitle = NSString.deferredLocalizedIntentsString(with: menuItem.shortcutNameKey + \"_SUBTITLE\") as String",
+            "template.image = INImage(named: menuItem.iconImageName)",
+            "",
+            "suggestedShortcut.watchTemplate = template"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3030286",
+            "title": "Listing 3",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Set the template for an order intent in the Soup Chef sample app"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face/displaying_shortcut_information_in_a_siri_watch_face_card#3030286"
+            },
+            {
+              "type": "text",
+              "text": " creates the Siri watch face card shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3030287"
+            },
+            {
+              "type": "text",
+              "text": ". To download the complete sample code, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3030287",
+              "metadata": {
+                "anchor": "3030287",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Siri watch face suggesting a relevant shortcut from Soup Chef"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system displays the information in one of four layouts based on the information your app provides in the card template. For instance, if you don’t provide an image, the system uses a layout that displays only the title and subtitle fields. And if you provide only the title, the system uses a layout that can wrap the title on two lines. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3030290",
+              "metadata": {
+                "anchor": "3030290",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Example of the Siri watch face card layouts"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

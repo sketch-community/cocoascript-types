@@ -1,0 +1,787 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Load data for collection view cells before they are displayed."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2916304,
+  "kind": "article",
+  "metadata": {
+    "title": "Prefetching Collection View Data",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching": {
+      "title": "UICollectionViewDataSourcePrefetching",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview": {
+      "title": "UICollectionView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561982": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561982",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561982"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618091-datasource": {
+      "title": "dataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618091-datasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618091-datasource"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771768-prefetchdatasource": {
+      "title": "prefetchDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771768-prefetchdatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1771768-prefetchdatasource"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561983": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561983",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561983"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561985": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561985",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561985"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation": {
+      "title": "NSOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue": {
+      "title": "NSOperationQueue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperationqueue"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561986": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561986",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561986"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561988": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561988",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561988"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/1771769-collectionview": {
+      "title": "collectionView:cancelPrefetchingForItemsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/1771769-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/1771769-collectionview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels a previously triggered data prefetch request."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:cancelPrefetchingForItemsAtIndexPaths:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561990": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561990",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561990"
+    },
+    "link-media-3561980": {
+      "identifier": "link-media-3561980",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data#3561980"
+    },
+    "media-3561980": {
+      "identifier": "media-3561980",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 538,
+            "height": 518
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4962975fef/8cd7feb6-2d44-4250-958e-7e56335d98fc.png"
+        }
+      ],
+      "alt": "CollectionViewPrefetching.app",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data": {
+      "title": "Prefetching Collection View Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/prefetching_collection_view_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Load data for collection view cells before they are displayed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/1771767-collectionview": {
+      "title": "collectionView:prefetchItemsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/1771767-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching/1771767-collectionview",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells your prefetch data source object to begin preparing data for the cells at the supplied index paths."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:prefetchItemsAtIndexPaths:"
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/6ed8dcf619/PrefetchingCollectionViewData.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/6ed8dcf619/PrefetchingCollectionViewData.zip",
+      "checksum": "b65bfd54711fd20327b0ec5a04585a6c03c1070bdb1ecd56ea8f81b1d483f5b348edfc90d230b7ce7440652ffc5704928d5f7403b20da259949ce0fe947725f9",
+      "url": "https://docs-assets.developer.apple.com/published/6ed8dcf619/PrefetchingCollectionViewData.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/6ed8dcf619/PrefetchingCollectionViewData.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/1771767-collectionview",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/1771769-collectionview"
+      ],
+      "title": "Managing Data Prefetching",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A collection view displays an ordered collection of cells in customizable layouts. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching"
+            },
+            {
+              "type": "text",
+              "text": " protocol helps provide a smoother user experience by prefetching the data necessary for upcoming collection view cells. When you enable prefetching, the collection view requests the data before it needs to display the cell. When it’s time to display the cell, the data is already locally cached."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The image below shows cells outside the bounds of the collection view that have been prefetched."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561980",
+              "metadata": {
+                "anchor": "3561980",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The storyboard used in this project contains a collection view controller whose collection view has Clips To Bounds disabled. With this configuration, you can visualize the cells before they would normally be displayed."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable Prefetching",
+          "anchor": "3561993"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The root view controller uses an instance of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CustomDataSource"
+            },
+            {
+              "type": "text",
+              "text": " class to provide data to its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview"
+            },
+            {
+              "type": "text",
+              "text": " instance. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CustomDataSource"
+            },
+            {
+              "type": "text",
+              "text": " class implements the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UICollectionViewDataSourcePrefetching"
+            },
+            {
+              "type": "text",
+              "text": " protocol to begin fetching the data required to populate cells."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class CustomDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDataSourcePrefetching {"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561982",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to assigning the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CustomDataSource"
+            },
+            {
+              "type": "text",
+              "text": " instance to the collection view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618091-datasource"
+            },
+            {
+              "type": "text",
+              "text": " property, you must also assign it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771768-prefetchdatasource"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Set the collection view's data source.",
+            "collectionView.dataSource = dataSource",
+            "",
+            "// Set the collection view's prefetching data source.",
+            "collectionView.prefetchDataSource = dataSource"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561983",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Load Data Asynchronously",
+          "anchor": "3561994"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use data prefetching when loading data is a slow or expensive process—for example, when fetching data over the network. In these circumstances, perform data loading asynchronously. In this sample, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AsyncFetcher"
+            },
+            {
+              "type": "text",
+              "text": " class is used to fetch data asynchronously, simulating a network request."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First, implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching"
+            },
+            {
+              "type": "text",
+              "text": " prefetch method, invoking the appropriate method on the async fetcher:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {",
+            "    // Begin asynchronously fetching data for the requested index paths.",
+            "    for indexPath in indexPaths {",
+            "        let model = models[indexPath.row]",
+            "        asyncFetcher.fetchAsync(model.identifier)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561985",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Create your own version of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "AsyncFetcher"
+                },
+                {
+                  "type": "text",
+                  "text": " to fit your requirements. The implementation in this sample makes heavy use of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue"
+                },
+                {
+                  "type": "text",
+                  "text": ", leveraging their ability to handle thread safety and cancellation. It’s recommended that you consider a similar approach."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When prefetching is complete, the cell’s data is added to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AsyncFetcher"
+            },
+            {
+              "type": "text",
+              "text": "‘s cache, so it’s ready to be used when the cell is displayed. The cell’s background color changes from white to red when data is available for that cell."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/**",
+            " Configures the cell for display based on the model.",
+            " ",
+            " - Parameters:",
+            "     - data: An optional `DisplayData` object to display.",
+            " ",
+            " - Tag: Cell_Config",
+            "*/",
+            "func configure(with data: DisplayData?) {",
+            "    backgroundColor = data?.color",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561986",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Populate Cells for Display",
+          "anchor": "3561995"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before populating a cell, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CustomDataSource"
+            },
+            {
+              "type": "text",
+              "text": " first checks for any prefetched data that it can use. If none is available, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CustomDataSource"
+            },
+            {
+              "type": "text",
+              "text": " makes a fetch request and the cell is updated in the fetch request’s completion handler."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {",
+            "    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.reuseIdentifier, for: indexPath) as? Cell else {",
+            "        fatalError(\"Expected `\\(Cell.self)` type for reuseIdentifier \\(Cell.reuseIdentifier). Check the configuration in Main.storyboard.\")",
+            "    }",
+            "    ",
+            "    let model = models[indexPath.row]",
+            "    let identifier = model.identifier",
+            "    cell.representedIdentifier = identifier",
+            "    ",
+            "    // Check if the `asyncFetcher` has already fetched data for the specified identifier.",
+            "    if let fetchedData = asyncFetcher.fetchedData(for: identifier) {",
+            "        // The data has already been fetched and cached; use it to configure the cell.",
+            "        cell.configure(with: fetchedData)",
+            "    } else {",
+            "        // There is no data available; clear the cell until we've fetched data.",
+            "        cell.configure(with: nil)",
+            "",
+            "        // Ask the `asyncFetcher` to fetch data for the specified identifier.",
+            "        asyncFetcher.fetchAsync(identifier) { fetchedData in",
+            "            DispatchQueue.main.async {",
+            "                /*",
+            "                 The `asyncFetcher` has fetched data for the identifier. Before",
+            "                 updating the cell, check if it has been recycled by the",
+            "                 collection view to represent other data.",
+            "                 */",
+            "                guard cell.representedIdentifier == identifier else { return }",
+            "                ",
+            "                // Configure the cell with the fetched image.",
+            "                cell.configure(with: fetchedData)",
+            "            }",
+            "        }",
+            "    }",
+            "",
+            "    return cell",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561988",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Cancel Unnecessary Fetches",
+          "anchor": "3561996"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching/1771769-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " delegate method to cancel any in-progress data fetches that are no longer required. An example of how to handle this is taken from the sample and shown below."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {",
+            "    // Cancel any in-flight requests for data for the specified index paths.",
+            "    for indexPath in indexPaths {",
+            "        let model = models[indexPath.row]",
+            "        asyncFetcher.cancelFetch(model.identifier)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561990",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

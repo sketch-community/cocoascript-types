@@ -1,0 +1,448 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Configure your Xcode project to include an Intents UI app extension that you use to customize the Siri and Maps interfaces."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2882501,
+  "kind": "article",
+  "metadata": {
+    "title": "Configuring Your Intents UI App Extension Target",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension": {
+      "title": "Creating an Intents UI Extension",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target": {
+      "title": "Configuring Your Intents UI App Extension Target",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension/configuring_your_intents_ui_app_extension_target",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your Xcode project to include an Intents UI app extension that you use to customize the Siri and Maps interfaces."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface": {
+      "title": "Configuring the View Controller for Your Custom Interface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your view controller to replace or augment the default interface in Siri or Maps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension/configuring_the_view_controller_for_your_custom_interface"
+      ],
+      "title": "Configuration",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An app may have one or more Intents UI app extensions to manage the custom interfaces for its intents. Each extension has a single view controller class that provides the interface for the supported intents. To set up each Intents UI app extension, you must add a custom target to your Xcode project and configure its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file with the intents that it supports."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add an Intents UI App Extension to Your Xcode Project",
+          "anchor": "2864305"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When creating your Intents app extension, you can ask Xcode to create an Intents UI extension at the same time. If you didn’t do that, you can add an Intents UI extension to your project later:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open your iOS app project in Xcode."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose File > New > Target."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select Intents UI extension from the iOS Application Extension group."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Next."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify the name of your extension and configure the language and other options."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Finish."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Xcode template includes a storyboard and a single view controller. Siri and Maps always load and display the initial view controller in your extension’s storyboard file, so configure that view controller with your content. You’re responsible for managing all interactions between the initial view controller and the rest of your content. Typically, you add custom views to the initial view controller scene, but you might also embed child view controllers so that you can display different content for each of your intents."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify the Intents that Your Extension Supports",
+          "anchor": "2864308"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After adding your Intents UI app extension target to your project, configure the default "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file provided by Xcode to specify which intents should use your custom interface. SiriKit uses the information in your extension’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file to determine when to load your custom view controller."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Xcode, select the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Info.plist"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file of your intents app extension."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Expand the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSExtension"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSExtensionAttributes"
+                    },
+                    {
+                      "type": "text",
+                      "text": " keys."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "IntentsSupported"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key, add a String item for each intent that your extension handles. Set the value of each item to the class name of the intent."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSExtensionMainStoryboard"
+            },
+            {
+              "type": "text",
+              "text": " key in your "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file contains the name of the storyboard containing your view controller. If you change the name of your storyboard file, remember to update the value of this key. If you prefer to create your view controller programmatically, replace this key with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSExtensionPrincipalClass"
+            },
+            {
+              "type": "text",
+              "text": " key, and set the value to the name of your view controller class."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSExtensionMainStoryboard"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSExtensionPrincipalClass"
+                },
+                {
+                  "type": "text",
+                  "text": " keys are mutually exclusive. If both keys appear in the extension’s "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": " file, the system won’t load the extension."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

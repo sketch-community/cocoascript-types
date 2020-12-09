@@ -1,0 +1,667 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Enable your App Clip to schedule and receive notifications for a short or extended time period."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/app_clips"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/app_clips/enabling_notifications_in_app_clips",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3586901,
+  "kind": "article",
+  "metadata": {
+    "title": "Enabling Notifications in App Clips",
+    "role": "article",
+    "roleHeading": "Article"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/enabling_notifications_in_app_clips"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/enabling_notifications_in_app_clips"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/app_clips": {
+      "title": "App Clips",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips",
+      "url": "/documentation/app_clips",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip": {
+      "title": "NSAppClip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list/nsappclip"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestephemeralusernotification": {
+      "title": "NSAppClipRequestEphemeralUserNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestephemeralusernotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestephemeralusernotification"
+    },
+    "link-media-3663318": {
+      "identifier": "link-media-3663318",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/app_clips/enabling_notifications_in_app_clips#3663318"
+    },
+    "media-3663318": {
+      "identifier": "media-3663318",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 972,
+            "height": 410
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1d5f9441c5/original-1595291482.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 972,
+            "height": 410
+          },
+          "url": "https://docs-assets.developer.apple.com/published/16a84613b2/rendered2x-1595291483.png"
+        }
+      ],
+      "alt": "An Info.plist file with the entry that allows the App Clip to send notifications for a short time.",
+      "title": "Figure 1"
+    },
+    "link-media-3669501": {
+      "identifier": "link-media-3669501",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/app_clips/enabling_notifications_in_app_clips#3669501"
+    },
+    "media-3669501": {
+      "identifier": "media-3669501",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 384,
+            "height": 441
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9e960d5888/rendered2x-1596150536.png"
+        }
+      ],
+      "alt": "An App Clip card for an App Clip that can send notifications.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/enabling_notifications_in_app_clips#3632911": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/enabling_notifications_in_app_clips#3632911",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/enabling_notifications_in_app_clips#3632911"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/asking_permission_to_use_notifications": {
+      "title": "Asking Permission to Use Notifications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/asking_permission_to_use_notifications",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/usernotifications/asking_permission_to_use_notifications"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/enabling_notifications_in_app_clips#3632909": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/enabling_notifications_in_app_clips#3632909",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/enabling_notifications_in_app_clips#3632909"
+    },
+    "link-3599704": {
+      "title": "App Store Connect",
+      "type": "topic",
+      "identifier": "link-3599704",
+      "kind": "article",
+      "role": "link",
+      "url": "https://appstoreconnect.apple.com/login"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/unnotificationcontent/3235764-targetcontentidentifier": {
+      "title": "targetContentIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/unnotificationcontent/3235764-targetcontentidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/usernotifications/unnotificationcontent/3235764-targetcontentidentifier"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience": {
+      "title": "Configuring Your App Clip’s Launch Experience",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/configuring_your_app_clip_s_launch_experience"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification": {
+      "title": "Generating a Remote Notification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/scheduling_a_notification_locally_from_your_app": {
+      "title": "Scheduling a Notification Locally from Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/scheduling_a_notification_locally_from_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/usernotifications/scheduling_a_notification_locally_from_your_app"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/enabling_notifications_in_app_clips": {
+      "title": "Enabling Notifications in App Clips",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/enabling_notifications_in_app_clips",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/enabling_notifications_in_app_clips",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enable your App Clip to schedule and receive notifications for a short or extended time period."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some App Clips may need to schedule or receive notifications to provide value. Consider an App Clip that allows users to order food for delivery: By sending notifications, the App Clip informs the user about an upcoming delivery. If notifications are important for your App Clip’s functionality, enable it to schedule or receive notifications for up to 8 hours after each launch. Additionally, if you create an App Clip for multiple businesses, be sure to make changes to your notification payloads."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Schedule or Receive Notifications Temporarily",
+          "anchor": "3604130"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To enable your App Clip to schedule or receive notifications for up to 8 hours after each launch, first add the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip"
+            },
+            {
+              "type": "text",
+              "text": " key to your App Clip’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file and set its type to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Dictionary"
+            },
+            {
+              "type": "text",
+              "text": ". Then, add an entry to the dictionary with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestephemeralusernotification"
+            },
+            {
+              "type": "text",
+              "text": " key. Set its type to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Boolean"
+            },
+            {
+              "type": "text",
+              "text": " and its value to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, open the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSAppClip"
+            },
+            {
+              "type": "text",
+              "text": " key and two entries of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Boolean"
+            },
+            {
+              "type": "text",
+              "text": " to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation”. Per default, the value for both entries is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NO"
+            },
+            {
+              "type": "text",
+              "text": ". Change the value for “Requests ephemeral user notifications” to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "YES"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3663318",
+              "metadata": {
+                "anchor": "3663318",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As a result, the App Clip card that’s displayed upon invocation of the App Clip contains a note that tells the user about the App Clip’s ability to receive or schedule notifications. This permission is enabled by default, but users can disable it by tapping the note on the App Clip card."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3669501",
+              "metadata": {
+                "anchor": "3669501",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because users can disable notifications in the App Clip card, add code to check whether the App Clip has permission to schedule and receive notifications. The following code checks whether the user has granted permission to send notifications for a short amount of time:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let center = UNUserNotificationCenter.current()",
+            "center.getNotificationSettings { (settings) in {",
+            "    if settings.authorizationStatus == .ephemeral {",
+            "",
+            "        // The user didn't disable notifications in the App Clip card.",
+            "        // Add code for scheduling or receiving notifications here.",
+            "        return",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3632911",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Request Explicit Permission to Send Notifications",
+          "anchor": "3615608"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your App Clip’s functionality spans more than a day, explicitly request the user’s permission to send notifications. For example, a car rental company’s App Clip can ask for permission to receive notifications that remind users when they need to return a rented car."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "However, carefully consider whether you should ask for this permission. Users could deny the request, overriding the App Clip’s ability to receive and schedule notifications for up to 8 hours after each launch."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/asking_permission_to_use_notifications"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Make Changes to Your Notification Payload",
+          "anchor": "3632908"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You may create an App Clip for multiple businesses. For example, you may be a platform provider for restaurants and create an App Clip that serves many different restaurants. If a user launches the App Clip consecutively for several different businesses within a short amount of time, multiple instances of the App Clip may exist on their device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this case, when it receives a notification, the system needs to route the notification to the appropriate App Clip instance. As a result, the system requires notification payloads to contain a URL as the target content identifier. The following code shows the notification payload for an App Clip that serves multiple businesses:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "{",
+            "    \"aps\" : {",
+            "        \"alert\" : {",
+            "            \"title\" : \"Order Status\",",
+            "            \"subtitle\" : \"Restaurant A\",",
+            "            \"body\" : \"Your order is ready.\"",
+            "        },",
+            "        \"category\" : \"order_status\",",
+            "        \"target-content-id\" : \"https://example.com/restaurants/restaurant_a/order/1234\"",
+            "    }",
+            "} "
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3632909",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The value for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "target-content-id"
+            },
+            {
+              "type": "text",
+              "text": " must be a URL that matches a corresponding advanced App Clip experience. For the restaurant example, you’d register both URLs in "
+            },
+            {
+              "type": "link",
+              "title": "App Store Connect",
+              "destination": "https://appstoreconnect.apple.com/login"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "https://example.com/restaurants/restaurant_a"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "https://example.com/restaurants/restaurant_b"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The invocation URLs and target content identifiers could then be:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "https://example.com/restaurants/restaurant_a/order/1234"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "https://example.com/restaurants/restaurant_b/order/5678"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In general, use a target content identifier that’s as specific as possible. Similarly, if you enable your App Clip to schedule local notifications, set the target content identifier for the notification payload; for example, using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/unnotificationcontent/3235764-targetcontentidentifier"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/scheduling_a_notification_locally_from_your_app"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

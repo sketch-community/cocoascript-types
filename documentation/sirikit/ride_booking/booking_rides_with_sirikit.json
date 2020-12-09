@@ -1,0 +1,963 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add Intents extensions to your app to handle requests to book rides using Siri and Maps."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3368968,
+  "kind": "article",
+  "metadata": {
+    "title": "Booking Rides with SiriKit",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/ride_booking/booking_rides_with_sirikit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/ride_booking/booking_rides_with_sirikit"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking": {
+      "title": "Ride Booking",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+      "url": "/documentation/sirikit/ride_booking",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling": {
+      "title": "INRequestRideIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrequestrideintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380065": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380065",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380065"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponse": {
+      "title": "INRequestRideIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrequestrideintentresponse"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridestatus": {
+      "title": "INRideStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridestatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridestatus"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380066": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380066",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380066"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380067": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380067",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380067"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling": {
+      "title": "INListRideOptionsIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistrideoptionsintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrideoption": {
+      "title": "INRideOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrideoption"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380069": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380069",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/ride_booking/booking_rides_with_sirikit#3380069"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintent": {
+      "title": "INGetRideStatusIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetridestatusintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent": {
+      "title": "INListRideOptionsIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistrideoptionsintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent": {
+      "title": "INRequestRideIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrequestrideintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling": {
+      "title": "INUIHostedViewControlling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inuihostedviewcontrolling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension": {
+      "title": "Creating an Intents App Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_app_extension"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintenthandling": {
+      "title": "INGetRideStatusIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetridestatusintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents": {
+      "title": "Handling the Ride-Booking Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/ride_booking/handling_the_ride-booking_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Understand how Siri and Maps generate ride-booking intents and learn tips about how to handle those intents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit": {
+      "title": "Booking Rides with SiriKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/ride_booking/booking_rides_with_sirikit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add Intents extensions to your app to handle requests to book rides using Siri and Maps."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/d4f8f6cb2d/BookingRidesWithSiriKit.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/d4f8f6cb2d/BookingRidesWithSiriKit.zip",
+      "checksum": "a318b483b51aee2c30b3a69f3f4ee794498c570316100f06ea9e526cff9013f0fd59f03fa72ea3904def055b7e4e68243edeabfcb3b7c9ee998399c21e677645",
+      "url": "https://docs-assets.developer.apple.com/published/d4f8f6cb2d/BookingRidesWithSiriKit.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/d4f8f6cb2d/BookingRidesWithSiriKit.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents"
+      ],
+      "title": "First Steps",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The app in this sample project demonstrates how to use app extensions to give users the ability to book rides through Siri and Maps. App extensions implement the necessary intent-handling protocols for the ride-booking domain."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about the general process of adding an Intents extension to your app, including how to enable the Siri capability and configure the NSExtension keys in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "GetRideStatusHandler"
+            },
+            {
+              "type": "text",
+              "text": " class, which conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintenthandling"
+            },
+            {
+              "type": "text",
+              "text": " protocol, contains comments to help you implement the ridesharing domain for your server. It does not include implementation, but has hints about where to perform certain implementation tasks."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Test the Sample Code Project",
+          "anchor": "3380073"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can run this sample app in the iOS simulator without special setup. However, a few steps are required to test the app’s functionalities."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To test the app for booking a ride with Siri, launch Siri and say one of the possible commands. Here are a few to get you started:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "“Book a ride”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "“Book a ride to San Francisco”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "“Book a ride from Cupertino to San Francisco”"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To test the app for booking a ride with Maps, open the Maps app, enter a destination, and tap Directions. Then go to the Ride tab and request a ride."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Make sure your simulator location is set to “Apple” for the sample to function correctly. Ride booking will only be functional if the pickup and drop-off locations are within the geographic area specified in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CoverageArea.geojson"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Ride Booking with Siri",
+          "anchor": "3380074"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To enable Siri to recognize and respond to ride-booking requests, you must implement classes that conform to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling"
+            },
+            {
+              "type": "text",
+              "text": " protocol. Within the protocol, different methods are responsible for different components of the ride-booking process."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The first step is to resolve the parameters necessary for booking a ride; most commonly, you need to resolve pickup and drop-off locations. If the parameters you choose to resolve are not provided in the initial command, they show up as prompts from Siri. For example, if the user says “Book a ride” without including a destination, and you choose to resolve the drop-off location, Siri prompts the user to add a destination."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The pickup and drop-off locations are resolved within the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "RideRequestHandler"
+            },
+            {
+              "type": "text",
+              "text": " class."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func resolvePickupLocation(for intent: INRequestRideIntent, with completion: @escaping (INPlacemarkResolutionResult) -> Void) {",
+            "    // Always check if parameter is not nil",
+            "    if let pickup = intent.pickupLocation {",
+            "        completion(.success(with: pickup))",
+            "    } else {",
+            "        completion(.confirmationRequired(with: intent.pickupLocation))",
+            "    }",
+            "}",
+            "",
+            "func resolveDropOffLocation(for intent: INRequestRideIntent, with completion: @escaping (INPlacemarkResolutionResult) -> Void) {",
+            "    if let dropOff = intent.dropOffLocation {",
+            "        completion(.success(with: dropOff))",
+            "    } else {",
+            "        completion(.confirmationRequired(with: intent.dropOffLocation))",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3380065",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After the parameters are resolved, the system calls "
+            },
+            {
+              "type": "codeVoice",
+              "code": "confirm(intent:completion:)"
+            },
+            {
+              "type": "text",
+              "text": " to let the user validate their request. You need to create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponse"
+            },
+            {
+              "type": "text",
+              "text": " object to be passed into the completion block. This response contains the information Siri uses to construct the ride confirmation card. Build an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inridestatus"
+            },
+            {
+              "type": "text",
+              "text": " object to provide additional details about the ride, and attach it to the response."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you are finished building your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponse"
+            },
+            {
+              "type": "text",
+              "text": ", pass the response back to the completion handler and call the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "completion"
+            },
+            {
+              "type": "text",
+              "text": " block so Siri can access your response."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func confirm(intent: INRequestRideIntent, completion: @escaping (INRequestRideIntentResponse) -> Void) {",
+            "    let rideOption = INRideOption(name: \"Small car\", estimatedPickupDate: Date(timeIntervalSinceNow: 5 * 60))",
+            "    let rideStatus = INRideStatus()",
+            "    rideStatus.rideOption = rideOption",
+            "    rideStatus.estimatedPickupDate = Date(timeIntervalSinceNow: 5 * 60)",
+            "    rideStatus.rideIdentifier = NSUUID().uuidString // This ride identifier must match the one in handleRequestRide and getRideStatus",
+            "",
+            "    // set pickup and dropoff locations",
+            "    let response = INRequestRideIntentResponse(code: .success, userActivity: nil)",
+            "    response.rideStatus = rideStatus",
+            "",
+            "    completion(response)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3380066",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you confirm the request, handle it using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "handle(intent:completion:)"
+            },
+            {
+              "type": "text",
+              "text": " method. Include any code needed to connect a driver with the passenger, and include any UI or content changes in the app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In every handle method, you must construct an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponse"
+            },
+            {
+              "type": "text",
+              "text": ". You pass this response object into the completion handler, which tells Siri what information to show in the Siri interface when a ride request is initialized. To provide more details, add an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inridestatus"
+            },
+            {
+              "type": "text",
+              "text": " object to your response as well."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Make sure you call the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "completion"
+            },
+            {
+              "type": "text",
+              "text": " block with your response passed in at the end of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "handle"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func handle(intent: INRequestRideIntent, completion: @escaping (INRequestRideIntentResponse) -> Void) {",
+            "    // Build response shown to user after tapping \"Request.\"",
+            "    let response = INRequestRideIntentResponse(code: .success, userActivity: .none)",
+            "",
+            "    // Populate status with all information you want to display on screen.",
+            "    let status = INRideStatus()",
+            "    status.rideIdentifier = NSUUID().uuidString",
+            "    // Set current ride status",
+            "    status.phase = .confirmed",
+            "    status.pickupLocation = intent.pickupLocation",
+            "    status.dropOffLocation = intent.dropOffLocation",
+            "    status.completionStatus = .completed()",
+            "",
+            "    // Add driver field",
+            "    status.driver = INRideDriver(personHandle: INPersonHandle(value: \"email@example.com\", ",
+            "                                type: .emailAddress),",
+            "                                nameComponents: PersonNameComponents(),",
+            "                                displayName: \"John Doe\",",
+            "                                image: INImage(named: \"handle_blue\"),",
+            "                                contactIdentifier: nil,",
+            "                                customIdentifier: nil,",
+            "                                aliases: nil,",
+            "                                suggestionType: .instantMessageAddress)",
+            "",
+            "    // Add ETA field",
+            "    status.estimatedPickupDate = Calendar.current.date(byAdding: DateComponents(minute: 5), to: Date())",
+            "    let vehicle = INRideVehicle()",
+            "    vehicle.model = \"1984 Small Car\"",
+            "    status.vehicle = vehicle",
+            "",
+            "    response.rideStatus = status",
+            "    completion(response)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3380067",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Show a List of Ride Options in Maps",
+          "anchor": "3380075"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By conforming to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintenthandling"
+            },
+            {
+              "type": "text",
+              "text": " protocol, you can display different ride options inside the Maps app under the Ride tab. For the Maps context, you don’t need to implement resolve methods. At minimum, you only need to implement the handle method to tell the context what ride options are available, and how to handle ride selection."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add ride options to Maps, create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrideoption"
+            },
+            {
+              "type": "text",
+              "text": " object and populate it with, at minimum,  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "name"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "estimatedPickupDate"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "availablePartySizeOptions"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "priceRange"
+            },
+            {
+              "type": "text",
+              "text": ". Populate the response object’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "expirationDate"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "paymentMethods"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rideOptions"
+            },
+            {
+              "type": "text",
+              "text": " properties and pass the response object into the completion handler."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func handle(intent: INListRideOptionsIntent, completion: @escaping (INListRideOptionsIntentResponse) -> Void) {",
+            "    for(index, name) in rideNames.enumerated() {",
+            "        let rideOption = INRideOption(name: name, estimatedPickupDate: Date(timeIntervalSinceNow: 120))",
+            "        // Populate ride options",
+            "        if index == 0 {",
+            "            rideOption.availablePartySizeOptions = poolOptions",
+            "            rideOption.fareLineItems = fareLineItems",
+            "            rideOption.priceRange = INPriceRange(price: NSDecimalNumber(string: \"6.00\"), currencyCode: \"USD\")",
+            "        } ",
+            "        ...",
+            "        rideOptions.append(rideOption)",
+            "    }",
+            "",
+            "    let paymentOptions = [",
+            "        INPaymentMethod(type: .credit,",
+            "                        name: \"Card 1\",",
+            "                        identificationHint: \"••••1111\",",
+            "                        icon: INImage(named: \"\")),",
+            "        ...",
+            "    ]",
+            "    ",
+            "    let response = INListRideOptionsIntentResponse(code: .success, userActivity: nil)",
+            "    response.expirationDate = Date(timeIntervalSinceNow: 60 * 5)",
+            "    response.paymentMethods = paymentOptions",
+            "    response.rideOptions = rideOptions",
+            "",
+            "    completion(response)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3380069",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To ensure that the ride options show up in Maps, add the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintent"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent"
+            },
+            {
+              "type": "text",
+              "text": " keys to your extension’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file under IntentsSupported."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Customize the Ride Request UI in Siri",
+          "anchor": "3380076"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can create a custom UI for Siri or Maps to display when a user requests a ride."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use Interface Builder to modify the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MainInterface"
+            },
+            {
+              "type": "text",
+              "text": " storyboard in the RideExtensionUI folder. After building your UI, conform to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontrolling"
+            },
+            {
+              "type": "text",
+              "text": " protocol in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "IntentViewController.swift"
+            },
+            {
+              "type": "text",
+              "text": ". To do so, implement the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "configure(with:context:completion:)"
+            },
+            {
+              "type": "text",
+              "text": " method by calling the completion block and passing in a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CGSize"
+            },
+            {
+              "type": "text",
+              "text": " object that fits your custom view."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

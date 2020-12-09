@@ -1,0 +1,328 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Declare the location services that your app requires."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corelocation",
+        "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2854939,
+  "kind": "article",
+  "metadata": {
+    "title": "Requiring the Presence of Specific Location Services",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Location"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corelocation": {
+      "title": "Core Location",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation",
+      "url": "/documentation/corelocation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app": {
+      "title": "Adding Location Services to Your App",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app",
+      "url": "/documentation/corelocation/adding_location_services_to_your_app",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services#2854937": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services#2854937",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services#2854937",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys for requiring location services"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services": {
+      "title": "Requiring the Presence of Specific Location Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Declare the location services that your app requires."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app requires the presence of specific location-related hardware, you must declare those requirements in the app’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file. For new iOS projects, Xcode includes the Required device capabilities key in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file. The value of this key is an array of strings, each of which specifies a type of hardware that must be present on the device. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The App Store prevents the installation of apps on devices that don't support the required hardware. "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can add the following strings to indicate that you require the specified hardware or services:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Key"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "location-services"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Include this key if your app requires location services. Always include it if you also include the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "gps"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "magnetometer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "gps"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Include this key if your app requires GPS-level precision for locations, or if you require course information. Navigation apps typically include this key in their "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Info.plist"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "magnetometer"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Include this key if your app uses heading information, which requires the presence of a magnetometer."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2854937",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Keys for requiring location services"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app is able to function without the specified capabilities, do not include them as requirements."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

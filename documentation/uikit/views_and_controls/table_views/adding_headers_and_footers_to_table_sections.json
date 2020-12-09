@@ -1,0 +1,978 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Differentiate groups of rows visually by adding header and footer views to your table view’s sections."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3113211,
+  "kind": "article",
+  "metadata": {
+    "title": "Adding Headers and Footers to Table Sections",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview": {
+      "title": "UITableViewHeaderFooterView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewheaderfooterview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reusable view that you place at the top or bottom of a table section to display additional information for that section."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614901-tableview": {
+      "title": "tableView:viewForHeaderInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614901-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614901-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:viewForHeaderInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614946-tableview": {
+      "title": "tableView:viewForFooterInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614946-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614946-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:viewForFooterInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614975-dequeuereusableheaderfootervieww": {
+      "title": "dequeueReusableHeaderFooterViewWithIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614975-dequeuereusableheaderfootervieww",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614975-dequeuereusableheaderfootervieww",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dequeueReusableHeaderFooterViewWithIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624914-contentview": {
+      "title": "contentView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624914-contentview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewheaderfooterview/1624914-contentview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624913-backgroundview": {
+      "title": "backgroundView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624913-backgroundview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewheaderfooterview/1624913-backgroundview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113212": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113212",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113212"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113213": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113213",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113213"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113215": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113215",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113215"
+    },
+    "link-media-3148907": {
+      "identifier": "link-media-3148907",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3148907"
+    },
+    "media-3148907": {
+      "identifier": "media-3148907",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 260,
+            "height": 511
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a9f64696b4/3973023e-c4b0-4452-a749-27d320a97597.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 260,
+            "height": 511
+          },
+          "url": "https://docs-assets.developer.apple.com/published/55ac1c1e4a/0525fbad-4113-4a94-8cd0-7eb0bbf1f578.png"
+        }
+      ],
+      "alt": "Illustration showing custom headers. The custom headers contain an image and string explaining the contents of each section.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614863-sectionheaderheight": {
+      "title": "sectionHeaderHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614863-sectionheaderheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614863-sectionheaderheight"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614846-sectionfooterheight": {
+      "title": "sectionFooterHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614846-sectionfooterheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614846-sectionfooterheight"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview": {
+      "title": "tableView:heightForHeaderInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614855-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:heightForHeaderInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview": {
+      "title": "tableView:heightForFooterInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614967-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:heightForFooterInSection:"
+        }
+      ]
+    },
+    "link-media-3162087": {
+      "identifier": "link-media-3162087",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3162087"
+    },
+    "media-3162087": {
+      "identifier": "media-3162087",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 325,
+            "height": 511
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cf95654f4b/3e82f299-0299-471f-9c08-15bec0cc7b1e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 325,
+            "height": 511
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ed96823ea8/0e83abe0-5ab6-4ad9-b46d-dafae1327a47.png"
+        }
+      ],
+      "alt": "Illustration showing how headers and footers group together the rows of a table.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614850-tableview": {
+      "title": "tableView:titleForHeaderInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614850-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614850-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:titleForHeaderInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614994-tableview": {
+      "title": "tableView:titleForFooterInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614994-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614994-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:titleForFooterInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113210": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113210",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections#3113210"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614904-tableheaderview": {
+      "title": "tableHeaderView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614904-tableheaderview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614904-tableheaderview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614976-tablefooterview": {
+      "title": "tableFooterView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614976-tablefooterview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614976-tablefooterview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area": {
+      "title": "Estimating the Height of a Table's Scrolling Area",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide height estimates for your table view’s headers, footers, and rows to ensure that scrolling accurately reflects the size of your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table": {
+      "title": "Configuring the Cells for Your Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the appearance and content of your table’s rows by defining one or more prototype cells in your storyboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells": {
+      "title": "Creating Self-Sizing Table View Cells",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections": {
+      "title": "Adding Headers and Footers to Table Sections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Differentiate groups of rows visually by adding header and footer views to your table view’s sections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell": {
+      "title": "UITableViewCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The visual representation of a single row in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+        "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview"
+      ],
+      "title": "Cells, Headers, and Footers",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use header and footer views as visual markers for the beginning and end of sections. Header and footer views are optional, and you can customize them as much or as little as you want."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3162087",
+              "metadata": {
+                "anchor": "3162087",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create a basic header or footer with a text label, override the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614850-tableview"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614994-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method of your table’s data source object. The table view creates a standard header or footer for you and inserts it into the table at the specified location. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Create a standard header that includes the returned text.",
+            "override func tableView(_ tableView: UITableView, titleForHeaderInSection ",
+            "                            section: Int) -> String? {",
+            "   return \"Header \\(section)\"",
+            "}",
+            "",
+            "// Create a standard footer that includes the returned text.",
+            "override func tableView(_ tableView: UITableView, titleForFooterInSection ",
+            "                            section: Int) -> String? {",
+            "   return \"Footer \\(section)\"",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3113210",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Headers and footers normally apply to a single section, but you can also provide a single header or footer view for the entire table by using the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614904-tableheaderview"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614976-tablefooterview"
+                },
+                {
+                  "type": "text",
+                  "text": " properties of your table view. The global header appears at the top of your table's content, and the global footer appears at the bottom."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Customize the Header and Footer Views",
+          "anchor": "3113216"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Custom header and footer views give the sections of your table a unique appearance. With custom headers and footers, you specify the views you want and position them anywhere within the allotted space. You can also provide different header or footer views for different sections of your table."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create custom header or footer views:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects to define the appearance of your headers and footers."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Register your "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects with your table view."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614901-tableview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614946-tableview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " methods in your table view delegate object to create and configure your views."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Always use a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview"
+            },
+            {
+              "type": "text",
+              "text": " object for your headers and footers. That view supports the same reuse model that cells employ, allowing you to recycle views instead of creating them every time. After you register your header or footer view, use the table view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614975-dequeuereusableheaderfootervieww"
+            },
+            {
+              "type": "text",
+              "text": " method to request instances of that view. If recycled header or footer views are available, the table view returns those first, before creating new ones."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview"
+            },
+            {
+              "type": "text",
+              "text": " object as is and add views to its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624914-contentview"
+            },
+            {
+              "type": "text",
+              "text": " property, or you can subclass and add your views. Position your subviews inside the content view by using a stack view or Auto Layout constraints. To change the background behind your content, modify the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624913-backgroundview"
+            },
+            {
+              "type": "text",
+              "text": " property of the header-footer view. The following example code shows a custom header view that positions the image and label views at creation time. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class MyCustomHeader: UITableViewHeaderFooterView {",
+            "    let title = UILabel()",
+            "    let image = UIImageView()",
+            "",
+            "    override init(reuseIdentifier: String?) {",
+            "        super.init(reuseIdentifier: reuseIdentifier)",
+            "        configureContents()",
+            "    }",
+            "",
+            "    func configureContents() {",
+            "        image.translatesAutoresizingMaskIntoConstraints = false",
+            "        title.translatesAutoresizingMaskIntoConstraints = false",
+            "",
+            "        contentView.addSubview(image)",
+            "        contentView.addSubview(title)",
+            "",
+            "        // Center the image vertically and place it near the leading",
+            "        // edge of the view. Constrain its width and height to 50 points.",
+            "        NSLayoutConstraint.activate([",
+            "            image.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),",
+            "            image.widthAnchor.constraint(equalToConstant: 50),",
+            "            image.heightAnchor.constraint(equalToConstant: 50),",
+            "            image.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),",
+            "        ",
+            "            // Center the label vertically, and use it to fill the remaining",
+            "            // space in the header view. ",
+            "            title.heightAnchor.constraint(equalToConstant: 30),",
+            "            title.leadingAnchor.constraint(equalTo: image.trailingAnchor, ",
+            "                   constant: 8),",
+            "            title.trailingAnchor.constraint(equalTo: ",
+            "                   contentView.layoutMarginsGuide.trailingAnchor),",
+            "            title.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)",
+            "        ])",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3113212",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Register your header view as part of configuring your table view. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func viewDidLoad() {",
+            "   super.viewDidLoad()",
+            "   ",
+            "   // Register the custom header view.",
+            "   tableView.register(MyCustomHeader.self, ",
+            "       forHeaderFooterViewReuseIdentifier: __\"__sectionHeader\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3113213",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614901-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method, create and configure your custom view. The following example code dequeues the registered custom header and configures its title and image properties. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func tableView(_ tableView: UITableView, ",
+            "        viewForHeaderInSection section: Int) -> UIView? {",
+            "   let view = tableView.dequeueReusableHeaderFooterView(withIdentifier:",
+            "               \"sectionHeader\") as! MyCustomHeader",
+            "   view.title.text = sections[section]",
+            "   view.image.image = UIImage(named: sectionImages[section])",
+            "",
+            "   return view",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3113215",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image shows the resulting headers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3148907",
+              "metadata": {
+                "anchor": "3148907",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Change the Height of Headers and Footers",
+          "anchor": "3113214"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A table view tracks the height of section headers and footers separately from the views that represent them. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview"
+            },
+            {
+              "type": "text",
+              "text": " provides default sizes for both items. If all of your headers (or all of your footers) are the same height, specify that height using the table view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614863-sectionheaderheight"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614846-sectionfooterheight"
+            },
+            {
+              "type": "text",
+              "text": " properties, or use the default values provided by the table view. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your header or footer heights are not all the same, or can change dynamically, provide the heights using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview"
+            },
+            {
+              "type": "text",
+              "text": " methods of your delegate object. When you implement these methods, you must provide values for every header and footer in your table. The table view asks for the heights of visible headers and footers only. As the user scrolls, the table view asks you to provide the height for each one as it appears, including when it moves offscreen and then back onscreen. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

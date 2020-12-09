@@ -1,0 +1,681 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Annotate a map with location-specific data using default and customized annotation views and callouts."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkit",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3031458,
+  "kind": "article",
+  "metadata": {
+    "title": "Annotating a Map with Custom Data",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "MapKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkit": {
+      "title": "MapKit",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit",
+      "url": "/documentation/mapkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
+      "title": "MapKit Annotations",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
+      "url": "/documentation/mapkit/mapkit_annotations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429524-coordinate": {
+      "title": "coordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429524-coordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkannotation/1429524-coordinate"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429522-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429522-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkannotation/1429522-title"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429520-subtitle": {
+      "title": "subtitle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429520-subtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkannotation/1429520-subtitle"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539966": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539966",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539966"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539967": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539967",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539967"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate": {
+      "title": "MKMapViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapviewdelegate"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539968": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539968",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539968"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539969": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539969",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539969"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539971": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539971",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539971"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1616211-mapview": {
+      "title": "mapView:annotationView:calloutAccessoryControlTapped:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1616211-mapview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapviewdelegate/1616211-mapview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "mapView:annotationView:calloutAccessoryControlTapped:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452543-detailcalloutaccessoryview": {
+      "title": "detailCalloutAccessoryView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452543-detailcalloutaccessoryview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkannotationview/1452543-detailcalloutaccessoryview"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539972": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539972",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data#3539972"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkannotationview": {
+      "title": "MKAnnotationView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkannotationview"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkannotation": {
+      "title": "MKAnnotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkannotation"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data": {
+      "title": "Annotating a Map with Custom Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Annotate a map with location-specific data using default and customized annotation views and callouts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkpointannotation": {
+      "title": "MKPointAnnotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpointannotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkpointannotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string-based annotation that you apply to a specific map point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview": {
+      "title": "MKMarkerAnnotationView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmarkerannotationview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An annotation view that displays a balloon-shaped marker at the designated location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview": {
+      "title": "MKPinAnnotationView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkpinannotationview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An annotation view that displays a pin image on the map.  "
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/dec10c5398/AnnotatingAMapWithCustomData.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/dec10c5398/AnnotatingAMapWithCustomData.zip",
+      "checksum": "74d441accd380df3406668180afa5ef0eb3a6e9d062c478a46bb05537e33dde6a9ab0474e35c081cee409341bffa09f3567df0726368fb9758bef6a9f710a21b",
+      "url": "https://docs-assets.developer.apple.com/published/dec10c5398/AnnotatingAMapWithCustomData.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/dec10c5398/AnnotatingAMapWithCustomData.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkpointannotation",
+        "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview",
+        "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview"
+      ],
+      "title": "Location Annotations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample code project demonstrates how to display a map with custom annotations, each with a customized callout provided by its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview"
+            },
+            {
+              "type": "text",
+              "text": ". In addition, the Map Callouts sample project shows how you can extend annotations with custom views, strings, and callout accessory views using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide an Annotation",
+          "anchor": "3539975"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Annotations offer a way to highlight specific coordinates on a map and provide additional information. You can use annotations to call out addresses, points of interest, and particular destinations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To display an annotation on a map, your app must provide two distinct objects: an annotation object and an annotation view."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An annotation object conforms to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MKAnnotation"
+            },
+            {
+              "type": "text",
+              "text": " protocol and manages the data for the annotation, such as the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429524-coordinate"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429522-title"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation/1429520-subtitle"
+            },
+            {
+              "type": "text",
+              "text": " properties as shown in this section of the sample code."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class SanFranciscoAnnotation: NSObject, MKAnnotation {",
+            "    ",
+            "    // This property must be key-value observable, which the `@objc dynamic` attributes provide.",
+            "    @objc dynamic var coordinate = CLLocationCoordinate2D(latitude: 37.779_379, longitude: -122.418_433)",
+            "    ",
+            "    // Required if you set the annotation view's `canShowCallout` property to `true`",
+            "    var title: String? = NSLocalizedString(\"SAN_FRANCISCO_TITLE\", comment: \"SF annotation\")",
+            "    ",
+            "    // This property defined by `MKAnnotation` is not required.",
+            "    var subtitle: String? = NSLocalizedString(\"SAN_FRANCISCO_SUBTITLE\", comment: \"SF annotation\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539966",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Derived from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MKAnnotationView"
+            },
+            {
+              "type": "text",
+              "text": " class, an annotation view draws the visual representation of the annotation on the map surface. Register annotation views with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MKMapView"
+            },
+            {
+              "type": "text",
+              "text": " so the map view can create and efficiently reuse them. Use a default annotation view if you need to customize the content with  a callout, or change the default marker. Use a custom annotation view if you want to have a completely custom view appear for the annotation."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private func registerMapAnnotationViews() {",
+            "    mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(BridgeAnnotation.self))",
+            "    mapView.register(CustomAnnotationView.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(CustomAnnotation.self))",
+            "    mapView.register(MKAnnotationView.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(SanFranciscoAnnotation.self))",
+            "    mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(FerryBuildingAnnotation.self))",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539967",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When an annotation comes into view, the map view asks the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate"
+            },
+            {
+              "type": "text",
+              "text": " to provide the appropriate annotation view."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {",
+            "    ",
+            "    guard !annotation.isKind(of: MKUserLocation.self) else {",
+            "        // Make a fast exit if the annotation is the `MKUserLocation`, as it's not an annotation view we wish to customize.",
+            "        return nil",
+            "    }",
+            "    ",
+            "    var annotationView: MKAnnotationView?",
+            "    ",
+            "    if let annotation = annotation as? BridgeAnnotation {",
+            "        annotationView = setupBridgeAnnotationView(for: annotation, on: mapView)",
+            "    } else if let annotation = annotation as? CustomAnnotation {",
+            "        annotationView = setupCustomAnnotationView(for: annotation, on: mapView)",
+            "    } else if let annotation = annotation as? SanFranciscoAnnotation {",
+            "        annotationView = setupSanFranciscoAnnotationView(for: annotation, on: mapView)",
+            "    } else if let annotation = annotation as? FerryBuildingAnnotation {",
+            "        annotationView = setupFerryBuildingAnnotationView(for: annotation, on: mapView)",
+            "    }",
+            "    ",
+            "    return annotationView",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539968",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before returning from the delegate call providing the annotation view, you configure the annotation view with any customizations required for the annotation. For example, use a flag icon for an annotation view representing San Francisco."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private func setupSanFranciscoAnnotationView(for annotation: SanFranciscoAnnotation, on mapView: MKMapView) -> MKAnnotationView {",
+            "    let reuseIdentifier = NSStringFromClass(SanFranciscoAnnotation.self)",
+            "    let flagAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier, for: annotation)",
+            "    ",
+            "    flagAnnotationView.canShowCallout = true",
+            "    ",
+            "    // Provide the annotation view's image.",
+            "    let image = #imageLiteral(resourceName: \"flag\")",
+            "    flagAnnotationView.image = image",
+            "    ",
+            "    // Provide the left image icon for the annotation.",
+            "    flagAnnotationView.leftCalloutAccessoryView = UIImageView(image: #imageLiteral(resourceName: \"sf_icon\"))",
+            "    ",
+            "    // Offset the flag annotation so that the flag pole rests on the map coordinate.",
+            "    let offset = CGPoint(x: image.size.width / 2, y: -(image.size.height / 2) )",
+            "    flagAnnotationView.centerOffset = offset",
+            "    ",
+            "    return flagAnnotationView",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539969",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create Callouts",
+          "anchor": "3539976"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A callout is a standard or custom view that can appear with an annotation view. A standard callout displays the annotation’s title, and it can display additional content such as a subtitle, images, and a control."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A callout can be customized in multiple ways. To place a disclosure button inside a callout:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let rightButton = UIButton(type: .detailDisclosure)",
+            "markerAnnotationView.rightCalloutAccessoryView = rightButton"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539971",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the disclosure button is tapped, MapKit calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1616211-mapview"
+            },
+            {
+              "type": "text",
+              "text": " for the app to handle the tap event."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Callouts can also include images, such as the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452543-detailcalloutaccessoryview"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Provide an image view to use as the accessory view's detail view.",
+            "markerAnnotationView.detailCalloutAccessoryView = UIImageView(image: #imageLiteral(resourceName: \"ferry_building\"))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3539972",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

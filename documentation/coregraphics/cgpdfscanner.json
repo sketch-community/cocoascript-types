@@ -1,0 +1,921 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A parser object for handling content and operators in a PDF content stream."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocumentref"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1666258,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CGPDFScanner",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Graphics"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/cgpdfscanner",
+        "documentation/coregraphics/cgpdfdocumentref/cgpdfscanner"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/cgpdfdocument/cgpdfscanner"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coregraphics": {
+      "title": "Core Graphics",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics",
+      "url": "/documentation/coregraphics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument": {
+      "title": "CGPDFDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfdocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A document that contains PDF (Portable Document Format) drawing information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocumentref": {
+      "title": "CGPDFDocumentRef",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocumentref",
+      "url": "/documentation/coregraphics/cgpdfdocumentref",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455810-cgpdfscannerretain": {
+      "title": "CGPDFScannerRetain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455810-cgpdfscannerretain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455810-cgpdfscannerretain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Increments the retain count of a scanner object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454962-cgpdfscannerrelease": {
+      "title": "CGPDFScannerRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454962-cgpdfscannerrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454962-cgpdfscannerrelease",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decrements the retain count of a scanner object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfscannerref": {
+      "title": "CGPDFScannerRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfscannerref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgpdfscannerref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type used to parse a PDF content stream."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521269-cfretain": {
+      "title": "CFRetain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521269-cfretain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521269-cfretain"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease": {
+      "title": "CFRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521153-cfrelease"
+    },
+    "devLink-1719815": {
+      "identifier": "devLink-1719815",
+      "type": "link",
+      "title": "Quartz 2D Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcontextref": {
+      "title": "CGContextRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgcontextref"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454410-cgpdfscannercreate": {
+      "title": "CGPDFScannerCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454410-cgpdfscannercreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454410-cgpdfscannercreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a PDF scanner."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454698-cgpdfscannerscan": {
+      "title": "CGPDFScannerScan",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454698-cgpdfscannerscan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454698-cgpdfscannerscan",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Parses the content stream of a PDF scanner object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454724-cgpdfscannergetcontentstream": {
+      "title": "CGPDFScannerGetContentStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454724-cgpdfscannergetcontentstream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454724-cgpdfscannergetcontentstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the content stream associated with a PDF scanner object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455971-cgpdfscannerpopobject": {
+      "title": "CGPDFScannerPopObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455971-cgpdfscannerpopobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455971-cgpdfscannerpopobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves an object from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454663-cgpdfscannerpopboolean": {
+      "title": "CGPDFScannerPopBoolean",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454663-cgpdfscannerpopboolean",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454663-cgpdfscannerpopboolean",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a Boolean object from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454399-cgpdfscannerpopinteger": {
+      "title": "CGPDFScannerPopInteger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454399-cgpdfscannerpopinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454399-cgpdfscannerpopinteger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves an integer object from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456297-cgpdfscannerpopnumber": {
+      "title": "CGPDFScannerPopNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456297-cgpdfscannerpopnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456297-cgpdfscannerpopnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a real value object from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454584-cgpdfscannerpopname": {
+      "title": "CGPDFScannerPopName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454584-cgpdfscannerpopname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454584-cgpdfscannerpopname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a character string from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455018-cgpdfscannerpopstring": {
+      "title": "CGPDFScannerPopString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455018-cgpdfscannerpopstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455018-cgpdfscannerpopstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a string object from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454360-cgpdfscannerpoparray": {
+      "title": "CGPDFScannerPopArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454360-cgpdfscannerpoparray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454360-cgpdfscannerpoparray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves an array object from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456538-cgpdfscannerpopdictionary": {
+      "title": "CGPDFScannerPopDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456538-cgpdfscannerpopdictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456538-cgpdfscannerpopdictionary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a PDF dictionary object from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454561-cgpdfscannerpopstream": {
+      "title": "CGPDFScannerPopStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454561-cgpdfscannerpopstream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454561-cgpdfscannerpopstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a PDF stream object from the scanner stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext": {
+      "title": "CGBitmapContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgbitmapcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " that you can use for drawing bits to memory."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolor": {
+      "title": "CGColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolor",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of components that define a color, with a color space specifying how to interpret them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo": {
+      "title": "CGColorConversionInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolorconversioninfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes how to convert between color spaces for use by other system services. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace": {
+      "title": "CGColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolorspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A profile that specifies how to interpret a color value for display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcontext": {
+      "title": "CGContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Quartz 2D drawing destination."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer": {
+      "title": "CGDataConsumer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgdataconsumer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider": {
+      "title": "CGDataProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgdataprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgfont": {
+      "title": "CGFont",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfont",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgfont",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of character glyphs and layout information for drawing text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgfunction": {
+      "title": "CGFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfunction",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general facility for defining and using callback functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgglcontext": {
+      "title": "CGGLContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgglcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgglcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. A type of  "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " for drawing OpenGL content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cggradient": {
+      "title": "CGGradient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cggradient",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cggradient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A definition for a smooth transition between colors for drawing radial and axial gradient fills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgimage": {
+      "title": "CGImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bitmap image or image mask."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cglayer": {
+      "title": "CGLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cglayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An offscreen context for reusing content drawn with Core Graphics. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpath": {
+      "title": "CGPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpath",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Immutable and mutable types for graphics paths: mathematical descriptions of shapes or lines to be drawn in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpattern": {
+      "title": "CGPattern",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpattern",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpattern",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 2D pattern to be used for drawing graphics paths."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray": {
+      "title": "CGPDFArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array structure within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream": {
+      "title": "CGPDFContentStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfcontentstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of one or more content data streams in a PDF page."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext": {
+      "title": "CGPDFContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " for drawing PDF content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary": {
+      "title": "CGPDFDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfdictionary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary structure within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject": {
+      "title": "CGPDFObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing content within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable": {
+      "title": "CGPDFOperatorTable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfoperatortable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of callback functions for operators used when scanning content in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage": {
+      "title": "CGPDFPage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfpage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A page in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner": {
+      "title": "CGPDFScanner",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfscanner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A parser object for handling content and operators in a PDF content stream."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream": {
+      "title": "CGPDFStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A stream or sequence of data bytes in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring": {
+      "title": "CGPDFString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A text string in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter": {
+      "title": "CGPSConverter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpsconverter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that converts PostScript data to PDF data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgshading": {
+      "title": "CGShading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgshading",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgshading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A definition for a smooth transition between colors, controlled by a custom function you provide, for drawing radial and axial gradient fills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a PDF Scanner Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454410-cgpdfscannercreate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retaining and Releasing PDF Scanner Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455810-cgpdfscannerretain",
+        "doc://com.apple.documentation/documentation/coregraphics/1454962-cgpdfscannerrelease"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Parsing Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454698-cgpdfscannerscan",
+        "doc://com.apple.documentation/documentation/coregraphics/1454724-cgpdfscannergetcontentstream"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting PDF Objects from the Scanner Stack",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455971-cgpdfscannerpopobject",
+        "doc://com.apple.documentation/documentation/coregraphics/1454663-cgpdfscannerpopboolean",
+        "doc://com.apple.documentation/documentation/coregraphics/1454399-cgpdfscannerpopinteger",
+        "doc://com.apple.documentation/documentation/coregraphics/1456297-cgpdfscannerpopnumber",
+        "doc://com.apple.documentation/documentation/coregraphics/1454584-cgpdfscannerpopname",
+        "doc://com.apple.documentation/documentation/coregraphics/1455018-cgpdfscannerpopstring",
+        "doc://com.apple.documentation/documentation/coregraphics/1454360-cgpdfscannerpoparray",
+        "doc://com.apple.documentation/documentation/coregraphics/1456538-cgpdfscannerpopdictionary",
+        "doc://com.apple.documentation/documentation/coregraphics/1454561-cgpdfscannerpopstream"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfscannerref"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider",
+        "doc://com.apple.documentation/documentation/coregraphics/cgfont",
+        "doc://com.apple.documentation/documentation/coregraphics/cgfunction",
+        "doc://com.apple.documentation/documentation/coregraphics/cgglcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cggradient",
+        "doc://com.apple.documentation/documentation/coregraphics/cgimage",
+        "doc://com.apple.documentation/documentation/coregraphics/cglayer",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpath",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpattern",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter",
+        "doc://com.apple.documentation/documentation/coregraphics/cgshading"
+      ],
+      "title": "Opaque Types",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1719815"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can set up the PDF scanner object to invoke callbacks when it encounters specific PDF operators in the stream."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This object is not derived from CFType. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455810-cgpdfscannerretain"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454962-cgpdfscannerrelease"
+            },
+            {
+              "type": "text",
+              "text": " to manage the retain count of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfscannerref"
+            },
+            {
+              "type": "text",
+              "text": " instances; do not use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521269-cfretain"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

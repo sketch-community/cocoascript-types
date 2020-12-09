@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean that controls whether the user can change font attributes of the text field’s string."
+      "text": "A Boolean value that controls whether the user can change font attributes of the text field’s string."
     }
   ],
   "documentVersion": 0,
@@ -103,7 +103,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text that the user can select or edit and that sends its action message to its target when the user presses the Return key."
+          "text": "Text the user can select or edit to send an action message to a target when the user presses the Return key."
         }
       ]
     },
@@ -139,20 +139,6 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
-    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399428-importsgraphics": {
-      "title": "importsGraphics",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399428-importsgraphics",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextfield/1399428-importsgraphics",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean that controls whether the receiver allows the user to drag image files into it."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nstextfield/1399401-allowseditingtextattributes": {
       "title": "allowsEditingTextAttributes",
       "type": "topic",
@@ -163,7 +149,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean that controls whether the user can change font attributes of the text field’s string."
+          "text": "A Boolean value that controls whether the user can change font attributes of the text field’s string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399428-importsgraphics": {
+      "title": "importsGraphics",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399428-importsgraphics",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield/1399428-importsgraphics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the user can drag image files into the text field."
         }
       ]
     },
@@ -247,7 +247,7 @@
             },
             {
               "type": "text",
-              "text": ", and the text value is an attributed string, the text field uses the attributed string’s attributes (font, color, and so on). The user modifies the attributes using the font panel. "
+              "text": ", and the text value is an attributed string, the text field’s content displays using the attributed string’s visual settings. The user can modify the text field’s style attributes in the font panel."
             }
           ]
         },
@@ -265,16 +265,7 @@
             },
             {
               "type": "text",
-              "text": ", the text field uses its own properties, ignoring the attributed string’s attributes. "
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "This property is ignored when the text value isn’t an attributed string."
+              "text": ", and the text is an attributed string, the text field ignores style attributes, such as font and color. The text field’s content displays according to the text field’s settings. The text field ignores changes to the attributed string’s attributes when displaying the string and when the text field is in edit mode."
             }
           ]
         }

@@ -1,0 +1,305 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Suspension flags that indicate how distributed notifications should be handled when the receiving application is in the background."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1542085,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFNotificationSuspensionBehavior",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@T@CFNotificationSuspensionBehavior",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfnotificationsuspensionbehavior"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfnotificationsuspensionbehavior"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter": {
+      "title": "CFNotificationCenter",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter",
+      "url": "/documentation/corefoundation/cfnotificationcenter",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543316-cfnotificationcenteraddobserver": {
+      "title": "CFNotificationCenterAddObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543316-cfnotificationcenteraddobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543316-cfnotificationcenteraddobserver"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfindex": {
+      "title": "CFIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfindex"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviordrop": {
+      "title": "CFNotificationSuspensionBehaviorDrop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviordrop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviordrop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The server will not queue any notifications of the specified name and object while the receiving application is in the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviorcoalesce": {
+      "title": "CFNotificationSuspensionBehaviorCoalesce",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviorcoalesce",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviorcoalesce",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The server will only queue the last notification of the specified name and object; earlier notifications are dropped."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviorhold": {
+      "title": "CFNotificationSuspensionBehaviorHold",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviorhold",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviorhold",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The server will hold all matching notifications until the queue has been filled (queue size determined by the server) at which point the server may flush queued notifications."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviordeliverimmediately": {
+      "title": "CFNotificationSuspensionBehaviorDeliverImmediately",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviordeliverimmediately",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviordeliverimmediately",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The server will deliver notifications of the specified name and object whether or not the application is in the background. When a notification with this suspension behavior is matched, it has the effect of first flushing any queued notifications."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviordrop",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviorcoalesce",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviorhold",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior/cfnotificationsuspensionbehaviordeliverimmediately"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " CFNotificationSuspensionBehavior : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFIndex",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+              "text": "CFIndex"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "CFNotificationSuspensionBehavior"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An application selects the suspension behavior for a given notification when it registers an observer for that notification with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543316-cfnotificationcenteraddobserver"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

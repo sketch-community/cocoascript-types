@@ -1,0 +1,1295 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that manages the separate parts of a person's name to allow locale-aware formatting."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/data_formatting"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1417878,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSPersonNameComponents",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.11",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSPersonNameComponents",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nspersonnamecomponents"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nspersonnamecomponents"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data_formatting": {
+      "title": "Data Formatting",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data_formatting",
+      "url": "/documentation/foundation/data_formatting",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/contacts/cncontact": {
+      "title": "CNContact",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/contacts/cncontact",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/contacts/cncontact"
+    },
+    "doc://com.apple.documentation/documentation/contacts/cnmutablecontact": {
+      "title": "CNMutableContact",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/contacts/cnmutablecontact",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/contacts/cnmutablecontact"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542411-cfstringtransform": {
+      "title": "CFStringTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542411-cfstringtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542411-cfstringtransform"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1407259-givenname": {
+      "title": "givenName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1407259-givenname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents/1407259-givenname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Name bestowed upon an individual to differentiate them from other members of a group that share a family name "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "(for example, “Johnathan”)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1418183-middlename": {
+      "title": "middleName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1418183-middlename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents/1418183-middlename",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Secondary name bestowed upon an individual to differentiate them from others that have the same given name "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "(for example, “Maple”)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1413354-familyname": {
+      "title": "familyName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1413354-familyname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents/1413354-familyname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Name bestowed upon an individual to denote membership in a group or family. "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "(for example, “Appleseed”)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1410275-nameprefix": {
+      "title": "namePrefix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1410275-nameprefix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents/1410275-nameprefix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The portion of a name’s full form of address that precedes the name itself "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "(for example, “Dr.,” “Mr.,” “Ms.”)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1410776-namesuffix": {
+      "title": "nameSuffix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1410776-namesuffix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents/1410776-namesuffix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The portion of a name’s full form of address that follows the name itself "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "(for example, “Esq.,” “Jr.,” “Ph.D.”)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1414892-nickname": {
+      "title": "nickname",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1414892-nickname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents/1414892-nickname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Name substituted for the purposes of familiarity "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "(for example, \"Johnny\")"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1412193-phoneticrepresentation": {
+      "title": "phoneticRepresentation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1412193-phoneticrepresentation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents/1412193-phoneticrepresentation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The phonetic representation name components of the receiver. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatter": {
+      "title": "NSPersonNameComponentsFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponentsformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that provides localized representations of the components of a person’s name."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents": {
+      "title": "PersonNameComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents": {
+      "title": "NSPersonNameComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspersonnamecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages the separate parts of a person's name to allow locale-aware formatting."
+        }
+      ]
+    },
+    "devLink-1752769": {
+      "identifier": "devLink-1752769",
+      "type": "link",
+      "title": "Working with Cocoa Frameworks",
+      "url": "https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6"
+    },
+    "devLink-1752686": {
+      "identifier": "devLink-1752686",
+      "type": "link",
+      "title": "Using Swift with Cocoa and Objective-C (Swift 4.1)",
+      "url": "https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Person Name Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1410275-nameprefix",
+        "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1407259-givenname",
+        "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1418183-middlename",
+        "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1413354-familyname",
+        "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1410776-namesuffix",
+        "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1414892-nickname",
+        "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1412193-phoneticrepresentation"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatter"
+      ],
+      "title": "Names",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSPersonNameComponents"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " object encapsulates the components of a person's name in an extendable, object-oriented manner. It is used to specify a person's name by providing the components comprising a full name: given name, middle name, family name, prefix, suffix, nickname, and phonetic representation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " objects can be used by an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatter"
+            },
+            {
+              "type": "text",
+              "text": " to create string representations suitable for display in the current locale."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The Swift overlay to the Foundation framework provides the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents"
+                },
+                {
+                  "type": "text",
+                  "text": " structure, which bridges to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents"
+                },
+                {
+                  "type": "text",
+                  "text": " class. For more information about value types, see "
+                },
+                {
+                  "type": "link",
+                  "title": "Working with Cocoa Frameworks",
+                  "destination": "https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6"
+                },
+                {
+                  "type": "text",
+                  "text": " in "
+                },
+                {
+                  "type": "link",
+                  "title": "Using Swift with Cocoa and Objective-C (Swift 4.1)",
+                  "destination": "https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Working with Names",
+          "anchor": "1968741"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It is important to understand that names are disjoint from a person’s identity. An individual may, at any time, have zero, one, or many names. Names cannot be used as a determination of a person’s identity, because two names may correspond to the same individual, and two people may have the same name. Nor can names be used as a determination of a person’s relation to others, because an individual may have a different family name than their relatives, and two individuals may have the same family name, but not be related."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Many locales and cultures have rules about what kinds of names are allowed and how they are structured. An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " object does not impose any restrictions about which combinations of properties may have values or what those values may be."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "codeVoice",
+                  "code": "NSPersonNameComponents"
+                },
+                {
+                  "type": "text",
+                  "text": " represents only the components of a name. To represent contact information, such as postal addresses or phone numbers, in addition to a personal name, use "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/contacts/cncontact"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/contacts/cnmutablecontact"
+                },
+                {
+                  "type": "text",
+                  "text": " instead."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Name Components",
+          "anchor": "1968742"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " object encodes the following components of a personal name, which are described in detail below."
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Given Name ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1407259-givenname"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Middle Name ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1418183-middlename"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Family Name ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1413354-familyname"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Prefix ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1410275-nameprefix"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Suffix ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1410776-namesuffix"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Nickname ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1414892-nickname"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Phonetic Representation ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nspersonnamecomponents/1412193-phoneticrepresentation"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Given Name",
+          "anchor": "1968743"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A given name is bestowed upon an individual to differentiate them from other members of a group that share a family name. In some locales, this is also known as a “first name” or “forename.”"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "type": "heading",
+          "text": "Multiple Given Names",
+          "anchor": "1968745"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Names may consist of multiple given names. For example, the Spanish name “María Rosalía Rita de Castro” consists of the given names “María,” “Rosalía,” and “Rita.”"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When modeling a name containing multiple given names with an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " object, concatenate them using a locale-appropriate delimiter and set the result as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "givenName"
+            },
+            {
+              "type": "text",
+              "text": " property value. If one of the given names is more commonly used in informal settings, such as “Rosalía” for “Rosalía de Castro,” you can set that as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nickname"
+            },
+            {
+              "type": "text",
+              "text": " property value."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Middle Name",
+          "anchor": "1968746"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A middle name is a secondary given name bestowed upon an individual to differentiate them from others that have the same given name."
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "type": "heading",
+          "text": "Multiple Middle Names and Middle Initials",
+          "anchor": "1968747"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Names can consist of one or more middle names in addition to a given name and/or family name. A middle name may appear only in certain styles, depending on the user localization preferences."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A middle name may consist only of an initial, such as the American name “Salmon P. Chase.” When modeling a name containing a middle initial, set the initial and locale-appropriate punctuation as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "middleName"
+            },
+            {
+              "type": "text",
+              "text": " property value. Although many English-speaking locales commonly abbreviate middle names with middle initials, don’t attempt to abbreviate a provided middle name yourself."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Sometimes, a middle name is preferred to a given name for common use. In that case, set the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "middleName"
+            },
+            {
+              "type": "text",
+              "text": " property value as the nickname property value instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When modeling a name containing multiple middle names with an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " object, concatenate them using a locale-appropriate delimiter and set the result as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "middleName"
+            },
+            {
+              "type": "text",
+              "text": " property value."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Family Name",
+          "anchor": "1968748"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A family name is a name bestowed upon an individual to denote membership in a group or family."
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "type": "heading",
+          "text": "Prepositional Particles",
+          "anchor": "1968749"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some family names consist of a prepositional phrase to denote nobility or regional ancestry, such as the Dutch name “Joost van den Vondel,” which contains the prepositional phrase “van den.” When modeling a name containing such a family name with an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " object, include any prepositional particles as part of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "familyName"
+            },
+            {
+              "type": "text",
+              "text": " property value."
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "type": "heading",
+          "text": "Composite Names",
+          "anchor": "1968750"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some family names consist of matronymic, patronymic, or other ancestral names. For example, the Chilean name “Manuel Xavier Rodríguez Erdoíza” consists of the paternal name “Rodríguez” and the maternal name “Erdoíza.” The usage and order of composite name components vary across different locales and cultures."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When modeling a name containing multiple family names with an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " object, use the entire composite family name as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "familyName"
+            },
+            {
+              "type": "text",
+              "text": " property value."
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "type": "heading",
+          "text": "Generational Name",
+          "anchor": "1968751"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It is traditional in some locales, particularly in China, for relatives born in the same generation to have a common generational name. For example, the Chinese name “郑秋媛 (Zheng Qiuyuan)” consists of the family name “郑 (Zheng)” and the given name “秋媛 (Qiuyuan).” The generational name “秋 (Qiu)” might be shared between the names of siblings or cousins, for instance, “郑秋德 (Zheng Qiude).” When modeling a name consisting of a generational name with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": ", you should use the combined generational and given name values as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "givenName"
+            },
+            {
+              "type": "text",
+              "text": " property value."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some names incorporate generational suffixes, such as “Jr.,” “Sr.,” or a roman numeral (I, II, III, IV, etc.) to distinguish between family members that have the same name. For example, the Samoan name “Malietoa Tanumafili II” contains the generational suffix “II” to denote the second generation. When modeling a name consisting of a generational suffix with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": ", use it as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nameSuffix"
+            },
+            {
+              "type": "text",
+              "text": " property value."
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "type": "heading",
+          "text": "Mononyms",
+          "anchor": "1968752"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some individuals are commonly, legally, and/or historically identified by a single name. For example, the Lithuanian names “Vydūnas,” “Žemaitė,” and “Maironis.” When modeling a mononymous name with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": ", set the name as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "familyName"
+            },
+            {
+              "type": "text",
+              "text": " property value."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Prefix and Suffix",
+          "anchor": "1968753"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A name prefix is the portion of a name’s full form of address that precedes the name itself. A name suffix is the portion of a name’s full form of address that follows the name itself. Depending on the locale and individual, both may include any number of titles, honorifics, distinctions, or other information."
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "type": "heading",
+          "text": "Honorifics and Distinctions",
+          "anchor": "1968754"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Names can incorporate honorifics to convey respect when addressing an individual. Depending on the locale, honorifics may be incorporated into a name prefix or suffix, which is usually applied to a full name or family name only. For example, the American name “Mr. Sherman” contains the honorific “Mr.” as a prefix, whereas the Japanese name “夏目さん (Natsume-san)” contains the honorific “san (さん)” as a suffix. Unlike most other aspects of names, honorifics are often localized to their corresponding equivalent for another language. For example, an American person might address a Japanese person as “Mr. Natsume,” and a Japanese person might address an American person as “シャーマンさん (Sherman-san).”"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A person that holds an academic degree, accreditation, decoration, or honor may convey that distinction through a name prefix or suffix, which can sometimes take the place of a conventional honorific. For example, the name “James Watt, FRS, FRSE” contains the postnominal letters “FRS” and “FRSE” to convey membership to learned societies. When modeling postnominal letters with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": ", concatenate them using a locale-appropriate delimiter and set the result as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nameSuffix"
+            },
+            {
+              "type": "text",
+              "text": " property value."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users often prefer to be addressed informally when using an app, so the use of honorifics in names is not always appropriate. For this reason, honorifics and other distinctions typically appear in names only when a formatter specifies the most explicit style. When such formalities are appropriate, you should be aware of the particular conventions for addressing individuals in the target locale."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Phonetic Representation",
+          "anchor": "1968755"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It is sometimes beneficial to provide phonetic representations to aid in the pronunciation of names that are foreign or unfamiliar. For example, the Malay name “يوسف بن اسحاق” in Jawi script may be transliterated into Latin script as “Yusof bin Ishak” for English-speaking locales, where Latin script is commonly used. Depending on the locale and on the way the name is to be displayed to the user, it may be appropriate to provide an appropriate transliteration. This may be provided by the user or computed using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542411-cfstringtransform"
+            },
+            {
+              "type": "text",
+              "text": " function, except for names in certain nonphonetic scripts."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A phonetic representation may also be used to specify the pronunciation of a name in idiographic script with multiple pronunciations. For example, the character “藤” in the Japanese name “近藤 藤子 (Kondō Fujiko)” is pronounced “dō” in the family name and “fuji” in the given name, which can be clarified by providing the furigana “こんどう ふじこ” as a phonetic representation for a Japanese locale."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A phonetic representation may also be appropriate for names in a script appropriate for, but unfamiliar to, a given locale. For example, for the French name “Claude Debussy” the phonetic representation “clawed deb-you-see” as a pronunciation aid to an American English-speaking locale. Use of this kind of phonetic representation is discouraged for most user contexts."
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "type": "heading",
+          "text": "Aliases",
+          "anchor": "1968756"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Individuals may have one or more valid names, or aliases. This may be the result of adopting a new name in conjunction with a life event, such as marriage. For example, the name “Marie Curie” could have the corresponding alias “Maria Salomea Skłodowska.”"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because each alias represents a separate name, an individual with one or more aliases would be modeled by a corresponding of number of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersonNameComponents"
+            },
+            {
+              "type": "text",
+              "text": " objects, each representing a single alias."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,543 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Fetch content opportunistically in the background and update your app's interface."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2928657,
+  "kind": "article",
+  "metadata": {
+    "title": "Updating Your App with Background App Refresh",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+        "documentation/uikit/windows_and_screens/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+        "documentation/uikit/app_and_environment/multitasking_on_ipad/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+        "documentation/uikit/windows_and_screens/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+        "documentation/uikit/app_and_environment/multitasking_on_ipad/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment": {
+      "title": "App and Environment",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+      "url": "/documentation/uikit/app_and_environment",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes": {
+      "title": "Scenes",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+      "url": "/documentation/uikit/app_and_environment/scenes",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background": {
+      "title": "Preparing Your UI to Run in the Background",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/windows_and_screens": {
+      "title": "Windows and Screens",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+      "url": "/documentation/uikit/windows_and_screens",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad": {
+      "title": "Multitasking on iPad",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+      "url": "/documentation/uikit/app_and_environment/multitasking_on_ipad",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva": {
+      "title": "setMinimumBackgroundFetchInterval:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setMinimumBackgroundFetchInterval:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication": {
+      "title": "UIApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623125-application": {
+      "title": "application:performFetchWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623125-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623125-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:performFetchWithCompletionHandler:"
+        }
+      ]
+    },
+    "link-media-3004332": {
+      "identifier": "link-media-3004332",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh#3004332"
+    },
+    "media-3004332": {
+      "identifier": "media-3004332",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 649,
+            "height": 211
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9a201ece95/82c87384-a304-49b5-af89-2c0858dead8f.png"
+        }
+      ],
+      "alt": "Enable the background fetch option from the Background Modes section of the Capabilities tab.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
+      "title": "NSURLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh#2928664": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh#2928664",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh#2928664",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetching data from a server in the background"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622994-backgroundrefreshstatus": {
+      "title": "backgroundRefreshStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622994-backgroundrefreshstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1622994-backgroundrefreshstatus"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh": {
+      "title": "Updating Your App with Background App Refresh",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetch content opportunistically in the background and update your app's interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time": {
+      "title": "Extending Your App's Background Execution Time",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ensure that critical tasks finish when your app moves to the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/about_the_background_execution_sequence": {
+      "title": "About the Background Execution Sequence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/about_the_background_execution_sequence",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/about_the_background_execution_sequence",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the order in which your custom code is executed when your app moves to the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/about_the_background_execution_sequence"
+      ],
+      "title": "Background Execution",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Background App Refresh lets your app run periodically in the background so that it can update its content. Apps that update their content frequently, such as news apps or social media apps, can use this feature to ensure that their content is always up to date. Downloading data in the background before it is needed minimizes the lag time in displaying that data when the user launches the app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To support Background App Refresh for your app, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Enable the background fetch capability in your app ("
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+                    },
+                    {
+                      "type": "text",
+                      "text": " at launch time."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623125-application"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method in your app delegate."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3004332",
+              "metadata": {
+                "anchor": "3004332",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the system calls your app delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623125-application"
+            },
+            {
+              "type": "text",
+              "text": " method, configure a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession"
+            },
+            {
+              "type": "text",
+              "text": " object to download any new data. The system waits until network and power conditions are good, so you should be able to retrieve adequate amounts of data quickly. When you finish updating your app, call the completion handler and provide an accurate result of your outcome, which can include saying that no new data was available. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Calling the completion handler in a timely manner, and with an accurate result, helps determine how much future execution time your app receives. If you take too long to update your app, the system may schedule your app less frequently in the future to save power.  "
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/updating_your_app_with_background_app_refresh#2928664"
+            },
+            {
+              "type": "text",
+              "text": " shows how to request and handle background updates. The Xcode project for the app enables the background fetch capability and the app requests hourly updates at launch time. When it receives execution time, the app checks to see if new data is available. If it is, the app adds that data to its main feed.  "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func application(_ application: UIApplication,",
+            "                 didFinishLaunchingWithOptions launchOptions:",
+            "                 [UIApplicationLaunchOptionsKey: Any]?) -> Bool {",
+            "   // Override point for customization after application launch.",
+            "        ",
+            "   // Fetch data once an hour.",
+            "   UIApplication.shared.setMinimumBackgroundFetchInterval(3600)",
+            "",
+            "   // Other initialization…",
+            "   return true",
+            "}",
+            "    ",
+            "func application(_ application: UIApplication, ",
+            "                 performFetchWithCompletionHandler completionHandler:",
+            "                 @escaping (UIBackgroundFetchResult) -> Void) {",
+            "   // Check for new data. ",
+            "   if let newData = fetchUpdates() {",
+            "      addDataToFeed(newData: newData)",
+            "      completionHandler(.newData)",
+            "   }",
+            "   completionHandler(.noData)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2928664",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Fetching data from a server in the background"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the absence of Background App Refresh would have a significant impact on your app’s user experience, you can check the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622994-backgroundrefreshstatus"
+            },
+            {
+              "type": "text",
+              "text": " property of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+            },
+            {
+              "type": "text",
+              "text": " to determine whether the feature is available. Users can disable Background App Refresh for your app or for all apps in Settings. If you prompt the user to enable the feature for your app, respect the user’s decision and don’t prompt a second time."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

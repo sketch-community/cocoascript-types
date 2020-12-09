@@ -1,0 +1,2867 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that manages an ordered collection of data items and presents them using customizable layouts."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1618038,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UICollectionView",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "6.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)UICollectionView",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicollectionview"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicollectionview"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout": {
+      "title": "UICollectionViewLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayout"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618047-collectionviewlayout": {
+      "title": "collectionViewLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618047-collectionviewlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618047-collectionviewlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The layout used to organize the collected view’s items. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618017-setcollectionviewlayout": {
+      "title": "setCollectionViewLayout:animated:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618017-setcollectionviewlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618017-setcollectionviewlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the collection view’s layout and notifies you when the animations complete. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setCollectionViewLayout:animated:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618098-startinteractivetransitiontocoll": {
+      "title": "startInteractiveTransitionToCollectionViewLayout:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618098-startinteractivetransitiontocoll",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618098-startinteractivetransitiontocoll",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the collection view’s current layout using an interactive transition effect. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startInteractiveTransitionToCollectionViewLayout:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618080-finishinteractivetransition": {
+      "title": "finishInteractiveTransition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618080-finishinteractivetransition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618080-finishinteractivetransition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the collection view to finish an interactive transition by installing the intended target layout. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "finishInteractiveTransition"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618075-cancelinteractivetransition": {
+      "title": "cancelInteractiveTransition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618075-cancelinteractivetransition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618075-cancelinteractivetransition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the collection view to cancel an interactive transition and return to its original layout object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelInteractiveTransition"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts": {
+      "title": "Layouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/views_and_controls/collection_views/layouts"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618063-dequeuereusablecellwithreuseiden": {
+      "title": "dequeueReusableCellWithReuseIdentifier:forIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618063-dequeuereusablecellwithreuseiden",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618063-dequeuereusablecellwithreuseiden",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dequeues a reusable cell object located by its identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dequeueReusableCellWithReuseIdentifier:forIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618068-dequeuereusablesupplementaryview": {
+      "title": "dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618068-dequeuereusablesupplementaryview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618068-dequeuereusablesupplementaryview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dequeues a reusable supplementary view located by its identifier and kind. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618089-registerclass": {
+      "title": "registerClass:forCellWithReuseIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618089-registerclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618089-registerclass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a class for use in creating new collection view cells. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerClass:forCellWithReuseIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618083-registernib": {
+      "title": "registerNib:forCellWithReuseIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618083-registernib",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618083-registernib",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a nib file for use in creating new collection view cells. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerNib:forCellWithReuseIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching": {
+      "title": "UICollectionViewDataSourcePrefetching",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdatasourceprefetching",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides advance warning of the data requirements for a collection view, allowing the triggering of asynchronous data load operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771768-prefetchdatasource": {
+      "title": "prefetchDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771768-prefetchdatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1771768-prefetchdatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object that acts as the prefetching data source for the collection view, receiving notifications of upcoming cell data requirements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618019-begininteractivemovementforitema": {
+      "title": "beginInteractiveMovementForItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618019-begininteractivemovementforitema",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618019-begininteractivemovementforitema",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiates the interactive movement of the item at the specified index path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "beginInteractiveMovementForItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp": {
+      "title": "updateInteractiveMovementTargetPosition:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the position of the item within the collection view’s bounds."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateInteractiveMovementTargetPosition:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618082-endinteractivemovement": {
+      "title": "endInteractiveMovement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618082-endinteractivemovement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618082-endinteractivemovement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ends interactive movement tracking and moves the target item to its new location.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "endInteractiveMovement"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618076-cancelinteractivemovement": {
+      "title": "cancelInteractiveMovement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618076-cancelinteractivemovement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618076-cancelinteractivemovement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ends interactive movement tracking and returns the target item to its original location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelInteractiveMovement"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller": {
+      "title": "UICollectionViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view controller that specializes in managing a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller/1623979-installsstandardgestureforintera": {
+      "title": "installsStandardGestureForInteractiveMovement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller/1623979-installsstandardgestureforintera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcontroller/1623979-installsstandardgestureforintera"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview#1965866": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview#1965866",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/uikit/uicollectionview#1965866",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Collection view attributes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayout": {
+      "title": "UICollectionViewFlowLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewflowlayout"
+    },
+    "devLink-1696204": {
+      "identifier": "devLink-1696204",
+      "type": "link",
+      "title": "Internationalization and Localization Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i"
+    },
+    "devLink-1740862": {
+      "identifier": "devLink-1740862",
+      "type": "link",
+      "title": "Accessibility Programming Guide for iOS",
+      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618091-datasource": {
+      "title": "dataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618091-datasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618091-datasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object that provides the data for the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource": {
+      "title": "UICollectionViewDiffableDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource": {
+      "title": "UICollectionViewDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The methods adopted by the object you use to manage data and provide cells for a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell": {
+      "title": "UICollectionViewCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcell"
+    },
+    "link-media-2923198": {
+      "identifier": "link-media-2923198",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/uicollectionview#2923198"
+    },
+    "media-2923198": {
+      "identifier": "media-2923198",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 701,
+            "height": 405
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a84db79dea/50390428-f9f2-4cbc-bd99-1cacca4f0617.png"
+        }
+      ],
+      "alt": "A collection view using the flow layout",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection view using the flow layout"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618033-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618033-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618033-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object that acts as the delegate of the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscrollview": {
+      "title": "UIScrollView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscrollview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscrollview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating": {
+      "title": "UIDataSourceTranslating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidatasourcetranslating"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618053-initwithframe": {
+      "title": "initWithFrame:collectionViewLayout:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618053-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618053-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a collection view object with the specified frame and layout. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:collectionViewLayout:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618065-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618065-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618065-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a collection view object from data in a given unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771771-prefetchingenabled": {
+      "title": "prefetchingEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771771-prefetchingenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1771771-prefetchingenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether cell and data prefetching are enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate": {
+      "title": "UICollectionViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The methods adopted by the object you use to manage user interactions with items in a collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcellregistration": {
+      "title": "UICollectionViewCellRegistration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcellregistration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcellregistration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A registration for the collection view’s cells."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600423-dequeueconfiguredreusablecellwit": {
+      "title": "dequeueConfiguredReusableCellWithRegistration:forIndexPath:item:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600423-dequeueconfiguredreusablecellwit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3600423-dequeueconfiguredreusablecellwit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dequeues a configured reusable cell object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dequeueConfiguredReusableCellWithRegistration:forIndexPath:item:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration": {
+      "title": "UICollectionViewSupplementaryRegistration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewsupplementaryregistration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A registration for the collection view’s supplementary views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600424-dequeueconfiguredreusablesupplem": {
+      "title": "dequeueConfiguredReusableSupplementaryViewWithRegistration:forIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600424-dequeueconfiguredreusablesupplem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3600424-dequeueconfiguredreusablesupplem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dequeues a configured reusable supplementary view object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dequeueConfiguredReusableSupplementaryViewWithRegistration:forIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618103-registerclass": {
+      "title": "registerClass:forSupplementaryViewOfKind:withReuseIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618103-registerclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618103-registerclass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a class for use in creating supplementary views for the collection view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerClass:forSupplementaryViewOfKind:withReuseIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618101-registernib": {
+      "title": "registerNib:forSupplementaryViewOfKind:withReuseIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618101-registernib",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618101-registernib",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a nib file for use in creating supplementary views for the collection view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerNib:forSupplementaryViewOfKind:withReuseIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618074-backgroundview": {
+      "title": "backgroundView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618074-backgroundview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618074-backgroundview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The view that provides the background appearance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618086-setcollectionviewlayout": {
+      "title": "setCollectionViewLayout:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618086-setcollectionviewlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618086-setcollectionviewlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the collection view’s layout and optionally animates the change. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setCollectionViewLayout:animated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinteractivetransitioncompletion": {
+      "title": "UICollectionViewLayoutInteractiveTransitionCompletion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinteractivetransitioncompletion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayoutinteractivetransitioncompletion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The completion block called at the end of an interactive transition for a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618028-numberofsections": {
+      "title": "numberOfSections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618028-numberofsections",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618028-numberofsections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of sections displayed by the collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618016-numberofitemsinsection": {
+      "title": "numberOfItemsInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618016-numberofitemsinsection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618016-numberofitemsinsection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetches the count of items in the specified section."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberOfItemsInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618056-visiblecells": {
+      "title": "visibleCells",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618056-visiblecells",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618056-visiblecells",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of visible cells currently displayed by the collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618097-insertitemsatindexpaths": {
+      "title": "insertItemsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618097-insertitemsatindexpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618097-insertitemsatindexpaths",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts new items at the specified index paths."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertItemsAtIndexPaths:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618059-moveitematindexpath": {
+      "title": "moveItemAtIndexPath:toIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618059-moveitematindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618059-moveitematindexpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves an item from one location to another in the collection view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveItemAtIndexPath:toIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618060-deleteitemsatindexpaths": {
+      "title": "deleteItemsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618060-deleteitemsatindexpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618060-deleteitemsatindexpaths",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes the items at the specified index paths. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteItemsAtIndexPaths:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618090-insertsections": {
+      "title": "insertSections:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618090-insertsections",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618090-insertsections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts new sections at the specified indexes. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertSections:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618042-movesection": {
+      "title": "moveSection:toSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618042-movesection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618042-movesection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves a section from one location to another in the collection view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveSection:toSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618102-deletesections": {
+      "title": "deleteSections:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618102-deletesections",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618102-deletesections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes the sections at the specified indexes. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteSections:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897404-dragdelegate": {
+      "title": "dragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897404-dragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2897404-dragdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The delegate object that manages the dragging of items from the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate": {
+      "title": "UICollectionViewDragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdragdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for initiating drags from a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897415-hasactivedrag": {
+      "title": "hasActiveDrag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897415-hasactivedrag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2897415-hasactivedrag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether items were lifted from the collection view and have not yet been dropped."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2909041-draginteractionenabled": {
+      "title": "dragInteractionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2909041-draginteractionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2909041-draginteractionenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the collection view supports drags and drops between apps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897491-dropdelegate": {
+      "title": "dropDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897491-dropdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2897491-dropdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The delegate object that manages the dropping of items into the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897433-hasactivedrop": {
+      "title": "hasActiveDrop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897433-hasactivedrop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2897433-hasactivedrop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the collection view is currently tracking a drop session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897347-reorderingcadence": {
+      "title": "reorderingCadence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897347-reorderingcadence",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2897347-reorderingcadence",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The speed at which items in the collection view are reordered to show potential drop locations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewreorderingcadence": {
+      "title": "UICollectionViewReorderingCadence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewreorderingcadence",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewreorderingcadence",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the speed at which collection view items are reorganized during a drop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618099-indexpathsforselecteditems": {
+      "title": "indexPathsForSelectedItems",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618099-indexpathsforselecteditems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618099-indexpathsforselecteditems",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index paths for the selected items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618057-selectitematindexpath": {
+      "title": "selectItemAtIndexPath:animated:scrollPosition:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618057-selectitematindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618057-selectitematindexpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Selects the item at the specified index path and optionally scrolls it into view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectItemAtIndexPath:animated:scrollPosition:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618040-deselectitematindexpath": {
+      "title": "deselectItemAtIndexPath:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618040-deselectitematindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618040-deselectitematindexpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deselects the item at the specified index. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deselectItemAtIndexPath:animated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618009-allowsselection": {
+      "title": "allowsSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618009-allowsselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618009-allowsselection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether users can select items in the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618024-allowsmultipleselection": {
+      "title": "allowsMultipleSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618024-allowsmultipleselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618024-allowsmultipleselection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether users can select more than one item in the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600422-allowsselectionduringediting": {
+      "title": "allowsSelectionDuringEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600422-allowsselectionduringediting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3600422-allowsselectionduringediting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether users can select cells while the collection view is in editing mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600421-allowsmultipleselectionduringedi": {
+      "title": "allowsMultipleSelectionDuringEditing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600421-allowsmultipleselectionduringedi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3600421-allowsmultipleselectionduringedi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether users can select more than one cell simultaneously in editing mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3573920-selectionfollowsfocus": {
+      "title": "selectionFollowsFocus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3573920-selectionfollowsfocus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3573920-selectionfollowsfocus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that triggers an automatic selection when focus moves to a cell."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600425-editing": {
+      "title": "editing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600425-editing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3600425-editing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the collection view is in editing mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618030-indexpathforitematpoint": {
+      "title": "indexPathForItemAtPoint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618030-indexpathforitematpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618030-indexpathforitematpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the index path of the item at the specified point in the collection view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "indexPathForItemAtPoint:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618020-indexpathsforvisibleitems": {
+      "title": "indexPathsForVisibleItems",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618020-indexpathsforvisibleitems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618020-indexpathsforvisibleitems",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of the visible items in the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618094-indexpathforcell": {
+      "title": "indexPathForCell:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618094-indexpathforcell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618094-indexpathforcell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the index path of the specified cell. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "indexPathForCell:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618088-cellforitematindexpath": {
+      "title": "cellForItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618088-cellforitematindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618088-cellforitematindexpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the visible cell object at the specified index path. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cellForItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618034-indexpathsforvisiblesupplementar": {
+      "title": "indexPathsForVisibleSupplementaryElementsOfKind:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618034-indexpathsforvisiblesupplementar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618034-indexpathsforvisiblesupplementar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the index paths of all visible supplementary views of the specified type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "indexPathsForVisibleSupplementaryElementsOfKind:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618041-supplementaryviewforelementkind": {
+      "title": "supplementaryViewForElementKind:atIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618041-supplementaryviewforelementkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618041-supplementaryviewforelementkind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the supplementary view at the specified index path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "supplementaryViewForElementKind:atIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618026-visiblesupplementaryviewsofkind": {
+      "title": "visibleSupplementaryViewsOfKind:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618026-visiblesupplementaryviewsofkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618026-visiblesupplementaryviewsofkind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets an array of the visible supplementary views of the specified kind. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "visibleSupplementaryViewsOfKind:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618093-layoutattributesforitematindexpa": {
+      "title": "layoutAttributesForItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618093-layoutattributesforitematindexpa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618093-layoutattributesforitematindexpa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the layout information for the item at the specified index path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutAttributesForItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618012-layoutattributesforsupplementary": {
+      "title": "layoutAttributesForSupplementaryElementOfKind:atIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618012-layoutattributesforsupplementary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618012-layoutattributesforsupplementary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the layout information for the specified supplementary view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutAttributesForSupplementaryElementOfKind:atIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618046-scrolltoitematindexpath": {
+      "title": "scrollToItemAtIndexPath:atScrollPosition:animated:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618046-scrolltoitematindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618046-scrolltoitematindexpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scrolls the collection view contents until the specified item is visible. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scrollToItemAtIndexPath:atScrollPosition:animated:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewscrollposition": {
+      "title": "UICollectionViewScrollPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewscrollposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewscrollposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate how to scroll an item into the visible portion of the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewscrolldirection": {
+      "title": "UICollectionViewScrollDirection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewscrolldirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewscrolldirection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the direction of scrolling for the layout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618045-performbatchupdates": {
+      "title": "performBatchUpdates:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618045-performbatchupdates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618045-performbatchupdates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Animates multiple insert, delete, reload, and move operations as a group."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performBatchUpdates:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/2891094-hasuncommittedupdates": {
+      "title": "hasUncommittedUpdates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/2891094-hasuncommittedupdates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/2891094-hasuncommittedupdates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the collection view contains drop placeholders or is reordering its items as part of handling a drop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618078-reloaddata": {
+      "title": "reloadData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618078-reloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618078-reloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reloads all of the data for the collection view. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reloadData"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618092-reloadsections": {
+      "title": "reloadSections:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618092-reloadsections",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618092-reloadsections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reloads the data in the specified sections of the collection view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reloadSections:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618055-reloaditemsatindexpaths": {
+      "title": "reloadItemsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618055-reloaditemsatindexpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618055-reloaditemsatindexpaths",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reloads just the items at the specified index paths."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reloadItemsAtIndexPaths:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionelementcategory": {
+      "title": "UICollectionElementCategory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionelementcategory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionelementcategory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants specifying the type of view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionfooter": {
+      "title": "UICollectionElementKindSectionFooter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionfooter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionelementkindsectionfooter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A supplementary view that identifies the footer for a given section. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionheader": {
+      "title": "UICollectionElementKindSectionHeader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionheader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionelementkindsectionheader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A supplementary view that identifies the header for a given section. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618022-rememberslastfocusedindexpath": {
+      "title": "remembersLastFocusedIndexPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618022-rememberslastfocusedindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618022-rememberslastfocusedindexpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the collection view automatically assigns the focus to the item at the last focused index path."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview": {
+      "title": "UICollectionView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages an ordered collection of data items and presents them using customizable layouts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiscrollview"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializing a Collection View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618053-initwithframe",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618065-initwithcoder"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing the Collection View Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618091-datasource",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Prefetching Collection View Cells and Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771771-prefetchingenabled",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771768-prefetchdatasource",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Collection View Interactions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618033-delegate",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Cells",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewcellregistration",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600423-dequeueconfiguredreusablecellwit",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618089-registerclass",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618083-registernib",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618063-dequeuereusablecellwithreuseiden"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Headers and Footers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600424-dequeueconfiguredreusablesupplem",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618103-registerclass",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618101-registernib",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618068-dequeuereusablesupplementaryview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring the Background View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618074-backgroundview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Changing the Layout",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618047-collectionviewlayout",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618086-setcollectionviewlayout",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618017-setcollectionviewlayout",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618098-startinteractivetransitiontocoll",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618080-finishinteractivetransition",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618075-cancelinteractivetransition",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinteractivetransitioncompletion"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the State of the Collection View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618028-numberofsections",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618016-numberofitemsinsection",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618056-visiblecells"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inserting, Moving, and Deleting Items",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618097-insertitemsatindexpaths",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618059-moveitematindexpath",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618060-deleteitemsatindexpaths"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inserting, Moving, and Deleting Sections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618090-insertsections",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618042-movesection",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618102-deletesections"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reordering Items Interactively",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618019-begininteractivemovementforitema",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618082-endinteractivemovement",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618076-cancelinteractivemovement"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Drag Interactions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897404-dragdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897415-hasactivedrag",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/2909041-draginteractionenabled"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Drop Interactions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897491-dropdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897433-hasactivedrop",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/2897347-reorderingcadence",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewreorderingcadence"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Selecting Cells",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618099-indexpathsforselecteditems",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618057-selectitematindexpath",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618040-deselectitematindexpath",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618009-allowsselection",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618024-allowsmultipleselection",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600422-allowsselectionduringediting",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600421-allowsmultipleselectionduringedi",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3573920-selectionfollowsfocus"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Putting the Collection View into Edit Mode",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600425-editing"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Locating Items and Views in the Collection View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618030-indexpathforitematpoint",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618020-indexpathsforvisibleitems",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618094-indexpathforcell",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618088-cellforitematindexpath",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618034-indexpathsforvisiblesupplementar",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618041-supplementaryviewforelementkind",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618026-visiblesupplementaryviewsofkind"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Layout Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618093-layoutattributesforitematindexpa",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618012-layoutattributesforsupplementary"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scrolling an Item Into View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618046-scrolltoitematindexpath",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewscrollposition",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewscrolldirection"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Animating Multiple Changes to the Collection View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618045-performbatchupdates"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reloading Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/2891094-hasuncommittedupdates",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618078-reloaddata",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618092-reloadsections",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618055-reloaditemsatindexpaths"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Identifying Collection View Elements",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionelementcategory",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionfooter",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionheader"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Remembering the Last Focused Cell",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618022-rememberslastfocusedindexpath"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller"
+      ],
+      "title": "View",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UICollectionView"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)UIScrollView",
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiscrollview",
+              "text": "UIScrollView"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you add a collection view to your user interface, your app's main job is to manage the data associated with that collection view. The collection view gets its data from the data source object, stored in the collection view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618091-datasource"
+            },
+            {
+              "type": "text",
+              "text": " property. For your data source, you can use a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource"
+            },
+            {
+              "type": "text",
+              "text": " object, which provides the behavior you need to simply and efficiently manage updates to your collection view's data and user interface. Alternatively, you can create a custom data source object by adopting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource"
+            },
+            {
+              "type": "text",
+              "text": " protocol."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Data in the collection view is organized into individual items, which you can group into sections for presentation. An item is the smallest unit of data you want to present. For example, in a photos app, an item might be a single image. The collection view presents items onscreen using a cell, which is an instance of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell"
+            },
+            {
+              "type": "text",
+              "text": " class that your data source configures and provides.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2923198",
+              "metadata": {
+                "anchor": "2923198",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A collection view using the flow layout"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to its cells, a collection view can present data using other types of views. These supplementary views can be, for example, section headers and footers that are separate from the individual cells but still convey information. Support for supplementary views is optional and defined by the collection view’s layout object, which is also responsible for defining the placement of those views. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Besides embedding a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UICollectionView"
+            },
+            {
+              "type": "text",
+              "text": " in your user interface, you use the methods of the collection view to ensure that the visual presentation of items matches the order in your data source object. A "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource"
+            },
+            {
+              "type": "text",
+              "text": " object manages this process automatically. If you're using a custom data source, then whenever you add, delete, or rearrange data in your collection, you use the methods of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UICollectionView"
+            },
+            {
+              "type": "text",
+              "text": " to insert, delete, and rearrange the corresponding cells. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You also use the collection view object to manage the selected items, although for this behavior the collection view works with its associated "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618033-delegate"
+            },
+            {
+              "type": "text",
+              "text": " object."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Layouts",
+          "anchor": "1656588"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A layout object defines the visual arrangement of the content in the collection view. A subclass of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout"
+            },
+            {
+              "type": "text",
+              "text": " class, the layout object defines the organization and location of all cells and supplementary views inside the collection view. Although it defines their locations, the layout object doesn’t actually apply that information to the corresponding views. The collection view applies layout information to the corresponding views because the creation of cells and supplementary views involves coordination between the collection view and your data source object. The layout object is like another data source, except it provides visual information instead of item data. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You typically specify a layout object when you create a collection view, but you can also change the layout of a collection view dynamically. The layout object is stored in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618047-collectionviewlayout"
+            },
+            {
+              "type": "text",
+              "text": " property. Setting this property directly updates the layout immediately, without animating the changes. If you want to animate the changes, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618017-setcollectionviewlayout"
+            },
+            {
+              "type": "text",
+              "text": " method instead. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create an interactive transition—one that is driven by a gesture recognizer or touch events—use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618098-startinteractivetransitiontocoll"
+            },
+            {
+              "type": "text",
+              "text": " method to change the layout object. That method installs an intermediate layout object, which works with your gesture recognizer or event-handling code to track the transition progress. When your event-handling code determines that the transition is finished, it calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618080-finishinteractivetransition"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618075-cancelinteractivetransition"
+            },
+            {
+              "type": "text",
+              "text": " method to remove the intermediate layout object and install the intended target layout object. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Cells and Supplementary Views",
+          "anchor": "1656621"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The collection view’s data source object provides both the content for items and the views used to present that content. When the collection view first loads its content, it asks its data source to provide a view for each visible item. The collection view maintains a queue or list of view objects that the data source has marked for reuse. Instead of creating new views explicitly in your code, you always dequeue views. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are two methods for dequeueing views. The one you use depends on which type of view has been requested:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618063-dequeuereusablecellwithreuseiden"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to get a cell for an item in the collection view. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618068-dequeuereusablesupplementaryview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to get a supplementary view requested by the layout object."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before you call either of these methods, you must tell the collection view how to create the corresponding view if one does not already exist. For this, you must register either a class or a nib file with the collection view. For example, when registering cells, you use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618089-registerclass"
+            },
+            {
+              "type": "text",
+              "text": " method to register a class or the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618083-registernib"
+            },
+            {
+              "type": "text",
+              "text": " method to register a nib file. As part of the registration process, you specify the reuse identifier that identifies the purpose of the view. This is the same string you use when dequeueing the view later. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After dequeueing the appropriate view in your data source method, configure its content and return it to the collection view for use. After getting the layout information from the layout object, the collection view applies it to the view and displays it. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Data Prefetching",
+          "anchor": "3580830"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Collection views provide two prefetching techniques you can use to improve responsiveness:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "newTerm",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Cell prefetching"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " prepares cells in advance of the time they are required. When a collection view requires a large number of cells simultaneously—for example, a new row of cells in grid layout—the cells are requested earlier than the time required for display. Cell rendering is therefore spread across multiple layout passes, resulting in a smoother scrolling experience. Cell prefetching is enabled by default."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "newTerm",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Data prefetching"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " provides a mechanism whereby you are notified of the data requirements of a collection view in advance of the requests for cells. This is useful if the content of your cells relies on an expensive data loading process, such as a network request. Assign an object that conforms to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasourceprefetching"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1771768-prefetchdatasource"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property to receive notifications of when to prefetch data for cells."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Reordering Items Interactively",
+          "anchor": "1656659"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Collection views allow you to move items around based on user interactions. Typically, the order of items in a collection view is defined by your data source. If you allow users to reorder items, you can configure a gesture recognizer to track the user’s interactions with a collection view item and update that item’s position. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To begin the interactive repositioning of an item, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618019-begininteractivemovementforitema"
+            },
+            {
+              "type": "text",
+              "text": " method of the collection view. While your gesture recognizer is tracking touch events, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp"
+            },
+            {
+              "type": "text",
+              "text": " method to report changes in the touch location. When you are done tracking the gesture, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618082-endinteractivemovement"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618076-cancelinteractivemovement"
+            },
+            {
+              "type": "text",
+              "text": " method to conclude the interactions and update the collection view."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "During user interactions, the collection view invalidates its layout dynamically to reflect the current position of the item. If you do nothing, the default layout behavior repositions the items for you, but you can customize the layout animations if you want. When interactions finish, the collection view updates its data source object with the new location of the item. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " class provides a default gesture recognizer that you can use to rearrange items in its managed collection view. To install this gesture recognizer, set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller/1623979-installsstandardgestureforintera"
+            },
+            {
+              "type": "text",
+              "text": " property of the collection view controller to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Interface Builder Attributes",
+          "anchor": "1656688"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview#1965866"
+            },
+            {
+              "type": "text",
+              "text": " lists the attributes that you configure for collection views in Interface Builder. "
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Attribute"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Items"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The number of prototype cells. This property controls the specified number of prototype cells for you to configure in your storyboard. Collection views must always have at least one cell and may have multiple cells for displaying different types of content or for displaying the same content in different ways."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Layout"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The layout object to use. Use this control to select between the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayout"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object and a custom layout object that you define."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When the flow layout is selected, you can also configure the scrolling direction for the collection view’s content and whether the flow layout has header and footer views. Enabling header and footer views adds reusable views to your storyboard that you can configure with your header and footer content. You can also create those views programmatically."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When a custom layout is selected, you must specify the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout"
+                    },
+                    {
+                      "type": "text",
+                      "text": " subclass to use."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "1965866",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Collection view attributes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the Flow layout is selected, the Size inspector for the collection view contains additional attributes for configuring flow layout metrics. Use those attributes to configure the size of your cells, the size of headers and footers, the minimum spacing between cells, and any margins around each section of cells. For more information about the meaning of the flow layout metrics, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayout"
+            },
+            {
+              "type": "text",
+              "text": ".  "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Internationalization",
+          "anchor": "1656719"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A collection view has no direct content of its own to internationalize. Instead, you internationalize the cells and reusable views of the collection view. For more information about internationalization, see "
+            },
+            {
+              "type": "link",
+              "title": "Internationalization and Localization Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Accessibility",
+          "anchor": "1656759"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A collection view has no content of its own to make accessible. If your cells and reusable views contain standard UIKit controls such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UILabel"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITextField"
+            },
+            {
+              "type": "text",
+              "text": ", you can make those controls accessible. When a collection view changes its onscreen layout, it posts the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAccessibilityLayoutChangedNotification"
+            },
+            {
+              "type": "text",
+              "text": " notification. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For general information about making your interface accessible, see "
+            },
+            {
+              "type": "link",
+              "title": "Accessibility Programming Guide for iOS",
+              "destination": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

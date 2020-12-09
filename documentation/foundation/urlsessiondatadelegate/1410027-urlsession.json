@@ -1,0 +1,822 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tells the delegate that the data task received the initial reply (headers) from the server."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/urlsession",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1410027-urlsession",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1410027,
+  "kind": "symbol",
+  "metadata": {
+    "title": "urlSession(_:dataTask:didReceive:completionHandler:)",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "7.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.9",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(pl)NSURLSessionDataDelegate(im)URLSession:dataTask:didReceiveResponse:completionHandler:",
+    "symbolKind": "intfm",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "func "
+      },
+      {
+        "kind": "identifier",
+        "text": "urlSession"
+      },
+      {
+        "kind": "text",
+        "text": "(URLSession, "
+      },
+      {
+        "kind": "identifier",
+        "text": "dataTask"
+      },
+      {
+        "kind": "text",
+        "text": ": URLSessionDataTask, "
+      },
+      {
+        "kind": "identifier",
+        "text": "didReceive"
+      },
+      {
+        "kind": "text",
+        "text": ": URLResponse, "
+      },
+      {
+        "kind": "identifier",
+        "text": "completionHandler"
+      },
+      {
+        "kind": "text",
+        "text": ": (URLSession.ResponseDisposition) -> Void)"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsurlsessiondatadelegate/1410027-urlsession"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/urlsessiondatadelegate/1410027-urlsession"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession": {
+      "title": "URLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate": {
+      "title": "URLSessionDataDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition": {
+      "title": "URLSession.ResponseDisposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/responsedisposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating how a data or upload session should proceed after receiving the initial headers."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSession.ResponseDisposition"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/allow": {
+      "title": "URLSession.ResponseDisposition.allow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/allow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/responsedisposition/allow"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/cancel": {
+      "title": "URLSession.ResponseDisposition.cancel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/cancel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/responsedisposition/cancel"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/becomedownload": {
+      "title": "URLSession.ResponseDisposition.becomeDownload",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/becomedownload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/responsedisposition/becomedownload"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1409936-urlsession": {
+      "title": "urlSession(_:dataTask:didBecome:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1409936-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1409936-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the data task was changed to a download task."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDataTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didBecome"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDownloadTask)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411528-urlsession": {
+      "title": "urlSession(_:dataTask:didReceive:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411528-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1411528-urlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1410027-urlsession": {
+      "title": "urlSession(_:dataTask:didReceive:completionHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1410027-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1410027-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the data task received the initial reply (headers) from the server."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDataTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didReceive"
+        },
+        {
+          "kind": "text",
+          "text": ": URLResponse, "
+        },
+        {
+          "kind": "identifier",
+          "text": "completionHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": (URLSession.ResponseDisposition) -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate/1411610-urlsession": {
+      "title": "urlSession(_:task:didCompleteWithError:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate/1411610-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiontaskdelegate/1411610-urlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatatask": {
+      "title": "URLSessionDataTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatatask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatatask"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlresponse": {
+      "title": "URLResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlresponse"
+    },
+    "doc://com.apple.documentation/documentation/swift/void": {
+      "title": "Void",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/void",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/void"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411648-urlsession": {
+      "title": "urlSession(_:dataTask:didBecome:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411648-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1411648-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the data task was changed to a stream task."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDataTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didBecome"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionStreamTask)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1409936-urlsession",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411648-urlsession"
+      ],
+      "title": "Handling Task Life Cycle Changes",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "optional"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "urlSession"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "session"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSURLSession",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+              "text": "URLSession"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "dataTask"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSURLSessionDataTask",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatatask",
+              "text": "URLSessionDataTask"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "didReceive"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "response"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSURLResponse",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlresponse",
+              "text": "URLResponse"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "completionHandler"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "keyword",
+              "text": "@escaping"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSURLSession",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+              "text": "URLSession"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@E@NSURLSessionResponseDisposition",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition",
+              "text": "ResponseDisposition"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s4Voida",
+              "identifier": "doc://com.apple.documentation/documentation/swift/void",
+              "text": "Void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "session",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The session containing the data task that received an initial reply."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dataTask",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The data task that received an initial reply."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "response",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A URL response object populated with headers."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "completionHandler",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A completion handler that your code calls to continue a transfer, passing a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition"
+                },
+                {
+                  "type": "text",
+                  "text": " constant to indicate whether the transfer should continue as a data task or should become a download task."
+                }
+              ]
+            },
+            {
+              "type": "unorderedList",
+              "items": [
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "If you pass "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/allow"
+                        },
+                        {
+                          "type": "text",
+                          "text": ", the task continues as a data task."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "If you pass "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/cancel"
+                        },
+                        {
+                          "type": "text",
+                          "text": ", the task is canceled."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "If you pass "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/becomedownload"
+                        },
+                        {
+                          "type": "text",
+                          "text": ", your delegate’s "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1409936-urlsession"
+                        },
+                        {
+                          "type": "text",
+                          "text": " method is called to provide the new download task that supersedes the current task."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Implementing this method is optional unless you need to cancel the transfer or convert it to a download task when the response headers are first received. If you don’t provide this delegate method, the session always allows the task to continue."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You also implement this method if you need to support the fairly obscure "
+            },
+            {
+              "type": "codeVoice",
+              "code": "multipart/x-mixed-replace"
+            },
+            {
+              "type": "text",
+              "text": " content type. With that content type, the server sends a series of parts, each of which is intended to replace the previous part. The session calls this method at the beginning of each part, followed by one or more calls to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411528-urlsession"
+            },
+            {
+              "type": "text",
+              "text": " with the contents of that part."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each time the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1410027-urlsession"
+            },
+            {
+              "type": "text",
+              "text": " method is called for a part, collect the data received for the previous part (if any) and process the data as needed for your application. This processing can include storing the data to the filesystem, parsing it into custom types, or displaying it to the user. Next, begin receiving the next part by calling the completion handler with the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition/allow"
+            },
+            {
+              "type": "text",
+              "text": " constant. Finally, if you have also implemented "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate/1411610-urlsession"
+            },
+            {
+              "type": "text",
+              "text": ", the session will call it after sending all the data for the last part."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

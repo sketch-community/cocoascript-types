@@ -1,0 +1,983 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a "
+    },
+    {
+      "type": "codeVoice",
+      "code": "CFURL"
+    },
+    {
+      "type": "text",
+      "text": " object using a given character bytes."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation",
+        "doc://com.apple.documentation/documentation/corefoundation/cfurl"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/1542075-cfurlcreatewithbytes",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1542075,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFURLCreateWithBytes",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@CFURLCreateWithBytes",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/1542075-cfurlcreatewithbytes"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/1542075-cfurlcreatewithbytes"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfurl": {
+      "title": "CFURL",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurl",
+      "url": "/documentation/corefoundation/cfurl",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "devLink-1698003": {
+      "identifier": "devLink-1698003",
+      "type": "link",
+      "title": "The Create Rule",
+      "url": "https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/kcfallocatordefault": {
+      "title": "kCFAllocatorDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/kcfallocatordefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/kcfallocatordefault"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541551-cfurlgetbytes": {
+      "title": "CFURLGetBytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541551-cfurlgetbytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541551-cfurlgetbytes"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543146-cfurlgetbyterangeforcomponent": {
+      "title": "CFURLGetByteRangeForComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543146-cfurlgetbyterangeforcomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543146-cfurlgetbyterangeforcomponent"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringencodings": {
+      "title": "CFStringEncodings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringencodings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringencodings"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingmacroman": {
+      "title": "kCFStringEncodingMacRoman",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingmacroman",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingmacroman"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingwindowslatin1": {
+      "title": "kCFStringEncodingWindowsLatin1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingwindowslatin1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingwindowslatin1"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingisolatin1": {
+      "title": "kCFStringEncodingISOLatin1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingisolatin1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingisolatin1"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingnextsteplatin": {
+      "title": "kCFStringEncodingNextStepLatin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingnextsteplatin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingnextsteplatin"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingascii": {
+      "title": "kCFStringEncodingASCII",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingascii",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingascii"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingutf8": {
+      "title": "kCFStringEncodingUTF8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingutf8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingutf8"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfurlref": {
+      "title": "CFURLRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurlref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfurlref"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorref": {
+      "title": "CFAllocatorRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorref"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfindex": {
+      "title": "CFIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfindex"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringencoding": {
+      "title": "CFStringEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringencoding"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543590-cfurlcopyabsoluteurl": {
+      "title": "CFURLCopyAbsoluteURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543590-cfurlcopyabsoluteurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543590-cfurlcopyabsoluteurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURL"
+        },
+        {
+          "type": "text",
+          "text": " object by resolving the relative portion of a URL against its base."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542795-cfurlcreateabsoluteurlwithbytes": {
+      "title": "CFURLCreateAbsoluteURLWithBytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542795-cfurlcreateabsoluteurlwithbytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542795-cfurlcreateabsoluteurlwithbytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURL"
+        },
+        {
+          "type": "text",
+          "text": " object by resolving the relative portion of a URL, specified as bytes, against its given base URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543252-cfurlcreatebyresolvingbookmarkda": {
+      "title": "CFURLCreateByResolvingBookmarkData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543252-cfurlcreatebyresolvingbookmarkda",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543252-cfurlcreatebyresolvingbookmarkda",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new URL made by resolving bookmark data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542127-cfurlcreatecopyappendingpathcomp": {
+      "title": "CFURLCreateCopyAppendingPathComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542127-cfurlcreatecopyappendingpathcomp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542127-cfurlcreatecopyappendingpathcomp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a copy of a given URL and appends a path component."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541648-cfurlcreatecopyappendingpathexte": {
+      "title": "CFURLCreateCopyAppendingPathExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541648-cfurlcreatecopyappendingpathexte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541648-cfurlcreatecopyappendingpathexte",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a copy of a given URL and appends a path extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543199-cfurlcreatecopydeletinglastpathc": {
+      "title": "CFURLCreateCopyDeletingLastPathComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543199-cfurlcreatecopydeletinglastpathc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543199-cfurlcreatecopydeletinglastpathc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a copy of a given URL with the last path component deleted."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542836-cfurlcreatecopydeletingpathexten": {
+      "title": "CFURLCreateCopyDeletingPathExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542836-cfurlcreatecopydeletingpathexten",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542836-cfurlcreatecopydeletingpathexten",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a copy of a given URL with its last path extension removed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542076-cfurlcreatefilepathurl": {
+      "title": "CFURLCreateFilePathURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542076-cfurlcreatefilepathurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542076-cfurlcreatefilepathurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new file path URL that refers to the same resource as a specified URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543282-cfurlcreatefilereferenceurl": {
+      "title": "CFURLCreateFileReferenceURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543282-cfurlcreatefilereferenceurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543282-cfurlcreatefilereferenceurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new file reference URL that points to the same resource as a specified URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543314-cfurlcreatefromfilesystemreprese": {
+      "title": "CFURLCreateFromFileSystemRepresentation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543314-cfurlcreatefromfilesystemreprese",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543314-cfurlcreatefromfilesystemreprese",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURL"
+        },
+        {
+          "type": "text",
+          "text": " object for a file system entity using the native representation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542053-cfurlcreatefromfilesystemreprese": {
+      "title": "CFURLCreateFromFileSystemRepresentationRelativeToBase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542053-cfurlcreatefromfilesystemreprese",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542053-cfurlcreatefromfilesystemreprese",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURL"
+        },
+        {
+          "type": "text",
+          "text": " object from a native character string path relative to a base URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1584385-cfurlcreatefromfsref": {
+      "title": "CFURLCreateFromFSRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1584385-cfurlcreatefromfsref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1584385-cfurlcreatefromfsref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a URL from a given directory or file."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542075-cfurlcreatewithbytes": {
+      "title": "CFURLCreateWithBytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542075-cfurlcreatewithbytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542075-cfurlcreatewithbytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURL"
+        },
+        {
+          "type": "text",
+          "text": " object using a given character bytes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543250-cfurlcreatewithfilesystempath": {
+      "title": "CFURLCreateWithFileSystemPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543250-cfurlcreatewithfilesystempath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543250-cfurlcreatewithfilesystempath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURL"
+        },
+        {
+          "type": "text",
+          "text": " object using a local file system path string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543552-cfurlcreatewithfilesystempathrel": {
+      "title": "CFURLCreateWithFileSystemPathRelativeToBase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543552-cfurlcreatewithfilesystempathrel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543552-cfurlcreatewithfilesystempathrel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURL"
+        },
+        {
+          "type": "text",
+          "text": " object using a local file system path string relative to a base URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542055-cfurlcreatewithstring": {
+      "title": "CFURLCreateWithString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542055-cfurlcreatewithstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542055-cfurlcreatewithstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURL"
+        },
+        {
+          "type": "text",
+          "text": " object using a given "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFString"
+        },
+        {
+          "type": "text",
+          "text": " object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1543590-cfurlcopyabsoluteurl",
+        "doc://com.apple.documentation/documentation/corefoundation/1542795-cfurlcreateabsoluteurlwithbytes",
+        "doc://com.apple.documentation/documentation/corefoundation/1543252-cfurlcreatebyresolvingbookmarkda",
+        "doc://com.apple.documentation/documentation/corefoundation/1542127-cfurlcreatecopyappendingpathcomp",
+        "doc://com.apple.documentation/documentation/corefoundation/1541648-cfurlcreatecopyappendingpathexte",
+        "doc://com.apple.documentation/documentation/corefoundation/1543199-cfurlcreatecopydeletinglastpathc",
+        "doc://com.apple.documentation/documentation/corefoundation/1542836-cfurlcreatecopydeletingpathexten",
+        "doc://com.apple.documentation/documentation/corefoundation/1542076-cfurlcreatefilepathurl",
+        "doc://com.apple.documentation/documentation/corefoundation/1543282-cfurlcreatefilereferenceurl",
+        "doc://com.apple.documentation/documentation/corefoundation/1543314-cfurlcreatefromfilesystemreprese",
+        "doc://com.apple.documentation/documentation/corefoundation/1542053-cfurlcreatefromfilesystemreprese",
+        "doc://com.apple.documentation/documentation/corefoundation/1584385-cfurlcreatefromfsref",
+        "doc://com.apple.documentation/documentation/corefoundation/1543250-cfurlcreatewithfilesystempath",
+        "doc://com.apple.documentation/documentation/corefoundation/1543552-cfurlcreatewithfilesystempathrel",
+        "doc://com.apple.documentation/documentation/corefoundation/1542055-cfurlcreatewithstring"
+      ],
+      "title": "Creating a CFURL",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFURLRef",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurlref",
+              "text": "CFURLRef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "CFURLCreateWithBytes"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFAllocatorRef",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorref",
+              "text": "CFAllocatorRef"
+            },
+            {
+              "kind": "text",
+              "text": " allocator, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "UInt8"
+            },
+            {
+              "kind": "text",
+              "text": " *URLBytes, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFIndex",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+              "text": "CFIndex"
+            },
+            {
+              "kind": "text",
+              "text": " length, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFStringEncoding",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringencoding",
+              "text": "CFStringEncoding"
+            },
+            {
+              "kind": "text",
+              "text": " encoding, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFURLRef",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurlref",
+              "text": "CFURLRef"
+            },
+            {
+              "kind": "text",
+              "text": " baseURL);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "allocator",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The allocator to use to allocate memory for the new "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "CFURL"
+                },
+                {
+                  "type": "text",
+                  "text": " object. Pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/kcfallocatordefault"
+                },
+                {
+                  "type": "text",
+                  "text": " to use the current default allocator. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "URLBytes",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The character bytes to convert into a "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "CFURL"
+                },
+                {
+                  "type": "text",
+                  "text": " object. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "length",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of bytes in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "URLBytes"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "encoding",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The string encoding of the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "URLBytes"
+                },
+                {
+                  "type": "text",
+                  "text": " string. This encoding is also used to interpret percent escape sequences. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "baseURL",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The URL to which "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "URLBytes"
+                },
+                {
+                  "type": "text",
+                  "text": " is relative. Pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "URLBytes"
+                },
+                {
+                  "type": "text",
+                  "text": " contains an absolute URL or if you want to create a relative URL. If "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "URLBytes"
+                },
+                {
+                  "type": "text",
+                  "text": " contains an absolute URL, this parameter is ignored."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CFURL"
+            },
+            {
+              "type": "text",
+              "text": " object. Ownership follows the create rule. See "
+            },
+            {
+              "type": "link",
+              "title": "The Create Rule",
+              "destination": "https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The specified string encoding will be used both to interpret "
+            },
+            {
+              "type": "codeVoice",
+              "code": "URLBytes"
+            },
+            {
+              "type": "text",
+              "text": ", and to interpret any percent-escapes within the string. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This function does not support string encoding which isn’t a superset of ASCII encoding. Both "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541551-cfurlgetbytes"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543146-cfurlgetbyterangeforcomponent"
+                },
+                {
+                  "type": "text",
+                  "text": " require 7-bit ASCII characters to be stored in a single 8-bit byte. The following "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringencodings"
+                },
+                {
+                  "type": "text",
+                  "text": " can be used: "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingmacroman"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingwindowslatin1"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingisolatin1"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingnextsteplatin"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingascii"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings/kcfstringencodingutf8"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

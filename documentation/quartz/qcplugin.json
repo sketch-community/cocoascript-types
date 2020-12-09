@@ -1,0 +1,1130 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The "
+    },
+    {
+      "type": "codeVoice",
+      "code": "QCPlugIn"
+    },
+    {
+      "type": "text",
+      "text": " class provides the base class to subclass for writing custom  Quartz Composer patches. You implement a custom patch by subclassing "
+    },
+    {
+      "type": "codeVoice",
+      "code": "QCPlugIn"
+    },
+    {
+      "type": "text",
+      "text": ", overriding the appropriate methods, packaging the code as an "
+    },
+    {
+      "type": "codeVoice",
+      "code": "NSBundle"
+    },
+    {
+      "type": "text",
+      "text": " object, and installing the bundle in the appropriate location. A bundle can contain more than one subclass  of "
+    },
+    {
+      "type": "codeVoice",
+      "code": "QCPlugIn"
+    },
+    {
+      "type": "text",
+      "text": ", allowing you to provide a suite of custom patches in one bundle. "
+    },
+    {
+      "type": "link",
+      "title": "Quartz Composer Custom Patch Programming Guide",
+      "destination": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposer_Patch_PlugIn_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004787"
+    },
+    {
+      "type": "text",
+      "text": " provides detailed instructions on how to create and package a custom patch. "
+    },
+    {
+      "type": "emphasis",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "QCPlugIn Class Reference"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": " supplements the information in the programming guide."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/quartz",
+        "doc://com.apple.documentation/documentation/quartz/quartz_composer"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartz/qcplugin",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1488776,
+  "kind": "symbol",
+  "metadata": {
+    "title": "QCPlugIn",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Quartz"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "deprecatedAt": "10.15",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:objc(cs)QCPlugIn",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qcplugin"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qcplugin"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/quartz": {
+      "title": "Quartz",
+      "identifier": "doc://com.apple.documentation/documentation/quartz",
+      "url": "/documentation/quartz",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/quartz/quartz_composer": {
+      "title": "Quartz Composer",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/quartz_composer",
+      "url": "/documentation/quartz/quartz_composer",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugincontext": {
+      "title": "QCPlugInContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugincontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugincontext"
+    },
+    "devLink-1733122": {
+      "identifier": "devLink-1733122",
+      "type": "link",
+      "title": "Quartz Composer Custom Patch Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposer_Patch_PlugIn_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004787"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscoding": {
+      "title": "NSCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscoding"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488752-serializedvalueforkey": {
+      "title": "serializedValueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488752-serializedvalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488752-serializedvalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides custom serialization for patch internal settings that do not comply to the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding"
+        },
+        {
+          "type": "text",
+          "text": " protocol."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "serializedValueForKey:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488847-execute": {
+      "title": "execute:atTime:withArguments:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488847-execute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488847-execute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the processing or rendering tasks appropriate for the custom patch."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "execute:atTime:withArguments:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488695-executionmode": {
+      "title": "executionMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488695-executionmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488695-executionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the execution mode of the custom patch."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "executionMode"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488805-timemode": {
+      "title": "timeMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488805-timemode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488805-timemode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the time mode for the custom patch."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "timeMode"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488786-startexecution": {
+      "title": "startExecution:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488786-startexecution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488786-startexecution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows you to perform custom setup tasks before the Quartz Composer engine starts rendering."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startExecution:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488696-enableexecution": {
+      "title": "enableExecution:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488696-enableexecution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488696-enableexecution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows you to perform custom tasks when the execution of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugIn"
+        },
+        {
+          "type": "text",
+          "text": " object is resumed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enableExecution:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488782-disableexecution": {
+      "title": "disableExecution:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488782-disableexecution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488782-disableexecution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows you to perform custom tasks when the execution of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugIn"
+        },
+        {
+          "type": "text",
+          "text": " object is paused."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "disableExecution:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488832-stopexecution": {
+      "title": "stopExecution:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488832-stopexecution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488832-stopexecution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows you to perform custom tasks when the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugIn"
+        },
+        {
+          "type": "text",
+          "text": " object stops executing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopExecution:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488869-attributes": {
+      "title": "attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488869-attributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488869-attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary that contains strings for the user interface that describe the custom patch."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "attributes"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488766-attributesforpropertyportwithkey": {
+      "title": "attributesForPropertyPortWithKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488766-attributesforpropertyportwithkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488766-attributesforpropertyportwithkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary that contains strings for the user interface that describe the optional attributes for ports created from properties. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "attributesForPropertyPortWithKey:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1504984-createviewcontroller": {
+      "title": "createViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1504984-createviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1504984-createviewcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns a view controller for the Settings pane of a custom patch. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "createViewController"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys": {
+      "title": "plugInKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488790-pluginkeys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the keys for the internal settings of a custom patch."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "plugInKeys"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488851-setserializedvalue": {
+      "title": "setSerializedValue:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488851-setserializedvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488851-setserializedvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides custom deserialization for patch internal settings that were previously serialized using the method "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488752-serializedvalueforkey"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSerializedValue:forKey:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488858-addinputportwithtype": {
+      "title": "addInputPortWithType:forKey:withAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488858-addinputportwithtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488858-addinputportwithtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an input port of the specified type and associates a key and attributes with the port."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addInputPortWithType:forKey:withAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488707-removeinputportforkey": {
+      "title": "removeInputPortForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488707-removeinputportforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488707-removeinputportforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the input port for a given key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeInputPortForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488760-addoutputportwithtype": {
+      "title": "addOutputPortWithType:forKey:withAttributes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488760-addoutputportwithtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488760-addoutputportwithtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an output port of the specified type and associates a key and attributes with the port."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addOutputPortWithType:forKey:withAttributes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488800-removeoutputportforkey": {
+      "title": "removeOutputPortForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488800-removeoutputportforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488800-removeoutputportforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the output port for a given key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeOutputPortForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488811-didvalueforinputkeychange": {
+      "title": "didValueForInputKeyChange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488811-didvalueforinputkeychange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488811-didvalueforinputkeychange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether the input port value changed since the last execution of the custom patch."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didValueForInputKeyChange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488802-valueforinputkey": {
+      "title": "valueForInputKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488802-valueforinputkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488802-valueforinputkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current value for an input port."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "valueForInputKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488788-setvalue": {
+      "title": "setValue:forOutputKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488788-setvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488788-setvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the value of an output port."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValue:forOutputKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488840-loadpluginatpath": {
+      "title": "loadPlugInAtPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488840-loadpluginatpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488840-loadpluginatpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Loads a Quartz Composer plug-in bundle from the specified path. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadPlugInAtPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488853-registerpluginclass": {
+      "title": "registerPlugInClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488853-registerpluginclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488853-registerpluginclass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugIn"
+        },
+        {
+          "type": "text",
+          "text": " subclass."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerPlugInClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488742-sortedpropertyportkeys": {
+      "title": "sortedPropertyPortKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488742-sortedpropertyportkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488742-sortedpropertyportkeys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns and array of property port keys in the order you want them to appear in the user interface."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "sortedPropertyPortKeys"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/patch_attributes": {
+      "title": "Patch Attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/patch_attributes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/qcplugin/patch_attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attributes for custom patches."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/input_and_output_port_attributes": {
+      "title": "Input and Output Port Attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/input_and_output_port_attributes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/qcplugin/input_and_output_port_attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attributes for input and output ports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/port_input_and_output_types": {
+      "title": "Port Input and Output Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/port_input_and_output_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/qcplugin/port_input_and_output_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Data types for input and output ports."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/pixel_formats": {
+      "title": "Pixel Formats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/pixel_formats",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/qcplugin/pixel_formats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Supported image pixel formats."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/execution_arguments": {
+      "title": "Execution Arguments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/execution_arguments",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/qcplugin/execution_arguments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Arguments to the method "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488847-execute"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginexecutionmode": {
+      "title": "QCPlugInExecutionMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginexecutionmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginexecutionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Execution modes for custom patches."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugintimemode": {
+      "title": "QCPlugInTimeMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugintimemode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugintimemode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Time modes for custom patches."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488727-executiontimeforcontext": {
+      "title": "executionTimeForContext:atTime:withArguments:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488727-executiontimeforcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488727-executiontimeforcontext",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "executionTimeForContext:atTime:withArguments:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Defining the Characteristics of a Custom Patch",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488695-executionmode",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488805-timemode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Executing a Custom Patch",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488847-execute"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Performing Custom Tasks During Execution",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488786-startexecution",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488696-enableexecution",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488782-disableexecution",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488832-stopexecution"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Defining Patch and Property Port Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488869-attributes",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488766-attributesforpropertyportwithkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Defining Internal Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1504984-createviewcontroller",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting Saving and Retrieving Internal Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488752-serializedvalueforkey",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488851-setserializedvalue"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Adding Ports Dynamically",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488858-addinputportwithtype",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488707-removeinputportforkey",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488760-addoutputportwithtype",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488800-removeoutputportforkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting and Setting Port Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488811-didvalueforinputkeychange",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488802-valueforinputkey",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488788-setvalue"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Loading Bundle and Custom Patches Manually",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488840-loadpluginatpath",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488853-registerpluginclass"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Ordering Property Ports",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488742-sortedpropertyportkeys"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/patch_attributes",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/input_and_output_port_attributes",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/port_input_and_output_types",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/pixel_formats",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/execution_arguments",
+        "doc://com.apple.documentation/documentation/quartz/qcpluginexecutionmode",
+        "doc://com.apple.documentation/documentation/quartz/qcplugintimemode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1488727-executiontimeforcontext"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1733122"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "QCPlugIn"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The methods related to the executing the custom patch (called when the Quartz Composer engine is rendering) are passed an opaque object that conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugincontext"
+            },
+            {
+              "type": "text",
+              "text": " protocol. This object represents the execution context of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "QCPlugIn"
+            },
+            {
+              "type": "text",
+              "text": " object. You should not retain the execution context or use it outside of the scope of the execution method that it is passed to.  "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

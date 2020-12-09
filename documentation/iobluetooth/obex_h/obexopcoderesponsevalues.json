@@ -1,0 +1,733 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Response opCode values."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/iobluetooth",
+        "doc://com.apple.documentation/documentation/iobluetooth/obex_h"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/iobluetooth/obex_h/obexopcoderesponsevalues",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1941178,
+  "kind": "symbol",
+  "metadata": {
+    "title": "OBEXOpCodeResponseValues",
+    "role": "pseudoSymbol",
+    "modules": [
+      {
+        "name": "IOBluetooth"
+      }
+    ],
+    "symbolKind": "tdef"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/iobluetooth/obex_h/obexopcoderesponsevalues"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/iobluetooth": {
+      "title": "IOBluetooth",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth",
+      "url": "/documentation/iobluetooth",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/obex_h": {
+      "title": "OBEX.h",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/obex_h",
+      "url": "/documentation/iobluetooth/obex_h",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "enum OBEXOpCodeResponseValues {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeReservedRangeStart = 0x00,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeReservedRangeEnd = 0x0F,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeContinue = 0x10,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeContinueWithFinalBit = 0x90,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeSuccess = 0x20,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeSuccessWithFinalBit = 0xA0,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeCreated = 0x21,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeCreatedWithFinalBit = 0xA1,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeAccepted = 0x22,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeAcceptedWithFinalBit = 0xA2,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNonAuthoritativeInfo = 0x23,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNonAuthoritativeInfoWithFinalBit = 0xA3,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNoContent = 0x24,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNoContentWithFinalBit = 0xA4,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeResetContent = 0x25,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeResetContentWithFinalBit = 0xA5,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodePartialContent = 0x26,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodePartialContentWithFinalBit = 0xA6,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeMultipleChoices = 0x30,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeMultipleChoicesWithFinalBit = 0xB0,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeMovedPermanently = 0x31,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeMovedPermanentlyWithFinalBit = 0xB1,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeMovedTemporarily = 0x32,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeMovedTemporarilyWithFinalBit = 0xB2,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeSeeOther = 0x33,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeSeeOtherWithFinalBit = 0xB3,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNotModified = 0x34,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNotModifiedWithFinalBit = 0xB4,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeUseProxy = 0x35,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeUseProxyWithFinalBit = 0xB5,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeBadRequest = 0x40,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeBadRequestWithFinalBit = 0xC0,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeUnauthorized = 0x41,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeUnauthorizedWithFinalBit = 0xC1,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodePaymentRequired = 0x42,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodePaymentRequiredWithFinalBit = 0xC2,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeForbidden = 0x43,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeForbiddenWithFinalBit = 0xC3,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNotFound = 0x44,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNotFoundWithFinalBit = 0xC4,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeMethodNotAllowed = 0x45,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeMethodNotAllowedWithFinalBit = 0xC5,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNotAcceptable = 0x46,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNotAcceptableWithFinalBit = 0xC6,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeProxyAuthenticationRequired = 0x47,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeProxyAuthenticationRequiredWithFinalBit= 0xC7,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeRequestTimeOut = 0x48,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeRequestTimeOutWithFinalBit = 0xC8,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeConflict = 0x49,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeConflictWithFinalBit = 0xC9,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeGone = 0x4A,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeGoneWithFinalBit = 0xCA,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeLengthRequired = 0x4B,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeLengthRequiredFinalBit = 0xCB,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodePreconditionFailed = 0x4C,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodePreconditionFailedWithFinalBit = 0xCC,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeRequestedEntityTooLarge = 0x4D,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeRequestedEntityTooLargeWithFinalBit = 0xCD,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeRequestURLTooLarge = 0x4E,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeRequestURLTooLargeWithFinalBit = 0xCE,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeUnsupportedMediaType = 0x4F,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeUnsupportedMediaTypeWithFinalBit = 0xCF,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeInternalServerError = 0x50,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeInternalServerErrorWithFinalBit = 0xD0,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNotImplemented = 0x51,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeNotImplementedWithFinalBit = 0xD1,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeBadGateway = 0x52,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeBadGatewayWithFinalBit = 0xD2,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeServiceUnavailable = 0x53,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeServiceUnavailableWithFinalBit = 0xD3,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeGatewayTimeout = 0x54,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeGatewayTimeoutWithFinalBit = 0xD4,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeHTTPVersionNotSupported = 0x55,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeHTTPVersionNotSupportedWithFinalBit = 0xD5,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeDatabaseFull = 0x60,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeDatabaseFullWithFinalBit = 0xE0,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeDatabaseLocked = 0x61,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   kOBEXResponseCodeDatabaseLockedWithFinalBit = 0xE1,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "};"
+            }
+          ],
+          "platforms": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

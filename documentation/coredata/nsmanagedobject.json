@@ -1,0 +1,3129 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A base class that implements the behavior required of a Core Data model object."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/core_data_model"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1506177,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSManagedObject",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "3.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSManagedObject",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/nsmanagedobject"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/nsmanagedobject"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_model": {
+      "title": "Core Data Model",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_model",
+      "url": "/documentation/coredata/core_data_model",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "url": "/documentation/coredata/core_data_stack",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification": {
+      "title": "NSManagedObjectContextObjectsDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription": {
+      "title": "NSAttributeDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsattributedescription"
+    },
+    "devLink-1724471": {
+      "identifier": "devLink-1724471",
+      "type": "link",
+      "title": "Faulting and Uniquing",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/FaultingandUniquing.html#//apple_ref/doc/uid/TP40001075-CH18"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418795-isequal": {
+      "title": "isEqual:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418795-isequal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418795-isequal",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isEqual:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418859-hash": {
+      "title": "hash",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418859-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418859-hash"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418793-superclass": {
+      "title": "superclass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418793-superclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418793-superclass"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571949-class": {
+      "title": "class",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571949-class",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1571949-class",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "class"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418954-self": {
+      "title": "self",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418954-self",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418954-self",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418528-isproxy": {
+      "title": "isProxy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418528-isproxy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418528-isproxy",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isProxy"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418511-iskindofclass": {
+      "title": "isKindOfClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418511-iskindofclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418511-iskindofclass",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isKindOfClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418766-ismemberofclass": {
+      "title": "isMemberOfClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418766-ismemberofclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418766-ismemberofclass",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isMemberOfClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418893-conformstoprotocol": {
+      "title": "conformsToProtocol:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418893-conformstoprotocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418893-conformstoprotocol",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "conformsToProtocol:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418583-respondstoselector": {
+      "title": "respondsToSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418583-respondstoselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418583-respondstoselector",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "respondsToSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418746-description": {
+      "title": "description",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418746-description",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418746-description"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506677-managedobjectcontext": {
+      "title": "managedObjectContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506677-managedobjectcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506677-managedobjectcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The managed object context with which the managed object is registered."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506562-entity": {
+      "title": "entity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506562-entity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506562-entity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The entity description of the managed object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid": {
+      "title": "objectID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506848-objectid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object ID of the managed object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506281-inserted": {
+      "title": "inserted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506281-inserted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506281-inserted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the managed object has been inserted in a managed object context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506867-updated": {
+      "title": "updated",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506867-updated",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506867-updated",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the managed object has unsaved changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506681-deleted": {
+      "title": "deleted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506681-deleted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506681-deleted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the managed object will be deleted during the next save."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506720-faultingstate": {
+      "title": "faultingState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506720-faultingstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506720-faultingstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The faulting state of the managed object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506837-fault": {
+      "title": "fault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506837-fault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506837-fault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the managed object is a fault."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506728-primitivevalueforkey": {
+      "title": "primitiveValueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506728-primitivevalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506728-primitivevalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the value for the specified property from the managed object’s private internal storage ."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "primitiveValueForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506960-setprimitivevalue": {
+      "title": "setPrimitiveValue:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506960-setprimitivevalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506960-setprimitivevalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the value of a given property in the managed object's private internal storage."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setPrimitiveValue:forKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418515-conformstoprotocol": {
+      "title": "conformsToProtocol:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418515-conformstoprotocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418515-conformstoprotocol",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "conformsToProtocol:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1571958-alloc": {
+      "title": "alloc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571958-alloc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1571958-alloc",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "alloc"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1571945-allocwithzone": {
+      "title": "allocWithZone:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571945-allocwithzone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1571945-allocwithzone",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "allocWithZone:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1571948-new": {
+      "title": "new",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571948-new",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1571948-new",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "new"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418555-instancesrespondtoselector": {
+      "title": "instancesRespondToSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418555-instancesrespondtoselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418555-instancesrespondtoselector",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "instancesRespondToSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418713-instancemethodforselector": {
+      "title": "instanceMethodForSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418713-instancemethodforselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418713-instancemethodforselector",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "instanceMethodForSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418863-methodforselector": {
+      "title": "methodForSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418863-methodforselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418863-methodforselector",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "methodForSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector": {
+      "title": "methodSignatureForSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1571960-methodsignatureforselector",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "methodSignatureForSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1571959-instancemethodsignatureforselect": {
+      "title": "instanceMethodSignatureForSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571959-instancemethodsignatureforselect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1571959-instancemethodsignatureforselect",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "instanceMethodSignatureForSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418669-issubclassofclass": {
+      "title": "isSubclassOfClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418669-issubclassofclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418669-issubclassofclass",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "isSubclassOfClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1416222-willchangevalueforkey": {
+      "title": "willChangeValueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1416222-willchangevalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1416222-willchangevalueforkey",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "willChangeValueForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1410539-didchangevalueforkey": {
+      "title": "didChangeValueForKey:withSetMutation:usingObjects:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1410539-didchangevalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1410539-didchangevalueforkey",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didChangeValueForKey:withSetMutation:usingObjects:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity": {
+      "title": "initWithEntity:insertIntoManagedObjectContext:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506357-initwithentity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a managed object from an entity description and inserts it into the specified managed object context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithEntity:insertIntoManagedObjectContext:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506470-didturnintofault": {
+      "title": "didTurnIntoFault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506470-didturnintofault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506470-didturnintofault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is turned into a fault."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didTurnIntoFault"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506537-willturnintofault": {
+      "title": "willTurnIntoFault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506537-willturnintofault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506537-willturnintofault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to add code into the life cycle of the managed object before it is converted to a fault."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "willTurnIntoFault"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506424-awakefromfetch": {
+      "title": "awakeFromFetch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506424-awakefromfetch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506424-awakefromfetch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is being fulfilled from a fault."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "awakeFromFetch"
+        }
+      ]
+    },
+    "devLink-1724435": {
+      "identifier": "devLink-1724435",
+      "type": "link",
+      "title": "Core Data Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075"
+    },
+    "devLink-1699085": {
+      "identifier": "devLink-1699085",
+      "type": "link",
+      "title": "Achieving Basic Key-Value Coding Compliance",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/AccessorConventions.html#//apple_ref/doc/uid/20002174"
+    },
+    "devLink-1695989": {
+      "identifier": "devLink-1695989",
+      "type": "link",
+      "title": "Key-Value Coding Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506776-validatevalue": {
+      "title": "validateValue:forKey:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506776-validatevalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506776-validatevalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Validates a property value for a given key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "validateValue:forKey:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506998-validateforupdate": {
+      "title": "validateForUpdate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506998-validateforupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506998-validateforupdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the managed object's current state is valid."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "validateForUpdate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsentitydescription": {
+      "title": "NSEntityDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsentitydescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of an entity in Core Data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject": {
+      "title": "NSManagedObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A base class that implements the behavior required of a Core Data model object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640602-initwithcontext": {
+      "title": "initWithContext:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640602-initwithcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1640602-initwithcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a managed object subclass and inserts it into the specified managed object context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithContext:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640588-entity": {
+      "title": "entity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640588-entity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1640588-entity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the entity description that is associated with this subclass."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "entity"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506654-haschanges": {
+      "title": "hasChanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506654-haschanges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506654-haschanges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the managed object has been inserted, has been deleted, or has unsaved changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506973-hasfaultforrelationshipnamed": {
+      "title": "hasFaultForRelationshipNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506973-hasfaultforrelationshipnamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506973-hasfaultforrelationshipnamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the relationship for a given key is a fault."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hasFaultForRelationshipNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506240-haspersistentchangedvalues": {
+      "title": "hasPersistentChangedValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506240-haspersistentchangedvalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506240-haspersistentchangedvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the managed object has persistent changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506727-contextshouldignoreunmodeledprop": {
+      "title": "contextShouldIgnoreUnmodeledPropertyChanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506727-contextshouldignoreunmodeledprop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506727-contextshouldignoreunmodeledprop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether instances of the class should be marked as having changes if an unmodeled property is changed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506548-awakefrominsert": {
+      "title": "awakeFromInsert",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506548-awakefrominsert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506548-awakefrominsert",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is initially created."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "awakeFromInsert"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506861-awakefromsnapshotevents": {
+      "title": "awakeFromSnapshotEvents:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506861-awakefromsnapshotevents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506861-awakefromsnapshotevents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is being fulfilled from a snapshot."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "awakeFromSnapshotEvents:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506775-changedvalues": {
+      "title": "changedValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506775-changedvalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506775-changedvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary containing the keys and (old) values of persistent properties that have been changed since the last fetching or saving of the managed object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "changedValues"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506472-changedvaluesforcurrentevent": {
+      "title": "changedValuesForCurrentEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506472-changedvaluesforcurrentevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506472-changedvaluesforcurrentevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary containing the keys and old values of persistent properties that have changed since the last posting of "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "changedValuesForCurrentEvent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506771-committedvaluesforkeys": {
+      "title": "committedValuesForKeys:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506771-committedvaluesforkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506771-committedvaluesforkeys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary of the last fetched or saved values of the managed object for the properties specified by the given keys."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "committedValuesForKeys:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506674-preparefordeletion": {
+      "title": "prepareForDeletion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506674-preparefordeletion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506674-preparefordeletion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is about to be deleted."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareForDeletion"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506209-willsave": {
+      "title": "willSave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506209-willsave",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506209-willsave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to add code into the life cycle of the managed object when it is about to be saved."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "willSave"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506585-didsave": {
+      "title": "didSave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506585-didsave",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506585-didsave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to add code into the life cycle of the managed object after the managed object’s context completes a save operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didSave"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640605-fetchrequest": {
+      "title": "fetchRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640605-fetchrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1640605-fetchrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new fetch request initialized with the entity represented by this subclass."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "fetchRequest"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506613-valueforkey": {
+      "title": "valueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506613-valueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506613-valueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the value for the property specified by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "key"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "valueForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506397-setvalue": {
+      "title": "setValue:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506397-setvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506397-setvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the specified property of the managed object to the specified value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValue:forKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1807259-mutablesetvalueforkey": {
+      "title": "mutableSetValueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1807259-mutablesetvalueforkey",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coredata/nsmanagedobject/1807259-mutablesetvalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a mutable set that provides read-write access to the unordered to-many relationship specified by a given key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506201-objectidsforrelationshipnamed": {
+      "title": "objectIDsForRelationshipNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506201-objectidsforrelationshipnamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506201-objectidsforrelationshipnamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the object IDs for all of the managed objects that are in the named relationship."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "objectIDsForRelationshipNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506195-validatefordelete": {
+      "title": "validateForDelete:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506195-validatefordelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506195-validatefordelete",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the managed object can be deleted in its current state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "validateForDelete:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506683-validateforinsert": {
+      "title": "validateForInsert:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506683-validateforinsert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506683-validateforinsert",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the managed object can be inserted in its current state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "validateForInsert:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/1535452-validation_error_codes": {
+      "title": "Validation Error Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/1535452-validation_error_codes",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coredata/1535452-validation_error_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Error codes related to validation of managed object properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsvalidationkeyerrorkey": {
+      "title": "NSValidationKeyErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsvalidationkeyerrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsvalidationkeyerrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error key for the attribute that failed to validate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsvalidationobjecterrorkey": {
+      "title": "NSValidationObjectErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsvalidationobjecterrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsvalidationobjecterrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error key for the object that failed to validate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsvalidationpredicateerrorkey": {
+      "title": "NSValidationPredicateErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsvalidationpredicateerrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsvalidationpredicateerrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error key for the predicate that failed to validate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsvalidationvalueerrorkey": {
+      "title": "NSValidationValueErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsvalidationvalueerrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsvalidationvalueerrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error key for the value that failed to validate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1807263-automaticallynotifiesobserversfo": {
+      "title": "automaticallyNotifiesObserversForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1807263-automaticallynotifiesobserversfo",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coredata/nsmanagedobject/1807263-automaticallynotifiesobserversfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the receiver provides automatic support for key-value observing change notifications for the given key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506865-didaccessvalueforkey": {
+      "title": "didAccessValueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506865-didaccessvalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506865-didaccessvalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides support for key-value observing access notification."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didAccessValueForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506210-observationinfo": {
+      "title": "observationInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506210-observationinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506210-observationinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the observation info of the managed object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "observationInfo"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506535-setobservationinfo": {
+      "title": "setObservationInfo:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506535-setobservationinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506535-setobservationinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the observation info of the managed object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setObservationInfo:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1507001-willaccessvalueforkey": {
+      "title": "willAccessValueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1507001-willaccessvalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1507001-willaccessvalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides support for key-value observing access notification."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "willAccessValueForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506976-didchangevalueforkey": {
+      "title": "didChangeValueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506976-didchangevalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506976-didchangevalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to respond when a value of a given property has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didChangeValueForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506936-didchangevalueforkey": {
+      "title": "didChangeValueForKey:withSetMutation:usingObjects:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506936-didchangevalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506936-didchangevalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to respond when a change was made to a specified to-many relationship."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didChangeValueForKey:withSetMutation:usingObjects:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506229-willchangevalueforkey": {
+      "title": "willChangeValueForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506229-willchangevalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506229-willchangevalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to respond when a value of a given property is about to change."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "willChangeValueForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506801-willchangevalueforkey": {
+      "title": "willChangeValueForKey:withSetMutation:usingObjects:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506801-willchangevalueforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506801-willchangevalueforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an opportunity to respond when a change is about to be made to a specified to-many relationship."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "willChangeValueForKey:withSetMutation:usingObjects:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nssnapshoteventtype": {
+      "title": "NSSnapshotEventType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nssnapshoteventtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nssnapshoteventtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the reason the managed object may need to reinitialize its values. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializing a Managed Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640602-initwithcontext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting a Managed Object’s Identity",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506562-entity",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640588-entity"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting State Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506677-managedobjectcontext",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506654-haschanges",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506281-inserted",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506867-updated",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506681-deleted",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506837-fault",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506720-faultingstate",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506973-hasfaultforrelationshipnamed",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506240-haspersistentchangedvalues"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Change Events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506727-contextshouldignoreunmodeledprop",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506424-awakefromfetch",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506548-awakefrominsert",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506861-awakefromsnapshotevents",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506775-changedvalues",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506472-changedvaluesforcurrentevent",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506771-committedvaluesforkeys",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506674-preparefordeletion",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506209-willsave",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506585-didsave",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506537-willturnintofault",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506470-didturnintofault",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640605-fetchrequest"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting Key-Value Coding",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506613-valueforkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506397-setvalue",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1807259-mutablesetvalueforkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506728-primitivevalueforkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506960-setprimitivevalue",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506201-objectidsforrelationshipnamed"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Data Validation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506776-validatevalue",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506195-validatefordelete",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506683-validateforinsert",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506998-validateforupdate",
+        "doc://com.apple.documentation/documentation/coredata/1535452-validation_error_codes",
+        "doc://com.apple.documentation/documentation/coredata/nsvalidationkeyerrorkey",
+        "doc://com.apple.documentation/documentation/coredata/nsvalidationobjecterrorkey",
+        "doc://com.apple.documentation/documentation/coredata/nsvalidationpredicateerrorkey",
+        "doc://com.apple.documentation/documentation/coredata/nsvalidationvalueerrorkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting Key-Value Observing",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1807263-automaticallynotifiesobserversfo",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506865-didaccessvalueforkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506210-observationinfo",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506535-setobservationinfo",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1507001-willaccessvalueforkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506976-didchangevalueforkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506936-didchangevalueforkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506229-willchangevalueforkey",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506801-willchangevalueforkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reinitializing Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nssnapshoteventtype"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsentitydescription"
+      ],
+      "title": "Managed Objects and Entities",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSManagedObject"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A managed object is associated with an entity description ("
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription"
+            },
+            {
+              "type": "text",
+              "text": ") that provides metadata about the object, including the name of the entity that the object represents and the names of its attributes and relationships. A managed object is also associated with a managed object context that tracks changes to the object graph. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can’t use instances of direct subclasses of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject"
+            },
+            {
+              "type": "text",
+              "text": " (or any other class that doesn’t inherit from "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject"
+            },
+            {
+              "type": "text",
+              "text": ") with a managed object context. You may create custom subclasses of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject"
+            },
+            {
+              "type": "text",
+              "text": ", although this isn’t always required. If no custom logic is needed, you can create a complete Object graph with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject"
+            },
+            {
+              "type": "text",
+              "text": " instances."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you instantiate a managed object directly, you must call the designated initializer "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Data Storage",
+          "anchor": "1653929"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In some respects, an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " acts like a dictionary—it’s a generic container object that provides efficient storage for the properties defined by its associated "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSEntityDescription"
+            },
+            {
+              "type": "text",
+              "text": " instance. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " supports a range of common types for attribute values, including string, date, and number (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription"
+            },
+            {
+              "type": "text",
+              "text": " for full details). Therefore, typically you don’t need to define instance variables in subclasses. Sometimes, however, you want to use types that aren’t supported directly, such as colors and C structures. For example, in a graphics application you might want to define a Rectangle entity that has color and bounds attributes that are an instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSColor"
+            },
+            {
+              "type": "text",
+              "text": " and an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSRect"
+            },
+            {
+              "type": "text",
+              "text": " struct, respectively. For some types you can use a transformable attribute, for others this may require you to create a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Faulting",
+          "anchor": "1653939"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Managed objects typically represent data held in a persistent store. In some situations a managed object may be a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "fault"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "—an object whose property values haven’t yet been loaded from the external data store. When you access persistent property values, the fault “fires” and the data is retrieved from the store automatically. This can be a comparatively expensive process (potentially requiring a round trip to the persistent store), and you may wish to avoid unnecessarily firing a fault. See "
+            },
+            {
+              "type": "link",
+              "title": "Faulting and Uniquing",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/FaultingandUniquing.html#//apple_ref/doc/uid/TP40001075-CH18"
+            },
+            {
+              "type": "text",
+              "text": " for more details on faults. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can safely invoke the following methods and properties on a fault without causing it to fire: "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418795-isequal"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418859-hash"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418793-superclass"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571949-class"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418954-self"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418528-isproxy"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418511-iskindofclass"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418766-ismemberofclass"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418893-conformstoprotocol"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418583-respondstoselector"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418746-description"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506677-managedobjectcontext"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506562-entity"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506281-inserted"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506867-updated"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506681-deleted"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506720-faultingstate"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506837-fault"
+            },
+            {
+              "type": "text",
+              "text": ". Because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "isEqual"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "hash"
+            },
+            {
+              "type": "text",
+              "text": " don’t cause a fault to fire, managed objects can typically be placed in collections without firing a fault. Note, however, that invoking key-value coding methods on the collection object might in turn result in an invocation of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "valueForKey:"
+            },
+            {
+              "type": "text",
+              "text": " on a managed object, which would fire the fault."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "description"
+            },
+            {
+              "type": "text",
+              "text": " property doesn’t cause a fault to fire, if you implement a custom "
+            },
+            {
+              "type": "codeVoice",
+              "code": "description"
+            },
+            {
+              "type": "text",
+              "text": " that accesses the object’s persistent properties, this does cause a fault to fire. You are strongly discouraged from overriding "
+            },
+            {
+              "type": "codeVoice",
+              "code": "description"
+            },
+            {
+              "type": "text",
+              "text": " in this way."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1653954"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In combination with the entity description in the managed object model, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " provides a rich set of default behaviors including support for arbitrary properties and value validation. If you decide to subclass "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " to implement custom features, make sure you don’t disrupt Core Data’s behavior."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Methods and Properties You Must Not Override",
+          "anchor": "1653965"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " itself customizes many features of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSObject"
+            },
+            {
+              "type": "text",
+              "text": " so that managed objects can be properly integrated into the Core Data infrastructure. Core Data relies on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " implementation of the following methods and properties, which you therefore absolutely must not override: "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506728-primitivevalueforkey"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506960-setprimitivevalue"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418795-isequal"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418859-hash"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418793-superclass"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1571949-class"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418954-self"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418528-isproxy"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418511-iskindofclass"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418766-ismemberofclass"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418515-conformstoprotocol"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418583-respondstoselector"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506677-managedobjectcontext"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506562-entity"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506281-inserted"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506867-updated"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506681-deleted"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506837-fault"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571958-alloc"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571945-allocwithzone"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571948-new"
+            },
+            {
+              "type": "text",
+              "text": ",  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418555-instancesrespondtoselector"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418713-instancemethodforselector"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418863-methodforselector"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571959-instancemethodsignatureforselect"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418669-issubclassofclass"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Methods and Properties You Shouldn't Override",
+          "anchor": "1653978"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As with any class, you are strongly discouraged from overriding the key-value observing methods such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1416222-willchangevalueforkey"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1410539-didchangevalueforkey"
+            },
+            {
+              "type": "text",
+              "text": ". Avoid overriding "
+            },
+            {
+              "type": "codeVoice",
+              "code": "description"
+            },
+            {
+              "type": "text",
+              "text": "—if this method fires a fault during a debugging operation, the results may be unpredictable. Also avoid overriding "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dealloc"
+            },
+            {
+              "type": "text",
+              "text": ". Changing values in the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity"
+            },
+            {
+              "type": "text",
+              "text": " method won't be noticed by the context, and if you aren't careful, those changes may not be saved. Perform most initialization customization in one of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "awake…"
+            },
+            {
+              "type": "text",
+              "text": " methods. If you do override "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity"
+            },
+            {
+              "type": "text",
+              "text": ", make sure you adhere to the requirements set out in the method description. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Don’t override "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dealloc"
+            },
+            {
+              "type": "text",
+              "text": " because "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506470-didturnintofault"
+            },
+            {
+              "type": "text",
+              "text": " is usually a better time to clear values—a managed object may not be reclaimed for some time after it has been turned into a fault. Core Data doesn’t guarantee that "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dealloc"
+            },
+            {
+              "type": "text",
+              "text": " will be called in all scenarios (such as when the application quits). Therefore, don’t include required side effects (like saving or changes to the file system, user preferences, and so on) in these methods."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In summary, for "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dealloc"
+            },
+            {
+              "type": "text",
+              "text": ", Core Data reserves exclusive control over the life cycle of the managed object (that is, raw memory management). This is so that the framework can provide features such as uniquing and by consequence, relationship maintenance, as well as much better performance than would be possible otherwise."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Additional Override Considerations",
+          "anchor": "1653995"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following methods are intended to be fine grained and aren’t suitable for large-scale operations. Don’t fetch or save in these methods. In particular, they shouldn’t have side effects on the managed object context."
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506470-didturnintofault"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506537-willturnintofault"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "dealloc"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition, if you plan to override "
+            },
+            {
+              "type": "codeVoice",
+              "code": "awakeFromInsert"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "awakeFromFetch"
+            },
+            {
+              "type": "text",
+              "text": ", and validation methods, first invoke "
+            },
+            {
+              "type": "codeVoice",
+              "code": "super.method()"
+            },
+            {
+              "type": "text",
+              "text": ", the superclass’s implementation. Don’t modify relationships in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506424-awakefromfetch"
+            },
+            {
+              "type": "text",
+              "text": "—see the method description for details."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Custom Accessor Methods",
+          "anchor": "1654006"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, you don’t need to write custom accessor methods for properties that are defined in the entity of a managed object’s corresponding managed object model. If you need to do so, follow the implementation patterns described in Managed Object Accessor Methods in "
+            },
+            {
+              "type": "link",
+              "title": "Core Data Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data automatically generates accessor methods (and primitive accessor methods) for you. For attributes and to-one relationships, Core Data generates the standard get and set accessor methods; for to-many relationships, Core Data generates the indexed accessor methods as described in "
+            },
+            {
+              "type": "link",
+              "title": "Achieving Basic Key-Value Coding Compliance",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/AccessorConventions.html#//apple_ref/doc/uid/20002174"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "Key-Value Coding Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i"
+            },
+            {
+              "type": "text",
+              "text": ". You do however need to declare the accessor methods or use Objective-C properties to suppress compiler warnings. For a full discussion, see Managed Object Accessor Methods in "
+            },
+            {
+              "type": "link",
+              "title": "Core Data Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Custom Instance Variables",
+          "anchor": "1654017"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " stores its properties in an internal structure as objects, and in general Core Data is more efficient working with storage under its own control rather than by using custom instance variables."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " provides support for a range of common types for attribute values, including string, date, and number (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription"
+            },
+            {
+              "type": "text",
+              "text": " for full details). If you want to use types that aren’t supported directly, like colors and C structures, you can either use transformable attributes or create a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Sometimes it’s convenient to represent variables as scalars—in drawing applications, for example, where variables represent dimensions and x and y coordinates and are frequently used in calculations. To represent attributes as scalars, you declare instance variables as you do in any other class. You also need to implement suitable accessor methods as described in Managed Object Accessor Methods."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you define custom instance variables for example to store derived attributes or other transient properties, clean up these variables in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506470-didturnintofault"
+            },
+            {
+              "type": "text",
+              "text": " rather than "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dealloc"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Validation Methods",
+          "anchor": "1654035"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " provides consistent hooks for validating property and inter-property values. You typically shouldn’t override "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506776-validatevalue"
+            },
+            {
+              "type": "text",
+              "text": ". Instead implement methods of the form "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validate<Key>:error:"
+            },
+            {
+              "type": "text",
+              "text": ", as defined by the NSKeyValueCoding protocol. If you want to validate inter-property values, you can override "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506998-validateforupdate"
+            },
+            {
+              "type": "text",
+              "text": " and/or related validation methods. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Don’t call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validateValue:forKey:error:"
+            },
+            {
+              "type": "text",
+              "text": " within custom property validation methods—if you do, you create an infinite loop when "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validateValue:forKey:error:"
+            },
+            {
+              "type": "text",
+              "text": " is invoked at runtime. If you do implement custom validation methods, don’t call them directly. Instead, call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "validateValue:forKey:error:"
+            },
+            {
+              "type": "text",
+              "text": " with the appropriate key. This ensures that any constraints defined in the managed object model are applied."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you implement custom inter-property validation methods like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506998-validateforupdate"
+            },
+            {
+              "type": "text",
+              "text": ", call the superclass’s implementation first. This ensures that individual property validation methods are also invoked. If there are multiple validation failures in one operation, collect them in an array and add the array—using the key "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSDetailedErrorsKey"
+            },
+            {
+              "type": "text",
+              "text": "—to the userInfo dictionary in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSError"
+            },
+            {
+              "type": "text",
+              "text": " object you return. For an example, see Managed Object Validation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

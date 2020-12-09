@@ -1,0 +1,571 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An interface for coordinating your custom drop-related actions with the collection view."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2897408,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UICollectionViewDropCoordinator",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(pl)UICollectionViewDropCoordinator",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicollectionviewdropcoordinator"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicollectionviewdropcoordinator"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview": {
+      "title": "collectionView:performDropWithCoordinator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:performDropWithCoordinator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897482-items": {
+      "title": "items",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897482-items",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2897482-items",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The items being dragged."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897284-destinationindexpath": {
+      "title": "destinationIndexPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897284-destinationindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2897284-destinationindexpath",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index path at which to insert the item in the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem": {
+      "title": "dropItem:toItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Animates the item to the specified index path in the collection view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropItem:toItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2909040-dropitem": {
+      "title": "dropItem:intoItemAtIndexPath:rect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2909040-dropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2909040-dropitem",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Animates the item to the specified rectangle in the collection view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropItem:intoItemAtIndexPath:rect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897364-dropitem": {
+      "title": "dropItem:toTarget:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897364-dropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2897364-dropitem",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Animates the item to an arbitrary location in your view hierarchy."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropItem:toTarget:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2921634-dropitem": {
+      "title": "dropItem:toPlaceholder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2921634-dropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2921634-dropitem",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Animates the item to the specified location and inserts a placeholder cell at that location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropItem:toPlaceholder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897462-session": {
+      "title": "session",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897462-session",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2897462-session",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The drop session containing information about the transaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897465-proposal": {
+      "title": "proposal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897465-proposal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator/2897465-proposal",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current proposal for how to incorporate the dropped items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views": {
+      "title": "Supporting Drag and Drop in Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate drags and handle drops from a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate": {
+      "title": "UICollectionViewDragDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdragdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for initiating drags from a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate": {
+      "title": "UICollectionViewDropDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for handling drops in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator": {
+      "title": "UICollectionViewDropCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropcoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for coordinating your custom drop-related actions with the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholder": {
+      "title": "UICollectionViewDropPlaceholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropplaceholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A placeholder for an item dropped on a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropproposal": {
+      "title": "UICollectionViewDropProposal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropproposal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropproposal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your proposed solution for handling a drop in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropitem": {
+      "title": "UICollectionViewDropItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data associated with an item being dropped into the collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext": {
+      "title": "UICollectionViewDropPlaceholderContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdropplaceholdercontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about a placeholder in the collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating": {
+      "title": "UIDataSourceTranslating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidatasourcetranslating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An advanced interface for managing a data source object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewplaceholder": {
+      "title": "UICollectionViewPlaceholder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewplaceholder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewplaceholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A placeholder for an item dragged or dropped on a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Dragged Items",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897482-items"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Drop Location",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897284-destinationindexpath"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Animating Items to Their Destination",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2909040-dropitem",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897364-dropitem",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2921634-dropitem"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Session Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897462-session",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropcoordinator/2897465-proposal"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/supporting_drag_and_drop_in_collection_views",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdragdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholder",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropproposal",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropitem",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropplaceholdercontext",
+        "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewplaceholder"
+      ],
+      "title": "Drag and Drop",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UICollectionViewDropCoordinator"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You don’t create instances of this class yourself. When a drop occurs in the collection view, UIKit creates an instance of this class and passes it to your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " method. Use the object to let the collection view know how you want to animate the dropped items into position."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

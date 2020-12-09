@@ -1,0 +1,710 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Allow the user to resume a download without starting over."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3038374,
+  "kind": "article",
+  "metadata": {
+    "title": "Pausing and Resuming Downloads",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/url_loading_system/pausing_and_resuming_downloads"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/url_loading_system/pausing_and_resuming_downloads"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask": {
+      "title": "NSURLSessionDownloadTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiondownloadtask"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask/1411634-cancelbyproducingresumedata": {
+      "title": "cancelByProducingResumeData:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask/1411634-cancelbyproducingresumedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiondownloadtask/1411634-cancelbyproducingresumedata",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelByProducingResumeData:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3038380": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3038380",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3038380",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Storing the resume data when canceling a download"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1411610-urlsession": {
+      "title": "URLSession:task:didCompleteWithError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1411610-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontaskdelegate/1411610-urlsession",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSession:task:didCompleteWithError:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtaskresumedata": {
+      "title": "NSURLSessionDownloadTaskResumeData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtaskresumedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiondownloadtaskresumedata"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3087716": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3087716",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3087716"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession/1409226-downloadtaskwithresumedata": {
+      "title": "downloadTaskWithResumeData:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1409226-downloadtaskwithresumedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession/1409226-downloadtaskwithresumedata",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "downloadTaskWithResumeData:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411598-downloadtaskwithresumedata": {
+      "title": "downloadTaskWithResumeData:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411598-downloadtaskwithresumedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession/1411598-downloadtaskwithresumedata",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "downloadTaskWithResumeData:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
+      "title": "NSURLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1411121-resume": {
+      "title": "resume",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1411121-resume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontask/1411121-resume",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resume"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3038381": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3038381",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3038381",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creating and starting a download task from resume data"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloaddelegate/1408142-urlsession": {
+      "title": "URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloaddelegate/1408142-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiondownloaddelegate/1408142-urlsession",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/downloading_files_from_websites": {
+      "title": "Downloading Files from Websites",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/downloading_files_from_websites",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/url_loading_system/downloading_files_from_websites",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Download files directly to the filesystem."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads": {
+      "title": "Pausing and Resuming Downloads",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/url_loading_system/pausing_and_resuming_downloads",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allow the user to resume a download without starting over."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/downloading_files_in_the_background": {
+      "title": "Downloading Files in the Background",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/downloading_files_in_the_background",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/url_loading_system/downloading_files_in_the_background",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create tasks that download files while your app is inactive."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system/downloading_files_from_websites",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system/downloading_files_in_the_background"
+      ],
+      "title": "Downloading",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app or the user may need to cancel an in-progress download and resume it later. By supporting resumable downloads, you save both the user’s time and network bandwidth."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also use this technique to resume a download that fails due to a temporary loss of connectivity."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Store the Resume Data Object When You Cancel the Download",
+          "anchor": "3038375"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You cancel a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask"
+            },
+            {
+              "type": "text",
+              "text": " by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask/1411634-cancelbyproducingresumedata"
+            },
+            {
+              "type": "text",
+              "text": ". This method takes a completion handler which is called once the cancellation is complete. The completion handler receives a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "resumeData"
+            },
+            {
+              "type": "text",
+              "text": " parameter. If it it not "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", this is the token you use later to resume the download. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3038380"
+            },
+            {
+              "type": "text",
+              "text": " shows how to cancel a download task and store "
+            },
+            {
+              "type": "codeVoice",
+              "code": "resumeData"
+            },
+            {
+              "type": "text",
+              "text": ", if it exists, in a property. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "downloadTask.cancel { resumeDataOrNil in",
+            "    guard let resumeData = resumeDataOrNil else { ",
+            "      // download can't be resumed; remove from UI if necessary",
+            "      return",
+            "    }",
+            "    self.resumeData = resumeData",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3038380",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Storing the resume data when canceling a download"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Not all downloads can be resumed. See the discussion in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask/1411634-cancelbyproducingresumedata"
+                },
+                {
+                  "type": "text",
+                  "text": " for a list of conditions that must be met for a download to be resumable. Also, downloads that use a background configuration will handle resumption automatically, so manual resuming is only needed for non-background downloads."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Store the Resume Data Object When a Download Fails",
+          "anchor": "3087715"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also resume a download that has failed due to a temporary loss of connectivity, as when the user walks out of WiFi range."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the download fails, the session calls your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1411610-urlsession"
+            },
+            {
+              "type": "text",
+              "text": " delegate method. If "
+            },
+            {
+              "type": "codeVoice",
+              "code": "error"
+            },
+            {
+              "type": "text",
+              "text": " is not "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", look in its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userInfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary for the key "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtaskresumedata"
+            },
+            {
+              "type": "text",
+              "text": ". If the key exists, save the value associated with it to use later when you try to resume the download. If the key does not exist, the download can’t be resumed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/pausing_and_resuming_downloads#3087716"
+            },
+            {
+              "type": "text",
+              "text": " shows an implementation of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate/1411610-urlsession"
+            },
+            {
+              "type": "text",
+              "text": " that retrieves and saves the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "resumeData"
+            },
+            {
+              "type": "text",
+              "text": " object, if any, from the error."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {",
+            "    guard let error = error else {",
+            "        // Handle success case.",
+            "        return",
+            "    }",
+            "    let userInfo = (error as NSError).userInfo",
+            "    if let resumeData = userInfo[NSURLSessionDownloadTaskResumeData] as? Data {",
+            "        self.resumeData = resumeData",
+            "    } ",
+            "    // Perform any other error handling.",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3087716",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use the Stored Resume Data Object to Resume Downloading",
+          "anchor": "3038376"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When it’s appropriate to resume the download, create a new "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloadtask"
+            },
+            {
+              "type": "text",
+              "text": " by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1409226-downloadtaskwithresumedata"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411598-downloadtaskwithresumedata"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession"
+            },
+            {
+              "type": "text",
+              "text": ", passing in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "resumeData"
+            },
+            {
+              "type": "text",
+              "text": " object you stored earlier. Then call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1411121-resume"
+            },
+            {
+              "type": "text",
+              "text": " on the task to resume the download."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let resumeData = resumeData else {",
+            "    // inform the user the download can't be resumed",
+            "    return",
+            "}",
+            "let downloadTask = urlSession.downloadTask(withResumeData: resumeData)",
+            "downloadTask.resume()",
+            "self.downloadTask = downloadTask",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3038381",
+            "title": "Listing 3",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Creating and starting a download task from resume data"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the download resumes successfully, the task calls your delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondownloaddelegate/1408142-urlsession"
+            },
+            {
+              "type": "text",
+              "text": " method. You can use the offset and byte count parameters to inform the user that the download has resumed and has preserved its earlier progress."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

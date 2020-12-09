@@ -1,0 +1,649 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add a document browser view controller to your app.  "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2897919,
+  "kind": "article",
+  "metadata": {
+    "title": "Setting Up a Document Browser App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app",
+        "documentation/uikit/uidocumentbrowserviewcontroller/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app",
+        "documentation/uikit/uidocumentbrowserviewcontroller/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers": {
+      "title": "View Controllers",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers",
+      "url": "/documentation/uikit/view_controllers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app": {
+      "title": "Adding a Document Browser to Your App",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app",
+      "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller": {
+      "title": "UIDocumentBrowserViewController",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller",
+      "url": "/documentation/uikit/uidocumentbrowserviewcontroller",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "link-media-2920797": {
+      "identifier": "link-media-2920797",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app#2920797"
+    },
+    "media-2920797": {
+      "identifier": "media-2920797",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 493
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7d56a83297/3d198804-30a2-421c-b78f-3766e90e2c59.png"
+        }
+      ],
+      "alt": "Xcode's project template pane. Both the iOS tab and the Document Based App icon are selected. ",
+      "title": "Figure 1"
+    },
+    "devLink-1980464": {
+      "identifier": "devLink-1980464",
+      "type": "link",
+      "title": "UISupportsDocumentBrowser",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW37"
+    },
+    "link-media-2948338": {
+      "identifier": "link-media-2948338",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app#2948338"
+    },
+    "media-2948338": {
+      "identifier": "media-2948338",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 260
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f00c1ce4dd/0d0695b6-0adc-42d1-9b2f-81f20ecf5ebf.png"
+        }
+      ],
+      "alt": "A screenshot showing the document type settings for text files. The file type is set to public-plain.text, and the handler rank is set to Alternate.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app#2920800": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app#2920800",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app#2920800"
+    },
+    "link-2942214": {
+      "title": "Set supported document types",
+      "type": "section",
+      "identifier": "link-2942214",
+      "kind": "article",
+      "role": "link",
+      "url": "http://help.apple.com/xcode/mac/current/#/devddd273fdd"
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app": {
+      "title": "Setting Up a Document Browser App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/setting_up_a_document_browser_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add a document browser view controller to your app.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/presenting_selected_documents": {
+      "title": "Presenting Selected Documents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/presenting_selected_documents",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/presenting_selected_documents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display user-selected documents over your browser view controller."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/enabling_document_sharing": {
+      "title": "Enabling Document Sharing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/enabling_document_sharing",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/enabling_document_sharing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Give users the ability to import and export documents from your app.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/presenting_selected_documents",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers/adding_a_document_browser_to_your_app/enabling_document_sharing"
+      ],
+      "title": "Configuration",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Setting up the document browser is a three-step process:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the browser as your app's root view controller."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Declare document browser support for your app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Define the type of documents that the document browser can open."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The simplest way to do all three is to create a new project using the Document Based App template."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a New Document-Based App",
+          "anchor": "2920789"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create a new document-based app, open Xcode and choose File > New > Project. In the template chooser, under Application, choose the Document Based App template, and click Next."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2920797",
+              "metadata": {
+                "anchor": "2920797",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Continue following the prompts to create a document-based project. The following items appear in your new project:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Main.storyboard"
+                    },
+                    {
+                      "type": "text",
+                      "text": " contains a document browser view controller as its initial view controller. This storyboard sets the document browser as your app's root view controller, ensuring that the browser remains in memory throughout your app's lifetime."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In your app's "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Info.plist"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file, the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "UISupportsDocumentBrowser"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key is set to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "YES"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", declaring document browser support for your app. Specifically, this key lets other apps open and edit the files stored in your app’s Documents directory. It also lets users set the app’s default save location in Settings. For more information, see "
+                    },
+                    {
+                      "type": "link",
+                      "title": "UISupportsDocumentBrowser",
+                      "destination": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW37"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The app declares that it supports "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "public.image"
+                    },
+                    {
+                      "type": "text",
+                      "text": " document types. Users can then select image files in the document browser and share image files from other apps."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use most of these default values as-is; however, unless you are making an image-based app, you probably need to update the supported document types."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set the Supported Document Types",
+          "anchor": "2904048"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For each document type your app supports, follow these steps in the project editor's Info pane:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click the Document Types disclosure triangle, and click the Add button (+) to add a new document type or open an existing document type. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the document type's name and its uniform type identifier (UTI)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click the \"Additional document type properties\" disclosure triangle.  "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "LSHandlerRank"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key, and set its value to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Owner"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Alternate"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Optionally, set the other document type properties."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, for an app that edits text files, use the settings shown in the following image:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2948338",
+              "metadata": {
+                "anchor": "2948338",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These entries set the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CFBundleDocumentTypes"
+            },
+            {
+              "type": "text",
+              "text": " key in your app's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file as shown here:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<key>CFBundleDocumentTypes</key>",
+            "<array>",
+            "    <dict>",
+            "        <key>CFBundleTypeIconFiles</key>",
+            "        <array/>",
+            "        <key>CFBundleTypeName</key>",
+            "        <string>Text</string>",
+            "        <key>LSHandlerRank</key>",
+            "        <string>Alternate</string>",
+            "        <key>LSItemContentTypes</key>",
+            "        <array>",
+            "            <string>public.plain-text</string>",
+            "        </array>",
+            "    </dict>",
+            "</array>"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "2920800",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information, see "
+            },
+            {
+              "type": "link",
+              "title": "Set supported document types",
+              "destination": "http://help.apple.com/xcode/mac/current/#/devddd273fdd"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

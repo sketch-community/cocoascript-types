@@ -1,0 +1,940 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "If your gesture involves a specific pattern of events, consider implementing a discrete gesture recognizer for it."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2881153,
+  "kind": "article",
+  "metadata": {
+    "title": "Implementing a Discrete Gesture Recognizer",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer": {
+      "title": "Implementing a Custom Gesture Recognizer",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch": {
+      "title": "UITouch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881181": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881181",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881181",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Beginning of the CheckmarkGestureRecognizer class"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan": {
+      "title": "touchesBegan:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesBegan:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881182": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881182",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881182",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Getting the first touch"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved": {
+      "title": "touchesMoved:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621107-touchesmoved",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesMoved:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881190": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881190",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881190",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tracking the touch movement"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended": {
+      "title": "touchesEnded:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621084-touchesended",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesEnded:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized": {
+      "title": "UIGestureRecognizerStateRecognized",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881191": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881191",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881191",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determining whether the gesture succeeded"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled": {
+      "title": "touchesCancelled:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesCancelled:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset": {
+      "title": "reset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizer/1620004-reset",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reset"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881203": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881203",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881203",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancelling and resetting the discrete gesture"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatepossible": {
+      "title": "UIGestureRecognizerStatePossible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatepossible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatepossible"
+    },
+    "link-media-3004410": {
+      "identifier": "link-media-3004410",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#3004410"
+    },
+    "media-3004410": {
+      "identifier": "media-3004410",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 194,
+            "height": 323
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7c21d852b9/aa0c0736-0d22-4521-ad21-938181d1e784.png"
+        }
+      ],
+      "alt": "A diagram demonstrating a user triggering a custom checkmark gesture recogniser",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A custom checkmark gesture"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/about_the_gesture_recognizer_state_machine": {
+      "title": "About the Gesture Recognizer State Machine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/about_the_gesture_recognizer_state_machine",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/about_the_gesture_recognizer_state_machine",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn about the states and transitions of the state machine that underlies gesture recognizers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer": {
+      "title": "Implementing a Discrete Gesture Recognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If your gesture involves a specific pattern of events, consider implementing a discrete gesture recognizer for it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer": {
+      "title": "Implementing a Continuous Gesture Recognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "For gestures that do not easily match a specific pattern, or when you want to use a gesture recognizer to gather touch input, create a continuous gesture recognizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/about_the_gesture_recognizer_state_machine",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_continuous_gesture_recognizer"
+      ],
+      "title": "Creating Custom Gesture Recognizers",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A gesture recognizer remains in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatepossible"
+            },
+            {
+              "type": "text",
+              "text": " state until events indicate that your gesture succeeded or failed, at which point you change its state. The advantage of discrete gesture recognizers is that they are simpler to implement because they require fewer state transitions. One disadvantage is that because the state change typically occurs later in the event sequence, recognition can easily be preempted by continuous gestures attached to the same view."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3004410"
+            },
+            {
+              "type": "text",
+              "text": " shows a checkmark gesture, which is created by tracing one finger down and to the right and then back up and to the right. Because the gesture follows a specific path, it makes sense to use a discrete gesture recognizer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3004410",
+              "metadata": {
+                "anchor": "3004410",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A custom checkmark gesture"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Defining the Conditions for Success",
+          "anchor": "2881166"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before implementing your gesture recognizer code, define the conditions for which recognition should occur. The conditions for matching a checkmark gesture are as follows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Only the first finger to touch the screen is tracked. All others are ignored."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The touch always moves left to right."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The touch moves downward initially but then changes direction and moves upward."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The upward stroke ends higher on the screen than the initial touch point."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Saving Gesture-Related Data",
+          "anchor": "2881167"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the conditions defined, add properties to your gesture recognizer to track any needed information. For the checkmark gesture, the gesture recognizer needs to know the starting point of the gesture so that it can compare that point to the final point. It also needs to know whether the user’s finger is moving downward or upward."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881181"
+            },
+            {
+              "type": "text",
+              "text": " shows the first part of a custom "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CheckmarkGestureRecognizer"
+            },
+            {
+              "type": "text",
+              "text": " class definition. This class stores the initial touch point and the current phase of the gesture. The class also stores the  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " object associated with the first finger so that it can ignore any other touches."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "enum CheckmarkPhases {",
+            "    case notStarted",
+            "    case initialPoint",
+            "    case downStroke",
+            "    case upStroke",
+            "} ",
+            "class CheckmarkGestureRecognizer : UIGestureRecognizer {",
+            "    var strokePhase : CheckmarkPhases = .notStarted",
+            "    var initialTouchPoint : CGPoint = CGPoint.zero",
+            "    var trackedTouch : UITouch? = nil",
+            "   // Overridden methods to come..."
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881181",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Beginning of the CheckmarkGestureRecognizer class"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Processing Touch Events",
+          "anchor": "2881168"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881182"
+            },
+            {
+              "type": "text",
+              "text": " shows the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan"
+            },
+            {
+              "type": "text",
+              "text": " method, which sets up the initial conditions for recognizing the gesture. The gesture fails immediately if the initial event contains two touches. If there is only one touch, the touch object is saved in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "trackedTouch"
+            },
+            {
+              "type": "text",
+              "text": " property. Because UIKit reuses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch"
+            },
+            {
+              "type": "text",
+              "text": " objects, and therefore overwrites their properties, this method also saves the location of the touch in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "initialTouchPoint"
+            },
+            {
+              "type": "text",
+              "text": " property. After the first touch occurs, any new touches added to the event sequence are ignored.  "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {",
+            "   super.touchesBegan(touches, with: event)",
+            "   if touches.count != 1 {",
+            "      self.state = .failed",
+            "   } ",
+            " ",
+            "   // Capture the first touch and store some information about it.",
+            "   if self.trackedTouch == nil {",
+            "      self.trackedTouch = touches.first",
+            "      self.strokePhase = .initialPoint",
+            "      self.initialTouchPoint = (self.trackedTouch?.location(in: self.view))!",
+            "   } else {",
+            "      // Ignore all but the first touch.",
+            "      for touch in touches {",
+            "         if touch != self.trackedTouch {",
+            "            self.ignore(touch, for: event)",
+            "         }",
+            "      }",
+            "   }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881182",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Getting the first touch"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When touch information changes, UIKit calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621107-touchesmoved"
+            },
+            {
+              "type": "text",
+              "text": " method. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881190"
+            },
+            {
+              "type": "text",
+              "text": " shows the implementation of this method for the checkmark gesture. This method verifies that the first touch is the correct one, which it should be because all subsequent touches were ignored. It then looks at the movement of that touch. When the initial movement is down and to the right, this method sets the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "strokePhase"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "downStroke"
+            },
+            {
+              "type": "text",
+              "text": ". When the motion changes direction and starts moving upward, the method changes the stroke phase to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "upStroke"
+            },
+            {
+              "type": "text",
+              "text": ". If the gesture deviates from this pattern in any way, the method sets the gesture’s state to failed."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {",
+            "   super.touchesMoved(touches, with: event)",
+            "   let newTouch = touches.first ",
+            "   // There should be only the first touch.",
+            "   guard newTouch == self.trackedTouch else { ",
+            "      self.state = .failed ",
+            "      return",
+            "   } ",
+            "   let newPoint = (newTouch?.location(in: self.view))!",
+            "   let previousPoint = (newTouch?.previousLocation(in: self.view))!",
+            "   if self.strokePhase == .initialPoint {",
+            "      // Make sure the initial movement is down and to the right.",
+            "      if newPoint.x >= initialTouchPoint.x && newPoint.y >= initialTouchPoint.y {",
+            "         self.strokePhase = .downStroke",
+            "      } else {         self.state = .failed",
+            "      }",
+            "   } else if self.strokePhase == .downStroke {",
+            "      // Always keep moving left to right.",
+            "      if newPoint.x >= previousPoint.x {",
+            "         // If the y direction changes, the gesture is moving up again.",
+            "         // Otherwise, the down stroke continues.",
+            "         if newPoint.y < previousPoint.y {",
+            "            self.strokePhase = .upStroke",
+            "         }",
+            "      } else {",
+            "        // If the new x value is to the left, the gesture fails.",
+            "        self.state = .failed",
+            "      }",
+            "   } else if self.strokePhase == .upStroke {",
+            "      // If the new x value is to the left, or the new y value",
+            "      // changed directions again, the gesture fails.]",
+            "      if newPoint.x < previousPoint.x || newPoint.y > previousPoint.y {",
+            "         self.state = .failed",
+            "      }",
+            "   }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881190",
+            "title": "Listing 3",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Tracking the touch movement"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "At the end of the touch sequence, UIKit calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended"
+            },
+            {
+              "type": "text",
+              "text": " method. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881191"
+            },
+            {
+              "type": "text",
+              "text": " shows the implementation of this method for the checkmark gesture. If the gesture has not already failed, this method determines whether the gesture was moving upward when it ended and determines whether the final point is higher than the initial point. If both conditions are true, the method sets the state to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstaterecognized"
+            },
+            {
+              "type": "text",
+              "text": "; otherwise, the gesture fails."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {",
+            "   super.touchesEnded(touches, with: event) ",
+            "   let newTouch = touches.first",
+            "   let newPoint = (newTouch?.location(in: self.view))!",
+            "   // There should be only the first touch.",
+            "   guard newTouch == self.trackedTouch else { ",
+            "      self.state = .failed ",
+            "      return",
+            "   } ",
+            "   // If the stroke was moving up and the final point is",
+            "   // above the initial point, the gesture succeeds.",
+            "   if self.state == .possible && ",
+            "         self.strokePhase == .upStroke && ",
+            "         newPoint.y < initialTouchPoint.y {",
+            "      self.state = .recognized",
+            "   } else {",
+            "      self.state = .failed",
+            "   }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881191",
+            "title": "Listing 4",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Determining whether the gesture succeeded"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Resetting the Gesture Recognizer",
+          "anchor": "2881169"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to tracking the touches, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CheckmarkGestureRecognizer"
+            },
+            {
+              "type": "text",
+              "text": " class implements the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1620004-reset"
+            },
+            {
+              "type": "text",
+              "text": " methods. The class uses these methods to reset the gesture recognizer’s local properties to appropriate values. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/implementing_a_custom_gesture_recognizer/implementing_a_discrete_gesture_recognizer#2881203"
+            },
+            {
+              "type": "text",
+              "text": " shows the implementations of these methods. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent) {",
+            "   super.touchesCancelled(touches, with: event)",
+            "   self.initialTouchPoint = CGPoint.zero",
+            "   self.strokePhase = .notStarted",
+            "   self.trackedTouch = nil",
+            "   self.state = .cancelled",
+            "}",
+            " ",
+            "override func reset() {",
+            "   super.reset()",
+            "   self.initialTouchPoint = CGPoint.zero",
+            "   self.strokePhase = .notStarted",
+            "   self.trackedTouch = nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2881203",
+            "title": "Listing 5",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Cancelling and resetting the discrete gesture"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

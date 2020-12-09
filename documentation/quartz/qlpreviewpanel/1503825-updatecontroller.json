@@ -1,0 +1,228 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Asks the preview panel to update its current controller."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/quartz",
+        "doc://com.apple.documentation/documentation/quartz/quick_look",
+        "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel/1503825-updatecontroller",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1503825,
+  "kind": "symbol",
+  "metadata": {
+    "title": "updateController",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "Quartz"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.6",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)QLPreviewPanel(im)updateController",
+    "symbolKind": "instm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qlpreviewpanel/1503825-updatecontroller"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qlpreviewpanel/1503825-updatecontroller"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/quartz": {
+      "title": "Quartz",
+      "identifier": "doc://com.apple.documentation/documentation/quartz",
+      "url": "/documentation/quartz",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/quartz/quick_look": {
+      "title": "Quick Look",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/quick_look",
+      "url": "/documentation/quartz/quick_look",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel": {
+      "title": "QLPreviewPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qlpreviewpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QLPreviewPanel"
+        },
+        {
+          "type": "text",
+          "text": " class implements the Quick Look preview panel—a user interface object that displays the preview of a list of items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel/1505327-currentcontroller": {
+      "title": "currentController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel/1505327-currentcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qlpreviewpanel/1505327-currentcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current first responder accepting to control the preview panel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel/1503825-updatecontroller": {
+      "title": "updateController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel/1503825-updatecontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qlpreviewpanel/1503825-updatecontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the preview panel to update its current controller."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateController"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qlpreviewpanel/1505327-currentcontroller"
+      ],
+      "title": "Accessing the Preview Panel Controller",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "updateController"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The preview panel automatically updates its controller (by searching the responder chain) whenever the main or key window changes. You should only invoke this method if the responder chain changes without explicit notice."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

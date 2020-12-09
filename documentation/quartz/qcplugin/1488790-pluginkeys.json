@@ -1,0 +1,400 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns the keys for the internal settings of a custom patch."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/quartz",
+        "doc://com.apple.documentation/documentation/quartz/quartz_composer",
+        "doc://com.apple.documentation/documentation/quartz/qcplugin"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1488790,
+  "kind": "symbol",
+  "metadata": {
+    "title": "plugInKeys",
+    "role": "symbol",
+    "roleHeading": "Type Method",
+    "modules": [
+      {
+        "name": "Quartz"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.5",
+        "deprecatedAt": "10.15",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:objc(cs)QCPlugIn(cm)plugInKeys",
+    "symbolKind": "clm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qcplugin/1488790-pluginkeys"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qcplugin/1488790-pluginkeys"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/quartz": {
+      "title": "Quartz",
+      "identifier": "doc://com.apple.documentation/documentation/quartz",
+      "url": "/documentation/quartz",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/quartz/quartz_composer": {
+      "title": "Quartz Composer",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/quartz_composer",
+      "url": "/documentation/quartz/quartz_composer",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin": {
+      "title": "QCPlugIn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugIn"
+        },
+        {
+          "type": "text",
+          "text": " class provides the base class to subclass for writing custom  Quartz Composer patches. You implement a custom patch by subclassing "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugIn"
+        },
+        {
+          "type": "text",
+          "text": ", overriding the appropriate methods, packaging the code as an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSBundle"
+        },
+        {
+          "type": "text",
+          "text": " object, and installing the bundle in the appropriate location. A bundle can contain more than one subclass  of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "QCPlugIn"
+        },
+        {
+          "type": "text",
+          "text": ", allowing you to provide a suite of custom patches in one bundle. "
+        },
+        {
+          "type": "text",
+          "text": " provides detailed instructions on how to create and package a custom patch. "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "QCPlugIn Class Reference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " supplements the information in the programming guide."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginviewcontroller": {
+      "title": "QCPlugInViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys#2557118": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys#2557118",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/quartz/qcplugin/1488790-pluginkeys#2557118"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys#2557122": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys#2557122",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/quartz/qcplugin/1488790-pluginkeys#2557122"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1504984-createviewcontroller": {
+      "title": "createViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1504984-createviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1504984-createviewcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns a view controller for the Settings pane of a custom patch. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "createViewController"
+        }
+      ]
+    },
+    "devLink-1733122": {
+      "identifier": "devLink-1733122",
+      "type": "link",
+      "title": "Quartz Composer Custom Patch Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposer_Patch_PlugIn_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004787"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsarray": {
+      "title": "NSArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys": {
+      "title": "plugInKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcplugin/1488790-pluginkeys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the keys for the internal settings of a custom patch."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "plugInKeys"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcplugin/1504984-createviewcontroller"
+      ],
+      "title": "Defining Internal Settings",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "+ ("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSArray",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+              "text": "NSArray"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "plugInKeys"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An array of keys used for key-value coding (KVC) of the internal settings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You must override this method if your patch provides a Settings pane.  This keys are used for automatic serialization of the internal settings and are also used by the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " instance for the Settings pane. The implementation is straightforward; the keys are strings that represent the instance variables used for the Settings pane. For example, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "plugInKeys"
+            },
+            {
+              "type": "text",
+              "text": " method for these instance variables:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@property(ivar, byref) NSColor * systemColor;",
+            "@property(ivar, byref) NSConfiguration * systemConfiguration;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2557118",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "are:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "+ (NSArray*) plugInKeys",
+            "{",
+            "    return [NSArray arrayWithObjects: @\"systemColor\",",
+            "                                      @\"systemConfiguration\",",
+            "                                      nil];",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2557122",
+            "title": "Listing 2"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

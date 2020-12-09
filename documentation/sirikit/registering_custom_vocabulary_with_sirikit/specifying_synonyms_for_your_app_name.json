@@ -1,0 +1,384 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provide alternative names for your app that are more familiar or easier for users to speak."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2879986,
+  "kind": "article",
+  "metadata": {
+    "title": "Specifying Synonyms for Your App Name",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit": {
+      "title": "Registering Custom Vocabulary with SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference": {
+      "title": "Global Vocabulary Reference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Understand the keys and values included in your app’s global vocabulary file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name": {
+      "title": "Specifying Synonyms for Your App Name",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide alternative names for your app that are more familiar or easier for users to speak."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference"
+      ],
+      "title": "Related Topics",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When engaging your app’s services through Siri, users must include the name of your app in any spoken requests. To simplify those requests, you can provide Siri with a list of synonyms for your app name. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Siri recognizes alternative app names only for apps that include an Intents app extension with support for one or more intents. Alternative names must be either based on your app’s original name or be a legitimate name common to users of the app. You may not include the names of other apps on the system in an attempt to divert requests to your app."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To define synonyms for your app name, include the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INAlternativeAppNames"
+            },
+            {
+              "type": "text",
+              "text": " key in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file of your iOS app or WatchKit extension. (watchOS apps don’t inherit the synonyms of their iOS app, so you must declare them explicitly in both places). Place this key at the top level of your property list, configure it as an array of dictionaries, and add the following additional keys to each dictionary:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "INAlternativeAppName"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Required) A string containing the alternative name by which users may refer to your app. Alternatively, specify a variable name that’s present in your app’s localized "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "InfoPlist.strings"
+                      },
+                      {
+                        "type": "text",
+                        "text": " files."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "INAlternativeAppNamePronunciationHint"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Optional) A string containing a pronunciation hint for the alternate name, formatted in a \"sounds like\" format. Alternatively, specify a variable name that’s present in your app’s localized "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "InfoPlist.strings"
+                      },
+                      {
+                        "type": "text",
+                        "text": " files."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you specify synonyms for your watchOS app, you must build your app for deployment on watchOS 4 or later. An app that includes synonyms won’t install on earlier versions of watchOS. In addition, the synonyms you specify must be identical to the ones that you specified for your iOS app."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To localize your app name and pronunciation hints, specify variable names (instead of actual values) for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INAlternativeAppName"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INAlternativeAppNamePronunciationHint"
+            },
+            {
+              "type": "text",
+              "text": " keys of each entry. In your app’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "InfoPlist.strings"
+            },
+            {
+              "type": "text",
+              "text": " files, include the variable names as localization keys and set their values to appropriately localized strings. For example, you might set the value of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INAlternativeAppName"
+            },
+            {
+              "type": "text",
+              "text": " key to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "APP_NAME_SYNONYM_1"
+            },
+            {
+              "type": "text",
+              "text": " and include an entry in your "
+            },
+            {
+              "type": "codeVoice",
+              "code": "InfoPlist.strings"
+            },
+            {
+              "type": "text",
+              "text": " file such as the following:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "APP_NAME_SYNONYM_1 = \"Localized Name 1\""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you use a variable name for a key, you must provide an entry in your app’s base localization at a minimum. If the system can’t find a specific value for the key in the current localization, it uses the base localization as a fallback. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You may specify no more than three dictionaries in the array associated with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INAlternativeAppNames"
+            },
+            {
+              "type": "text",
+              "text": " key. This limit is per localization, so each localized version of your "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file may have its own set of alternatives."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

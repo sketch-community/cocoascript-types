@@ -1,0 +1,941 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Interact with a vehicle’s CarPlay system."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/carplay",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2863952,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CarPlay",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/carplay"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/carplay"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-media-3690959": {
+      "identifier": "link-media-3690959",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/carplay#3690959"
+    },
+    "media-3690959": {
+      "identifier": "media-3690959",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 612,
+            "height": 380
+          },
+          "url": "https://docs-assets.developer.apple.com/published/eed3f5f115/rendered2x-1602511217.png"
+        }
+      ],
+      "alt": "Screenshot showing the CarPlay homescreen with Siri active and waiting for the user to invoke a car-related action, such as changing the radio station.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintenthandling": {
+      "title": "INSetAudioSourceInCarIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetaudiosourceincarintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for changing a vehicle’s audio source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent": {
+      "title": "INSetAudioSourceInCarIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetaudiosourceincarintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to change the source of audio playback in a CarPlay-enabled vehicle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponse": {
+      "title": "INSetAudioSourceInCarIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetaudiosourceincarintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a set audio source in car intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling": {
+      "title": "INSetClimateSettingsInCarIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetclimatesettingsincarintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for changing a vehicle’s climate control settings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent": {
+      "title": "INSetClimateSettingsInCarIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetclimatesettingsincarintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to change the climate settings in a CarPlay-enabled vehicle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintentresponse": {
+      "title": "INSetClimateSettingsInCarIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetclimatesettingsincarintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a set climate settings in car intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintenthandling": {
+      "title": "INSetDefrosterSettingsInCarIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetdefrostersettingsincarintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for changing a vehicle’s defroster settings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintent": {
+      "title": "INSetDefrosterSettingsInCarIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetdefrostersettingsincarintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to change the defroster settings in a CarPlay-enabled vehicle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintentresponse": {
+      "title": "INSetDefrosterSettingsInCarIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetdefrostersettingsincarintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a set defroster settings in car intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling": {
+      "title": "INSetSeatSettingsInCarIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetseatsettingsincarintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for changing a vehicle’s seat-related settings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent": {
+      "title": "INSetSeatSettingsInCarIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetseatsettingsincarintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to change the seat-related settings in a CarPlay-enabled vehicle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponse": {
+      "title": "INSetSeatSettingsInCarIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetseatsettingsincarintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a set seat settings in car intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintenthandling": {
+      "title": "INSaveProfileInCarIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insaveprofileincarintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for saving vehicle environment settings to a user-specified profile."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent": {
+      "title": "INSaveProfileInCarIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insaveprofileincarintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to save the user’s vehicle environment settings in a CarPlay-enabled vehicle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintentresponse": {
+      "title": "INSaveProfileInCarIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insaveprofileincarintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a save profile in car intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling": {
+      "title": "INSetProfileInCarIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetprofileincarintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for restoring vehicle environment settings from a user-specified profile."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent": {
+      "title": "INSetProfileInCarIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetprofileincarintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to change the user’s vehicle environment settings to the ones from the specified profile."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintentresponse": {
+      "title": "INSetProfileInCarIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetprofileincarintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a set profile in car intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetradiostationintenthandling": {
+      "title": "INSetRadioStationIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetradiostationintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetradiostationintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for changing a radio station."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent": {
+      "title": "INSetRadioStationIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetradiostationintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to change the current radio station."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetradiostationintentresponse": {
+      "title": "INSetRadioStationIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetradiostationintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetradiostationintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a set radio station intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incarseat": {
+      "title": "INCarSeat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incarseat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incarseat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating a seat position."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incardefroster": {
+      "title": "INCarDefroster",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incardefroster",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incardefroster",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the defroster type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incaraudiosource": {
+      "title": "INCarAudioSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incaraudiosource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incaraudiosource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the source of audio."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incaraircirculationmode": {
+      "title": "INCarAirCirculationMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incaraircirculationmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incaraircirculationmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the circulation mode for the climate system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inradiotype": {
+      "title": "INRadioType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inradiotype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inradiotype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the type of radio."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelativereference": {
+      "title": "INRelativeReference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelativereference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelativereference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating relative positions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelativesetting": {
+      "title": "INRelativeSetting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelativesetting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelativesetting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating relative settings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incarseatresolutionresult": {
+      "title": "INCarSeatResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incarseatresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incarseatresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for a specific seat of the car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incardefrosterresolutionresult": {
+      "title": "INCarDefrosterResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incardefrosterresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incardefrosterresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for which defroster to use in a car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incaraudiosourceresolutionresult": {
+      "title": "INCarAudioSourceResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incaraudiosourceresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incaraudiosourceresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the audio source to use in a car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incaraircirculationmoderesolutionresult": {
+      "title": "INCarAirCirculationModeResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incaraircirculationmoderesolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incaraircirculationmoderesolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the air circulation mode to use in a car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inradiotyperesolutionresult": {
+      "title": "INRadioTypeResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inradiotyperesolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inradiotyperesolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the type of radio to use in a car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intemperatureresolutionresult": {
+      "title": "INTemperatureResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intemperatureresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/intemperatureresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the units to use with a temperature value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult": {
+      "title": "INRelativeReferenceResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelativereferenceresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for a choice between the next or previous option."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelativesettingresolutionresult": {
+      "title": "INRelativeSettingResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelativesettingresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelativesettingresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for whether you can select the minimum, current, or maximum value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/messaging": {
+      "title": "Messaging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/messaging",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/messaging",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send messages and search the user’s received messages."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
+      "title": "Lists and Notes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/lists_and_notes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage notes and to-do list items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts": {
+      "title": "Workouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/workouts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Start, end, and manage fitness routines."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/payments": {
+      "title": "Payments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/payments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send payments between users or pay bills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/voip_calling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate calls and search the user’s call history."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/visual_codes": {
+      "title": "Visual Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/visual_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convey contact and payment information using Quick Response (QR) codes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos": {
+      "title": "Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search for and display photos."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking": {
+      "title": "Ride Booking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/ride_booking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Book rides and report their status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/car_commands": {
+      "title": "Car Commands",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/car_commands",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/car_commands",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage vehicle door locks and get the vehicle’s status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/carplay": {
+      "title": "CarPlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/carplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with a vehicle’s CarPlay system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations": {
+      "title": "Restaurant Reservations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/restaurant_reservations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage restaurant reservations with help from the Maps app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media": {
+      "title": "Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Listen and control audio through Siri Intents or listen and watch media content from your app with shortcuts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Set Audio Source in Car",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent",
+        "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Set Climate Settings in Car",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent",
+        "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Set Defroster Settings in Car",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintent",
+        "doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Set Seat Settings in Car",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent",
+        "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Save Profile in Car",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent",
+        "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Set Profile in Car",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent",
+        "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Set Radio Station",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insetradiostationintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent",
+        "doc://com.apple.documentation/documentation/sirikit/insetradiostationintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/incarseat",
+        "doc://com.apple.documentation/documentation/sirikit/incardefroster",
+        "doc://com.apple.documentation/documentation/sirikit/incaraudiosource",
+        "doc://com.apple.documentation/documentation/sirikit/incaraircirculationmode",
+        "doc://com.apple.documentation/documentation/sirikit/inradiotype",
+        "doc://com.apple.documentation/documentation/sirikit/inrelativereference",
+        "doc://com.apple.documentation/documentation/sirikit/inrelativesetting"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Resolution Results",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/incarseatresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/incardefrosterresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/incaraudiosourceresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/incaraircirculationmoderesolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/inradiotyperesolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/intemperatureresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/inrelativesettingresolutionresult"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/messaging",
+        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+        "doc://com.apple.documentation/documentation/sirikit/workouts",
+        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+        "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+        "doc://com.apple.documentation/documentation/sirikit/photos",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+        "doc://com.apple.documentation/documentation/sirikit/car_commands",
+        "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+        "doc://com.apple.documentation/documentation/sirikit/media"
+      ],
+      "title": "Siri Domains",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users can change radio, climate control, and seat settings using Siri and the CarPlay system of their vehicles. SiriKit forwards user requests to your Intents app extension, which then communicates with the user’s vehicle."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3690959",
+              "metadata": {
+                "anchor": "3690959",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

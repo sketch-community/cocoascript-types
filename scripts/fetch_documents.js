@@ -11,19 +11,7 @@ const client = axios.create({
 });
 
 const MAX_CONCURRENCY = os.cpus().length;
-
-async function fetchPrimaryPage() {
-  const { data } = await client.get('/documentation/appkit.json?language=objc');
-  return data.topicSections.reduce((acc, section) => {
-    section.identifiers.forEach(identifier => {
-      if (identifier.includes('appkit')) {
-        const ref = data.references[identifier];
-        acc.push(ref.url);
-      }
-    });
-    return acc;
-  }, []);
-}
+const INCLUDE_DOCS = ['/appkit', '/objectivec', '/foundation']
 
 async function fetchUrls(urls, result = new Set()) {
   const { results, errors } = await PromisePool.withConcurrency(MAX_CONCURRENCY)
@@ -52,14 +40,11 @@ async function fetchUrls(urls, result = new Set()) {
       }
     });
   const found = results.reduce((acc, data) => {
-    if (data.topicSections) {
-      data.topicSections.forEach(section => {
-        section.identifiers.forEach(identifier => {
-          const ref = data.references[identifier];
-          if (ref.url.includes('appkit') && !result.has(ref.url)) {
-            acc.push(ref.url);
-          }
-        });
+    if (data.references) {
+      Object.values(data.references).forEach(ref => {
+        if (ref.url && INCLUDE_DOCS.some(doc => ref.url.includes(doc)) && !result.has(ref.url)) {
+          acc.push(ref.url);
+        }
       });
     }
     return acc;

@@ -1,0 +1,1642 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create and share private CloudKit data with other users by implementing the sharing UI."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3579389,
+  "kind": "article",
+  "metadata": {
+    "title": "Sharing CloudKit Data with Other iCloud Users",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "CloudKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.4",
+        "current": "12.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/cloudkit": {
+      "title": "CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit",
+      "url": "/documentation/cloudkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-3193245": {
+      "title": "Assign a project to a team",
+      "type": "section",
+      "identifier": "link-3193245",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/xcode/mac/current/#/dev23aab79b4"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701038": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701038",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701038"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399193-containerwithidentifier": {
+      "title": "containerWithIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399193-containerwithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckcontainer/1399193-containerwithidentifier",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "containerWithIdentifier:"
+        }
+      ]
+    },
+    "link-3598285": {
+      "title": "schema",
+      "type": "topic",
+      "identifier": "link-3598285",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/CreatingaSchemabySavingRecords/CreatingaSchemabySavingRecords.html"
+    },
+    "link-3598286": {
+      "title": "CloudKit Dashboard",
+      "type": "topic",
+      "identifier": "link-3598286",
+      "kind": "article",
+      "role": "link",
+      "url": "http://icloud.developer.apple.com/dashboard/"
+    },
+    "link-3598287": {
+      "title": "Using CloudKit Dashboard to Manage Databases",
+      "type": "section",
+      "identifier": "link-3598287",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EditingSchemesUsingCloudKitDashboard/EditingSchemesUsingCloudKitDashboard.html#//apple_ref/doc/uid/TP40014987-CH5"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701040": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701040",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701040"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckquerysubscription": {
+      "title": "CKQuerySubscription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerysubscription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckquerysubscription"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701042": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701042",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701042"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller": {
+      "title": "UICloudSharingController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontroller"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701044": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701044",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701044"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share": {
+      "title": "share",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/1640378-share"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a share record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649597-initwithshare": {
+      "title": "initWithShare:container:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649597-initwithshare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontroller/1649597-initwithshare",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithShare:container:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701045": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701045",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701045"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649607-initwithpreparationhandler": {
+      "title": "initWithPreparationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649607-initwithpreparationhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontroller/1649607-initwithpreparationhandler",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithPreparationHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701046": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701046",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701046"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701047": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701047",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701047"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation": {
+      "title": "CKModifyRecordsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifyrecordsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701048": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701048",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701048"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701049": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701049",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701049"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate": {
+      "title": "UICloudSharingControllerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontrollerdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649605-cloudsharingcontrollerdidsavesha": {
+      "title": "cloudSharingControllerDidSaveShare:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649605-cloudsharingcontrollerdidsavesha",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontrollerdelegate/1649605-cloudsharingcontrollerdidsavesha",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cloudSharingControllerDidSaveShare:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649604-cloudsharingcontrollerdidstopsha": {
+      "title": "cloudSharingControllerDidStopSharing:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649604-cloudsharingcontrollerdidstopsha",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontrollerdelegate/1649604-cloudsharingcontrollerdidstopsha",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cloudSharingControllerDidStopSharing:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649606-cloudsharingcontroller": {
+      "title": "cloudSharingController:failedToSaveShareWithError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649606-cloudsharingcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontrollerdelegate/1649606-cloudsharingcontroller",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cloudSharingController:failedToSaveShareWithError:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197918-scenewillenterforeground": {
+      "title": "sceneWillEnterForeground:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197918-scenewillenterforeground",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscenedelegate/3197918-scenewillenterforeground",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sceneWillEnterForeground:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701051": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701051",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701051"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdatabasesubscription": {
+      "title": "CKDatabaseSubscription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabasesubscription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckdatabasesubscription"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701052": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701052",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701052"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/unusernotificationcenterdelegate": {
+      "title": "UNUserNotificationCenterDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/unusernotificationcenterdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/usernotifications/unusernotificationcenterdelegate"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701053": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701053",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701053"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation": {
+      "title": "CKFetchDatabaseChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchdatabasechangesoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckserverchangetoken": {
+      "title": "CKServerChangeToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckserverchangetoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckserverchangetoken"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation/1640467-changetokenupdatedblock": {
+      "title": "changeTokenUpdatedBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation/1640467-changetokenupdatedblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchdatabasechangesoperation/1640467-changetokenupdatedblock"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701054": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701054",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701054"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701055": {
+      "title": "Listing 14",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701055",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701055"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation": {
+      "title": "CKFetchRecordZoneChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701056": {
+      "title": "Listing 15",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701056",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users#3701056"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue": {
+      "title": "NSOperationQueue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperationqueue"
+    },
+    "doc://com.apple.documentation/documentation/dispatch/dispatchqueue": {
+      "title": "DispatchQueue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/dispatch/dispatchqueue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/dispatch/dispatchqueue"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/share_operations": {
+      "title": "Share Operations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/share_operations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/cloudkit/share_operations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operations to communicate share information with CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users": {
+      "title": "Sharing CloudKit Data with Other iCloud Users",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/cloudkit/sharing_cloudkit_data_with_other_icloud_users",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and share private CloudKit data with other users by implementing the sharing UI."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/db49ef5eea/SharingCloudKitDataWithOtherICloudUsers.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/db49ef5eea/SharingCloudKitDataWithOtherICloudUsers.zip",
+      "checksum": "b123ab5dd25f8d797cd07341e28e6294e2dc147a3781fb3cb15d994a890ae1106219f5befa1ffa15a1b469411265ea37a46b35ec171976650b4ee300ee35a627",
+      "url": "https://docs-assets.developer.apple.com/published/db49ef5eea/SharingCloudKitDataWithOtherICloudUsers.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/db49ef5eea/SharingCloudKitDataWithOtherICloudUsers.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+        "doc://com.apple.documentation/documentation/cloudkit/share_operations"
+      ],
+      "title": "Shared Content",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "People collaborate with others through cloud-based apps more than ever. They can share digital assets with friends, or invite their colleagues living around the world to work together. To support such use cases, apps need to move user data to the cloud and implement a data-sharing flow that includes features like sharing management, data synchronization, and access control."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample demonstrates how to use CloudKit to implement these features by allowing users to create topic and note records in their private databases and share with other users. Using the CloudKit sharing UI, users can send a share link, stop sharing topics, and manage permissions on a shared topic. Users who accept the share, also called "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "participants"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", can view or edit the shared record, or stop participating in the share."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample also demonstrates how to create an in-memory cache for a CloudKit record zone. Because of this local cache, the sample doesn’t have to query the server while navigating the UI within the zone."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You must run the sample on physical devices with a logged-in iCloud account and iCloud Drive in an enabled state."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Sample Code Project",
+          "anchor": "3701059"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before running the sample on a device, perform the following steps in Xcode:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the General pane of the CloudKitShare target, update the Bundle Identifier field to the identifier you want to use."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Signing & Capabilities pane, make sure you add the iCloud capability and select the CloudKit option. The sample uses the default container with the identifier of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "iCloud.<App bundle ID>"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select the appropriate team for the Team field to let Xcode automatically manage the provisioning profile. See "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Assign a project to a team",
+                      "destination": "https://help.apple.com/xcode/mac/current/#/dev23aab79b4"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for details."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let container = CKContainer.default()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701038",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Real-world apps that use a custom container must specify the appropriate container identifier when creating a CloudKit container with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399193-containerwithidentifier"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Schema",
+          "anchor": "3701060"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit apps must declare their record types by creating a "
+            },
+            {
+              "type": "link",
+              "title": "schema",
+              "destination": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/CreatingaSchemabySavingRecords/CreatingaSchemabySavingRecords.html"
+            },
+            {
+              "type": "text",
+              "text": " using "
+            },
+            {
+              "type": "link",
+              "title": "CloudKit Dashboard",
+              "destination": "http://icloud.developer.apple.com/dashboard/"
+            },
+            {
+              "type": "text",
+              "text": ". For details about this topic, see "
+            },
+            {
+              "type": "link",
+              "title": "Using CloudKit Dashboard to Manage Databases",
+              "destination": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EditingSchemesUsingCloudKitDashboard/EditingSchemesUsingCloudKitDashboard.html#//apple_ref/doc/uid/TP40014987-CH5"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample uses the following record types and fields:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "Topic",
+            "    name (String)",
+            "Note",
+            "    title (String)",
+            "    topic (Reference, pointing to the parent topic)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701040",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There is no need to manually create the schema before running the sample because:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When apps save a record in the development environment, CloudKit automatically creates the record type if it doesn’t exist."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Before saving a record, the sample doesn’t use any record-type information."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For apps that use record types at an earlier phase, like creating a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerysubscription"
+            },
+            {
+              "type": "text",
+              "text": " at the beginning of a launch session, be sure to make the schema ready first."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create and Share a Topic",
+          "anchor": "3701061"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create and share a topic with another iCloud user using the sample, follow these steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Prepare two devices, A and B, and log in to each device with a different iCloud account."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use Xcode to build and run the sample app on the devices. If the system shows an alert that requests permission to use notifications, allow it."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "On device A, tap the Zones button to show the zone view, then tap the Edit button, and add a zone in the private database."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Tap the new zone to navigate to the topic view, then tap the Edit button and add a topic. Every topic has a Share button on the right."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Tap the Share button to show the CloudKit sharing UI, then follow the UI to send a link to the iCloud account for device B."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "After receiving the link on device B, tap it to accept and open the share. That launches the sample app, and the shared topic and its zone appear in a few seconds in the shared database."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To be able to accept a share when users tap a share link, the app’s "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": " must contain the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "CKSharingSupported"
+                },
+                {
+                  "type": "text",
+                  "text": " key and its value must be "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "true"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To discover more features in the CloudKit sharing UI:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "On device A, find the shared topic and tap the Share button. Because it’s a shared topic, the sharing UI allows users to stop sharing or to change the permission for a participant."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "On device B, tap the Share button of the accepted topic. On the participant side, the sharing UI allows users to remove their participation from the topic."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "On device B, navigate to the shared database’s topic view, then tap the Edit button, and add a note under the shared topic. The new note synchronizes within seconds to the private database on device A. (This assumes the topic’s “Anyone with this link can make changes” option is in an enabled state. If the topic’s “Anyone with this link can view” option is in an enabled state, participants have read-only permissions, and can’t add a note under the topic.)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "On device A, add a note under the shared topic. The note synchronizes within seconds to device B. When creating a note, the sample sets its "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "parent"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property to the topic, so the system automatically shares the note with its parent topic."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "newNoteRecord.parent = CKRecord.Reference(record: topicRecord, action: .none)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701042",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Share a Record",
+          "anchor": "3701062"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller"
+            },
+            {
+              "type": "text",
+              "text": " to implement the sharing flow. Depending on whether the root record is in a shared state, there are different ways to create a sharing controller."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if rootRecord.share != nil {",
+            "    newSharingController(sharedRootRecord: rootRecord, database: database,",
+            "                         completionHandler: completionHandler)",
+            "} else {",
+            "    newSharingController(unsharedRootRecord: rootRecord, database: database, zone: zone,",
+            "                         completionHandler: completionHandler)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701044",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the root record is in a shared state, the sample grabs the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recordID"
+            },
+            {
+              "type": "text",
+              "text": " from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share"
+            },
+            {
+              "type": "text",
+              "text": " property of the root record, uses it to fetch the share, which is the associated "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare"
+            },
+            {
+              "type": "text",
+              "text": " object, from the server, and calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649597-initwithshare"
+            },
+            {
+              "type": "text",
+              "text": " to create a sharing controller."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let sharingController = UICloudSharingController(share: share, container: self)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701045",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the root record isn’t in a shared state, the sample uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller/1649607-initwithpreparationhandler"
+            },
+            {
+              "type": "text",
+              "text": " to create the sharing controller."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let sharingController = UICloudSharingController { (_, prepareCompletionHandler) in"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701046",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the preparation handler, the sample sets up a new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CKShare"
+            },
+            {
+              "type": "text",
+              "text": " object using the root record."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let shareID = CKRecord.ID(recordName: UUID().uuidString, zoneID: zone.zoneID)",
+            "var share = CKShare(rootRecord: unsharedRootRecord, shareID: shareID)",
+            "share[CKShare.SystemFieldKey.title] = \"A cool topic to share!\" as CKRecordValue",
+            "share.publicPermission = .readWrite"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701047",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample then saves the share and its root record together using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let modifyRecordsOp = CKModifyRecordsOperation(recordsToSave: [share, unsharedRootRecord], recordIDsToDelete: nil)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701048",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After creating the sharing controller, the sample uses the following code to present it:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "sharingController.popoverPresentationController?.sourceView = sender as? UIView",
+            "self.rootRecord = topicRecord",
+            "sharingController.delegate = self",
+            "sharingController.availablePermissions = [.allowPublic, .allowReadOnly, .allowReadWrite]",
+            "self.present(sharingController, animated: true) { self.spinner.stopAnimating() }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701049",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using the sharing UI, users can send a link, stop sharing the record, change the permission for a participant, or quit the flow by closing the UI. According to what users do, the sharing controller may change the root record and its share and notify the app through the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol. To ensure the cached data is consistent with the server truth, the sample implements the following delegate methods:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649605-cloudsharingcontrollerdidsavesha"
+                    },
+                    {
+                      "type": "text",
+                      "text": " CloudKit calls this method when it successfully shares a topic. When this happens, it creates the share and updates the shared topic and notes on the server, so the sample fetches the changes and updates the local cache."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649604-cloudsharingcontrollerdidstopsha"
+                    },
+                    {
+                      "type": "text",
+                      "text": " CloudKit calls this method when users stop sharing a record. When this happens, it removes the share and updates the shared topic and notes on the server, so the sample fetches the changes and updates the local cache as well."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649606-cloudsharingcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " CloudKit calls this method when the sharing controller fails to save a share. When this happens, the sample alerts the error and updates the cached root record to avoid an inconsistent status."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Maintain a Local Cache of CloudKit Records",
+          "anchor": "3701063"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To avoid fetching data from the server every time the zone view and topic view are about to appear, the sample caches the zones in the container, and the topics and notes in the current zone. The caches are both in-memory because the sample doesn’t tend to add more complexity by introducing a persistence layer. Real-world apps can persist their cache to avoid doing an initial fetch on every launch."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample establishes the local caches with two steps: initial fetch and incremental update. In "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3197918-scenewillenterforeground"
+            },
+            {
+              "type": "text",
+              "text": ", the sample checks the account status, and then starts the initial fetch if there isn’t a cache for the current account."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let building = appDelegate.buildZoneCacheIfNeed(for: newUserRecordID)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701051",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit notifications trigger the incremental updates. The sample uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabasesubscription"
+            },
+            {
+              "type": "text",
+              "text": " to subscribe to CloudKit database changes."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let subscription = CKDatabaseSubscription(subscriptionID: subscriptionID)",
+            "let notificationInfo = CKSubscription.NotificationInfo()",
+            "notificationInfo.shouldBadge = true",
+            "notificationInfo.alertBody = \"Database (\\(subscriptionID)) was changed!\"",
+            "subscription.notificationInfo = notificationInfo",
+            "",
+            "let operation = CKModifySubscriptionsOperation(subscriptionsToSave: [subscription], subscriptionIDsToDelete: nil)",
+            "operation.modifySubscriptionsCompletionBlock = { _, _, error in",
+            "    completionHandler(error as NSError?)",
+            "}",
+            "",
+            "add(operation, to: operationQueue)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701052",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the subscriptions, the sample gets push notifications after the database changes, and starts the incremental update from the following "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/unusernotificationcenterdelegate"
+            },
+            {
+              "type": "text",
+              "text": " method:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification,",
+            "                            withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {",
+            "    updateWithNotificationUserInfo(notification.request.content.userInfo)",
+            "    completionHandler([])",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701053",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation"
+            },
+            {
+              "type": "text",
+              "text": " to fetch the deleted or changed zones. When doing the fetch, CloudKit provides a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "serverChangeToken"
+            },
+            {
+              "type": "text",
+              "text": " ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckserverchangetoken"
+            },
+            {
+              "type": "text",
+              "text": ") by calling the operation’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchdatabasechangesoperation/1640467-changetokenupdatedblock"
+            },
+            {
+              "type": "text",
+              "text": ". Apps keep the token and use it as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "previousServerChangeToken"
+            },
+            {
+              "type": "text",
+              "text": " for the next fetch."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "operation.changeTokenUpdatedBlock = { serverChangeToken in",
+            "    self.setServerChangeToken(newToken: serverChangeToken, cloudKitDB: cloudKitDB)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701054",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When apps use the token to create and run a CloudKit operation, the token tells the server which portions of the zones to return. If the token is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", the server returns all zones."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let serverChangeToken = getServerChangeToken(for: cloudKitDB)",
+            "let operation = CKFetchDatabaseChangesOperation(previousServerChangeToken: serverChangeToken)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701055",
+            "title": "Listing 14"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After gathering the deleted and changed zones, the sample updates the zone cache and makes it consistent with the server truth."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Similarly, the sample uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+            },
+            {
+              "type": "text",
+              "text": " to gather the deleted and changed topic and notes, and uses them to maintain the topic cache."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let configuration = CKFetchRecordZoneChangesOperation.ZoneConfiguration()",
+            "configuration.previousServerChangeToken = getServerChangeToken()",
+            "",
+            "let operation = CKFetchRecordZoneChangesOperation(",
+            "    recordZoneIDs: [zone.zoneID], configurationsByRecordZoneID: [zone.zoneID: configuration]",
+            ")"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3701056",
+            "title": "Listing 15"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To avoid blocking an app’s main queue, CloudKit operations and their callbacks must run on a secondary queue, which can be an app-provided operation queue ("
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue"
+                },
+                {
+                  "type": "text",
+                  "text": "), or a private operation queue that CloudKit manages. The sample provides an operation queue to run CloudKit operations and update the cached data when the operations complete. This means the system can access the cached data from different queues: the app’s main queue that reads the data and updates the app UI, and a secondary queue that runs CloudKit operations and updates the data. To be thread-safe, the sample serializes data access with a dispatch queue ("
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/dispatch/dispatchqueue"
+                },
+                {
+                  "type": "text",
+                  "text": "). One caveat of this solution is when the main queue needs to read the cached data while the secondary queue is updating it, the main queue must wait until the data update finishes. If the update takes a long time, it blocks the main queue for a long time, which leads to UI unresponsiveness. Real-world apps using the same method to serialize data access need to update the data quickly enough to avoid the issue."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

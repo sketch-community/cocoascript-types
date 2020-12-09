@@ -1,0 +1,2509 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that defines the relationships between calendar units (such as eras, years, and weekdays) and absolute points in time, providing features for calculation and comparison of dates.  "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/dates_and_times"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nscalendar",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1408102,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSCalendar",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSCalendar",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nscalendar"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nscalendar"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dates_and_times": {
+      "title": "Dates and Times",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dates_and_times",
+      "url": "/documentation/foundation/dates_and_times",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifiergregorian": {
+      "title": "NSCalendarIdentifierGregorian",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifiergregorian",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifiergregorian"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierislamicummalqura": {
+      "title": "NSCalendarIdentifierIslamicUmmAlQura",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierislamicummalqura",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierislamicummalqura"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierethiopicametemihret": {
+      "title": "NSCalendarIdentifierEthiopicAmeteMihret",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierethiopicametemihret",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierethiopicametemihret"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierethiopicametealem": {
+      "title": "NSCalendarIdentifierEthiopicAmeteAlem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierethiopicametealem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierethiopicametealem"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierpersian": {
+      "title": "NSCalendarIdentifierPersian",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierpersian",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierpersian"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierbuddhist": {
+      "title": "NSCalendarIdentifierBuddhist",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierbuddhist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierbuddhist"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierindian": {
+      "title": "NSCalendarIdentifierIndian",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierindian",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierindian"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierhebrew": {
+      "title": "NSCalendarIdentifierHebrew",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierhebrew",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierhebrew"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierchinese": {
+      "title": "NSCalendarIdentifierChinese",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierchinese",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierchinese"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierjapanese": {
+      "title": "NSCalendarIdentifierJapanese",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierjapanese",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierjapanese"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifiercoptic": {
+      "title": "NSCalendarIdentifierCoptic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifiercoptic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifiercoptic"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierislamic": {
+      "title": "NSCalendarIdentifierIslamic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierislamic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifierislamic"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar": {
+      "title": "NSCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines the relationships between calendar units (such as eras, years, and weekdays) and absolute points in time, providing features for calculation and comparison of dates.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdate": {
+      "title": "NSDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1407609-datefromcomponents": {
+      "title": "dateFromComponents:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407609-datefromcomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1407609-datefromcomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a date representing the absolute time calculated from given components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateFromComponents:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1409577-datebyaddingcomponents": {
+      "title": "dateByAddingComponents:toDate:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1409577-datebyaddingcomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1409577-datebyaddingcomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a date representing the absolute time calculated by adding given components to a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateByAddingComponents:toDate:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdatecomponents": {
+      "title": "NSDateComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdatecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that specifies a date or time in terms of units (such as year, month, day, hour, and minute) to be evaluated in a calendar system and time zone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1414841-components": {
+      "title": "components:fromDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1414841-components",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1414841-components",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the date components representing a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "components:fromDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1407925-components": {
+      "title": "components:fromDate:toDate:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407925-components",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1407925-components",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the difference between two supplied dates as date components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "components:fromDate:toDate:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendarunit": {
+      "title": "NSCalendarUnit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendarunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendarunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calendrical units such as year, month, day and hour. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcalendarref": {
+      "title": "CFCalendarRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcalendarref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfcalendarref"
+    },
+    "devLink-1745091": {
+      "identifier": "devLink-1745091",
+      "type": "link",
+      "title": "Toll-Free Bridging",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2"
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar": {
+      "title": "Calendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar"
+    },
+    "devLink-1752769": {
+      "identifier": "devLink-1752769",
+      "type": "link",
+      "title": "Working with Cocoa Frameworks",
+      "url": "https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6"
+    },
+    "devLink-1752686": {
+      "identifier": "devLink-1752686",
+      "type": "link",
+      "title": "Using Swift with Cocoa and Objective-C (Swift 4.1)",
+      "url": "https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1412400-calendarwithidentifier": {
+      "title": "calendarWithIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1412400-calendarwithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1412400-calendarwithidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new calendar specified by a given identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "calendarWithIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1415991-initwithcalendaridentifier": {
+      "title": "initWithCalendarIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1415991-initwithcalendaridentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1415991-initwithcalendaridentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a calendar according to a given identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCalendarIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaridentifier": {
+      "title": "NSCalendarIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaridentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The supported calendar types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1408501-currentcalendar": {
+      "title": "currentCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1408501-currentcalendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1408501-currentcalendar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user’s current calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1413771-autoupdatingcurrentcalendar": {
+      "title": "autoupdatingCurrentCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1413771-autoupdatingcurrentcalendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1413771-autoupdatingcurrentcalendar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A calendar that tracks changes to user’s preferred calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1407954-date": {
+      "title": "date:matchesComponents:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407954-date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1407954-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether a given date matches all of the given date components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "date:matchesComponents:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1416505-component": {
+      "title": "component:fromDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1416505-component",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1416505-component",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the specified date component from a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "component:fromDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1411297-components": {
+      "title": "components:fromDateComponents:toDateComponents:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1411297-components",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1411297-components",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the difference between start and end dates given as date components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "components:fromDateComponents:toDateComponents:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1413194-componentsintimezone": {
+      "title": "componentsInTimeZone:fromDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1413194-componentsintimezone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1413194-componentsintimezone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns all the date components of a date, as if in a given time zone (instead of the receiving calendar’s time zone)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "componentsInTimeZone:fromDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1418143-getera": {
+      "title": "getEra:year:month:day:fromDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1418143-getera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1418143-getera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns by reference the era, year, week of year, and weekday component values for a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getEra:year:month:day:fromDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1410912-getera": {
+      "title": "getEra:yearForWeekOfYear:weekOfYear:weekday:fromDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1410912-getera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1410912-getera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns by reference the era, year, week of year, and weekday component values for a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getEra:yearForWeekOfYear:weekOfYear:weekday:fromDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1415012-gethour": {
+      "title": "getHour:minute:second:nanosecond:fromDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1415012-gethour",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1415012-gethour",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns by reference the hour, minute, second, and nanosecond component values for a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getHour:minute:second:nanosecond:fromDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1408268-calendaridentifier": {
+      "title": "calendarIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1408268-calendaridentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1408268-calendaridentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier for the calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1408310-firstweekday": {
+      "title": "firstWeekday",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1408310-firstweekday",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1408310-firstweekday",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index of the first weekday of the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1418111-locale": {
+      "title": "locale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1418111-locale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1418111-locale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The locale of the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1409969-timezone": {
+      "title": "timeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1409969-timezone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1409969-timezone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time zone for the calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1414251-maximumrangeofunit": {
+      "title": "maximumRangeOfUnit:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1414251-maximumrangeofunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1414251-maximumrangeofunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the maximum range limits of the values that a given unit can take on."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "maximumRangeOfUnit:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1413638-minimumrangeofunit": {
+      "title": "minimumRangeOfUnit:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1413638-minimumrangeofunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1413638-minimumrangeofunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the minimum range limits of the values that a given unit can take on."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "minimumRangeOfUnit:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1410186-minimumdaysinfirstweek": {
+      "title": "minimumDaysInFirstWeek",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1410186-minimumdaysinfirstweek",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1410186-minimumdaysinfirstweek",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum number of days in the first week of the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1408595-ordinalityofunit": {
+      "title": "ordinalityOfUnit:inUnit:forDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1408595-ordinalityofunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1408595-ordinalityofunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns, for a given absolute time, the ordinal number of a smaller calendar unit (such as a day) within a specified larger calendar unit (such as a week)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "ordinalityOfUnit:inUnit:forDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1418344-rangeofunit": {
+      "title": "rangeOfUnit:inUnit:forDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1418344-rangeofunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1418344-rangeofunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range of absolute time values that a smaller calendar unit (such as a day) can take on in a larger calendar unit (such as a month) that includes a specified absolute time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rangeOfUnit:inUnit:forDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1408013-rangeofunit": {
+      "title": "rangeOfUnit:startDate:interval:forDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1408013-rangeofunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1408013-rangeofunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns by reference the starting time and duration of a given calendar unit that contains a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rangeOfUnit:startDate:interval:forDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1413286-rangeofweekendstartdate": {
+      "title": "rangeOfWeekendStartDate:interval:containingDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1413286-rangeofweekendstartdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1413286-rangeofweekendstartdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether a given date falls within a weekend period, and if so, returns by reference the start date and time interval of the weekend range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rangeOfWeekendStartDate:interval:containingDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1417161-startofdayfordate": {
+      "title": "startOfDayForDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1417161-startofdayfordate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1417161-startofdayfordate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the first moment of a given date as a date instance."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startOfDayForDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1413938-enumeratedatesstartingafterdate": {
+      "title": "enumerateDatesStartingAfterDate:matchingComponents:options:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1413938-enumeratedatesstartingafterdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1413938-enumeratedatesstartingafterdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes the dates that match (or most closely match) a given set of components, and calls the block once for each of them, until the enumeration is stopped."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateDatesStartingAfterDate:matchingComponents:options:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1416165-nextdateafterdate": {
+      "title": "nextDateAfterDate:matchingComponents:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1416165-nextdateafterdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1416165-nextdateafterdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the next date after a given date matching the given components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "nextDateAfterDate:matchingComponents:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1416814-nextdateafterdate": {
+      "title": "nextDateAfterDate:matchingHour:minute:second:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1416814-nextdateafterdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1416814-nextdateafterdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the next date after a given date that matches the given hour, minute, and second, component values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "nextDateAfterDate:matchingHour:minute:second:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1417170-nextdateafterdate": {
+      "title": "nextDateAfterDate:matchingUnit:value:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1417170-nextdateafterdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1417170-nextdateafterdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the next date after a given date matching the given calendar unit value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "nextDateAfterDate:matchingUnit:value:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendaroptions": {
+      "title": "NSCalendarOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaroptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendaroptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The options for arithmetic operations involving calendars."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/1430373-nswrapcalendarcomponents": {
+      "title": "NSWrapCalendarComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1430373-nswrapcalendarcomponents",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/foundation/1430373-nswrapcalendarcomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A legacy constant used to control overflow in date calculations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1407989-datebyaddingunit": {
+      "title": "dateByAddingUnit:value:toDate:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407989-datebyaddingunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1407989-datebyaddingunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a date representing the absolute time calculated by adding the value of a given component to a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateByAddingUnit:value:toDate:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1407363-datebysettinghour": {
+      "title": "dateBySettingHour:minute:second:ofDate:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407363-datebysettinghour",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1407363-datebysettinghour",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new date calculated with the given time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateBySettingHour:minute:second:ofDate:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1417915-datebysettingunit": {
+      "title": "dateBySettingUnit:value:ofDate:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1417915-datebysettingunit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1417915-datebysettingunit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new date representing the date calculated by setting a specific component of a given date to a given value, while trying to keep lower components the same."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateBySettingUnit:value:ofDate:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1415254-datewithera": {
+      "title": "dateWithEra:year:month:day:hour:minute:second:nanosecond:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1415254-datewithera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1415254-datewithera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a date created with the given components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateWithEra:year:month:day:hour:minute:second:nanosecond:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1413628-datewithera": {
+      "title": "dateWithEra:yearForWeekOfYear:weekOfYear:weekday:hour:minute:second:nanosecond:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1413628-datewithera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1413628-datewithera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new date created with the given components base on a week-of-year value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateWithEra:yearForWeekOfYear:weekOfYear:weekday:hour:minute:second:nanosecond:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1409905-nextweekendstartdate": {
+      "title": "nextWeekendStartDate:interval:options:afterDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1409905-nextweekendstartdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1409905-nextweekendstartdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns by reference the starting date and time interval range of the next weekend period after a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "nextWeekendStartDate:interval:options:afterDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1415661-comparedate": {
+      "title": "compareDate:toDate:toUnitGranularity:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1415661-comparedate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1415661-comparedate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates the ordering of two given dates based on their components down to a given unit granularity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "compareDate:toDate:toUnitGranularity:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1411431-isdate": {
+      "title": "isDate:equalToDate:toUnitGranularity:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1411431-isdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1411431-isdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether two dates are equal to a given unit of granularity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDate:equalToDate:toUnitGranularity:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1417649-isdate": {
+      "title": "isDate:inSameDayAsDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1417649-isdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1417649-isdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether two dates are in the same day."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDate:inSameDayAsDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1417149-isdateintoday": {
+      "title": "isDateInToday:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1417149-isdateintoday",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1417149-isdateintoday",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the given date is in “today.”"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDateInToday:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1410279-isdateintomorrow": {
+      "title": "isDateInTomorrow:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1410279-isdateintomorrow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1410279-isdateintomorrow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the given date is in “tomorrow.”"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDateInTomorrow:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1412175-isdateinweekend": {
+      "title": "isDateInWeekend:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1412175-isdateinweekend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1412175-isdateinweekend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether a given date falls within a weekend period, as defined by the calendar and the calendar's locale."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDateInWeekend:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1409356-isdateinyesterday": {
+      "title": "isDateInYesterday:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1409356-isdateinyesterday",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1409356-isdateinyesterday",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the given date is in “yesterday.”"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDateInYesterday:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1416226-amsymbol": {
+      "title": "AMSymbol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1416226-amsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1416226-amsymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The symbol used to represent “AM” for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1416343-pmsymbol": {
+      "title": "PMSymbol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1416343-pmsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1416343-pmsymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The symbol used to represent “PM” for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1412939-weekdaysymbols": {
+      "title": "weekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1412939-weekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1412939-weekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of weekdays in this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1407268-shortweekdaysymbols": {
+      "title": "shortWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407268-shortweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1407268-shortweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of shorter-named weekdays in this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1417207-veryshortweekdaysymbols": {
+      "title": "veryShortWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1417207-veryshortweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1417207-veryshortweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of very-shortly-named weekdays in this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1411219-standaloneweekdaysymbols": {
+      "title": "standaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1411219-standaloneweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1411219-standaloneweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of standalone weekday symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1413871-shortstandaloneweekdaysymbols": {
+      "title": "shortStandaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1413871-shortstandaloneweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1413871-shortstandaloneweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of short standalone weekday symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1418273-veryshortstandaloneweekdaysymbol": {
+      "title": "veryShortStandaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1418273-veryshortstandaloneweekdaysymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1418273-veryshortstandaloneweekdaysymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of very short standalone weekday symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1414872-monthsymbols": {
+      "title": "monthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1414872-monthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1414872-monthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of month symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1408952-shortmonthsymbols": {
+      "title": "shortMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1408952-shortmonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1408952-shortmonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of short month symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1412779-veryshortmonthsymbols": {
+      "title": "veryShortMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1412779-veryshortmonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1412779-veryshortmonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of very short month symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1409598-standalonemonthsymbols": {
+      "title": "standaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1409598-standalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1409598-standalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of standalone month symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1418180-shortstandalonemonthsymbols": {
+      "title": "shortStandaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1418180-shortstandalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1418180-shortstandalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of short standalone month symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1408035-veryshortstandalonemonthsymbols": {
+      "title": "veryShortStandaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1408035-veryshortstandalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1408035-veryshortstandalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of very short month symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1411517-quartersymbols": {
+      "title": "quarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1411517-quartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1411517-quartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of quarter symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1414864-shortquartersymbols": {
+      "title": "shortQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1414864-shortquartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1414864-shortquartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of short quarter symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1407159-standalonequartersymbols": {
+      "title": "standaloneQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407159-standalonequartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1407159-standalonequartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of standalone quarter symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1409823-shortstandalonequartersymbols": {
+      "title": "shortStandaloneQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1409823-shortstandalonequartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1409823-shortstandalonequartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of short standalone quarter symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1415038-erasymbols": {
+      "title": "eraSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1415038-erasymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1415038-erasymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of era symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar/1414285-longerasymbols": {
+      "title": "longEraSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1414285-longerasymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar/1414285-longerasymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of long era symbols for this calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendardaychangednotification": {
+      "title": "NSCalendarDayChangedNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendardaychangednotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendardaychangednotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that is posted whenever the calendar day of the system changes, as determined by the system calendar, locale, and time zone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nstimezone": {
+      "title": "NSTimeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nstimezone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nstimezone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about standard time conventions associated with a specific geopolitical region. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating and Initializing Calendars",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1412400-calendarwithidentifier",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1415991-initwithcalendaridentifier",
+        "doc://com.apple.documentation/documentation/foundation/nscalendaridentifier"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the User's Calendar",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1408501-currentcalendar",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1413771-autoupdatingcurrentcalendar"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Extracting Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1407954-date",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1416505-component",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1414841-components",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1407925-components",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1411297-components",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1413194-componentsintimezone",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1418143-getera",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1410912-getera",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1415012-gethour"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Calendar Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1408268-calendaridentifier",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1408310-firstweekday",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1418111-locale",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1409969-timezone",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1414251-maximumrangeofunit",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1413638-minimumrangeofunit",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1410186-minimumdaysinfirstweek",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1408595-ordinalityofunit",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1418344-rangeofunit",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1408013-rangeofunit",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1413286-rangeofweekendstartdate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendarunit"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scanning Dates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1417161-startofdayfordate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1413938-enumeratedatesstartingafterdate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1416165-nextdateafterdate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1416814-nextdateafterdate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1417170-nextdateafterdate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendaroptions",
+        "doc://com.apple.documentation/documentation/foundation/1430373-nswrapcalendarcomponents"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calculating Dates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1407609-datefromcomponents",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1409577-datebyaddingcomponents",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1407989-datebyaddingunit",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1407363-datebysettinghour",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1417915-datebysettingunit",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1415254-datewithera",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1413628-datewithera",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1409905-nextweekendstartdate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Dates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1415661-comparedate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1411431-isdate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1417649-isdate",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1417149-isdateintoday",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1410279-isdateintomorrow",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1412175-isdateinweekend",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1409356-isdateinyesterday"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting AM and PM Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1416226-amsymbol",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1416343-pmsymbol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Weekday Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1412939-weekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1407268-shortweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1417207-veryshortweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1411219-standaloneweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1413871-shortstandaloneweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1418273-veryshortstandaloneweekdaysymbol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Month Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1414872-monthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1408952-shortmonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1412779-veryshortmonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1409598-standalonemonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1418180-shortstandalonemonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1408035-veryshortstandalonemonthsymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Quarter Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1411517-quartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1414864-shortquartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1407159-standalonequartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1409823-shortstandalonequartersymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Era Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1415038-erasymbols",
+        "doc://com.apple.documentation/documentation/foundation/nscalendar/1414285-longerasymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Recognizing Notifications",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendardaychangednotification"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsdatecomponents",
+        "doc://com.apple.documentation/documentation/foundation/nstimezone"
+      ],
+      "title": "Calendrical Calculations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSCalendar"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar"
+            },
+            {
+              "type": "text",
+              "text": " objects encapsulate information about systems of reckoning time in which the beginning, length, and divisions of a year are defined. They provide information about the calendar and support for calendrical computations such as determining the range of a given calendrical unit and adding units to a given absolute time."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar"
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "toll-free bridged"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " with its Core Foundation counterpart, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcalendarref"
+            },
+            {
+              "type": "text",
+              "text": ". See "
+            },
+            {
+              "type": "link",
+              "title": "Toll-Free Bridging",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2"
+            },
+            {
+              "type": "text",
+              "text": " for more information on toll-free bridging."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The Swift overlay to the Foundation framework provides the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/calendar"
+                },
+                {
+                  "type": "text",
+                  "text": " structure, which bridges to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar"
+                },
+                {
+                  "type": "text",
+                  "text": " class. For more information about value types, see "
+                },
+                {
+                  "type": "link",
+                  "title": "Working with Cocoa Frameworks",
+                  "destination": "https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6"
+                },
+                {
+                  "type": "text",
+                  "text": " in "
+                },
+                {
+                  "type": "link",
+                  "title": "Using Swift with Cocoa and Objective-C (Swift 4.1)",
+                  "destination": "https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Locales and Calendars",
+          "anchor": "1651449"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Most locales use the most widely used civil calendar, called the "
+            },
+            {
+              "type": "newTerm",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Gregorian calendar"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifiergregorian"
+            },
+            {
+              "type": "text",
+              "text": "), but there remain exceptions to this trend. For example:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Saudi Arabia, some locales use primarily the Islamic Umm al-Qura calendar ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierislamicummalqura"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Ethiopia, some locales use primarily the Ethiopian calendar ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierethiopicametemihret"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierethiopicametealem"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Iran and Afghanistan, some locales use primarily the Persian calendar ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierpersian"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Thailand, some locales use primarily the Buddhist calendar ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierbuddhist"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Other locales use another calendar alongside the Gregorian calendar. For example:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "India also uses the Indian national calendar ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierindian"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Israel also uses the Hebrew calendar ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierhebrew"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "China and other regions also use the Chinese calendar ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierchinese"
+                    },
+                    {
+                      "type": "text",
+                      "text": "), primarily to calculate astronomical date and Chinese traditional holidays."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Japan also uses the Japanese calendar ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierjapanese"
+                    },
+                    {
+                      "type": "text",
+                      "text": "), primarily to add year names."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Independent of any particular locale, certain calendars are used primarily to calculate dates for religious observances. Among these are the Buddhist ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierbuddhist"
+            },
+            {
+              "type": "text",
+              "text": "), Coptic ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifiercoptic"
+            },
+            {
+              "type": "text",
+              "text": "), Hebrew ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierhebrew"
+            },
+            {
+              "type": "text",
+              "text": "), and Islamic ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendaridentifierislamic"
+            },
+            {
+              "type": "text",
+              "text": ") calendars."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "How NSCalendar Models the Gregorian Calendar",
+          "anchor": "1651458"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Gregorian calendar was first introduced in 1582, as a replacement for the Julian Calendar. According to the Julian calendar, a leap day is added to February for any year with a number divisible by 4, which results in an annual disparity of 11 minutes, or 1 day every 128 years. The Gregorian calendar revised the rules for leap day calculation, by skipping the leap day for any year with a number divisible by 100, unless that year number is also divisible by 400, resulting in an annual disparity of only 26 seconds, or 1 day every 3323 years."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To transition from the Julian calendar to the Gregorian calendar, 10 days were dropped from the Gregorian calendar (October 5–14)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After the Gregorian calendar was introduced, many countries continued to use the Julian calendar, with Turkey being the last country to adopt the Gregorian calendar, in 1926. As a result of the staggered adoption, the transition period for countries at the time of adoption have different start dates and a different number of skipped days to account for the additional disparity from leap day calculations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar"
+            },
+            {
+              "type": "text",
+              "text": " models the behavior of a "
+            },
+            {
+              "type": "newTerm",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "proleptic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " Gregorian calendar ("
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "as defined by ISO 8601:2004"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "), which extends the Gregorian calendar backward in time from the date of its introduction. This behavior should be taken into account when working with dates created before the transition period of the affected locales."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Calendar Arithmetic",
+          "anchor": "1651468"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To do calendar arithmetic, you use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+            },
+            {
+              "type": "text",
+              "text": " objects in conjunction with a calendar. For example, to convert between a decomposed date in one calendar and another calendar, you must first convert the decomposed elements into a date using the first calendar, then decompose it using the second. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+            },
+            {
+              "type": "text",
+              "text": " provides the absolute scale and epoch (reference point) for dates and times, which can then be rendered into a particular calendar, for calendrical computations or user display."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Two "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar"
+            },
+            {
+              "type": "text",
+              "text": " methods that return a date object, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407609-datefromcomponents"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1409577-datebyaddingcomponents"
+            },
+            {
+              "type": "text",
+              "text": ", take as a parameter an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatecomponents"
+            },
+            {
+              "type": "text",
+              "text": " object that describes the calendrical components required for the computation. You can provide as many components as you need (or choose to). When there is incomplete information to compute an absolute time, default values similar to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": " are usually chosen by a calendar, but this is a calendar-specific choice. If you provide inconsistent information, calendar-specific disambiguation is performed (which may involve ignoring one or more of the parameters). Related methods ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1414841-components"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar/1407925-components"
+            },
+            {
+              "type": "text",
+              "text": ") take a bit mask parameter that specifies which components to calculate when returning an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatecomponents"
+            },
+            {
+              "type": "text",
+              "text": " object. The bit mask is composed of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendarunit"
+            },
+            {
+              "type": "text",
+              "text": " constants (see "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Constants"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a calendar, day, week, weekday, month, and year numbers are generally 1-based, but there may be calendar-specific exceptions. Ordinal numbers, where they occur, are 1-based. Some calendars represented by this API may have to map their basic unit concepts into year/month/week/day/… nomenclature. For example, a calendar composed of 4 quarters in a year instead of 12 months uses the month unit to represent quarters. The particular values of the unit are defined by each calendar, and are not necessarily consistent with values for that unit in another calendar."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

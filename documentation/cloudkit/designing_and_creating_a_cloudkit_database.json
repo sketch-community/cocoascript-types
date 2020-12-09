@@ -1,0 +1,1055 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create a schema to store your app’s objects as records in iCloud using CloudKit."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3403122,
+  "kind": "article",
+  "metadata": {
+    "title": "Designing and Creating a CloudKit Database",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "CloudKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkit/designing_and_creating_a_cloudkit_database"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkit/designing_and_creating_a_cloudkit_database"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/cloudkit": {
+      "title": "CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit",
+      "url": "/documentation/cloudkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
+      "title": "CKRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckreference": {
+      "title": "CKReference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckreference"
+    },
+    "doc://com.apple.documentation/documentation/swift/string": {
+      "title": "String",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data": {
+      "title": "Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3404373": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3404373",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3404373"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date": {
+      "title": "Date",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date"
+    },
+    "doc://com.apple.documentation/documentation/swift/bool": {
+      "title": "Bool",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/bool",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/bool"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462225-initwithrecordtype": {
+      "title": "initWithRecordType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462225-initwithrecordtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/1462225-initwithrecordtype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRecordType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403847": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403847",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403847"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1417515-setvaluesforkeyswithdictionary": {
+      "title": "setValuesForKeysWithDictionary:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1417515-setvaluesforkeyswithdictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1417515-setvaluesforkeyswithdictionary",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValuesForKeysWithDictionary:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403842": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403842",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403842"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399189-defaultcontainer": {
+      "title": "defaultContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399189-defaultcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckcontainer/1399189-defaultcontainer",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "defaultContainer"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckcontainer": {
+      "title": "CKContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckcontainer"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403843": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403843",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403843"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403846": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403846",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3403846"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror": {
+      "title": "CKError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerror"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3515438": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3515438",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database#3515438"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard/inspecting_and_editing_an_icloud_container_s_schema": {
+      "title": "Inspecting and Editing an iCloud Container’s Schema",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard/inspecting_and_editing_an_icloud_container_s_schema",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard/inspecting_and_editing_an_icloud_container_s_schema"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app": {
+      "title": "Determining if CloudKit Is Right for Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Explore various ways of storing your app’s data in iCloud."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/enabling_cloudkit_in_your_app": {
+      "title": "Enabling CloudKit in Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/enabling_cloudkit_in_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/enabling_cloudkit_in_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your app to store data in iCloud using CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database": {
+      "title": "Designing and Creating a CloudKit Database",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/designing_and_creating_a_cloudkit_database",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a schema to store your app’s objects as records in iCloud using CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard": {
+      "title": "Managing iCloud Containers with CloudKit Dashboard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inspect and modify the schema and data for your app's iCloud container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/determining_if_cloudkit_is_right_for_your_app",
+        "doc://com.apple.documentation/documentation/cloudkit/enabling_cloudkit_in_your_app",
+        "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you enable CloudKit in your app, you create a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "schema"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " for your container that describes how to store your objects. A schema defines "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "record types"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and the possible relationships between them. A record type is a template for the allowed keys and values of a record. This relationship is analogous to how a class (record type) defines the properties an instance (record) can have."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Design Your Objects as Records",
+          "anchor": "3403836"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit allows you to store your data as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " objects, and relationships between those objects as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference"
+            },
+            {
+              "type": "text",
+              "text": " associations. Separate your data into record types by grouping objects of the same type together. If you’ve already separated your model data into classes, these classes might have the same record type in iCloud. Choose which objects and which of their properties and relationships you want to persist to iCloud. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each object property that you persist maps to a key-value pair, known as a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "field"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", within a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " supports value types for your fields, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string"
+            },
+            {
+              "type": "text",
+              "text": ", or more complex types, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, a “to-do item” might have the following record type:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "none",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Key"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Type"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Example value"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "title"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/swift/string"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "“Get apples”"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "dueDate"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/date"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "October 28, 2019"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "isCompleted"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/swift/bool"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "false"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3404373",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information on additional supported value types, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create Records Programmatically",
+          "anchor": "3403837"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " object with a string representing the type of record you want to store, using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462225-initwithrecordtype"
+            },
+            {
+              "type": "text",
+              "text": ". Every record type must have a unique string name."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let record = CKRecord(recordType: \"ToDoItem\")"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403847",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Then set the record’s fields. Because "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " is key-value coding compliant, you can use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1417515-setvaluesforkeyswithdictionary"
+            },
+            {
+              "type": "text",
+              "text": ". The values you set could be from a details sheet that the user fills out."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "record.setValuesForKeys([",
+            "    \"title\": \"Get apples\",",
+            "    \"dueDate\": DateComponents(",
+            "        calendar: Calendar.current,",
+            "        year: 2019,",
+            "        month: 10,",
+            "        day: 28).date!,",
+            "    \"isCompleted\": false // Stored as Int(64)",
+            "])"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403842",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Save Initial Records to iCloud",
+          "anchor": "3403832"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can create a schema using CloudKit Dashboard, or you can create a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "just-in-time schema "
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "by writing records programmatically."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To save a record to your container, you must pick a database to save the record to. Each container has a single "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "public"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " database accessible to all app users, and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "private"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " databases for each user of your app. Also, a user may have a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "shared"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " database if that user is accessing another user’s shared private data. Note that every database within your app’s container shares the same schema."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although an app can have multiple containers or can share a container, each app has one default container. You access the default container using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399189-defaultcontainer"
+            },
+            {
+              "type": "text",
+              "text": " on "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer"
+            },
+            {
+              "type": "text",
+              "text": ". The following example uses the current user’s private database within the app’s default container and exists in an action handler for a Save button."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let container = CKContainer.default()",
+            "let database = container.privateCloudDatabase"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403843",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Save the record to the user’s private database in the app’s container."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "database.save(record) { record, error in",
+            "    if let error = error {",
+            "        // Handle error.",
+            "        return",
+            "    }",
+            "    // Record saved successfully.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403846",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you run your app, it adds that record type to the schema and saves the record. If the record type already exists in the schema, iCloud uses the existing type. Saving a record works only if the user has signed into their iCloud account on their device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If saving the record to iCloud succeeds, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "error"
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ". (If "
+            },
+            {
+              "type": "codeVoice",
+              "code": "error"
+            },
+            {
+              "type": "text",
+              "text": " is non-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror"
+            },
+            {
+              "type": "text",
+              "text": " for possible values of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "error.)"
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "During development, you can change your schema as much as you want, but once it’s deployed to production, you can’t delete any part of it. You can only make additive changes, such as adding a new field to a record type, or adding new record types."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle or Prevent Errors Gracefully",
+          "anchor": "3515437"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When designing your app, consider how to handle or prevent error conditions. For example, an error occurs if your app attempts to save a record to a user’s private database and the user hasn’t yet signed in to iCloud. You might handle this scenario by checking whether the user has signed in before the app saves the record. If the user hasn’t signed in, present an alert. If they’re signed in, save the record."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example example demonstrates preventing the error condition in this manner."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CKContainer.default().accountStatus { accountStatus, error in",
+            "    if accountStatus == .noAccount {",
+            "        DispatchQueue.main.async {",
+            "            let message = ",
+            "                \"\"\"",
+            "                Sign in to your iCloud account to write records.",
+            "                On the Home screen, launch Settings, tap Sign in to your",
+            "                iPhone/iPad, and enter your Apple ID. Turn iCloud Drive on.",
+            "                \"\"\"",
+            "            let alert = UIAlertController(",
+            "                title: \"Sign in to iCloud\",",
+            "                message: message,",
+            "                preferredStyle: .alert)",
+            "            alert.addAction(UIAlertAction(title: \"OK\", style: .cancel))",
+            "            self.present(alert, animated: true)",
+            "        }",
+            "    }",
+            "    else {",
+            "        // Save your record here.",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3515438",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Run Your App",
+          "anchor": "3403829"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In Xcode, run your app to execute the code that saves records and creates the schema in the database. To verify success, see"
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": " "
+                }
+              ]
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/managing_icloud_containers_with_cloudkit_dashboard/inspecting_and_editing_an_icloud_container_s_schema"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

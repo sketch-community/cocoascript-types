@@ -1,0 +1,1162 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Adopt drop interaction APIs to selectively consume dragged content."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2888275,
+  "kind": "article",
+  "metadata": {
+    "title": "Making a View into a Drop Destination",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop": {
+      "title": "Drag and Drop",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop",
+      "url": "/documentation/uikit/drag_and_drop",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropinteraction": {
+      "title": "UIDropInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropinteraction"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate": {
+      "title": "UIDropInteractionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropinteractiondelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/2891054-interactions": {
+      "title": "interactions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/2891054-interactions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/2891054-interactions"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903631": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903631",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903631"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903632": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903632",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903632"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimage": {
+      "title": "UIImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimage"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropsession": {
+      "title": "UIDropSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropsession"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890887-dropinteraction": {
+      "title": "dropInteraction:canHandleSession:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890887-dropinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropinteractiondelegate/2890887-dropinteraction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropInteraction:canHandleSession:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890888-dropinteraction": {
+      "title": "dropInteraction:sessionDidUpdate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890888-dropinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropinteractiondelegate/2890888-dropinteraction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropInteraction:sessionDidUpdate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropproposal": {
+      "title": "UIDropProposal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropproposal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropproposal"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropoperation": {
+      "title": "UIDropOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropoperation"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903648": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903648",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903648"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropoperation/uidropoperationcancel": {
+      "title": "UIDropOperationCancel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropoperation/uidropoperationcancel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropoperation/uidropoperationcancel"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903627": {
+      "title": "Consider Accepting the Drag Items",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903627",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903627"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903649": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903649",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903649"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890889-dropinteraction": {
+      "title": "dropInteraction:performDrop:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890889-dropinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropinteractiondelegate/2890889-dropinteraction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropInteraction:performDrop:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropsession/2891058-loadobjectsofclass": {
+      "title": "loadObjectsOfClass:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropsession/2891058-loadobjectsofclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropsession/2891058-loadobjectsofclass",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadObjectsOfClass:completion:"
+        }
+      ]
+    },
+    "link-media-2903753": {
+      "identifier": "link-media-2903753",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903753"
+    },
+    "media-2903753": {
+      "identifier": "media-2903753",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 792,
+            "height": 397
+          },
+          "url": "https://docs-assets.developer.apple.com/published/71ab889a73/df925141-2567-4fdf-b2b5-7c04c2051a46.png"
+        }
+      ],
+      "alt": "APIs for consuming data from drag items in a drop destination",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890880-dropinteraction": {
+      "title": "dropInteraction:sessionDidEnter:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890880-dropinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidropinteractiondelegate/2890880-dropinteraction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dropInteraction:sessionDidEnter:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextview": {
+      "title": "UITextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview": {
+      "title": "UICollectionView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/understanding_a_drag_item_as_a_promise": {
+      "title": "Understanding a Drag Item as a Promise",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/understanding_a_drag_item_as_a_promise",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/drag_and_drop/understanding_a_drag_item_as_a_promise",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use drag items to convey data representation promises between a source app and a destination app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source": {
+      "title": "Making a View into a Drag Source",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adopt drag interaction APIs to provide items for dragging."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination": {
+      "title": "Making a View into a Drop Destination",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adopt drop interaction APIs to selectively consume dragged content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view": {
+      "title": "Adopting Drag and Drop in a Custom View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Demonstrates how to enable drag and drop for a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "UIImageView"
+        },
+        {
+          "type": "text",
+          "text": " instance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view": {
+      "title": "Adopting Drag and Drop in a Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Demonstrates how to enable and implement drag and drop for a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/understanding_a_drag_item_as_a_promise",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view"
+      ],
+      "title": "First Steps",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By implementing a drop interaction delegate ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate"
+            },
+            {
+              "type": "text",
+              "text": ") for a view, you enable that view to accept dropped items."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview"
+                },
+                {
+                  "type": "text",
+                  "text": " classes each provide their own, specialized support for consuming drag items. See these classes for more information."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable a View as a Drop Destination",
+          "anchor": "2903626"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Any instance or subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " can act as a drop destination. Your first steps to make this happen are:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a drop interaction (a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " instance)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify the drop interaction’s delegate (an object that conforms to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the interaction to the view’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/2891054-interactions"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here’s how to do this:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func customEnableDropping(on view: UIView, dropInteractionDelegate: UIDropInteractionDelegate) {",
+            "    let dropInteraction = UIDropInteraction(delegate: dropInteractionDelegate)",
+            "    view.addInteraction(dropInteraction)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2903631",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Consider Accepting the Drag Items",
+          "anchor": "2903627"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user moves the touch point of a drag session over a drop destination, you can immediately refuse it, or you can tell the system to continue its conversation with your delegate object. Provide your response as follows:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDropSession) -> Bool {",
+            "    // Ensure the drop session has an object of the appropriate type",
+            "    return session.canLoadObjects(ofClass: UIImage.self)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2903632",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This example assumes that your drop destination can consume only "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimage"
+            },
+            {
+              "type": "text",
+              "text": " objects. The method implementation tests for this type in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "return"
+            },
+            {
+              "type": "text",
+              "text": " statement. You can also use this method to refuse a drop session based on the state of your app. The "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "drop session"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is a system-managed object that conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropsession"
+            },
+            {
+              "type": "text",
+              "text": " protocol. You can access a drop session for information about the items being dropped."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890887-dropinteraction"
+            },
+            {
+              "type": "text",
+              "text": " method is your app’s only chance to respond to the system’s question about whether your app will "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "consider"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " accepting the items. For example, you might preemptively reject a drop session if it contains no data representations your app can consume, or if consuming dragged items is inappropriate given your app state. Your app’s definitive opportunity to accept or reject dropped items is in your implementation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890888-dropinteraction"
+            },
+            {
+              "type": "text",
+              "text": " protocol method."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide the Required Drop Proposal",
+          "anchor": "2903628"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a view to be eligible to accept the data from a drop session, you "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "must"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890888-dropinteraction"
+            },
+            {
+              "type": "text",
+              "text": " protocol method. In your implementation, return a drop proposal—a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropproposal"
+            },
+            {
+              "type": "text",
+              "text": " object that specifies the drop operation type, a constant from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropoperation"
+            },
+            {
+              "type": "text",
+              "text": " enumeration. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Provide a drop proposal like this:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func dropInteraction(_ interaction: UIDropInteraction, sessionDidUpdate session: UIDropSession) -> UIDropProposal {",
+            "        // Propose to the system to copy the item from the source app",
+            "        return UIDropProposal(operation: .copy)",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2903648",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app instead opts to refuse the dropped items, return the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropoperation/uidropoperationcancel"
+            },
+            {
+              "type": "text",
+              "text": " constant."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system calls this protocol method when the user has moved the touch point of a drag session over a drop-enabled view—as long as the view did not already reject the drop by returning "
+            },
+            {
+              "type": "codeVoice",
+              "code": "false"
+            },
+            {
+              "type": "text",
+              "text": " in its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890887-dropinteraction"
+            },
+            {
+              "type": "text",
+              "text": " method (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination#2903627"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Consume the Data in the Drag Items",
+          "anchor": "2903629"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The final step of the conversation between the drop interaction delegate and the system is when your app consumes the data the user has dragged from the source app. Here, your drop interaction delegate asks the drop session to load its drag items:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDropSession) {",
+            "    // Consume drag items (in this example, of type UIImage).",
+            "    session.loadObjects(ofClass: UIImage.self) { imageItems in",
+            "        let images = imageItems as! [UIImage]",
+            "        self.imageView.image = images.first",
+            "    }",
+            "    // Perform additional UI updates as needed.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2903649",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890889-dropinteraction"
+            },
+            {
+              "type": "text",
+              "text": " method is a destination app’s only opportunity to request representations of drag items. Receiving the items is potentially time-consuming and proceeds asynchronously. "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Do not"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " wait within this method to receive items; instead, return from this method quickly."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you do not employ the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uidropsession/2891058-loadobjectsofclass"
+                },
+                {
+                  "type": "text",
+                  "text": " convenience method as shown above, which automatically employs the main thread, explicitly dispatch UI work to the main thread. For example, you can use the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "DispatchQueue.main.async"
+                },
+                {
+                  "type": "text",
+                  "text": " function."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Understand a Drop Destination in Context",
+          "anchor": "2903630"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the touch point for a drop session moves over a view that you’ve configured as a drop destination, the system initiates a conversation with the drop interaction delegate. This conversation gives your app opportunities to accept or reject the drop, to prepare for consuming the drag items, and to update your model and UI, as shown here:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2903753",
+              "metadata": {
+                "anchor": "2903753",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The figure above depicts the steps for consuming a drag item, in context:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The user moves their finger onscreen so the touch point of a drag session is within a configured view in your app. The system instantiates a drop session (an object that conforms to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropsession"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol, not shown in the figure) for managing the drop activity."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The system calls the drop interaction delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890887-dropinteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol method. Check whether your app can, and opts to, consume the drag items."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The system calls the delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890880-dropinteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol method. Prepare to consume the drag items."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The system calls the delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890888-dropinteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol method. Your implementation "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "must"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " return a UIDropProposal object, or the system ends the session."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the user confirms their intent to complete the drop, the system calls the delegate’s asynchronous "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidropinteractiondelegate/2890889-dropinteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol method. This a destination app’s only opportunity to request representations of drag items."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

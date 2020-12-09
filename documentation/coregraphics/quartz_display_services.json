@@ -1,0 +1,2837 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provides direct access to features in the macOS window server for configuring and controlling display hardware."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1655858,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Quartz Display Services",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Graphics"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/quartz_display_services"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/quartz_display_services"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coregraphics": {
+      "title": "Core Graphics",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics",
+      "url": "/documentation/coregraphics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamycbcrmatrix": {
+      "title": "kCGDisplayStreamYCbCrMatrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamycbcrmatrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/kcgdisplaystreamycbcrmatrix"
+    },
+    "devLink-1731047": {
+      "identifier": "devLink-1731047",
+      "type": "link",
+      "title": "Quartz Display Services Programming Topics",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzDisplayServicesConceptual/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004316"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455620-cgmaindisplayid": {
+      "title": "CGMainDisplayID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455620-cgmaindisplayid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455620-cgmaindisplayid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the display ID of the main display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454964-cggetonlinedisplaylist": {
+      "title": "CGGetOnlineDisplayList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454964-cggetonlinedisplaylist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454964-cggetonlinedisplaylist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides a list of displays that are online (active, mirrored, or sleeping)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454603-cggetactivedisplaylist": {
+      "title": "CGGetActiveDisplayList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454603-cggetactivedisplaylist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454603-cggetactivedisplaylist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides a list of displays that are active (or drawable)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454234-cggetdisplayswithopengldisplayma": {
+      "title": "CGGetDisplaysWithOpenGLDisplayMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454234-cggetdisplayswithopengldisplayma",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454234-cggetdisplayswithopengldisplayma",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides a list of displays that corresponds to the bits set in an OpenGL display mask."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454385-cggetdisplayswithpoint": {
+      "title": "CGGetDisplaysWithPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454385-cggetdisplayswithpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454385-cggetdisplayswithpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides a list of online displays with bounds that include the specified point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456071-cggetdisplayswithrect": {
+      "title": "CGGetDisplaysWithRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456071-cggetdisplayswithrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456071-cggetdisplayswithrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a list of online displays with bounds that intersect the specified rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455386-cgopengldisplaymasktodisplayid": {
+      "title": "CGOpenGLDisplayMaskToDisplayID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455386-cgopengldisplaymasktodisplayid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455386-cgopengldisplaymasktodisplayid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps an OpenGL display mask to a display ID."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455554-cgdisplayidtoopengldisplaymask": {
+      "title": "CGDisplayIDToOpenGLDisplayMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455554-cgdisplayidtoopengldisplaymask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455554-cgdisplayidtoopengldisplaymask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps a display ID to an OpenGL display mask."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456259-cgdisplaycapture": {
+      "title": "CGDisplayCapture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456259-cgdisplaycapture",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456259-cgdisplaycapture",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Captures a display for exclusive use by an application."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454934-cgdisplaycapturewithoptions": {
+      "title": "CGDisplayCaptureWithOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454934-cgdisplaycapturewithoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454934-cgdisplaycapturewithoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Captures a display for exclusive use by an application, using the specified options."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455685-cgdisplayrelease": {
+      "title": "CGDisplayRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455685-cgdisplayrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455685-cgdisplayrelease",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases a captured display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1562061-cgdisplayiscaptured": {
+      "title": "CGDisplayIsCaptured",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1562061-cgdisplayiscaptured",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1562061-cgdisplayiscaptured",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is captured."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455221-cgcapturealldisplays": {
+      "title": "CGCaptureAllDisplays",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455221-cgcapturealldisplays",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455221-cgcapturealldisplays",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Captures all attached displays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456514-cgcapturealldisplayswithoptions": {
+      "title": "CGCaptureAllDisplaysWithOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456514-cgcapturealldisplayswithoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456514-cgcapturealldisplayswithoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Captures all attached displays, using the specified options."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454901-cgreleasealldisplays": {
+      "title": "CGReleaseAllDisplays",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454901-cgreleasealldisplays",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454901-cgreleasealldisplays",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases all captured displays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454279-cgshieldingwindowid": {
+      "title": "CGShieldingWindowID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454279-cgshieldingwindowid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454279-cgshieldingwindowid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the window ID of the shield window for a captured display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456352-cgshieldingwindowlevel": {
+      "title": "CGShieldingWindowLevel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456352-cgshieldingwindowlevel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456352-cgshieldingwindowlevel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the window level of the shield window for a captured display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807904-cgdisplayaddressforposition": {
+      "title": "CGDisplayAddressForPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807904-cgdisplayaddressforposition",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coregraphics/quartz_display_services/1807904-cgdisplayaddressforposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the address in framebuffer memory that corresponds to a position on an online display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807908-cgdisplaybaseaddress": {
+      "title": "CGDisplayBaseAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807908-cgdisplaybaseaddress",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coregraphics/quartz_display_services/1807908-cgdisplaybaseaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the base address in framebuffer memory of an online display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456576-cgdisplaygetdrawingcontext": {
+      "title": "CGDisplayGetDrawingContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456576-cgdisplaygetdrawingcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456576-cgdisplaygetdrawingcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a graphics context suitable for drawing to a captured display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455691-cgdisplaycreateimage": {
+      "title": "CGDisplayCreateImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455691-cgdisplaycreateimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455691-cgdisplaycreateimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an image containing the contents of the specified display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454595-cgdisplaycreateimageforrect": {
+      "title": "CGDisplayCreateImageForRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454595-cgdisplaycreateimageforrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454595-cgdisplaycreateimageforrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an image containing the contents of a portion of the specified display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455235-cgbegindisplayconfiguration": {
+      "title": "CGBeginDisplayConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455235-cgbegindisplayconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455235-cgbegindisplayconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Begins a new set of display configuration changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455522-cgcanceldisplayconfiguration": {
+      "title": "CGCancelDisplayConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455522-cgcanceldisplayconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455522-cgcanceldisplayconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels a set of display configuration changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454488-cgcompletedisplayconfiguration": {
+      "title": "CGCompleteDisplayConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454488-cgcompletedisplayconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454488-cgcompletedisplayconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Completes a set of display configuration changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454531-cgconfiguredisplaymirrorofdispla": {
+      "title": "CGConfigureDisplayMirrorOfDisplay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454531-cgconfiguredisplaymirrorofdispla",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454531-cgconfiguredisplaymirrorofdispla",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the configuration of a mirroring set."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1543535-cgconfiguredisplaymode": {
+      "title": "CGConfigureDisplayMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1543535-cgconfiguredisplaymode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1543535-cgconfiguredisplaymode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configures the display mode of a display."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454090-cgconfiguredisplayorigin": {
+      "title": "CGConfigureDisplayOrigin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454090-cgconfiguredisplayorigin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454090-cgconfiguredisplayorigin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configures the origin of a display in the global display coordinate space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456402-cgrestorepermanentdisplayconfigu": {
+      "title": "CGRestorePermanentDisplayConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456402-cgrestorepermanentdisplayconfigu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456402-cgrestorepermanentdisplayconfigu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restores the permanent display configuration settings for the current user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456308-cgconfiguredisplaystereooperatio": {
+      "title": "CGConfigureDisplayStereoOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456308-cgconfiguredisplaystereooperatio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456308-cgconfiguredisplaystereooperatio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables stereo operation for a display, as part of a display configuration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454316-cgdisplaysetstereooperation": {
+      "title": "CGDisplaySetStereoOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454316-cgdisplaysetstereooperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454316-cgdisplaysetstereooperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Immediately enables or disables stereo operation for a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454273-cgconfiguredisplaywithdisplaymod": {
+      "title": "CGConfigureDisplayWithDisplayMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454273-cgconfiguredisplaywithdisplaymod",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454273-cgconfiguredisplaywithdisplaymod",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configures the display mode of a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454190-cgdisplaycopycolorspace": {
+      "title": "CGDisplayCopyColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454190-cgdisplaycopycolorspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454190-cgdisplaycopycolorspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the color space for a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1543516-cgdisplayioserviceport": {
+      "title": "CGDisplayIOServicePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1543516-cgdisplayioserviceport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1543516-cgdisplayioserviceport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the I/O Kit service port of the specified display."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455222-cgdisplayisactive": {
+      "title": "CGDisplayIsActive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455222-cgdisplayisactive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455222-cgdisplayisactive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is active."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456110-cgdisplayisalwaysinmirrorset": {
+      "title": "CGDisplayIsAlwaysInMirrorSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456110-cgdisplayisalwaysinmirrorset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456110-cgdisplayisalwaysinmirrorset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is always in a mirroring set."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454260-cgdisplayisasleep": {
+      "title": "CGDisplayIsAsleep",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454260-cgdisplayisasleep",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454260-cgdisplayisasleep",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is sleeping (and is therefore not drawable)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454566-cgdisplayisbuiltin": {
+      "title": "CGDisplayIsBuiltin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454566-cgdisplayisbuiltin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454566-cgdisplayisbuiltin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is built-in, such as the internal display in portable systems."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454506-cgdisplayisinhwmirrorset": {
+      "title": "CGDisplayIsInHWMirrorSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454506-cgdisplayisinhwmirrorset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454506-cgdisplayisinhwmirrorset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is in a hardware mirroring set."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455558-cgdisplayisinmirrorset": {
+      "title": "CGDisplayIsInMirrorSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455558-cgdisplayisinmirrorset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455558-cgdisplayisinmirrorset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is in a mirroring set."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455448-cgdisplayismain": {
+      "title": "CGDisplayIsMain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455448-cgdisplayismain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455448-cgdisplayismain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is the main display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454476-cgdisplayisonline": {
+      "title": "CGDisplayIsOnline",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454476-cgdisplayisonline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454476-cgdisplayisonline",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is connected or online."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455025-cgdisplayisstereo": {
+      "title": "CGDisplayIsStereo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455025-cgdisplayisstereo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455025-cgdisplayisstereo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a display is running in a stereo graphics mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454556-cgdisplaymirrorsdisplay": {
+      "title": "CGDisplayMirrorsDisplay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454556-cgdisplaymirrorsdisplay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454556-cgdisplaymirrorsdisplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "For a secondary display in a mirroring set, returns the primary display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454149-cgdisplaymodelnumber": {
+      "title": "CGDisplayModelNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454149-cgdisplaymodelnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454149-cgdisplaymodelnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the model number of a display monitor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454403-cgdisplayprimarydisplay": {
+      "title": "CGDisplayPrimaryDisplay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454403-cgdisplayprimarydisplay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454403-cgdisplayprimarydisplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the primary display in a hardware mirroring set."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455299-cgdisplayrotation": {
+      "title": "CGDisplayRotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455299-cgdisplayrotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455299-cgdisplayrotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the rotation angle of a display in degrees."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456599-cgdisplayscreensize": {
+      "title": "CGDisplayScreenSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456599-cgdisplayscreensize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456599-cgdisplayscreensize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the width and height of a display in millimeters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455409-cgdisplayserialnumber": {
+      "title": "CGDisplaySerialNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455409-cgdisplayserialnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455409-cgdisplayserialnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the serial number of a display monitor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456489-cgdisplayunitnumber": {
+      "title": "CGDisplayUnitNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456489-cgdisplayunitnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456489-cgdisplayunitnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the logical unit number of a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455721-cgdisplayusesopenglacceleration": {
+      "title": "CGDisplayUsesOpenGLAcceleration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455721-cgdisplayusesopenglacceleration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455721-cgdisplayusesopenglacceleration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether Quartz is using OpenGL-based window acceleration (Quartz Extreme) to render in a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455233-cgdisplayvendornumber": {
+      "title": "CGDisplayVendorNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455233-cgdisplayvendornumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455233-cgdisplayvendornumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the vendor number of the specified display’s monitor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455336-cgdisplayregisterreconfiguration": {
+      "title": "CGDisplayRegisterReconfigurationCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455336-cgdisplayregisterreconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455336-cgdisplayregisterreconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a callback function to be invoked whenever a local display is reconfigured."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455407-cgdisplayremovereconfigurationca": {
+      "title": "CGDisplayRemoveReconfigurationCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455407-cgdisplayremovereconfigurationca",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455407-cgdisplayremovereconfigurationca",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the registration of a callback function that’s invoked whenever a local display is reconfigured."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456395-cgdisplaybounds": {
+      "title": "CGDisplayBounds",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456395-cgdisplaybounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456395-cgdisplaybounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the bounds of a display in the global display coordinate space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454247-cgdisplaypixelshigh": {
+      "title": "CGDisplayPixelsHigh",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454247-cgdisplaypixelshigh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454247-cgdisplaypixelshigh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the display height in pixel units."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456361-cgdisplaypixelswide": {
+      "title": "CGDisplayPixelsWide",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456361-cgdisplaypixelswide",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456361-cgdisplaypixelswide",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the display width in pixel units."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807972-cgdisplaybitsperpixel": {
+      "title": "CGDisplayBitsPerPixel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807972-cgdisplaybitsperpixel",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coregraphics/quartz_display_services/1807972-cgdisplaybitsperpixel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of bits used to represent a pixel in the framebuffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807973-cgdisplaybitspersample": {
+      "title": "CGDisplayBitsPerSample",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807973-cgdisplaybitspersample",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coregraphics/quartz_display_services/1807973-cgdisplaybitspersample",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of bits used to represent a pixel component in the framebuffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807975-cgdisplaysamplesperpixel": {
+      "title": "CGDisplaySamplesPerPixel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807975-cgdisplaysamplesperpixel",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coregraphics/quartz_display_services/1807975-cgdisplaysamplesperpixel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of color components used to represent a pixel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807976-cgdisplaybytesperrow": {
+      "title": "CGDisplayBytesPerRow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807976-cgdisplaybytesperrow",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coregraphics/quartz_display_services/1807976-cgdisplaybytesperrow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of bytes per row in a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1562068-cgdisplayavailablemodes": {
+      "title": "CGDisplayAvailableModes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1562068-cgdisplayavailablemodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1562068-cgdisplayavailablemodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns information about the currently available display modes."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1562060-cgdisplaybestmodeforparameters": {
+      "title": "CGDisplayBestModeForParameters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1562060-cgdisplaybestmodeforparameters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1562060-cgdisplaybestmodeforparameters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns information about the display mode closest to a specified depth and screen size."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1562066-cgdisplaybestmodeforparametersan": {
+      "title": "CGDisplayBestModeForParametersAndRefreshRate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1562066-cgdisplaybestmodeforparametersan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1562066-cgdisplaybestmodeforparametersan",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns information about the display mode closest to a specified depth, screen size, and refresh rate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1562062-cgdisplaycurrentmode": {
+      "title": "CGDisplayCurrentMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1562062-cgdisplaycurrentmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1562062-cgdisplaycurrentmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns information about the current display mode."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1562065-cgdisplayswitchtomode": {
+      "title": "CGDisplaySwitchToMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1562065-cgdisplayswitchtomode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1562065-cgdisplayswitchtomode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Switches a display to a different mode."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454099-cgdisplaycopydisplaymode": {
+      "title": "CGDisplayCopyDisplayMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454099-cgdisplaycopydisplaymode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454099-cgdisplaycopydisplaymode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns information about a display’s current configuration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455537-cgdisplaycopyalldisplaymodes": {
+      "title": "CGDisplayCopyAllDisplayModes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455537-cgdisplaycopyalldisplaymodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455537-cgdisplaycopyalldisplaymodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns information about the currently available display modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454760-cgdisplaysetdisplaymode": {
+      "title": "CGDisplaySetDisplayMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454760-cgdisplaysetdisplaymode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454760-cgdisplaysetdisplaymode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Switches a display to a different mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1562059-cgdisplaymoderetain": {
+      "title": "CGDisplayModeRetain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1562059-cgdisplaymoderetain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1562059-cgdisplaymoderetain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retains a Core Graphics display mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1562069-cgdisplaymoderelease": {
+      "title": "CGDisplayModeRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1562069-cgdisplaymoderelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1562069-cgdisplaymoderelease",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases a Core Graphics display mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454442-cgdisplaymodegetwidth": {
+      "title": "CGDisplayModeGetWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454442-cgdisplaymodegetwidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454442-cgdisplaymodegetwidth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the width of the specified display mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455380-cgdisplaymodegetheight": {
+      "title": "CGDisplayModeGetHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455380-cgdisplaymodegetheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455380-cgdisplaymodegetheight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the height of the specified display mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455067-cgdisplaymodecopypixelencoding": {
+      "title": "CGDisplayModeCopyPixelEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455067-cgdisplaymodecopypixelencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455067-cgdisplaymodecopypixelencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the pixel encoding of the specified display mode."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454661-cgdisplaymodegetrefreshrate": {
+      "title": "CGDisplayModeGetRefreshRate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454661-cgdisplaymodegetrefreshrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454661-cgdisplaymodegetrefreshrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the refresh rate of the specified display mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454092-cgdisplaymodegetioflags": {
+      "title": "CGDisplayModeGetIOFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454092-cgdisplaymodegetioflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454092-cgdisplaymodegetioflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the I/O Kit flags of the specified display mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454728-cgdisplaymodegetiodisplaymodeid": {
+      "title": "CGDisplayModeGetIODisplayModeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454728-cgdisplaymodegetiodisplaymodeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454728-cgdisplaymodegetiodisplaymodeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the I/O Kit display mode ID of the specified display mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454928-cgdisplaymodeisusablefordesktopg": {
+      "title": "CGDisplayModeIsUsableForDesktopGUI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454928-cgdisplaymodeisusablefordesktopg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454928-cgdisplaymodeisusablefordesktopg",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the specified display mode is usable for a desktop graphical user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456191-cgdisplaymodegettypeid": {
+      "title": "CGDisplayModeGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456191-cgdisplaymodegettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456191-cgdisplaymodegettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier of Quartz display modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454126-cgsetdisplaytransferbyformula": {
+      "title": "CGSetDisplayTransferByFormula",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454126-cgsetdisplaytransferbyformula",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454126-cgsetdisplaytransferbyformula",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the gamma function for a display by specifying the coefficients of the gamma transfer formula."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456330-cggetdisplaytransferbyformula": {
+      "title": "CGGetDisplayTransferByFormula",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456330-cggetdisplaytransferbyformula",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456330-cggetdisplaytransferbyformula",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the coefficients of the gamma transfer formula for a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456604-cgsetdisplaytransferbytable": {
+      "title": "CGSetDisplayTransferByTable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456604-cgsetdisplaytransferbytable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456604-cgsetdisplaytransferbytable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the color gamma function for a display by specifying the values in the RGB gamma tables."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454974-cggetdisplaytransferbytable": {
+      "title": "CGGetDisplayTransferByTable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454974-cggetdisplaytransferbytable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454974-cggetdisplaytransferbytable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the values in the RGB gamma tables for a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455896-cgsetdisplaytransferbybytetable": {
+      "title": "CGSetDisplayTransferByByteTable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455896-cgsetdisplaytransferbybytetable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455896-cgsetdisplaytransferbybytetable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the byte values in the 8-bit RGB gamma tables for a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454702-cgdisplayrestorecolorsyncsetting": {
+      "title": "CGDisplayRestoreColorSyncSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454702-cgdisplayrestorecolorsyncsetting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454702-cgdisplayrestorecolorsyncsetting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restores the gamma tables to the values in the user’s ColorSync display profile."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454310-cgdisplaygammatablecapacity": {
+      "title": "CGDisplayGammaTableCapacity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454310-cgdisplaygammatablecapacity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454310-cgdisplaygammatablecapacity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the capacity, or number of entries, in the gamma table for a display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454103-cgconfiguredisplayfadeeffect": {
+      "title": "CGConfigureDisplayFadeEffect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454103-cgconfiguredisplayfadeeffect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454103-cgconfiguredisplayfadeeffect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modifies the settings of the built-in fade effect that occurs during a display configuration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456391-cgacquiredisplayfadereservation": {
+      "title": "CGAcquireDisplayFadeReservation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456391-cgacquiredisplayfadereservation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456391-cgacquiredisplayfadereservation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reserves the fade hardware for a specified time interval."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456189-cgdisplayfade": {
+      "title": "CGDisplayFade",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456189-cgdisplayfade",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456189-cgdisplayfade",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a single fade operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1571962-cgdisplayfadeoperationinprogress": {
+      "title": "CGDisplayFadeOperationInProgress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1571962-cgdisplayfadeoperationinprogress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1571962-cgdisplayfadeoperationinprogress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a fade operation is currently in progress."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455230-cgreleasedisplayfadereservation": {
+      "title": "CGReleaseDisplayFadeReservation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455230-cgreleasedisplayfadereservation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455230-cgreleasedisplayfadereservation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases a display fade reservation, and unfades the display if needed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456534-cgdisplayhidecursor": {
+      "title": "CGDisplayHideCursor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456534-cgdisplayhidecursor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456534-cgdisplayhidecursor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hides the mouse cursor, and increments the hide cursor count."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455867-cgdisplayshowcursor": {
+      "title": "CGDisplayShowCursor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455867-cgdisplayshowcursor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455867-cgdisplayshowcursor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decrements the hide cursor count, and shows the mouse cursor if the count is 0."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455258-cgdisplaymovecursortopoint": {
+      "title": "CGDisplayMoveCursorToPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455258-cgdisplaymovecursortopoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455258-cgdisplaymovecursortopoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the mouse cursor to a specified point relative to the display origin (the upper-left corner of the display)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541812-cgcursorisvisible": {
+      "title": "CGCursorIsVisible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541812-cgcursorisvisible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541812-cgcursorisvisible",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the mouse cursor is visible."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541804-cgcursorisdrawninframebuffer": {
+      "title": "CGCursorIsDrawnInFramebuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541804-cgcursorisdrawninframebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541804-cgcursorisdrawninframebuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the mouse cursor is drawn in framebuffer memory."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454486-cgassociatemouseandmousecursorpo": {
+      "title": "CGAssociateMouseAndMouseCursorPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454486-cgassociatemouseandmousecursorpo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454486-cgassociatemouseandmousecursorpo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Connects or disconnects the mouse and cursor while an application is in the foreground."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456387-cgwarpmousecursorposition": {
+      "title": "CGWarpMouseCursorPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456387-cgwarpmousecursorposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456387-cgwarpmousecursorposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the mouse cursor without generating events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456484-cggetlastmousedelta": {
+      "title": "CGGetLastMouseDelta",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456484-cggetlastmousedelta",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456484-cggetlastmousedelta",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reports the change in mouse position since the last mouse movement event received by the application."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454780-cgsessioncopycurrentdictionary": {
+      "title": "CGSessionCopyCurrentDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454780-cgsessioncopycurrentdictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454780-cgsessioncopycurrentdictionary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns information about the caller’s window server session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541813-cgwindowservercfmachport": {
+      "title": "CGWindowServerCFMachPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541813-cgwindowservercfmachport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541813-cgwindowservercfmachport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Core Foundation Mach port (CFMachPort) that corresponds to the macOS window server."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454084-cgwindowlevelforkey": {
+      "title": "CGWindowLevelForKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454084-cgwindowlevelforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454084-cgwindowlevelforkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the window level that corresponds to one of the standard window types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541774-cgregisterscreenrefreshcallback": {
+      "title": "CGRegisterScreenRefreshCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541774-cgregisterscreenrefreshcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541774-cgregisterscreenrefreshcallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a callback function to be invoked when local displays are refreshed or modified."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541807-cgunregisterscreenrefreshcallbac": {
+      "title": "CGUnregisterScreenRefreshCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541807-cgunregisterscreenrefreshcallbac",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541807-cgunregisterscreenrefreshcallbac",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a previously registered callback function invoked when local displays are refreshed or modified."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541809-cgwaitforscreenrefreshrects": {
+      "title": "CGWaitForScreenRefreshRects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541809-cgwaitforscreenrefreshrects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541809-cgwaitforscreenrefreshrects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Waits for screen refresh operations."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541791-cgscreenregistermovecallback": {
+      "title": "CGScreenRegisterMoveCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541791-cgscreenregistermovecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541791-cgscreenregistermovecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a callback function to be invoked when an area of the display is moved."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541795-cgscreenunregistermovecallback": {
+      "title": "CGScreenUnregisterMoveCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541795-cgscreenunregistermovecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541795-cgscreenunregistermovecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a previously registered callback function invoked when an area of the display is moved."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541790-cgwaitforscreenupdaterects": {
+      "title": "CGWaitForScreenUpdateRects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541790-cgwaitforscreenupdaterects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541790-cgwaitforscreenupdaterects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Waits for screen update operations."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1541780-cgreleasescreenrefreshrects": {
+      "title": "CGReleaseScreenRefreshRects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1541780-cgreleasescreenrefreshrects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1541780-cgreleasescreenrefreshrects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deallocates a list of rectangles that represent changed areas on local displays. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455170-cgdisplaystreamcreate": {
+      "title": "CGDisplayStreamCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455170-cgdisplaystreamcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455170-cgdisplaystreamcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new display stream to be used with a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFRunloop"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454968-cgdisplaystreamcreatewithdispatc": {
+      "title": "CGDisplayStreamCreateWithDispatchQueue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454968-cgdisplaystreamcreatewithdispatc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454968-cgdisplaystreamcreatewithdispatc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new display stream whose updates are delivered to a dispatch queue."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454870-cgdisplaystreamstart": {
+      "title": "CGDisplayStreamStart",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454870-cgdisplaystreamstart",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454870-cgdisplaystreamstart",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells a stream to start sending updates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455658-cgdisplaystreamstop": {
+      "title": "CGDisplayStreamStop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455658-cgdisplaystreamstop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455658-cgdisplaystreamstop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells a stream to stop sending updates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455403-cgdisplaystreamgetrunloopsource": {
+      "title": "CGDisplayStreamGetRunLoopSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455403-cgdisplaystreamgetrunloopsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455403-cgdisplaystreamgetrunloopsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the run loop source for a display stream."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455530-cgdisplaystreamupdategetrects": {
+      "title": "CGDisplayStreamUpdateGetRects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455530-cgdisplaystreamupdategetrects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455530-cgdisplaystreamupdategetrects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of rectangles that describe where the frame has changed since the previous frame."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454341-cgdisplaystreamupdatecreatemerge": {
+      "title": "CGDisplayStreamUpdateCreateMergedUpdate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454341-cgdisplaystreamupdatecreatemerge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454341-cgdisplaystreamupdatecreatemerge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines two updates into a new update that includes the metadata for both source updates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455469-cgdisplaystreamupdategetmovedrec": {
+      "title": "CGDisplayStreamUpdateGetMovedRectsDelta",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455469-cgdisplaystreamupdategetmovedrec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455469-cgdisplaystreamupdategetmovedrec",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Return the movement delta values for a single update."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1456212-cgdisplaystreamupdategetdropcoun": {
+      "title": "CGDisplayStreamUpdateGetDropCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1456212-cgdisplaystreamupdategetdropcoun",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1456212-cgdisplaystreamupdategetdropcoun",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of frames that have been dropped since the last call to your update handler."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454784-cgdisplaystreamgettypeid": {
+      "title": "CGDisplayStreamGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454784-cgdisplaystreamgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454784-cgdisplaystreamgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier of a Quartz display stream."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1454989-cgdisplaystreamupdategettypeid": {
+      "title": "CGDisplayStreamUpdateGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1454989-cgdisplaystreamupdategettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1454989-cgdisplaystreamupdategettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier of a Quartz display stream update."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplayreconfigurationcallback": {
+      "title": "CGDisplayReconfigurationCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplayreconfigurationcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplayreconfigurationcallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A client-supplied callback function that’s invoked whenever the configuration of a local display is changed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgscreenrefreshcallback": {
+      "title": "CGScreenRefreshCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgscreenrefreshcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgscreenrefreshcallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A client-supplied callback function that’s invoked when an area of the display is modified or refreshed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdatemovecallback": {
+      "title": "CGScreenUpdateMoveCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdatemovecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgscreenupdatemovecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A client-supplied callback function invoked when an area of the display is moved."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdirectdisplayid": {
+      "title": "CGDirectDisplayID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdirectdisplayid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdirectdisplayid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unique identifier for an attached display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplayblendfraction": {
+      "title": "CGDisplayBlendFraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplayblendfraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplayblendfraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The percentage of blend color used in a fade operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplayconfigref": {
+      "title": "CGDisplayConfigRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplayconfigref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplayconfigref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a display configuration transaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplaycount": {
+      "title": "CGDisplayCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplaycount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplaycount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of displays in various lists."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplayerr": {
+      "title": "CGDisplayErr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplayerr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplayerr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A uniform type for result codes returned by functions in Quartz Display Services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplayfadeinterval": {
+      "title": "CGDisplayFadeInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplayfadeinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplayfadeinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The duration in seconds of a fade operation or a fade hardware reservation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplayfadereservationtoken": {
+      "title": "CGDisplayFadeReservationToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplayfadereservationtoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplayfadereservationtoken",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A token issued by Quartz when reserving one or more displays for a fade operation during a specified interval."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplaymoderef": {
+      "title": "CGDisplayModeRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplaymoderef",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplaymoderef",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a display mode object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplayreservationinterval": {
+      "title": "CGDisplayReservationInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplayreservationinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplayreservationinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time interval for a fade reservation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cggammavalue": {
+      "title": "CGGammaValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cggammavalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cggammavalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value used to map a color generated in software to a color supported by the display hardware."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgopengldisplaymask": {
+      "title": "CGOpenGLDisplayMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgopengldisplaymask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgopengldisplaymask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bitmask used in OpenGL to specify a set of attached displays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgrectcount": {
+      "title": "CGRectCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrectcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgrectcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The size of an array of Quartz rectangles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgrefreshrate": {
+      "title": "CGRefreshRate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrefreshrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgrefreshrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A display’s refresh rate in frames per second."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdatemovedelta": {
+      "title": "CGScreenUpdateMoveDelta",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdatemovedelta",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgscreenupdatemovedelta",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The distance, in pixel units, that an onscreen region moves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgwindowlevel": {
+      "title": "CGWindowLevel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgwindowlevel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgwindowlevel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A level assigned to a window by an application framework."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamref": {
+      "title": "CGDisplayStreamRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplaystreamref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a display stream object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamupdateref": {
+      "title": "CGDisplayStreamUpdateRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamupdateref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplaystreamupdateref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to frame update’s metadata."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamframeavailablehandler": {
+      "title": "CGDisplayStreamFrameAvailableHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamframeavailablehandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplaystreamframeavailablehandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block called when a data stream has a new frame event to process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcaptureoptions": {
+      "title": "CGCaptureOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcaptureoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgcaptureoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configuration parameters that are used when capturing displays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplaychangesummaryflags": {
+      "title": "CGDisplayChangeSummaryFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplaychangesummaryflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplaychangesummaryflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The configuration parameters that are passed to a display reconfiguration callback function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgconfigureoption": {
+      "title": "CGConfigureOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgconfigureoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgconfigureoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scope of the changes in a display configuration transaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_fade_blend_fractions": {
+      "title": "Display Fade Blend Fractions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_fade_blend_fractions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/display_fade_blend_fractions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The lower and upper bounds for blend color fractions during a display fade operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_fade_constants": {
+      "title": "Display Fade Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_fade_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/display_fade_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values relating to fade operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_id_defaults": {
+      "title": "Display ID Defaults",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_id_defaults",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/display_id_defaults",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Default values for a display ID."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_mode_standard_properties": {
+      "title": "Display Mode Standard Properties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_mode_standard_properties",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/display_mode_standard_properties",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys for the standard properties in a display mode dictionary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_mode_optional_properties": {
+      "title": "Display Mode Optional Properties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_mode_optional_properties",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/display_mode_optional_properties",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys for optional properties in a display mode dictionary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/reserved_window_levels": {
+      "title": "Reserved Window Levels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/reserved_window_levels",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/reserved_window_levels",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Window level constants."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdateoperation": {
+      "title": "CGScreenUpdateOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdateoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgscreenupdateoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Types of screen-update operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgwindowlevelkey": {
+      "title": "CGWindowLevelKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgwindowlevelkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgwindowlevelkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys that represent the standard window levels in macOS. Quartz includes these keys to support application frameworks like Cocoa. Applications do not need to use them directly."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/window_server_session_properties": {
+      "title": "Window Server Session Properties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/window_server_session_properties",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/window_server_session_properties",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The keys for the standard properties in a window server session dictionary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamupdaterecttype": {
+      "title": "CGDisplayStreamUpdateRectType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamupdaterecttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplaystreamupdaterecttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use these constants to determine which rectangles your app is interested in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamframestatus": {
+      "title": "CGDisplayStreamFrameStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamframestatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgdisplaystreamframestatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describes a frame update event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_stream_optional_property_keys": {
+      "title": "Display Stream Optional Property Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_stream_optional_property_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/display_stream_optional_property_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These keys are used to populate the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "properties"
+        },
+        {
+          "type": "text",
+          "text": " dictionary used when creating a new display stream."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_stream_ycbcr_to_rgb_conversion_matrix_options": {
+      "title": "Display Stream YCbCr to RGB conversion Matrix Options",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_stream_ycbcr_to_rgb_conversion_matrix_options",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services/display_stream_ycbcr_to_rgb_conversion_matrix_options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These strings are used to specify a matrix for the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamycbcrmatrix"
+        },
+        {
+          "type": "text",
+          "text": " option."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services": {
+      "title": "Quartz Display Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_display_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides direct access to features in the macOS window server for configuring and controlling display hardware."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services": {
+      "title": "Quartz Event Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_event_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides features for managing "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "event taps"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "—filters for observing and altering the stream of low-level user input events in macOS."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/quartz_window_services": {
+      "title": "Quartz Window Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/quartz_window_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/quartz_window_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides information about the windows managed by the macOS window server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Finding Displays",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455620-cgmaindisplayid",
+        "doc://com.apple.documentation/documentation/coregraphics/1454964-cggetonlinedisplaylist",
+        "doc://com.apple.documentation/documentation/coregraphics/1454603-cggetactivedisplaylist",
+        "doc://com.apple.documentation/documentation/coregraphics/1454234-cggetdisplayswithopengldisplayma",
+        "doc://com.apple.documentation/documentation/coregraphics/1454385-cggetdisplayswithpoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1456071-cggetdisplayswithrect",
+        "doc://com.apple.documentation/documentation/coregraphics/1455386-cgopengldisplaymasktodisplayid",
+        "doc://com.apple.documentation/documentation/coregraphics/1455554-cgdisplayidtoopengldisplaymask"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Capturing and Releasing Displays",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456259-cgdisplaycapture",
+        "doc://com.apple.documentation/documentation/coregraphics/1454934-cgdisplaycapturewithoptions",
+        "doc://com.apple.documentation/documentation/coregraphics/1455685-cgdisplayrelease",
+        "doc://com.apple.documentation/documentation/coregraphics/1562061-cgdisplayiscaptured",
+        "doc://com.apple.documentation/documentation/coregraphics/1455221-cgcapturealldisplays",
+        "doc://com.apple.documentation/documentation/coregraphics/1456514-cgcapturealldisplayswithoptions",
+        "doc://com.apple.documentation/documentation/coregraphics/1454901-cgreleasealldisplays",
+        "doc://com.apple.documentation/documentation/coregraphics/1454279-cgshieldingwindowid",
+        "doc://com.apple.documentation/documentation/coregraphics/1456352-cgshieldingwindowlevel",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807904-cgdisplayaddressforposition",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807908-cgdisplaybaseaddress",
+        "doc://com.apple.documentation/documentation/coregraphics/1456576-cgdisplaygetdrawingcontext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Images from the Display",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455691-cgdisplaycreateimage",
+        "doc://com.apple.documentation/documentation/coregraphics/1454595-cgdisplaycreateimageforrect"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Displays",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455235-cgbegindisplayconfiguration",
+        "doc://com.apple.documentation/documentation/coregraphics/1455522-cgcanceldisplayconfiguration",
+        "doc://com.apple.documentation/documentation/coregraphics/1454488-cgcompletedisplayconfiguration",
+        "doc://com.apple.documentation/documentation/coregraphics/1454531-cgconfiguredisplaymirrorofdispla",
+        "doc://com.apple.documentation/documentation/coregraphics/1543535-cgconfiguredisplaymode",
+        "doc://com.apple.documentation/documentation/coregraphics/1454090-cgconfiguredisplayorigin",
+        "doc://com.apple.documentation/documentation/coregraphics/1456402-cgrestorepermanentdisplayconfigu",
+        "doc://com.apple.documentation/documentation/coregraphics/1456308-cgconfiguredisplaystereooperatio",
+        "doc://com.apple.documentation/documentation/coregraphics/1454316-cgdisplaysetstereooperation",
+        "doc://com.apple.documentation/documentation/coregraphics/1454273-cgconfiguredisplaywithdisplaymod"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Display Configuration",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454190-cgdisplaycopycolorspace",
+        "doc://com.apple.documentation/documentation/coregraphics/1543516-cgdisplayioserviceport",
+        "doc://com.apple.documentation/documentation/coregraphics/1455222-cgdisplayisactive",
+        "doc://com.apple.documentation/documentation/coregraphics/1456110-cgdisplayisalwaysinmirrorset",
+        "doc://com.apple.documentation/documentation/coregraphics/1454260-cgdisplayisasleep",
+        "doc://com.apple.documentation/documentation/coregraphics/1454566-cgdisplayisbuiltin",
+        "doc://com.apple.documentation/documentation/coregraphics/1454506-cgdisplayisinhwmirrorset",
+        "doc://com.apple.documentation/documentation/coregraphics/1455558-cgdisplayisinmirrorset",
+        "doc://com.apple.documentation/documentation/coregraphics/1455448-cgdisplayismain",
+        "doc://com.apple.documentation/documentation/coregraphics/1454476-cgdisplayisonline",
+        "doc://com.apple.documentation/documentation/coregraphics/1455025-cgdisplayisstereo",
+        "doc://com.apple.documentation/documentation/coregraphics/1454556-cgdisplaymirrorsdisplay",
+        "doc://com.apple.documentation/documentation/coregraphics/1454149-cgdisplaymodelnumber",
+        "doc://com.apple.documentation/documentation/coregraphics/1454403-cgdisplayprimarydisplay",
+        "doc://com.apple.documentation/documentation/coregraphics/1455299-cgdisplayrotation",
+        "doc://com.apple.documentation/documentation/coregraphics/1456599-cgdisplayscreensize",
+        "doc://com.apple.documentation/documentation/coregraphics/1455409-cgdisplayserialnumber",
+        "doc://com.apple.documentation/documentation/coregraphics/1456489-cgdisplayunitnumber",
+        "doc://com.apple.documentation/documentation/coregraphics/1455721-cgdisplayusesopenglacceleration",
+        "doc://com.apple.documentation/documentation/coregraphics/1455233-cgdisplayvendornumber"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Registering for Notification of Display Configuration Changes ",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455336-cgdisplayregisterreconfiguration",
+        "doc://com.apple.documentation/documentation/coregraphics/1455407-cgdisplayremovereconfigurationca"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "These functions are used to register and unregister a callback function for notification of display configuration changes. "
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retrieving Display Parameters",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456395-cgdisplaybounds",
+        "doc://com.apple.documentation/documentation/coregraphics/1454247-cgdisplaypixelshigh",
+        "doc://com.apple.documentation/documentation/coregraphics/1456361-cgdisplaypixelswide",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807972-cgdisplaybitsperpixel",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807973-cgdisplaybitspersample",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807975-cgdisplaysamplesperpixel",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/1807976-cgdisplaybytesperrow"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating and Managing Display Modes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1562068-cgdisplayavailablemodes",
+        "doc://com.apple.documentation/documentation/coregraphics/1562060-cgdisplaybestmodeforparameters",
+        "doc://com.apple.documentation/documentation/coregraphics/1562066-cgdisplaybestmodeforparametersan",
+        "doc://com.apple.documentation/documentation/coregraphics/1562062-cgdisplaycurrentmode",
+        "doc://com.apple.documentation/documentation/coregraphics/1562065-cgdisplayswitchtomode",
+        "doc://com.apple.documentation/documentation/coregraphics/1454099-cgdisplaycopydisplaymode",
+        "doc://com.apple.documentation/documentation/coregraphics/1455537-cgdisplaycopyalldisplaymodes",
+        "doc://com.apple.documentation/documentation/coregraphics/1454760-cgdisplaysetdisplaymode",
+        "doc://com.apple.documentation/documentation/coregraphics/1562059-cgdisplaymoderetain",
+        "doc://com.apple.documentation/documentation/coregraphics/1562069-cgdisplaymoderelease"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Information About a Display Mode",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454442-cgdisplaymodegetwidth",
+        "doc://com.apple.documentation/documentation/coregraphics/1455380-cgdisplaymodegetheight",
+        "doc://com.apple.documentation/documentation/coregraphics/1455067-cgdisplaymodecopypixelencoding",
+        "doc://com.apple.documentation/documentation/coregraphics/1454661-cgdisplaymodegetrefreshrate",
+        "doc://com.apple.documentation/documentation/coregraphics/1454092-cgdisplaymodegetioflags",
+        "doc://com.apple.documentation/documentation/coregraphics/1454728-cgdisplaymodegetiodisplaymodeid",
+        "doc://com.apple.documentation/documentation/coregraphics/1454928-cgdisplaymodeisusablefordesktopg",
+        "doc://com.apple.documentation/documentation/coregraphics/1456191-cgdisplaymodegettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Adjusting the Display Gamma",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454126-cgsetdisplaytransferbyformula",
+        "doc://com.apple.documentation/documentation/coregraphics/1456330-cggetdisplaytransferbyformula",
+        "doc://com.apple.documentation/documentation/coregraphics/1456604-cgsetdisplaytransferbytable",
+        "doc://com.apple.documentation/documentation/coregraphics/1454974-cggetdisplaytransferbytable",
+        "doc://com.apple.documentation/documentation/coregraphics/1455896-cgsetdisplaytransferbybytetable",
+        "doc://com.apple.documentation/documentation/coregraphics/1454702-cgdisplayrestorecolorsyncsetting",
+        "doc://com.apple.documentation/documentation/coregraphics/1454310-cgdisplaygammatablecapacity"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Display Fade Effects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454103-cgconfiguredisplayfadeeffect",
+        "doc://com.apple.documentation/documentation/coregraphics/1456391-cgacquiredisplayfadereservation",
+        "doc://com.apple.documentation/documentation/coregraphics/1456189-cgdisplayfade",
+        "doc://com.apple.documentation/documentation/coregraphics/1571962-cgdisplayfadeoperationinprogress",
+        "doc://com.apple.documentation/documentation/coregraphics/1455230-cgreleasedisplayfadereservation"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Controlling the Mouse Cursor",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1456534-cgdisplayhidecursor",
+        "doc://com.apple.documentation/documentation/coregraphics/1455867-cgdisplayshowcursor",
+        "doc://com.apple.documentation/documentation/coregraphics/1455258-cgdisplaymovecursortopoint",
+        "doc://com.apple.documentation/documentation/coregraphics/1541812-cgcursorisvisible",
+        "doc://com.apple.documentation/documentation/coregraphics/1541804-cgcursorisdrawninframebuffer",
+        "doc://com.apple.documentation/documentation/coregraphics/1454486-cgassociatemouseandmousecursorpo",
+        "doc://com.apple.documentation/documentation/coregraphics/1456387-cgwarpmousecursorposition",
+        "doc://com.apple.documentation/documentation/coregraphics/1456484-cggetlastmousedelta"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Window Server Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1454780-cgsessioncopycurrentdictionary",
+        "doc://com.apple.documentation/documentation/coregraphics/1541813-cgwindowservercfmachport",
+        "doc://com.apple.documentation/documentation/coregraphics/1454084-cgwindowlevelforkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Information About Refresh and Move Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1541774-cgregisterscreenrefreshcallback",
+        "doc://com.apple.documentation/documentation/coregraphics/1541807-cgunregisterscreenrefreshcallbac",
+        "doc://com.apple.documentation/documentation/coregraphics/1541809-cgwaitforscreenrefreshrects",
+        "doc://com.apple.documentation/documentation/coregraphics/1541791-cgscreenregistermovecallback",
+        "doc://com.apple.documentation/documentation/coregraphics/1541795-cgscreenunregistermovecallback",
+        "doc://com.apple.documentation/documentation/coregraphics/1541790-cgwaitforscreenupdaterects",
+        "doc://com.apple.documentation/documentation/coregraphics/1541780-cgreleasescreenrefreshrects"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "You can use these functions to find out what areas on local displays are changing their appearance as the result of operations such as drawing, window movement or scrolling, and display reconfiguration. "
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Streaming the Contents of a Display",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1455170-cgdisplaystreamcreate",
+        "doc://com.apple.documentation/documentation/coregraphics/1454968-cgdisplaystreamcreatewithdispatc",
+        "doc://com.apple.documentation/documentation/coregraphics/1454870-cgdisplaystreamstart",
+        "doc://com.apple.documentation/documentation/coregraphics/1455658-cgdisplaystreamstop",
+        "doc://com.apple.documentation/documentation/coregraphics/1455403-cgdisplaystreamgetrunloopsource",
+        "doc://com.apple.documentation/documentation/coregraphics/1455530-cgdisplaystreamupdategetrects",
+        "doc://com.apple.documentation/documentation/coregraphics/1454341-cgdisplaystreamupdatecreatemerge",
+        "doc://com.apple.documentation/documentation/coregraphics/1455469-cgdisplaystreamupdategetmovedrec",
+        "doc://com.apple.documentation/documentation/coregraphics/1456212-cgdisplaystreamupdategetdropcoun",
+        "doc://com.apple.documentation/documentation/coregraphics/1454784-cgdisplaystreamgettypeid",
+        "doc://com.apple.documentation/documentation/coregraphics/1454989-cgdisplaystreamupdategettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplayreconfigurationcallback",
+        "doc://com.apple.documentation/documentation/coregraphics/cgscreenrefreshcallback",
+        "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdatemovecallback"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgdirectdisplayid",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplayblendfraction",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplayconfigref",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplaycount",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplayerr",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplayfadeinterval",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplayfadereservationtoken",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplaymoderef",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplayreservationinterval",
+        "doc://com.apple.documentation/documentation/coregraphics/cggammavalue",
+        "doc://com.apple.documentation/documentation/coregraphics/cgopengldisplaymask",
+        "doc://com.apple.documentation/documentation/coregraphics/cgrectcount",
+        "doc://com.apple.documentation/documentation/coregraphics/cgrefreshrate",
+        "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdatemovedelta",
+        "doc://com.apple.documentation/documentation/coregraphics/cgwindowlevel",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamref",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamupdateref",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamframeavailablehandler"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgcaptureoptions",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplaychangesummaryflags",
+        "doc://com.apple.documentation/documentation/coregraphics/cgconfigureoption",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_fade_blend_fractions",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_fade_constants",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_id_defaults",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_mode_standard_properties",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_mode_optional_properties",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/reserved_window_levels",
+        "doc://com.apple.documentation/documentation/coregraphics/cgscreenupdateoperation",
+        "doc://com.apple.documentation/documentation/coregraphics/cgwindowlevelkey",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/window_server_session_properties",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamupdaterecttype",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamframestatus",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_stream_optional_property_keys",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_display_services/display_stream_ycbcr_to_rgb_conversion_matrix_options"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_event_services",
+        "doc://com.apple.documentation/documentation/coregraphics/quartz_window_services"
+      ],
+      "title": "Services",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1731047"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use Quartz Display Services to:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Examine and change display mode properties such as width, height, and pixel depth"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure a set of displays in a single operation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Capture one or more displays for exclusive use"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Stream the contents of a display"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Perform fade effects"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Activate display mirroring"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure gamma color correction tables"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Receive notification of screen update operations"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,942 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Synchronize objects between devices, and handle store changes in the user interface."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3191030,
+  "kind": "article",
+  "metadata": {
+    "title": "Syncing a Core Data Store with CloudKit",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit": {
+      "title": "Mirroring a Core Data Store with CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject": {
+      "title": "NSManagedObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject"
+    },
+    "link-media-3230553": {
+      "identifier": "link-media-3230553",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3230553"
+    },
+    "media-3230553": {
+      "identifier": "media-3230553",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 631,
+            "height": 182
+          },
+          "url": "https://docs-assets.developer.apple.com/published/3af17772d5/bb8dd6b2-adc4-4a4e-9beb-392df145ce01.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 631,
+            "height": 182
+          },
+          "url": "https://docs-assets.developer.apple.com/published/43fef7c879/84de5960-079d-48a5-ac7f-82ec305f4597.png"
+        }
+      ],
+      "alt": "Flow diagram showing the upload portion of a record’s lifecycle.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
+      "title": "CKRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication": {
+      "title": "UIApplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication"
+    },
+    "link-media-3230554": {
+      "identifier": "link-media-3230554",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3230554"
+    },
+    "media-3230554": {
+      "identifier": "media-3230554",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 717,
+            "height": 175
+          },
+          "url": "https://docs-assets.developer.apple.com/published/adfa36ee2d/f93fd8be-69b2-46ce-b5d8-21febdc8644d.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 717,
+            "height": 175
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d036f0cbab/51c2e174-1d62-4880-b34a-1dd6df4acdfc.png"
+        }
+      ],
+      "alt": "Flow diagram showing the download portion of a record’s lifecycle.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications": {
+      "title": "User Notifications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/usernotifications"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext": {
+      "title": "viewContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3227925": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3227925",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3227925"
+    },
+    "devLink-1724471": {
+      "identifier": "devLink-1724471",
+      "type": "link",
+      "title": "Faulting and Uniquing",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/FaultingandUniquing.html#//apple_ref/doc/uid/TP40001075-CH18"
+    },
+    "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed": {
+      "title": "Accessing Data When the Store Has Changed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/accessing_data_when_the_store_has_changed"
+    },
+    "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes": {
+      "title": "Consuming Relevant Store Changes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/consuming_relevant_store_changes"
+    },
+    "link-media-3221950": {
+      "identifier": "link-media-3221950",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221950"
+    },
+    "media-3221950": {
+      "identifier": "media-3221950",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 386
+          },
+          "url": "https://docs-assets.developer.apple.com/published/986df2a3d6/f2c44f4f-ffa9-4077-a04e-9fc73cffa85e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 386
+          },
+          "url": "https://docs-assets.developer.apple.com/published/701b431654/0e5cc891-c565-4b58-bbc7-47a35cc4599f.png"
+        }
+      ],
+      "alt": "Screenshot showing passing the -com.apple.CoreData.CloudKitDebug 3 user default setting as a launch argument in the scheme editor.",
+      "title": "Figure 3"
+    },
+    "devLink-1724530": {
+      "identifier": "devLink-1724530",
+      "type": "link",
+      "title": "Troubleshooting Core Data",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/TroubleshootingCoreData.html#//apple_ref/doc/uid/TP40001075-CH26"
+    },
+    "link-3221951": {
+      "title": "Submitting Bugs and Feedback",
+      "type": "topic",
+      "identifier": "link-3221951",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/bug-reporting/"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221717": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221717",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221717"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221719": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221719",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221719"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221716": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221716",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221716"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit": {
+      "title": "Setting Up Core Data with CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up the classes and capabilities that sync your store to CloudKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit": {
+      "title": "Creating a Core Data Model for CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Design a CloudKit-compatible data model and initialize your CloudKit schema."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit": {
+      "title": "Syncing a Core Data Store with CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Synchronize objects between devices, and handle store changes in the user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data": {
+      "title": "Reading CloudKit Records for Core Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Access CloudKit records created from Core Data managed objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data"
+      ],
+      "title": "Configuring CloudKit Mirroring",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you set up your Xcode project (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit"
+            },
+            {
+              "type": "text",
+              "text": ") and initialize your development schema (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit"
+            },
+            {
+              "type": "text",
+              "text": "), you’re ready to sync a Core Data store to CloudKit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Run Your App and Create Managed Object Instances",
+          "anchor": "3227922"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Run your app and begin creating "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject"
+            },
+            {
+              "type": "text",
+              "text": " instances. The objects synchronize with the CloudKit database and propagate to other devices logged into the same iCloud account, automatically. The tasks that send changes to the cloud and receive remote changes in the local store happen on the system in the background. You don’t need to add any code to your project to synchronize records across devices."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It can be helpful to think of this process as similar to the water cycle. Water evaporates up and rains down on a natural cadence. Similarly, changes move from Core Data up to CloudKit and across to other devices on a natural rhythm within the system event loop."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Generally, you can expect data to synchronize a local change within about a minute of the change. Core Data also occasionally syncs CloudKit data in scenarios such as when the app hasn’t synced in a long time."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Upload Core Data Changes to CloudKit",
+          "anchor": "3191672"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user makes a change on one device, Core Data uploads the change to CloudKit, before sending it to the user’s other devices."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3230553",
+              "metadata": {
+                "anchor": "3230553",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First, the user creates, updates, or deletes a managed object, such as adding a post or editing a tag. When its managed object context saves changes to the store, Core Data creates a background task for the system to convert the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject"
+            },
+            {
+              "type": "text",
+              "text": " to a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": ". The system executes the task, creating the record and uploadling it to CloudKit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about background tasks, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Download CloudKit Changes into Core Data",
+          "anchor": "3192736"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After CloudKit receives a change and saves it to the CloudKit store, it notifies the user’s other devices about the change."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3230554",
+              "metadata": {
+                "anchor": "3230554",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First, CloudKit periodically sends push notifications to other devices on a user’s account. Then, on each device, the system creates a background task to download all of the changed records since the last fetch and converts them into instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject"
+            },
+            {
+              "type": "text",
+              "text": ". Finally, Core Data saves these managed objects into the local store."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about push notifications, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Isolate the Current View from Store Changes",
+          "anchor": "3199728"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Consider what happens if a user deletes a record from their phone. This change uploads to CloudKit, and later downloads to a laptop and an iPad. The iPad’s current view may still show the record if the UI hasn’t updated with the changes yet. The user taps on the now-deleted record, which is no longer available in the store. This may lead to inconsistent representation of the record, such as missing data, in your UI."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For this reason, you need to isolate the current view from changes to the store by ensuring that the records the view expects continue to exist. Using query generations, you pin the persistent container’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
+            },
+            {
+              "type": "text",
+              "text": " to a specific generation of store data. This allows the context to fulfill faults—placeholder objects whose values haven’t yet been fetched—that existed at the time the view loaded, even if the store changes underneath."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Pin a context to a query generation before its first read from the store."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "try? persistentContainer.viewContext.setQueryGenerationFrom(.current)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3227925",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Any time you save, merge, or reset the context, it automatically updates its pin to the current query generation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about faults, see "
+            },
+            {
+              "type": "link",
+              "title": "Faulting and Uniquing",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/FaultingandUniquing.html#//apple_ref/doc/uid/TP40001075-CH18"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about query generations, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Integrate Store Changes Relevant to the Current View",
+          "anchor": "3191029"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app receives remote change notifications when the local store updates from CloudKit. However, it’s unnecessary to update your UI in response to every notification, because some changes may not be relevant to the current view. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Analyze the persistent history to determine whether the changes are relevant to the current view before consuming them in the user interface. Inspect the details of each transaction, such as the entity name, its updated properties, and the type of change, to decide whether to act."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about persistent history tracking, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Debug Errors in Core Data with CloudKit",
+          "anchor": "3221952"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Most errors, like those that result from a network failure or a user not being signed in, are transient and don’t require action. You can choose the level of detail that Core Data with CloudKit logs to the system log. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Choose Product > Scheme > Edit Scheme. Select an action such as Run, and select the Arguments tab. Pass the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "com.apple.CoreData.CloudKitDebug"
+            },
+            {
+              "type": "text",
+              "text": " user default setting with a debug level value as an argument to the application."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3221950",
+              "metadata": {
+                "anchor": "3221950",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Higher argument values produce more information; start at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": " and increase if you need more detail. For more information about handling errors, see "
+            },
+            {
+              "type": "link",
+              "title": "Troubleshooting Core Data",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/TroubleshootingCoreData.html#//apple_ref/doc/uid/TP40001075-CH26"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you observe persistent errors that don’t automatically recover, file a bug. For more information about bug reporting, see "
+            },
+            {
+              "type": "link",
+              "title": "Submitting Bugs and Feedback",
+              "destination": "https://developer.apple.com/bug-reporting/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Inspect Logs to See What Happened",
+          "anchor": "3199006"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If Core Data with CloudKit doesn’t appear to be syncing, confirm that you’re testing on two unlocked devices logged into the same iCloud account, with good wireless internet connections."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Push notifications may get dropped or deferred, so don’t rely on them for testing. Watch system logs to observe the status and result of expected activity. Run the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "log stream"
+            },
+            {
+              "type": "text",
+              "text": " command from the terminal, filtering by process and container ID. If the logs don’t include the operation, your push may have been dropped. Check the originating device for export activity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Filter CloudKit logs to see operations on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "cloudd"
+            },
+            {
+              "type": "text",
+              "text": " process for your container."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "$ log stream --info --debug --predicate 'process = \"cloudd\" and message",
+            "contains[cd] \"containerID=com.mycontainer\"'"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3221717",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Filter Core Data logs to see information about the mirroring delegate’s setup, exports, and imports for your process."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "$ log stream --info --debug --predicate 'process = \"myprocess\" and ",
+            "(subsystem = \"com.apple.coredata\" or subsystem = \"com.apple.cloudkit\")'"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3221719",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Or monitor both CloudKit and Core Data logs at the same time."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "$ log stream --info --debug --predicate '(process = \"myprocess\" and",
+            "(subsystem = \"com.apple.coredata\" or subsystem = \"com.apple.cloudkit\")) or",
+            "(process = \"cloudd\" and message contains[cd] \"container=com.mycontainer\")'"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3221716",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about logging, see "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Viewing Log Messages"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

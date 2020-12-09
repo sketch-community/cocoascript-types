@@ -1,0 +1,1205 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/task_management"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2962158,
+  "kind": "article",
+  "metadata": {
+    "title": "Increasing App Usage with Suggestions Based on User Activities",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management": {
+      "title": "Task Management",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management",
+      "url": "/documentation/foundation/task_management",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list": {
+      "title": "Information Property List",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list"
+    },
+    "link-3333145": {
+      "title": "NSUserActivityTypes",
+      "type": "topic",
+      "identifier": "link-3333145",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376382": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376382",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376382"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of the state of your app at a moment in time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity": {
+      "title": "userActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621089-useractivity"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1413665-becomecurrent": {
+      "title": "becomeCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1413665-becomecurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1413665-becomecurrent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "becomeCurrent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408791-needssave": {
+      "title": "needsSave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408791-needssave",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1408791-needssave"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621095-updateuseractivitystate": {
+      "title": "updateUserActivityState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621095-updateuseractivitystate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621095-updateuseractivitystate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateUserActivityState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1411706-userinfo"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376384": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376384",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376384"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1417761-eligibleforsearch": {
+      "title": "eligibleForSearch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1417761-eligibleforsearch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1417761-eligibleforsearch"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1414701-eligibleforpublicindexing": {
+      "title": "eligibleForPublicIndexing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1414701-eligibleforpublicindexing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1414701-eligibleforpublicindexing"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376386": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376386",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376386"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1616398-contentattributeset": {
+      "title": "contentAttributeSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1616398-contentattributeset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1616398-contentattributeset"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408023-keywords": {
+      "title": "keywords",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408023-keywords",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1408023-keywords"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1418086-webpageurl": {
+      "title": "webpageURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1418086-webpageurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/1418086-webpageurl"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376387": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376387",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376387"
+    },
+    "link-3333146": {
+      "title": "App Search Programming Guide",
+      "type": "topic",
+      "identifier": "link-3333146",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/2980674-eligibleforprediction": {
+      "title": "eligibleForPrediction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/2980674-eligibleforprediction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/2980674-eligibleforprediction"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity/2976237-suggestedinvocationphrase": {
+      "title": "suggestedInvocationPhrase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/2976237-suggestedinvocationphrase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity/2976237-suggestedinvocationphrase"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376389": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376389",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376389"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts": {
+      "title": "Donating Shortcuts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/donating_shortcuts"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623072-application": {
+      "title": "application:continueUserActivity:restorationHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623072-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623072-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:continueUserActivity:restorationHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621111-restoreuseractivitystate": {
+      "title": "restoreUserActivityState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621111-restoreuseractivitystate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621111-restoreuseractivitystate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "restoreUserActivityState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376391": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376391",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376391"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376392": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376392",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376392"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1649656-textcontenttype": {
+      "title": "textContentType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1649656-textcontenttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextinputtraits/1649656-textcontenttype"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376394": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376394",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities#3376394"
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities": {
+      "title": "Increasing App Usage with Suggestions Based on User Activities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app": {
+      "title": "Implementing Handoff in Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/task_management/implementing_handoff_in_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, send, and receive user activities directly."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivitydelegate": {
+      "title": "NSUserActivityDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivitydelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivitydelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface through which a user activity instance notifies its delegate of updates."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/dad8147b37/IncreasingAppUsageWithSuggestionsBasedOnUserActivities.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/dad8147b37/IncreasingAppUsageWithSuggestionsBasedOnUserActivities.zip",
+      "checksum": "f7c8e6217c33936bc36721f95e966d30d969fb1ddb8d9ca05de315d415d13c6c7b5d9aa25c65b6546b55cb0aa10259116a5839f52dc10b4c48d77d68ac4afea9",
+      "url": "https://docs-assets.developer.apple.com/published/dad8147b37/IncreasingAppUsageWithSuggestionsBasedOnUserActivities.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/dad8147b37/IncreasingAppUsageWithSuggestionsBasedOnUserActivities.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/task_management/implementing_handoff_in_your_app",
+        "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+        "doc://com.apple.documentation/documentation/foundation/nsuseractivitydelegate"
+      ],
+      "title": "Activity Sharing",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample app shows a list of pizza restaurants, near your current location, in a table view. Select a restaurant from the table view to donate its location information to the system as a user activity object. The system then displays the registered location information proactively as suggestions, such as in Search, used with Siri Shortcuts."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a user interacts with a proactive suggestion, the system continues the activity by associating the object’s activity type with the sample app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When donating location information, this sample app also verifies whether the previously captured information appears, as QuickType keyboard suggestions, within other apps installed on a device."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Declare a User Activity Type",
+          "anchor": "3376397"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You implement proactive suggestions by determining specific activities that a user can perform in your app, and whose state you can recreate at a later time. The sample app has one user activity, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "view-location"
+            },
+            {
+              "type": "text",
+              "text": ", which represents the user viewing details of a specific restaurant location."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the sample app, the target includes the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "view-location"
+            },
+            {
+              "type": "text",
+              "text": " activity in its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list"
+            },
+            {
+              "type": "text",
+              "text": " file, as an entry with the key name "
+            },
+            {
+              "type": "codeVoice",
+              "code": ""
+            },
+            {
+              "type": "text",
+              "text": ". The type of this entry is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Array"
+            },
+            {
+              "type": "text",
+              "text": ", and each member is a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "String"
+            },
+            {
+              "type": "text",
+              "text": " representing a supported user activity in reverse DNS notation."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<key>NSUserActivityTypes</key>",
+            "<array>",
+            "<string>com.example.apple-samplecode.ProactiveToolbox.view-location</string>",
+            "</array>"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3376382",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Manage a User Activity",
+          "anchor": "3376398"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "At runtime, you represent a user activity with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " object. You initialize a user activity object with a string identifier, the same one declared earlier in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the sample app, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "LocationViewController"
+            },
+            {
+              "type": "text",
+              "text": " manages a single "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSUserActivity"
+            },
+            {
+              "type": "text",
+              "text": " object, representing the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "view-location"
+            },
+            {
+              "type": "text",
+              "text": " activity type. When you select a restaurant, the view controller sets its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621089-useractivity"
+            },
+            {
+              "type": "text",
+              "text": " property to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "view-location"
+            },
+            {
+              "type": "text",
+              "text": " activity—registering the user activity object as the current activity, replacing any other activity previously sent to Siri or the system."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "When the user activity object is not contained within the responder chain, you must call the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1413665-becomecurrent"
+                },
+                {
+                  "type": "text",
+                  "text": " method to mark the object as current, which also registers the object with the system."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The view controller also sets "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408791-needssave"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": ", indicating that the activity will be updated with new data in the future, which eventually results in a callback to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621095-updateuseractivitystate"
+            },
+            {
+              "type": "text",
+              "text": " method. This is the app’s opportunity to refresh the activity object’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1411706-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " property, with the minimal amount of information needed to restore the state of the app, before Siri or the system receives the activity."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/*",
+            " Provide just enough information in the `userInfo` dictionary to be able to restore state.",
+            " The larger the dictionary, the longer it takes to deliver that payload and resume the activity.",
+            " */",
+            "var userInfo = [String: Any]()",
+            "do {",
+            "    let data = try NSKeyedArchiver.archivedData(withRootObject: mapItem.placemark, requiringSecureCoding: true)",
+            "    userInfo[\"placemark\"] = data",
+            "} catch {",
+            "    os_log(\"Could not encode placemark data\", type: .error)",
+            "}",
+            "",
+            "if let url = mapItem.url {",
+            "    userInfo[\"url\"] = url",
+            "}",
+            "",
+            "if let phoneNumber = mapItem.phoneNumber {",
+            "    userInfo[\"phoneNumber\"] = phoneNumber",
+            "}",
+            "",
+            "activity.addUserInfoEntries(from: userInfo)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3376384",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide Support for Improved Search Results",
+          "anchor": "3376399"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your user activity objects contain information that the user might want to search for later, you can have Search index those objects and consider them during subsequent on-device searches."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To enable support for Search on a user activity object, set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1417761-eligibleforsearch"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": ". Additionally, you can make an activity object publicly accessible to all iOS users by setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1414701-eligibleforpublicindexing"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// The following properties enable the activity to be indexed in Search.",
+            "activity.isEligibleForPublicIndexing = true",
+            "activity.isEligibleForSearch = true",
+            "activity.title = mapItem?.name",
+            "activity.keywords = [\"pizza\"]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3376386",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Provide the activity object with as much rich information about the activity as possible, by configuring the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1616398-contentattributeset"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1408023-keywords"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/1418086-webpageurl"
+            },
+            {
+              "type": "text",
+              "text": " properties so that the system can index the object. The app must also maintain a strong reference to any activity objects that the system uses for search results."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Provide additional searchable attributes.",
+            "activity.contentAttributeSet?.supportsNavigation = true",
+            "activity.contentAttributeSet?.supportsPhoneCall = true",
+            "activity.contentAttributeSet?.thumbnailData = #imageLiteral(resourceName: \"pizza\").pngData()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3376387",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about Search, see "
+            },
+            {
+              "type": "link",
+              "title": "App Search Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide Support for Shortcuts",
+          "anchor": "3376400"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Siri learns about the shortcuts available to your app through donations that your app makes to Siri. You can make donations from a user activity when the action involves a view within your app, such as the sample app, which displays a list of nearby restaurants."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app enables support for Siri Shortcuts on a user activity object by setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/2980674-eligibleforprediction"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": ". The app suggests an invocation phrase, which is displayed to the user when they create a shortcut, by setting a short, memorable phrase to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity/2976237-suggestedinvocationphrase"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// The following properties enable the activity to be used as a shortcut with Siri.",
+            "activity.isEligibleForPrediction = true",
+            "activity.suggestedInvocationPhrase = \"Show my favorite pizzeria\""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3376389",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "During development, the system provides developer settings to modify the display behavior of shortcuts, and force sync shortcuts to an Apple Watch from an iPhone device. Go to Settings > Developer on the iPhone device to test an app’s behavior with Siri Shortcuts."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Activities",
+          "anchor": "3376401"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a user interacts with a proactive suggestion for your app, such as through Siri Shortcuts, the system restores your app to the foreground, receives data associated with its user activity, and calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623072-application"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To give "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SearchViewController"
+            },
+            {
+              "type": "text",
+              "text": " a chance to perform its state restoration operation through "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621111-restoreuseractivitystate"
+            },
+            {
+              "type": "text",
+              "text": ", the sample app verifies the activity type of the user activity object, and passes the first tab’s view controller hierarchy to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "restorationHandler"
+            },
+            {
+              "type": "text",
+              "text": " block parameter."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func application(_ application: UIApplication,",
+            "                 continue userActivity: NSUserActivity,",
+            "                 restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {",
+            "    ",
+            "    guard userActivity.activityType == \"com.example.apple-samplecode.ProactiveToolbox.view-location\",",
+            "        let tabBarController = window?.rootViewController as? UITabBarController,",
+            "        let navigationController = tabBarController.viewControllers?.first as? UINavigationController",
+            "        else { return false }",
+            "    ",
+            "    tabBarController.selectedIndex = 0",
+            "    ",
+            "    /*",
+            "     Calling the restoration handler is optional and is only needed",
+            "     when specific objects are capable of continuing the activity.",
+            "     */",
+            "    restorationHandler(navigationController.viewControllers)",
+            "    ",
+            "    return true",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3376391",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app validates the user activity, consumes any necessary information from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userInfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary, and updates its UI to continue the requested activity from where the user left off."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func restoreUserActivityState(_ activity: NSUserActivity) {",
+            "    super.restoreUserActivityState(activity)",
+            "    ",
+            "    do {",
+            "        guard let userInfo = activity.userInfo,",
+            "            let url = userInfo[\"url\"] as? URL,",
+            "            let phoneNumber = userInfo[\"phoneNumber\"] as? String,",
+            "            let placemarkData = userInfo[\"placemark\"] as? Data,",
+            "            let placemark = try NSKeyedUnarchiver.unarchivedObject(ofClass: MKPlacemark.self, from: placemarkData)",
+            "            else { return }",
+            "        ",
+            "        let mapItem = MKMapItem(placemark: placemark)",
+            "        mapItem.name = activity.title",
+            "        ",
+            "        if navigationController?.visibleViewController == self {",
+            "            restoreMapItem(mapItem, url: url, phoneNumber: phoneNumber)",
+            "        } else if let modalController = navigationController?.visibleViewController as? LocationViewController {",
+            "            modalController.restoreMapItem(mapItem, url: url, phoneNumber: phoneNumber)",
+            "        }",
+            "    } catch {",
+            "        os_log(\"Could not convert user activity placemark data to placemark object\", type: .error)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3376392",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Verify QuickType Keyboard Integration",
+          "anchor": "3376402"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Text fields describe the intended purpose of input data, like country name or postal code, via the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1649656-textcontenttype"
+            },
+            {
+              "type": "text",
+              "text": " property. If any app on the device recently donated information matching the expected text content type, that information is suggested in the QuickType keyboard as the user types in the text field."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, in the sample app, a user selects a pizza restaurant, and its address is suggested in Messages or a search field in Apple Maps."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// These properties can also be set on the field in Interface Builder.",
+            "nameTextField.textContentType = .organizationName",
+            "streetAddressLine1TextField.textContentType = .streetAddressLine1",
+            "streetAddressLine2TextField.textContentType = .streetAddressLine2",
+            "cityTextField.textContentType = .addressCity",
+            "stateTextField.textContentType = .addressState",
+            "postalCodeTextField.textContentType = .postalCode",
+            "countryTextField.textContentType = .countryName"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3376394",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To verify this behavior, select a point of interest in Apple Maps, then return to this sample app to see the donated information populated in the QuickType keyboard."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

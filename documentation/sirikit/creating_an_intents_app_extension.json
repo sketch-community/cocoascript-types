@@ -1,0 +1,806 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add and configure an Intents app extension in your Xcode project."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864040,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating an Intents App Extension",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/creating_an_intents_app_extension"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/creating_an_intents_app_extension"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-media-2910037": {
+      "identifier": "link-media-2910037",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/creating_an_intents_app_extension#2910037"
+    },
+    "media-2910037": {
+      "identifier": "media-2910037",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 627
+          },
+          "url": "https://docs-assets.developer.apple.com/published/381143513b/14586ba5-7db2-49b5-8104-0339d20f663a.png"
+        }
+      ],
+      "alt": "A screenshot of Xcode with the Capabilities pane of the Project editor active, and the Siri capability enabled.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enabling the Siri capability in your project"
+        }
+      ]
+    },
+    "link-media-3172417": {
+      "identifier": "link-media-3172417",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/sirikit/creating_an_intents_app_extension#3172417"
+    },
+    "media-3172417": {
+      "identifier": "media-3172417",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 471
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ab928d3bf2/1a3dd7fd-c47a-498e-bbf2-e546de45484c.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 471
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d1031b681e/60885785-feb1-4ff7-9227-b94e90c70291.png"
+        }
+      ],
+      "alt": "A screenshot of a project in Xcode with the template selection sheet open. Intents Extension is selected in the iOS pane.",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adding an Intents app extension to your Xcode project"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent": {
+      "title": "INPlayMediaIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inplaymediaintent"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/supportedmediacategories": {
+      "title": "SupportedMediaCategories",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/supportedmediacategories",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/supportedmediacategories"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/wkrunsindependentlyofcompanionapp": {
+      "title": "WKRunsIndependentlyOfCompanionApp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/wkrunsindependentlyofcompanionapp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/wkrunsindependentlyofcompanionapp"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension": {
+      "title": "Creating an Intents App Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_app_extension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add and configure an Intents app extension in your Xcode project."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions": {
+      "title": "Structuring Your Code to Support App Extensions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/structuring_your_code_to_support_app_extensions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Move your back-end services to a private framework so your app and app extensions can use them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects": {
+      "title": "Dispatching Intents to Handler Objects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/dispatching_intents_to_handler_objects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide SiriKit with an object capable of handling a given intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
+      "title": "Resolving and Handling Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle user requests for your app’s services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding": {
+      "title": "INIntentHandlerProviding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintenthandlerproviding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for dispatching intents to the custom objects that handle those intents. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes": {
+      "title": "Intents and Related Classes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/intents_and_related_classes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn about the classes you use to build your Intents extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents": {
+      "title": "Providing Hands-Free App Control with Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle intents without an extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions",
+        "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects",
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+        "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding",
+        "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
+        "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents"
+      ],
+      "title": "Siri Intents",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Interactions with SiriKit occur through your Intents app extension, which you deliver inside your iOS or watchOS app bundle. The Intents app extension handles most interactions with SiriKit. However, your app needs to be aware of those interactions and in some cases may have an active role in making them happen."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Configuring your Xcode project requires several steps. In addition to adding an Intents app extension target to your project, you must make some minor changes to your app as well."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable the Siri Capability",
+          "anchor": "2864126"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Enabling the Siri capability adds a set of entitlements to your app. The App Store requires the presence of these entitlements for any iOS app or watchOS app containing an Intents extension."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open your app project in Xcode."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the project settings, select the appropriate target. For iOS, select your iOS app target. For watchOS, select your WatchKit Extension target."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select the Capabilities tab."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Enable the Siri capability."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2910037",
+              "metadata": {
+                "anchor": "2910037",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Enabling the Siri capability in your project"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add an Intents App Extension to Your Project",
+          "anchor": "2864127"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Adding an Intents app extension target provides the initial files you need to build your Intents extension and configures your Xcode project to build that extension and include it in your app’s bundle."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open your existing app project in Xcode."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose File > New > Target."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select Intents Extension from the Application Extension group of the iOS or watchOS platform."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Next."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify the name of your extension and configure the language and other options. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For an iOS app, enable the Include UI Extension option if you plan to customize portions of the Siri interface."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Finish. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You may add more than one Intents extension to your app, but each extension must support different intents. Create multiple extensions only if doing so provides a performance advantage or reduces the memory footprint of each extension."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3172417",
+              "metadata": {
+                "anchor": "3172417",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Adding an Intents app extension to your Xcode project"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify the Intents Your Extension Supports",
+          "anchor": "2864128"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After adding your Intents extension target to your project, specify the intents the extension supports. SiriKit uses the information in your extension’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file to determine which intents to route to your extension."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Xcode’s Project editor, select the extension target  and expand the Supported Intents section in the General pane."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the class name of each intent you support. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If you support the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inplaymediaintent"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", also select each type of media your app plays in the Media Categories list. For more details about these categories, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/supportedmediacategories"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For each intent you support, select the appropriate Authentication requirement."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Choose Restricted While Locked to specify that the intent requires an unlocked device. Some intents, such as those involving financial transactions, always require the user’s device to be unlocked. For those intents, Siri automatically asks the user to unlock the device, even if you leave the Authentication set to None. In watchOS, all intents require the device to be unlocked. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Unless your watchOS app has "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/wkrunsindependentlyofcompanionapp"
+                },
+                {
+                  "type": "text",
+                  "text": " enabled, your iOS app must support all of the intents your watchOS app supports, either directly in the app or in an app extension."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When an ambiguous user utterance resolves to multiple intents, SiriKit uses the order of the intents in the Supported Intents table to determine which intent to send to your app. Organize your list of intents by putting the most relevant ones at the top of the table. Prioritizing your intents is especially important when your Intents extension supports multiple domains with similar semantics. For example, an app that supports calling and messaging intents might choose to prioritize sending a message over initiating a call."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some intents may require additional configuration steps for your Xcode project or your app. For example, when implementing a ride-booking app, Maps expects you to provide a GeoJSON file that describes the coverage area for your service. See the reference documentation for information about any special requirements."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Test Your Intents App Extension",
+          "anchor": "2864129"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Xcode supports launching your Intents app extension directly from your Xcode project and debugging the extension while it runs in the simulator or on a device. To run and debug your Intents extension:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select the build scheme for your Intents extension. Xcode automatically creates a build scheme when you create an Intents extension target."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select the target (simulator or device) on which to run your code."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select Product > Run to begin your debugging session."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When prompted by Xcode, select Siri or Maps as the main app to run. Xcode builds your app and extension, installs them on the devices, and launches the app you selected."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When installing your extension for the first time, Siri may not immediately recognize your app extension and you may need to wait several minutes before you can issue any relevant commands. Similarly, when updating your extension’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file, you may need to wait several minutes before Siri recognizes any changes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

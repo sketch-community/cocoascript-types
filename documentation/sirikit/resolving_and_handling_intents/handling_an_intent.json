@@ -1,0 +1,663 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Fulfill the intent and provide feedback to SiriKit about what you did."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864158,
+  "kind": "article",
+  "metadata": {
+    "title": "Handling an Intent",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/resolving_and_handling_intents/handling_an_intent"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/resolving_and_handling_intents/handling_an_intent"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
+      "title": "Resolving and Handling Intents",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+      "url": "/documentation/sirikit/resolving_and_handling_intents",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent#2864169": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent#2864169",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/handling_an_intent#2864169",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handling a start workout intent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inridestatus": {
+      "title": "INRideStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inridestatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inridestatus"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent#2864170": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent#2864170",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/handling_an_intent#2864170",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handling a request ride intent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inperson": {
+      "title": "INPerson",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inspeakable/2092306-spokenphrase": {
+      "title": "spokenPhrase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakable/2092306-spokenphrase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inspeakable/2092306-spokenphrase"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent": {
+      "title": "Resolving the Parameters of an Intent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Validate the parameters of an intent and make sure that you have the information you need to continue."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent": {
+      "title": "Confirming the Details of an Intent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent": {
+      "title": "Handling an Intent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents/handling_an_intent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fulfill the intent and provide feedback to SiriKit about what you did."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/resolving_the_parameters_of_an_intent",
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/confirming_the_details_of_an_intent"
+      ],
+      "title": "Resolving and Handling Intents",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After resolving and confirming an intent, SiriKit asks you to handle the intent by fulfilling the user’s request. When handling an intent, you do the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Perform the task associated with the intent."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Return a response object with information about what you did."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You handle most intents directly from your Intents app extension, but in some cases you may ask SiriKit to let your app handle the request."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Example: Handling a Start Workout Intent",
+          "anchor": "2864167"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A workout app may need to configure timers and other health-related information, tasks that cannot be handled easily from the Intents app extension. Therefore, handling a workout intent involves directing SiriKit to launch your app.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent#2864169"
+            },
+            {
+              "type": "text",
+              "text": " shows an example of how to handle the start of a workout. This method creates a response object with a code that indicates SiriKit should launch the app."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func handle(startWorkout intent: INStartWorkoutIntent,",
+            "       completion: @escaping (INStartWorkoutIntentResponse) -> Void) {",
+            "    // Let the app start the workout. ",
+            "    let response = INStartWorkoutIntentResponse(code: .continueInApp,",
+            "             userActivity: nil)",
+            "    completion(response)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2864169",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Handling a start workout intent"
+              }
+            ]
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Example: Handling a Request Ride Intent",
+          "anchor": "2864166"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A ride booking app needs to provide detailed information about a ride booked by the user. Retrieving ride booking information requires communicating with your service and using the returned information to create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inridestatus"
+            },
+            {
+              "type": "text",
+              "text": " object. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents/handling_an_intent#2864170"
+            },
+            {
+              "type": "text",
+              "text": " shows an example of how to respond to a ride booking request. Most of the method is dedicated to putting the ride details into an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inridestatus"
+            },
+            {
+              "type": "text",
+              "text": " object. During that process, the method communicates the ride details to the ride-booking service and gets information about the driver and vehicle providing the ride. Finally, the method returns a response that includes the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inridestatus"
+            },
+            {
+              "type": "text",
+              "text": " object back to SiriKit."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func handle(requestRide intent: INRequestRideIntent, ",
+            "        completion: @escaping (INRequestRideIntentResponse) -> Void) {",
+            "    var rideOption : INRideOption? = nil",
+            "        ",
+            "    // Save a reference to the ride for status updates",
+            "    self.bookedRideIntent = intent",
+            "        ",
+            "    if let phrase = intent.rideOptionName?.spokenPhrase {",
+            "        switch phrase {",
+            "        case \"SUV\":",
+            "            rideOption = self.createSUVRideOption(pickup: ",
+            "                        intent.pickupLocation!, ",
+            "                        dropOff: intent.dropOffLocation!)",
+            "            break",
+            "        case \"Compact\":",
+            "            rideOption = self.createCompactRideOption(pickup: ",
+            "                        intent.pickupLocation!, ",
+            "                        dropOff: intent.dropOffLocation!)",
+            "            break",
+            "        case \"Sedan\":",
+            "            rideOption = self.createSedanRideOption(pickup:",
+            "                        intent.pickupLocation!, ",
+            "                        dropOff: intent.dropOffLocation!)",
+            "            break",
+            "                ",
+            "        default:    // Default to a sedan.",
+            "            rideOption = self.createSedanRideOption(pickup:",
+            "                        intent.pickupLocation!, ",
+            "                        dropOff: intent.dropOffLocation!)",
+            "            break",
+            "        }",
+            "    }",
+            "        ",
+            "    // Create the status for the response.",
+            "    let rideStatus = INRideStatus()",
+            "    rideStatus.rideOption = rideOption",
+            "    let (vehicle, driver) = self.getVehicleAndDriver(intent: intent,",
+            "            rideOption: rideOption!)",
+            "        ",
+            "    // Assign the driver and vehicle.",
+            "    rideStatus.vehicle = vehicle",
+            "    rideStatus.driver = driver",
+            "    rideStatus.estimatedPickupDate = ",
+            "             self.getPickupTimeForVehicle(vehicle : vehicle)",
+            "    rideStatus.pickupLocation = intent.pickupLocation",
+            "    rideStatus.dropOffLocation = intent.dropOffLocation",
+            "",
+            "    // Book the ride and get its ID.",
+            "    rideStatus.rideIdentifier = ",
+            "             self.bookRide(rideDetails : rideStatus)",
+            "    ",
+            "    // Get the current ride phase. ",
+            "    rideStatus.phase = ",
+            "             self.phaseForRide(identifier : rideStatus.rideIdentifier)",
+            "",
+            "    // Deliver the response to SiriKit",
+            "    if rideStatus.phase == .confirmed {",
+            "        let response = INRequestRideIntentResponse(code: .success,",
+            "               userActivity: nil)",
+            "        response.rideStatus = rideStatus",
+            "        completion(response)",
+            "    } else {",
+            "        let activity = NSUserActivity(activityType:",
+            "            \"com.example.myRideApp.noRideAvailable\")",
+            "        let response = INRequestRideIntentResponse(code: ",
+            "               .failureRequiringAppLaunch, userActivity: activity)",
+            "        response.rideStatus = rideStatus",
+            "        completion(response)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2864170",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Handling a request ride intent"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Tips for Handling Intents",
+          "anchor": "2864168"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When handling intents, consider the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Always include as much information as possible in your responses."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Siri and Maps communicate as much information as possible to the user when confirming or handling intents. Filling your response object with detailed information creates a better user experience by clearly communicating what your app did. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Configure data objects fully before assigning them to the response object."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " For most response objects, properties use copy semantics. If you get the object in a property and modify it, the changes you make happen on the copy, not the original. Therefore, you must always set the value of the property only after making your changes. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Return your response objects within a few seconds."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Because Siri and Maps are actively communicating with the user, always return your response as quickly as possible. If it will take more than a few seconds to return your response, return your response with an “in-progress” code to indicate that you are still working on the request. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Use custom user activity objects to support deep linking into your app."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Providing a custom "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object, instead of relying on the default object, lets you supply additional information for configuring your user interface. You can use that information to display specific information about the task that the user performed in Siri or Maps, which yields a better user experience."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Always handle user activity objects in your parent app."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Whenever Siri or Maps need to transfer control to your app, they provide an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object with information about what happened. Response objects create a default "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object if you do not provide one yourself. Handling these objects in your app ensures a seamless experience for the user. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SiriKit leverages information from the user’s contacts database to fill in parameters when applicable. If your app was denied access to the user’s contacts, information related to those contacts may not be included with the intent. For example, any "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson"
+            },
+            {
+              "type": "text",
+              "text": " objects in the intent may contain only a value in their "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakable/2092306-spokenphrase"
+            },
+            {
+              "type": "text",
+              "text": " property and not contain any other contact information. This lack of access also prevents SiriKit from accessing the addresses of contacts, which causes a phrase like "
+            },
+            {
+              "type": "codeVoice",
+              "code": "“I need a ride home using <app>”"
+            },
+            {
+              "type": "text",
+              "text": " to result in an intent without a drop-off location. If your app was denied access to the user’s contacts, you might want to inform the user that you can provide a better experience with access restored."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The "
+    },
+    {
+      "type": "codeVoice",
+      "code": "URLAuthenticationChallengeSender"
+    },
+    {
+      "type": "text",
+      "text": " protocol represents the interface that the sender of an authentication challenge must implement."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system/legacy_url_loading_systems"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1417357,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSURLAuthenticationChallengeSender",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(pl)NSURLAuthenticationChallengeSender",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsurlauthenticationchallengesender"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/urlauthenticationchallengesender"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/legacy_url_loading_systems": {
+      "title": "Legacy URL Loading Systems",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/legacy_url_loading_systems",
+      "url": "/documentation/foundation/url_loading_system/legacy_url_loading_systems",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlconnectiondelegate/1417135-connection": {
+      "title": "connection:didReceiveAuthenticationChallenge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlconnectiondelegate/1417135-connection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlconnectiondelegate/1417135-connection",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "connection:didReceiveAuthenticationChallenge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurldownloaddelegate/1411969-download": {
+      "title": "download:didReceiveAuthenticationChallenge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurldownloaddelegate/1411969-download",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurldownloaddelegate/1411969-download",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "download:didReceiveAuthenticationChallenge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlconnection": {
+      "title": "NSURLConnection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlconnection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlconnection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurldownload": {
+      "title": "NSURLDownload",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurldownload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurldownload"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
+      "title": "NSURLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition": {
+      "title": "NSURLSessionAuthChallengeDisposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessionauthchallengedisposition"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1414474-cancelauthenticationchallenge": {
+      "title": "cancelAuthenticationChallenge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1414474-cancelauthenticationchallenge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlauthenticationchallengesender/1414474-cancelauthenticationchallenge",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels a given authentication challenge."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelAuthenticationChallenge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1413016-continuewithoutcredentialforauth": {
+      "title": "continueWithoutCredentialForAuthenticationChallenge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1413016-continuewithoutcredentialforauth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlauthenticationchallengesender/1413016-continuewithoutcredentialforauth",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attempt to continue downloading a request without providing a credential for a given challenge."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "continueWithoutCredentialForAuthenticationChallenge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1411062-usecredential": {
+      "title": "useCredential:forAuthenticationChallenge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1411062-usecredential",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlauthenticationchallengesender/1411062-usecredential",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attempt to use a given credential for a given authentication challenge."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "useCredential:forAuthenticationChallenge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1414590-performdefaulthandlingforauthent": {
+      "title": "performDefaultHandlingForAuthenticationChallenge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1414590-performdefaulthandlingforauthent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlauthenticationchallengesender/1414590-performdefaulthandlingforauthent",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Causes the system-provided default behavior to be used."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performDefaultHandlingForAuthenticationChallenge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1417331-rejectprotectionspaceandcontinue": {
+      "title": "rejectProtectionSpaceAndContinueWithChallenge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1417331-rejectprotectionspaceandcontinue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlauthenticationchallengesender/1417331-rejectprotectionspaceandcontinue",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rejects the currently supplied protection space."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rejectProtectionSpaceAndContinueWithChallenge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender": {
+      "title": "NSURLAuthenticationChallengeSender",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlauthenticationchallengesender",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "URLAuthenticationChallengeSender"
+        },
+        {
+          "type": "text",
+          "text": " protocol represents the interface that the sender of an authentication challenge must implement."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Protocol Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1414474-cancelauthenticationchallenge",
+        "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1413016-continuewithoutcredentialforauth",
+        "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1411062-usecredential",
+        "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1414590-performdefaulthandlingforauthent",
+        "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallengesender/1417331-rejectprotectionspaceandcontinue"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSURLAuthenticationChallengeSender"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The methods in the protocol are generally sent by a delegate in response to receiving a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlconnectiondelegate/1417135-connection"
+            },
+            {
+              "type": "text",
+              "text": ": or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurldownloaddelegate/1411969-download"
+            },
+            {
+              "type": "text",
+              "text": ":. The different methods provide different ways of responding to authentication challenges."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This protocol is "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "only"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " for use with the legacy "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlconnection"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurldownload"
+                },
+                {
+                  "type": "text",
+                  "text": " classes. It should not be used with "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession"
+                },
+                {
+                  "type": "text",
+                  "text": "-based code, for which you respond to authentication challenges by passing "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition"
+                },
+                {
+                  "type": "text",
+                  "text": " constants to the provided completion handler blocks."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

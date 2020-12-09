@@ -1,0 +1,1066 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Ensure that the pointers in your code are safe for the 64-bit runtime."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3087555,
+  "kind": "article",
+  "metadata": {
+    "title": "Auditing Pointer Usage",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment": {
+      "title": "App and Environment",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+      "url": "/documentation/uikit/app_and_environment",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture": {
+      "title": "Updating Your App from 32-Bit to 64-Bit Architecture",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087530": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087530",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087530"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087624": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087624",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087624"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418629-object_getclass": {
+      "title": "object_getClass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418629-object_getclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418629-object_getclass"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418905-object_setclass": {
+      "title": "object_setClass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418905-object_setclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418905-object_setclass"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087545": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087545",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087545",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Standard format strings"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087543": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087543",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087543",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Format strings for pointer-sized integers"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087538": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087538",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087538"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/updating_data_structures": {
+      "title": "Updating Data Structures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/updating_data_structures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/updating_data_structures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Review your app's data design and update it to conform with 64-bit architecture."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage": {
+      "title": "Auditing Pointer Usage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ensure that the pointers in your code are safe for the 64-bit runtime."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/managing_functions_and_function_pointers": {
+      "title": "Managing Functions and Function Pointers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/managing_functions_and_function_pointers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/managing_functions_and_function_pointers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ensure that your code correctly handles functions, function pointers, and Objective-C messages."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/updating_data_structures",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/managing_functions_and_function_pointers"
+      ],
+      "title": "Memory and Pointer Access",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Pointers reference objects and other data in memory and are used often in C and Objective-C for passing objects to functions or manipulating the contents of memory. When you update from 32-bit to 64-bit architecture, the pointers in your code double in size, with implications throughout the code. Any assumptions that you make about pointer sizes can lead to undefined behavior, memory corruption, or crashes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To review your code for proper pointer usage, look for areas where a pointer is being cast, or coerced, to another type. Avoid casting pointers to other types, such as integers. If you print the values of pointers using functions such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSLog"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "printf,"
+            },
+            {
+              "type": "text",
+              "text": " use properly prescribed macros in your format string to ensure that values are displayed correctly."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Cast Pointers to Integers Selectively",
+          "anchor": "3087531"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you cast pointers to an integer type, use pointer types consistently to ensure that all of your variables are large enough to hold an address."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code below casts a pointer to an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "int"
+            },
+            {
+              "type": "text",
+              "text": " type to perform arithmetic on the address. In the 32-bit runtime, this code works because an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "int"
+            },
+            {
+              "type": "text",
+              "text": " type and a pointer are the same size. However, in the 64-bit runtime, a pointer is larger than an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "int"
+            },
+            {
+              "type": "text",
+              "text": " type, so the assignment loses some of the pointer’s data. To address this, remove the casts. The compiler-generated code now advances the pointer correctly."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "int *c = something passed in as an argument....",
+            "",
+            "int *d = (int *)((int)c + 4); // Incorrect.",
+            "",
+            "int *d = c + 1;               // Correct."
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "3087530",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you must cast a pointer to an integer type, always use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "uintptr_t"
+            },
+            {
+              "type": "text",
+              "text": " type to avoid truncation. Note that modifying pointer values via integer math and then converting them back into a pointer can violate basic type aliasing rules. This can lead to unexpected behavior from the compiler as well as processor faults when a misaligned pointer is accessed."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Allocate Memory Using sizeof",
+          "anchor": "3087532"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Always use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sizeof"
+            },
+            {
+              "type": "text",
+              "text": " to obtain the correct size for any structure or variable you allocate. Never call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "malloc"
+            },
+            {
+              "type": "text",
+              "text": " with an explicit size to allocate space for a variable.  "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Incorrect.",
+            "uint32_t *x = (uint32_t *)malloc(4);",
+            "",
+            "// Correct.",
+            "uint32_t *x = (uint32_t *)malloc(sizeof(uint32_t));"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "3087624",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Search your code for any instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "malloc"
+            },
+            {
+              "type": "text",
+              "text": " that isn’t followed by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sizeof"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Access Objective-C Internal Structures Using Approved Methods",
+          "anchor": "3087533"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you have code that directly accesses an object's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "isa"
+            },
+            {
+              "type": "text",
+              "text": " field, that code fails when executing in the 64-bit runtime, because the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "isa"
+            },
+            {
+              "type": "text",
+              "text": " field no longer holds a pointer. Instead, it includes some pointer data and uses the remaining bits to hold other runtime information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To read an object's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "isa"
+            },
+            {
+              "type": "text",
+              "text": " field, use the class property or call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418629-object_getclass"
+            },
+            {
+              "type": "text",
+              "text": " function instead. To write to an object's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "isa"
+            },
+            {
+              "type": "text",
+              "text": " field, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418905-object_setclass"
+            },
+            {
+              "type": "text",
+              "text": "  function."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The Simulator app doesn't detect the errors described here. Always test your app on actual hardware."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Format Strings",
+          "anchor": "3087544"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Print functions, such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "printf"
+            },
+            {
+              "type": "text",
+              "text": ", can be difficult to write when your code has to support both the 32-bit and 64-bit runtimes, because the data types change from one runtime to the other. To solve this problem for standard types and pointer-sized integers, use the various macros listed in the following table and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/updating_your_app_from_32-bit_to_64-bit_architecture/auditing_pointer_usage#3087543"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Format string"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "int"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "%d"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "long"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "%ld"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "long long"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "%lld"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "size_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "%zu"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "ptrdiff_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "%td"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "any pointer"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "%p"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3087545",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Standard format strings"
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Format string"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "int[N]_t"
+                    },
+                    {
+                      "type": "text",
+                      "text": " (such as "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "int32_t"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRId[N]"
+                    },
+                    {
+                      "type": "text",
+                      "text": " (such as "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "PRId32"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "uint[N]_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIu[N]"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "int_least[N]_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIdLEAST[N]"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "uint_least[N]_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIuLEAST[N]"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "int_fast[N]_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIdFAST[N]"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "uint_fast[N]_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIuFAST[N]"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "intptr_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIdPTR"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "uintptr_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIuPTR"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "intmax_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIdMAX"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "uintmax_t"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PRIuMAX"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3087543",
+            "title": "Table 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Format strings for pointer-sized integers"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This example code prints an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "intptr_t"
+            },
+            {
+              "type": "text",
+              "text": " variable (a pointer-sized integer) and a pointer."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "#include <inttypes.h>",
+            "void *foo;",
+            "intptr_t k = (intptr_t) foo;",
+            "void *ptr = &k;",
+            "",
+            "printf(\"The value of k is %\" PRIdPTR \"\\n\", k);",
+            "printf(\"The value of ptr is %p\\n\", ptr);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "3087538",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

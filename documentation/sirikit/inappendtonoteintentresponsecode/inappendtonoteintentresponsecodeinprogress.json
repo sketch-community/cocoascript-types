@@ -1,0 +1,187 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "You are in the process of updating the note."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+        "doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponsecode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponsecode/inappendtonoteintentresponsecodeinprogress",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2873877,
+  "kind": "symbol",
+  "metadata": {
+    "title": "INAppendToNoteIntentResponseCodeInProgress",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Intents"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@E@INAppendToNoteIntentResponseCode@INAppendToNoteIntentResponseCodeInProgress",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/inappendtonoteintentresponsecode/inappendtonoteintentresponsecodeinprogress"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/inappendtonoteintentresponsecode/inprogress"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
+      "title": "Lists and Notes",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+      "url": "/documentation/sirikit/lists_and_notes",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponse": {
+      "title": "INAppendToNoteIntentResponse",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponse",
+      "url": "/documentation/sirikit/inappendtonoteintentresponse",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponsecode": {
+      "title": "INAppendToNoteIntentResponseCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponsecode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inappendtonoteintentresponsecode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the state of the response."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "INAppendToNoteIntentResponseCodeInProgress"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Return this code if you began updating the note but did not receive a confirmation of the update. You might use this code when a server handles note modification and you have not yet received a confirmation from that server. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When handling the intent, you might want to first configure a timer to fire if your server does not return within a few seconds. Use your timer’s handler block to provide the in-progress response back to Siri."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

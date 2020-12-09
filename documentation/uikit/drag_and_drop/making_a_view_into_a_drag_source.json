@@ -1,0 +1,925 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Adopt drag interaction APIs to provide items for dragging."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2888274,
+  "kind": "article",
+  "metadata": {
+    "title": "Making a View into a Drag Source",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop": {
+      "title": "Drag and Drop",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop",
+      "url": "/documentation/uikit/drag_and_drop",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteraction": {
+      "title": "UIDragInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteraction"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate": {
+      "title": "UIDragInteractionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/2891054-interactions": {
+      "title": "interactions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/2891054-interactions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/2891054-interactions"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621495-viewdidload": {
+      "title": "viewDidLoad",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621495-viewdidload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621495-viewdidload",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "viewDidLoad"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source#2903580": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source#2903580",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source#2903580"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction": {
+      "title": "dragInteraction:itemsForBeginningSession:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragInteraction:itemsForBeginningSession:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source#2903582": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source#2903582",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source#2903582"
+    },
+    "doc://com.apple.documentation/documentation/swift/string": {
+      "title": "String",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting": {
+      "title": "NSItemProviderWriting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemproviderwriting"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888328-initwithobject": {
+      "title": "initWithObject:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888328-initwithobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2888328-initwithobject",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers": {
+      "title": "registeredTypeIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888321-registerobject": {
+      "title": "registerObject:visibility:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888321-registerobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider/2888321-registerobject",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerObject:visibility:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsitemprovider": {
+      "title": "NSItemProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsitemprovider"
+    },
+    "link-media-2903752": {
+      "identifier": "link-media-2903752",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source#2903752"
+    },
+    "media-2903752": {
+      "identifier": "media-2903752",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 758,
+            "height": 218
+          },
+          "url": "https://docs-assets.developer.apple.com/published/71ab889a73/2adedf33-7843-4275-9e8c-ade8ed08e016.png"
+        }
+      ],
+      "alt": "APIs for providing drag items from a drag source",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidragsession": {
+      "title": "UIDragSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidragsession"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextview": {
+      "title": "UITextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview": {
+      "title": "UICollectionView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/understanding_a_drag_item_as_a_promise": {
+      "title": "Understanding a Drag Item as a Promise",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/understanding_a_drag_item_as_a_promise",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/drag_and_drop/understanding_a_drag_item_as_a_promise",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use drag items to convey data representation promises between a source app and a destination app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source": {
+      "title": "Making a View into a Drag Source",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drag_source",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adopt drag interaction APIs to provide items for dragging."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination": {
+      "title": "Making a View into a Drop Destination",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adopt drop interaction APIs to selectively consume dragged content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view": {
+      "title": "Adopting Drag and Drop in a Custom View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Demonstrates how to enable drag and drop for a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "UIImageView"
+        },
+        {
+          "type": "text",
+          "text": " instance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view": {
+      "title": "Adopting Drag and Drop in a Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Demonstrates how to enable and implement drag and drop for a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/understanding_a_drag_item_as_a_promise",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/making_a_view_into_a_drop_destination",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view",
+        "doc://com.apple.documentation/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_table_view"
+      ],
+      "title": "First Steps",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By implementing a drag interaction delegate ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate"
+            },
+            {
+              "type": "text",
+              "text": ") for a view, you enable that view to function as a drag source in your app."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview"
+                },
+                {
+                  "type": "text",
+                  "text": " classes each provide their own, specialized support for creating drag items. See these classes for more information."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable a View as a Drag Source",
+          "anchor": "2903579"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Any instance or subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " can act as a drag source. Your first steps to make this happen are:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a drag interaction (a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " instance)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify the drag interaction’s delegate (an object that conforms to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the interaction to the view’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/2891054-interactions"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here’s how to do this using a custom helper method, which you would typically call within a view controller’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621495-viewdidload"
+            },
+            {
+              "type": "text",
+              "text": " method:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func customEnableDragging(on view: UIView, dragInteractionDelegate: UIDragInteractionDelegate) {",
+            "    let dragInteraction = UIDragInteraction(delegate: dragInteractionDelegate)",
+            "    view.addInteraction(dragInteraction)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2903580",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Drag Item",
+          "anchor": "2903581"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A drag item encapsulates a source app’s promises for providing a variety of data representations for one model object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create a drag item, implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction"
+            },
+            {
+              "type": "text",
+              "text": "  method in your drag interaction delegate, as shown here in a minimal form:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session: UIDragSession) -> [UIDragItem] {",
+            "    // Cast to NSString is required for NSItemProviderWriting support.",
+            "    let stringItemProvider = NSItemProvider(object: \"Hello World\" as NSString)",
+            "    return [",
+            "        UIDragItem(itemProvider: stringItemProvider)",
+            "    ]",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2903582",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The cast from the Swift "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/swift/string"
+                },
+                {
+                  "type": "text",
+                  "text": " type to the Foundation "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+                },
+                {
+                  "type": "text",
+                  "text": " class, in the code snippet above, is required because model objects for drag and drop must support the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting"
+                },
+                {
+                  "type": "text",
+                  "text": " protocol."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This implementation uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888328-initwithobject"
+            },
+            {
+              "type": "text",
+              "text": " convenience initializer. When you instantiate a drag item, pass an object in your app’s native representation, or in the highest-fidelity representation you support. In general, ensure that the first element in the item provider’s  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers"
+            },
+            {
+              "type": "text",
+              "text": " array represents the highest-fidelity data your drag interaction delegate can deliver."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add more data representations to a drag item, as you typically would in your app, add them in fidelity order, from highest to lowest. When adding representations, you have choices:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The best option for adding multiple data representations to a drag item, in many cases, is to adopt the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemproviderwriting"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol in your model class. Using this protocol, you place the code for providing multiple data representations within the model class."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider/2888321-registerobject"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method, or related methods, from the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsitemprovider"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class, to explicitly register data representations."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Understand a Drag Source in Context",
+          "anchor": "2903583"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction"
+            },
+            {
+              "type": "text",
+              "text": " protocol method, your source app responds to a request from the system. This request is itself triggered by the user starting to drag an item in your app’s UI. The conversation between your app and the system proceeds as shown here:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2903752",
+              "metadata": {
+                "anchor": "2903752",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The figure above depicts the steps for constructing a drag item, in context:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The user initiates a drag activity with a long press on a view in your app, followed by moving their finger while still touching the screen. The system instantiates a drag session (an object that conforms to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidragsession"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol, not shown in the figure) for managing the drag activity."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The system calls the drag interaction delegate’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidraginteractiondelegate/2891010-draginteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol method. Your delegate returns one or more drag items."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Finally, the system populates the drag session with your drag items, ready for the user to move the drag session to a destination."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

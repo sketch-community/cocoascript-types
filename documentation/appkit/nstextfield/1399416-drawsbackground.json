@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean that controls whether the receiver’s cell draws its background color behind its text"
+      "text": "A Boolean value that controls whether the text field’s cell draws a background color behind the text."
     }
   ],
   "documentVersion": 0,
@@ -103,7 +103,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text that the user can select or edit and that sends its action message to its target when the user presses the Return key."
+          "text": "Text the user can select or edit to send an action message to a target when the user presses the Return key."
         }
       ]
     },
@@ -149,21 +149,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The color of the background that the receiver’s cell draws behind the text. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1447155-drawsbackground": {
-      "title": "drawsBackground",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1447155-drawsbackground",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nstextfieldcell/1447155-drawsbackground",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the cell draws its background color."
+          "text": "The color of the background the text field’s cell draws behind the text."
         }
       ]
     },
@@ -177,7 +163,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean that controls whether the receiver’s cell draws its background color behind its text"
+          "text": "A Boolean value that controls whether the text field’s cell draws a background color behind the text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399435-bezeled": {
+      "title": "bezeled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399435-bezeled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield/1399435-bezeled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the text field draws a bezeled background around its contents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/1399418-bezelstyle": {
+      "title": "bezelStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/1399418-bezelstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield/1399418-bezelstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The text field’s bezel style, square or rounded."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle": {
+      "title": "NSTextFieldBezelStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfieldbezelstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style of bezel the text field displays."
         }
       ]
     },
@@ -192,17 +220,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nstextfield/1399389-backgroundcolor"
+        "doc://com.apple.documentation/documentation/appkit/nstextfield/1399389-backgroundcolor",
+        "doc://com.apple.documentation/documentation/appkit/nstextfield/1399435-bezeled",
+        "doc://com.apple.documentation/documentation/appkit/nstextfield/1399418-bezelstyle",
+        "doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle"
       ],
       "title": "Controlling the Background",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1447155-drawsbackground"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -268,7 +292,7 @@
             },
             {
               "type": "text",
-              "text": ", the receiver’s cell draws its background; if "
+              "text": ", the text field’s cell draws a background; if "
             },
             {
               "type": "reference",
@@ -277,7 +301,7 @@
             },
             {
               "type": "text",
-              "text": ", it draws nothing behind its text."
+              "text": ", it draws nothing behind the text."
             }
           ]
         },
@@ -286,7 +310,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In order to prevent inconsistent rendering, background color rendering is disabled for rounded-bezel text fields."
+              "text": "To prevent inconsistent rendering, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSTextField"
+            },
+            {
+              "type": "text",
+              "text": " disables background color rendering for text fields with rounded bezels."
             }
           ]
         }

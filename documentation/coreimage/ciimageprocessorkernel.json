@@ -1,0 +1,832 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The abstract class you extend to create custom image processors that can integrate with Core Image workflows."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2138286,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CIImageProcessorKernel",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Core Image"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.12",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)CIImageProcessorKernel",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreimage/ciimageprocessorkernel"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreimage/ciimageprocessorkernel"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreimage": {
+      "title": "Core Image",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage",
+      "url": "/documentation/coreimage",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel": {
+      "title": "CIImageProcessorKernel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorkernel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract class you extend to create custom image processors that can integrate with Core Image workflows."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138290-processwithinputs": {
+      "title": "processWithInputs:arguments:output:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138290-processwithinputs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorkernel/2138290-processwithinputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Method to override for customizing the kernel's image processing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "processWithInputs:arguments:output:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138287-roiforinput": {
+      "title": "roiForInput:arguments:outputRect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138287-roiforinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorkernel/2138287-roiforinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Method to override for determining specific region of input image required to process in rendering a specified region of the output image."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "roiForInput:arguments:outputRect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138289-formatforinputatindex": {
+      "title": "formatForInputAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138289-formatforinputatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorkernel/2138289-formatforinputatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Method to override for returning the image processing kernel's input pixel format."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "formatForInputAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2143065-outputformat": {
+      "title": "outputFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2143065-outputformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorkernel/2143065-outputformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The processor's output pixel format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138284-applywithextent": {
+      "title": "applyWithExtent:inputs:arguments:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138284-applywithextent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorkernel/2138284-applywithextent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Method to override when applying a custom image processor kernel to an image and returning the result."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "applyWithExtent:inputs:arguments:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/cikernel": {
+      "title": "CIKernel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/cikernel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/cikernel"
+    },
+    "devLink-1759710": {
+      "identifier": "devLink-1759710",
+      "type": "link",
+      "title": "Metal Performance Shaders",
+      "url": "https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW7"
+    },
+    "devLink-1724385": {
+      "identifier": "devLink-1724385",
+      "type": "link",
+      "title": "Accelerate",
+      "url": "https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40001067-CH9-SW6"
+    },
+    "devLink-1723944": {
+      "identifier": "devLink-1723944",
+      "type": "link",
+      "title": "vImage",
+      "url": "https://developer.apple.com/library/archive/releasenotes/Performance/RN-vecLib/index.html#//apple_ref/doc/uid/TP40001049-CH2-SW2"
+    },
+    "doc://com.apple.documentation/documentation/metalperformanceshaders/mpsimagethresholdbinary": {
+      "title": "MPSImageThresholdBinary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/metalperformanceshaders/mpsimagethresholdbinary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/metalperformanceshaders/mpsimagethresholdbinary"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimage": {
+      "title": "CIImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimage"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel#2260367": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel#2260367",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/ciimageprocessorkernel#2260367",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creating a Threshold Image Processing Kernel"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel#2260368": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel#2260368",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/ciimageprocessorkernel#2260368"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2867389-outputisopaque": {
+      "title": "outputIsOpaque",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2867389-outputisopaque",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorkernel/2867389-outputisopaque",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Boolean determining whether or not processor outputs an opaque image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2143066-synchronizeinputs": {
+      "title": "synchronizeInputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2143066-synchronizeinputs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorkernel/2143066-synchronizeinputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells whether or not processor input should be synchronized for CPU access."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorinput": {
+      "title": "CIImageProcessorInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessorinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container of image data and information for use in a custom image processor. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimageprocessoroutput": {
+      "title": "CIImageProcessorOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessoroutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimageprocessoroutput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for writing image data and information produced by a custom image processor. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Type Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2143065-outputformat",
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2867389-outputisopaque",
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2143066-synchronizeinputs"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138284-applywithextent",
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138289-formatforinputatindex",
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138290-processwithinputs",
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138287-roiforinput"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorinput",
+        "doc://com.apple.documentation/documentation/coreimage/ciimageprocessoroutput"
+      ],
+      "title": "Custom Image Processors",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "CIImageProcessorKernel"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Unlike the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cikernel"
+            },
+            {
+              "type": "text",
+              "text": " class and its other subclasses that allow you to create new image-processing effects with the Core Image Kernel Language, the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel"
+            },
+            {
+              "type": "text",
+              "text": " class provides direct access to the underlying bitmap image data for a step in the Core Image processing pipeline. As such, you can create subclasses of this class to integrate other image-processing technologies—such as Metal compute shaders, "
+            },
+            {
+              "type": "link",
+              "title": "Metal Performance Shaders",
+              "destination": "https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW7"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "link",
+              "title": "Accelerate",
+              "destination": "https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40001067-CH9-SW6"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "link",
+              "title": "vImage",
+              "destination": "https://developer.apple.com/library/archive/releasenotes/Performance/RN-vecLib/index.html#//apple_ref/doc/uid/TP40001049-CH2-SW2"
+            },
+            {
+              "type": "text",
+              "text": " operations, or your own CPU-based image-processing routines—with a Core Image filter chain."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your custom image processing operation is invoked by your subclassed image processor kernel's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138290-processwithinputs"
+            },
+            {
+              "type": "text",
+              "text": " method. The method can accept zero, one or more inputs: kernels that generate imagery (such as a noise or pattern generator) need no inputs, while kernels that composite source images together require multiple inputs. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "arguments"
+            },
+            {
+              "type": "text",
+              "text": " dictionary allows the caller to pass in additional parameter values (such as the radius of a blur) and the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "output"
+            },
+            {
+              "type": "text",
+              "text": " contains the destination for your image processing code to write to."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how you can subclass "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel"
+            },
+            {
+              "type": "text",
+              "text": " to apply the Metal Performance Shader "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/metalperformanceshaders/mpsimagethresholdbinary"
+            },
+            {
+              "type": "text",
+              "text": " kernel to a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class ThresholdImageProcessorKernel: CIImageProcessorKernel {",
+            "static let device = MTLCreateSystemDefaultDevice()        ",
+            "override class func process(with inputs: [CIImageProcessorInput]?, arguments: [String : Any]?, output: CIImageProcessorOutput) throws {                ",
+            "    guard            ",
+            "        let device = device,            ",
+            "        let commandBuffer = output.metalCommandBuffer,            ",
+            "        let input = inputs?.first,            ",
+            "        let sourceTexture = input.metalTexture,            ",
+            "        let destinationTexture = output.metalTexture,            ",
+            "        let thresholdValue = arguments?[\"thresholdValue\"] as? Float else  {                ",
+            "            return        ",
+            "        }                ",
+            "    ",
+            "    let threshold = MPSImageThresholdBinary(",
+            "        device: device,                                                ",
+            "        thresholdValue: thresholdValue,                                               ",
+            "        maximumValue: 1.0,                                                ",
+            "        linearGrayColorTransform: nil)                ",
+            "    ",
+            "    threshold.encode(",
+            "        commandBuffer: commandBuffer,                         ",
+            "        sourceTexture: sourceTexture,                         ",
+            "        destinationTexture: destinationTexture)    ",
+            "    }",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2260367",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Creating a Threshold Image Processing Kernel"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To apply to kernel to an image, the calling side invokes the image processor's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138284-applywithextent"
+            },
+            {
+              "type": "text",
+              "text": " method. The following code generates a new "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage"
+            },
+            {
+              "type": "text",
+              "text": " object named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "result"
+            },
+            {
+              "type": "text",
+              "text": " which contains a thresholded version of the source image, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputImage"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let result = try? ThresholdImageProcessorKernel.apply( ",
+            "    withExtent: inputImage.extent,            ",
+            "    inputs: [inputImage],            ",
+            "    arguments: [\"thresholdValue\": 0.25])"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2260368",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Core Image will concatenate filters in a network into as fewer kernels as possible, avoiding the creation of intermediate buffers. However, it is unable to do this with image processor kernels. To get the best performance, you should only use "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel"
+                },
+                {
+                  "type": "text",
+                  "text": " objects when your image processing algorithms can't be expressed as Core Image Kernel Language."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "2216023"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel"
+            },
+            {
+              "type": "text",
+              "text": " class is abstract; to create a custom image processor, you define a subclass of this class."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You do not directly create instances of a custom "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel"
+            },
+            {
+              "type": "text",
+              "text": " subclass. Image processors must not carry or use state specific to any single invocation of the processor, so all methods (and accessors for readonly properties) of an image processor kernel class are class methods. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your subclass should override at least the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138290-processwithinputs"
+            },
+            {
+              "type": "text",
+              "text": " method to perform its image processing. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your image processor needs to work with a larger or smaller region of interest in the input image than each corresponding region of the output image (for example, a blur filter, which samples several input pixels for each output pixel), you should also override the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138287-roiforinput"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also override the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138289-formatforinputatindex"
+            },
+            {
+              "type": "text",
+              "text": " method and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2143065-outputformat"
+            },
+            {
+              "type": "text",
+              "text": " property getter to customize the input and output pixel formats for your processor (for example, as part of a multi-step workflow where you extract a single channel from an RGBA image, apply an effect to that channel only, then recombine the channels)."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Using a Custom Image Processor",
+          "anchor": "2216024"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To apply your custom image processor class to filter one or more images, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138284-applywithextent"
+            },
+            {
+              "type": "text",
+              "text": " class method. (Do not override this method.)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

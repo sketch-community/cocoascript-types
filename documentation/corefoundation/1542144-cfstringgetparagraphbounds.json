@@ -1,0 +1,483 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Given a range of characters in a string, obtains the paragraph bounds—that is, the indexes of the first character and the final characters of the paragraph(s) containing the range."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstring"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/1542144-cfstringgetparagraphbounds",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1542144,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFStringGetParagraphBounds",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.5",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@CFStringGetParagraphBounds",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/1542144-cfstringgetparagraphbounds"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/1542144-cfstringgetparagraphbounds"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstring": {
+      "title": "CFString",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstring",
+      "url": "/documentation/corefoundation/cfstring",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541640-cfstringgetlinebounds": {
+      "title": "CFStringGetLineBounds",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541640-cfstringgetlinebounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541640-cfstringgetlinebounds"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringref": {
+      "title": "CFStringRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringref"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrange": {
+      "title": "CFRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfrange"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfindex": {
+      "title": "CFIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfindex"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542144-cfstringgetparagraphbounds": {
+      "title": "CFStringGetParagraphBounds",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542144-cfstringgetparagraphbounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542144-cfstringgetparagraphbounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Given a range of characters in a string, obtains the paragraph bounds—that is, the indexes of the first character and the final characters of the paragraph(s) containing the range."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "CFStringGetParagraphBounds"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFStringRef",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringref",
+              "text": "CFStringRef"
+            },
+            {
+              "kind": "text",
+              "text": " string, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFRange",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrange",
+              "text": "CFRange"
+            },
+            {
+              "kind": "text",
+              "text": " range, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFIndex",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+              "text": "CFIndex"
+            },
+            {
+              "kind": "text",
+              "text": " *parBeginIndex, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFIndex",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+              "text": "CFIndex"
+            },
+            {
+              "kind": "text",
+              "text": " *parEndIndex, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFIndex",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfindex",
+              "text": "CFIndex"
+            },
+            {
+              "kind": "text",
+              "text": " *contentsEndIndex);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "theString",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The string containing the specified range of characters. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "range",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The range of characters to consider. The specified range must not exceed the length of the string."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "parBeginIndex",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On return, the index of the first character of the containing paragraph. Pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if you do not want this result. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "parEndIndex",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On return, the index of the first character of the paragraph after the specified range. Pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if you do not want this result."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "contentsEndIndex",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On return, the index of the last character of the containing paragraph, excluding any paragraph-separator characters. Pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if you are not interested in this result."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function is the same as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541640-cfstringgetlinebounds"
+            },
+            {
+              "type": "text",
+              "text": "(), however it only looks for paragraphs (that is, it does not stop at Unicode NextLine or LineSeparator characters)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function is a convenience function for determining the beginning and ending indexes of one or more paragraph in the given range of a string. It is useful, for example, when each line represents a “record” of some sort; you might search for some substring, but want to extract the record of which the substring is a part."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To determine line separation, the function looks for the standard paragraph-separator characters: carriage returns (CR and CRLF), linefeeds (LF), and Unicode paragraph separators. The three final parameters of the function indirectly return, in order, the index of the first character that starts the line, the index of the first character of the next line (including end-of-line characters), and the index of the last character of the line (excluding end-of-line characters). Pass "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": " for any of these parameters if you aren't interested in the result."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To determine the number of characters in the paragraph:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Subtract "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "parBeginIndex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " from "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "parEndIndex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to find the number of characters in the paragraph, including the paragraph separators."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Subtract "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "parBeginIndex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " from "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "contentsEndIndex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to find the number of characters in the paragraph, excluding the paragraph separators."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

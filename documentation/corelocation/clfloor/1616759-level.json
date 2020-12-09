@@ -1,0 +1,249 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The logical floor of the building."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corelocation",
+        "doc://com.apple.documentation/documentation/corelocation/clfloor"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corelocation/clfloor/1616759-level",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1616759,
+  "kind": "symbol",
+  "metadata": {
+    "title": "level",
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "modules": [
+      {
+        "name": "Core Location"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.15",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)CLFloor(py)level",
+    "symbolKind": "instp"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/clfloor/1616759-level"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/clfloor/1616759-level"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corelocation": {
+      "title": "Core Location",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation",
+      "url": "/documentation/corelocation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clfloor": {
+      "title": "CLFloor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clfloor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clfloor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The floor of a building on which the user's device is located. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
+      "title": "NSInteger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsinteger"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clfloor/1616759-level": {
+      "title": "level",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clfloor/1616759-level",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clfloor/1616759-level",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The logical floor of the building."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@property"
+            },
+            {
+              "kind": "text",
+              "text": "(readonly, nonatomic) "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@NSInteger",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger",
+              "text": "NSInteger"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "level"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Level values represent logical levels above or below ground level and are not intended to correspond to any numbering scheme in use by the building itself. The ground floor of a building is always represented by the value "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": ". Floors above the ground floor are represented by positive integers, so a value of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": " represents the floor above ground level, a value of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "2"
+            },
+            {
+              "type": "text",
+              "text": " represents two floors above ground level, and so on. Floors below the ground floor are represented by corresponding negative integers, with a value of -1 representing the floor immediately below ground level and so on. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It is erroneous to use the user’s level in a building as an estimate of altitude."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

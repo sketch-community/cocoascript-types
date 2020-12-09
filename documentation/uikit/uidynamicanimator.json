@@ -1,0 +1,1395 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that provides physics-related capabilities and animations for its dynamic items, and provides the context for those animations."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/animation_and_haptics",
+        "doc://com.apple.documentation/documentation/uikit/animation_and_haptics/uikit_dynamics"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1621194,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UIDynamicAnimator",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "7.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)UIDynamicAnimator",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uidynamicanimator"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uidynamicanimator"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/animation_and_haptics": {
+      "title": "Animation and Haptics",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/animation_and_haptics",
+      "url": "/documentation/uikit/animation_and_haptics",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/animation_and_haptics/uikit_dynamics": {
+      "title": "UIKit Dynamics",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/animation_and_haptics/uikit_dynamics",
+      "url": "/documentation/uikit/animation_and_haptics/uikit_dynamics",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate": {
+      "title": "UIDynamicAnimatorDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimatordelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "To respond to the pausing or resumption of UIKit dynamic animation, configure a custom class to adopt the "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate"
+        },
+        {
+          "type": "text",
+          "text": " protocol. Then, in a dynamic animator (an instance of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator"
+        },
+        {
+          "type": "text",
+          "text": " class), set the delegate to be an instance of your custom class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator": {
+      "title": "UIDynamicAnimator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides physics-related capabilities and animations for its dynamic items, and provides the context for those animations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicitem": {
+      "title": "UIDynamicItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicitem"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes": {
+      "title": "UICollectionViewLayoutAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayoutattributes"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiattachmentbehavior": {
+      "title": "UIAttachmentBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiattachmentbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiattachmentbehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollisionbehavior": {
+      "title": "UICollisionBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollisionbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollisionbehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicitembehavior": {
+      "title": "UIDynamicItemBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicitembehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicitembehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigravitybehavior": {
+      "title": "UIGravityBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigravitybehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigravitybehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipushbehavior": {
+      "title": "UIPushBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipushbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipushbehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisnapbehavior": {
+      "title": "UISnapBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisnapbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisnapbehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622627-center": {
+      "title": "center",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622627-center",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622627-center"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622459-transform": {
+      "title": "transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622459-transform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622459-transform"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622580-bounds": {
+      "title": "bounds",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622580-bounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622580-bounds"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621190-updateitemusingcurrentstate": {
+      "title": "updateItemUsingCurrentState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621190-updateitemusingcurrentstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621190-updateitemusingcurrentstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks a dynamic animator to read the current state of a dynamic item, replacing the animator’s internal representation of the item’s state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "updateItemUsingCurrentState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicbehavior/1618496-addchildbehavior": {
+      "title": "addChildBehavior:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicbehavior/1618496-addchildbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicbehavior/1618496-addchildbehavior",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addChildBehavior:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicbehavior": {
+      "title": "UIDynamicBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicbehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621203-initwithreferenceview": {
+      "title": "initWithReferenceView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621203-initwithreferenceview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621203-initwithreferenceview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a dynamic animator with a specified view as its reference view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithReferenceView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollisionbehavior/1624818-settranslatesreferenceboundsinto": {
+      "title": "setTranslatesReferenceBoundsIntoBoundaryWithInsets:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollisionbehavior/1624818-settranslatesreferenceboundsinto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollisionbehavior/1624818-settranslatesreferenceboundsinto",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setTranslatesReferenceBoundsIntoBoundaryWithInsets:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621196-initwithcollectionviewlayout": {
+      "title": "initWithCollectionViewLayout:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621196-initwithcollectionviewlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621196-initwithcollectionviewlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a dynamic animator with a specified collection view layout."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCollectionViewLayout:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout": {
+      "title": "UICollectionViewLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayout"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617728-invalidatelayout": {
+      "title": "invalidateLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617728-invalidatelayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayout/1617728-invalidatelayout",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "invalidateLayout"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418641-init": {
+      "title": "init",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418641-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418641-init",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "init"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate/1621193-dynamicanimatordidpause": {
+      "title": "dynamicAnimatorDidPause:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate/1621193-dynamicanimatordidpause",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimatordelegate/1621193-dynamicanimatordidpause",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dynamicAnimatorDidPause:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate/1621188-dynamicanimatorwillresume": {
+      "title": "dynamicAnimatorWillResume:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate/1621188-dynamicanimatorwillresume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimatordelegate/1621188-dynamicanimatorwillresume",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dynamicAnimatorWillResume:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621191-itemsinrect": {
+      "title": "itemsInRect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621191-itemsinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621191-itemsinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the dynamic items, from the animator’s behaviors, that intersect a specified rectangle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "itemsInRect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621189-addbehavior": {
+      "title": "addBehavior:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621189-addbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621189-addbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a dynamic behavior to a dynamic animator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addBehavior:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621201-removebehavior": {
+      "title": "removeBehavior:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621201-removebehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621201-removebehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a specified dynamic behavior from a dynamic animator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeBehavior:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621197-removeallbehaviors": {
+      "title": "removeAllBehaviors",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621197-removeallbehaviors",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621197-removeallbehaviors",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes all of the dynamic behaviors from a dynamic animator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAllBehaviors"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621199-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621199-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621199-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The delegate for responding to pausing or resumption of animation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621202-elapsedtime": {
+      "title": "elapsedTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621202-elapsedtime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621202-elapsedtime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the time interval since the dynamic animator started running."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621192-running": {
+      "title": "running",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621192-running",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621192-running",
+      "abstract": [
+        {
+          "type": "text",
+          "text": " Returns "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+        },
+        {
+          "type": "text",
+          "text": " if the dynamic animator is running."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621198-behaviors": {
+      "title": "behaviors",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621198-behaviors",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621198-behaviors",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The dynamic behaviors managed by a dynamic animator."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621200-referenceview": {
+      "title": "referenceView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621200-referenceview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621200-referenceview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The view that a dynamic animator was initialized with."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621204-layoutattributesforcellatindexpa": {
+      "title": "layoutAttributesForCellAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621204-layoutattributesforcellatindexpa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621204-layoutattributesforcellatindexpa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A convenience method for returning the layout attributes for a collection view cell."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutAttributesForCellAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621195-layoutattributesfordecorationvie": {
+      "title": "layoutAttributesForDecorationViewOfKind:atIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621195-layoutattributesfordecorationvie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621195-layoutattributesfordecorationvie",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A convenience method for returning the layout attributes for a collection view decoration view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutAttributesForDecorationViewOfKind:atIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621186-layoutattributesforsupplementary": {
+      "title": "layoutAttributesForSupplementaryViewOfKind:atIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621186-layoutattributesforsupplementary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidynamicanimator/1621186-layoutattributesforsupplementary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A convenience method for returning the layout attributes for a collection view supplementary view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutAttributesForSupplementaryViewOfKind:atIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializing and Managing a Dynamic Animator",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621203-initwithreferenceview",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621196-initwithcollectionviewlayout",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621191-itemsinrect",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621189-addbehavior",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621201-removebehavior",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621197-removeallbehaviors"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Responding to Animation Changes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621199-delegate",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing a Dynamic Animator’s State",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621202-elapsedtime",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621192-running",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621198-behaviors",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621200-referenceview",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621190-updateitemusingcurrentstate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Collection View Additions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621204-layoutattributesforcellatindexpa",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621195-layoutattributesfordecorationvie",
+        "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621186-layoutattributesforsupplementary"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UIDynamicAnimator"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "dynamic item"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is any iOS or custom object that conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicitem"
+            },
+            {
+              "type": "text",
+              "text": " protocol. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes"
+            },
+            {
+              "type": "text",
+              "text": " classes implement this protocol in iOS 7 and later. You can implement this protocol to use a dynamic animator with custom objects for such purposes as reacting to rotation or position changes computed by an animator."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use dynamics, configure one or more dynamic behaviors—including providing each with a set of dynamic items—and then add those behaviors to a dynamic animator."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You specify dynamic behaviors using any of the iOS primitive dynamic behavior classes: "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiattachmentbehavior"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollisionbehavior"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicitembehavior"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigravitybehavior"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uipushbehavior"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisnapbehavior"
+            },
+            {
+              "type": "text",
+              "text": ". Each of these provides configuration options and lets you associate one or more dynamic items to the behavior. To activate a behavior, add it to an animator."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A dynamic animator interacts with each of its dynamic items as follows:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Before adding an item to a behavior, you specify the item’s starting position, rotation, and bounds (to do so, use properties of the item’s class, such as the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622627-center"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622459-transform"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622580-bounds"
+                    },
+                    {
+                      "type": "text",
+                      "text": " properties in the case of a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+                    },
+                    {
+                      "type": "text",
+                      "text": "-based item)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "After you add the behavior to an animator, the animator takes over: it updates the item’s position and rotation as animation proceeds (see the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicitem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can programmatically update an item’s state in the midst of an animation, after which the animator takes back control of the item’s animation, relative to the state you specified (see the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621190-updateitemusingcurrentstate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can define composite behaviors using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicbehavior/1618496-addchildbehavior"
+            },
+            {
+              "type": "text",
+              "text": " method of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicbehavior"
+            },
+            {
+              "type": "text",
+              "text": " parent behavior class. The set of behaviors you add to an animator constitute a behavior hierarchy. Each behavior instance you associate with an animator can be present only once in the hierarchy."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To employ a dynamic animator, first identify the type of dynamic items you want to animate. This choice determines which initializer to call, and this in turn determines how the coordinate system gets set up. The three ways to initialize an animator, the dynamic items you can then use, and the resulting coordinate system, are as follows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To animate views, create an animator with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621203-initwithreferenceview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. The coordinate system of the reference view serves as the coordinate system for the animator’s behaviors and items. Each dynamic item you associate with this sort of animator must be a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object and must descend from the reference view."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can define a boundary, for items participating in a collision behavior, relative to the bounds of the reference view. See the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollisionbehavior/1624818-settranslatesreferenceboundsinto"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To animate collection views, create an animator with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621196-initwithcollectionviewlayout"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. The resulting animator employs a collection view layout (an object of the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class) for its coordinate system. The dynamic items in this sort of animator must be "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects that are part of the layout."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can define a boundary, for items participating in a collision behavior, relative to the bounds of the collection view layout. See the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollisionbehavior/1624818-settranslatesreferenceboundsinto"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A collection view animator automatically calls the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617728-invalidatelayout"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method as needed, and automatically pauses and resumes animation, as appropriate, when you change a collection view’s layout."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To employ a dynamic animator with other objects that conform to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicitem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol, create an animator with the inherited "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418641-init"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. The resulting animator employs an abstract coordinate system, not tied to the screen or to any view. "
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "There is no reference boundary to refer to when defining a collision boundary for use with this sort of animator. However, you can still, in a collision behavior, specify custom boundaries as described in "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollisionbehavior"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All types of dynamic animators share the following characteristics:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Each dynamic animator is independent of other dynamic animators you create"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can associate a given dynamic item with multiple behaviors, provided those behaviors belong to the same animator"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An animator automatically pauses when all its items are at rest, and automatically resumes when a behavior parameter changes or a behavior or item is added or removed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can implement a delegate to respond to changes in animator pause/resumption status, using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate/1621193-dynamicanimatordidpause"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate/1621188-dynamicanimatorwillresume"
+            },
+            {
+              "type": "text",
+              "text": " methods of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uidynamicanimatordelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

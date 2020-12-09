@@ -1,0 +1,741 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A class that registers a view to provide a custom user experience in response to 3D Touch interactions."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1648543,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UIPreviewInteraction",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)UIPreviewInteraction",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uipreviewinteraction"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uipreviewinteraction"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-2793214": {
+      "identifier": "link-media-2793214",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/uipreviewinteraction#2793214"
+    },
+    "media-2793214": {
+      "identifier": "media-2793214",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 256
+          },
+          "url": "https://docs-assets.developer.apple.com/published/121be906b8/dce480c1-31f8-446c-bd2a-4f7fe5be9e67.png"
+        }
+      ],
+      "alt": "An illustration showing the preview interaction as it progresses through the preview phase and into the commit phases in response to increasing touch force.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Relationship between touch force and preview interaction phases"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621463-registerforpreviewingwithdelegat": {
+      "title": "registerForPreviewingWithDelegate:sourceView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621463-registerforpreviewingwithdelegat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621463-registerforpreviewingwithdelegat",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerForPreviewingWithDelegate:sourceView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621395-unregisterforpreviewingwithconte": {
+      "title": "unregisterForPreviewingWithContext:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621395-unregisterforpreviewingwithconte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621395-unregisterforpreviewingwithconte",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "unregisterForPreviewingWithContext:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller": {
+      "title": "UIViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller#1654454": {
+      "title": "Working With 3D Touch Previews and Preview Quick Actions",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller#1654454",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/uikit/uiviewcontroller#1654454"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreviewinteractiondelegate": {
+      "title": "UIPreviewInteractionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteractiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreviewinteractiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods for communicating the progress of a preview interaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648537-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648537-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreviewinteraction/1648537-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that acts as the delegate of the preview interaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648541-initwithview": {
+      "title": "initWithView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648541-initwithview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreviewinteraction/1648541-initwithview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a newly initialized preview interaction for the specified view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648544-view": {
+      "title": "view",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648544-view",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreviewinteraction/1648544-view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The view from which the preview interaction receives touch events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648539-cancelinteraction": {
+      "title": "cancelInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648539-cancelinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreviewinteraction/1648539-cancelinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels the current preview interaction."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelInteraction"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648545-locationincoordinatespace": {
+      "title": "locationInCoordinateSpace:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648545-locationincoordinatespace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreviewinteraction/1648545-locationincoordinatespace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the location of the touch that started the interaction."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationInCoordinateSpace:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction": {
+      "title": "UIPreviewInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreviewinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that registers a view to provide a custom user experience in response to 3D Touch interactions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipreviewactionitem": {
+      "title": "UIPreviewActionItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewactionitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipreviewactionitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that defines the styles you can apply to peek quick actions and peek quick action groups, and defines a read-only accessor for the user-visible title of a peek quick action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Preparing Preview Interactions ",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648541-initwithview",
+        "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648537-delegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Handling Preview Interactions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648544-view",
+        "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648539-cancelinteraction",
+        "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648545-locationincoordinatespace"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uipreviewinteractiondelegate",
+        "doc://com.apple.documentation/documentation/uikit/uipreviewactionitem"
+      ],
+      "title": "3D Touch Interactions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UIPreviewInteraction"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A 3D Touch interaction results in a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "preview interaction"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " that comprises two phases, the first also called "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "preview"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", followed by "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "commit"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". The interaction progresses through these phases as the user applies more force with a touch. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-2793214"
+            },
+            {
+              "type": "text",
+              "text": " shows the relationship between the force of the user's touch and the phases of the preview interaction."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2793214",
+              "metadata": {
+                "anchor": "2793214",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Relationship between touch force and preview interaction phases"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When using view controller previewing, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "peek"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " represents the preview phase, and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "pop"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " the commit phase."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you want to provide the system default view controller previewing behavior ("
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "peek"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "pop"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": "), use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621463-registerforpreviewingwithdelegat"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621395-unregisterforpreviewingwithconte"
+                },
+                {
+                  "type": "text",
+                  "text": "  methods on "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller"
+                },
+                {
+                  "type": "text",
+                  "text": " instead of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "UIPreviewInteraction"
+                },
+                {
+                  "type": "text",
+                  "text": ". See "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller#1654454"
+                },
+                {
+                  "type": "text",
+                  "text": " for further details."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A preview interaction is responsible for managing 3D Touch interactions for a specified view. It uses a delegate object to communicate the progress and status of the interaction to your code."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use a preview interaction in your app:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "UIPreviewInteraction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object, passing the view into the default initializer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a delegate object that conforms to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteractiondelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol, and implement the appropriate methods."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Assign the delegate object to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteraction/1648537-delegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property on the preview interaction object."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about the state transitions through which a preview interaction progresses, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uipreviewinteractiondelegate"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,966 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/quartz"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartz/imagekit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2869457,
+  "kind": "symbol",
+  "metadata": {
+    "title": "ImageKit",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Quartz"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/imagekit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/imagekit"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/quartz": {
+      "title": "Quartz",
+      "identifier": "doc://com.apple.documentation/documentation/quartz",
+      "url": "/documentation/quartz",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/cifilter": {
+      "title": "CIFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/cifilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image processor that produces an image by manipulating one or more input images or by generating new image data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel": {
+      "title": "IKFilterBrowserPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikfilterbrowserpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKFilterBrowserPanel"
+        },
+        {
+          "type": "text",
+          "text": " class provides a user interface that allows users to browse Core Image filters ("
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+        },
+        {
+          "type": "text",
+          "text": "), to preview a filter, and to get additional information about the filter, such as its description."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowseritem_protocol": {
+      "title": "IKImageBrowserItem Protocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowseritem_protocol",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/imagekit/ikimagebrowseritem_protocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKImageBrowserItem"
+        },
+        {
+          "type": "text",
+          "text": " informal protocol declares the methods that an instance of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview"
+        },
+        {
+          "type": "text",
+          "text": " class uses to access the contents of its data source for a given item. Some of the methods in this protocol are needed frequently, so you should implement them efficiently."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview": {
+      "title": "IKImageBrowserView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimagebrowserview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview"
+        },
+        {
+          "type": "text",
+          "text": " class is a view for displaying and browsing a large amount of images and movies efficiently. This class will be deprecated in a future release. Please switch to "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionview"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionview": {
+      "title": "NSCollectionView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionview"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsfilenamespboardtype": {
+      "title": "NSFilenamesPboardType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsfilenamespboardtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsfilenamespboardtype"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsview": {
+      "title": "NSView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsview"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsimageview": {
+      "title": "NSImageView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsimageview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsimageview"
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate": {
+      "title": "IKScannerDeviceViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikscannerdeviceviewdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKScannerDeviceViewDelegate"
+        },
+        {
+          "type": "text",
+          "text": " protocol defines the delegate protocol that the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview"
+        },
+        {
+          "type": "text",
+          "text": " delegate must conform to."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikcameradeviceview": {
+      "title": "IKCameraDeviceView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikcameradeviceview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikcameradeviceview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKCameraDeviceView"
+        },
+        {
+          "type": "text",
+          "text": " class displays the contents of the selected camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikdevicebrowserview": {
+      "title": "IKDeviceBrowserView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikdevicebrowserview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikdevicebrowserview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKDeviceBrowserView"
+        },
+        {
+          "type": "text",
+          "text": " allows you to select a camera or scanner from a list of the available devices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimageeditpanel": {
+      "title": "IKImageEditPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimageeditpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimageeditpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKImageEditPanel"
+        },
+        {
+          "type": "text",
+          "text": " class provides a panel, that is, a utility window that floats on top of document windows, optimized for image editing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview": {
+      "title": "IKScannerDeviceView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikscannerdeviceview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKScannerDeviceView"
+        },
+        {
+          "type": "text",
+          "text": " class displays a view that allows scanning. It can be customized by specifying the display mode. The delegate receives the scanned data and must implement the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate"
+        },
+        {
+          "type": "text",
+          "text": " protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikslideshow": {
+      "title": "IKSlideshow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikslideshow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikslideshow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKSlideshow"
+        },
+        {
+          "type": "text",
+          "text": " class encapsulates a data source and options for a slideshow. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell/1500062-cellstate": {
+      "title": "cellState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell/1500062-cellstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimagebrowsercell/1500062-cellstate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cellState"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview/1503953-setdropindex": {
+      "title": "setDropIndex:dropOperation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview/1503953-setdropindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimagebrowserview/1503953-setdropindex",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setDropIndex:dropOperation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikfilterbrowserview": {
+      "title": "IKFilterBrowserView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikfilterbrowserview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikfilterbrowserview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKFilterBrowserView"
+        },
+        {
+          "type": "text",
+          "text": " class is used as a container for the elements of an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel"
+        },
+        {
+          "type": "text",
+          "text": " object.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikfilteruiview": {
+      "title": "IKFilterUIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikfilteruiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikfilteruiview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKFilterUIView"
+        },
+        {
+          "type": "text",
+          "text": " class provides a view that contains input parameter controls for a Core Image filter ("
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+        },
+        {
+          "type": "text",
+          "text": "). You need to use this class when providing a user interface for a custom filter. The class creates a view that has an object controller for the given filter. It also retains the filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell": {
+      "title": "IKImageBrowserCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimagebrowsercell",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "A"
+        },
+        {
+          "type": "text",
+          "text": " class that is used to display a cell conforming to the "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowseritem_protocol"
+        },
+        {
+          "type": "text",
+          "text": " in an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimageview": {
+      "title": "IKImageView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimageview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimageview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKImageView"
+        },
+        {
+          "type": "text",
+          "text": " class provides an efficient way to display images in a view while at the same time supporting a number of image editing operations such as rotating, zooming, and cropping.  It supports drag and drop for the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsfilenamespboardtype"
+        },
+        {
+          "type": "text",
+          "text": " flavor so that the user can drag an image to the view. If possible, image rendering uses hardware acceleration to achieve optimal performance. The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKImageView"
+        },
+        {
+          "type": "text",
+          "text": " class is implemented as a subclass of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsview"
+        },
+        {
+          "type": "text",
+          "text": ". Similar to "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsimageview"
+        },
+        {
+          "type": "text",
+          "text": ", the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKImageView"
+        },
+        {
+          "type": "text",
+          "text": " class is used to display a single image.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikpicturetaker": {
+      "title": "IKPictureTaker",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikpicturetaker",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikpicturetaker",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKPictureTaker"
+        },
+        {
+          "type": "text",
+          "text": " class represents a panel that allows users to choose images by browsing the file system. The picture taker panel provides an Open Recent menu, supports image cropping, and supports taking snapshots from an iSight or other digital camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/iksaveoptions": {
+      "title": "IKSaveOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/iksaveoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/iksaveoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKSaveOptions"
+        },
+        {
+          "type": "text",
+          "text": " class initializes, adds, and manages user interface options for saving image data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewdelegate": {
+      "title": "IKCameraDeviceViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikcameradeviceviewdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKCameraDeviceViewDelegate"
+        },
+        {
+          "type": "text",
+          "text": " protocol is adopted by the delegate of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikcameradeviceview"
+        },
+        {
+          "type": "text",
+          "text": " class. It allows downloading of camera content, handling selection changes, and handling errors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikdevicebrowserviewdelegate": {
+      "title": "IKDeviceBrowserViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikdevicebrowserviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikdevicebrowserviewdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKDeviceBrowserViewDelegate"
+        },
+        {
+          "type": "text",
+          "text": " defines the methods that the delegate of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikdevicebrowserview"
+        },
+        {
+          "type": "text",
+          "text": " class can implement. All the methods are optional."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikfiltercustomuiprovider": {
+      "title": "IKFilterCustomUIProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikfiltercustomuiprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikfiltercustomuiprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKFilterCustomUIProvider"
+        },
+        {
+          "type": "text",
+          "text": " protocol is an addition to the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+        },
+        {
+          "type": "text",
+          "text": " class that defines a method for providing a view for a filter. This protocol is implemented by any filter that provides its own user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowserdatasource_protocol": {
+      "title": "IKImageBrowserDataSource Protocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowserdatasource_protocol",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/imagekit/ikimagebrowserdatasource_protocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKImageBrowserDataSource"
+        },
+        {
+          "type": "text",
+          "text": " informal protocol declares the methods that an instance of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview"
+        },
+        {
+          "type": "text",
+          "text": "  class uses to access the contents of its data source object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowserdelegate_protocol": {
+      "title": "IKImageBrowserDelegate Protocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowserdelegate_protocol",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/imagekit/ikimagebrowserdelegate_protocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKImageBrowserDelegate"
+        },
+        {
+          "type": "text",
+          "text": " is an informal protocol for the delegate of an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview"
+        },
+        {
+          "type": "text",
+          "text": " object. You can implement these methods to perform custom tasks when in response to events in the image browser view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimageeditpaneldatasource": {
+      "title": "IKImageEditPanelDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimageeditpaneldatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimageeditpaneldatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKImageEditPanelDataSource"
+        },
+        {
+          "type": "text",
+          "text": " protocol describes the methods that an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikimageeditpanel"
+        },
+        {
+          "type": "text",
+          "text": " object uses to access the contents of its data source object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource": {
+      "title": "IKSlideshowDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikslideshowdatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "IKSlideshowDataSource"
+        },
+        {
+          "type": "text",
+          "text": " protocol describes the methods that an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikslideshow"
+        },
+        {
+          "type": "text",
+          "text": " object uses to access the contents of its data source object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercellstate": {
+      "title": "IKImageBrowserCellState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercellstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimagebrowsercellstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The possible states for the browser cell. These values are used by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell/1500062-cellstate"
+        },
+        {
+          "type": "text",
+          "text": " method. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikimagebrowserdropoperation": {
+      "title": "IKImageBrowserDropOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserdropoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikimagebrowserdropoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants specify the locations for dropping items onto the browser view. Used by the method "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview/1503953-setdropindex"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/imagekit/quartz_constants": {
+      "title": "Quartz Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/imagekit/quartz_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/imagekit/quartz_constants"
+    },
+    "doc://com.apple.documentation/documentation/quartz/imagekit/quartz_enumerations": {
+      "title": "Quartz Enumerations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/imagekit/quartz_enumerations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/imagekit/quartz_enumerations"
+    },
+    "doc://com.apple.documentation/documentation/quartz/imagekit": {
+      "title": "ImageKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/imagekit",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/quartz/imagekit"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Classes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/ikcameradeviceview",
+        "doc://com.apple.documentation/documentation/quartz/ikdevicebrowserview",
+        "doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel",
+        "doc://com.apple.documentation/documentation/quartz/ikfilterbrowserview",
+        "doc://com.apple.documentation/documentation/quartz/ikfilteruiview",
+        "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell",
+        "doc://com.apple.documentation/documentation/quartz/ikimagebrowserview",
+        "doc://com.apple.documentation/documentation/quartz/ikimageeditpanel",
+        "doc://com.apple.documentation/documentation/quartz/ikimageview",
+        "doc://com.apple.documentation/documentation/quartz/ikpicturetaker",
+        "doc://com.apple.documentation/documentation/quartz/iksaveoptions",
+        "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview",
+        "doc://com.apple.documentation/documentation/quartz/ikslideshow"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Protocols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewdelegate",
+        "doc://com.apple.documentation/documentation/quartz/ikdevicebrowserviewdelegate",
+        "doc://com.apple.documentation/documentation/quartz/ikfiltercustomuiprovider",
+        "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowserdatasource_protocol",
+        "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowserdelegate_protocol",
+        "doc://com.apple.documentation/documentation/quartz/imagekit/ikimagebrowseritem_protocol",
+        "doc://com.apple.documentation/documentation/quartz/ikimageeditpaneldatasource",
+        "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate",
+        "doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Structures",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/ikimagebrowsercellstate",
+        "doc://com.apple.documentation/documentation/quartz/ikimagebrowserdropoperation"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Extended Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreimage/cifilter"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/imagekit/quartz_constants",
+        "doc://com.apple.documentation/documentation/quartz/imagekit/quartz_enumerations"
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

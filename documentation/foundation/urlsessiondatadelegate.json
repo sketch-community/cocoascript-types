@@ -1,0 +1,778 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/urlsession"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1408829,
+  "kind": "symbol",
+  "metadata": {
+    "title": "URLSessionDataDelegate",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "7.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.9",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(pl)NSURLSessionDataDelegate",
+    "symbolKind": "intf",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "protocol "
+      },
+      {
+        "kind": "identifier",
+        "text": "URLSessionDataDelegate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsurlsessiondatadelegate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/urlsessiondatadelegate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession": {
+      "title": "URLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate": {
+      "title": "URLSessionTaskDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiontaskdelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondelegate": {
+      "title": "URLSessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1410027-urlsession": {
+      "title": "urlSession(_:dataTask:didReceive:completionHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1410027-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1410027-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the data task received the initial reply (headers) from the server."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDataTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didReceive"
+        },
+        {
+          "kind": "text",
+          "text": ": URLResponse, "
+        },
+        {
+          "kind": "identifier",
+          "text": "completionHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": (URLSession.ResponseDisposition) -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition": {
+      "title": "URLSession.ResponseDisposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/responsedisposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating how a data or upload session should proceed after receiving the initial headers."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSession.ResponseDisposition"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1409936-urlsession": {
+      "title": "urlSession(_:dataTask:didBecome:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1409936-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1409936-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the data task was changed to a download task."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDataTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didBecome"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDownloadTask)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411648-urlsession": {
+      "title": "urlSession(_:dataTask:didBecome:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411648-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1411648-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the data task was changed to a stream task."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDataTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didBecome"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionStreamTask)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411528-urlsession": {
+      "title": "urlSession(_:dataTask:didReceive:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411528-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1411528-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the data task has received some of the expected data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDataTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didReceive"
+        },
+        {
+          "kind": "text",
+          "text": ": Data)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411612-urlsession": {
+      "title": "urlSession(_:dataTask:willCacheResponse:completionHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411612-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate/1411612-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether the data (or upload) task should store the response in the cache."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionDataTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "willCacheResponse"
+        },
+        {
+          "kind": "text",
+          "text": ": CachedURLResponse, "
+        },
+        {
+          "kind": "identifier",
+          "text": "completionHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": (CachedURLResponse?) -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/1411554-datatask": {
+      "title": "dataTask(with:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1411554-datatask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/1411554-datatask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a task that retrieves the contents of the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": URL) -> URLSessionDataTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/1410330-datatask": {
+      "title": "dataTask(with:completionHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1410330-datatask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/1410330-datatask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a task that retrieves the contents of the specified URL, then calls a handler upon completion. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": URL, "
+        },
+        {
+          "kind": "identifier",
+          "text": "completionHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/1410592-datatask": {
+      "title": "dataTask(with:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1410592-datatask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/1410592-datatask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a task that retrieves the contents of a URL based on the specified URL request object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": URLRequest) -> URLSessionDataTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/1407613-datatask": {
+      "title": "dataTask(with:completionHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1407613-datatask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/1407613-datatask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a task that retrieves the contents of a URL based on the specified URL request object, and calls a handler upon completion. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dataTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": URLRequest, "
+        },
+        {
+          "kind": "identifier",
+          "text": "completionHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatatask": {
+      "title": "URLSessionDataTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatatask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatatask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL session task that returns downloaded data directly to the app in memory."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSessionDataTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate": {
+      "title": "URLSessionDataDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondatadelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSessionDataDelegate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Handling Task Life Cycle Changes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1410027-urlsession",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/responsedisposition",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1409936-urlsession",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411648-urlsession"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Receiving Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411528-urlsession"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Handling Caching",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatadelegate/1411612-urlsession"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsession/1411554-datatask",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/1410330-datatask",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/1410592-datatask",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/1407613-datatask",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiondatatask"
+      ],
+      "title": "Adding Data Tasks to a Session",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "URLSessionDataDelegate"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your session delegate should also implement the methods in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol to handle task-level events that are common to all task types, and methods in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol to handle session-level events."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+                },
+                {
+                  "type": "text",
+                  "text": " object need not have a delegate. If no delegate is assigned, when you create tasks in that session, you must provide a completion handler block to obtain the data."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Completion handler blocks are primarily intended as an alternative to using a custom delegate. If you create a task using a method that takes a completion handler block, the delegate methods for response and data delivery are not called."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,2546 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Bring compositional layouts to your app and simplify updating your user interface with diffable data sources."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+        "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3310774,
+  "kind": "article",
+  "metadata": {
+    "title": "Implementing Modern Collection Views",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AppKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.15.1",
+        "current": "11.1"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+        "documentation/appkit/views_and_controls/collection_view/implementing_modern_collection_views",
+        "documentation/uikit/views_and_controls/collection_views/layouts/implementing_modern_collection_views"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+        "documentation/appkit/views_and_controls/collection_view/implementing_modern_collection_views",
+        "documentation/uikit/views_and_controls/collection_views/layouts/implementing_modern_collection_views"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/appkit": {
+      "title": "AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit",
+      "url": "/documentation/appkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls",
+      "url": "/documentation/appkit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view": {
+      "title": "Collection View",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/views_and_controls/collection_view",
+      "url": "/documentation/appkit/views_and_controls/collection_view",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts": {
+      "title": "Layouts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts",
+      "url": "/documentation/uikit/views_and_controls/collection_views/layouts",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694158": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694158",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694158"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutitem/3199084-contentinsets": {
+      "title": "contentInsets",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutitem/3199084-contentinsets",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutitem/3199084-contentinsets"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694160": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694160",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694160"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroup/3213854-horizontalgroupwithlayoutsize": {
+      "title": "horizontalGroupWithLayoutSize:subitem:count:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroup/3213854-horizontalgroupwithlayoutsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutgroup/3213854-horizontalgroupwithlayoutsize",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "horizontalGroupWithLayoutSize:subitem:count:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694162": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694162",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694162"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694164": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694164",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694164"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694166": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694166",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694166"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3255142-supplementaryviewprovider": {
+      "title": "supplementaryViewProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3255142-supplementaryviewprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3255142-supplementaryviewprovider"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694168": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694168",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694168"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199089-boundarysupplementaryitems": {
+      "title": "boundarySupplementaryItems",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199089-boundarysupplementaryitems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutsection/3199089-boundarysupplementaryitems"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694170": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694170",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694170"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694171": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694171",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694171"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694172": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694172",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694172"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199044-pintovisiblebounds": {
+      "title": "pinToVisibleBounds",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199044-pintovisiblebounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199044-pintovisiblebounds"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem/3199114-zindex": {
+      "title": "zIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem/3199114-zindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutsupplementaryitem/3199114-zindex"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694174": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694174",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694174"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694175": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694175",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694175"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem/3199051-backgrounddecorationitemwithelem": {
+      "title": "backgroundDecorationItemWithElementKind:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem/3199051-backgrounddecorationitemwithelem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutdecorationitem/3199051-backgrounddecorationitemwithelem",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "backgroundDecorationItemWithElementKind:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199091-decorationitems": {
+      "title": "decorationItems",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199091-decorationitems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutsection/3199091-decorationitems"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694177": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694177",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694177"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617739-registerclass": {
+      "title": "registerClass:forDecorationViewOfKind:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617739-registerclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayout/1617739-registerclass",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "registerClass:forDecorationViewOfKind:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694178": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694178",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694178"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694180": {
+      "title": "Listing 14",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694180",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694180"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199094-orthogonalscrollingbehavior": {
+      "title": "orthogonalScrollingBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199094-orthogonalscrollingbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutsection/3199094-orthogonalscrollingbehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior/uicollectionlayoutsectionorthogonalscrollingbehaviornone": {
+      "title": "UICollectionLayoutSectionOrthogonalScrollingBehaviorNone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior/uicollectionlayoutsectionorthogonalscrollingbehaviornone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior/uicollectionlayoutsectionorthogonalscrollingbehaviornone"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694182": {
+      "title": "Listing 15",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694182",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694182"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior": {
+      "title": "UICollectionLayoutSectionOrthogonalScrollingBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694184": {
+      "title": "Listing 16",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694184",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694184"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694186": {
+      "title": "Listing 17",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694186",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694186"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3375795-apply": {
+      "title": "apply(_:animatingDifferences:completion:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3375795-apply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3375795-apply"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694187": {
+      "title": "Listing 18",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694187",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694187"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694189": {
+      "title": "Listing 19",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694189",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694189"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694191": {
+      "title": "Listing 20",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694191",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694191"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayout/3600951-list": {
+      "title": "list(using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayout/3600951-list",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcompositionallayout/3600951-list"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694193": {
+      "title": "Listing 21",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694193",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694193"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance": {
+      "title": "UICollectionLayoutListConfiguration.Appearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/appearance"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/headermode/firstiteminsection": {
+      "title": "UICollectionLayoutListConfiguration.HeaderMode.firstItemInSection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/headermode/firstiteminsection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/headermode/firstiteminsection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694195": {
+      "title": "Listing 22",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694195",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694195"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlistcell": {
+      "title": "UICollectionViewListCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlistcell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlistcell"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694197": {
+      "title": "Listing 23",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694197",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694197"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilistcontentview/3600552-configuration": {
+      "title": "configuration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilistcontentview/3600552-configuration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilistcontentview/3600552-configuration"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694198": {
+      "title": "Listing 24",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694198",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694198"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694199": {
+      "title": "Listing 25",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694199",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694199"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694200": {
+      "title": "Listing 26",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694200",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694200"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694202": {
+      "title": "Listing 27",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694202",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694202"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/sidebar": {
+      "title": "UICollectionLayoutListConfiguration.Appearance.sidebar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/sidebar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/sidebar"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694203": {
+      "title": "Listing 28",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694203",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694203"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/insetgrouped": {
+      "title": "UICollectionLayoutListConfiguration.Appearance.insetGrouped",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/insetgrouped",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/insetgrouped"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694204": {
+      "title": "Listing 29",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694204",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694204"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694205": {
+      "title": "Listing 30",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694205",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694205"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694207": {
+      "title": "Listing 31",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694207",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views#3694207"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views": {
+      "title": "Implementing Modern Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Bring compositional layouts to your app and simplify updating your user interface with diffable data sources."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewflowlayout": {
+      "title": "NSCollectionViewFlowLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewflowlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewflowlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layout that organizes items into a flexible and configurable arrangement.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegateflowlayout": {
+      "title": "NSCollectionViewDelegateFlowLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegateflowlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewdelegateflowlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that a delegate implements to provide layout information to a flow layout object in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewgridlayout": {
+      "title": "NSCollectionViewGridLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewgridlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewgridlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layout that displays a single section of items in a row and column grid. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewtransitionlayout": {
+      "title": "NSCollectionViewTransitionLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewtransitionlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewtransitionlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that implements custom behaviors when changing from one layout to another in a collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewlayoutattributes": {
+      "title": "NSCollectionViewLayoutAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewlayoutattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewlayoutattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains layout-related attributes for an element in a collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewlayout": {
+      "title": "NSCollectionViewLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract base class that you subclass and use to generate layout information for a collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayout": {
+      "title": "NSCollectionViewCompositionalLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewcompositionallayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layout object that lets you combine items in highly adaptive and flexible visual arrangements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayoutconfiguration": {
+      "title": "NSCollectionViewCompositionalLayoutConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayoutconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewcompositionallayoutconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines scroll direction, section spacing, and headers or footers for the layout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayoutsectionprovider": {
+      "title": "NSCollectionViewCompositionalLayoutSectionProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayoutsectionprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionviewcompositionallayoutsectionprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure that creates and returns each of the layout's sections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nscollectionlayoutsectionorthogonalscrollingbehavior": {
+      "title": "NSCollectionLayoutSectionOrthogonalScrollingBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionlayoutsectionorthogonalscrollingbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscollectionlayoutsectionorthogonalscrollingbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scrolling behavior of the layout's sections in relation to the main layout axis."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/322b5eb271/ImplementingModernCollectionViews.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/322b5eb271/ImplementingModernCollectionViews.zip",
+      "checksum": "7cb0ce28a1ccacc44ebb62055166d1d106ed6894012a37b5b15f3718e8ccaac398b09b374ff3250dcf9e2d1e83d726515c232c3b7c2726a673ab5e2727c0568d",
+      "url": "https://docs-assets.developer.apple.com/published/322b5eb271/ImplementingModernCollectionViews.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/322b5eb271/ImplementingModernCollectionViews.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewflowlayout",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegateflowlayout",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewgridlayout",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewtransitionlayout",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewlayoutattributes",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewlayout",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayout",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayoutconfiguration",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionviewcompositionallayoutsectionprovider",
+        "doc://com.apple.documentation/documentation/appkit/nscollectionlayoutsectionorthogonalscrollingbehavior"
+      ],
+      "title": "Layouts",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Collection views let you present a set of data in flexible visual arrangements. This sample app shows how to create various types of layouts and manage data in collection views. The sample focuses on two key technologies:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Compositional layout, a type of collection view layout that’s composable, flexible, and fast, letting you build any kind of visual arrangement for your content."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Diffable data source, a specialized type of data source that provides the behavior you need to simply and efficiently manage updates to your collection view’s data and user interface."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Sample Code Project",
+          "anchor": "3694210"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To run the sample code project in Xcode, first choose whether to view the examples in iOS or macOS."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To view examples in iOS:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose the Modern Collection Views target."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Scheme menu, choose an iOS simulator to run the app."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To view examples in macOS:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose the Modern Collection Views Mac target."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Scheme menu, choose My Mac."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Build Settings for the target, under Signing & Capabilities > Signing Certificate, choose Sign to Run Locally."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Run the app, and navigate to the examples from the Example menu."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code examples shown here are from the iOS target, but you can find macOS-equivalent examples in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".swift"
+            },
+            {
+              "type": "text",
+              "text": " files for the macOS target."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Grid Layout",
+          "anchor": "3694211"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Grid example shows how to create a grid layout by using fractional sizing to make a row of five equally sized items. It creates a horizontal group with items that are each 20% of the width of the group by using "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".fractionalWidth(0.2)"
+            },
+            {
+              "type": "text",
+              "text": ". Each row of five items is repeated multiple times in a single section to create a grid."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),",
+            "                                     heightDimension: .fractionalHeight(1.0))",
+            "let item = NSCollectionLayoutItem(layoutSize: itemSize)",
+            "",
+            "let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                      heightDimension: .fractionalWidth(0.2))",
+            "let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,",
+            "                                                 subitems: [item])",
+            "",
+            "let section = NSCollectionLayoutSection(group: group)",
+            "",
+            "let layout = UICollectionViewCompositionalLayout(section: section)",
+            "return layout"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694158",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Spacing Around Items",
+          "anchor": "3694212"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Inset Items Grid example builds on the layout from the Grid example, showing how to add spacing around items by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutitem/3199084-contentinsets"
+            },
+            {
+              "type": "text",
+              "text": " property. Here, this property applies even spacing around the edges of each item."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),",
+            "                                     heightDimension: .fractionalHeight(1.0))",
+            "let item = NSCollectionLayoutItem(layoutSize: itemSize)",
+            "item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694160",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Column Layout",
+          "anchor": "3694213"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Two-Column Grid example shows how to create a two-column layout by making a group with the exact number of items specified in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "count"
+            },
+            {
+              "type": "text",
+              "text": " parameter of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroup/3213854-horizontalgroupwithlayoutsize"
+            },
+            {
+              "type": "text",
+              "text": ". This approach simplifies specifying exactly how many items a group contains. In this case, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "count"
+            },
+            {
+              "type": "text",
+              "text": " parameter takes precedence over "
+            },
+            {
+              "type": "codeVoice",
+              "code": "itemSize"
+            },
+            {
+              "type": "text",
+              "text": ", and item size is computed automatically to fit the specified number of items."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                     heightDimension: .fractionalHeight(1.0))",
+            "let item = NSCollectionLayoutItem(layoutSize: itemSize)",
+            "",
+            "let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                      heightDimension: .absolute(44))",
+            "let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)",
+            "let spacing = CGFloat(10)",
+            "group.interItemSpacing = .fixed(spacing)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694162",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display Distinct Layouts Per Section",
+          "anchor": "3694214"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Distinct Sections example shows how to display different layout arrangements in different sections of the same collection view layout. Creating a layout with different sections requires a compositional layout with a section provider. The code in the section provider accesses the section’s index ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "sectionIndex"
+            },
+            {
+              "type": "text",
+              "text": ") to determine which section it’s configuring, and displays a different layout for each section."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int,",
+            "    layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in",
+            "",
+            "    guard let sectionLayoutKind = SectionLayoutKind(rawValue: sectionIndex) else { return nil }",
+            "    let columns = sectionLayoutKind.columnCount",
+            "",
+            "    // The group auto-calculates the actual item width to make",
+            "    // the requested number of columns fit, so this widthDimension is ignored.",
+            "    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                         heightDimension: .fractionalHeight(1.0))",
+            "    let item = NSCollectionLayoutItem(layoutSize: itemSize)",
+            "    item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)",
+            "",
+            "    let groupHeight = columns == 1 ?",
+            "        NSCollectionLayoutDimension.absolute(44) :",
+            "        NSCollectionLayoutDimension.fractionalWidth(0.2)",
+            "    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                          heightDimension: groupHeight)",
+            "    let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: columns)",
+            "",
+            "    let section = NSCollectionLayoutSection(group: group)",
+            "    section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)",
+            "    return section",
+            "}",
+            "return layout"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694164",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display Distinct Layouts in Different Environments",
+          "anchor": "3694215"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Adaptive Sections example shows how to create a layout that adapts to the environment it’s displayed in. In this example, the number of columns shown changes based on the available screen size. Creating a layout that adapts to a new environment requires a compositional layout with a section provider. The code in the section provider accesses the amount of available space in the current layout environment ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "layoutEnvironment.container.effectiveContentSize"
+            },
+            {
+              "type": "text",
+              "text": "), and displays a different number of columns based on the available width."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let layout = UICollectionViewCompositionalLayout {",
+            "    (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in",
+            "    guard let layoutKind = SectionLayoutKind(rawValue: sectionIndex) else { return nil }",
+            "",
+            "    let columns = layoutKind.columnCount(for: layoutEnvironment.container.effectiveContentSize.width)",
+            "",
+            "    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),",
+            "                                         heightDimension: .fractionalHeight(1.0))",
+            "    let item = NSCollectionLayoutItem(layoutSize: itemSize)",
+            "    item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)",
+            "",
+            "    let groupHeight = layoutKind == .list ?",
+            "        NSCollectionLayoutDimension.absolute(44) : NSCollectionLayoutDimension.fractionalWidth(0.2)",
+            "    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                           heightDimension: groupHeight)",
+            "    let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: columns)",
+            "",
+            "    let section = NSCollectionLayoutSection(group: group)",
+            "    section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)",
+            "    return section",
+            "}",
+            "return layout"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694166",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Badges to Items",
+          "anchor": "3694216"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Item Badges example shows how to add supplementary views like badges to the items in a collection view. It creates and adds a badge to the top trailing corner of each item by creating a supplementary item for the badge, and passing in that supplementary item when creating the item itself. The data source configures each badge in its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3255142-supplementaryviewprovider"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let badgeAnchor = NSCollectionLayoutAnchor(edges: [.top, .trailing], fractionalOffset: CGPoint(x: 0.3, y: -0.3))",
+            "let badgeSize = NSCollectionLayoutSize(widthDimension: .absolute(20),",
+            "                                      heightDimension: .absolute(20))",
+            "let badge = NSCollectionLayoutSupplementaryItem(",
+            "    layoutSize: badgeSize,",
+            "    elementKind: ItemBadgeSupplementaryViewController.badgeElementKind,",
+            "    containerAnchor: badgeAnchor)",
+            "",
+            "let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.25),",
+            "                                     heightDimension: .fractionalHeight(1.0))",
+            "let item = NSCollectionLayoutItem(layoutSize: itemSize, supplementaryItems: [badge])",
+            "item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694168",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Headers and Footers to Sections",
+          "anchor": "3694217"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Section Headers/Footers example shows how to add headers and footers to each section of the collection view. It creates boundary supplementary items to represent the header and the footer, and sets them as the section’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199089-boundarysupplementaryitems"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                             heightDimension: .estimated(44))",
+            "let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(",
+            "    layoutSize: headerFooterSize,",
+            "    elementKind: SectionHeadersFootersViewController.sectionHeaderElementKind, alignment: .top)",
+            "let sectionFooter = NSCollectionLayoutBoundarySupplementaryItem(",
+            "    layoutSize: headerFooterSize,",
+            "    elementKind: SectionHeadersFootersViewController.sectionFooterElementKind, alignment: .bottom)",
+            "section.boundarySupplementaryItems = [sectionHeader, sectionFooter]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694170",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example uses supplementary registrations for the header and footer to configure their content and appearance."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let headerRegistration = UICollectionView.SupplementaryRegistration",
+            "<TitleSupplementaryView>(elementKind: \"Header\") {",
+            "    (supplementaryView, string, indexPath) in",
+            "    supplementaryView.label.text = \"\\(string) for section \\(indexPath.section)\"",
+            "    supplementaryView.backgroundColor = .lightGray",
+            "    supplementaryView.layer.borderColor = UIColor.black.cgColor",
+            "    supplementaryView.layer.borderWidth = 1.0",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694171",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The collection view uses these supplementary registrations to dequeue the configured headers and footers in the diffable data source’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3255142-supplementaryviewprovider"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "dataSource.supplementaryViewProvider = { (view, kind, index) in",
+            "    return self.collectionView.dequeueConfiguredReusableSupplementary(",
+            "        using: kind == SectionHeadersFootersViewController.sectionHeaderElementKind ? headerRegistration : footerRegistration, for: index)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694172",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Pin Section Headers to Sections",
+          "anchor": "3694218"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Pinned Section Headers example shows how to pin a section header to its section. This way, the header shows while any portion of the section it’s attached to is visible during scrolling, and the footer stays in place. This example sets the header’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199044-pintovisiblebounds"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": " and increases its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem/3199114-zindex"
+            },
+            {
+              "type": "text",
+              "text": " to a value greater than "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": " so the header appears on top of the section during scrolling."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(",
+            "    layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                      heightDimension: .estimated(44)),",
+            "    elementKind: PinnedSectionHeaderFooterViewController.sectionHeaderElementKind,",
+            "    alignment: .top)",
+            "let sectionFooter = NSCollectionLayoutBoundarySupplementaryItem(",
+            "    layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                      heightDimension: .estimated(44)),",
+            "    elementKind: PinnedSectionHeaderFooterViewController.sectionFooterElementKind,",
+            "    alignment: .bottom)",
+            "sectionHeader.pinToVisibleBounds = true",
+            "sectionHeader.zIndex = 2",
+            "section.boundarySupplementaryItems = [sectionHeader, sectionFooter]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694174",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example uses supplementary registrations for the header and footer to configure their content and appearance. The collection view uses these supplementary registrations to dequeue the configured headers and footers in the diffable data source’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3255142-supplementaryviewprovider"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "dataSource.supplementaryViewProvider = { (view, kind, index) in",
+            "    return self.collectionView.dequeueConfiguredReusableSupplementary(",
+            "        using: kind == PinnedSectionHeaderFooterViewController.sectionHeaderElementKind ? headerRegistration : footerRegistration, for: index)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694175",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Decorate Sections with Backgrounds",
+          "anchor": "3694219"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Section Background Decoration example shows how to distinguish sections by adding section backgrounds. It creates a section background by making a decoration item using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem/3199051-backgrounddecorationitemwithelem"
+            },
+            {
+              "type": "text",
+              "text": ". It then sets that decoration item as the section’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199091-decorationitems"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let sectionBackgroundDecoration = NSCollectionLayoutDecorationItem.background(",
+            "    elementKind: SectionDecorationViewController.sectionBackgroundDecorationElementKind)",
+            "sectionBackgroundDecoration.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)",
+            "section.decorationItems = [sectionBackgroundDecoration]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694177",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code then registers the background view with the layout by using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617739-registerclass"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let layout = UICollectionViewCompositionalLayout(section: section)",
+            "layout.register(",
+            "    SectionBackgroundDecorationView.self,",
+            "    forDecorationViewOfKind: SectionDecorationViewController.sectionBackgroundDecorationElementKind)",
+            "return layout"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694178",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create Custom Layouts by Nesting Groups",
+          "anchor": "3694220"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Nested Groups example shows how to create flexible layout arrangements by nesting groups inside of other groups. It creates a vertical group with two items, and combines the vertical group with an item in a horizontal parent group."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let leadingItem = NSCollectionLayoutItem(",
+            "    layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7),",
+            "                                      heightDimension: .fractionalHeight(1.0)))",
+            "leadingItem.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)",
+            "",
+            "let trailingItem = NSCollectionLayoutItem(",
+            "    layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                      heightDimension: .fractionalHeight(0.3)))",
+            "trailingItem.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)",
+            "let trailingGroup = NSCollectionLayoutGroup.vertical(",
+            "    layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3),",
+            "                                      heightDimension: .fractionalHeight(1.0)),",
+            "    subitem: trailingItem, count: 2)",
+            "",
+            "let nestedGroup = NSCollectionLayoutGroup.horizontal(",
+            "    layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),",
+            "                                      heightDimension: .fractionalHeight(0.4)),",
+            "    subitems: [leadingItem, trailingGroup])"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694180",
+            "title": "Listing 14"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Scroll Sections Horizontally",
+          "anchor": "3694221"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Orthogonal Sections example shows how to create a section that scrolls horizontally in an otherwise vertically scrolling layout. Setting a section’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199094-orthogonalscrollingbehavior"
+            },
+            {
+              "type": "text",
+              "text": " property to a value other than "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior/uicollectionlayoutsectionorthogonalscrollingbehaviornone"
+            },
+            {
+              "type": "text",
+              "text": " causes the section to lay out its contents perpendicular to the main layout axis. In this case, because the layout scrolls vertically by default, the section scrolls horizontally."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "section.orthogonalScrollingBehavior = .continuous"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694182",
+            "title": "Listing 15"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Choose Horizontal Scrolling and Paging Behavior",
+          "anchor": "3694222"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Orthogonal Section Behaviors example shows each of the options for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior"
+            },
+            {
+              "type": "text",
+              "text": ". Each section of the layout demonstrates a different orthogonal scrolling behavior, showcasing the differences between the scrolling and paging options. In this case, because the layout scrolls vertically by default, the sections themselves scroll horizontally."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "case continuous, continuousGroupLeadingBoundary, paging, groupPaging, groupPagingCentered, none",
+            "func orthogonalScrollingBehavior() -> UICollectionLayoutSectionOrthogonalScrollingBehavior {",
+            "    switch self {",
+            "    case .none:",
+            "        return UICollectionLayoutSectionOrthogonalScrollingBehavior.none",
+            "    case .continuous:",
+            "        return UICollectionLayoutSectionOrthogonalScrollingBehavior.continuous",
+            "    case .continuousGroupLeadingBoundary:",
+            "        return UICollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary",
+            "    case .paging:",
+            "        return UICollectionLayoutSectionOrthogonalScrollingBehavior.paging",
+            "    case .groupPaging:",
+            "        return UICollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging",
+            "    case .groupPagingCentered:",
+            "        return UICollectionLayoutSectionOrthogonalScrollingBehavior.groupPagingCentered",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694184",
+            "title": "Listing 16"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Data in a Collection View",
+          "anchor": "3694223"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Mountains Search example shows how to update the data and the user interface in a collection view when a user filters the data. It shows a list of mountain names, and allows the user to type text into a search bar to filter based on the mountain names."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This collection view, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "mountainsCollectionView"
+            },
+            {
+              "type": "text",
+              "text": ", contains a single section with items created from a list of raw data about each mountain. This example encapsulates each piece of that data in a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Mountain"
+            },
+            {
+              "type": "text",
+              "text": " structure, defined in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MountainsController"
+            },
+            {
+              "type": "text",
+              "text": ". To manage the data, this example uses a diffable data source that contains a single section and items of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Mountain"
+            },
+            {
+              "type": "text",
+              "text": ". When that diffable data source is created, it connects to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "mountainsCollectionView"
+            },
+            {
+              "type": "text",
+              "text": ". To dequeue cells for display in the collection view, the diffable data source uses a cell registration. The cell registration configures cells of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "LabelCell"
+            },
+            {
+              "type": "text",
+              "text": " to display the name of a mountain."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "dataSource = UICollectionViewDiffableDataSource<Section, MountainsController.Mountain>(collectionView: mountainsCollectionView) {",
+            "    (collectionView: UICollectionView, indexPath: IndexPath, identifier: MountainsController.Mountain) -> UICollectionViewCell? in",
+            "    // Return the cell.",
+            "    return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694186",
+            "title": "Listing 17"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "performQuery(with:)"
+            },
+            {
+              "type": "text",
+              "text": " method updates the data and the user interface. The method takes the currently typed filter text and generates a list of mountains that contain that text in their names. Then, it constructs a representation of the newly filtered data using a snapshot. The snapshot contains the same single section as before, but now, instead of containing items representing every mountain, it only contains the filtered mountains."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The method then calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3375795-apply"
+            },
+            {
+              "type": "text",
+              "text": ", applying the data from the snapshot to the diffable data source. The diffable data source stores the data from the snapshot as the new state of data, calculates the difference between the previous state and the new state, and triggers the user interface to display the new state."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func performQuery(with filter: String?) {",
+            "    let mountains = mountainsController.filteredMountains(with: filter).sorted { $0.name < $1.name }",
+            "",
+            "    var snapshot = NSDiffableDataSourceSnapshot<Section, MountainsController.Mountain>()",
+            "    snapshot.appendSections([.main])",
+            "    snapshot.appendItems(mountains)",
+            "    dataSource.apply(snapshot, animatingDifferences: true)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694187",
+            "title": "Listing 18"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Data in Multiple Sections",
+          "anchor": "3694224"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Settings: Wi-Fi example shows how to update the data and the user interface in a table view that uses multiple kinds of sections and items. It recreates the Wi-Fi page in iOS Settings, letting the user toggle the Wi-Fi switch on and off to view the available and current Wi-Fi networks."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "updateUI(animated:)"
+            },
+            {
+              "type": "text",
+              "text": " method determines which sections and items to display based on whether Wi-Fi is enabled. If Wi-Fi is disabled, the method adds only the "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".config"
+            },
+            {
+              "type": "text",
+              "text": " section and its items to the snapshot. If Wi-Fi is enabled, the method adds the "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".networks"
+            },
+            {
+              "type": "text",
+              "text": " section and its items as well."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let configItems = configurationItems.filter { !($0.type == .currentNetwork && !controller.wifiEnabled) }",
+            "",
+            "currentSnapshot = NSDiffableDataSourceSnapshot<Section, Item>()",
+            "",
+            "currentSnapshot.appendSections([.config])",
+            "currentSnapshot.appendItems(configItems, toSection: .config)",
+            "",
+            "if controller.wifiEnabled {",
+            "    let sortedNetworks = controller.availableNetworks.sorted { $0.name < $1.name }",
+            "    let networkItems = sortedNetworks.map { Item(network: $0) }",
+            "    currentSnapshot.appendSections([.networks])",
+            "    currentSnapshot.appendItems(networkItems, toSection: .networks)",
+            "}",
+            "",
+            "self.dataSource.apply(currentSnapshot, animatingDifferences: animated)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694189",
+            "title": "Listing 19"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Data Incrementally",
+          "anchor": "3694225"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Insertion Sort Visualization example shows how to update data incrementally, displaying the visible progress as the data changes from an initial state to a final state. It shows rows of color swatches, originally in a random order, that it then iteratively sorts into spectral order."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The key difference between this example and the other diffable data source examples is that this example doesn’t create an empty snapshot to update the state of the data. Instead, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "performSortStep()"
+            },
+            {
+              "type": "text",
+              "text": " method retrieves the current state of the collection view’s data by using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dataSource.snapshot()"
+            },
+            {
+              "type": "text",
+              "text": ". Then, it modifies only one part of that snapshot to perform the visual sorting step by step."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Get the current state of the UI from the data source.",
+            "var updatedSnapshot = dataSource.snapshot()",
+            "",
+            "// For each section, if needed, step through and perform the next sorting step.",
+            "updatedSnapshot.sectionIdentifiers.forEach {",
+            "    let section = $0",
+            "    if !section.isSorted {",
+            "",
+            "        // Step the sort algorithm.",
+            "        section.sortNext()",
+            "        let items = section.values",
+            "",
+            "        // Replace the items for this section with the newly sorted items.",
+            "        updatedSnapshot.deleteItems(items)",
+            "        updatedSnapshot.appendItems(items, toSection: section)",
+            "",
+            "        sectionCountNeedingSort += 1",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694191",
+            "title": "Listing 20"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Simple List Layout",
+          "anchor": "3694226"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Simple List example shows how to create a basic list layout that adapts to any screen size. It creates a configuration with one of the system-defined list appearances. Then, it creates a list layout by passing the configuration to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayout/3600951-list"
+            },
+            {
+              "type": "text",
+              "text": ". This approach generates a compositional layout with a single section styled as a list."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)",
+            "return UICollectionViewCompositionalLayout.list(using: config)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694193",
+            "title": "Listing 21"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Choose a List Appearance",
+          "anchor": "3694227"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The List Appearances example shows each of the options for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance"
+            },
+            {
+              "type": "text",
+              "text": ". Tapping the name of the appearance in the navigation bar changes the list to another appearance, showcasing each of the list styles. Each list uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/headermode/firstiteminsection"
+            },
+            {
+              "type": "text",
+              "text": " header mode, which makes each section of the list expandable and collapsible."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var config = UICollectionLayoutListConfiguration(appearance: self.appearance)",
+            "config.headerMode = .firstItemInSection"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694195",
+            "title": "Listing 22"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Customize List Cells",
+          "anchor": "3694228"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The List with Custom Cells example shows how to configure a custom list cell subclass. The example focuses on "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CustomListCell"
+            },
+            {
+              "type": "text",
+              "text": ", a custom subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlistcell"
+            },
+            {
+              "type": "text",
+              "text": " that combines several kinds of subviews into one cell. It sets the appearance and content of these views using content configurations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "updateConfiguration(using:)"
+            },
+            {
+              "type": "text",
+              "text": " method sets up the cell’s initial appearance and content. The system calls this method every time the cell’s configuration state changes to update the cell’s appearance for that new state. To configure the list content view, it fetches the default list content configuration for the current state."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var content = defaultListContentConfiguration().updated(for: state)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694197",
+            "title": "Listing 23"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Then, it customizes the configuration’s values and assigns that configuration to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uilistcontentview/3600552-configuration"
+            },
+            {
+              "type": "text",
+              "text": " property of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "listContentView"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For the image view and label, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "updateConfiguration(using:)"
+            },
+            {
+              "type": "text",
+              "text": " method fetches a default value cell configuration for the current state and stores it in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "valueConfiguration"
+            },
+            {
+              "type": "text",
+              "text": ". It copies the preconfigured default styling and metrics from this configuration into the custom views to ensure consistency with the system styles."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "categoryIconView.tintColor = valueConfiguration.imageProperties.resolvedTintColor(for: tintColor)",
+            "categoryIconView.preferredSymbolConfiguration = .init(font: valueConfiguration.secondaryTextProperties.font, scale: .small)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694198",
+            "title": "Listing 24"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To register the custom cell subclass with the collection view, this example uses a cell registration. The cell registration configures each cell with the data from its corresponding item. It also adds a disclosure indicator cell accessory to the cell."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let cellRegistration = UICollectionView.CellRegistration<CustomListCell, Item> { (cell, indexPath, item) in",
+            "    cell.updateWithItem(item)",
+            "    cell.accessories = [.disclosureIndicator()]",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694199",
+            "title": "Listing 25"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The diffable data source uses that cell registration when it dequeues the cell."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: item)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694200",
+            "title": "Listing 26"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Build a Layout with Multiple Section Types",
+          "anchor": "3694229"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Emoji Explorer example shows how to create a compositional layout with multiple types of sections. The example contains an orthogonally scrolling section, an outline section, and a list section in one compositional layout. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "createLayout()"
+            },
+            {
+              "type": "text",
+              "text": " method defines a section provider to supply each section."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For the top section, it enables horizontal scrolling by setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection/3199094-orthogonalscrollingbehavior"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694202",
+            "title": "Listing 27"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The outline section uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/sidebar"
+            },
+            {
+              "type": "text",
+              "text": " list appearance. It’s populated using a section snapshot to create a hierarchical data structure."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let rootItem = Item(title: String(describing: category), hasChildren: true)",
+            "outlineSnapshot.append([rootItem])",
+            "let outlineItems = category.emojis.map { Item(emoji: $0) }",
+            "outlineSnapshot.append(outlineItems, to: rootItem)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694203",
+            "title": "Listing 28"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The list section uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/appearance/insetgrouped"
+            },
+            {
+              "type": "text",
+              "text": " list appearance. The configuration for this section adds a swipe action to each cell that lets the cell be marked as Favorite."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "configuration.leadingSwipeActionsConfigurationProvider = { [weak self] (indexPath) in",
+            "    guard let self = self else { return nil }",
+            "    guard let item = self.dataSource.itemIdentifier(for: indexPath) else { return nil }",
+            "    return self.leadingSwipeActionConfigurationForListCellItem(item)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694204",
+            "title": "Listing 29"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each section has a corresponding cell registration to configure its own type of cell. The collection view uses those registrations to dequeue the configured cells to display in each section."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "switch section {",
+            "case .recents:",
+            "    return collectionView.dequeueConfiguredReusableCell(using: self.configuredGridCell(), for: indexPath, item: item.emoji)",
+            "case .list:",
+            "    return collectionView.dequeueConfiguredReusableCell(using: self.configuredListCell(), for: indexPath, item: item)",
+            "case .outline:",
+            "    if item.hasChildren {",
+            "        return collectionView.dequeueConfiguredReusableCell(using: self.configuredOutlineHeaderCell(), for: indexPath, item: item.title!)",
+            "    } else {",
+            "        return collectionView.dequeueConfiguredReusableCell(using: self.configuredOutlineCell(), for: indexPath, item: item.emoji)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694205",
+            "title": "Listing 30"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Value Cell List",
+          "anchor": "3694230"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Emoji Explorer - List example shows how to create a list with cells that use the value cell style. It applies a content configuration with the default value cell style to each of the cells in the list."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var contentConfiguration = UIListContentConfiguration.valueCell()",
+            "contentConfiguration.text = emoji.text",
+            "contentConfiguration.secondaryText = String(describing: emoji.category)",
+            "cell.contentConfiguration = contentConfiguration"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694207",
+            "title": "Listing 31"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

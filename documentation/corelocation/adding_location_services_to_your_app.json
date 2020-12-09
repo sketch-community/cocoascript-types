@@ -1,0 +1,766 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Implement features that can access information about a user’s location."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corelocation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3384897,
+  "kind": "article",
+  "metadata": {
+    "title": "Adding Location Services to Your App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Location"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/adding_location_services_to_your_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/adding_location_services_to_your_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corelocation": {
+      "title": "Core Location",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation",
+      "url": "/documentation/corelocation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager": {
+      "title": "CLLocationManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object that you use to start and stop the delivery of location-related events to your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app#3384904": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app#3384904",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/corelocation/adding_location_services_to_your_app#3384904",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for determining if devices support Core Location services"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services": {
+      "title": "Requiring the Presence of Specific Location Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Declare the location services that your app requires."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423677-significantlocationchangemonitor": {
+      "title": "significantLocationChangeMonitoringAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423677-significantlocationchangemonitor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1423677-significantlocationchangemonitor",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "significantLocationChangeMonitoringAvailable"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423654-ismonitoringavailableforclass": {
+      "title": "isMonitoringAvailableForClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423654-ismonitoringavailableforclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1423654-ismonitoringavailableforclass",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "isMonitoringAvailableForClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423502-headingavailable": {
+      "title": "headingAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423502-headingavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1423502-headingavailable",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "headingAvailable"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620549-israngingavailable": {
+      "title": "isRangingAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620549-israngingavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1620549-israngingavailable",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "isRangingAvailable"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423792-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423792-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1423792-delegate"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate": {
+      "title": "CLLocationManagerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanagerdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The methods that you use to receive events from an associated location manager object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423720-locationmanager": {
+      "title": "locationManager:monitoringDidFailForRegion:withError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423720-locationmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanagerdelegate/1423720-locationmanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationManager:monitoringDidFailForRegion:withError:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request": {
+      "title": "Choosing the  Location Services Authorization to Request",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/choosing_the_location_services_authorization_to_request"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager": {
+      "title": "locationManager:didChangeAuthorizationStatus:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationManager:didChangeAuthorizationStatus:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app": {
+      "title": "Adding Location Services to Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/adding_location_services_to_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement features that can access information about a user’s location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Optional Setup",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add location services to your app, you use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": ", implement its delegate, and decide the authorization mode your app requires. When your app runs, it should check if the device supports location services, configure and start the desired location services, and request authorization to receive the user’s location. Once authorized, your app receives location events for the Core Location services it requests."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Determine If the User's Device Supports Location Services",
+          "anchor": "3384898"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Location services require hardware that may not be present on every device. Before relying on any specific location service, check if the device supports the service by calling the methods of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": " object listed in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app#3384904"
+            },
+            {
+              "type": "text",
+              "text": ". If a method returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "false"
+            },
+            {
+              "type": "text",
+              "text": ", the device does not support that particular service."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Method"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423677-significantlocationchangemonitor"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Indicates whether the device supports getting a user's location with the significant-change location service."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423654-ismonitoringavailableforclass"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Indicates whether the device supports region monitoring to detect entry into or exit from geographic regions or beacon regions."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423502-headingavailable"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Indicates whether the device is able to provide compass-related headings."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620549-israngingavailable"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Indicates the device supports obtaining the relative distance to a nearby iBeacon device."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3384904",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Methods for determining if devices support Core Location services"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If your app can't function on a device that lacks a specific hardware-dependent capability, indicate the requirement of that service in your app's "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": ". For more information, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corelocation/adding_location_services_to_your_app/requiring_the_presence_of_specific_location_services"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Location Manager and Delegate",
+          "anchor": "3384899"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create an instance of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": " class and store a strong reference to it somewhere in your app. You must keep a strong reference to the location manager object until all tasks involving that object complete. Because most location manager tasks run asynchronously, storing your location manager in a local variable is insufficient."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Assign a custom object to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423792-delegate"
+            },
+            {
+              "type": "text",
+              "text": " property, conforming to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol. Assign the delegate before starting any location services. The system calls your delegate object’s methods from the thread in which you started the corresponding location services. That thread must itself have an active run loop, like the one found in your app's main thread."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Errors in the Delegate Methods",
+          "anchor": "3385277"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Implement the failure-related methods in the delegate to fail gracefully when location services are not available on a device. If you try to start an unavailable service, the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": " object calls one of the failure-related methods of its delegate. For example, if region monitoring is unavailable, the object calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423720-locationmanager"
+            },
+            {
+              "type": "text",
+              "text": " method. You may want to update the UI in your app when specific location services are not available.  "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ask for Authorization and Handle Changes",
+          "anchor": "3384900"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Determine the authorization status your app needs. Ask for authorization to use location services when your users access location related functionality in your app. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/choosing_the_location_services_authorization_to_request"
+            },
+            {
+              "type": "text",
+              "text": " for more information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Implement your delegate’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager"
+            },
+            {
+              "type": "text",
+              "text": ", which the system calls as soon as your app creates the location manager, and any time your app’s authorization status changes. Use this method to respond to changes in your app’s authorization status and perform the appropriate actions for each state. For example, you may want to turn on or off your app’s location features as appropriate when authorization changes. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Start Location Services and Receive Events",
+          "anchor": "3384902"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You must set the delegate object before you use other methods on your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": " instance. Next, you must:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Call the appropriate method in "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to start the delivery of events."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Receive location and heading related updates in the associated delegate object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Call the appropriate method in "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to stop the service when your app no longer needs to receive the location events."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For the services you use, configure any properties associated with that service accurately. Core Location manages power aggressively by turning off hardware when it’s not needed. For example, setting the desired accuracy for location events to one kilometer gives the location manager the flexibility to turn off GPS hardware and rely solely on the WiFi or cell radios, which can lead to significant power savings."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

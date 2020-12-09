@@ -1,0 +1,991 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The methods adopted by the object you use to manage data and provide cells for a table view."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+        "doc://com.apple.documentation/documentation/uikit/uitableview"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1614899,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UITableViewDataSource",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(pl)UITableViewDataSource",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitableviewdatasource"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitableviewdatasource"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "url": "/documentation/uikit/uitableview",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsindexpath/1614853-row": {
+      "title": "row",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath/1614853-row",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsindexpath/1614853-row"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsindexpath/1528298-section": {
+      "title": "section",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath/1528298-section",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsindexpath/1528298-section"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsindexpath": {
+      "title": "NSIndexPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsindexpath"
+    },
+    "link-media-3148902": {
+      "identifier": "link-media-3148902",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/uitableviewdatasource#3148902"
+    },
+    "media-3148902": {
+      "identifier": "media-3148902",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 553,
+            "height": 511
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b5328b73ab/6a7079f0-d760-4d26-98b5-77788078d9cd.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 553,
+            "height": 511
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ea4b57d860/95595fc6-198c-415e-82b7-6af8b9edc396.png"
+        }
+      ],
+      "alt": "Illustration that shows a table with multiple sections. The first section has an index of 0 and no row value. The nine rows in the first section have indexes between 0 and 8. The second section has an index of 1 and no row value. Its first row starts at index 0 again.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource": {
+      "title": "UITableViewDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The methods adopted by the object you use to manage data and provide cells for a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource#3081119": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource#3081119",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uitableviewdatasource#3081119"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614871-tableview": {
+      "title": "tableView:commitEditingStyle:forRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614871-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614871-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source to commit the insertion or deletion of a specified row in the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:commitEditingStyle:forRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data": {
+      "title": "Filling a Table with Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller": {
+      "title": "UITableViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource": {
+      "title": "UITableViewDiffableDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdiffabledatasource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object you use to manage data and provide cells for a table view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614931-tableview": {
+      "title": "tableView:numberOfRowsInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614931-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614931-tableview",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the data source to return the number of rows in a given section of a table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:numberOfRowsInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614860-numberofsectionsintableview": {
+      "title": "numberOfSectionsInTableView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614860-numberofsectionsintableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614860-numberofsectionsintableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source to return the number of sections in the table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberOfSectionsInTableView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview": {
+      "title": "tableView:cellForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614861-tableview",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source for a cell to insert in a particular location of the table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:cellForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614850-tableview": {
+      "title": "tableView:titleForHeaderInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614850-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614850-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source for the title of the header of the specified section of the table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:titleForHeaderInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614994-tableview": {
+      "title": "tableView:titleForFooterInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614994-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614994-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source for the title of the footer of the specified section of the table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:titleForFooterInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614900-tableview": {
+      "title": "tableView:canEditRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614900-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614900-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source to verify that the given row is editable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:canEditRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614927-tableview": {
+      "title": "tableView:canMoveRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614927-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614927-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source whether a given row can be moved to another location in the table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:canMoveRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614867-tableview": {
+      "title": "tableView:moveRowAtIndexPath:toIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614867-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614867-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the data source to move a row at a specific location in the table view to another location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:moveRowAtIndexPath:toIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614857-sectionindextitlesfortableview": {
+      "title": "sectionIndexTitlesForTableView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614857-sectionindextitlesfortableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614857-sectionindextitlesfortableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source to return the titles for the sections of a table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sectionIndexTitlesForTableView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614933-tableview": {
+      "title": "tableView:sectionForSectionIndexTitle:atIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614933-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614933-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the data source to return the index of the section having the given title and section title index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:sectionForSectionIndexTitle:atIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching": {
+      "title": "UITableViewDataSourcePrefetching",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasourceprefetching",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot": {
+      "title": "NSDiffableDataSourceSnapshot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdiffabledatasourcesnapshot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of the state of the data in a view at a specific point in time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation": {
+      "title": "UILocalizedIndexedCollation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilocalizedindexedcollation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that organizes, sorts, and localizes the data for a table view that has a section index. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating": {
+      "title": "UIDataSourceTranslating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidatasourcetranslating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An advanced interface for managing a data source object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol": {
+      "title": "UIRefreshControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uirefreshcontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A standard control that can initiate the refreshing of a scroll view’s contents. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforming Types",
+      "type": "conformingTypes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Providing the Number of Rows and Sections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614931-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614860-numberofsectionsintableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing Cells, Headers, and Footers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614850-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614994-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inserting or Deleting Table Rows",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614871-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614900-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reordering Table Rows",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614927-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614867-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring an Index",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614857-sectionindextitlesfortableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614933-tableview"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdatasourceprefetching",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource",
+        "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot",
+        "doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation",
+        "doc://com.apple.documentation/documentation/uikit/uidatasourcetranslating",
+        "doc://com.apple.documentation/documentation/uikit/uirefreshcontrol"
+      ],
+      "title": "Data",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UITableViewDataSource"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Table views manage only the presentation of their data; they do not manage the data itself. To manage the data, you provide the table with a data source object—that is, an object that implements the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource"
+            },
+            {
+              "type": "text",
+              "text": " protocol. A data source object responds to data-related requests from the table. It also manages the table's data directly, or coordinates with other parts of your app to manage that data. Other responsibilities of the data source object include:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Reporting the number of sections and rows in the table."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Providing cells for each row of the table."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Providing titles for section headers and footers."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configuring the table's index, if any."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Responding to user- or table-initiated updates that require changes to the underlying data."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Only two methods of this protocol are required, and they are shown in the following example code."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Return the number of rows for the table.     ",
+            "override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {",
+            "   return 0",
+            "}",
+            "",
+            "// Provide a cell object for each row.",
+            "override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {",
+            "   // Fetch a cell of the appropriate type.",
+            "   let cell = tableView.dequeueReusableCell(withIdentifier: \"cellTypeIdentifier\", for: indexPath)",
+            "   ",
+            "   // Configure the cell’s contents.",
+            "   cell.textLabel!.text = \"Cell text\"",
+            "       ",
+            "   return cell",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3081119",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use other methods of this protocol to enable specific features for your table. For example, you must implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614871-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method to enable the swipe-to-delete feature for rows. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about how to create and configure your table's cells using your data source object, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specifying the Location of Rows and Sections",
+          "anchor": "3081118"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Table views communicate the location of cells to you using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath/1614853-row"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath/1528298-section"
+            },
+            {
+              "type": "text",
+              "text": " properties of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath"
+            },
+            {
+              "type": "text",
+              "text": " objects. Row and section indexes are zero based, so the first section is at index "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": ", the second at index "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": ", and so on. Similarly, the first row of each section is at index "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": ", which means you need both the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath/1528298-section"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath/1614853-row"
+            },
+            {
+              "type": "text",
+              "text": " values to identify a row uniquely. If your table has no sections, you need only the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath/1614853-row"
+            },
+            {
+              "type": "text",
+              "text": " value. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3148902",
+              "metadata": {
+                "anchor": "3148902",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

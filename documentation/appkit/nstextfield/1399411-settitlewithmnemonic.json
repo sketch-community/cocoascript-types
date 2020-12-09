@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Sets the receiver’s string value, using the embedded character as the keyboard mnemonic."
+      "text": "Sets the text field’s string value using the embedded character as the keyboard mnemonic."
     }
   ],
   "documentVersion": 0,
@@ -95,7 +95,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text that the user can select or edit and that sends its action message to its target when the user presses the Return key."
+          "text": "Text the user can select or edit to send an action message to a target when the user presses the Return key."
         }
       ]
     },
@@ -115,6 +115,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/appkit/nscell/1525561-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nscell/1525561-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nscell/1525561-title"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -122,6 +130,20 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstextfield/2539553-allowscharacterpickertouchbarite": {
+      "title": "allowsCharacterPickerTouchBarItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstextfield/2539553-allowscharacterpickertouchbarite",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstextfield/2539553-allowscharacterpickertouchbarite",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that controls whether the Touch Bar displays the character picker item for rich text fields."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nstextfield/1399411-settitlewithmnemonic": {
       "title": "setTitleWithMnemonic:",
@@ -133,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the receiver’s string value, using the embedded character as the keyboard mnemonic."
+          "text": "Sets the text field’s string value using the embedded character as the keyboard mnemonic."
         }
       ],
       "fragments": [
@@ -156,6 +178,35 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nscell/1525561-title"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstextfield/2539553-allowscharacterpickertouchbarite"
+      ],
+      "title": "Using Keyboard Interface Control",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -228,29 +279,9 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The string to set as the title. The first character preceded by an ampersand (‘&’) is used as the mnemonic (the first ampersand character is stripped out)."
+                  "text": "The string to set as the title. The system uses the first character that has an ampersand (&) preceding it as the mnemonic, and strips out the ampersand."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Mnemonics are not supported in macOS."
             }
           ]
         }

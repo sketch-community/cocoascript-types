@@ -1,0 +1,235 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Extended dynamic range (EDR) metadata for the Hybrid Log-Gamma (HLG) transfer function."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/quartzcore",
+        "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata/3194384-hlgmetadata",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3194384,
+  "kind": "symbol",
+  "metadata": {
+    "title": "HLGMetadata",
+    "role": "symbol",
+    "roleHeading": "Type Property",
+    "modules": [
+      {
+        "name": "Core Animation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.15",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)CAEDRMetadata(cpy)HLGMetadata",
+    "symbolKind": "cldata"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartzcore/caedrmetadata/3194384-hlgmetadata"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/quartzcore/caedrmetadata/3194384-hlg"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/quartzcore": {
+      "title": "Core Animation",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore",
+      "url": "/documentation/quartzcore",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata": {
+      "title": "CAEDRMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caedrmetadata"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cametallayer": {
+      "title": "CAMetalLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cametallayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cametallayer"
+    },
+    "link-3219798": {
+      "title": "https://www.itu.int/rec/R-REC-BT.2100",
+      "type": "topic",
+      "identifier": "link-3219798",
+      "kind": "article",
+      "role": "link",
+      "url": "https://www.itu.int/rec/R-REC-BT.2100"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata/3194384-hlgmetadata": {
+      "title": "HLGMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata/3194384-hlgmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caedrmetadata/3194384-hlgmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extended dynamic range (EDR) metadata for the Hybrid Log-Gamma (HLG) transfer function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@property"
+            },
+            {
+              "kind": "text",
+              "text": "(class, readonly, retain) "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)CAEDRMetadata",
+              "identifier": "doc://com.apple.documentation/documentation/quartzcore/caedrmetadata",
+              "text": "CAEDRMetadata"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "identifier",
+              "text": "HLGMetadata"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your content should be scene referred and encoded with the ITU-R BT.2100-2 Hybrid Log Gamma (HLG) opto-electrical transfer function (OETF). The system applies the opto-optical transfer function (OOTF) based on peak display brightness and ambient lighting. If you're rendering to a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/quartzcore/cametallayer"
+            },
+            {
+              "type": "text",
+              "text": " with a linear colorspace (for floating point EDR layers), you must apply the HLG inverse OETF without normalization, to provide a nominal range of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[0, 12]"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information on HLG, see "
+            },
+            {
+              "type": "link",
+              "title": "https://www.itu.int/rec/R-REC-BT.2100",
+              "destination": "https://www.itu.int/rec/R-REC-BT.2100"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

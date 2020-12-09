@@ -1,0 +1,711 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Trace the movement of fingers around the screen, and apply that movement to your content."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2865379,
+  "kind": "article",
+  "metadata": {
+    "title": "Handling Pan Gestures",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures": {
+      "title": "Handling UIKit Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer": {
+      "title": "UIPanGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipangesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer": {
+      "title": "UIScreenEdgePanGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscreenedgepangesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer": {
+      "title": "addGestureRecognizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622496-addgesturerecognizer",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addGestureRecognizer:"
+        }
+      ]
+    },
+    "link-media-3004404": {
+      "identifier": "link-media-3004404",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures#3004404"
+    },
+    "media-3004404": {
+      "identifier": "media-3004404",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 191,
+            "height": 314
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7c21d852b9/92edf0c4-8d94-469b-b81d-c00a20e74f5e.png"
+        }
+      ],
+      "alt": "A diagram demonstrating a single-finger pan gesture",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatebegan": {
+      "title": "UIGestureRecognizerStateBegan",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatebegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatebegan"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatechanged": {
+      "title": "UIGestureRecognizerStateChanged",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatechanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatechanged"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstateended": {
+      "title": "UIGestureRecognizerStateEnded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstateended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstateended"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621207-translationinview": {
+      "title": "translationInView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621207-translationinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipangesturerecognizer/1621207-translationinview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "translationInView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures#2880035": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures#2880035",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures#2880035",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dragging a view around the screen"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622577-userinteractionenabled": {
+      "title": "userInteractionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622577-userinteractionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622577-userinteractionenabled"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621210-minimumnumberoftouches": {
+      "title": "minimumNumberOfTouches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621210-minimumnumberoftouches",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipangesturerecognizer/1621210-minimumnumberoftouches"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621208-maximumnumberoftouches": {
+      "title": "maximumNumberOfTouches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621208-maximumnumberoftouches",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipangesturerecognizer/1621208-maximumnumberoftouches"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer/1614142-edges": {
+      "title": "edges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer/1614142-edges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscreenedgepangesturerecognizer/1614142-edges"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures": {
+      "title": "Handling Tap Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use brief taps on the screen to implement button-like interactions with your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_long-press_gestures": {
+      "title": "Handling Long-Press Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_long-press_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_long-press_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect extended duration taps on the screen, and use them to reveal contextually relevant content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures": {
+      "title": "Handling Pan Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Trace the movement of fingers around the screen, and apply that movement to your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures": {
+      "title": "Handling Swipe Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect a horizontal or vertical swipe motion on the screen, and use it to trigger navigation through your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pinch_gestures": {
+      "title": "Handling Pinch Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pinch_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pinch_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Track the distance between two fingers and use that information to scale or zoom your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_rotation_gestures": {
+      "title": "Handling Rotation Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_rotation_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_rotation_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Measure the relative rotation of two fingers on the screen, and use that motion to rotate your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_long-press_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pinch_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_rotation_gestures"
+      ],
+      "title": "Gestures",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A pan gesture occurs any time the user moves one or more fingers around the screen. A screen-edge pan gesture is a specialized pan gesture that originates from the edge of the screen. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer"
+            },
+            {
+              "type": "text",
+              "text": " class for pan gestures and the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer"
+            },
+            {
+              "type": "text",
+              "text": " class for screen-edge pan gestures."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can attach a gesture recognizer in one of these ways:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Programmatically. Call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method of your view."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Interface Builder. Drag the appropriate object from the library and drop it onto your view."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3004404",
+              "metadata": {
+                "anchor": "3004404",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use pan gesture recognizers for tasks that require you to track the movement of the user’s fingers onscreen. You might use a pan gesture recognizer to drag objects around in your interface or update their appearance based on the position of the user’s finger. Pan gestures are continuous, so your action method is called whenever the touch information changes, giving you a chance to update your content."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A pan gesture recognizer enters the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatebegan"
+            },
+            {
+              "type": "text",
+              "text": " state as soon as the required amount of initial movement is achieved. After that initial change, subsequent changes cause the gesture recognizer to enter the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstatechanged"
+            },
+            {
+              "type": "text",
+              "text": " state. When the user’s fingers lift from the screen, the gesture recognizer enters the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate/uigesturerecognizerstateended"
+            },
+            {
+              "type": "text",
+              "text": " state."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To simplify tracking, use the pan gesture recognizer’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621207-translationinview"
+            },
+            {
+              "type": "text",
+              "text": " method to get the distance that the user’s finger has moved from the original touch location. At the beginning of the gesture, a pan gesture recognizer stores the initial point of contact for the user’s fingers. (If the gesture involves multiple fingers, the gesture recognizer uses the center point of the set of touches.) Each time the fingers move, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621207-translationinview"
+            },
+            {
+              "type": "text",
+              "text": " method reports the distance from the original location."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures#2880035"
+            },
+            {
+              "type": "text",
+              "text": " shows an action method used to drag a view around the screen. When the gesture begins, this method saves the initial position of the view. It then updates the position of the view based on the movement of the user's fingers.    "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var initialCenter = CGPoint()  // The initial center point of the view.",
+            "@IBAction func panPiece(_ gestureRecognizer : UIPanGestureRecognizer) {   ",
+            "   guard gestureRecognizer.view != nil else {return}",
+            "   let piece = gestureRecognizer.view!",
+            "   // Get the changes in the X and Y directions relative to",
+            "   // the superview's coordinate space.",
+            "   let translation = gestureRecognizer.translation(in: piece.superview)",
+            "   if gestureRecognizer.state == .began {",
+            "      // Save the view's original position. ",
+            "      self.initialCenter = piece.center",
+            "   }",
+            "      // Update the position for the .began, .changed, and .ended states",
+            "   if gestureRecognizer.state != .cancelled {",
+            "      // Add the X and Y translation to the view's original position.",
+            "      let newCenter = CGPoint(x: initialCenter.x + translation.x, y: initialCenter.y + translation.y)",
+            "      piece.center = newCenter",
+            "   }",
+            "   else {",
+            "      // On cancellation, return the piece to its original location.",
+            "      piece.center = initialCenter",
+            "   }",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2880035",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Dragging a view around the screen"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the code for your pan gesture recognizer is not called, check to see if the following conditions are true, and make corrections as needed:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622577-userinteractionenabled"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property of the view is set to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Image views and labels set this property to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    },
+                    {
+                      "type": "text",
+                      "text": " by default."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The number of touches is between the values specified in the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621210-minimumnumberoftouches"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uipangesturerecognizer/1621208-maximumnumberoftouches"
+                    },
+                    {
+                      "type": "text",
+                      "text": " properties."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object, the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscreenedgepangesturerecognizer/1614142-edges"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property is configured and touches start at the appropriate edge."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

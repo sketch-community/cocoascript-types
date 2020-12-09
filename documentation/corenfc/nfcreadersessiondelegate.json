@@ -1,0 +1,336 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A collection of callbacks that provide information about the status of an NFC reader session."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corenfc"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2874108,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NFCReaderSessionDelegate",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Core NFC"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(pl)NFCReaderSessionDelegate",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corenfc/nfcreadersessiondelegate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corenfc": {
+      "title": "Core NFC",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc",
+      "url": "/documentation/corenfc",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874106-readersession": {
+      "title": "readerSession:didDetectTags:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874106-readersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersessiondelegate/2874106-readersession",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides an array of tags detected by the reader session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "readerSession:didDetectTags:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874102-readersession": {
+      "title": "readerSession:didInvalidateWithError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874102-readersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersessiondelegate/2874102-readersession",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides information about the error that invalidated the reader session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "readerSession:didInvalidateWithError:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874105-readersessiondidbecomeactive": {
+      "title": "readerSessionDidBecomeActive:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874105-readersessiondidbecomeactive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersessiondelegate/2874105-readersessiondidbecomeactive",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells you when radio-frequency polling is enabled and the reader session has become active and is scanning for tags."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "readerSessionDidBecomeActive:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcndefreadersession": {
+      "title": "NFCNDEFReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcndefreadersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcndefreadersession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reader session for detecting NFC Data Exchange Format (NDEF) tags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfctagreadersession": {
+      "title": "NFCTagReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfctagreadersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfctagreadersession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reader session for detecting ISO7816, ISO15693, FeliCa, and MIFARE tags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcvasreadersession": {
+      "title": "NFCVASReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcvasreadersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcvasreadersession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reader session for processing Value Added Service (VAS) tags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersession-mnv": {
+      "title": "NFCReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersession-mnv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersession-mnv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class that represents a reader session for detecting NFC tags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersession": {
+      "title": "NFCReaderSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general interface for interacting with a reader session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate": {
+      "title": "NFCReaderSessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadersessiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of callbacks that provide information about the status of an NFC reader session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_nfc_readersession_formats": {
+      "title": "Near Field Communication Tag Reader Session Formats Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_nfc_readersession_formats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_nfc_readersession_formats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Near Field Communication data formats an app can read."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.developer.nfc.readersession.formats",
+      "ideTitle": "Near Field Communication Tag Reader Session Formats Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Status of a Reader Session",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874106-readersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874102-readersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadersessiondelegate/2874105-readersessiondidbecomeactive"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/nfcndefreadersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfctagreadersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfcvasreadersession",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadersession-mnv",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadersession",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_nfc_readersession_formats"
+      ],
+      "title": "Reader Sessions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NFCReaderSessionDelegate"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

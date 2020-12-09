@@ -1,0 +1,1017 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Evaluate the server’s security credentials in your app."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2938915,
+  "kind": "article",
+  "metadata": {
+    "title": "Performing Manual Server Trust Authentication",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge": {
+      "title": "Handling an Authentication Challenge",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/url_loading_system/handling_an_authentication_challenge"
+    },
+    "link-media-2959678": {
+      "identifier": "link-media-2959678",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2959678"
+    },
+    "media-2959678": {
+      "identifier": "media-2959678",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 918,
+            "height": 206
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6a6496ebb1/851916ce-5c1c-4c23-b45b-c4632dacf24c.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 918,
+            "height": 206
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2bf837db81/4c0b5097-e452-40f4-9052-354a59d50dd6.png"
+        }
+      ],
+      "alt": "Flow diagram of a server trust being evaluated manually by a delegate method. A certificate in the server trust matches a certificate inside the app bundle, so the server trust is manually accepted and the flow ends with a \"connect\" state.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manually evaluating server trust against credentials stored in the app bundle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
+      "title": "NSURLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession#1776695": {
+      "title": "App Transport Security (ATS)",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession#1776695",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/foundation/nsurlsession#1776695"
+    },
+    "devLink-1695130": {
+      "identifier": "devLink-1695130",
+      "type": "link",
+      "title": "NSAppTransportSecurity",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSAppTransportSecurity"
+    },
+    "devLink-1741419": {
+      "identifier": "devLink-1741419",
+      "type": "link",
+      "title": "Information Property List Key Reference",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate": {
+      "title": "NSURLSessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiondelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate/1409308-urlsession": {
+      "title": "URLSession:didReceiveChallenge:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate/1409308-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiondelegate/1409308-urlsession",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSession:didReceiveChallenge:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallenge/1410012-protectionspace": {
+      "title": "protectionSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallenge/1410012-protectionspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlauthenticationchallenge/1410012-protectionspace"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1415028-authenticationmethod": {
+      "title": "authenticationMethod",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1415028-authenticationmethod",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlprotectionspace/1415028-authenticationmethod"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationmethodservertrust": {
+      "title": "NSURLAuthenticationMethodServerTrust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationmethodservertrust",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlauthenticationmethodservertrust"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1418205-host": {
+      "title": "host",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1418205-host",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlprotectionspace/1418205-host"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengeperformdefaulthandling": {
+      "title": "NSURLSessionAuthChallengePerformDefaultHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengeperformdefaulthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengeperformdefaulthandling"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2956147": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2956147",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2956147",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Testing the challenge type and host name of a server trust authentication challenge."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1409926-servertrust": {
+      "title": "serverTrust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1409926-servertrust",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlprotectionspace/1409926-servertrust"
+    },
+    "doc://com.apple.documentation/documentation/security/sectrustref": {
+      "title": "SecTrustRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sectrustref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sectrustref"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2948636": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2948636",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2948636",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Evaluating credentials in a server trust instance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcredential": {
+      "title": "NSURLCredential",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcredential",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcredential"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengeusecredential": {
+      "title": "NSURLSessionAuthChallengeUseCredential",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengeusecredential",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengeusecredential"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengecancelauthenticationchallenge": {
+      "title": "NSURLSessionAuthChallengeCancelAuthenticationChallenge",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengecancelauthenticationchallenge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengecancelauthenticationchallenge"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication": {
+      "title": "Performing Manual Server Trust Authentication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Evaluate the server’s security credentials in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you use a secure connection (such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "https"
+            },
+            {
+              "type": "text",
+              "text": ") with a URL request, your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate"
+            },
+            {
+              "type": "text",
+              "text": " receives an authentication challenge with an authentication type of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationmethodservertrust"
+            },
+            {
+              "type": "text",
+              "text": ". Unlike other challenges where the server is asking your app to authenticate itself, this is an opportunity for you to authenticate the server’s credentials."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "See "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge"
+                },
+                {
+                  "type": "text",
+                  "text": " for an introduction to authentication challenges."
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Determine When Manual Server Trust Evaluation Is Appropriate",
+          "anchor": "2959677"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In most cases, you should let the URL Loading System’s default handling evaluate the server trust. You get this behavior when you either don’t have a delegate or don’t handle authentication challenges. However, performing your own evaluation may be useful for scenarios like the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You want to accept server credentials that would otherwise be rejected by the system. For example, your app makes a secure connection to a development server that uses a self-signed certificate, which would ordinarily not match anything in the system’s trust store."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You want to reject credentials that would otherwise be accepted by the system. For example, you want to “pin” your app to a set of specific keys or certificates under your control, rather than accept any valid credential."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-2959678"
+            },
+            {
+              "type": "text",
+              "text": " illustrates how an app performs manual credential evaluation by providing a delegate method to handle the authentication challenge. This bypasses the default handling. Instead, the delegate directly compares the server certificate or its public key against a copy of the certificate or key (or a hash of either of these) stored in the app bundle itself. If the delegate decides the server credential is valid, it accepts the server trust and allows the connection to continue."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2959678",
+              "metadata": {
+                "anchor": "2959678",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Manually evaluating server trust against credentials stored in the app bundle."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession"
+                },
+                {
+                  "type": "text",
+                  "text": " enforces "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession#1776695"
+                },
+                {
+                  "type": "text",
+                  "text": ", if it is enabled for the domain you are connecting to. This applies security requirements for the certificates, TLS version, and cipher used by the connection. You cannot loosen server trust requirements for an ATS-protected domain, but you can tighten them, using the manual evaluation technique shown in this article. See "
+                },
+                {
+                  "type": "link",
+                  "title": "NSAppTransportSecurity",
+                  "destination": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSAppTransportSecurity"
+                },
+                {
+                  "type": "text",
+                  "text": " in "
+                },
+                {
+                  "type": "link",
+                  "title": "Information Property List Key Reference",
+                  "destination": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247"
+                },
+                {
+                  "type": "text",
+                  "text": " for further details."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Server Trust Authentication Challenges",
+          "anchor": "2948638"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To perform manual server trust authentication, implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate"
+            },
+            {
+              "type": "text",
+              "text": " method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate/1409308-urlsession"
+            },
+            {
+              "type": "text",
+              "text": ". When this method is called, the first things your implementation needs to do are to check that:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The challenge type is server trust, and not some other kind of challenge."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The challenge’s host name matches the host that you want to perform manual credential evaluation for."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2956147"
+            },
+            {
+              "type": "text",
+              "text": " shows how to test these conditions, given the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "challenge"
+            },
+            {
+              "type": "text",
+              "text": " parameter passed to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondelegate/1409308-urlsession"
+            },
+            {
+              "type": "text",
+              "text": " callback. It gets the challenge's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationchallenge/1410012-protectionspace"
+            },
+            {
+              "type": "text",
+              "text": " and uses it to perform the two checks listed above. First, it gets the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1415028-authenticationmethod"
+            },
+            {
+              "type": "text",
+              "text": " from the protection space and checks that the type of authentication is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlauthenticationmethodservertrust"
+            },
+            {
+              "type": "text",
+              "text": ". Then it makes sure the protection space’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1418205-host"
+            },
+            {
+              "type": "text",
+              "text": " matches the expected name "
+            },
+            {
+              "type": "codeVoice",
+              "code": "example.com"
+            },
+            {
+              "type": "text",
+              "text": ". If either of these conditions are not met, it calls the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "completionHandler"
+            },
+            {
+              "type": "text",
+              "text": " with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengeperformdefaulthandling"
+            },
+            {
+              "type": "text",
+              "text": " disposition to allow the system to handle the challenge."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let protectionSpace = challenge.protectionSpace",
+            "guard protectionSpace.authenticationMethod ==",
+            "    NSURLAuthenticationMethodServerTrust,",
+            "    protectionSpace.host.contains(\"example.com\") else {",
+            "        completionHandler(.performDefaultHandling, nil)",
+            "        return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2956147",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Testing the challenge type and host name of a server trust authentication challenge."
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Evaluate the Credential in the Challenge",
+          "anchor": "2948637"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To access the server’s credential, get the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1409926-servertrust"
+            },
+            {
+              "type": "text",
+              "text": " property (an instance of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/sectrustref"
+            },
+            {
+              "type": "text",
+              "text": " class) from the protection space. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2948636"
+            },
+            {
+              "type": "text",
+              "text": " shows how to access the server trust and accept or reject it. The listing starts by attempting to get the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlprotectionspace/1409926-servertrust"
+            },
+            {
+              "type": "text",
+              "text": " property from the protection space, and falls back to default handling if the property is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ". Next, it passes the server trust to a private helper method "
+            },
+            {
+              "type": "codeVoice",
+              "code": "checkValidity(of:)"
+            },
+            {
+              "type": "text",
+              "text": " that compares the certificate or public key in the server trust to known-good values stored in the app bundle. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let serverTrust = protectionSpace.serverTrust else {",
+            "    completionHandler(.performDefaultHandling, nil)",
+            "    return",
+            "}",
+            "if checkValidity(of: serverTrust) {",
+            "    let credential = URLCredential(trust: serverTrust)",
+            "    completionHandler(.useCredential, credential)",
+            "} else {",
+            "    // Show a UI here warning the user the server credentials are",
+            "    // invalid, and cancel the load.",
+            "    completionHandler(.cancelAuthenticationChallenge, nil)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948636",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Evaluating credentials in a server trust instance."
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once the code determines the validity of the server trust, it takes one of two actions:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the server trust’s credential is valid, create a new "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcredential"
+                    },
+                    {
+                      "type": "text",
+                      "text": " instance from the server trust. Then call the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "completionHandler"
+                    },
+                    {
+                      "type": "text",
+                      "text": " with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengeusecredential"
+                    },
+                    {
+                      "type": "text",
+                      "text": " disposition, passing in the newly-created credential. This tells the system to accept the server’s credentials."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the challenge’s credential is invalid, call the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "completionHandler"
+                    },
+                    {
+                      "type": "text",
+                      "text": " with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition/nsurlsessionauthchallengecancelauthenticationchallenge"
+                    },
+                    {
+                      "type": "text",
+                      "text": " disposition. This tells the system to reject the server’s credentials."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "See "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services"
+                },
+                {
+                  "type": "text",
+                  "text": " to learn more about how to evaluate a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/security/sectrustref"
+                },
+                {
+                  "type": "text",
+                  "text": " instance or access certificates or public keys from it."
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Long-Term Server Authentication Strategy",
+          "anchor": "2956135"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you determine that you need to evaluate server trust manually in some or all cases,  plan for what your app will do if you need to change your server credentials. Keep the following guidelines in mind:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Compare the server’s credentials against a public key, instead of storing a single certificate in your app bundle. This will allow you to reissue a certificate for the same key and update the server, rather than needing to update the app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Compare the issuing certificate authority’s (CA’s) keys, rather than using the leaf key. This way, you can deploy certificates containing new keys signed by the same CA."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use a set of keys or CAs, so you can rotate server credentials more gracefully."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

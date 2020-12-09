@@ -1,0 +1,912 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Debug App Clip invocations in Xcode, test local experiences on a device, or configure invocations for testing in TestFlight."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/app_clips"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3604124,
+  "kind": "article",
+  "metadata": {
+    "title": "Testing Your App Clip’s Launch Experience",
+    "role": "article",
+    "roleHeading": "Article"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/testing_your_app_clip_s_launch_experience"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/testing_your_app_clip_s_launch_experience"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/app_clips": {
+      "title": "App Clips",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips",
+      "url": "/documentation/app_clips",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations": {
+      "title": "Responding to Invocations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/responding_to_invocations"
+    },
+    "link-media-3671997": {
+      "identifier": "link-media-3671997",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/app_clips/testing_your_app_clip_s_launch_experience#3671997"
+    },
+    "media-3671997": {
+      "identifier": "media-3671997",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 939,
+            "height": 516
+          },
+          "url": "https://docs-assets.developer.apple.com/published/aeb9f6f366/rendered2x-1596850468.png"
+        }
+      ],
+      "alt": "Screenshot showing the sheet to configure an App Clip target’s Run action. The _XCAppClipURL environment variable’s value is set but not enabled.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_associated-domains": {
+      "title": "Associated Domains Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_associated-domains",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_associated-domains"
+    },
+    "link-3681576": {
+      "title": "TestFlight",
+      "type": "topic",
+      "identifier": "link-3681576",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/testflight/"
+    },
+    "link-3681579": {
+      "title": "TestFlight",
+      "type": "topic",
+      "identifier": "link-3681579",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/testflight/"
+    },
+    "link-3681577": {
+      "title": "TestFlight app",
+      "type": "topic",
+      "identifier": "link-3681577",
+      "kind": "article",
+      "role": "link",
+      "url": "https://apps.apple.com/us/app/testflight/id899247664"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience#3626840": {
+      "title": "Create App Clip Experiences for Testers in TestFlight",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience#3626840",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/app_clips/testing_your_app_clip_s_launch_experience#3626840"
+    },
+    "link-media-3686646": {
+      "identifier": "link-media-3686646",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/app_clips/testing_your_app_clip_s_launch_experience#3686646"
+    },
+    "media-3686646": {
+      "identifier": "media-3686646",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 293,
+            "height": 621
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c0ba27bb4c/rendered2x-1600797698.png"
+        }
+      ],
+      "alt": "Screenshot of an iPhone’s that shows the interface for configuring a local experience. It uses https://example.com as the URL prefix and com.example.app.clip as the bundle identifier. The title for the local experience’s App Clip card is Example App, its subtitle is “A local App Clip experience”, and its call-to-action verb is Open.",
+      "title": "Figure 2"
+    },
+    "link-3681578": {
+      "title": "App Store Connect",
+      "type": "topic",
+      "identifier": "link-3681578",
+      "kind": "article",
+      "role": "link",
+      "url": "https://appstoreconnect.apple.com/login"
+    },
+    "link-3678465": {
+      "title": "App Store Connect",
+      "type": "topic",
+      "identifier": "link-3678465",
+      "kind": "article",
+      "role": "link",
+      "url": "https://appstoreconnect.apple.com/login"
+    },
+    "link-3678466": {
+      "title": "TestFlight",
+      "type": "topic",
+      "identifier": "link-3678466",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/testflight/"
+    },
+    "link-3678142": {
+      "title": "TestFlight app",
+      "type": "topic",
+      "identifier": "link-3678142",
+      "kind": "article",
+      "role": "link",
+      "url": "https://apps.apple.com/us/app/testflight/id899247664"
+    },
+    "link-3686647": {
+      "title": "Testing an App Clip Experience",
+      "type": "section",
+      "identifier": "link-3686647",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/app-store-connect/#/devbc57e2ec6"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode#3604097": {
+      "title": "Add the Associated Domains Entitlement",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode#3604097",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode#3604097"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience#3634036": {
+      "title": "Make Changes to Your Server",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience#3634036",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/app_clips/configuring_your_app_clip_s_launch_experience#3634036"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode": {
+      "title": "Creating an App Clip with Xcode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience": {
+      "title": "Configuring Your App Clip’s Launch Experience",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/configuring_your_app_clip_s_launch_experience"
+    },
+    "link-3671999": {
+      "title": "TestFlight",
+      "type": "topic",
+      "identifier": "link-3671999",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/testflight/"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience": {
+      "title": "Testing Your App Clip’s Launch Experience",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/testing_your_app_clip_s_launch_experience",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Debug App Clip invocations in Xcode, test local experiences on a device, or configure invocations for testing in TestFlight."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you create an App Clip, it’s important to test possible invocations and your App Clip’s launch experience to ensure the App Clip responds as expected and offers a positive launch experience. You can test your App Clip’s launch experience in different ways:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure an "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "invocation URL"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " for debugging in Xcode."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "local experience"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " on a device and test invocations from visual codes or NFC tags during development."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create an "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "App Clip experience for testers"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " in "
+                    },
+                    {
+                      "type": "link",
+                      "title": "TestFlight",
+                      "destination": "https://developer.apple.com/testflight/"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Debug Invocations with Xcode",
+          "anchor": "3626842"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With Xcode, you can build, run, and debug an App Clip in Simulator or on a device. To help debug App Clip invocations, provide an invocation URL for testing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To configure an invocation URL for debugging:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Xcode, choose Product > Scheme > Edit Scheme and select your App Clip’s scheme."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select the Run action."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Arguments tab, check if the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "_XCAppClipURL"
+                    },
+                    {
+                      "type": "text",
+                      "text": " environment variable is present. When you add an App Clip target to your project, Xcode adds this environment variable for you. Add the environment variable in case it’s missing. Then, set its value to the invocation URL you want to test. Make sure you enable the variable by checking the checkbox next to it. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Build and run the App Clip to access the test URL you configured from an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object. For more information, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following screenshot shows the sheet to configure an App Clip target’s Run action with a value for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "_XCAppClipURL"
+            },
+            {
+              "type": "text",
+              "text": " environment variable:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3671997",
+              "metadata": {
+                "anchor": "3671997",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you debug your App Clip with Xcode, the App Clip launches right away and the system doesn’t display the App Clip card. To see the App Clip card on invocation when testing, create a local experience."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Register a Local Experience to Test Invocations from NFC Tags or Visual Codes",
+          "anchor": "3671998"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you develop your App Clip, you may need to test invocations from visual codes and NFC tags. In addition, choosing imagery, copy, and a call-to-action verb for the App Clip card is an important task because the App Clip card is the user’s first interaction when they launch your App Clip. To help test invocations from NFC tags or visual codes, and to view the App Clip card on invocation, create a local experience on your test device. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To test your App Clip’s invocation with a local experience, you don’t need to add the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_associated-domains"
+                },
+                {
+                  "type": "text",
+                  "text": ", make changes to the Apple App Site Association file on your web server, or create an App Clip experience for testing in "
+                },
+                {
+                  "type": "link",
+                  "title": "TestFlight",
+                  "destination": "https://developer.apple.com/testflight/"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First, add the App Clip to your device using any of the following methods:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Build and run the App Clip on a device."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Archive the App Clip’s corresponding full app, select the archive, and export the App Clip’s binary for Ad Hoc or Development distribution. Then, add the App Clip to a device, for example, by dragging the App Clip’s exported "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": ".ipa"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file to a connected device in Xcode’s Devices and Simulators window."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Distribute your App Clips to testers using "
+                    },
+                    {
+                      "type": "link",
+                      "title": "TestFlight",
+                      "destination": "https://developer.apple.com/testflight/"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". When a tester launches the App Clip using the "
+                    },
+                    {
+                      "type": "link",
+                      "title": "TestFlight app",
+                      "destination": "https://apps.apple.com/us/app/testflight/id899247664"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", the system caches the App Clip on the device. For more information, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/app_clips/testing_your_app_clip_s_launch_experience#3626840"
+                    },
+                    {
+                      "type": "text",
+                      "text": " below."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Next, on the device, open the Settings app, navigate to Developer > Local Experiences, and select Register Local Experience. Configure a local experience and enter:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A URL prefix that invokes the App Clip"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Copy for the App Clip card’s title and the subtitle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A call-to-action verb"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A header image"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Your App Clip’s bundle identifier"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following screenshot shows the interface for configuring a local experience on an iPhone:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3686646",
+              "metadata": {
+                "anchor": "3686646",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To launch the App Clip with the local experience and display the App Clip card, use your favorite tool to print a QR code or write an NFC tag, then scan the QR code or NFC tag you created."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that, when you configure a local experience on a device, the local experience takes precedence over App Clip experiences you configure in "
+            },
+            {
+              "type": "link",
+              "title": "App Store Connect",
+              "destination": "https://appstoreconnect.apple.com/login"
+            },
+            {
+              "type": "text",
+              "text": ". However, local experiences only launch an App Clip that’s signed for Development, Ad Hoc, or TestFlight distribution. They don’t launch an App Clip or full app that’s published on the App Store. Remember to remove the local experience before testing App Clip experiences you configure in App Store Connect."
+            },
+            {
+              "type": "strong",
+              "inlineContent": []
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create App Clip Experiences for Testers in TestFlight",
+          "anchor": "3626840"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you submit an app with an App Clip to "
+            },
+            {
+              "type": "link",
+              "title": "App Store Connect",
+              "destination": "https://appstoreconnect.apple.com/login"
+            },
+            {
+              "type": "text",
+              "text": ", you can make the App Clip available to testers in "
+            },
+            {
+              "type": "link",
+              "title": "TestFlight",
+              "destination": "https://developer.apple.com/testflight/"
+            },
+            {
+              "type": "text",
+              "text": " by configuring up to three different App Clip experiences for testing. Similar to how users don’t install App Clips and how App Clips don’t appear on the Home screen, testers don’t install the beta version of your App Clip. They don’t appear on the Home screen either. Instead, testers launch the App Clip experiences you configure for testing through the "
+            },
+            {
+              "type": "link",
+              "title": "TestFlight app",
+              "destination": "https://apps.apple.com/us/app/testflight/id899247664"
+            },
+            {
+              "type": "text",
+              "text": " on their device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information, see "
+            },
+            {
+              "type": "link",
+              "title": "Testing an App Clip Experience",
+              "destination": "https://help.apple.com/app-store-connect/#/devbc57e2ec6"
+            },
+            {
+              "type": "text",
+              "text": " in the App Store Connect Help."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Creating an App Clip experience for testers requires you to add the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_associated-domains"
+                },
+                {
+                  "type": "text",
+                  "text": " and add or update the Apple App Site Association file on your server. For more information, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode#3604097"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience#3634036"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

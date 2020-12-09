@@ -1,0 +1,975 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An offscreen context for reusing content drawn with Core Graphics. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coregraphics"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coregraphics/cglayer",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1666309,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CGLayer",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Graphics"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coregraphics/cglayer"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coregraphics": {
+      "title": "Core Graphics",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics",
+      "url": "/documentation/coregraphics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cglayerref": {
+      "title": "CGLayerRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cglayerref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An offscreen context for reusing content drawn with Core Graphics."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpathref": {
+      "title": "CGPathRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpathref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgpathref"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgshadingref": {
+      "title": "CGShadingRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgshadingref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgshadingref"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfpageref": {
+      "title": "CGPDFPageRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfpageref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgpdfpageref"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/calayer": {
+      "title": "CALayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/calayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/calayer"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcontextref": {
+      "title": "CGContextRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgcontextref"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1450892-cglayercreatewithcontext": {
+      "title": "CGLayerCreateWithContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1450892-cglayercreatewithcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1450892-cglayercreatewithcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a layer object that is associated with a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1450896-cgcontextdrawlayerinrect": {
+      "title": "CGContextDrawLayerInRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1450896-cgcontextdrawlayerinrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1450896-cgcontextdrawlayerinrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the contents of a layer object into the specified rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1450894-cgcontextdrawlayeratpoint": {
+      "title": "CGContextDrawLayerAtPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1450894-cgcontextdrawlayeratpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1450894-cgcontextdrawlayeratpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the contents of a CGLayer object at the specified point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1450898-cglayerrelease": {
+      "title": "CGLayerRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1450898-cglayerrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1450898-cglayerrelease",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decrements the retain count of a layer object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1450900-cglayerretain": {
+      "title": "CGLayerRetain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1450900-cglayerretain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1450900-cglayerretain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Increments the retain count of a layer object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1450888-cglayergettypeid": {
+      "title": "CGLayerGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1450888-cglayergettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1450888-cglayergettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique type identifier used for "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+        },
+        {
+          "type": "text",
+          "text": " objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1450890-cglayergetsize": {
+      "title": "CGLayerGetSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1450890-cglayergetsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1450890-cglayergetsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the width and height of a layer object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1450902-cglayergetcontext": {
+      "title": "CGLayerGetContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1450902-cglayergetcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1450902-cglayergetcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the graphics context associated with a layer object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext": {
+      "title": "CGBitmapContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgbitmapcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " that you can use for drawing bits to memory."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolor": {
+      "title": "CGColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolor",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of components that define a color, with a color space specifying how to interpret them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo": {
+      "title": "CGColorConversionInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolorconversioninfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes how to convert between color spaces for use by other system services. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace": {
+      "title": "CGColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcolorspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A profile that specifies how to interpret a color value for display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgcontext": {
+      "title": "CGContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Quartz 2D drawing destination."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer": {
+      "title": "CGDataConsumer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgdataconsumer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider": {
+      "title": "CGDataProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgdataprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgfont": {
+      "title": "CGFont",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfont",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgfont",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of character glyphs and layout information for drawing text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgfunction": {
+      "title": "CGFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfunction",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general facility for defining and using callback functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgglcontext": {
+      "title": "CGGLContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgglcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgglcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. A type of  "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " for drawing OpenGL content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cggradient": {
+      "title": "CGGradient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cggradient",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cggradient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A definition for a smooth transition between colors for drawing radial and axial gradient fills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgimage": {
+      "title": "CGImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bitmap image or image mask."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cglayer": {
+      "title": "CGLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cglayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An offscreen context for reusing content drawn with Core Graphics. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpath": {
+      "title": "CGPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpath",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Immutable and mutable types for graphics paths: mathematical descriptions of shapes or lines to be drawn in a graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpattern": {
+      "title": "CGPattern",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpattern",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpattern",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 2D pattern to be used for drawing graphics paths."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray": {
+      "title": "CGPDFArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfarray",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array structure within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream": {
+      "title": "CGPDFContentStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfcontentstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of one or more content data streams in a PDF page."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext": {
+      "title": "CGPDFContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgcontextref"
+        },
+        {
+          "type": "text",
+          "text": " for drawing PDF content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary": {
+      "title": "CGPDFDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfdictionary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary structure within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument": {
+      "title": "CGPDFDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfdocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A document that contains PDF (Portable Document Format) drawing information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject": {
+      "title": "CGPDFObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing content within a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable": {
+      "title": "CGPDFOperatorTable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfoperatortable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of callback functions for operators used when scanning content in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage": {
+      "title": "CGPDFPage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfpage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A page in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner": {
+      "title": "CGPDFScanner",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfscanner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A parser object for handling content and operators in a PDF content stream."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream": {
+      "title": "CGPDFStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A stream or sequence of data bytes in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring": {
+      "title": "CGPDFString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpdfstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A text string in a PDF document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter": {
+      "title": "CGPSConverter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgpsconverter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that converts PostScript data to PDF data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgshading": {
+      "title": "CGShading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgshading",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coregraphics/cgshading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A definition for a smooth transition between colors, controlled by a custom function you provide, for drawing radial and axial gradient fills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Layer Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1450892-cglayercreatewithcontext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing Layer Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1450896-cgcontextdrawlayerinrect",
+        "doc://com.apple.documentation/documentation/coregraphics/1450894-cgcontextdrawlayeratpoint"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retaining and Releasing Layers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1450898-cglayerrelease",
+        "doc://com.apple.documentation/documentation/coregraphics/1450900-cglayerretain"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the CFType ID for a Layer",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1450888-cglayergettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Layer Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/1450890-cglayergetsize",
+        "doc://com.apple.documentation/documentation/coregraphics/1450902-cglayergetcontext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolor",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfo",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcolorspace",
+        "doc://com.apple.documentation/documentation/coregraphics/cgcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdataconsumer",
+        "doc://com.apple.documentation/documentation/coregraphics/cgdataprovider",
+        "doc://com.apple.documentation/documentation/coregraphics/cgfont",
+        "doc://com.apple.documentation/documentation/coregraphics/cgfunction",
+        "doc://com.apple.documentation/documentation/coregraphics/cgglcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cggradient",
+        "doc://com.apple.documentation/documentation/coregraphics/cgimage",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpath",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpattern",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfarray",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstream",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionary",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfdocument",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfobject",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortable",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfpage",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfscanner",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfstream",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpdfstring",
+        "doc://com.apple.documentation/documentation/coregraphics/cgpsconverter",
+        "doc://com.apple.documentation/documentation/coregraphics/cgshading"
+      ],
+      "title": "Opaque Types",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Layer objects are useful for offscreen drawing and can be used in much the same way that a bitmap context can be used. In fact, a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+            },
+            {
+              "type": "text",
+              "text": " object is a much better representation than a bitmap context."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+            },
+            {
+              "type": "text",
+              "text": " objects can improve performance, particularly when you need to capture a piece of drawing that you stamp repeatedly (using the same scale factor and orientation). Core Graphics can cache "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+            },
+            {
+              "type": "text",
+              "text": " objects to the video card, making drawing a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+            },
+            {
+              "type": "text",
+              "text": " to a destination much faster than rendering the equivalent image constructed from a bitmap context."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+            },
+            {
+              "type": "text",
+              "text": " object is created relative to a graphics context. Although layer uses this graphics context as a reference for initialization, you are not restricted to drawing the layer to this graphics context. You can draw the layer to other graphics contexts, although any limitations of the original context are imposed. For example, if you create a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+            },
+            {
+              "type": "text",
+              "text": " object using a bitmap context, the layer is rendered as a bitmap when drawn to any other graphics context."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+            },
+            {
+              "type": "text",
+              "text": " when you want to apply a shadow to a group of objects (such as a group of circles) rather than to individual objects."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use these layers in your code whenever you can, especially when:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You need to reuse a filled or stroked shape."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You are building a scene and at least some of it can be reused. Put the reusable drawing in its own layer."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Any Core Graphics object that you draw repeatedly—including "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpathref"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgshadingref"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpdfpageref"
+            },
+            {
+              "type": "text",
+              "text": " objects—benefit from improved performance if you draw it to a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+            },
+            {
+              "type": "text",
+              "text": " object."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coregraphics/cglayerref"
+                },
+                {
+                  "type": "text",
+                  "text": " objects are unrelated to Core Animation layers ("
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/quartzcore/calayer"
+                },
+                {
+                  "type": "text",
+                  "text": " objects)."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

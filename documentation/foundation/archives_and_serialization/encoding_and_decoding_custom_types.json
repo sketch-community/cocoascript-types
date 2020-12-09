@@ -1,0 +1,1600 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Make your data types encodable and decodable for compatibility with external representations such as JSON."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/archives_and_serialization"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/swift",
+        "doc://com.apple.documentation/documentation/swift/swift_standard_library",
+        "doc://com.apple.documentation/documentation/swift/swift_standard_library/encoding_decoding_and_serialization"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 2904054,
+  "kind": "article",
+  "metadata": {
+    "title": "Encoding and Decoding Custom Types",
+    "role": "article",
+    "roleHeading": "Article"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types",
+        "documentation/swift/swift_standard_library/encoding_decoding_and_serialization/encoding_and_decoding_custom_types"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization": {
+      "title": "Archives and Serialization",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization",
+      "url": "/documentation/foundation/archives_and_serialization",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swift": {
+      "title": "Swift",
+      "identifier": "doc://com.apple.documentation/documentation/swift",
+      "url": "/documentation/swift",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/swift/swift_standard_library": {
+      "title": "Swift Standard Library",
+      "identifier": "doc://com.apple.documentation/documentation/swift/swift_standard_library",
+      "url": "/documentation/swift/swift_standard_library",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swift/swift_standard_library/encoding_decoding_and_serialization": {
+      "title": "Encoding, Decoding, and Serialization",
+      "identifier": "doc://com.apple.documentation/documentation/swift/swift_standard_library/encoding_decoding_and_serialization",
+      "url": "/documentation/swift/swift_standard_library/encoding_decoding_and_serialization",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swift/codable": {
+      "title": "Codable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/codable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/codable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that can convert itself into and out of an external representation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "Codable"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/string": {
+      "title": "String",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/swift/int": {
+      "title": "Int",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/int",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/int"
+    },
+    "doc://com.apple.documentation/documentation/swift/double": {
+      "title": "Double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/double"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date": {
+      "title": "Date",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data": {
+      "title": "Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url": {
+      "title": "URL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/url"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904068": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904068",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904068"
+    },
+    "doc://com.apple.documentation/documentation/swift/encodable": {
+      "title": "Encodable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/encodable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/encodable"
+    },
+    "doc://com.apple.documentation/documentation/swift/decodable": {
+      "title": "Decodable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/decodable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/decodable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904069": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904069",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904069"
+    },
+    "doc://com.apple.documentation/documentation/foundation/propertylistencoder": {
+      "title": "PropertyListEncoder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/propertylistencoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/propertylistencoder"
+    },
+    "doc://com.apple.documentation/documentation/foundation/jsonencoder": {
+      "title": "JSONEncoder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonencoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsonencoder"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904070": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904070",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904070"
+    },
+    "doc://com.apple.documentation/documentation/swift/array": {
+      "title": "Array",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/array",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/array"
+    },
+    "doc://com.apple.documentation/documentation/swift/dictionary": {
+      "title": "Dictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/dictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/dictionary"
+    },
+    "doc://com.apple.documentation/documentation/swift/optional": {
+      "title": "Optional",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/optional",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/optional"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904071": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904071",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904071"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904076": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904076",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904076"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2909111": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2909111",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2909111"
+    },
+    "doc://com.apple.documentation/documentation/swift/codingkey": {
+      "title": "CodingKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/codingkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/codingkey"
+    },
+    "link-2904079": {
+      "title": "API Design Guidelines",
+      "type": "topic",
+      "identifier": "link-2904079",
+      "kind": "article",
+      "role": "link",
+      "url": "https://swift.org/documentation/api-design-guidelines/"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904080": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904080",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904080"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904081": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904081",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904081"
+    },
+    "doc://com.apple.documentation/documentation/swift/decodable/2894081-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/decodable/2894081-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/decodable/2894081-init"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904082": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904082",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904082"
+    },
+    "doc://com.apple.documentation/documentation/swift/decoder": {
+      "title": "Decoder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/decoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/decoder"
+    },
+    "doc://com.apple.documentation/documentation/swift/encodable/2893603-encode": {
+      "title": "encode(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/encodable/2893603-encode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/encodable/2893603-encode"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904083": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904083",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904083"
+    },
+    "doc://com.apple.documentation/documentation/swift/keyedencodingcontainerprotocol": {
+      "title": "KeyedEncodingContainerProtocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/keyedencodingcontainerprotocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/keyedencodingcontainerprotocol"
+    },
+    "doc://com.apple.documentation/documentation/swift/unkeyedencodingcontainer": {
+      "title": "UnkeyedEncodingContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/unkeyedencodingcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/unkeyedencodingcontainer"
+    },
+    "doc://com.apple.documentation/documentation/swift/encoder": {
+      "title": "Encoder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/encoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/encoder"
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/using_json_with_custom_types": {
+      "title": "Using JSON with Custom Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/using_json_with_custom_types",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/foundation/archives_and_serialization/using_json_with_custom_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encode and decode JSON data, regardless of its structure, using Swift’s JSON support."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types": {
+      "title": "Encoding and Decoding Custom Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make your data types encodable and decodable for compatibility with external representations such as JSON."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscoding": {
+      "title": "NSCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that enables an object to be encoded and decoded for archiving and distribution."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSCoding"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that enables encoding and decoding in a manner that is robust against object substitution attacks."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSSecureCoding"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/codable",
+        "doc://com.apple.documentation/documentation/foundation/nscoding",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ],
+      "title": "First Steps",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/archives_and_serialization/using_json_with_custom_types"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Many programming tasks involve sending data over a network connection, saving data to disk, or submitting data to APIs and services. These tasks often require data to be encoded and decoded to and from an intermediate format while the data is being transferred."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Swift standard library defines a standardized approach to data encoding and decoding. You adopt this approach by implementing the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": " protocols on your custom types. Adopting these protocols lets implementations of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encoder"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decoder"
+            },
+            {
+              "type": "text",
+              "text": " protocols take your data and encode or decode it to and from an external representation such as JSON or property list. To support both encoding and decoding, declare conformance to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": ", which combines the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": " protocols. This process is known as making your types "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "codable"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Encode and Decode Automatically",
+          "anchor": "2904055"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The simplest way to make a type codable is to declare its properties using types that are already "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": ". These types include standard library types like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/int"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/double"
+            },
+            {
+              "type": "text",
+              "text": "; and Foundation types like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/date"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url"
+            },
+            {
+              "type": "text",
+              "text": ". Any type whose properties are codable automatically conforms to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": " just by declaring that conformance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Consider a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": " structure that stores the name and founding year of a landmark:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Landmark {",
+            "    var name: String",
+            "    var foundingYear: Int",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904068",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Adding "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": " to the inheritance list for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": " triggers an automatic conformance that satisfies all of the protocol requirements from "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Landmark: Codable {",
+            "    var name: String",
+            "    var foundingYear: Int",
+            "    ",
+            "    // Landmark now supports the Codable methods init(from:) and encode(to:), ",
+            "    // even though they aren't written as part of its declaration.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904069",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Adopting "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": " on your own types enables you to serialize them to and from any of the built-in data formats, and any formats provided by custom encoders and decoders. For example, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": " structure can be encoded using both the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/propertylistencoder"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/jsonencoder"
+            },
+            {
+              "type": "text",
+              "text": " classes, even though "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": " itself contains no code to specifically handle property lists or JSON."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The same principle applies to custom types made up of other custom types that are codable. As long as all of its properties are "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": ", any custom type can also be "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows how automatic "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": " conformance applies when a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "location"
+            },
+            {
+              "type": "text",
+              "text": " property is added to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": " structure:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Coordinate: Codable {",
+            "    var latitude: Double",
+            "    var longitude: Double",
+            "}",
+            "",
+            "struct Landmark: Codable {",
+            "    // Double, String, and Int all conform to Codable.",
+            "    var name: String",
+            "    var foundingYear: Int",
+            "    ",
+            "    // Adding a property of a custom Codable type maintains overall Codable conformance.",
+            "    var location: Coordinate",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904070",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Built-in types such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/array"
+            },
+            {
+              "type": "text",
+              "text": ",  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/dictionary"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/optional"
+            },
+            {
+              "type": "text",
+              "text": " also conform to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": " whenever they contain codable types. You can add an array of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Coordinate"
+            },
+            {
+              "type": "text",
+              "text": " instances to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": ", and the entire structure will still satisfy "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows how automatic conformance still applies when adding multiple properties using built-in codable types within "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Landmark: Codable {",
+            "    var name: String",
+            "    var foundingYear: Int",
+            "    var location: Coordinate",
+            "    ",
+            "    // Landmark is still codable after adding these properties.",
+            "    var vantagePoints: [Coordinate]",
+            "    var metadata: [String: String]",
+            "    var website: URL?",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904071",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Encode or Decode Exclusively",
+          "anchor": "2904056"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In some cases, you may not need "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": "'s support for bidirectional encoding and decoding.  For example, some apps only need to make calls to a remote network API and do not need to decode a response containing the same type. Declare conformance to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable"
+            },
+            {
+              "type": "text",
+              "text": " if you only need to support the encoding of data. Conversely, declare conformance to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": " if you only need to read data of a given type."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The examples below show alternative declarations of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": " structure that only encode or decode data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Landmark: Encodable {",
+            "    var name: String",
+            "    var foundingYear: Int",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904076",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Landmark: Decodable {",
+            "    var name: String",
+            "    var foundingYear: Int",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2909111",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Choose Properties to Encode and Decode Using Coding Keys",
+          "anchor": "2904057"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Codable types can declare a special nested enumeration named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CodingKeys"
+            },
+            {
+              "type": "text",
+              "text": " that conforms to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codingkey"
+            },
+            {
+              "type": "text",
+              "text": " protocol. When this enumeration is present, its cases serve as the authoritative list of properties that must be included when instances of a codable type are encoded or decoded. The names of the enumeration cases should match the names you've given to the corresponding properties in your type. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Omit properties from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CodingKeys"
+            },
+            {
+              "type": "text",
+              "text": " enumeration if they won't be present when decoding instances, or if certain properties shouldn't be included in an encoded representation. A property omitted from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CodingKeys"
+            },
+            {
+              "type": "text",
+              "text": " needs a default value in order for its containing type to receive automatic conformance to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the keys used in your serialized data format don't match the property names from your data type, provide alternative keys by specifying "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string"
+            },
+            {
+              "type": "text",
+              "text": " as the raw-value type for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CodingKeys"
+            },
+            {
+              "type": "text",
+              "text": " enumeration.  The string you use as a raw value for each enumeration case is the key name used during encoding and decoding. The association between the case name and its raw value lets you name your data structures according to the Swift "
+            },
+            {
+              "type": "link",
+              "title": "API Design Guidelines",
+              "destination": "https://swift.org/documentation/api-design-guidelines/"
+            },
+            {
+              "type": "text",
+              "text": " rather than having to match the names, punctuation, and capitalization of the serialization format you're modeling."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below uses alternative keys for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "name"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "foundingYear"
+            },
+            {
+              "type": "text",
+              "text": " properties of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Landmark"
+            },
+            {
+              "type": "text",
+              "text": " structure when encoding and decoding:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Landmark: Codable {",
+            "    var name: String",
+            "    var foundingYear: Int",
+            "    var location: Coordinate",
+            "    var vantagePoints: [Coordinate]",
+            "    ",
+            "    enum CodingKeys: String, CodingKey {",
+            "        case name = \"title\"",
+            "        case foundingYear = \"founding_date\"",
+            "        ",
+            "        case location",
+            "        case vantagePoints",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904080",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Encode and Decode Manually",
+          "anchor": "2904058"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the structure of your Swift type differs from the structure of its encoded form, you can provide a custom implementation of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": " to define your own encoding and decoding logic."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the examples below, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Coordinate"
+            },
+            {
+              "type": "text",
+              "text": " structure is expanded to support an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "elevation"
+            },
+            {
+              "type": "text",
+              "text": " property that's nested inside of an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "additionalInfo"
+            },
+            {
+              "type": "text",
+              "text": " container:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Coordinate {",
+            "    var latitude: Double",
+            "    var longitude: Double",
+            "    var elevation: Double",
+            "",
+            "    enum CodingKeys: String, CodingKey {",
+            "        case latitude",
+            "        case longitude",
+            "        case additionalInfo",
+            "    }",
+            "    ",
+            "    enum AdditionalInfoKeys: String, CodingKey {",
+            "        case elevation",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904081",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the encoded form of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Coordinate"
+            },
+            {
+              "type": "text",
+              "text": " type contains a second level of nested information, the type's adoption of the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": " protocols uses two enumerations that each list the complete set of coding keys used on a particular level."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the example below, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Coordinate"
+            },
+            {
+              "type": "text",
+              "text": " structure is extended to conform to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable"
+            },
+            {
+              "type": "text",
+              "text": " protocol by implementing its required initializer, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decodable/2894081-init"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "extension Coordinate: Decodable {",
+            "    init(from decoder: Decoder) throws {",
+            "        let values = try decoder.container(keyedBy: CodingKeys.self)",
+            "        latitude = try values.decode(Double.self, forKey: .latitude)",
+            "        longitude = try values.decode(Double.self, forKey: .longitude)",
+            "        ",
+            "        let additionalInfo = try values.nestedContainer(keyedBy: AdditionalInfoKeys.self, forKey: .additionalInfo)",
+            "        elevation = try additionalInfo.decode(Double.self, forKey: .elevation)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904082",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The initializer populates a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Coordinate"
+            },
+            {
+              "type": "text",
+              "text": " instance by using methods on the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/decoder"
+            },
+            {
+              "type": "text",
+              "text": " instance it receives as a parameter. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Coordinate"
+            },
+            {
+              "type": "text",
+              "text": " instance's two properties are initialized using the keyed container APIs provided by the Swift standard library."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows how the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Coordinate"
+            },
+            {
+              "type": "text",
+              "text": " structure can be extended to conform to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable"
+            },
+            {
+              "type": "text",
+              "text": " protocol by implementing its required method, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable/2893603-encode"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "extension Coordinate: Encodable {",
+            "    func encode(to encoder: Encoder) throws {",
+            "        var container = encoder.container(keyedBy: CodingKeys.self)",
+            "        try container.encode(latitude, forKey: .latitude)",
+            "        try container.encode(longitude, forKey: .longitude)",
+            "        ",
+            "        var additionalInfo = container.nestedContainer(keyedBy: AdditionalInfoKeys.self, forKey: .additionalInfo)",
+            "        try additionalInfo.encode(elevation, forKey: .elevation)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2904083",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This implementation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/encodable/2893603-encode"
+            },
+            {
+              "type": "text",
+              "text": " method reverses the decoding operation from the previous example."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about the container types used when customizing the encoding and decoding process, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/keyedencodingcontainerprotocol"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/unkeyedencodingcontainer"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

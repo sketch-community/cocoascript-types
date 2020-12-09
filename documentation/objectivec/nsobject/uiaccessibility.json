@@ -1,0 +1,990 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A set of methods that provide accessibility information about views and controls in an app's user interface."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/objectivec",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1657063,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UIAccessibility",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/objectivec/nsobject/uiaccessibility",
+        "documentation/uikit/accessibility_for_ios_and_tvos/uiaccessibility",
+        "documentation/accessibility/accessibility_for_ios_and_tvos/uiaccessibility"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/objectivec/nsobject/uiaccessibility",
+        "documentation/uikit/accessibility_for_ios_and_tvos/uiaccessibility",
+        "documentation/accessibility/accessibility_for_ios_and_tvos/uiaccessibility"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
+      "title": "Accessibility for iOS and tvOS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make your apps accessible to everyone who uses iOS and tvOS apps. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accessibility": {
+      "title": "Accessibility",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/accessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make your apps accessible to everyone who uses Apple devices. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec": {
+      "title": "Objective-C Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec",
+      "url": "/documentation/objectivec",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "url": "/documentation/objectivec/nsobject",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime": {
+      "title": "Object Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime",
+      "url": "/documentation/foundation/object_runtime",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibutton": {
+      "title": "UIButton",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibutton"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol": {
+      "title": "UISegmentedControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uisegmentedcontrol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement": {
+      "title": "UIAccessibilityElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilityelement"
+    },
+    "devLink-1734986": {
+      "identifier": "devLink-1734986",
+      "type": "link",
+      "title": "UIView",
+      "url": "https://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW18"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615141-isaccessibilityelement": {
+      "title": "isAccessibilityElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615141-isaccessibilityelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615141-isaccessibilityelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether the receiver is an accessibility element that an assistive application can access."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits": {
+      "title": "Accessibility Traits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tell an assistive application how an accessibility element behaves or should be treated by setting these accessibility traits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615202-accessibilitytraits": {
+      "title": "accessibilityTraits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615202-accessibilitytraits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615202-accessibilitytraits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The combination of accessibility traits that best characterize the accessibility element. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitytraits": {
+      "title": "UIAccessibilityTraits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitytraits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitytraits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mask that contains the OR combination of the accessibility traits that best characterize an accessibility element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1649788-accessibilitycustomrotors": {
+      "title": "accessibilityCustomRotors",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1649788-accessibilitycustomrotors",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1649788-accessibilitycustomrotors",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of custom rotors for the current element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615080-accessibilityelementshidden": {
+      "title": "accessibilityElementsHidden",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615080-accessibilityelementshidden",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615080-accessibilityelementshidden",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether the accessibility elements contained within this accessibility element are hidden."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1534050-accessibilitynotifieswhendestroy": {
+      "title": "accessibilityNotifiesWhenDestroyed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1534050-accessibilitynotifieswhendestroy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1534050-accessibilitynotifieswhendestroy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether a custom accessibility object sends a notification when its corresponding UI element is destroyed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/3043551-accessibilityrespondstouserinter": {
+      "title": "accessibilityRespondsToUserInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/3043551-accessibilityrespondstouserinter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/3043551-accessibilityrespondstouserinter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether the element performs an action based on user interaction."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615089-accessibilityviewismodal": {
+      "title": "accessibilityViewIsModal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615089-accessibilityviewismodal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615089-accessibilityviewismodal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether VoiceOver should ignore the elements within views that are siblings of the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren": {
+      "title": "shouldGroupAccessibilityChildren",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether VoiceOver should group together the elements that are children of the receiver, regardless of their positions on the screen."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/speech_attributes_for_attributed_strings": {
+      "title": "Speech Attributes for Attributed Strings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/speech_attributes_for_attributed_strings",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility/speech_attributes_for_attributed_strings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply attributes to text in an attributed string to modify how that text is pronounced."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/text_attributes_for_attributed_strings": {
+      "title": "Text Attributes for Attributed Strings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/text_attributes_for_attributed_strings",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility/text_attributes_for_attributed_strings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply attributes to text in an attributed string to convey extra information about the text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1627578-accessibilityheaderelements": {
+      "title": "accessibilityHeaderElements",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1627578-accessibilityheaderelements",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1627578-accessibilityheaderelements",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of elements considered to be the headers for this element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/2865913-accessibilityattributedhint": {
+      "title": "accessibilityAttributedHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/2865913-accessibilityattributedhint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/2865913-accessibilityattributedhint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The underlying attributed version of the accessibility hint."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615093-accessibilityhint": {
+      "title": "accessibilityHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615093-accessibilityhint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615093-accessibilityhint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A brief description of the result of performing an action on the accessibility element, in a localized string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/2865944-accessibilityattributedlabel": {
+      "title": "accessibilityAttributedLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/2865944-accessibilityattributedlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/2865944-accessibilityattributedlabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The underlying attributed version of the accessibility label."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615181-accessibilitylabel": {
+      "title": "accessibilityLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615181-accessibilitylabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615181-accessibilitylabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A succinct label that identifies the accessibility element, in a localized string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615192-accessibilitylanguage": {
+      "title": "accessibilityLanguage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615192-accessibilitylanguage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615192-accessibilitylanguage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The language in which to speak the accessibility element's label, value, and hint."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/3075456-accessibilitytextualcontext": {
+      "title": "accessibilityTextualContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/3075456-accessibilitytextualcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/3075456-accessibilitytextualcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A named context that helps identify and classify the type of text inside an element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/3197988-accessibilityattributeduserinput": {
+      "title": "accessibilityAttributedUserInputLabels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/3197988-accessibilityattributeduserinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/3197988-accessibilityattributeduserinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The underlying attributed versions of the accessibility user input labels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/3197989-accessibilityuserinputlabels": {
+      "title": "accessibilityUserInputLabels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/3197989-accessibilityuserinputlabels",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/3197989-accessibilityuserinputlabels",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of localized labels the user provides to refer to this element."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/2866105-accessibilityattributedvalue": {
+      "title": "accessibilityAttributedValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/2866105-accessibilityattributedvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/2866105-accessibilityattributedvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The underlying attributed version of the accessibility value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615117-accessibilityvalue": {
+      "title": "accessibilityValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615117-accessibilityvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615117-accessibilityvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The value of the accessibility element, in a localized string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/assistive_technology_identifiers": {
+      "title": "Assistive Technology Identifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/assistive_technology_identifiers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility/assistive_technology_identifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage pausing and resuming assistive technologies with these identifiers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys": {
+      "title": "Notification Dictionary Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handle notifications with the keys defined in the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " parameter dictionary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilityassistivetechnologyidentifier": {
+      "title": "UIAccessibilityAssistiveTechnologyIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityassistivetechnologyidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilityassistivetechnologyidentifier"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitynotifications": {
+      "title": "UIAccessibilityNotifications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitynotifications",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitynotifications",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that an accessible application can send."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilitycontainer": {
+      "title": "UIAccessibilityContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilitycontainer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibilitycontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615179-accessibilityactivationpoint": {
+      "title": "accessibilityActivationPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615179-accessibilityactivationpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615179-accessibilityactivationpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The activation point for the accessibility element, in screen coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1526100-accessibilityfocuseduielement": {
+      "title": "accessibilityFocusedUIElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1526100-accessibilityfocuseduielement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1526100-accessibilityfocuseduielement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The deepest descendant of the accessibility hierarchy that has the focus."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615111-accessibilityframe": {
+      "title": "accessibilityFrame",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615111-accessibilityframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615111-accessibilityframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The frame of the accessibility element, in screen coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1526136-accessibilityhittest": {
+      "title": "accessibilityHitTest:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1526136-accessibilityhittest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1526136-accessibilityhittest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the deepest descendant of the accessibility hierarchy that contains the specified point."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityHitTest:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615200-accessibilitynavigationstyle": {
+      "title": "accessibilityNavigationStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615200-accessibilitynavigationstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615200-accessibilitynavigationstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The navigation style to apply to the object and its elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitynavigationstyle": {
+      "title": "UIAccessibilityNavigationStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitynavigationstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitynavigationstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe how an object’s elements should be navigated by an assistive technology."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615159-accessibilitypath": {
+      "title": "accessibilityPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615159-accessibilitypath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615159-accessibilitypath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The path of the element, in screen coordinates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624921-uiaccessibilityzoomfocuschanged": {
+      "title": "UIAccessibilityZoomFocusChanged",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624921-uiaccessibilityzoomfocuschanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624921-uiaccessibilityzoomfocuschanged",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notifies the system that the app’s focus has changed to a new location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilityzoomtype": {
+      "title": "UIAccessibilityZoomType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityzoomtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilityzoomtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The types of system zoom that can be in effect."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiguidedaccessaccessibilityfeature/uiguidedaccessaccessibilityfeatureassistivetouch": {
+      "title": "UIGuidedAccessAccessibilityFeatureAssistiveTouch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiguidedaccessaccessibilityfeature/uiguidedaccessaccessibilityfeatureassistivetouch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiguidedaccessaccessibilityfeature/uiguidedaccessaccessibilityfeatureassistivetouch"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility": {
+      "title": "UIAccessibility",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that provide accessibility information about views and controls in an app's user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app": {
+      "title": "Supporting VoiceOver in Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to make your iOS app more accessible to users who are blind or have low vision by adding VoiceOver support."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Determining Accessibility",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615141-isaccessibilityelement"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615202-accessibilitytraits",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitytraits",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1649788-accessibilitycustomrotors",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615080-accessibilityelementshidden",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1534050-accessibilitynotifieswhendestroy",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/3043551-accessibilityrespondstouserinter",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615089-accessibilityviewismodal",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Defining Accessibility Text and Language",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/speech_attributes_for_attributed_strings",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/text_attributes_for_attributed_strings",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1627578-accessibilityheaderelements",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/2865913-accessibilityattributedhint",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615093-accessibilityhint",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/2865944-accessibilityattributedlabel",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615181-accessibilitylabel",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615192-accessibilitylanguage",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/3075456-accessibilitytextualcontext",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/3197988-accessibilityattributeduserinput",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/3197989-accessibilityuserinputlabels",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/2866105-accessibilityattributedvalue",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615117-accessibilityvalue"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Handling Notifications",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/assistive_technology_identifiers",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilityassistivetechnologyidentifier",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitynotifications"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Navigating Elements",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilitycontainer",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615179-accessibilityactivationpoint",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1526100-accessibilityfocuseduielement",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615111-accessibilityframe",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1526136-accessibilityhittest",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615200-accessibilitynavigationstyle",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitynavigationstyle",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615159-accessibilitypath",
+        "doc://com.apple.documentation/documentation/uikit/1624921-uiaccessibilityzoomfocuschanged",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilityzoomtype",
+        "doc://com.apple.documentation/documentation/uikit/uiguidedaccessaccessibilityfeature/uiguidedaccessaccessibilityfeatureassistivetouch"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibilitycontainer",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/supporting_voiceover_in_your_app"
+      ],
+      "title": "Essentials",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAccessibility"
+            },
+            {
+              "type": "text",
+              "text": " informal protocol provides accessibility information about an app’s user interface elements. Assistive apps, such as VoiceOver, convey this information to users with disabilities to help them use the app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Standard UIKit controls and views implement the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAccessibility"
+            },
+            {
+              "type": "text",
+              "text": " methods and are therefore accessible to assistive apps by default. This means that if your app uses only standard controls and views, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uibutton"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview"
+            },
+            {
+              "type": "text",
+              "text": ", you need only supply app-specific details when the default values are incomplete. You can do this by setting these values in Interface Builder or by setting the properties in this informal protocol. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAccessibility"
+            },
+            {
+              "type": "text",
+              "text": " informal protocol is also implemented by the  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement"
+            },
+            {
+              "type": "text",
+              "text": " class, which represents custom user interface objects. If you create a completely custom "
+            },
+            {
+              "type": "link",
+              "title": "UIView",
+              "destination": "https://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW18"
+            },
+            {
+              "type": "text",
+              "text": " subclass, you might need to create an instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAccessibilityElement"
+            },
+            {
+              "type": "text",
+              "text": " to represent it. In this case, you would support all the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIAccessibility"
+            },
+            {
+              "type": "text",
+              "text": " properties to correctly set and return the accessibility element’s properties."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

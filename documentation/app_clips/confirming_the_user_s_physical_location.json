@@ -1,0 +1,698 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add code to quickly confirm the user’s physical location while respecting their privacy."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/app_clips"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/app_clips/confirming_the_user_s_physical_location",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3663497,
+  "kind": "article",
+  "metadata": {
+    "title": "Confirming the User’s Physical Location",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "App Clip"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/confirming_the_user_s_physical_location"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/confirming_the_user_s_physical_location"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/app_clips": {
+      "title": "App Clips",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips",
+      "url": "/documentation/app_clips",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip": {
+      "title": "NSAppClip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list/nsappclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of keys that an App Clip uses to get additional capabilities."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSAppClip",
+      "ideTitle": "App Clip",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAppClip"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestlocationconfirmation": {
+      "title": "NSAppClipRequestLocationConfirmation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestlocationconfirmation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestlocationconfirmation"
+    },
+    "link-media-3663493": {
+      "identifier": "link-media-3663493",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/app_clips/confirming_the_user_s_physical_location#3663493"
+    },
+    "media-3663493": {
+      "identifier": "media-3663493",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 972,
+            "height": 410
+          },
+          "url": "https://docs-assets.developer.apple.com/published/66ff6f881a/original-1595291482.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 972,
+            "height": 410
+          },
+          "url": "https://docs-assets.developer.apple.com/published/bd0a13fc90/rendered2x-1595291483.png"
+        }
+      ],
+      "alt": "An Info.plist file with the entry that allows the App Clip to confirm the user’s location.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/corelocation": {
+      "title": "Core Location",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/corelocation"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location": {
+      "title": "Getting the User's Location",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/getting_the_user_s_location"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clcircularregion": {
+      "title": "CLCircularRegion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clcircularregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clcircularregion"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/apactivationpayload/3580309-confirmacquiredinregion": {
+      "title": "confirmAcquiredInRegion:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayload/3580309-confirmacquiredinregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/app_clips/apactivationpayload/3580309-confirmacquiredinregion",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "confirmAcquiredInRegion:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/confirming_the_user_s_physical_location#3663494": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/confirming_the_user_s_physical_location#3663494",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/confirming_the_user_s_physical_location#3663494"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations": {
+      "title": "Responding to Invocations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/responding_to_invocations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add code to respond quickly and seamlessly when a user launches your App Clip."
+        }
+      ]
+    },
+    "link-media-3669502": {
+      "identifier": "link-media-3669502",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/app_clips/confirming_the_user_s_physical_location#3669502"
+    },
+    "media-3669502": {
+      "identifier": "media-3669502",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 384,
+            "height": 441
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7148a98d4e/rendered2x-1596150534.png"
+        }
+      ],
+      "alt": "An App Clip card for an App Clip that can verify the user’s physical location.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/confirming_the_user_s_physical_location": {
+      "title": "Confirming the User’s Physical Location",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/confirming_the_user_s_physical_location",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/confirming_the_user_s_physical_location",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add code to quickly confirm the user’s physical location while respecting their privacy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/apactivationpayload": {
+      "title": "APActivationPayload",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/app_clips/apactivationpayload",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information that’s passed to an App Clip on launch."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations",
+        "doc://com.apple.documentation/documentation/app_clips/apactivationpayload",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip"
+      ],
+      "title": "Launch",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you create an App Clip that users invoke at a physical location, you may need to confirm the user’s location before allowing them to perform a task. For a quick launch and to preserve the user’s privacy, App Clips use a lightweight mechanism in which the system verifies that a user is at a specific, expected location. When you adopt this mechanism, and when users have enabled it, the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "App Clip card"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " that’s displayed upon invocation of the App Clip contains a note that tells the user the App Clip can verify their location. Users can disable it by tapping the note on the App Clip card."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3669502",
+              "metadata": {
+                "anchor": "3669502",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable Your App Clip to Verify the User’s Location",
+          "anchor": "3663495"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To enable your App Clip to verify the user’s location, modify your App Clip’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open your App Clip’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Info.plist"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", add the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key, and set its type to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Dictionary"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add an entry to the dictionary with "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestlocationconfirmation"
+                    },
+                    {
+                      "type": "text",
+                      "text": " as the key, select "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Boolean"
+                    },
+                    {
+                      "type": "text",
+                      "text": " as its type, and set its value to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "true"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3663493",
+              "metadata": {
+                "anchor": "3663493",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, open the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip"
+            },
+            {
+              "type": "text",
+              "text": " key and the following entries of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Boolean"
+            },
+            {
+              "type": "text",
+              "text": " to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation”. Per default, the value for both entries is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NO"
+            },
+            {
+              "type": "text",
+              "text": ". Change the value for “Requests location confirmation” to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "YES"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Don’t add an entry for the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestlocationconfirmation"
+                },
+                {
+                  "type": "text",
+                  "text": " key to your full app’s "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": " — functionality to confirm the user’s location is only available to App Clips. Instead, modify your full app’s code to request permission to access the user’s location and make use of the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corelocation"
+                },
+                {
+                  "type": "text",
+                  "text": " framework. For more information, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Code that Verifies the User’s Physical Location",
+          "anchor": "3663496"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you modify your App Clip’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file, add code to provide the expected physical location information to the App Clip. To retrieve this information, encode an identifier in the URL that launches the App Clip, and use the identifier to look up the location information for a business in your database. Alternatively, encode the location information in the URL that launches the App Clip."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On launch, access the location information, use it to create a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/clcircularregion"
+            },
+            {
+              "type": "text",
+              "text": " object with a radius of up to 500 meters, and pass it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayload/3580309-confirmacquiredinregion"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code verifies the user’s location when they launch the App Clip. Make sure to update your user interface for each possible result, including the case where a user denies access to location services on their device."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "import UIKit",
+            "import AppClip",
+            "import CoreLocation",
+            "",
+            "class SceneDelegate: UIResponder, UIWindowSceneDelegate {",
+            "    ",
+            "    var window: UIWindow?",
+            "    ",
+            "    // Call the verifyUserLocation(_:) function in all applicable life-cycle callbacks.",
+            "",
+            "    func verifyUserLocation(_ activity: NSUserActivity?) {",
+            "        ",
+            "        // Guard against faulty data.",
+            "        guard activity != nil else { return }",
+            "        guard activity!.activityType == NSUserActivityTypeBrowsingWeb else { return }",
+            "        guard let payload = activity!.appClipActivationPayload else { return }",
+            "        guard let incomingURL = activity?.webpageURL else { return }",
+            "",
+            "        // Create a CLRegion object.",
+            "        guard let region = location(from: incomingURL) else {",
+            "            // Respond to parsing errors here.",
+            "            return",
+            "        }",
+            "        ",
+            "        // Verify that the invocation happened at the expected location.",
+            "        payload.confirmAcquired(in: region) { (inRegion, error) in",
+            "            guard let confirmationError = error as? APActivationPayloadError else {",
+            "                if inRegion {",
+            "                    // The location of the NFC tag matches the user's location.",
+            "                } else {",
+            "                    // The location of the NFC tag doesn't match the records;",
+            "                    // for example, if someone moved the NFC tag.",
+            "                }",
+            "                return",
+            "            }",
+            "            ",
+            "            if confirmationError.code == .doesNotMatch {",
+            "                // The scanned URL wasn't registered for the App Clip.",
+            "            } else {",
+            "                // The user denied location access, or the source of the",
+            "                // App Clip’s invocation wasn’t an NFC tag or visual code.",
+            "            }",
+            "        }",
+            "    }",
+            "",
+            "    func location(from url:URL) -> CLRegion? {",
+            "        let coordinates = CLLocationCoordinate2D(latitude: 37.334722,",
+            "                                                 longitude: 122.008889)",
+            "        return CLCircularRegion(center: coordinates,",
+            "                                radius: 100,",
+            "                                identifier: \"Apple Park\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3663494",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information on how you can access the App Clip’s "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "invocation URL"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

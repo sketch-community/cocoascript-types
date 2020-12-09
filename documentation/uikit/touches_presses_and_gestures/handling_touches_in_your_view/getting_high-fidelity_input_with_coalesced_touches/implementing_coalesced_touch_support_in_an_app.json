@@ -1,0 +1,803 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Learn how to create a simple app that handles coalesced touches."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2919301,
+  "kind": "article",
+  "metadata": {
+    "title": "Implementing Coalesced Touch Support in an App",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view": {
+      "title": "Handling Touches in Your View",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches": {
+      "title": "Getting High-Fidelity Input with Coalesced Touches",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919317": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919317",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919317",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Storing touch information in the Stroke class"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919318": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919318",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919318",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Storing user-generated strokes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan": {
+      "title": "touchesBegan:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621142-touchesbegan",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesBegan:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended": {
+      "title": "touchesEnded:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621084-touchesended",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesEnded:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled": {
+      "title": "touchesCancelled:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiresponder/1621116-touchescancelled",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "touchesCancelled:withEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919320": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919320",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919320",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Receiving touches in the main view"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919321": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919321",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919321",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adding touches to the active stroke"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch/1618134-preciselocationinview": {
+      "title": "preciseLocationInView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618134-preciselocationinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch/1618134-preciselocationinview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "preciseLocationInView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitouch/1618116-locationinview": {
+      "title": "locationInView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618116-locationinview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitouch/1618116-locationinview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationInView:"
+        }
+      ]
+    },
+    "link-media-2919323": {
+      "identifier": "link-media-2919323",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919323"
+    },
+    "media-2919323": {
+      "identifier": "media-2919323",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 284,
+            "height": 565
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7c21d852b9/3a0ff4af-3efc-4ee0-9563-ad31fc769f67.png"
+        }
+      ],
+      "alt": "A screenshot of an app that uses coalesced touches to perform high-accuracy drawing.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Using coalesced touches for drawing"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app": {
+      "title": "Implementing Coalesced Touch Support in an App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to create a simple app that handles coalesced touches."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "link-media-2919323"
+            },
+            {
+              "type": "text",
+              "text": " shows a simple drawing app that captures touches and renders the resulting path onscreen. The app tracks all touches reported by UIKit, including coalesced touches. The app builds the path by drawing line segments from one touch point to the next."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2919323",
+              "metadata": {
+                "anchor": "2919323",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Using coalesced touches for drawing"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide Storage for the Touches",
+          "anchor": "2919316"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The main view of the app uses incoming touch events to build a set of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Stroke"
+            },
+            {
+              "type": "text",
+              "text": " objects. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919317"
+            },
+            {
+              "type": "text",
+              "text": " shows the definition of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Stroke"
+            },
+            {
+              "type": "text",
+              "text": " class and the associated "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StrokeSample"
+            },
+            {
+              "type": "text",
+              "text": " class, which store information about each touch event. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class Stroke {",
+            "    var samples = [StrokeSample]()",
+            "    func add(sample: StrokeSample) {",
+            "        samples.append(sample)",
+            "    }",
+            "}",
+            " ",
+            "struct StrokeSample {",
+            "    let location: CGPoint",
+            "    let coalescedSample: Bool",
+            "    init(point: CGPoint, coalesced : Bool = false) {",
+            "        location = point",
+            "        coalescedSample = coalesced",
+            "    }",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2919317",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Storing touch information in the Stroke class"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The main view maintains a collection of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Stroke"
+            },
+            {
+              "type": "text",
+              "text": " objects that have been created using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StrokeCollection"
+            },
+            {
+              "type": "text",
+              "text": " class, the implementation of which is shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919318"
+            },
+            {
+              "type": "text",
+              "text": ". The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "strokes"
+            },
+            {
+              "type": "text",
+              "text": " property of this class stores the completed strokes and the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "activeStroke"
+            },
+            {
+              "type": "text",
+              "text": " property contains a stroke object that is currently being modified. Calling the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "acceptActiveStroke"
+            },
+            {
+              "type": "text",
+              "text": " method moves the active stroke to the set of completed strokes."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class StrokeCollection {",
+            "    var strokes = [Stroke]()",
+            "    var activeStroke: Stroke? = nil",
+            " ",
+            "    func acceptActiveStroke() {",
+            "        if let stroke = activeStroke {",
+            "            strokes.append(stroke)",
+            "            activeStroke = nil",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2919318",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Storing user-generated strokes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Retrieve the Coalesced Touches",
+          "anchor": "2919319"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919320"
+            },
+            {
+              "type": "text",
+              "text": " shows the portion of the main drawing view that creates new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Stroke"
+            },
+            {
+              "type": "text",
+              "text": " objects. The view does not support multitouch, so only the first touch event needs to be tracked. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621142-touchesbegan"
+            },
+            {
+              "type": "text",
+              "text": " method creates a new stroke object and marks it as the active stroke. New touch data is added to the active stroke until the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621084-touchesended"
+            },
+            {
+              "type": "text",
+              "text": " method is called, at which point the stroke is accepted into the stroke collection. If the touch sequence is interrupted for any reason, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiresponder/1621116-touchescancelled"
+            },
+            {
+              "type": "text",
+              "text": " method abandons the currently active stroke."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class DrawingView : UIView {",
+            "   var strokeCollection: StrokeCollection? {",
+            "      didSet {",
+            "         // If the strokes change, redraw the view's content.",
+            "         if oldValue !== strokeCollection {",
+            "            setNeedsDisplay()",
+            "         }",
+            "      }",
+            "   }",
+            " ",
+            "   // Initialization methods...",
+            " ",
+            "   // Touch Handling methods",
+            "   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {",
+            "      // Create a new stroke and make it the active stroke.",
+            "      let newStroke = Stroke()",
+            "      strokeCollection?.activeStroke = newStroke",
+            " ",
+            "      // The view does not support multitouch, so get the samples",
+            "      //  for only the first touch in the event.",
+            "      if let coalesced = event?.coalescedTouches(for: touches.first!) {",
+            "         addSamples(for: coalesced)",
+            "      }",
+            "   }",
+            " ",
+            "   override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {",
+            "      if let coalesced = event?.coalescedTouches(for: touches.first!) {",
+            "         addSamples(for: coalesced)",
+            "      }",
+            "   }",
+            " ",
+            "   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {",
+            "      // Accept the current stroke and add it to the stroke collection.",
+            "      if let coalesced = event?.coalescedTouches(for: touches.first!) {",
+            "         addSamples(for: coalesced)",
+            "      }",
+            "      // Accept the active stroke.",
+            "      strokeCollection?.acceptActiveStroke()",
+            "   }",
+            " ",
+            "   override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {",
+            "      // Clear the last stroke.",
+            "      strokeCollection?.activeStroke = nil",
+            "   }",
+            " ",
+            "   // More methods...",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2919320",
+            "title": "Listing 3",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Receiving touches in the main view"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The touch input methods of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DrawingView"
+            },
+            {
+              "type": "text",
+              "text": " use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "addSamples"
+            },
+            {
+              "type": "text",
+              "text": " method (shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_touches_in_your_view/getting_high-fidelity_input_with_coalesced_touches/implementing_coalesced_touch_support_in_an_app#2919321"
+            },
+            {
+              "type": "text",
+              "text": ") to incorporate new touches into the active stroke. This method creates a new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StrokeSample"
+            },
+            {
+              "type": "text",
+              "text": " for each touch point and adds that sample to the active stroke. The example flags coalesced touches internally, but the touches are no different from the regular touches reported by the system."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func addSamples(for touches: [UITouch]) {",
+            "   if let stroke = strokeCollection?.activeStroke {",
+            "      // Add all of the touches to the active stroke.",
+            "      for touch in touches {",
+            "         if touch == touches.last {",
+            "            let sample = StrokeSample(point: touch.preciseLocation(in: self))",
+            "            stroke.add(sample: sample)",
+            "         } else {",
+            "            // If the touch is not the last one in the array,",
+            "            //  it was a coalesced touch. ",
+            "            let sample = StrokeSample(point: touch.preciseLocation(in: self), ",
+            "                                  coalesced: true)",
+            "            stroke.add(sample: sample)",
+            "         }",
+            "      } ",
+            "      // Update the view.",
+            "      self.setNeedsDisplay()",
+            "   }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2919321",
+            "title": "Listing 4",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Adding touches to the active stroke"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "When capturing drawing input from Apple Pencil, you can use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618134-preciselocationinview"
+                },
+                {
+                  "type": "text",
+                  "text": " method instead of the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618116-locationinview"
+                },
+                {
+                  "type": "text",
+                  "text": " method to get more precise touch information. Use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618134-preciselocationinview"
+                },
+                {
+                  "type": "text",
+                  "text": " method only for capturing drawing-related input. For general interactions with your interface, continue to get the touch location using the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uitouch/1618116-locationinview"
+                },
+                {
+                  "type": "text",
+                  "text": " method."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The remaining methods of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DrawingView"
+            },
+            {
+              "type": "text",
+              "text": " class take the touch samples and turn them into the rendered output. The app’s Clear button releases the view’s current "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StrokeCollection"
+            },
+            {
+              "type": "text",
+              "text": " object and creates a new one."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

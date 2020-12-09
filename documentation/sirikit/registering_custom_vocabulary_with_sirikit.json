@@ -1,0 +1,794 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864116,
+  "kind": "article",
+  "metadata": {
+    "title": "Registering Custom Vocabulary with SiriKit",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/registering_custom_vocabulary_with_sirikit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/registering_custom_vocabulary_with_sirikit"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference": {
+      "title": "Global Vocabulary Reference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Understand the keys and values included in your app’s global vocabulary file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invocabulary/1638998-setvocabularystrings": {
+      "title": "setVocabularyStrings:ofType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary/1638998-setvocabularystrings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invocabulary/1638998-setvocabularystrings",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setVocabularyStrings:ofType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
+      "title": "INVocabulary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invocabulary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object for registering user-specific vocabulary that Siri requests might include."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit#2865098": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit#2865098",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit#2865098",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registering user-specific vocabulary"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name": {
+      "title": "Specifying Synonyms for Your App Name",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide alternative names for your app that are more familiar or easier for users to speak."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit": {
+      "title": "Registering Custom Vocabulary with SiriKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Related Topics",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/specifying_synonyms_for_your_app_name"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/invocabulary"
+      ],
+      "title": "Custom Vocabulary",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apps must register any vocabulary that’s used in a nonconventional way or that’s completely unique to your app. Siri uses your custom vocabulary to improve the speech recognition process and to ensure that your app has correct information. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You must provide one or more example phrases for engaging your app through Siri. Example phrases correspond to the way that users speak about your app and should include any custom vocabulary terms defined by your app. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The terms you define from your iOS app are automatically shared with your Intents extension on watchOS. You don’t need to register your user-specific or global vocabulary again from your Intents extension in watchOS."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Register Example Phrases and Global Vocabulary",
+          "anchor": "2865078"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Register your app’s example phrases and global vocabulary using the Info.plist file of your Intents app extension. All apps should provide at least a few phrases that teach users how to use Siri to trigger your intents. Siri displays your phrases in the Siri Guide and also uses custom vocabulary to improve the accuracy of its recognition process. To create a global vocabulary file:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In your Xcode project, select New > File."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In iOS > Resource, select the Property List file type."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Next."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the name of the file to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "AppIntentVocabulary.plist,"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and add the file to your iOS app. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Create."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Place your "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppIntentVocabulary.plist"
+            },
+            {
+              "type": "text",
+              "text": " file in the language-specific ("
+            },
+            {
+              "type": "codeVoice",
+              "code": ".lproj"
+            },
+            {
+              "type": "text",
+              "text": ") directory of your iOS app that corresponds to your base development language. Include localized versions of the file in each of your app’s language-specific project directories. In Xcode, you can create localized versions automatically from the File inspector."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The global vocabulary file contains two keys at the root level:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "IntentPhrases"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key contains example phrases for invoking your services. Always include this key."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "ParameterVocabularies"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key defines your app’s custom terms that apply to all users of your app and the intent parameters to which they apply. You may omit this key if you don’t have any custom vocabulary terms."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You may specify custom vocabulary terms for "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "ride options"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "workout names"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". You must always associate custom vocabulary terms with a specific property of the corresponding intent object. You may associate the same term with multiple intents. For example, you may associate the same workout name with all of the workout-related intents. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "During development, Xcode forwards your global vocabulary to Siri but limits the availability of that vocabulary to your development device. Ingestion of your vocabulary data isn’t instantaneous, so you may need to wait a few minutes before testing any custom vocabulary."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about how to fully specify example phrases and custom terms, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Register User-Specific Vocabulary",
+          "anchor": "2865079"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You register user-specific vocabulary terms at runtime by calling the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary/1638998-setvocabularystrings"
+            },
+            {
+              "type": "text",
+              "text": " method of an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary"
+            },
+            {
+              "type": "text",
+              "text": " object. Unlike the global terms, which you declare in your app bundle, you declare user-specific terms at runtime from your iOS app. The terms you declare must belong to one of the following categories:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Audiobook titles"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Audiobook author names"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Car names"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Contact names (only if they’re app-specific and not managed by the Contacts framework)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Contact groups"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Music artist names"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Notebook titles"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Notebook groups"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Payment organization names"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Payment account nicknames"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Photo tags"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Photo album names"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Podcast or radio show titles"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Playlist titles"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Workout names"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Vehicle profile names"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When selecting the vocabulary to register, choose terms that could be misunderstood by someone not familiar with your app. For example, include terms whose literal meanings differ from your app’s usage of those terms. Don’t register terms that are easily understood, such as “My Photo Album” or “My Workout”."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each call to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary/1638998-setvocabularystrings"
+            },
+            {
+              "type": "text",
+              "text": " method replaces any previously registered terms of the same type. As a result, each call to that method must include all of the terms that you want to associate with the user. In addition, you must arrange terms based on priority, placing the most important terms first in the list you provide."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit#2865098"
+            },
+            {
+              "type": "text",
+              "text": " shows an example that registers a set of custom workout names for the user. The example assumes that the app provides a custom "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sortedWorkoutNames"
+            },
+            {
+              "type": "text",
+              "text": " method that sorts the workout names based on how recently the user used them. You execute this code from your iOS app, and not from your Intents app extension."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSOrderedSet* workoutNames = [self sortedWorkoutNames];",
+            "INVocabulary* vocabulary = [INVocabulary sharedVocabulary];",
+            "[vocabulary setVocabularyStrings:workoutNames",
+            "\t\tofType:INVocabularyStringTypeWorkoutActivityName];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2865098",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Registering user-specific vocabulary"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

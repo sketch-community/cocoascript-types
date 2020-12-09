@@ -1,0 +1,597 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Organize data in two different stores and implement a link between them."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3544636,
+  "kind": "article",
+  "metadata": {
+    "title": "Linking Data Between Two Core Data Stores",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.2",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.4",
+        "current": "12.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/linking_data_between_two_core_data_stores"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/linking_data_between_two_core_data_stores"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores#3576739": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores#3576739",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores#3576739"
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores#3576741": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores#3576741",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores#3576741"
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores#3576742": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores#3576742",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores#3576742"
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores#3576743": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores#3576743",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores#3576743"
+    },
+    "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model": {
+      "title": "Creating a Core Data Model",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/creating_a_core_data_model",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a data model file to contain your app’s object structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack": {
+      "title": "Setting Up a Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up the classes that manage and persist your app’s objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage and persist your app’s model layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data": {
+      "title": "Handling Different Data Types in Core Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/handling_different_data_types_in_core_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, store, and present records for a variety of data types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores": {
+      "title": "Linking Data Between Two Core Data Stores",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Organize data in two different stores and implement a link between them."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/8d0f0c0516/LinkingDataBetweenTwoCoreDataStores.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/8d0f0c0516/LinkingDataBetweenTwoCoreDataStores.zip",
+      "checksum": "1a2e61e65691a5fcaa31ca8b466ab5d2c197e7d23360de42dd24a4ae8b53ff834506381d2e7ff6b1b1d41aeee24861893c1a3c1558612a7faa179b0d82e90328",
+      "url": "https://docs-assets.developer.apple.com/published/8d0f0c0516/LinkingDataBetweenTwoCoreDataStores.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/8d0f0c0516/LinkingDataBetweenTwoCoreDataStores.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+        "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Sometimes your app needs to work with multiple Core Data stores. For example, if you need to label data in a read-only store, you must write the labeling result to a different store. If you need to synchronize part of a large data set to iCloud, your app can organize the data in two stores to mirror one to CloudKit and keep the other on the local device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample app shows how to manage and link data from two different stores with one Core Data stack. The app organizes the records of books and user feedback on the books into two separate stores. It connects two entities from the stores with a fetched property, which enables the app to access a book’s feedback directly. When users add or remove a feedback record and save the change, the app updates the fetched property by refreshing the book object."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Data Model",
+          "anchor": "3576746"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app creates a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Book"
+            },
+            {
+              "type": "text",
+              "text": " entity and a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Feedback"
+            },
+            {
+              "type": "text",
+              "text": " entity in the Core Data model, and then creates one "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Configuration"
+            },
+            {
+              "type": "text",
+              "text": " for each store, named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Book"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Feedback"
+            },
+            {
+              "type": "text",
+              "text": " as well, to contain the store’s entity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To link the entities, the sample app adds a fetched property, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "feedbackList"
+            },
+            {
+              "type": "text",
+              "text": ", in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Book"
+            },
+            {
+              "type": "text",
+              "text": " entity, which is displayed in the entity’s Fetched Properties section in Xcode. The fetched property’s target is set to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Feedback"
+            },
+            {
+              "type": "text",
+              "text": " entity and its predicate is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "bookUUID == $FETCH_SOURCE.uuid"
+            },
+            {
+              "type": "text",
+              "text": ", where "
+            },
+            {
+              "type": "codeVoice",
+              "code": "bookUUID"
+            },
+            {
+              "type": "text",
+              "text": " is a key path of the target and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "$FETCH_SOURCE"
+            },
+            {
+              "type": "text",
+              "text": " will be replaced with the source of the fetched property, which is the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Book"
+            },
+            {
+              "type": "text",
+              "text": " object in this sample. With this setup, when the app refreshes a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Book"
+            },
+            {
+              "type": "text",
+              "text": " object and accesses its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "feedbackList"
+            },
+            {
+              "type": "text",
+              "text": " property, Core Data executes an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSFetchRequest"
+            },
+            {
+              "type": "text",
+              "text": " with the predicate on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Feedback"
+            },
+            {
+              "type": "text",
+              "text": " entity, and returns the result to the property."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set Up the Core Data Stack",
+          "anchor": "3576747"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app creates one "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersistentStoreDescription"
+            },
+            {
+              "type": "text",
+              "text": " object for each store with the store’s URL and model configuration, then uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSPersistentContainer"
+            },
+            {
+              "type": "text",
+              "text": " to load the stores."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let container = NSPersistentContainer(name: \"CoreDataFetchedProperty\")",
+            "let defaultDirectoryURL = NSPersistentContainer.defaultDirectoryURL()",
+            "",
+            "let bookStoreURL = defaultDirectoryURL.appendingPathComponent(\"Books.sqlite\")",
+            "let bookStoreDescription = NSPersistentStoreDescription(url: bookStoreURL)",
+            "bookStoreDescription.configuration = \"Book\"",
+            "",
+            "let feedbackStoreURL = defaultDirectoryURL.appendingPathComponent(\"Feedback.sqlite\")",
+            "let feedbackStoreDescription = NSPersistentStoreDescription(url: feedbackStoreURL)",
+            "feedbackStoreDescription.configuration = \"Feedback\"",
+            "",
+            "container.persistentStoreDescriptions = [bookStoreDescription, feedbackStoreDescription]",
+            "container.loadPersistentStores(completionHandler: { (_, error) in",
+            "    guard let error = error as NSError? else { return }",
+            "    fatalError(\"###\\(#function): Failed to load persistent stores:\\(error)\")",
+            "})"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3576739",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With this setup, when the app fetches or changes data, Core Data automatically routes the request to the right store based on where the entities are."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Implement the Fetched Property",
+          "anchor": "3576748"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Xcode currently doesn’t generate code for fetched properties, so the sample app adds the following extension to provide the accessor for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "feedbackList"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "extension Book {",
+            "    var feedbackList: [Feedback]? { // The accessor of the feedbackList property.",
+            "        return value(forKey: \"feedbackList\") as? [Feedback]",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3576741",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "feedbackList"
+            },
+            {
+              "type": "text",
+              "text": " accessor, the app can access the fetched property directly."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let feedback = book.feedbackList?[indexPath.row] else { return cell }",
+            "let rating = Int(feedback.rating)",
+            "let comment = feedback.comment ?? \"\""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3576742",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Unlike a relationship, a fetched property can’t be used in a predicate for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSFetchRequest"
+            },
+            {
+              "type": "text",
+              "text": ". It isn’t automatically updated when the managed context is saved either. When the sample app saves changes on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Feedback"
+            },
+            {
+              "type": "text",
+              "text": " entity, the app must refresh the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "book"
+            },
+            {
+              "type": "text",
+              "text": " object to update the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "book.feedbackList"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "context.refresh(book, mergeChanges: true)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3576743",
+            "title": "Listing 4"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

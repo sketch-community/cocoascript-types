@@ -1,0 +1,1042 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Design a CloudKit-compatible data model and initialize your CloudKit schema."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3191028,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating a Core Data Model for CloudKit",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit": {
+      "title": "Mirroring a Core Data Store with CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model": {
+      "title": "Creating a Core Data Model",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/creating_a_core_data_model"
+    },
+    "doc://com.apple.documentation/documentation/coredata/modeling_data": {
+      "title": "Modeling Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/modeling_data"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3193831": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3193831",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3193831"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data": {
+      "title": "Reading CloudKit Records for Core Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Access CloudKit records created from Core Data managed objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid": {
+      "title": "objectID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject/1506848-objectid"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer": {
+      "title": "NSPersistentCloudKitContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions": {
+      "title": "NSPersistentCloudKitContainerOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontaineroptions"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3197340": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3197340",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3197340"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
+      "title": "CKRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit": {
+      "title": "Setting Up Core Data with CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up the classes and capabilities that sync your store to CloudKit."
+        }
+      ]
+    },
+    "devLink-1756041": {
+      "identifier": "devLink-1756041",
+      "type": "link",
+      "title": "Using CloudKit Dashboard to Manage Databases",
+      "url": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EditingSchemesUsingCloudKitDashboard/EditingSchemesUsingCloudKitDashboard.html#//apple_ref/doc/uid/TP40014987-CH5"
+    },
+    "devLink-1755963": {
+      "identifier": "devLink-1755963",
+      "type": "link",
+      "title": "Deploying the Schema",
+      "url": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/DeployingYourCloudKitApp/DeployingYourCloudKitApp.html#//apple_ref/doc/uid/TP40014987-CH10"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3225865": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3225865",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3225865"
+    },
+    "devLink-1747208": {
+      "identifier": "devLink-1747208",
+      "type": "link",
+      "title": "Designing for CloudKit",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/DesigningforCloudKit/DesigningforCloudKit.html#//apple_ref/doc/uid/TP40012094-CH9"
+    },
+    "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration": {
+      "title": "Using Lightweight Migration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/using_lightweight_migration"
+    },
+    "devLink-1731169": {
+      "identifier": "devLink-1731169",
+      "type": "link",
+      "title": "Core Data Model Versioning and Data Migration",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399-CH1"
+    },
+    "link-media-3230504": {
+      "identifier": "link-media-3230504",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit#3230504"
+    },
+    "media-3230504": {
+      "identifier": "media-3230504",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 358,
+            "height": 153
+          },
+          "url": "https://docs-assets.developer.apple.com/published/197a79d005/d39b611e-14b4-4d90-a691-31e92e84848b.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 358,
+            "height": 153
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fa50b9de4e/dece0b6e-439e-4c24-ad4d-e56f63973696.png"
+        }
+      ],
+      "alt": "Flow diagram showing that your app’s Core Data model generates a CloudKit schema.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit": {
+      "title": "Creating a Core Data Model for CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/creating_a_core_data_model_for_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Design a CloudKit-compatible data model and initialize your CloudKit schema."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit": {
+      "title": "Syncing a Core Data Store with CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Synchronize objects between devices, and handle store changes in the user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit",
+        "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data"
+      ],
+      "title": "Configuring CloudKit Mirroring",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To pass records back and forth, Core Data stores and the CloudKit database need a shared understanding of the data’s structure. You define this information first in the Core Data model, then use it to generate a schema for CloudKit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3230504",
+              "metadata": {
+                "anchor": "3230504",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Design a CloudKit-Compatible Core Data Model",
+          "anchor": "3191035"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the Core Data model editor to define your app’s entities and their properties, or construct your model in code. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model"
+            },
+            {
+              "type": "text",
+              "text": " and the articles under "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/modeling_data"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The CloudKit schema doesn’t support all Core Data model features. As you design your model, note the following limits of the CloudKit schema and make sure you design a compatible model."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Core Data Model element"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "CloudKit Schema limitation"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Entities"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Unique constraints aren’t supported."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Attributes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Undefined"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid"
+                    },
+                    {
+                      "type": "text",
+                      "text": " attribute types aren’t supported."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Relationships"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "All relationships must be optional. Due to operation size limitations, relationship changes may not be saved atomically."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "All relationships must have an inverse, in case the records synchronize out of order. (In a Core Data model, an inverse is strongly recommended but not required.)"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The Deny deletion rule is not supported."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Configurations"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Entities in a configuration must not have relationships to entities in another configuration."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3193831",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about how Core Data translates managed objects to CloudKit records, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/reading_cloudkit_records_for_core_data"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize Your CloudKit Schema During Development",
+          "anchor": "3191051"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you’ve created your Core Data model, you tell CloudKit what types of records CloudKit needs to store by initializing a development schema. The development schema is a draft that you can rewrite as often as needed during development, before the record types and attributes become immutable in production. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Initialize the schema from your developer tooling, for example, from an integration test. If you like, you can initialize the schema as part of every test run."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Don’t include schema initialization in your production code."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the code that sets up your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer"
+            },
+            {
+              "type": "text",
+              "text": ", initialize an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions"
+            },
+            {
+              "type": "text",
+              "text": " on the container. Toggle the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "shouldInitializeSchema"
+            },
+            {
+              "type": "text",
+              "text": " property on the container options to initialize the schema."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "shouldInitializeSchema"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to true."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Run your app on a device. Look for this log line in your console output: "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "<NSCloudKitMirroringDelegate: 0x7f9699d29a90>: Successfully set up CloudKit integration for store"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "shouldInitializeSchema"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to false."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let container = NSPersistentCloudKitContainer(name: \"Earthquakes\")",
+            "",
+            "// get the store description",
+            "guard let description = container.persistentStoreDescriptions.first else {",
+            "    fatalError(\"Could not retrieve a persistent store description.\")",
+            "}",
+            "",
+            "// initialize the CloudKit schema",
+            "let id = \"iCloud.com.example.apple-samplecode.Earthquakes\"",
+            "let options = NSPersistentCloudKitContainerOptions(containerIdentifier: id)",
+            "options.shouldInitializeSchema = true // toggle to false when done",
+            "description.cloudKitContainerOptions = options"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3197340",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "During initialization, Core Data creates representative "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " instances for all stores in the container that use Core Data with CloudKit and uploads them to CloudKit. Finally, the schema becomes visible in the CloudKit dashboard, and Core Data deletes the representative records."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Reset "
+            },
+            {
+              "type": "codeVoice",
+              "code": "shouldInitializeSchema"
+            },
+            {
+              "type": "text",
+              "text": " after initialization to ensure that you only create these records once."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about initializing an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer"
+            },
+            {
+              "type": "text",
+              "text": ", see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Throughout Development, Reset the Environment",
+          "anchor": "3227915"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As you change the model during development, periodically visit the CloudKit dashboard to reset the development environment and delete the existing development schema, before initializing a new one. For more information about resetting the development environment, see "
+            },
+            {
+              "type": "link",
+              "title": "Using CloudKit Dashboard to Manage Databases",
+              "destination": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EditingSchemesUsingCloudKitDashboard/EditingSchemesUsingCloudKitDashboard.html#//apple_ref/doc/uid/TP40014987-CH5"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Push Your Schema from Development to Production",
+          "anchor": "3191031"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you’re satisfied with your model, have tested your app, and are ready to submit it to the app store, it’s time to promote your schema from development to production."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Once you push your schema to production, the record types and attributes you’ve added are immutable and exist for all time. You can add new record types, and add properties to an existing record, but you can’t modify or delete existing record types or properties."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Initialize your schema one last time, then promote it from the CloudKit dashboard. For more information about promoting a schema from development to production, see "
+            },
+            {
+              "type": "link",
+              "title": "Deploying the Schema",
+              "destination": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/DeployingYourCloudKitApp/DeployingYourCloudKitApp.html#//apple_ref/doc/uid/TP40014987-CH10"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Your Production Schema",
+          "anchor": "3191667"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Plan carefully how your app will handle forward compatibility and major changes to the model, because you can’t rename or delete CloudKit record types and fields in production. Consider these strategies:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Migrate users to a completely new store, using "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to associate the new store with a new container."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Incrementally add new fields on existing record types. However, earlier versions of the app can’t read these new fields."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Version your entities by including a version attribute from the start. Use a fetch request with a predicate to direct different versions of the app to access the records they support. Older versions of the app ignore new data."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, consider a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Post"
+            },
+            {
+              "type": "text",
+              "text": " entity with a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "version"
+            },
+            {
+              "type": "text",
+              "text": " attribute. In earlier app versions, fetch only those records created with the entity’s original fields. For later app versions, fetch both original records and records that contain added fields."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let context = NSManagedObjectContext(",
+            "    concurrencyType: .privateQueueConcurrencyType",
+            ")",
+            "context.performAndWait {",
+            "    // select a version of the entity to load",
+            "    let maxAllowedVersion = 1 // for earlier versions of the app",
+            "    let laterMaxAllowedVersion = 3 // for later versions of the app",
+            "    let version = maxAllowedVersion",
+            "    ",
+            "    // fetch records up to and including the supported version",
+            "    let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: \"Post\")",
+            "    fetchRequest.predicate = NSPredicate(",
+            "        format: \"version <= %d\",",
+            "        argumentArray: [version]",
+            "    )",
+            "    let results = context.fetch(fetchRequest) //posts <= 1, or posts <= 3",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3225865",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Along with these choices, consider your timelines for supporting multiple versions of your app, and for migrating users to newer app versions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For tips on migrating records to a new schema, see "
+            },
+            {
+              "type": "link",
+              "title": "Designing for CloudKit",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/DesigningforCloudKit/DesigningforCloudKit.html#//apple_ref/doc/uid/TP40012094-CH9"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about Core Data model migration, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/using_lightweight_migration"
+            },
+            {
+              "type": "text",
+              "text": ". For heavyweight migration, see the "
+            },
+            {
+              "type": "link",
+              "title": "Core Data Model Versioning and Data Migration",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399-CH1"
+            },
+            {
+              "type": "text",
+              "text": " guide."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

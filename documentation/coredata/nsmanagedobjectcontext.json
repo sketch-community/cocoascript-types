@@ -1,0 +1,2922 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object space that you use to manipulate and track changes to managed objects."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1506882,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSManagedObjectContext",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "3.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSManagedObjectContext",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/nsmanagedobjectcontext"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/nsmanagedobjectcontext"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "url": "/documentation/coredata/core_data_stack",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#1654001": {
+      "title": "Concurrency",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#1654001",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/coredata/nsmanagedobjectcontext#1654001"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification": {
+      "title": "NSManagedObjectContextObjectsDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification of changes made to managed objects associated with this context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#2555683": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#2555683",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/nsmanagedobjectcontext#2555683"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotificationcenter/1415360-addobserver": {
+      "title": "addObserver:selector:name:object:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotificationcenter/1415360-addobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotificationcenter/1415360-addobserver",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addObserver:selector:name:object:"
+        }
+      ]
+    },
+    "devLink-1724435": {
+      "identifier": "devLink-1724435",
+      "type": "link",
+      "title": "Core Data Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation": {
+      "title": "NSOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype": {
+      "title": "initWithConcurrencyType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a context with a given concurrency type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithConcurrencyType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsprivatequeueconcurrencytype": {
+      "title": "NSPrivateQueueConcurrencyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsprivatequeueconcurrencytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsprivatequeueconcurrencytype"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsmainqueueconcurrencytype": {
+      "title": "NSMainQueueConcurrencyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsmainqueueconcurrencytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsmainqueueconcurrencytype"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock": {
+      "title": "performBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506578-performblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asynchronously performs a given block on the context’s queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait": {
+      "title": "performBlockAndWait:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Synchronously performs a given block on the context’s queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performBlockAndWait:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506866-save": {
+      "title": "save:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506866-save",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506866-save",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attempts to commit unsaved changes to registered objects to the context’s parent store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "save:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#2555687": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#2555687",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/nsmanagedobjectcontext#2555687"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#2555689": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#2555689",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/nsmanagedobjectcontext#2555689"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506661-processpendingchanges": {
+      "title": "processPendingChanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506661-processpendingchanges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506661-processpendingchanges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Forces the context to process changes to the object graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "processPendingChanges"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslocking": {
+      "title": "NSLocking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslocking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslocking"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscoding": {
+      "title": "NSCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscoding"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator": {
+      "title": "persistentStoreCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The persistent store coordinator of the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext": {
+      "title": "parentContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The parent of the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506231-name": {
+      "title": "name",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506231-name",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506231-name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The developer-provided name of the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user information for the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init": {
+      "title": "init",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506673-init",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "init"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506632-new": {
+      "title": "new",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506632-new",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506632-new",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "new"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506672-executefetchrequest": {
+      "title": "executeFetchRequest:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506672-executefetchrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506672-executefetchrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of objects that meet the criteria specified by a given fetch request."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "executeFetchRequest:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506868-countforfetchrequest": {
+      "title": "countForFetchRequest:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506868-countforfetchrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506868-countforfetchrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of objects a given fetch request would have returned if it had been passed to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "executeFetchRequest:error:"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "countForFetchRequest:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506789-objectregisteredforid": {
+      "title": "objectRegisteredForID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506789-objectregisteredforid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506789-objectregisteredforid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the object for a specified ID, if the object is registered with the context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "objectRegisteredForID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506197-objectwithid": {
+      "title": "objectWithID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506197-objectwithid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506197-objectwithid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an object for a specified ID even if the object needs to be fetched."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "objectWithID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506686-existingobjectwithid": {
+      "title": "existingObjectWithID:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506686-existingobjectwithid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506686-existingobjectwithid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the object for the specified ID or nil if the object does not exist."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "existingObjectWithID:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506493-registeredobjects": {
+      "title": "registeredObjects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506493-registeredobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506493-registeredobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The set of objects registered with the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506834-executerequest": {
+      "title": "executeRequest:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506834-executerequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506834-executerequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Passes a request to the persistent store without affecting the contents of the managed object context and returns a persistent store result."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "executeRequest:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506217-refreshallobjects": {
+      "title": "refreshAllObjects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506217-refreshallobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506217-refreshallobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Refreshes all currently registered objects that are associated with this context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "refreshAllObjects"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506290-retainsregisteredobjects": {
+      "title": "retainsRegisteredObjects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506290-retainsregisteredobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506290-retainsregisteredobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the context keeps strong references to all registered managed objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506221-shoulddeleteinaccessiblefaults": {
+      "title": "shouldDeleteInaccessibleFaults",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506221-shoulddeleteinaccessiblefaults",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506221-shoulddeleteinaccessiblefaults",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates the behavior of inaccessible faults."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506192-insertedobjects": {
+      "title": "insertedObjects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506192-insertedobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506192-insertedobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The set of objects that have been inserted into the context but not yet saved in a persistent store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506985-updatedobjects": {
+      "title": "updatedObjects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506985-updatedobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506985-updatedobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The set of objects registered with the context that have uncommitted changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506699-deletedobjects": {
+      "title": "deletedObjects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506699-deletedobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506699-deletedobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The set of objects that will be removed from their persistent store during the next save operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506810-shouldhandleinaccessiblefault": {
+      "title": "shouldHandleInaccessibleFault:forObjectID:triggeredByProperty:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506810-shouldhandleinaccessiblefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506810-shouldhandleinaccessiblefault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a log of the inaccessible fault."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldHandleInaccessibleFault:forObjectID:triggeredByProperty:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506794-insertobject": {
+      "title": "insertObject:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506794-insertobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506794-insertobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers an object to be inserted in the context’s persistent store the next time changes are saved."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506847-deleteobject": {
+      "title": "deleteObject:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506847-deleteobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506847-deleteobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies an object that should be removed from its persistent store when changes are committed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506436-assignobject": {
+      "title": "assignObject:toPersistentStore:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506436-assignobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506436-assignobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the store in which a newly inserted object will be saved."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "assignObject:toPersistentStore:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506793-obtainpermanentidsforobjects": {
+      "title": "obtainPermanentIDsForObjects:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506793-obtainpermanentidsforobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506793-obtainpermanentidsforobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts to permanent IDs the object IDs of the objects in a given array."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "obtainPermanentIDsForObjects:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506843-detectconflictsforobject": {
+      "title": "detectConflictsForObject:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506843-detectconflictsforobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506843-detectconflictsforobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Marks an object for conflict detection. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "detectConflictsForObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506224-refreshobject": {
+      "title": "refreshObject:mergeChanges:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506224-refreshobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506224-refreshobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the persistent properties of a managed object to use the latest values from the persistent store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "refreshObject:mergeChanges:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506849-observevalueforkeypath": {
+      "title": "observeValueForKeyPath:ofObject:change:context:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506849-observevalueforkeypath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506849-observevalueforkeypath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows a context that has registered as an observer of a value to be notified of a change to that value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "observeValueForKeyPath:ofObject:change:context:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa": {
+      "title": "automaticallyMergesChangesFromParent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the context automatically merges changes saved to its persistent store coordinator or parent context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype": {
+      "title": "concurrencyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The concurrency type for the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken": {
+      "title": "queryGenerationToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the token associated with the query generation currently in use by this context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy": {
+      "title": "mergePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The merge policy of the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor": {
+      "title": "transactionAuthor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The author for the context that is used as an identifier in persistent history transactions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno": {
+      "title": "mergeChangesFromContextDidSaveNotification:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Merges the changes specified in a given notification."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "mergeChangesFromContextDidSaveNotification:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken": {
+      "title": "setQueryGenerationFromToken:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the query generation this context should use."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setQueryGenerationFromToken:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav": {
+      "title": "mergeChangesFromRemoteContextSave:intoContexts:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handles changes from other processes or from a serialized state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "mergeChangesFromRemoteContextSave:intoContexts:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype": {
+      "title": "NSManagedObjectContextConcurrencyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants to indicate the concurrency pattern with which a context will be used. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey": {
+      "title": "NSManagedObjectContextQueryGenerationKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextquerygenerationkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constant used to reference the query generation token."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextdidsavenotification": {
+      "title": "NSManagedObjectContextDidSaveNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextdidsavenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextdidsavenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that the context completed a save."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextwillsavenotification": {
+      "title": "NSManagedObjectContextWillSaveNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextwillsavenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontextwillsavenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that the context is about to save."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey": {
+      "title": "NSInsertedObjectsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsinsertedobjectskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key for the set of objects that were inserted into the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey": {
+      "title": "NSUpdatedObjectsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsupdatedobjectskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key for the set of objects that were updated."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectskey": {
+      "title": "NSDeletedObjectsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsdeletedobjectskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key for the set of objects that were marked for deletion during the previous event. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectskey": {
+      "title": "NSRefreshedObjectsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsrefreshedobjectskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key for the set of objects that were refreshed but were not dirtied in the scope of this context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectskey": {
+      "title": "NSInvalidatedObjectsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsinvalidatedobjectskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key for the set of objects that were invalidated."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsinvalidatedallobjectskey": {
+      "title": "NSInvalidatedAllObjectsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsinvalidatedallobjectskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsinvalidatedallobjectskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that specifies that all objects in the context have been invalidated."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506954-haschanges": {
+      "title": "hasChanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506954-haschanges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506954-haschanges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the context has uncommitted changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506663-undomanager": {
+      "title": "undoManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506663-undomanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506663-undomanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The undo manager of the context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506969-undo": {
+      "title": "undo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506969-undo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506969-undo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends an undo message to the context’s undo manager, asking it to reverse the latest uncommitted changes applied to objects in the object graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "undo"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506688-redo": {
+      "title": "redo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506688-redo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506688-redo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends a redo message to the context’s undo manager, asking it to reverse the latest undo operation applied to objects in the object graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "redo"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506807-reset": {
+      "title": "reset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506807-reset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506807-reset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the context to its base state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reset"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506942-rollback": {
+      "title": "rollback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506942-rollback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506942-rollback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes everything from the undo stack, discards all insertions and deletions, and restores updated objects to their last committed values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rollback"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506228-propagatesdeletesatendofevent": {
+      "title": "propagatesDeletesAtEndOfEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506228-propagatesdeletesatendofevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506228-propagatesdeletesatendofevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the context propagates deletes at the end of the event in which a change was made."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506875-stalenessinterval": {
+      "title": "stalenessInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506875-stalenessinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506875-stalenessinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The maximum length of time that may have elapsed since the store previously fetched data before fulfilling a fault issues a new fetch."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber": {
+      "title": "NSCoreDataVersionNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version of Core Data available in the current process."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10": {
+      "title": "NSCoreDataVersionNumber10_10",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_10",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.10."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_2": {
+      "title": "NSCoreDataVersionNumber10_10_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_10_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.10.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_3": {
+      "title": "NSCoreDataVersionNumber10_10_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_10_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.10.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11": {
+      "title": "NSCoreDataVersionNumber10_11",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_11",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.11."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11_3": {
+      "title": "NSCoreDataVersionNumber10_11_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_11_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.11.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4": {
+      "title": "NSCoreDataVersionNumber10_4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.4."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4_3": {
+      "title": "NSCoreDataVersionNumber10_4_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_4_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.4.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5": {
+      "title": "NSCoreDataVersionNumber10_5",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_5",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.5."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5_3": {
+      "title": "NSCoreDataVersionNumber10_5_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_5_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.5.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6": {
+      "title": "NSCoreDataVersionNumber10_6",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_6",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.6."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_2": {
+      "title": "NSCoreDataVersionNumber10_6_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_6_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.6.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_3": {
+      "title": "NSCoreDataVersionNumber10_6_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_6_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.6.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7": {
+      "title": "NSCoreDataVersionNumber10_7",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_7",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.7."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_2": {
+      "title": "NSCoreDataVersionNumber10_7_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_7_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.7.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_3": {
+      "title": "NSCoreDataVersionNumber10_7_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_7_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.7.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_4": {
+      "title": "NSCoreDataVersionNumber10_7_4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_7_4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.7.4."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8": {
+      "title": "NSCoreDataVersionNumber10_8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.8."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8_2": {
+      "title": "NSCoreDataVersionNumber10_8_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_8_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.8.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9": {
+      "title": "NSCoreDataVersionNumber10_9",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_9",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.9."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_2": {
+      "title": "NSCoreDataVersionNumber10_9_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_9_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.9.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_3": {
+      "title": "NSCoreDataVersionNumber10_9_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber10_9_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with macOS 10.9.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_3_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_3_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_3_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_3_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 3.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_2": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_3_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_3_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 3.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_4_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_4_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 4."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_4_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_4_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 4.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_2": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_4_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_4_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 4.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_3": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_4_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_4_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 4.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_5_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_5_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 5."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_5_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_5_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 5.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_6_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_6_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 6."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_6_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_6_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 6.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_7_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_7_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 7.0."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_1": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_7_1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_7_1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 7.1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_8_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_8_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 8.0."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_3": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_8_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_8_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 8.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_0": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_9_0",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_0",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_9_0",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 9.0."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_2": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_9_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_9_2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 9.2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_3": {
+      "title": "NSCoreDataVersionNumber_iPhoneOS_9_3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredataversionnumber_iphoneos_9_3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Core Data version number released with iOS 9.3."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsaffectedobjectserrorkey": {
+      "title": "NSAffectedObjectsErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsaffectedobjectserrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsaffectedobjectserrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key for objects prompting an error."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsaffectedstoreserrorkey": {
+      "title": "NSAffectedStoresErrorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsaffectedstoreserrorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsaffectedstoreserrorkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key for stores prompting an error."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsdetailederrorskey": {
+      "title": "NSDetailedErrorsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsdetailederrorskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsdetailederrorskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If multiple validation errors occur in one operation, they are collected in an array and added with this key to the “top-level error” of the operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nssqliteerrordomain": {
+      "title": "NSSQLiteErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nssqliteerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nssqliteerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Domain for SQLite errors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506853-lock": {
+      "title": "lock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506853-lock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506853-lock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attempts to acquire a lock on the context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lock"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506839-unlock": {
+      "title": "unlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506839-unlock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506839-unlock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Relinquishes a previously acquired lock."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "unlock"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506497-trylock": {
+      "title": "tryLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506497-trylock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506497-trylock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attempts to acquire a lock."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tryLock"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext": {
+      "title": "NSManagedObjectContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object space that you use to manipulate and track changes to managed objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject": {
+      "title": "NSManagedObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A base class that implements the behavior required of a Core Data model object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid": {
+      "title": "NSManagedObjectID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A compact, universal identifier for a managed object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscoding",
+        "doc://com.apple.documentation/documentation/foundation/nslocking"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Configuring a Context",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506231-name",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506632-new"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Registering and Fetching Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506672-executefetchrequest",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506868-countforfetchrequest",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506789-objectregisteredforid",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506197-objectwithid",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506686-existingobjectwithid",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506493-registeredobjects",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506834-executerequest",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506217-refreshallobjects",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506290-retainsregisteredobjects"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Managed Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506221-shoulddeleteinaccessiblefaults",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506192-insertedobjects",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506985-updatedobjects",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506699-deletedobjects",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506810-shouldhandleinaccessiblefault",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506794-insertobject",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506847-deleteobject",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506436-assignobject",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506793-obtainpermanentidsforobjects",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506843-detectconflictsforobject",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506224-refreshobject",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506661-processpendingchanges",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506849-observevalueforkeypath"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Concurrency",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Notifications",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextdidsavenotification",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextwillsavenotification",
+        "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey",
+        "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey",
+        "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectskey",
+        "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectskey",
+        "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectskey",
+        "doc://com.apple.documentation/documentation/coredata/nsinvalidatedallobjectskey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Unsaved and Uncommitted Changes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506866-save",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506954-haschanges"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Undoing Changes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506663-undomanager",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506969-undo",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506688-redo",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506807-reset",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506942-rollback"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Handling Delete Propagation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506228-propagatesdeletesatendofevent"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Staleness Interval",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506875-stalenessinterval"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Performing Block Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Core Data Versions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_10_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_11_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_4_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_5_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_6_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_7_4",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_8_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber10_9_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_3_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_4_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_5_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_6_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_7_1",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_8_3",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_0",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_2",
+        "doc://com.apple.documentation/documentation/coredata/nscoredataversionnumber_iphoneos_9_3"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Errors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsaffectedobjectserrorkey",
+        "doc://com.apple.documentation/documentation/coredata/nsaffectedstoreserrorkey",
+        "doc://com.apple.documentation/documentation/coredata/nsdetailederrorskey",
+        "doc://com.apple.documentation/documentation/coredata/nssqliteerrordomain"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506853-lock",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506839-unlock",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506497-trylock"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid"
+      ],
+      "title": "Object Management",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSManagedObjectContext"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A context consists of a group of related model objects that represent an internally consistent view of one or more persistent stores. Changes to managed objects are held in memory, in the associated context, until that context is saved to one or more persistent stores. A single managed object instance exists in one and only one context, but multiple copies of an object can exist in different contexts. Thus an object is unique to a particular context."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Life Cycle Management",
+          "anchor": "1653958"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The context is a powerful object with a central role in the life cycle of managed objects, with responsibilities from life cycle management (including faulting) to validation, inverse relationship handling, and undo/redo. Through a context you can retrieve or “fetch” objects from a persistent store, make changes to those objects, and then either discard the changes or—again through the context—commit them back to the persistent store. The context is responsible for watching for changes in its objects and maintains an undo manager so you can have finer-grained control over undo and redo. You can insert new objects and delete ones you have fetched, and commit these modifications to the persistent store."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All objects fetched from an external store are registered in a context together with a global identifier (an instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObjectID"
+            },
+            {
+              "type": "text",
+              "text": ") that’s used to uniquely identify each object to the external store. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Parent Store",
+          "anchor": "1653971"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Managed object contexts have a parent store from which they retrieve data representing managed objects and through which they commit changes to managed objects."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Prior to OS X v10.7 and iOS v5.0, the parent store is always a persistent store coordinator. In macOS 10.7 and later and iOS v5.0 and later, the parent store may be another managed object context. Ultimately the root of a context’s ancestry must be a persistent store coordinator. The coordinator provides the managed object model and dispatches requests to the various persistent stores containing the data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If a context’s parent store is another managed object context, fetch and save operations are mediated by the parent context instead of a coordinator. This pattern has a number of usage scenarios, including:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Performing background operations on a second thread or queue."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Managing discardable edits, such as in an inspector window or view."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As the first scenario implies, a parent context can service requests from children on different threads. You cannot, therefore, use parent contexts created with the thread confinement type (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext#1654001"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you save changes in a context, the changes are only committed “one store up.” If you save a child context, changes are pushed to its parent. Changes are not saved to the persistent store until the root context is saved. (A root managed object context is one whose parent context is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ".) In addition, a parent does not pull changes from children before it saves. You must save a child context if you want ultimately to commit the changes."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Notifications",
+          "anchor": "1653988"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A context posts notifications at various points—see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification"
+            },
+            {
+              "type": "text",
+              "text": " for example. Typically, you should register to receive these notifications only from known contexts:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "[[NSNotificationCenter defaultCenter] addObserver:self",
+            "                                      selector:@selector(<#Selector name#>)",
+            "                                      name:NSManagedObjectContextDidSaveNotification",
+            "                                      object:<#A managed object context#>];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2555683",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Several system frameworks use Core Data internally. If you register to receive these notifications from all contexts (by passing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " as the object parameter to a method such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotificationcenter/1415360-addobserver"
+            },
+            {
+              "type": "text",
+              "text": "), then you may receive unexpected notifications that are difficult to handle."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Concurrency",
+          "anchor": "1654001"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data uses thread (or serialized queue) confinement to protect managed objects and managed object contexts (see "
+            },
+            {
+              "type": "link",
+              "title": "Core Data Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075"
+            },
+            {
+              "type": "text",
+              "text": "). A consequence of this is that a context assumes the default owner is the thread or queue that allocated it—this is determined by the thread that calls its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "init"
+            },
+            {
+              "type": "text",
+              "text": " method. You should not, therefore, initialize a context on one thread then pass it to a different thread. Instead, you should pass a reference to a persistent store coordinator and have the receiving thread/queue create a new context derived from that. If you use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation"
+            },
+            {
+              "type": "text",
+              "text": ", you must create the context in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "main"
+            },
+            {
+              "type": "text",
+              "text": " (for a serial queue) or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "start"
+            },
+            {
+              "type": "text",
+              "text": " (for a concurrent queue)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you create a context you specify the concurrency pattern with which you will use it using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype"
+            },
+            {
+              "type": "text",
+              "text": ". When you create a managed object context using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype"
+            },
+            {
+              "type": "text",
+              "text": ", you have two options for its thread (queue) association"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Private queue ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsprivatequeueconcurrencytype"
+                    },
+                    {
+                      "type": "text",
+                      "text": "): The context creates and manages a private queue."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Main queue ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsmainqueueconcurrencytype"
+                    },
+                    {
+                      "type": "text",
+                      "text": "): The context is associated with the main queue, and as such is tied into the application’s event loop, but it is otherwise similar to a private queue-based context. You use this queue type for contexts linked to controllers and UI objects that are required to be used only on the main thread."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use contexts using the queue-based concurrency types in conjunction with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait"
+            },
+            {
+              "type": "text",
+              "text": ". You group “standard” messages to send to the context within a block to pass to one of these methods. There are two exceptions:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Setter methods on queue-based managed object contexts are thread-safe. You can invoke these methods directly on any thread."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If your code is executing on the main thread, you can invoke methods on the main queue style contexts directly instead of using the block based API."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait"
+            },
+            {
+              "type": "text",
+              "text": " ensure the block operations are executed on the queue specified for the context. The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock"
+            },
+            {
+              "type": "text",
+              "text": " method returns immediately and the context executes the block methods on its own thread. With the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait"
+            },
+            {
+              "type": "text",
+              "text": " method, the context still executes the block methods on its own thread, but the method doesn’t return until the block is executed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It’s important to appreciate that blocks are executed as a distinct body of work. As soon as your block ends, anyone else can enqueue another block, undo changes, reset the context, and so on. Thus blocks may be quite large, and typically end by invoking "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506866-save"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "__block BOOL savedOK = NO;",
+            "[managedObjectContext performBlockAndWait:^{",
+            "",
+            "    // Perform operations with the context.",
+            "",
+            "    NSError *error = nil;",
+            "    if ([managedObjectContext save:&error]) {",
+            "        savedOK = YES;",
+            "    } else {",
+            "        NSLog(@\"Error saving: %@\", error);",
+            "    }",
+            "}];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2555687",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also perform other operations, such as:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@\"Entity\"];",
+            "__block NSUInteger count = 0;",
+            "",
+            "[managedObjectContext performBlockAndWait:^() {",
+            "    NSError *error;",
+            "    count = [managedObjectContext countForFetchRequest:fetchRequest error:&error];",
+            "    if (count == NSNotFound) {",
+            "        NSLog(@\"Error counting objects: %@\", error);",
+            "    }",
+            "}];",
+            "",
+            "NSLog(@\"The fetch request would return %lu objects\", count);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2555689",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1654022"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You are strongly discouraged from subclassing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObjectContext"
+            },
+            {
+              "type": "text",
+              "text": ". The change tracking and undo management mechanisms are highly optimized and hence intricate and delicate. Interposing your own additional logic that might impact "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506661-processpendingchanges"
+            },
+            {
+              "type": "text",
+              "text": " can have unforeseen consequences. In situations such as store migration, Core Data will create instances of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObjectContext"
+            },
+            {
+              "type": "text",
+              "text": " for its own use. Under these circumstances, you cannot rely on any features of your custom subclass. Any "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObject"
+            },
+            {
+              "type": "text",
+              "text": " subclass must always be fully compatible with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObjectContext"
+            },
+            {
+              "type": "text",
+              "text": " (that is, it cannot rely on features of a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSManagedObjectContext"
+            },
+            {
+              "type": "text",
+              "text": "). "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

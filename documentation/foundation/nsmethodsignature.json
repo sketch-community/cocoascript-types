@@ -1,0 +1,847 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A record of the type information for the return value and parameters of a method. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1519656,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSMethodSignature",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSMethodSignature",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsmethodsignature"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime": {
+      "title": "Object Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime",
+      "url": "/documentation/foundation/object_runtime",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519667-methodreturntype": {
+      "title": "methodReturnType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519667-methodreturntype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmethodsignature/1519667-methodreturntype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A C string encoding the return type of the method in Objective-C type encoding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519666-methodreturnlength": {
+      "title": "methodReturnLength",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519666-methodreturnlength",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmethodsignature/1519666-methodreturnlength",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of bytes required for the return value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519660-getargumenttypeatindex": {
+      "title": "getArgumentTypeAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519660-getargumenttypeatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmethodsignature/1519660-getargumenttypeatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type encoding for the argument at a given index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getArgumentTypeAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519662-numberofarguments": {
+      "title": "numberOfArguments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519662-numberofarguments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmethodsignature/1519662-numberofarguments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of arguments recorded in the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring/1414563-containsstring": {
+      "title": "containsString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring/1414563-containsstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring/1414563-containsstring",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "containsString:"
+        }
+      ]
+    },
+    "devLink-1736436": {
+      "identifier": "devLink-1736436",
+      "type": "link",
+      "title": "Type Encodings",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100"
+    },
+    "devLink-1736433": {
+      "identifier": "devLink-1736433",
+      "type": "link",
+      "title": "Objective-C Runtime Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmethodsignature": {
+      "title": "NSMethodSignature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmethodsignature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A record of the type information for the return value and parameters of a method. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector": {
+      "title": "methodSignatureForSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1571960-methodsignatureforselector",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "methodSignatureForSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519670-signaturewithobjctypes": {
+      "title": "signatureWithObjCTypes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519670-signaturewithobjctypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmethodsignature/1519670-signaturewithobjctypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSMethodSignature"
+        },
+        {
+          "type": "text",
+          "text": " object for the given Objective-C method type string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "signatureWithObjCTypes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsinvocation": {
+      "title": "NSInvocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsinvocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An Objective-C message rendered as an object.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1571955-forwardinvocation": {
+      "title": "forwardInvocation:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571955-forwardinvocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1571955-forwardinvocation",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "forwardInvocation:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418637-doesnotrecognizeselector": {
+      "title": "doesNotRecognizeSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418637-doesnotrecognizeselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418637-doesnotrecognizeselector",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "doesNotRecognizeSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519658-framelength": {
+      "title": "frameLength",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519658-framelength",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmethodsignature/1519658-framelength",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of bytes that the arguments, taken together, occupy on the stack."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519664-isoneway": {
+      "title": "isOneway",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519664-isoneway",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmethodsignature/1519664-isoneway",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Whether the receiver is asynchronous when invoked through distributed objects."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isOneway"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Method Signature Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519670-signaturewithobjctypes"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Information on Argument Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519660-getargumenttypeatindex",
+        "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519662-numberofarguments",
+        "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519658-framelength"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Information on Return Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519667-methodreturntype",
+        "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519666-methodreturnlength"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining Synchronous Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519664-isoneway"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsinvocation"
+      ],
+      "title": "Invocations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSMethodSignature"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature"
+            },
+            {
+              "type": "text",
+              "text": " object to forward messages that the receiving object does not respond to—most notably in the case of distributed objects. You typically create an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature"
+            },
+            {
+              "type": "text",
+              "text": " object using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector"
+            },
+            {
+              "type": "text",
+              "text": " instance method (in macOS 10.5 and later you can also use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519670-signaturewithobjctypes"
+            },
+            {
+              "type": "text",
+              "text": "). It is then used to create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvocation"
+            },
+            {
+              "type": "text",
+              "text": " object, which is passed as the argument to a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1571955-forwardinvocation"
+            },
+            {
+              "type": "text",
+              "text": " message to send the invocation on to whatever other object can handle the message. In the default case, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject"
+            },
+            {
+              "type": "text",
+              "text": " invokes "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418637-doesnotrecognizeselector"
+            },
+            {
+              "type": "text",
+              "text": ", which raises an exception. For distributed objects, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvocation"
+            },
+            {
+              "type": "text",
+              "text": " object is encoded using the information in the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature"
+            },
+            {
+              "type": "text",
+              "text": " object and sent to the real object represented by the receiver of the message."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Type Encodings",
+          "anchor": "1681111"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSMethodSignature"
+            },
+            {
+              "type": "text",
+              "text": " object is initialized with an array of characters representing the string encoding of return and argument types for a method. You can get the string encoding of a particular type using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "@encode()"
+            },
+            {
+              "type": "text",
+              "text": " compiler directive. Because string encodings are implementation-specific, you should not hard-code these values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A method signature consists of one or more characters for the method return type, followed by the string encodings of the implicit arguments "
+            },
+            {
+              "type": "codeVoice",
+              "code": "self"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "_cmd"
+            },
+            {
+              "type": "text",
+              "text": ", followed by zero or more explicit arguments. You can determine the string encoding and the length of a return type using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519667-methodreturntype"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519666-methodreturnlength"
+            },
+            {
+              "type": "text",
+              "text": " properties. You can access arguments individually using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519660-getargumenttypeatindex"
+            },
+            {
+              "type": "text",
+              "text": " method and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519662-numberofarguments"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSString"
+            },
+            {
+              "type": "text",
+              "text": " instance method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring/1414563-containsstring"
+            },
+            {
+              "type": "text",
+              "text": " has a method signature with the following arguments:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@encode(BOOL)"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "c"
+                    },
+                    {
+                      "type": "text",
+                      "text": ") for the return type"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@encode(id)"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "@"
+                    },
+                    {
+                      "type": "text",
+                      "text": ") for the receiver ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "self"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@encode(SEL)"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": ":"
+                    },
+                    {
+                      "type": "text",
+                      "text": ") for the selector ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "_cmd"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "@encode(NSString *)"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "@"
+                    },
+                    {
+                      "type": "text",
+                      "text": ") for the first explicit argument"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "See "
+            },
+            {
+              "type": "link",
+              "title": "Type Encodings",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "Objective-C Runtime Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048"
+            },
+            {
+              "type": "text",
+              "text": " for more information."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

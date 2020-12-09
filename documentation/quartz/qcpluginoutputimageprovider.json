@@ -1,0 +1,555 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The "
+    },
+    {
+      "type": "codeVoice",
+      "code": "QCPlugInOuputImageProvider"
+    },
+    {
+      "type": "text",
+      "text": " protocol eliminates the need to use explicit image types for the image output ports on a custom patch. The methods in this protocol are called by the Quartz Composer engine when the output image is needed. If your custom patch has an image output port, you need to implement the appropriate methods for rendering image data and to supply information about the rendering destination and the image bounds."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/quartz",
+        "doc://com.apple.documentation/documentation/quartz/quartz_composer"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1488771,
+  "kind": "symbol",
+  "metadata": {
+    "title": "QCPlugInOutputImageProvider",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Quartz"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "deprecatedAt": "10.15",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:objc(pl)QCPlugInOutputImageProvider",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qcpluginoutputimageprovider"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/quartz/qcpluginoutputimageprovider"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/quartz": {
+      "title": "Quartz",
+      "identifier": "doc://com.apple.documentation/documentation/quartz",
+      "url": "/documentation/quartz",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/quartz/quartz_composer": {
+      "title": "Quartz Composer",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/quartz_composer",
+      "url": "/documentation/quartz/quartz_composer",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider#2557107": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider#2557107",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider#2557107"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider#2557111": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider#2557111",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider#2557111"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider#2557116": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider#2557116",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider#2557116"
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488841-rendertobuffer": {
+      "title": "renderToBuffer:withBytesPerRow:pixelFormat:forBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488841-rendertobuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488841-rendertobuffer",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Renders a subregion of the image into  the supplied memory buffer using the specified pixel format. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "renderToBuffer:withBytesPerRow:pixelFormat:forBounds:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488717-copyrenderedtextureforcglcontext": {
+      "title": "copyRenderedTextureForCGLContext:pixelFormat:bounds:isFlipped:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488717-copyrenderedtextureforcglcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488717-copyrenderedtextureforcglcontext",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of an OpenGL texture of type "
+        },
+        {
+          "type": "codeVoice",
+          "code": "GL_TEXTURE_RECTANGLE_EXT"
+        },
+        {
+          "type": "text",
+          "text": " that contains a subregion of the image in a given pixel format."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "copyRenderedTextureForCGLContext:pixelFormat:bounds:isFlipped:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488815-renderwithcglcontext": {
+      "title": "renderWithCGLContext:forBounds:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488815-renderwithcglcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488815-renderwithcglcontext",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Renders a subregion of the image to the provided CGL context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "renderWithCGLContext:forBounds:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488829-releaserenderedtexture": {
+      "title": "releaseRenderedTexture:forCGLContext:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488829-releaserenderedtexture",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488829-releaserenderedtexture",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases the previously copied texture."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "releaseRenderedTexture:forCGLContext:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488867-imagebounds": {
+      "title": "imageBounds",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488867-imagebounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488867-imagebounds",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the bounds of the image expressed in pixels and aligned to integer boundaries."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageBounds"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488715-imagecolorspace": {
+      "title": "imageColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488715-imagecolorspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488715-imagecolorspace",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the color space of the image or "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NULL"
+        },
+        {
+          "type": "text",
+          "text": " if the image should not be color matched."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageColorSpace"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488825-shouldcolormatch": {
+      "title": "shouldColorMatch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488825-shouldcolormatch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488825-shouldcolormatch",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether the image should be color matched."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldColorMatch"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488709-supportedbufferpixelformats": {
+      "title": "supportedBufferPixelFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488709-supportedbufferpixelformats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488709-supportedbufferpixelformats",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a list of pixel formats that are supported for rendering to a memory buffer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "supportedBufferPixelFormats"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488820-supportedrenderedtexturepixelfor": {
+      "title": "supportedRenderedTexturePixelFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488820-supportedrenderedtexturepixelfor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488820-supportedrenderedtexturepixelfor",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a list of pixel formats that are supported for rendering to an onscreen OpenGL context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "supportedRenderedTexturePixelFormats"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488804-canrenderwithcglcontext": {
+      "title": "canRenderWithCGLContext:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488804-canrenderwithcglcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/qcpluginoutputimageprovider/1488804-canrenderwithcglcontext",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns whether the image data can be rendered into the provided CGL context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canRenderWithCGLContext:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Rendering an Image to a Destination",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488841-rendertobuffer",
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488717-copyrenderedtextureforcglcontext",
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488815-renderwithcglcontext",
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488829-releaserenderedtexture"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing Information About the Image",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488867-imagebounds",
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488715-imagecolorspace",
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488825-shouldcolormatch"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing Information About the Rendering Destination",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488709-supportedbufferpixelformats",
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488820-supportedrenderedtexturepixelfor",
+        "doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488804-canrenderwithcglcontext"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "QCPlugInOutputImageProvider"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Output images are opaque provider objects that comply to this protocol. To create an image output port as an Objective-C 2.0 property, declare it as follows:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@property(dynamic) id<QCPlugInOutputImageProvider> outputImage;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2557107",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create an image input port dynamically use the type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "QCPortTypeImage"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "[self addOutputPortWithType:QCPortTypeImage",
+            "                    forKey:@\"outputImage\"",
+            "            withAttributes:nil];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2557111",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To write images to that port, you need to implement the methods in this protocol and create an internal class that represents the images produced by the custom patch. For example, a simple interface for an image provider is:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@interface MyOutputImage : NSObject <QCPlugInOutputImageProvider>",
+            "{",
+            "    NSUInteger _width;",
+            "    NSUInteger _height;",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2557116",
+            "title": "Listing 3"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

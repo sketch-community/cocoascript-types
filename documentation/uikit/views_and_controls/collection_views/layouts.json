@@ -1,0 +1,775 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Arrange your collection view content in a highly configurable layout."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3226617,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Layouts",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/collection_views/layouts"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/collection_views/layouts"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3568662": {
+      "identifier": "link-media-3568662",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/views_and_controls/collection_views/layouts#3568662"
+    },
+    "media-3568662": {
+      "identifier": "media-3568662",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 338,
+            "height": 512
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8b30a7116a/original-1585241227.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 338,
+            "height": 512
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2308306163/rendered2x-1585241228.png"
+        }
+      ],
+      "alt": "Schematic representation of the App Store app on iOS, showing a collection view with a compositional layout. The layout is composed of two horizontally-scrolling sections that have different layouts. The top section shows one group with one item visible onscreen, with other groups peeking in from the sides of the screen. The bottom section shows one group that's a column of three cells, each of those cells being an item.",
+      "title": "Figure 1"
+    },
+    "link-3576157": {
+      "title": "Human Interface Guidelines",
+      "type": "topic",
+      "identifier": "link-3576157",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/ios/views/collections/"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views": {
+      "title": "Implementing Modern Collection Views",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Bring compositional layouts to your app and simplify updating your user interface with diffable data sources."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayout": {
+      "title": "UICollectionViewCompositionalLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcompositionallayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layout object that lets you combine items in highly adaptive and flexible visual arrangements. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutitem": {
+      "title": "NSCollectionLayoutItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The most basic component of a collection view's layout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroup": {
+      "title": "NSCollectionLayoutGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for a set of items that lays out the items along a path. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection": {
+      "title": "NSCollectionLayoutSection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutsection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container that combines a set of groups into distinct visual groupings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdimension": {
+      "title": "NSCollectionLayoutDimension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdimension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutdimension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An individual dimension of an item's size (width or height) in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsize": {
+      "title": "NSCollectionLayoutSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The width and the height of an item in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutspacing": {
+      "title": "NSCollectionLayoutSpacing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutspacing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutspacing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines the space between or around items in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutedgespacing": {
+      "title": "NSCollectionLayoutEdgeSpacing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutedgespacing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutedgespacing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines the space around the edges of items in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutcontainer": {
+      "title": "NSCollectionLayoutContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutcontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol used to provide information about the size and content insets of a layout's container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayoutconfiguration": {
+      "title": "UICollectionViewCompositionalLayoutConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayoutconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcompositionallayoutconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines scroll direction, section spacing, and headers or footers for the layout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayoutsectionprovider": {
+      "title": "UICollectionViewCompositionalLayoutSectionProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayoutsectionprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcompositionallayoutsectionprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure that creates and returns each of the layout's sections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutenvironment": {
+      "title": "NSCollectionLayoutEnvironment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutenvironment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutenvironment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol used to provide information about the layout's container and environment traits, such as size classes and display scale factor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior": {
+      "title": "UICollectionLayoutSectionOrthogonalScrollingBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scrolling behavior of the layout's sections in relation to the main layout axis. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutanchor": {
+      "title": "NSCollectionLayoutAnchor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutanchor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutanchor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines how to attach a supplementary item to an item in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem": {
+      "title": "NSCollectionLayoutSupplementaryItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutsupplementaryitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to add an extra visual decoration, such as a badge or a frame, to an item in a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem": {
+      "title": "NSCollectionLayoutBoundarySupplementaryItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutboundarysupplementaryitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to add headers or footers to a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem": {
+      "title": "NSCollectionLayoutDecorationItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutdecorationitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to add a background to a section of a collection view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroupcustomitem": {
+      "title": "NSCollectionLayoutGroupCustomItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroupcustomitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutgroupcustomitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An item used in a group with a custom layout arrangement."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroupcustomitemprovider": {
+      "title": "NSCollectionLayoutGroupCustomItemProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroupcustomitemprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutgroupcustomitemprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure that creates and returns each of the custom group's items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutvisibleitem": {
+      "title": "NSCollectionLayoutVisibleItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutvisibleitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutvisibleitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An item that's currently visible within the bounds of a section."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsectionvisibleitemsinvalidationhandler": {
+      "title": "NSCollectionLayoutSectionVisibleItemsInvalidationHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsectionvisibleitemsinvalidationhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscollectionlayoutsectionvisibleitemsinvalidationhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure called before each layout cycle to allow modification of items in a section immediately before they are displayed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewupdateitem": {
+      "title": "UICollectionViewUpdateItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewupdateitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewupdateitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes a single change to make to an item in a collection view.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewfocusupdatecontext": {
+      "title": "UICollectionViewFocusUpdateContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewfocusupdatecontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewfocusupdatecontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A context object that stores information specific to a focus update in a collection view.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinvalidationcontext": {
+      "title": "UICollectionViewLayoutInvalidationContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinvalidationcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayoutinvalidationcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A context object that declares which parts of your layout need to be updated when the layout is invalidated. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts/customizing_collection_view_layouts": {
+      "title": "Customizing Collection View Layouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts/customizing_collection_view_layouts",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/views_and_controls/collection_views/layouts/customizing_collection_view_layouts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Customize a view layout by changing the size of cells in the flow or implementing a mosaic style."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout": {
+      "title": "UICollectionViewLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract base class for generating layout information for a collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayout": {
+      "title": "UICollectionViewFlowLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewflowlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layout object that organizes items into a grid with optional header and footer views for each section.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewtransitionlayout": {
+      "title": "UICollectionViewTransitionLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewtransitionlayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewtransitionlayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A special type of layout object that lets you implement behaviors when changing from one layout to another in your collection view.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes": {
+      "title": "UICollectionViewLayoutAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewlayoutattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A layout object that manages the layout-related attributes for a given item in a collection view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayoutinvalidationcontext": {
+      "title": "UICollectionViewFlowLayoutInvalidationContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayoutinvalidationcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewflowlayoutinvalidationcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of properties for determining whether to recompute the size of items or their position in the layout. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts": {
+      "title": "Layouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/views_and_controls/collection_views/layouts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Arrange your collection view content in a highly configurable layout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayout"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutitem",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroup",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsection"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Size and Spacing",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdimension",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsize",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutspacing",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutedgespacing",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutcontainer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuration",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayoutconfiguration",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayoutsectionprovider",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutenvironment"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Interaction",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Appearance",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutanchor",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Advanced Layouts",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroupcustomitem",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroupcustomitemprovider"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Layout Updates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutvisibleitem",
+        "doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsectionvisibleitemsinvalidationhandler",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewupdateitem",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewfocusupdatecontext",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinvalidationcontext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Manual Layouts",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/layouts/customizing_collection_view_layouts",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayout",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewtransitionlayout",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayoutinvalidationcontext"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views"
+      ],
+      "title": "Layouts",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A collection view "
+            },
+            {
+              "type": "newTerm",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "layout"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " defines the visual arrangement of the content in your collection. Layouts are designed to be flexible to let you create any kind of arrangement you need for your content, from simple to complex. The simplest type of collection view layout displays its items in a grid, but you can define layouts to arrange items however you like. For example, you might create a layout where items are arranged in a circle or vary in size. You can also change layouts dynamically at runtime whenever you need to present items differently, such as when a user rotates the device. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Collection view layouts are customizable and highly visual. For example, the App Store app uses a single collection view with custom layouts per section to showcase different kinds of content."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3568662",
+              "metadata": {
+                "anchor": "3568662",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For design guidance, see "
+            },
+            {
+              "type": "link",
+              "title": "Human Interface Guidelines",
+              "destination": "https://developer.apple.com/design/human-interface-guidelines/ios/views/collections/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

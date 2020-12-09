@@ -1,0 +1,632 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Manage vehicle door locks and get the vehicle’s status."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/car_commands",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2863943,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Car Commands",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/car_commands"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/car_commands"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintenthandling": {
+      "title": "INGetCarLockStatusIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetcarlockstatusintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for requesting the current status of the car’s locks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintent": {
+      "title": "INGetCarLockStatusIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetcarlockstatusintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to get the lock status of the user’s car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintentresponse": {
+      "title": "INGetCarLockStatusIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetcarlockstatusintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a request to get the car’s lock status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintenthandling": {
+      "title": "INSetCarLockStatusIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetcarlockstatusintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for requesting to lock or unlock a car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintent": {
+      "title": "INSetCarLockStatusIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetcarlockstatusintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to lock or unlock the user’s car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintentresponse": {
+      "title": "INSetCarLockStatusIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetcarlockstatusintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a request to lock or unlock the car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintenthandling": {
+      "title": "INGetCarPowerLevelStatusIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetcarpowerlevelstatusintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for requesting a car’s current power level."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintent": {
+      "title": "INGetCarPowerLevelStatusIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetcarpowerlevelstatusintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request for the current power level of the user’s car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponse": {
+      "title": "INGetCarPowerLevelStatusIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetcarpowerlevelstatusintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a request for the vehicle power level."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponseobserver": {
+      "title": "INGetCarPowerLevelStatusIntentResponseObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponseobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ingetcarpowerlevelstatusintentresponseobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for providing updates of a vehicle’s power level."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintenthandling": {
+      "title": "INActivateCarSignalIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inactivatecarsignalintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for requesting to activate the car’s signals."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintent": {
+      "title": "INActivateCarSignalIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inactivatecarsignalintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to activate the signals on the user’s car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintentresponse": {
+      "title": "INActivateCarSignalIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inactivatecarsignalintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a request to activate a car’s signals."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistcarsintenthandling": {
+      "title": "INListCarsIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistcarsintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistcarsintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The handler interface for requesting a list of the user’s electric vehicles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistcarsintent": {
+      "title": "INListCarsIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistcarsintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistcarsintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An intent for retrieving a list of the user’s electric vehicles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inlistcarsintentresponse": {
+      "title": "INListCarsIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistcarsintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inlistcarsintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a request to list the user’s electric vehicles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incarsignaloptions": {
+      "title": "INCarSignalOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incarsignaloptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incarsignaloptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The signals produced by the user’s car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incarsignaloptionsresolutionresult": {
+      "title": "INCarSignalOptionsResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incarsignaloptionsresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incarsignaloptionsresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the signals the intent is managing on the car."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/messaging": {
+      "title": "Messaging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/messaging",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/messaging",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send messages and search the user’s received messages."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
+      "title": "Lists and Notes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/lists_and_notes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage notes and to-do list items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts": {
+      "title": "Workouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/workouts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Start, end, and manage fitness routines."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/payments": {
+      "title": "Payments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/payments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send payments between users or pay bills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/voip_calling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate calls and search the user’s call history."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/visual_codes": {
+      "title": "Visual Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/visual_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convey contact and payment information using Quick Response (QR) codes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos": {
+      "title": "Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search for and display photos."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking": {
+      "title": "Ride Booking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/ride_booking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Book rides and report their status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/car_commands": {
+      "title": "Car Commands",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/car_commands",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/car_commands",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage vehicle door locks and get the vehicle’s status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/carplay": {
+      "title": "CarPlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/carplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with a vehicle’s CarPlay system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations": {
+      "title": "Restaurant Reservations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/restaurant_reservations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage restaurant reservations with help from the Maps app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media": {
+      "title": "Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Listen and control audio through Siri Intents or listen and watch media content from your app with shortcuts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Get Car Lock Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintent",
+        "doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Set Car Lock Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintent",
+        "doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Get Car Power Level Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintent",
+        "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponseobserver"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Activate Car Signal",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintent",
+        "doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintentresponse"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "List Cars",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inlistcarsintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/inlistcarsintent",
+        "doc://com.apple.documentation/documentation/sirikit/inlistcarsintentresponse"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "Maps uses this intent to obtain a list of the user’s electric vehicles available for route planning. Siri does not generate this intent."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/incarsignaloptions"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Resolution Results",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/incarsignaloptionsresolutionresult"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/messaging",
+        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+        "doc://com.apple.documentation/documentation/sirikit/workouts",
+        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+        "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+        "doc://com.apple.documentation/documentation/sirikit/photos",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+        "doc://com.apple.documentation/documentation/sirikit/media"
+      ],
+      "title": "Siri Domains",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users can lock or unlock the car’s doors and get other car-related information using Siri. Automotive vendors use their Intents app extension to validate the user’s request and communicate with the user’s registered vehicles."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

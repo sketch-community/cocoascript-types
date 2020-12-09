@@ -1,0 +1,682 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Manage and persist your app’s model layer."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3038378,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Core Data Stack",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/core_data_stack"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/core_data_stack"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel": {
+      "title": "NSManagedObjectModel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectmodel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A programmatic representation of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": ".xcdatamodeld"
+        },
+        {
+          "type": "text",
+          "text": " file describing your objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext": {
+      "title": "NSManagedObjectContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object space that you use to manipulate and track changes to managed objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator": {
+      "title": "NSPersistentStoreCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A coordinator that uses the model to help contexts and persistent stores communicate."
+        }
+      ]
+    },
+    "link-media-3118356": {
+      "identifier": "link-media-3118356",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata/core_data_stack#3118356"
+    },
+    "media-3118356": {
+      "identifier": "media-3118356",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 704,
+            "height": 362
+          },
+          "url": "https://docs-assets.developer.apple.com/published/af070d78c7/73827830-1e19-4865-8757-c4d9f8ccacfb.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 704,
+            "height": 362
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8fc7c1ecbc/35317515-fd0c-418f-862d-d81efd29ed29.png"
+        }
+      ],
+      "alt": "Diagram showing that a persistent container instance contains references to a managed object model, a managed object context, and a persistent store coordinator that connects to your app's stores.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer": {
+      "title": "NSPersistentContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container that encapsulates the Core Data stack in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsentitydescription": {
+      "title": "NSEntityDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsentitydescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsentitydescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of an entity in Core Data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspropertydescription": {
+      "title": "NSPropertyDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspropertydescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspropertydescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of a property of a Core Data entity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsattributedescription": {
+      "title": "NSAttributeDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsattributedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsattributedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of an attribute of a Core Data entity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsderivedattributedescription": {
+      "title": "NSDerivedAttributeDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsderivedattributedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsderivedattributedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of an attribute of a Core Data entity that derives its value from one or more other properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription": {
+      "title": "NSRelationshipDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsrelationshipdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of a relationship of a Core Data entity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobject": {
+      "title": "NSManagedObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A base class that implements the behavior required of a Core Data model object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid": {
+      "title": "NSManagedObjectID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A compact, universal identifier for a managed object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstore": {
+      "title": "NSPersistentStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class for all Core Data persistent stores."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription": {
+      "title": "NSPersistentStoreDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstoredescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description object used to create and load a persistent store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest": {
+      "title": "NSPersistentStoreRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorerequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Criteria used to retrieve data from or save data to a persistent store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreresult": {
+      "title": "NSPersistentStoreResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstoreresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class for results returned from a persistent store coordinator."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult": {
+      "title": "NSPersistentStoreAsynchronousResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstoreasynchronousresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete class used to represent the results of an asynchronous request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nssavechangesrequest": {
+      "title": "NSSaveChangesRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nssavechangesrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nssavechangesrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An encapsulation of a collection of changes to be made by an object store in response to a save operation on a managed object context. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsatomicstore": {
+      "title": "NSAtomicStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsatomicstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsatomicstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract superclass that you subclass to create a Core Data atomic store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode": {
+      "title": "NSAtomicStoreCacheNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsatomicstorecachenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete class that you use to represent basic nodes in a Core Data atomic store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstore": {
+      "title": "NSIncrementalStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract superclass defining the API through which Core Data communicates with a store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode": {
+      "title": "NSIncrementalStoreNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsincrementalstorenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A concrete class used to represent basic nodes in a Core Data incremental store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model": {
+      "title": "Creating a Core Data Model",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/creating_a_core_data_model",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a data model file to contain your app’s object structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack": {
+      "title": "Setting Up a Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up the classes that manage and persist your app’s objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage and persist your app’s model layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data": {
+      "title": "Handling Different Data Types in Core Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/handling_different_data_types_in_core_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, store, and present records for a variety of data types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores": {
+      "title": "Linking Data Between Two Core Data Stores",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Organize data in two different stores and implement a link between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Stack Setup",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer"
+      ],
+      "abstract": []
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Object Modeling",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel",
+        "doc://com.apple.documentation/documentation/coredata/nsentitydescription",
+        "doc://com.apple.documentation/documentation/coredata/nspropertydescription",
+        "doc://com.apple.documentation/documentation/coredata/nsattributedescription",
+        "doc://com.apple.documentation/documentation/coredata/nsderivedattributedescription",
+        "doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Object Management",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobject",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Store Coordination",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstore",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstoreresult",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult",
+        "doc://com.apple.documentation/documentation/coredata/nssavechangesrequest",
+        "doc://com.apple.documentation/documentation/coredata/nsatomicstore",
+        "doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstore",
+        "doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+        "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+        "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Data provides a set of classes that collaboratively support your app’s model layer:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An instance of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel"
+                    },
+                    {
+                      "type": "text",
+                      "text": " describes your app’s types, including their properties and relationships."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An instance of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext"
+                    },
+                    {
+                      "type": "text",
+                      "text": " tracks changes to instances of your app’s types. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An instance of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator"
+                    },
+                    {
+                      "type": "text",
+                      "text": " saves and fetches instances of your app’s types from stores. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3118356",
+              "metadata": {
+                "anchor": "3118356",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer"
+            },
+            {
+              "type": "text",
+              "text": " instance to set up the model, context, and store coordinator simultaneously."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

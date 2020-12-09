@@ -1,0 +1,742 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provide visual feedback to the user about the state of a cell and the transition between states."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3357146,
+  "kind": "article",
+  "metadata": {
+    "title": "Changing the Appearance of Selected and Highlighted Cells",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells",
+        "documentation/uikit/views_and_controls/collection_views/changing_the_appearance_of_selected_and_highlighted_cells"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells",
+        "documentation/uikit/views_and_controls/collection_views/changing_the_appearance_of_selected_and_highlighted_cells"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views": {
+      "title": "Collection Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/collection_views",
+      "url": "/documentation/uikit/views_and_controls/collection_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview": {
+      "title": "UICollectionView",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview",
+      "url": "/documentation/uikit/uicollectionview",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate": {
+      "title": "UICollectionViewDelegate",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate",
+      "url": "/documentation/uikit/uicollectionviewdelegate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620130-selected": {
+      "title": "selected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620130-selected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcell/1620130-selected"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620134-highlighted": {
+      "title": "highlighted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620134-highlighted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcell/1620134-highlighted"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618009-allowsselection": {
+      "title": "allowsSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618009-allowsselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618009-allowsselection"
+    },
+    "link-media-3362388": {
+      "identifier": "link-media-3362388",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362388"
+    },
+    "media-3362388": {
+      "identifier": "media-3362388",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 418
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7b195fffae/935358e6-20fe-43e0-850f-552c5f45b137.png"
+        }
+      ],
+      "alt": "A diagram depicting the steps that occur when tapping an unselected cell. The first image shows the user’s right index finger touching a dark, shaded rectangle representing a collection view cell on a phone screen. Below the image are current property values of the cell, listed as isHighlighted: true and isSelected: false. The second image depicts the user lifting their finger and moving their hand to the right of the rectangle, now shown shaded in a lighter color, on the phone screen. Below, the listed properties isHighlighted and isSelected are both false. The third image depicts the user’s hand in the lifted position above the rectangle on the phone screen, with the collection view presenting the rectangle in a third and different shade. Below, the property isHighlighted is false and isSelected is true.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620131-backgroundview": {
+      "title": "backgroundView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620131-backgroundview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcell/1620131-backgroundview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview": {
+      "title": "selectedBackgroundView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362390": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362390",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362390"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618033-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618033-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/1618033-delegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618032-collectionview": {
+      "title": "collectionView:didSelectItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618032-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdelegate/1618032-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:didSelectItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618035-collectionview": {
+      "title": "collectionView:didDeselectItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618035-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdelegate/1618035-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:didDeselectItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362392": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362392",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362392"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618049-collectionview": {
+      "title": "collectionView:didHighlightItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618049-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdelegate/1618049-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:didHighlightItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618027-collectionview": {
+      "title": "collectionView:didUnhighlightItemAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618027-collectionview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdelegate/1618027-collectionview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "collectionView:didUnhighlightItemAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362393": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362393",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells#3362393"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells": {
+      "title": "Changing the Appearance of Selected and Highlighted Cells",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide visual feedback to the user about the state of a cell and the transition between states."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture": {
+      "title": "Selecting Multiple Items with a Two-Finger Pan Gesture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Accelerate user selection of multiple items using the multiselect gesture on table and collection views."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/5f46a4bada/ChangingTheAppearanceOfSelectedAndHighlightedCells.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/5f46a4bada/ChangingTheAppearanceOfSelectedAndHighlightedCells.zip",
+      "checksum": "94b82b8e7ff2360ebb57445cddfd3c942a49bcca19a51b425f95ff2ce32f802940b3605567d1e25ec5df30c3106ac062d903f9a7f74a5c399e1d9d57801fa58c",
+      "url": "https://docs-assets.developer.apple.com/published/5f46a4bada/ChangingTheAppearanceOfSelectedAndHighlightedCells.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/5f46a4bada/ChangingTheAppearanceOfSelectedAndHighlightedCells.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture"
+      ],
+      "title": "Selection Management",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample app shows how to change the appearance of collection view cells as they transition between unselected, highlighted, and selected states. As a user taps a cell, the app determines the state of the cell and changes the cell’s appearance to indicate the transition between states."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The collection view in this sample supports single-item selection, which is the default for collection views. You can also configure collection views to support multiple-item selection, or disable selection altogether."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Determine the State of a Cell",
+          "anchor": "3362396"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The collection view in this sample determines the state of a cell by detecting the taps inside its bounds. It then sets the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620130-selected"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620134-highlighted"
+            },
+            {
+              "type": "text",
+              "text": " properties of the corresponding cell to indicate the current state. The collection view provides this behavior because its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618009-allowsselection"
+            },
+            {
+              "type": "text",
+              "text": " property is set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When touching an unselected cell, the initial touch-down event causes the collection view to change the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620134-highlighted"
+            },
+            {
+              "type": "text",
+              "text": " property of the cell to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": ". The final touch-up event causes the highlighted state to return to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "false"
+            },
+            {
+              "type": "text",
+              "text": ". If the touch-up event occurs inside the cell, the collection view sets the cell’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620130-selected"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": "; otherwise, the property value remains unchanged."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3362388",
+              "metadata": {
+                "anchor": "3362388",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Change the Cell’s Visual Appearance",
+          "anchor": "3362397"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The cell’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620131-backgroundview"
+            },
+            {
+              "type": "text",
+              "text": " property references the view to display as the background of the cell when it loads for the first time and when it isn’t highlighted or selected. When the cell’s state changes to highlighted or selected, the collection view modifies the properties of a cell to indicate the new state. It doesn’t, however, automatically change the visual appearance of the cell. That is, unless you set the cell’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview"
+            },
+            {
+              "type": "text",
+              "text": " property to a view."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview"
+            },
+            {
+              "type": "text",
+              "text": " to a view causes the collection view to replace the default background with the selected background when highlighting or selecting a cell. Your app doesn’t need to do anything else. The collection view changes the cell’s visual appearance automatically as the cell’s state changes. For example, the sample app uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview"
+            },
+            {
+              "type": "text",
+              "text": " property to change the cell’s background color from red to blue when selecting the cell."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func awakeFromNib() {",
+            "    super.awakeFromNib()",
+            "    ",
+            "    let redView = UIView(frame: bounds)",
+            "    redView.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)",
+            "    self.backgroundView = redView",
+            "",
+            "    let blueView = UIView(frame: bounds)",
+            "    blueView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1)",
+            "    self.selectedBackgroundView = blueView",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3362390",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide Additional Visual Indication of State Changes",
+          "anchor": "3362398"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Providing a selected background view in a cell is an easy way to have the collection view change the cell’s appearance based on its state, but you can do more than just changing the background. You can, for example, display a checkmark icon in selected cells or distinguish between highlighted and selected states visually."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The collection view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618033-delegate"
+            },
+            {
+              "type": "text",
+              "text": " has methods that provide you many opportunities to tweak the selection and highlighting appearance of your collection view. For example, if you prefer to draw the selection state of the cell yourself, you can leave the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview"
+            },
+            {
+              "type": "text",
+              "text": " property set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ". Then apply any visual changes to the cell in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618032-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " delegate method. The sample app uses this method, along with the selected background, to show a star in the selected cell. The app removes the star in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618035-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " delegate method."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {",
+            "    if let cell = collectionView.cellForItem(at: indexPath) as? CustomCollectionViewCell {",
+            "        cell.showIcon()",
+            "    }",
+            "}",
+            "",
+            "func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {",
+            "    if let cell = collectionView.cellForItem(at: indexPath) as? CustomCollectionViewCell {",
+            "        cell.hideIcon()",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3362392",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you prefer to draw the highlight state, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618049-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618027-collectionview"
+            },
+            {
+              "type": "text",
+              "text": " delegate methods. The sample app uses these two methods to display a different shade of red as the highlighted background color. Because cells in this app use the blue view for their "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview"
+            },
+            {
+              "type": "text",
+              "text": ", the delegate must apply its changes to the content view of the cells to ensure the changes are visible."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {",
+            "    if let cell = collectionView.cellForItem(at: indexPath) {",
+            "        cell.contentView.backgroundColor = #colorLiteral(red: 1, green: 0.4932718873, blue: 0.4739984274, alpha: 1)",
+            "    }",
+            "}",
+            "",
+            "func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {",
+            "    if let cell = collectionView.cellForItem(at: indexPath) {",
+            "        cell.contentView.backgroundColor = nil",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3362393",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "If the object is deleted, no modifications are made to objects at the destination of the relationship. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/core_data_model",
+        "doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription",
+        "doc://com.apple.documentation/documentation/coredata/nsdeleterule"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription",
+        "doc://com.apple.documentation/documentation/coredata/nsdeleterule"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/nsdeleterule/nsnoactiondeleterule",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1506667,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSNoActionDeleteRule",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "3.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@E@NSDeleteRule@NSNoActionDeleteRule",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/nsdeleterule/nsnoactiondeleterule"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/nsdeleterule/noactiondeleterule"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_model": {
+      "title": "Core Data Model",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_model",
+      "url": "/documentation/coredata/core_data_model",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription": {
+      "title": "NSRelationshipDescription",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription",
+      "url": "/documentation/coredata/nsrelationshipdescription",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsdeleterule": {
+      "title": "NSDeleteRule",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsdeleterule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsdeleterule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants define what happens to relationships when an object is deleted."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "url": "/documentation/coredata/core_data_stack",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "NSNoActionDeleteRule"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you use this rule, you are responsible for maintaining the integrity of the object graph. This rule is strongly discouraged for all but advanced users. You should normally use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSNullifyDeleteRule"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

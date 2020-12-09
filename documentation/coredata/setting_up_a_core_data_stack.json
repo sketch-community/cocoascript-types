@@ -1,0 +1,871 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Set up the classes that manage and persist your app’s objects."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2874826,
+  "kind": "article",
+  "metadata": {
+    "title": "Setting Up a Core Data Stack",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Data"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/setting_up_a_core_data_stack"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coredata/setting_up_a_core_data_stack"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coredata": {
+      "title": "Core Data",
+      "identifier": "doc://com.apple.documentation/documentation/coredata",
+      "url": "/documentation/coredata",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer": {
+      "title": "NSPersistentContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer"
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#2882416": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#2882416",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack#2882416"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel": {
+      "title": "managedObjectModel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext": {
+      "title": "viewContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator": {
+      "title": "persistentStoreCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator"
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#3122950": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#3122950",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack#3122950"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
+      "title": "application:didFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didFinishLaunchingWithOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiwindow/1621581-rootviewcontroller": {
+      "title": "rootViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindow/1621581-rootviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiwindow/1621581-rootviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#3122949": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#3122949",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack#3122949"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621490-prepareforsegue": {
+      "title": "prepareForSegue:sender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621490-prepareforsegue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiviewcontroller/1621490-prepareforsegue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareForSegue:sender:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#3137967": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#3137967",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack#3137967"
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#3037818": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack#3037818",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack#3037818"
+    },
+    "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model": {
+      "title": "Creating a Core Data Model",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/creating_a_core_data_model",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a data model file to contain your app’s object structure."
+        }
+      ]
+    },
+    "link-media-3122928": {
+      "identifier": "link-media-3122928",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack#3122928"
+    },
+    "media-3122928": {
+      "identifier": "media-3122928",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1409,
+            "height": 725
+          },
+          "url": "https://docs-assets.developer.apple.com/published/af070d78c7/73827830-1e19-4865-8757-c4d9f8ccacfb.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1409,
+            "height": 725
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fb7e996966/6484bcb2-50dd-4f04-b9f3-b9282ce55153.png"
+        }
+      ],
+      "alt": "Diagram showing that a persistent container instance contains references to a a managed object model, a managed object context, and a persistent store coordinator that connects to your app's stores.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel": {
+      "title": "NSManagedObjectModel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectmodel"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext": {
+      "title": "NSManagedObjectContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator": {
+      "title": "NSPersistentStoreCoordinator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator"
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack/setting_up_a_core_data_stack_manually": {
+      "title": "Setting Up a Core Data Stack Manually",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack/setting_up_a_core_data_stack_manually",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack/setting_up_a_core_data_stack_manually"
+    },
+    "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack": {
+      "title": "Setting Up a Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/setting_up_a_core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up the classes that manage and persist your app’s objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/core_data_stack": {
+      "title": "Core Data Stack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/core_data_stack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage and persist your app’s model layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data": {
+      "title": "Handling Different Data Types in Core Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/handling_different_data_types_in_core_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create, store, and present records for a variety of data types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores": {
+      "title": "Linking Data Between Two Core Data Stores",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/linking_data_between_two_core_data_stores",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Organize data in two different stores and implement a link between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Legacy Stack Setup",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/setting_up_a_core_data_stack/setting_up_a_core_data_stack_manually"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/handling_different_data_types_in_core_data",
+        "doc://com.apple.documentation/documentation/coredata/linking_data_between_two_core_data_stores"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you create a data model file as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/creating_a_core_data_model"
+            },
+            {
+              "type": "text",
+              "text": ", set up the classes that collaboratively support your app’s model layer. These classes are referred to collectively as the Core Data stack."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122928",
+              "metadata": {
+                "anchor": "3122928",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An instance of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel"
+                    },
+                    {
+                      "type": "text",
+                      "text": " represents your app’s model file describing your app’s types, properties, and relationships."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An instance of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext"
+                    },
+                    {
+                      "type": "text",
+                      "text": " tracks changes to instances of your app’s types."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An instance of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator"
+                    },
+                    {
+                      "type": "text",
+                      "text": " saves and fetches instances of your app’s types from stores."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An instance of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " sets up the model, context, and store coordinator all at once."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize a Persistent Container",
+          "anchor": "2882415"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, you initialize Core Data during your app’s startup.  Create the persistent container as a lazy variable to defer instantiation until its first use in your app’s delegate. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you selected the Core Data checkbox when creating a new Xcode project, the template automatically includes this setup code in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppDelegate"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Declare a lazy variable of type "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a persistent container instance, passing the data model filename to its initializer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Load any persistent stores. This call creates a store, if none exists."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class AppDelegate: UIResponder, UIApplicationDelegate {",
+            "",
+            "    ...",
+            "",
+            "    lazy var persistentContainer: NSPersistentContainer = {        ",
+            "        let container = NSPersistentContainer(name: \"DataModel\")",
+            "        container.loadPersistentStores { description, error in",
+            "            if let error = error {",
+            "                fatalError(\"Unable to load persistent stores: \\(error)\")",
+            "            }",
+            "        }",
+            "        return container",
+            "    }()",
+            "",
+            "    ...",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2882416",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once created, the persistent container holds references to the model, context, and store coordinator instances in its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator"
+            },
+            {
+              "type": "text",
+              "text": " properties, respectively."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can now pass a reference to the container to your user interface."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Pass a Persistent Container Reference to a View Controller",
+          "anchor": "3122948"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your app’s root view controller, import Core Data and create a variable to hold a reference to a persistent container."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "import UIKit",
+            "import CoreData",
+            "",
+            "class ViewController: UIViewController {",
+            "",
+            "    var container: NSPersistentContainer!",
+            "    ",
+            "    override func viewDidLoad() {",
+            "        super.viewDidLoad()",
+            "        guard container != nil else {",
+            "            fatalError(\"This view needs a persistent container.\")",
+            "        }",
+            "        // The persistent container is available.",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3122950",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Return to your app’s delegate. In "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+            },
+            {
+              "type": "text",
+              "text": ", downcast the app window’s "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindow/1621581-rootviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " to your app’s root view controller type. In this reference, set the root view controller’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "container"
+            },
+            {
+              "type": "text",
+              "text": " property to the persistent container."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class AppDelegate: UIResponder, UIApplicationDelegate {",
+            "",
+            "    ...",
+            "",
+            "    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {        ",
+            "        if let rootVC = window?.rootViewController as? ViewController {",
+            "            rootVC.container = persistentContainer",
+            "        }        ",
+            "        return true",
+            "    }",
+            "",
+            "    ...",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3122949",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To pass the persistent container to additional view controllers, repeat the creation of a container variable in each view controller, and set its value in the previous view controller’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621490-prepareforsegue"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class ViewController: UIViewController {",
+            "",
+            "    ...",
+            "    ",
+            "    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {",
+            "        if let nextVC = segue.destination as? NextViewController {",
+            "            nextVC.container = container",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3137967",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclass the Persistent Container",
+          "anchor": "3037125"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer"
+            },
+            {
+              "type": "text",
+              "text": " is intended to be subclassed. Your subclass is a convenient place to put Core Data–related code like functions that return subsets of data and calls to persist data to disk."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "import CoreData",
+            "",
+            "class PersistentContainer: NSPersistentContainer {    ",
+            "",
+            "    func saveContext(backgroundContext: NSManagedObjectContext? = nil) {",
+            "        let context = backgroundContext ?? viewContext",
+            "        guard context.hasChanges else { return }",
+            "        do {",
+            "            try context.save()",
+            "        } catch let error as NSError {",
+            "            print(\"Error: \\(error), \\(error.userInfo)\")",
+            "        }",
+            "    }    ",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3037818",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The above example adds a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "saveContext"
+            },
+            {
+              "type": "text",
+              "text": " function to the container, to improve performance by saving the context only when there are changes."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "When factoring a model layer into its own framework, an "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer"
+                },
+                {
+                  "type": "text",
+                  "text": " subclass locates the model file in its own bundle."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

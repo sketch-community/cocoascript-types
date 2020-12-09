@@ -1,0 +1,641 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Take advantage of background execution modes to respond to location-related events at any time."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corelocation",
+        "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2854967,
+  "kind": "article",
+  "metadata": {
+    "title": "Handling Location Events in the Background",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Location"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corelocation": {
+      "title": "Core Location",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation",
+      "url": "/documentation/corelocation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location": {
+      "title": "Getting the User's Location",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location",
+      "url": "/documentation/corelocation/getting_the_user_s_location",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620568-allowsbackgroundlocationupdates": {
+      "title": "allowsBackgroundLocationUpdates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620568-allowsbackgroundlocationupdates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1620568-allowsbackgroundlocationupdates"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "link-media-2904072": {
+      "identifier": "link-media-2904072",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background#2904072"
+    },
+    "media-2904072": {
+      "identifier": "media-2904072",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 800,
+            "height": 347
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9cba7a007f/5108b1a8-8cd2-4b56-83d9-09f8e9fa1ee7.png"
+        }
+      ],
+      "alt": "The capabilities pane in which you enable background location updates",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enabling background location updates"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application": {
+      "title": "application:willFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623032-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:willFinishLaunchingWithOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
+      "title": "application:didFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didFinishLaunchingWithOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionslocationkey": {
+      "title": "UIApplicationLaunchOptionsLocationKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionslocationkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationlaunchoptionslocationkey"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager": {
+      "title": "CLLocationManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background#2865362": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background#2865362",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background#2865362",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Services that relaunch your app after it has been terminated"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_visits_location_service": {
+      "title": "Using the Visits Location Service",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_visits_location_service",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/getting_the_user_s_location/using_the_visits_location_service",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Get location updates in the most power-efficient way, but less frequently than with other services. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_significant-change_location_service": {
+      "title": "Using the Significant-Change Location Service",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_significant-change_location_service",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/getting_the_user_s_location/using_the_significant-change_location_service",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Get location updates in a power-friendly way, but less frequently than with the standard location service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_standard_location_service": {
+      "title": "Using the Standard Location Service",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_standard_location_service",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/getting_the_user_s_location/using_the_standard_location_service",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Get regular location updates based on the parameters you specify."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background": {
+      "title": "Handling Location Events in the Background",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Take advantage of background execution modes to respond to location-related events at any time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names": {
+      "title": "Converting Between Coordinates and User-Friendly Place Names",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert between a latitude/longitude pair and a more user-friendly description of that location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapview/converting_a_user_s_location_to_a_descriptive_placemark": {
+      "title": "Converting a User's Location to a Descriptive Placemark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapview/converting_a_user_s_location_to_a_descriptive_placemark",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkit/mkmapview/converting_a_user_s_location_to_a_descriptive_placemark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform the user’s location displayed on a map into an informative description."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_visits_location_service",
+        "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_significant-change_location_service",
+        "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/using_the_standard_location_service",
+        "doc://com.apple.documentation/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names",
+        "doc://com.apple.documentation/documentation/mapkit/mkmapview/converting_a_user_s_location_to_a_descriptive_placemark"
+      ],
+      "title": "Related Topics",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Most location services are meant to be used while your app is in the foreground, but some can also run in the background or even cause your app to be launched. To receive events in the background, configure the Location updates capability for your app in Xcode, as shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-2904072"
+            },
+            {
+              "type": "text",
+              "text": ". You must also set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620568-allowsbackgroundlocationupdates"
+            },
+            {
+              "type": "text",
+              "text": " property of your "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": " object to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2904072",
+              "metadata": {
+                "anchor": "2904072",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Enabling background location updates"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the system launches your app, use the launch options dictionary passed to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+            },
+            {
+              "type": "text",
+              "text": " methods to determine whether your app was launched to handle a location update. This dictionary contains the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionslocationkey"
+            },
+            {
+              "type": "text",
+              "text": " key when the app is launched because of location services. Create a new "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+            },
+            {
+              "type": "text",
+              "text": " object, configure it with a delegate, and start location services again to receive the update. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/getting_the_user_s_location/handling_location_events_in_the_background#2865362"
+            },
+            {
+              "type": "text",
+              "text": " lists the services that launch your app to report new location updates. Services that cause an app to be relaunched do so even after the user force-quits the app"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Service"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Launches app"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Standard location service"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "No"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Significant-change location service"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Yes"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Visits service"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Yes"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Region monitoring"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Yes"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "iBeacon ranging"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "No"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Heading service"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "No"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2865362",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Services that relaunch your app after it has been terminated"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Disabling the Background App Refresh setting for the current app, or for all apps, does not prevent the delivery of location events in the background. "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

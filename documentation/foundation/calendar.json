@@ -1,0 +1,3423 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A definition of the relationships between calendar units (such as eras, years, and weekdays) and absolute points in time, providing features for calculation and comparison of dates.   "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/dates_and_times"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/calendar",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 2293530,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Calendar",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "7.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.9",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "8.0",
+        "current": "12.3"
+      }
+    ],
+    "externalID": "s:10Foundation8CalendarV",
+    "symbolKind": "struct",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "struct "
+      },
+      {
+        "kind": "identifier",
+        "text": "Calendar"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/calendar"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dates_and_times": {
+      "title": "Dates and Times",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dates_and_times",
+      "url": "/documentation/foundation/dates_and_times",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar": {
+      "title": "Calendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A definition of the relationships between calendar units (such as eras, years, and weekdays) and absolute points in time, providing features for calculation and comparison of dates.   "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Calendar"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscalendar": {
+      "title": "NSCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscalendar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An encapsulation of calendar information and calculations that bridges to "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/calendar"
+        },
+        {
+          "type": "text",
+          "text": "; use "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nscalendar"
+        },
+        {
+          "type": "text",
+          "text": " when you need reference semantics or other Foundation-specific behavior. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSCalendar"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/referenceconvertible": {
+      "title": "ReferenceConvertible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/referenceconvertible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/referenceconvertible"
+    },
+    "doc://com.apple.documentation/documentation/swift/customreflectable": {
+      "title": "CustomReflectable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/customreflectable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/customreflectable"
+    },
+    "doc://com.apple.documentation/documentation/swift/customstringconvertible": {
+      "title": "CustomStringConvertible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/customstringconvertible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/customstringconvertible"
+    },
+    "doc://com.apple.documentation/documentation/swift/customdebugstringconvertible": {
+      "title": "CustomDebugStringConvertible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/customdebugstringconvertible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/customdebugstringconvertible"
+    },
+    "doc://com.apple.documentation/documentation/swift/decodable": {
+      "title": "Decodable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/decodable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/decodable"
+    },
+    "doc://com.apple.documentation/documentation/swift/encodable": {
+      "title": "Encodable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/encodable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/encodable"
+    },
+    "doc://com.apple.documentation/documentation/swift/equatable": {
+      "title": "Equatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/equatable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/identifier": {
+      "title": "Calendar.Identifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/identifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/identifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration for the available calendars."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "Calendar.Identifier"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293260-autoupdatingcurrent": {
+      "title": "autoupdatingCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293260-autoupdatingcurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293260-autoupdatingcurrent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A calendar that tracks changes to user’s preferred calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "autoupdatingCurrent"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293438-current": {
+      "title": "current",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293438-current",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293438-current",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user’s current calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "current"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293304-date": {
+      "title": "date(_:matchesComponents:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293304-date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293304-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines if the date has all of the specified date components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "date"
+        },
+        {
+          "kind": "text",
+          "text": "(Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "matchesComponents"
+        },
+        {
+          "kind": "text",
+          "text": ": DateComponents) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293299-component": {
+      "title": "component(_:from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293299-component",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293299-component",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the value for one component of a date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "component"
+        },
+        {
+          "kind": "text",
+          "text": "(Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293646-datecomponents": {
+      "title": "dateComponents(_:from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293646-datecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293646-datecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns all the date components of a date, using the calendar time zone."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateComponents"
+        },
+        {
+          "kind": "text",
+          "text": "(Set<Calendar.Component>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> DateComponents"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292887-datecomponents": {
+      "title": "dateComponents(_:from:to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292887-datecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292887-datecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the difference between two dates."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateComponents"
+        },
+        {
+          "kind": "text",
+          "text": "(Set<Calendar.Component>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> DateComponents"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293176-datecomponents": {
+      "title": "dateComponents(_:from:to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293176-datecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293176-datecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the difference between two dates specified as "
+        },
+        {
+          "type": "codeVoice",
+          "code": "DateComponents"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateComponents"
+        },
+        {
+          "kind": "text",
+          "text": "(Set<Calendar.Component>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": DateComponents, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": DateComponents) -> DateComponents"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293477-datecomponents": {
+      "title": "dateComponents(in:from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293477-datecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293477-datecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns all the date components of a date, as if in a given time zone (instead of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Calendar"
+        },
+        {
+          "type": "text",
+          "text": " time zone)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateComponents"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "in"
+        },
+        {
+          "kind": "text",
+          "text": ": TimeZone, "
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> DateComponents"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/component": {
+      "title": "Calendar.Component",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/component",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/component",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration for the various components of a calendar date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "Calendar.Component"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293715-identifier": {
+      "title": "identifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293715-identifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293715-identifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifier of the calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "identifier"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Identifier"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293340-locale": {
+      "title": "locale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293340-locale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293340-locale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The locale of the calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "locale"
+        },
+        {
+          "kind": "text",
+          "text": ": Locale?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293656-firstweekday": {
+      "title": "firstWeekday",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293656-firstweekday",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293656-firstweekday",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The first weekday of the calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "firstWeekday"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293094-minimumdaysinfirstweek": {
+      "title": "minimumDaysInFirstWeek",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293094-minimumdaysinfirstweek",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293094-minimumdaysinfirstweek",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of minimum days in the first week."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "minimumDaysInFirstWeek"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293575-timezone": {
+      "title": "timeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293575-timezone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293575-timezone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time zone of the calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "timeZone"
+        },
+        {
+          "kind": "text",
+          "text": ": TimeZone"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293142-maximumrange": {
+      "title": "maximumRange(of:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293142-maximumrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293142-maximumrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The maximum range limits of the values that a given component can take on."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "maximumRange"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "of"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component) -> Range<Int>?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293186-minimumrange": {
+      "title": "minimumRange(of:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293186-minimumrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293186-minimumrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the minimum range limits of the values that a given component can take on."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "minimumRange"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "of"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component) -> Range<Int>?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292831-ordinality": {
+      "title": "ordinality(of:in:for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292831-ordinality",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292831-ordinality",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "ordinality"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "of"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "in"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> Int?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293059-range": {
+      "title": "range(of:in:for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293059-range",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293059-range",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "range"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "of"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "in"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> Range<Int>?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293783-startofday": {
+      "title": "startOfDay(for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293783-startofday",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293783-startofday",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the first moment of a given Date, as a Date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "startOfDay"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> Date"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293661-enumeratedates": {
+      "title": "enumerateDates(startingAfter:matching:matchingPolicy:repeatedTimePolicy:direction:using:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293661-enumeratedates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293661-enumeratedates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes the dates which match (or most closely match) a given set of components, and calls the closure once for each of them, until the enumeration is stopped."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateDates"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "startingAfter"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "matching"
+        },
+        {
+          "kind": "text",
+          "text": ": DateComponents, "
+        },
+        {
+          "kind": "identifier",
+          "text": "matchingPolicy"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.MatchingPolicy, "
+        },
+        {
+          "kind": "identifier",
+          "text": "repeatedTimePolicy"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.RepeatedTimePolicy, "
+        },
+        {
+          "kind": "identifier",
+          "text": "direction"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.SearchDirection, "
+        },
+        {
+          "kind": "identifier",
+          "text": "using"
+        },
+        {
+          "kind": "text",
+          "text": ": (Date?, Bool, inout Bool) -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293473-nextdate": {
+      "title": "nextDate(after:matching:matchingPolicy:repeatedTimePolicy:direction:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293473-nextdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293473-nextdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes the next date which matches (or most closely matches) a given set of components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "nextDate"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "after"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "matching"
+        },
+        {
+          "kind": "text",
+          "text": ": DateComponents, "
+        },
+        {
+          "kind": "identifier",
+          "text": "matchingPolicy"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.MatchingPolicy, "
+        },
+        {
+          "kind": "identifier",
+          "text": "repeatedTimePolicy"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.RepeatedTimePolicy, "
+        },
+        {
+          "kind": "identifier",
+          "text": "direction"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.SearchDirection) -> Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/matchingpolicy": {
+      "title": "Calendar.MatchingPolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/matchingpolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/matchingpolicy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A hint to the search algorithm to control the method used for searching for dates."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "Calendar.MatchingPolicy"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/repeatedtimepolicy": {
+      "title": "Calendar.RepeatedTimePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/repeatedtimepolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/repeatedtimepolicy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines which result to use when a time is repeated on a day in a calendar (for example, during a daylight saving transition when the times between 2:00am and 3:00am may happen twice)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "Calendar.RepeatedTimePolicy"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292916-date": {
+      "title": "date(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292916-date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292916-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a date created from the specified components."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "date"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": DateComponents) -> Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293676-date": {
+      "title": "date(byAdding:to:wrappingComponents:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293676-date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293676-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Date"
+        },
+        {
+          "type": "text",
+          "text": " representing the date calculated by adding components to a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "date"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "byAdding"
+        },
+        {
+          "kind": "text",
+          "text": ": DateComponents, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "wrappingComponents"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool) -> Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293453-date": {
+      "title": "date(byAdding:value:to:wrappingComponents:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293453-date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293453-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Date"
+        },
+        {
+          "type": "text",
+          "text": " representing the date calculated by adding an amount of a specific component to a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "date"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "byAdding"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "value"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "wrappingComponents"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool) -> Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292915-date": {
+      "title": "date(bySetting:value:of:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292915-date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292915-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Date"
+        },
+        {
+          "type": "text",
+          "text": " representing the date calculated by setting a specific component to a given time, and trying to keep lower components the same.  If the component already has that value, this may result in a date which is the same as the given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "date"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "bySetting"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "value"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "of"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293479-date": {
+      "title": "date(bySettingHour:minute:second:of:matchingPolicy:repeatedTimePolicy:direction:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293479-date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293479-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Date"
+        },
+        {
+          "type": "text",
+          "text": " representing the date calculated by setting hour, minute, and second to a given time on a specified "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Date"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "date"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "bySettingHour"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "minute"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "second"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "of"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "matchingPolicy"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.MatchingPolicy, "
+        },
+        {
+          "kind": "identifier",
+          "text": "repeatedTimePolicy"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.RepeatedTimePolicy, "
+        },
+        {
+          "kind": "identifier",
+          "text": "direction"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.SearchDirection) -> Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292908-dateinterval": {
+      "title": "dateInterval(of:for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292908-dateinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292908-dateinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the starting time and duration of a given calendar component that contains a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateInterval"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "of"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> DateInterval?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293465-dateinterval": {
+      "title": "dateInterval(of:start:interval:for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293465-dateinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293465-dateinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns, via two inout parameters, the starting time and duration of a given calendar component that contains a given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateInterval"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "of"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component, "
+        },
+        {
+          "kind": "identifier",
+          "text": "start"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "interval"
+        },
+        {
+          "kind": "text",
+          "text": ": inout TimeInterval, "
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293283-dateintervalofweekend": {
+      "title": "dateIntervalOfWeekend(containing:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293283-dateintervalofweekend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293283-dateintervalofweekend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "DateInterval"
+        },
+        {
+          "type": "text",
+          "text": " of the weekend contained by the given date, or "
+        },
+        {
+          "type": "codeVoice",
+          "code": "nil"
+        },
+        {
+          "type": "text",
+          "text": " if the date is not in a weekend."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateIntervalOfWeekend"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "containing"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> DateInterval?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293017-dateintervalofweekend": {
+      "title": "dateIntervalOfWeekend(containing:start:interval:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293017-dateintervalofweekend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293017-dateintervalofweekend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Find the range of the weekend around the given date, returned via two by-reference parameters."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateIntervalOfWeekend"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "containing"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "start"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "interval"
+        },
+        {
+          "kind": "text",
+          "text": ": inout TimeInterval) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293501-nextweekend": {
+      "title": "nextWeekend(startingAfter:direction:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293501-nextweekend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293501-nextweekend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "DateInterval"
+        },
+        {
+          "type": "text",
+          "text": " of the next weekend, which starts strictly after the given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "nextWeekend"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "startingAfter"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "direction"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.SearchDirection) -> DateInterval?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293770-nextweekend": {
+      "title": "nextWeekend(startingAfter:start:interval:direction:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293770-nextweekend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293770-nextweekend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the range of the next weekend via two inout parameters. The weekend starts strictly after the given date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "nextWeekend"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "startingAfter"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "start"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "interval"
+        },
+        {
+          "kind": "text",
+          "text": ": inout TimeInterval, "
+        },
+        {
+          "kind": "identifier",
+          "text": "direction"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.SearchDirection) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/searchdirection": {
+      "title": "Calendar.SearchDirection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/searchdirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/searchdirection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The direction in time to search."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "Calendar.SearchDirection"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293166-compare": {
+      "title": "compare(_:to:toGranularity:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293166-compare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293166-compare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compares two dates down to the specified component."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "compare"
+        },
+        {
+          "kind": "text",
+          "text": "(Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "toGranularity"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component) -> ComparisonResult"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292870-isdate": {
+      "title": "isDate(_:equalTo:toGranularity:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292870-isdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292870-isdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether two dates are equal down to the specified component."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDate"
+        },
+        {
+          "kind": "text",
+          "text": "(Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "equalTo"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "toGranularity"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Component) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292885-isdate": {
+      "title": "isDate(_:inSameDayAs:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292885-isdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292885-isdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether a date is within the same day as another date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDate"
+        },
+        {
+          "kind": "text",
+          "text": "(Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "inSameDayAs"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293243-isdateintoday": {
+      "title": "isDateInToday(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293243-isdateintoday",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293243-isdateintoday",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the given date is within today."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDateInToday"
+        },
+        {
+          "kind": "text",
+          "text": "(Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293607-isdateintomorrow": {
+      "title": "isDateInTomorrow(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293607-isdateintomorrow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293607-isdateintomorrow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the given date is within tomorrow."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDateInTomorrow"
+        },
+        {
+          "kind": "text",
+          "text": "(Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293566-isdateinyesterday": {
+      "title": "isDateInYesterday(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293566-isdateinyesterday",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293566-isdateinyesterday",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the given date is within yesterday."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDateInYesterday"
+        },
+        {
+          "kind": "text",
+          "text": "(Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293678-isdateinweekend": {
+      "title": "isDateInWeekend(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293678-isdateinweekend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293678-isdateinweekend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the given date is within a weekend period."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "isDateInWeekend"
+        },
+        {
+          "kind": "text",
+          "text": "(Date) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293399": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293399",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293399",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean indicating whether two calendars are the same."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
+        },
+        {
+          "kind": "text",
+          "text": "(Calendar, Calendar) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2883219": {
+      "title": "!=(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2883219",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2883219",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether two values are not equal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "!= "
+        },
+        {
+          "kind": "text",
+          "text": "(Calendar, Calendar) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293634-amsymbol": {
+      "title": "amSymbol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293634-amsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293634-amsymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The symbol used to represent “AM”, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "amSymbol"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292945-pmsymbol": {
+      "title": "pmSymbol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292945-pmsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292945-pmsymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The symbol used to represent “PM”, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "pmSymbol"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293235-weekdaysymbols": {
+      "title": "weekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293235-weekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293235-weekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of weekdays in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "weekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292848-shortweekdaysymbols": {
+      "title": "shortWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292848-shortweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292848-shortweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of shorter-named weekdays in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292956-veryshortweekdaysymbols": {
+      "title": "veryShortWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292956-veryshortweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292956-veryshortweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of very-shortly-named weekdays in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "veryShortWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293469-standaloneweekdaysymbols": {
+      "title": "standaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293469-standaloneweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293469-standaloneweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of standalone weekday names in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "standaloneWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293292-shortstandaloneweekdaysymbols": {
+      "title": "shortStandaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293292-shortstandaloneweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293292-shortstandaloneweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of shorter-named standalone weekdays in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortStandaloneWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292907-veryshortstandaloneweekdaysymbol": {
+      "title": "veryShortStandaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292907-veryshortstandaloneweekdaysymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292907-veryshortstandaloneweekdaysymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of very-shortly-named weekdays in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "veryShortStandaloneWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293077-monthsymbols": {
+      "title": "monthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293077-monthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293077-monthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of months in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "monthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293753-shortmonthsymbols": {
+      "title": "shortMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293753-shortmonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293753-shortmonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of shorter-named months in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2292926-veryshortmonthsymbols": {
+      "title": "veryShortMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2292926-veryshortmonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2292926-veryshortmonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of very-shortly-named months in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "veryShortMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293194-standalonemonthsymbols": {
+      "title": "standaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293194-standalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293194-standalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of standalone months in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "standaloneMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293674-shortstandalonemonthsymbols": {
+      "title": "shortStandaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293674-shortstandalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293674-shortstandalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of shorter-named standalone months in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortStandaloneMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293369-veryshortstandalonemonthsymbols": {
+      "title": "veryShortStandaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293369-veryshortstandalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293369-veryshortstandalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of very-shortly-named standalone months in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "veryShortStandaloneMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293406-quartersymbols": {
+      "title": "quarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293406-quartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293406-quartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of quarter names in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "quarterSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293559-shortquartersymbols": {
+      "title": "shortQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293559-shortquartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293559-shortquartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of shorter-named quarters in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortQuarterSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293756-standalonequartersymbols": {
+      "title": "standaloneQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293756-standalonequartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293756-standalonequartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of standalone quarter names in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "standaloneQuarterSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293450-shortstandalonequartersymbols": {
+      "title": "shortStandaloneQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293450-shortstandalonequartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293450-shortstandalonequartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of shorter-named standalone quarters in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortStandaloneQuarterSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293285-erasymbols": {
+      "title": "eraSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293285-erasymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293285-erasymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of eras in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "eraSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293729-longerasymbols": {
+      "title": "longEraSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293729-longerasymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293729-longerasymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of longer-named eras in this calendar, localized to the Calendar’s "
+        },
+        {
+          "type": "codeVoice",
+          "code": "locale"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "longEraSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293716-description": {
+      "title": "description",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293716-description",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293716-description",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A textual description of the calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "description"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293372-debugdescription": {
+      "title": "debugDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293372-debugdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293372-debugdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A textual description of the locale suitable for debugging."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "debugDescription"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2427198-custommirror": {
+      "title": "customMirror",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2427198-custommirror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2427198-custommirror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mirror that reflects the calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "customMirror"
+        },
+        {
+          "kind": "text",
+          "text": ": Mirror"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293134-hashvalue": {
+      "title": "hashValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293134-hashvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293134-hashvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The computed hash value for the calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "hashValue"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2908825-encode": {
+      "title": "encode(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2908825-encode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2908825-encode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes this calendar into the given encoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "encode"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Encoder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2908866-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2908866-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2908866-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new calendar instance by decoding from the given decoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Decoder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/referencetype": {
+      "title": "Calendar.ReferenceType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/referencetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/referencetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An alias for this value type's equivalent reference type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "Calendar.ReferenceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/3126602-init": {
+      "title": "init(identifier:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/3126602-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/3126602-init",
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "identifier"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar.Identifier)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/3236711-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/3236711-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/3236711-hash",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/datecomponents": {
+      "title": "DateComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/datecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/datecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A date or time specified in terms of units (such as year, month, day, hour, and minute) to be evaluated in a calendar system and time zone. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "DateComponents"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/timezone": {
+      "title": "TimeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/timezone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/timezone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about standard time conventions associated with a specific geopolitical region."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "TimeZone"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/customdebugstringconvertible",
+        "doc://com.apple.documentation/documentation/swift/customreflectable",
+        "doc://com.apple.documentation/documentation/swift/customstringconvertible",
+        "doc://com.apple.documentation/documentation/swift/decodable",
+        "doc://com.apple.documentation/documentation/swift/encodable",
+        "doc://com.apple.documentation/documentation/swift/equatable",
+        "doc://com.apple.documentation/documentation/swift/hashable",
+        "doc://com.apple.documentation/documentation/foundation/referenceconvertible"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Calendar",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/identifier"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the User's Calendar",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293260-autoupdatingcurrent",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293438-current"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Extracting Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293304-date",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293299-component",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293646-datecomponents",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292887-datecomponents",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293176-datecomponents",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293477-datecomponents",
+        "doc://com.apple.documentation/documentation/foundation/calendar/component"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Calendar Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293715-identifier",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293340-locale",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293656-firstweekday",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293094-minimumdaysinfirstweek",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293575-timezone",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293142-maximumrange",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293186-minimumrange",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292831-ordinality",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293059-range"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scanning Dates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293783-startofday",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293661-enumeratedates",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293473-nextdate",
+        "doc://com.apple.documentation/documentation/foundation/calendar/matchingpolicy",
+        "doc://com.apple.documentation/documentation/foundation/calendar/repeatedtimepolicy"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calculating Dates from Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292916-date",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293676-date",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293453-date",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292915-date",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293479-date"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calculating Intervals",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292908-dateinterval",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293465-dateinterval",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293283-dateintervalofweekend",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293017-dateintervalofweekend",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293501-nextweekend",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293770-nextweekend",
+        "doc://com.apple.documentation/documentation/foundation/calendar/searchdirection"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Dates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293166-compare",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292870-isdate",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292885-isdate",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293243-isdateintoday",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293607-isdateintomorrow",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293566-isdateinyesterday",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293678-isdateinweekend"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Calendars",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293399",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2883219"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting AM and PM symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293634-amsymbol",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292945-pmsymbol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Weekday Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293235-weekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292848-shortweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292956-veryshortweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293469-standaloneweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293292-shortstandaloneweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292907-veryshortstandaloneweekdaysymbol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Month Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293077-monthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293753-shortmonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2292926-veryshortmonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293194-standalonemonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293674-shortstandalonemonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293369-veryshortstandalonemonthsymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Quarter Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293406-quartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293559-shortquartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293756-standalonequartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293450-shortstandalonequartersymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Era Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293285-erasymbols",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293729-longerasymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Describing a Calendar",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293716-description",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293372-debugdescription",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2427198-custommirror",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2293134-hashvalue"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Encoding and Decoding",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/2908825-encode",
+        "doc://com.apple.documentation/documentation/foundation/calendar/2908866-init"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using Reference Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscalendar",
+        "doc://com.apple.documentation/documentation/foundation/calendar/referencetype"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/3126602-init"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/calendar/3236711-hash"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/datecomponents",
+        "doc://com.apple.documentation/documentation/foundation/timezone"
+      ],
+      "title": "Calendrical Calculations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "struct"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "Calendar"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "Calendar"
+            },
+            {
+              "type": "text",
+              "text": " encapsulates information about systems of reckoning time in which the beginning, length, and divisions of a year are defined. It provides information about the calendar and support for calendrical computations such as determining the range of a given calendrical unit and adding units to a given absolute time."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

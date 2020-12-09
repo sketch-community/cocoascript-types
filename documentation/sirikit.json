@@ -1,0 +1,1028 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Handle user requests for your app’s services that originate from Siri or Maps."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2852082,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SiriKit",
+    "role": "collection",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "3.2",
+        "current": "7.2"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit"
+      ]
+    }
+  ],
+  "references": {
+    "link-media-2902572": {
+      "identifier": "link-media-2902572",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit#2902572"
+    },
+    "media-2902572": {
+      "identifier": "media-2902572",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 475,
+            "height": 253
+          },
+          "url": "https://docs-assets.developer.apple.com/published/63ea07d81b/16f9b205-2c79-4bea-b89a-2ef26bc71ef1.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 475,
+            "height": 253
+          },
+          "url": "https://docs-assets.developer.apple.com/published/02853b65bf/f36fca71-da50-4736-8a96-40805cd15f1b.png"
+        }
+      ],
+      "alt": "Making your services available from Siri and Maps",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Making your services available from Siri and Maps"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/requesting_authorization_to_use_sirikit": {
+      "title": "Requesting Authorization to Use SiriKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/requesting_authorization_to_use_sirikit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/requesting_authorization_to_use_sirikit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Request permission from the user so that Siri and Maps can communicate with your Intents app extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_siri": {
+      "title": "Siri Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_siri",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_siri",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app handles Siri requests."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.developer.siri",
+      "ideTitle": "Siri Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension": {
+      "title": "Creating an Intents App Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_app_extension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add and configure an Intents app extension in your Xcode project."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions": {
+      "title": "Structuring Your Code to Support App Extensions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/structuring_your_code_to_support_app_extensions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Move your back-end services to a private framework so your app and app extensions can use them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects": {
+      "title": "Dispatching Intents to Handler Objects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/dispatching_intents_to_handler_objects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide SiriKit with an object capable of handling a given intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
+      "title": "Resolving and Handling Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle user requests for your app’s services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding": {
+      "title": "INIntentHandlerProviding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintenthandlerproviding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for dispatching intents to the custom objects that handle those intents. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes": {
+      "title": "Intents and Related Classes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/intents_and_related_classes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn about the classes you use to build your Intents extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents": {
+      "title": "Providing Hands-Free App Control with Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle intents without an extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/adding_user_interactivity_with_siri_shortcuts_and_the_shortcuts_app": {
+      "title": "Adding User Interactivity with Siri Shortcuts and the Shortcuts App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/adding_user_interactivity_with_siri_shortcuts_and_the_shortcuts_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/adding_user_interactivity_with_siri_shortcuts_and_the_shortcuts_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts": {
+      "title": "Donating Shortcuts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/donating_shortcuts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tell Siri about shortcuts to actions that the user performed in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/deleting_donated_shortcuts": {
+      "title": "Deleting Donated Shortcuts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deleting_donated_shortcuts",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/deleting_donated_shortcuts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Remove your donations from Siri."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts": {
+      "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Make it easy for people to use Siri with your app by providing shortcuts to your app’s actions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/shortcut_management": {
+      "title": "Shortcut Management",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut_management",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/shortcut_management",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enable users to add shortcuts to Siri, and have your app suggest shortcuts to users."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face": {
+      "title": "Relevant Shortcuts for the Siri Watch Face",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display shortcuts on the Siri watch face."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inshortcut": {
+      "title": "INShortcut",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inshortcut",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing an action available in your app that the system may suggest to a user or a user may add to Siri."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inshortcutavailabilityoptions": {
+      "title": "INShortcutAvailabilityOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inshortcutavailabilityoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inshortcutavailabilityoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defined contexts in which an intent or activity might be relevant to a user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down": {
+      "title": "Adding Shortcuts for Wind Down",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/adding_shortcuts_for_wind_down",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reveal your app’s shortcuts inside the Health app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions": {
+      "title": "Siri Event Suggestions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/siri_event_suggestions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide users with current, actionable information connected to a reservation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/messaging": {
+      "title": "Messaging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/messaging",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/messaging",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send messages and search the user’s received messages."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
+      "title": "Lists and Notes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/lists_and_notes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage notes and to-do list items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts": {
+      "title": "Workouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/workouts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Start, end, and manage fitness routines."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/payments": {
+      "title": "Payments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/payments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Send payments between users or pay bills."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/voip_calling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initiate calls and search the user’s call history."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/visual_codes": {
+      "title": "Visual Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/visual_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convey contact and payment information using Quick Response (QR) codes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/photos": {
+      "title": "Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search for and display photos."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking": {
+      "title": "Ride Booking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/ride_booking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Book rides and report their status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/car_commands": {
+      "title": "Car Commands",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/car_commands",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/car_commands",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage vehicle door locks and get the vehicle’s status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/carplay": {
+      "title": "CarPlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/carplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with a vehicle’s CarPlay system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations": {
+      "title": "Restaurant Reservations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/restaurant_reservations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage restaurant reservations with help from the Maps app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/media": {
+      "title": "Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/media",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Listen and control audio through Siri Intents or listen and watch media content from your app with shortcuts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension": {
+      "title": "Creating an Intents UI Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_ui_extension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create an Intents UI app extension to customize the interfaces displayed by Siri and Maps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/custom_ui": {
+      "title": "Custom UI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/custom_ui",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/custom_ui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Customize Siri and Map interfaces with content unique to your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit": {
+      "title": "Registering Custom Vocabulary with SiriKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
+      "title": "INVocabulary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/invocabulary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object for registering user-specific vocabulary that Siri requests might include."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ininteraction": {
+      "title": "INInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/ininteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interaction between the user and your app involving an intent object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/common_data_types": {
+      "title": "Common Data Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/common_data_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/common_data_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage common data types such as strings, dates, currencies, images, and contacts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/common_resolution_results": {
+      "title": "Common Resolution Results",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/common_resolution_results",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/common_resolution_results",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve common types of data like strings and dates into specific values that your app recognizes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intent_class_identifiers": {
+      "title": "Intent Class Identifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_class_identifiers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/intent_class_identifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identify intents specified by user notifications."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols": {
+      "title": "Deprecated Classes and Protocols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/deprecated_classes_and_protocols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Symbols that are no longer supported."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter": {
+      "title": "INCallRecordFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordfilter"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult": {
+      "title": "INCallRecordResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordresolutionresult"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult": {
+      "title": "INStartCallCallRecordToCallBackResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/sirikit_enumerations": {
+      "title": "SiriKit Enumerations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/sirikit_enumerations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/sirikit_enumerations"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/sirikit_constants": {
+      "title": "SiriKit Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/sirikit_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/sirikit_constants"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/requesting_authorization_to_use_sirikit",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_siri"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Siri Intents",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
+        "doc://com.apple.documentation/documentation/sirikit/structuring_your_code_to_support_app_extensions",
+        "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handler_objects",
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+        "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding",
+        "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
+        "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Intents app extension provides your response to user requests originating from Siri and Maps."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Shortcuts",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/adding_user_interactivity_with_siri_shortcuts_and_the_shortcuts_app",
+        "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts",
+        "doc://com.apple.documentation/documentation/sirikit/deleting_donated_shortcuts",
+        "doc://com.apple.documentation/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts",
+        "doc://com.apple.documentation/documentation/sirikit/shortcut_management",
+        "doc://com.apple.documentation/documentation/sirikit/relevant_shortcuts_for_the_siri_watch_face",
+        "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+        "doc://com.apple.documentation/documentation/sirikit/inshortcutavailabilityoptions",
+        "doc://com.apple.documentation/documentation/sirikit/adding_shortcuts_for_wind_down"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Siri Event Suggestions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Siri Domains",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/messaging",
+        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
+        "doc://com.apple.documentation/documentation/sirikit/workouts",
+        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+        "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+        "doc://com.apple.documentation/documentation/sirikit/photos",
+        "doc://com.apple.documentation/documentation/sirikit/ride_booking",
+        "doc://com.apple.documentation/documentation/sirikit/car_commands",
+        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/restaurant_reservations",
+        "doc://com.apple.documentation/documentation/sirikit/media"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SiriKit groups intents into domains based on the type of app that’s likely to support them."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Custom Siri and Maps Displays",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_ui_extension",
+        "doc://com.apple.documentation/documentation/sirikit/custom_ui"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Custom Vocabulary",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/invocabulary"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Common Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/ininteraction",
+        "doc://com.apple.documentation/documentation/sirikit/common_data_types",
+        "doc://com.apple.documentation/documentation/sirikit/common_resolution_results",
+        "doc://com.apple.documentation/documentation/sirikit/intent_class_identifiers"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Common data types such as strings and numerical types used throughout SiriKit."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Classes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/sirikit_enumerations",
+        "doc://com.apple.documentation/documentation/sirikit/sirikit_constants"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SiriKit encompasses the Intents and Intents UI frameworks, which you use to implement app extensions that integrate your services with Siri and Maps. SiriKit supports two types of app extensions: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Intents app extension"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " receives user requests from SiriKit and turns them into app-specific actions. For example, the user might ask Siri to send a message, book a ride, or start a workout using your app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Intents UI app extension"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " displays branding or other customized content in the Siri or Maps interface after your Intents app extension fulfills a user request. Creation of this extension is optional."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2902572",
+              "metadata": {
+                "anchor": "2902572",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Making your services available from Siri and Maps"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SiriKit defines the types of requests—known as "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "intents"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "—that users can make. Domains group related intents to make it clear which intents you might support in your app. For example, the messages domain has intents for sending messages, searching for messages, and marking messages as read or unread. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app extensions rarely communicate with the user directly. Siri and Maps typically handle all communication with the user and call out to your extensions only when they need you to provide information. You can provide an Intents UI app extension to customize the information that Siri and Maps display, but doing so is optional."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This framework ignores calls from Mac apps built with Mac Catalyst."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

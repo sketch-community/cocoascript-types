@@ -1,0 +1,602 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to stream tasks."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/urlsession"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1411586,
+  "kind": "symbol",
+  "metadata": {
+    "title": "URLSessionStreamDelegate",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.11",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(pl)NSURLSessionStreamDelegate",
+    "symbolKind": "intf",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "protocol "
+      },
+      {
+        "kind": "identifier",
+        "text": "URLSessionStreamDelegate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsurlsessionstreamdelegate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/urlsessionstreamdelegate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession": {
+      "title": "URLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionstreamtask/1410132-capturestreams": {
+      "title": "captureStreams()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamtask/1410132-capturestreams",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionstreamtask/1410132-capturestreams"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate": {
+      "title": "URLSessionTaskDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiontaskdelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiondelegate": {
+      "title": "URLSessionDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiondelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1407527-urlsession": {
+      "title": "urlSession(_:betterRouteDiscoveredFor:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1407527-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionstreamdelegate/1407527-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that a better route to the host has been detected for the stream."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "betterRouteDiscoveredFor"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionStreamTask)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411625-urlsession": {
+      "title": "urlSession(_:streamTask:didBecome:outputStream:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411625-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionstreamdelegate/1411625-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the stream task has been completed as a result of the stream task calling the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamtask/1410132-capturestreams"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "streamTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionStreamTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didBecome"
+        },
+        {
+          "kind": "text",
+          "text": ": InputStream, "
+        },
+        {
+          "kind": "identifier",
+          "text": "outputStream"
+        },
+        {
+          "kind": "text",
+          "text": ": OutputStream)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411501-urlsession": {
+      "title": "urlSession(_:readClosedFor:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411501-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionstreamdelegate/1411501-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the read side of the underlying socket has been closed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "readClosedFor"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionStreamTask)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411507-urlsession": {
+      "title": "urlSession(_:writeClosedFor:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411507-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionstreamdelegate/1411507-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the write side of the underlying socket has been closed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "writeClosedFor"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionStreamTask)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/1411587-streamtask": {
+      "title": "streamTask(withHostName:port:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1411587-streamtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/1411587-streamtask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a task that establishes a bidirectional TCP/IP connection to a specified hostname and port."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "streamTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "withHostName"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "port"
+        },
+        {
+          "kind": "text",
+          "text": ": Int) -> URLSessionStreamTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/1411545-streamtask": {
+      "title": "streamTask(with:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/1411545-streamtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/1411545-streamtask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a task that establishes a bidirectional TCP/IP connection using a specified network service."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "streamTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": NetService) -> URLSessionStreamTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionstreamtask": {
+      "title": "URLSessionStreamTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionstreamtask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL session task that is stream-based."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSessionStreamTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate": {
+      "title": "URLSessionStreamDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionstreamdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to stream tasks."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSessionStreamDelegate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Handling Rerouting",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1407527-urlsession"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Completing Stream Capture",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411625-urlsession"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Handling Closing Events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411501-urlsession",
+        "doc://com.apple.documentation/documentation/foundation/urlsessionstreamdelegate/1411507-urlsession"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsession/1411587-streamtask",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/1411545-streamtask",
+        "doc://com.apple.documentation/documentation/foundation/urlsessionstreamtask"
+      ],
+      "title": "Adding Stream Tasks to a Session",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "URLSessionStreamDelegate"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to these methods, be sure to implement the methods in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiondelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocols to handle events common to all task types and session-level events, respectively."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession"
+                },
+                {
+                  "type": "text",
+                  "text": " object need not have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

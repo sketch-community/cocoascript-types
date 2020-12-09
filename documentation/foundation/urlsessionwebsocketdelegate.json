@@ -1,0 +1,473 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to WebSocket tasks."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/urlsession"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3181187,
+  "kind": "symbol",
+  "metadata": {
+    "title": "URLSessionWebSocketDelegate",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.15",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "6.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(pl)NSURLSessionWebSocketDelegate",
+    "symbolKind": "intf",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "protocol "
+      },
+      {
+        "kind": "identifier",
+        "text": "URLSessionWebSocketDelegate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsurlsessionwebsocketdelegate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/urlsessionwebsocketdelegate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession": {
+      "title": "URLSession",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession",
+      "url": "/documentation/foundation/urlsession",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate": {
+      "title": "URLSessionTaskDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiontaskdelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate/3181189-urlsession": {
+      "title": "urlSession(_:webSocketTask:didOpenWithProtocol:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate/3181189-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionwebsocketdelegate/3181189-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the WebSocket task successfully negotiated the handshake with the endpoint, indicating the negotiated protocol."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "webSocketTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionWebSocketTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didOpenWithProtocol"
+        },
+        {
+          "kind": "text",
+          "text": ": String?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate/3181188-urlsession": {
+      "title": "urlSession(_:webSocketTask:didCloseWith:reason:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate/3181188-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionwebsocketdelegate/3181188-urlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the WebSocket task received a close frame from the server endpoint, optionally including a close code and reason from the server."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "urlSession"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSession, "
+        },
+        {
+          "kind": "identifier",
+          "text": "webSocketTask"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionWebSocketTask, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didCloseWith"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionWebSocketTask.CloseCode, "
+        },
+        {
+          "kind": "identifier",
+          "text": "reason"
+        },
+        {
+          "kind": "text",
+          "text": ": Data?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3181171-websockettask": {
+      "title": "webSocketTask(with:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3181171-websockettask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3181171-websockettask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a WebSocket task for the provided URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "webSocketTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": URL) -> URLSessionWebSocketTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3235750-websockettask": {
+      "title": "webSocketTask(with:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3235750-websockettask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3235750-websockettask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a WebSocket task for the provided URL request."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "webSocketTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": URLRequest) -> URLSessionWebSocketTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/3181172-websockettask": {
+      "title": "webSocketTask(with:protocols:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/3181172-websockettask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/3181172-websockettask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a WebSocket task given a URL and an array of protocols."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "webSocketTask"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "with"
+        },
+        {
+          "kind": "text",
+          "text": ": URL, "
+        },
+        {
+          "kind": "identifier",
+          "text": "protocols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]) -> URLSessionWebSocketTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask": {
+      "title": "URLSessionWebSocketTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionwebsockettask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL session task that communicates over the WebSockets protocol standard."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSessionWebSocketTask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate": {
+      "title": "URLSessionWebSocketDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionwebsocketdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to WebSocket tasks."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSessionWebSocketDelegate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Handling WebSocket Lifecycle Events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate/3181189-urlsession",
+        "doc://com.apple.documentation/documentation/foundation/urlsessionwebsocketdelegate/3181188-urlsession"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsession/3181171-websockettask",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/3235750-websockettask",
+        "doc://com.apple.documentation/documentation/foundation/urlsession/3181172-websockettask",
+        "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask"
+      ],
+      "title": "Adding WebSocket Tasks to a Session",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "URLSessionWebSocketDelegate"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

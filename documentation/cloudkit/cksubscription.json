@@ -1,0 +1,654 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An abstract base class for subscriptions."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/subscriptions"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/cloudkit/cksubscription",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1515153,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CKSubscription",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "CloudKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.10",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "3.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)CKSubscription",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkit/cksubscription"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkit/cksubscription"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/cloudkit": {
+      "title": "CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit",
+      "url": "/documentation/cloudkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/subscriptions": {
+      "title": "Subscriptions",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/subscriptions",
+      "url": "/documentation/cloudkit/subscriptions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623013-application": {
+      "title": "application:didReceiveRemoteNotification:fetchCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623013-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1623013-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didReceiveRemoteNotification:fetchCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cknotification": {
+      "title": "CKNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cknotification"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys": {
+      "title": "desiredKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo": {
+      "title": "notificationInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksubscription/1514948-notificationinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The configuration for a subscription’s push notifications."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation": {
+      "title": "CKFetchNotificationChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchnotificationchangesoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification": {
+      "title": "CKQueryNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckquerynotification"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordzonenotification": {
+      "title": "CKRecordZoneNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordzonenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordzonenotification"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifysubscriptionsoperation": {
+      "title": "CKModifySubscriptionsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifysubscriptionsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifysubscriptionsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449102-savesubscription": {
+      "title": "saveSubscription:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449102-savesubscription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckdatabase/1449102-savesubscription",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "saveSubscription:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdatabase": {
+      "title": "CKDatabase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckdatabase"
+    },
+    "link-1682595": {
+      "title": "developer.apple.com",
+      "type": "topic",
+      "identifier": "link-1682595",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com"
+    },
+    "devLink-1756011": {
+      "identifier": "devLink-1756011",
+      "type": "link",
+      "title": "Enabling CloudKit in Your App",
+      "url": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html#//apple_ref/doc/uid/TP40014987-CH2"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo": {
+      "title": "CKNotificationInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cknotificationinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes the configuration of a subscription’s push notifications."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515199-subscriptionid": {
+      "title": "subscriptionID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515199-subscriptionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksubscription/1515199-subscriptionid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The subscription’s unique identifier."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515250-subscriptiontype": {
+      "title": "subscriptionType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515250-subscriptiontype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksubscription/1515250-subscriptiontype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The behavior that a subscription provides."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksubscriptiontype": {
+      "title": "CKSubscriptionType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscriptiontype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksubscriptiontype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that identify a subscription’s behavior."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksubscription": {
+      "title": "CKSubscription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksubscription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract base class for subscriptions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Specifying the Push Notification Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo",
+        "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing the Subscription Metadata",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515199-subscriptionid",
+        "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1515250-subscriptiontype",
+        "doc://com.apple.documentation/documentation/cloudkit/cksubscriptiontype"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "CKSubscription"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A subscription acts like a persistent query on the server that can track the creation, deletion, and modification of records. When changes occur, they trigger the delivery of push notifications so that your app can respond appropriately. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Subscriptions don’t become active until you save them to the server and the server has time to index them. To save a subscription, use an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifysubscriptionsoperation"
+            },
+            {
+              "type": "text",
+              "text": " or the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449102-savesubscription"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabase"
+            },
+            {
+              "type": "text",
+              "text": ". To cancel a subscription, delete the corresponding subscription from the server. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You don’t need to enable push notifications for the app’s explicit App ID in your developer account at "
+                },
+                {
+                  "type": "link",
+                  "title": "developer.apple.com",
+                  "destination": "https://developer.apple.com"
+                },
+                {
+                  "type": "text",
+                  "text": " to receive subscription notifications. Xcode automatically adds the APNs entitlement to your entitlement file when you enable CloudKit. To learn about enabling CloudKit, see "
+                },
+                {
+                  "type": "link",
+                  "title": "Enabling CloudKit in Your App",
+                  "destination": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html#//apple_ref/doc/uid/TP40014987-CH2"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Most of a subscription’s configuration happens at initialization time. You must, however, specify how to deliver push notifications to the user’s device. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo"
+            },
+            {
+              "type": "text",
+              "text": " property to configure the delivery options. You must save the subscription before the changes take effect. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Create subscriptions in the development environment first and then promote them to production.  Attempting to create a subscription directly in the production environment results in an error."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handling the Resulting Push Notifications",
+          "anchor": "1669665"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When CloudKit modifies a record and triggers a subscription, the server sends push notifications to all devices with that subscription except for the one that makes the original changes. For subscription-based push notifications, the server can add data to the notification payload that indicates the condition that triggers the notification. In the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623013-application"
+            },
+            {
+              "type": "text",
+              "text": " method of your app delegate, create a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotification"
+            },
+            {
+              "type": "text",
+              "text": " object from the provided "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userInfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary. You can then query it for the information that’s relevant to the notification."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to sending a record ID with a push notification, you can ask the server to send a limited amount of data from the record that triggers the notification. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys"
+            },
+            {
+              "type": "text",
+              "text": " property of the object you assign to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksubscription/1514948-notificationinfo"
+            },
+            {
+              "type": "text",
+              "text": " to specify the keys to include."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "APNs limits the size of a push notification’s payload and CloudKit may omit keys and other pieces of data to keep the payload’s size under that limit. If this happens, you can fetch the entire payload from the server using an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation"
+            },
+            {
+              "type": "text",
+              "text": ". This operation provides instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckquerynotification"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordzonenotification"
+            },
+            {
+              "type": "text",
+              "text": ", which contain information about the push notifications that CloudKit delivers to your app."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An array of pointers to "
+    },
+    {
+      "type": "reference",
+      "isActive": true,
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/method"
+    },
+    {
+      "type": "text",
+      "text": " data structures. This array may contain no more than "
+    },
+    {
+      "type": "codeVoice",
+      "code": "mask + 1"
+    },
+    {
+      "type": "text",
+      "text": " items. Note that pointers may be "
+    },
+    {
+      "type": "codeVoice",
+      "code": "NULL"
+    },
+    {
+      "type": "text",
+      "text": ", indicating that the cache bucket is unoccupied, and occupied buckets may not be contiguous. This array may grow over time."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/objectivec",
+        "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime",
+        "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808503-buckets",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1808503,
+  "kind": "symbol",
+  "metadata": {
+    "title": "buckets",
+    "role": "pseudoSymbol",
+    "modules": [
+      {
+        "name": "Objective-C Runtime"
+      }
+    ],
+    "symbolKind": "structp"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/objectivec/objective-c_runtime/objc_cache/1808503-buckets"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/objectivec": {
+      "title": "Objective-C Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec",
+      "url": "/documentation/objectivec",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime": {
+      "title": "Objective-C Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime",
+      "url": "/documentation/objectivec/objective-c_runtime",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache": {
+      "title": "objc_cache",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/objectivec/objective-c_runtime/objc_cache",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performance optimization for method calls. Contains pointers to recently used methods."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/method": {
+      "title": "Method",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/method",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/method"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808499-mask": {
+      "title": "mask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808499-mask",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/objectivec/objective-c_runtime/objc_cache/1808499-mask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An integer specifying the total number of allocated cache buckets (minus one). During method lookup, the Objective-C runtime uses this field to determine the index at which to begin a linear search of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "buckets"
+        },
+        {
+          "type": "text",
+          "text": " array. A pointer to a method’s selector is masked against this field using a logical AND operation ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "index = (mask & selector))"
+        },
+        {
+          "type": "text",
+          "text": ". This serves as a simple hashing algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808501-occupied": {
+      "title": "occupied",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808501-occupied",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/objectivec/objective-c_runtime/objc_cache/1808501-occupied",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An integer specifying the total number of occupied cache buckets."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808503-buckets": {
+      "title": "buckets",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808503-buckets",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/objectivec/objective-c_runtime/objc_cache/1808503-buckets",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of pointers to "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/objectivec/method"
+        },
+        {
+          "type": "text",
+          "text": " data structures. This array may contain no more than "
+        },
+        {
+          "type": "codeVoice",
+          "code": "mask + 1"
+        },
+        {
+          "type": "text",
+          "text": " items. Note that pointers may be "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NULL"
+        },
+        {
+          "type": "text",
+          "text": ", indicating that the cache bucket is unoccupied, and occupied buckets may not be contiguous. This array may grow over time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808499-mask",
+        "doc://com.apple.documentation/documentation/objectivec/objective-c_runtime/objc_cache/1808501-occupied"
+      ],
+      "title": "Fields",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

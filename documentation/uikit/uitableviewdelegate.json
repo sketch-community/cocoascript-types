@@ -1,0 +1,1880 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Methods for managing selections, configuring section headers and footers, deleting and reordering cells, and performing other actions in a table view."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+        "doc://com.apple.documentation/documentation/uikit/uitableview"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1614981,
+  "kind": "symbol",
+  "metadata": {
+    "title": "UITableViewDelegate",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(pl)UITableViewDelegate",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitableviewdelegate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uitableviewdelegate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "url": "/documentation/uikit/uitableview",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsindexpath": {
+      "title": "NSIndexPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsindexpath"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource#3081118": {
+      "title": "Specifying the Location of Rows and Sections",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource#3081118",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/uikit/uitableviewdatasource#3081118"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource": {
+      "title": "UITableViewDataSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscrollviewdelegate": {
+      "title": "UIScrollViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscrollviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiscrollviewdelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller": {
+      "title": "UITableViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view controller that specializes in managing a table view. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614883-tableview": {
+      "title": "tableView:willDisplayCell:forRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614883-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614883-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the table view is about to draw a cell for a particular row."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willDisplayCell:forRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614966-tableview": {
+      "title": "tableView:indentationLevelForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614966-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614966-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate to return the level of indentation for a row in a given section."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:indentationLevelForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2897335-tableview": {
+      "title": "tableView:shouldSpringLoadRowAtIndexPath:withContext:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2897335-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/2897335-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Called to let you fine tune the spring-loading behavior of the rows in a table. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:shouldSpringLoadRowAtIndexPath:withContext:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view": {
+      "title": "Handling Row Selection in a Table View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect when a user taps a table view cell so your app can take the next indicated action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture": {
+      "title": "Selecting Multiple Items with a Two-Finger Pan Gesture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Accelerate user selection of multiple items using the multiselect gesture on table and collection views."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614943-tableview": {
+      "title": "tableView:willSelectRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614943-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614943-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate a row is about to be selected."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willSelectRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview": {
+      "title": "tableView:didSelectRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614877-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate a row is selected."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didSelectRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614977-tableview": {
+      "title": "tableView:willDeselectRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614977-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614977-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that a specified row is about to be deselected."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willDeselectRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614916-tableview": {
+      "title": "tableView:didDeselectRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614916-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614916-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the specified row is now deselected."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didDeselectRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183943-tableview": {
+      "title": "tableView:shouldBeginMultipleSelectionInteractionAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183943-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3183943-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether the user can use a two-finger pan gesture to select multiple items in a table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:shouldBeginMultipleSelectionInteractionAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183942-tableview": {
+      "title": "tableView:didBeginMultipleSelectionInteractionAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183942-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3183942-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the user starts using a two-finger pan gesture to select multiple rows in a table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didBeginMultipleSelectionInteractionAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183944-tableviewdidendmultipleselection": {
+      "title": "tableViewDidEndMultipleSelectionInteraction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183944-tableviewdidendmultipleselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3183944-tableviewdidendmultipleselection",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate when the user stops using a two-finger pan gesture to select multiple rows in a table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableViewDidEndMultipleSelectionInteraction:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614901-tableview": {
+      "title": "tableView:viewForHeaderInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614901-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614901-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for a view object to display in the header of the specified section of the table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:viewForHeaderInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614946-tableview": {
+      "title": "tableView:viewForFooterInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614946-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614946-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for a view object to display in the footer of the specified section of the table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:viewForFooterInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614905-tableview": {
+      "title": "tableView:willDisplayHeaderView:forSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614905-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614905-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the table is about to display the header view for the specified section."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willDisplayHeaderView:forSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614941-tableview": {
+      "title": "tableView:willDisplayFooterView:forSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614941-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614941-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the table is about to display the footer view for the specified section."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willDisplayFooterView:forSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614998-tableview": {
+      "title": "tableView:heightForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614998-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614998-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the height to use for a row in a specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:heightForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview": {
+      "title": "tableView:heightForHeaderInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614855-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the height to use for the header of a particular section."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:heightForHeaderInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview": {
+      "title": "tableView:heightForFooterInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614967-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the height to use for the footer of a particular section."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:heightForFooterInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewautomaticdimension": {
+      "title": "UITableViewAutomaticDimension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewautomaticdimension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewautomaticdimension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant representing the default value for a given dimension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614926-tableview": {
+      "title": "tableView:estimatedHeightForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614926-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614926-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the estimated height of a row in a specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:estimatedHeightForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614854-tableview": {
+      "title": "tableView:estimatedHeightForHeaderInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614854-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614854-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the estimated height of the header of a particular section."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:estimatedHeightForHeaderInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614939-tableview": {
+      "title": "tableView:estimatedHeightForFooterInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614939-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614939-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the estimated height of the footer of a particular section."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:estimatedHeightForFooterInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614948-tableview": {
+      "title": "tableView:accessoryTypeForRowWithIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614948-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614948-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the type of standard accessory view to use as a disclosure control for the specified row."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:accessoryTypeForRowWithIndexPath:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614996-tableview": {
+      "title": "tableView:accessoryButtonTappedForRowWithIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614996-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614996-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the user tapped the detail button for the specified row."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:accessoryButtonTappedForRowWithIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicontrol/adding_context_menus_in_your_app": {
+      "title": "Adding Context Menus in Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicontrol/adding_context_menus_in_your_app",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uicontrol/adding_context_menus_in_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide quick access to useful actions by adding context menus to your iOS app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295956-tableview": {
+      "title": "tableView:contextMenuConfigurationForRowAtIndexPath:point:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295956-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3295956-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a context menu configuration for the row at a point."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:contextMenuConfigurationForRowAtIndexPath:point:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295957-tableview": {
+      "title": "tableView:previewForDismissingContextMenuWithConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295957-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3295957-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the destination view when dismissing a context menu."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:previewForDismissingContextMenuWithConfiguration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295958-tableview": {
+      "title": "tableView:previewForHighlightingContextMenuWithConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295958-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3295958-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a view to override the default preview the table view created."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:previewForHighlightingContextMenuWithConfiguration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3601231-tableview": {
+      "title": "tableView:willDisplayContextMenuWithConfiguration:animator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3601231-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3601231-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Informs the delegate when a context menu will appear."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willDisplayContextMenuWithConfiguration:animator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3601232-tableview": {
+      "title": "tableView:willEndContextMenuInteractionWithConfiguration:animator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3601232-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3601232-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Informs the delegate when a context menu will disappear."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willEndContextMenuInteractionWithConfiguration:animator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3375810-tableview": {
+      "title": "tableView:willPerformPreviewActionForMenuWithConfiguration:animator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3375810-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/3375810-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Informs the delegate when a user triggers a commit by tapping the preview."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willPerformPreviewActionForMenuWithConfiguration:animator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2902366-tableview": {
+      "title": "tableView:leadingSwipeActionsConfigurationForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2902366-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/2902366-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the swipe actions to display on the leading edge of the row."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:leadingSwipeActionsConfigurationForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2902367-tableview": {
+      "title": "tableView:trailingSwipeActionsConfigurationForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2902367-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/2902367-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the swipe actions to display on the trailing edge of the row."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:trailingSwipeActionsConfigurationForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614950-tableview": {
+      "title": "tableView:shouldShowMenuForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614950-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614950-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate if the editing menu should be shown for a certain row."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:shouldShowMenuForRowAtIndexPath:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614898-tableview": {
+      "title": "tableView:canPerformAction:forRowAtIndexPath:withSender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614898-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614898-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate if the editing menu should omit the Copy or Paste command for a given row. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:canPerformAction:forRowAtIndexPath:withSender:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614980-tableview": {
+      "title": "tableView:performAction:forRowAtIndexPath:withSender:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614980-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614980-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate to perform a copy or paste operation on the content of a given row."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:performAction:forRowAtIndexPath:withSender:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614956-tableview": {
+      "title": "tableView:editActionsForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614956-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614956-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the actions to display in response to a swipe in the specified row. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:editActionsForRowAtIndexPath:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614988-tableview": {
+      "title": "tableView:shouldHighlightRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614988-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614988-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate if the specified row should be highlighted."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:shouldHighlightRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614982-tableview": {
+      "title": "tableView:didHighlightRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614982-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614982-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the specified row was highlighted."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didHighlightRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614868-tableview": {
+      "title": "tableView:didUnhighlightRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614868-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614868-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the highlight was removed from the row at the specified index path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didUnhighlightRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614907-tableview": {
+      "title": "tableView:willBeginEditingRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614907-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614907-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the table view is about to go into editing mode."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:willBeginEditingRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614963-tableview": {
+      "title": "tableView:didEndEditingRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614963-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614963-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the table view has left editing mode."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didEndEditingRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614869-tableview": {
+      "title": "tableView:editingStyleForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614869-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614869-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the editing style of a row at a particular location in a table view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:editingStyleForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614970-tableview": {
+      "title": "tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614970-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614970-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the default title of the delete-confirmation button."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614873-tableview": {
+      "title": "tableView:shouldIndentWhileEditingRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614873-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614873-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether the background of the specified row should be indented while the table view is in editing mode."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:shouldIndentWhileEditingRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614953-tableview": {
+      "title": "tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614953-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614953-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate to return a new index path to retarget a proposed move of a row."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614870-tableview": {
+      "title": "tableView:didEndDisplayingCell:forRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614870-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614870-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the specified cell was removed from the table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didEndDisplayingCell:forRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614971-tableview": {
+      "title": "tableView:didEndDisplayingHeaderView:forSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614971-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614971-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the specified header view was removed from the table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didEndDisplayingHeaderView:forSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614856-tableview": {
+      "title": "tableView:didEndDisplayingFooterView:forSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614856-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614856-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the specified footer view was removed from the table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didEndDisplayingFooterView:forSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614973-tableview": {
+      "title": "tableView:canFocusRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614973-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614973-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether the cell at the specified index path is itself focusable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:canFocusRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614949-tableview": {
+      "title": "tableView:shouldUpdateFocusInContext:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614949-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614949-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate whether the focus update specified by the context is allowed to occur."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:shouldUpdateFocusInContext:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614945-tableview": {
+      "title": "tableView:didUpdateFocusInContext:withAnimationCoordinator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614945-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614945-tableview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that a focus update specified by the context has just occurred."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:didUpdateFocusInContext:withAnimationCoordinator:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614929-indexpathforpreferredfocusedview": {
+      "title": "indexPathForPreferredFocusedViewInTableView:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614929-indexpathforpreferredfocusedview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614929-indexpathforpreferredfocusedview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Asks the delegate for the table view’s index path for the preferred focused view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "indexPathForPreferredFocusedViewInTableView:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area": {
+      "title": "Estimating the Height of a Table's Scrolling Area",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide height estimates for your table view’s headers, footers, and rows to ensure that scrolling accurately reflects the size of your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate": {
+      "title": "UITableViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for managing selections, configuring section headers and footers, deleting and reordering cells, and performing other actions in a table view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewfocusupdatecontext": {
+      "title": "UITableViewFocusUpdateContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewfocusupdatecontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewfocusupdatecontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A context object that provides information relevant to a specific focus update from one view to another."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+        "doc://com.apple.documentation/documentation/uikit/uiscrollviewdelegate"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforming Types",
+      "type": "conformingTypes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Rows for the Table View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614883-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614966-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2897335-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Responding to Row Selections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/selecting_multiple_items_with_a_two-finger_pan_gesture",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614943-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614877-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614977-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614916-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183943-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183942-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3183944-tableviewdidendmultipleselection"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing Custom Header and Footer Views",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614901-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614946-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614905-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614941-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing Header, Footer, and Row Heights",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614998-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewautomaticdimension"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Estimating Heights for the Table's Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614926-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614854-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614939-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Accessory Views",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614948-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614996-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Context Menus",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicontrol/adding_context_menus_in_your_app",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295956-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295957-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3295958-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3601231-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3601232-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/3375810-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Responding to Row Actions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2902366-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/2902367-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614950-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614898-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614980-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614956-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Table View Highlights",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614988-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614982-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614868-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Editing Table Rows",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614907-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614963-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614869-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614970-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614873-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reordering Table Rows",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614953-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Tracking the Removal of Views",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614870-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614971-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614856-tableview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Table View Focus",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614973-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614949-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614945-tableview",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614929-indexpathforpreferredfocusedview"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewfocusupdatecontext"
+      ],
+      "title": "Table Management",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "UITableViewDelegate"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the methods of this protocol to manage the following features: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create and manage custom header and footer views."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify custom heights for rows, headers, and footers."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Provide height estimates for better scrolling support."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Indent row content."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Respond to row selections."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Respond to swipes and other actions in table rows."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Support editing the table's content."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The table view specifies rows and sections using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsindexpath"
+            },
+            {
+              "type": "text",
+              "text": " objects. For information about how to interpret row and section indexes, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource#3081118"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

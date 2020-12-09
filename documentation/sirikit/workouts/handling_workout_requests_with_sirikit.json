@@ -1,0 +1,1439 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add an Intent Extension to your app to handle requests to control workouts with Siri."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/workouts"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2970042,
+  "kind": "article",
+  "metadata": {
+    "title": "Handling Workout Requests with SiriKit",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "10.2",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/workouts/handling_workout_requests_with_sirikit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/workouts/handling_workout_requests_with_sirikit"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts": {
+      "title": "Workouts",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts",
+      "url": "/documentation/sirikit/workouts",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding/1638898-handlerforintent": {
+      "title": "handlerForIntent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding/1638898-handlerforintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintenthandlerproviding/1638898-handlerforintent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handlerForIntent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding": {
+      "title": "INIntentHandlerProviding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintenthandlerproviding"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343236": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343236",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343236"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling": {
+      "title": "INStartWorkoutIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpauseworkoutintenthandling": {
+      "title": "INPauseWorkoutIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpauseworkoutintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpauseworkoutintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inresumeworkoutintenthandling": {
+      "title": "INResumeWorkoutIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inresumeworkoutintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inresumeworkoutintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incancelworkoutintenthandling": {
+      "title": "INCancelWorkoutIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incancelworkoutintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incancelworkoutintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inendworkoutintenthandling": {
+      "title": "INEndWorkoutIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inendworkoutintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inendworkoutintenthandling"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902501-resolveworkoutnameforstartworkou": {
+      "title": "resolveWorkoutNameForStartWorkout:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902501-resolveworkoutnameforstartworkou",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintenthandling/1902501-resolveworkoutnameforstartworkou",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveWorkoutNameForStartWorkout:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902504-resolvegoalvalueforstartworkout": {
+      "title": "resolveGoalValueForStartWorkout:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902504-resolvegoalvalueforstartworkout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintenthandling/1902504-resolvegoalvalueforstartworkout",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveGoalValueForStartWorkout:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902503-resolveworkoutgoalunittypeforsta": {
+      "title": "resolveWorkoutGoalUnitTypeForStartWorkout:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902503-resolveworkoutgoalunittypeforsta",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintenthandling/1902503-resolveworkoutgoalunittypeforsta",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveWorkoutGoalUnitTypeForStartWorkout:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902505-resolveworkoutlocationtypeforsta": {
+      "title": "resolveWorkoutLocationTypeForStartWorkout:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902505-resolveworkoutlocationtypeforsta",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintenthandling/1902505-resolveworkoutlocationtypeforsta",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveWorkoutLocationTypeForStartWorkout:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902502-resolveisopenendedforstartworkou": {
+      "title": "resolveIsOpenEndedForStartWorkout:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902502-resolveisopenendedforstartworkou",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintenthandling/1902502-resolveisopenendedforstartworkou",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveIsOpenEndedForStartWorkout:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult": {
+      "title": "INSpeakableStringResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inspeakablestringresolutionresult"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092304-successwithresolvedstring": {
+      "title": "successWithResolvedString:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092304-successwithresolvedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inspeakablestringresolutionresult/2092304-successwithresolvedstring",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "successWithResolvedString:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092307-confirmationrequiredwithstringto": {
+      "title": "confirmationRequiredWithStringToConfirm:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092307-confirmationrequiredwithstringto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inspeakablestringresolutionresult/2092307-confirmationrequiredwithstringto",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "confirmationRequiredWithStringToConfirm:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092305-disambiguationwithstringstodisam": {
+      "title": "disambiguationWithStringsToDisambiguate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092305-disambiguationwithstringstodisam",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inspeakablestringresolutionresult/2092305-disambiguationwithstringstodisam",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "disambiguationWithStringsToDisambiguate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902446-needsvalue": {
+      "title": "needsValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902446-needsvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresolutionresult/1902446-needsvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "needsValue"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343238": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343238",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343238"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit": {
+      "title": "Registering Custom Vocabulary with SiriKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1639089-confirmstartworkout": {
+      "title": "confirmStartWorkout:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1639089-confirmstartworkout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintenthandling/1639089-confirmstartworkout",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "confirmStartWorkout:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponse": {
+      "title": "INStartWorkoutIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintentresponse"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponsecode": {
+      "title": "INStartWorkoutIntentResponseCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponsecode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintentresponsecode"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1638639-handlestartworkout": {
+      "title": "handleStartWorkout:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1638639-handlestartworkout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintenthandling/1638639-handlestartworkout",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handleStartWorkout:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponsecode/instartworkoutintentresponsecodehandleinapp": {
+      "title": "INStartWorkoutIntentResponseCodeHandleInApp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponsecode/instartworkoutintentresponsecodehandleinapp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartworkoutintentresponsecode/instartworkoutintentresponsecodehandleinapp"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343240": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343240",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343240"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/2887573-application": {
+      "title": "application:handleIntent:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/2887573-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/2887573-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:handleIntent:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343241": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343241",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/workouts/handling_workout_requests_with_sirikit#3343241"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension": {
+      "title": "Creating an Intents App Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/creating_an_intents_app_extension"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit": {
+      "title": "Handling Workout Requests with SiriKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/workouts/handling_workout_requests_with_sirikit",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/workouts/handling_workout_requests_with_sirikit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add an Intent Extension to your app to handle requests to control workouts with Siri."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/c58e55080c/HandlingWorkoutRequestsWithSiriKit.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/c58e55080c/HandlingWorkoutRequestsWithSiriKit.zip",
+      "checksum": "68128d681e8fb59f979dad201d186619a9a16e3386116dca1ba208bd82680e3f45c0a34a0d5361f5860754c206f03a5f31a14b0631d1a4b559d7b0b59506a679",
+      "url": "https://docs-assets.developer.apple.com/published/c58e55080c/HandlingWorkoutRequestsWithSiriKit.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/c58e55080c/HandlingWorkoutRequestsWithSiriKit.zip"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The app in this sample project allows users to start, pause, resume, cancel, and end custom wall-climbing or bouldering workouts with Siri, as well as view historical workout data inside the main app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The project consists of three targets:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Ascent"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", an iOS app that displays a history of climbing and bouldering workouts."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "AscentIntentsExtension"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", an Intent Extension that integrates with SiriKit to control workouts."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "AscentFramework"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", an embedded framework containing shared code needed by both the Intent Extension and the main app."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/creating_an_intents_app_extension"
+            },
+            {
+              "type": "text",
+              "text": " for more information on the general process of adding an Intent Extension to your app, including how to enable the Siri capability and configure the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSExtension"
+            },
+            {
+              "type": "text",
+              "text": " keys in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Sample Code Project",
+          "anchor": "3343244"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample app can be run in the iOS Simulator without any special setup, but in order to run it on a device you will need to update the build settings and enable an App Group for the project:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Ascent.xcodeproj"
+                    },
+                    {
+                      "type": "text",
+                      "text": " with the latest version of Xcode."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the project editor, set a new bundle identifier under Identity on the General pane for each of the three targets in the project."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Capabilities pane, make sure that App Groups is switched on for the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Ascent"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "AscentIntentsExtension"
+                    },
+                    {
+                      "type": "text",
+                      "text": " targets."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add an App Group identifier with the format "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "group.com.example"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Reference the new App Group identifier in the source code. Open "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "WorkoutHistory.swift"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and modify the implementation of the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "sharedUserDefaults"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property to reference the new identifier."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Each target in the project must preface its bundle identifier with the bundle identifier of the app’s main target. For example, if you set the bundle identifier for the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Ascent"
+                },
+                {
+                  "type": "text",
+                  "text": " target to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "com.example.Ascent"
+                },
+                {
+                  "type": "text",
+                  "text": ", you should set the bundle identifier for the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "AscentIntentsExtension"
+                },
+                {
+                  "type": "text",
+                  "text": " target to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "com.example.Ascent.AscentIntentsExtension"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Recognize and Respond to Workout Requests",
+          "anchor": "3343245"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In order for the Intent Extension to handle workout requests, the principal class of the extension must implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding/1638898-handlerforintent"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding"
+            },
+            {
+              "type": "text",
+              "text": ". Use this method to dispatch the request to a class configured to handle it."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func handler(for intent: INIntent) -> Any {",
+            "    for handler in intentHandlers where handler.canHandle(intent) {",
+            "        return handler",
+            "    }",
+            "    preconditionFailure(\"Unexpected intent type\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3343236",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In order for a class to handle a request from SiriKit to use the workout controls, the class must implement one of the workout intent handler protocols. In this sample project:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "StartWorkoutIntentHandler"
+                    },
+                    {
+                      "type": "text",
+                      "text": " implements "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "PauseWorkoutIntentHandler"
+                    },
+                    {
+                      "type": "text",
+                      "text": " implements "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpauseworkoutintenthandling"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "ResumeWorkoutIntentHandler"
+                    },
+                    {
+                      "type": "text",
+                      "text": " implements "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inresumeworkoutintenthandling"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "CancelWorkoutIntentHandler"
+                    },
+                    {
+                      "type": "text",
+                      "text": " implements "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/incancelworkoutintenthandling"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "EndWorkoutIntentHandler"
+                    },
+                    {
+                      "type": "text",
+                      "text": " implements "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inendworkoutintenthandling"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Resolve Parameters",
+          "anchor": "3343246"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The first step of handling a request from Siri with one of these classes is to resolve any parameters from the voice command. For example, when starting a workout the user may specify parameters such as the type of workout, a particular goal, and the location of the workout:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "“Start a 30 minute outdoor wall climb with Ascent” specifies the workout goal, location, and name."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "“Start a wall climb workout with Ascent” specifies only the name of the workout."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "“Start a workout with Ascent” specifies no parameters, only that a workout should be started."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app must decide how to handle these situations using the available resolution methods for the intent type. To handle parameter resolution for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling"
+            },
+            {
+              "type": "text",
+              "text": ", implement one or more of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902501-resolveworkoutnameforstartworkou"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902504-resolvegoalvalueforstartworkout"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902503-resolveworkoutgoalunittypeforsta"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902505-resolveworkoutlocationtypeforsta"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902502-resolveisopenendedforstartworkou"
+            },
+            {
+              "type": "text",
+              "text": " methods."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In each of these calls, return an appropriate resolution result value by calling the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "completion"
+            },
+            {
+              "type": "text",
+              "text": " block. For example, when handling the resolution of the workout name, return an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult"
+            },
+            {
+              "type": "text",
+              "text": " such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092304-successwithresolvedstring"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092307-confirmationrequiredwithstringto"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092305-disambiguationwithstringstodisam"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902446-needsvalue"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func resolveWorkoutName(for intent: INStartWorkoutIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {",
+            "    let result: INSpeakableStringResolutionResult",
+            "    let workoutHistory = WorkoutHistory.load()",
+            "",
+            "    if let name = intent.workoutName {",
+            "        // Try to determine the obstacle (wall or boulder) from the supplied workout name.",
+            "        if Workout.Obstacle(intentWorkoutName: name) != nil {",
+            "            result = INSpeakableStringResolutionResult.success(with: name)",
+            "        } else {",
+            "            result = INSpeakableStringResolutionResult.needsValue()",
+            "        }",
+            "    } else if let lastWorkout = workoutHistory.last {",
+            "        // A name hasn't been supplied so suggest the last obstacle.",
+            "        result = INSpeakableStringResolutionResult.confirmationRequired(with: lastWorkout.obstacle.intentWorkoutName)",
+            "    } else {",
+            "        result = INSpeakableStringResolutionResult.needsValue()",
+            "    }",
+            "",
+            "    completion(result)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3343238",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "It is not necessary to implement "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "all"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " of the available parameter resolution methods, only those that need additional logic. For example, the extension in this sample does not need to do any special processing of the goal value when starting a workout, so there is no implementation of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1902504-resolvegoalvalueforstartworkout"
+                },
+                {
+                  "type": "text",
+                  "text": ", although the app still recognizes and processes the goal value."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To aid Siri with recognition of parameter names like “wall climb” and “boulder climb,” add an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppIntentVocabulary.plist"
+            },
+            {
+              "type": "text",
+              "text": " to your project. More information on this file and how it can add vocabulary to Siri can be found in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once all parameters have been resolved, the system calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1639089-confirmstartworkout"
+            },
+            {
+              "type": "text",
+              "text": ". Validate the resolved parameters and pass back an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponse"
+            },
+            {
+              "type": "text",
+              "text": " with an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponsecode"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Complete the Request",
+          "anchor": "3343247"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once the request to start the workout has been confirmed, the system calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintenthandling/1638639-handlestartworkout"
+            },
+            {
+              "type": "text",
+              "text": ". Some requests from Siri will be better handled by the main app rather than the Intent Extension; for example, the main app can better respond to requests in which long-lived system services are needed to support the workout."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To transfer control to the main app, create a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponse"
+            },
+            {
+              "type": "text",
+              "text": " with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponsecode/instartworkoutintentresponsecodehandleinapp"
+            },
+            {
+              "type": "text",
+              "text": " code and pass it to the completion block."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func handle(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {",
+            "    // `handleInApp` will transfer handling this activity to the main app and deliver the intent to the app delegate in the background.",
+            "    let response = INStartWorkoutIntentResponse(code: .handleInApp, userActivity: nil)",
+            "    completion(response)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3343240",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When an Intent Extension handles an intent with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "handleInApp"
+            },
+            {
+              "type": "text",
+              "text": " response code, it delivers the to the intent to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/2887573-application"
+            },
+            {
+              "type": "text",
+              "text": " method in the main app’s process in the background."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func application(_ application: UIApplication, handle intent: INIntent, completionHandler: @escaping (INIntentResponse) -> Void) {",
+            "    if let intent = intent as? INStartWorkoutIntent {",
+            "        completionHandler(handle(intent))",
+            "    } else if let intent = intent as? INCancelWorkoutIntent {",
+            "        completionHandler(handle(intent))",
+            "    } else if let intent = intent as? INPauseWorkoutIntent {",
+            "        completionHandler(handle(intent))",
+            "    } else if let intent = intent as? INEndWorkoutIntent {",
+            "        completionHandler(handle(intent))",
+            "    } else if let intent = intent as? INResumeWorkoutIntent {",
+            "        completionHandler(handle(intent))",
+            "    } else {",
+            "        preconditionFailure(\"Trying to handle unknown intent type\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3343241",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

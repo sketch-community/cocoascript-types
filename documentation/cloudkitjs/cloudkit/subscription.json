@@ -1,0 +1,926 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A subscription, which is a persistent query on the server that tracks the creation, deletion, and modification of records."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkitjs",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkitjs",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit_js_data_types"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription",
+    "interfaceLanguage": "data"
+  },
+  "legacy_identifier": 1628529,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CloudKit.Subscription",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "CloudKit JS"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "CloudKit JS",
+        "introducedAt": "1.0",
+        "current": "2.0.1"
+      }
+    ],
+    "externalID": "struct/CloudKit.Subscription",
+    "symbolKind": "struct"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "data"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkitjs/cloudkit/subscription"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/cloudkitjs": {
+      "title": "CloudKit JS",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs",
+      "url": "/documentation/cloudkitjs",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit": {
+      "title": "CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit"
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit_js_data_types": {
+      "title": "CloudKit JS Data Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit_js_data_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/cloudkitjs/cloudkit_js_data_types"
+    },
+    "devLink-1757886": {
+      "identifier": "devLink-1757886",
+      "type": "link",
+      "title": "Subscription Dictionary",
+      "url": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/Types.html#//apple_ref/doc/uid/TP40015240-CH3-SW12"
+    },
+    "devLink-1757777": {
+      "identifier": "devLink-1757777",
+      "type": "link",
+      "title": "CloudKit Web Services Reference",
+      "url": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240"
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628630-fireson": {
+      "title": "firesOn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628630-fireson",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription/1628630-fireson",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of keywords that specify the actions that should trigger push notifications. Possible values in the array are: "
+        },
+        {
+          "type": "codeVoice",
+          "code": "\"create\""
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "\"update\""
+        },
+        {
+          "type": "text",
+          "text": ", and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "\"delete\""
+        },
+        {
+          "type": "text",
+          "text": ". This key is not used if "
+        },
+        {
+          "type": "codeVoice",
+          "code": "query"
+        },
+        {
+          "type": "text",
+          "text": " is null."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628583-firesonce": {
+      "title": "firesOnce",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628583-firesonce",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription/1628583-firesonce",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating whether push notifications should be triggered once. If "
+        },
+        {
+          "type": "codeVoice",
+          "code": "true"
+        },
+        {
+          "type": "text",
+          "text": ", push notifications are sent once. If "
+        },
+        {
+          "type": "codeVoice",
+          "code": "false"
+        },
+        {
+          "type": "text",
+          "text": ", they can be sent multiple times. The default value is "
+        },
+        {
+          "type": "codeVoice",
+          "code": "false"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628560-notificationinfo": {
+      "title": "notificationInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628560-notificationinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription/1628560-notificationinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary containing information about how the system should alert the user, described in "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit_js_data_types"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628636-query": {
+      "title": "query",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628636-query",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription/1628636-query",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The matching criteria to apply to records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628531-subscriptionid": {
+      "title": "subscriptionID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628531-subscriptionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription/1628531-subscriptionid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A unique identifier for the subscription."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628571-subscriptiontype": {
+      "title": "subscriptionType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628571-subscriptiontype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription/1628571-subscriptiontype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of subscription. Possible values are: "
+        },
+        {
+          "type": "codeVoice",
+          "code": "\"zone\""
+        },
+        {
+          "type": "text",
+          "text": ", and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "\"query”"
+        },
+        {
+          "type": "text",
+          "text": ". This key is required."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628697-zoneid": {
+      "title": "zoneID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628697-zoneid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription/1628697-zoneid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dictionary that identifies a record zone to monitor in the database, described in "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit_js_data_types"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628584-zonewide": {
+      "title": "zoneWide",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628584-zonewide",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription/1628584-zonewide",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value determining whether all zones should be searched. If "
+        },
+        {
+          "type": "codeVoice",
+          "code": "true"
+        },
+        {
+          "type": "text",
+          "text": ", all zones are searched. If "
+        },
+        {
+          "type": "codeVoice",
+          "code": "false"
+        },
+        {
+          "type": "text",
+          "text": ", the default zone is searched."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/cloudkitconfig": {
+      "title": "CloudKit.CloudKitConfig",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/cloudkitconfig",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/cloudkitconfig",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dictionary used to configure the CloudKit environment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/containerconfig": {
+      "title": "CloudKit.ContainerConfig",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/containerconfig",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/containerconfig",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A configuration for a container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/namecomponents": {
+      "title": "CloudKit.NameComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/namecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/namecomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The parts of the user’s name."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/notificationinfo": {
+      "title": "CloudKit.NotificationInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/notificationinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/notificationinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about a notification."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/query": {
+      "title": "CloudKit.Query",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/query",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/query",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search parameters to use when fetching records from the database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/record": {
+      "title": "CloudKit.Record",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/record",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/record",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A record in the database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordfield": {
+      "title": "CloudKit.RecordField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/recordfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A field value of a record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordinfo": {
+      "title": "CloudKit.RecordInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/recordinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encapsulates the results of fetching information about a record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzone": {
+      "title": "CloudKit.RecordZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/recordzone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents a record zone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzonechanges": {
+      "title": "CloudKit.RecordZoneChanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzonechanges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/recordzonechanges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents the changes in a record zone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzonechangesoptions": {
+      "title": "CloudKit.RecordZoneChangesOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzonechangesoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/recordzonechangesoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options about fetching changes in a record zone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/share": {
+      "title": "CloudKit.Share",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/share",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/share",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents a shared record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/shareparticipant": {
+      "title": "CloudKit.ShareParticipant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/shareparticipant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/shareparticipant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents a user who accepted a shared record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/sharinguiresult": {
+      "title": "CloudKit.SharingUIResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/sharinguiresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/sharinguiresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents the results of sharing a record with other users."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription": {
+      "title": "CloudKit.Subscription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/subscription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A subscription, which is a persistent query on the server that tracks the creation, deletion, and modification of records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/useridentity": {
+      "title": "CloudKit.UserIdentity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/useridentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/useridentity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information to identify a user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/userlookupinfo": {
+      "title": "CloudKit.UserLookupInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/userlookupinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/userlookupinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information that can be used to fetch a user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/zoneid": {
+      "title": "CloudKit.ZoneID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/zoneid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkitjs/cloudkit/zoneid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier for a zone, which is an area in a database for organizing related records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628630-fireson",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628583-firesonce",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628560-notificationinfo",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628636-query",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628531-subscriptionid",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628571-subscriptiontype",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628697-zoneid",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/subscription/1628584-zonewide"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/cloudkitconfig",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/containerconfig",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/namecomponents",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/notificationinfo",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/query",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/record",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordfield",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordinfo",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzone",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzonechanges",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/recordzonechangesoptions",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/share",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/shareparticipant",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/sharinguiresult",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/useridentity",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/userlookupinfo",
+        "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit/zoneid"
+      ],
+      "title": "Dictionaries",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "data"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "dictionary"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "CloudKit.Subscription"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "String"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "subscriptionType"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "String"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "subscriptionID"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "cl/CloudKit",
+              "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit",
+              "text": "CloudKit"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "ZoneID"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "zoneID"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "cl/CloudKit",
+              "identifier": "doc://com.apple.documentation/documentation/cloudkitjs/cloudkit",
+              "text": "CloudKit"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "NotificationInfo"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "notificationInfo"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "Boolean"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "zoneWide"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "String"
+            },
+            {
+              "kind": "text",
+              "text": "[] "
+            },
+            {
+              "kind": "identifier",
+              "text": "firesOn"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "Boolean"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "firesOnce"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "Query"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "query"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "};"
+            }
+          ],
+          "platforms": [
+            "CloudKit JS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CloudKit.Subscription"
+            },
+            {
+              "type": "text",
+              "text": " dictionary is the same as the dictionary described in "
+            },
+            {
+              "type": "link",
+              "title": "Subscription Dictionary",
+              "destination": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/Types.html#//apple_ref/doc/uid/TP40015240-CH3-SW12"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "CloudKit Web Services Reference",
+              "destination": "https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1377 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1666621,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFRunLoop",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfrunloop"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfrunloop-rht"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource": {
+      "title": "CFRunLoopSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopsource"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer": {
+      "title": "CFRunLoopTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunlooptimer"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver": {
+      "title": "CFRunLoopObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopobserver"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543356-cfrunloopaddsource": {
+      "title": "CFRunLoopAddSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543356-cfrunloopaddsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543356-cfrunloopaddsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a CFRunLoopSource object to a run loop mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542132-cfrunloopaddtimer": {
+      "title": "CFRunLoopAddTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542132-cfrunloopaddtimer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542132-cfrunloopaddtimer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a CFRunLoopTimer object to a run loop mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542504-cfrunloopaddobserver": {
+      "title": "CFRunLoopAddObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542504-cfrunloopaddobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542504-cfrunloopaddobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a CFRunLoopObserver object to a run loop mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/kcfrunloopdefaultmode": {
+      "title": "kCFRunLoopDefaultMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/kcfrunloopdefaultmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/kcfrunloopdefaultmode"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/kcfrunloopcommonmodes": {
+      "title": "kCFRunLoopCommonModes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/kcfrunloopcommonmodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/kcfrunloopcommonmodes"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542137-cfrunloopaddcommonmode": {
+      "title": "CFRunLoopAddCommonMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542137-cfrunloopaddcommonmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542137-cfrunloopaddcommonmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a mode to the set of run loop common modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542428-cfrunloopgetcurrent": {
+      "title": "CFRunLoopGetCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542428-cfrunloopgetcurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542428-cfrunloopgetcurrent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the CFRunLoop object for the current thread."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542011-cfrunlooprun": {
+      "title": "CFRunLoopRun",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542011-cfrunlooprun",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542011-cfrunlooprun",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Runs the current thread’s CFRunLoop object in its default mode indefinitely."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541796-cfrunloopstop": {
+      "title": "CFRunLoopStop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541796-cfrunloopstop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541796-cfrunloopstop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Forces a CFRunLoop object to stop running."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541988-cfrunloopruninmode": {
+      "title": "CFRunLoopRunInMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541988-cfrunloopruninmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541988-cfrunloopruninmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Runs the current thread’s CFRunLoop object in a particular mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop/1410140-getcfrunloop": {
+      "title": "getCFRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/1410140-getcfrunloop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop/1410140-getcfrunloop",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getCFRunLoop"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop": {
+      "title": "NSRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopref": {
+      "title": "CFRunLoopRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfrunloopref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a run loop object."
+        }
+      ]
+    },
+    "devLink-1695569": {
+      "identifier": "devLink-1695569",
+      "type": "link",
+      "title": "Run Loops",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16"
+    },
+    "devLink-1695500": {
+      "identifier": "devLink-1695500",
+      "type": "link",
+      "title": "Threading Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542890-cfrunloopgetmain": {
+      "title": "CFRunLoopGetMain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542890-cfrunloopgetmain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542890-cfrunloopgetmain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the main CFRunLoop object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541622-cfrunloopwakeup": {
+      "title": "CFRunLoopWakeUp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541622-cfrunloopwakeup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541622-cfrunloopwakeup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Wakes a waiting CFRunLoop object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542956-cfrunloopiswaiting": {
+      "title": "CFRunLoopIsWaiting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542956-cfrunloopiswaiting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542956-cfrunloopiswaiting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the run loop is waiting for an event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542250-cfrunloopcontainssource": {
+      "title": "CFRunLoopContainsSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542250-cfrunloopcontainssource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542250-cfrunloopcontainssource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether a run loop mode contains a particular CFRunLoopSource object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542145-cfrunloopremovesource": {
+      "title": "CFRunLoopRemoveSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542145-cfrunloopremovesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542145-cfrunloopremovesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a CFRunLoopSource object from a run loop mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542815-cfrunloopcontainsobserver": {
+      "title": "CFRunLoopContainsObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542815-cfrunloopcontainsobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542815-cfrunloopcontainsobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether a run loop mode contains a particular CFRunLoopObserver object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542818-cfrunloopremoveobserver": {
+      "title": "CFRunLoopRemoveObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542818-cfrunloopremoveobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542818-cfrunloopremoveobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a CFRunLoopObserver object from a run loop mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542184-cfrunloopcopyallmodes": {
+      "title": "CFRunLoopCopyAllModes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542184-cfrunloopcopyallmodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542184-cfrunloopcopyallmodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array that contains all the defined modes for a CFRunLoop object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541775-cfrunloopcopycurrentmode": {
+      "title": "CFRunLoopCopyCurrentMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541775-cfrunloopcopycurrentmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541775-cfrunloopcopycurrentmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of the mode in which a given run loop is currently running."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542092-cfrunloopgetnexttimerfiredate": {
+      "title": "CFRunLoopGetNextTimerFireDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542092-cfrunloopgetnexttimerfiredate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542092-cfrunloopgetnexttimerfiredate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the time at which the next timer will fire."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541992-cfrunloopremovetimer": {
+      "title": "CFRunLoopRemoveTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541992-cfrunloopremovetimer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541992-cfrunloopremovetimer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a CFRunLoopTimer object from a run loop mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543011-cfrunloopcontainstimer": {
+      "title": "CFRunLoopContainsTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543011-cfrunloopcontainstimer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543011-cfrunloopcontainstimer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether a run loop mode contains a particular CFRunLoopTimer object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542985-cfrunloopperformblock": {
+      "title": "CFRunLoopPerformBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542985-cfrunloopperformblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542985-cfrunloopperformblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enqueues a block object on a given runloop to be executed as the runloop cycles in specified modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543626-cfrunloopgettypeid": {
+      "title": "CFRunLoopGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543626-cfrunloopgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543626-cfrunloopgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier for the CFRunLoop opaque type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/cfrunloopruninmode_exit_codes": {
+      "title": "CFRunLoopRunInMode Exit Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/cfrunloopruninmode_exit_codes",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/corefoundation/cfrunloop/cfrunloopruninmode_exit_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Return codes for "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFRunLoopRunInMode"
+        },
+        {
+          "type": "text",
+          "text": ", identifying the reason the run loop exited."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/common_mode_flag": {
+      "title": "Common Mode Flag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/common_mode_flag",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloop/common_mode_flag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A run loop pseudo-mode that manages objects monitored in the “common” modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/default_run_loop_mode": {
+      "title": "Default Run Loop Mode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/default_run_loop_mode",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloop/default_run_loop_mode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Default run loop mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocator": {
+      "title": "CFAllocator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocator",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfallocator"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfarray": {
+      "title": "CFArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfarray",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfarray"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring": {
+      "title": "CFAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfattributedstring"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbag": {
+      "title": "CFBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbag",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbag"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap": {
+      "title": "CFBinaryHeap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbinaryheap"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbitvector": {
+      "title": "CFBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbitvector",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbitvector"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfboolean": {
+      "title": "CFBoolean",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfboolean",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfboolean"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbundle": {
+      "title": "CFBundle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbundle",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbundle"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcalendar": {
+      "title": "CFCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcalendar",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcalendar"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset": {
+      "title": "CFCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcharacterset"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdata": {
+      "title": "CFData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdata",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdata"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdate": {
+      "title": "CFDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdate",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdate"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter": {
+      "title": "CFDateFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdateformatter"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdictionary": {
+      "title": "CFDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionary",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdictionary"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cferror": {
+      "title": "CFError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cferror",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cferror"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor": {
+      "title": "CFFileDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cffiledescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The CFFileDescriptor provides an opaque type to monitor file descriptors for read and write activity via CFRunLoop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cflocale": {
+      "title": "CFLocale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cflocale",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cflocale"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmachport": {
+      "title": "CFMachPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmachport",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmachport"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmessageport": {
+      "title": "CFMessagePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmessageport",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmessageport"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray": {
+      "title": "CFMutableArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablearray"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring": {
+      "title": "CFMutableAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableattributedstring"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag": {
+      "title": "CFMutableBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebag"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector": {
+      "title": "CFMutableBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebitvector"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset": {
+      "title": "CFMutableCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablecharacterset"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata": {
+      "title": "CFMutableData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledata"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary": {
+      "title": "CFMutableDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledictionary"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableset": {
+      "title": "CFMutableSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableset",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableset"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring": {
+      "title": "CFMutableString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablestring"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter": {
+      "title": "CFNotificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnotificationcenter"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnull": {
+      "title": "CFNull",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnull",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnull"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumber": {
+      "title": "CFNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumber",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumber"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter": {
+      "title": "CFNumberFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumberformatter"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugin": {
+      "title": "CFPlugIn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugin",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugin"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance": {
+      "title": "CFPlugInInstance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugininstance"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist": {
+      "title": "CFPropertyList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfpropertylist"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfreadstream": {
+      "title": "CFReadStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfreadstream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfreadstream"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop": {
+      "title": "CFRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloop"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfset": {
+      "title": "CFSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfset",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfset"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket": {
+      "title": "CFSocket",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfsocket"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstring": {
+      "title": "CFString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstring",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstring"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer": {
+      "title": "CFStringTokenizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstringtokenizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "CFStringTokenizer allows you to tokenize strings into words, sentences or paragraphs in a language-neutral way. It supports languages such as Japanese and Chinese that do not delimit words by spaces, as well as de-compounding German compounds. You can obtain Latin transcription for tokens. It also provides language identification API."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftimezone": {
+      "title": "CFTimeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftimezone",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftimezone"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftree": {
+      "title": "CFTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftree",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftree"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftype": {
+      "title": "CFType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftype",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftype"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfurl": {
+      "title": "CFURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurl",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfurl"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification": {
+      "title": "CFUserNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfuuid": {
+      "title": "CFUUID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfuuid",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfuuid"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfwritestream": {
+      "title": "CFWriteStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfwritestream",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfwritestream"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode": {
+      "title": "CFXMLNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlnode"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser": {
+      "title": "CFXMLParser",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlparser"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmltree": {
+      "title": "CFXMLTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmltree",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmltree"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Getting a Run Loop",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542428-cfrunloopgetcurrent",
+        "doc://com.apple.documentation/documentation/corefoundation/1542890-cfrunloopgetmain"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Starting and Stopping a Run Loop",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542011-cfrunlooprun",
+        "doc://com.apple.documentation/documentation/corefoundation/1541988-cfrunloopruninmode",
+        "doc://com.apple.documentation/documentation/corefoundation/1541622-cfrunloopwakeup",
+        "doc://com.apple.documentation/documentation/corefoundation/1541796-cfrunloopstop",
+        "doc://com.apple.documentation/documentation/corefoundation/1542956-cfrunloopiswaiting"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Sources",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1543356-cfrunloopaddsource",
+        "doc://com.apple.documentation/documentation/corefoundation/1542250-cfrunloopcontainssource",
+        "doc://com.apple.documentation/documentation/corefoundation/1542145-cfrunloopremovesource"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Observers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542504-cfrunloopaddobserver",
+        "doc://com.apple.documentation/documentation/corefoundation/1542815-cfrunloopcontainsobserver",
+        "doc://com.apple.documentation/documentation/corefoundation/1542818-cfrunloopremoveobserver"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Run Loop Modes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542137-cfrunloopaddcommonmode",
+        "doc://com.apple.documentation/documentation/corefoundation/1542184-cfrunloopcopyallmodes",
+        "doc://com.apple.documentation/documentation/corefoundation/1541775-cfrunloopcopycurrentmode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Timers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542132-cfrunloopaddtimer",
+        "doc://com.apple.documentation/documentation/corefoundation/1542092-cfrunloopgetnexttimerfiredate",
+        "doc://com.apple.documentation/documentation/corefoundation/1541992-cfrunloopremovetimer",
+        "doc://com.apple.documentation/documentation/corefoundation/1543011-cfrunloopcontainstimer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scheduling Blocks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542985-cfrunloopperformblock"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the CFRunLoop Type ID",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1543626-cfrunloopgettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopref"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/cfrunloopruninmode_exit_codes",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/common_mode_flag",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloop/default_run_loop_mode"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocator",
+        "doc://com.apple.documentation/documentation/corefoundation/cfarray",
+        "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbag",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbitvector",
+        "doc://com.apple.documentation/documentation/corefoundation/cfboolean",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbundle",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcalendar",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdata",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdate",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdictionary",
+        "doc://com.apple.documentation/documentation/corefoundation/cferror",
+        "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor",
+        "doc://com.apple.documentation/documentation/corefoundation/cflocale",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmachport",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmessageport",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableset",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnull",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumber",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugin",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance",
+        "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist",
+        "doc://com.apple.documentation/documentation/corefoundation/cfreadstream",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer",
+        "doc://com.apple.documentation/documentation/corefoundation/cfset",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocket",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstring",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer",
+        "doc://com.apple.documentation/documentation/corefoundation/cftimezone",
+        "doc://com.apple.documentation/documentation/corefoundation/cftree",
+        "doc://com.apple.documentation/documentation/corefoundation/cftype",
+        "doc://com.apple.documentation/documentation/corefoundation/cfurl",
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification",
+        "doc://com.apple.documentation/documentation/corefoundation/cfuuid",
+        "doc://com.apple.documentation/documentation/corefoundation/cfwritestream",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmltree"
+      ],
+      "title": "Opaque Types",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A CFRunLoop object monitors sources of input to a task and dispatches control when they become ready for processing. Examples of input sources might include user input devices, network connections, periodic or time-delayed events, and asynchronous callbacks."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Three types of objects can be monitored by a run loop: sources ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource"
+            },
+            {
+              "type": "text",
+              "text": "), timers ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer"
+            },
+            {
+              "type": "text",
+              "text": "), and observers ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver"
+            },
+            {
+              "type": "text",
+              "text": "). To receive callbacks when these objects need processing, you must first place these objects into a run loop with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543356-cfrunloopaddsource"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542132-cfrunloopaddtimer"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542504-cfrunloopaddobserver"
+            },
+            {
+              "type": "text",
+              "text": ". You can later remove an object from the run loop (or invalidate it) to stop receiving its callback."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each source, timer, and observer added to a run loop must be associated with one or more run loop modes. Modes determine what events are processed by the run loop during a given iteration. Each time the run loop executes, it does so in a specific mode. While in that mode, the run loop processes only the events associated with sources, timers, and observers associated with that mode. You assign most sources to the default run loop mode (designated by the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/kcfrunloopdefaultmode"
+            },
+            {
+              "type": "text",
+              "text": " constant), which is used to process events when the application (or thread) is idle. However, the system defines other modes and may execute the run loop in those other modes to limit which sources, timers, and observers are processed. Because run-loop modes are simply specified as strings, you can also define your own custom modes to limit the processing of events"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Core Foundation defines a special pseudo-mode, called the common modes, that allow you to associate more than one mode with a given source, timer, or observer. To specify the common modes, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/kcfrunloopcommonmodes"
+            },
+            {
+              "type": "text",
+              "text": " constant for the mode when configuring the object. Each run loop has its own independent set of common modes and the default mode ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/kcfrunloopdefaultmode"
+            },
+            {
+              "type": "text",
+              "text": ") is always a member of the set. To add a mode to the set of common modes, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542137-cfrunloopaddcommonmode"
+            },
+            {
+              "type": "text",
+              "text": " function. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There is exactly one run loop per thread. You neither create nor destroy a thread’s run loop. Core Foundation automatically creates it for you as needed. You obtain the current thread’s run loop with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542428-cfrunloopgetcurrent"
+            },
+            {
+              "type": "text",
+              "text": ". Call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542011-cfrunlooprun"
+            },
+            {
+              "type": "text",
+              "text": " to run the current thread’s run loop in the default mode until the run loop is stopped with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541796-cfrunloopstop"
+            },
+            {
+              "type": "text",
+              "text": ". You can also call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541988-cfrunloopruninmode"
+            },
+            {
+              "type": "text",
+              "text": " to run the current thread’s run loop in a specified mode for a set period of time (or until the run loop is stopped). A run loop can only run if the requested mode has at least one source or timer to monitor."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Run loops can be run recursively. You can call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542011-cfrunlooprun"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541988-cfrunloopruninmode"
+            },
+            {
+              "type": "text",
+              "text": " from within any run loop callout and create nested run loop activations on the current thread’s call stack. You are not restricted in which modes you can run from within a callout. You can create another run loop activation running in any available run loop mode, including any modes already running higher in the call stack."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Cocoa applications build upon CFRunLoop to implement their own higher-level event loop. When writing an application, you can add your sources, timers, and observers to their run loop objects and modes. Your objects will then get monitored as part of the regular application event loop. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/1410140-getcfrunloop"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop"
+            },
+            {
+              "type": "text",
+              "text": " to obtain the corresponding "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopref"
+            },
+            {
+              "type": "text",
+              "text": " type. In Carbon applications, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "GetCFRunLoopFromEventLoop"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about how run loops behave, see "
+            },
+            {
+              "type": "link",
+              "title": "Run Loops",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "Threading Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

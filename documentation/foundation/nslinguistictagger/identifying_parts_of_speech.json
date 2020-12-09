@@ -1,0 +1,706 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Classify nouns, verbs, adjectives, and other parts of speech in a string. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/strings_and_text",
+        "doc://com.apple.documentation/documentation/foundation/nslinguistictagger"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_parts_of_speech",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2922146,
+  "kind": "article",
+  "metadata": {
+    "title": "Identifying Parts of Speech",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nslinguistictagger/identifying_parts_of_speech"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nslinguistictagger/identifying_parts_of_speech"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/strings_and_text": {
+      "title": "Strings and Text",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/strings_and_text",
+      "url": "/documentation/foundation/strings_and_text",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger": {
+      "title": "NSLinguisticTagger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagger"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_parts_of_speech#2922147": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_parts_of_speech#2922147",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nslinguistictagger/identifying_parts_of_speech#2922147"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagschemelexicalclass": {
+      "title": "NSLinguisticTagSchemeLexicalClass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagschemelexicalclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagschemelexicalclass"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1407750-string": {
+      "title": "string",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1407750-string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagger/1407750-string"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictaggerunit/nslinguistictaggerunitword": {
+      "title": "NSLinguisticTaggerUnitWord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictaggerunit/nslinguistictaggerunitword",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictaggerunit/nslinguistictaggerunitword"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_parts_of_speech#2922151": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_parts_of_speech#2922151",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/foundation/nslinguistictagger/identifying_parts_of_speech#2922151"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagdeterminer": {
+      "title": "NSLinguisticTagDeterminer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagdeterminer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagdeterminer"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagadjective": {
+      "title": "NSLinguisticTagAdjective",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagadjective",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagadjective"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagnoun": {
+      "title": "NSLinguisticTagNoun",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagnoun",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagnoun"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagpreposition": {
+      "title": "NSLinguisticTagPreposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagpreposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagpreposition"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagverb": {
+      "title": "NSLinguisticTagVerb",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagverb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagverb"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_people_places_and_organizations": {
+      "title": "Identifying People, Places, and Organizations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_people_places_and_organizations",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/nslinguistictagger/identifying_people_places_and_organizations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a linguistic tagger to perform named entity recognition on a string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/tokenizing_natural_language_text": {
+      "title": "Tokenizing Natural Language Text",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/tokenizing_natural_language_text",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/nslinguistictagger/tokenizing_natural_language_text",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enumerate the words in a string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_parts_of_speech": {
+      "title": "Identifying Parts of Speech",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_parts_of_speech",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/nslinguistictagger/identifying_parts_of_speech",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Classify nouns, verbs, adjectives, and other parts of speech in a string. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875124-enumeratetagsinrange": {
+      "title": "enumerateTagsInRange:unit:scheme:options:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875124-enumeratetagsinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagger/2875124-enumeratetagsinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enumerates over a given range of the string for a particular unit and calls the specified block for each tag."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateTagsInRange:unit:scheme:options:usingBlock:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1410036-enumeratetagsinrange": {
+      "title": "enumerateTagsInRange:scheme:options:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1410036-enumeratetagsinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagger/1410036-enumeratetagsinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enumerates over a given range of the string and calls the specified block for each tag."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateTagsInRange:scheme:options:usingBlock:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875121-enumeratetagsforstring": {
+      "title": "enumerateTagsForString:range:unit:scheme:options:orthography:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875121-enumeratetagsforstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictagger/2875121-enumeratetagsforstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enumerates over a given string and calls the specified block for each tag."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateTagsForString:range:unit:scheme:options:orthography:usingBlock:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nslinguistictaggeroptions": {
+      "title": "NSLinguisticTaggerOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictaggeroptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nslinguistictaggeroptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for linguistic tagger enumeration specifying which tokens to omit and whether to join names. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/identifying_people_places_and_organizations",
+        "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875124-enumeratetagsinrange",
+        "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1410036-enumeratetagsinrange",
+        "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875121-enumeratetagsforstring",
+        "doc://com.apple.documentation/documentation/foundation/nslinguistictaggeroptions"
+      ],
+      "title": "Enumerating Linguistic Tags",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/tokenizing_natural_language_text"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Identifying the parts of speech for words in natural language text can help your program understand the meaning of sentences. For example, given the transcription of a request spoken by the user, you might determine general intent by looking at only the nouns and verbs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows how to use "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger"
+            },
+            {
+              "type": "text",
+              "text": " to enumerate over natural language text and identify the part of speech for each word."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let text = \"The ripe taste of cheese improves with age.\"",
+            "let tagger = NSLinguisticTagger(tagSchemes: [.lexicalClass], options: 0)",
+            "tagger.string = text",
+            "let range = NSRange(location: 0, length: text.utf16.count)",
+            "let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace]",
+            "tagger.enumerateTags(in: range, unit: .word, scheme: .lexicalClass, options: options) { tag, tokenRange, _ in",
+            "    if let tag = tag {",
+            "        let word = (text as NSString).substring(with: tokenRange)",
+            "        print(\"\\(word): \\(tag)\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922147",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First, an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger"
+            },
+            {
+              "type": "text",
+              "text": " is created, specifying "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagschemelexicalclass"
+            },
+            {
+              "type": "text",
+              "text": " as the tag scheme to be used. Next, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1407750-string"
+            },
+            {
+              "type": "text",
+              "text": " property of the linguistic tagger is set to the natural language text. Finally, the linguistic tagger enumerates over the entire range of the string, specifying "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictaggerunit/nslinguistictaggerunitword"
+            },
+            {
+              "type": "text",
+              "text": " as the tag unit and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagschemelexicalclass"
+            },
+            {
+              "type": "text",
+              "text": " as the tag scheme, and omitting any punctuation or whitespace. In the enumeration block, the part of speech is provided by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "tag"
+            },
+            {
+              "type": "text",
+              "text": ", and each word is obtained by taking a substring of the original text at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "tokenRange"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When run, this code prints out each word and its part of speech on a new line, as shown below:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Word"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Part of speech"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagdeterminer"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ripe"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagadjective"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "taste"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagnoun"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "of"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagpreposition"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "cheese"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagnoun"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "improves"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagverb"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "with"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagpreposition"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "age"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nslinguistictagnoun"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2922151",
+            "title": "Table 1"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

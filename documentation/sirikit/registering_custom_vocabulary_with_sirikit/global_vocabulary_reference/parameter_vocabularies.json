@@ -1,0 +1,432 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The keys you include in your global vocabulary file to describe app-specific terms."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2879989,
+  "kind": "article",
+  "metadata": {
+    "title": "Parameter Vocabularies",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit": {
+      "title": "Registering Custom Vocabulary with SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference": {
+      "title": "Global Vocabulary Reference",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "link-media-2910038": {
+      "identifier": "link-media-2910038",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/parameter_vocabularies#2910038"
+    },
+    "media-2910038": {
+      "identifier": "media-2910038",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 587
+          },
+          "url": "https://docs-assets.developer.apple.com/published/381143513b/a432b48c-d55c-4b9d-98e1-b8befbdb56e8.png"
+        }
+      ],
+      "alt": "Editing the global vocabulary file",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Editing the global vocabulary file"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/intent_phrases": {
+      "title": "Intent Phrases",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/intent_phrases",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/intent_phrases",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The keys that you include in your global vocabulary file to show how users engage your app from Siri."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/registering_custom_vocabulary_with_sirikit/global_vocabulary_reference/intent_phrases"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ParameterVocabularies"
+            },
+            {
+              "type": "text",
+              "text": " key contains the custom terminology that is global to all users of your app. This key contains an array of dictionaries, each of which defines a set of terms and the intent properties to which those terms apply. The keys for the dictionary are as follows:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "ParameterNames"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Required) An array of strings, each of which contains a key path for a property name from an intent class. For example, to specify a custom ride option for a ride request intent, specify the key path "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "INRequestRideIntent.rideOptionName"
+                      },
+                      {
+                        "type": "text",
+                        "text": ".  "
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "ParameterVocabulary"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Required) An array of dictionaries containing the custom terms to associate with the specified properties. Each dictionary contains the following keys.  "
+                      }
+                    ]
+                  },
+                  {
+                    "type": "termList",
+                    "items": [
+                      {
+                        "term": {
+                          "inlineContent": [
+                            {
+                              "type": "codeVoice",
+                              "code": "VocabularyItemIdentifier"
+                            }
+                          ]
+                        },
+                        "definition": {
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "inlineContent": [
+                                {
+                                  "type": "text",
+                                  "text": "(Required) The string that Siri assigns to the identifier property of the "
+                                },
+                                {
+                                  "type": "codeVoice",
+                                  "code": "INSpeakableString"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " object when it recognizes your custom vocabulary. This identifier applies to all synonyms."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "term": {
+                          "inlineContent": [
+                            {
+                              "type": "codeVoice",
+                              "code": "VocabularyItemSynonyms"
+                            }
+                          ]
+                        },
+                        "definition": {
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "inlineContent": [
+                                {
+                                  "type": "text",
+                                  "text": "(Required) An array of dictionaries that define the phrases for Siri to recognize. Use the following keys in the dictionary to specify the phrase, pronunciation hints, and examples:"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "termList",
+                              "items": [
+                                {
+                                  "term": {
+                                    "inlineContent": [
+                                      {
+                                        "type": "codeVoice",
+                                        "code": "VocabularyItemPhrase"
+                                      }
+                                    ]
+                                  },
+                                  "definition": {
+                                    "content": [
+                                      {
+                                        "type": "paragraph",
+                                        "inlineContent": [
+                                          {
+                                            "type": "text",
+                                            "text": "(Required) A string containing the custom phrase that you want to define. Spell the phrase the same way that your app uses it. "
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "term": {
+                                    "inlineContent": [
+                                      {
+                                        "type": "codeVoice",
+                                        "code": "VocabularyItemPronunciation"
+                                      }
+                                    ]
+                                  },
+                                  "definition": {
+                                    "content": [
+                                      {
+                                        "type": "paragraph",
+                                        "inlineContent": [
+                                          {
+                                            "type": "text",
+                                            "text": "(Optional) A string containing pronunciation hints for the phrase, formatted in a \"sounds like\" format. For example, the pronunciation for the phrase \"iTunes\" might be \"eye toons\". "
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "term": {
+                                    "inlineContent": [
+                                      {
+                                        "type": "codeVoice",
+                                        "code": "VocabularyItemExamples"
+                                      }
+                                    ]
+                                  },
+                                  "definition": {
+                                    "content": [
+                                      {
+                                        "type": "paragraph",
+                                        "inlineContent": [
+                                          {
+                                            "type": "text",
+                                            "text": "(Optional) An array of strings, each of which contains examples of how to use the phrase. "
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Xcode helps you add terms to your vocabulary file. When you create a property list file with the name "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AppIntentVocabulary.plist"
+            },
+            {
+              "type": "text",
+              "text": ", Xcode knows that the file should contain custom vocabulary, and it makes only the relevant keys available in the property list editor. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-2910038"
+            },
+            {
+              "type": "text",
+              "text": " shows an example of a global vocabulary file in Xcode that contains custom terms for a workout app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2910038",
+              "metadata": {
+                "anchor": "2910038",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Editing the global vocabulary file"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

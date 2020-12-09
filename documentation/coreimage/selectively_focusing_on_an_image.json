@@ -1,0 +1,1520 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Focus on a part of an image by applying Gaussian blur and gradient masks."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2953440,
+  "kind": "article",
+  "metadata": {
+    "title": "Selectively Focusing on an Image",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Image"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreimage/selectively_focusing_on_an_image"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreimage/selectively_focusing_on_an_image"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreimage": {
+      "title": "Core Image",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage",
+      "url": "/documentation/coreimage",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-media-2959648": {
+      "identifier": "link-media-2959648",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2959648"
+    },
+    "media-2959648": {
+      "identifier": "media-2959648",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 282,
+            "height": 282
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ade94388d0/01f73fd4-6834-45fa-b243-810efd0dcf6e.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 282,
+            "height": 282
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a7ed7c7c94/9716a299-7ab8-4692-a4cc-8ba1470473b7.png"
+        }
+      ],
+      "alt": "Linear gradient mask for blurring all regions of an image except a strip",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "CILinearGradient"
+        },
+        {
+          "type": "text",
+          "text": "-generated linear mask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/cifilter": {
+      "title": "CIFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/cifilter"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/civector": {
+      "title": "CIVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/civector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/civector"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/cicolor": {
+      "title": "CIColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/cicolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/cicolor"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimage/1437996-extent": {
+      "title": "extent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage/1437996-extent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimage/1437996-extent"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953473": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953473",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2953473"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953476": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953476",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2953476"
+    },
+    "link-media-2959647": {
+      "identifier": "link-media-2959647",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2959647"
+    },
+    "media-2959647": {
+      "identifier": "media-2959647",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 682,
+            "height": 564
+          },
+          "url": "https://docs-assets.developer.apple.com/published/92e064239d/12bca933-f2e0-4826-97b3-12753b75587f.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 682,
+            "height": 564
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c2e1a44772/732282da-dfba-46dc-8a75-fef59a3ae9ff.png"
+        }
+      ],
+      "alt": " Graphic depicting the additive compositing of two linear gradients to form a single mask",
+      "title": "Figure 3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add two mutually exclusive linear gradients to create a mask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953495": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953495",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2953495"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953466": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953466",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2953466"
+    },
+    "link-media-2959646": {
+      "identifier": "link-media-2959646",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2959646"
+    },
+    "media-2959646": {
+      "identifier": "media-2959646",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 282,
+            "height": 282
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6450f86006/02e2331a-016c-4716-83fd-1a185b6bbf0c.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 282,
+            "height": 282
+          },
+          "url": "https://docs-assets.developer.apple.com/published/790ac07580/fe608ff3-f769-4427-aef2-e39249d2b708.png"
+        }
+      ],
+      "alt": "Circular gradient mask for blurring out all pixels except those in a circular region",
+      "title": "Figure 4",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "CIRadialGradient"
+        },
+        {
+          "type": "text",
+          "text": "-generated circular transparency mask"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/ciimage": {
+      "title": "CIImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/ciimage"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/cifilter/1438169-outputimage": {
+      "title": "outputImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter/1438169-outputimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/cifilter/1438169-outputimage"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953500": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image#2953500",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2953500"
+    },
+    "link-media-2960173": {
+      "identifier": "link-media-2960173",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2960173"
+    },
+    "media-2960173": {
+      "identifier": "media-2960173",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 894,
+            "height": 574
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2f30fb7085/e003b5d6-55df-40a7-be10-05e42717d02a.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 894,
+            "height": 574
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a1a974c192/e02b5bed-d72b-493e-8591-e0282977bda9.png"
+        }
+      ],
+      "alt": "CIMaskedVariableBlur with a linear gradient mask applied to a photo of walnuts",
+      "title": "Figure 5",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "CIMaskedVariableBlur"
+        },
+        {
+          "type": "text",
+          "text": " with linear gradient mask applied to a walnut image, resulting in focus on a strip"
+        }
+      ]
+    },
+    "link-media-2959645": {
+      "identifier": "link-media-2959645",
+      "type": "link",
+      "title": "Figure 6",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2959645"
+    },
+    "media-2959645": {
+      "identifier": "media-2959645",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 896,
+            "height": 572
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1ea630def9/2d3f24d8-df1a-462a-8a04-ecbdbcde833f.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 896,
+            "height": 572
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7a93a8e554/55c5a847-a6c2-4aff-9b19-eb2089e39bfb.png"
+        }
+      ],
+      "alt": "CIMaskedVariableBlur with a radial gradient mask applied to a photo of walnuts",
+      "title": "Figure 6",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "CIMaskedVariableBlur"
+        },
+        {
+          "type": "text",
+          "text": " with circular gradient mask applied to a walnut image, resulting in focus on a circle"
+        }
+      ]
+    },
+    "link-media-2960174": {
+      "identifier": "link-media-2960174",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image#2960174"
+    },
+    "media-2960174": {
+      "identifier": "media-2960174",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 916,
+            "height": 332
+          },
+          "url": "https://docs-assets.developer.apple.com/published/59d757a3ea/d923e88a-f1ca-4327-b3a9-637db674e880.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 916,
+            "height": 332
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4833b02da3/6a0d4c5a-77ff-463b-bccc-bdee7ad82695.png"
+        }
+      ],
+      "alt": "Flowchart showing the combination of image and mask in focusing on the scoop in a photo of walnuts",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applying a masked variable blur effect to selectively focus on a portion of the scene"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect": {
+      "title": "Applying a Chroma Key Effect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/applying_a_chroma_key_effect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replace a color in one image with the background from another."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image": {
+      "title": "Selectively Focusing on an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/selectively_focusing_on_an_image",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/selectively_focusing_on_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Focus on a part of an image by applying Gaussian blur and gradient masks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions": {
+      "title": "Customizing Image Transitions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/customizing_image_transitions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transition between images in creative ways using Core Image filters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film": {
+      "title": "Simulating Scratchy Analog Film",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coreimage/simulating_scratchy_analog_film",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Degrade the quality of an image to make it look like dated, scratchy analog film."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreimage/applying_a_chroma_key_effect",
+        "doc://com.apple.documentation/documentation/coreimage/customizing_image_transitions",
+        "doc://com.apple.documentation/documentation/coreimage/simulating_scratchy_analog_film"
+      ],
+      "title": "Filter Recipes",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The tilt-shift effect simulates sharpening or focusing a portion of an image while blurring the rest.  Using this technique, you can draw attention to the focused region."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2960174",
+              "metadata": {
+                "anchor": "2960174",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Applying a masked variable blur effect to selectively focus on a portion of the scene"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You specify the region to blur by applying a mask image; the shape and values of the mask image determine the location and strength of the blurring.  Creating this effect involves the following steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To focus on a strip across the image, create two linear gradients representing the portions of the image to blur."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To focus on a circular region in the image, create a radial gradient centered on the region to keep sharp."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Composite the gradients into a mask."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Apply Core Image's "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CIMaskedVariableBlur"
+                    },
+                    {
+                      "type": "text",
+                      "text": " filter to the original image, inputting the created mask."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Focusing on a Strip of the Image",
+          "anchor": "2953470"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can build your mask in any shape, but the general strategy remains the same: leave the mask transparent where you want the original image to stay sharp and focused.  This section covers focusing on a horizontal strip. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To build a mask that leaves out a stripe, create linear gradients from a single color, such as green or gray. Our goal is to build the mask shown in Figure 2."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2959648",
+              "metadata": {
+                "anchor": "2959648",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "CILinearGradient"
+                  },
+                  {
+                    "type": "text",
+                    "text": "-generated linear mask"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The linear gradients cause the blur to taper smoothly as it approaches the focused stripe of the image.  The Core Image "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+            },
+            {
+              "type": "text",
+              "text": " named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CILinearGradient"
+            },
+            {
+              "type": "text",
+              "text": " generates filters of the desired color.  The linear gradient has four parameters:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "inputPoint0"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The starting point of the gradient ramp, expressed as a "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coreimage/civector"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "inputPoint1"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The endpoint of the gradient ramp, expressed as a "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coreimage/civector"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "inputColor0"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The starting point gradient color, expressed as a "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coreimage/cicolor"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "inputColor1"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The endpoint gradient color, expressed as a "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coreimage/cicolor"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Compute the start and stop points of the gradient as fractions of the image height, as obtained through "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage/1437996-extent"
+            },
+            {
+              "type": "text",
+              "text": ".  For this particular mask and example image, focus on the area near the middle, in the second quarter of the image. Set the linear gradient's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputPoint0"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputPoint1"
+            },
+            {
+              "type": "text",
+              "text": " to reflect the region through which the gradient tapers."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "const CGFloat h = inputImage.extent.size.height;",
+            "CIFilter* topGradient = [CIFilter filterWithName:@\"CILinearGradient\"];",
+            "[topGradient setValue:[CIVector vectorWithX:0 Y:(0.85 * h)] ",
+            "               forKey:@\"inputPoint0\"];",
+            "[topGradient setValue:[CIColor colorWithRed:0 green:1 blue:0 alpha:1] ",
+            "               forKey:@\"inputColor0\"];",
+            "[topGradient setValue:[CIVector vectorWithX:0 Y:(0.6 * h)] ",
+            "               forKey:@\"inputPoint1\"];",
+            "[topGradient setValue:[CIColor colorWithRed:0 green:1 blue:0 alpha:0] ",
+            "               forKey:@\"inputColor1\"];"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953473",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The lower gradient should complement the upper gradient, so that their combined coverage delineates the entire area to blur.  Express the starting "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputPoint0"
+            },
+            {
+              "type": "text",
+              "text": " y-value at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.35"
+            },
+            {
+              "type": "text",
+              "text": " of the image height and taper to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.6"
+            },
+            {
+              "type": "text",
+              "text": ", where the top gradient began. This leaves a gap in the combined mask through which the sharp image will show."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CIFilter* bottomGradient = [CIFilter filterWithName:@\"CILinearGradient\"];",
+            "[bottomGradient setValue:[CIVector vectorWithX:0 Y:(0.35 * h)] ",
+            "                  forKey:@\"inputPoint0\"];",
+            "[bottomGradient setValue:[CIColor colorWithRed:0 green:1 blue:0 alpha:1] ",
+            "                  forKey:@\"inputColor0\"];",
+            "[bottomGradient setValue:[CIVector vectorWithX:0 Y:(0.6 * h)] ",
+            "                  forKey:@\"inputPoint1\"];",
+            "[bottomGradient setValue:[CIColor colorWithRed:0 green:1 blue:0 alpha:0]",
+            "                  forKey:@\"inputColor1\"];"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953476",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Creating a Mask by Compositing Linear Gradients",
+          "anchor": "2953465"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create a mask that dilineates where and how strong a blur to apply, combine the two linear gradients."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2959647",
+              "metadata": {
+                "anchor": "2959647",
+                "title": "Figure 3",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Add two mutually exclusive linear gradients to create a mask"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Since the gradients themselves are "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+            },
+            {
+              "type": "text",
+              "text": " objects, compositing them is as simple as concatenating their filter outputs to a compositing filter.  Use the built-in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+            },
+            {
+              "type": "text",
+              "text": " named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIAdditionCompositing"
+            },
+            {
+              "type": "text",
+              "text": " to composite two images additively."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CIFilter* gradientMask = [CIFilter filterWithName:@\"CIAdditionCompositing\"];",
+            "[gradientMask setValue:topGradient.outputImage ",
+            "                forKey:kCIInputImageKey];",
+            "[gradientMask setValue:bottomGradient.outputImage ",
+            "                forKey:kCIInputBackgroundImageKey];"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953495",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The resulting mask is now ready to be applied as part of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIMaskedVariableBlur"
+            },
+            {
+              "type": "text",
+              "text": " filter."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Focusing on a Circular Region",
+          "anchor": "2953467"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In order to focus on a circular region of an image, you can create a Core Image "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+            },
+            {
+              "type": "text",
+              "text": " with the name "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIRadialGradient"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The filter takes two parameters, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputImage"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputRadius"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputCenter"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coreimage/civector"
+                    },
+                    {
+                      "type": "text",
+                      "text": " pointing to the center of the region you want to leave unblurred."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputRadius0"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to a fraction of the image's dimension, like "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0.2*h"
+                    },
+                    {
+                      "type": "text",
+                      "text": " in this example.  You can tweak this parameter to determine the size of the sharp region."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputRadius1"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to a larger fraction of the image's dimension, like "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0.3*h"
+                    },
+                    {
+                      "type": "text",
+                      "text": " in this example.  Tweaking this parameter changes the extent of the blur's tapering effect; a larger value makes the blur more gradual, whereas a smaller value makes the image transition more abruptly from sharp (at "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputRadius0"
+                    },
+                    {
+                      "type": "text",
+                      "text": ") to blur (at "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputRadius1"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "As with the linear gradients, set "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputColor0"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to transparency, and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputColor1"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to a solid opaque color, to indicate the blur's gradation from nonexistent to full."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CIFilter* radialMask = [CIFilter filterWithName:@\"CIRadialGradient\"];",
+            "CIVector* imageCenter = [CIVector vectorWithX:(0.55 * w) Y:(0.6 * h)];",
+            "[radialMask setValue:imageCenter forKey:kCIInputCenterKey];",
+            "[radialMask setValue:@(0.2 * h) forKey:@\"inputRadius0\"];",
+            "[radialMask setValue:@(0.3 * h) forKey:@\"inputRadius1\"];",
+            "[radialMask setValue:[CIColor colorWithRed:0 green:1 blue:0 alpha:0] ",
+            "              forKey:@\"inputColor0\"];",
+            "[radialMask setValue:[CIColor colorWithRed:0 green:1 blue:0 alpha:1] ",
+            "              forKey:@\"inputColor1\"];"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953466",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This yields a circular mask to composite using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIMaskedVariableBlur"
+            },
+            {
+              "type": "text",
+              "text": " filter. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2959646",
+              "metadata": {
+                "anchor": "2959646",
+                "title": "Figure 4",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "CIRadialGradient"
+                  },
+                  {
+                    "type": "text",
+                    "text": "-generated circular transparency mask"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Without accessing the output image, keep this filter to chain with the other components."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Masking the Blurred Image to Apply Selective Focus",
+          "anchor": "2953468"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The final step is applying your choice of mask with the input image. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIMaskedVariableBlur"
+            },
+            {
+              "type": "text",
+              "text": " built-in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+            },
+            {
+              "type": "text",
+              "text": " accomplishes this task with the following input parameters:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "inputImage"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Set to the original, unprocessed "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coreimage/ciimage"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "inputRadius"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Set to "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "10"
+                      },
+                      {
+                        "type": "text",
+                        "text": ", and experiment to find the right degree of blur desired. (The default is "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "5"
+                      },
+                      {
+                        "type": "text",
+                        "text": ".)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "inputMask"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Set to the desired gradient mask, either the "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter/1438169-outputimage"
+                      },
+                      {
+                        "type": "text",
+                        "text": " of the "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "CIAdditionCompositing"
+                      },
+                      {
+                        "type": "text",
+                        "text": " filter for linear focus, or the "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter/1438169-outputimage"
+                      },
+                      {
+                        "type": "text",
+                        "text": " of the "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "CIRadialGradient"
+                      },
+                      {
+                        "type": "text",
+                        "text": " filter for circular focus."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CIFilter* maskedVariableBlur = [CIFilter filterWithName:@\"CIMaskedVariableBlur\"];",
+            "[maskedVariableBlur setValue:inputImage forKey:kCIInputImageKey];",
+            "[maskedVariableBlur setValue:@(10) forKey:kCIInputRadiusKey];",
+            "[maskedVariableBlur setValue:gradientMaskCI forKey:@\"inputMask\"];",
+            "CIImage* selectivelyFocusedCIImage = maskedVariableBlur.outputImage;"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953500",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The resulting image shows the original image with portions blurred out according to the mask applied.  The linear gradient mask results in an output image focused on a strip, and the radial gradient mask results in an output image focused on a circular region."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2960173",
+              "metadata": {
+                "anchor": "2960173",
+                "title": "Figure 5",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "CIMaskedVariableBlur"
+                  },
+                  {
+                    "type": "text",
+                    "text": " with linear gradient mask applied to a walnut image, resulting in focus on a strip"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2959645",
+              "metadata": {
+                "anchor": "2959645",
+                "title": "Figure 6",
+                "abstract": [
+                  {
+                    "type": "codeVoice",
+                    "code": "CIMaskedVariableBlur"
+                  },
+                  {
+                    "type": "text",
+                    "text": " with circular gradient mask applied to a walnut image, resulting in focus on a circle"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

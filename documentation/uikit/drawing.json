@@ -1,0 +1,806 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Configure your app's drawing environment using colors, renderers, draw paths, strings, and shadows."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/drawing",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864504,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Drawing",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/drawing"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/drawing"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor": {
+      "title": "UIColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that stores color data and sometimes opacity. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicsrenderer": {
+      "title": "UIGraphicsRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicsrenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicsrenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract base class for creating graphics renderers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicsrenderercontext": {
+      "title": "UIGraphicsRendererContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicsrenderercontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicsrenderercontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The base class for the drawing environments for graphics renderers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicsrendererformat": {
+      "title": "UIGraphicsRendererFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicsrendererformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicsrendererformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of drawing attributes that represents the configuration of a graphics renderer context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerenderer": {
+      "title": "UIGraphicsImageRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicsimagerenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A graphics renderer for creating Core Graphics-backed images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerenderercontext": {
+      "title": "UIGraphicsImageRendererContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerenderercontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicsimagerenderercontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The drawing environment for an image renderer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerendererformat": {
+      "title": "UIGraphicsImageRendererFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerendererformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicsimagerendererformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of drawing attributes that represents the configuration of an image renderer context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderer": {
+      "title": "UIGraphicsPDFRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicspdfrenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A graphics renderer for creating PDFs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext": {
+      "title": "UIGraphicsPDFRendererContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicspdfrenderercontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The drawing environment for a PDF renderer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrendererformat": {
+      "title": "UIGraphicsPDFRendererFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrendererformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uigraphicspdfrendererformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of drawing attributes that represents the configuration of a PDF renderer context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibezierpath": {
+      "title": "UIBezierPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibezierpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibezierpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A path that consists of straight and curved line segments that you can render in your custom views. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623932-uirectfill": {
+      "title": "UIRectFill",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623932-uirectfill",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623932-uirectfill",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fills the specified rectangle with the current color."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623920-uirectfillusingblendmode": {
+      "title": "UIRectFillUsingBlendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623920-uirectfillusingblendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623920-uirectfillusingblendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fills a rectangle with the current fill color using the specified blend mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623926-uirectframe": {
+      "title": "UIRectFrame",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623926-uirectframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623926-uirectframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws a frame around the inside of the specified rectangle. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623913-uirectframeusingblendmode": {
+      "title": "UIRectFrameUsingBlendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623913-uirectframeusingblendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623913-uirectframeusingblendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws a frame around the inside of a rectangle using the specified blend mode. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsstringdrawingcontext": {
+      "title": "NSStringDrawingContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsstringdrawingcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsstringdrawingcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages metrics for drawing attributed strings. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsstringdrawingoptions": {
+      "title": "NSStringDrawingOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsstringdrawingoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsstringdrawingoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the rendering options for drawing a string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibaselineadjustment": {
+      "title": "UIBaselineAdjustment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibaselineadjustment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibaselineadjustment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Vertical adjustment options. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilinebreakmode": {
+      "title": "UILineBreakMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilinebreakmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilinebreakmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for wrapping and truncating text."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextalignment": {
+      "title": "UITextAlignment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextalignment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextalignment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for aligning text horizontally."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextattributefont": {
+      "title": "UITextAttributeFont",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextattributefont",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextattributefont",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key to the font in a text attributes dictionary."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextattributetextcolor": {
+      "title": "UITextAttributeTextColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextattributetextcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextattributetextcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key to the text color in a text attributes dictionary."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextattributetextshadowcolor": {
+      "title": "UITextAttributeTextShadowColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextattributetextshadowcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextattributetextshadowcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key to the text shadow color in a text attributes dictionary."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextattributetextshadowoffset": {
+      "title": "UITextAttributeTextShadowOffset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextattributetextshadowoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextattributetextshadowoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key to the offset for the text shadow in a text attributes dictionary."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsshadow": {
+      "title": "NSShadow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsshadow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsshadow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An encapsulation of the attributes that create a drop shadow during drawing operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623918-uigraphicsgetcurrentcontext": {
+      "title": "UIGraphicsGetCurrentContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623918-uigraphicsgetcurrentcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623918-uigraphicsgetcurrentcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current graphics context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623921-uigraphicspushcontext": {
+      "title": "UIGraphicsPushContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623921-uigraphicspushcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623921-uigraphicspushcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Makes the specified graphics context the current context. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623914-uigraphicspopcontext": {
+      "title": "UIGraphicsPopContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623914-uigraphicspopcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623914-uigraphicspopcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the current graphics context from the top of the stack, restoring the previous context. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623912-uigraphicsbeginimagecontextwitho": {
+      "title": "UIGraphicsBeginImageContextWithOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623912-uigraphicsbeginimagecontextwitho",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623912-uigraphicsbeginimagecontextwitho",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a bitmap-based graphics context with the specified options."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1623923-uirectclip": {
+      "title": "UIRectClip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1623923-uirectclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1623923-uirectclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modifies the current clipping path by intersecting it with the specified rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624505-cgaffinetransformfromstring": {
+      "title": "CGAffineTransformFromString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624505-cgaffinetransformfromstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624505-cgaffinetransformfromstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Core Graphics affine transform structure corresponding to the data in a given string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624477-cgpointfromstring": {
+      "title": "CGPointFromString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624477-cgpointfromstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624477-cgpointfromstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Core Graphics point structure corresponding to the data in a given string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624508-cgrectfromstring": {
+      "title": "CGRectFromString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624508-cgrectfromstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624508-cgrectfromstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Core Graphics rectangle structure corresponding to the data in a given string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624484-cgsizefromstring": {
+      "title": "CGSizeFromString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624484-cgsizefromstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624484-cgsizefromstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Core Graphics size structure corresponding to the data in a given string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624513-cgvectorfromstring": {
+      "title": "CGVectorFromString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624513-cgvectorfromstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624513-cgvectorfromstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Core Graphics vector corresponding to the data in a given string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624497-nsstringfromcgaffinetransform": {
+      "title": "NSStringFromCGAffineTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624497-nsstringfromcgaffinetransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624497-nsstringfromcgaffinetransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string formatted to contain the data from an affine transform."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624504-nsstringfromcgpoint": {
+      "title": "NSStringFromCGPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624504-nsstringfromcgpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624504-nsstringfromcgpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string formatted to contain the data from a point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624474-nsstringfromcgrect": {
+      "title": "NSStringFromCGRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624474-nsstringfromcgrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624474-nsstringfromcgrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string formatted to contain the data from a rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624514-nsstringfromcgsize": {
+      "title": "NSStringFromCGSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624514-nsstringfromcgsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624514-nsstringfromcgsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string formatted to contain the data from a size data structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/1624476-nsstringfromcgvector": {
+      "title": "NSStringFromCGVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/1624476-nsstringfromcgvector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/1624476-nsstringfromcgvector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string formatted to contain the data from a vector data structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/images_and_pdf": {
+      "title": "Images and PDF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/images_and_pdf",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/images_and_pdf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage images, including those that use bitmap and PDF formats. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/drawing": {
+      "title": "Drawing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/drawing",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/drawing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your app's drawing environment using colors, renderers, draw paths, strings, and shadows."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/printing": {
+      "title": "Printing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/printing",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uikit/printing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display the system print panels and manage the printing process. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Color",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uicolor"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing Contexts",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uigraphicsrenderer",
+        "doc://com.apple.documentation/documentation/uikit/uigraphicsrenderercontext",
+        "doc://com.apple.documentation/documentation/uikit/uigraphicsrendererformat",
+        "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerenderer",
+        "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerenderercontext",
+        "doc://com.apple.documentation/documentation/uikit/uigraphicsimagerendererformat",
+        "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderer",
+        "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext",
+        "doc://com.apple.documentation/documentation/uikit/uigraphicspdfrendererformat"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use renderers to turn a set of programmatic drawing commands into a bitmap or PDF image. "
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Paths",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uibezierpath",
+        "doc://com.apple.documentation/documentation/uikit/1623932-uirectfill",
+        "doc://com.apple.documentation/documentation/uikit/1623920-uirectfillusingblendmode",
+        "doc://com.apple.documentation/documentation/uikit/1623926-uirectframe",
+        "doc://com.apple.documentation/documentation/uikit/1623913-uirectframeusingblendmode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Strings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsstringdrawingcontext",
+        "doc://com.apple.documentation/documentation/uikit/nsstringdrawingoptions",
+        "doc://com.apple.documentation/documentation/uikit/uibaselineadjustment",
+        "doc://com.apple.documentation/documentation/uikit/uilinebreakmode",
+        "doc://com.apple.documentation/documentation/uikit/uitextalignment",
+        "doc://com.apple.documentation/documentation/uikit/uitextattributefont",
+        "doc://com.apple.documentation/documentation/uikit/uitextattributetextcolor",
+        "doc://com.apple.documentation/documentation/uikit/uitextattributetextshadowcolor",
+        "doc://com.apple.documentation/documentation/uikit/uitextattributetextshadowoffset"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Shadows",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nsshadow"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing Context Primitives",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/1623918-uigraphicsgetcurrentcontext",
+        "doc://com.apple.documentation/documentation/uikit/1623921-uigraphicspushcontext",
+        "doc://com.apple.documentation/documentation/uikit/1623914-uigraphicspopcontext",
+        "doc://com.apple.documentation/documentation/uikit/1623912-uigraphicsbeginimagecontextwitho",
+        "doc://com.apple.documentation/documentation/uikit/1623923-uirectclip"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage the current graphics environment using Core Graphics framework types. "
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Primitive Type Conversions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/1624505-cgaffinetransformfromstring",
+        "doc://com.apple.documentation/documentation/uikit/1624477-cgpointfromstring",
+        "doc://com.apple.documentation/documentation/uikit/1624508-cgrectfromstring",
+        "doc://com.apple.documentation/documentation/uikit/1624484-cgsizefromstring",
+        "doc://com.apple.documentation/documentation/uikit/1624513-cgvectorfromstring",
+        "doc://com.apple.documentation/documentation/uikit/1624497-nsstringfromcgaffinetransform",
+        "doc://com.apple.documentation/documentation/uikit/1624504-nsstringfromcgpoint",
+        "doc://com.apple.documentation/documentation/uikit/1624474-nsstringfromcgrect",
+        "doc://com.apple.documentation/documentation/uikit/1624514-nsstringfromcgsize",
+        "doc://com.apple.documentation/documentation/uikit/1624476-nsstringfromcgvector"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/images_and_pdf",
+        "doc://com.apple.documentation/documentation/uikit/printing"
+      ],
+      "title": "Graphics, Drawing, and Printing",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

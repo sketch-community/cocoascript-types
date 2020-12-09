@@ -1,0 +1,1647 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An abstract class representing a stream."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/streams_sockets_and_ports"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/stream",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1407471,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Stream",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.3",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSStream",
+    "symbolKind": "cl",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "class "
+      },
+      {
+        "kind": "identifier",
+        "text": "Stream"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsstream"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/stream"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/streams_sockets_and_ports": {
+      "title": "Streams, Sockets, and Ports",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/streams_sockets_and_ports",
+      "url": "/documentation/foundation/streams_sockets_and_ports",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/stream_status_constants": {
+      "title": "Stream Status Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/stream_status_constants",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/foundation/stream/stream_status_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants indicate the current status of a stream. They are returned by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1413038-streamstatus"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1413038-streamstatus": {
+      "title": "streamStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1413038-streamstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1413038-streamstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the receiver’s status."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "streamStatus"
+        },
+        {
+          "kind": "text",
+          "text": ": Stream.Status"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/streamdelegate/1410079-stream": {
+      "title": "stream(_:handle:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/streamdelegate/1410079-stream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/streamdelegate/1410079-stream"
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1410226-property": {
+      "title": "property(forKey:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1410226-property",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1410226-property",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the receiver’s property for a given key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "property"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "forKey"
+        },
+        {
+          "kind": "text",
+          "text": ": Stream.PropertyKey) -> Any?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1412045-setproperty": {
+      "title": "setProperty(_:forKey:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1412045-setproperty",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1412045-setproperty",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attempts to set the value of a given property of the receiver and returns a Boolean value that indicates whether the value is accepted by the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setProperty"
+        },
+        {
+          "kind": "text",
+          "text": "(Any?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "forKey"
+        },
+        {
+          "kind": "text",
+          "text": ": Stream.PropertyKey) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1411963-open": {
+      "title": "open()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1411963-open",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1411963-open",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens the receiving stream."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "open"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1410399-close": {
+      "title": "close()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1410399-close",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1410399-close",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Closes the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "close"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1418423-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1418423-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1418423-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the receiver’s delegate."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "delegate"
+        },
+        {
+          "kind": "text",
+          "text": ": StreamDelegate?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1417370-schedule": {
+      "title": "schedule(in:forMode:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1417370-schedule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1417370-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules the receiver on a given run loop in a given mode."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "schedule"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "in"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop, "
+        },
+        {
+          "kind": "identifier",
+          "text": "forMode"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1411285-remove": {
+      "title": "remove(from:forMode:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1411285-remove",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1411285-remove",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the receiver from a given run loop running in a given mode."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "remove"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop, "
+        },
+        {
+          "kind": "identifier",
+          "text": "forMode"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop": {
+      "title": "RunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop"
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1416359-streamerror": {
+      "title": "streamError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1416359-streamerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1416359-streamerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSError"
+        },
+        {
+          "type": "text",
+          "text": " object representing the stream error. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "streamError"
+        },
+        {
+          "kind": "text",
+          "text": ": Error?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nserror": {
+      "title": "NSError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nserror"
+    },
+    "doc://com.apple.documentation/documentation/foundation/inputstream": {
+      "title": "InputStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/inputstream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/inputstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A stream that provides read-only stream functionality."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "InputStream"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/outputstream": {
+      "title": "OutputStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/outputstream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/outputstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A stream that provides write-only stream functionality."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "OutputStream"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream": {
+      "title": "Stream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class representing a stream."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "Stream"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/swift/cvararg": {
+      "title": "CVarArg",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/cvararg"
+    },
+    "doc://com.apple.documentation/documentation/swift/equatable": {
+      "title": "Equatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/equatable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1412686-getstreamsto": {
+      "title": "getStreamsTo(_:port:inputStream:outputStream:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1412686-getstreamsto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1412686-getstreamsto",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns by reference an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSInputStream"
+        },
+        {
+          "type": "text",
+          "text": " object and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSOutputStream"
+        },
+        {
+          "type": "text",
+          "text": " object for a socket connection with a given host on a given port."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "getStreamsTo"
+        },
+        {
+          "kind": "text",
+          "text": "(Host, "
+        },
+        {
+          "kind": "identifier",
+          "text": "port"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "inputStream"
+        },
+        {
+          "kind": "text",
+          "text": ": AutoreleasingUnsafeMutablePointer<InputStream?>?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "outputStream"
+        },
+        {
+          "kind": "text",
+          "text": ": AutoreleasingUnsafeMutablePointer<OutputStream?>?)"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/status": {
+      "title": "Stream.Status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/status",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type declared for the constants listed in "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/stream/stream_status_constants"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "Stream.Status"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/event": {
+      "title": "Stream.Event",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/event",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/event",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Describes the constants that may be sent to the delegate as a bit field in the second parameter of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/streamdelegate/1410079-stream"
+        },
+        {
+          "type": "text",
+          "text": " to specify the kind of stream event."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Stream.Event"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/streamnetworkservicetypevalue": {
+      "title": "StreamNetworkServiceTypeValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/streamnetworkservicetypevalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/streamnetworkservicetypevalue",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "NSStream"
+        },
+        {
+          "type": "text",
+          "text": " defines these string constants for specifying the service type of a stream."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "StreamNetworkServiceTypeValue"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/streamsocksproxyconfiguration": {
+      "title": "StreamSOCKSProxyConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/streamsocksproxyconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/streamsocksproxyconfiguration",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "StreamSOCKSProxyConfiguration"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/streamsocksproxyversion": {
+      "title": "StreamSOCKSProxyVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/streamsocksproxyversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/streamsocksproxyversion",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "StreamSOCKSProxyVersion"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/streamsocketsecuritylevel": {
+      "title": "StreamSocketSecurityLevel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/streamsocketsecuritylevel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/streamsocketsecuritylevel",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "NSStream"
+        },
+        {
+          "type": "text",
+          "text": " defines these string constants for specifying the secure-socket layer (SSL) security level. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "StreamSocketSecurityLevel"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/propertykey": {
+      "title": "Stream.PropertyKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/propertykey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/propertykey",
+      "abstract": [
+        {
+          "type": "codeVoice",
+          "code": "NSStream"
+        },
+        {
+          "type": "text",
+          "text": " defines these string constants as keys for accessing stream properties using "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1410226-property"
+        },
+        {
+          "type": "text",
+          "text": " and setting properties with "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1412045-setproperty"
+        },
+        {
+          "type": "text",
+          "text": ":"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Stream.PropertyKey"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstreamsocketsslerrordomain": {
+      "title": "NSStreamSocketSSLErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstreamsocketsslerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstreamsocketsslerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error domain used by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSError"
+        },
+        {
+          "type": "text",
+          "text": " when reporting SSL errors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSStreamSocketSSLErrorDomain"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstreamsockserrordomain": {
+      "title": "NSStreamSOCKSErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstreamsockserrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstreamsockserrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error domain used by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSError"
+        },
+        {
+          "type": "text",
+          "text": " when reporting SOCKS errors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSStreamSOCKSErrorDomain"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1412683-getboundstreams": {
+      "title": "getBoundStreams(withBufferSize:inputStream:outputStream:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1412683-getboundstreams",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1412683-getboundstreams",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns by reference a bound pair of input and output streams."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "getBoundStreams"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "withBufferSize"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "inputStream"
+        },
+        {
+          "kind": "text",
+          "text": ": AutoreleasingUnsafeMutablePointer<InputStream?>?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "outputStream"
+        },
+        {
+          "kind": "text",
+          "text": ": AutoreleasingUnsafeMutablePointer<OutputStream?>?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/stream/1414311-getstreamstohost": {
+      "title": "getStreamsToHost(withName:port:inputStream:outputStream:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1414311-getstreamstohost",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stream/1414311-getstreamstohost",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "getStreamsToHost"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "withName"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "port"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "inputStream"
+        },
+        {
+          "kind": "text",
+          "text": ": AutoreleasingUnsafeMutablePointer<InputStream?>?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "outputStream"
+        },
+        {
+          "kind": "text",
+          "text": ": AutoreleasingUnsafeMutablePointer<OutputStream?>?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/streamdelegate": {
+      "title": "StreamDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/streamdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/streamdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface that delegates of a stream instance use to handle events on the stream."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "StreamDelegate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/cvararg",
+        "doc://com.apple.documentation/documentation/swift/equatable",
+        "doc://com.apple.documentation/documentation/swift/hashable"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Streams",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/stream/1412686-getstreamsto"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Streams",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/stream/1410226-property",
+        "doc://com.apple.documentation/documentation/foundation/stream/1412045-setproperty",
+        "doc://com.apple.documentation/documentation/foundation/stream/1418423-delegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using Streams",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/stream/1411963-open",
+        "doc://com.apple.documentation/documentation/foundation/stream/1410399-close"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Run Loops",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/stream/1417370-schedule",
+        "doc://com.apple.documentation/documentation/foundation/stream/1411285-remove"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Stream Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/stream/1413038-streamstatus",
+        "doc://com.apple.documentation/documentation/foundation/stream/1416359-streamerror"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/stream/status",
+        "doc://com.apple.documentation/documentation/foundation/stream/stream_status_constants",
+        "doc://com.apple.documentation/documentation/foundation/stream/event",
+        "doc://com.apple.documentation/documentation/foundation/streamnetworkservicetypevalue",
+        "doc://com.apple.documentation/documentation/foundation/streamsocksproxyconfiguration",
+        "doc://com.apple.documentation/documentation/foundation/streamsocksproxyversion",
+        "doc://com.apple.documentation/documentation/foundation/streamsocketsecuritylevel",
+        "doc://com.apple.documentation/documentation/foundation/stream/propertykey",
+        "doc://com.apple.documentation/documentation/foundation/nsstreamsocketsslerrordomain",
+        "doc://com.apple.documentation/documentation/foundation/nsstreamsockserrordomain"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/stream/1412683-getboundstreams",
+        "doc://com.apple.documentation/documentation/foundation/stream/1414311-getstreamstohost"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/inputstream",
+        "doc://com.apple.documentation/documentation/foundation/outputstream",
+        "doc://com.apple.documentation/documentation/foundation/streamdelegate"
+      ],
+      "title": "Streams",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "Stream"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This class's interface is common to all Cocoa stream classes, including its concrete subclasses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/inputstream"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/outputstream"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/stream"
+            },
+            {
+              "type": "text",
+              "text": " objects provide an easy way to read and write data to and from a variety of media in a device-independent way. You can create stream objects for data located in memory, in a file, or on a network (using sockets), and you can use stream objects without loading all of the data into memory at once. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/stream"
+            },
+            {
+              "type": "text",
+              "text": " instances that are not file-based are non-seekable, one-way streams (although custom seekable subclasses are possible). Once the data has been provided or consumed, the data cannot be retrieved from the stream. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1666442"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSStream"
+            },
+            {
+              "type": "text",
+              "text": " is an abstract class, incapable of instantiation and intended to be subclassed. It publishes a programmatic interface that all subclasses must adopt and provide implementations for. The two Apple-provided concrete subclasses of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSStream"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/inputstream"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/outputstream"
+            },
+            {
+              "type": "text",
+              "text": ", are suitable for most purposes. However, there might be situations when you want a peer subclass to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSInputStream"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSOutputStream"
+            },
+            {
+              "type": "text",
+              "text": ". For example, you might want a class that implements a full-duplex (two-way) stream, or a class whose instances are capable of seeking through a stream."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Methods to Override",
+          "anchor": "1666464"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All subclasses must fully implement the following methods, which are presented in functional pairs:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1411963-open"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1410399-close"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1411963-open"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to open the stream for reading or writing and make the stream available to the client directly or, if the stream object is scheduled on a run loop, to the delegate. Implement "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1410399-close"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to close the stream and remove the stream object from the run loop, if necessary. A closed stream should still be able to accept new properties and report its current properties. Once a stream is closed, it cannot be reopened. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1418423-delegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1418423-delegate"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Return and set the delegate. By a default, a stream object must be its own delegate; so a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1418423-delegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " message with an argument of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "nil"
+                    },
+                    {
+                      "type": "text",
+                      "text": " should restore this delegate. Do not retain the delegate to prevent retain cycles."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To learn about delegates and delegation, read \"Delegation\" in Cocoa Fundamentals Guide."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1417370-schedule"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1411285-remove"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1417370-schedule"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to schedule the stream object on the specified run loop for the specified mode. Implement "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1411285-remove"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to remove the object from the run loop. See the documentation of the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class for details. Once the stream object for an open stream is scheduled on a run loop, it is the responsibility of the subclass as it processes stream data to send "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/streamdelegate/1410079-stream"
+                    },
+                    {
+                      "type": "text",
+                      "text": " messages to its delegate."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1410226-property"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1412045-setproperty"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement these methods to return and set, respectively, the property value for the specified key. You may add custom properties, but be sure to handle all properties defined by "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSStream"
+                    },
+                    {
+                      "type": "text",
+                      "text": " as well."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1413038-streamstatus"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1416359-streamerror"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1413038-streamstatus"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to return the current status of the stream as a NSStreamStatus constant; you may define new NSStreamStatus constants, but be sure to handle the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSStream"
+                    },
+                    {
+                      "type": "text",
+                      "text": "-defined constants properly. Implement"
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/stream/1416359-streamerror"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to return an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object representing the current error. You might decide to return a custom "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSError"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object that can provide complete and localized information about the error."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

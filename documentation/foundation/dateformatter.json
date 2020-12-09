@@ -1,0 +1,2312 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A formatter that converts between dates and their textual representations. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/dates_and_times"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/data_formatting"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/dateformatter",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1415782,
+  "kind": "symbol",
+  "metadata": {
+    "title": "DateFormatter",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "2.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)NSDateFormatter",
+    "symbolKind": "cl",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "class "
+      },
+      {
+        "kind": "identifier",
+        "text": "DateFormatter"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsdateformatter"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/dateformatter"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dates_and_times": {
+      "title": "Dates and Times",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dates_and_times",
+      "url": "/documentation/foundation/dates_and_times",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data_formatting": {
+      "title": "Data Formatting",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data_formatting",
+      "url": "/documentation/foundation/data_formatting",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1415411-datestyle": {
+      "title": "dateStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1415411-datestyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1415411-datestyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The date style of the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": DateFormatter.Style"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1413467-timestyle": {
+      "title": "timeStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413467-timestyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1413467-timestyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time style of the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "timeStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": DateFormatter.Style"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/style/long": {
+      "title": "DateFormatter.Style.long",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/style/long",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/style/long"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/style/none": {
+      "title": "DateFormatter.Style.none",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/style/none",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/style/none"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/style/short": {
+      "title": "DateFormatter.Style.short",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/style/short",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/style/short"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter": {
+      "title": "DateFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that converts between dates and their textual representations. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "DateFormatter"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter#2555573": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter#2555573",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/dateformatter#2555573"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1417087-setlocalizeddateformatfromtempla": {
+      "title": "setLocalizedDateFormatFromTemplate(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1417087-setlocalizeddateformatfromtempla",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1417087-setlocalizeddateformatfromtempla",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the date format from a template using the specified locale for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setLocalizedDateFormatFromTemplate"
+        },
+        {
+          "kind": "text",
+          "text": "(String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter#2555576": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter#2555576",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/dateformatter#2555576"
+    },
+    "doc://com.apple.documentation/documentation/foundation/iso8601dateformatter": {
+      "title": "ISO8601DateFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/iso8601dateformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/iso8601dateformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that converts between dates and their ISO 8601 string representations."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "ISO8601DateFormatter"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1413514-dateformat": {
+      "title": "dateFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413514-dateformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1413514-dateformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The date format string used by the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateFormat"
+        },
+        {
+          "kind": "text",
+          "text": ": String!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1411973-locale": {
+      "title": "locale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1411973-locale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1411973-locale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The locale for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "locale"
+        },
+        {
+          "kind": "text",
+          "text": ": Locale!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1411406-timezone": {
+      "title": "timeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1411406-timezone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1411406-timezone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time zone for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "timeZone"
+        },
+        {
+          "kind": "text",
+          "text": ": TimeZone!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter#2555578": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter#2555578",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/dateformatter#2555578"
+    },
+    "link-1670422": {
+      "title": "Technical Q&A QA1480 “NSDateFormatter and Internet Dates”",
+      "type": "topic",
+      "identifier": "link-1670422",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/mac/qa/qa1480/"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdate": {
+      "title": "NSDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateintervalformatter": {
+      "title": "DateIntervalFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateintervalformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateintervalformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that creates string representations of time intervals."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "DateIntervalFormatter"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdatecomponents": {
+      "title": "NSDateComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdatecomponents"
+    },
+    "doc://com.apple.documentation/documentation/foundation/datecomponentsformatter": {
+      "title": "DateComponentsFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/datecomponentsformatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/datecomponentsformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that creates string representations of quantities of time. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "DateComponentsFormatter"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatter": {
+      "title": "Formatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatter"
+    },
+    "doc://com.apple.documentation/documentation/swift/cvararg": {
+      "title": "CVarArg",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/cvararg"
+    },
+    "doc://com.apple.documentation/documentation/swift/equatable": {
+      "title": "Equatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/equatable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1409994-date": {
+      "title": "date(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1409994-date",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1409994-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a date representation of a given string interpreted using the receiver’s current settings."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "date"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1415810-string": {
+      "title": "string(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1415810-string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1415810-string",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string representation of a given date formatted using the receiver’s current settings."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "string"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Date) -> String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1415241-localizedstring": {
+      "title": "localizedString(from:dateStyle:timeStyle:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1415241-localizedstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1415241-localizedstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string representation of a given date, formatted for the current locale using the specified date and time styles."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "localizedString"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Date, "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": DateFormatter.Style, "
+        },
+        {
+          "kind": "identifier",
+          "text": "timeStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": DateFormatter.Style) -> String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1409248-getobjectvalue": {
+      "title": "getObjectValue(_:for:range:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1409248-getobjectvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1409248-getobjectvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns by reference a date representation of a given string and the range of the string used, and returns a Boolean value that indicates whether the string could be parsed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "getObjectValue"
+        },
+        {
+          "kind": "text",
+          "text": "(AutoreleasingUnsafeMutablePointer<AnyObject?>?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "range"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeMutablePointer<NSRange>?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1408112-dateformat": {
+      "title": "dateFormat(fromTemplate:options:locale:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1408112-dateformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1408112-dateformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a localized date format string representing the given date format components arranged appropriately for the specified locale."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateFormat"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "fromTemplate"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "locale"
+        },
+        {
+          "kind": "text",
+          "text": ": Locale?) -> String?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1408066-formattingcontext": {
+      "title": "formattingContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1408066-formattingcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1408066-formattingcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The capitalization formatting context used when formatting a date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "formattingContext"
+        },
+        {
+          "kind": "text",
+          "text": ": Formatter.Context"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1413675-calendar": {
+      "title": "calendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413675-calendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1413675-calendar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The calendar for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "calendar"
+        },
+        {
+          "kind": "text",
+          "text": ": Calendar!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1408312-defaultdate": {
+      "title": "defaultDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1408312-defaultdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1408312-defaultdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The default date for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "defaultDate"
+        },
+        {
+          "kind": "text",
+          "text": ": Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1417203-twodigitstartdate": {
+      "title": "twoDigitStartDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1417203-twodigitstartdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1417203-twodigitstartdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The earliest date that can be denoted by a two-digit year specifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "twoDigitStartDate"
+        },
+        {
+          "kind": "text",
+          "text": ": Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1416389-gregorianstartdate": {
+      "title": "gregorianStartDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1416389-gregorianstartdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1416389-gregorianstartdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The start date of the Gregorian calendar for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "gregorianStartDate"
+        },
+        {
+          "kind": "text",
+          "text": ": Date?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1409720-formatterbehavior": {
+      "title": "formatterBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1409720-formatterbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1409720-formatterbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The formatter behavior for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "formatterBehavior"
+        },
+        {
+          "kind": "text",
+          "text": ": DateFormatter.Behavior"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1409266-defaultformatterbehavior": {
+      "title": "defaultFormatterBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1409266-defaultformatterbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1409266-defaultformatterbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the default formatting behavior for instances of the class."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class var "
+        },
+        {
+          "kind": "identifier",
+          "text": "defaultFormatterBehavior"
+        },
+        {
+          "kind": "text",
+          "text": ": DateFormatter.Behavior"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1411441-islenient": {
+      "title": "isLenient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1411441-islenient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1411441-islenient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver uses heuristics when parsing a string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isLenient"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1415848-doesrelativedateformatting": {
+      "title": "doesRelativeDateFormatting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1415848-doesrelativedateformatting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1415848-doesrelativedateformatting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver uses phrases such as “today” and “tomorrow” for the date component."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "doesRelativeDateFormatting"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1409506-amsymbol": {
+      "title": "amSymbol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1409506-amsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1409506-amsymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The AM symbol for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "amSymbol"
+        },
+        {
+          "kind": "text",
+          "text": ": String!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1412367-pmsymbol": {
+      "title": "pmSymbol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1412367-pmsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1412367-pmsymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The PM symbol for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "pmSymbol"
+        },
+        {
+          "kind": "text",
+          "text": ": String!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1412405-weekdaysymbols": {
+      "title": "weekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1412405-weekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1412405-weekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The array of weekday symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "weekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1416121-shortweekdaysymbols": {
+      "title": "shortWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1416121-shortweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1416121-shortweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The array of short weekday symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1415109-veryshortweekdaysymbols": {
+      "title": "veryShortWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1415109-veryshortweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1415109-veryshortweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The array of very short weekday symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "veryShortWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1413618-standaloneweekdaysymbols": {
+      "title": "standaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413618-standaloneweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1413618-standaloneweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The array of standalone weekday symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "standaloneWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1409119-shortstandaloneweekdaysymbols": {
+      "title": "shortStandaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1409119-shortstandaloneweekdaysymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1409119-shortstandaloneweekdaysymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The array of short standalone weekday symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortStandaloneWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1418238-veryshortstandaloneweekdaysymbol": {
+      "title": "veryShortStandaloneWeekdaySymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1418238-veryshortstandaloneweekdaysymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1418238-veryshortstandaloneweekdaysymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The array of very short standalone weekday symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "veryShortStandaloneWeekdaySymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1412049-monthsymbols": {
+      "title": "monthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1412049-monthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1412049-monthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The month symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "monthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1409209-shortmonthsymbols": {
+      "title": "shortMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1409209-shortmonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1409209-shortmonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The array of short month symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1413632-veryshortmonthsymbols": {
+      "title": "veryShortMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413632-veryshortmonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1413632-veryshortmonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The very short month symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "veryShortMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1416227-standalonemonthsymbols": {
+      "title": "standaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1416227-standalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1416227-standalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The standalone month symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "standaloneMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1414771-shortstandalonemonthsymbols": {
+      "title": "shortStandaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1414771-shortstandalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1414771-shortstandalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The short standalone month symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortStandaloneMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1413322-veryshortstandalonemonthsymbols": {
+      "title": "veryShortStandaloneMonthSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413322-veryshortstandalonemonthsymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1413322-veryshortstandalonemonthsymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The very short month symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "veryShortStandaloneMonthSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1417587-quartersymbols": {
+      "title": "quarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1417587-quartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1417587-quartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The quarter symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "quarterSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1409851-shortquartersymbols": {
+      "title": "shortQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1409851-shortquartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1409851-shortquartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The short quarter symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortQuarterSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1411487-standalonequartersymbols": {
+      "title": "standaloneQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1411487-standalonequartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1411487-standalonequartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The standalone quarter symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "standaloneQuarterSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1416421-shortstandalonequartersymbols": {
+      "title": "shortStandaloneQuarterSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1416421-shortstandalonequartersymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1416421-shortstandalonequartersymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The short standalone quarter symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shortStandaloneQuarterSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1418282-erasymbols": {
+      "title": "eraSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1418282-erasymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1418282-erasymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The era symbols for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "eraSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1418081-longerasymbols": {
+      "title": "longEraSymbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1418081-longerasymbols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1418081-longerasymbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The long era symbols for the receiver"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "longEraSymbols"
+        },
+        {
+          "kind": "text",
+          "text": ": [String]!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/style": {
+      "title": "DateFormatter.Style",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/style",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/style",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The following constants specify predefined format styles for dates and times."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "DateFormatter.Style"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/behavior": {
+      "title": "DateFormatter.Behavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/behavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/behavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the behavior "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSDateFormatter"
+        },
+        {
+          "type": "text",
+          "text": " should exhibit. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "DateFormatter.Behavior"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/dateformatter/1411107-generatescalendardates": {
+      "title": "generatesCalendarDates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1411107-generatescalendardates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dateformatter/1411107-generatescalendardates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the formatter generates the deprecated calendar date type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "generatesCalendarDates"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatter"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/cvararg",
+        "doc://com.apple.documentation/documentation/swift/equatable",
+        "doc://com.apple.documentation/documentation/swift/hashable"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Converting Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1409994-date",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1415810-string",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1415241-localizedstring",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1409248-getobjectvalue"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Formats and Styles",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1415411-datestyle",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1413467-timestyle",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1413514-dateformat",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1417087-setlocalizeddateformatfromtempla",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1408112-dateformat",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1408066-formattingcontext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Attributes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1413675-calendar",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1408312-defaultdate",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1411973-locale",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1411406-timezone",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1417203-twodigitstartdate",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1416389-gregorianstartdate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Behavior Version",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1409720-formatterbehavior",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1409266-defaultformatterbehavior"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Natural Language Support",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1411441-islenient",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1415848-doesrelativedateformatting"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing AM and PM Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1409506-amsymbol",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1412367-pmsymbol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Weekday Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1412405-weekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1416121-shortweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1415109-veryshortweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1413618-standaloneweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1409119-shortstandaloneweekdaysymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1418238-veryshortstandaloneweekdaysymbol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Month Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1412049-monthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1409209-shortmonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1413632-veryshortmonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1416227-standalonemonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1414771-shortstandalonemonthsymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1413322-veryshortstandalonemonthsymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Quarter Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1417587-quartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1409851-shortquartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1411487-standalonequartersymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1416421-shortstandalonequartersymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Era Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1418282-erasymbols",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1418081-longerasymbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/style",
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/behavior"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dateformatter/1411107-generatescalendardates"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/datecomponentsformatter",
+        "doc://com.apple.documentation/documentation/foundation/dateintervalformatter",
+        "doc://com.apple.documentation/documentation/foundation/iso8601dateformatter"
+      ],
+      "title": "Date Formatting",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "class"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "DateFormatter"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSFormatter",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/formatter",
+              "text": "Formatter"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter"
+            },
+            {
+              "type": "text",
+              "text": " create string representations of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+            },
+            {
+              "type": "text",
+              "text": " objects, and convert textual representations of dates and times into "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+            },
+            {
+              "type": "text",
+              "text": " objects. For user-visible representations of dates and times, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter"
+            },
+            {
+              "type": "text",
+              "text": " provides a variety of localized presets and configuration options. For fixed format representations of dates and times, you can specify a custom format string."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When working with date representations in ISO 8601 format, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/iso8601dateformatter"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To represent an interval between two "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+            },
+            {
+              "type": "text",
+              "text": " objects, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateintervalformatter"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To represent a quantity of time specified by an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatecomponents"
+            },
+            {
+              "type": "text",
+              "text": " object, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/datecomponentsformatter"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Working With User-Visible Representations of Dates and Times",
+          "anchor": "1680045"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When displaying a date to a user, you set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1415411-datestyle"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413467-timestyle"
+            },
+            {
+              "type": "text",
+              "text": " properties of the date formatter according to your particular needs. For example, if you want to show the month, day, and year without showing the time, you would set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1415411-datestyle"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/style/long"
+            },
+            {
+              "type": "text",
+              "text": " and the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413467-timestyle"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/style/none"
+            },
+            {
+              "type": "text",
+              "text": ". Conversely, if you want to show only the time, you would set the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dateStyle"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/style/none"
+            },
+            {
+              "type": "text",
+              "text": " and the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413467-timestyle"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/style/short"
+            },
+            {
+              "type": "text",
+              "text": ". Based on the values of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1415411-datestyle"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413467-timestyle"
+            },
+            {
+              "type": "text",
+              "text": " properties, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter"
+            },
+            {
+              "type": "text",
+              "text": " provides a representation of a specified date that is appropriate for a given locale."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let dateFormatter = DateFormatter()",
+            "dateFormatter.dateStyle = .medium",
+            "dateFormatter.timeStyle = .none",
+            " ",
+            "let date = Date(timeIntervalSinceReferenceDate: 118800)",
+            " ",
+            "// US English Locale (en_US)",
+            "dateFormatter.locale = Locale(identifier: \"en_US\")",
+            "print(dateFormatter.string(from: date)) // Jan 2, 2001",
+            " ",
+            "// French Locale (fr_FR)",
+            "dateFormatter.locale = Locale(identifier: \"fr_FR\")",
+            "print(dateFormatter.string(from: date)) // 2 janv. 2001",
+            " ",
+            "// Japanese Locale (ja_JP)",
+            "dateFormatter.locale = Locale(identifier: \"ja_JP\")",
+            "print(dateFormatter.string(from: date)) // 2001/01/02"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2555573",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you need to define a format that cannot be achieved using the predefined styles, you can use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1417087-setlocalizeddateformatfromtempla"
+            },
+            {
+              "type": "text",
+              "text": " to specify a localized date format from a template."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let dateFormatter = DateFormatter()",
+            "let date = Date(timeIntervalSinceReferenceDate: 410220000)",
+            " ",
+            "// US English Locale (en_US)",
+            "dateFormatter.locale = Locale(identifier: \"en_US\")",
+            "dateFormatter.setLocalizedDateFormatFromTemplate(\"MMMMd\") // set template after setting locale",
+            "print(dateFormatter.string(from: date)) // December 31",
+            " ",
+            "// British English Locale (en_GB)",
+            "dateFormatter.locale = Locale(identifier: \"en_GB\")",
+            "dateFormatter.setLocalizedDateFormatFromTemplate(\"MMMMd\") // // set template after setting locale",
+            "print(dateFormatter.string(from: date)) // 31 December"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2555576",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Working With Fixed Format Date Representations",
+          "anchor": "2528261"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In macOS 10.12 and later or iOS 10 and later, use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/iso8601dateformatter"
+                },
+                {
+                  "type": "text",
+                  "text": " class when working with ISO 8601 date representations."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When working with fixed format dates, such as RFC 3339, you set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1413514-dateformat"
+            },
+            {
+              "type": "text",
+              "text": " property to specify a format string. For most fixed formats, you should also set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1411973-locale"
+            },
+            {
+              "type": "text",
+              "text": " property to a POSIX locale ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "\"en_US_POSIX\""
+            },
+            {
+              "type": "text",
+              "text": "), and set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dateformatter/1411406-timezone"
+            },
+            {
+              "type": "text",
+              "text": " property to UTC."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let RFC3339DateFormatter = DateFormatter()",
+            "RFC3339DateFormatter.locale = Locale(identifier: \"en_US_POSIX\")",
+            "RFC3339DateFormatter.dateFormat = \"yyyy-MM-dd'T'HH:mm:ssZZZZZ\"",
+            "RFC3339DateFormatter.timeZone = TimeZone(secondsFromGMT: 0)",
+            " ",
+            "/* 39 minutes and 57 seconds after the 16th hour of December 19th, 1996 with an offset of -08:00 from UTC (Pacific Standard Time) */",
+            "let string = \"1996-12-19T16:39:57-08:00\"",
+            "let date = RFC3339DateFormatter.date(from: string)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2555578",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information, see "
+            },
+            {
+              "type": "link",
+              "title": "Technical Q&A QA1480 “NSDateFormatter and Internet Dates”",
+              "destination": "https://developer.apple.com/library/mac/qa/qa1480/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Thread Safety",
+          "anchor": "1680059"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On iOS 7 and later "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSDateFormatter"
+            },
+            {
+              "type": "text",
+              "text": " is thread safe."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In macOS 10.9 and later "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSDateFormatter"
+            },
+            {
+              "type": "text",
+              "text": " is thread safe so long as you are using the modern behavior in a 64-bit app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On earlier versions of the operating system, or when using the legacy formatter behavior or running in 32-bit in macOS, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSDateFormatter"
+            },
+            {
+              "type": "text",
+              "text": " is not thread safe, and you therefore must not mutate a date formatter simultaneously from multiple threads."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

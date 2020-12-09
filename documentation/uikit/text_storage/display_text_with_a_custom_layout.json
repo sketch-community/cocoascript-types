@@ -1,0 +1,1121 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Lay out text in a custom-shaped container and apply glyph substitutions."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/text_storage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3676457,
+  "kind": "article",
+  "metadata": {
+    "title": "Display Text with a Custom Layout",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/text_storage/display_text_with_a_custom_layout",
+        "documentation/uikit/text_display_and_fonts/display_text_with_a_custom_layout"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/text_storage/display_text_with_a_custom_layout",
+        "documentation/uikit/text_display_and_fonts/display_text_with_a_custom_layout"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
+      "title": "Text Display and Fonts",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+      "url": "/documentation/uikit/text_display_and_fonts",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage": {
+      "title": "Text Storage",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
+      "url": "/documentation/uikit/text_storage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444555-linefragmentrectforproposedrect": {
+      "title": "lineFragmentRectForProposedRect:atIndex:writingDirection:remainingRect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444555-linefragmentrectforproposedrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontainer/1444555-linefragmentrectforproposedrect",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lineFragmentRectForProposedRect:atIndex:writingDirection:remainingRect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextcontainer": {
+      "title": "NSTextContainer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontainer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694742": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694742",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694742"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextview/1618597-initwithframe": {
+      "title": "initWithFrame:textContainer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview/1618597-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextview/1618597-initwithframe",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:textContainer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextview": {
+      "title": "UITextView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694744": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694744",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694744"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
+      "title": "NSLayoutManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that coordinates the layout and display of text characters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694745": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694745",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694745"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444569-exclusionpaths": {
+      "title": "exclusionPaths",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444569-exclusionpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontainer/1444569-exclusionpaths"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibezierpath": {
+      "title": "UIBezierPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibezierpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibezierpath"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694747": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694747",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694747"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444519-linebreakmode": {
+      "title": "lineBreakMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444519-linebreakmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextcontainer/1444519-linebreakmode"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nscontrolcharacteraction/nscontrolcharacteractionwhitespace": {
+      "title": "NSControlCharacterActionWhitespace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nscontrolcharacteraction/nscontrolcharacteractionwhitespace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nscontrolcharacteraction/nscontrolcharacteractionwhitespace"
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694749": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694749",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694749"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403073-layoutmanager": {
+      "title": "layoutManager:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403073-layoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanagerdelegate/1403073-layoutmanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutManager:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate": {
+      "title": "NSLayoutManagerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanagerdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods that delegates of layout manager objects implement."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694750": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694750",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694750"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403167-layoutmanager": {
+      "title": "layoutManager:shouldUseAction:forControlCharacterAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403167-layoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanagerdelegate/1403167-layoutmanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutManager:shouldUseAction:forControlCharacterAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694751": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694751",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694751"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1402922-layoutmanager": {
+      "title": "layoutManager:boundingBoxForControlGlyphAtIndex:forTextContainer:proposedLineFragment:glyphPosition:characterIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1402922-layoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanagerdelegate/1402922-layoutmanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutManager:boundingBoxForControlGlyphAtIndex:forTextContainer:proposedLineFragment:glyphPosition:characterIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694752": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694752",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694752"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403122-layoutmanager": {
+      "title": "layoutManager:shouldSetLineFragmentRect:lineFragmentUsedRect:baselineOffset:inTextContainer:forGlyphRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403122-layoutmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nslayoutmanagerdelegate/1403122-layoutmanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "layoutManager:shouldSetLineFragmentRect:lineFragmentUsedRect:baselineOffset:inTextContainer:forGlyphRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694753": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694753",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout#3694753"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider": {
+      "title": "NSTextLayoutOrientationProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nstextlayoutorientationprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods that define the orientation of text for an object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout": {
+      "title": "Display Text with a Custom Layout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage/display_text_with_a_custom_layout",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/text_storage/display_text_with_a_custom_layout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Lay out text in a custom-shaped container and apply glyph substitutions."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/30772a06e5/DisplayTextWithACustomLayout.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/30772a06e5/DisplayTextWithACustomLayout.zip",
+      "checksum": "7d0500a9d43fd67f99059259cc95a831592b6b1e38fbf5c529310100f3731871926801cd551b0a1bc6ab5b90ddb494906792bf0bdc3c79361e8e25b65247c770",
+      "url": "https://docs-assets.developer.apple.com/published/30772a06e5/DisplayTextWithACustomLayout.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/30772a06e5/DisplayTextWithACustomLayout.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
+        "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
+        "doc://com.apple.documentation/documentation/uikit/nstextlayoutorientationprovider"
+      ],
+      "title": "Layout",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some apps, such as book and magazine readers, text editors, and games, may need to lay out their text in a way that better fits their app style. TextKit provides a set of APIs for these apps to implement a custom text layout. This sample demonstrates how to use the APIs to display text in a circular container and in a two-column container, how to set up an exclusive area for a text container, and how to substitute a glyph without changing the text storage."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Implement a Custom-Shaped Text Container",
+          "anchor": "3694756"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When laying out a line of text, TextKit calls the  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444555-linefragmentrectforproposedrect"
+            },
+            {
+              "type": "text",
+              "text": " method from "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer"
+            },
+            {
+              "type": "text",
+              "text": " to determine the position and size of the line, which TextKit calls a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "line fragment rectangle"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". By creating a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSTextContainer"
+            },
+            {
+              "type": "text",
+              "text": " to return a custom line fragment rectangle in the method, apps can implement a custom-shaped text container."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample uses the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CircleTextContainer"
+            },
+            {
+              "type": "text",
+              "text": " class to implement a circular text container. To calculate a line fragment rectangle that fits in the inscribed circle of the container’s bounds, the class calls the implementation of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "super"
+            },
+            {
+              "type": "text",
+              "text": " to retrieve the default rectangle, then adjusts its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "origin.x"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "width"
+            },
+            {
+              "type": "text",
+              "text": " according to the current line origin and container size."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func lineFragmentRect(forProposedRect proposedRect: CGRect,",
+            "                               at characterIndex: Int,",
+            "                               writingDirection baseWritingDirection: NSWritingDirection,",
+            "                               remaining remainingRect: UnsafeMutablePointer<CGRect>?) -> CGRect {",
+            "    let rect = super.lineFragmentRect(forProposedRect: proposedRect,",
+            "                                      at: characterIndex,",
+            "                                      writingDirection: baseWritingDirection,",
+            "                                      remaining: remainingRect)",
+            "    let containerWidth = Float(size.width), containerHeight = Float(size.height)",
+            "",
+            "    let diameter = fminf(containerWidth, containerHeight)",
+            "    let radius = diameter / 2.0",
+            "    ",
+            "    // Vertical distance from the line center to the container center.",
+            "    let yDistance = fabsf(Float(rect.origin.y + rect.size.height / 2.0) - radius)",
+            "    // The new line width.",
+            "    let width = (yDistance < radius) ? 2.0 * sqrt(radius * radius - yDistance * yDistance) : 0.0",
+            "    // Horizontal distance from rect.origin.x to the starting point of the line.",
+            "    let xOffset = (containerWidth > diameter) ? (containerWidth - diameter) / 2.0 : 0.0",
+            "    // The starting x of the line.",
+            "    let xPosition = CGFloat(xOffset + Float(rect.origin.x) + radius - width / 2.0)",
+            "    return CGRect(x: xPosition, y: CGFloat(rect.origin.y), width: CGFloat(width), height: rect.size.height)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694742",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Lay Out Text with a Custom Text Container",
+          "anchor": "3694757"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To lay out text with a custom text container, apps simply set up a text view with the container, and let TextKit do the rest. The  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview/1618597-initwithframe"
+            },
+            {
+              "type": "text",
+              "text": " method from "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitextview"
+            },
+            {
+              "type": "text",
+              "text": " serves this purpose, and this sample uses it to create a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UITextView"
+            },
+            {
+              "type": "text",
+              "text": " instance with its circular text container."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let textContainer = CircleTextContainer(size: .zero)",
+            "textContainer.widthTracksTextView = true",
+            "",
+            "let layoutManager = NSLayoutManager()",
+            "layoutManager.addTextContainer(textContainer)",
+            "textStorage.addLayoutManager(layoutManager)",
+            "",
+            "textView = UITextView(frame: CGRect.zero, textContainer: textContainer)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694744",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With this configuration, the TextKit class that coordinates the layout and display of characters,  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager"
+            },
+            {
+              "type": "text",
+              "text": ", automatically uses the line fragment rectangles that "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CircleTextContainer"
+            },
+            {
+              "type": "text",
+              "text": " returns to lay out the text."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "NSLayoutManager"
+            },
+            {
+              "type": "text",
+              "text": " supports laying out text in multiple text containers, so implementing a two-column layout is as easy as adding a second text container to the layout manager, as the code below shows:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let firstTextContainer = NSTextContainer()",
+            "firstTextContainer.widthTracksTextView = true",
+            "firstTextContainer.heightTracksTextView = true",
+            "",
+            "let secondTextContainer = NSTextContainer()",
+            "secondTextContainer.widthTracksTextView = true",
+            "secondTextContainer.heightTracksTextView = true",
+            "secondTextContainer.lineBreakMode = .byTruncatingTail",
+            "",
+            "let layoutManager = NSLayoutManager()",
+            "layoutManager.addTextContainer(firstTextContainer)",
+            "layoutManager.addTextContainer(secondTextContainer)",
+            "",
+            "textStorage.addLayoutManager(layoutManager)",
+            "",
+            "let firstTextView = UITextView(frame: .zero, textContainer: firstTextContainer)",
+            "firstTextView.isScrollEnabled = false",
+            "view.addSubview(firstTextView)",
+            "",
+            "let secondTextView = UITextView(frame: .zero, textContainer: secondTextContainer)",
+            "secondTextView.isScrollEnabled = false",
+            "view.addSubview(secondTextView)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694745",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that after adding a second text container to the layout manager, the text views become uneditable and unselectable."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Reserve an Area in a Text Container",
+          "anchor": "3694758"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create an appealing UI, some apps may have their text wrap around a certain shape. They can achieve that by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444569-exclusionpaths"
+            },
+            {
+              "type": "text",
+              "text": " property from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSTextContainer"
+            },
+            {
+              "type": "text",
+              "text": " to reserve an exclusive area for the shape in a text container."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample uses the following code to set up an exclusive area where "
+            },
+            {
+              "type": "codeVoice",
+              "code": "translatedCirclePath"
+            },
+            {
+              "type": "text",
+              "text": " is a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uibezierpath"
+            },
+            {
+              "type": "text",
+              "text": " instance using the text container’s coordinate system."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "textView.textContainer.exclusionPaths = [translatedCirclePath]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694747",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Substitute Glyphs Without Changing the Text Storage",
+          "anchor": "3694759"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a text container doesn’t have enough space to display text, apps may need a way to indicate that the container has additional, or "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "overflow"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", text. A standard text container can use the  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nstextcontainer/1444519-linebreakmode"
+            },
+            {
+              "type": "text",
+              "text": " property from  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSTextContainer"
+            },
+            {
+              "type": "text",
+              "text": " to add an ending ellipsis that helps handle this situation, but the property doesn’t completely support custom-shaped containers like "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CircleTextContainer"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To show an overflow indicator in its circular text container, as well as to demonstrate TextKit’s capability of glyph substitutions and layout adjustment, this sample substitutes the glyphs of the container’s ending characters with an ellipsis, and makes it the container’s last visible glyph."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The ending characters are the characters of the last words with a total width that is larger than an ellipsis. The characters have to be wider so that the text container has enough space to display the ellipsis. However, because they are wider, the text container has extra space after the glyph substitution, which can drag in more characters. To avoid showing text after the ellipsis, this sample implements a second glyph substitution by selecting the character next to the container’s last word, and substituting it with a control glyph that uses the  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nscontrolcharacteraction/nscontrolcharacteractionwhitespace"
+            },
+            {
+              "type": "text",
+              "text": " action. Using this substitution, the character becomes a whitespace with a width that is flexible. With this flexible space character, the sample can fill up the extra space and push the extra characters to the next line, and then move the line out of the text container."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The detailed implementation of the glyphs substitutions and the layout adjustment is as follows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Begin the glyph substitutions by invalidating the glyphs and layout of the ending characters."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "layoutManager.invalidateGlyphs(forCharacterRange: endingWordsCharRange, changeInLength: 0,",
+            "                               actualCharacterRange: nil)",
+            "layoutManager.invalidateLayout(forCharacterRange: endingWordsCharRange,",
+            "                               actualCharacterRange: nil)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694749",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement the  "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403073-layoutmanager"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method from "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to substitute the glyphs. TextKit calls this delegate method before storing the glyphs to give apps an opportunity to change the glyphs and their properties."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let ellipsisStartIndex = ellipsisIntersection.location",
+            "for index in ellipsisStartIndex..<ellipsisStartIndex + ellipsisIntersection.length {",
+            "    if index == ellipsisGlyphRange!.location {",
+            "        finalGlyphs[index - glyphRange.location] = myGlyphs[0]",
+            "    } else {",
+            "        finalProps[index - glyphRange.location] = .controlCharacter",
+            "    }",
+            "}",
+            "let flexibleSpaceStartIndex = flexibleSpaceIntersection.location",
+            "for index in  flexibleSpaceStartIndex..<flexibleSpaceStartIndex + flexibleSpaceIntersection.length {",
+            "    finalProps[index - glyphRange.location] = .controlCharacter",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694750",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement the  "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403167-layoutmanager"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to return the  "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "NSLayoutManager.ControlCharacterAction.whitespace"
+                    },
+                    {
+                      "type": "text",
+                      "text": " action for the flexible space character."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func layoutManager(_ layoutManager: NSLayoutManager, shouldUse action: NSLayoutManager.ControlCharacterAction,",
+            "                   forControlCharacterAt charIndex: Int) -> NSLayoutManager.ControlCharacterAction {",
+            "    if let flexibleSpaceGlyphRange = self.flexibleSpaceGlyphRange,",
+            "        flexibleSpaceGlyphRange.contains(layoutManager.glyphIndexForCharacter(at: charIndex)) {",
+            "        return .whitespace",
+            "    }",
+            "    return action",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694751",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement the  "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1402922-layoutmanager"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to return a bounding box that can fill up the current line fragment rectangle."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func layoutManager(_ layoutManager: NSLayoutManager,",
+            "                   boundingBoxForControlGlyphAt glyphIndex: Int,",
+            "                   for textContainer: NSTextContainer,",
+            "                   proposedLineFragment proposedRect: CGRect,",
+            "                   glyphPosition: CGPoint,",
+            "                   characterIndex charIndex: Int) -> CGRect {",
+            "    guard let flexibleSpaceGlyphRange = self.flexibleSpaceGlyphRange,",
+            "        flexibleSpaceGlyphRange.contains(glyphIndex) else {",
+            "        return CGRect(x: glyphPosition.x, y: glyphPosition.y, width: 0, height: proposedRect.height)",
+            "    }",
+            "    let padding = textContainer.lineFragmentPadding * 2",
+            "    let width = proposedRect.width - (glyphPosition.x - proposedRect.minX) - padding",
+            "    let rect = CGRect(x: glyphPosition.x, y: glyphPosition.y, width: width, height: proposedRect.height)",
+            "    return rect",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694752",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implement the  "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate/1403122-layoutmanager"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to move the extra line out of the text container."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func layoutManager(_ layoutManager: NSLayoutManager,",
+            "                   shouldSetLineFragmentRect lineFragmentRect: UnsafeMutablePointer<CGRect>,",
+            "                   lineFragmentUsedRect: UnsafeMutablePointer<CGRect>,",
+            "                   baselineOffset: UnsafeMutablePointer<CGFloat>,",
+            "                   in textContainer: NSTextContainer,",
+            "                   forGlyphRange glyphRange: NSRange) -> Bool {",
+            "    guard let ellipsisGlyphRange = self.ellipsisGlyphRange,",
+            "        glyphRange.location > ellipsisGlyphRange.location else {",
+            "            return false",
+            "    }",
+            "    let originX = textContainer.size.width",
+            "    lineFragmentRect.pointee.origin = CGPoint(x: originX, y: lineFragmentRect.pointee.origin.y)",
+            "    return true",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3694753",
+            "title": "Listing 9"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

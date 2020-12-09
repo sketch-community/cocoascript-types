@@ -1,0 +1,1249 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Control how URL requests make use of previously cached data."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2920809,
+  "kind": "article",
+  "metadata": {
+    "title": "Accessing Cached Data",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/url_loading_system/accessing_cached_data"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/url_loading_system/accessing_cached_data"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlrequest": {
+      "title": "URLRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlrequest"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlrequest/cachepolicy": {
+      "title": "URLRequest.CachePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlrequest/cachepolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlrequest/cachepolicy"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration": {
+      "title": "NSURLSessionConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessionconfiguration"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration/1411655-requestcachepolicy": {
+      "title": "requestCachePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration/1411655-requestcachepolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessionconfiguration/1411655-requestcachepolicy"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923217": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923217",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/foundation/url_loading_system/accessing_cached_data#2923217",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cache policies and their behaviors"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy": {
+      "title": "NSURLRequestCachePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlrequestcachepolicy"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923215": {
+      "title": "Manage Caching Programmatically",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923215",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/foundation/url_loading_system/accessing_cached_data#2923215"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreloadignoringlocalcachedata": {
+      "title": "NSURLRequestReloadIgnoringLocalCacheData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreloadignoringlocalcachedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreloadignoringlocalcachedata"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreturncachedatadontload": {
+      "title": "NSURLRequestReturnCacheDataDontLoad",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreturncachedatadontload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreturncachedatadontload"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreturncachedataelseload": {
+      "title": "NSURLRequestReturnCacheDataElseLoad",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreturncachedataelseload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreturncachedataelseload"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestuseprotocolcachepolicy": {
+      "title": "NSURLRequestUseProtocolCachePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestuseprotocolcachepolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestuseprotocolcachepolicy"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration/1410148-urlcache": {
+      "title": "URLCache",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration/1410148-urlcache",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessionconfiguration/1410148-urlcache"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411477-configuration": {
+      "title": "configuration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411477-configuration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession/1411477-configuration"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1411817-cachedresponseforrequest": {
+      "title": "cachedResponseForRequest:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1411817-cachedresponseforrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1411817-cachedresponseforrequest",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cachedResponseForRequest:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse": {
+      "title": "NSCachedURLResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscachedurlresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A cached response to a URL request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1407771-currentdiskusage": {
+      "title": "currentDiskUsage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1407771-currentdiskusage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1407771-currentdiskusage"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1413505-diskcapacity": {
+      "title": "diskCapacity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1413505-diskcapacity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1413505-diskcapacity"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1408199-currentmemoryusage": {
+      "title": "currentMemoryUsage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1408199-currentmemoryusage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1408199-currentmemoryusage"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1409781-memorycapacity": {
+      "title": "memoryCapacity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1409781-memorycapacity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1409781-memorycapacity"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1415377-removecachedresponseforrequest": {
+      "title": "removeCachedResponseForRequest:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1415377-removecachedresponseforrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1415377-removecachedresponseforrequest",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeCachedResponseForRequest:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1415231-removecachedresponsessincedate": {
+      "title": "removeCachedResponsesSinceDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1415231-removecachedresponsessincedate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1415231-removecachedresponsessincedate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeCachedResponsesSinceDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1417802-removeallcachedresponses": {
+      "title": "removeAllCachedResponses",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1417802-removeallcachedresponses",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1417802-removeallcachedresponses",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAllCachedResponses"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1410340-storecachedresponse": {
+      "title": "storeCachedResponse:forRequest:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1410340-storecachedresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1410340-storecachedresponse",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "storeCachedResponse:forRequest:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate/1411612-urlsession": {
+      "title": "URLSession:dataTask:willCacheResponse:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate/1411612-urlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiondatadelegate/1411612-urlsession",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSession:dataTask:willCacheResponse:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate": {
+      "title": "NSURLSessionDataDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiondatadelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse/1412269-storagepolicy": {
+      "title": "storagePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse/1412269-storagepolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscachedurlresponse/1412269-storagepolicy"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse/1411900-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse/1411900-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscachedurlresponse/1411900-userinfo"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923270": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923270",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/url_loading_system/accessing_cached_data#2923270",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handling the urlSession(_:dataTask:willCacheResponse:completionHandler:) callback"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache": {
+      "title": "NSURLCache",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that maps URL requests to cached response objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlcache/1413377-sharedurlcache": {
+      "title": "sharedURLCache",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1413377-sharedurlcache",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlcache/1413377-sharedurlcache"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data": {
+      "title": "Accessing Cached Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/url_loading_system/accessing_cached_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Control how URL requests make use of previously cached data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse",
+        "doc://com.apple.documentation/documentation/foundation/nsurlcache"
+      ],
+      "title": "Cache Behavior",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The URL Loading System caches responses both in memory and on disk, improving performance and reducing network traffic. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache"
+            },
+            {
+              "type": "text",
+              "text": " class is used for caching responses from network resources. Your app can directly access the shared cache instance by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1413377-sharedurlcache"
+            },
+            {
+              "type": "text",
+              "text": " property of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "URLCache"
+            },
+            {
+              "type": "text",
+              "text": ". Or, you can create your own caches for different purposes, setting distinct caches on your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration"
+            },
+            {
+              "type": "text",
+              "text": " objects."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set a Cache Policy for URL Requests",
+          "anchor": "2923213"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlrequest"
+            },
+            {
+              "type": "text",
+              "text": " instance contains a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/urlrequest/cachepolicy"
+            },
+            {
+              "type": "text",
+              "text": " object to indicate if and how caching should be performed.  You can change this policy to control caching for the request."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For convenience, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration"
+            },
+            {
+              "type": "text",
+              "text": " has a property called "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration/1411655-requestcachepolicy"
+            },
+            {
+              "type": "text",
+              "text": "; all requests created from sessions that use this configuration inherit their cache policy from the configuration."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The behaviors of the various policies are described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923217"
+            },
+            {
+              "type": "text",
+              "text": ". This table shows the policies’ respective preferences for loading from cache or from the originating source, like a server or the local file system. Currently, only HTTP and HTTPS responses are cached. For FTP and file URLs, the only effect of a policy is to determine whether the request is allowed to access the originating source."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Cache policy"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Local cache"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Originating source"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreloadignoringlocalcachedata"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Ignored"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Accessed exclusively"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreturncachedatadontload"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Accessed exclusively"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Ignored"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestreturncachedataelseload"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Tried first"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Accessed only if needed"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy/nsurlrequestuseprotocolcachepolicy"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Depends on protocol"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Depends on protocol"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2923217",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Cache policies and their behaviors"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For an explanation of how "
+            },
+            {
+              "type": "codeVoice",
+              "code": "useProtocolCachePolicy"
+            },
+            {
+              "type": "text",
+              "text": " is implemented for HTTP and HTTPS, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy"
+            },
+            {
+              "type": "text",
+              "text": ".  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "useProtocolCachePolicy"
+            },
+            {
+              "type": "text",
+              "text": " is the default value for a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "URLRequest"
+            },
+            {
+              "type": "text",
+              "text": " object. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "codeVoice",
+                  "code": "usePrococolCachePolicy"
+                },
+                {
+                  "type": "text",
+                  "text": " caches HTTPS responses to disk, which may be undesirable for securing user data. You can change this behavior by manually handling caching behavior, as described in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923215"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Access the Cache Directly",
+          "anchor": "2923214"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can get or set the cache object used by a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "URLSession"
+            },
+            {
+              "type": "text",
+              "text": " object by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessionconfiguration/1410148-urlcache"
+            },
+            {
+              "type": "text",
+              "text": " property of the session’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession/1411477-configuration"
+            },
+            {
+              "type": "text",
+              "text": " object. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To look for the cached response to a given request, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1411817-cachedresponseforrequest"
+            },
+            {
+              "type": "text",
+              "text": " on the cache. If cached data exists for the request, this call returns a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse"
+            },
+            {
+              "type": "text",
+              "text": " object; otherwise, it returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can inspect resources used by the cache. The properties "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1407771-currentdiskusage"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1413505-diskcapacity"
+            },
+            {
+              "type": "text",
+              "text": " represent the file system resources used by the cache, and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1408199-currentmemoryusage"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1409781-memorycapacity"
+            },
+            {
+              "type": "text",
+              "text": " represent memory use."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can remove cached data for individual items with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1415377-removecachedresponseforrequest"
+            },
+            {
+              "type": "text",
+              "text": ". You can also clear out many cached items simultaneously with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1415231-removecachedresponsessincedate"
+            },
+            {
+              "type": "text",
+              "text": ", which removes cached items past a given date, or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1417802-removeallcachedresponses"
+            },
+            {
+              "type": "text",
+              "text": ", which wipes the entire cache."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Manage Caching Programmatically",
+          "anchor": "2923215"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can write to the cache programmatically, with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlcache/1410340-storecachedresponse"
+            },
+            {
+              "type": "text",
+              "text": " method, passing in a new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CachedURLResponse"
+            },
+            {
+              "type": "text",
+              "text": " object and a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "URLRequest"
+            },
+            {
+              "type": "text",
+              "text": " object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, you manage the caching of a response while it’s being handled by a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "URLSessionTask"
+            },
+            {
+              "type": "text",
+              "text": " object. To manage caching on a per-response basis, implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate/1411612-urlsession"
+            },
+            {
+              "type": "text",
+              "text": " method of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiondatadelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol. Note that this delegate method is called only for uploads and data tasks, and is not called for sessions with a background or ephemeral configuration."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The delegate receives two parameters: a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CachedURLResponse"
+            },
+            {
+              "type": "text",
+              "text": " object and a completion handler. Your delegate "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "must"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " call this completion handler directly, passing in one of the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The provided "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CachedURLResponse"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object, to cache the proposed response as-is"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "nil"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", to prevent caching"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A newly created "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CachedURLResponse"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object, typically based on the provided object, but with a modified "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse/1412269-storagepolicy"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nscachedurlresponse/1411900-userinfo"
+                    },
+                    {
+                      "type": "text",
+                      "text": " dictionary, as you see fit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/accessing_cached_data#2923270"
+            },
+            {
+              "type": "text",
+              "text": " shows an implementation of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "urlSession(_:dataTask:willCacheResponse:completionHandler:)"
+            },
+            {
+              "type": "text",
+              "text": ", which intercepts responses to HTTPS requests and allows the responses to be stored in the in-memory cache only."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func urlSession(_ session: URLSession, dataTask: URLSessionDataTask,",
+            "                willCacheResponse proposedResponse: CachedURLResponse,",
+            "                completionHandler: @escaping (CachedURLResponse?) -> Void) {",
+            "    if proposedResponse.response.url?.scheme == \"https\" {",
+            "        let updatedResponse = CachedURLResponse(response: proposedResponse.response,",
+            "                                                data: proposedResponse.data,",
+            "                                                userInfo: proposedResponse.userInfo,",
+            "                                                storagePolicy: .allowedInMemoryOnly)",
+            "        completionHandler(updatedResponse)",
+            "    } else {",
+            "        completionHandler(proposedResponse)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2923270",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Handling the urlSession(_:dataTask:willCacheResponse:completionHandler:) callback"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

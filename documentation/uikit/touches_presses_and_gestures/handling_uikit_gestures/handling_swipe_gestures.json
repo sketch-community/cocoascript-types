@@ -1,0 +1,595 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Detect a horizontal or vertical swipe motion on the screen, and use it to trigger navigation through your content."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2865380,
+  "kind": "article",
+  "metadata": {
+    "title": "Handling Swipe Gestures",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures": {
+      "title": "Touches, Presses, and Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures": {
+      "title": "Handling UIKit Gestures",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer": {
+      "title": "UISwipeGestureRecognizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiswipegesturerecognizer"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer": {
+      "title": "addGestureRecognizer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622496-addgesturerecognizer",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addGestureRecognizer:"
+        }
+      ]
+    },
+    "link-media-3004405": {
+      "identifier": "link-media-3004405",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures#3004405"
+    },
+    "media-3004405": {
+      "identifier": "media-3004405",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 212,
+            "height": 265
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7c21d852b9/7fa694cb-f654-4f71-a653-ea908b5bb27c.png"
+        }
+      ],
+      "alt": "A diagram demonstrating a single-finger horizontal swipe gesture",
+      "title": "Figure 1"
+    },
+    "link-2929604": {
+      "title": "Human Interface Guidelines",
+      "type": "topic",
+      "identifier": "link-2929604",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/ios/human-interface-guidelines/technologies/augmented-reality/"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures#2880037": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures#2880037",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures#2880037",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performing a task in response to a swipe"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622577-userinteractionenabled": {
+      "title": "userInteractionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622577-userinteractionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622577-userinteractionenabled"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer/1619182-numberoftouchesrequired": {
+      "title": "numberOfTouchesRequired",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer/1619182-numberoftouchesrequired",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiswipegesturerecognizer/1619182-numberoftouchesrequired"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer/1619178-direction": {
+      "title": "direction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer/1619178-direction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiswipegesturerecognizer/1619178-direction"
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures": {
+      "title": "Handling Tap Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use brief taps on the screen to implement button-like interactions with your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_long-press_gestures": {
+      "title": "Handling Long-Press Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_long-press_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_long-press_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect extended duration taps on the screen, and use them to reveal contextually relevant content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures": {
+      "title": "Handling Pan Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Trace the movement of fingers around the screen, and apply that movement to your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures": {
+      "title": "Handling Swipe Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Detect a horizontal or vertical swipe motion on the screen, and use it to trigger navigation through your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pinch_gestures": {
+      "title": "Handling Pinch Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pinch_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pinch_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Track the distance between two fingers and use that information to scale or zoom your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_rotation_gestures": {
+      "title": "Handling Rotation Gestures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_rotation_gestures",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_rotation_gestures",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Measure the relative rotation of two fingers on the screen, and use that motion to rotate your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_long-press_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pinch_gestures",
+        "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_rotation_gestures"
+      ],
+      "title": "Gestures",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A swipe gesture occurs when the user moves one or more fingers across the screen in a specific horizontal or vertical direction. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer"
+            },
+            {
+              "type": "text",
+              "text": " class to detect swipe gestures."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can attach a gesture recognizer in one of these ways:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Programmatically. Call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622496-addgesturerecognizer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method of your view."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In Interface Builder. Drag the appropriate object from the library and drop it onto your view."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3004405",
+              "metadata": {
+                "anchor": "3004405",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer"
+            },
+            {
+              "type": "text",
+              "text": " object tracks the motion of the user’s finger across the screen either horizontally or vertically. A swipe requires the user’s finger to move in a specific direction and not deviate significantly from the main direction of travel. (The direction and number of fingers required for the gesture are configurable.) Swipe gestures are discrete, so your action method is called only after the gesture ends successfully. As a result, swipes are most appropriate when you care only about the results of the gesture and not about tracking the movement of the user’s finger."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Because swipes are discrete, use them only for flicks or quick panning gestures where the resulting action is understood. Swipes are not intended for interactive gestures, such as interactive transitions. For more information about how to use gestures, see "
+                },
+                {
+                  "type": "link",
+                  "title": "Human Interface Guidelines",
+                  "destination": "https://developer.apple.com/ios/human-interface-guidelines/technologies/augmented-reality/"
+                },
+                {
+                  "type": "text",
+                  "text": " > iOS > User Interaction > Gestures"
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_swipe_gestures#2880037"
+            },
+            {
+              "type": "text",
+              "text": " shows a skeletal action method for a swipe gesture recognizer. You would use a method like this to perform a task when the gesture is recognized. Because the gesture is discrete, the gesture recognizer does not enter the began or changed states."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@IBAction func swipeHandler(_ gestureRecognizer : UISwipeGestureRecognizer) {",
+            "    if gestureRecognizer.state == .ended {",
+            "        // Perform action.",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2880037",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Performing a task in response to a swipe"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the code for your swipe gesture recognizer is not called, check to see if the following conditions are true, and make corrections as needed:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622577-userinteractionenabled"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property of the view is set to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Image views and labels set this property to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    },
+                    {
+                      "type": "text",
+                      "text": " by default."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The number of touches is equal to the value specified in the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer/1619182-numberoftouchesrequired"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The direction of the swipe matches the value in the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizer/1619178-direction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

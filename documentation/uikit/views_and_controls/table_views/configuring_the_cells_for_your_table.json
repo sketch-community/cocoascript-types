@@ -1,0 +1,1094 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Specify the appearance and content of your table’s rows by defining one or more prototype cells in your storyboard."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3108693,
+  "kind": "article",
+  "metadata": {
+    "title": "Configuring the Cells for Your Table",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "UIKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/uikit": {
+      "title": "UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit",
+      "url": "/documentation/uikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls": {
+      "title": "Views and Controls",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls",
+      "url": "/documentation/uikit/views_and_controls",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views": {
+      "title": "Table Views",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views",
+      "url": "/documentation/uikit/views_and_controls/table_views",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie": {
+      "title": "dequeueReusableCellWithIdentifier:forIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dequeueReusableCellWithIdentifier:forIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108696": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108696",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108696"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell": {
+      "title": "UITableViewCell",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The visual representation of a single row in a table view."
+        }
+      ]
+    },
+    "link-media-3148906": {
+      "identifier": "link-media-3148906",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3148906"
+    },
+    "media-3148906": {
+      "identifier": "media-3148906",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 229,
+            "height": 187
+          },
+          "url": "https://docs-assets.developer.apple.com/published/af14783ef6/52a9f4bc-5b05-4198-8821-09486e079957.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 229,
+            "height": 187
+          },
+          "url": "https://docs-assets.developer.apple.com/published/058691787a/c7697036-d465-4323-8b2f-f024d76b3916.png"
+        }
+      ],
+      "alt": "The four standard cell styles: basic, right-detail, left-detail, and title-subtitle. ",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview": {
+      "title": "tableView:cellForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdatasource/1614861-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:cellForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel": {
+      "title": "textLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623210-textlabel"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623273-detailtextlabel": {
+      "title": "detailTextLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623273-detailtextlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623273-detailtextlabel"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623270-imageview": {
+      "title": "imageView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623270-imageview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623270-imageview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108687": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108687",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108687"
+    },
+    "link-media-3148905": {
+      "identifier": "link-media-3148905",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3148905"
+    },
+    "media-3148905": {
+      "identifier": "media-3148905",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 229,
+            "height": 187
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cae5deb637/24fec7af-f62f-4888-901c-305c6fd9501e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 229,
+            "height": 187
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f304dea2ab/dfe0b869-fe12-48f0-8693-777e90df3ef3.png"
+        }
+      ],
+      "alt": "A custom cell with an image on the right side of the cell. The two labels use different fonts to distinguish the type of information they contain.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108688": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108688",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108688"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108691": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108691",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3108691"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview": {
+      "title": "UITableView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614852-rowheight": {
+      "title": "rowHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614852-rowheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614852-rowheight"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614998-tableview": {
+      "title": "tableView:heightForRowAtIndexPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614998-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614998-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:heightForRowAtIndexPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3113218": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3113218",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3113218"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623223-prepareforreuse": {
+      "title": "prepareForReuse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623223-prepareforreuse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623223-prepareforreuse",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareForReuse"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622417-alpha": {
+      "title": "alpha",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622417-alpha",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622417-alpha"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype": {
+      "title": "accessoryType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcell/1623228-accessorytype"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype": {
+      "title": "UITableViewCellAccessoryType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewcellaccessorytype"
+    },
+    "link-media-3148904": {
+      "identifier": "link-media-3148904",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table#3148904"
+    },
+    "media-3148904": {
+      "identifier": "media-3148904",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 229,
+            "height": 187
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5f05a0ea3b/eeab2323-58c8-4c6c-bf16-edfef72ade06.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 229,
+            "height": 187
+          },
+          "url": "https://docs-assets.developer.apple.com/published/19ea9d1d73/640dd078-6f0c-4b68-bb8b-c1c940a4d31e.png"
+        }
+      ],
+      "alt": "Illustration showing a table with four prototype cells.",
+      "title": "Figure 1"
+    },
+    "link-3173804": {
+      "title": "Human Interface Guidelines: Tables",
+      "type": "topic",
+      "identifier": "link-3173804",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/ios/views/tables/"
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area": {
+      "title": "Estimating the Height of a Table's Scrolling Area",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide height estimates for your table view’s headers, footers, and rows to ensure that scrolling accurately reflects the size of your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table": {
+      "title": "Configuring the Cells for Your Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the appearance and content of your table’s rows by defining one or more prototype cells in your storyboard."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells": {
+      "title": "Creating Self-Sizing Table View Cells",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections": {
+      "title": "Adding Headers and Footers to Table Sections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Differentiate groups of rows visually by adding header and footer views to your table view’s sections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview": {
+      "title": "UITableViewHeaderFooterView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewheaderfooterview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reusable view that you place at the top or bottom of a table section to display additional information for that section."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uifont/creating_self-sizing_table_view_cells",
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewcell",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview"
+      ],
+      "title": "Cells, Headers, and Footers",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/views_and_controls/table_views/estimating_the_height_of_a_table_s_scrolling_area"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Cells provide the visual representation of your table’s rows. For most tables, you provide only one or two different types of cells. Design your cells to ensure that the most important information stands out. Do that using a careful choice of views and view configurations in your cells."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You specify the appearance of cells at design time in your storyboard file. Xcode provides one prototype cell for each table, and you can add more prototype cells as needed. A prototype cell acts a template for your cell’s appearance. It includes the views you want to display and their arrangement within the content area of the cell. At runtime, the table’s data source object creates actual cells from the prototypes and configures them with your app’s data. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3148904",
+              "metadata": {
+                "anchor": "3148904",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For tips on how to design the appearance of your cells, see "
+            },
+            {
+              "type": "link",
+              "title": "Human Interface Guidelines: Tables",
+              "destination": "https://developer.apple.com/design/human-interface-guidelines/ios/views/tables/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Assign a Reuse Identifier to Each Cell",
+          "anchor": "3108690"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Reuse identifiers facilitate the creation and recycling of your table’s cells. A reuse identifier is a string that you assign to each prototype cell of your table. In your storyboard, select your prototype cell and assign a nonempty value to its identifier attribute. Each cell in a table view must have a unique reuse identifier. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you need a cell object at runtime, call the table view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie"
+            },
+            {
+              "type": "text",
+              "text": " method, passing the reuse identifier for the cell you want. The table view maintains an internal queue of already-created cells. If the queue contains a cell of the requested type, the table view returns that cell. If not, it creates a new cell using the prototype cell in your storyboard. Reusing cells improves performance by minimizing memory allocations during critical times, such as during scrolling.  "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var cell = tableView.dequeueReusableCell(withIdentifier: __\"__myCellType__\"__, for: indexPath)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3108696",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure a Cell with a Built-In Style",
+          "anchor": "3108694"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The simplest way to configure a cell is to use one of the built-in styles provided by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": ". You use these styles as is; you do not need to provide a custom subclass to manage the cell. Each style incorporates one or two labels, with the style determining the positions of the labels within the cell’s content area. Most of the styles also incorporate an image at the leading edge of the cell’s content."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To configure a prototype cell with one of the standard styles, select the cell in your storyboard and set the cell's Style property to a value other than custom."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3148906",
+              "metadata": {
+                "anchor": "3148906",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method, configure the content of your cell using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623210-textlabel"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623273-detailtextlabel"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623270-imageview"
+            },
+            {
+              "type": "text",
+              "text": " properties of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": ". Those properties contain views, but the cell object only assigns a view if the style supports the corresponding content. For example, the Basic cell style does not support a detail string, so the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623273-detailtextlabel"
+            },
+            {
+              "type": "text",
+              "text": " property is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " for that style. The following example code shows how to configure a cell that uses the basic cell style."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func tableView(_ tableView: UITableView, ",
+            "             cellForRowAt indexPath: IndexPath) -> UITableViewCell {",
+            "   // Reuse or create a cell. ",
+            "   let cell = tableView.dequeueReusableCell(withIdentifier: \"basicStyle\", for: indexPath)",
+            "",
+            "   // For a standard cell, use the UITableViewCell properties.",
+            "   cell.textLabel!.text = \"Title text\"",
+            "   cell.imageView!.image = UIImage(named: \"bunny\")",
+            "   return cell",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3108687",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure a Cell with Custom Views",
+          "anchor": "3108689"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For appearances other than the standard styles, use the custom cell style. With a custom cell, you specify the views you want in the cell, their configurations, and their sizes and positions. Static views such as labels and images make the best content for cells. Avoid views that require user interactions such as controls. Do not include scroll views, table views, collection views, or other complex container views in cells. You may include stack views in your cells, but minimize the number of items in your stack view to improve performance.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To configure a custom cell, drag views into the prototype cell for your table. The following illustration shows a cell with a custom layout and formatting for its views. You use constraints to position your views within the cell’s content area. When setting up constraints, use the \"Constrain to margins\" option to preserve the gap between the content areas of your cells. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3148905",
+              "metadata": {
+                "anchor": "3148905",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For custom cells, you need to define a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell"
+            },
+            {
+              "type": "text",
+              "text": " subclass to access your cell’s views. Add outlets to your subclass and connect those outlets to the corresponding views in your prototype cell."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class FoodCell: UITableViewCell {",
+            "    @IBOutlet var name : UILabel?",
+            "    @IBOutlet var plantDescription : UILabel?",
+            "    @IBOutlet var picture : UIImageView?",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3108688",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method of your data source, use your cell’s outlets to assign values to any views. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func tableView(_ tableView: UITableView, ",
+            "             cellForRowAt indexPath: IndexPath) -> UITableViewCell {",
+            "",
+            "   // Reuse or create a cell of the appropriate type.",
+            "   let cell = tableView.dequeueReusableCell(withIdentifier: \"foodCellType\", ",
+            "                         for: indexPath) as! FoodCell",
+            "",
+            "   // Fetch the data for the row.",
+            "   let theFood = foods[indexPath.row]",
+            "        ",
+            "   // Configure the cell’s contents with data from the fetched object.",
+            "   cell.name?.text = theFood.name",
+            "   cell.plantDescription?.text = theFood.description",
+            "   cell.picture?.image = theFood.picture",
+            "        ",
+            "   return cell",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3108691",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Change the Height of Rows",
+          "anchor": "3113219"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A table view tracks the height of rows separately from the cells that represent them. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview"
+            },
+            {
+              "type": "text",
+              "text": " provides default sizes for rows, but you can override the default height by assigning a custom value to the table view's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614852-rowheight"
+            },
+            {
+              "type": "text",
+              "text": " property. Always use this property when the height of all of  your rows is the same. Doing so is more efficient than returning the height values from your delegate object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the row heights are not all the same, or can change dynamically, provide the heights using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614998-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method of your delegate object. When you implement this method, you must provide values for every row in your table. The following example code shows how to return a custom height for the first row of each section and use the default height for all other rows. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func tableView(_ tableView: UITableView, ",
+            "           heightForRowAt indexPath: IndexPath) -> CGFloat {",
+            "   // Make the first row larger to accommodate a custom cell.",
+            "  if indexPath.row == 0 {",
+            "      return 80",
+            "   }",
+            "",
+            "   // Use the default size for all other rows.",
+            "   return UITableView.automaticDimension",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3113218",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The table view asks for the heights of visible rows only. As the user scrolls, the table view asks you to provide the height for each row as it appears, including when it moves offscreen and then back onscreen. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Restore Your Cell's Original Appearance Before Reuse",
+          "anchor": "3108692"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a cell moves offscreen, the table view removes it from its view hierarchy and places it in an internally managed recycling queue. When you request a new cell using the table view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie"
+            },
+            {
+              "type": "text",
+              "text": " method, the table view returns cells from the recycling queue first. If the queue is empty, the table view instantiates a new cell from your storyboard. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you change the appearance of your custom cell’s views, implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623223-prepareforreuse"
+            },
+            {
+              "type": "text",
+              "text": " method of your cell subclass. In your implementation, return the appearance of your cell's views to their original state. For example, if you change the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622417-alpha"
+            },
+            {
+              "type": "text",
+              "text": " property of a view in your cell, return that property to its original value. You do not need to clear label text, set images to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", or do anything that would be corrected by your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview"
+            },
+            {
+              "type": "text",
+              "text": " method when configuring the cell for display. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add an Accessory View to Your Cell",
+          "anchor": "3108695"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An accessory view is an optional, system-defined view that appears at the trailing edge of a cell. You use accessory views to communicate standard cell behaviors to users. For example, you add a detail button to let the user know that tapping the row displays more information about the row. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To configure an accessory view:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In your storyboard, use the cell's Accessory attribute to select the accessory view you want. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In your code, change the value of the cell's "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623228-accessorytype"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Users expect accessory views to have specific behaviors when tapped. For information about how to implement those behaviors, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

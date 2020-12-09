@@ -1,0 +1,772 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A mechanism for registering handler routines for specific types of Apple events and dispatching events to those handlers."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/scripting_support"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1417669,
+  "kind": "symbol",
+  "metadata": {
+    "title": "NSAppleEventManager",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:objc(cs)NSAppleEventManager",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsappleeventmanager"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/nsappleeventmanager"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/scripting_support": {
+      "title": "Scripting Support",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/scripting_support",
+      "url": "/documentation/foundation/scripting_support",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1416131-seteventhandler": {
+      "title": "setEventHandler:andSelector:forEventClass:andEventID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1416131-seteventhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1416131-seteventhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers the Apple event handler specified by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "handler"
+        },
+        {
+          "type": "text",
+          "text": " for the event specified by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "eventClass"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "eventID"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setEventHandler:andSelector:forEventClass:andEventID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413501-suspendcurrentappleevent": {
+      "title": "suspendCurrentAppleEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413501-suspendcurrentappleevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1413501-suspendcurrentappleevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Suspends the handling of the current event and returns an ID that must be used to resume the handling of the event if an Apple event is being handled on the current thread."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "suspendCurrentAppleEvent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1414690-currentappleevent": {
+      "title": "currentAppleEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1414690-currentappleevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1414690-currentappleevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the descriptor for "
+        },
+        {
+          "type": "codeVoice",
+          "code": "currentAppleEvent"
+        },
+        {
+          "type": "text",
+          "text": " if an Apple event is being handled on the current thread."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413207-currentreplyappleevent": {
+      "title": "currentReplyAppleEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413207-currentreplyappleevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1413207-currentreplyappleevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the corresponding reply event descriptor if an Apple event is being handled on the current thread."
+        }
+      ]
+    },
+    "devLink-1698189": {
+      "identifier": "devLink-1698189",
+      "type": "link",
+      "title": "How Cocoa Applications Handle Apple Events",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_handle_AEs/SAppsHandleAEs.html#//apple_ref/doc/uid/20001239"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1412900-sharedappleeventmanager": {
+      "title": "sharedAppleEventManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1412900-sharedappleeventmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1412900-sharedappleeventmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single instance of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSAppleEventManager"
+        },
+        {
+          "type": "text",
+          "text": ", creating it first if it doesn’t exist."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "sharedAppleEventManager"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager": {
+      "title": "Apple Event Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/applicationservices/apple_event_manager"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1411880-removeeventhandlerforeventclass": {
+      "title": "removeEventHandlerForEventClass:andEventID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1411880-removeeventhandlerforeventclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1411880-removeeventhandlerforeventclass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If an Apple event handler has been registered for the event specified by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "eventClass"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "eventID"
+        },
+        {
+          "type": "text",
+          "text": ", removes it."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeEventHandlerForEventClass:andEventID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1409260-dispatchrawappleevent": {
+      "title": "dispatchRawAppleEvent:withRawReply:handlerRefCon:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1409260-dispatchrawappleevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1409260-dispatchrawappleevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Causes the Apple event specified by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "theAppleEvent"
+        },
+        {
+          "type": "text",
+          "text": " to be dispatched to the appropriate Apple event handler, if one has been registered by calling "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1416131-seteventhandler"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dispatchRawAppleEvent:withRawReply:handlerRefCon:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1410477-appleeventforsuspensionid": {
+      "title": "appleEventForSuspensionID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1410477-appleeventforsuspensionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1410477-appleeventforsuspensionid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Given a nonzero "
+        },
+        {
+          "type": "codeVoice",
+          "code": "suspensionID"
+        },
+        {
+          "type": "text",
+          "text": " returned by an invocation of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413501-suspendcurrentappleevent"
+        },
+        {
+          "type": "text",
+          "text": ", returns the descriptor for the event whose handling was suspended."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "appleEventForSuspensionID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1415286-replyappleeventforsuspensionid": {
+      "title": "replyAppleEventForSuspensionID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1415286-replyappleeventforsuspensionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1415286-replyappleeventforsuspensionid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Given a nonzero "
+        },
+        {
+          "type": "codeVoice",
+          "code": "suspensionID"
+        },
+        {
+          "type": "text",
+          "text": " returned by an invocation of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413501-suspendcurrentappleevent"
+        },
+        {
+          "type": "text",
+          "text": ", returns the corresponding reply event descriptor."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "replyAppleEventForSuspensionID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1412315-resumewithsuspensionid": {
+      "title": "resumeWithSuspensionID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1412315-resumewithsuspensionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1412315-resumewithsuspensionid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Given a nonzero "
+        },
+        {
+          "type": "codeVoice",
+          "code": "suspensionID"
+        },
+        {
+          "type": "text",
+          "text": " returned by an invocation of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413501-suspendcurrentappleevent"
+        },
+        {
+          "type": "text",
+          "text": ", signal that handling of the suspended event may now continue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resumeWithSuspensionID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1415997-setcurrentappleeventandreplyeven": {
+      "title": "setCurrentAppleEventAndReplyEventWithSuspensionID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1415997-setcurrentappleeventandreplyeven",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager/1415997-setcurrentappleeventandreplyeven",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Given a nonzero "
+        },
+        {
+          "type": "codeVoice",
+          "code": "suspensionID"
+        },
+        {
+          "type": "text",
+          "text": " returned by an invocation of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413501-suspendcurrentappleevent"
+        },
+        {
+          "type": "text",
+          "text": ", sets the values that will be returned by subsequent invocations of "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1414690-currentappleevent"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413207-currentreplyappleevent"
+        },
+        {
+          "type": "text",
+          "text": " to be the event whose handling was suspended and its corresponding reply event, respectively."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setCurrentAppleEventAndReplyEventWithSuspensionID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanagersuspensionid": {
+      "title": "NSAppleEventManagerSuspensionID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanagersuspensionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanagersuspensionid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies an Apple event whose handling has been suspended. Can be used to resume handling of the Apple event."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/nsappleevent_timeouts": {
+      "title": "NSAppleEvent Timeouts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/nsappleevent_timeouts",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/nsappleeventmanager/nsappleevent_timeouts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The following constants should not be used and may eventually be removed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor": {
+      "title": "NSAppleEventDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventdescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A wrapper for the Apple event descriptor data type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager": {
+      "title": "NSAppleEventManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsappleeventmanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mechanism for registering handler routines for specific types of Apple events and dispatching events to those handlers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Getting an event manager",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1412900-sharedappleeventmanager"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with event handlers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1411880-removeeventhandlerforeventclass",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1416131-seteventhandler"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1409260-dispatchrawappleevent"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Suspending and resuming Apple events",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1410477-appleeventforsuspensionid",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1414690-currentappleevent",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413207-currentreplyappleevent",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1415286-replyappleeventforsuspensionid",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1412315-resumewithsuspensionid",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1415997-setcurrentappleeventandreplyeven",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1413501-suspendcurrentappleevent",
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanagersuspensionid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/nsappleevent_timeouts"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor"
+      ],
+      "title": "Apple Event Handling",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "NSAppleEventManager"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Cocoa provides built-in scriptability support that uses scriptability information supplied by an application to automatically convert Apple events into script command objects that perform the desired operation. However, some applications may want to perform more basic Apple event handling, in which an application registers handlers for the Apple events it can process, then calls on the Apple Event Manager to dispatch received Apple events to the appropriate handler. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSAppleEventManager"
+            },
+            {
+              "type": "text",
+              "text": " supports these mechanisms by providing methods to register and remove handlers and to dispatch Apple events to the appropriate handler, if one exists. For related information, see "
+            },
+            {
+              "type": "link",
+              "title": "How Cocoa Applications Handle Apple Events",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_handle_AEs/SAppsHandleAEs.html#//apple_ref/doc/uid/20001239"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each application has at most one instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSAppleEventManager"
+            },
+            {
+              "type": "text",
+              "text": ". To obtain a reference to it, you call the class method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1412900-sharedappleeventmanager"
+            },
+            {
+              "type": "text",
+              "text": ", which creates the instance if it doesn’t already exist."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about the Apple Event Manager, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager"
+            },
+            {
+              "type": "text",
+              "text": " and Apple Events Programming Guide."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}
