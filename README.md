@@ -18,4 +18,5 @@ $ npm i cocoascript --save-dev
 
 ## License
 
-MIT
+- Files under `lib` dir are licensed under MIT.
+- Files under `documentation` are copyrighted by Apple Inc.
