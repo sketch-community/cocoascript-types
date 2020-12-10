@@ -1,4 +1,4 @@
-# cocoscript-typings
+# cocoscript-types
 
 TypeScript definitions for CocoaScript, automatically generated from Apple's documentation.
 
