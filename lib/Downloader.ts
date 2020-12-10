@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import * as fse from 'fs-extra';
 import * as os from 'os';
-import * as mkdirp from 'mkdirp';
 import PromisePool from '@supercharge/promise-pool';
 import axios, { AxiosInstance } from 'axios';
 
@@ -55,7 +55,7 @@ export class Downloader {
             if (status === 200) {
               console.log(status, url);
               const file = url.replace(/\//, '') + '.json';
-              mkdirp.sync(path.dirname(file));
+              fse.ensureFileSync(file);
               fs.writeFileSync(file, JSON.stringify(data, null, 2));
               result.add(url);
               return data;
