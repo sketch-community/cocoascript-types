@@ -5,7 +5,7 @@ TypeScript definitions for CocoaScript, automatically generated from Apple's doc
 ## Usage
 
 ```bash
-$ npm i cocoascript --save-dev
+$ npm i cocoascript-types --save-dev
 ```
 
 ```json
