@@ -463,6 +463,20 @@ declare namespace cocoascript {
 }
 
 declare const Protocol: cocoascript.Protocol;
+declare const class_getName: cocoascript.Class;
+declare const class_getIvarLayout: cocoascript.Class;
+declare const class_getWeakIvarLayout: cocoascript.Class;
+declare const object_getClassName: cocoascript.id;
+declare const ivar_getName: cocoascript.Ivar;
+declare const ivar_getTypeEncoding: cocoascript.Ivar;
+declare const method_getTypeEncoding: cocoascript.Method;
+declare const objc_copyImageNames: number;
+declare const class_getImageName: cocoascript.Class;
+declare const objc_copyClassNamesForImage: number;
+declare const sel_getName: cocoascript.SEL;
+declare const protocol_getName: cocoascript.Protocol;
+declare const property_getName: cocoascript.objc_property_t;
+declare const property_getAttributes: cocoascript.objc_property_t;
 declare namespace cocoascript {
   /**
    * An opaque type that represents a method in a class definition.
@@ -516,10 +530,9 @@ declare namespace cocoascript {
   type BOOL = boolean;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/objectivec/objc_associationpolicy
-type objc_AssociationPolicy = cocoascript.uintptr_t;
+  // doc://com.apple.documentation/documentation/objectivec/objc_associationpolicy
+  type objc_AssociationPolicy = cocoascript.uintptr_t;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/objectivec/objc_func_loadimage
   type objc_func_loadImage = cocoascript.mach_header;
@@ -560,3 +573,11 @@ declare namespace cocoascript {
     setHash(): void;
   }
 }
+declare const NXPtrPrototype: cocoascript.NXHashTablePrototype;
+declare const NXPtrStructKeyPrototype: cocoascript.NXHashTablePrototype;
+declare const NXStrPrototype: cocoascript.NXHashTablePrototype;
+declare const NXStrStructKeyPrototype: cocoascript.NXHashTablePrototype;
+declare const name: string;
+declare const value: string;
+declare const info: void;
+declare const prototype: cocoascript.NXHashTablePrototype;

@@ -1583,10 +1583,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspasteboardcontentsoptions
-type NSPasteboardContentsOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspasteboardcontentsoptions
+  type NSPasteboardContentsOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/appkit/nspasteboardtypeowner
@@ -6062,10 +6061,9 @@ declare namespace cocoascript {
   type NSAnimationProgress = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsanimationeffect
-type NSAnimationEffect = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsanimationeffect
+  type NSAnimationEffect = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A set of methods that let you define animations to play when transitioning between two view controllers.
@@ -7544,10 +7542,9 @@ declare namespace cocoascript {
 
 declare const NSFontPanel: cocoascript.NSFontPanel;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfontpanelmodemask
-type NSFontPanelModeMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfontpanelmodemask
+  type NSFontPanelModeMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/appkit/nsfontchanging
@@ -8229,30 +8226,25 @@ declare namespace cocoascript {
 
 declare const NSPressureConfiguration: cocoascript.NSPressureConfiguration;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nseventmask
-type NSEventMask = number;
+  // doc://com.apple.documentation/documentation/appkit/nseventmask
+  type NSEventMask = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nseventbuttonmask
-type NSEventButtonMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nseventbuttonmask
+  type NSEventButtonMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nseventmodifierflags
-type NSEventModifierFlags = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nseventmodifierflags
+  type NSEventModifierFlags = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nseventphase
-type NSEventPhase = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nseventphase
+  type NSEventPhase = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions
-type NSEventSwipeTrackingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nseventswipetrackingoptions
+  type NSEventSwipeTrackingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that manages an app’s menus.
@@ -9681,15 +9673,13 @@ declare namespace cocoascript {
 
 declare const NSStepperTouchBarItem: cocoascript.NSStepperTouchBarItem;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspickertouchbaritemcontrolrepresentation
-type NSPickerTouchBarItemControlRepresentation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritemcontrolrepresentation
+  type NSPickerTouchBarItemControlRepresentation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspickertouchbaritemselectionmode
-type NSPickerTouchBarItemSelectionMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritemselectionmode
+  type NSPickerTouchBarItemSelectionMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A set of methods that a scrubber data source object implements to provide items to the scrubber from an associated data collection in your app.
@@ -10845,10 +10835,9 @@ declare namespace cocoascript {
   type NSAccessibilityAnnotationAttributeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition
-type NSAccessibilityAnnotationPosition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition
+  type NSAccessibilityAnnotationPosition = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The basic infrastructure required to interact with an accessibility client.
@@ -10986,15 +10975,13 @@ declare namespace cocoascript {
 
 declare const NSAccessibilityCustomRotorSearchParameters: cocoascript.NSAccessibilityCustomRotorSearchParameters;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotortype
-type NSAccessibilityCustomRotorType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotortype
+  type NSAccessibilityCustomRotorType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchdirection
-type NSAccessibilityCustomRotorSearchDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchdirection
+  type NSAccessibilityCustomRotorSearchDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate
@@ -11197,7 +11184,7 @@ declare namespace cocoascript {
     samplesPerPixel(): cocoascript.NSInteger;
     setSamplesPerPixel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbitmapimagerep/1395421-bitmapdata
-    bitmapData(): cocoascript.char;
+    bitmapData(): string;
     setBitmapData(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbitmapimagerep/1395490-getbitmapdataplanes
     getBitmapDataPlanes(data: cocoascript._Nullable):void;
@@ -11531,7 +11518,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbezierpath/1520750-appendbezierpathwithglyphs
     appendBezierPathWithGlyphs_count_inFont(glyphs: cocoascript.NSGlyph, count: cocoascript.NSInteger, font: cocoascript.NSFont):void;
     // doc://com.apple.documentation/documentation/appkit/nsbezierpath/1520682-appendbezierpathwithpackedglyphs
-    appendBezierPathWithPackedGlyphs(packedGlyphs: cocoascript.char):void;
+    appendBezierPathWithPackedGlyphs(packedGlyphs: string):void;
     // doc://com.apple.documentation/documentation/appkit/nsbezierpath/1520657-windingrule
     windingRule(): cocoascript.NSWindingRule;
     setWindingRule(): void;
@@ -11827,10 +11814,9 @@ declare namespace cocoascript {
 
 declare const NSOpenGLPixelFormat: cocoascript.NSOpenGLPixelFormat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsopenglglobaloption
-type NSOpenGLGlobalOption = number;
+  // doc://com.apple.documentation/documentation/appkit/nsopenglglobaloption
+  type NSOpenGLGlobalOption = number;
 }
-
 declare namespace cocoascript {
   /**
    * An object that stores color data and sometimes opacity (alpha value).
@@ -13240,10 +13226,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextinputtraittype
-type NSTextInputTraitType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextinputtraittype
+  type NSTextInputTraitType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that performs the initial, nominal glyph generation phase in the layout process.
@@ -13264,15 +13249,13 @@ declare namespace cocoascript {
 
 declare const NSGlyphGenerator: cocoascript.NSGlyphGenerator;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nslinesweepdirection
-type NSLineSweepDirection = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nslinesweepdirection
+  type NSLineSweepDirection = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nslinemovementdirection
-type NSLineMovementDirection = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nslinemovementdirection
+  type NSLineMovementDirection = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A concrete typesetter object that places glyphs during the text layout process.
@@ -13480,7 +13463,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstypesetter/1529113-substituteglyphsinrange
     substituteGlyphsInRange_withGlyphs(glyphRange: cocoascript.NSRange, glyphs: cocoascript.NSGlyph):void;
     // doc://com.apple.documentation/documentation/appkit/nstypesetter/1526102-getglyphsinrange
-    getGlyphsInRange_glyphs_characterIndexes_glyphInscriptions_elasticBits_bidiLevels(glyphsRange: cocoascript.NSRange, glyphBuffer: cocoascript.NSGlyph, charIndexBuffer: cocoascript.NSUInteger, inscribeBuffer: cocoascript.NSGlyphInscription, elasticBuffer: cocoascript.BOOL, bidiLevelBuffer: cocoascript.char):cocoascript.NSUInteger;
+    getGlyphsInRange_glyphs_characterIndexes_glyphInscriptions_elasticBits_bidiLevels(glyphsRange: cocoascript.NSRange, glyphBuffer: cocoascript.NSGlyph, charIndexBuffer: cocoascript.NSUInteger, inscribeBuffer: cocoascript.NSGlyphInscription, elasticBuffer: cocoascript.BOOL, bidiLevelBuffer: string):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/appkit/nstypesetter/1528650-insertglyph
     insertGlyph_atGlyphIndex_characterIndex(glyph: cocoascript.NSGlyph, glyphIndex: cocoascript.NSUInteger, characterIndex: cocoascript.NSUInteger):void;
     //
@@ -14111,19 +14094,17 @@ declare namespace cocoascript {
 
 declare const NSFontDescriptor: cocoascript.NSFontDescriptor;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfonttraitmask
-type NSFontTraitMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfonttraitmask
+  type NSFontTraitMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontfamilyclass
   type NSFontFamilyClass = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfontdescriptorsymbolictraits
-type NSFontDescriptorSymbolicTraits = number;
+  // doc://com.apple.documentation/documentation/appkit/nsfontdescriptorsymbolictraits
+  type NSFontDescriptorSymbolicTraits = number;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/appkit/nsfontassetrequest
@@ -14214,10 +14195,9 @@ declare namespace cocoascript {
 
 declare const NSMutableFontCollection: cocoascript.NSMutableFontCollection;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfontcollectionoptions
-type NSFontCollectionOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfontcollectionoptions
+  type NSFontCollectionOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The
@@ -14270,6 +14250,7 @@ declare namespace cocoascript {
 }
 
 declare const NSFormCell: cocoascript.NSFormCell;
+declare const NSPrintSaveJob: cocoascript.NSPrintJobDispositionValue;
 declare namespace cocoascript {
   /**
    * A user interface element that contains and displays text, scroll, and browser views, in addition to other view subclasses.
@@ -14637,15 +14618,13 @@ declare namespace cocoascript {
   type NSToolbarIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstoolbardisplaymode
-type NSToolbarDisplayMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstoolbardisplaymode
+  type NSToolbarDisplayMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstoolbarsizemode
-type NSToolbarSizeMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstoolbarsizemode
+  type NSToolbarSizeMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * Validation of a toolbar item.
@@ -14660,16 +14639,15 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstouchbaritemidentifier
   type NSTouchBarItemIdentifier = cocoascript.NSString;
 }
+declare const NSTouchBarItemIdentifierOtherItemsProxy: cocoascript.NSTouchBarItemIdentifier;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstouchtypemask
-type NSTouchTypeMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstouchtypemask
+  type NSTouchTypeMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstouchtype
-type NSTouchType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstouchtype
+  type NSTouchType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A display of a bar representing a continuous range of numerical values and a knob representing the currently selected value.
@@ -14746,6 +14724,10 @@ declare namespace cocoascript {
 }
 
 declare const NSSlider: cocoascript.NSSlider;
+declare const NSImageNameTouchBarAddTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarComposeTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarGoBackTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarGoForwardTemplate: cocoascript.NSImageName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstouchbarcustomizationidentifier
   type NSTouchBarCustomizationIdentifier = cocoascript.NSString;
@@ -14781,15 +14763,13 @@ declare namespace cocoascript {
 
 declare const NSToolbarItemGroup: cocoascript.NSToolbarItemGroup;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation
-type NSToolbarItemGroupControlRepresentation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupcontrolrepresentation
+  type NSToolbarItemGroupControlRepresentation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode
-type NSToolbarItemGroupSelectionMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroupselectionmode
+  type NSToolbarItemGroupSelectionMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/appkit/nsmenutoolbaritem
@@ -14870,55 +14850,47 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsremotenotificationtype
-type NSRemoteNotificationType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsremotenotificationtype
+  type NSRemoteNotificationType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsapplicationpresentationoptions
-type NSApplicationPresentationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsapplicationpresentationoptions
+  type NSApplicationPresentationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutdirection
-type NSUserInterfaceLayoutDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutdirection
+  type NSUserInterfaceLayoutDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsrequestuserattentiontype
-type NSRequestUserAttentionType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsrequestuserattentiontype
+  type NSRequestUserAttentionType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsapplicationdelegatereply
-type NSApplicationDelegateReply = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegatereply
+  type NSApplicationDelegateReply = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsapplicationactivationpolicy
-type NSApplicationActivationPolicy = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsapplicationactivationpolicy
+  type NSApplicationActivationPolicy = cocoascript.NSInteger;
 }
-
+declare const NSApplicationDidFinishRestoringWindowsNotification: cocoascript.NSNotificationName;
+declare const NSApplicationDidChangeOcclusionStateNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsapplicationactivationoptions
-type NSApplicationActivationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsapplicationactivationoptions
+  type NSApplicationActivationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsapplicationterminatereply
-type NSApplicationTerminateReply = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsapplicationterminatereply
+  type NSApplicationTerminateReply = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsapplicationprintreply
-type NSApplicationPrintReply = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsapplicationprintreply
+  type NSApplicationPrintReply = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsworkspaceiconcreationoptions
-type NSWorkspaceIconCreationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsworkspaceiconcreationoptions
+  type NSWorkspaceIconCreationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsworkspacedesktopimageoptionkey
   type NSWorkspaceDesktopImageOptionKey = cocoascript.NSString;
@@ -14938,10 +14910,78 @@ declare namespace cocoascript {
 
 declare const NSWorkspaceAuthorization: cocoascript.NSWorkspaceAuthorization;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsworkspaceauthorizationtype
-type NSWorkspaceAuthorizationType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsworkspaceauthorizationtype
+  type NSWorkspaceAuthorizationType = cocoascript.NSInteger;
 }
-
+declare const NSWorkspaceDidHideApplicationNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidUnhideApplicationNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidActivateApplicationNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidDeactivateApplicationNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidRenameVolumeNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidChangeFileLabelsNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceActiveSpaceDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceWillPowerOffNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceScreensDidSleepNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceScreensDidWakeNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceAccessibilityDisplayOptionsDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSAppKitVersionNumberWithColumnResizingBrowser: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumberWithContinuousScrollingBrowser: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumberWithCursorSizeSupport: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumberWithCustomSheetPosition: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumberWithDeferredWindowDisplaySupport: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumberWithDirectionalTabs: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumberWithDockTilePlugInSupport: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumberWithPatternColorLeakFix: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_0: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_1: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_10: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_10_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_10_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_10_4: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_10_5: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_10_Max: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_11: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_11_1: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_11_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_11_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_12: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_12_1: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_12_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_2_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_3_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_3_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_3_5: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_3_7: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_3_9: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_4: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_4_1: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_4_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_4_4: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_4_7: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_5: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_5_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_5_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_6: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_7: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_7_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_7_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_7_4: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_8: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_9: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_13: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_13_1: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_13_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_13_4: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_14: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_14_1: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_14_2: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_14_3: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_14_4: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_14_5: cocoascript.NSAppKitVersion;
+declare const NSAppKitVersionNumber10_15: cocoascript.NSAppKitVersion;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssharingservicename
   type NSSharingServiceName = cocoascript.NSString;
@@ -14979,10 +15019,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions
-type NSCloudKitSharingServiceOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscloudkitsharingserviceoptions
+  type NSCloudKitSharingServiceOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsserviceprovidername
   type NSServiceProviderName = cocoascript.NSString;
@@ -15000,15 +15039,13 @@ declare namespace cocoascript {
   type NSHelpManagerContextHelpKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nssaveoperationtype
-type NSSaveOperationType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nssaveoperationtype
+  type NSSaveOperationType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdocumentchangetype
-type NSDocumentChangeType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdocumentchangetype
+  type NSDocumentChangeType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardname
   type NSPasteboardName = cocoascript.NSString;
@@ -15022,15 +15059,13 @@ declare namespace cocoascript {
   type NSPasteboardReadingOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspasteboardreadingoptions
-type NSPasteboardReadingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspasteboardreadingoptions
+  type NSPasteboardReadingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspasteboardwritingoptions
-type NSPasteboardWritingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspasteboardwritingoptions
+  type NSPasteboardWritingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A set of methods that a table view uses to provide data to a table view and to allow the editing of the table view's data source object.
@@ -16072,15 +16107,13 @@ declare namespace cocoascript {
   type NSDefinitionPresentationType = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbordertype
-type NSBorderType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbordertype
+  type NSBorderType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsautoresizingmaskoptions
-type NSAutoresizingMaskOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsautoresizingmaskoptions
+  type NSAutoresizingMaskOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstooltiptag
   type NSToolTipTag = cocoascript.NSInteger;
@@ -16090,15 +16123,13 @@ declare namespace cocoascript {
   type NSTrackingRectTag = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsviewlayercontentsredrawpolicy
-type NSViewLayerContentsRedrawPolicy = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsviewlayercontentsredrawpolicy
+  type NSViewLayerContentsRedrawPolicy = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsviewlayercontentsplacement
-type NSViewLayerContentsPlacement = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsviewlayercontentsplacement
+  type NSViewLayerContentsPlacement = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsimagename
   type NSImageName = cocoascript.NSString;
@@ -16122,25 +16153,21 @@ declare namespace cocoascript {
   type NSImageHintKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimagelayoutdirection
-type NSImageLayoutDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimagelayoutdirection
+  type NSImageLayoutDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscompositingoperation
-type NSCompositingOperation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscompositingoperation
+  type NSCompositingOperation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimageresizingmode
-type NSImageResizingMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimageresizingmode
+  type NSImageResizingMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimagecachemode
-type NSImageCacheMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimagecachemode
+  type NSImageCacheMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A set of optional methods implemented by delegates of
@@ -16170,58 +16197,49 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscontrolsize
-type NSControlSize = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscontrolsize
+  type NSControlSize = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbackgroundstyle
-type NSBackgroundStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbackgroundstyle
+  type NSBackgroundStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscontrolstatevalue
   type NSControlStateValue = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscelltype
-type NSCellType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscelltype
+  type NSCellType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscellattribute
-type NSCellAttribute = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscellattribute
+  type NSCellAttribute = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscellimageposition
-type NSCellImagePosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscellimageposition
+  type NSCellImagePosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimagescaling
-type NSImageScaling = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimagescaling
+  type NSImageScaling = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscellstatevalue
   type NSCellStateValue = cocoascript.NSControlStateValue;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscellstylemask
-type NSCellStyleMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscellstylemask
+  type NSCellStyleMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscontroltint
-type NSControlTint = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscontroltint
+  type NSControlTint = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscellhitresult
-type NSCellHitResult = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscellhitresult
+  type NSCellHitResult = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A container that aligns views in a flexible grid of rows and columns.
@@ -16443,19 +16461,18 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nssplitviewdividerstyle
-type NSSplitViewDividerStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nssplitviewdividerstyle
+  type NSSplitViewDividerStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssplitviewautosavename
   type NSSplitViewAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutorientation
-type NSUserInterfaceLayoutOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutorientation
+  type NSUserInterfaceLayoutOrientation = cocoascript.NSInteger;
 }
-
+declare const NSLayoutPriorityRequired: cocoascript.NSLayoutPriority;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsstackviewvisibilitypriority
   type NSStackViewVisibilityPriority = number;
@@ -16473,15 +16490,14 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsstackviewgravity
-type NSStackViewGravity = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsstackviewgravity
+  type NSStackViewGravity = cocoascript.NSInteger;
 }
-
+declare const NSStackViewSpacingUseDefault: cocoascript.CGFloat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsstackviewdistribution
-type NSStackViewDistribution = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsstackviewdistribution
+  type NSStackViewDistribution = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The
@@ -16499,20 +16515,17 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstabviewtype
-type NSTabViewType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstabviewtype
+  type NSTabViewType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstabposition
-type NSTabPosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstabposition
+  type NSTabPosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstabviewbordertype
-type NSTabViewBorderType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstabviewbordertype
+  type NSTabViewBorderType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that controls scrolling of a document view within a scroll view or other type of container view.
@@ -17250,10 +17263,9 @@ declare namespace cocoascript {
   type NSCollectionViewCompositionalLayoutSectionProvider = cocoascript.NSCollectionLayoutEnvironment;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscollectionlayoutsectionorthogonalscrollingbehavior
-type NSCollectionLayoutSectionOrthogonalScrollingBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscollectionlayoutsectionorthogonalscrollingbehavior
+  type NSCollectionLayoutSectionOrthogonalScrollingBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A description of a single change to make to an item in a collection view.
@@ -17800,10 +17812,9 @@ declare namespace cocoascript {
 
 declare const NSTableViewRowAction: cocoascript.NSTableViewRowAction;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstablecolumnresizingoptions
-type NSTableColumnResizingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstablecolumnresizingoptions
+  type NSTableColumnResizingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/appkit/nscolorchanging
@@ -18011,25 +18022,21 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsselectiongranularity
-type NSSelectionGranularity = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsselectiongranularity
+  type NSSelectionGranularity = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsselectionaffinity
-type NSSelectionAffinity = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsselectionaffinity
+  type NSSelectionAffinity = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfindpanelaction
-type NSFindPanelAction = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfindpanelaction
+  type NSFindPanelAction = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfindpanelsubstringmatchtype
-type NSFindPanelSubstringMatchType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfindpanelsubstringmatchtype
+  type NSFindPanelSubstringMatchType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that defines the user interface of a button or other clickable region of a view.
@@ -18140,6 +18147,7 @@ declare namespace cocoascript {
 }
 
 declare const NSButtonCell: cocoascript.NSButtonCell;
+declare const NSMultiLevelAcceleratorButton: cocoascript.NSButtonType;
 declare namespace cocoascript {
   /**
    * An object that controls the behavior of a date picker, or of a single date picker cell in a matrix.
@@ -18342,15 +18350,13 @@ declare namespace cocoascript {
 
 declare const NSLevelIndicatorCell: cocoascript.NSLevelIndicatorCell;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nslevelindicatorstyle
-type NSLevelIndicatorStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nslevelindicatorstyle
+  type NSLevelIndicatorStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nslevelindicatorplaceholdervisibility
-type NSLevelIndicatorPlaceholderVisibility = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nslevelindicatorplaceholdervisibility
+  type NSLevelIndicatorPlaceholderVisibility = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A display of a file system path or virtual path information.
@@ -18656,15 +18662,13 @@ declare namespace cocoascript {
 
 declare const NSPopUpButtonCell: cocoascript.NSPopUpButtonCell;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsprogressindicatorthickness
-type NSProgressIndicatorThickness = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsprogressindicatorthickness
+  type NSProgressIndicatorThickness = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsprogressindicatorstyle
-type NSProgressIndicatorStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsprogressindicatorstyle
+  type NSProgressIndicatorStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The
@@ -18684,15 +18688,14 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsruleeditornestingmode
-type NSRuleEditorNestingMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsruleeditornestingmode
+  type NSRuleEditorNestingMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsruleeditorrowtype
-type NSRuleEditorRowType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsruleeditorrowtype
+  type NSRuleEditorRowType = cocoascript.NSUInteger;
 }
-
+declare const NSRuleEditorRowsDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A template that describes available predicates and how to display them.
@@ -19032,20 +19035,17 @@ declare namespace cocoascript {
 
 declare const NSSegmentedCell: cocoascript.NSSegmentedCell;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nssegmentswitchtracking
-type NSSegmentSwitchTracking = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nssegmentswitchtracking
+  type NSSegmentSwitchTracking = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nssegmentstyle
-type NSSegmentStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nssegmentstyle
+  type NSSegmentStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nssegmentdistribution
-type NSSegmentDistribution = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nssegmentdistribution
+  type NSSegmentDistribution = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The appearance and behavior of an
@@ -19637,65 +19637,55 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsmatrixmode
-type NSMatrixMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsmatrixmode
+  type NSMatrixMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsvisualeffectmaterial
-type NSVisualEffectMaterial = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsvisualeffectmaterial
+  type NSVisualEffectMaterial = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsvisualeffectblendingmode
-type NSVisualEffectBlendingMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsvisualeffectblendingmode
+  type NSVisualEffectBlendingMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsvisualeffectstate
-type NSVisualEffectState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsvisualeffectstate
+  type NSVisualEffectState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstitleposition
-type NSTitlePosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstitleposition
+  type NSTitlePosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsboxtype
-type NSBoxType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsboxtype
+  type NSBoxType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsviewcontrollertransitionoptions
-type NSViewControllerTransitionOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsviewcontrollertransitionoptions
+  type NSViewControllerTransitionOptions = cocoascript.NSUInteger;
 }
-
+declare const NSSplitViewControllerAutomaticDimension: cocoascript.CGFloat;
+declare const NSSplitViewItemUnspecifiedDimension: cocoascript.CGFloat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nssplitviewitembehavior
-type NSSplitViewItemBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nssplitviewitembehavior
+  type NSSplitViewItemBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nssplitviewitemcollapsebehavior
-type NSSplitViewItemCollapseBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nssplitviewitemcollapsebehavior
+  type NSSplitViewItemCollapseBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstitlebarseparatorstyle
-type NSTitlebarSeparatorStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstitlebarseparatorstyle
+  type NSTitlebarSeparatorStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstabviewcontrollertabstyle
-type NSTabViewControllerTabStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstabviewcontrollertabstyle
+  type NSTabViewControllerTabStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstabstate
-type NSTabState = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstabstate
+  type NSTabState = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The
@@ -19719,38 +19709,33 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspagecontrollertransitionstyle
-type NSPageControllerTransitionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspagecontrollertransitionstyle
+  type NSPageControllerTransitionStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsmedialibrary
-type NSMediaLibrary = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsmedialibrary
+  type NSMediaLibrary = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nslayoutpriority
   type NSLayoutPriority = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nslayoutconstraintorientation
-type NSLayoutConstraintOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nslayoutconstraintorientation
+  type NSLayoutConstraintOrientation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsappearancename
   type NSAppearanceName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsanimationcurve
-type NSAnimationCurve = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsanimationcurve
+  type NSAnimationCurve = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsanimationblockingmode
-type NSAnimationBlockingMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsanimationblockingmode
+  type NSAnimationBlockingMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsviewanimationkey
   type NSViewAnimationKey = cocoascript.NSString;
@@ -19763,6 +19748,7 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsanimatablepropertykey
   type NSAnimatablePropertyKey = cocoascript.NSString;
 }
+declare const NSWindowDidChangeBackingPropertiesNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsdevicedescriptionkey
   type NSDeviceDescriptionKey = cocoascript.NSString;
@@ -19780,89 +19766,86 @@ declare namespace cocoascript {
   type NSWindowPersistableFrameDescriptor = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowtoolbarstyle
-type NSWindowToolbarStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowtoolbarstyle
+  type NSWindowToolbarStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nswindowtabbingidentifier
   type NSWindowTabbingIdentifier = cocoascript.NSString;
 }
+declare const NSEventDurationForever: cocoascript.NSTimeInterval;
+declare const NSAvailableWindowDepths: void;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowstylemask
-type NSWindowStyleMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowstylemask
+  type NSWindowStyleMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsselectiondirection
-type NSSelectionDirection = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsselectiondirection
+  type NSSelectionDirection = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowbutton
-type NSWindowButton = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowbutton
+  type NSWindowButton = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowdepth
-type NSWindowDepth = number;
+  // doc://com.apple.documentation/documentation/appkit/nswindowdepth
+  type NSWindowDepth = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbackingstoretype
-type NSBackingStoreType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbackingstoretype
+  type NSBackingStoreType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindoworderingmode
-type NSWindowOrderingMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindoworderingmode
+  type NSWindowOrderingMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowsharingtype
-type NSWindowSharingType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowsharingtype
+  type NSWindowSharingType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindownumberlistoptions
-type NSWindowNumberListOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindownumberlistoptions
+  type NSWindowNumberListOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowanimationbehavior
-type NSWindowAnimationBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowanimationbehavior
+  type NSWindowAnimationBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowcollectionbehavior
-type NSWindowCollectionBehavior = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowcollectionbehavior
+  type NSWindowCollectionBehavior = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowocclusionstate
-type NSWindowOcclusionState = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowocclusionstate
+  type NSWindowOcclusionState = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowtitlevisibility
-type NSWindowTitleVisibility = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowtitlevisibility
+  type NSWindowTitleVisibility = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowusertabbingpreference
-type NSWindowUserTabbingPreference = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowusertabbingpreference
+  type NSWindowUserTabbingPreference = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowtabbingmode
-type NSWindowTabbingMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowtabbingmode
+  type NSWindowTabbingMode = cocoascript.NSInteger;
 }
-
+declare const NSWindowDidEndLiveResizeNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillStartLiveResizeNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillEnterFullScreenNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidEnterFullScreenNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillExitFullScreenNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidExitFullScreenNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillEnterVersionBrowserNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidEnterVersionBrowserNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillExitVersionBrowserNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidExitVersionBrowserNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidChangeOcclusionStateNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsalertstyle
-type NSAlertStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsalertstyle
+  type NSAlertStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsmodalresponse
   type NSModalResponse = cocoascript.NSInteger;
@@ -19872,43 +19855,42 @@ declare namespace cocoascript {
   type NSUserInterfaceItemIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdisplaygamut
-type NSDisplayGamut = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdisplaygamut
+  type NSDisplayGamut = cocoascript.NSInteger;
 }
-
+declare const NSScreenColorSpaceDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSPopoverWillCloseNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspopoverbehavior
-type NSPopoverBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspopoverbehavior
+  type NSPopoverBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspopoverclosereasonvalue
   type NSPopoverCloseReasonValue = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspopoverappearance
-type NSPopoverAppearance = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspopoverappearance
+  type NSPopoverAppearance = cocoascript.NSInteger;
 }
-
+declare const NSPopoverWillShowNotification: cocoascript.NSNotificationName;
+declare const NSPopoverDidShowNotification: cocoascript.NSNotificationName;
+declare const NSPopoverDidCloseNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspdfpaneloptions
-type NSPDFPanelOptions = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspdfpaneloptions
+  type NSPDFPanelOptions = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintpanelaccessorysummarykey
   type NSPrintPanelAccessorySummaryKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscolorpanelmode
-type NSColorPanelMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscolorpanelmode
+  type NSColorPanelMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscolorpaneloptions
-type NSColorPanelOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscolorpaneloptions
+  type NSColorPanelOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A set of optional methods implemented by delegates of
@@ -19937,6 +19919,7 @@ declare namespace cocoascript {
     speechRecognizer_didRecognizeCommand(sender: cocoascript.NSSpeechRecognizer, command: cocoascript.NSString):void;
   }
 }
+declare const NSVoiceGender: cocoascript.NSVoiceAttributeKey;
 declare namespace cocoascript {
   /**
    * A set of optional methods implemented by delegates of
@@ -20000,92 +19983,195 @@ declare namespace cocoascript {
   type NSVoiceAttributeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsspeechboundary
-type NSSpeechBoundary = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsspeechboundary
+  type NSSpeechBoundary = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nshapticfeedbackpattern
-type NSHapticFeedbackPattern = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nshapticfeedbackpattern
+  type NSHapticFeedbackPattern = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nshapticfeedbackperformancetime
-type NSHapticFeedbackPerformanceTime = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nshapticfeedbackperformancetime
+  type NSHapticFeedbackPerformanceTime = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nseventgestureaxis
-type NSEventGestureAxis = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nseventgestureaxis
+  type NSEventGestureAxis = cocoascript.NSInteger;
 }
-
+declare const NSTabletProximityEventSubtype: cocoascript.NSEventSubtype;
+declare const NSTabletPointEventSubtype: cocoascript.NSEventSubtype;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nseventtype
-type NSEventType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nseventtype
+  type NSEventType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nseventsubtype
-type NSEventSubtype = cocoascript.short;
+  // doc://com.apple.documentation/documentation/appkit/nseventsubtype
+  type NSEventSubtype = cocoascript.short;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspressurebehavior
-type NSPressureBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspressurebehavior
+  type NSPressureBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspointingdevicetype
-type NSPointingDeviceType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspointingdevicetype
+  type NSPointingDeviceType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstouchphase
-type NSTouchPhase = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstouchphase
+  type NSTouchPhase = cocoascript.NSUInteger;
 }
-
+declare const NSLeftMouseDownMask: cocoascript.NSEventMask;
+declare const NSLeftMouseUpMask: cocoascript.NSEventMask;
+declare const NSRightMouseDownMask: cocoascript.NSEventMask;
+declare const NSRightMouseUpMask: cocoascript.NSEventMask;
+declare const NSOtherMouseDownMask: cocoascript.NSEventMask;
+declare const NSOtherMouseUpMask: cocoascript.NSEventMask;
+declare const NSMouseMovedMask: cocoascript.NSEventMask;
+declare const NSLeftMouseDraggedMask: cocoascript.NSEventMask;
+declare const NSRightMouseDraggedMask: cocoascript.NSEventMask;
+declare const NSOtherMouseDraggedMask: cocoascript.NSEventMask;
+declare const NSMouseEnteredMask: cocoascript.NSEventMask;
+declare const NSMouseExitedMask: cocoascript.NSEventMask;
+declare const NSCursorUpdateMask: cocoascript.NSEventMask;
+declare const NSKeyDownMask: cocoascript.NSEventMask;
+declare const NSKeyUpMask: cocoascript.NSEventMask;
+declare const NSFlagsChangedMask: cocoascript.NSEventMask;
+declare const NSAppKitDefinedMask: cocoascript.NSEventMask;
+declare const NSSystemDefinedMask: cocoascript.NSEventMask;
+declare const NSApplicationDefinedMask: cocoascript.NSEventMask;
+declare const NSPeriodicMask: cocoascript.NSEventMask;
+declare const NSScrollWheelMask: cocoascript.NSEventMask;
+declare const NSTabletPointMask: cocoascript.NSEventMask;
+declare const NSTabletProximityMask: cocoascript.NSEventMask;
+declare const NSAnyEventMask: cocoascript.NSEventMask;
+declare const NSPenLowerSideMask: cocoascript.NSEventButtonMask;
+declare const NSPenTipMask: cocoascript.NSEventButtonMask;
+declare const NSPenUpperSideMask: cocoascript.NSEventButtonMask;
+declare const NSAlphaShiftKeyMask: cocoascript.NSEventModifierFlags;
+declare const NSShiftKeyMask: cocoascript.NSEventModifierFlags;
+declare const NSControlKeyMask: cocoascript.NSEventModifierFlags;
+declare const NSAlternateKeyMask: cocoascript.NSEventModifierFlags;
+declare const NSCommandKeyMask: cocoascript.NSEventModifierFlags;
+declare const NSNumericPadKeyMask: cocoascript.NSEventModifierFlags;
+declare const NSHelpKeyMask: cocoascript.NSEventModifierFlags;
+declare const NSFunctionKeyMask: cocoascript.NSEventModifierFlags;
+declare const NSDeviceIndependentModifierFlagsMask: cocoascript.NSEventModifierFlags;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsmenuproperties
-type NSMenuProperties = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsmenuproperties
+  type NSMenuProperties = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsstatusitembehavior
-type NSStatusItemBehavior = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsstatusitembehavior
+  type NSStatusItemBehavior = cocoascript.NSUInteger;
 }
-
+declare const NSSquareStatusItemLength: cocoascript.CGFloat;
+declare const NSVariableStatusItemLength: cocoascript.CGFloat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsstatusitemautosavename
   type NSStatusItemAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstrackingareaoptions
-type NSTrackingAreaOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstrackingareaoptions
+  type NSTrackingAreaOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsgesturerecognizerstate
-type NSGestureRecognizerState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsgesturerecognizerstate
+  type NSGestureRecognizerState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrubberalignment
-type NSScrubberAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrubberalignment
+  type NSScrubberAlignment = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrubbermode
-type NSScrubberMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrubbermode
+  type NSScrubberMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstoolbaritemidentifier
   type NSToolbarItemIdentifier = cocoascript.NSString;
 }
+declare const NSTouchBarItemIdentifierFixedSpaceSmall: cocoascript.NSTouchBarItemIdentifier;
+declare const NSTouchBarItemIdentifierFixedSpaceLarge: cocoascript.NSTouchBarItemIdentifier;
+declare const NSTouchBarItemIdentifierFlexibleSpace: cocoascript.NSTouchBarItemIdentifier;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstouchbaritempriority
   type NSTouchBarItemPriority = number;
 }
+declare const NSTouchBarItemPriorityLow: cocoascript.NSTouchBarItemPriority;
+declare const NSTouchBarItemPriorityHigh: cocoascript.NSTouchBarItemPriority;
+declare const NSTouchBarItemPriorityNormal: cocoascript.NSTouchBarItemPriority;
+declare const NSImageNameTouchBarAddDetailTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarAlarmTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarAudioInputMuteTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarAudioInputTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarAudioOutputMuteTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarAudioOutputVolumeHighTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarAudioOutputVolumeLowTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarAudioOutputVolumeMediumTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarAudioOutputVolumeOffTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarBookmarksTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarColorPickerFill: cocoascript.NSImageName;
+declare const NSImageNameTouchBarColorPickerFont: cocoascript.NSImageName;
+declare const NSImageNameTouchBarColorPickerStroke: cocoascript.NSImageName;
+declare const NSImageNameTouchBarCommunicationAudioTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarCommunicationVideoTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarDeleteTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarDownloadTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarEnterFullScreenTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarExitFullScreenTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarFastForwardTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarFolderTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarFolderCopyToTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarFolderMoveToTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarGetInfoTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarGoDownTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarGoUpTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarHistoryTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarIconViewTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarListViewTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarMailTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarNewFolderTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarNewMessageTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarOpenInBrowserTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarPauseTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarPlayTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarPlayPauseTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarPlayheadTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarQuickLookTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarRecordStartTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarRecordStopTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarRefreshTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarRewindTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarRotateLeftTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarRotateRightTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSearchTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarShareTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSidebarTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSkipBackTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSkipToStartTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSkipBack30SecondsTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSkipBack15SecondsTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSkipAhead15SecondsTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSkipAhead30SecondsTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSkipToEndTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSkipAheadTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarSlideshowTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTagIconTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextBoxTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextListTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextBoldTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextItalicTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextUnderlineTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextStrikethroughTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextJustifiedAlignTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextLeftAlignTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextCenterAlignTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarTextRightAlignTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarUserTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarUserAddTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarUserGroupTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarVolumeUpTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarVolumeDownTemplate: cocoascript.NSImageName;
 declare namespace cocoascript {
   /**
    * A set of methods that a candidate list item delegate uses to enable selection state and list visibility.
@@ -20107,50 +20193,44 @@ declare namespace cocoascript {
   type NSDraggingImageComponentKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdragoperation
-type NSDragOperation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdragoperation
+  type NSDragOperation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdraggingitemenumerationoptions
-type NSDraggingItemEnumerationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdraggingitemenumerationoptions
+  type NSDraggingItemEnumerationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsspringloadinghighlight
-type NSSpringLoadingHighlight = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsspringloadinghighlight
+  type NSSpringLoadingHighlight = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdraggingformation
-type NSDraggingFormation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdraggingformation
+  type NSDraggingFormation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdraggingcontext
-type NSDraggingContext = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdraggingcontext
+  type NSDraggingContext = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsspringloadingoptions
-type NSSpringLoadingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsspringloadingoptions
+  type NSSpringLoadingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirection
-type NSAccessibilitySortDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirection
+  type NSAccessibilitySortDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype
-type NSAccessibilityRulerMarkerType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertype
+  type NSAccessibilityRulerMarkerType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits
-type NSAccessibilityUnits = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsaccessibilityunits
+  type NSAccessibilityUnits = cocoascript.NSInteger;
 }
-
+declare const NSAccessibilityUIElementsKey: cocoascript.NSAccessibilityNotificationUserInfoKey;
+declare const NSAccessibilityAnnouncementKey: cocoascript.NSAccessibilityNotificationUserInfoKey;
+declare const NSAccessibilityPriorityKey: cocoascript.NSAccessibilityNotificationUserInfoKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationname
   type NSAccessibilityNotificationName = cocoascript.NSString;
@@ -20160,48 +20240,291 @@ declare namespace cocoascript {
   type NSAccessibilityNotificationUserInfoKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel
-type NSAccessibilityPriorityLevel = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel
+  type NSAccessibilityPriorityLevel = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientation
-type NSAccessibilityOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientation
+  type NSAccessibilityOrientation = cocoascript.NSInteger;
 }
-
+declare const NSAccessibilityAnnotationElement: cocoascript.NSAccessibilityAnnotationAttributeKey;
+declare const NSAccessibilityAnnotationLabel: cocoascript.NSAccessibilityAnnotationAttributeKey;
+declare const NSAccessibilityAnnotationLocation: cocoascript.NSAccessibilityAnnotationAttributeKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityactionname
   type NSAccessibilityActionName = cocoascript.NSString;
 }
+declare const NSAccessibilityHorizontalOrientationValue: cocoascript.NSAccessibilityOrientationValue;
+declare const NSAccessibilityVerticalOrientationValue: cocoascript.NSAccessibilityOrientationValue;
+declare const NSAccessibilityActivationPointAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityAllowedValuesAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityAlternateUIVisibleAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityCancelButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityChildrenAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityClearButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityCloseButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityColumnCountAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityColumnHeaderUIElementsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityColumnIndexRangeAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityColumnTitlesAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityColumnsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityContainsProtectedContentAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityContentsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityCriticalValueAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityDecrementButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityDefaultButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityDescriptionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityDisclosedByRowAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityDisclosedRowsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityDisclosingAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityDisclosureLevelAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityDocumentAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityEditedAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityEnabledAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityExpandedAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityExtrasMenuBarAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityFilenameAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityFocusedAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityFocusedUIElementAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityFocusedWindowAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityFrontmostAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityFullScreenButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityGrowAreaAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityHandlesAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityHeaderAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityHelpAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityHiddenAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityHorizontalScrollBarAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityHorizontalUnitDescriptionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityHorizontalUnitsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityIdentifierAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityIncrementButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityIndexAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityInsertionPointLineNumberAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityLabelUIElementsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityLabelValueAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityLinkedUIElementsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMainAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMainWindowAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMarkerGroupUIElementAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMarkerTypeAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMarkerTypeDescriptionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMarkerUIElementsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMarkerValuesAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMatteContentUIElementAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMatteHoleAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMaxValueAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMenuBarAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMinValueAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMinimizeButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityMinimizedAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityModalAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityNextContentsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityNumberOfCharactersAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityOrderedByRowAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityOrientationAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityOverflowButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityParentAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityPlaceholderValueAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityPositionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityPreviousContentsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityProxyAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityRequiredAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityRoleAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityRoleDescriptionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityRowCountAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityRowHeaderUIElementsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityRowIndexRangeAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityRowsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySearchButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySearchMenuAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySelectedAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySelectedCellsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySelectedChildrenAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySelectedColumnsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySelectedRowsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySelectedTextAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySelectedTextRangeAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySelectedTextRangesAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityServesAsTitleForUIElementsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySharedCharacterRangeAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySharedFocusElementsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySharedTextUIElementsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityShownMenuAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySizeAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySortDirectionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySplittersAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilitySubroleAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityTabsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityTitleAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityTitleUIElementAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityToolbarButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityTopLevelUIElementAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityUnitDescriptionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityUnitsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityURLAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityValueAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityValueDescriptionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityVerticalScrollBarAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityVerticalUnitDescriptionAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityVerticalUnitsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityVisibleCellsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityVisibleCharacterRangeAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityVisibleChildrenAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityVisibleColumnsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityVisibleRowsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityWarningValueAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityWindowAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityWindowsAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityZoomButtonAttribute: cocoascript.NSAccessibilityAttributeName;
+declare const NSAccessibilityFontFamilyKey: cocoascript.NSAccessibilityFontAttributeKey;
+declare const NSAccessibilityFontNameKey: cocoascript.NSAccessibilityFontAttributeKey;
+declare const NSAccessibilityFontSizeKey: cocoascript.NSAccessibilityFontAttributeKey;
+declare const NSAccessibilityVisibleNameKey: cocoascript.NSAccessibilityFontAttributeKey;
+declare const NSAccessibilityUnknownOrientationValue: cocoascript.NSAccessibilityOrientationValue;
+declare const NSAccessibilityAttributedStringForRangeParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityBoundsForRangeParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityCellForColumnAndRowParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityLayoutPointForScreenPointParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityLayoutSizeForScreenSizeParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityLineForIndexParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityRangeForIndexParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityRangeForLineParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityRangeForPositionParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityRTFForRangeParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityScreenPointForLayoutPointParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityScreenSizeForLayoutSizeParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityStringForRangeParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityStyleRangeForIndexParameterizedAttribute: cocoascript.NSAccessibilityParameterizedAttributeName;
+declare const NSAccessibilityApplicationRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityBrowserRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityBusyIndicatorRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityButtonRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityCellRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityCheckBoxRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityColorWellRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityColumnRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityComboBoxRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityDisclosureTriangleRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityDrawerRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityGridRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityGroupRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityGrowAreaRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityHandleRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityHelpTagRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityImageRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityIncrementorRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityLayoutAreaRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityLayoutItemRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityLevelIndicatorRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityLinkRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityListRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityMatteRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityMenuRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityMenuBarRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityMenuBarItemRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityMenuButtonRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityMenuItemRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityOutlineRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityPageRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityPopUpButtonRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityPopoverRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityProgressIndicatorRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityRadioButtonRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityRadioGroupRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityRelevanceIndicatorRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityRowRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityRulerRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityRulerMarkerRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityScrollAreaRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityScrollBarRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilitySheetRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilitySliderRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilitySplitGroupRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilitySplitterRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityStaticTextRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilitySystemWideRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityTabGroupRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityTableRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityTextAreaRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityTextFieldRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityToolbarRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityUnknownRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityValueIndicatorRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityWindowRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityCloseButtonSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityCollectionListSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityContentListSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityDecrementArrowSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityDecrementPageSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityDefinitionListSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityDescriptionListSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityDialogSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityFloatingWindowSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityFullScreenButtonSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityIncrementArrowSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityIncrementPageSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityMinimizeButtonSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityOutlineRowSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityRatingIndicatorSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilitySearchFieldSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilitySectionListSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilitySecureTextFieldSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilitySortButtonSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityStandardWindowSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilitySwitchSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilitySystemDialogSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilitySystemFloatingWindowSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityTabButtonSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityTableRowSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityTextAttachmentSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityTextLinkSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityTimelineSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityToggleSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityToolbarButtonSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityUnknownSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityZoomButtonSubrole: cocoascript.NSAccessibilitySubrole;
+declare const NSAccessibilityCenterTabStopMarkerTypeValue: cocoascript.NSAccessibilityRulerMarkerTypeValue;
+declare const NSAccessibilityDecimalTabStopMarkerTypeValue: cocoascript.NSAccessibilityRulerMarkerTypeValue;
+declare const NSAccessibilityFirstLineIndentMarkerTypeValue: cocoascript.NSAccessibilityRulerMarkerTypeValue;
+declare const NSAccessibilityHeadIndentMarkerTypeValue: cocoascript.NSAccessibilityRulerMarkerTypeValue;
+declare const NSAccessibilityLeftTabStopMarkerTypeValue: cocoascript.NSAccessibilityRulerMarkerTypeValue;
+declare const NSAccessibilityRightTabStopMarkerTypeValue: cocoascript.NSAccessibilityRulerMarkerTypeValue;
+declare const NSAccessibilityTailIndentMarkerTypeValue: cocoascript.NSAccessibilityRulerMarkerTypeValue;
+declare const NSAccessibilityUnknownMarkerTypeValue: cocoascript.NSAccessibilityRulerMarkerTypeValue;
+declare const NSAccessibilityCentimetersUnitValue: cocoascript.NSAccessibilityRulerUnitValue;
+declare const NSAccessibilityInchesUnitValue: cocoascript.NSAccessibilityRulerUnitValue;
+declare const NSAccessibilityPicasUnitValue: cocoascript.NSAccessibilityRulerUnitValue;
+declare const NSAccessibilityPointsUnitValue: cocoascript.NSAccessibilityRulerUnitValue;
+declare const NSAccessibilityUnknownUnitValue: cocoascript.NSAccessibilityRulerUnitValue;
+declare const NSAccessibilityAscendingSortDirectionValue: cocoascript.NSAccessibilitySortDirectionValue;
+declare const NSAccessibilityDescendingSortDirectionValue: cocoascript.NSAccessibilitySortDirectionValue;
+declare const NSAccessibilityUnknownSortDirectionValue: cocoascript.NSAccessibilitySortDirectionValue;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimageloadstatus
-type NSImageLoadStatus = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimageloadstatus
+  type NSImageLoadStatus = cocoascript.NSUInteger;
 }
-
+declare const NSAlphaNonpremultipliedBitmapFormat: cocoascript.NSBitmapFormat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbitmapformat
-type NSBitmapFormat = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbitmapformat
+  type NSBitmapFormat = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstiffcompression
-type NSTIFFCompression = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstiffcompression
+  type NSTIFFCompression = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbitmapimagereppropertykey
   type NSBitmapImageRepPropertyKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimagereploadstatus
-type NSImageRepLoadStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimagereploadstatus
+  type NSImageRepLoadStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbitmapimagefiletype
-type NSBitmapImageFileType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbitmapimagefiletype
+  type NSBitmapImageFileType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsgraphicscontextattributekey
   type NSGraphicsContextAttributeKey = cocoascript.NSString;
@@ -20211,91 +20534,81 @@ declare namespace cocoascript {
   type NSGraphicsContextRepresentationFormatName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimageinterpolation
-type NSImageInterpolation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimageinterpolation
+  type NSImageInterpolation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscolorrenderingintent
-type NSColorRenderingIntent = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscolorrenderingintent
+  type NSColorRenderingIntent = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbezierpathelement
-type NSBezierPathElement = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbezierpathelement
+  type NSBezierPathElement = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nslinejoinstyle
-type NSLineJoinStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nslinejoinstyle
+  type NSLineJoinStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nslinecapstyle
-type NSLineCapStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nslinecapstyle
+  type NSLineCapStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindingrule
-type NSWindingRule = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindingrule
+  type NSWindingRule = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfocusringplacement
-type NSFocusRingPlacement = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfocusringplacement
+  type NSFocusRingPlacement = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfocusringtype
-type NSFocusRingType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfocusringtype
+  type NSFocusRingType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsgradientdrawingoptions
-type NSGradientDrawingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsgradientdrawingoptions
+  type NSGradientDrawingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsopenglcontextparameter
-type NSOpenGLContextParameter = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsopenglcontextparameter
+  type NSOpenGLContextParameter = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsopenglpixelformatattribute
   type NSOpenGLPixelFormatAttribute = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscolorsystemeffect
-type NSColorSystemEffect = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscolorsystemeffect
+  type NSColorSystemEffect = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscolortype
-type NSColorType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscolortype
+  type NSColorType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscolorspacename
   type NSColorSpaceName = cocoascript.NSString;
 }
+declare const NSWhite: cocoascript.CGFloat;
+declare const NSLightGray: cocoascript.CGFloat;
+declare const NSDarkGray: cocoascript.CGFloat;
+declare const NSBlack: cocoascript.CGFloat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscolorlistname
   type NSColorListName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscolorspacemodel
-type NSColorSpaceModel = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscolorspacemodel
+  type NSColorSpaceModel = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintpaneljobstylehint
   type NSPrintPanelJobStyleHint = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsprintpaneloptions
-type NSPrintPanelOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsprintpaneloptions
+  type NSPrintPanelOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintertypename
   type NSPrinterTypeName = cocoascript.NSString;
@@ -20305,20 +20618,17 @@ declare namespace cocoascript {
   type NSPrinterPaperName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsprintertablestatus
-type NSPrinterTableStatus = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsprintertablestatus
+  type NSPrinterTableStatus = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspaperorientation
-type NSPaperOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspaperorientation
+  type NSPaperOrientation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsprintingpaginationmode
-type NSPrintingPaginationMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsprintingpaginationmode
+  type NSPrintingPaginationMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintjobdispositionvalue
   type NSPrintJobDispositionValue = cocoascript.NSString;
@@ -20332,54 +20642,52 @@ declare namespace cocoascript {
   type NSPrintInfoAttributeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsprintingorientation
-type NSPrintingOrientation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsprintingorientation
+  type NSPrintingOrientation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsprintrenderingquality
-type NSPrintRenderingQuality = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsprintrenderingquality
+  type NSPrintRenderingQuality = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsprintingpageorder
-type NSPrintingPageOrder = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsprintingpageorder
+  type NSPrintingPageOrder = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextcheckingoptionkey
   type NSTextCheckingOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscorrectionindicatortype
-type NSCorrectionIndicatorType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscorrectionindicatortype
+  type NSCorrectionIndicatorType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscorrectionresponse
-type NSCorrectionResponse = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscorrectionresponse
+  type NSCorrectionResponse = cocoascript.NSInteger;
 }
-
+declare const NSSpellCheckerDidChangeAutomaticSpellingCorrectionNotification: cocoascript.NSNotificationName;
+declare const NSSpellCheckerDidChangeAutomaticTextReplacementNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle
-type NSTextFieldBezelStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextfieldbezelstyle
+  type NSTextFieldBezelStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrollelasticity
-type NSScrollElasticity = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrollelasticity
+  type NSScrollElasticity = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrollviewfindbarposition
-type NSScrollViewFindBarPosition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrollviewfindbarposition
+  type NSScrollViewFindBarPosition = cocoascript.NSInteger;
 }
-
+declare const NSScrollViewWillStartLiveMagnifyNotification: cocoascript.NSNotificationName;
+declare const NSScrollViewDidEndLiveMagnifyNotification: cocoascript.NSNotificationName;
+declare const NSScrollViewWillStartLiveScrollNotification: cocoascript.NSNotificationName;
+declare const NSScrollViewDidLiveScrollNotification: cocoascript.NSNotificationName;
+declare const NSScrollViewDidEndLiveScrollNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextmovement
-type NSTextMovement = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextmovement
+  type NSTextMovement = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A protocol that a search field delegate can use to determine when a search started or ended.
@@ -20397,73 +20705,61 @@ declare namespace cocoascript {
   type NSTextStorageEditedOptions = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstypesetterbehavior
-type NSTypesetterBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstypesetterbehavior
+  type NSTypesetterBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsspellingstate
-type NSSpellingState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsspellingstate
+  type NSSpellingState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstypesettercontrolcharacteraction
-type NSTypesetterControlCharacterAction = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstypesettercontrolcharacteraction
+  type NSTypesetterControlCharacterAction = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextblockdimension
-type NSTextBlockDimension = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextblockdimension
+  type NSTextBlockDimension = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextblockvaluetype
-type NSTextBlockValueType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextblockvaluetype
+  type NSTextBlockValueType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextblocklayer
-type NSTextBlockLayer = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextblocklayer
+  type NSTextBlockLayer = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextblockverticalalignment
-type NSTextBlockVerticalAlignment = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextblockverticalalignment
+  type NSTextBlockVerticalAlignment = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstexttabtype
-type NSTextTabType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstexttabtype
+  type NSTextTabType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstexttablelayoutalgorithm
-type NSTextTableLayoutAlgorithm = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstexttablelayoutalgorithm
+  type NSTextTableLayoutAlgorithm = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextlistmarkerformat
   type NSTextListMarkerFormat = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextlistoptions
-type NSTextListOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextlistoptions
+  type NSTextListOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextcontenttype
   type NSTextContentType = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscharactercollection
-type NSCharacterCollection = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscharactercollection
+  type NSCharacterCollection = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking
-type NSMultibyteGlyphPacking = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsmultibyteglyphpacking
+  type NSMultibyteGlyphPacking = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextinputsourceidentifier
   type NSTextInputSourceIdentifier = cocoascript.NSString;
@@ -20481,10 +20777,9 @@ declare namespace cocoascript {
   type NSFontTextStyleOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfontaction
-type NSFontAction = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfontaction
+  type NSFontAction = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontdescriptorsystemdesign
   type NSFontDescriptorSystemDesign = cocoascript.NSString;
@@ -20506,19 +20801,19 @@ declare namespace cocoascript {
   type NSFontDescriptorTraitKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfontassetrequestoptions
-type NSFontAssetRequestOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfontassetrequestoptions
+  type NSFontAssetRequestOptions = cocoascript.NSUInteger;
 }
-
+declare const NSFontCollectionDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSFontCollectionActionKey: cocoascript.NSFontCollectionUserInfoKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontcollectionname
   type NSFontCollectionName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfontcollectionvisibility
-type NSFontCollectionVisibility = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfontcollectionvisibility
+  type NSFontCollectionVisibility = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontcollectionmatchingoptionkey
   type NSFontCollectionMatchingOptionKey = cocoascript.NSString;
@@ -20531,6 +20826,8 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontcollectionactiontypekey
   type NSFontCollectionActionTypeKey = cocoascript.NSString;
 }
+declare const NSModalResponseStop: cocoascript.NSModalResponse;
+declare const NSModalResponseAbort: cocoascript.NSModalResponse;
 declare namespace cocoascript {
   /**
    * Variables of type
@@ -20539,35 +20836,52 @@ declare namespace cocoascript {
   interface NSModalSession {
   }
 }
+declare const NSPrintSpoolJob: cocoascript.NSPrintJobDispositionValue;
+declare const NSPrintPreviewJob: cocoascript.NSPrintJobDispositionValue;
+declare const NSPrintCancelJob: cocoascript.NSPrintJobDispositionValue;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdrawerstate
-type NSDrawerState = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdrawerstate
+  type NSDrawerState = cocoascript.NSUInteger;
 }
-
+declare const NSPasteboardTypeFindPanelSearchOptions: cocoascript.NSPasteboardType;
+declare const NSPrintJobSavingURL: cocoascript.NSPrintInfoAttributeKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstoolbaritemvisibilitypriority
   type NSToolbarItemVisibilityPriority = cocoascript.NSInteger;
 }
+declare const NSLeftMouseDragged: cocoascript.NSEventType;
+declare const NSRightMouseDragged: cocoascript.NSEventType;
+declare const NSOtherMouseDragged: cocoascript.NSEventType;
+declare const NSMouseEntered: cocoascript.NSEventType;
+declare const NSMouseExited: cocoascript.NSEventType;
+declare const NSScrollWheel: cocoascript.NSEventType;
+declare const NSCursorUpdate: cocoascript.NSEventType;
+declare const NSKeyDown: cocoascript.NSEventType;
+declare const NSKeyUp: cocoascript.NSEventType;
+declare const NSFlagsChanged: cocoascript.NSEventType;
+declare const NSTouchBarItemIdentifierCandidateList: cocoascript.NSTouchBarItemIdentifier;
+declare const NSTouchBarItemIdentifierCharacterPicker: cocoascript.NSTouchBarItemIdentifier;
+declare const NSTouchBarItemIdentifierTextFormat: cocoascript.NSTouchBarItemIdentifier;
+declare const NSTouchBarItemIdentifierTextAlignment: cocoascript.NSTouchBarItemIdentifier;
+declare const NSTouchBarItemIdentifierTextColorPicker: cocoascript.NSTouchBarItemIdentifier;
+declare const NSTouchBarItemIdentifierTextList: cocoascript.NSTouchBarItemIdentifier;
+declare const NSTouchBarItemIdentifierTextStyle: cocoascript.NSTouchBarItemIdentifier;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsslidertype
-type NSSliderType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsslidertype
+  type NSSliderType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstickmarkposition
-type NSTickMarkPosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstickmarkposition
+  type NSTickMarkPosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowlistoptions
-type NSWindowListOptions = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowlistoptions
+  type NSWindowListOptions = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsapplicationocclusionstate
-type NSApplicationOcclusionState = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsapplicationocclusionstate
+  type NSApplicationOcclusionState = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaboutpaneloptionkey
   type NSAboutPanelOptionKey = cocoascript.NSString;
@@ -20583,11 +20897,13 @@ declare namespace cocoascript {
     collectionView_prefetchItemsAtIndexPaths(collectionView: cocoascript.NSCollectionView, indexPaths: cocoascript.NSIndexPath):void;
   }
 }
+declare const NSWorkspaceDesktopImageScalingKey: cocoascript.NSWorkspaceDesktopImageOptionKey;
+declare const NSWorkspaceDesktopImageAllowClippingKey: cocoascript.NSWorkspaceDesktopImageOptionKey;
+declare const NSWorkspaceDesktopImageFillColorKey: cocoascript.NSWorkspaceDesktopImageOptionKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsworkspacelaunchoptions
-type NSWorkspaceLaunchOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsworkspacelaunchoptions
+  type NSWorkspaceLaunchOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsworkspacelaunchconfigurationkey
   type NSWorkspaceLaunchConfigurationKey = cocoascript.NSString;
@@ -20625,11 +20941,46 @@ declare namespace cocoascript {
 }
 
 declare const NSTintConfiguration: cocoascript.NSTintConfiguration;
+declare const NSSharingServiceNameAddToAperture: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameAddToIPhoto: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameAddToSafariReadingList: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameCloudSharing: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameComposeEmail: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameComposeMessage: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostImageOnFlickr: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostOnFacebook: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostOnLinkedIn: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostOnSinaWeibo: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostOnTencentWeibo: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostOnTwitter: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostVideoOnTudou: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostVideoOnVimeo: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNamePostVideoOnYouku: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameSendViaAirDrop: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameUseAsDesktopPicture: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameUseAsFacebookProfileImage: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameUseAsLinkedInProfileImage: cocoascript.NSSharingServiceName;
+declare const NSSharingServiceNameUseAsTwitterProfileImage: cocoascript.NSSharingServiceName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nssharingcontentscope
-type NSSharingContentScope = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nssharingcontentscope
+  type NSSharingContentScope = cocoascript.NSInteger;
 }
-
+declare const NSPasteboardTypeURL: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeColor: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeFileURL: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeFont: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeHTML: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeMultipleTextSelection: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypePDF: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypePNG: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeRTF: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeRTFD: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeRuler: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeSound: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeString: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeTabularText: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeTextFinderOptions: cocoascript.NSPasteboardType;
+declare const NSPasteboardTypeTIFF: cocoascript.NSPasteboardType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardtypefindpanelsearchoptionkey
   type NSPasteboardTypeFindPanelSearchOptionKey = cocoascript.NSString;
@@ -20638,137 +20989,243 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardtypetextfinderoptionkey
   type NSPasteboardTypeTextFinderOptionKey = cocoascript.NSString;
 }
+declare const NSPasteboardURLReadingContentsConformToTypesKey: cocoascript.NSPasteboardReadingOptionKey;
+declare const NSPasteboardURLReadingFileURLsOnlyKey: cocoascript.NSPasteboardReadingOptionKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewdropoperation
-type NSTableViewDropOperation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewdropoperation
+  type NSTableViewDropOperation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewstyle
-type NSTableViewStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewstyle
+  type NSTableViewStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstableviewautosavename
   type NSTableViewAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewdraggingdestinationfeedbackstyle
-type NSTableViewDraggingDestinationFeedbackStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewdraggingdestinationfeedbackstyle
+  type NSTableViewDraggingDestinationFeedbackStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewgridlinestyle
-type NSTableViewGridLineStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewgridlinestyle
+  type NSTableViewGridLineStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewcolumnautoresizingstyle
-type NSTableViewColumnAutoresizingStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewcolumnautoresizingstyle
+  type NSTableViewColumnAutoresizingStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewselectionhighlightstyle
-type NSTableViewSelectionHighlightStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewselectionhighlightstyle
+  type NSTableViewSelectionHighlightStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewanimationoptions
-type NSTableViewAnimationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewanimationoptions
+  type NSTableViewAnimationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewrowsizestyle
-type NSTableViewRowSizeStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewrowsizestyle
+  type NSTableViewRowSizeStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstablerowactionedge
-type NSTableRowActionEdge = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstablerowactionedge
+  type NSTableRowActionEdge = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscollectionviewsupplementaryelementkind
   type NSCollectionViewSupplementaryElementKind = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscollectionviewdropoperation
-type NSCollectionViewDropOperation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscollectionviewdropoperation
+  type NSCollectionViewDropOperation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscollectionviewscrollposition
-type NSCollectionViewScrollPosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscollectionviewscrollposition
+  type NSCollectionViewScrollPosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbrowsercolumnsautosavename
   type NSBrowserColumnsAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbrowsercolumnresizingtype
-type NSBrowserColumnResizingType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbrowsercolumnresizingtype
+  type NSBrowserColumnResizingType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbrowserdropoperation
-type NSBrowserDropOperation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbrowserdropoperation
+  type NSBrowserDropOperation = cocoascript.NSUInteger;
 }
-
+declare const NSFullScreenModeApplicationPresentationOptions: cocoascript.NSViewFullScreenModeOptionKey;
+declare const NSTabletPoint: cocoascript.NSEventType;
+declare const NSTabletProximity: cocoascript.NSEventType;
+declare const NSViewNoInstrinsicMetric: cocoascript.CGFloat;
+declare const NSFullScreenModeAllScreens: cocoascript.NSViewFullScreenModeOptionKey;
+declare const NSFullScreenModeSetting: cocoascript.NSViewFullScreenModeOptionKey;
+declare const NSFullScreenModeWindowLevel: cocoascript.NSViewFullScreenModeOptionKey;
+declare const NSDefinitionPresentationTypeKey: cocoascript.NSDefinitionOptionKey;
+declare const NSDefinitionPresentationTypeDictionaryApplication: cocoascript.NSDefinitionPresentationType;
+declare const NSDefinitionPresentationTypeOverlay: cocoascript.NSDefinitionPresentationType;
+declare const NSImageNameApplicationIcon: cocoascript.NSImageName;
+declare const NSImageNameActionTemplate: cocoascript.NSImageName;
+declare const NSImageNameAddTemplate: cocoascript.NSImageName;
+declare const NSImageNameAdvanced: cocoascript.NSImageName;
+declare const NSImageNameBluetoothTemplate: cocoascript.NSImageName;
+declare const NSImageNameBonjour: cocoascript.NSImageName;
+declare const NSImageNameBookmarksTemplate: cocoascript.NSImageName;
+declare const NSImageNameCaution: cocoascript.NSImageName;
+declare const NSImageNameColorPanel: cocoascript.NSImageName;
+declare const NSImageNameColumnViewTemplate: cocoascript.NSImageName;
+declare const NSImageNameComputer: cocoascript.NSImageName;
+declare const NSImageNameDotMac: cocoascript.NSImageName;
+declare const NSImageNameEnterFullScreenTemplate: cocoascript.NSImageName;
+declare const NSImageNameEveryone: cocoascript.NSImageName;
+declare const NSImageNameExitFullScreenTemplate: cocoascript.NSImageName;
+declare const NSImageNameFlowViewTemplate: cocoascript.NSImageName;
+declare const NSImageNameFolder: cocoascript.NSImageName;
+declare const NSImageNameFolderBurnable: cocoascript.NSImageName;
+declare const NSImageNameFolderSmart: cocoascript.NSImageName;
+declare const NSImageNameFollowLinkFreestandingTemplate: cocoascript.NSImageName;
+declare const NSImageNameFontPanel: cocoascript.NSImageName;
+declare const NSImageNameGoBackTemplate: cocoascript.NSImageName;
+declare const NSImageNameGoForwardTemplate: cocoascript.NSImageName;
+declare const NSImageNameGoLeftTemplate: cocoascript.NSImageName;
+declare const NSImageNameGoRightTemplate: cocoascript.NSImageName;
+declare const NSImageNameHomeTemplate: cocoascript.NSImageName;
+declare const NSImageNameIChatTheaterTemplate: cocoascript.NSImageName;
+declare const NSImageNameIconViewTemplate: cocoascript.NSImageName;
+declare const NSImageNameInfo: cocoascript.NSImageName;
+declare const NSImageNameInvalidDataFreestandingTemplate: cocoascript.NSImageName;
+declare const NSImageNameLeftFacingTriangleTemplate: cocoascript.NSImageName;
+declare const NSImageNameListViewTemplate: cocoascript.NSImageName;
+declare const NSImageNameLockLockedTemplate: cocoascript.NSImageName;
+declare const NSImageNameLockUnlockedTemplate: cocoascript.NSImageName;
+declare const NSImageNameMenuMixedStateTemplate: cocoascript.NSImageName;
+declare const NSImageNameMenuOnStateTemplate: cocoascript.NSImageName;
+declare const NSImageNameMobileMe: cocoascript.NSImageName;
+declare const NSImageNameMultipleDocuments: cocoascript.NSImageName;
+declare const NSImageNameNetwork: cocoascript.NSImageName;
+declare const NSImageNamePathTemplate: cocoascript.NSImageName;
+declare const NSImageNamePreferencesGeneral: cocoascript.NSImageName;
+declare const NSImageNameQuickLookTemplate: cocoascript.NSImageName;
+declare const NSImageNameRefreshFreestandingTemplate: cocoascript.NSImageName;
+declare const NSImageNameRefreshTemplate: cocoascript.NSImageName;
+declare const NSImageNameRemoveTemplate: cocoascript.NSImageName;
+declare const NSImageNameRevealFreestandingTemplate: cocoascript.NSImageName;
+declare const NSImageNameRightFacingTriangleTemplate: cocoascript.NSImageName;
+declare const NSImageNameShareTemplate: cocoascript.NSImageName;
+declare const NSImageNameSlideshowTemplate: cocoascript.NSImageName;
+declare const NSImageNameSmartBadgeTemplate: cocoascript.NSImageName;
+declare const NSImageNameStatusAvailable: cocoascript.NSImageName;
+declare const NSImageNameStatusNone: cocoascript.NSImageName;
+declare const NSImageNameStatusPartiallyAvailable: cocoascript.NSImageName;
+declare const NSImageNameStatusUnavailable: cocoascript.NSImageName;
+declare const NSImageNameStopProgressFreestandingTemplate: cocoascript.NSImageName;
+declare const NSImageNameStopProgressTemplate: cocoascript.NSImageName;
+declare const NSImageNameTouchBarRemoveTemplate: cocoascript.NSImageName;
+declare const NSImageNameTrashEmpty: cocoascript.NSImageName;
+declare const NSImageNameTrashFull: cocoascript.NSImageName;
+declare const NSImageNameUser: cocoascript.NSImageName;
+declare const NSImageNameUserAccounts: cocoascript.NSImageName;
+declare const NSImageNameUserGroup: cocoascript.NSImageName;
+declare const NSImageNameUserGuest: cocoascript.NSImageName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimagesymbolscale
-type NSImageSymbolScale = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimagesymbolscale
+  type NSImageSymbolScale = cocoascript.NSInteger;
 }
-
+declare const NSImageHintCTM: cocoascript.NSImageHintKey;
+declare const NSImageHintInterpolation: cocoascript.NSImageHintKey;
+declare const NSImageHintUserInterfaceLayoutDirection: cocoascript.NSImageHintKey;
+declare const NSCompositeSourceOver: cocoascript.NSCompositingOperation;
+declare const NSCompositeClear: cocoascript.NSCompositingOperation;
+declare const NSCompositeCopy: cocoascript.NSCompositingOperation;
+declare const NSCompositeSourceIn: cocoascript.NSCompositingOperation;
+declare const NSCompositeSourceOut: cocoascript.NSCompositingOperation;
+declare const NSCompositeSourceAtop: cocoascript.NSCompositingOperation;
+declare const NSCompositeDestinationOver: cocoascript.NSCompositingOperation;
+declare const NSCompositeDestinationIn: cocoascript.NSCompositingOperation;
+declare const NSCompositeDestinationOut: cocoascript.NSCompositingOperation;
+declare const NSCompositeDestinationAtop: cocoascript.NSCompositingOperation;
+declare const NSCompositeXOR: cocoascript.NSCompositingOperation;
+declare const NSCompositePlusDarker: cocoascript.NSCompositingOperation;
+declare const NSCompositePlusLighter: cocoascript.NSCompositingOperation;
+declare const NSCompositeMultiply: cocoascript.NSCompositingOperation;
+declare const NSCompositeScreen: cocoascript.NSCompositingOperation;
+declare const NSCompositeOverlay: cocoascript.NSCompositingOperation;
+declare const NSCompositeDarken: cocoascript.NSCompositingOperation;
+declare const NSCompositeLighten: cocoascript.NSCompositingOperation;
+declare const NSCompositeColorDodge: cocoascript.NSCompositingOperation;
+declare const NSCompositeColorBurn: cocoascript.NSCompositingOperation;
+declare const NSCompositeSoftLight: cocoascript.NSCompositingOperation;
+declare const NSCompositeHardLight: cocoascript.NSCompositingOperation;
+declare const NSCompositeDifference: cocoascript.NSCompositingOperation;
+declare const NSCompositeExclusion: cocoascript.NSCompositingOperation;
+declare const NSCompositeHue: cocoascript.NSCompositingOperation;
+declare const NSCompositeSaturation: cocoascript.NSCompositingOperation;
+declare const NSCompositeColor: cocoascript.NSCompositingOperation;
+declare const NSCompositeLuminosity: cocoascript.NSCompositingOperation;
+declare const NSCompositeHighlight: cocoascript.NSCompositingOperation;
+declare const NSLeftMouseDown: cocoascript.NSEventType;
+declare const NSRegularControlSize: cocoascript.NSControlSize;
+declare const NSSmallControlSize: cocoascript.NSControlSize;
+declare const NSMiniControlSize: cocoascript.NSControlSize;
+declare const NSBackgroundStyleDark: cocoascript.NSBackgroundStyle;
+declare const NSBackgroundStyleLight: cocoascript.NSBackgroundStyle;
+declare const NSOffState: cocoascript.NSControlStateValue;
+declare const NSOnState: cocoascript.NSControlStateValue;
+declare const NSMixedState: cocoascript.NSControlStateValue;
+declare const NSControlStateValueMixed: cocoascript.NSControlStateValue;
+declare const NSControlStateValueOff: cocoascript.NSControlStateValue;
+declare const NSControlStateValueOn: cocoascript.NSControlStateValue;
+declare const NSDraggingImageComponentLabelKey: cocoascript.NSDraggingImageComponentKey;
+declare const NSDraggingImageComponentIconKey: cocoascript.NSDraggingImageComponentKey;
+declare const NSGridViewSizeForContent: cocoascript.CGFloat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsgridcellplacement
-type NSGridCellPlacement = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsgridcellplacement
+  type NSGridCellPlacement = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsgridrowalignment
-type NSGridRowAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsgridrowalignment
+  type NSGridRowAlignment = cocoascript.NSInteger;
 }
-
+declare const NSLayoutPriorityDefaultLow: cocoascript.NSLayoutPriority;
+declare const NSLayoutPriorityDragThatCannotResizeWindow: cocoascript.NSLayoutPriority;
+declare const NSStackViewVisibilityPriorityMustHold: cocoascript.NSStackViewVisibilityPriority;
+declare const NSStackViewVisibilityPriorityDetachOnlyIfNecessary: cocoascript.NSStackViewVisibilityPriority;
+declare const NSStackViewVisibilityPriorityNotVisible: cocoascript.NSStackViewVisibilityPriority;
+declare const NSLayoutPriorityDefaultHigh: cocoascript.NSLayoutPriority;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrollarrowposition
-type NSScrollArrowPosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrollarrowposition
+  type NSScrollArrowPosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrollerstyle
-type NSScrollerStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrollerstyle
+  type NSScrollerStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrollerknobstyle
-type NSScrollerKnobStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrollerknobstyle
+  type NSScrollerKnobStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrollerpart
-type NSScrollerPart = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrollerpart
+  type NSScrollerPart = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsscrollerarrow
-type NSScrollerArrow = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsscrollerarrow
+  type NSScrollerArrow = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsusablescrollerparts
-type NSUsableScrollerParts = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsusablescrollerparts
+  type NSUsableScrollerParts = cocoascript.NSUInteger;
 }
-
+declare const NSPreferredScrollerStyleDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsrulerviewunitname
   type NSRulerViewUnitName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsrulerorientation
-type NSRulerOrientation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsrulerorientation
+  type NSRulerOrientation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscollectionviewdiffabledatasourceitemprovider
   type NSCollectionViewDiffableDataSourceItemProvider = cocoascript.ItemIdentifierType;
@@ -20778,15 +21235,15 @@ declare namespace cocoascript {
   type NSCollectionViewDiffableDataSourceSupplementaryViewProvider = cocoascript.NSIndexPath;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscollectionviewitemhighlightstate
-type NSCollectionViewItemHighlightState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscollectionviewitemhighlightstate
+  type NSCollectionViewItemHighlightState = cocoascript.NSInteger;
 }
-
+declare const NSCollectionElementKindSectionHeader: cocoascript.NSCollectionViewSupplementaryElementKind;
+declare const NSCollectionElementKindSectionFooter: cocoascript.NSCollectionViewSupplementaryElementKind;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscollectionviewscrolldirection
-type NSCollectionViewScrollDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscollectionviewscrolldirection
+  type NSCollectionViewScrollDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscollectionviewtransitionlayoutanimatedkey
   type NSCollectionViewTransitionLayoutAnimatedKey = cocoascript.NSString;
@@ -20795,16 +21252,15 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscollectionviewdecorationelementkind
   type NSCollectionViewDecorationElementKind = cocoascript.NSString;
 }
+declare const NSCollectionElementKindInterItemGapIndicator: cocoascript.NSCollectionViewSupplementaryElementKind;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscollectionelementcategory
-type NSCollectionElementCategory = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscollectionelementcategory
+  type NSCollectionElementCategory = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nscollectionupdateaction
-type NSCollectionUpdateAction = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nscollectionupdateaction
+  type NSCollectionUpdateAction = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstableviewdiffabledatasourcecellprovider
   type NSTableViewDiffableDataSourceCellProvider = cocoascript.id;
@@ -20818,103 +21274,529 @@ declare namespace cocoascript {
   type NSTableViewDiffableDataSourceSectionHeaderViewProvider = cocoascript.id;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstableviewrowactionstyle
-type NSTableViewRowActionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstableviewrowactionstyle
+  type NSTableViewRowActionStyle = cocoascript.NSInteger;
 }
-
+declare const NSAcceleratorButton: cocoascript.NSButtonType;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbezelstyle
-type NSBezelStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbezelstyle
+  type NSBezelStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsbuttontype
-type NSButtonType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsbuttontype
+  type NSButtonType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsgradienttype
-type NSGradientType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsgradienttype
+  type NSGradientType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdatepickerstyle
-type NSDatePickerStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdatepickerstyle
+  type NSDatePickerStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdatepickermode
-type NSDatePickerMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdatepickermode
+  type NSDatePickerMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsdatepickerelementflags
-type NSDatePickerElementFlags = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsdatepickerelementflags
+  type NSDatePickerElementFlags = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimagealignment
-type NSImageAlignment = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimagealignment
+  type NSImageAlignment = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsimageframestyle
-type NSImageFrameStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsimageframestyle
+  type NSImageFrameStyle = cocoascript.NSUInteger;
 }
-
+declare const NSRelevancyLevelIndicatorStyle: cocoascript.NSLevelIndicatorStyle;
+declare const NSRatingLevelIndicatorStyle: cocoascript.NSLevelIndicatorStyle;
+declare const NSDiscreteCapacityLevelIndicatorStyle: cocoascript.NSLevelIndicatorStyle;
+declare const NSContinuousCapacityLevelIndicatorStyle: cocoascript.NSLevelIndicatorStyle;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspathstyle
-type NSPathStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspathstyle
+  type NSPathStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nspopuparrowposition
-type NSPopUpArrowPosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nspopuparrowposition
+  type NSPopUpArrowPosition = cocoascript.NSUInteger;
 }
-
+declare const NSProgressIndicatorBarStyle: cocoascript.NSProgressIndicatorStyle;
+declare const NSProgressIndicatorSpinningStyle: cocoascript.NSProgressIndicatorStyle;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsruleeditorpredicatepartkey
   type NSRuleEditorPredicatePartKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextfinderaction
-type NSTextFinderAction = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextfinderaction
+  type NSTextFinderAction = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstextfindermatchingtype
-type NSTextFinderMatchingType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstextfindermatchingtype
+  type NSTextFinderMatchingType = cocoascript.NSInteger;
 }
-
+declare const NSSearchFieldClearRecentsMenuItemTag: cocoascript.NSInteger;
+declare const NSSearchFieldNoRecentsMenuItemTag: cocoascript.NSInteger;
+declare const NSSearchFieldRecentsMenuItemTag: cocoascript.NSInteger;
+declare const NSSearchFieldRecentsTitleMenuItemTag: cocoascript.NSInteger;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssearchfieldrecentsautosavename
   type NSSearchFieldRecentsAutosaveName = cocoascript.NSString;
 }
+declare const NSSliderAccessoryWidthDefault: cocoascript.NSSliderAccessoryWidth;
+declare const NSSliderAccessoryWidthWide: cocoascript.NSSliderAccessoryWidth;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nstokenstyle
-type NSTokenStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nstokenstyle
+  type NSTokenStyle = cocoascript.NSUInteger;
 }
-
+declare const NSBoxSecondary: cocoascript.NSBoxType;
+declare const NSBoxOldStyle: cocoascript.NSBoxType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspagecontrollerobjectidentifier
   type NSPageControllerObjectIdentifier = cocoascript.NSString;
 }
+declare const NSLayoutPriorityDragThatCanResizeWindow: cocoascript.NSLayoutPriority;
+declare const NSLayoutPriorityWindowSizeStayPut: cocoascript.NSLayoutPriority;
+declare const NSLayoutPriorityFittingSizeCompression: cocoascript.NSLayoutPriority;
+declare const NSAppearanceNameAqua: cocoascript.NSAppearanceName;
+declare const NSAppearanceNameDarkAqua: cocoascript.NSAppearanceName;
+declare const NSAppearanceNameVibrantLight: cocoascript.NSAppearanceName;
+declare const NSAppearanceNameVibrantDark: cocoascript.NSAppearanceName;
+declare const NSAppearanceNameAccessibilityHighContrastAqua: cocoascript.NSAppearanceName;
+declare const NSAppearanceNameAccessibilityHighContrastDarkAqua: cocoascript.NSAppearanceName;
+declare const NSAppearanceNameAccessibilityHighContrastVibrantLight: cocoascript.NSAppearanceName;
+declare const NSAppearanceNameAccessibilityHighContrastVibrantDark: cocoascript.NSAppearanceName;
+declare const NSAppearanceNameLightContent: cocoascript.NSAppearanceName;
+declare const NSFullSizeContentViewWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSDockWindowLevel: cocoascript.NSWindowLevel;
+declare const NSFloatingWindowLevel: cocoascript.NSWindowLevel;
+declare const NSMainMenuWindowLevel: cocoascript.NSWindowLevel;
+declare const NSModalPanelWindowLevel: cocoascript.NSWindowLevel;
+declare const NSNormalWindowLevel: cocoascript.NSWindowLevel;
+declare const NSPopUpMenuWindowLevel: cocoascript.NSWindowLevel;
+declare const NSScreenSaverWindowLevel: cocoascript.NSWindowLevel;
+declare const NSStatusWindowLevel: cocoascript.NSWindowLevel;
+declare const NSSubmenuWindowLevel: cocoascript.NSWindowLevel;
+declare const NSTornOffMenuWindowLevel: cocoascript.NSWindowLevel;
+declare const NSTitledWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSBorderlessWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSClosableWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSMiniaturizableWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSResizableWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSTexturedBackgroundWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSUnifiedTitleAndToolbarWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSFullScreenWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSWindowFullScreenButton: cocoascript.NSWindowButton;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nswindowbackinglocation
-type NSWindowBackingLocation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nswindowbackinglocation
+  type NSWindowBackingLocation = cocoascript.NSUInteger;
 }
-
+declare const NSCriticalAlertStyle: cocoascript.NSAlertStyle;
+declare const NSAlertFirstButtonReturn: cocoascript.NSModalResponse;
+declare const NSAlertSecondButtonReturn: cocoascript.NSModalResponse;
+declare const NSWarningAlertStyle: cocoascript.NSAlertStyle;
+declare const NSInformationalAlertStyle: cocoascript.NSAlertStyle;
+declare const NSModalResponseOK: cocoascript.NSModalResponse;
+declare const NSModalResponseCancel: cocoascript.NSModalResponse;
+declare const NSModalResponseContinue: cocoascript.NSModalResponse;
+declare const NSAlertThirdButtonReturn: cocoascript.NSModalResponse;
+declare const NSDocModalWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSUtilityWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSNonactivatingPanelMask: cocoascript.NSWindowStyleMask;
+declare const NSHUDWindowMask: cocoascript.NSWindowStyleMask;
+declare const NSPopoverCloseReasonStandard: cocoascript.NSPopoverCloseReasonValue;
+declare const NSPopoverCloseReasonDetachToWindow: cocoascript.NSPopoverCloseReasonValue;
+declare const NSPrintPanelAccessorySummaryItemNameKey: cocoascript.NSPrintPanelAccessorySummaryKey;
+declare const NSPrintPanelAccessorySummaryItemDescriptionKey: cocoascript.NSPrintPanelAccessorySummaryKey;
+declare const NSNoModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSGrayModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSRGBModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSCMYKModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSHSBModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSCustomPaletteModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSColorListModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSWheelModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSCrayonModeColorPanel: cocoascript.NSColorPanelMode;
+declare const NSSoundPboardType: cocoascript.NSPasteboardType;
+declare const NSVoiceIdentifier: cocoascript.NSVoiceAttributeKey;
+declare const NSVoiceName: cocoascript.NSVoiceAttributeKey;
+declare const NSVoiceAge: cocoascript.NSVoiceAttributeKey;
+declare const NSVoiceDemoText: cocoascript.NSVoiceAttributeKey;
+declare const NSVoiceLocaleIdentifier: cocoascript.NSVoiceAttributeKey;
+declare const NSVoiceSupportedCharacters: cocoascript.NSVoiceAttributeKey;
+declare const NSVoiceIndividuallySpokenCharacters: cocoascript.NSVoiceAttributeKey;
+declare const NSSpeechStatusProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechStatusOutputBusy: cocoascript.NSSpeechStatusKey;
+declare const NSSpeechStatusOutputPaused: cocoascript.NSSpeechStatusKey;
+declare const NSSpeechDictionaryEntrySpelling: cocoascript.NSSpeechDictionaryKey;
+declare const NSSpeechDictionaryEntryPhonemes: cocoascript.NSSpeechDictionaryKey;
+declare const NSSpeechDictionaryAbbreviations: cocoascript.NSSpeechDictionaryKey;
+declare const NSSpeechDictionaryLocaleIdentifier: cocoascript.NSSpeechDictionaryKey;
+declare const NSSpeechDictionaryModificationDate: cocoascript.NSSpeechDictionaryKey;
+declare const NSSpeechDictionaryPronunciations: cocoascript.NSSpeechDictionaryKey;
+declare const NSSpeechErrorsProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechInputModeProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechCharacterModeProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechNumberModeProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechRateProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechPitchBaseProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechPitchModProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechVolumeProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechSynthesizerInfoProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechRecentSyncProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechPhonemeSymbolsProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechCurrentVoiceProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechCommandDelimiterProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechResetProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechOutputToFileURLProperty: cocoascript.NSSpeechPropertyKey;
+declare const NSSpeechCommandPrefix: cocoascript.NSSpeechCommandDelimiterKey;
+declare const NSSpeechCommandSuffix: cocoascript.NSSpeechCommandDelimiterKey;
+declare const NSSpeechErrorCount: cocoascript.NSSpeechErrorKey;
+declare const NSSpeechErrorNewestCharacterOffset: cocoascript.NSSpeechErrorKey;
+declare const NSSpeechErrorNewestCode: cocoascript.NSSpeechErrorKey;
+declare const NSSpeechErrorOldestCharacterOffset: cocoascript.NSSpeechErrorKey;
+declare const NSSpeechErrorOldestCode: cocoascript.NSSpeechErrorKey;
+declare const NSSpeechModeLiteral: cocoascript.NSSpeechMode;
+declare const NSSpeechModeNormal: cocoascript.NSSpeechMode;
+declare const NSSpeechModePhoneme: cocoascript.NSSpeechMode;
+declare const NSSpeechModeText: cocoascript.NSSpeechMode;
+declare const NSSpeechPhonemeInfoExample: cocoascript.NSSpeechPhonemeInfoKey;
+declare const NSSpeechPhonemeInfoHiliteEnd: cocoascript.NSSpeechPhonemeInfoKey;
+declare const NSSpeechPhonemeInfoHiliteStart: cocoascript.NSSpeechPhonemeInfoKey;
+declare const NSSpeechPhonemeInfoOpcode: cocoascript.NSSpeechPhonemeInfoKey;
+declare const NSSpeechPhonemeInfoSymbol: cocoascript.NSSpeechPhonemeInfoKey;
+declare const NSSpeechStatusNumberOfCharactersLeft: cocoascript.NSSpeechStatusKey;
+declare const NSSpeechStatusPhonemeCode: cocoascript.NSSpeechStatusKey;
+declare const NSSpeechSynthesizerInfoIdentifier: cocoascript.NSSpeechSynthesizerInfoKey;
+declare const NSSpeechSynthesizerInfoVersion: cocoascript.NSSpeechSynthesizerInfoKey;
+declare const NSVoiceGenderNeuter: cocoascript.NSVoiceGenderName;
+declare const NSVoiceGenderFemale: cocoascript.NSVoiceGenderName;
+declare const NSVoiceGenderMale: cocoascript.NSVoiceGenderName;
+declare const NSVoiceLanguage: cocoascript.NSVoiceAttributeKey;
+declare const NSAWTEventType: cocoascript.NSEventSubtype;
+declare const NSApplicationActivatedEventType: cocoascript.NSEventSubtype;
+declare const NSApplicationDeactivatedEventType: cocoascript.NSEventSubtype;
+declare const NSMouseEventSubtype: cocoascript.NSEventSubtype;
+declare const NSPowerOffEventType: cocoascript.NSEventSubtype;
+declare const NSScreenChangedEventType: cocoascript.NSEventSubtype;
+declare const NSTouchEventSubtype: cocoascript.NSEventSubtype;
+declare const NSWindowExposedEventType: cocoascript.NSEventSubtype;
+declare const NSWindowMovedEventType: cocoascript.NSEventSubtype;
+declare const NSLeftMouseUp: cocoascript.NSEventType;
+declare const NSRightMouseDown: cocoascript.NSEventType;
+declare const NSRightMouseUp: cocoascript.NSEventType;
+declare const NSOtherMouseDown: cocoascript.NSEventType;
+declare const NSOtherMouseUp: cocoascript.NSEventType;
+declare const NSMouseMoved: cocoascript.NSEventType;
+declare const NSAppKitDefined: cocoascript.NSEventType;
+declare const NSSystemDefined: cocoascript.NSEventType;
+declare const NSApplicationDefined: cocoascript.NSEventType;
+declare const NSPeriodic: cocoascript.NSEventType;
+declare const NSCursorPointingDevice: cocoascript.NSPointingDeviceType;
+declare const NSEraserPointingDevice: cocoascript.NSPointingDeviceType;
+declare const NSPenPointingDevice: cocoascript.NSPointingDeviceType;
+declare const NSUnknownPointingDevice: cocoascript.NSPointingDeviceType;
+declare const NSAccessibilitySortButtonRole: cocoascript.NSAccessibilityRole;
+declare const NSAccessibilityAnnouncementRequestedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityApplicationActivatedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityApplicationDeactivatedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityApplicationHiddenNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityApplicationShownNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityCreatedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityDrawerCreatedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityFocusedUIElementChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityFocusedWindowChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityHelpTagCreatedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityLayoutChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityMainWindowChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityMovedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityResizedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityRowCollapsedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityRowCountChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityRowExpandedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilitySelectedCellsChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilitySelectedChildrenChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilitySelectedChildrenMovedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilitySelectedColumnsChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilitySelectedRowsChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilitySelectedTextChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilitySheetCreatedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityTitleChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityUIElementDestroyedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityUnitsChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityValueChangedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityWindowCreatedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityWindowDeminiaturizedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityWindowMiniaturizedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityWindowMovedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityWindowResizedNotification: cocoascript.NSAccessibilityNotificationName;
+declare const NSAccessibilityCancelAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityConfirmAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityDecrementAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityDeleteAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityIncrementAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityPickAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityPressAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityRaiseAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityShowAlternateUIAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityShowDefaultUIAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityShowMenuAction: cocoascript.NSAccessibilityActionName;
+declare const NSAccessibilityMarkedMisspelledTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityAttachmentTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityAutocorrectedTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityBackgroundColorTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityForegroundColorTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityUnderlineColorTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityStrikethroughColorTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityUnderlineTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilitySuperscriptTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityStrikethroughTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityShadowTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityLinkTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityMisspelledTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityFontTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAlphaFirstBitmapFormat: cocoascript.NSBitmapFormat;
+declare const NSFloatingPointSamplesBitmapFormat: cocoascript.NSBitmapFormat;
+declare const NS16BitLittleEndianBitmapFormat: cocoascript.NSBitmapFormat;
+declare const NS32BitLittleEndianBitmapFormat: cocoascript.NSBitmapFormat;
+declare const NS16BitBigEndianBitmapFormat: cocoascript.NSBitmapFormat;
+declare const NS32BitBigEndianBitmapFormat: cocoascript.NSBitmapFormat;
+declare const NSBMPFileType: cocoascript.NSBitmapImageFileType;
+declare const NSGIFFileType: cocoascript.NSBitmapImageFileType;
+declare const NSJPEGFileType: cocoascript.NSBitmapImageFileType;
+declare const NSPNGFileType: cocoascript.NSBitmapImageFileType;
+declare const NSTIFFFileType: cocoascript.NSBitmapImageFileType;
+declare const NSJPEG2000FileType: cocoascript.NSBitmapImageFileType;
+declare const NSNonZeroWindingRule: cocoascript.NSWindingRule;
+declare const NSEvenOddWindingRule: cocoascript.NSWindingRule;
+declare const NSMiterLineJoinStyle: cocoascript.NSLineJoinStyle;
+declare const NSCurveToBezierPathElement: cocoascript.NSBezierPathElement;
+declare const NSMoveToBezierPathElement: cocoascript.NSBezierPathElement;
+declare const NSLineToBezierPathElement: cocoascript.NSBezierPathElement;
+declare const NSClosePathBezierPathElement: cocoascript.NSBezierPathElement;
+declare const NSRoundLineJoinStyle: cocoascript.NSLineJoinStyle;
+declare const NSBevelLineJoinStyle: cocoascript.NSLineJoinStyle;
+declare const NSButtLineCapStyle: cocoascript.NSLineCapStyle;
+declare const NSRoundLineCapStyle: cocoascript.NSLineCapStyle;
+declare const NSSquareLineCapStyle: cocoascript.NSLineCapStyle;
+declare const NSOpenGLCPSwapInterval: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPSurfaceOrder: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPSurfaceOpacity: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPSurfaceBackingSize: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPReclaimResources: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPCurrentRendererID: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPGPUVertexProcessing: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPGPUFragmentProcessing: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPHasDrawable: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPMPSwapsInFlight: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPSwapRectangle: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPSwapRectangleEnable: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPRasterizationEnable: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPStateValidation: cocoascript.NSOpenGLContextParameter;
+declare const NSOpenGLCPSurfaceSurfaceVolatile: cocoascript.NSOpenGLContextParameter;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscolorname
   type NSColorName = cocoascript.NSString;
 }
+declare const NSUnknownColorSpaceModel: cocoascript.NSColorSpaceModel;
+declare const NSGrayColorSpaceModel: cocoascript.NSColorSpaceModel;
+declare const NSRGBColorSpaceModel: cocoascript.NSColorSpaceModel;
+declare const NSCMYKColorSpaceModel: cocoascript.NSColorSpaceModel;
+declare const NSLABColorSpaceModel: cocoascript.NSColorSpaceModel;
+declare const NSDeviceNColorSpaceModel: cocoascript.NSColorSpaceModel;
+declare const NSIndexedColorSpaceModel: cocoascript.NSColorSpaceModel;
+declare const NSPatternColorSpaceModel: cocoascript.NSColorSpaceModel;
+declare const NSPrintPhotoJobStyleHint: cocoascript.NSPrintPanelJobStyleHint;
+declare const NSPrintAllPresetsJobStyleHint: cocoascript.NSPrintPanelJobStyleHint;
+declare const NSPrintNoPresetsJobStyleHint: cocoascript.NSPrintPanelJobStyleHint;
+declare const NSAutoPagination: cocoascript.NSPrintingPaginationMode;
+declare const NSFitPagination: cocoascript.NSPrintingPaginationMode;
+declare const NSClipPagination: cocoascript.NSPrintingPaginationMode;
+declare const NSPrintPaperName: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintPaperSize: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintOrientation: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintScalingFactor: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintLeftMargin: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintRightMargin: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintTopMargin: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintBottomMargin: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintHorizontallyCentered: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintVerticallyCentered: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintHorizontalPagination: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintVerticalPagination: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintAllPages: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintCopies: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintDetailedErrorReporting: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintFaxNumber: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintFirstPage: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintHeaderAndFooter: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintJobDisposition: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintJobSavingFileNameExtensionHidden: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintLastPage: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintMustCollate: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintPagesAcross: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintPagesDown: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintPrinter: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintPrinterName: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintReversePageOrder: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintSelectionOnly: cocoascript.NSPrintInfoAttributeKey;
+declare const NSPrintTime: cocoascript.NSPrintInfoAttributeKey;
+declare const NSLeftTextAlignment: cocoascript.NSTextAlignment;
+declare const NSRightTextAlignment: cocoascript.NSTextAlignment;
+declare const NSCenterTextAlignment: cocoascript.NSTextAlignment;
+declare const NSJustifiedTextAlignment: cocoascript.NSTextAlignment;
+declare const NSNaturalTextAlignment: cocoascript.NSTextAlignment;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsglyphinscription
-type NSGlyphInscription = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsglyphinscription
+  type NSGlyphInscription = cocoascript.NSUInteger;
 }
-
+declare const NSAccessibilityTextAlignmentAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityAnnotationTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityCustomTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityLanguageTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityListItemIndexTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityListItemLevelTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSAccessibilityListItemPrefixTextAttribute: cocoascript.NSAttributedStringKey;
+declare const NSTextListMarkerBox: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerCheck: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerCircle: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerDecimal: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerDiamond: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerDisc: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerHyphen: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerLowercaseAlpha: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerLowercaseHexadecimal: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerLowercaseLatin: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerLowercaseRoman: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerOctal: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerSquare: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerUppercaseAlpha: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerUppercaseHexadecimal: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerUppercaseLatin: cocoascript.NSTextListMarkerFormat;
+declare const NSTextListMarkerUppercaseRoman: cocoascript.NSTextListMarkerFormat;
+declare const NSTextContentTypeOneTimeCode: cocoascript.NSTextContentType;
+declare const NSTextContentTypePassword: cocoascript.NSTextContentType;
+declare const NSTextContentTypeUsername: cocoascript.NSTextContentType;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/appkit/nsfontrenderingmode
-type NSFontRenderingMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/appkit/nsfontrenderingmode
+  type NSFontRenderingMode = cocoascript.NSUInteger;
 }
-
+declare const NSFontWeightUltraLight: cocoascript.NSFontWeight;
+declare const NSFontWeightThin: cocoascript.NSFontWeight;
+declare const NSFontWeightLight: cocoascript.NSFontWeight;
+declare const NSFontWeightRegular: cocoascript.NSFontWeight;
+declare const NSFontWeightMedium: cocoascript.NSFontWeight;
+declare const NSFontWeightSemibold: cocoascript.NSFontWeight;
+declare const NSFontWeightBold: cocoascript.NSFontWeight;
+declare const NSFontWeightHeavy: cocoascript.NSFontWeight;
+declare const NSFontWeightBlack: cocoascript.NSFontWeight;
+declare const NSFontTextStyleBody: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleCallout: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleCaption1: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleCaption2: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleFootnote: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleHeadline: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleSubheadline: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleLargeTitle: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleTitle1: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleTitle2: cocoascript.NSFontTextStyle;
+declare const NSFontTextStyleTitle3: cocoascript.NSFontTextStyle;
+declare const NSFontIdentityMatrix: cocoascript.CGFloat;
+declare const NSFontDescriptorSystemDesignDefault: cocoascript.NSFontDescriptorSystemDesign;
+declare const NSFontDescriptorSystemDesignMonospaced: cocoascript.NSFontDescriptorSystemDesign;
+declare const NSFontDescriptorSystemDesignRounded: cocoascript.NSFontDescriptorSystemDesign;
+declare const NSFontDescriptorSystemDesignSerif: cocoascript.NSFontDescriptorSystemDesign;
+declare const NSFontCollectionOldNameKey: cocoascript.NSFontCollectionUserInfoKey;
+declare const NSFontCollectionNameKey: cocoascript.NSFontCollectionUserInfoKey;
+declare const NSFontCollectionVisibilityKey: cocoascript.NSFontCollectionUserInfoKey;
+declare const NSFontCollectionAllFonts: cocoascript.NSFontCollectionName;
+declare const NSFontCollectionUser: cocoascript.NSFontCollectionName;
+declare const NSFontCollectionFavorites: cocoascript.NSFontCollectionName;
+declare const NSFontCollectionRecentlyUsed: cocoascript.NSFontCollectionName;
+declare const NSFontCollectionIncludeDisabledFontsOption: cocoascript.NSFontCollectionMatchingOptionKey;
+declare const NSFontCollectionRemoveDuplicatesOption: cocoascript.NSFontCollectionMatchingOptionKey;
+declare const NSFontCollectionDisallowAutoActivationOption: cocoascript.NSFontCollectionMatchingOptionKey;
+declare const NSFontCollectionWasShown: cocoascript.NSFontCollectionActionTypeKey;
+declare const NSFontCollectionWasHidden: cocoascript.NSFontCollectionActionTypeKey;
+declare const NSFontCollectionWasRenamed: cocoascript.NSFontCollectionActionTypeKey;
+declare const NSToolbarItemVisibilityPriorityHigh: cocoascript.NSToolbarItemVisibilityPriority;
+declare const NSToolbarItemVisibilityPriorityLow: cocoascript.NSToolbarItemVisibilityPriority;
+declare const NSToolbarItemVisibilityPriorityStandard: cocoascript.NSToolbarItemVisibilityPriority;
+declare const NSToolbarItemVisibilityPriorityUser: cocoascript.NSToolbarItemVisibilityPriority;
+declare const NSSpellCheckerDidChangeAutomaticCapitalizationNotification: cocoascript.NSNotificationName;
+declare const NSSpellCheckerDidChangeAutomaticDashSubstitutionNotification: cocoascript.NSNotificationName;
+declare const NSSpellCheckerDidChangeAutomaticPeriodSubstitutionNotification: cocoascript.NSNotificationName;
+declare const NSSpellCheckerDidChangeAutomaticQuoteSubstitutionNotification: cocoascript.NSNotificationName;
+declare const NSSpellCheckerDidChangeAutomaticTextCompletionNotification: cocoascript.NSNotificationName;
+declare const NSLinearSlider: cocoascript.NSSliderType;
+declare const NSCircularSlider: cocoascript.NSSliderType;
+declare const NSTickMarkBelow: cocoascript.NSTickMarkPosition;
+declare const NSTickMarkAbove: cocoascript.NSTickMarkPosition;
+declare const NSTickMarkLeft: cocoascript.NSTickMarkPosition;
+declare const NSTickMarkRight: cocoascript.NSTickMarkPosition;
+declare const NSAboutPanelOptionApplicationIcon: cocoascript.NSAboutPanelOptionKey;
+declare const NSAboutPanelOptionApplicationName: cocoascript.NSAboutPanelOptionKey;
+declare const NSAboutPanelOptionApplicationVersion: cocoascript.NSAboutPanelOptionKey;
+declare const NSAboutPanelOptionCredits: cocoascript.NSAboutPanelOptionKey;
+declare const NSAboutPanelOptionVersion: cocoascript.NSAboutPanelOptionKey;
+declare const NSWorkspaceLaunchConfigurationAppleEvent: cocoascript.NSWorkspaceLaunchConfigurationKey;
+declare const NSWorkspaceLaunchConfigurationArchitecture: cocoascript.NSWorkspaceLaunchConfigurationKey;
+declare const NSWorkspaceLaunchConfigurationArguments: cocoascript.NSWorkspaceLaunchConfigurationKey;
+declare const NSWorkspaceLaunchConfigurationEnvironment: cocoascript.NSWorkspaceLaunchConfigurationKey;
+declare const NSTextFinderCaseInsensitiveKey: cocoascript.NSPasteboardTypeTextFinderOptionKey;
+declare const NSTextFinderMatchingTypeKey: cocoascript.NSPasteboardTypeTextFinderOptionKey;
+declare const NSTableViewRowViewKey: cocoascript.NSUserInterfaceItemIdentifier;
+declare const NSOutlineViewDisclosureButtonKey: cocoascript.NSUserInterfaceItemIdentifier;
+declare const NSOutlineViewShowHideButtonKey: cocoascript.NSUserInterfaceItemIdentifier;
+declare const NSRulerViewUnitCentimeters: cocoascript.NSRulerViewUnitName;
+declare const NSRulerViewUnitInches: cocoascript.NSRulerViewUnitName;
+declare const NSRulerViewUnitPicas: cocoascript.NSRulerViewUnitName;
+declare const NSRulerViewUnitPoints: cocoascript.NSRulerViewUnitName;
+declare const NSMomentaryLightButton: cocoascript.NSButtonType;
+declare const NSSwitchButton: cocoascript.NSButtonType;
+declare const NSRadioButton: cocoascript.NSButtonType;
+declare const NSRoundedBezelStyle: cocoascript.NSBezelStyle;
+declare const NSRegularSquareBezelStyle: cocoascript.NSBezelStyle;
+declare const NSThickSquareBezelStyle: cocoascript.NSBezelStyle;
+declare const NSThickerSquareBezelStyle: cocoascript.NSBezelStyle;
+declare const NSDisclosureBezelStyle: cocoascript.NSBezelStyle;
+declare const NSShadowlessSquareBezelStyle: cocoascript.NSBezelStyle;
+declare const NSCircularBezelStyle: cocoascript.NSBezelStyle;
+declare const NSTexturedSquareBezelStyle: cocoascript.NSBezelStyle;
+declare const NSHelpButtonBezelStyle: cocoascript.NSBezelStyle;
+declare const NSSmallSquareBezelStyle: cocoascript.NSBezelStyle;
+declare const NSTexturedRoundedBezelStyle: cocoascript.NSBezelStyle;
+declare const NSRoundRectBezelStyle: cocoascript.NSBezelStyle;
+declare const NSRecessedBezelStyle: cocoascript.NSBezelStyle;
+declare const NSInlineBezelStyle: cocoascript.NSBezelStyle;
+declare const NSSmallIconButtonBezelStyle: cocoascript.NSBezelStyle;
+declare const NSRoundedDisclosureBezelStyle: cocoascript.NSBezelStyle;
+declare const NSPushOnPushOffButton: cocoascript.NSButtonType;
+declare const NSToggleButton: cocoascript.NSButtonType;
+declare const NSMomentaryChangeButton: cocoascript.NSButtonType;
+declare const NSOnOffButton: cocoascript.NSButtonType;
+declare const NSMomentaryPushInButton: cocoascript.NSButtonType;
+declare const NSMomentaryPushButton: cocoascript.NSButtonType;
+declare const NSMomentaryLight: cocoascript.NSButtonType;
+declare const NSRangeDateMode: cocoascript.NSDatePickerMode;
+declare const NSTextFieldAndStepperDatePickerStyle: cocoascript.NSDatePickerStyle;
+declare const NSClockAndCalendarDatePickerStyle: cocoascript.NSDatePickerStyle;
+declare const NSTextFieldDatePickerStyle: cocoascript.NSDatePickerStyle;
+declare const NSSingleDateMode: cocoascript.NSDatePickerMode;
+declare const NSHourMinuteDatePickerElementFlag: cocoascript.NSDatePickerElementFlags;
+declare const NSHourMinuteSecondDatePickerElementFlag: cocoascript.NSDatePickerElementFlags;
+declare const NSTimeZoneDatePickerElementFlag: cocoascript.NSDatePickerElementFlags;
+declare const NSYearMonthDatePickerElementFlag: cocoascript.NSDatePickerElementFlags;
+declare const NSYearMonthDayDatePickerElementFlag: cocoascript.NSDatePickerElementFlags;
+declare const NSEraDatePickerElementFlag: cocoascript.NSDatePickerElementFlags;
+declare const NSRuleEditorPredicateComparisonModifier: cocoascript.NSRuleEditorPredicatePartKey;
+declare const NSRuleEditorPredicateCompoundType: cocoascript.NSRuleEditorPredicatePartKey;
+declare const NSRuleEditorPredicateCustomSelector: cocoascript.NSRuleEditorPredicatePartKey;
+declare const NSRuleEditorPredicateLeftExpression: cocoascript.NSRuleEditorPredicatePartKey;
+declare const NSRuleEditorPredicateOperatorType: cocoascript.NSRuleEditorPredicatePartKey;
+declare const NSRuleEditorPredicateOptions: cocoascript.NSRuleEditorPredicatePartKey;
+declare const NSRuleEditorPredicateRightExpression: cocoascript.NSRuleEditorPredicatePartKey;
+declare const NSDefaultTokenStyle: cocoascript.NSTokenStyle;
+declare const NSPlainTextTokenStyle: cocoascript.NSTokenStyle;
+declare const NSRoundedTokenStyle: cocoascript.NSTokenStyle;

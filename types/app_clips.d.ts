@@ -17,8 +17,8 @@ declare namespace cocoascript {
 }
 
 declare const APActivationPayload: cocoascript.APActivationPayload;
+declare const APActivationPayloadErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderrorcode
-type APActivationPayloadErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderrorcode
+  type APActivationPayloadErrorCode = cocoascript.NSInteger;
 }
-

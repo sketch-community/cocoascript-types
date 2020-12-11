@@ -307,10 +307,9 @@ declare namespace cocoascript {
 
 declare const NSStringDrawingContext: cocoascript.NSStringDrawingContext;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nsstringdrawingoptions
-type NSStringDrawingOptions = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nsstringdrawingoptions
+  type NSStringDrawingOptions = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An encapsulation of the attributes that create a drop shadow during drawing operations.
@@ -491,7 +490,7 @@ declare namespace cocoascript {
     glyphGenerator(): cocoascript.NSGlyphGenerator;
     setGlyphGenerator(): void;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403104-getglyphsinrange
-    getGlyphsInRange_glyphs_properties_characterIndexes_bidiLevels(glyphRange: cocoascript.NSRange, glyphBuffer: cocoascript.CGGlyph, props: cocoascript.NSGlyphProperty, charIndexBuffer: cocoascript.NSUInteger, bidiLevelBuffer: cocoascript.char):cocoascript.NSUInteger;
+    getGlyphsInRange_glyphs_properties_characterIndexes_bidiLevels(glyphRange: cocoascript.NSRange, glyphBuffer: cocoascript.CGGlyph, props: cocoascript.NSGlyphProperty, charIndexBuffer: cocoascript.NSUInteger, bidiLevelBuffer: string):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403039-cgglyphatindex
     CGGlyphAtIndex(glyphIndex: cocoascript.NSUInteger):cocoascript.CGGlyph;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403132-cgglyphatindex
@@ -1020,11 +1019,11 @@ declare namespace cocoascript {
     imageForBounds_textContainer_characterIndex(imageBounds: cocoascript.CGRect, textContainer: cocoascript.NSTextContainer, charIndex: cocoascript.NSUInteger):cocoascript.UIImage;
   }
 }
+declare const NSWritingDirectionAttributeName: cocoascript.NSAttributedStringKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy
-type NSLineBreakStrategy = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/nslinebreakstrategy
+  type NSLineBreakStrategy = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A collection of methods that give controls an easy way to adopt automatic adjustment to content category changes.
@@ -3093,15 +3092,13 @@ declare namespace cocoascript {
 
 declare const UIDeferredMenuElement: cocoascript.UIDeferredMenuElement;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uimenuelementattributes
-type UIMenuElementAttributes = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uimenuelementattributes
+  type UIMenuElementAttributes = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uimenuelementstate
-type UIMenuElementState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uimenuelementstate
+  type UIMenuElementState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An abstract interface for responding to and handling events.
@@ -5009,21 +5006,22 @@ declare namespace cocoascript {
 }
 
 declare const UIActivityItemProvider: cocoascript.UIActivityItemProvider;
+declare const UIDeviceOrientationDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uideviceorientation
-type UIDeviceOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uideviceorientation
+  type UIDeviceOrientation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidevicebatterystate
-type UIDeviceBatteryState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidevicebatterystate
+  type UIDeviceBatteryState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiuserinterfaceidiom
-type UIUserInterfaceIdiom = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiuserinterfaceidiom
+  type UIUserInterfaceIdiom = cocoascript.NSInteger;
 }
-
+declare const UIDeviceBatteryLevelDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIDeviceBatteryStateDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIDeviceProximityStateDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/nsdataassetname
   type NSDataAssetName = cocoascript.NSString;
@@ -5120,26 +5118,26 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uilayoutpriority
   type UILayoutPriority = number;
 }
+declare const UILayoutPriorityRequired: cocoascript.UILayoutPriority;
+declare const UILayoutPriorityDefaultHigh: cocoascript.UILayoutPriority;
+declare const UILayoutPriorityDefaultLow: cocoascript.UILayoutPriority;
+declare const UILayoutPriorityFittingSizeLevel: cocoascript.UILayoutPriority;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nslayoutrelation
-type NSLayoutRelation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nslayoutrelation
+  type NSLayoutRelation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nslayoutattribute
-type NSLayoutAttribute = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nslayoutattribute
+  type NSLayoutAttribute = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nslayoutformatoptions
-type NSLayoutFormatOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/nslayoutformatoptions
+  type NSLayoutFormatOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uilayoutconstraintaxis
-type UILayoutConstraintAxis = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uilayoutconstraintaxis
+  type UILayoutConstraintAxis = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A rectangular area that can interact with Auto Layout.
@@ -5503,15 +5501,13 @@ declare namespace cocoascript {
 
 declare const UIDropProposal: cocoascript.UIDropProposal;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidropoperation
-type UIDropOperation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidropoperation
+  type UIDropOperation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidropsessionprogressindicatorstyle
-type UIDropSessionProgressIndicatorStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidropsessionprogressindicatorstyle
+  type UIDropSessionProgressIndicatorStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/uikit/uiitemproviderpresentationsizeproviding
@@ -5744,64 +5740,56 @@ declare namespace cocoascript {
 
 declare const UIImage: cocoascript.UIImage;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibaselineadjustment
-type UIBaselineAdjustment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibaselineadjustment
+  type UIBaselineAdjustment = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uilinebreakmode
-type UILineBreakMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uilinebreakmode
+  type UILineBreakMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextalignment
-type UITextAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextalignment
+  type UITextAlignment = cocoascript.NSInteger;
 }
-
+declare const NSShadowAttributeName: cocoascript.NSAttributedStringKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nstextalignment
-type NSTextAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nstextalignment
+  type NSTextAlignment = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nswritingdirection
-type NSWritingDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nswritingdirection
+  type NSWritingDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions
-type NSTextStorageEditActions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/nstextstorageeditactions
+  type NSTextStorageEditActions = cocoascript.NSUInteger;
 }
-
+declare const NSTextStorageWillProcessEditingNotification: cocoascript.NSNotificationName;
+declare const NSTextStorageDidProcessEditingNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nstextscalingtype
-type NSTextScalingType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nstextscalingtype
+  type NSTextScalingType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nsglyphproperty
-type NSGlyphProperty = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nsglyphproperty
+  type NSGlyphProperty = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nstextlayoutorientation
-type NSTextLayoutOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nstextlayoutorientation
+  type NSTextLayoutOrientation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/nstexteffectstyle
   type NSTextEffectStyle = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nswritingdirectionformattype
-type NSWritingDirectionFormatType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nswritingdirectionformattype
+  type NSWritingDirectionFormatType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nsunderlinestyle
-type NSUnderlineStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nsunderlinestyle
+  type NSUnderlineStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/nsattributedstringdocumentattributekey
   type NSAttributedStringDocumentAttributeKey = cocoascript.NSString;
@@ -5819,29 +5807,44 @@ declare namespace cocoascript {
   type NSAttributedStringDocumentReadingOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nstextwritingdirection
-type NSTextWritingDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nstextwritingdirection
+  type NSTextWritingDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nscontrolcharacteraction
-type NSControlCharacterAction = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nscontrolcharacteraction
+  type NSControlCharacterAction = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nslinebreakmode
-type NSLineBreakMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nslinebreakmode
+  type NSLineBreakMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/nstexttaboptionkey
   type NSTextTabOptionKey = cocoascript.NSString;
 }
+declare const NSAttachmentAttributeName: cocoascript.NSAttributedStringKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uifontdescriptorsymbolictraits
-type UIFontDescriptorSymbolicTraits = number;
+  // doc://com.apple.documentation/documentation/uikit/uifontdescriptorsymbolictraits
+  type UIFontDescriptorSymbolicTraits = number;
 }
-
+declare const NSBackgroundColorAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSBaselineOffsetAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSExpansionAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSFontAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSForegroundColorAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSKernAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSLigatureAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSLinkAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSObliquenessAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSParagraphStyleAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSStrikethroughColorAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSStrikethroughStyleAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSStrokeColorAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSStrokeWidthAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSTextEffectAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSUnderlineColorAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSUnderlineStyleAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSVerticalGlyphFormAttributeName: cocoascript.NSAttributedStringKey;
 declare namespace cocoascript {
   /**
    * The base class for controls, which are visual elements that convey a specific action or intention in response to user interactions.
@@ -6837,10 +6840,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaxis
-type UIAxis = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaxis
+  type UIAxis = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * Edge insets that take language direction into account.
@@ -6871,20 +6873,17 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge
-type NSDirectionalRectEdge = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge
+  type NSDirectionalRectEdge = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/nsrectalignment
-type NSRectAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/nsrectalignment
+  type NSRectAlignment = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge
-type UIDirectionalRectEdge = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidirectionalrectedge
+  type UIDirectionalRectEdge = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A container view controller that defines a stack-based scheme for navigating hierarchical content.
@@ -9390,15 +9389,13 @@ declare namespace cocoascript {
   type UIAccessibilityTextualContext = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiguidedaccessaccessibilityfeature
-type UIGuidedAccessAccessibilityFeature = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiguidedaccessaccessibilityfeature
+  type UIGuidedAccessAccessibilityFeature = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode
-type UIGuidedAccessErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode
+  type UIGuidedAccessErrorCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A custom action to be performed on an accessible object.
@@ -9554,10 +9551,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaccessibilitycontainertype
-type UIAccessibilityContainerType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycontainertype
+  type UIAccessibilityContainerType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A context-sensitive function that helps Voice Over users find the next instance of a related element.
@@ -9665,10 +9661,9 @@ declare namespace cocoascript {
 
 declare const UIAccessibilityLocationDescriptor: cocoascript.UIAccessibilityLocationDescriptor;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaccessibilityhearingdeviceear
-type UIAccessibilityHearingDeviceEar = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaccessibilityhearingdeviceear
+  type UIAccessibilityHearingDeviceEar = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that contains the specific font, size, style, and weight attributes to apply to a symbol image.
@@ -10707,10 +10702,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextinteractionmode
-type UITextInteractionMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextinteractionmode
+  type UITextInteractionMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A set of methods for interacting with the text input system and enabling features, such as autocorrect and multistage text input, in documents.
@@ -10973,10 +10967,9 @@ declare namespace cocoascript {
 
 declare const UIKey: cocoascript.UIKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uikeyboardhidusage
-type UIKeyboardHIDUsage = cocoascript.CFIndex;
+  // doc://com.apple.documentation/documentation/uikit/uikeyboardhidusage
+  type UIKeyboardHIDUsage = cocoascript.CFIndex;
 }
-
 declare namespace cocoascript {
   /**
    * An interaction for customizing the behavior of Scribble on text input views, or for suppressing it entirely in specific cases.
@@ -12294,34 +12287,29 @@ declare namespace cocoascript {
 
 declare const UITableViewCell: cocoascript.UITableViewCell;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibuttontype
-type UIButtonType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibuttontype
+  type UIButtonType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uibuttonpointerstyleprovider
   type UIButtonPointerStyleProvider = cocoascript.UIPointerShape;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibuttonrole
-type UIButtonRole = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibuttonrole
+  type UIButtonRole = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiswitchstyle
-type UISwitchStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiswitchstyle
+  type UISwitchStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipagecontrolbackgroundstyle
-type UIPageControlBackgroundStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipagecontrolbackgroundstyle
+  type UIPageControlBackgroundStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipagecontrolinteractionstate
-type UIPageControlInteractionState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipagecontrolinteractionstate
+  type UIPageControlInteractionState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The methods adopted by the object you use to manage data and provide cells for a table view.
@@ -12463,50 +12451,41 @@ declare namespace cocoascript {
 
 declare const UICommandAlternate: cocoascript.UICommandAlternate;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uikeymodifierflags
-type UIKeyModifierFlags = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uikeymodifierflags
+  type UIKeyModifierFlags = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicontrolstate
-type UIControlState = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicontrolstate
+  type UIControlState = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiuserinterfacestyle
-type UIUserInterfaceStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiuserinterfacestyle
+  type UIUserInterfaceStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiuserinterfacelevel
-type UIUserInterfaceLevel = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiuserinterfacelevel
+  type UIUserInterfaceLevel = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitraitenvironmentlayoutdirection
-type UITraitEnvironmentLayoutDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitraitenvironmentlayoutdirection
+  type UITraitEnvironmentLayoutDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaccessibilitycontrast
-type UIAccessibilityContrast = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycontrast
+  type UIAccessibilityContrast = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uilegibilityweight
-type UILegibilityWeight = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uilegibilityweight
+  type UILegibilityWeight = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiuserinterfaceactiveappearance
-type UIUserInterfaceActiveAppearance = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiuserinterfaceactiveappearance
+  type UIUserInterfaceActiveAppearance = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollerbackgroundstyle
-type UISplitViewControllerBackgroundStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollerbackgroundstyle
+  type UISplitViewControllerBackgroundStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiactionidentifier
   type UIActionIdentifier = cocoascript.NSString;
@@ -12520,30 +12499,25 @@ declare namespace cocoascript {
   type UIMenuIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uimenuoptions
-type UIMenuOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uimenuoptions
+  type UIMenuOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiactivityindicatorviewstyle
-type UIActivityIndicatorViewStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiactivityindicatorviewstyle
+  type UIActivityIndicatorViewStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uialertcontrollerstyle
-type UIAlertControllerStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uialertcontrollerstyle
+  type UIAlertControllerStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidatepickerstyle
-type UIDatePickerStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidatepickerstyle
+  type UIDatePickerStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidatepickermode
-type UIDatePickerMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidatepickermode
+  type UIDatePickerMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The
@@ -12590,41 +12564,35 @@ declare namespace cocoascript {
     imagePickerController_didFinishPickingImage_editingInfo(picker: cocoascript.UIImagePickerController, image: cocoascript.UIImage, editingInfo: cocoascript.UIImagePickerControllerDelegate):void;
   }
 }
+declare const UIImagePickerControllerLivePhoto: cocoascript.UIImagePickerControllerInfoKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollersourcetype
-type UIImagePickerControllerSourceType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollersourcetype
+  type UIImagePickerControllerSourceType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollerqualitytype
-type UIImagePickerControllerQualityType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollerqualitytype
+  type UIImagePickerControllerQualityType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameradevice
-type UIImagePickerControllerCameraDevice = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameradevice
+  type UIImagePickerControllerCameraDevice = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameracapturemode
-type UIImagePickerControllerCameraCaptureMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameracapturemode
+  type UIImagePickerControllerCameraCaptureMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameraflashmode
-type UIImagePickerControllerCameraFlashMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollercameraflashmode
+  type UIImagePickerControllerCameraFlashMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollerimageurlexportpreset
-type UIImagePickerControllerImageURLExportPreset = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollerimageurlexportpreset
+  type UIImagePickerControllerImageURLExportPreset = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiprogressviewstyle
-type UIProgressViewStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiprogressviewstyle
+  type UIProgressViewStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A collection of optional methods that you implement to make a search bar control functional.
@@ -12656,40 +12624,41 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisearchbarstyle
-type UISearchBarStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisearchbarstyle
+  type UISearchBarStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibarstyle
-type UIBarStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibarstyle
+  type UIBarStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisearchbaricon
-type UISearchBarIcon = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisearchbaricon
+  type UISearchBarIcon = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle
-type UISegmentedControlStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolstyle
+  type UISegmentedControlStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment
-type UISegmentedControlSegment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisegmentedcontrolsegment
+  type UISegmentedControlSegment = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uistackviewdistribution
-type UIStackViewDistribution = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uistackviewdistribution
+  type UIStackViewDistribution = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uistackviewalignment
-type UIStackViewAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uistackviewalignment
+  type UIStackViewAlignment = cocoascript.NSInteger;
 }
-
+declare const UIStackViewSpacingUseDefault: cocoascript.CGFloat;
+declare const UIStackViewSpacingUseSystem: cocoascript.CGFloat;
+declare const UIKeyboardWillShowNotification: cocoascript.NSNotificationName;
+declare const UIKeyboardDidShowNotification: cocoascript.NSNotificationName;
+declare const UIKeyboardWillHideNotification: cocoascript.NSNotificationName;
+declare const UIKeyboardDidHideNotification: cocoascript.NSNotificationName;
+declare const UIKeyboardWillChangeFrameNotification: cocoascript.NSNotificationName;
+declare const UIKeyboardDidChangeFrameNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A set of optional methods to manage the editing and validation of text in a text field object.
@@ -12717,20 +12686,20 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextborderstyle
-type UITextBorderStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextborderstyle
+  type UITextBorderStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreason
-type UITextFieldDidEndEditingReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreason
+  type UITextFieldDidEndEditingReason = cocoascript.NSInteger;
 }
-
+declare const UITextFieldTextDidBeginEditingNotification: cocoascript.NSNotificationName;
+declare const UITextFieldTextDidChangeNotification: cocoascript.NSNotificationName;
+declare const UITextFieldTextDidEndEditingNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextfieldviewmode
-type UITextFieldViewMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextfieldviewmode
+  type UITextFieldViewMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The methods for receiving editing-related messages for text view objects.
@@ -12762,10 +12731,12 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidatadetectortypes
-type UIDataDetectorTypes = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidatadetectortypes
+  type UIDataDetectorTypes = cocoascript.NSUInteger;
 }
-
+declare const UITextViewTextDidBeginEditingNotification: cocoascript.NSNotificationName;
+declare const UITextViewTextDidChangeNotification: cocoascript.NSNotificationName;
+declare const UITextViewTextDidEndEditingNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * The
@@ -12852,10 +12823,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewcontentmode
-type UIViewContentMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewcontentmode
+  type UIViewContentMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The protocol that an interaction implements to access the view that owns it.
@@ -12872,45 +12842,40 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewanimationoptions
-type UIViewAnimationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewanimationoptions
+  type UIViewAnimationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewanimationcurve
-type UIViewAnimationCurve = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewanimationcurve
+  type UIViewAnimationCurve = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewanimationtransition
-type UIViewAnimationTransition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewanimationtransition
+  type UIViewAnimationTransition = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisystemanimation
-type UISystemAnimation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisystemanimation
+  type UISystemAnimation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewkeyframeanimationoptions
-type UIViewKeyframeAnimationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewkeyframeanimationoptions
+  type UIViewKeyframeAnimationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewtintadjustmentmode
-type UIViewTintAdjustmentMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewtintadjustmentmode
+  type UIViewTintAdjustmentMode = cocoascript.NSInteger;
 }
-
+declare const UILayoutFittingCompressedSize: cocoascript.CGSize;
+declare const UILayoutFittingExpandedSize: cocoascript.CGSize;
+declare const UIViewNoIntrinsicMetric: cocoascript.CGFloat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewautoresizing
-type UIViewAutoresizing = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewautoresizing
+  type UIViewAutoresizing = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisemanticcontentattribute
-type UISemanticContentAttribute = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisemanticcontentattribute
+  type UISemanticContentAttribute = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A specific type of scene that manages one or more windows for your app.
@@ -12985,25 +12950,21 @@ declare namespace cocoascript {
 
 declare const UITitlebar: cocoascript.UITitlebar;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uititlebartitlevisibility
-type UITitlebarTitleVisibility = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uititlebartitlevisibility
+  type UITitlebarTitleVisibility = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uititlebarseparatorstyle
-type UITitlebarSeparatorStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uititlebarseparatorstyle
+  type UITitlebarSeparatorStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uititlebartoolbarstyle
-type UITitlebarToolbarStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uititlebartoolbarstyle
+  type UITitlebarToolbarStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractionappearance
-type UIContextMenuInteractionAppearance = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractionappearance
+  type UIContextMenuInteractionAppearance = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object containing the configuration details for the contextual menu.
@@ -13048,97 +13009,101 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uimenucontrollerarrowdirection
-type UIMenuControllerArrowDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uimenucontrollerarrowdirection
+  type UIMenuControllerArrowDirection = cocoascript.NSInteger;
 }
-
+declare const UIMenuControllerWillShowMenuNotification: cocoascript.NSNotificationName;
+declare const UIMenuControllerDidShowMenuNotification: cocoascript.NSNotificationName;
+declare const UIMenuControllerWillHideMenuNotification: cocoascript.NSNotificationName;
+declare const UIMenuControllerDidHideMenuNotification: cocoascript.NSNotificationName;
+declare const UIMenuControllerMenuFrameDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uieditinginteractionconfiguration
-type UIEditingInteractionConfiguration = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uieditinginteractionconfiguration
+  type UIEditingInteractionConfiguration = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiinterfaceorientation
-type UIInterfaceOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiinterfaceorientation
+  type UIInterfaceOrientation = cocoascript.NSInteger;
 }
-
+declare const UIApplicationDidChangeStatusBarOrientationNotification: cocoascript.NSNotificationName;
+declare const UIApplicationWillChangeStatusBarOrientationNotification: cocoascript.NSNotificationName;
+declare const UIApplicationDidChangeStatusBarFrameNotification: cocoascript.NSNotificationName;
+declare const UIApplicationWillChangeStatusBarFrameNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiapplicationstate
-type UIApplicationState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiapplicationstate
+  type UIApplicationState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibackgroundrefreshstatus
-type UIBackgroundRefreshStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibackgroundrefreshstatus
+  type UIBackgroundRefreshStatus = cocoascript.NSInteger;
 }
-
+declare const UIApplicationBackgroundRefreshStatusDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uibackgroundtaskidentifier
   type UIBackgroundTaskIdentifier = cocoascript.NSUInteger;
 }
+declare const UIApplicationBackgroundFetchIntervalMinimum: cocoascript.NSTimeInterval;
+declare const UIApplicationBackgroundFetchIntervalNever: cocoascript.NSTimeInterval;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiapplicationopenexternalurloptionskey
   type UIApplicationOpenExternalURLOptionsKey = cocoascript.NSString;
 }
+declare const UIApplicationProtectedDataDidBecomeAvailable: cocoascript.NSNotificationName;
+declare const UIApplicationProtectedDataWillBecomeUnavailable: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiuserinterfacelayoutdirection
-type UIUserInterfaceLayoutDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiuserinterfacelayoutdirection
+  type UIUserInterfaceLayoutDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicontentsizecategory
   type UIContentSizeCategory = cocoascript.NSString;
 }
+declare const UIContentSizeCategoryDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uistatusbarstyle
-type UIStatusBarStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uistatusbarstyle
+  type UIStatusBarStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uistatusbaranimation
-type UIStatusBarAnimation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uistatusbaranimation
+  type UIStatusBarAnimation = cocoascript.NSInteger;
 }
-
+declare const UITrackingRunLoopMode: cocoascript.NSRunLoopMode;
+declare const UIApplicationUserDidTakeScreenshotNotification: cocoascript.NSNotificationName;
+declare const UIMinimumKeepAliveTimeout: cocoascript.NSTimeInterval;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiremotenotificationtype
-type UIRemoteNotificationType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiremotenotificationtype
+  type UIRemoteNotificationType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate
-type UIGestureRecognizerState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uigesturerecognizerstate
+  type UIGestureRecognizerState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiscrolltypemask
-type UIScrollTypeMask = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiscrolltypemask
+  type UIScrollTypeMask = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiscrolltype
-type UIScrollType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiscrolltype
+  type UIScrollType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uirectedge
-type UIRectEdge = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uirectedge
+  type UIRectEdge = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizerdirection
-type UISwipeGestureRecognizerDirection = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiswipegesturerecognizerdirection
+  type UISwipeGestureRecognizerDirection = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uimodalpresentationstyle
-type UIModalPresentationStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uimodalpresentationstyle
+  type UIModalPresentationStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uimodaltransitionstyle
-type UIModalTransitionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uimodaltransitionstyle
+  type UIModalTransitionStyle = cocoascript.NSInteger;
 }
-
+declare const UIViewControllerShowDetailTargetDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIViewControllerHierarchyInconsistencyException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
   /**
    * The core methods you use to respond to life-cycle events occurring within a scene.
@@ -13171,15 +13136,23 @@ declare namespace cocoascript {
     scene_didUpdateUserActivity(scene: cocoascript.UIScene, userActivity: cocoascript.NSUserActivity):void;
   }
 }
+declare const UIApplicationLaunchOptionsRemoteNotificationKey: cocoascript.UIApplicationLaunchOptionsKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiapplicationlaunchoptionskey
   type UIApplicationLaunchOptionsKey = cocoascript.NSString;
 }
+declare const UIApplicationDidFinishLaunchingNotification: cocoascript.NSNotificationName;
+declare const UIApplicationDidBecomeActiveNotification: cocoascript.NSNotificationName;
+declare const UIApplicationDidEnterBackgroundNotification: cocoascript.NSNotificationName;
+declare const UIApplicationWillEnterForegroundNotification: cocoascript.NSNotificationName;
+declare const UIApplicationWillResignActiveNotification: cocoascript.NSNotificationName;
+declare const UIApplicationWillTerminateNotification: cocoascript.NSNotificationName;
+declare const UIApplicationDidReceiveMemoryWarningNotification: cocoascript.NSNotificationName;
+declare const UIApplicationSignificantTimeChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibackgroundfetchresult
-type UIBackgroundFetchResult = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibackgroundfetchresult
+  type UIBackgroundFetchResult = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiapplicationopenurloptionskey
   type UIApplicationOpenURLOptionsKey = cocoascript.NSString;
@@ -13188,11 +13161,12 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiapplicationextensionpointidentifier
   type UIApplicationExtensionPointIdentifier = cocoascript.NSString;
 }
+declare const UIApplicationKeyboardExtensionPointIdentifier: cocoascript.UIApplicationExtensionPointIdentifier;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiinterfaceorientationmask
-type UIInterfaceOrientationMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiinterfaceorientationmask
+  type UIInterfaceOrientationMask = cocoascript.NSUInteger;
 }
-
+declare const UIApplicationInvalidInterfaceOrientationException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
   /**
    * Additional methods that you use to manage app-specific tasks occurring in a scene.
@@ -13422,25 +13396,22 @@ declare namespace cocoascript {
 
 declare const UISceneOpenExternalURLOptions: cocoascript.UISceneOpenExternalURLOptions;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisceneerrorcode
-type UISceneErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisceneerrorcode
+  type UISceneErrorCode = cocoascript.NSInteger;
 }
-
+declare const UISceneErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiforcetouchcapability
-type UIForceTouchCapability = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiforcetouchcapability
+  type UIForceTouchCapability = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiuserinterfacesizeclass
-type UIUserInterfaceSizeClass = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiuserinterfacesizeclass
+  type UIUserInterfaceSizeClass = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidisplaygamut
-type UIDisplayGamut = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidisplaygamut
+  type UIDisplayGamut = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The methods of the
@@ -13458,25 +13429,22 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictionstate
-type UIGuidedAccessRestrictionState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictionstate
+  type UIGuidedAccessRestrictionState = cocoascript.NSInteger;
 }
-
+declare const UIDocumentStateChangedNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentchangekind
-type UIDocumentChangeKind = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentchangekind
+  type UIDocumentChangeKind = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentsaveoperation
-type UIDocumentSaveOperation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentsaveoperation
+  type UIDocumentSaveOperation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentstate
-type UIDocumentState = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentstate
+  type UIDocumentState = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that manages an ordered collection of data items and presents them using customizable layouts.
@@ -13651,6 +13619,9 @@ declare namespace cocoascript {
 }
 
 declare const UICollectionView: cocoascript.UICollectionView;
+declare const UIPasteboardNameGeneral: cocoascript.UIPasteboardName;
+declare const UIPasteboardOptionLocalOnly: cocoascript.UIPasteboardOption;
+declare const UIPasteboardOptionExpirationDate: cocoascript.UIPasteboardOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uipasteboarddetectionpattern
   type UIPasteboardDetectionPattern = cocoascript.NSString;
@@ -13663,6 +13634,8 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uipasteboardoption
   type UIPasteboardOption = cocoascript.NSString;
 }
+declare const UIPasteboardChangedNotification: cocoascript.NSNotificationName;
+declare const UIPasteboardRemovedNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * The interface for text-oriented responder objects to participate in the unified paste and drop system in iOS.
@@ -13674,20 +13647,19 @@ declare namespace cocoascript {
     setPasteDelegate(): void;
   }
 }
+declare const UINibExternalObjects: cocoascript.UINibOptionsKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiniboptionskey
   type UINibOptionsKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uikeyboardtype
-type UIKeyboardType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uikeyboardtype
+  type UIKeyboardType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiactivitycategory
-type UIActivityCategory = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiactivitycategory
+  type UIActivityCategory = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiactivitytype
   type UIActivityType = cocoascript.NSString;
@@ -15787,10 +15759,9 @@ declare namespace cocoascript {
 
 declare const UICollectionViewDiffableDataSource: cocoascript.UICollectionViewDiffableDataSource;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior
-type UICollectionLayoutSectionOrthogonalScrollingBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionlayoutsectionorthogonalscrollingbehavior
+  type UICollectionLayoutSectionOrthogonalScrollingBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A collection view cell that provides list features and default styling.
@@ -15822,6 +15793,11 @@ declare namespace cocoascript {
 }
 
 declare const UICollectionViewListCell: cocoascript.UICollectionViewListCell;
+declare const UILayoutPriorityDragThatCanResizeScene: cocoascript.UILayoutPriority;
+declare const UILayoutPriorityDragThatCannotResizeScene: cocoascript.UILayoutPriority;
+declare const UILayoutPrioritySceneSizeStayPut: cocoascript.UILayoutPriority;
+declare const UIFontTextStyleHeadline: cocoascript.UIFontTextStyle;
+declare const UIFontTextStyleBody: cocoascript.UIFontTextStyle;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uifonttextstyle
   type UIFontTextStyle = cocoascript.NSString;
@@ -15883,10 +15859,9 @@ declare namespace cocoascript {
 
 declare const UIListContentConfiguration: cocoascript.UIListContentConfiguration;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uispringloadedinteractioneffectstate
-type UISpringLoadedInteractionEffectState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uispringloadedinteractioneffectstate
+  type UISpringLoadedInteractionEffectState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that contains information about a placeholder in the collection view.
@@ -15958,54 +15933,88 @@ declare namespace cocoascript {
 
 declare const UICollectionViewDropProposal: cocoascript.UICollectionViewDropProposal;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle
-type UIPreferredPresentationStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipreferredpresentationstyle
+  type UIPreferredPresentationStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimageorientation
-type UIImageOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimageorientation
+  type UIImageOrientation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimageresizingmode
-type UIImageResizingMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimageresizingmode
+  type UIImageResizingMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagerenderingmode
-type UIImageRenderingMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagerenderingmode
+  type UIImageRenderingMode = cocoascript.NSInteger;
 }
-
+declare const NSTextScalingDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSSourceTextScalingDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSTargetTextScalingDocumentOption: cocoascript.NSAttributedStringDocumentReadingOptionKey;
+declare const NSSourceTextScalingDocumentOption: cocoascript.NSAttributedStringDocumentReadingOptionKey;
+declare const NSDocumentTypeDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSHTMLTextDocumentType: cocoascript.NSAttributedStringDocumentType;
+declare const NSCharacterEncodingDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSDefaultAttributesDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSDocumentTypeDocumentOption: cocoascript.NSAttributedStringDocumentReadingOptionKey;
+declare const UIAccessibilitySpeechAttributeIPANotation: cocoascript.NSAttributedStringKey;
+declare const UIAccessibilitySpeechAttributeLanguage: cocoascript.NSAttributedStringKey;
+declare const UIAccessibilitySpeechAttributePitch: cocoascript.NSAttributedStringKey;
+declare const UIAccessibilitySpeechAttributePunctuation: cocoascript.NSAttributedStringKey;
+declare const UIAccessibilitySpeechAttributeQueueAnnouncement: cocoascript.NSAttributedStringKey;
+declare const UIAccessibilitySpeechAttributeSpellOut: cocoascript.NSAttributedStringKey;
+declare const UIAccessibilityTextAttributeCustom: cocoascript.NSAttributedStringKey;
+declare const UIAccessibilityTextAttributeHeadingLevel: cocoascript.NSAttributedStringKey;
+declare const UIAccessibilityTextAttributeContext: cocoascript.NSAttributedStringKey;
+declare const NSTrackingAttributeName: cocoascript.NSAttributedStringKey;
+declare const NSTextEffectLetterpressStyle: cocoascript.NSTextEffectStyle;
+declare const NSUnderlinePatternSolid: cocoascript.NSUnderlineStyle;
+declare const NSUnderlinePatternDot: cocoascript.NSUnderlineStyle;
+declare const NSUnderlinePatternDash: cocoascript.NSUnderlineStyle;
+declare const NSUnderlinePatternDashDot: cocoascript.NSUnderlineStyle;
+declare const NSUnderlinePatternDashDotDot: cocoascript.NSUnderlineStyle;
+declare const NSUnderlineByWord: cocoascript.NSUnderlineStyle;
+declare const NSBackgroundColorDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSCocoaVersionDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSDefaultTabIntervalDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSHyphenationFactorDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSPaperMarginDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSPaperSizeDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSReadOnlyDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSTextLayoutSectionsAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSViewModeDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSViewSizeDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSViewZoomDocumentAttribute: cocoascript.NSAttributedStringDocumentAttributeKey;
+declare const NSPlainTextDocumentType: cocoascript.NSAttributedStringDocumentType;
+declare const NSRTFTextDocumentType: cocoascript.NSAttributedStringDocumentType;
+declare const NSRTFDTextDocumentType: cocoascript.NSAttributedStringDocumentType;
+declare const NSTextLayoutSectionOrientation: cocoascript.NSTextLayoutSectionKey;
+declare const NSTextLayoutSectionRange: cocoascript.NSTextLayoutSectionKey;
+declare const NSTabColumnTerminatorsAttributeName: cocoascript.NSTextTabOptionKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uifontdescriptorclass
   type UIFontDescriptorClass = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicontrolevents
-type UIControlEvents = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicontrolevents
+  type UIControlEvents = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicontrolcontentverticalalignment
-type UIControlContentVerticalAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicontrolcontentverticalalignment
+  type UIControlContentVerticalAlignment = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicontrolcontenthorizontalalignment
-type UIControlContentHorizontalAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicontrolcontenthorizontalalignment
+  type UIControlContentHorizontalAlignment = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibarmetrics
-type UIBarMetrics = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibarmetrics
+  type UIBarMetrics = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibarposition
-type UIBarPosition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibarposition
+  type UIBarPosition = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The methods adopted by the object you use to manage user interactions with items in a collection view.
@@ -16353,44 +16362,37 @@ declare namespace cocoascript {
 
 declare const UITableViewPlaceholder: cocoascript.UITableViewPlaceholder;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiscrollviewcontentinsetadjustmentbehavior
-type UIScrollViewContentInsetAdjustmentBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiscrollviewcontentinsetadjustmentbehavior
+  type UIScrollViewContentInsetAdjustmentBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiscrollviewdecelerationrate
   type UIScrollViewDecelerationRate = cocoascript.CGFloat;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiscrollviewindicatorstyle
-type UIScrollViewIndicatorStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiscrollviewindicatorstyle
+  type UIScrollViewIndicatorStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiscrollviewkeyboarddismissmode
-type UIScrollViewKeyboardDismissMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiscrollviewkeyboarddismissmode
+  type UIScrollViewKeyboardDismissMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiscrollviewindexdisplaymode
-type UIScrollViewIndexDisplayMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiscrollviewindexdisplaymode
+  type UIScrollViewIndexDisplayMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiwebviewnavigationtype
-type UIWebViewNavigationType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiwebviewnavigationtype
+  type UIWebViewNavigationType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiwebpaginationbreakingmode
-type UIWebPaginationBreakingMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiwebpaginationbreakingmode
+  type UIWebPaginationBreakingMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiwebpaginationmode
-type UIWebPaginationMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiwebpaginationmode
+  type UIWebPaginationMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The interface that determines if a text view is a drag source.
@@ -16412,10 +16414,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextdragoptions
-type UITextDragOptions = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextdragoptions
+  type UITextDragOptions = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The interface that determines if a text view is a drop destination.
@@ -16434,10 +16435,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextdropeditability
-type UITextDropEditability = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextdropeditability
+  type UITextDropEditability = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * Renders previews of text dragged by the user.
@@ -16474,20 +16474,17 @@ declare namespace cocoascript {
 
 declare const UITextDragPreviewRenderer: cocoascript.UITextDragPreviewRenderer;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextdropaction
-type UITextDropAction = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextdropaction
+  type UITextDropAction = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextdropperformer
-type UITextDropPerformer = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextdropperformer
+  type UITextDropPerformer = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextdropprogressmode
-type UITextDropProgressMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextdropprogressmode
+  type UITextDropProgressMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A protocol that supports pasting tokens.
@@ -16499,25 +16496,21 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uivibrancyeffectstyle
-type UIVibrancyEffectStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uivibrancyeffectstyle
+  type UIVibrancyEffectStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiblureffectstyle
-type UIBlurEffectStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiblureffectstyle
+  type UIBlurEffectStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibarbuttonsystemitem
-type UIBarButtonSystemItem = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibarbuttonsystemitem
+  type UIBarButtonSystemItem = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uibarbuttonitemstyle
-type UIBarButtonItemStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uibarbuttonitemstyle
+  type UIBarButtonItemStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The
@@ -16535,10 +16528,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitabbarsystemitem
-type UITabBarSystemItem = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitabbarsystemitem
+  type UITabBarSystemItem = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A relationship between two dynamic items, or between a dynamic item and an anchor point.
@@ -16585,6 +16577,10 @@ declare namespace cocoascript {
 }
 
 declare const UIAttachmentBehavior: cocoascript.UIAttachmentBehavior;
+declare const UIOffsetZero: cocoascript.UIOffset;
+declare const UIEdgeInsetsZero: cocoascript.UIEdgeInsets;
+declare const NSDirectionalEdgeInsetsZero: cocoascript.NSDirectionalEdgeInsets;
+declare const UINavigationControllerHideShowBarDuration: cocoascript.CGFloat;
 declare namespace cocoascript {
   /**
    * The methods adopted by the object you use to manage changes to a split view interface.
@@ -16638,64 +16634,54 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollerdisplaymode
-type UISplitViewControllerDisplayMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollerdisplaymode
+  type UISplitViewControllerDisplayMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollersplitbehavior
-type UISplitViewControllerSplitBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollersplitbehavior
+  type UISplitViewControllerSplitBehavior = cocoascript.NSInteger;
 }
-
+declare const UISplitViewControllerAutomaticDimension: cocoascript.CGFloat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollerstyle
-type UISplitViewControllerStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollerstyle
+  type UISplitViewControllerStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollercolumn
-type UISplitViewControllerColumn = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollercolumn
+  type UISplitViewControllerColumn = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollerprimaryedge
-type UISplitViewControllerPrimaryEdge = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisplitviewcontrollerprimaryedge
+  type UISplitViewControllerPrimaryEdge = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uinavigationitemlargetitledisplaymode
-type UINavigationItemLargeTitleDisplayMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uinavigationitemlargetitledisplaymode
+  type UINavigationItemLargeTitleDisplayMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uinavigationitembackbuttondisplaymode
-type UINavigationItemBackButtonDisplayMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uinavigationitembackbuttondisplaymode
+  type UINavigationItemBackButtonDisplayMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uipageviewcontrolleroptionskey
   type UIPageViewControllerOptionsKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipageviewcontrollernavigationdirection
-type UIPageViewControllerNavigationDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipageviewcontrollernavigationdirection
+  type UIPageViewControllerNavigationDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipageviewcontrollernavigationorientation
-type UIPageViewControllerNavigationOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipageviewcontrollernavigationorientation
+  type UIPageViewControllerNavigationOrientation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipageviewcontrollerspinelocation
-type UIPageViewControllerSpineLocation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipageviewcontrollerspinelocation
+  type UIPageViewControllerSpineLocation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipageviewcontrollertransitionstyle
-type UIPageViewControllerTransitionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipageviewcontrollertransitionstyle
+  type UIPageViewControllerTransitionStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A selectable search parameter.
@@ -16780,25 +16766,22 @@ declare namespace cocoascript {
 
 declare const UIDocumentBrowserAction: cocoascript.UIDocumentBrowserAction;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentbrowseruserinterfacestyle
-type UIDocumentBrowserUserInterfaceStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseruserinterfacestyle
+  type UIDocumentBrowserUserInterfaceStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentbrowsererrorcode
-type UIDocumentBrowserErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentbrowsererrorcode
+  type UIDocumentBrowserErrorCode = cocoascript.NSInteger;
 }
-
+declare const UIDocumentBrowserErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentpickermode
-type UIDocumentPickerMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentpickermode
+  type UIDocumentPickerMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicloudsharingpermissionoptions
-type UICloudSharingPermissionOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicloudsharingpermissionoptions
+  type UICloudSharingPermissionOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiprinterpickercompletionhandler
   type UIPrinterPickerCompletionHandler = cocoascript.NSError;
@@ -16907,10 +16890,9 @@ declare namespace cocoascript {
   type UIConfigurationColorTransformer = cocoascript.UIColor;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitabbaritemappearancestyle
-type UITabBarItemAppearanceStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitabbaritemappearancestyle
+  type UITabBarItemAppearanceStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The timing information for animations that mimics the behavior of a spring.
@@ -17433,74 +17415,70 @@ declare namespace cocoascript {
 
 declare const UIInterpolatingMotionEffect: cocoascript.UIInterpolatingMotionEffect;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackstyle
-type UIImpactFeedbackStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimpactfeedbackstyle
+  type UIImpactFeedbackStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uinotificationfeedbacktype
-type UINotificationFeedbackType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uinotificationfeedbacktype
+  type UINotificationFeedbackType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiscreenoverscancompensation
-type UIScreenOverscanCompensation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiscreenoverscancompensation
+  type UIScreenOverscanCompensation = cocoascript.NSInteger;
 }
-
+declare const UIScreenDidConnectNotification: cocoascript.NSNotificationName;
+declare const UIScreenDidDisconnectNotification: cocoascript.NSNotificationName;
+declare const UIScreenModeDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIScreenBrightnessDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIScreenCapturedDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIWindowDidBecomeKeyNotification: cocoascript.NSNotificationName;
+declare const UIWindowDidResignKeyNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiwindowlevel
   type UIWindowLevel = cocoascript.CGFloat;
 }
+declare const UIWindowDidBecomeVisibleNotification: cocoascript.NSNotificationName;
+declare const UIWindowDidBecomeHiddenNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uialertactionstyle
-type UIAlertActionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uialertactionstyle
+  type UIAlertActionStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uieventbuttonmask
-type UIEventButtonMask = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uieventbuttonmask
+  type UIEventButtonMask = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uieventtype
-type UIEventType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uieventtype
+  type UIEventType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uieventsubtype
-type UIEventSubtype = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uieventsubtype
+  type UIEventSubtype = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitouchtype
-type UITouchType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitouchtype
+  type UITouchType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitouchphase
-type UITouchPhase = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitouchphase
+  type UITouchPhase = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitouchproperties
-type UITouchProperties = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitouchproperties
+  type UITouchProperties = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipressphase
-type UIPressPhase = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipressphase
+  type UIPressPhase = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipresstype
-type UIPressType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipresstype
+  type UIPressType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipreviewactionstyle
-type UIPreviewActionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipreviewactionstyle
+  type UIPreviewActionStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An effect where the pointer slides under the given view and morphs into the view's shape.
@@ -17539,24 +17517,23 @@ declare namespace cocoascript {
 
 declare const UIPointerHoverEffect: cocoascript.UIPointerHoverEffect;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipencilpreferredaction
-type UIPencilPreferredAction = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipencilpreferredaction
+  type UIPencilPreferredAction = cocoascript.NSInteger;
 }
-
+declare const UIFocusMovementDidFailNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uifocussoundidentifier
   type UIFocusSoundIdentifier = cocoascript.NSString;
 }
+declare const UIFocusDidUpdateNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uifocusheading
-type UIFocusHeading = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uifocusheading
+  type UIFocusHeading = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiapplicationshortcuticontype
-type UIApplicationShortcutIconType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcuticontype
+  type UIApplicationShortcutIconType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiaccessibilitytraits
   type UIAccessibilityTraits = cocoascript.uint64_t;
@@ -17570,44 +17547,62 @@ declare namespace cocoascript {
   type UIAccessibilityNotifications = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaccessibilitynavigationstyle
-type UIAccessibilityNavigationStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaccessibilitynavigationstyle
+  type UIAccessibilityNavigationStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaccessibilityzoomtype
-type UIAccessibilityZoomType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaccessibilityzoomtype
+  type UIAccessibilityZoomType = cocoascript.NSInteger;
 }
-
+declare const UIAccessibilityTextualContextConsole: cocoascript.UIAccessibilityTextualContext;
+declare const UIAccessibilityTextualContextFileSystem: cocoascript.UIAccessibilityTextualContext;
+declare const UIAccessibilityTextualContextMessaging: cocoascript.UIAccessibilityTextualContext;
+declare const UIAccessibilityTextualContextNarrative: cocoascript.UIAccessibilityTextualContext;
+declare const UIAccessibilityTextualContextSourceCode: cocoascript.UIAccessibilityTextualContext;
+declare const UIAccessibilityTextualContextSpreadsheet: cocoascript.UIAccessibilityTextualContext;
+declare const UIAccessibilityTextualContextWordProcessing: cocoascript.UIAccessibilityTextualContext;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaccessibilityscrolldirection
-type UIAccessibilityScrollDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaccessibilityscrolldirection
+  type UIAccessibilityScrollDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotorsearch
   type UIAccessibilityCustomRotorSearch = cocoascript.UIAccessibilityCustomRotorSearchPredicate;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotordirection
-type UIAccessibilityCustomRotorDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotordirection
+  type UIAccessibilityCustomRotorDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomsystemrotortype
-type UIAccessibilityCustomSystemRotorType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomsystemrotortype
+  type UIAccessibilityCustomSystemRotorType = cocoascript.NSInteger;
 }
-
+declare const UIAccessibilitySwitchControlStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityElementFocusedNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityReduceTransparencyStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityVoiceOverStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityAnnouncementDidFinishNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityBoldTextStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityClosedCaptioningStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityDarkerSystemColorsStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityGrayscaleStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityInvertColorsStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityAssistiveTouchStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityGuidedAccessStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityMonoAudioStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilitySpeakScreenStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilitySpeakSelectionStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityHearingDevicePairedEarDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityReduceMotionStatusDidChangeNotification: cocoascript.NSNotificationName;
+declare const UIAccessibilityShakeToUndoDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagesymbolscale
-type UIImageSymbolScale = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagesymbolscale
+  type UIImageSymbolScale = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiimagesymbolweight
-type UIImageSymbolWeight = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiimagesymbolweight
+  type UIImageSymbolWeight = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uigraphicsdrawingactions
   type UIGraphicsDrawingActions = cocoascript.UIGraphicsRendererContext;
@@ -17617,53 +17612,48 @@ declare namespace cocoascript {
   type UIGraphicsImageDrawingActions = cocoascript.UIGraphicsImageRendererContext;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uigraphicsimagerendererformatrange
-type UIGraphicsImageRendererFormatRange = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uigraphicsimagerendererformatrange
+  type UIGraphicsImageRendererFormatRange = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uigraphicspdfdrawingactions
   type UIGraphicsPDFDrawingActions = cocoascript.UIGraphicsPDFRendererContext;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uirectcorner
-type UIRectCorner = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uirectcorner
+  type UIRectCorner = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiprintinteractioncompletionhandler
   type UIPrintInteractionCompletionHandler = cocoascript.NSError;
 }
+declare const UIPrintErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiprinterrorcode
-type UIPrintErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiprinterrorcode
+  type UIPrintErrorCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiprinterjobtypes
-type UIPrinterJobTypes = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiprinterjobtypes
+  type UIPrinterJobTypes = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiprintercutterbehavior
-type UIPrinterCutterBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiprintercutterbehavior
+  type UIPrinterCutterBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiprintinfoduplex
-type UIPrintInfoDuplex = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiprintinfoduplex
+  type UIPrintInfoDuplex = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiprintinfoorientation
-type UIPrintInfoOrientation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiprintinfoorientation
+  type UIPrintInfoOrientation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiprintinfooutputtype
-type UIPrintInfoOutputType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiprintinfooutputtype
+  type UIPrintInfoOutputType = cocoascript.NSInteger;
 }
-
+declare const UIContentSizeCategoryLarge: cocoascript.UIContentSizeCategory;
+declare const UIFontTextStyleTitle1: cocoascript.UIFontTextStyle;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uifontweight
   type UIFontWeight = cocoascript.CGFloat;
@@ -17685,49 +17675,41 @@ declare namespace cocoascript {
   type UIFontDescriptorTraitKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uikeyboardappearance
-type UIKeyboardAppearance = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uikeyboardappearance
+  type UIKeyboardAppearance = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uireturnkeytype
-type UIReturnKeyType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uireturnkeytype
+  type UIReturnKeyType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uitextcontenttype
   type UITextContentType = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextautocapitalizationtype
-type UITextAutocapitalizationType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextautocapitalizationtype
+  type UITextAutocapitalizationType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextautocorrectiontype
-type UITextAutocorrectionType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextautocorrectiontype
+  type UITextAutocorrectionType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextspellcheckingtype
-type UITextSpellCheckingType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextspellcheckingtype
+  type UITextSpellCheckingType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextsmartquotestype
-type UITextSmartQuotesType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextsmartquotestype
+  type UITextSmartQuotesType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextsmartdashestype
-type UITextSmartDashesType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextsmartdashestype
+  type UITextSmartDashesType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextsmartinsertdeletetype
-type UITextSmartInsertDeleteType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextsmartinsertdeletetype
+  type UITextSmartInsertDeleteType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/uikit/uitextplaceholder
@@ -17745,112 +17727,96 @@ declare namespace cocoascript {
 
 declare const UITextPlaceholder: cocoascript.UITextPlaceholder;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextalternativestyle
-type UITextAlternativeStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextalternativestyle
+  type UITextAlternativeStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uitextdirection
   type UITextDirection = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextstoragedirection
-type UITextStorageDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextstoragedirection
+  type UITextStorageDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextlayoutdirection
-type UITextLayoutDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextlayoutdirection
+  type UITextLayoutDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uitextwritingdirection
   type UITextWritingDirection = cocoascript.NSWritingDirection;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextgranularity
-type UITextGranularity = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextgranularity
+  type UITextGranularity = cocoascript.NSInteger;
 }
-
+declare const UITextInputCurrentInputModeDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiinputviewstyle
-type UIInputViewStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiinputviewstyle
+  type UIInputViewStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiactionsheetstyle
-type UIActionSheetStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiactionsheetstyle
+  type UIActionSheetStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uialertviewstyle
-type UIAlertViewStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uialertviewstyle
+  type UIAlertViewStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiusernotificationactivationmode
-type UIUserNotificationActivationMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiusernotificationactivationmode
+  type UIUserNotificationActivationMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiusernotificationactionbehavior
-type UIUserNotificationActionBehavior = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiusernotificationactionbehavior
+  type UIUserNotificationActionBehavior = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipopoverarrowdirection
-type UIPopoverArrowDirection = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipopoverarrowdirection
+  type UIPopoverArrowDirection = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiaccelerationvalue
   type UIAccelerationValue = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentmenuorder
-type UIDocumentMenuOrder = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentmenuorder
+  type UIDocumentMenuOrder = cocoascript.NSUInteger;
 }
-
+declare const UIApplicationLaunchOptionsLocalNotificationKey: cocoascript.UIApplicationLaunchOptionsKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiusernotificationactioncontext
-type UIUserNotificationActionContext = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiusernotificationactioncontext
+  type UIUserNotificationActionContext = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiusernotificationtype
-type UIUserNotificationType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiusernotificationtype
+  type UIUserNotificationType = cocoascript.NSUInteger;
 }
-
+declare const UITableViewSelectionDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitimingcurvetype
-type UITimingCurveType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitimingcurvetype
+  type UITimingCurveType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewstyle
-type UITableViewStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewstyle
+  type UITableViewStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewcellseparatorstyle
-type UITableViewCellSeparatorStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewcellseparatorstyle
+  type UITableViewCellSeparatorStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewseparatorinsetreference
-type UITableViewSeparatorInsetReference = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewseparatorinsetreference
+  type UITableViewSeparatorInsetReference = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewrowanimation
-type UITableViewRowAnimation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewrowanimation
+  type UITableViewRowAnimation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewscrollposition
-type UITableViewScrollPosition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewscrollposition
+  type UITableViewScrollPosition = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A context object that declares which parts of your layout need to be updated when the layout is invalidated.
@@ -18025,58 +17991,102 @@ declare namespace cocoascript {
 
 declare const UICollectionViewFlowLayoutInvalidationContext: cocoascript.UICollectionViewFlowLayoutInvalidationContext;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewcellstyle
-type UITableViewCellStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewcellstyle
+  type UITableViewCellStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype
-type UITableViewCellAccessoryType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewcellaccessorytype
+  type UITableViewCellAccessoryType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewcellselectionstyle
-type UITableViewCellSelectionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewcellselectionstyle
+  type UITableViewCellSelectionStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewcelleditingstyle
-type UITableViewCellEditingStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewcelleditingstyle
+  type UITableViewCellEditingStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewcelldragstate
-type UITableViewCellDragState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewcelldragstate
+  type UITableViewCellDragState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewcellstatemask
-type UITableViewCellStateMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewcellstatemask
+  type UITableViewCellStateMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewcellfocusstyle
-type UITableViewCellFocusStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewcellfocusstyle
+  type UITableViewCellFocusStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasourcecellprovider
   type UITableViewDiffableDataSourceCellProvider = cocoascript.id;
 }
+declare const UIMenuStandardEdit: cocoascript.UIMenuIdentifier;
+declare const UIMenuApplication: cocoascript.UIMenuIdentifier;
+declare const UIMenuFile: cocoascript.UIMenuIdentifier;
+declare const UIMenuEdit: cocoascript.UIMenuIdentifier;
+declare const UIMenuView: cocoascript.UIMenuIdentifier;
+declare const UIMenuWindow: cocoascript.UIMenuIdentifier;
+declare const UIMenuHelp: cocoascript.UIMenuIdentifier;
+declare const UIMenuAbout: cocoascript.UIMenuIdentifier;
+declare const UIMenuPreferences: cocoascript.UIMenuIdentifier;
+declare const UIMenuServices: cocoascript.UIMenuIdentifier;
+declare const UIMenuHide: cocoascript.UIMenuIdentifier;
+declare const UIMenuQuit: cocoascript.UIMenuIdentifier;
+declare const UIMenuNewScene: cocoascript.UIMenuIdentifier;
+declare const UIMenuClose: cocoascript.UIMenuIdentifier;
+declare const UIMenuPrint: cocoascript.UIMenuIdentifier;
+declare const UIMenuUndoRedo: cocoascript.UIMenuIdentifier;
+declare const UIMenuFind: cocoascript.UIMenuIdentifier;
+declare const UIMenuReplace: cocoascript.UIMenuIdentifier;
+declare const UIMenuShare: cocoascript.UIMenuIdentifier;
+declare const UIMenuTextStyle: cocoascript.UIMenuIdentifier;
+declare const UIMenuSpelling: cocoascript.UIMenuIdentifier;
+declare const UIMenuSpellingPanel: cocoascript.UIMenuIdentifier;
+declare const UIMenuSpellingOptions: cocoascript.UIMenuIdentifier;
+declare const UIMenuSubstitutions: cocoascript.UIMenuIdentifier;
+declare const UIMenuSubstitutionsPanel: cocoascript.UIMenuIdentifier;
+declare const UIMenuSubstitutionOptions: cocoascript.UIMenuIdentifier;
+declare const UIMenuTransformations: cocoascript.UIMenuIdentifier;
+declare const UIMenuSpeech: cocoascript.UIMenuIdentifier;
+declare const UIMenuLookup: cocoascript.UIMenuIdentifier;
+declare const UIMenuLearn: cocoascript.UIMenuIdentifier;
+declare const UIMenuFormat: cocoascript.UIMenuIdentifier;
+declare const UIMenuFont: cocoascript.UIMenuIdentifier;
+declare const UIMenuTextSize: cocoascript.UIMenuIdentifier;
+declare const UIMenuTextColor: cocoascript.UIMenuIdentifier;
+declare const UIMenuTextStylePasteboard: cocoascript.UIMenuIdentifier;
+declare const UIMenuText: cocoascript.UIMenuIdentifier;
+declare const UIMenuWritingDirection: cocoascript.UIMenuIdentifier;
+declare const UIMenuAlignment: cocoascript.UIMenuIdentifier;
+declare const UIMenuToolbar: cocoascript.UIMenuIdentifier;
+declare const UIMenuFullscreen: cocoascript.UIMenuIdentifier;
+declare const UIMenuMinimizeAndZoom: cocoascript.UIMenuIdentifier;
+declare const UIMenuBringAllToFront: cocoascript.UIMenuIdentifier;
+declare const UIMenuRoot: cocoascript.UIMenuIdentifier;
+declare const UIMenuOpenRecent: cocoascript.UIMenuIdentifier;
+declare const UIImagePickerControllerMediaMetadata: cocoascript.UIImagePickerControllerInfoKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiimagepickercontrollerinfokey
   type UIImagePickerControllerInfoKey = cocoascript.NSString;
 }
+declare const UIImagePickerControllerCropRect: cocoascript.UIImagePickerControllerInfoKey;
+declare const UIImagePickerControllerEditedImage: cocoascript.UIImagePickerControllerInfoKey;
+declare const UIImagePickerControllerImageURL: cocoascript.UIImagePickerControllerInfoKey;
+declare const UIImagePickerControllerMediaType: cocoascript.UIImagePickerControllerInfoKey;
+declare const UIImagePickerControllerMediaURL: cocoascript.UIImagePickerControllerInfoKey;
+declare const UIImagePickerControllerOriginalImage: cocoascript.UIImagePickerControllerInfoKey;
+declare const UIImagePickerControllerPHAsset: cocoascript.UIImagePickerControllerInfoKey;
+declare const UIImagePickerControllerReferenceURL: cocoascript.UIImagePickerControllerInfoKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitextiteminteraction
-type UITextItemInteraction = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitextiteminteraction
+  type UITextItemInteraction = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidynamicitemcollisionboundstype
-type UIDynamicItemCollisionBoundsType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidynamicitemcollisionboundstype
+  type UIDynamicItemCollisionBoundsType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that specifies the minimum and maximum sizes for resizable windows.
@@ -18106,10 +18116,23 @@ declare namespace cocoascript {
   type UIContextMenuActionProvider = cocoascript.UIMenuElement;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractioncommitstyle
-type UIContextMenuInteractionCommitStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicontextmenuinteractioncommitstyle
+  type UIContextMenuInteractionCommitStyle = cocoascript.NSInteger;
 }
-
+declare const UIBackgroundTaskInvalid: cocoascript.UIBackgroundTaskIdentifier;
+declare const UIApplicationOpenURLOptionUniversalLinksOnly: cocoascript.UIApplicationOpenExternalURLOptionsKey;
+declare const UIContentSizeCategoryUnspecified: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryExtraSmall: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategorySmall: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryMedium: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryExtraLarge: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryExtraExtraLarge: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryExtraExtraExtraLarge: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryAccessibilityMedium: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryAccessibilityLarge: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryAccessibilityExtraLarge: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryAccessibilityExtraExtraLarge: cocoascript.UIContentSizeCategory;
+declare const UIContentSizeCategoryAccessibilityExtraExtraExtraLarge: cocoascript.UIContentSizeCategory;
 declare namespace cocoascript {
   /**
    * A data object containing information about the reasons why UIKit created the scene.
@@ -18145,25 +18168,42 @@ declare namespace cocoascript {
 }
 
 declare const UISceneConnectionOptions: cocoascript.UISceneConnectionOptions;
+declare const UIApplicationLaunchOptionsAnnotationKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsBluetoothCentralsKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsBluetoothPeripheralsKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsCloudKitShareMetadataKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsLocationKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsNewsstandDownloadsKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsShortcutItemKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsSourceApplicationKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsURLKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsUserActivityDictionaryKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationLaunchOptionsUserActivityTypeKey: cocoascript.UIApplicationLaunchOptionsKey;
+declare const UIApplicationOpenURLOptionsSourceApplicationKey: cocoascript.UIApplicationOpenURLOptionsKey;
+declare const UIApplicationOpenURLOptionsAnnotationKey: cocoascript.UIApplicationOpenURLOptionsKey;
+declare const UIApplicationOpenURLOptionsOpenInPlaceKey: cocoascript.UIApplicationOpenURLOptionsKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uisceneactivationstate
-type UISceneActivationState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uisceneactivationstate
+  type UISceneActivationState = cocoascript.NSInteger;
 }
-
+declare const UISceneWillConnectNotification: cocoascript.NSNotificationName;
+declare const UISceneDidDisconnectNotification: cocoascript.NSNotificationName;
+declare const UISceneWillEnterForegroundNotification: cocoascript.NSNotificationName;
+declare const UISceneDidActivateNotification: cocoascript.NSNotificationName;
+declare const UISceneWillDeactivateNotification: cocoascript.NSNotificationName;
+declare const UISceneDidEnterBackgroundNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiscenesessionrole
   type UISceneSessionRole = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiscenecollectionjoinbehavior
-type UISceneCollectionJoinBehavior = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiscenecollectionjoinbehavior
+  type UISceneCollectionJoinBehavior = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiwindowscenedismissalanimation
-type UIWindowSceneDismissalAnimation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiwindowscenedismissalanimation
+  type UIWindowSceneDismissalAnimation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * Options that UIKit provides when asking your app to open a URL.
@@ -18241,25 +18281,40 @@ declare namespace cocoascript {
   type UICollectionViewLayoutInteractiveTransitionCompletion = cocoascript.BOOL;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionviewreorderingcadence
-type UICollectionViewReorderingCadence = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionviewreorderingcadence
+  type UICollectionViewReorderingCadence = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionviewscrollposition
-type UICollectionViewScrollPosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionviewscrollposition
+  type UICollectionViewScrollPosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionviewscrolldirection
-type UICollectionViewScrollDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionviewscrolldirection
+  type UICollectionViewScrollDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionelementcategory
-type UICollectionElementCategory = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionelementcategory
+  type UICollectionElementCategory = cocoascript.NSUInteger;
 }
-
+declare const UIPasteboardDetectionPatternNumber: cocoascript.UIPasteboardDetectionPattern;
+declare const UIPasteboardDetectionPatternProbableWebSearch: cocoascript.UIPasteboardDetectionPattern;
+declare const UIPasteboardDetectionPatternProbableWebURL: cocoascript.UIPasteboardDetectionPattern;
+declare const UIActivityTypeAddToReadingList: cocoascript.UIActivityType;
+declare const UIActivityTypeAirDrop: cocoascript.UIActivityType;
+declare const UIActivityTypeAssignToContact: cocoascript.UIActivityType;
+declare const UIActivityTypeCopyToPasteboard: cocoascript.UIActivityType;
+declare const UIActivityTypeMail: cocoascript.UIActivityType;
+declare const UIActivityTypeMessage: cocoascript.UIActivityType;
+declare const UIActivityTypeOpenInIBooks: cocoascript.UIActivityType;
+declare const UIActivityTypePostToFacebook: cocoascript.UIActivityType;
+declare const UIActivityTypePostToFlickr: cocoascript.UIActivityType;
+declare const UIActivityTypePostToTencentWeibo: cocoascript.UIActivityType;
+declare const UIActivityTypePostToTwitter: cocoascript.UIActivityType;
+declare const UIActivityTypePostToVimeo: cocoascript.UIActivityType;
+declare const UIActivityTypePostToWeibo: cocoascript.UIActivityType;
+declare const UIActivityTypePrint: cocoascript.UIActivityType;
+declare const UIActivityTypeSaveToCameraRoll: cocoascript.UIActivityType;
+declare const UIActivityTypeMarkupAsPDF: cocoascript.UIActivityType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakey
   type UIActivityItemsConfigurationMetadataKey = cocoascript.NSString;
@@ -18327,44 +18382,39 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uitransitioncontextviewkey
   type UITransitionContextViewKey = cocoascript.NSString;
 }
+declare const UITableViewAutomaticDimension: cocoascript.CGFloat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewanimatingstate
-type UIViewAnimatingState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewanimatingstate
+  type UIViewAnimatingState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiviewanimatingposition
-type UIViewAnimatingPosition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiviewanimatingposition
+  type UIViewAnimatingPosition = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentbrowserimportmode
-type UIDocumentBrowserImportMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserimportmode
+  type UIDocumentBrowserImportMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicollectionviewcompositionallayoutsectionprovider
   type UICollectionViewCompositionalLayoutSectionProvider = cocoascript.NSCollectionLayoutEnvironment;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uinavigationcontrolleroperation
-type UINavigationControllerOperation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uinavigationcontrolleroperation
+  type UINavigationControllerOperation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewrowactionstyle
-type UITableViewRowActionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewrowactionstyle
+  type UITableViewRowActionStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroupcustomitemprovider
   type NSCollectionLayoutGroupCustomItemProvider = cocoascript.NSCollectionLayoutEnvironment;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicontentinsetsreference
-type UIContentInsetsReference = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicontentinsetsreference
+  type UIContentInsetsReference = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A custom cell accessory.
@@ -18545,34 +18595,30 @@ declare namespace cocoascript {
 
 declare const UICellAccessoryLabel: cocoascript.UICellAccessoryLabel;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicellaccessorydisplayedstate
-type UICellAccessoryDisplayedState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicellaccessorydisplayedstate
+  type UICellAccessoryDisplayedState = cocoascript.NSInteger;
 }
-
+declare const UICellAccessoryStandardDimension: cocoascript.CGFloat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicellaccessoryplacement
-type UICellAccessoryPlacement = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicellaccessoryplacement
+  type UICellAccessoryPlacement = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicellaccessoryposition
   type UICellAccessoryPosition = cocoascript.UICellAccessory;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance
-type UICollectionLayoutListAppearance = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance
+  type UICollectionLayoutListAppearance = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistheadermode
-type UICollectionLayoutListHeaderMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistheadermode
+  type UICollectionLayoutListHeaderMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistfootermode
-type UICollectionLayoutListFooterMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistfootermode
+  type UICollectionLayoutListFooterMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistswipeactionsconfigurationprovider
   type UICollectionLayoutListSwipeActionsConfigurationProvider = cocoascript.NSIndexPath;
@@ -18629,16 +18675,16 @@ declare namespace cocoascript {
 }
 
 declare const NSDiffableDataSourceSectionTransaction: cocoascript.NSDiffableDataSourceSectionTransaction;
+declare const UIListContentImageStandardDimension: cocoascript.CGFloat;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uilistcontenttextalignment
-type UIListContentTextAlignment = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uilistcontenttextalignment
+  type UIListContentTextAlignment = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uilistcontenttexttransform
-type UIListContentTextTransform = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uilistcontenttexttransform
+  type UIListContentTextTransform = cocoascript.NSInteger;
 }
-
+declare const UITextContentTypeEmailAddress: cocoascript.UITextContentType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcecellprovider
   type UICollectionViewDiffableDataSourceCellProvider = cocoascript.id;
@@ -18647,16 +18693,22 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcesupplementaryviewprovider
   type UICollectionViewDiffableDataSourceSupplementaryViewProvider = cocoascript.NSIndexPath;
 }
+declare const UIFontTextStyleCallout: cocoascript.UIFontTextStyle;
+declare const UIFontTextStyleCaption1: cocoascript.UIFontTextStyle;
+declare const UIFontTextStyleCaption2: cocoascript.UIFontTextStyle;
+declare const UIFontTextStyleFootnote: cocoascript.UIFontTextStyle;
+declare const UIFontTextStyleSubheadline: cocoascript.UIFontTextStyle;
+declare const UIFontTextStyleLargeTitle: cocoascript.UIFontTextStyle;
+declare const UIFontTextStyleTitle2: cocoascript.UIFontTextStyle;
+declare const UIFontTextStyleTitle3: cocoascript.UIFontTextStyle;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitableviewdropintent
-type UITableViewDropIntent = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitableviewdropintent
+  type UITableViewDropIntent = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionviewdropintent
-type UICollectionViewDropIntent = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionviewdropintent
+  type UICollectionViewDropIntent = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The methods that let you coordinate with a flow layout object to implement a grid-based layout.
@@ -18678,29 +18730,27 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionviewcelldragstate
-type UICollectionViewCellDragState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionviewcelldragstate
+  type UICollectionViewCellDragState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicontextualactionhandler
   type UIContextualActionHandler = cocoascript.BOOL;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicontextualactionstyle
-type UIContextualActionStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicontextualactionstyle
+  type UIContextualActionStyle = cocoascript.NSInteger;
 }
-
+declare const UIScrollViewDecelerationRateNormal: cocoascript.UIScrollViewDecelerationRate;
+declare const UIScrollViewDecelerationRateFast: cocoascript.UIScrollViewDecelerationRate;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uitabbaritempositioning
-type UITabBarItemPositioning = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uitabbaritempositioning
+  type UITabBarItemPositioning = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiattachmentbehaviortype
-type UIAttachmentBehaviorType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiattachmentbehaviortype
+  type UIAttachmentBehaviorType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The range of motion for attached objects.
@@ -18718,46 +18768,113 @@ declare namespace cocoascript {
     setMinimum(): void;
   }
 }
+declare const UIPageViewControllerOptionInterPageSpacingKey: cocoascript.UIPageViewControllerOptionsKey;
+declare const UIPageViewControllerOptionSpineLocationKey: cocoascript.UIPageViewControllerOptionsKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uidocumentbrowseractionavailability
-type UIDocumentBrowserActionAvailability = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseractionavailability
+  type UIDocumentBrowserActionAvailability = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicellconfigurationdragstate
-type UICellConfigurationDragState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicellconfigurationdragstate
+  type UICellConfigurationDragState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicellconfigurationdropstate
-type UICellConfigurationDropState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicellconfigurationdropstate
+  type UICellConfigurationDropState = cocoascript.NSInteger;
 }
-
+declare const UIConfigurationColorTransformerGrayscale: cocoascript.UIConfigurationColorTransformer;
+declare const UIConfigurationColorTransformerPreferredTint: cocoascript.UIConfigurationColorTransformer;
+declare const UIConfigurationColorTransformerMonochromeTint: cocoascript.UIConfigurationColorTransformer;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollisionbehaviormode
-type UICollisionBehaviorMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollisionbehaviormode
+  type UICollisionBehaviorMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipushbehaviormode
-type UIPushBehaviorMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipushbehaviormode
+  type UIPushBehaviorMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uiinterpolatingmotioneffecttype
-type UIInterpolatingMotionEffectType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uiinterpolatingmotioneffecttype
+  type UIInterpolatingMotionEffectType = cocoascript.NSInteger;
 }
-
+declare const UIWindowLevelNormal: cocoascript.UIWindowLevel;
+declare const UIWindowLevelStatusBar: cocoascript.UIWindowLevel;
+declare const UIWindowLevelAlert: cocoascript.UIWindowLevel;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uipointereffecttintmode
-type UIPointerEffectTintMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uipointereffecttintmode
+  type UIPointerEffectTintMode = cocoascript.NSInteger;
 }
-
+declare const UIFocusSoundIdentifierDefault: cocoascript.UIFocusSoundIdentifier;
+declare const UIFocusSoundIdentifierNone: cocoascript.UIFocusSoundIdentifier;
+declare const UIAccessibilityNotificationSwitchControlIdentifier: cocoascript.UIAccessibilityAssistiveTechnologyIdentifier;
+declare const UIAccessibilityNotificationVoiceOverIdentifier: cocoascript.UIAccessibilityAssistiveTechnologyIdentifier;
+declare const UIFontWeightTrait: cocoascript.UIFontDescriptorTraitKey;
+declare const UIFontWeightUltraLight: cocoascript.UIFontWeight;
+declare const UIFontWeightThin: cocoascript.UIFontWeight;
+declare const UIFontWeightLight: cocoascript.UIFontWeight;
+declare const UIFontWeightRegular: cocoascript.UIFontWeight;
+declare const UIFontWeightMedium: cocoascript.UIFontWeight;
+declare const UIFontWeightSemibold: cocoascript.UIFontWeight;
+declare const UIFontWeightBold: cocoascript.UIFontWeight;
+declare const UIFontWeightHeavy: cocoascript.UIFontWeight;
+declare const UIFontWeightBlack: cocoascript.UIFontWeight;
+declare const UIFontDescriptorSystemDesignMonospaced: cocoascript.UIFontDescriptorSystemDesign;
+declare const UIFontDescriptorNameAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorMatrixAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorSizeAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorSystemDesignDefault: cocoascript.UIFontDescriptorSystemDesign;
+declare const UIFontDescriptorSystemDesignSerif: cocoascript.UIFontDescriptorSystemDesign;
+declare const UIFontDescriptorSystemDesignRounded: cocoascript.UIFontDescriptorSystemDesign;
+declare const UIFontDescriptorCascadeListAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorCharacterSetAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorFaceAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorFamilyAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorFeatureSettingsAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorFixedAdvanceAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorTextStyleAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorTraitsAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontDescriptorVisibleNameAttribute: cocoascript.UIFontDescriptorAttributeName;
+declare const UIFontFeatureTypeIdentifierKey: cocoascript.UIFontDescriptorFeatureKey;
+declare const UIFontFeatureSelectorIdentifierKey: cocoascript.UIFontDescriptorFeatureKey;
+declare const UIFontSlantTrait: cocoascript.UIFontDescriptorTraitKey;
+declare const UIFontSymbolicTrait: cocoascript.UIFontDescriptorTraitKey;
+declare const UIFontWidthTrait: cocoascript.UIFontDescriptorTraitKey;
+declare const UITextContentTypeURL: cocoascript.UITextContentType;
+declare const UITextContentTypeAddressCity: cocoascript.UITextContentType;
+declare const UITextContentTypeAddressCityAndState: cocoascript.UITextContentType;
+declare const UITextContentTypeAddressState: cocoascript.UITextContentType;
+declare const UITextContentTypeCountryName: cocoascript.UITextContentType;
+declare const UITextContentTypeCreditCardNumber: cocoascript.UITextContentType;
+declare const UITextContentTypeFamilyName: cocoascript.UITextContentType;
+declare const UITextContentTypeFullStreetAddress: cocoascript.UITextContentType;
+declare const UITextContentTypeGivenName: cocoascript.UITextContentType;
+declare const UITextContentTypeJobTitle: cocoascript.UITextContentType;
+declare const UITextContentTypeLocation: cocoascript.UITextContentType;
+declare const UITextContentTypeMiddleName: cocoascript.UITextContentType;
+declare const UITextContentTypeName: cocoascript.UITextContentType;
+declare const UITextContentTypeNamePrefix: cocoascript.UITextContentType;
+declare const UITextContentTypeNameSuffix: cocoascript.UITextContentType;
+declare const UITextContentTypeNickname: cocoascript.UITextContentType;
+declare const UITextContentTypeOrganizationName: cocoascript.UITextContentType;
+declare const UITextContentTypePostalCode: cocoascript.UITextContentType;
+declare const UITextContentTypeStreetAddressLine1: cocoascript.UITextContentType;
+declare const UITextContentTypeStreetAddressLine2: cocoascript.UITextContentType;
+declare const UITextContentTypeSublocality: cocoascript.UITextContentType;
+declare const UITextContentTypeTelephoneNumber: cocoascript.UITextContentType;
+declare const UITextContentTypeUsername: cocoascript.UITextContentType;
+declare const UITextContentTypePassword: cocoascript.UITextContentType;
+declare const UITextContentTypeNewPassword: cocoascript.UITextContentType;
+declare const UITextContentTypeOneTimeCode: cocoascript.UITextContentType;
+declare const UITextWritingDirectionNatural: cocoascript.UITextWritingDirection;
+declare const UITextWritingDirectionLeftToRight: cocoascript.UITextWritingDirection;
+declare const UITextWritingDirectionRightToLeft: cocoascript.UITextWritingDirection;
+declare const UICollectionViewFlowLayoutAutomaticSize: cocoascript.CGSize;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayoutsectioninsetreference
-type UICollectionViewFlowLayoutSectionInsetReference = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionviewflowlayoutsectioninsetreference
+  type UICollectionViewFlowLayoutSectionInsetReference = cocoascript.NSInteger;
 }
-
+declare const UIWindowSceneSessionRoleApplication: cocoascript.UISceneSessionRole;
+declare const UIWindowSceneSessionRoleExternalDisplay: cocoascript.UISceneSessionRole;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicollectionviewcellregistrationconfigurationhandler
   type UICollectionViewCellRegistrationConfigurationHandler = cocoascript.id;
@@ -18766,13 +18883,22 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistrationconfigurationhandler
   type UICollectionViewSupplementaryRegistrationConfigurationHandler = cocoascript.NSIndexPath;
 }
+declare const UIActivityItemsConfigurationMetadataKeyMessageBody: cocoascript.UIActivityItemsConfigurationMetadataKey;
+declare const UIActivityItemsConfigurationMetadataKeyTitle: cocoascript.UIActivityItemsConfigurationMetadataKey;
+declare const UIActivityItemsConfigurationInteractionShare: cocoascript.UIActivityItemsConfigurationInteraction;
+declare const UIActivityItemsConfigurationPreviewIntentFullSize: cocoascript.UIActivityItemsConfigurationPreviewIntent;
+declare const UIActivityItemsConfigurationPreviewIntentThumbnail: cocoascript.UIActivityItemsConfigurationPreviewIntent;
+declare const UITransitionContextFromViewControllerKey: cocoascript.UITransitionContextViewControllerKey;
+declare const UITransitionContextToViewControllerKey: cocoascript.UITransitionContextViewControllerKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicollectionupdateaction
-type UICollectionUpdateAction = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicollectionupdateaction
+  type UICollectionUpdateAction = cocoascript.NSInteger;
 }
-
+declare const UITransitionContextFromViewKey: cocoascript.UITransitionContextViewKey;
+declare const UITransitionContextToViewKey: cocoascript.UITransitionContextViewKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/uikit/uicellaccessoryoutlinedisclosurestyle
-type UICellAccessoryOutlineDisclosureStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/uikit/uicellaccessoryoutlinedisclosurestyle
+  type UICellAccessoryOutlineDisclosureStyle = cocoascript.NSInteger;
 }
-
+declare const UIFloatRangeZero: cocoascript.UIFloatRange;
+declare const UIFloatRangeInfinite: cocoascript.UIFloatRange;

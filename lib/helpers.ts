@@ -10,3 +10,7 @@ export function normalizeType(type: string) {
   }
   return ['cocoascript', type].join('.');
 }
+
+export function getTokens(doc: any) {
+  return doc.primaryContentSections?.[0]?.declarations?.[0]?.tokens || [];
+}

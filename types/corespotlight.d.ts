@@ -801,13 +801,12 @@ declare namespace cocoascript {
 }
 
 declare const CSLocalizedString: cocoascript.CSLocalizedString;
+declare const CoreSpotlightVersionString: string;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corespotlight/csindexerrorcode
-type CSIndexErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corespotlight/csindexerrorcode
+  type CSIndexErrorCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corespotlight/cssearchqueryerrorcode
-type CSSearchQueryErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corespotlight/cssearchqueryerrorcode
+  type CSSearchQueryErrorCode = cocoascript.NSInteger;
 }
-

@@ -304,10 +304,9 @@ declare namespace cocoascript {
 
 declare const NFCTagReaderSession: cocoascript.NFCTagReaderSession;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcpollingoption
-type NFCPollingOption = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcpollingoption
+  type NFCPollingOption = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A reader session for detecting NFC Data Exchange Format (NDEF) tags.
@@ -528,15 +527,13 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcndefstatus
-type NFCNDEFStatus = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcndefstatus
+  type NFCNDEFStatus = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfctagtype
-type NFCTagType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfctagtype
+  type NFCTagType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corenfc/vasmode
   type VASMode = cocoascript.NFCVASMode;
@@ -546,15 +543,14 @@ declare namespace cocoascript {
   type VASErrorCode = cocoascript.NFCVASErrorCode;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfctypenameformat
-type NFCTypeNameFormat = number;
+  // doc://com.apple.documentation/documentation/corenfc/nfctypenameformat
+  type NFCTypeNameFormat = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcreadererror
-type NFCReaderError = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcreadererror
+  type NFCReaderError = cocoascript.NSInteger;
 }
-
+declare const NFCErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corenfc/pollingrequestcode
   type PollingRequestCode = cocoascript.NFCFeliCaPollingRequestCode;
@@ -572,42 +568,34 @@ declare namespace cocoascript {
   type RequestFlag = cocoascript.NFCISO15693RequestFlag;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcmifarefamily
-type NFCMiFareFamily = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcmifarefamily
+  type NFCMiFareFamily = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcvasmode
-type NFCVASMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcvasmode
+  type NFCVASMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcvaserrorcode
-type NFCVASErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcvaserrorcode
+  type NFCVASErrorCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcfelicaencryptionid
-type NFCFeliCaEncryptionId = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcfelicaencryptionid
+  type NFCFeliCaEncryptionId = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcfelicapollingrequestcode
-type NFCFeliCaPollingRequestCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcfelicapollingrequestcode
+  type NFCFeliCaPollingRequestCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfcfelicapollingtimeslot
-type NFCFeliCaPollingTimeSlot = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corenfc/nfcfelicapollingtimeslot
+  type NFCFeliCaPollingTimeSlot = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfciso15693requestflag
-type NFCISO15693RequestFlag = number;
+  // doc://com.apple.documentation/documentation/corenfc/nfciso15693requestflag
+  type NFCISO15693RequestFlag = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corenfc/nfciso15693responseflag
-type NFCISO15693ResponseFlag = number;
+  // doc://com.apple.documentation/documentation/corenfc/nfciso15693responseflag
+  type NFCISO15693ResponseFlag = number;
 }
-

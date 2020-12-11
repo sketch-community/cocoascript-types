@@ -606,9 +606,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsurl/1413475-initbyresolvingbookmarkdata
     initByResolvingBookmarkData_options_relativeToURL_bookmarkDataIsStale_error(bookmarkData: cocoascript.NSData, options: cocoascript.NSURLBookmarkResolutionOptions, relativeURL: cocoascript.NSURL, isStale: cocoascript.BOOL, error: cocoascript._Nullable):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1415117-getfilesystemrepresentation
-    getFileSystemRepresentation_maxLength(buffer: cocoascript.char, maxBufferLength: cocoascript.NSUInteger):cocoascript.BOOL;
+    getFileSystemRepresentation_maxLength(buffer: string, maxBufferLength: cocoascript.NSUInteger):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1411210-initfileurlwithfilesystemreprese
-    initFileURLWithFileSystemRepresentation_isDirectory_relativeToURL(path: cocoascript.char, isDir: cocoascript.BOOL, baseURL: cocoascript.NSURL):cocoascript.NSURL;
+    initFileURLWithFileSystemRepresentation_isDirectory_relativeToURL(path: string, isDir: cocoascript.BOOL, baseURL: cocoascript.NSURL):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1410750-initabsoluteurlwithdatarepresent
     initAbsoluteURLWithDataRepresentation_relativeToURL(data: cocoascript.NSData, baseURL: cocoascript.NSURL):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1416851-initwithdatarepresentation
@@ -633,7 +633,7 @@ declare namespace cocoascript {
     baseURL(): cocoascript.NSURL;
     setBaseURL(): void;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1412925-filesystemrepresentation
-    fileSystemRepresentation(): cocoascript.char;
+    fileSystemRepresentation(): string;
     setFileSystemRepresentation(): void;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1413775-fragment
     fragment(): cocoascript.NSString;
@@ -763,6 +763,7 @@ declare namespace cocoascript {
 }
 
 declare const NSURL: cocoascript.NSURL;
+declare const NSURLFileProtectionKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   /**
    * A universally unique value that can be used to identify types, interfaces, and other items.
@@ -774,9 +775,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsuuid/1411662-initwithuuidstring
     initWithUUIDString(string: cocoascript.NSString):cocoascript.NSUUID;
     // doc://com.apple.documentation/documentation/foundation/nsuuid/1417039-initwithuuidbytes
-    initWithUUIDBytes(bytes: cocoascript.char):cocoascript.NSUUID;
+    initWithUUIDBytes(bytes: string):cocoascript.NSUUID;
     // doc://com.apple.documentation/documentation/foundation/nsuuid/1411420-getuuidbytes
-    getUUIDBytes(uuid: cocoascript.char):void;
+    getUUIDBytes(uuid: string):void;
     // doc://com.apple.documentation/documentation/foundation/nsuuid/1416585-uuidstring
     UUIDString(): cocoascript.NSString;
     setUUIDString(): void;
@@ -1031,9 +1032,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1411293-initwithstring
     initWithString(aString: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1411950-initwithcstring
-    initWithCString_encoding(nullTerminatedCString: cocoascript.char, encoding: cocoascript.NSStringEncoding):cocoascript.NSString;
+    initWithCString_encoding(nullTerminatedCString: string, encoding: cocoascript.NSStringEncoding):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1412128-initwithutf8string
-    initWithUTF8String(nullTerminatedCString: cocoascript.char):cocoascript.NSString;
+    initWithUTF8String(nullTerminatedCString: string):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497402-initwithformat
     initWithFormat(format: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1407827-initwithformat
@@ -1066,11 +1067,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1413453-getbytes
     getBytes_maxLength_usedLength_encoding_options_range_remainingRange(buffer: void, maxBufferCount: cocoascript.NSUInteger, usedBufferCount: cocoascript.NSUInteger, encoding: cocoascript.NSStringEncoding, options: cocoascript.NSStringEncodingConversionOptions, range: cocoascript.NSRange, leftover: cocoascript.NSRangePointer):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1408489-cstringusingencoding
-    cStringUsingEncoding(encoding: cocoascript.NSStringEncoding):cocoascript.char;
+    cStringUsingEncoding(encoding: cocoascript.NSStringEncoding):string;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1415702-getcstring
-    getCString_maxLength_encoding(buffer: cocoascript.char, maxBufferCount: cocoascript.NSUInteger, encoding: cocoascript.NSStringEncoding):cocoascript.BOOL;
+    getCString_maxLength_encoding(buffer: string, maxBufferCount: cocoascript.NSUInteger, encoding: cocoascript.NSStringEncoding):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1411189-utf8string
-    UTF8String(): cocoascript.char;
+    UTF8String(): string;
     setUTF8String(): void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1414769-caseinsensitivecompare
     caseInsensitiveCompare(string: cocoascript.NSString):cocoascript.NSComparisonResult;
@@ -1270,10 +1271,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1411841-completepathintostring
     completePathIntoString_caseSensitive_matchesIntoArray_filterTypes(outputName: cocoascript._Nullable, flag: cocoascript.BOOL, outputArray: cocoascript._Nullable, filterTypes: cocoascript.NSString):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1414559-filesystemrepresentation
-    fileSystemRepresentation(): cocoascript.char;
+    fileSystemRepresentation(): string;
     setFileSystemRepresentation(): void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1410269-getfilesystemrepresentation
-    getFileSystemRepresentation_maxLength(cname: cocoascript.char, max: cocoascript.NSUInteger):cocoascript.BOOL;
+    getFileSystemRepresentation_maxLength(cname: string, max: cocoascript.NSUInteger):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1409068-absolutepath
     absolutePath(): cocoascript.BOOL;
     setAbsolutePath(): void;
@@ -1313,11 +1314,11 @@ declare namespace cocoascript {
     stringByRemovingPercentEncoding(): cocoascript.NSString;
     setStringByRemovingPercentEncoding(): void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497394-initwithcstring
-    initWithCString(bytes: cocoascript.char):cocoascript.NSString;
+    initWithCString(bytes: string):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497403-initwithcstring
-    initWithCString_length(bytes: cocoascript.char, length: cocoascript.NSUInteger):cocoascript.NSString;
+    initWithCString_length(bytes: string, length: cocoascript.NSUInteger):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497281-initwithcstringnocopy
-    initWithCStringNoCopy_length_freeWhenDone(bytes: cocoascript.char, length: cocoascript.NSUInteger, freeBuffer: cocoascript.BOOL):cocoascript.NSString;
+    initWithCStringNoCopy_length_freeWhenDone(bytes: string, length: cocoascript.NSUInteger, freeBuffer: cocoascript.BOOL):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497398-initwithcontentsoffile
     initWithContentsOfFile(path: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497390-initwithcontentsofurl
@@ -1329,17 +1330,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1415132-getcharacters
     getCharacters(buffer: cocoascript.unichar):void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497307-cstring
-    cString():cocoascript.char;
+    cString():string;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497263-lossycstring
-    lossyCString():cocoascript.char;
+    lossyCString():string;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497303-cstringlength
     cStringLength():cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497249-getcstring
-    getCString(bytes: cocoascript.char):void;
+    getCString(bytes: string):void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497296-getcstring
-    getCString_maxLength(bytes: cocoascript.char, maxLength: cocoascript.NSUInteger):void;
+    getCString_maxLength(bytes: string, maxLength: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497298-getcstring
-    getCString_maxLength_range_remainingRange(bytes: cocoascript.char, maxLength: cocoascript.NSUInteger, aRange: cocoascript.NSRange, leftoverRange: cocoascript.NSRangePointer):void;
+    getCString_maxLength_range_remainingRange(bytes: string, maxLength: cocoascript.NSUInteger, aRange: cocoascript.NSRange, leftoverRange: cocoascript.NSRangePointer):void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1415058-stringbyaddingpercentescapesusin
     stringByAddingPercentEscapesUsingEncoding(enc: cocoascript.NSStringEncoding):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1407783-stringbyreplacingpercentescapesu
@@ -1444,6 +1445,7 @@ declare namespace cocoascript {
     presentedItemDidChangeUbiquityAttributes(attributes: cocoascript.NSURLResourceKey):void;
   }
 }
+declare const NSUbiquitousKeyValueStoreDidChangeExternallyNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An object wrapper for primitive scalar numeric values.
@@ -1453,7 +1455,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1415728-initwithbool
     initWithBool(value: cocoascript.BOOL):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1409777-initwithchar
-    initWithChar(value: cocoascript.char):cocoascript.NSNumber;
+    initWithChar(value: string):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1407545-initwithdouble
     initWithDouble(value: number):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1412999-initwithfloat
@@ -1469,7 +1471,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1411886-initwithshort
     initWithShort(value: cocoascript.short):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1416533-initwithunsignedchar
-    initWithUnsignedChar(value: cocoascript.char):cocoascript.NSNumber;
+    initWithUnsignedChar(value: string):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1414598-initwithunsignedint
     initWithUnsignedInt(value: number):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1412531-initwithunsignedinteger
@@ -1484,7 +1486,7 @@ declare namespace cocoascript {
     boolValue(): cocoascript.BOOL;
     setBoolValue(): void;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1407838-charvalue
-    charValue(): cocoascript.char;
+    charValue(): string;
     setCharValue(): void;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1407409-decimalvalue
     decimalValue(): cocoascript.NSDecimal;
@@ -1511,7 +1513,7 @@ declare namespace cocoascript {
     shortValue(): cocoascript.short;
     setShortValue(): void;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1409016-unsignedcharvalue
-    unsignedCharValue(): cocoascript.char;
+    unsignedCharValue(): string;
     setUnsignedCharValue(): void;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1413324-unsignedintegervalue
     unsignedIntegerValue(): cocoascript.NSUInteger;
@@ -2252,7 +2254,7 @@ declare namespace cocoascript {
     decodingFailurePolicy(): cocoascript.NSDecodingFailurePolicy;
     setDecodingFailurePolicy(): void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1417865-encodearrayofobjctype
-    encodeArrayOfObjCType_count_at(type: cocoascript.char, count: cocoascript.NSUInteger, array: void):void;
+    encodeArrayOfObjCType_count_at(type: string, count: cocoascript.NSUInteger, array: void):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1409236-encodebool
     encodeBool_forKey(value: cocoascript.BOOL, key: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1418225-encodebycopyobject
@@ -2304,9 +2306,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nscoder/1391176-encodesize
     encodeSize_forKey(size: cocoascript.NSSize, key: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1414648-encodevalueofobjctype
-    encodeValueOfObjCType_at(type: cocoascript.char, addr: void):void;
+    encodeValueOfObjCType_at(type: string, addr: void):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442581-encodevaluesofobjctypes
-    encodeValuesOfObjCTypes(types: cocoascript.char):void;
+    encodeValuesOfObjCTypes(types: string):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1624502-encodecgaffinetransform
     encodeCGAffineTransform_forKey(transform: cocoascript.CGAffineTransform, key: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1624520-encodecgpoint
@@ -2344,7 +2346,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442541-decodetoplevelobjectforkey
     decodeTopLevelObjectForKey_error(key: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSCoder;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1408354-decodearrayofobjctype
-    decodeArrayOfObjCType_count_at(itemType: cocoascript.char, count: cocoascript.NSUInteger, array: void):void;
+    decodeArrayOfObjCType_count_at(itemType: string, count: cocoascript.NSUInteger, array: void):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1409293-decodeboolforkey
     decodeBoolForKey(key: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1411987-decodebytesforkey
@@ -2386,11 +2388,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nscoder/1391253-decodesizeforkey
     decodeSizeForKey(key: cocoascript.NSString):cocoascript.NSSize;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1417159-decodevalueofobjctype
-    decodeValueOfObjCType_at(type: cocoascript.char, data: void):void;
+    decodeValueOfObjCType_at(type: string, data: void):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/2919430-decodevalueofobjctype
-    decodeValueOfObjCType_at_size(type: cocoascript.char, data: void, size: cocoascript.NSUInteger):void;
+    decodeValueOfObjCType_at_size(type: string, data: void, size: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442577-decodevaluesofobjctypes
-    decodeValuesOfObjCTypes(types: cocoascript.char):void;
+    decodeValuesOfObjCTypes(types: string):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442558-decodeobjectofclass
     decodeObjectOfClass_forKey(aClass: cocoascript.Class, key: cocoascript.NSString):cocoascript.NSCoder;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442560-decodeobjectofclasses
@@ -2595,6 +2597,7 @@ declare namespace cocoascript {
 }
 
 declare const NSTimer: cocoascript.NSTimer;
+declare const NSZeroSize: cocoascript.NSSize;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nspoint
   type NSPoint = cocoascript.CGPoint;
@@ -2603,6 +2606,7 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nssize
   type NSSize = cocoascript.CGSize;
 }
+declare const NSInvalidArgumentException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
   /**
    * An item provider for conveying data or a file between processes during drag and drop or copy/paste activities, or from a host app to an app extension.
@@ -2722,11 +2726,11 @@ declare namespace cocoascript {
    */
   interface NSValue extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsvalue/1411621-initwithbytes
-    initWithBytes_objCType(value: void, type: cocoascript.char):cocoascript.NSValue;
+    initWithBytes_objCType(value: void, type: string):cocoascript.NSValue;
     // doc://com.apple.documentation/documentation/foundation/nsvalue/1415141-getvalue
     getValue(value: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsvalue/1412365-objctype
-    objCType(): cocoascript.char;
+    objCType(): string;
     setObjCType(): void;
     // doc://com.apple.documentation/documentation/foundation/nsvalue/1410668-pointervalue
     pointerValue(): void;
@@ -2932,10 +2936,9 @@ declare namespace cocoascript {
   type NSAttributedStringKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsattributedstringenumerationoptions
-type NSAttributedStringEnumerationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsattributedstringenumerationoptions
+  type NSAttributedStringEnumerationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A representation of a node (a file, directory, or symbolic link) in the file system.
@@ -3037,10 +3040,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsrectedge
-type NSRectEdge = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsrectedge
+  type NSRectEdge = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A container for information broadcast through a notification center to all registered observers.
@@ -3723,6 +3725,11 @@ declare namespace cocoascript {
 }
 
 declare const NSOrthography: cocoascript.NSOrthography;
+declare const NSUserDefaultsDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSUserDefaultsSizeLimitExceededNotification: cocoascript.NSNotificationName;
+declare const NSUbiquitousUserDefaultsCompletedInitialSyncNotification: cocoascript.NSNotificationName;
+declare const NSUbiquitousUserDefaultsDidChangeAccountsNotification: cocoascript.NSNotificationName;
+declare const NSUbiquitousUserDefaultsNoCloudAccountNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A general-purpose recorder of operations that enables undo and redo.
@@ -3931,10 +3938,9 @@ declare namespace cocoascript {
 
 declare const NSOperation: cocoascript.NSOperation;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdatawritingoptions
-type NSDataWritingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdatawritingoptions
+  type NSDataWritingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object representing a dynamic byte buffer in memory.
@@ -3981,6 +3987,8 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsurlresourcekey
   type NSURLResourceKey = cocoascript.NSString;
 }
+declare const NSURLThumbnailKey: cocoascript.NSURLResourceKey;
+declare const NSURLThumbnailDictionaryKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   /**
    * An object that coordinates a group of related, network data-transfer tasks.
@@ -4140,15 +4148,13 @@ declare namespace cocoascript {
   type NSURLBookmarkFileCreationOptions = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlbookmarkcreationoptions
-type NSURLBookmarkCreationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlbookmarkcreationoptions
+  type NSURLBookmarkCreationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlbookmarkresolutionoptions
-type NSURLBookmarkResolutionOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlbookmarkresolutionoptions
+  type NSURLBookmarkResolutionOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that parses URLs into and constructs URLs from their constituent parts.
@@ -4275,10 +4281,21 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsurlfileresourcetype
   type NSURLFileResourceType = cocoascript.NSString;
 }
+declare const NSURLFileResourceTypeKey: cocoascript.NSURLResourceKey;
+declare const NSURLFileAllocatedSizeKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsurlfileprotectiontype
   type NSURLFileProtectionType = cocoascript.NSString;
 }
+declare const NSURLFileResourceIdentifierKey: cocoascript.NSURLResourceKey;
+declare const NSURLFileSecurityKey: cocoascript.NSURLResourceKey;
+declare const NSURLFileSizeKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsAliasFileKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsPackageKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsRegularFileKey: cocoascript.NSURLResourceKey;
+declare const NSURLPreferredIOBlockSizeKey: cocoascript.NSURLResourceKey;
+declare const NSURLTotalFileAllocatedSizeKey: cocoascript.NSURLResourceKey;
+declare const NSURLTotalFileSizeKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsappleeventmanagersuspensionid
   type NSAppleEventManagerSuspensionID = cocoascript.__NSAppleEventManagerSuspension;
@@ -4388,6 +4405,7 @@ declare namespace cocoascript {
 }
 
 declare const NSAppleEventDescriptor: cocoascript.NSAppleEventDescriptor;
+declare const NSBundleDidLoadNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsrunloopmode
   type NSRunLoopMode = cocoascript.NSString;
@@ -5102,9 +5120,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1411439-getrelationship
     getRelationship_ofDirectory_inDomain_toItemAtURL_error(outRelationship: cocoascript.NSURLRelationship, directory: cocoascript.NSSearchPathDirectory, domainMask: cocoascript.NSSearchPathDomainMask, url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1417057-filesystemrepresentationwithpath
-    fileSystemRepresentationWithPath(path: cocoascript.NSString):cocoascript.char;
+    fileSystemRepresentationWithPath(path: cocoascript.NSString):string;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409640-stringwithfilesystemrepresentati
-    stringWithFileSystemRepresentation_length(str: cocoascript.char, len: cocoascript.NSUInteger):cocoascript.NSString;
+    stringWithFileSystemRepresentation_length(str: string, len: cocoascript.NSUInteger):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1415163-delegate
     delegate(): cocoascript.NSFileManagerDelegate;
     setDelegate(): void;
@@ -7450,28 +7468,26 @@ declare namespace cocoascript {
   type unichar = cocoascript.short;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsstringcompareoptions
-type NSStringCompareOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsstringcompareoptions
+  type NSStringCompareOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsstringencodingconversionoptions
-type NSStringEncodingConversionOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsstringencodingconversionoptions
+  type NSStringEncodingConversionOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsstringtransform
   type NSStringTransform = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsstringenumerationoptions
-type NSStringEnumerationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsstringenumerationoptions
+  type NSStringEnumerationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsstringencodingdetectionoptionskey
   type NSStringEncodingDetectionOptionsKey = cocoascript.NSString;
 }
+declare const NSZeroRect: cocoascript.NSRect;
 declare namespace cocoascript {
   /**
    * An object that coordinates the reading and writing of files and directories among file presenters.
@@ -7531,6 +7547,10 @@ declare namespace cocoascript {
 }
 
 declare const NSFileAccessIntent: cocoascript.NSFileAccessIntent;
+declare const NSCocoaErrorDomain: cocoascript.NSErrorDomain;
+declare const NSUndoManagerDidCloseUndoGroupNotification: cocoascript.NSNotificationName;
+declare const NSUndoManagerDidUndoChangeNotification: cocoascript.NSNotificationName;
+declare const NSUndoManagerDidRedoChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A command that closes one or more scriptable objects.
@@ -8290,7 +8310,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdecimalnumber/1412789-descriptionwithlocale
     descriptionWithLocale(locale: cocoascript.NSDecimalNumber):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsdecimalnumber/1409042-objctype
-    objCType(): cocoascript.char;
+    objCType(): string;
     setObjCType(): void;
     // doc://com.apple.documentation/documentation/foundation/nsdecimalnumber/1407637-compare
     compare(decimalNumber: cocoascript.NSNumber):cocoascript.NSComparisonResult;
@@ -8654,6 +8674,7 @@ declare namespace cocoascript {
 }
 
 declare const NSDateFormatter: cocoascript.NSDateFormatter;
+declare const NSSystemClockDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An object-oriented wrapper for a file descriptor.
@@ -8752,30 +8773,25 @@ declare namespace cocoascript {
 
 declare const NSFileHandle: cocoascript.NSFileHandle;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdatareadingoptions
-type NSDataReadingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdatareadingoptions
+  type NSDataReadingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdatabase64encodingoptions
-type NSDataBase64EncodingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdatabase64encodingoptions
+  type NSDataBase64EncodingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdatabase64decodingoptions
-type NSDataBase64DecodingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdatabase64decodingoptions
+  type NSDataBase64DecodingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdatasearchoptions
-type NSDataSearchOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdatasearchoptions
+  type NSDataSearchOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm
-type NSDataCompressionAlgorithm = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm
+  type NSDataCompressionAlgorithm = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A dynamic ordered collection of objects.
@@ -8905,15 +8921,13 @@ declare namespace cocoascript {
 
 declare const NSOrderedCollectionDifference: cocoascript.NSOrderedCollectionDifference;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifferencecalculationoptions
-type NSOrderedCollectionDifferenceCalculationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsorderedcollectiondifferencecalculationoptions
+  type NSOrderedCollectionDifferenceCalculationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsbinarysearchingoptions
-type NSBinarySearchingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsbinarysearchingoptions
+  type NSBinarySearchingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A dynamic unordered collection of unique objects.
@@ -8953,10 +8967,9 @@ declare namespace cocoascript {
 
 declare const NSMutableSet: cocoascript.NSMutableSet;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nscomparisonresult
-type NSComparisonResult = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nscomparisonresult
+  type NSComparisonResult = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An abstract class used to transform values from one representation to another.
@@ -9022,7 +9035,7 @@ declare namespace cocoascript {
    */
   interface NSMethodSignature extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519660-getargumenttypeatindex
-    getArgumentTypeAtIndex(idx: cocoascript.NSUInteger):cocoascript.char;
+    getArgumentTypeAtIndex(idx: cocoascript.NSUInteger):string;
     // doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519662-numberofarguments
     numberOfArguments(): cocoascript.NSUInteger;
     setNumberOfArguments(): void;
@@ -9030,7 +9043,7 @@ declare namespace cocoascript {
     frameLength(): cocoascript.NSUInteger;
     setFrameLength(): void;
     // doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519667-methodreturntype
-    methodReturnType(): cocoascript.char;
+    methodReturnType(): string;
     setMethodReturnType(): void;
     // doc://com.apple.documentation/documentation/foundation/nsmethodsignature/1519666-methodreturnlength
     methodReturnLength(): cocoascript.NSUInteger;
@@ -9084,15 +9097,18 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsxmlparserexternalentityresolvingpolicy
-type NSXMLParserExternalEntityResolvingPolicy = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsxmlparserexternalentityresolvingpolicy
+  type NSXMLParserExternalEntityResolvingPolicy = cocoascript.NSUInteger;
 }
-
+declare const NSXMLParserErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsxmlparsererror
-type NSXMLParserError = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsxmlparsererror
+  type NSXMLParserError = cocoascript.NSInteger;
 }
-
+declare const NSRecoveryAttempterErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSMachErrorDomain: cocoascript.NSErrorDomain;
+declare const NSPOSIXErrorDomain: cocoascript.NSErrorDomain;
+declare const NSOSStatusErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nserroruserinfokey
   type NSErrorUserInfoKey = cocoascript.NSString;
@@ -9101,15 +9117,18 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nserrordomain
   type NSErrorDomain = cocoascript.NSString;
 }
+declare const NSURLErrorDomain: cocoascript.NSErrorDomain;
+declare const NSStreamSOCKSErrorDomain: cocoascript.NSErrorDomain;
+declare const NSStreamSocketSSLErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsrangepointer
   type NSRangePointer = cocoascript.NSRange;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsalignmentoptions
-type NSAlignmentOptions = number;
+  // doc://com.apple.documentation/documentation/foundation/nsalignmentoptions
+  type NSAlignmentOptions = number;
 }
-
+declare const NSInternalInconsistencyException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
   /**
    * A coder that stores an object's data to an archive.
@@ -9309,10 +9328,9 @@ declare namespace cocoascript {
 
 declare const NSPortCoder: cocoascript.NSPortCoder;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdecodingfailurepolicy
-type NSDecodingFailurePolicy = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdecodingfailurepolicy
+  type NSDecodingFailurePolicy = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/foundation/nssecureunarchivefromdatatransformer
@@ -9329,6 +9347,7 @@ declare namespace cocoascript {
 }
 
 declare const NSSecureUnarchiveFromDataTransformer: cocoascript.NSSecureUnarchiveFromDataTransformer;
+declare const NSRangeException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nspointpointer
   type NSPointPointer = cocoascript.NSPoint;
@@ -9395,6 +9414,7 @@ declare namespace cocoascript {
 }
 
 declare const NSCompoundPredicate: cocoascript.NSCompoundPredicate;
+declare const NSEdgeInsetsZero: cocoascript.NSEdgeInsets;
 declare namespace cocoascript {
   /**
    * A challenge from a server requiring authentication from the client.
@@ -10460,6 +10480,7 @@ declare namespace cocoascript {
 }
 
 declare const NSUnitInformationStorage: cocoascript.NSUnitInformationStorage;
+declare const NSZeroPoint: cocoascript.NSPoint;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nspointarray
   type NSPointArray = cocoascript.NSPoint;
@@ -10476,6 +10497,8 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsexceptionname
   type NSExceptionName = cocoascript.NSString;
 }
+declare const NSURLUbiquitousItemHasUnresolvedConflictsKey: cocoascript.NSURLResourceKey;
+declare const NSURLTagNamesKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsitemprovidercompletionhandler
   type NSItemProviderCompletionHandler = cocoascript.NSError;
@@ -10485,20 +10508,17 @@ declare namespace cocoascript {
   type NSItemProviderLoadHandler = cocoascript.NSDictionary;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsitemproviderfileoptions
-type NSItemProviderFileOptions = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsitemproviderfileoptions
+  type NSItemProviderFileOptions = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsitemproviderrepresentationvisibility
-type NSItemProviderRepresentationVisibility = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsitemproviderrepresentationvisibility
+  type NSItemProviderRepresentationVisibility = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsitemprovidererrorcode
-type NSItemProviderErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsitemprovidererrorcode
+  type NSItemProviderErrorCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A notification dispatch mechanism that enables the broadcast of notifications across task boundaries.
@@ -10563,6 +10583,7 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsrectpointer
   type NSRectPointer = cocoascript.NSRect;
 }
+declare const NSGenericException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
   /**
    * Analyze natural language text to tag part of speech and lexical class, identify names, perform lemmatization, and determine the language and script.
@@ -10631,6 +10652,7 @@ declare namespace cocoascript {
 }
 
 declare const NSDataDetector: cocoascript.NSDataDetector;
+declare const NSNotFound: cocoascript.NSInteger;
 declare namespace cocoascript {
   /**
    * A lock that can be associated with specific, user-defined conditions.
@@ -10758,20 +10780,17 @@ declare namespace cocoascript {
 
 declare const NSDistributedLock: cocoascript.NSDistributedLock;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nstextcheckingtype
-type NSTextCheckingType = cocoascript.uint64_t;
+  // doc://com.apple.documentation/documentation/foundation/nstextcheckingtype
+  type NSTextCheckingType = cocoascript.uint64_t;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsfilewrapperreadingoptions
-type NSFileWrapperReadingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsfilewrapperreadingoptions
+  type NSFileWrapperReadingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsfilewrapperwritingoptions
-type NSFileWrapperWritingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsfilewrapperwritingoptions
+  type NSFileWrapperWritingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resource manager you use to download content hosted on the App Store at the time your app needs it.
@@ -10824,6 +10843,7 @@ declare namespace cocoascript {
     isContentDiscarded():cocoascript.BOOL;
   }
 }
+declare const NSRunLoopCommonModes: cocoascript.NSRunLoopMode;
 declare namespace cocoascript {
   /**
    * An abstract class that provides the interface for querying the relationships and properties of a class.
@@ -10853,24 +10873,21 @@ declare namespace cocoascript {
 
 declare const NSClassDescription: cocoascript.NSClassDescription;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nskeyvaluechange
-type NSKeyValueChange = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nskeyvaluechange
+  type NSKeyValueChange = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nskeyvalueobservingoptions
-type NSKeyValueObservingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nskeyvalueobservingoptions
+  type NSKeyValueObservingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nskeyvaluechangekey
   type NSKeyValueChangeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nskeyvaluesetmutationkind
-type NSKeyValueSetMutationKind = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nskeyvaluesetmutationkind
+  type NSKeyValueSetMutationKind = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nskeyvalueoperator
   type NSKeyValueOperator = cocoascript.NSString;
@@ -10916,6 +10933,29 @@ declare namespace cocoascript {
 }
 
 declare const NSScriptExecutionContext: cocoascript.NSScriptExecutionContext;
+declare const NSBundleResourceRequestLowDiskSpaceNotification: cocoascript.NSNotificationName;
+declare const NSCalendarDayChangedNotification: cocoascript.NSNotificationName;
+declare const NSDidBecomeSingleThreadedNotification: cocoascript.NSNotificationName;
+declare const NSFileHandleConnectionAcceptedNotification: cocoascript.NSNotificationName;
+declare const NSFileHandleDataAvailableNotification: cocoascript.NSNotificationName;
+declare const NSFileHandleReadToEndOfFileCompletionNotification: cocoascript.NSNotificationName;
+declare const NSHTTPCookieManagerAcceptPolicyChangedNotification: cocoascript.NSNotificationName;
+declare const NSHTTPCookieManagerCookiesChangedNotification: cocoascript.NSNotificationName;
+declare const NSMetadataQueryDidFinishGatheringNotification: cocoascript.NSNotificationName;
+declare const NSMetadataQueryDidStartGatheringNotification: cocoascript.NSNotificationName;
+declare const NSMetadataQueryDidUpdateNotification: cocoascript.NSNotificationName;
+declare const NSMetadataQueryGatheringProgressNotification: cocoascript.NSNotificationName;
+declare const NSProcessInfoPowerStateDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSSystemTimeZoneDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSThreadWillExitNotification: cocoascript.NSNotificationName;
+declare const NSURLCredentialStorageChangedNotification: cocoascript.NSNotificationName;
+declare const NSUbiquityIdentityDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSUndoManagerCheckpointNotification: cocoascript.NSNotificationName;
+declare const NSUndoManagerDidOpenUndoGroupNotification: cocoascript.NSNotificationName;
+declare const NSUndoManagerWillCloseUndoGroupNotification: cocoascript.NSNotificationName;
+declare const NSUndoManagerWillRedoChangeNotification: cocoascript.NSNotificationName;
+declare const NSUndoManagerWillUndoChangeNotification: cocoascript.NSNotificationName;
+declare const NSWillBecomeMultiThreadedNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A mutable, unordered collection of distinct objects that may appear more than once in the collection.
@@ -10976,6 +11016,7 @@ declare namespace cocoascript {
 }
 
 declare const NSPropertyListSerialization: cocoascript.NSPropertyListSerialization;
+declare const NSPortDidBecomeInvalidNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A low-level, operating system-independent type for inter-application (and inter-thread) messages.
@@ -11477,15 +11518,13 @@ declare namespace cocoascript {
 
 declare const NSPersonNameComponentsFormatter: cocoascript.NSPersonNameComponentsFormatter;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsformattingcontext
-type NSFormattingContext = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsformattingcontext
+  type NSFormattingContext = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsformattingunitstyle
-type NSFormattingUnitStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsformattingunitstyle
+  type NSFormattingUnitStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A protocol that declares three methods that control the discretionary aspects of working with decimal numbers.
@@ -12164,15 +12203,18 @@ declare namespace cocoascript {
 }
 
 declare const NSCountCommand: cocoascript.NSCountCommand;
+declare const NSCurrentLocaleDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nslocalekey
   type NSLocaleKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nslocalelanguagedirection
-type NSLocaleLanguageDirection = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nslocalelanguagedirection
+  type NSLocaleLanguageDirection = cocoascript.NSUInteger;
 }
-
+declare const NSFileProtectionComplete: cocoascript.NSFileProtectionType;
+declare const NSFileProtectionCompleteUnlessOpen: cocoascript.NSFileProtectionType;
+declare const NSURLPathKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   /**
    * A mutable collection you use to temporarily store transient key-value pairs that are subject to eviction when resources are low.
@@ -12212,26 +12254,24 @@ declare namespace cocoascript {
 }
 
 declare const NSCache: cocoascript.NSCache;
+declare const NSUndoCloseGroupingRunLoopOrdering: cocoascript.NSUInteger;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsfileversionaddingoptions
-type NSFileVersionAddingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsfileversionaddingoptions
+  type NSFileVersionAddingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsfileversionreplacingoptions
-type NSFileVersionReplacingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsfileversionreplacingoptions
+  type NSFileVersionReplacingOptions = cocoascript.NSUInteger;
 }
-
+declare const NSFileExtensionHidden: cocoascript.NSFileAttributeKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsoperationqueuepriority
-type NSOperationQueuePriority = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsoperationqueuepriority
+  type NSOperationQueuePriority = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsqualityofservice
-type NSQualityOfService = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsqualityofservice
+  type NSQualityOfService = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A mutable data object containing bytes that can be discarded when they're no longer needed.
@@ -12246,6 +12286,8 @@ declare namespace cocoascript {
 }
 
 declare const NSPurgeableData: cocoascript.NSPurgeableData;
+declare const NSURLVolumeTotalCapacityKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeAvailableCapacityKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsurlubiquitousitemdownloadingstatus
   type NSURLUbiquitousItemDownloadingStatus = cocoascript.NSString;
@@ -12254,6 +12296,67 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsurlthumbnaildictionaryitem
   type NSURLThumbnailDictionaryItem = cocoascript.NSString;
 }
+declare const NSURLIsApplicationKey: cocoascript.NSURLResourceKey;
+declare const NSURLApplicationIsScriptableKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsDirectoryKey: cocoascript.NSURLResourceKey;
+declare const NSURLParentDirectoryURLKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeAvailableCapacityForImportantUsageKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeAvailableCapacityForOpportunisticUsageKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsAutomountedKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsBrowsableKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsEjectableKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsEncryptedKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsInternalKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsJournalingKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsLocalKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsReadOnlyKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsRemovableKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIsRootFileSystemKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsMountTriggerKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsVolumeKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeCreationDateKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeIdentifierKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeLocalizedFormatDescriptionKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeLocalizedNameKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeMaximumFileSizeKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeNameKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeResourceCountKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsAccessPermissionsKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsAdvisoryFileLockingKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsCasePreservedNamesKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsCaseSensitiveNamesKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsCompressionKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsExclusiveRenamingKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsExtendedSecurityKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsFileCloningKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsHardLinksKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsImmutableFilesKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsJournalingKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsPersistentIDsKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsRenamingKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsRootDirectoryDatesKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsSparseFilesKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsSwapRenamingKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsSymbolicLinksKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsVolumeSizesKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsZeroRunsKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeURLForRemountingKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeURLKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeUUIDStringKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsUbiquitousItemKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousSharedItemMostRecentEditorNameComponentsKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemDownloadRequestedKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemIsDownloadingKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemDownloadingErrorKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemDownloadingStatusKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemIsUploadedKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemIsUploadingKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemUploadingErrorKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemContainerDisplayNameKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousSharedItemOwnerNameComponentsKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousSharedItemCurrentUserPermissionsKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousSharedItemCurrentUserRoleKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemIsSharedKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsurlubiquitousshareditemrole
   type NSURLUbiquitousSharedItemRole = cocoascript.NSString;
@@ -12262,6 +12365,45 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsurlubiquitousshareditempermissions
   type NSURLUbiquitousSharedItemPermissions = cocoascript.NSString;
 }
+declare const NSURLKeysOfUnsetValuesKey: cocoascript.NSURLResourceKey;
+declare const NSURLQuarantinePropertiesKey: cocoascript.NSURLResourceKey;
+declare const NSURLAddedToDirectoryDateKey: cocoascript.NSURLResourceKey;
+declare const NSURLAttributeModificationDateKey: cocoascript.NSURLResourceKey;
+declare const NSURLContentAccessDateKey: cocoascript.NSURLResourceKey;
+declare const NSURLContentModificationDateKey: cocoascript.NSURLResourceKey;
+declare const NSURLCreationDateKey: cocoascript.NSURLResourceKey;
+declare const NSURLCustomIconKey: cocoascript.NSURLResourceKey;
+declare const NSURLDocumentIdentifierKey: cocoascript.NSURLResourceKey;
+declare const NSURLEffectiveIconKey: cocoascript.NSURLResourceKey;
+declare const NSURLGenerationIdentifierKey: cocoascript.NSURLResourceKey;
+declare const NSURLHasHiddenExtensionKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsExcludedFromBackupKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsExecutableKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsHiddenKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsReadableKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsSymbolicLinkKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsSystemImmutableKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsUserImmutableKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsWritableKey: cocoascript.NSURLResourceKey;
+declare const NSURLLabelColorKey: cocoascript.NSURLResourceKey;
+declare const NSURLLabelNumberKey: cocoascript.NSURLResourceKey;
+declare const NSURLLinkCountKey: cocoascript.NSURLResourceKey;
+declare const NSURLLocalizedLabelKey: cocoascript.NSURLResourceKey;
+declare const NSURLLocalizedNameKey: cocoascript.NSURLResourceKey;
+declare const NSURLLocalizedTypeDescriptionKey: cocoascript.NSURLResourceKey;
+declare const NSURLNameKey: cocoascript.NSURLResourceKey;
+declare const NSURLCanonicalPathKey: cocoascript.NSURLResourceKey;
+declare const NSURLTypeIdentifierKey: cocoascript.NSURLResourceKey;
+declare const NSURLContentTypeKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemIsDownloadedKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemPercentDownloadedKey: cocoascript.NSURLResourceKey;
+declare const NSURLUbiquitousItemPercentUploadedKey: cocoascript.NSURLResourceKey;
+declare const NSURLFileContentIdentifierKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsPurgeableKey: cocoascript.NSURLResourceKey;
+declare const NSURLIsSparseKey: cocoascript.NSURLResourceKey;
+declare const NSURLMayHaveExtendedAttributesKey: cocoascript.NSURLResourceKey;
+declare const NSURLMayShareFileContentKey: cocoascript.NSURLResourceKey;
+declare const NSURLVolumeSupportsFileProtectionKey: cocoascript.NSURLResourceKey;
 declare namespace cocoascript {
   /**
    * An abstract class that handles the loading of protocol-specific URL data.
@@ -12518,10 +12660,9 @@ declare namespace cocoascript {
 
 declare const NSURLSessionWebSocketMessage: cocoascript.NSURLSessionWebSocketMessage;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessionwebsocketmessagetype
-type NSURLSessionWebSocketMessageType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessionwebsocketmessagetype
+  type NSURLSessionWebSocketMessageType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A protocol that most delegates of a URL connection implement to receive data associated with the connection.
@@ -12919,21 +13060,30 @@ declare namespace cocoascript {
 }
 
 declare const NSURLHandle: cocoascript.NSURLHandle;
+declare const NSURLFileResourceTypeNamedPipe: cocoascript.NSURLFileResourceType;
+declare const NSURLFileResourceTypeCharacterSpecial: cocoascript.NSURLFileResourceType;
+declare const NSURLFileResourceTypeDirectory: cocoascript.NSURLFileResourceType;
+declare const NSURLFileResourceTypeBlockSpecial: cocoascript.NSURLFileResourceType;
+declare const NSURLFileResourceTypeRegular: cocoascript.NSURLFileResourceType;
+declare const NSURLFileResourceTypeSymbolicLink: cocoascript.NSURLFileResourceType;
+declare const NSURLFileResourceTypeSocket: cocoascript.NSURLFileResourceType;
+declare const NSURLFileResourceTypeUnknown: cocoascript.NSURLFileResourceType;
+declare const NSURLFileProtectionComplete: cocoascript.NSURLFileProtectionType;
+declare const NSURLFileProtectionCompleteUnlessOpen: cocoascript.NSURLFileProtectionType;
+declare const NSURLFileProtectionCompleteUntilFirstUserAuthentication: cocoascript.NSURLFileProtectionType;
+declare const NSURLFileProtectionNone: cocoascript.NSURLFileProtectionType;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdirectoryenumerationoptions
-type NSDirectoryEnumerationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdirectoryenumerationoptions
+  type NSDirectoryEnumerationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nssearchpathdirectory
-type NSSearchPathDirectory = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nssearchpathdirectory
+  type NSSearchPathDirectory = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nssearchpathdomainmask
-type NSSearchPathDomainMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nssearchpathdomainmask
+  type NSSearchPathDomainMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsfileattributekey
   type NSFileAttributeKey = cocoascript.NSString;
@@ -12946,11 +13096,13 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsfileprotectiontype
   type NSFileProtectionType = cocoascript.NSString;
 }
+declare const NSAppleEventTimeOutDefault: number;
+declare const NSAppleEventTimeOutNone: number;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsappleeventsendoptions
-type NSAppleEventSendOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsappleeventsendoptions
+  type NSAppleEventSendOptions = cocoascript.NSUInteger;
 }
-
+declare const NSDefaultRunLoopMode: cocoascript.NSRunLoopMode;
 declare namespace cocoascript {
   /**
    * An object representing a subprocess of the current process.
@@ -13202,10 +13354,9 @@ declare namespace cocoascript {
 
 declare const NSNetServiceBrowser: cocoascript.NSNetServiceBrowser;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition
-type NSURLSessionAuthChallengeDisposition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessionauthchallengedisposition
+  type NSURLSessionAuthChallengeDisposition = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A network service that broadcasts its availability using multicast DNS.
@@ -13331,15 +13482,13 @@ declare namespace cocoascript {
 
 declare const NSDirectoryEnumerator: cocoascript.NSDirectoryEnumerator;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsvolumeenumerationoptions
-type NSVolumeEnumerationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsvolumeenumerationoptions
+  type NSVolumeEnumerationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsfilemanageritemreplacementoptions
-type NSFileManagerItemReplacementOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsfilemanageritemreplacementoptions
+  type NSFileManagerItemReplacementOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A service that provides a custom communication channel between your app and a File Provider extension.
@@ -13364,34 +13513,33 @@ declare namespace cocoascript {
   type NSFileProviderServiceName = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlrelationship
-type NSURLRelationship = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlrelationship
+  type NSURLRelationship = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsfilemanagerunmountoptions
-type NSFileManagerUnmountOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsfilemanagerunmountoptions
+  type NSFileManagerUnmountOptions = cocoascript.NSUInteger;
 }
-
+declare const NSFileOwnerAccountID: cocoascript.NSFileAttributeKey;
+declare const NSFileGroupOwnerAccountID: cocoascript.NSFileAttributeKey;
+declare const NSFilePosixPermissions: cocoascript.NSFileAttributeKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nstimezonenamestyle
-type NSTimeZoneNameStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nstimezonenamestyle
+  type NSTimeZoneNameStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsmaptableoptions
   type NSMapTableOptions = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskstate
-type NSURLSessionTaskState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskstate
+  type NSURLSessionTaskState = cocoascript.NSInteger;
 }
-
+declare const NSURLSessionTransferSizeUnknown: number;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessionmultipathservicetype
-type NSURLSessionMultipathServiceType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessionmultipathservicetype
+  type NSURLSessionMultipathServiceType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A mutable collection of unique integer values that represent indexes in another collection.
@@ -13423,44 +13571,49 @@ declare namespace cocoascript {
 
 declare const NSMutableIndexSet: cocoascript.NSMutableIndexSet;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlcredentialpersistence
-type NSURLCredentialPersistence = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlcredentialpersistence
+  type NSURLCredentialPersistence = cocoascript.NSUInteger;
 }
-
+declare const NSCalendarIdentifierGregorian: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierIslamicUmmAlQura: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierEthiopicAmeteMihret: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierEthiopicAmeteAlem: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierPersian: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierBuddhist: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierIndian: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierHebrew: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierChinese: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierJapanese: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierCoptic: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierIslamic: cocoascript.NSCalendarIdentifier;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nscalendarunit
-type NSCalendarUnit = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nscalendarunit
+  type NSCalendarUnit = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nscalendaridentifier
   type NSCalendarIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nscalendaroptions
-type NSCalendarOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nscalendaroptions
+  type NSCalendarOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nspointerfunctionsoptions
-type NSPointerFunctionsOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nspointerfunctionsoptions
+  type NSPointerFunctionsOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlcachestoragepolicy
-type NSURLCacheStoragePolicy = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlcachestoragepolicy
+  type NSURLCacheStoragePolicy = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy
-type NSURLRequestCachePolicy = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlrequestcachepolicy
+  type NSURLRequestCachePolicy = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlrequestnetworkservicetype
-type NSURLRequestNetworkServiceType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlrequestnetworkservicetype
+  type NSURLRequestNetworkServiceType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A dynamic, ordered collection of unique objects.
@@ -13542,25 +13695,21 @@ declare namespace cocoascript {
 
 declare const NSMutableOrderedSet: cocoascript.NSMutableOrderedSet;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsmatchingoptions
-type NSMatchingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsmatchingoptions
+  type NSMatchingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsregularexpressionoptions
-type NSRegularExpressionOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsregularexpressionoptions
+  type NSRegularExpressionOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsmatchingflags
-type NSMatchingFlags = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsmatchingflags
+  type NSMatchingFlags = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsexpressiontype
-type NSExpressionType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsexpressiontype
+  type NSExpressionType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nshashtableoptions
   type NSHashTableOptions = cocoascript.NSUInteger;
@@ -13742,10 +13891,9 @@ declare namespace cocoascript {
 
 declare const NSXMLDTDNode: cocoascript.NSXMLDTDNode;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsxmlnodekind
-type NSXMLNodeKind = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsxmlnodekind
+  type NSXMLNodeKind = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A representation of a Document Type Definition.
@@ -13793,15 +13941,13 @@ declare namespace cocoascript {
 
 declare const NSXMLDTD: cocoascript.NSXMLDTD;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsxmlnodeoptions
-type NSXMLNodeOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsxmlnodeoptions
+  type NSXMLNodeOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsusernotificationactivationtype
-type NSUserNotificationActivationType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsusernotificationactivationtype
+  type NSUserNotificationActivationType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A structure that defines the three-by-three matrix that performs an affine transform between two coordinate systems.
@@ -13848,15 +13994,13 @@ declare namespace cocoascript {
 
 declare const NSEnumerator: cocoascript.NSEnumerator;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsenumerationoptions
-type NSEnumerationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsenumerationoptions
+  type NSEnumerationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nssortoptions
-type NSSortOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nssortoptions
+  type NSSortOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A specialized date object with embedded calendar information.
@@ -14168,20 +14312,19 @@ declare namespace cocoascript {
 
 declare const NSPipe: cocoascript.NSPipe;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle
-type NSRelativeDateTimeFormatterStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle
+  type NSRelativeDateTimeFormatterStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterunitsstyle
-type NSRelativeDateTimeFormatterUnitsStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterunitsstyle
+  type NSRelativeDateTimeFormatterUnitsStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol
-type NSURLSessionTaskMetricsDomainResolutionProtocol = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol
+  type NSURLSessionTaskMetricsDomainResolutionProtocol = cocoascript.NSInteger;
 }
-
+declare const NSProgressKindFile: cocoascript.NSProgressKind;
+declare const NSProgressFileOperationKindKey: cocoascript.NSProgressUserInfoKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsprogresskind
   type NSProgressKind = cocoascript.NSString;
@@ -14202,11 +14345,12 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsprogressunpublishinghandler
   type NSProgressUnpublishingHandler = void;
 }
+declare const NSOperationQueueDefaultMaxConcurrentOperationCount: cocoascript.NSInteger;
+declare const NSProcessInfoThermalStateDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsprocessinfothermalstate
-type NSProcessInfoThermalState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsprocessinfothermalstate
+  type NSProcessInfoThermalState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * Operating system version structure used with
@@ -14225,24 +14369,39 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsactivityoptions
-type NSActivityOptions = cocoascript.uint64_t;
+  // doc://com.apple.documentation/documentation/foundation/nsactivityoptions
+  type NSActivityOptions = cocoascript.uint64_t;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult
-type NSBackgroundActivityResult = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsbackgroundactivityresult
+  type NSBackgroundActivityResult = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsbackgroundactivitycompletionhandler
   type NSBackgroundActivityCompletionHandler = cocoascript.NSBackgroundActivityResult;
 }
+declare const NSFilePathErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSURLErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSStringTransformToLatin: cocoascript.NSStringTransform;
+declare const NSStringTransformLatinToArabic: cocoascript.NSStringTransform;
+declare const NSStringTransformLatinToCyrillic: cocoascript.NSStringTransform;
+declare const NSStringTransformLatinToGreek: cocoascript.NSStringTransform;
+declare const NSStringTransformLatinToHangul: cocoascript.NSStringTransform;
+declare const NSStringTransformLatinToHebrew: cocoascript.NSStringTransform;
+declare const NSStringTransformLatinToHiragana: cocoascript.NSStringTransform;
+declare const NSStringTransformLatinToKatakana: cocoascript.NSStringTransform;
+declare const NSStringTransformLatinToThai: cocoascript.NSStringTransform;
+declare const NSStringTransformHiraganaToKatakana: cocoascript.NSStringTransform;
+declare const NSStringTransformMandarinToLatin: cocoascript.NSStringTransform;
+declare const NSStringTransformStripDiacritics: cocoascript.NSStringTransform;
+declare const NSStringTransformStripCombiningMarks: cocoascript.NSStringTransform;
+declare const NSStringTransformFullwidthToHalfwidth: cocoascript.NSStringTransform;
+declare const NSStringTransformToUnicodeName: cocoascript.NSStringTransform;
+declare const NSStringTransformToXMLHex: cocoascript.NSStringTransform;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nslinguistictaggeroptions
-type NSLinguisticTaggerOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nslinguistictaggeroptions
+  type NSLinguisticTaggerOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nslinguistictagscheme
   type NSLinguisticTagScheme = cocoascript.NSString;
@@ -14251,21 +14410,27 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nslinguistictag
   type NSLinguisticTag = cocoascript.NSString;
 }
+declare const NSStringEncodingDetectionAllowLossyKey: cocoascript.NSStringEncodingDetectionOptionsKey;
+declare const NSStringEncodingDetectionDisallowedEncodingsKey: cocoascript.NSStringEncodingDetectionOptionsKey;
+declare const NSStringEncodingDetectionFromWindowsKey: cocoascript.NSStringEncodingDetectionOptionsKey;
+declare const NSStringEncodingDetectionLikelyLanguageKey: cocoascript.NSStringEncodingDetectionOptionsKey;
+declare const NSStringEncodingDetectionLossySubstitutionKey: cocoascript.NSStringEncodingDetectionOptionsKey;
+declare const NSStringEncodingDetectionSuggestedEncodingsKey: cocoascript.NSStringEncodingDetectionOptionsKey;
+declare const NSStringEncodingDetectionUseOnlySuggestedEncodingsKey: cocoascript.NSStringEncodingDetectionOptionsKey;
+declare const NSCharacterConversionException: cocoascript.NSExceptionName;
+declare const NSParseErrorException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions
-type NSFileCoordinatorReadingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorreadingoptions
+  type NSFileCoordinatorReadingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions
-type NSFileCoordinatorWritingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsfilecoordinatorwritingoptions
+  type NSFileCoordinatorWritingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nssaveoptions
-type NSSaveOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nssaveoptions
+  type NSSaveOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The
@@ -14321,45 +14486,42 @@ declare namespace cocoascript {
 
 declare const NSMetadataQueryAttributeValueTuple: cocoascript.NSMetadataQueryAttributeValueTuple;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsroundingmode
-type NSRoundingMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsroundingmode
+  type NSRoundingMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nscalculationerror
-type NSCalculationError = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nscalculationerror
+  type NSCalculationError = cocoascript.NSUInteger;
 }
-
+declare const NSDecimalNumberExactnessException: cocoascript.NSExceptionName;
+declare const NSDecimalNumberOverflowException: cocoascript.NSExceptionName;
+declare const NSDecimalNumberUnderflowException: cocoascript.NSExceptionName;
+declare const NSDecimalNumberDivideByZeroException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsnumberformatterstyle
-type NSNumberFormatterStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsnumberformatterstyle
+  type NSNumberFormatterStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsnumberformatterbehavior
-type NSNumberFormatterBehavior = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsnumberformatterbehavior
+  type NSNumberFormatterBehavior = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsnumberformatterpadposition
-type NSNumberFormatterPadPosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsnumberformatterpadposition
+  type NSNumberFormatterPadPosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsnumberformatterroundingmode
-type NSNumberFormatterRoundingMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsnumberformatterroundingmode
+  type NSNumberFormatterRoundingMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdateformatterstyle
-type NSDateFormatterStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdateformatterstyle
+  type NSDateFormatterStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdateformatterbehavior
-type NSDateFormatterBehavior = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdateformatterbehavior
+  type NSDateFormatterBehavior = cocoascript.NSUInteger;
 }
-
+declare const NSFileHandleReadCompletionNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * This defines the structure used as contextual information in the
@@ -14398,14 +14560,27 @@ declare namespace cocoascript {
 
 declare const NSOrderedCollectionChange: cocoascript.NSOrderedCollectionChange;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nscollectionchangetype
-type NSCollectionChangeType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nscollectionchangetype
+  type NSCollectionChangeType = cocoascript.NSInteger;
 }
-
+declare const NSFileType: cocoascript.NSFileAttributeKey;
+declare const NSFileTypeSymbolicLink: cocoascript.NSFileAttributeType;
+declare const NSFileSize: cocoascript.NSFileAttributeKey;
+declare const NSFileCreationDate: cocoascript.NSFileAttributeKey;
+declare const NSFileModificationDate: cocoascript.NSFileAttributeKey;
+declare const NSFileOwnerAccountName: cocoascript.NSFileAttributeKey;
+declare const NSFileGroupOwnerAccountName: cocoascript.NSFileAttributeKey;
+declare const NSFileImmutable: cocoascript.NSFileAttributeKey;
+declare const NSFileAppendOnly: cocoascript.NSFileAttributeKey;
+declare const NSFileSystemFileNumber: cocoascript.NSFileAttributeKey;
+declare const NSFileSystemNumber: cocoascript.NSFileAttributeKey;
+declare const NSFileHFSTypeCode: cocoascript.NSFileAttributeKey;
+declare const NSFileHFSCreatorCode: cocoascript.NSFileAttributeKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsvaluetransformername
   type NSValueTransformerName = cocoascript.NSString;
 }
+declare const NSGetSizeAndAlignment: cocoascript.NSUInteger;
 declare namespace cocoascript {
   /**
    * A convenient interface to the garbage collection system.
@@ -14438,173 +14613,233 @@ declare namespace cocoascript {
 }
 
 declare const NSGarbageCollector: cocoascript.NSGarbageCollector;
+declare const NSLocalizedDescriptionKey: cocoascript.NSErrorUserInfoKey;
+declare const NSLocalizedRecoveryOptionsErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSLocalizedRecoverySuggestionErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSLocalizedFailureReasonErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSHelpAnchorErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSLocalizedFailureErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSStringEncodingErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSUnderlyingErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSDebugDescriptionErrorKey: cocoascript.NSErrorUserInfoKey;
+declare const NSInvalidUnarchiveOperationException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nscomparisonpredicatemodifier
-type NSComparisonPredicateModifier = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nscomparisonpredicatemodifier
+  type NSComparisonPredicateModifier = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nscompoundpredicatetype
-type NSCompoundPredicateType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nscompoundpredicatetype
+  type NSCompoundPredicateType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nspredicateoperatortype
-type NSPredicateOperatorType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nspredicateoperatortype
+  type NSPredicateOperatorType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nscomparisonpredicateoptions
-type NSComparisonPredicateOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nscomparisonpredicateoptions
+  type NSComparisonPredicateOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsmeasurementformatterunitoptions
-type NSMeasurementFormatterUnitOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsmeasurementformatterunitoptions
+  type NSMeasurementFormatterUnitOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsiso8601dateformatoptions
-type NSISO8601DateFormatOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsiso8601dateformatoptions
+  type NSISO8601DateFormatOptions = cocoascript.NSUInteger;
 }
-
+declare const NSDestinationInvalidException: cocoascript.NSExceptionName;
+declare const NSFileHandleOperationException: cocoascript.NSExceptionName;
+declare const NSInvalidArchiveOperationException: cocoascript.NSExceptionName;
+declare const NSInvalidReceivePortException: cocoascript.NSExceptionName;
+declare const NSInvalidSendPortException: cocoascript.NSExceptionName;
+declare const NSInvocationOperationCancelledException: cocoascript.NSExceptionName;
+declare const NSInvocationOperationVoidResultException: cocoascript.NSExceptionName;
+declare const NSMallocException: cocoascript.NSExceptionName;
+declare const NSObjectInaccessibleException: cocoascript.NSExceptionName;
+declare const NSObjectNotAvailableException: cocoascript.NSExceptionName;
+declare const NSOldStyleException: cocoascript.NSExceptionName;
+declare const NSPortReceiveException: cocoascript.NSExceptionName;
+declare const NSPortSendException: cocoascript.NSExceptionName;
+declare const NSPortTimeoutException: cocoascript.NSExceptionName;
+declare const NSUndefinedKeyException: cocoascript.NSExceptionName;
+declare const NSInconsistentArchiveException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsnotificationsuspensionbehavior
-type NSNotificationSuspensionBehavior = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsnotificationsuspensionbehavior
+  type NSNotificationSuspensionBehavior = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdistributednotificationoptions
-type NSDistributedNotificationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdistributednotificationoptions
+  type NSDistributedNotificationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsdistributednotificationcentertype
   type NSDistributedNotificationCenterType = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsnotificationcoalescing
-type NSNotificationCoalescing = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsnotificationcoalescing
+  type NSNotificationCoalescing = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nspostingstyle
-type NSPostingStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nspostingstyle
+  type NSPostingStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nslinguistictaggerunit
-type NSLinguisticTaggerUnit = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nslinguistictaggerunit
+  type NSLinguisticTaggerUnit = cocoascript.NSInteger;
 }
-
+declare const NSBundleResourceRequestLoadingPriorityUrgent: number;
+declare const NSKeyValueChangeKindKey: cocoascript.NSKeyValueChangeKey;
+declare const NSKeyValueChangeIndexesKey: cocoascript.NSKeyValueChangeKey;
+declare const NSKeyValueChangeNewKey: cocoascript.NSKeyValueChangeKey;
+declare const NSKeyValueChangeNotificationIsPriorKey: cocoascript.NSKeyValueChangeKey;
+declare const NSKeyValueChangeOldKey: cocoascript.NSKeyValueChangeKey;
+declare const NSAverageKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSCountKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSDistinctUnionOfArraysKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSDistinctUnionOfObjectsKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSDistinctUnionOfSetsKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSMaximumKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSMinimumKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSSumKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSUnionOfArraysKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSUnionOfObjectsKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSUnionOfSetsKeyValueOperator: cocoascript.NSKeyValueOperator;
+declare const NSTextCheckingAirlineKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingFlightKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingNameKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingJobTitleKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingOrganizationKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingStreetKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingCityKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingStateKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingZIPKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingCountryKey: cocoascript.NSTextCheckingKey;
+declare const NSTextCheckingPhoneKey: cocoascript.NSTextCheckingKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions
-type NSJSONReadingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions
+  type NSJSONReadingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsjsonwritingoptions
-type NSJSONWritingOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsjsonwritingoptions
+  type NSJSONWritingOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nspropertylistmutabilityoptions
-type NSPropertyListMutabilityOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nspropertylistmutabilityoptions
+  type NSPropertyListMutabilityOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nspropertylistwriteoptions
   type NSPropertyListWriteOptions = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nspropertylistformat
-type NSPropertyListFormat = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nspropertylistformat
+  type NSPropertyListFormat = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nspropertylistreadoptions
   type NSPropertyListReadOptions = cocoascript.NSPropertyListMutabilityOptions;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsmachportoptions
-type NSMachPortOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsmachportoptions
+  type NSMachPortOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsbytecountformatterunits
-type NSByteCountFormatterUnits = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsbytecountformatterunits
+  type NSByteCountFormatterUnits = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsbytecountformattercountstyle
-type NSByteCountFormatterCountStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsbytecountformattercountstyle
+  type NSByteCountFormatterCountStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdatecomponentsformatterunitsstyle
-type NSDateComponentsFormatterUnitsStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdatecomponentsformatterunitsstyle
+  type NSDateComponentsFormatterUnitsStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdatecomponentsformatterzeroformattingbehavior
-type NSDateComponentsFormatterZeroFormattingBehavior = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdatecomponentsformatterzeroformattingbehavior
+  type NSDateComponentsFormatterZeroFormattingBehavior = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsdateintervalformatterstyle
-type NSDateIntervalFormatterStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsdateintervalformatterstyle
+  type NSDateIntervalFormatterStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsenergyformatterunit
-type NSEnergyFormatterUnit = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsenergyformatterunit
+  type NSEnergyFormatterUnit = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nslengthformatterunit
-type NSLengthFormatterUnit = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nslengthformatterunit
+  type NSLengthFormatterUnit = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsmassformatterunit
-type NSMassFormatterUnit = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsmassformatterunit
+  type NSMassFormatterUnit = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatterstyle
-type NSPersonNameComponentsFormatterStyle = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatterstyle
+  type NSPersonNameComponentsFormatterStyle = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatteroptions
-type NSPersonNameComponentsFormatterOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatteroptions
+  type NSPersonNameComponentsFormatterOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nstestcomparisonoperation
-type NSTestComparisonOperation = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nstestcomparisonoperation
+  type NSTestComparisonOperation = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nswhosesubelementidentifier
-type NSWhoseSubelementIdentifier = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nswhosesubelementidentifier
+  type NSWhoseSubelementIdentifier = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsinsertionposition
-type NSInsertionPosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsinsertionposition
+  type NSInsertionPosition = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsrelativeposition
-type NSRelativePosition = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsrelativeposition
+  type NSRelativePosition = cocoascript.NSUInteger;
 }
-
+declare const NSLocaleLanguageCode: cocoascript.NSLocaleKey;
+declare const NSLocaleCountryCode: cocoascript.NSLocaleKey;
+declare const NSLocaleCalendar: cocoascript.NSLocaleKey;
+declare const NSLocaleIdentifier: cocoascript.NSLocaleKey;
+declare const NSLocaleScriptCode: cocoascript.NSLocaleKey;
+declare const NSLocaleVariantCode: cocoascript.NSLocaleKey;
+declare const NSLocaleExemplarCharacterSet: cocoascript.NSLocaleKey;
+declare const NSLocaleCollationIdentifier: cocoascript.NSLocaleKey;
+declare const NSLocaleCollatorIdentifier: cocoascript.NSLocaleKey;
+declare const NSLocaleUsesMetricSystem: cocoascript.NSLocaleKey;
+declare const NSLocaleDecimalSeparator: cocoascript.NSLocaleKey;
+declare const NSLocaleGroupingSeparator: cocoascript.NSLocaleKey;
+declare const NSLocaleCurrencyCode: cocoascript.NSLocaleKey;
+declare const NSLocaleCurrencySymbol: cocoascript.NSLocaleKey;
+declare const NSLocaleQuotationBeginDelimiterKey: cocoascript.NSLocaleKey;
+declare const NSLocaleQuotationEndDelimiterKey: cocoascript.NSLocaleKey;
+declare const NSLocaleAlternateQuotationBeginDelimiterKey: cocoascript.NSLocaleKey;
+declare const NSLocaleAlternateQuotationEndDelimiterKey: cocoascript.NSLocaleKey;
+declare const NSLocaleMeasurementSystem: cocoascript.NSLocaleKey;
+declare const NSFileProtectionCompleteUntilFirstUserAuthentication: cocoascript.NSFileProtectionType;
+declare const NSFileProtectionNone: cocoascript.NSFileProtectionType;
+declare const NSFileBusy: cocoascript.NSFileAttributeKey;
+declare const NSFileDeviceIdentifier: cocoascript.NSFileAttributeKey;
+declare const NSFileProtectionKey: cocoascript.NSFileAttributeKey;
+declare const NSFileReferenceCount: cocoascript.NSFileAttributeKey;
+declare const NSFileSystemFreeNodes: cocoascript.NSFileAttributeKey;
+declare const NSFileSystemFreeSize: cocoascript.NSFileAttributeKey;
+declare const NSFileSystemNodes: cocoascript.NSFileAttributeKey;
+declare const NSFileSystemSize: cocoascript.NSFileAttributeKey;
+declare const NSURLUbiquitousItemDownloadingStatusCurrent: cocoascript.NSURLUbiquitousItemDownloadingStatus;
+declare const NSURLUbiquitousItemDownloadingStatusDownloaded: cocoascript.NSURLUbiquitousItemDownloadingStatus;
+declare const NSURLUbiquitousItemDownloadingStatusNotDownloaded: cocoascript.NSURLUbiquitousItemDownloadingStatus;
+declare const NSThumbnail1024x1024SizeKey: cocoascript.NSURLThumbnailDictionaryItem;
+declare const NSURLUbiquitousSharedItemRoleOwner: cocoascript.NSURLUbiquitousSharedItemRole;
+declare const NSURLUbiquitousSharedItemRoleParticipant: cocoascript.NSURLUbiquitousSharedItemRole;
+declare const NSURLUbiquitousSharedItemPermissionsReadOnly: cocoascript.NSURLUbiquitousSharedItemPermissions;
+declare const NSURLUbiquitousSharedItemPermissionsReadWrite: cocoascript.NSURLUbiquitousSharedItemPermissions;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessiondelayedrequestdisposition
-type NSURLSessionDelayedRequestDisposition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessiondelayedrequestdisposition
+  type NSURLSessionDelayedRequestDisposition = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object encapsulating the metrics for a session task.
@@ -14631,15 +14866,13 @@ declare namespace cocoascript {
 
 declare const NSURLSessionTaskMetrics: cocoascript.NSURLSessionTaskMetrics;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessionresponsedisposition
-type NSURLSessionResponseDisposition = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessionresponsedisposition
+  type NSURLSessionResponseDisposition = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessionwebsocketclosecode
-type NSURLSessionWebSocketCloseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessionwebsocketclosecode
+  type NSURLSessionWebSocketCloseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The interface implemented by URL handle clients.
@@ -14667,25 +14900,29 @@ declare namespace cocoascript {
   type NSHTTPCookiePropertyKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nshttpcookieacceptpolicy
-type NSHTTPCookieAcceptPolicy = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nshttpcookieacceptpolicy
+  type NSHTTPCookieAcceptPolicy = cocoascript.NSUInteger;
 }
-
+declare const NSURLErrorNetworkUnavailableReasonKey: cocoascript.NSErrorUserInfoKey;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlerrornetworkunavailablereason
-type NSURLErrorNetworkUnavailableReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlerrornetworkunavailablereason
+  type NSURLErrorNetworkUnavailableReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlhandlestatus
-type NSURLHandleStatus = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlhandlestatus
+  type NSURLHandleStatus = cocoascript.NSUInteger;
 }
-
+declare const NSFileTypeBlockSpecial: cocoascript.NSFileAttributeType;
+declare const NSFileTypeCharacterSpecial: cocoascript.NSFileAttributeType;
+declare const NSFileTypeDirectory: cocoascript.NSFileAttributeType;
+declare const NSFileTypeRegular: cocoascript.NSFileAttributeType;
+declare const NSFileTypeSocket: cocoascript.NSFileAttributeType;
+declare const NSFileTypeUnknown: cocoascript.NSFileAttributeType;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nstaskterminationreason
-type NSTaskTerminationReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nstaskterminationreason
+  type NSTaskTerminationReason = cocoascript.NSInteger;
 }
-
+declare const NSTaskDidTerminateNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsuserscripttaskcompletionhandler
   type NSUserScriptTaskCompletionHandler = cocoascript.NSError;
@@ -14703,15 +14940,13 @@ declare namespace cocoascript {
   type NSUserUnixTaskCompletionHandler = cocoascript.NSError;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsstreamevent
-type NSStreamEvent = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsstreamevent
+  type NSStreamEvent = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsstreamstatus
-type NSStreamStatus = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsstreamstatus
+  type NSStreamStatus = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsstreamnetworkservicetypevalue
   type NSStreamNetworkServiceTypeValue = cocoascript.NSString;
@@ -14732,16 +14967,15 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsstreampropertykey
   type NSStreamPropertyKey = cocoascript.NSString;
 }
+declare const NSNetServicesErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsnetserviceserror
-type NSNetServicesError = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsnetserviceserror
+  type NSNetServicesError = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsnetserviceoptions
-type NSNetServiceOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsnetserviceoptions
+  type NSNetServiceOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The function pointers used to configure behavior of
@@ -14775,6 +15009,36 @@ declare namespace cocoascript {
     setDescribe(): void;
   }
 }
+declare const NSIntegerMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
+declare const NSIntMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
+declare const NSNonOwnedPointerMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
+declare const NSNonOwnedPointerOrNullMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
+declare const NSNonRetainedObjectMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
+declare const NSObjectMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
+declare const NSOwnedPointerMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
+declare const NSIntegerMapValueCallBacks: cocoascript.NSMapTableValueCallBacks;
+declare const NSIntMapValueCallBacks: cocoascript.NSMapTableValueCallBacks;
+declare const NSNonOwnedPointerMapValueCallBacks: cocoascript.NSMapTableValueCallBacks;
+declare const NSOwnedPointerMapValueCallBacks: cocoascript.NSMapTableValueCallBacks;
+declare const NSNonRetainedObjectMapValueCallBacks: cocoascript.NSMapTableValueCallBacks;
+declare const NSObjectMapValueCallBacks: cocoascript.NSMapTableValueCallBacks;
+declare const NSURLSessionTaskPriorityDefault: number;
+declare const NSURLSessionTaskPriorityLow: number;
+declare const NSURLSessionTaskPriorityHigh: number;
+declare const NSCalendarIdentifierISO8601: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierIslamicCivil: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierIslamicTabular: cocoascript.NSCalendarIdentifier;
+declare const NSCalendarIdentifierRepublicOfChina: cocoascript.NSCalendarIdentifier;
+declare const NSMapTableStrongMemory: cocoascript.NSPointerFunctionsOptions;
+declare const NSMapTableWeakMemory: cocoascript.NSPointerFunctionsOptions;
+declare const NSMapTableZeroingWeakMemory: cocoascript.NSPointerFunctionsOptions;
+declare const NSMapTableObjectPointerPersonality: cocoascript.NSPointerFunctionsOptions;
+declare const NSMapTableCopyIn: cocoascript.NSPointerFunctionsOptions;
+declare const NSHashTableStrongMemory: cocoascript.NSPointerFunctionsOptions;
+declare const NSHashTableZeroingWeakMemory: cocoascript.NSPointerFunctionsOptions;
+declare const NSHashTableCopyIn: cocoascript.NSPointerFunctionsOptions;
+declare const NSHashTableObjectPointerPersonality: cocoascript.NSPointerFunctionsOptions;
+declare const NSHashTableWeakMemory: cocoascript.NSPointerFunctionsOptions;
 declare namespace cocoascript {
   /**
    * Allows successive elements of a hash table to be returned each time this structure is passed to
@@ -14797,21 +15061,26 @@ declare namespace cocoascript {
     setHash(): void;
   }
 }
+declare const NSIntegerHashCallBacks: cocoascript.NSHashTableCallBacks;
+declare const NSIntHashCallBacks: cocoascript.NSHashTableCallBacks;
+declare const NSNonOwnedPointerHashCallBacks: cocoascript.NSHashTableCallBacks;
+declare const NSNonRetainedObjectHashCallBacks: cocoascript.NSHashTableCallBacks;
+declare const NSObjectHashCallBacks: cocoascript.NSHashTableCallBacks;
+declare const NSOwnedObjectIdentityHashCallBacks: cocoascript.NSHashTableCallBacks;
+declare const NSOwnedPointerHashCallBacks: cocoascript.NSHashTableCallBacks;
+declare const NSPointerToStructHashCallBacks: cocoascript.NSHashTableCallBacks;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsxmldocumentcontentkind
-type NSXMLDocumentContentKind = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsxmldocumentcontentkind
+  type NSXMLDocumentContentKind = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsxmldtdnodekind
-type NSXMLDTDNodeKind = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsxmldtdnodekind
+  type NSXMLDTDNodeKind = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsxpcconnectionoptions
-type NSXPCConnectionOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsxpcconnectionoptions
+  type NSXPCConnectionOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * Opaque structure containing endian-independent
@@ -14828,6 +15097,65 @@ declare namespace cocoascript {
   interface NSSwappedFloat {
   }
 }
+declare const NSProgressFileTotalCountKey: cocoascript.NSProgressUserInfoKey;
+declare const NSProgressFileCompletedCountKey: cocoascript.NSProgressUserInfoKey;
+declare const NSProgressFileAnimationImageOriginalRectKey: cocoascript.NSProgressUserInfoKey;
+declare const NSProgressFileAnimationImageKey: cocoascript.NSProgressUserInfoKey;
+declare const NSProgressFileIconKey: cocoascript.NSProgressUserInfoKey;
+declare const NSProgressFileURLKey: cocoascript.NSProgressUserInfoKey;
+declare const NSProgressFileOperationKindCopying: cocoascript.NSProgressFileOperationKind;
+declare const NSProgressFileOperationKindDecompressingAfterDownloading: cocoascript.NSProgressFileOperationKind;
+declare const NSProgressFileOperationKindDownloading: cocoascript.NSProgressFileOperationKind;
+declare const NSProgressFileOperationKindReceiving: cocoascript.NSProgressFileOperationKind;
+declare const NSProgressEstimatedTimeRemainingKey: cocoascript.NSProgressUserInfoKey;
+declare const NSProgressThroughputKey: cocoascript.NSProgressUserInfoKey;
+declare const NSLinguisticTagSchemeLexicalClass: cocoascript.NSLinguisticTagScheme;
+declare const NSLinguisticTagSchemeLemma: cocoascript.NSLinguisticTagScheme;
+declare const NSLinguisticTagWord: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagPunctuation: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagWhitespace: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagOther: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagSchemeNameType: cocoascript.NSLinguisticTagScheme;
+declare const NSLinguisticTagNoun: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagSchemeLanguage: cocoascript.NSLinguisticTagScheme;
+declare const NSLinguisticTagSchemeScript: cocoascript.NSLinguisticTagScheme;
+declare const NSLinguisticTagSchemeTokenType: cocoascript.NSLinguisticTagScheme;
+declare const NSLinguisticTagSchemeNameTypeOrLexicalClass: cocoascript.NSLinguisticTagScheme;
+declare const NSLinguisticTagVerb: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagAdjective: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagAdverb: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagPronoun: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagDeterminer: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagParticle: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagPreposition: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagNumber: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagConjunction: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagInterjection: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagClassifier: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagIdiom: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagOtherWord: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagSentenceTerminator: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagOpenQuote: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagCloseQuote: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagOpenParenthesis: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagCloseParenthesis: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagWordJoiner: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagDash: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagOtherPunctuation: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagParagraphBreak: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagOtherWhitespace: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagPersonalName: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagOrganizationName: cocoascript.NSLinguisticTag;
+declare const NSLinguisticTagPlaceName: cocoascript.NSLinguisticTag;
+declare const NSIsNilTransformerName: cocoascript.NSValueTransformerName;
+declare const NSIsNotNilTransformerName: cocoascript.NSValueTransformerName;
+declare const NSKeyedUnarchiveFromDataTransformerName: cocoascript.NSValueTransformerName;
+declare const NSNegateBooleanTransformerName: cocoascript.NSValueTransformerName;
+declare const NSUnarchiveFromDataTransformerName: cocoascript.NSValueTransformerName;
+declare const NSSecureUnarchiveFromDataTransformerName: cocoascript.NSValueTransformerName;
+declare const NSNotificationDeliverImmediately: cocoascript.NSDistributedNotificationOptions;
+declare const NSNotificationPostToAllSessions: cocoascript.NSDistributedNotificationOptions;
+declare const NSLocalNotificationCenterType: cocoascript.NSDistributedNotificationCenterType;
 declare namespace cocoascript {
   /**
    * An object that encapsualtes the performance metrics collected by the URL Loading System during the execution of a session task.
@@ -14946,8 +15274,46 @@ declare namespace cocoascript {
 }
 
 declare const NSURLSessionTaskTransactionMetrics: cocoascript.NSURLSessionTaskTransactionMetrics;
+declare const NSHTTPCookiePath: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieName: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieValue: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieOriginURL: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieDomain: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieSameSiteStrict: cocoascript.NSHTTPCookieStringPolicy;
+declare const NSHTTPCookieSameSiteLax: cocoascript.NSHTTPCookieStringPolicy;
+declare const NSHTTPCookieComment: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieCommentURL: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieDiscard: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieExpires: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieMaximumAge: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookiePort: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieSameSitePolicy: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieSecure: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSHTTPCookieVersion: cocoascript.NSHTTPCookiePropertyKey;
+declare const NSStreamNetworkServiceTypeBackground: cocoascript.NSStreamNetworkServiceTypeValue;
+declare const NSStreamNetworkServiceTypeVideo: cocoascript.NSStreamNetworkServiceTypeValue;
+declare const NSStreamNetworkServiceTypeVoice: cocoascript.NSStreamNetworkServiceTypeValue;
+declare const NSStreamNetworkServiceTypeVoIP: cocoascript.NSStreamNetworkServiceTypeValue;
+declare const NSStreamNetworkServiceTypeCallSignaling: cocoascript.NSStreamNetworkServiceTypeValue;
+declare const NSStreamSOCKSProxyHostKey: cocoascript.NSStreamSOCKSProxyConfiguration;
+declare const NSStreamSOCKSProxyPasswordKey: cocoascript.NSStreamSOCKSProxyConfiguration;
+declare const NSStreamSOCKSProxyPortKey: cocoascript.NSStreamSOCKSProxyConfiguration;
+declare const NSStreamSOCKSProxyUserKey: cocoascript.NSStreamSOCKSProxyConfiguration;
+declare const NSStreamSOCKSProxyVersionKey: cocoascript.NSStreamSOCKSProxyConfiguration;
+declare const NSStreamSOCKSProxyVersion4: cocoascript.NSStreamSOCKSProxyVersion;
+declare const NSStreamSOCKSProxyVersion5: cocoascript.NSStreamSOCKSProxyVersion;
+declare const NSStreamSocketSecurityLevelNegotiatedSSL: cocoascript.NSStreamSocketSecurityLevel;
+declare const NSStreamSocketSecurityLevelNone: cocoascript.NSStreamSocketSecurityLevel;
+declare const NSStreamSocketSecurityLevelSSLv2: cocoascript.NSStreamSocketSecurityLevel;
+declare const NSStreamSocketSecurityLevelSSLv3: cocoascript.NSStreamSocketSecurityLevel;
+declare const NSStreamSocketSecurityLevelTLSv1: cocoascript.NSStreamSocketSecurityLevel;
+declare const NSStreamDataWrittenToMemoryStreamKey: cocoascript.NSStreamPropertyKey;
+declare const NSStreamFileCurrentOffsetKey: cocoascript.NSStreamPropertyKey;
+declare const NSStreamNetworkServiceType: cocoascript.NSStreamPropertyKey;
+declare const NSStreamSocketSecurityLevelKey: cocoascript.NSStreamPropertyKey;
+declare const NSStreamSOCKSProxyConfigurationKey: cocoascript.NSStreamPropertyKey;
+declare const notAKeyMarker: void;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsresourcefetchtype
-type NSURLSessionTaskMetricsResourceFetchType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsresourcefetchtype
+  type NSURLSessionTaskMetricsResourceFetchType = cocoascript.NSInteger;
 }
-

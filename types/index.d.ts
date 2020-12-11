@@ -20,3 +20,4 @@
 /// <reference path="./coreimage.d.ts" />
 /// <reference path="./app_clips.d.ts" />
 /// <reference path="./securityinterface.d.ts" />
+/// <reference path="./cloudkitjs.d.ts" />

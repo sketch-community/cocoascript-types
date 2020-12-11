@@ -786,6 +786,9 @@ declare namespace cocoascript {
 }
 
 declare const CKAsset: cocoascript.CKAsset;
+declare const CKShareTypeKey: cocoascript.CKRecordFieldKey;
+declare const CKShareTitleKey: cocoascript.CKRecordFieldKey;
+declare const CKShareThumbnailImageDataKey: cocoascript.CKRecordFieldKey;
 declare namespace cocoascript {
   /**
    * An operation that fetches metadata for one or more shares.
@@ -1025,10 +1028,9 @@ declare namespace cocoascript {
 
 declare const CKFetchWebAuthTokenOperation: cocoascript.CKFetchWebAuthTokenOperation;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckerrorcode
-type CKErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckerrorcode
+  type CKErrorCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The abstract base class for CloudKit notifications.
@@ -1104,10 +1106,9 @@ declare namespace cocoascript {
 
 declare const CKNotification: cocoascript.CKNotification;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/cknotificationtype
-type CKNotificationType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/cknotificationtype
+  type CKNotificationType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/ckrecordtype
   type CKRecordType = cocoascript.NSString;
@@ -1116,6 +1117,10 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/ckrecordfieldkey
   type CKRecordFieldKey = cocoascript.NSString;
 }
+declare const CKRecordParentKey: cocoascript.CKRecordFieldKey;
+declare const CKRecordShareKey: cocoascript.CKRecordFieldKey;
+declare const CKRecordTypeShare: cocoascript.CKRecordType;
+declare const CKRecordTypeUserRecord: cocoascript.CKRecordType;
 declare namespace cocoascript {
   /**
    * An operation for retrieving records from CloudKit.
@@ -1173,6 +1178,7 @@ declare namespace cocoascript {
 }
 
 declare const CKFetchRecordZonesOperation: cocoascript.CKFetchRecordZonesOperation;
+declare const CKQueryOperationMaximumResults: cocoascript.NSUInteger;
 declare namespace cocoascript {
   /**
    * An operation that retrieves unread notifications from a CloudKit container.
@@ -1280,10 +1286,9 @@ declare namespace cocoascript {
 
 declare const CKModifySubscriptionsOperation: cocoascript.CKModifySubscriptionsOperation;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/cksubscriptiontype
-type CKSubscriptionType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/cksubscriptiontype
+  type CKSubscriptionType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An operation that modifies one or more record zones.
@@ -1312,10 +1317,9 @@ declare namespace cocoascript {
 
 declare const CKModifyRecordZonesOperation: cocoascript.CKModifyRecordZonesOperation;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckrecordzonecapabilities
-type CKRecordZoneCapabilities = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckrecordzonecapabilities
+  type CKRecordZoneCapabilities = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An operation that reports on the changed and deleted records in the specified record zone.
@@ -1376,10 +1380,9 @@ declare namespace cocoascript {
 
 declare const CKDatabaseOperation: cocoascript.CKDatabaseOperation;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckreferenceaction
-type CKReferenceAction = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckreferenceaction
+  type CKReferenceAction = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An operation that fetches all discoverable user identities in the device’s Contacts.
@@ -1477,30 +1480,25 @@ declare namespace cocoascript {
 
 declare const CKFetchRecordZoneChangesOperation: cocoascript.CKFetchRecordZoneChangesOperation;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckquerysubscriptionoptions
-type CKQuerySubscriptionOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckquerysubscriptionoptions
+  type CKQuerySubscriptionOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantacceptancestatus
-type CKShareParticipantAcceptanceStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantacceptancestatus
+  type CKShareParticipantAcceptanceStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantpermission
-type CKShareParticipantPermission = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantpermission
+  type CKShareParticipantPermission = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckoperationgrouptransfersize
-type CKOperationGroupTransferSize = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckoperationgrouptransfersize
+  type CKOperationGroupTransferSize = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy
-type CKRecordSavePolicy = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy
+  type CKRecordSavePolicy = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An operation that fetches database changes.
@@ -1648,29 +1646,25 @@ declare namespace cocoascript {
 
 declare const CKDatabaseNotification: cocoascript.CKDatabaseNotification;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus
-type CKAccountStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus
+  type CKAccountStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckapplicationpermissions
-type CKApplicationPermissions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckapplicationpermissions
+  type CKApplicationPermissions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/ckapplicationpermissionblock
   type CKApplicationPermissionBlock = cocoascript.NSError;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckapplicationpermissionstatus
-type CKApplicationPermissionStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckapplicationpermissionstatus
+  type CKApplicationPermissionStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckdatabasescope
-type CKDatabaseScope = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckdatabasescope
+  type CKDatabaseScope = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An operation that sets the value of the app icon’s badge.
@@ -1696,19 +1690,17 @@ declare namespace cocoascript {
 
 declare const CKModifyBadgeOperation: cocoascript.CKModifyBadgeOperation;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/NULL
-type CKShareParticipantRole = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/NULL
+  type CKShareParticipantRole = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/cksubscriptionid
   type CKSubscriptionID = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckshareparticipanttype
-type CKShareParticipantType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckshareparticipanttype
+  type CKShareParticipantType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An operation that marks push notifications as read by your app.
@@ -1734,7 +1726,6 @@ declare namespace cocoascript {
 
 declare const CKMarkNotificationsReadOperation: cocoascript.CKMarkNotificationsReadOperation;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/cloudkit/ckquerynotificationreason
-type CKQueryNotificationReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/cloudkit/ckquerynotificationreason
+  type CKQueryNotificationReason = cocoascript.NSInteger;
 }
-

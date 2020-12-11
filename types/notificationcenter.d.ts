@@ -54,15 +54,13 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/notificationcenter/ncwidgetdisplaymode
-type NCWidgetDisplayMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetdisplaymode
+  type NCWidgetDisplayMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/notificationcenter/ncupdateresult
-type NCUpdateResult = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/notificationcenter/ncupdateresult
+  type NCUpdateResult = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object used to specify whether a Today widget has content to display.

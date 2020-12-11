@@ -302,6 +302,9 @@ declare namespace cocoascript {
 }
 
 declare const CALayer: cocoascript.CALayer;
+declare const kCAGravityResize: cocoascript.CALayerContentsGravity;
+declare const kCAGravityResizeAspect: cocoascript.CALayerContentsGravity;
+declare const kCAGravityResizeAspectFill: cocoascript.CALayerContentsGravity;
 declare namespace cocoascript {
   /**
    * The abstract superclass for animations in Core Animation.
@@ -597,20 +600,17 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartzcore/cacornermask
-type CACornerMask = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/quartzcore/cacornermask
+  type CACornerMask = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartzcore/caautoresizingmask
-type CAAutoresizingMask = number;
+  // doc://com.apple.documentation/documentation/quartzcore/caautoresizingmask
+  type CAAutoresizingMask = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartzcore/caedgeantialiasingmask
-type CAEdgeAntialiasingMask = number;
+  // doc://com.apple.documentation/documentation/quartzcore/caedgeantialiasingmask
+  type CAEdgeAntialiasingMask = number;
 }
-
 declare namespace cocoascript {
   /**
    * The standard transform matrix used throughout Core Animation.
@@ -716,6 +716,11 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercontentsgravity
   type CALayerContentsGravity = cocoascript.NSString;
 }
+declare const kCAGravityTop: cocoascript.CALayerContentsGravity;
+declare const kCAGravityBottom: cocoascript.CALayerContentsGravity;
+declare const kCAGravityCenter: cocoascript.CALayerContentsGravity;
+declare const kCAGravityBottomLeft: cocoascript.CALayerContentsGravity;
+declare const kCAGravityTopLeft: cocoascript.CALayerContentsGravity;
 declare namespace cocoascript {
   /**
    * An object that provides a flexible method of defining animated transformations.
@@ -1366,23 +1371,31 @@ declare namespace cocoascript {
 }
 
 declare const CARemoteLayerServer: cocoascript.CARemoteLayerServer;
+declare const kCAFilterLinear: cocoascript.CALayerContentsFilter;
+declare const kCAFilterNearest: cocoascript.CALayerContentsFilter;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercontentsfilter
   type CALayerContentsFilter = cocoascript.NSString;
 }
+declare const kCAGravityLeft: cocoascript.CALayerContentsGravity;
+declare const kCAGravityRight: cocoascript.CALayerContentsGravity;
+declare const kCAGravityTopRight: cocoascript.CALayerContentsGravity;
+declare const kCAGravityBottomRight: cocoascript.CALayerContentsGravity;
+declare const kCAFilterTrilinear: cocoascript.CALayerContentsFilter;
+declare const kCAContentsFormatRGBA8Uint: cocoascript.CALayerContentsFormat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercontentsformat
   type CALayerContentsFormat = cocoascript.NSString;
 }
+declare const CATransform3DIdentity: cocoascript.CATransform3D;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercornercurve
   type CALayerCornerCurve = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartzcore/caconstraintattribute
-type CAConstraintAttribute = number;
+  // doc://com.apple.documentation/documentation/quartzcore/caconstraintattribute
+  type CAConstraintAttribute = number;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/caanimationcalculationmode
   type CAAnimationCalculationMode = cocoascript.NSString;
@@ -1451,3 +1464,81 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/cavaluefunctionname
   type CAValueFunctionName = cocoascript.NSString;
 }
+declare const kCAValueFunctionRotateZ: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionScale: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionTranslate: cocoascript.CAValueFunctionName;
+declare const kCAEmitterLayerPoint: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAFillModeRemoved: cocoascript.CAMediaTimingFillMode;
+declare const kCAFillModeForwards: cocoascript.CAMediaTimingFillMode;
+declare const kCAFillModeBackwards: cocoascript.CAMediaTimingFillMode;
+declare const kCAFillModeBoth: cocoascript.CAMediaTimingFillMode;
+declare const kCAContentsFormatRGBA16Float: cocoascript.CALayerContentsFormat;
+declare const kCAContentsFormatGray8Uint: cocoascript.CALayerContentsFormat;
+declare const kCACornerCurveCircular: cocoascript.CALayerCornerCurve;
+declare const kCACornerCurveContinuous: cocoascript.CALayerCornerCurve;
+declare const kCAAnimationCubic: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationCubicPaced: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationDiscrete: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationLinear: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationPaced: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationRotateAuto: cocoascript.CAAnimationRotationMode;
+declare const kCAAnimationRotateAutoReverse: cocoascript.CAAnimationRotationMode;
+declare const kCAEmitterLayerOutline: cocoascript.CAEmitterLayerEmitterMode;
+declare const kCAEmitterLayerPoints: cocoascript.CAEmitterLayerEmitterMode;
+declare const kCAEmitterLayerSurface: cocoascript.CAEmitterLayerEmitterMode;
+declare const kCAEmitterLayerVolume: cocoascript.CAEmitterLayerEmitterMode;
+declare const kCAEmitterLayerCircle: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerCuboid: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerLine: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerRectangle: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerSphere: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerAdditive: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerBackToFront: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerOldestFirst: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerOldestLast: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerUnordered: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAGradientLayerAxial: cocoascript.CAGradientLayerType;
+declare const kCAGradientLayerConic: cocoascript.CAGradientLayerType;
+declare const kCAGradientLayerRadial: cocoascript.CAGradientLayerType;
+declare const kCAMediaTimingFunctionDefault: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionEaseIn: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionEaseInEaseOut: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionEaseOut: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionLinear: cocoascript.CAMediaTimingFunctionName;
+declare const kCAScrollBoth: cocoascript.CAScrollLayerScrollMode;
+declare const kCAScrollHorizontally: cocoascript.CAScrollLayerScrollMode;
+declare const kCAScrollNone: cocoascript.CAScrollLayerScrollMode;
+declare const kCAScrollVertically: cocoascript.CAScrollLayerScrollMode;
+declare const kCAFillRuleEvenOdd: cocoascript.CAShapeLayerFillRule;
+declare const kCAFillRuleNonZero: cocoascript.CAShapeLayerFillRule;
+declare const kCALineCapButt: cocoascript.CAShapeLayerLineCap;
+declare const kCALineCapRound: cocoascript.CAShapeLayerLineCap;
+declare const kCALineCapSquare: cocoascript.CAShapeLayerLineCap;
+declare const kCALineJoinBevel: cocoascript.CAShapeLayerLineJoin;
+declare const kCALineJoinMiter: cocoascript.CAShapeLayerLineJoin;
+declare const kCALineJoinRound: cocoascript.CAShapeLayerLineJoin;
+declare const kCAAlignmentCenter: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentJustified: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentLeft: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentNatural: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentRight: cocoascript.CATextLayerAlignmentMode;
+declare const kCATruncationEnd: cocoascript.CATextLayerTruncationMode;
+declare const kCATruncationMiddle: cocoascript.CATextLayerTruncationMode;
+declare const kCATruncationNone: cocoascript.CATextLayerTruncationMode;
+declare const kCATruncationStart: cocoascript.CATextLayerTruncationMode;
+declare const kCATransitionFromBottom: cocoascript.CATransitionSubtype;
+declare const kCATransitionFromLeft: cocoascript.CATransitionSubtype;
+declare const kCATransitionFromRight: cocoascript.CATransitionSubtype;
+declare const kCATransitionFromTop: cocoascript.CATransitionSubtype;
+declare const kCATransitionFade: cocoascript.CATransitionType;
+declare const kCATransitionMoveIn: cocoascript.CATransitionType;
+declare const kCATransitionPush: cocoascript.CATransitionType;
+declare const kCATransitionReveal: cocoascript.CATransitionType;
+declare const kCAValueFunctionRotateX: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionRotateY: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionScaleX: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionScaleY: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionScaleZ: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionTranslateX: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionTranslateY: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionTranslateZ: cocoascript.CAValueFunctionName;

@@ -234,10 +234,9 @@ declare namespace cocoascript {
 
 declare const QLPreviewPanel: cocoascript.QLPreviewPanel;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/ikimagebrowserdropoperation
-type IKImageBrowserDropOperation = number;
+  // doc://com.apple.documentation/documentation/quartz/ikimagebrowserdropoperation
+  type IKImageBrowserDropOperation = number;
 }
-
 declare namespace cocoascript {
   /**
    * A layer that loads, plays, and controls Quartz Composer compositions in a Core Animation layer hierarchy.
@@ -1182,10 +1181,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/ikimagebrowsercellstate
-type IKImageBrowserCellState = number;
+  // doc://com.apple.documentation/documentation/quartz/ikimagebrowsercellstate
+  type IKImageBrowserCellState = number;
 }
-
 declare namespace cocoascript {
   /**
    * The
@@ -1415,15 +1413,13 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/qcpluginexecutionmode
-type QCPlugInExecutionMode = number;
+  // doc://com.apple.documentation/documentation/quartz/qcpluginexecutionmode
+  type QCPlugInExecutionMode = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/qcplugintimemode
-type QCPlugInTimeMode = number;
+  // doc://com.apple.documentation/documentation/quartz/qcplugintimemode
+  type QCPlugInTimeMode = number;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/quartz/quartzfilterview
@@ -1444,35 +1440,29 @@ declare namespace cocoascript {
   type QLPreviewItemLoadingBlock = cocoascript.NSError;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/qlpreviewviewstyle
-type QLPreviewViewStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/quartz/qlpreviewviewstyle
+  type QLPreviewViewStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewdisplaymode
-type IKCameraDeviceViewDisplayMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewdisplaymode
+  type IKCameraDeviceViewDisplayMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewtransfermode
-type IKCameraDeviceViewTransferMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewtransfermode
+  type IKCameraDeviceViewTransferMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/ikdevicebrowserviewdisplaymode
-type IKDeviceBrowserViewDisplayMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/quartz/ikdevicebrowserviewdisplaymode
+  type IKDeviceBrowserViewDisplayMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewtransfermode
-type IKScannerDeviceViewTransferMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewtransfermode
+  type IKScannerDeviceViewTransferMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdisplaymode
-type IKScannerDeviceViewDisplayMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdisplaymode
+  type IKScannerDeviceViewDisplayMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartz/qcpluginbufferreleasecallback
   type QCPlugInBufferReleaseCallback = void;

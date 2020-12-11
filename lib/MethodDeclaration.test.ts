@@ -1,3 +1,4 @@
+import { getTokens } from './helpers';
 import { InterfaceDeclaration } from './InterfaceDeclaration';
 import { MethodDeclaration } from './MethodDeclaration';
 
@@ -7,7 +8,7 @@ describe('MethodDeclaration', () => {
   const interfaceDecl = InterfaceDeclaration.initFromTokens(
     '"doc://com.apple.documentation/documentation/appkit/nsview"',
     {},
-    nsview.primaryContentSections[0].declarations[0].tokens
+    getTokens(nsview)
   );
 
   it('simple method', () => {
@@ -15,7 +16,7 @@ describe('MethodDeclaration', () => {
     const decl = MethodDeclaration.initFromTokens(
       'fakeid',
       interfaceDecl,
-      method.primaryContentSections[0].declarations[0].tokens
+      getTokens(method),
     );
     expect(decl.generate()).toMatchSnapshot();
   });
@@ -25,7 +26,7 @@ describe('MethodDeclaration', () => {
     const decl = MethodDeclaration.initFromTokens(
       'fakeid',
       interfaceDecl,
-      method.primaryContentSections[0].declarations[0].tokens
+      getTokens(method),
     );
     expect(decl.generate()).toMatchSnapshot();
   });

@@ -313,17 +313,14 @@ declare namespace cocoascript {
 
 declare const SFKeychainSettingsPanel: cocoascript.SFKeychainSettingsPanel;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/securityinterface/sfauthorizationviewstate
-type SFAuthorizationViewState = number;
+  // doc://com.apple.documentation/documentation/securityinterface/sfauthorizationviewstate
+  type SFAuthorizationViewState = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/securityinterface/sfbuttontype
-type SFButtonType = number;
+  // doc://com.apple.documentation/documentation/securityinterface/sfbuttontype
+  type SFButtonType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/securityinterface/sfviewtype
-type SFViewType = number;
+  // doc://com.apple.documentation/documentation/securityinterface/sfviewtype
+  type SFViewType = number;
 }
-

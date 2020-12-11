@@ -556,10 +556,9 @@ declare namespace cocoascript {
   type CLHeadingComponentValue = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corelocation/clregionstate
-type CLRegionState = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corelocation/clregionstate
+  type CLRegionState = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A circular geographic region, specified as a center point and radius.
@@ -633,35 +632,33 @@ declare namespace cocoascript {
 
 declare const CLBeaconRegion: cocoascript.CLBeaconRegion;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corelocation/clproximity
-type CLProximity = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corelocation/clproximity
+  type CLProximity = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus
-type CLAuthorizationStatus = number;
+  // doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus
+  type CLAuthorizationStatus = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corelocation/claccuracyauthorization
-type CLAccuracyAuthorization = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corelocation/claccuracyauthorization
+  type CLAccuracyAuthorization = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corelocation/clerror
-type CLError = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corelocation/clerror
+  type CLError = cocoascript.NSInteger;
 }
-
+declare const CLLocationDistanceMax: cocoascript.CLLocationDistance;
+declare const kCLDistanceFilterNone: cocoascript.CLLocationDistance;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corelocation/clactivitytype
-type CLActivityType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/corelocation/clactivitytype
+  type CLActivityType = cocoascript.NSInteger;
 }
-
+declare const kCLHeadingFilterNone: cocoascript.CLLocationDegrees;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/corelocation/cldeviceorientation
-type CLDeviceOrientation = number;
+  // doc://com.apple.documentation/documentation/corelocation/cldeviceorientation
+  type CLDeviceOrientation = number;
 }
-
+declare const CLTimeIntervalMax: cocoascript.NSTimeInterval;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/cllocationdegrees
   type CLLocationDegrees = number;
@@ -670,6 +667,14 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clgeocodecompletionhandler
   type CLGeocodeCompletionHandler = cocoascript.NSError;
 }
+declare const kCLLocationAccuracyBestForNavigation: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyBest: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyNearestTenMeters: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyHundredMeters: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyKilometer: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyThreeKilometers: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyReduced: cocoascript.CLLocationAccuracy;
+declare const kCLLocationCoordinate2DInvalid: cocoascript.CLLocationCoordinate2D;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clbeaconmajorvalue
   type CLBeaconMajorValue = number;

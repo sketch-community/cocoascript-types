@@ -890,10 +890,9 @@ declare namespace cocoascript {
 
 declare const NSPersistentCloudKitContainerEvent: cocoascript.NSPersistentCloudKitContainerEvent;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype
-type NSManagedObjectContextConcurrencyType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextconcurrencytype
+  type NSManagedObjectContextConcurrencyType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A coordinator that uses the model to help contexts and persistent stores communicate.
@@ -1016,10 +1015,9 @@ declare namespace cocoascript {
 
 declare const NSAttributeDescription: cocoascript.NSAttributeDescription;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nssnapshoteventtype
-type NSSnapshotEventType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nssnapshoteventtype
+  type NSSnapshotEventType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The abstract base class for all Core Data persistent stores.
@@ -1070,10 +1068,9 @@ declare namespace cocoascript {
 
 declare const NSPersistentStore: cocoascript.NSPersistentStore;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsfetchrequestresulttype
-type NSFetchRequestResultType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsfetchrequestresulttype
+  type NSFetchRequestResultType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An expression that evaluates the result of a fetch request on a managed object context.
@@ -1230,10 +1227,9 @@ declare namespace cocoascript {
 
 declare const NSFetchedResultsController: cocoascript.NSFetchedResultsController;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsfetchindexelementtype
-type NSFetchIndexElementType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsfetchindexelementtype
+  type NSFetchIndexElementType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A description of an attribute of a Core Data entity that derives its value from one or more other properties.
@@ -1290,15 +1286,13 @@ declare namespace cocoascript {
 
 declare const NSRelationshipDescription: cocoascript.NSRelationshipDescription;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsattributetype
-type NSAttributeType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsattributetype
+  type NSAttributeType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsfetchedresultschangetype
-type NSFetchedResultsChangeType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsfetchedresultschangetype
+  type NSFetchedResultsChangeType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A protocol that defines the interface for section objects vended by a fetched results controller.
@@ -1320,10 +1314,9 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype
-type NSPersistentStoreRequestType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nspersistentstorerequesttype
+  type NSPersistentStoreRequestType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The abstract base class for results returned from a persistent store coordinator.
@@ -1622,10 +1615,9 @@ declare namespace cocoascript {
 
 declare const NSMergePolicy: cocoascript.NSMergePolicy;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangetype
-type NSPersistentHistoryChangeType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangetype
+  type NSPersistentHistoryChangeType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A container that encapsulates the Core Data stack in your app and mirrors select persistent stores to a CloudKit private database.
@@ -1779,10 +1771,9 @@ declare namespace cocoascript {
 
 declare const NSCoreDataCoreSpotlightDelegate: cocoascript.NSCoreDataCoreSpotlightDelegate;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitoustransitiontype
-type NSPersistentStoreUbiquitousTransitionType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitoustransitiontype
+  type NSPersistentStoreUbiquitousTransitionType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A mapping instance that specifies how to map an entity from a source to a destination managed object model.
@@ -1830,11 +1821,11 @@ declare namespace cocoascript {
 }
 
 declare const NSEntityMapping: cocoascript.NSEntityMapping;
+declare const NSFetchRequestExpressionType: cocoascript.NSExpressionType;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsdeleterule
-type NSDeleteRule = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsdeleterule
+  type NSDeleteRule = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousfetchresultcompletionblock
   type NSPersistentStoreAsynchronousFetchResultCompletionBlock = cocoascript.NSAsynchronousFetchResult;
@@ -1883,10 +1874,9 @@ declare namespace cocoascript {
 
 declare const NSPersistentHistoryResult: cocoascript.NSPersistentHistoryResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype
-type NSPersistentCloudKitContainerEventType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype
+  type NSPersistentCloudKitContainerEventType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A request to insert a batch of data in a persistent store.
@@ -2177,10 +2167,9 @@ declare namespace cocoascript {
 
 declare const NSEntityMigrationPolicy: cocoascript.NSEntityMigrationPolicy;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsentitymappingtype
-type NSEntityMappingType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsentitymappingtype
+  type NSEntityMappingType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A mapping instance that specifies in a model how to map from a property in a source entity to a property in a destination entity.
@@ -2205,37 +2194,30 @@ declare namespace cocoascript {
 
 declare const NSPropertyMapping: cocoascript.NSPropertyMapping;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresulttype
-type NSPersistentCloudKitContainerEventResultType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresulttype
+  type NSPersistentCloudKitContainerEventResultType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions
-type NSPersistentCloudKitContainerSchemaInitializationOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions
+  type NSPersistentCloudKitContainerSchemaInitializationOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsmergepolicytype
-type NSMergePolicyType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsmergepolicytype
+  type NSMergePolicyType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nspersistenthistoryresulttype
-type NSPersistentHistoryResultType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/coredata/nspersistenthistoryresulttype
+  type NSPersistentHistoryResultType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequestresulttype
-type NSBatchInsertRequestResultType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequestresulttype
+  type NSBatchInsertRequestResultType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequestresulttype
-type NSBatchUpdateRequestResultType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequestresulttype
+  type NSBatchUpdateRequestResultType = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype
-type NSBatchDeleteRequestResultType = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype
+  type NSBatchDeleteRequestResultType = cocoascript.NSUInteger;
 }
-

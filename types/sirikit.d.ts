@@ -3535,20 +3535,17 @@ declare namespace cocoascript {
 
 declare const INCarHeadUnit: cocoascript.INCarHeadUnit;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inintenthandlingstatus
-type INIntentHandlingStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inintenthandlingstatus
+  type INIntentHandlingStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ininteractiondirection
-type INInteractionDirection = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ininteractiondirection
+  type INInteractionDirection = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inshortcutavailabilityoptions
-type INShortcutAvailabilityOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inshortcutavailabilityoptions
+  type INShortcutAvailabilityOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A request to send a message to the designated recipients.
@@ -3875,10 +3872,9 @@ declare namespace cocoascript {
 
 declare const INSetMessageAttributeIntentResponse: cocoascript.INSetMessageAttributeIntentResponse;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype
-type INOutgoingMessageType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype
+  type INOutgoingMessageType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetyperesolutionresult
@@ -5444,15 +5440,14 @@ declare namespace cocoascript {
 
 declare const INSetProfileInCarIntentResponse: cocoascript.INSetProfileInCarIntentResponse;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inuiinteractivebehavior
-type INUIInteractiveBehavior = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inuiinteractivebehavior
+  type INUIInteractiveBehavior = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontext
-type INUIHostedViewContext = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontext
+  type INUIHostedViewContext = cocoascript.NSUInteger;
 }
-
+declare const IntentsUIVersionString: string;
 declare namespace cocoascript {
   /**
    * A request to search for notes, tasks, and reminders.
@@ -6573,10 +6568,9 @@ declare namespace cocoascript {
 
 declare const INGetCarLockStatusIntentResponse: cocoascript.INGetCarLockStatusIntentResponse;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inpersonsuggestiontype
-type INPersonSuggestionType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inpersonsuggestiontype
+  type INPersonSuggestionType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inpersonrelationship
   type INPersonRelationship = cocoascript.NSString;
@@ -6586,35 +6580,29 @@ declare namespace cocoascript {
   type INPersonHandleLabel = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inaccounttype
-type INAccountType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inaccounttype
+  type INAccountType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inpaymentstatus
-type INPaymentStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inpaymentstatus
+  type INPaymentStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmessagetype
-type INMessageType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmessagetype
+  type INMessageType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmessageattribute
-type INMessageAttribute = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmessageattribute
+  type INMessageAttribute = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmessageattributeoptions
-type INMessageAttributeOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmessageattributeoptions
+  type INMessageAttributeOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inpaymentmethodtype
-type INPaymentMethodType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inpaymentmethodtype
+  type INPaymentMethodType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The person assigned to a reservation.
@@ -6638,70 +6626,57 @@ declare namespace cocoascript {
 
 declare const INRestaurantGuest: cocoascript.INRestaurantGuest;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbookingstatus
-type INRestaurantReservationUserBookingStatus = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbookingstatus
+  type INRestaurantReservationUserBookingStatus = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inridephase
-type INRidePhase = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inridephase
+  type INRidePhase = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inridefeedbacktypeoptions
-type INRideFeedbackTypeOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inridefeedbacktypeoptions
+  type INRideFeedbackTypeOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inpersonhandletype
-type INPersonHandleType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inpersonhandletype
+  type INPersonHandleType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inamounttype
-type INAmountType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inamounttype
+  type INAmountType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inbilltype
-type INBillType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inbilltype
+  type INBillType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inbalancetype
-type INBalanceType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inbalancetype
+  type INBalanceType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incallcapability
-type INCallCapability = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incallcapability
+  type INCallCapability = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incallrecordtype
-type INCallRecordType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incallrecordtype
+  type INCallRecordType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions
-type INCallRecordTypeOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions
+  type INCallRecordTypeOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incalldestinationtype
-type INCallDestinationType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incalldestinationtype
+  type INCallDestinationType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/innotecontenttype
-type INNoteContentType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/innotecontenttype
+  type INNoteContentType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inspatialevent
-type INSpatialEvent = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inspatialevent
+  type INSpatialEvent = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result that adds a temporal event trigger.
@@ -6717,30 +6692,25 @@ declare namespace cocoascript {
 
 declare const INTemporalEventTriggerTypeOptionsResolutionResult: cocoascript.INTemporalEventTriggerTypeOptionsResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/indayofweekoptions
-type INDayOfWeekOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/indayofweekoptions
+  type INDayOfWeekOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/intaskstatus
-type INTaskStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/intaskstatus
+  type INTaskStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/intasktype
-type INTaskType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/intasktype
+  type INTaskType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrecurrencefrequency
-type INRecurrenceFrequency = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrecurrencefrequency
+  type INRecurrenceFrequency = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmediaitemtype
-type INMediaItemType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmediaitemtype
+  type INMediaItemType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The provider class that specifies a relevant daily routine.
@@ -6825,10 +6795,9 @@ declare namespace cocoascript {
 
 declare const INVoiceShortcutCenter: cocoascript.INVoiceShortcutCenter;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutrole
-type INRelevantShortcutRole = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutrole
+  type INRelevantShortcutRole = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * An object that saves relevant shortcuts.
@@ -6849,35 +6818,29 @@ declare namespace cocoascript {
 
 declare const INRelevantShortcutStore: cocoascript.INRelevantShortcutStore;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmediadestinationtype
-type INMediaDestinationType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmediadestinationtype
+  type INMediaDestinationType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmediareference
-type INMediaReference = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmediareference
+  type INMediaReference = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmediasortorder
-type INMediaSortOrder = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmediasortorder
+  type INMediaSortOrder = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inreservationstatus
-type INReservationStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inreservationstatus
+  type INReservationStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inticketedeventcategory
-type INTicketedEventCategory = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inticketedeventcategory
+  type INTicketedEventCategory = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inreservationactiontype
-type INReservationActionType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inreservationactiontype
+  type INReservationActionType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortype
   type INCarChargingConnectorType = cocoascript.NSString;
@@ -6931,10 +6894,9 @@ declare namespace cocoascript {
 
 declare const INStartCallCallRecordToCallBackResolutionResult: cocoascript.INStartCallCallRecordToCallBackResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inconditionaloperator
-type INConditionalOperator = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inconditionaloperator
+  type INConditionalOperator = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result for a parameter of an intent object.
@@ -7252,15 +7214,13 @@ declare namespace cocoascript {
 
 declare const INMediaUserContext: cocoascript.INMediaUserContext;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inplaybackrepeatmode
-type INPlaybackRepeatMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inplaybackrepeatmode
+  type INPlaybackRepeatMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inplaybackqueuelocation
-type INPlaybackQueueLocation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inplaybackqueuelocation
+  type INPlaybackQueueLocation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result that adds tasks to a target task list.
@@ -7526,45 +7486,37 @@ declare namespace cocoascript {
 
 declare const INNoteContentTypeResolutionResult: cocoascript.INNoteContentTypeResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insnoozetasksintentresponsecode
-type INSnoozeTasksIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insnoozetasksintentresponsecode
+  type INSnoozeTasksIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incarseat
-type INCarSeat = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incarseat
+  type INCarSeat = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incardefroster
-type INCarDefroster = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incardefroster
+  type INCarDefroster = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incaraudiosource
-type INCarAudioSource = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incaraudiosource
+  type INCarAudioSource = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incaraircirculationmode
-type INCarAirCirculationMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incaraircirculationmode
+  type INCarAirCirculationMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inradiotype
-type INRadioType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inradiotype
+  type INRadioType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrelativereference
-type INRelativeReference = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrelativereference
+  type INRelativeReference = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrelativesetting
-type INRelativeSetting = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrelativesetting
+  type INRelativeSetting = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result for a specific seat of the car.
@@ -7678,15 +7630,13 @@ declare namespace cocoascript {
 
 declare const INRelativeSettingResolutionResult: cocoascript.INRelativeSettingResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode
-type INSetAudioSourceInCarIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode
+  type INSetAudioSourceInCarIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/indeletetasksintentresponsecode
-type INDeleteTasksIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/indeletetasksintentresponsecode
+  type INDeleteTasksIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result for assorted attributes of a message.
@@ -7732,15 +7682,13 @@ declare namespace cocoascript {
 
 declare const INSendMessageRecipientResolutionResult: cocoascript.INSendMessageRecipientResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintentresponsecode
-type INSetMessageAttributeIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintentresponsecode
+  type INSetMessageAttributeIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintentresponsecode
-type INSaveProfileInCarIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintentresponsecode
+  type INSaveProfileInCarIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result for account types.
@@ -7932,20 +7880,17 @@ declare namespace cocoascript {
 
 declare const INVisualCodeTypeResolutionResult: cocoascript.INVisualCodeTypeResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insendpaymentintentresponsecode
-type INSendPaymentIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insendpaymentintentresponsecode
+  type INSendPaymentIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/increatenoteintentresponsecode
-type INCreateNoteIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/increatenoteintentresponsecode
+  type INCreateNoteIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponsecode
-type INRequestRideIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrequestrideintentresponsecode
+  type INRequestRideIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result for the restaurant selected by a user.
@@ -7975,24 +7920,21 @@ declare namespace cocoascript {
 
 declare const INRestaurantGuestResolutionResult: cocoascript.INRestaurantGuestResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintentresponsecode
-type INGetUserCurrentRestaurantReservationBookingsIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintentresponsecode
+  type INGetUserCurrentRestaurantReservationBookingsIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifier
   type INWorkoutNameIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inworkoutgoalunittype
-type INWorkoutGoalUnitType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inworkoutgoalunittype
+  type INWorkoutGoalUnitType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inworkoutlocationtype
-type INWorkoutLocationType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inworkoutlocationtype
+  type INWorkoutLocationType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result for the units of a workout goal.
@@ -8022,35 +7964,29 @@ declare namespace cocoascript {
 
 declare const INWorkoutLocationTypeResolutionResult: cocoascript.INWorkoutLocationTypeResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inresumeworkoutintentresponsecode
-type INResumeWorkoutIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inresumeworkoutintentresponsecode
+  type INResumeWorkoutIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponsecode
-type INAppendToNoteIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inappendtonoteintentresponsecode
+  type INAppendToNoteIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintentresponsecode
-type INSetDefrosterSettingsInCarIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insetdefrostersettingsincarintentresponsecode
+  type INSetDefrosterSettingsInCarIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inendworkoutintentresponsecode
-type INEndWorkoutIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inendworkoutintentresponsecode
+  type INEndWorkoutIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inpauseworkoutintentresponsecode
-type INPauseWorkoutIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inpauseworkoutintentresponsecode
+  type INPauseWorkoutIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintentresponsecode
-type INGetAvailableRestaurantReservationBookingDefaultsIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingdefaultsintentresponsecode
+  type INGetAvailableRestaurantReservationBookingDefaultsIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result for the call capability for the call.
@@ -8140,65 +8076,53 @@ declare namespace cocoascript {
 
 declare const INStartCallContactResolutionResult: cocoascript.INStartCallContactResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incallaudioroute
-type INCallAudioRoute = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incallaudioroute
+  type INCallAudioRoute = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/instartcallintentresponsecode
-type INStartCallIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/instartcallintentresponsecode
+  type INStartCallIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/instartaudiocallintentresponsecode
-type INStartAudioCallIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/instartaudiocallintentresponsecode
+  type INStartAudioCallIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintentresponsecode
-type INSetClimateSettingsInCarIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintentresponsecode
+  type INSetClimateSettingsInCarIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/invisualcodetype
-type INVisualCodeType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/invisualcodetype
+  type INVisualCodeType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetvisualcodeintentresponsecode
-type INGetVisualCodeIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetvisualcodeintentresponsecode
+  type INGetVisualCodeIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponsecode
-type INSearchForBillsIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponsecode
+  type INSearchForBillsIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrequestpaymentintentresponsecode
-type INRequestPaymentIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentintentresponsecode
+  type INRequestPaymentIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insetradiostationintentresponsecode
-type INSetRadioStationIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insetradiostationintentresponsecode
+  type INSetRadioStationIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponsecode
-type INStartWorkoutIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/instartworkoutintentresponsecode
+  type INStartWorkoutIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponsecode
-type INStartVideoCallIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponsecode
+  type INStartVideoCallIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incarsignaloptions
-type INCarSignalOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incarsignaloptions
+  type INCarSignalOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A resolution result for the signals the intent is managing on the car.
@@ -8214,35 +8138,29 @@ declare namespace cocoascript {
 
 declare const INCarSignalOptionsResolutionResult: cocoascript.INCarSignalOptionsResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintentresponsecode
-type INActivateCarSignalIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inactivatecarsignalintentresponsecode
+  type INActivateCarSignalIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions
-type INPhotoAttributeOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions
+  type INPhotoAttributeOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponsecode
-type INSearchForPhotosIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponsecode
+  type INSearchForPhotosIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponsecode
-type INGetRideStatusIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponsecode
+  type INGetRideStatusIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incancelrideintentresponsecode
-type INCancelRideIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incancelrideintentresponsecode
+  type INCancelRideIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintentresponsecode
-type INSetCarLockStatusIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insetcarlockstatusintentresponsecode
+  type INSetCarLockStatusIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The manager object you use to suggest media to the user.
@@ -8431,120 +8349,97 @@ declare namespace cocoascript {
 
 declare const INUpdateMediaAffinityMediaItemResolutionResult: cocoascript.INUpdateMediaAffinityMediaItemResolutionResult;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insearchformediaintentresponsecode
-type INSearchForMediaIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insearchformediaintentresponsecode
+  type INSearchForMediaIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponsecode
-type INGetCarPowerLevelStatusIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponsecode
+  type INGetCarPowerLevelStatusIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintentresponsecode
-type INGetRestaurantGuestIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetrestaurantguestintentresponsecode
+  type INGetRestaurantGuestIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insearchforaccountsintentresponsecode
-type INSearchForAccountsIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insearchforaccountsintentresponsecode
+  type INSearchForAccountsIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insetprofileincarintentresponsecode
-type INSetProfileInCarIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insetprofileincarintentresponsecode
+  type INSetProfileInCarIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/innotebookitemtype
-type INNotebookItemType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/innotebookitemtype
+  type INNotebookItemType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inlocationsearchtype
-type INLocationSearchType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inlocationsearchtype
+  type INLocationSearchType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/indatesearchtype
-type INDateSearchType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/indatesearchtype
+  type INDateSearchType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/intaskpriority
-type INTaskPriority = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/intaskpriority
+  type INTaskPriority = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggertypeoptions
-type INTemporalEventTriggerTypeOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggertypeoptions
+  type INTemporalEventTriggerTypeOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintentresponsecode
-type INSearchForNotebookItemsIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintentresponsecode
+  type INSearchForNotebookItemsIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insorttype
-type INSortType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insorttype
+  type INSortType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintentresponsecode
-type INListRideOptionsIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintentresponsecode
+  type INListRideOptionsIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incancelworkoutintentresponsecode
-type INCancelWorkoutIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incancelworkoutintentresponsecode
+  type INCancelWorkoutIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inlistcarsintentresponsecode
-type INListCarsIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inlistcarsintentresponsecode
+  type INListCarsIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponsecode
-type INCreateTaskListIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponsecode
+  type INCreateTaskListIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintentresponsecode
-type INSendRideFeedbackIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintentresponsecode
+  type INSendRideFeedbackIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insendmessageintentresponsecode
-type INSendMessageIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insendmessageintentresponsecode
+  type INSendMessageIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintentcode
-type INBookRestaurantReservationIntentCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintentcode
+  type INBookRestaurantReservationIntentCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintentresponsecode
-type INStartPhotoPlaybackIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintentresponsecode
+  type INStartPhotoPlaybackIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponsecode
-type INSetSeatSettingsInCarIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponsecode
+  type INSetSeatSettingsInCarIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insearchformessagesintentresponsecode
-type INSearchForMessagesIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintentresponsecode
+  type INSearchForMessagesIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode
-type INPayBillIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode
+  type INPayBillIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * The preferences and authorization related to using SiriKit.
@@ -8560,75 +8455,85 @@ declare namespace cocoascript {
 
 declare const INPreferences: cocoascript.INPreferences;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inintenterrorcode
-type INIntentErrorCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inintenterrorcode
+  type INIntentErrorCode = cocoascript.NSInteger;
 }
-
+declare const IntentsVersionString: string;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponsecode
-type INSetTaskAttributeIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponsecode
+  type INSetTaskAttributeIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponsecode
-type INTransferMoneyIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponsecode
+  type INTransferMoneyIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inaddtasksintentresponsecode
-type INAddTasksIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inaddtasksintentresponsecode
+  type INAddTasksIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions
-type INCallCapabilityOptions = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions
+  type INCallCapabilityOptions = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintentresponsecode
-type INSearchCallHistoryIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintentresponsecode
+  type INSearchCallHistoryIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inuiaddvoiceshortcutbuttonstyle
-type INUIAddVoiceShortcutButtonStyle = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inuiaddvoiceshortcutbuttonstyle
+  type INUIAddVoiceShortcutButtonStyle = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inaddmediaintentresponsecode
-type INAddMediaIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inaddmediaintentresponsecode
+  type INAddMediaIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inplaymediaintentresponsecode
-type INPlayMediaIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inplaymediaintentresponsecode
+  type INPlayMediaIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentcode
-type INGetAvailableRestaurantReservationBookingsIntentCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentcode
+  type INGetAvailableRestaurantReservationBookingsIntentCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmediaaffinitytype
-type INMediaAffinityType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmediaaffinitytype
+  type INMediaAffinityType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinityintentresponsecode
-type INUpdateMediaAffinityIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinityintentresponsecode
+  type INUpdateMediaAffinityIntentResponseCode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintentresponsecode
-type INGetCarLockStatusIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintentresponsecode
+  type INGetCarLockStatusIntentResponseCode = cocoascript.NSInteger;
 }
-
+declare const INPersonRelationshipBrother: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipAssistant: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipChild: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipFather: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipFriend: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipManager: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipMother: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipParent: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipPartner: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipSister: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipSpouse: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipDaughter: cocoascript.INPersonRelationship;
+declare const INPersonRelationshipSon: cocoascript.INPersonRelationship;
+declare const INPersonHandleLabelHome: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabelHomeFax: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabeliPhone: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabelMain: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabelMobile: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabelOther: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabelPager: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabelWork: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabelWorkFax: cocoascript.INPersonHandleLabel;
+declare const INPersonHandleLabelSchool: cocoascript.INPersonHandleLabel;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/indailyroutinesituation
-type INDailyRoutineSituation = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/indailyroutinesituation
+  type INDailyRoutineSituation = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
   /**
    * A request for details about one or more reservations.
@@ -8673,128 +8578,132 @@ declare namespace cocoascript {
 }
 
 declare const INGetReservationDetailsIntentResponse: cocoascript.INGetReservationDetailsIntentResponse;
+declare const INCarChargingConnectorTypeCCS1: cocoascript.INCarChargingConnectorType;
+declare const INCarChargingConnectorTypeCCS2: cocoascript.INCarChargingConnectorType;
+declare const INCarChargingConnectorTypeCHAdeMO: cocoascript.INCarChargingConnectorType;
+declare const INCarChargingConnectorTypeGBTAC: cocoascript.INCarChargingConnectorType;
+declare const INCarChargingConnectorTypeGBTDC: cocoascript.INCarChargingConnectorType;
+declare const INCarChargingConnectorTypeJ1772: cocoascript.INCarChargingConnectorType;
+declare const INCarChargingConnectorTypeMennekes: cocoascript.INCarChargingConnectorType;
+declare const INCarChargingConnectorTypeTesla: cocoascript.INCarChargingConnectorType;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/invocabularystringtype
-type INVocabularyStringType = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/invocabularystringtype
+  type INVocabularyStringType = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason
-type INStartCallCallRecordToCallBackUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason
+  type INStartCallCallRecordToCallBackUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inmediausercontextsubscriptionstatus
-type INMediaUserContextSubscriptionStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inmediausercontextsubscriptionstatus
+  type INMediaUserContextSubscriptionStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inaddtaskstargettasklistconfirmationreason
-type INAddTasksTargetTaskListConfirmationReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inaddtaskstargettasklistconfirmationreason
+  type INAddTasksTargetTaskListConfirmationReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inaddtaskstemporaleventtriggerunsupportedreason
-type INAddTasksTemporalEventTriggerUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inaddtaskstemporaleventtriggerunsupportedreason
+  type INAddTasksTemporalEventTriggerUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistunsupportedreason
-type INDeleteTasksTaskListUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistunsupportedreason
+  type INDeleteTasksTaskListUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskunsupportedreason
-type INDeleteTasksTaskUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskunsupportedreason
+  type INDeleteTasksTaskUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insettaskattributetemporaleventtriggerunsupportedreason
-type INSetTaskAttributeTemporalEventTriggerUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insettaskattributetemporaleventtriggerunsupportedreason
+  type INSetTaskAttributeTemporalEventTriggerUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insnoozetaskstaskunsupportedreason
-type INSnoozeTasksTaskUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insnoozetaskstaskunsupportedreason
+  type INSnoozeTasksTaskUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insendmessagerecipientunsupportedreason
-type INSendMessageRecipientUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insendmessagerecipientunsupportedreason
+  type INSendMessageRecipientUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrequestpaymentcurrencyamountunsupportedreason
-type INRequestPaymentCurrencyAmountUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentcurrencyamountunsupportedreason
+  type INRequestPaymentCurrencyAmountUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inrequestpaymentpayerunsupportedreason
-type INRequestPaymentPayerUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentpayerunsupportedreason
+  type INRequestPaymentPayerUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insendpaymentcurrencyamountunsupportedreason
-type INSendPaymentCurrencyAmountUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insendpaymentcurrencyamountunsupportedreason
+  type INSendPaymentCurrencyAmountUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeunsupportedreason
-type INSendPaymentPayeeUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeunsupportedreason
+  type INSendPaymentPayeeUnsupportedReason = cocoascript.NSInteger;
 }
-
+declare const INWorkoutNameIdentifierCrosstraining: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierCycle: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierDance: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierElliptical: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierExercise: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierHighIntensityIntervalTraining: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierHike: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierIndoorcycle: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierIndoorrun: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierIndoorwalk: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierMove: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierOther: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierRower: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierRun: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierSit: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierStairs: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierStand: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierSteps: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierSwim: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierWalk: cocoascript.INWorkoutNameIdentifier;
+declare const INWorkoutNameIdentifierYoga: cocoascript.INWorkoutNameIdentifier;
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/instartcallcallcapabilityunsupportedreason
-type INStartCallCallCapabilityUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/instartcallcallcapabilityunsupportedreason
+  type INStartCallCallCapabilityUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/instartcallcontactunsupportedreason
-type INStartCallContactUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/instartcallcontactunsupportedreason
+  type INStartCallContactUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inupcomingmediapredictionmode
-type INUpcomingMediaPredictionMode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inupcomingmediapredictionmode
+  type INUpcomingMediaPredictionMode = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inaddmediamediadestinationunsupportedreason
-type INAddMediaMediaDestinationUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inaddmediamediadestinationunsupportedreason
+  type INAddMediaMediaDestinationUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inaddmediamediaitemunsupportedreason
-type INAddMediaMediaItemUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inaddmediamediaitemunsupportedreason
+  type INAddMediaMediaItemUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inplaymediamediaitemunsupportedreason
-type INPlayMediaMediaItemUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inplaymediamediaitemunsupportedreason
+  type INPlayMediaMediaItemUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inplaymediaplaybackspeedunsupportedreason
-type INPlayMediaPlaybackSpeedUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inplaymediaplaybackspeedunsupportedreason
+  type INPlayMediaPlaybackSpeedUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insearchformediamediaitemunsupportedreason
-type INSearchForMediaMediaItemUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insearchformediamediaitemunsupportedreason
+  type INSearchForMediaMediaItemUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinitymediaitemunsupportedreason
-type INUpdateMediaAffinityMediaItemUnsupportedReason = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinitymediaitemunsupportedreason
+  type INUpdateMediaAffinityMediaItemUnsupportedReason = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/insiriauthorizationstatus
-type INSiriAuthorizationStatus = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/insiriauthorizationstatus
+  type INSiriAuthorizationStatus = cocoascript.NSInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/sirikit/ingetreservationdetailsintentresponsecode
-type INGetReservationDetailsIntentResponseCode = cocoascript.NSInteger;
+  // doc://com.apple.documentation/documentation/sirikit/ingetreservationdetailsintentresponsecode
+  type INGetReservationDetailsIntentResponseCode = cocoascript.NSInteger;
 }
-

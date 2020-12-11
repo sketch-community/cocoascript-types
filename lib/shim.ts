@@ -17,6 +17,7 @@ export const shim: Record<string, string> = {
   au_asid_t: 'any',
   uid_t: 'any',
   cpu_type_t: 'number',
+  char: 'string',
   GLsizei: 'any',
   GLint: 'any',
   CGLPBufferObj: 'any',

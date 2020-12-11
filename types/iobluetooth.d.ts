@@ -3011,235 +3011,189 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothampcommandrejectreason
-type BluetoothAMPCommandRejectReason = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothampcommandrejectreason
+  type BluetoothAMPCommandRejectReason = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothampcreatephysicallinkresponsestatus
-type BluetoothAMPCreatePhysicalLinkResponseStatus = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothampcreatephysicallinkresponsestatus
+  type BluetoothAMPCreatePhysicalLinkResponseStatus = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothampdisconnectphysicallinkresponsestatus
-type BluetoothAMPDisconnectPhysicalLinkResponseStatus = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothampdisconnectphysicallinkresponsestatus
+  type BluetoothAMPDisconnectPhysicalLinkResponseStatus = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothampdiscoverresponsecontrollerstatus
-type BluetoothAMPDiscoverResponseControllerStatus = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothampdiscoverresponsecontrollerstatus
+  type BluetoothAMPDiscoverResponseControllerStatus = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothampgetassocresponsestatus
-type BluetoothAMPGetAssocResponseStatus = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothampgetassocresponsestatus
+  type BluetoothAMPGetAssocResponseStatus = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothampgetinforesponsestatus
-type BluetoothAMPGetInfoResponseStatus = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothampgetinforesponsestatus
+  type BluetoothAMPGetInfoResponseStatus = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothampmanagercode
-type BluetoothAMPManagerCode = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothampmanagercode
+  type BluetoothAMPManagerCode = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcipowerstate
-type BluetoothHCIPowerState = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcipowerstate
+  type BluetoothHCIPowerState = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capcommandcode
-type BluetoothL2CAPCommandCode = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capcommandcode
+  type BluetoothL2CAPCommandCode = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capcommandrejectreason
-type BluetoothL2CAPCommandRejectReason = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capcommandrejectreason
+  type BluetoothL2CAPCommandRejectReason = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconfigurationoption
-type BluetoothL2CAPConfigurationOption = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconfigurationoption
+  type BluetoothL2CAPConfigurationOption = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconfigurationresult
-type BluetoothL2CAPConfigurationResult = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconfigurationresult
+  type BluetoothL2CAPConfigurationResult = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconfigurationretransmissionandflowcontrolflags
-type BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconfigurationretransmissionandflowcontrolflags
+  type BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconnectionresult
-type BluetoothL2CAPConnectionResult = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconnectionresult
+  type BluetoothL2CAPConnectionResult = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconnectionstatus
-type BluetoothL2CAPConnectionStatus = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capconnectionstatus
+  type BluetoothL2CAPConnectionStatus = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capinformationextendedfeaturesmask
-type BluetoothL2CAPInformationExtendedFeaturesMask = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capinformationextendedfeaturesmask
+  type BluetoothL2CAPInformationExtendedFeaturesMask = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capinformationresult
-type BluetoothL2CAPInformationResult = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capinformationresult
+  type BluetoothL2CAPInformationResult = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capinformationtype
-type BluetoothL2CAPInformationType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capinformationtype
+  type BluetoothL2CAPInformationType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capqostype
-type BluetoothL2CAPQoSType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capqostype
+  type BluetoothL2CAPQoSType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capsegmentationandreassembly
-type BluetoothL2CAPSegmentationAndReassembly = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capsegmentationandreassembly
+  type BluetoothL2CAPSegmentationAndReassembly = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capsupervisoryfuctiontype
-type BluetoothL2CAPSupervisoryFuctionType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothl2capsupervisoryfuctiontype
+  type BluetoothL2CAPSupervisoryFuctionType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothleaddresstype
-type BluetoothLEAddressType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothleaddresstype
+  type BluetoothLEAddressType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothleadvertisingtype
-type BluetoothLEAdvertisingType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothleadvertisingtype
+  type BluetoothLEAdvertisingType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothleconnectioninterval
-type BluetoothLEConnectionInterval = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothleconnectioninterval
+  type BluetoothLEConnectionInterval = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlescan
-type BluetoothLEScan = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlescan
+  type BluetoothLEScan = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlescanduplicatefilter
-type BluetoothLEScanDuplicateFilter = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlescanduplicatefilter
+  type BluetoothLEScanDuplicateFilter = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlescanfilter
-type BluetoothLEScanFilter = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlescanfilter
+  type BluetoothLEScanFilter = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlescantype
-type BluetoothLEScanType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlescantype
+  type BluetoothLEScanType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanagercommandcode
-type BluetoothLESecurityManagerCommandCode = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanagercommandcode
+  type BluetoothLESecurityManagerCommandCode = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanageriocapability
-type BluetoothLESecurityManagerIOCapability = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanageriocapability
+  type BluetoothLESecurityManagerIOCapability = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanagerkeypressnotificationtype
-type BluetoothLESecurityManagerKeypressNotificationType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanagerkeypressnotificationtype
+  type BluetoothLESecurityManagerKeypressNotificationType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanageroobdata
-type BluetoothLESecurityManagerOOBData = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanageroobdata
+  type BluetoothLESecurityManagerOOBData = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanagerpairingfailedreasoncode
-type BluetoothLESecurityManagerPairingFailedReasonCode = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanagerpairingfailedreasoncode
+  type BluetoothLESecurityManagerPairingFailedReasonCode = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanageruserinputcapability
-type BluetoothLESecurityManagerUserInputCapability = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanageruserinputcapability
+  type BluetoothLESecurityManagerUserInputCapability = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanageruseroutputcapability
-type BluetoothLESecurityManagerUserOutputCapability = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlesecuritymanageruseroutputcapability
+  type BluetoothLESecurityManagerUserOutputCapability = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothrfcommlinestatus
-type BluetoothRFCOMMLineStatus = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothrfcommlinestatus
+  type BluetoothRFCOMMLineStatus = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothrfcommparitytype
-type BluetoothRFCOMMParityType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothrfcommparitytype
+  type BluetoothRFCOMMParityType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewayfeatures
-type IOBluetoothHandsFreeAudioGatewayFeatures = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewayfeatures
+  type IOBluetoothHandsFreeAudioGatewayFeatures = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecallholdmodes
-type IOBluetoothHandsFreeCallHoldModes = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecallholdmodes
+  type IOBluetoothHandsFreeCallHoldModes = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecodecid
-type IOBluetoothHandsFreeCodecID = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecodecid
+  type IOBluetoothHandsFreeCodecID = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicefeatures
-type IOBluetoothHandsFreeDeviceFeatures = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicefeatures
+  type IOBluetoothHandsFreeDeviceFeatures = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreepdumessagestatus
-type IOBluetoothHandsFreePDUMessageStatus = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreepdumessagestatus
+  type IOBluetoothHandsFreePDUMessageStatus = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreesmssupport
-type IOBluetoothHandsFreeSMSSupport = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreesmssupport
+  type IOBluetoothHandsFreeSMSSupport = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneleventtype
-type IOBluetoothL2CAPChannelEventType = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneleventtype
+  type IOBluetoothL2CAPChannelEventType = number;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsmsmode
-type IOBluetoothSMSMode = cocoascript.NSUInteger;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsmsmode
+  type IOBluetoothSMSMode = cocoascript.NSUInteger;
 }
-
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotificationchanneldirection
-type IOBluetoothUserNotificationChannelDirection = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotificationchanneldirection
+  type IOBluetoothUserNotificationChannelDirection = number;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothafhmode
   type BluetoothAFHMode = number;
@@ -3599,10 +3553,9 @@ declare namespace cocoascript {
   type BluetoothHCIVendorCommandSelector = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothhciversions
-type BluetoothHCIVersions = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhciversions
+  type BluetoothHCIVersions = number;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcivoicesetting
   type BluetoothHCIVoiceSetting = number;
@@ -3672,10 +3625,9 @@ declare namespace cocoascript {
   type BluetoothLMPVersion = number;
 }
 declare namespace cocoascript {
-// doc://com.apple.documentation/documentation/iobluetooth/bluetoothlmpversions
-type BluetoothLMPVersions = number;
+  // doc://com.apple.documentation/documentation/iobluetooth/bluetoothlmpversions
+  type BluetoothLMPVersions = number;
 }
-
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothmanufacturername
   type BluetoothManufacturerName = number;

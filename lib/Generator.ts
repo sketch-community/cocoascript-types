@@ -5,8 +5,9 @@ import { InterfaceDeclaration } from './InterfaceDeclaration';
 import { Token } from './types';
 import { TypeDeclaration } from './TypeDeclaration';
 import { UnionTypeDeclaration } from './UnionTypeDeclaration';
+import { ConstDeclaration } from './ConstDeclaration';
 
-type Declaration = InterfaceDeclaration | TypeDeclaration | UnionTypeDeclaration;
+type Declaration = InterfaceDeclaration | TypeDeclaration | UnionTypeDeclaration | ConstDeclaration;
 
 export class Generator {
   typeFiles: Set<string> = new Set();
@@ -69,6 +70,11 @@ export class Generator {
           } else {
             decl = TypeDeclaration.initFromTokens(doc.identifier.url, tokens);
           }
+          await this.write(decl);
+        }
+
+        if (tokens[0].text === 'const') {
+          const decl = ConstDeclaration.initFromTokens(doc.identifier.url, tokens);
           await this.write(decl);
         }
       }
