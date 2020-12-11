@@ -11,14 +11,33 @@ type Declaration = InterfaceDeclaration | TypeDeclaration | UnionTypeDeclaration
 export class Generator {
   typeFiles: Set<string> = new Set();
   generated: Set<string> = new Set();
+  files: Map<string, fs.WriteStream> = new Map();
 
-  generate() {
+  openFile(file: string): Promise<fs.WriteStream> {
+    return new Promise((resolve, reject) => {
+      const stream = fs.createWriteStream(file);
+      stream.on('open', () => resolve(stream));
+      stream.on('error', reject);
+    });
+  }
+
+  async getFile(name: string) {
+    if (this.files.has(name)) {
+      return this.files.get(name)!;
+    }
+    const file = await this.openFile(`./types/${name}.d.ts`);
+    this.files.set(name, file);
+    return file;
+  }
+
+  async generate() {
     const refs: any = [
       {
         identifier: 'doc://com.apple.documentation/documentation/appkit',
         url: '/documentation/appkit',
       },
     ];
+
     while (refs.length > 0) {
       const ref = refs.shift()!;
       if (!ref.identifier.startsWith('doc://') || this.generated.has(ref.identifier)) {
@@ -37,7 +56,7 @@ export class Generator {
           const idToken = tokens.find(t => t.kind === 'identifier');
           if (idToken) {
             const decl = InterfaceDeclaration.initFromTokens(doc.identifier.url, doc, tokens);
-            this.write(decl);
+            await this.write(decl);
           }
         }
 
@@ -50,7 +69,7 @@ export class Generator {
           } else {
             decl = TypeDeclaration.initFromTokens(doc.identifier.url, tokens);
           }
-          this.write(decl);
+          await this.write(decl);
         }
       }
       Object.values(doc.references).forEach((ref: any) => {
@@ -59,19 +78,20 @@ export class Generator {
         }
       });
     }
-    fs.writeFileSync('./types/index.d.ts', Array.from(this.typeFiles).map(file => {
-      return `/// <reference path="${file.replace('./types/', './')}" />`;
+    fs.writeFileSync('./types/index.d.ts', Array.from(this.files.keys()).map(file => {
+      return `/// <reference path="./${file}.d.ts" />`;
     }).join('\n'));
+    this.files.forEach(f => f.close());
   }
 
-  typeFile(id: string) {
-    return './types' + id.replace('doc://com.apple.documentation/documentation', '') + '.d.ts';
+  fileName(id: string) {
+    const [_, name] = id.match(new RegExp('doc://com.apple.documentation/documentation/(.+?)/.+'))!;
+    return name;
   }
 
-  write(decl: Declaration) {
-    const typeFile = this.typeFile(decl.id);
-    fse.ensureFileSync(typeFile);
-    fs.writeFileSync(typeFile, decl.generate());
-    this.typeFiles.add(typeFile);
+  async write(decl: Declaration) {
+    const name = this.fileName(decl.id);
+    const file = await this.getFile(name);
+    file.write(decl.generate());
   }
 }
