@@ -80,9 +80,9 @@ declare namespace cocoascript {
     className(): cocoascript.NSString;
     setClassName(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1410291-copyscriptingvalue
-    copyScriptingValue_forKey_withProperties(value: cocoascript.NSObject, key: cocoascript.NSString, properties: cocoascript.NSObject):cocoascript.NSObject;
+    copyScriptingValue_forKey_withProperties(value: cocoascript.NSObject, key: cocoascript.NSString, properties: cocoascript.NSString):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418458-newscriptingobjectofclass
-    newScriptingObjectOfClass_forValueForKey_withContentsValue_properties(objectClass: cocoascript.Class, key: cocoascript.NSString, contentsValue: cocoascript.NSObject, properties: cocoascript.NSObject):cocoascript.NSObject;
+    newScriptingObjectOfClass_forValueForKey_withContentsValue_properties(objectClass: cocoascript.Class, key: cocoascript.NSString, contentsValue: cocoascript.NSObject, properties: cocoascript.NSString):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417254-scriptingproperties
     scriptingProperties(): cocoascript.id;
     setScriptingProperties(): void;
@@ -279,7 +279,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1458190-commitediting
     commitEditing():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1458181-commiteditingandreturnerror
-    commitEditingAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    commitEditingAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1458179-commiteditingwithdelegate
     commitEditingWithDelegate_didCommitSelector_contextInfo(delegate: cocoascript.NSObject, didCommitSelector: cocoascript.SEL, contextInfo: void):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1428934-controltextdidbeginediting
@@ -339,9 +339,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494236-printwindowwillclose
     printWindowWillClose(userCanceled: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494216-restorevaluesandreturnerror
-    restoreValuesAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    restoreValuesAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494222-savevaluesandreturnerror
-    saveValuesAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    saveValuesAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494210-shouldhide
     shouldHide():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494213-shouldprint

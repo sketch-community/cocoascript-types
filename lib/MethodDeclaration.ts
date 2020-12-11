@@ -35,7 +35,7 @@ export class MethodDeclaration {
           while ((!paramName || !paramType) && tokens[index]) {
             if (
               (tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) ||
-              tokens[index].kind === 'keyword'
+              (!paramType && tokens[index].kind === 'keyword')
             ) {
               paramType = tokens[index].text;
             }

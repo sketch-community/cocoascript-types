@@ -543,9 +543,9 @@ declare namespace cocoascript {
     timeZone(): cocoascript.NSTimeZone;
     setTimeZone(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452239-openinmapswithlaunchoptions
-    openInMapsWithLaunchOptions(launchOptions: cocoascript.MKMapItem):cocoascript.BOOL;
+    openInMapsWithLaunchOptions(launchOptions: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/3395859-openinmapswithlaunchoptions
-    openInMapsWithLaunchOptions_fromScene_completionHandler(launchOptions: cocoascript.MKMapItem, scene: cocoascript.UIScene, completion: cocoascript.BOOL):void;
+    openInMapsWithLaunchOptions_fromScene_completionHandler(launchOptions: cocoascript.NSString, scene: cocoascript.UIScene, completion: void):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitemtypeidentifier
     MKMapItemTypeIdentifier(): cocoascript.const;
     setMKMapItemTypeIdentifier(): void;
@@ -953,7 +953,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/2172461-initwithcoordinate
     initWithCoordinate_postalAddress(coordinate: cocoascript.CLLocationCoordinate2D, postalAddress: cocoascript.CNPostalAddress):cocoascript.MKPlacemark;
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/1451895-initwithcoordinate
-    initWithCoordinate_addressDictionary(coordinate: cocoascript.CLLocationCoordinate2D, addressDictionary: cocoascript.MKPlacemark):cocoascript.MKPlacemark;
+    initWithCoordinate_addressDictionary(coordinate: cocoascript.CLLocationCoordinate2D, addressDictionary: cocoascript.NSString):cocoascript.MKPlacemark;
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/1451952-countrycode
     countryCode(): cocoascript.NSString;
     setCountryCode(): void;
@@ -1092,7 +1092,7 @@ declare namespace cocoascript {
    */
   interface MKGeoJSONDecoder extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkgeojsondecoder/3113994-geojsonobjectswithdata
-    geoJSONObjectsWithData_error(data: cocoascript.NSData, errorPtr: cocoascript._Nullable):cocoascript.MKGeoJSONObject;
+    geoJSONObjectsWithData_error(data: cocoascript.NSData, errorPtr: cocoascript.NSError):cocoascript.MKGeoJSONObject;
     //
     alloc():cocoascript.MKGeoJSONDecoder;
     //

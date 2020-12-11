@@ -145,7 +145,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsubiquitouskeyvaluestore/1416218-setdata
     setData_forKey(aData: cocoascript.NSData, aKey: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsubiquitouskeyvaluestore/1417155-setdictionary
-    setDictionary_forKey(aDictionary: cocoascript.NSUbiquitousKeyValueStore, aKey: cocoascript.NSString):void;
+    setDictionary_forKey(aDictionary: cocoascript.NSString, aKey: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsubiquitouskeyvaluestore/1412608-setdouble
     setDouble_forKey(value: number, aKey: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsubiquitouskeyvaluestore/1407812-setlonglong
@@ -178,9 +178,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsextensioncontext/1412773-cancelrequestwitherror
     cancelRequestWithError(error: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/foundation/nsextensioncontext/1411301-completerequestreturningitems
-    completeRequestReturningItems_completionHandler(items: cocoascript.NSArray, completionHandler: cocoascript.BOOL):void;
+    completeRequestReturningItems_completionHandler(items: cocoascript.NSArray, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsextensioncontext/1416791-openurl
-    openURL_completionHandler(URL: cocoascript.NSURL, completionHandler: cocoascript.BOOL):void;
+    openURL_completionHandler(URL: cocoascript.NSURL, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsextensioncontext/1649133-widgetlargestavailabledisplaymod
     widgetLargestAvailableDisplayMode(): cocoascript.NCWidgetDisplayMode;
     setWidgetLargestAvailableDisplayMode(): void;
@@ -286,23 +286,23 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1415342-initwithattributedstring
     initWithAttributedString(attrStr: cocoascript.NSAttributedString):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524613-initwithdata
-    initWithData_options_documentAttributes_error(data: cocoascript.NSData, options: cocoascript.NSAttributedString, dict: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithData_options_documentAttributes_error(data: cocoascript.NSData, options: cocoascript.NSAttributedString, dict: cocoascript.NSAttributedString, error: cocoascript.NSError):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534329-initwithdocformat
-    initWithDocFormat_documentAttributes(data: cocoascript.NSData, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithDocFormat_documentAttributes(data: cocoascript.NSData, dict: cocoascript.NSAttributedString):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525953-initwithhtml
-    initWithHTML_documentAttributes(data: cocoascript.NSData, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithHTML_documentAttributes(data: cocoascript.NSData, dict: cocoascript.NSAttributedString):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524624-initwithhtml
-    initWithHTML_baseURL_documentAttributes(data: cocoascript.NSData, base: cocoascript.NSURL, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithHTML_baseURL_documentAttributes(data: cocoascript.NSData, base: cocoascript.NSURL, dict: cocoascript.NSAttributedString):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535412-initwithhtml
-    initWithHTML_options_documentAttributes(data: cocoascript.NSData, options: cocoascript.NSAttributedString, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithHTML_options_documentAttributes(data: cocoascript.NSData, options: cocoascript.NSAttributedString, dict: cocoascript.NSAttributedString):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532912-initwithrtf
-    initWithRTF_documentAttributes(data: cocoascript.NSData, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithRTF_documentAttributes(data: cocoascript.NSData, dict: cocoascript.NSAttributedString):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530987-initwithrtfd
-    initWithRTFD_documentAttributes(data: cocoascript.NSData, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithRTFD_documentAttributes(data: cocoascript.NSData, dict: cocoascript.NSAttributedString):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533594-initwithrtfdfilewrapper
-    initWithRTFDFileWrapper_documentAttributes(wrapper: cocoascript.NSFileWrapper, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithRTFDFileWrapper_documentAttributes(wrapper: cocoascript.NSFileWrapper, dict: cocoascript.NSAttributedString):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530490-initwithurl
-    initWithURL_options_documentAttributes_error(url: cocoascript.NSURL, options: cocoascript.NSAttributedString, dict: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithURL_options_documentAttributes_error(url: cocoascript.NSURL, options: cocoascript.NSAttributedString, dict: cocoascript.NSAttributedString, error: cocoascript.NSError):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412616-string
     string(): cocoascript.NSString;
     setString(): void;
@@ -322,9 +322,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1414283-attributedsubstringfromrange
     attributedSubstringFromRange(range: cocoascript.NSRange):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412461-enumerateattribute
-    enumerateAttribute_inRange_options_usingBlock(attrName: cocoascript.NSAttributedStringKey, enumerationRange: cocoascript.NSRange, opts: cocoascript.NSAttributedStringEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateAttribute_inRange_options_usingBlock(attrName: cocoascript.NSAttributedStringKey, enumerationRange: cocoascript.NSRange, opts: cocoascript.NSAttributedStringEnumerationOptions, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1412070-enumerateattributesinrange
-    enumerateAttributesInRange_options_usingBlock(enumerationRange: cocoascript.NSRange, opts: cocoascript.NSAttributedStringEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateAttributesInRange_options_usingBlock(enumerationRange: cocoascript.NSRange, opts: cocoascript.NSAttributedStringEnumerationOptions, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528371-fontattributesinrange
     fontAttributesInRange(range: cocoascript.NSRange):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1524469-rulerattributesinrange
@@ -346,9 +346,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534365-rangeoftexttable
     rangeOfTextTable_atIndex(table: cocoascript.NSTextTable, location: cocoascript.NSUInteger):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1534090-datafromrange
-    dataFromRange_documentAttributes_error(range: cocoascript.NSRange, dict: cocoascript.NSAttributedString, error: cocoascript._Nullable):cocoascript.NSData;
+    dataFromRange_documentAttributes_error(range: cocoascript.NSRange, dict: cocoascript.NSAttributedString, error: cocoascript.NSError):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1530461-filewrapperfromrange
-    fileWrapperFromRange_documentAttributes_error(range: cocoascript.NSRange, dict: cocoascript.NSAttributedString, error: cocoascript._Nullable):cocoascript.NSFileWrapper;
+    fileWrapperFromRange_documentAttributes_error(range: cocoascript.NSRange, dict: cocoascript.NSAttributedString, error: cocoascript.NSError):cocoascript.NSFileWrapper;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1528592-docformatfromrange
     docFormatFromRange_documentAttributes(range: cocoascript.NSRange, dict: cocoascript.NSAttributedString):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1535158-rtffromrange
@@ -376,11 +376,11 @@ declare namespace cocoascript {
     textUnfilteredTypes(): cocoascript.NSString;
     setTextUnfilteredTypes(): void;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1525939-initwithpath
-    initWithPath_documentAttributes(path: cocoascript.NSString, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithPath_documentAttributes(path: cocoascript.NSString, dict: cocoascript.NSDictionary):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533913-initwithurl
-    initWithURL_documentAttributes(url: cocoascript.NSURL, dict: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithURL_documentAttributes(url: cocoascript.NSURL, dict: cocoascript.NSDictionary):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1620492-initwithfileurl
-    initWithFileURL_options_documentAttributes_error(url: cocoascript.NSURL, options: cocoascript.NSDictionary, dict: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.NSAttributedString;
+    initWithFileURL_options_documentAttributes_error(url: cocoascript.NSURL, options: cocoascript.NSDictionary, dict: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1533869-containsattachments
     containsAttachments(): cocoascript.BOOL;
     setContainsAttachments(): void;
@@ -457,15 +457,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1527082-fixparagraphstyleattributeinrang
     fixParagraphStyleAttributeInRange(range: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1535465-readfromdata
-    readFromData_options_documentAttributes_error(data: cocoascript.NSData, opts: cocoascript.NSMutableAttributedString, dict: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.BOOL;
+    readFromData_options_documentAttributes_error(data: cocoascript.NSData, opts: cocoascript.NSMutableAttributedString, dict: cocoascript.NSMutableAttributedString, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1524892-readfromurl
-    readFromURL_options_documentAttributes_error(url: cocoascript.NSURL, opts: cocoascript.NSMutableAttributedString, dict: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.BOOL;
+    readFromURL_options_documentAttributes_error(url: cocoascript.NSURL, opts: cocoascript.NSMutableAttributedString, dict: cocoascript.NSMutableAttributedString, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1525145-readfromdata
-    readFromData_options_documentAttributes(data: cocoascript.NSData, options: cocoascript.NSDictionary, dict: cocoascript._Nullable):cocoascript.BOOL;
+    readFromData_options_documentAttributes(data: cocoascript.NSData, options: cocoascript.NSDictionary, dict: cocoascript.NSDictionary):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1530903-readfromurl
-    readFromURL_options_documentAttributes(url: cocoascript.NSURL, options: cocoascript.NSDictionary, dict: cocoascript._Nullable):cocoascript.BOOL;
+    readFromURL_options_documentAttributes(url: cocoascript.NSURL, options: cocoascript.NSDictionary, dict: cocoascript.NSDictionary):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsmutableattributedstring/1620496-readfromfileurl
-    readFromFileURL_options_documentAttributes_error(url: cocoascript.NSURL, opts: cocoascript.NSDictionary, dict: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.BOOL;
+    readFromFileURL_options_documentAttributes_error(url: cocoascript.NSURL, opts: cocoascript.NSDictionary, dict: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.BOOL;
     //
     alloc():cocoascript.NSMutableAttributedString;
     //
@@ -542,11 +542,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1408047-removesuitenamed
     removeSuiteNamed(suiteName: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1417065-registerdefaults
-    registerDefaults(registrationDictionary: cocoascript.NSUserDefaults):void;
+    registerDefaults(registrationDictionary: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1412197-persistentdomainforname
     persistentDomainForName(domainName: cocoascript.NSString):cocoascript.NSUserDefaults;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1408187-setpersistentdomain
-    setPersistentDomain_forName(domain: cocoascript.NSUserDefaults, domainName: cocoascript.NSString):void;
+    setPersistentDomain_forName(domain: cocoascript.NSString, domainName: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1417339-removepersistentdomainforname
     removePersistentDomainForName(domainName: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1589081-persistentdomainnames
@@ -557,7 +557,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1409592-volatiledomainforname
     volatileDomainForName(domainName: cocoascript.NSString):cocoascript.NSUserDefaults;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1413720-setvolatiledomain
-    setVolatileDomain_forName(domain: cocoascript.NSUserDefaults, domainName: cocoascript.NSString):void;
+    setVolatileDomain_forName(domain: cocoascript.NSString, domainName: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1415955-removevolatiledomainforname
     removeVolatileDomainForName(domainName: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1408635-objectisforcedforkey
@@ -604,11 +604,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsurl/1410301-initfileurlwithpath
     initFileURLWithPath(path: cocoascript.NSString):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1413475-initbyresolvingbookmarkdata
-    initByResolvingBookmarkData_options_relativeToURL_bookmarkDataIsStale_error(bookmarkData: cocoascript.NSData, options: cocoascript.NSURLBookmarkResolutionOptions, relativeURL: cocoascript.NSURL, isStale: cocoascript.BOOL, error: cocoascript._Nullable):cocoascript.NSURL;
+    initByResolvingBookmarkData_options_relativeToURL_bookmarkDataIsStale_error(bookmarkData: cocoascript.NSData, options: cocoascript.NSURLBookmarkResolutionOptions, relativeURL: cocoascript.NSURL, isStale: cocoascript.BOOL, error: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1415117-getfilesystemrepresentation
     getFileSystemRepresentation_maxLength(buffer: string, maxBufferLength: cocoascript.NSUInteger):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1411210-initfileurlwithfilesystemreprese
-    initFileURLWithFileSystemRepresentation_isDirectory_relativeToURL(path: string, isDir: cocoascript.BOOL, baseURL: cocoascript.NSURL):cocoascript.NSURL;
+    initFileURLWithFileSystemRepresentation_isDirectory_relativeToURL(path: cocoascript.const, isDir: cocoascript.BOOL, baseURL: cocoascript.NSURL):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1410750-initabsoluteurlwithdatarepresent
     initAbsoluteURLWithDataRepresentation_relativeToURL(data: cocoascript.NSData, baseURL: cocoascript.NSURL):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1416851-initwithdatarepresentation
@@ -617,7 +617,7 @@ declare namespace cocoascript {
     dataRepresentation(): cocoascript.NSData;
     setDataRepresentation(): void;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1410597-checkresourceisreachableandretur
-    checkResourceIsReachableAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    checkResourceIsReachableAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1408507-isfilereferenceurl
     isFileReferenceURL():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1408782-fileurl
@@ -684,13 +684,13 @@ declare namespace cocoascript {
     user(): cocoascript.NSString;
     setUser(): void;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1417657-resourcevaluesforkeys
-    resourceValuesForKeys_error(keys: cocoascript.NSURLResourceKey, error: cocoascript._Nullable):cocoascript.NSURL;
+    resourceValuesForKeys_error(keys: cocoascript.NSURLResourceKey, error: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1408874-getresourcevalue
-    getResourceValue_forKey_error(value: cocoascript._Nullable, key: cocoascript.NSURLResourceKey, error: cocoascript._Nullable):cocoascript.BOOL;
+    getResourceValue_forKey_error(value: cocoascript.out, key: cocoascript.NSURLResourceKey, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1413819-setresourcevalue
-    setResourceValue_forKey_error(value: cocoascript.NSURL, key: cocoascript.NSURLResourceKey, error: cocoascript._Nullable):cocoascript.BOOL;
+    setResourceValue_forKey_error(value: cocoascript.NSURL, key: cocoascript.NSURLResourceKey, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1408208-setresourcevalues
-    setResourceValues_error(keyedValues: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    setResourceValues_error(keyedValues: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1417078-removeallcachedresourcevalues
     removeAllCachedResourceValues():void;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1410758-removecachedresourcevalueforkey
@@ -724,17 +724,17 @@ declare namespace cocoascript {
     hasDirectoryPath(): cocoascript.BOOL;
     setHasDirectoryPath(): void;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1417795-bookmarkdatawithoptions
-    bookmarkDataWithOptions_includingResourceValuesForKeys_relativeToURL_error(options: cocoascript.NSURLBookmarkCreationOptions, keys: cocoascript.NSURLResourceKey, relativeURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.NSData;
+    bookmarkDataWithOptions_includingResourceValuesForKeys_relativeToURL_error(options: cocoascript.NSURLBookmarkCreationOptions, keys: cocoascript.NSURLResourceKey, relativeURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso
     startAccessingSecurityScopedResource():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou
     stopAccessingSecurityScopedResource():void;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1410411-checkpromiseditemisreachableandr
-    checkPromisedItemIsReachableAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    checkPromisedItemIsReachableAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1414238-getpromiseditemresourcevalue
-    getPromisedItemResourceValue_forKey_error(value: cocoascript._Nullable, key: cocoascript.NSURLResourceKey, error: cocoascript._Nullable):cocoascript.BOOL;
+    getPromisedItemResourceValue_forKey_error(value: cocoascript.NSURL, key: cocoascript.NSURLResourceKey, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1407746-promiseditemresourcevaluesforkey
-    promisedItemResourceValuesForKeys_error(keys: cocoascript.NSURLResourceKey, error: cocoascript._Nullable):cocoascript.NSURL;
+    promisedItemResourceValuesForKeys_error(keys: cocoascript.NSURLResourceKey, error: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1532980-writetopasteboard
     writeToPasteboard(pasteBoard: cocoascript.NSPasteboard):void;
     // doc://com.apple.documentation/documentation/foundation/nsurl/1414181-initwithscheme
@@ -775,9 +775,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsuuid/1411662-initwithuuidstring
     initWithUUIDString(string: cocoascript.NSString):cocoascript.NSUUID;
     // doc://com.apple.documentation/documentation/foundation/nsuuid/1417039-initwithuuidbytes
-    initWithUUIDBytes(bytes: string):cocoascript.NSUUID;
+    initWithUUIDBytes(bytes: cocoascript.const):cocoascript.NSUUID;
     // doc://com.apple.documentation/documentation/foundation/nsuuid/1411420-getuuidbytes
-    getUUIDBytes(uuid: string):void;
+    getUUIDBytes(uuid: cocoascript.unsigned):void;
     // doc://com.apple.documentation/documentation/foundation/nsuuid/1416585-uuidstring
     UUIDString(): cocoascript.NSString;
     setUUIDString(): void;
@@ -847,7 +847,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1618147-loadnibnamed
     loadNibNamed_owner_options(name: cocoascript.NSString, owner: cocoascript.NSBundle, options: cocoascript.NSBundle):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1402909-loadnibnamed
-    loadNibNamed_owner_topLevelObjects(nibName: cocoascript.NSNibName, owner: cocoascript.NSBundle, topLevelObjects: cocoascript._Nullable):cocoascript.BOOL;
+    loadNibNamed_owner_topLevelObjects(nibName: cocoascript.NSNibName, owner: cocoascript.NSBundle, topLevelObjects: cocoascript.NSArray):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1402910-loadnibfile
     loadNibFile_externalNameTable_withZone(fileName: cocoascript.NSString, context: cocoascript.NSDictionary, zone: cocoascript.NSZone):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1416712-urlforresource
@@ -967,11 +967,11 @@ declare namespace cocoascript {
     executableArchitectures(): cocoascript.NSNumber;
     setExecutableArchitectures(): void;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1415083-preflightandreturnerror
-    preflightAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    preflightAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1415927-load
     load():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1411819-loadandreturnerror
-    loadAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    loadAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1412388-unload
     unload():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1413594-loaded
@@ -1022,7 +1022,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1409306-init
     init():cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1407339-initwithbytes
-    initWithBytes_length_encoding(bytes: void, len: cocoascript.NSUInteger, encoding: cocoascript.NSStringEncoding):cocoascript.NSString;
+    initWithBytes_length_encoding(bytes: cocoascript.const, len: cocoascript.NSUInteger, encoding: cocoascript.NSStringEncoding):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1413830-initwithbytesnocopy
     initWithBytesNoCopy_length_encoding_freeWhenDone(bytes: void, len: cocoascript.NSUInteger, encoding: cocoascript.NSStringEncoding, freeBuffer: cocoascript.BOOL):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1410997-initwithcharacters
@@ -1032,9 +1032,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1411293-initwithstring
     initWithString(aString: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1411950-initwithcstring
-    initWithCString_encoding(nullTerminatedCString: string, encoding: cocoascript.NSStringEncoding):cocoascript.NSString;
+    initWithCString_encoding(nullTerminatedCString: cocoascript.const, encoding: cocoascript.NSStringEncoding):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1412128-initwithutf8string
-    initWithUTF8String(nullTerminatedCString: string):cocoascript.NSString;
+    initWithUTF8String(nullTerminatedCString: cocoascript.const):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497402-initwithformat
     initWithFormat(format: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1407827-initwithformat
@@ -1046,13 +1046,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1416374-initwithdata
     initWithData_encoding(data: cocoascript.NSData, encoding: cocoascript.NSStringEncoding):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1412610-initwithcontentsoffile
-    initWithContentsOfFile_encoding_error(path: cocoascript.NSString, enc: cocoascript.NSStringEncoding, error: cocoascript._Nullable):cocoascript.NSString;
+    initWithContentsOfFile_encoding_error(path: cocoascript.NSString, enc: cocoascript.NSStringEncoding, error: cocoascript.NSError):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1418227-initwithcontentsoffile
-    initWithContentsOfFile_usedEncoding_error(path: cocoascript.NSString, enc: cocoascript.NSStringEncoding, error: cocoascript._Nullable):cocoascript.NSString;
+    initWithContentsOfFile_usedEncoding_error(path: cocoascript.NSString, enc: cocoascript.NSStringEncoding, error: cocoascript.NSError):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1414463-initwithcontentsofurl
-    initWithContentsOfURL_encoding_error(url: cocoascript.NSURL, enc: cocoascript.NSStringEncoding, error: cocoascript._Nullable):cocoascript.NSString;
+    initWithContentsOfURL_encoding_error(url: cocoascript.NSURL, enc: cocoascript.NSStringEncoding, error: cocoascript.NSError):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1414472-initwithcontentsofurl
-    initWithContentsOfURL_usedEncoding_error(url: cocoascript.NSURL, enc: cocoascript.NSStringEncoding, error: cocoascript._Nullable):cocoascript.NSString;
+    initWithContentsOfURL_usedEncoding_error(url: cocoascript.NSURL, enc: cocoascript.NSStringEncoding, error: cocoascript.NSError):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1414212-length
     length(): cocoascript.NSUInteger;
     setLength(): void;
@@ -1179,9 +1179,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1413574-localizedstandardrangeofstring
     localizedStandardRangeOfString(str: cocoascript.NSString):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1408459-enumeratelinesusingblock
-    enumerateLinesUsingBlock(block: cocoascript.BOOL):void;
+    enumerateLinesUsingBlock(block: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1416774-enumeratesubstringsinrange
-    enumerateSubstringsInRange_options_usingBlock(range: cocoascript.NSRange, opts: cocoascript.NSStringEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateSubstringsInRange_options_usingBlock(range: cocoascript.NSRange, opts: cocoascript.NSStringEnumerationOptions, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1412937-stringbyreplacingoccurrencesofst
     stringByReplacingOccurrencesOfString_withString(target: cocoascript.NSString, replacement: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1416484-stringbyreplacingoccurrencesofst
@@ -1191,9 +1191,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1408169-commonprefixwithstring
     commonPrefixWithString_options(str: cocoascript.NSString, mask: cocoascript.NSStringCompareOptions):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1412161-enumeratelinguistictagsinrange
-    enumerateLinguisticTagsInRange_scheme_options_orthography_usingBlock(range: cocoascript.NSRange, scheme: cocoascript.NSLinguisticTagScheme, options: cocoascript.NSLinguisticTaggerOptions, orthography: cocoascript.NSOrthography, block: cocoascript.BOOL):void;
+    enumerateLinguisticTagsInRange_scheme_options_orthography_usingBlock(range: cocoascript.NSRange, scheme: cocoascript.NSLinguisticTagScheme, options: cocoascript.NSLinguisticTaggerOptions, orthography: cocoascript.NSOrthography, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1416530-linguistictagsinrange
-    linguisticTagsInRange_scheme_options_orthography_tokenRanges(range: cocoascript.NSRange, scheme: cocoascript.NSLinguisticTagScheme, options: cocoascript.NSLinguisticTaggerOptions, orthography: cocoascript.NSOrthography, tokenRanges: cocoascript._Nullable):cocoascript.NSLinguisticTag;
+    linguisticTagsInRange_scheme_options_orthography_tokenRanges(range: cocoascript.NSRange, scheme: cocoascript.NSLinguisticTagScheme, options: cocoascript.NSLinguisticTaggerOptions, orthography: cocoascript.NSOrthography, tokenRanges: cocoascript.NSValue):cocoascript.NSLinguisticTag;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1415111-getlinestart
     getLineStart_end_contentsEnd_forRange(startPtr: cocoascript.NSUInteger, lineEndPtr: cocoascript.NSUInteger, contentsEndPtr: cocoascript.NSUInteger, range: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1407736-linerangeforrange
@@ -1207,9 +1207,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsstring/1410993-rangeofcomposedcharactersequence
     rangeOfComposedCharacterSequencesForRange(range: cocoascript.NSRange):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1407654-writetofile
-    writeToFile_atomically_encoding_error(path: cocoascript.NSString, useAuxiliaryFile: cocoascript.BOOL, enc: cocoascript.NSStringEncoding, error: cocoascript._Nullable):cocoascript.BOOL;
+    writeToFile_atomically_encoding_error(path: cocoascript.NSString, useAuxiliaryFile: cocoascript.BOOL, enc: cocoascript.NSStringEncoding, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1417341-writetourl
-    writeToURL_atomically_encoding_error(url: cocoascript.NSURL, useAuxiliaryFile: cocoascript.BOOL, enc: cocoascript.NSStringEncoding, error: cocoascript._Nullable):cocoascript.BOOL;
+    writeToURL_atomically_encoding_error(url: cocoascript.NSURL, useAuxiliaryFile: cocoascript.BOOL, enc: cocoascript.NSStringEncoding, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1413115-propertylist
     propertyList():cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1407697-propertylistfromstringsfileforma
@@ -1269,7 +1269,7 @@ declare namespace cocoascript {
     pathComponents(): cocoascript.NSString;
     setPathComponents(): void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1411841-completepathintostring
-    completePathIntoString_caseSensitive_matchesIntoArray_filterTypes(outputName: cocoascript._Nullable, flag: cocoascript.BOOL, outputArray: cocoascript._Nullable, filterTypes: cocoascript.NSString):cocoascript.NSUInteger;
+    completePathIntoString_caseSensitive_matchesIntoArray_filterTypes(outputName: cocoascript.NSString, flag: cocoascript.BOOL, outputArray: cocoascript.NSString, filterTypes: cocoascript.NSString):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1414559-filesystemrepresentation
     fileSystemRepresentation(): string;
     setFileSystemRepresentation(): void;
@@ -1314,9 +1314,9 @@ declare namespace cocoascript {
     stringByRemovingPercentEncoding(): cocoascript.NSString;
     setStringByRemovingPercentEncoding(): void;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497394-initwithcstring
-    initWithCString(bytes: string):cocoascript.NSString;
+    initWithCString(bytes: cocoascript.const):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497403-initwithcstring
-    initWithCString_length(bytes: string, length: cocoascript.NSUInteger):cocoascript.NSString;
+    initWithCString_length(bytes: cocoascript.const, length: cocoascript.NSUInteger):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497281-initwithcstringnocopy
     initWithCStringNoCopy_length_freeWhenDone(bytes: string, length: cocoascript.NSUInteger, freeBuffer: cocoascript.BOOL):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsstring/1497398-initwithcontentsoffile
@@ -1471,17 +1471,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1411886-initwithshort
     initWithShort(value: cocoascript.short):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1416533-initwithunsignedchar
-    initWithUnsignedChar(value: string):cocoascript.NSNumber;
+    initWithUnsignedChar(value: cocoascript.unsigned):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1414598-initwithunsignedint
-    initWithUnsignedInt(value: number):cocoascript.NSNumber;
+    initWithUnsignedInt(value: cocoascript.unsigned):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1412531-initwithunsignedinteger
     initWithUnsignedInteger(value: cocoascript.NSUInteger):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1410728-initwithunsignedlong
-    initWithUnsignedLong(value: number):cocoascript.NSNumber;
+    initWithUnsignedLong(value: cocoascript.unsigned):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1416550-initwithunsignedlonglong
-    initWithUnsignedLongLong(value: number):cocoascript.NSNumber;
+    initWithUnsignedLongLong(value: cocoascript.unsigned):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1407718-initwithunsignedshort
-    initWithUnsignedShort(value: cocoascript.short):cocoascript.NSNumber;
+    initWithUnsignedShort(value: cocoascript.unsigned):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumber/1410865-boolvalue
     boolValue(): cocoascript.BOOL;
     setBoolValue(): void;
@@ -1628,7 +1628,7 @@ declare namespace cocoascript {
    */
   interface NSData extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsdata/1412793-initwithbytes
-    initWithBytes_length(bytes: void, length: cocoascript.NSUInteger):cocoascript.NSData;
+    initWithBytes_length(bytes: cocoascript.const, length: cocoascript.NSUInteger):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1409454-initwithbytesnocopy
     initWithBytesNoCopy_length(bytes: void, length: cocoascript.NSUInteger):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1417337-initwithbytesnocopy
@@ -1640,21 +1640,21 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdata/1408672-initwithcontentsoffile
     initWithContentsOfFile(path: cocoascript.NSString):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1411145-initwithcontentsoffile
-    initWithContentsOfFile_options_error(path: cocoascript.NSString, readOptionsMask: cocoascript.NSDataReadingOptions, errorPtr: cocoascript._Nullable):cocoascript.NSData;
+    initWithContentsOfFile_options_error(path: cocoascript.NSString, readOptionsMask: cocoascript.NSDataReadingOptions, errorPtr: cocoascript.NSError):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1413892-initwithcontentsofurl
     initWithContentsOfURL(url: cocoascript.NSURL):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1407864-initwithcontentsofurl
-    initWithContentsOfURL_options_error(url: cocoascript.NSURL, readOptionsMask: cocoascript.NSDataReadingOptions, errorPtr: cocoascript._Nullable):cocoascript.NSData;
+    initWithContentsOfURL_options_error(url: cocoascript.NSURL, readOptionsMask: cocoascript.NSDataReadingOptions, errorPtr: cocoascript.NSError):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1413302-initwithcontentsofmappedfile
     initWithContentsOfMappedFile(path: cocoascript.NSString):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1408033-writetofile
     writeToFile_atomically(path: cocoascript.NSString, useAuxiliaryFile: cocoascript.BOOL):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1414800-writetofile
-    writeToFile_options_error(path: cocoascript.NSString, writeOptionsMask: cocoascript.NSDataWritingOptions, errorPtr: cocoascript._Nullable):cocoascript.BOOL;
+    writeToFile_options_error(path: cocoascript.NSString, writeOptionsMask: cocoascript.NSDataWritingOptions, errorPtr: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1415134-writetourl
     writeToURL_atomically(url: cocoascript.NSURL, atomically: cocoascript.BOOL):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1410595-writetourl
-    writeToURL_options_error(url: cocoascript.NSURL, writeOptionsMask: cocoascript.NSDataWritingOptions, errorPtr: cocoascript._Nullable):cocoascript.BOOL;
+    writeToURL_options_error(url: cocoascript.NSURL, writeOptionsMask: cocoascript.NSDataWritingOptions, errorPtr: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1417833-initwithbase64encodeddata
     initWithBase64EncodedData_options(base64Data: cocoascript.NSData, options: cocoascript.NSDataBase64DecodingOptions):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1547237-initwithbase64encoding
@@ -1671,7 +1671,7 @@ declare namespace cocoascript {
     bytes(): void;
     setBytes(): void;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1408400-enumeratebyterangesusingblock
-    enumerateByteRangesUsingBlock(block: cocoascript.BOOL):void;
+    enumerateByteRangesUsingBlock(block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1416532-getbytes
     getBytes(buffer: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsdata/1411450-getbytes
@@ -1691,9 +1691,9 @@ declare namespace cocoascript {
     description(): cocoascript.NSString;
     setDescription(): void;
     // doc://com.apple.documentation/documentation/foundation/nsdata/3174960-compresseddatausingalgorithm
-    compressedDataUsingAlgorithm_error(algorithm: cocoascript.NSDataCompressionAlgorithm, error: cocoascript._Nullable):cocoascript.NSData;
+    compressedDataUsingAlgorithm_error(algorithm: cocoascript.NSDataCompressionAlgorithm, error: cocoascript.NSError):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsdata/3174961-decompresseddatausingalgorithm
-    decompressedDataUsingAlgorithm_error(algorithm: cocoascript.NSDataCompressionAlgorithm, error: cocoascript._Nullable):cocoascript.NSData;
+    decompressedDataUsingAlgorithm_error(algorithm: cocoascript.NSDataCompressionAlgorithm, error: cocoascript.NSError):cocoascript.NSData;
     //
     alloc():cocoascript.NSData;
     //
@@ -1721,7 +1721,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsarray/1460068-initwithobjects
     initWithObjects(...: cocoascript.):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1415056-initwithobjects
-    initWithObjects_count(objects: cocoascript.const, cnt: cocoascript.NSUInteger):cocoascript.NSArray;
+    initWithObjects_count(objects: cocoascript._Nonnull, cnt: cocoascript.NSUInteger):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1407477-containsobject
     containsObject(anObject: cocoascript.):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1409982-count
@@ -1756,17 +1756,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsarray/1415805-indexofobjectidenticalto
     indexOfObjectIdenticalTo(anObject: cocoascript.NSRange):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1408043-indexofobjectpassingtest
-    indexOfObjectPassingTest(predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexOfObjectPassingTest(predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1417053-indexofobjectwithoptions
-    indexOfObjectWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexOfObjectWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1407652-indexofobjectatindexes
-    indexOfObjectAtIndexes_options_passingTest(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexOfObjectAtIndexes_options_passingTest(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1417603-indexesofobjectspassingtest
-    indexesOfObjectsPassingTest(predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesOfObjectsPassingTest(predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1415087-indexesofobjectswithoptions
-    indexesOfObjectsWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesOfObjectsWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1413512-indexesofobjectsatindexes
-    indexesOfObjectsAtIndexes_options_passingTest(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesOfObjectsAtIndexes_options_passingTest(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1412722-indexofobject
     indexOfObject_options_usingComparator(obj: cocoascript.NSRange, opts: cocoascript.NSBinarySearchingOptions, cmp: cocoascript.NSComparator):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1460115-makeobjectsperformselector
@@ -1774,11 +1774,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsarray/1460107-makeobjectsperformselector
     makeObjectsPerformSelector_withObject(aSelector: cocoascript.SEL, argument: cocoascript.NSArray):void;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1415846-enumerateobjectsusingblock
-    enumerateObjectsUsingBlock(block: cocoascript.BOOL):void;
+    enumerateObjectsUsingBlock(block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1413010-enumerateobjectswithoptions
-    enumerateObjectsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateObjectsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1417577-enumerateobjectsatindexes
-    enumerateObjectsAtIndexes_options_usingBlock(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateObjectsAtIndexes_options_usingBlock(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1408825-firstobjectcommonwitharray
     firstObjectCommonWithArray(otherArray: cocoascript.NSArray):void;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1411770-isequaltoarray
@@ -1795,9 +1795,9 @@ declare namespace cocoascript {
     sortedArrayHint(): cocoascript.NSData;
     setSortedArrayHint(): void;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1408213-sortedarrayusingfunction
-    sortedArrayUsingFunction_context(comparator: void, context: void):cocoascript.NSArray;
+    sortedArrayUsingFunction_context(comparator: cocoascript.NSInteger, context: void):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1414839-sortedarrayusingfunction
-    sortedArrayUsingFunction_context_hint(comparator: void, context: void, hint: cocoascript.NSData):cocoascript.NSArray;
+    sortedArrayUsingFunction_context_hint(comparator: cocoascript.NSInteger, context: void, hint: cocoascript.NSData):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1415069-sortedarrayusingdescriptors
     sortedArrayUsingDescriptors(sortDescriptors: cocoascript.NSSortDescriptor):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsarray/1410025-sortedarrayusingselector
@@ -1850,9 +1850,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsarray/1407810-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsarray/2879134-initwithcontentsofurl
-    initWithContentsOfURL_error(url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.NSArray;
+    initWithContentsOfURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsarray/2879138-writetourl
-    writeToURL_error(url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    writeToURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsarray/3152165-arraybyapplyingdifference
     arrayByApplyingDifference(difference: cocoascript.NSOrderedCollectionDifference):cocoascript.NSArray;
     //
@@ -1874,7 +1874,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1410010-initwithobjects
     initWithObjects_forKeys(objects: cocoascript.NSArray, keys: cocoascript.NSCopying):cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1412631-initwithobjects
-    initWithObjects_forKeys_count(objects: cocoascript.const, keys: cocoascript.const, cnt: cocoascript.NSUInteger):cocoascript.NSDictionary;
+    initWithObjects_forKeys_count(objects: cocoascript._Nonnull, keys: cocoascript.NSCopying, cnt: cocoascript.NSUInteger):cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1574190-initwithobjectsandkeys
     initWithObjectsAndKeys(firstObject: cocoascript.NSDictionary):cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1418434-initwithdictionary
@@ -1882,7 +1882,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1410124-initwithdictionary
     initWithDictionary_copyItems(otherDictionary: cocoascript.NSDictionary, flag: cocoascript.BOOL):cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/2879140-initwithcontentsofurl
-    initWithContentsOfURL_error(url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.NSString;
+    initWithContentsOfURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1416069-initwithcontentsofurl
     initWithContentsOfURL(url: cocoascript.NSURL):cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1414949-initwithcontentsoffile
@@ -1919,9 +1919,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1409600-objectenumerator
     objectEnumerator():cocoascript.NSEnumerator;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1414570-enumeratekeysandobjectsusingbloc
-    enumerateKeysAndObjectsUsingBlock(block: cocoascript.BOOL):void;
+    enumerateKeysAndObjectsUsingBlock(block: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1409739-enumeratekeysandobjectswithoptio
-    enumerateKeysAndObjectsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateKeysAndObjectsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/2865769-countbyenumeratingwithstate
     countByEnumeratingWithState_objects_count(state: cocoascript.NSFastEnumerationState, buffer: cocoascript._Nullable, len: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1412484-keyssortedbyvalueusingselector
@@ -1935,7 +1935,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1416706-keysofentrieswithoptions
     keysOfEntriesWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSSet;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/2879139-writetourl
-    writeToURL_error(url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    writeToURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1409634-writetourl
     writeToURL_atomically(url: cocoascript.NSURL, atomically: cocoascript.BOOL):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1415753-writetofile
@@ -2023,25 +2023,25 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1410409-initwithcontentsofurl
     initWithContentsOfURL(url: cocoascript.NSURL):cocoascript.NSMutableDictionary;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1431956-addapplicationparameterheader
-    addApplicationParameterHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addApplicationParameterHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1433422-addauthorizationchallengeheader
-    addAuthorizationChallengeHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addAuthorizationChallengeHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1432339-addauthorizationresponseheader
-    addAuthorizationResponseHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addAuthorizationResponseHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1430411-addbodyheader
-    addBodyHeader_length_endOfBody(inHeaderData: void, inHeaderDataLength: number, isEndOfBody: cocoascript.BOOL):cocoascript.OBEXError;
+    addBodyHeader_length_endOfBody(inHeaderData: cocoascript.const, inHeaderDataLength: number, isEndOfBody: cocoascript.BOOL):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1428676-addbytesequenceheader
-    addByteSequenceHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addByteSequenceHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1430403-addconnectionidheader
-    addConnectionIDHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addConnectionIDHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1433317-addcountheader
     addCountHeader(inCount: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1434905-adddescriptionheader
     addDescriptionHeader(inDescriptionString: cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1434484-addhttpheader
-    addHTTPHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addHTTPHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1429678-addimagedescriptorheader
-    addImageDescriptorHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addImageDescriptorHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1430878-addimagehandleheader
     addImageHandleHeader(type: cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1433652-addlengthheader
@@ -2049,19 +2049,19 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1430284-addnameheader
     addNameHeader(inNameString: cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1434696-addobjectclassheader
-    addObjectClassHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addObjectClassHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1428678-addtargetheader
-    addTargetHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addTargetHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1433527-addtime4byteheader
     addTime4ByteHeader(time4Byte: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1428661-addtimeisoheader
-    addTimeISOHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addTimeISOHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1433211-addtypeheader
     addTypeHeader(type: cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1434461-adduserdefinedheader
-    addUserDefinedHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addUserDefinedHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1433510-addwhoheader
-    addWhoHeader_length(inHeaderData: void, inHeaderDataLength: number):cocoascript.OBEXError;
+    addWhoHeader_length(inHeaderData: cocoascript.const, inHeaderDataLength: number):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1428890-getheaderbytes
     getHeaderBytes():cocoascript.NSMutableData;
     //
@@ -2254,7 +2254,7 @@ declare namespace cocoascript {
     decodingFailurePolicy(): cocoascript.NSDecodingFailurePolicy;
     setDecodingFailurePolicy(): void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1417865-encodearrayofobjctype
-    encodeArrayOfObjCType_count_at(type: string, count: cocoascript.NSUInteger, array: void):void;
+    encodeArrayOfObjCType_count_at(type: cocoascript.const, count: cocoascript.NSUInteger, array: cocoascript.const):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1409236-encodebool
     encodeBool_forKey(value: cocoascript.BOOL, key: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1418225-encodebycopyobject
@@ -2262,7 +2262,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nscoder/1416279-encodebyrefobject
     encodeByrefObject(anObject: cocoascript.NSCoder):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1411664-encodebytes
-    encodeBytes_length(byteaddr: void, length: cocoascript.NSUInteger):void;
+    encodeBytes_length(byteaddr: cocoascript.const, length: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1413078-encodebytes
     encodeBytes_length_forKey(bytes: number, length: cocoascript.NSUInteger, key: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1415196-encodeconditionalobject
@@ -2306,9 +2306,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nscoder/1391176-encodesize
     encodeSize_forKey(size: cocoascript.NSSize, key: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1414648-encodevalueofobjctype
-    encodeValueOfObjCType_at(type: string, addr: void):void;
+    encodeValueOfObjCType_at(type: cocoascript.const, addr: cocoascript.const):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442581-encodevaluesofobjctypes
-    encodeValuesOfObjCTypes(types: string):void;
+    encodeValuesOfObjCTypes(types: cocoascript.const):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1624502-encodecgaffinetransform
     encodeCGAffineTransform_forKey(transform: cocoascript.CGAffineTransform, key: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1624520-encodecgpoint
@@ -2338,15 +2338,15 @@ declare namespace cocoascript {
     allowedClasses(): cocoascript.Class;
     setAllowedClasses(): void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442575-decodetoplevelobjectofclass
-    decodeTopLevelObjectOfClass_forKey_error(aClass: cocoascript.Class, key: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSCoder;
+    decodeTopLevelObjectOfClass_forKey_error(aClass: cocoascript.Class, key: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSCoder;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442539-decodetoplevelobjectofclasses
-    decodeTopLevelObjectOfClasses_forKey_error(classes: cocoascript.Class, key: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSCoder;
+    decodeTopLevelObjectOfClasses_forKey_error(classes: cocoascript.Class, key: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSCoder;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442553-decodetoplevelobjectandreturnerr
-    decodeTopLevelObjectAndReturnError(error: cocoascript._Nullable):cocoascript.NSCoder;
+    decodeTopLevelObjectAndReturnError(error: cocoascript.NSError):cocoascript.NSCoder;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442541-decodetoplevelobjectforkey
-    decodeTopLevelObjectForKey_error(key: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSCoder;
+    decodeTopLevelObjectForKey_error(key: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSCoder;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1408354-decodearrayofobjctype
-    decodeArrayOfObjCType_count_at(itemType: string, count: cocoascript.NSUInteger, array: void):void;
+    decodeArrayOfObjCType_count_at(itemType: cocoascript.const, count: cocoascript.NSUInteger, array: void):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1409293-decodeboolforkey
     decodeBoolForKey(key: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1411987-decodebytesforkey
@@ -2388,11 +2388,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nscoder/1391253-decodesizeforkey
     decodeSizeForKey(key: cocoascript.NSString):cocoascript.NSSize;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1417159-decodevalueofobjctype
-    decodeValueOfObjCType_at(type: string, data: void):void;
+    decodeValueOfObjCType_at(type: cocoascript.const, data: void):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/2919430-decodevalueofobjctype
-    decodeValueOfObjCType_at_size(type: string, data: void, size: cocoascript.NSUInteger):void;
+    decodeValueOfObjCType_at_size(type: cocoascript.const, data: void, size: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442577-decodevaluesofobjctypes
-    decodeValuesOfObjCTypes(types: string):void;
+    decodeValuesOfObjCTypes(types: cocoascript.const):void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442558-decodeobjectofclass
     decodeObjectOfClass_forKey(aClass: cocoascript.Class, key: cocoascript.NSString):cocoascript.NSCoder;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442560-decodeobjectofclasses
@@ -2508,11 +2508,11 @@ declare namespace cocoascript {
    */
   interface NSPredicate extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nspredicate/1413227-predicatewithsubstitutionvariabl
-    predicateWithSubstitutionVariables(variables: cocoascript.NSPredicate):cocoascript.NSPredicate;
+    predicateWithSubstitutionVariables(variables: cocoascript.NSString):cocoascript.NSPredicate;
     // doc://com.apple.documentation/documentation/foundation/nspredicate/1417924-evaluatewithobject
     evaluateWithObject(object: cocoascript.NSPredicate):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nspredicate/1407759-evaluatewithobject
-    evaluateWithObject_substitutionVariables(object: cocoascript.NSPredicate, bindings: cocoascript.NSPredicate):cocoascript.BOOL;
+    evaluateWithObject_substitutionVariables(object: cocoascript.NSPredicate, bindings: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nspredicate/1416310-allowevaluation
     allowEvaluation():void;
     // doc://com.apple.documentation/documentation/foundation/nspredicate/1411605-predicateformat
@@ -2726,7 +2726,7 @@ declare namespace cocoascript {
    */
   interface NSValue extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsvalue/1411621-initwithbytes
-    initWithBytes_objCType(value: void, type: string):cocoascript.NSValue;
+    initWithBytes_objCType(value: cocoascript.const, type: cocoascript.const):cocoascript.NSValue;
     // doc://com.apple.documentation/documentation/foundation/nsvalue/1415141-getvalue
     getValue(value: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsvalue/1412365-objctype
@@ -2872,11 +2872,11 @@ declare namespace cocoascript {
    */
   interface NSSpellServerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsspellserverdelegate/1409733-spellserver
-    spellServer_checkString_offset_types_options_orthography_wordCount(sender: cocoascript.NSSpellServer, stringToCheck: cocoascript.NSString, offset: cocoascript.NSUInteger, checkingTypes: cocoascript.NSTextCheckingTypes, options: cocoascript.NSSpellServerDelegate, orthography: cocoascript.NSOrthography, wordCount: cocoascript.NSInteger):cocoascript.NSTextCheckingResult;
+    spellServer_checkString_offset_types_options_orthography_wordCount(sender: cocoascript.NSSpellServer, stringToCheck: cocoascript.NSString, offset: cocoascript.NSUInteger, checkingTypes: cocoascript.NSTextCheckingTypes, options: cocoascript.NSString, orthography: cocoascript.NSOrthography, wordCount: cocoascript.NSInteger):cocoascript.NSTextCheckingResult;
     // doc://com.apple.documentation/documentation/foundation/nsspellserverdelegate/1410726-spellserver
     spellServer_suggestGuessesForWord_inLanguage(sender: cocoascript.NSSpellServer, word: cocoascript.NSString, language: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsspellserverdelegate/1409242-spellserver
-    spellServer_checkGrammarInString_language_details(sender: cocoascript.NSSpellServer, stringToCheck: cocoascript.NSString, language: cocoascript.NSString, details: cocoascript._Nullable):cocoascript.NSRange;
+    spellServer_checkGrammarInString_language_details(sender: cocoascript.NSSpellServer, stringToCheck: cocoascript.NSString, language: cocoascript.NSString, details: cocoascript.NSString):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/foundation/nsspellserverdelegate/1413235-spellserver
     spellServer_findMisspelledWordInString_language_wordCount_countOnly(sender: cocoascript.NSSpellServer, stringToCheck: cocoascript.NSString, language: cocoascript.NSString, wordCount: cocoascript.NSInteger, countOnly: cocoascript.BOOL):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/foundation/nsspellserverdelegate/1417315-spellserver
@@ -2946,7 +2946,7 @@ declare namespace cocoascript {
    */
   interface NSFileWrapper extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1415658-initwithurl
-    initWithURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSFileWrapperReadingOptions, outError: cocoascript._Nullable):cocoascript.NSFileWrapper;
+    initWithURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSFileWrapperReadingOptions, outError: cocoascript.NSError):cocoascript.NSFileWrapper;
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1408388-initwithpath
     initWithPath(path: cocoascript.NSString):cocoascript.NSFileWrapper;
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1415121-initdirectorywithfilewrappers
@@ -2995,7 +2995,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1416300-updatefrompath
     updateFromPath(path: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1411645-readfromurl
-    readFromURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSFileWrapperReadingOptions, outError: cocoascript._Nullable):cocoascript.BOOL;
+    readFromURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSFileWrapperReadingOptions, outError: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1412119-serializedrepresentation
     serializedRepresentation(): cocoascript.NSData;
     setSerializedRepresentation(): void;
@@ -3014,7 +3014,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1415079-writetofile
     writeToFile_atomically_updateFilenames(path: cocoascript.NSString, atomicFlag: cocoascript.BOOL, updateFilenamesFlag: cocoascript.BOOL):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1415981-writetourl
-    writeToURL_options_originalContentsURL_error(url: cocoascript.NSURL, options: cocoascript.NSFileWrapperWritingOptions, originalContentsURL: cocoascript.NSURL, outError: cocoascript._Nullable):cocoascript.BOOL;
+    writeToURL_options_originalContentsURL_error(url: cocoascript.NSURL, options: cocoascript.NSFileWrapperWritingOptions, originalContentsURL: cocoascript.NSURL, outError: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilewrapper/1413123-icon
     icon(): cocoascript.NSImage;
     setIcon(): void;
@@ -3093,7 +3093,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsset/1574822-initwithobjects
     initWithObjects(...: cocoascript.):cocoascript.NSSet;
     // doc://com.apple.documentation/documentation/foundation/nsset/1407458-initwithobjects
-    initWithObjects_count(objects: cocoascript.const, cnt: cocoascript.NSUInteger):cocoascript.NSSet;
+    initWithObjects_count(objects: cocoascript._Nonnull, cnt: cocoascript.NSUInteger):cocoascript.NSSet;
     // doc://com.apple.documentation/documentation/foundation/nsset/1410612-initwithset
     initWithSet(set: cocoascript.NSSet):cocoascript.NSSet;
     // doc://com.apple.documentation/documentation/foundation/nsset/1408407-initwithset
@@ -3121,9 +3121,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsset/1412373-objectenumerator
     objectEnumerator():cocoascript.NSEnumerator;
     // doc://com.apple.documentation/documentation/foundation/nsset/1418129-enumerateobjectsusingblock
-    enumerateObjectsUsingBlock(block: cocoascript.BOOL):void;
+    enumerateObjectsUsingBlock(block: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsset/1412024-enumerateobjectswithoptions
-    enumerateObjectsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateObjectsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsset/1414392-objectspassingtest
     objectsPassingTest(predicate: cocoascript.BOOL):cocoascript.NSSet;
     // doc://com.apple.documentation/documentation/foundation/nsset/1416826-objectswithoptions
@@ -3154,7 +3154,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsset/1408221-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.NSSet;
     // doc://com.apple.documentation/documentation/foundation/nsset/1528216-enumerateindexpathswithoptions
-    enumerateIndexPathsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateIndexPathsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSIndexPath):void;
     //
     alloc():cocoascript.NSSet;
     //
@@ -3315,11 +3315,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsformatter/1416333-editingstringforobjectvalue
     editingStringForObjectValue(obj: cocoascript.NSFormatter):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsformatter/1408927-getobjectvalue
-    getObjectValue_forString_errorDescription(obj: cocoascript._Nullable, string: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    getObjectValue_forString_errorDescription(obj: cocoascript.out, string: cocoascript.NSString, error: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsformatter/1417993-ispartialstringvalid
-    isPartialStringValid_newEditingString_errorDescription(partialString: cocoascript.NSString, newString: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.BOOL;
+    isPartialStringValid_newEditingString_errorDescription(partialString: cocoascript.NSString, newString: cocoascript.NSString, error: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsformatter/1415263-ispartialstringvalid
-    isPartialStringValid_proposedSelectedRange_originalString_originalSelectedRange_errorDescription(partialStringPtr: cocoascript._Nonnull, proposedSelRangePtr: cocoascript.NSRangePointer, origString: cocoascript.NSString, origSelRange: cocoascript.NSRange, error: cocoascript._Nullable):cocoascript.BOOL;
+    isPartialStringValid_proposedSelectedRange_originalString_originalSelectedRange_errorDescription(partialStringPtr: cocoascript.NSString, proposedSelRangePtr: cocoascript.NSRangePointer, origString: cocoascript.NSString, origSelRange: cocoascript.NSRange, error: cocoascript.NSString):cocoascript.BOOL;
     //
     alloc():cocoascript.NSFormatter;
     //
@@ -3737,7 +3737,7 @@ declare namespace cocoascript {
    */
   interface NSUndoManager extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsundomanager/1437863-registerundowithtarget
-    registerUndoWithTarget_handler(target: cocoascript.NSUndoManager, undoHandler: cocoascript.NSUndoManager):void;
+    registerUndoWithTarget_handler(target: cocoascript.NSUndoManager, undoHandler: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsundomanager/1414001-registerundowithtarget
     registerUndoWithTarget_selector_object(target: cocoascript.NSUndoManager, selector: cocoascript.SEL, anObject: cocoascript.NSUndoManager):void;
     // doc://com.apple.documentation/documentation/foundation/nsundomanager/1409564-preparewithinvocationtarget
@@ -3855,9 +3855,9 @@ declare namespace cocoascript {
     resolved(): cocoascript.BOOL;
     setResolved(): void;
     // doc://com.apple.documentation/documentation/foundation/nsfileversion/1412297-replaceitematurl
-    replaceItemAtURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSFileVersionReplacingOptions, error: cocoascript._Nullable):cocoascript.NSURL;
+    replaceItemAtURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSFileVersionReplacingOptions, error: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfileversion/1407486-removeandreturnerror
-    removeAndReturnError(outError: cocoascript._Nullable):cocoascript.BOOL;
+    removeAndReturnError(outError: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfileversion/1412014-haslocalcontents
     hasLocalContents(): cocoascript.BOOL;
     setHasLocalContents(): void;
@@ -3958,23 +3958,23 @@ declare namespace cocoascript {
     length(): cocoascript.NSUInteger;
     setLength(): void;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/1407704-appendbytes
-    appendBytes_length(bytes: void, length: cocoascript.NSUInteger):void;
+    appendBytes_length(bytes: cocoascript.const, length: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/1410724-appenddata
     appendData(other: cocoascript.NSData):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/1416186-increaselengthby
     increaseLengthBy(extraLength: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/1414281-replacebytesinrange
-    replaceBytesInRange_withBytes(range: cocoascript.NSRange, bytes: void):void;
+    replaceBytesInRange_withBytes(range: cocoascript.NSRange, bytes: cocoascript.const):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/1412428-replacebytesinrange
-    replaceBytesInRange_withBytes_length(range: cocoascript.NSRange, replacementBytes: void, replacementLength: cocoascript.NSUInteger):void;
+    replaceBytesInRange_withBytes_length(range: cocoascript.NSRange, replacementBytes: cocoascript.const, replacementLength: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/1415526-resetbytesinrange
     resetBytesInRange(range: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/1417012-setdata
     setData(data: cocoascript.NSData):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/3174967-compressusingalgorithm
-    compressUsingAlgorithm_error(algorithm: cocoascript.NSDataCompressionAlgorithm, error: cocoascript._Nullable):cocoascript.BOOL;
+    compressUsingAlgorithm_error(algorithm: cocoascript.NSDataCompressionAlgorithm, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsmutabledata/3174968-decompressusingalgorithm
-    decompressUsingAlgorithm_error(algorithm: cocoascript.NSDataCompressionAlgorithm, error: cocoascript._Nullable):cocoascript.BOOL;
+    decompressUsingAlgorithm_error(algorithm: cocoascript.NSDataCompressionAlgorithm, error: cocoascript.NSError):cocoascript.BOOL;
     //
     alloc():cocoascript.NSMutableData;
     //
@@ -4313,7 +4313,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1415233-initwithaedescnocopy
     initWithAEDescNoCopy(aeDesc: cocoascript.AEDesc):cocoascript.NSAppleEventDescriptor;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1417137-initwithdescriptortype
-    initWithDescriptorType_bytes_length(descriptorType: cocoascript.DescType, bytes: void, byteCount: cocoascript.NSUInteger):cocoascript.NSAppleEventDescriptor;
+    initWithDescriptorType_bytes_length(descriptorType: cocoascript.DescType, bytes: cocoascript.const, byteCount: cocoascript.NSUInteger):cocoascript.NSAppleEventDescriptor;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1417129-initwithdescriptortype
     initWithDescriptorType_data(descriptorType: cocoascript.DescType, data: cocoascript.NSData):cocoascript.NSAppleEventDescriptor;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1414999-initwitheventclass
@@ -4396,7 +4396,7 @@ declare namespace cocoascript {
     isRecordDescriptor(): cocoascript.BOOL;
     setIsRecordDescriptor(): void;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1409337-sendeventwithoptions
-    sendEventWithOptions_timeout_error(sendOptions: cocoascript.NSAppleEventSendOptions, timeoutInSeconds: cocoascript.NSTimeInterval, error: cocoascript._Nullable):cocoascript.NSAppleEventDescriptor;
+    sendEventWithOptions_timeout_error(sendOptions: cocoascript.NSAppleEventSendOptions, timeoutInSeconds: cocoascript.NSTimeInterval, error: cocoascript.NSError):cocoascript.NSAppleEventDescriptor;
     //
     alloc():cocoascript.NSAppleEventDescriptor;
     //
@@ -5015,7 +5015,7 @@ declare namespace cocoascript {
     NSTemporaryDirectory(): void;
     setNSTemporaryDirectory(): void;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407693-urlfordirectory
-    URLForDirectory_inDomain_appropriateForURL_create_error(directory: cocoascript.NSSearchPathDirectory, domain: cocoascript.NSSearchPathDomainMask, url: cocoascript.NSURL, shouldCreate: cocoascript.BOOL, error: cocoascript._Nullable):cocoascript.NSURL;
+    URLForDirectory_inDomain_appropriateForURL_create_error(directory: cocoascript.NSSearchPathDirectory, domain: cocoascript.NSSearchPathDomainMask, url: cocoascript.NSURL, shouldCreate: cocoascript.BOOL, error: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407726-urlsfordirectory
     URLsForDirectory_inDomains(directory: cocoascript.NSSearchPathDirectory, domainMask: cocoascript.NSSearchPathDomainMask):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/1414224-nssearchpathfordirectoriesindoma
@@ -5027,9 +5027,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412643-containerurlforsecurityapplicati
     containerURLForSecurityApplicationGroupIdentifier(groupIdentifier: cocoascript.NSString):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413768-contentsofdirectoryaturl
-    contentsOfDirectoryAtURL_includingPropertiesForKeys_options_error(url: cocoascript.NSURL, keys: cocoascript.NSURLResourceKey, mask: cocoascript.NSDirectoryEnumerationOptions, error: cocoascript._Nullable):cocoascript.NSURL;
+    contentsOfDirectoryAtURL_includingPropertiesForKeys_options_error(url: cocoascript.NSURL, keys: cocoascript.NSURLResourceKey, mask: cocoascript.NSDirectoryEnumerationOptions, error: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1414584-contentsofdirectoryatpath
-    contentsOfDirectoryAtPath_error(path: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSString;
+    contentsOfDirectoryAtPath_error(path: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409571-enumeratoraturl
     enumeratorAtURL_includingPropertiesForKeys_options_errorHandler(url: cocoascript.NSURL, keys: cocoascript.NSURLResourceKey, mask: cocoascript.NSDirectoryEnumerationOptions, handler: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1408726-enumeratoratpath
@@ -5037,31 +5037,31 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409626-mountedvolumeurlsincludingresour
     mountedVolumeURLsIncludingResourceValuesForKeys_options(propertyKeys: cocoascript.NSURLResourceKey, options: cocoascript.NSVolumeEnumerationOptions):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1417353-subpathsofdirectoryatpath
-    subpathsOfDirectoryAtPath_error(path: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSString;
+    subpathsOfDirectoryAtPath_error(path: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413742-subpathsatpath
     subpathsAtPath(path: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1415371-createdirectoryaturl
-    createDirectoryAtURL_withIntermediateDirectories_attributes_error(url: cocoascript.NSURL, createIntermediates: cocoascript.BOOL, attributes: cocoascript.NSFileManager, error: cocoascript._Nullable):cocoascript.BOOL;
+    createDirectoryAtURL_withIntermediateDirectories_attributes_error(url: cocoascript.NSURL, createIntermediates: cocoascript.BOOL, attributes: cocoascript.NSFileManager, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407884-createdirectoryatpath
-    createDirectoryAtPath_withIntermediateDirectories_attributes_error(path: cocoascript.NSString, createIntermediates: cocoascript.BOOL, attributes: cocoascript.NSFileManager, error: cocoascript._Nullable):cocoascript.BOOL;
+    createDirectoryAtPath_withIntermediateDirectories_attributes_error(path: cocoascript.NSString, createIntermediates: cocoascript.BOOL, attributes: cocoascript.NSFileManager, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1410695-createfileatpath
     createFileAtPath_contents_attributes(path: cocoascript.NSString, data: cocoascript.NSData, attr: cocoascript.NSFileManager):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413590-removeitematurl
-    removeItemAtURL_error(URL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    removeItemAtURL_error(URL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1408573-removeitematpath
-    removeItemAtPath_error(path: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    removeItemAtPath_error(path: cocoascript.NSString, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1414306-trashitematurl
-    trashItemAtURL_resultingItemURL_error(url: cocoascript.NSURL, outResultingURL: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.BOOL;
+    trashItemAtURL_resultingItemURL_error(url: cocoascript.NSURL, outResultingURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412432-replaceitematurl
-    replaceItemAtURL_withItemAtURL_backupItemName_options_resultingItemURL_error(originalItemURL: cocoascript.NSURL, newItemURL: cocoascript.NSURL, backupItemName: cocoascript.NSString, options: cocoascript.NSFileManagerItemReplacementOptions, resultingURL: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.BOOL;
+    replaceItemAtURL_withItemAtURL_backupItemName_options_resultingItemURL_error(originalItemURL: cocoascript.NSURL, newItemURL: cocoascript.NSURL, backupItemName: cocoascript.NSString, options: cocoascript.NSFileManagerItemReplacementOptions, resultingURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412957-copyitematurl
-    copyItemAtURL_toURL_error(srcURL: cocoascript.NSURL, dstURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    copyItemAtURL_toURL_error(srcURL: cocoascript.NSURL, dstURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407903-copyitematpath
-    copyItemAtPath_toPath_error(srcPath: cocoascript.NSString, dstPath: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    copyItemAtPath_toPath_error(srcPath: cocoascript.NSString, dstPath: cocoascript.NSString, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1414750-moveitematurl
-    moveItemAtURL_toURL_error(srcURL: cocoascript.NSURL, dstURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    moveItemAtURL_toURL_error(srcURL: cocoascript.NSURL, dstURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413529-moveitematpath
-    moveItemAtPath_toPath_error(srcPath: cocoascript.NSString, dstPath: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    moveItemAtPath_toPath_error(srcPath: cocoascript.NSString, dstPath: cocoascript.NSString, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1408036-ubiquityidentitytoken
     ubiquityIdentityToken(): cocoascript.NSCoding;
     setUbiquityIdentityToken(): void;
@@ -5070,25 +5070,25 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1410218-isubiquitousitematurl
     isUbiquitousItemAtURL(url: cocoascript.NSURL):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413989-setubiquitous
-    setUbiquitous_itemAtURL_destinationURL_error(flag: cocoascript.BOOL, url: cocoascript.NSURL, destinationURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    setUbiquitous_itemAtURL_destinationURL_error(flag: cocoascript.BOOL, url: cocoascript.NSURL, destinationURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1410377-startdownloadingubiquitousitemat
-    startDownloadingUbiquitousItemAtURL_error(url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    startDownloadingUbiquitousItemAtURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409696-evictubiquitousitematurl
-    evictUbiquitousItemAtURL_error(url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    evictUbiquitousItemAtURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1411577-urlforpublishingubiquitousitemat
-    URLForPublishingUbiquitousItemAtURL_expirationDate_error(url: cocoascript.NSURL, outDate: cocoascript._Nullable, error: cocoascript._Nullable):cocoascript.NSURL;
+    URLForPublishingUbiquitousItemAtURL_expirationDate_error(url: cocoascript.NSURL, outDate: cocoascript.NSDate, error: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/2915262-getfileproviderservicesforitemat
     getFileProviderServicesForItemAtURL_completionHandler(url: cocoascript.NSURL, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1414652-createsymboliclinkaturl
-    createSymbolicLinkAtURL_withDestinationURL_error(url: cocoascript.NSURL, destURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    createSymbolicLinkAtURL_withDestinationURL_error(url: cocoascript.NSURL, destURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1411007-createsymboliclinkatpath
-    createSymbolicLinkAtPath_withDestinationPath_error(path: cocoascript.NSString, destPath: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    createSymbolicLinkAtPath_withDestinationPath_error(path: cocoascript.NSString, destPath: cocoascript.NSString, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1414456-linkitematurl
-    linkItemAtURL_toURL_error(srcURL: cocoascript.NSURL, dstURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    linkItemAtURL_toURL_error(srcURL: cocoascript.NSURL, dstURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1411206-linkitematpath
-    linkItemAtPath_toPath_error(srcPath: cocoascript.NSString, dstPath: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    linkItemAtPath_toPath_error(srcPath: cocoascript.NSString, dstPath: cocoascript.NSString, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1415161-destinationofsymboliclinkatpath
-    destinationOfSymbolicLinkAtPath_error(path: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSString;
+    destinationOfSymbolicLinkAtPath_error(path: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1415645-fileexistsatpath
     fileExistsAtPath(path: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1410277-fileexistsatpath
@@ -5106,23 +5106,23 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409751-displaynameatpath
     displayNameAtPath(path: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1410452-attributesofitematpath
-    attributesOfItemAtPath_error(path: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSFileManager;
+    attributesOfItemAtPath_error(path: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSFileManager;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1411896-attributesoffilesystemforpath
-    attributesOfFileSystemForPath_error(path: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSFileManager;
+    attributesOfFileSystemForPath_error(path: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSFileManager;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413667-setattributes
-    setAttributes_ofItemAtPath_error(attributes: cocoascript.NSFileManager, path: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    setAttributes_ofItemAtPath_error(attributes: cocoascript.NSFileManager, path: cocoascript.NSString, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407347-contentsatpath
     contentsAtPath(path: cocoascript.NSString):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1415275-contentsequalatpath
     contentsEqualAtPath_andPath(path1: cocoascript.NSString, path2: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407229-getrelationship
-    getRelationship_ofDirectoryAtURL_toItemAtURL_error(outRelationship: cocoascript.NSURLRelationship, directoryURL: cocoascript.NSURL, otherURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    getRelationship_ofDirectoryAtURL_toItemAtURL_error(outRelationship: cocoascript.NSURLRelationship, directoryURL: cocoascript.NSURL, otherURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1411439-getrelationship
-    getRelationship_ofDirectory_inDomain_toItemAtURL_error(outRelationship: cocoascript.NSURLRelationship, directory: cocoascript.NSSearchPathDirectory, domainMask: cocoascript.NSSearchPathDomainMask, url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    getRelationship_ofDirectory_inDomain_toItemAtURL_error(outRelationship: cocoascript.NSURLRelationship, directory: cocoascript.NSSearchPathDirectory, domainMask: cocoascript.NSSearchPathDomainMask, url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1417057-filesystemrepresentationwithpath
     fileSystemRepresentationWithPath(path: cocoascript.NSString):string;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409640-stringwithfilesystemrepresentati
-    stringWithFileSystemRepresentation_length(str: string, len: cocoascript.NSUInteger):cocoascript.NSString;
+    stringWithFileSystemRepresentation_length(str: cocoascript.const, len: cocoascript.NSUInteger):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1415163-delegate
     delegate(): cocoascript.NSFileManagerDelegate;
     setDelegate(): void;
@@ -5497,13 +5497,13 @@ declare namespace cocoascript {
     locale(): cocoascript.id;
     setLocale(): void;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1417575-scancharactersfromset
-    scanCharactersFromSet_intoString(set: cocoascript.NSCharacterSet, result: cocoascript._Nullable):cocoascript.BOOL;
+    scanCharactersFromSet_intoString(set: cocoascript.NSCharacterSet, result: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1413598-scanuptocharactersfromset
-    scanUpToCharactersFromSet_intoString(set: cocoascript.NSCharacterSet, result: cocoascript._Nullable):cocoascript.BOOL;
+    scanUpToCharactersFromSet_intoString(set: cocoascript.NSCharacterSet, result: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1407591-scanstring
-    scanString_intoString(string: cocoascript.NSString, result: cocoascript._Nullable):cocoascript.BOOL;
+    scanString_intoString(string: cocoascript.NSString, result: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1411971-scanuptostring
-    scanUpToString_intoString(string: cocoascript.NSString, result: cocoascript._Nullable):cocoascript.BOOL;
+    scanUpToString_intoString(string: cocoascript.NSString, result: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1408025-scandecimal
     scanDecimal(dcm: cocoascript.NSDecimal):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1415922-scandouble
@@ -5515,9 +5515,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1411236-scanhexfloat
     scanHexFloat(result: number):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1413857-scanhexint
-    scanHexInt(result: number):cocoascript.BOOL;
+    scanHexInt(result: cocoascript.unsigned):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1412759-scanhexlonglong
-    scanHexLongLong(result: number):cocoascript.BOOL;
+    scanHexLongLong(result: cocoascript.unsigned):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1411082-scaninteger
     scanInteger(result: cocoascript.NSInteger):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1410914-scanint
@@ -5525,7 +5525,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1412629-scanlonglong
     scanLongLong(result: number):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1408559-scanunsignedlonglong
-    scanUnsignedLongLong(result: number):cocoascript.BOOL;
+    scanUnsignedLongLong(result: cocoascript.unsigned):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscanner/1412801-atend
     atEnd(): cocoascript.BOOL;
     setAtEnd(): void;
@@ -5563,23 +5563,23 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1410114-countofindexesinrange
     countOfIndexesInRange(range: cocoascript.NSRange):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1408471-indexpassingtest
-    indexPassingTest(predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexPassingTest(predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1407357-indexespassingtest
-    indexesPassingTest(predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesPassingTest(predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1415860-indexwithoptions
-    indexWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1412401-indexeswithoptions
-    indexesWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1415301-indexinrange
-    indexInRange_options_passingTest(range: cocoascript.NSRange, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexInRange_options_passingTest(range: cocoascript.NSRange, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1412153-indexesinrange
-    indexesInRange_options_passingTest(range: cocoascript.NSRange, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesInRange_options_passingTest(range: cocoascript.NSRange, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1416352-enumeraterangesinrange
-    enumerateRangesInRange_options_usingBlock(range: cocoascript.NSRange, opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateRangesInRange_options_usingBlock(range: cocoascript.NSRange, opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1409668-enumeraterangesusingblock
-    enumerateRangesUsingBlock(block: cocoascript.BOOL):void;
+    enumerateRangesUsingBlock(block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1412673-enumeraterangeswithoptions
-    enumerateRangesWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateRangesWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1412212-isequaltoindexset
     isEqualToIndexSet(indexSet: cocoascript.NSIndexSet):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1410814-firstindex
@@ -5599,11 +5599,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1409332-getindexes
     getIndexes_maxCount_inIndexRange(indexBuffer: cocoascript.NSUInteger, bufferSize: cocoascript.NSUInteger, range: cocoascript.NSRangePointer):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1411395-enumerateindexesusingblock
-    enumerateIndexesUsingBlock(block: cocoascript.BOOL):void;
+    enumerateIndexesUsingBlock(block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1414545-enumerateindexeswithoptions
-    enumerateIndexesWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateIndexesWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsindexset/1408162-enumerateindexesinrange
-    enumerateIndexesInRange_options_usingBlock(range: cocoascript.NSRange, opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateIndexesInRange_options_usingBlock(range: cocoascript.NSRange, opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSUInteger):void;
     //
     alloc():cocoascript.NSIndexSet;
     //
@@ -5705,13 +5705,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1418344-rangeofunit
     rangeOfUnit_inUnit_forDate(smaller: cocoascript.NSCalendarUnit, larger: cocoascript.NSCalendarUnit, date: cocoascript.NSDate):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1408013-rangeofunit
-    rangeOfUnit_startDate_interval_forDate(unit: cocoascript.NSCalendarUnit, datep: cocoascript._Nullable, tip: cocoascript.NSTimeInterval, date: cocoascript.NSDate):cocoascript.BOOL;
+    rangeOfUnit_startDate_interval_forDate(unit: cocoascript.NSCalendarUnit, datep: cocoascript.NSDate, tip: cocoascript.NSTimeInterval, date: cocoascript.NSDate):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1413286-rangeofweekendstartdate
-    rangeOfWeekendStartDate_interval_containingDate(datep: cocoascript._Nullable, tip: cocoascript.NSTimeInterval, date: cocoascript.NSDate):cocoascript.BOOL;
+    rangeOfWeekendStartDate_interval_containingDate(datep: cocoascript.NSDate, tip: cocoascript.NSTimeInterval, date: cocoascript.NSDate):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1417161-startofdayfordate
     startOfDayForDate(date: cocoascript.NSDate):cocoascript.NSDate;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1413938-enumeratedatesstartingafterdate
-    enumerateDatesStartingAfterDate_matchingComponents_options_usingBlock(start: cocoascript.NSDate, comps: cocoascript.NSDateComponents, opts: cocoascript.NSCalendarOptions, block: cocoascript.BOOL):void;
+    enumerateDatesStartingAfterDate_matchingComponents_options_usingBlock(start: cocoascript.NSDate, comps: cocoascript.NSDateComponents, opts: cocoascript.NSCalendarOptions, block: cocoascript.NSDate):void;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1416165-nextdateafterdate
     nextDateAfterDate_matchingComponents_options(date: cocoascript.NSDate, comps: cocoascript.NSDateComponents, options: cocoascript.NSCalendarOptions):cocoascript.NSDate;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1416814-nextdateafterdate
@@ -5733,7 +5733,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1413628-datewithera
     dateWithEra_yearForWeekOfYear_weekOfYear_weekday_hour_minute_second_nanosecond(eraValue: cocoascript.NSInteger, yearValue: cocoascript.NSInteger, weekValue: cocoascript.NSInteger, weekdayValue: cocoascript.NSInteger, hourValue: cocoascript.NSInteger, minuteValue: cocoascript.NSInteger, secondValue: cocoascript.NSInteger, nanosecondValue: cocoascript.NSInteger):cocoascript.NSDate;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1409905-nextweekendstartdate
-    nextWeekendStartDate_interval_options_afterDate(datep: cocoascript._Nullable, tip: cocoascript.NSTimeInterval, options: cocoascript.NSCalendarOptions, date: cocoascript.NSDate):cocoascript.BOOL;
+    nextWeekendStartDate_interval_options_afterDate(datep: cocoascript.NSDate, tip: cocoascript.NSTimeInterval, options: cocoascript.NSCalendarOptions, date: cocoascript.NSDate):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1415661-comparedate
     compareDate_toDate_toUnitGranularity(date1: cocoascript.NSDate, date2: cocoascript.NSDate, unit: cocoascript.NSCalendarUnit):cocoascript.NSComparisonResult;
     // doc://com.apple.documentation/documentation/foundation/nscalendar/1411431-isdate
@@ -6157,7 +6157,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1543287-initwithobjects
     initWithObjects(...: cocoascript.):cocoascript.NSOrderedSet;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1411910-initwithobjects
-    initWithObjects_count(objects: cocoascript.const, cnt: cocoascript.NSUInteger):cocoascript.NSOrderedSet;
+    initWithObjects_count(objects: cocoascript._Nonnull, cnt: cocoascript.NSUInteger):cocoascript.NSOrderedSet;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1412402-initwithorderedset
     initWithOrderedSet(set: cocoascript.NSOrderedSet):cocoascript.NSOrderedSet;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1411658-initwithorderedset
@@ -6176,11 +6176,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1408681-containsobject
     containsObject(object: cocoascript.):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1412332-enumerateobjectsatindexes
-    enumerateObjectsAtIndexes_options_usingBlock(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateObjectsAtIndexes_options_usingBlock(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1413531-enumerateobjectsusingblock
-    enumerateObjectsUsingBlock(block: cocoascript.BOOL):void;
+    enumerateObjectsUsingBlock(block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1409354-enumerateobjectswithoptions
-    enumerateObjectsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateObjectsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1409765-firstobject
     firstObject(): any;
     setFirstObject(): void;
@@ -6198,17 +6198,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1417701-indexofobject
     indexOfObject_options_usingComparator(object: cocoascript.NSRange, opts: cocoascript.NSBinarySearchingOptions, cmp: cocoascript.NSComparator):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1417531-indexofobjectatindexes
-    indexOfObjectAtIndexes_options_passingTest(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexOfObjectAtIndexes_options_passingTest(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1413003-indexofobjectpassingtest
-    indexOfObjectPassingTest(predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexOfObjectPassingTest(predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1408700-indexofobjectwithoptions
-    indexOfObjectWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSUInteger;
+    indexOfObjectWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1413586-indexesofobjectsatindexes
-    indexesOfObjectsAtIndexes_options_passingTest(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesOfObjectsAtIndexes_options_passingTest(s: cocoascript.NSIndexSet, opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1411331-indexesofobjectspassingtest
-    indexesOfObjectsPassingTest(predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesOfObjectsPassingTest(predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1415944-indexesofobjectswithoptions
-    indexesOfObjectsWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.BOOL):cocoascript.NSIndexSet;
+    indexesOfObjectsWithOptions_passingTest(opts: cocoascript.NSEnumerationOptions, predicate: cocoascript.NSUInteger):cocoascript.NSIndexSet;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1409430-objectenumerator
     objectEnumerator():cocoascript.NSEnumerator;
     // doc://com.apple.documentation/documentation/foundation/nsorderedset/1407607-reverseobjectenumerator
@@ -6284,7 +6284,7 @@ declare namespace cocoascript {
    */
   interface NSRegularExpression extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsregularexpression/1410900-initwithpattern
-    initWithPattern_options_error(pattern: cocoascript.NSString, options: cocoascript.NSRegularExpressionOptions, error: cocoascript._Nullable):cocoascript.NSRegularExpression;
+    initWithPattern_options_error(pattern: cocoascript.NSString, options: cocoascript.NSRegularExpressionOptions, error: cocoascript.NSError):cocoascript.NSRegularExpression;
     // doc://com.apple.documentation/documentation/foundation/nsregularexpression/1414932-pattern
     pattern(): cocoascript.NSString;
     setPattern(): void;
@@ -6297,7 +6297,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsregularexpression/1414308-numberofmatchesinstring
     numberOfMatchesInString_options_range(string: cocoascript.NSString, options: cocoascript.NSMatchingOptions, range: cocoascript.NSRange):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/foundation/nsregularexpression/1409687-enumeratematchesinstring
-    enumerateMatchesInString_options_range_usingBlock(string: cocoascript.NSString, options: cocoascript.NSMatchingOptions, range: cocoascript.NSRange, block: cocoascript.BOOL):void;
+    enumerateMatchesInString_options_range_usingBlock(string: cocoascript.NSString, options: cocoascript.NSMatchingOptions, range: cocoascript.NSRange, block: cocoascript.NSMatchingFlags):void;
     // doc://com.apple.documentation/documentation/foundation/nsregularexpression/1412446-matchesinstring
     matchesInString_options_range(string: cocoascript.NSString, options: cocoascript.NSMatchingOptions, range: cocoascript.NSRange):cocoascript.NSTextCheckingResult;
     // doc://com.apple.documentation/documentation/foundation/nsregularexpression/1409838-firstmatchinstring
@@ -6825,11 +6825,11 @@ declare namespace cocoascript {
     description(): cocoascript.NSString;
     setDescription(): void;
     // doc://com.apple.documentation/documentation/foundation/nsxmlnode/1409813-nodesforxpath
-    nodesForXPath_error(xpath: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSXMLNode;
+    nodesForXPath_error(xpath: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSXMLNode;
     // doc://com.apple.documentation/documentation/foundation/nsxmlnode/1409768-objectsforxquery
-    objectsForXQuery_error(xquery: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSArray;
+    objectsForXQuery_error(xquery: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsxmlnode/1409792-objectsforxquery
-    objectsForXQuery_constants_error(xquery: cocoascript.NSString, constants: cocoascript.NSXMLNode, error: cocoascript._Nullable):cocoascript.NSArray;
+    objectsForXQuery_constants_error(xquery: cocoascript.NSString, constants: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nsxmlnode/1409826-xpath
     XPath(): cocoascript.NSString;
     setXPath(): void;
@@ -6958,7 +6958,7 @@ declare namespace cocoascript {
    */
   interface NSAppleScript extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsapplescript/1412508-initwithcontentsofurl
-    initWithContentsOfURL_error(url: cocoascript.NSURL, errorInfo: cocoascript._Nullable):cocoascript.NSAppleScript;
+    initWithContentsOfURL_error(url: cocoascript.NSURL, errorInfo: cocoascript.NSString):cocoascript.NSAppleScript;
     // doc://com.apple.documentation/documentation/foundation/nsapplescript/1414313-initwithsource
     initWithSource(source: cocoascript.NSString):cocoascript.NSAppleScript;
     // doc://com.apple.documentation/documentation/foundation/nsapplescript/1410407-compiled
@@ -6968,11 +6968,11 @@ declare namespace cocoascript {
     source(): cocoascript.NSString;
     setSource(): void;
     // doc://com.apple.documentation/documentation/foundation/nsapplescript/1407582-compileandreturnerror
-    compileAndReturnError(errorInfo: cocoascript._Nullable):cocoascript.BOOL;
+    compileAndReturnError(errorInfo: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsapplescript/1410034-executeandreturnerror
-    executeAndReturnError(errorInfo: cocoascript._Nullable):cocoascript.NSAppleEventDescriptor;
+    executeAndReturnError(errorInfo: cocoascript.NSString):cocoascript.NSAppleEventDescriptor;
     // doc://com.apple.documentation/documentation/foundation/nsapplescript/1410807-executeappleevent
-    executeAppleEvent_error(event: cocoascript.NSAppleEventDescriptor, errorInfo: cocoascript._Nullable):cocoascript.NSAppleEventDescriptor;
+    executeAppleEvent_error(event: cocoascript.NSAppleEventDescriptor, errorInfo: cocoascript.NSString):cocoascript.NSAppleEventDescriptor;
     // doc://com.apple.documentation/documentation/foundation/nsapplescript/1387495-richtextsource
     richTextSource(): cocoascript.NSAttributedString;
     setRichTextSource(): void;
@@ -7316,7 +7316,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1418048-performactivitywithoptions
     performActivityWithOptions_reason_usingBlock(options: cocoascript.NSActivityOptions, reason: cocoascript.NSString, block: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1617030-performexpiringactivitywithreaso
-    performExpiringActivityWithReason_usingBlock(reason: cocoascript.NSString, block: cocoascript.BOOL):void;
+    performExpiringActivityWithReason_usingBlock(reason: cocoascript.NSString, block: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1417480-thermalstate
     thermalState(): cocoascript.NSProcessInfoThermalState;
     setThermalState(): void;
@@ -7420,7 +7420,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsinputstream/1411544-read
     read_maxLength(buffer: number, len: cocoascript.NSUInteger):cocoascript.NSInteger;
     // doc://com.apple.documentation/documentation/foundation/nsinputstream/1416811-getbuffer
-    getBuffer_length(buffer: cocoascript._Nullable, len: cocoascript.NSUInteger):cocoascript.BOOL;
+    getBuffer_length(buffer: number, len: cocoascript.NSUInteger):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsinputstream/1409410-hasbytesavailable
     hasBytesAvailable(): cocoascript.BOOL;
     setHasBytesAvailable(): void;
@@ -7505,15 +7505,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1411533-coordinateaccesswithintents
     coordinateAccessWithIntents_queue_byAccessor(intents: cocoascript.NSFileAccessIntent, queue: cocoascript.NSOperationQueue, accessor: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1407416-coordinatereadingitematurl
-    coordinateReadingItemAtURL_options_error_byAccessor(url: cocoascript.NSURL, options: cocoascript.NSFileCoordinatorReadingOptions, outError: cocoascript._Nullable, reader: cocoascript.NSURL):void;
+    coordinateReadingItemAtURL_options_error_byAccessor(url: cocoascript.NSURL, options: cocoascript.NSFileCoordinatorReadingOptions, outError: cocoascript.NSError, reader: cocoascript.NSURL):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413344-coordinatewritingitematurl
-    coordinateWritingItemAtURL_options_error_byAccessor(url: cocoascript.NSURL, options: cocoascript.NSFileCoordinatorWritingOptions, outError: cocoascript._Nullable, writer: cocoascript.NSURL):void;
+    coordinateWritingItemAtURL_options_error_byAccessor(url: cocoascript.NSURL, options: cocoascript.NSFileCoordinatorWritingOptions, outError: cocoascript.NSError, writer: cocoascript.NSURL):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1413385-coordinatereadingitematurl
-    coordinateReadingItemAtURL_options_writingItemAtURL_options_error_byAccessor(readingURL: cocoascript.NSURL, readingOptions: cocoascript.NSFileCoordinatorReadingOptions, writingURL: cocoascript.NSURL, writingOptions: cocoascript.NSFileCoordinatorWritingOptions, outError: cocoascript._Nullable, readerWriter: cocoascript.NSURL):void;
+    coordinateReadingItemAtURL_options_writingItemAtURL_options_error_byAccessor(readingURL: cocoascript.NSURL, readingOptions: cocoascript.NSFileCoordinatorReadingOptions, writingURL: cocoascript.NSURL, writingOptions: cocoascript.NSFileCoordinatorWritingOptions, outError: cocoascript.NSError, readerWriter: cocoascript.NSURL):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1408970-coordinatewritingitematurl
-    coordinateWritingItemAtURL_options_writingItemAtURL_options_error_byAccessor(url1: cocoascript.NSURL, options1: cocoascript.NSFileCoordinatorWritingOptions, url2: cocoascript.NSURL, options2: cocoascript.NSFileCoordinatorWritingOptions, outError: cocoascript._Nullable, writer: cocoascript.NSURL):void;
+    coordinateWritingItemAtURL_options_writingItemAtURL_options_error_byAccessor(url1: cocoascript.NSURL, options1: cocoascript.NSFileCoordinatorWritingOptions, url2: cocoascript.NSURL, options2: cocoascript.NSFileCoordinatorWritingOptions, outError: cocoascript.NSError, writer: cocoascript.NSURL):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1412420-prepareforreadingitemsaturls
-    prepareForReadingItemsAtURLs_options_writingItemsAtURLs_options_error_byAccessor(readingURLs: cocoascript.NSURL, readingOptions: cocoascript.NSFileCoordinatorReadingOptions, writingURLs: cocoascript.NSURL, writingOptions: cocoascript.NSFileCoordinatorWritingOptions, outError: cocoascript._Nullable, batchAccessor: void):void;
+    prepareForReadingItemsAtURLs_options_writingItemsAtURLs_options_error_byAccessor(readingURLs: cocoascript.NSURL, readingOptions: cocoascript.NSFileCoordinatorReadingOptions, writingURLs: cocoascript.NSURL, writingOptions: cocoascript.NSFileCoordinatorWritingOptions, outError: cocoascript.NSError, batchAccessor: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1408668-itematurl
     itemAtURL_willMoveToURL(oldURL: cocoascript.NSURL, newURL: cocoascript.NSURL):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilecoordinator/1410328-itematurl
@@ -7625,9 +7625,9 @@ declare namespace cocoascript {
     groupedResults(): cocoascript.NSMetadataQueryResultGroup;
     setGroupedResults(): void;
     // doc://com.apple.documentation/documentation/foundation/nsmetadataquery/1415856-enumerateresultsusingblock
-    enumerateResultsUsingBlock(block: cocoascript.BOOL):void;
+    enumerateResultsUsingBlock(block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsmetadataquery/1415123-enumerateresultswithoptions
-    enumerateResultsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.BOOL):void;
+    enumerateResultsWithOptions_usingBlock(opts: cocoascript.NSEnumerationOptions, block: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsmetadataquery/1418401-valuelists
     valueLists(): cocoascript.NSMetadataQueryAttributeValueTuple;
     setValueLists(): void;
@@ -8267,7 +8267,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdecimalnumber/1412692-initwithdecimal
     initWithDecimal(dcm: cocoascript.NSDecimal):cocoascript.NSDecimalNumber;
     // doc://com.apple.documentation/documentation/foundation/nsdecimalnumber/1416003-initwithmantissa
-    initWithMantissa_exponent_isNegative(mantissa: number, exponent: cocoascript.short, flag: cocoascript.BOOL):cocoascript.NSDecimalNumber;
+    initWithMantissa_exponent_isNegative(mantissa: cocoascript.unsigned, exponent: cocoascript.short, flag: cocoascript.BOOL):cocoascript.NSDecimalNumber;
     // doc://com.apple.documentation/documentation/foundation/nsdecimalnumber/1409902-initwithstring
     initWithString(numberValue: cocoascript.NSString):cocoascript.NSDecimalNumber;
     // doc://com.apple.documentation/documentation/foundation/nsdecimalnumber/1409201-initwithstring
@@ -8344,7 +8344,7 @@ declare namespace cocoascript {
     generatesDecimalNumbers(): cocoascript.BOOL;
     setGeneratesDecimalNumbers(): void;
     // doc://com.apple.documentation/documentation/foundation/nsnumberformatter/1412588-getobjectvalue
-    getObjectValue_forString_range_error(obj: cocoascript._Nullable, string: cocoascript.NSString, rangep: cocoascript.NSRange, error: cocoascript._Nullable):cocoascript.BOOL;
+    getObjectValue_forString_range_error(obj: cocoascript.out, string: cocoascript.NSString, rangep: cocoascript.NSRange, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsnumberformatter/1408845-numberfromstring
     numberFromString(string: cocoascript.NSString):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/foundation/nsnumberformatter/1418046-stringfromnumber
@@ -8554,7 +8554,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdateformatter/1415810-stringfromdate
     stringFromDate(date: cocoascript.NSDate):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsdateformatter/1409248-getobjectvalue
-    getObjectValue_forString_range_error(obj: cocoascript._Nullable, string: cocoascript.NSString, rangep: cocoascript.NSRange, error: cocoascript._Nullable):cocoascript.BOOL;
+    getObjectValue_forString_range_error(obj: cocoascript.out, string: cocoascript.NSString, rangep: cocoascript.NSRange, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsdateformatter/1415411-datestyle
     dateStyle(): cocoascript.NSDateFormatterStyle;
     setDateStyle(): void;
@@ -8737,33 +8737,33 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411311-seektoendoffile
     seekToEndOfFile():number;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset
-    seekToFileOffset(offset: number):void;
+    seekToFileOffset(offset: cocoascript.unsigned):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile
     closeFile():void;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411016-synchronizefile
     synchronizeFile():void;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset
-    truncateFileAtOffset(offset: number):void;
+    truncateFileAtOffset(offset: cocoascript.unsigned):void;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411174-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.NSFileHandle;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror
-    closeAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    closeAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset
-    seekToOffset_error(offset: number, error: cocoascript._Nullable):cocoascript.BOOL;
+    seekToOffset_error(offset: cocoascript.unsigned, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror
-    synchronizeAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    synchronizeAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset
-    truncateAtOffset_error(offset: number, error: cocoascript._Nullable):cocoascript.BOOL;
+    truncateAtOffset_error(offset: cocoascript.unsigned, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset
-    getOffset_error(offsetInFile: number, error: cocoascript._Nullable):cocoascript.BOOL;
+    getOffset_error(offsetInFile: cocoascript.out, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172527-readdatatoendoffileandreturnerro
-    readDataToEndOfFileAndReturnError(error: cocoascript._Nullable):cocoascript.NSData;
+    readDataToEndOfFileAndReturnError(error: cocoascript.NSError):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172528-readdatauptolength
-    readDataUpToLength_error(length: cocoascript.NSUInteger, error: cocoascript._Nullable):cocoascript.NSData;
+    readDataUpToLength_error(length: cocoascript.NSUInteger, error: cocoascript.NSError):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset
-    seekToEndReturningOffset_error(offsetInFile: number, error: cocoascript._Nullable):cocoascript.BOOL;
+    seekToEndReturningOffset_error(offsetInFile: cocoascript.out, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172533-writedata
-    writeData_error(data: cocoascript.NSData, error: cocoascript._Nullable):cocoascript.BOOL;
+    writeData_error(data: cocoascript.NSData, error: cocoascript.NSError):cocoascript.BOOL;
     //
     alloc():cocoascript.NSFileHandle;
     //
@@ -8859,7 +8859,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsmutablearray/1414396-sortwithoptions
     sortWithOptions_usingComparator(opts: cocoascript.NSSortOptions, cmptr: cocoascript.NSComparator):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutablearray/1408332-sortusingfunction
-    sortUsingFunction_context(compare: void, context: void):void;
+    sortUsingFunction_context(compare: cocoascript.NSInteger, context: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutablearray/1412273-sortusingselector
     sortUsingSelector(comparator: cocoascript.SEL):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutablearray/1409527-initwithcoder
@@ -8881,7 +8881,7 @@ declare namespace cocoascript {
    */
   interface NSFastEnumeration {
     // doc://com.apple.documentation/documentation/foundation/nsfastenumeration/1412867-countbyenumeratingwithstate
-    countByEnumeratingWithState_objects_count(state: cocoascript.NSFastEnumerationState, buffer: cocoascript._Nullable, len: cocoascript.NSUInteger):cocoascript.NSUInteger;
+    countByEnumeratingWithState_objects_count(state: cocoascript.NSFastEnumerationState, buffer: cocoascript.NSFastEnumeration, len: cocoascript.NSUInteger):cocoascript.NSUInteger;
   }
 }
 declare namespace cocoascript {
@@ -9253,7 +9253,7 @@ declare namespace cocoascript {
    */
   interface NSKeyedUnarchiver extends NSCoder {
     // doc://com.apple.documentation/documentation/foundation/nskeyedunarchiver/2962883-initforreadingfromdata
-    initForReadingFromData_error(data: cocoascript.NSData, error: cocoascript._Nullable):cocoascript.NSKeyedUnarchiver;
+    initForReadingFromData_error(data: cocoascript.NSData, error: cocoascript.NSError):cocoascript.NSKeyedUnarchiver;
     // doc://com.apple.documentation/documentation/foundation/nskeyedunarchiver/2962882-init
     init():cocoascript.NSKeyedUnarchiver;
     // doc://com.apple.documentation/documentation/foundation/nskeyedunarchiver/1410862-initforreadingwithdata
@@ -10606,23 +10606,23 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1409101-setorthography
     setOrthography_range(orthography: cocoascript.NSOrthography, range: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875124-enumeratetagsinrange
-    enumerateTagsInRange_unit_scheme_options_usingBlock(range: cocoascript.NSRange, unit: cocoascript.NSLinguisticTaggerUnit, scheme: cocoascript.NSLinguisticTagScheme, options: cocoascript.NSLinguisticTaggerOptions, block: cocoascript.BOOL):void;
+    enumerateTagsInRange_unit_scheme_options_usingBlock(range: cocoascript.NSRange, unit: cocoascript.NSLinguisticTaggerUnit, scheme: cocoascript.NSLinguisticTagScheme, options: cocoascript.NSLinguisticTaggerOptions, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1410036-enumeratetagsinrange
-    enumerateTagsInRange_scheme_options_usingBlock(range: cocoascript.NSRange, tagScheme: cocoascript.NSLinguisticTagScheme, opts: cocoascript.NSLinguisticTaggerOptions, block: cocoascript.BOOL):void;
+    enumerateTagsInRange_scheme_options_usingBlock(range: cocoascript.NSRange, tagScheme: cocoascript.NSLinguisticTagScheme, opts: cocoascript.NSLinguisticTaggerOptions, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875123-tagatindex
     tagAtIndex_unit_scheme_tokenRange(charIndex: cocoascript.NSUInteger, unit: cocoascript.NSLinguisticTaggerUnit, scheme: cocoascript.NSLinguisticTagScheme, tokenRange: cocoascript.NSRangePointer):cocoascript.NSLinguisticTag;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1411834-tagatindex
     tagAtIndex_scheme_tokenRange_sentenceRange(charIndex: cocoascript.NSUInteger, scheme: cocoascript.NSLinguisticTagScheme, tokenRange: cocoascript.NSRangePointer, sentenceRange: cocoascript.NSRangePointer):cocoascript.NSLinguisticTag;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875120-tagsinrange
-    tagsInRange_unit_scheme_options_tokenRanges(range: cocoascript.NSRange, unit: cocoascript.NSLinguisticTaggerUnit, scheme: cocoascript.NSLinguisticTagScheme, options: cocoascript.NSLinguisticTaggerOptions, tokenRanges: cocoascript._Nullable):cocoascript.NSLinguisticTag;
+    tagsInRange_unit_scheme_options_tokenRanges(range: cocoascript.NSRange, unit: cocoascript.NSLinguisticTaggerUnit, scheme: cocoascript.NSLinguisticTagScheme, options: cocoascript.NSLinguisticTaggerOptions, tokenRanges: cocoascript.NSValue):cocoascript.NSLinguisticTag;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1417826-tagsinrange
-    tagsInRange_scheme_options_tokenRanges(range: cocoascript.NSRange, tagScheme: cocoascript.NSString, opts: cocoascript.NSLinguisticTaggerOptions, tokenRanges: cocoascript._Nullable):cocoascript.NSString;
+    tagsInRange_scheme_options_tokenRanges(range: cocoascript.NSRange, tagScheme: cocoascript.NSString, opts: cocoascript.NSLinguisticTaggerOptions, tokenRanges: cocoascript.NSValue):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/2875122-tokenrangeatindex
     tokenRangeAtIndex_unit(charIndex: cocoascript.NSUInteger, unit: cocoascript.NSLinguisticTaggerUnit):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1415532-sentencerangeforrange
     sentenceRangeForRange(range: cocoascript.NSRange):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1408537-possibletagsatindex
-    possibleTagsAtIndex_scheme_tokenRange_sentenceRange_scores(charIndex: cocoascript.NSUInteger, tagScheme: cocoascript.NSString, tokenRange: cocoascript.NSRangePointer, sentenceRange: cocoascript.NSRangePointer, scores: cocoascript._Nullable):cocoascript.NSString;
+    possibleTagsAtIndex_scheme_tokenRange_sentenceRange_scores(charIndex: cocoascript.NSUInteger, tagScheme: cocoascript.NSString, tokenRange: cocoascript.NSRangePointer, sentenceRange: cocoascript.NSRangePointer, scores: cocoascript.NSValue):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nslinguistictagger/1417623-stringeditedinrange
     stringEditedInRange_changeInLength(newRange: cocoascript.NSRange, delta: cocoascript.NSInteger):void;
     //
@@ -10640,7 +10640,7 @@ declare namespace cocoascript {
    */
   interface NSDataDetector extends NSRegularExpression {
     // doc://com.apple.documentation/documentation/foundation/nsdatadetector/1409829-initwithtypes
-    initWithTypes_error(checkingTypes: cocoascript.NSTextCheckingTypes, error: cocoascript._Nullable):cocoascript.NSDataDetector;
+    initWithTypes_error(checkingTypes: cocoascript.NSTextCheckingTypes, error: cocoascript.NSError):cocoascript.NSDataDetector;
     // doc://com.apple.documentation/documentation/foundation/nsdatadetector/1412372-checkingtypes
     checkingTypes(): cocoascript.NSTextCheckingTypes;
     setCheckingTypes(): void;
@@ -10810,7 +10810,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsbundleresourcerequest/1614840-beginaccessingresourceswithcompl
     beginAccessingResourcesWithCompletionHandler(completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/foundation/nsbundleresourcerequest/1614834-conditionallybeginaccessingresou
-    conditionallyBeginAccessingResourcesWithCompletionHandler(completionHandler: cocoascript.BOOL):void;
+    conditionallyBeginAccessingResourcesWithCompletionHandler(completionHandler: void):void;
     // doc://com.apple.documentation/documentation/foundation/nsbundleresourcerequest/1614843-endaccessingresources
     endAccessingResources():void;
     // doc://com.apple.documentation/documentation/foundation/nsbundleresourcerequest/1614841-loadingpriority
@@ -11183,13 +11183,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nssocketport/1399549-init
     init():cocoascript.NSSocketPort;
     // doc://com.apple.documentation/documentation/foundation/nssocketport/1399488-initwithtcpport
-    initWithTCPPort(port: cocoascript.short):cocoascript.NSSocketPort;
+    initWithTCPPort(port: cocoascript.unsigned):cocoascript.NSSocketPort;
     // doc://com.apple.documentation/documentation/foundation/nssocketport/1399497-initwithprotocolfamily
     initWithProtocolFamily_socketType_protocol_address(family: number, type: number, protocol: number, address: cocoascript.NSData):cocoascript.NSSocketPort;
     // doc://com.apple.documentation/documentation/foundation/nssocketport/1399484-initwithprotocolfamily
     initWithProtocolFamily_socketType_protocol_socket(family: number, type: number, protocol: number, sock: cocoascript.NSSocketNativeHandle):cocoascript.NSSocketPort;
     // doc://com.apple.documentation/documentation/foundation/nssocketport/1399474-initremotewithtcpport
-    initRemoteWithTCPPort_host(port: cocoascript.short, hostName: cocoascript.NSString):cocoascript.NSSocketPort;
+    initRemoteWithTCPPort_host(port: cocoascript.unsigned, hostName: cocoascript.NSString):cocoascript.NSSocketPort;
     // doc://com.apple.documentation/documentation/foundation/nssocketport/1399535-initremotewithprotocolfamily
     initRemoteWithProtocolFamily_socketType_protocol_address(family: number, type: number, protocol: number, address: cocoascript.NSData):cocoascript.NSSocketPort;
     // doc://com.apple.documentation/documentation/foundation/nssocketport/1399480-address
@@ -11345,7 +11345,7 @@ declare namespace cocoascript {
     referenceDate(): cocoascript.NSDate;
     setReferenceDate(): void;
     // doc://com.apple.documentation/documentation/foundation/nsdatecomponentsformatter/1412149-getobjectvalue
-    getObjectValue_forString_errorDescription(obj: cocoascript._Nullable, string: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    getObjectValue_forString_errorDescription(obj: cocoascript.out, string: cocoascript.NSString, error: cocoascript.NSString):cocoascript.BOOL;
     //
     alloc():cocoascript.NSDateComponentsFormatter;
     //
@@ -11400,7 +11400,7 @@ declare namespace cocoascript {
     forFoodEnergyUse(): cocoascript.BOOL;
     setForFoodEnergyUse(): void;
     // doc://com.apple.documentation/documentation/foundation/nsenergyformatter/1414825-getobjectvalue
-    getObjectValue_forString_errorDescription(obj: cocoascript._Nullable, string: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    getObjectValue_forString_errorDescription(obj: cocoascript.out, string: cocoascript.NSString, error: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsenergyformatter/1412614-numberformatter
     numberFormatter(): cocoascript.NSNumberFormatter;
     setNumberFormatter(): void;
@@ -11433,7 +11433,7 @@ declare namespace cocoascript {
     forPersonHeightUse(): cocoascript.BOOL;
     setForPersonHeightUse(): void;
     // doc://com.apple.documentation/documentation/foundation/nslengthformatter/1413280-getobjectvalue
-    getObjectValue_forString_errorDescription(obj: cocoascript._Nullable, string: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    getObjectValue_forString_errorDescription(obj: cocoascript.out, string: cocoascript.NSString, error: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nslengthformatter/1417778-numberformatter
     numberFormatter(): cocoascript.NSNumberFormatter;
     setNumberFormatter(): void;
@@ -11466,7 +11466,7 @@ declare namespace cocoascript {
     forPersonMassUse(): cocoascript.BOOL;
     setForPersonMassUse(): void;
     // doc://com.apple.documentation/documentation/foundation/nsmassformatter/1417304-getobjectvalue
-    getObjectValue_forString_errorDescription(obj: cocoascript._Nullable, string: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    getObjectValue_forString_errorDescription(obj: cocoascript.out, string: cocoascript.NSString, error: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsmassformatter/1418462-numberformatter
     numberFormatter(): cocoascript.NSNumberFormatter;
     setNumberFormatter(): void;
@@ -11508,7 +11508,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatter/1642979-personnamecomponentsfromstring
     personNameComponentsFromString(string: cocoascript.NSString):cocoascript.NSPersonNameComponents;
     // doc://com.apple.documentation/documentation/foundation/nspersonnamecomponentsformatter/1408262-getobjectvalue
-    getObjectValue_forString_errorDescription(obj: cocoascript._Nullable, string: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.BOOL;
+    getObjectValue_forString_errorDescription(obj: cocoascript.out, string: cocoascript.NSString, error: cocoascript.NSString):cocoascript.BOOL;
     //
     alloc():cocoascript.NSPersonNameComponentsFormatter;
     //
@@ -12854,9 +12854,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsurlcredentialstorage/1408664-removecredential
     removeCredential_forProtectionSpace(credential: cocoascript.NSURLCredential, space: cocoascript.NSURLProtectionSpace):void;
     // doc://com.apple.documentation/documentation/foundation/nsurlcredentialstorage/1407695-removecredential
-    removeCredential_forProtectionSpace_options(credential: cocoascript.NSURLCredential, space: cocoascript.NSURLProtectionSpace, options: cocoascript.NSURLCredentialStorage):void;
+    removeCredential_forProtectionSpace_options(credential: cocoascript.NSURLCredential, space: cocoascript.NSURLProtectionSpace, options: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/foundation/nsurlcredentialstorage/1407237-removecredential
-    removeCredential_forProtectionSpace_options_task(credential: cocoascript.NSURLCredential, protectionSpace: cocoascript.NSURLProtectionSpace, options: cocoascript.NSURLCredentialStorage, task: cocoascript.NSURLSessionTask):void;
+    removeCredential_forProtectionSpace_options_task(credential: cocoascript.NSURLCredential, protectionSpace: cocoascript.NSURLProtectionSpace, options: cocoascript.NSString, task: cocoascript.NSURLSessionTask):void;
     // doc://com.apple.documentation/documentation/foundation/nsurlcredentialstorage/1407227-setcredential
     setCredential_forProtectionSpace(credential: cocoascript.NSURLCredential, space: cocoascript.NSURLProtectionSpace):void;
     // doc://com.apple.documentation/documentation/foundation/nsurlcredentialstorage/1412703-setcredential
@@ -13190,7 +13190,7 @@ declare namespace cocoascript {
     qualityOfService(): cocoascript.NSQualityOfService;
     setQualityOfService(): void;
     // doc://com.apple.documentation/documentation/foundation/nstask/2890105-launchandreturnerror
-    launchAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    launchAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     //
     alloc():cocoascript.NSTask;
     //
@@ -13206,7 +13206,7 @@ declare namespace cocoascript {
    */
   interface NSUserScriptTask extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsuserscripttask/1409998-initwithurl
-    initWithURL_error(url: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.NSUserScriptTask;
+    initWithURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.NSUserScriptTask;
     // doc://com.apple.documentation/documentation/foundation/nsuserscripttask/1408618-scripturl
     scriptURL(): cocoascript.NSURL;
     setScriptURL(): void;
@@ -13377,7 +13377,7 @@ declare namespace cocoascript {
     includesPeerToPeer(): cocoascript.BOOL;
     setIncludesPeerToPeer(): void;
     // doc://com.apple.documentation/documentation/foundation/nsnetservice/1418325-getinputstream
-    getInputStream_outputStream(inputStream: cocoascript._Nullable, outputStream: cocoascript._Nullable):cocoascript.BOOL;
+    getInputStream_outputStream(inputStream: cocoascript.NSInputStream, outputStream: cocoascript.NSOutputStream):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsnetservice/1409022-name
     name(): cocoascript.NSString;
     setName(): void;
@@ -13627,7 +13627,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsmutableorderedset/1408009-addobject
     addObject(object: cocoascript.):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutableorderedset/1413840-addobjects
-    addObjects_count(objects: cocoascript.const, count: cocoascript.NSUInteger):void;
+    addObjects_count(objects: cocoascript._Nonnull, count: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutableorderedset/1417200-addobjectsfromarray
     addObjectsFromArray(array: cocoascript.NSArray):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutableorderedset/1416634-insertobject
@@ -13653,7 +13653,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsmutableorderedset/1416127-replaceobjectsatindexes
     replaceObjectsAtIndexes_withObjects(indexes: cocoascript.NSIndexSet, objects: cocoascript.NSArray):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutableorderedset/1415340-replaceobjectsinrange
-    replaceObjectsInRange_withObjects_count(range: cocoascript.NSRange, objects: cocoascript.const, count: cocoascript.NSUInteger):void;
+    replaceObjectsInRange_withObjects_count(range: cocoascript.NSRange, objects: cocoascript._Nonnull, count: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutableorderedset/1411158-setobject
     setObject(obj: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/foundation/nsmutableorderedset/1417677-moveobjectsatindexes
@@ -13721,13 +13721,13 @@ declare namespace cocoascript {
    */
   interface NSXMLDocument extends NSXMLNode {
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1418467-initwithcontentsofurl
-    initWithContentsOfURL_options_error(url: cocoascript.NSURL, mask: cocoascript.NSXMLNodeOptions, error: cocoascript._Nullable):cocoascript.NSXMLDocument;
+    initWithContentsOfURL_options_error(url: cocoascript.NSURL, mask: cocoascript.NSXMLNodeOptions, error: cocoascript.NSError):cocoascript.NSXMLDocument;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1413086-initwithdata
-    initWithData_options_error(data: cocoascript.NSData, mask: cocoascript.NSXMLNodeOptions, error: cocoascript._Nullable):cocoascript.NSXMLDocument;
+    initWithData_options_error(data: cocoascript.NSData, mask: cocoascript.NSXMLNodeOptions, error: cocoascript.NSError):cocoascript.NSXMLDocument;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1409062-initwithrootelement
     initWithRootElement(element: cocoascript.NSXMLElement):cocoascript.NSXMLDocument;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1416228-initwithxmlstring
-    initWithXMLString_options_error(string: cocoascript.NSString, mask: cocoascript.NSXMLNodeOptions, error: cocoascript._Nullable):cocoascript.NSXMLDocument;
+    initWithXMLString_options_error(string: cocoascript.NSString, mask: cocoascript.NSXMLNodeOptions, error: cocoascript.NSError):cocoascript.NSXMLDocument;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1410987-characterencoding
     characterEncoding(): cocoascript.NSString;
     setCharacterEncoding(): void;
@@ -13763,18 +13763,18 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1407550-setchildren
     setChildren(children: cocoascript.NSXMLNode):void;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1415843-objectbyapplyingxslt
-    objectByApplyingXSLT_arguments_error(xslt: cocoascript.NSData, arguments: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSXMLDocument;
+    objectByApplyingXSLT_arguments_error(xslt: cocoascript.NSData, arguments: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSXMLDocument;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1409737-objectbyapplyingxsltstring
-    objectByApplyingXSLTString_arguments_error(xslt: cocoascript.NSString, arguments: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSXMLDocument;
+    objectByApplyingXSLTString_arguments_error(xslt: cocoascript.NSString, arguments: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSXMLDocument;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1410606-objectbyapplyingxsltaturl
-    objectByApplyingXSLTAtURL_arguments_error(xsltURL: cocoascript.NSURL, argument: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSXMLDocument;
+    objectByApplyingXSLTAtURL_arguments_error(xsltURL: cocoascript.NSURL, argument: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSXMLDocument;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1411660-xmldata
     XMLData(): cocoascript.NSData;
     setXMLData(): void;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1412424-xmldatawithoptions
     XMLDataWithOptions(options: cocoascript.NSXMLNodeOptions):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1408561-validateandreturnerror
-    validateAndReturnError(error: cocoascript._Nullable):cocoascript.BOOL;
+    validateAndReturnError(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsxmldocument/1415210-init
     init():cocoascript.NSXMLDocument;
     //
@@ -13796,7 +13796,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsxmlelement/1388356-initwithname
     initWithName_stringValue(name: cocoascript.NSString, string: cocoascript.NSString):cocoascript.NSXMLElement;
     // doc://com.apple.documentation/documentation/foundation/nsxmlelement/1388325-initwithxmlstring
-    initWithXMLString_error(string: cocoascript.NSString, error: cocoascript._Nullable):cocoascript.NSXMLElement;
+    initWithXMLString_error(string: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSXMLElement;
     // doc://com.apple.documentation/documentation/foundation/nsxmlelement/1388348-initwithname
     initWithName_URI(name: cocoascript.NSString, URI: cocoascript.NSString):cocoascript.NSXMLElement;
     // doc://com.apple.documentation/documentation/foundation/nsxmlelement/1388329-elementsforname
@@ -13901,9 +13901,9 @@ declare namespace cocoascript {
    */
   interface NSXMLDTD extends NSXMLNode {
     // doc://com.apple.documentation/documentation/foundation/nsxmldtd/1410482-initwithcontentsofurl
-    initWithContentsOfURL_options_error(url: cocoascript.NSURL, mask: cocoascript.NSXMLNodeOptions, error: cocoascript._Nullable):cocoascript.NSXMLDTD;
+    initWithContentsOfURL_options_error(url: cocoascript.NSURL, mask: cocoascript.NSXMLNodeOptions, error: cocoascript.NSError):cocoascript.NSXMLDTD;
     // doc://com.apple.documentation/documentation/foundation/nsxmldtd/1412807-initwithdata
-    initWithData_options_error(data: cocoascript.NSData, mask: cocoascript.NSXMLNodeOptions, error: cocoascript._Nullable):cocoascript.NSXMLDTD;
+    initWithData_options_error(data: cocoascript.NSData, mask: cocoascript.NSXMLNodeOptions, error: cocoascript.NSError):cocoascript.NSXMLDTD;
     // doc://com.apple.documentation/documentation/foundation/nsxmldtd/1408524-publicid
     publicID(): cocoascript.NSString;
     setPublicID(): void;
@@ -14600,9 +14600,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsgarbagecollector/1431015-collectifneeded
     collectIfNeeded():void;
     // doc://com.apple.documentation/documentation/foundation/nsgarbagecollector/1431013-disablecollectorforpointer
-    disableCollectorForPointer(ptr: void):void;
+    disableCollectorForPointer(ptr: cocoascript.const):void;
     // doc://com.apple.documentation/documentation/foundation/nsgarbagecollector/1431017-enablecollectorforpointer
-    enableCollectorForPointer(ptr: void):void;
+    enableCollectorForPointer(ptr: cocoascript.const):void;
     // doc://com.apple.documentation/documentation/foundation/nsgarbagecollector/1431011-zone
     zone():cocoascript.NSZone;
     //

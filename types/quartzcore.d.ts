@@ -205,7 +205,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410767-removefromsuperlayer
     removeFromSuperlayer():void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410944-insertsublayer
-    insertSublayer_atIndex(layer: cocoascript.CALayer, idx: number):void;
+    insertSublayer_atIndex(layer: cocoascript.CALayer, idx: cocoascript.unsigned):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410840-insertsublayer
     insertSublayer_below(layer: cocoascript.CALayer, sibling: cocoascript.CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410798-insertsublayer

@@ -490,7 +490,7 @@ declare namespace cocoascript {
     glyphGenerator(): cocoascript.NSGlyphGenerator;
     setGlyphGenerator(): void;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403104-getglyphsinrange
-    getGlyphsInRange_glyphs_properties_characterIndexes_bidiLevels(glyphRange: cocoascript.NSRange, glyphBuffer: cocoascript.CGGlyph, props: cocoascript.NSGlyphProperty, charIndexBuffer: cocoascript.NSUInteger, bidiLevelBuffer: string):cocoascript.NSUInteger;
+    getGlyphsInRange_glyphs_properties_characterIndexes_bidiLevels(glyphRange: cocoascript.NSRange, glyphBuffer: cocoascript.CGGlyph, props: cocoascript.NSGlyphProperty, charIndexBuffer: cocoascript.NSUInteger, bidiLevelBuffer: cocoascript.unsigned):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403039-cgglyphatindex
     CGGlyphAtIndex(glyphIndex: cocoascript.NSUInteger):cocoascript.CGGlyph;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403132-cgglyphatindex
@@ -560,9 +560,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403225-characterrangeforglyphrange
     characterRangeForGlyphRange_actualGlyphRange(glyphRange: cocoascript.NSRange, actualGlyphRange: cocoascript.NSRangePointer):cocoascript.NSRange;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403021-enumerateenclosingrectsforglyphr
-    enumerateEnclosingRectsForGlyphRange_withinSelectedGlyphRange_inTextContainer_usingBlock(glyphRange: cocoascript.NSRange, selectedRange: cocoascript.NSRange, textContainer: cocoascript.NSTextContainer, block: cocoascript.BOOL):void;
+    enumerateEnclosingRectsForGlyphRange_withinSelectedGlyphRange_inTextContainer_usingBlock(glyphRange: cocoascript.NSRange, selectedRange: cocoascript.NSRange, textContainer: cocoascript.NSTextContainer, block: cocoascript.CGRect):void;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403160-enumeratelinefragmentsforglyphra
-    enumerateLineFragmentsForGlyphRange_usingBlock(glyphRange: cocoascript.NSRange, block: cocoascript.BOOL):void;
+    enumerateLineFragmentsForGlyphRange_usingBlock(glyphRange: cocoascript.NSRange, block: cocoascript.NSRange):void;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403097-fractionofdistancethroughglyphfo
     fractionOfDistanceThroughGlyphForPoint_inTextContainer(point: cocoascript.CGPoint, container: cocoascript.NSTextContainer):cocoascript.CGFloat;
     // doc://com.apple.documentation/documentation/uikit/nslayoutmanager/1403012-getlinefragmentinsertionpointsfo
@@ -3275,7 +3275,7 @@ declare namespace cocoascript {
     backgroundTimeRemaining(): cocoascript.NSTimeInterval;
     setBackgroundTimeRemaining(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1648685-openurl
-    openURL_options_completionHandler(url: cocoascript.NSURL, options: cocoascript.UIApplication, completion: cocoascript.BOOL):void;
+    openURL_options_completionHandler(url: cocoascript.NSURL, options: cocoascript.UIApplication, completion: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1622952-canopenurl
     canOpenURL(url: cocoascript.NSURL):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationopensettingsurlstring
@@ -3907,7 +3907,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621425-removefromparentviewcontroller
     removeFromParentViewController():void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621363-transitionfromviewcontroller
-    transitionFromViewController_toViewController_duration_options_animations_completion(fromViewController: cocoascript.UIViewController, toViewController: cocoascript.UIViewController, duration: cocoascript.NSTimeInterval, options: cocoascript.UIViewAnimationOptions, animations: void, completion: cocoascript.BOOL):void;
+    transitionFromViewController_toViewController_duration_options_animations_completion(fromViewController: cocoascript.UIViewController, toViewController: cocoascript.UIViewController, duration: cocoascript.NSTimeInterval, options: cocoascript.UIViewAnimationOptions, animations: void, completion: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621389-shouldautomaticallyforwardappear
     shouldAutomaticallyForwardAppearanceMethods(): cocoascript.BOOL;
     setShouldAutomaticallyForwardAppearanceMethods(): void;
@@ -4136,7 +4136,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622927-application
     application_didFailToContinueUserActivityWithType_error(application: cocoascript.UIApplication, userActivityType: cocoascript.NSString, error: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622935-application
-    application_performActionForShortcutItem_completionHandler(application: cocoascript.UIApplication, shortcutItem: cocoascript.UIApplicationShortcutItem, completionHandler: cocoascript.BOOL):void;
+    application_performActionForShortcutItem_completionHandler(application: cocoascript.UIApplication, shortcutItem: cocoascript.UIApplicationShortcutItem, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623041-application
     application_handleWatchKitExtensionRequest_reply(application: cocoascript.UIApplication, userInfo: cocoascript.NSDictionary, reply: cocoascript.NSDictionary):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622998-applicationshouldrequesthealthau
@@ -4340,32 +4340,32 @@ declare namespace cocoascript {
     progress(): cocoascript.NSProgress;
     setProgress(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619976-closewithcompletionhandler
-    closeWithCompletionHandler(completionHandler: cocoascript.BOOL):void;
+    closeWithCompletionHandler(completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619978-contentsfortype
-    contentsForType_error(typeName: cocoascript.NSString, outError: cocoascript._Nullable):cocoascript.UIDocument;
+    contentsForType_error(typeName: cocoascript.NSString, outError: cocoascript.NSError):cocoascript.UIDocument;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619988-savetourl
-    saveToURL_forSaveOperation_completionHandler(url: cocoascript.NSURL, saveOperation: cocoascript.UIDocumentSaveOperation, completionHandler: cocoascript.BOOL):void;
+    saveToURL_forSaveOperation_completionHandler(url: cocoascript.NSURL, saveOperation: cocoascript.UIDocumentSaveOperation, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619951-writecontents
-    writeContents_andAttributes_safelyToURL_forSaveOperation_error(contents: cocoascript.UIDocument, additionalFileAttributes: cocoascript.NSDictionary, url: cocoascript.NSURL, saveOperation: cocoascript.UIDocumentSaveOperation, outError: cocoascript._Nullable):cocoascript.BOOL;
+    writeContents_andAttributes_safelyToURL_forSaveOperation_error(contents: cocoascript.UIDocument, additionalFileAttributes: cocoascript.NSDictionary, url: cocoascript.NSURL, saveOperation: cocoascript.UIDocumentSaveOperation, outError: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619989-writecontents
-    writeContents_toURL_forSaveOperation_originalContentsURL_error(contents: cocoascript.UIDocument, url: cocoascript.NSURL, saveOperation: cocoascript.UIDocumentSaveOperation, originalContentsURL: cocoascript.NSURL, outError: cocoascript._Nullable):cocoascript.BOOL;
+    writeContents_toURL_forSaveOperation_originalContentsURL_error(contents: cocoascript.UIDocument, url: cocoascript.NSURL, saveOperation: cocoascript.UIDocumentSaveOperation, originalContentsURL: cocoascript.NSURL, outError: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619991-savingfiletype
     savingFileType(): cocoascript.NSString;
     setSavingFileType(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619947-fileattributestowritetourl
-    fileAttributesToWriteToURL_forSaveOperation_error(url: cocoascript.NSURL, saveOperation: cocoascript.UIDocumentSaveOperation, outError: cocoascript._Nullable):cocoascript.NSDictionary;
+    fileAttributesToWriteToURL_forSaveOperation_error(url: cocoascript.NSURL, saveOperation: cocoascript.UIDocumentSaveOperation, outError: cocoascript.NSError):cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619969-filenameextensionfortype
     fileNameExtensionForType_saveOperation(typeName: cocoascript.NSString, saveOperation: cocoascript.UIDocumentSaveOperation):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619977-openwithcompletionhandler
-    openWithCompletionHandler(completionHandler: cocoascript.BOOL):void;
+    openWithCompletionHandler(completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619971-loadfromcontents
-    loadFromContents_ofType_error(contents: cocoascript.UIDocument, typeName: cocoascript.NSString, outError: cocoascript._Nullable):cocoascript.BOOL;
+    loadFromContents_ofType_error(contents: cocoascript.UIDocument, typeName: cocoascript.NSString, outError: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619967-readfromurl
-    readFromURL_error(url: cocoascript.NSURL, outError: cocoascript._Nullable):cocoascript.BOOL;
+    readFromURL_error(url: cocoascript.NSURL, outError: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619980-performasynchronousfileaccessusi
     performAsynchronousFileAccessUsingBlock(block: void):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619974-reverttocontentsofurl
-    revertToContentsOfURL_completionHandler(url: cocoascript.NSURL, completionHandler: cocoascript.BOOL):void;
+    revertToContentsOfURL_completionHandler(url: cocoascript.NSURL, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619958-disableediting
     disableEditing():void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619987-enableediting
@@ -4383,7 +4383,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619975-updatechangecountwithtoken
     updateChangeCountWithToken_forSaveOperation(changeCountToken: cocoascript.UIDocument, saveOperation: cocoascript.UIDocumentSaveOperation):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619981-autosavewithcompletionhandler
-    autosaveWithCompletionHandler(completionHandler: cocoascript.BOOL):void;
+    autosaveWithCompletionHandler(completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619963-useractivity
     userActivity(): cocoascript.NSUserActivity;
     setUserActivity(): void;
@@ -4415,7 +4415,7 @@ declare namespace cocoascript {
    */
   interface UIManagedDocument extends UIDocument {
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622674-configurepersistentstorecoordina
-    configurePersistentStoreCoordinatorForURL_ofType_modelConfiguration_storeOptions_error(storeURL: cocoascript.NSURL, fileType: cocoascript.NSString, configuration: cocoascript.NSString, storeOptions: cocoascript.NSDictionary, error: cocoascript._Nullable):cocoascript.BOOL;
+    configurePersistentStoreCoordinatorForURL_ofType_modelConfiguration_storeOptions_error(storeURL: cocoascript.NSURL, fileType: cocoascript.NSString, configuration: cocoascript.NSString, storeOptions: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622667-managedobjectcontext
     managedObjectContext(): cocoascript.NSManagedObjectContext;
     setManagedObjectContext(): void;
@@ -4431,11 +4431,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622673-persistentstoretypeforfiletype
     persistentStoreTypeForFileType(fileType: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622670-readadditionalcontentfromurl
-    readAdditionalContentFromURL_error(absoluteURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    readAdditionalContentFromURL_error(absoluteURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622665-additionalcontentforurl
-    additionalContentForURL_error(absoluteURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.UIManagedDocument;
+    additionalContentForURL_error(absoluteURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.UIManagedDocument;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622668-writeadditionalcontent
-    writeAdditionalContent_toURL_originalContentsURL_error(content: cocoascript.UIManagedDocument, absoluteURL: cocoascript.NSURL, absoluteOriginalContentsURL: cocoascript.NSURL, error: cocoascript._Nullable):cocoascript.BOOL;
+    writeAdditionalContent_toURL_originalContentsURL_error(content: cocoascript.UIManagedDocument, absoluteURL: cocoascript.NSURL, absoluteOriginalContentsURL: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622672-persistentstorename
     persistentStoreName(): cocoascript.NSString;
     setPersistentStoreName(): void;
@@ -4503,9 +4503,9 @@ declare namespace cocoascript {
     items(): cocoascript.id;
     setItems(): void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622101-additems
-    addItems(items: cocoascript.UIPasteboard):void;
+    addItems(items: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1829417-setitems
-    setItems_options(items: cocoascript.UIPasteboard, options: cocoascript.UIPasteboard):void;
+    setItems_options(items: cocoascript.NSString, options: cocoascript.UIPasteboard):void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622093-dataforpasteboardtype
     dataForPasteboardType(pasteboardType: cocoascript.NSString):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622068-dataforpasteboardtype
@@ -5923,7 +5923,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicontrol/3600497-sendaction
     sendAction(action: cocoascript.UIAction):void;
     // doc://com.apple.documentation/documentation/uikit/uicontrol/3600491-enumerateeventhandlers
-    enumerateEventHandlers(iterator: cocoascript.BOOL):void;
+    enumerateEventHandlers(iterator: cocoascript.UIControlEvents):void;
     // doc://com.apple.documentation/documentation/uikit/uicontrol/3600492-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.UIControl;
     // doc://com.apple.documentation/documentation/uikit/uicontrol/3600493-initwithframe
@@ -7268,7 +7268,7 @@ declare namespace cocoascript {
     delegate(): cocoascript.UIPageViewControllerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uipageviewcontroller/1614087-setviewcontrollers
-    setViewControllers_direction_animated_completion(viewControllers: cocoascript.UIViewController, direction: cocoascript.UIPageViewControllerNavigationDirection, animated: cocoascript.BOOL, completion: cocoascript.BOOL):void;
+    setViewControllers_direction_animated_completion(viewControllers: cocoascript.UIViewController, direction: cocoascript.UIPageViewControllerNavigationDirection, animated: cocoascript.BOOL, completion: void):void;
     // doc://com.apple.documentation/documentation/uikit/uipageviewcontroller/1614106-viewcontrollers
     viewControllers(): cocoascript.UIViewController;
     setViewControllers(): void;
@@ -8795,7 +8795,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uipointerinteractionanimating/3538992-addanimations
     addAnimations(animations: void):void;
     // doc://com.apple.documentation/documentation/uikit/uipointerinteractionanimating/3538993-addcompletion
-    addCompletion(completion: cocoascript.BOOL):void;
+    addCompletion(completion: void):void;
   }
 }
 declare namespace cocoascript {
@@ -9749,7 +9749,7 @@ declare namespace cocoascript {
     format(): cocoascript.UIGraphicsRendererFormat;
     setFormat(): void;
     // doc://com.apple.documentation/documentation/uikit/uigraphicsrenderer/1649839-rundrawingactions
-    runDrawingActions_completionActions_error(drawingActions: cocoascript.UIGraphicsDrawingActions, completionActions: cocoascript.UIGraphicsDrawingActions, error: cocoascript._Nullable):cocoascript.BOOL;
+    runDrawingActions_completionActions_error(drawingActions: cocoascript.UIGraphicsDrawingActions, completionActions: cocoascript.UIGraphicsDrawingActions, error: cocoascript.NSError):cocoascript.BOOL;
     //
     alloc():cocoascript.UIGraphicsRenderer;
     //
@@ -9885,7 +9885,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderer/1649120-pdfdatawithactions
     PDFDataWithActions(actions: cocoascript.UIGraphicsPDFDrawingActions):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderer/1649119-writepdftourl
-    writePDFToURL_withActions_error(url: cocoascript.NSURL, actions: cocoascript.UIGraphicsPDFDrawingActions, error: cocoascript._Nullable):cocoascript.BOOL;
+    writePDFToURL_withActions_error(url: cocoascript.NSURL, actions: cocoascript.UIGraphicsPDFDrawingActions, error: cocoascript.NSError):cocoascript.BOOL;
     //
     alloc():cocoascript.UIGraphicsPDFRenderer;
     //
@@ -9903,7 +9903,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext/1649124-beginpage
     beginPage():void;
     // doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext/1649126-beginpagewithbounds
-    beginPageWithBounds_pageInfo(bounds: cocoascript.CGRect, pageInfo: cocoascript.UIGraphicsPDFRendererContext):void;
+    beginPageWithBounds_pageInfo(bounds: cocoascript.CGRect, pageInfo: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext/1649122-pdfcontextbounds
     pdfContextBounds(): cocoascript.CGRect;
     setPdfContextBounds(): void;
@@ -10163,7 +10163,7 @@ declare namespace cocoascript {
     supportsDuplex(): cocoascript.BOOL;
     setSupportsDuplex(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprinter/1620431-contactprinter
-    contactPrinter(completionHandler: cocoascript.BOOL):void;
+    contactPrinter(completionHandler: void):void;
     //
     alloc():cocoascript.UIPrinter;
     //
@@ -11718,7 +11718,7 @@ declare namespace cocoascript {
    */
   interface UIPopoverControllerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uipopovercontrollerdelegate/1624664-popovercontroller
-    popoverController_willRepositionPopoverToRect_inView(popoverController: cocoascript.UIPopoverController, rect: cocoascript.CGRect, view: cocoascript._Nonnull):void;
+    popoverController_willRepositionPopoverToRect_inView(popoverController: cocoascript.UIPopoverController, rect: cocoascript.CGRect, view: cocoascript.UIView):void;
     // doc://com.apple.documentation/documentation/uikit/uipopovercontrollerdelegate/1624661-popovercontrollershoulddismisspo
     popoverControllerShouldDismissPopover(popoverController: cocoascript.UIPopoverController):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uipopovercontrollerdelegate/1624671-popovercontrollerdiddismisspopov
@@ -11887,7 +11887,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614940-movesection
     moveSection_toSection(section: cocoascript.NSInteger, newSection: cocoascript.NSInteger):void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/2887515-performbatchupdates
-    performBatchUpdates_completion(updates: void, completion: cocoascript.BOOL):void;
+    performBatchUpdates_completion(updates: void, completion: void):void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614908-beginupdates
     beginUpdates():void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614890-endupdates
@@ -13179,7 +13179,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3198094-windowscene
     windowScene_didUpdateCoordinateSpace_interfaceOrientation_traitCollection(windowScene: cocoascript.UIWindowScene, previousCoordinateSpace: cocoascript.UICoordinateSpace, previousInterfaceOrientation: cocoascript.UIInterfaceOrientation, previousTraitCollection: cocoascript.UITraitCollection):void;
     // doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238088-windowscene
-    windowScene_performActionForShortcutItem_completionHandler(windowScene: cocoascript.UIWindowScene, shortcutItem: cocoascript.UIApplicationShortcutItem, completionHandler: cocoascript.BOOL):void;
+    windowScene_performActionForShortcutItem_completionHandler(windowScene: cocoascript.UIWindowScene, shortcutItem: cocoascript.UIApplicationShortcutItem, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiwindowscenedelegate/3238089-windowscene
     windowScene_userDidAcceptCloudKitShareWithMetadata(windowScene: cocoascript.UIWindowScene, cloudKitShareMetadata: cocoascript.CKShareMetadata):void;
   }
@@ -13208,7 +13208,7 @@ declare namespace cocoascript {
     session(): cocoascript.UISceneSession;
     setSession(): void;
     // doc://com.apple.documentation/documentation/uikit/uiscene/3327319-openurl
-    openURL_options_completionHandler(url: cocoascript.NSURL, options: cocoascript.UISceneOpenExternalURLOptions, completion: cocoascript.BOOL):void;
+    openURL_options_completionHandler(url: cocoascript.NSURL, options: cocoascript.UISceneOpenExternalURLOptions, completion: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiscene/3601229-pointerlockstate
     pointerLockState(): cocoascript.UIPointerLockState;
     setPointerLockState(): void;
@@ -13425,7 +13425,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uipopoverpresentationcontrollerdelegate/1622322-popoverpresentationcontrollerdid
     popoverPresentationControllerDidDismissPopover(popoverPresentationController: cocoascript.UIPopoverPresentationController):void;
     // doc://com.apple.documentation/documentation/uikit/uipopoverpresentationcontrollerdelegate/1622326-popoverpresentationcontroller
-    popoverPresentationController_willRepositionPopoverToRect_inView(popoverPresentationController: cocoascript.UIPopoverPresentationController, rect: cocoascript.CGRect, view: cocoascript._Nonnull):void;
+    popoverPresentationController_willRepositionPopoverToRect_inView(popoverPresentationController: cocoascript.UIPopoverPresentationController, rect: cocoascript.CGRect, view: cocoascript.UIView):void;
   }
 }
 declare namespace cocoascript {
@@ -13492,7 +13492,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618086-setcollectionviewlayout
     setCollectionViewLayout_animated(layout: cocoascript.UICollectionViewLayout, animated: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618017-setcollectionviewlayout
-    setCollectionViewLayout_animated_completion(layout: cocoascript.UICollectionViewLayout, animated: cocoascript.BOOL, completion: cocoascript.BOOL):void;
+    setCollectionViewLayout_animated_completion(layout: cocoascript.UICollectionViewLayout, animated: cocoascript.BOOL, completion: void):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618098-startinteractivetransitiontocoll
     startInteractiveTransitionToCollectionViewLayout_completion(layout: cocoascript.UICollectionViewLayout, completion: cocoascript.UICollectionViewLayoutInteractiveTransitionCompletion):cocoascript.UICollectionViewTransitionLayout;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618080-finishinteractivetransition
@@ -13592,7 +13592,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618046-scrolltoitematindexpath
     scrollToItemAtIndexPath_atScrollPosition_animated(indexPath: cocoascript.NSIndexPath, scrollPosition: cocoascript.UICollectionViewScrollPosition, animated: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618045-performbatchupdates
-    performBatchUpdates_completion(updates: void, completion: cocoascript.BOOL):void;
+    performBatchUpdates_completion(updates: void, completion: void):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/2891094-hasuncommittedupdates
     hasUncommittedUpdates(): cocoascript.BOOL;
     setHasUncommittedUpdates(): void;

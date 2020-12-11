@@ -249,7 +249,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153117-wellknowntypeuripayload
     wellKnownTypeURIPayload():cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153116-wellknowntypetextpayloadwithloca
-    wellKnownTypeTextPayloadWithLocale(locale: cocoascript._Nullable):cocoascript.NSString;
+    wellKnownTypeTextPayloadWithLocale(locale: cocoascript.NSLocale):cocoascript.NSString;
     //
     alloc():cocoascript.NFCNDEFPayload;
     //

@@ -57,7 +57,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1429202-classforportcoder
     classForPortCoder():cocoascript.Class;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1434307-getuuidwithlength
-    getUUIDWithLength(newLength: number):cocoascript.IOBluetoothSDPUUID;
+    getUUIDWithLength(newLength: cocoascript.unsigned):cocoascript.IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1428786-isequaltouuid
     isEqualToUUID(otherUUID: cocoascript.IOBluetoothSDPUUID):cocoascript.BOOL;
     //
