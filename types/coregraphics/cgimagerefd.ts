@@ -1,9 +1,8 @@
 declare namespace cocoascript {
-/**
- * A bitmap image or image mask.
- * doc://com.apple.documentation/documentation/coregraphics/cgimageref
- */
-interface CGImageRef {
+  /**
+   * A bitmap image or image mask.
+   * doc://com.apple.documentation/documentation/coregraphics/cgimageref
+   */
+  interface CGImageRef {
+  }
 }
-}
-

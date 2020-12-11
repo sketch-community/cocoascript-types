@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { CodeGenerator } from './CodeGenerator';
 import { NAMESPACE } from './constant';
 import { normalizeType } from './helpers';
 import { MethodDeclaration } from './MethodDeclaration';
@@ -75,17 +76,16 @@ export class InterfaceDeclaration {
   }
 
   generate() {
-    const code = [];
-
-    code.push(`declare namespace ${NAMESPACE} {`);
-    code.push('/**');
+    const code = new CodeGenerator();
+    code.appendLine(`declare namespace ${NAMESPACE} {`).indent();
+    code.appendLine('/**');
     if (this.description) {
-      code.push(` * ${this.description}`);
+      code.appendLine(` * ${this.description}`);
     }
-    code.push(` * ${this.id}`);
-    code.push(' */');
+    code.appendLine(` * ${this.id}`);
+    code.appendLine(' */');
 
-    code.push(`interface ${this.identifier}${this.inheritsFrom ? ` extends ${this.inheritsFrom} ` : ' '}{`);
+    code.appendLine(`interface ${this.identifier}${this.inheritsFrom ? ` extends ${this.inheritsFrom} ` : ' '}{`).indent();
     if (this.type === 'interface') {
       const alloc = new MethodDeclaration('', this);
       alloc.identifiers.push({
@@ -100,14 +100,14 @@ export class InterfaceDeclaration {
       this.properties.push(alloc, init);
     }
     this.properties.forEach(property => {
-      code.push(property.generate());
+      code.appendLine(property.generate());
     });
-    code.push('}');
-    code.push('}')
+    code.endIndent().appendLine('}')
+    code.endIndent().appendLine('}');
     if (this.type === 'interface') {
-      code.push(`declare const ${this.identifier}: ${normalizeType(this.identifier)};`)
+      code.appendLine().appendLine(`declare const ${this.identifier}: ${normalizeType(this.identifier)};`)
     }
-    code.push('\n')
-    return code.join('\n');
+    code.appendLine();
+    return code.toString();
   }
 }

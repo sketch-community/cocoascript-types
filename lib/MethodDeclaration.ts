@@ -1,3 +1,4 @@
+import { CodeGenerator } from './CodeGenerator';
 import { normalizeType } from './helpers';
 import { InterfaceDeclaration } from './InterfaceDeclaration';
 import { Token } from './types';
@@ -32,7 +33,10 @@ export class MethodDeclaration {
         let paramName;
         if (tokens[index]) {
           while ((!paramName || !paramType) && tokens[index]) {
-            if ((tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) || tokens[index].kind === 'keyword') {
+            if (
+              (tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) ||
+              tokens[index].kind === 'keyword'
+            ) {
               paramType = tokens[index].text;
             }
             if (tokens[index].kind === 'internalParam') {
@@ -53,9 +57,10 @@ export class MethodDeclaration {
   }
 
   generate() {
-    const code = ['  '];
-    code.push(this.identifiers.map(i => i.id).join('_'));
-    code.push('(');
+    const code = new CodeGenerator();
+    code.appendLine(`// ${this.id}`);
+    code.appendLine(this.identifiers.map(i => i.id).join('_'));
+    code.append('(');
     const params: string[] = [];
     this.identifiers.forEach(identifier => {
       if (identifier.paramName) {
@@ -66,18 +71,18 @@ export class MethodDeclaration {
         );
       }
     });
-    code.push(params.join(', '));
-    code.push('):');
+    code.append(params.join(', '));
+    code.append('):');
     if (this.returnType === 'instancetype') {
-      code.push(normalizeType(this.interfaceDecl.identifier));
+      code.append(normalizeType(this.interfaceDecl.identifier));
     } else if (this.returnType === 'id') {
-      code.push(normalizeType(this.interfaceDecl.identifier))
+      code.append(normalizeType(this.interfaceDecl.identifier));
     } else if (this.returnType) {
-      code.push(normalizeType(this.returnType));
+      code.append(normalizeType(this.returnType));
     } else {
-      code.push('void');
+      code.append('void');
     }
-    code.push(';');
-    return [`  // ${this.id}`, code.join('')].join('\n');
+    code.append(';');
+    return code.toString();
   }
 }

@@ -1,9 +1,8 @@
 declare namespace cocoascript {
-/**
- * A reference to a CFSocket object.
- * doc://com.apple.documentation/documentation/corefoundation/cfsocketref
- */
-interface CFSocketRef {
+  /**
+   * A reference to a CFSocket object.
+   * doc://com.apple.documentation/documentation/corefoundation/cfsocketref
+   */
+  interface CFSocketRef {
+  }
 }
-}
-

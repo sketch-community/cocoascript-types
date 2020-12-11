@@ -31,13 +31,11 @@ export class UnionTypeDeclaration {
 
   generate() {
     const code = [];
-
     code.push(`declare namespace ${NAMESPACE} {`);
     code.push(`// ${this.id}`);
     code.push(`type ${this.identifier} = ${normalizeType(this.alias!)};`)
     code.push('}')
     code.push('\n');
-
     return code.join('\n');
   }
 }

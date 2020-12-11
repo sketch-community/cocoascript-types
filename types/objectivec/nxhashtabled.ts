@@ -1,8 +1,7 @@
 declare namespace cocoascript {
-/**
- * doc://com.apple.documentation/documentation/objectivec/nxhashtable
- */
-interface NXHashTable {
+  /**
+   * doc://com.apple.documentation/documentation/objectivec/nxhashtable
+   */
+  interface NXHashTable {
+  }
 }
-}
-

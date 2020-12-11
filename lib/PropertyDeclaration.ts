@@ -1,3 +1,4 @@
+import { CodeGenerator } from './CodeGenerator';
 import { capitalize, normalizeType } from './helpers';
 import { Token } from './types';
 
@@ -38,10 +39,10 @@ export class PropertyDeclaration {
   }
 
   generate() {
-    const code = [];
-    code.push(`  // ${this.id}`);
-    code.push(`  ${this.identifier}(): ${normalizeType(this.type!)};`);
-    code.push(`  set${capitalize(this.identifier!)}(): void;`);
-    return code.join('\n');
+    const code = new CodeGenerator();
+    code.appendLine(`// ${this.id}`);
+    code.appendLine(`${this.identifier}(): ${normalizeType(this.type!)};`);
+    code.appendLine(`set${capitalize(this.identifier!)}(): void;`);
+    return code.toString();
   }
 }
