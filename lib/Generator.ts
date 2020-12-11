@@ -65,7 +65,7 @@ export class Generator {
   }
 
   typeFile(id: string) {
-    return './types' + id.replace('doc://com.apple.documentation/documentation', '') + 'd.ts';
+    return './types' + id.replace('doc://com.apple.documentation/documentation', '') + '.d.ts';
   }
 
   write(decl: Declaration) {
