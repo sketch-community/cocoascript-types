@@ -349,9 +349,6 @@ declare namespace cocoascript {
     setNumberOfRows(rows: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447366-numberofrows
     numberOfRows():cocoascript.NSUInteger;
-    // doc://com.apple.documentation/documentation/quartz/qccompositionpickerviewdidselectcompositionnotification
-    QCCompositionPickerViewDidSelectCompositionNotification(): cocoascript.const;
-    setQCCompositionPickerViewDidSelectCompositionNotification(): void;
     //
     alloc():cocoascript.QCCompositionPickerView;
     //
@@ -360,6 +357,7 @@ declare namespace cocoascript {
 }
 
 declare const QCCompositionPickerView: cocoascript.QCCompositionPickerView;
+declare const QCCompositionPickerViewDidSelectCompositionNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -559,9 +557,6 @@ declare namespace cocoascript {
     compositionsWithProtocols_andAttributes(protocols: cocoascript.NSArray, attributes: cocoascript.NSDictionary):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrepository/1493221-allcompositions
     allCompositions():cocoascript.NSArray;
-    // doc://com.apple.documentation/documentation/quartz/qccompositionrepositorydidupdatenotification
-    QCCompositionRepositoryDidUpdateNotification(): cocoascript.const;
-    setQCCompositionRepositoryDidUpdateNotification(): void;
     //
     alloc():cocoascript.QCCompositionRepository;
     //
@@ -570,6 +565,7 @@ declare namespace cocoascript {
 }
 
 declare const QCCompositionRepository: cocoascript.QCCompositionRepository;
+declare const QCCompositionRepositoryDidUpdateNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A
@@ -662,12 +658,6 @@ declare namespace cocoascript {
     openGLContext():cocoascript.NSOpenGLContext;
     // doc://com.apple.documentation/documentation/quartz/qcview/1436234-openglpixelformat
     openGLPixelFormat():cocoascript.NSOpenGLPixelFormat;
-    // doc://com.apple.documentation/documentation/quartz/qcviewdidstartrenderingnotification
-    QCViewDidStartRenderingNotification(): cocoascript.const;
-    setQCViewDidStartRenderingNotification(): void;
-    // doc://com.apple.documentation/documentation/quartz/qcviewdidstoprenderingnotification
-    QCViewDidStopRenderingNotification(): cocoascript.const;
-    setQCViewDidStopRenderingNotification(): void;
     //
     alloc():cocoascript.QCView;
     //
@@ -676,6 +666,8 @@ declare namespace cocoascript {
 }
 
 declare const QCView: cocoascript.QCView;
+declare const QCViewDidStartRenderingNotification: cocoascript.NSString;
+declare const QCViewDidStopRenderingNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -740,15 +732,6 @@ declare namespace cocoascript {
     runModalWithOptions(inOptions: cocoascript.NSDictionary):number;
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel/1505223-finish
     finish(sender: cocoascript.IKFilterBrowserPanel):void;
-    // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserwillpreviewfilternotification
-    IKFilterBrowserWillPreviewFilterNotification(): cocoascript.const;
-    setIKFilterBrowserWillPreviewFilterNotification(): void;
-    // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserfilterselectednotification
-    IKFilterBrowserFilterSelectedNotification(): cocoascript.const;
-    setIKFilterBrowserFilterSelectedNotification(): void;
-    // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserfilterdoubleclicknotification
-    IKFilterBrowserFilterDoubleClickNotification(): cocoascript.const;
-    setIKFilterBrowserFilterDoubleClickNotification(): void;
     //
     alloc():cocoascript.IKFilterBrowserPanel;
     //
@@ -757,6 +740,9 @@ declare namespace cocoascript {
 }
 
 declare const IKFilterBrowserPanel: cocoascript.IKFilterBrowserPanel;
+declare const IKFilterBrowserWillPreviewFilterNotification: cocoascript.NSString;
+declare const IKFilterBrowserFilterSelectedNotification: cocoascript.NSString;
+declare const IKFilterBrowserFilterDoubleClickNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -1220,9 +1206,6 @@ declare namespace cocoascript {
   interface QCCompositionPickerPanel extends NSPanel {
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerpanel/1459648-compositionpickerview
     compositionPickerView():cocoascript.QCCompositionPickerView;
-    // doc://com.apple.documentation/documentation/quartz/qccompositionpickerpaneldidselectcompositionnotification
-    QCCompositionPickerPanelDidSelectCompositionNotification(): cocoascript.const;
-    setQCCompositionPickerPanelDidSelectCompositionNotification(): void;
     //
     alloc():cocoascript.QCCompositionPickerPanel;
     //
@@ -1231,6 +1214,7 @@ declare namespace cocoascript {
 }
 
 declare const QCCompositionPickerPanel: cocoascript.QCCompositionPickerPanel;
+declare const QCCompositionPickerPanelDidSelectCompositionNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/quartz/qcpatchcontroller

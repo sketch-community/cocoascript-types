@@ -478,9 +478,6 @@ declare namespace cocoascript {
     extendedLockBlockWithRequestFlags_blockNumber_completionHandler(flags: cocoascript.NFCISO15693RequestFlag, blockNumber: cocoascript.NSInteger, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/corenfc/nfciso15693tag/3043801-extendedreadmultipleblockswithre
     extendedReadMultipleBlocksWithRequestFlags_blockRange_completionHandler(flags: cocoascript.NFCISO15693RequestFlag, blockRange: cocoascript.NSRange, completionHandler: cocoascript.NSError):void;
-    // doc://com.apple.documentation/documentation/corenfc/nfciso15693tagresponseerrorkey
-    NFCISO15693TagResponseErrorKey(): cocoascript.const;
-    setNFCISO15693TagResponseErrorKey(): void;
     // doc://com.apple.documentation/documentation/corenfc/nfciso15693tag/3583264-lockdsfidwithrequestflag
     lockDSFIDWithRequestFlag_completionHandler(flags: cocoascript.NFCISO15693RequestFlag, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/corenfc/nfciso15693tag/3551925-authenticatewithrequestflags
@@ -505,6 +502,7 @@ declare namespace cocoascript {
     sendRequestWithFlag_commandCode_data_completionHandler(flags: cocoascript.NSInteger, commandCode: cocoascript.NSInteger, data: cocoascript.NSData, completionHandler: cocoascript.NSError):void;
   }
 }
+declare const NFCISO15693TagResponseErrorKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An interface for interacting with a MIFARE® tag.

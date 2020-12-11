@@ -687,18 +687,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621672-uniqueidentifier
     uniqueIdentifier(): cocoascript.NSString;
     setUniqueIdentifier(): void;
-    // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemactiontype
-    CSSearchableItemActionType(): cocoascript.const;
-    setCSSearchableItemActionType(): void;
-    // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemactivityidentifier
-    CSSearchableItemActivityIdentifier(): cocoascript.const;
-    setCSSearchableItemActivityIdentifier(): void;
-    // doc://com.apple.documentation/documentation/corespotlight/csquerycontinuationactiontype
-    CSQueryContinuationActionType(): cocoascript.const;
-    setCSQueryContinuationActionType(): void;
-    // doc://com.apple.documentation/documentation/corespotlight/cssearchquerystring
-    CSSearchQueryString(): cocoascript.const;
-    setCSSearchQueryString(): void;
     //
     alloc():cocoascript.CSSearchableItem;
     //
@@ -707,6 +695,10 @@ declare namespace cocoascript {
 }
 
 declare const CSSearchableItem: cocoascript.CSSearchableItem;
+declare const CSSearchableItemActionType: cocoascript.NSString;
+declare const CSSearchableItemActivityIdentifier: cocoascript.NSString;
+declare const CSQueryContinuationActionType: cocoascript.NSString;
+declare const CSSearchQueryString: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The on-device index.
@@ -748,12 +740,6 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/corespotlight/cssearchquery
    */
   interface CSSearchQuery extends NSObject {
-    // doc://com.apple.documentation/documentation/corespotlight/cssearchquerystring
-    CSSearchQueryString(): cocoascript.const;
-    setCSSearchQueryString(): void;
-    // doc://com.apple.documentation/documentation/corespotlight/csquerycontinuationactiontype
-    CSQueryContinuationActionType(): cocoascript.const;
-    setCSQueryContinuationActionType(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649308-initwithquerystring
     initWithQueryString_attributes(queryString: cocoascript.NSString, attributes: cocoascript.NSString):cocoascript.CSSearchQuery;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649311-protectionclasses
@@ -783,6 +769,8 @@ declare namespace cocoascript {
 }
 
 declare const CSSearchQuery: cocoascript.CSSearchQuery;
+declare const CSSearchQueryString: cocoascript.NSString;
+declare const CSQueryContinuationActionType: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object displaying localized text in search results related to your app.

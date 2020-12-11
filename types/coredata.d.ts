@@ -89,36 +89,6 @@ declare namespace cocoascript {
     mergeChangesFromContextDidSaveNotification(notification: cocoascript.NSNotification):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken
     setQueryGenerationFromToken_error(generation: cocoascript.NSQueryGenerationToken, error: cocoascript.NSError):cocoascript.BOOL;
-    // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey
-    NSManagedObjectContextQueryGenerationKey(): cocoascript.const;
-    setNSManagedObjectContextQueryGenerationKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification
-    NSManagedObjectContextObjectsDidChangeNotification(): cocoascript.const;
-    setNSManagedObjectContextObjectsDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextdidsavenotification
-    NSManagedObjectContextDidSaveNotification(): cocoascript.const;
-    setNSManagedObjectContextDidSaveNotification(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextwillsavenotification
-    NSManagedObjectContextWillSaveNotification(): cocoascript.const;
-    setNSManagedObjectContextWillSaveNotification(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey
-    NSInsertedObjectsKey(): cocoascript.const;
-    setNSInsertedObjectsKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey
-    NSUpdatedObjectsKey(): cocoascript.const;
-    setNSUpdatedObjectsKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsdeletedobjectskey
-    NSDeletedObjectsKey(): cocoascript.const;
-    setNSDeletedObjectsKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectskey
-    NSRefreshedObjectsKey(): cocoascript.const;
-    setNSRefreshedObjectsKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectskey
-    NSInvalidatedObjectsKey(): cocoascript.const;
-    setNSInvalidatedObjectsKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsinvalidatedallobjectskey
-    NSInvalidatedAllObjectsKey(): cocoascript.const;
-    setNSInvalidatedAllObjectsKey(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506866-save
     save(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506954-haschanges
@@ -145,18 +115,6 @@ declare namespace cocoascript {
     performBlock(block: void):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506364-performblockandwait
     performBlockAndWait(block: void):void;
-    // doc://com.apple.documentation/documentation/coredata/nsaffectedobjectserrorkey
-    NSAffectedObjectsErrorKey(): cocoascript.const;
-    setNSAffectedObjectsErrorKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsaffectedstoreserrorkey
-    NSAffectedStoresErrorKey(): cocoascript.const;
-    setNSAffectedStoresErrorKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsdetailederrorskey
-    NSDetailedErrorsKey(): cocoascript.const;
-    setNSDetailedErrorsKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nssqliteerrordomain
-    NSSQLiteErrorDomain(): cocoascript.const;
-    setNSSQLiteErrorDomain(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506853-lock
     lock():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506839-unlock
@@ -171,6 +129,20 @@ declare namespace cocoascript {
 }
 
 declare const NSManagedObjectContext: cocoascript.NSManagedObjectContext;
+declare const NSManagedObjectContextQueryGenerationKey: cocoascript.NSString;
+declare const NSManagedObjectContextObjectsDidChangeNotification: cocoascript.NSString;
+declare const NSManagedObjectContextDidSaveNotification: cocoascript.NSString;
+declare const NSManagedObjectContextWillSaveNotification: cocoascript.NSString;
+declare const NSInsertedObjectsKey: cocoascript.NSString;
+declare const NSUpdatedObjectsKey: cocoascript.NSString;
+declare const NSDeletedObjectsKey: cocoascript.NSString;
+declare const NSRefreshedObjectsKey: cocoascript.NSString;
+declare const NSInvalidatedObjectsKey: cocoascript.NSString;
+declare const NSInvalidatedAllObjectsKey: cocoascript.NSString;
+declare const NSAffectedObjectsErrorKey: cocoascript.NSString;
+declare const NSAffectedStoresErrorKey: cocoascript.NSString;
+declare const NSDetailedErrorsKey: cocoascript.NSString;
+declare const NSSQLiteErrorDomain: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A base class that implements the behavior required of a Core Data model object.
@@ -256,18 +228,6 @@ declare namespace cocoascript {
     validateForInsert(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506998-validateforupdate
     validateForUpdate(error: cocoascript.NSError):cocoascript.BOOL;
-    // doc://com.apple.documentation/documentation/coredata/nsvalidationkeyerrorkey
-    NSValidationKeyErrorKey(): cocoascript.const;
-    setNSValidationKeyErrorKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsvalidationobjecterrorkey
-    NSValidationObjectErrorKey(): cocoascript.const;
-    setNSValidationObjectErrorKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsvalidationpredicateerrorkey
-    NSValidationPredicateErrorKey(): cocoascript.const;
-    setNSValidationPredicateErrorKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsvalidationvalueerrorkey
-    NSValidationValueErrorKey(): cocoascript.const;
-    setNSValidationValueErrorKey(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506865-didaccessvalueforkey
     didAccessValueForKey(key: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506210-observationinfo
@@ -292,6 +252,10 @@ declare namespace cocoascript {
 }
 
 declare const NSManagedObject: cocoascript.NSManagedObject;
+declare const NSValidationKeyErrorKey: cocoascript.NSString;
+declare const NSValidationObjectErrorKey: cocoascript.NSString;
+declare const NSValidationPredicateErrorKey: cocoascript.NSString;
+declare const NSValidationValueErrorKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A description of an entity in Core Data.
@@ -931,40 +895,22 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name
     name(): cocoascript.NSString;
     setName(): void;
-    // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoresdidchangenotification
-    NSPersistentStoreCoordinatorStoresDidChangeNotification(): cocoascript.const;
-    setNSPersistentStoreCoordinatorStoresDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoreswillchangenotification
-    NSPersistentStoreCoordinatorStoresWillChangeNotification(): cocoascript.const;
-    setNSPersistentStoreCoordinatorStoresWillChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorwillremovestorenotification
-    NSPersistentStoreCoordinatorWillRemoveStoreNotification(): cocoascript.const;
-    setNSPersistentStoreCoordinatorWillRemoveStoreNotification(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468872-executerequest
     executeRequest_withContext_error(request: cocoascript.NSPersistentStoreRequest, context: cocoascript.NSManagedObjectContext, error: cocoascript.NSError):cocoascript.NSPersistentStoreCoordinator;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468794-performblock
     performBlock(block: void):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468862-performblockandwait
     performBlockAndWait(block: void):void;
-    // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytrackingkey
-    NSPersistentHistoryTrackingKey(): cocoascript.const;
-    setNSPersistentHistoryTrackingKey(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/3325497-currentpersistenthistorytokenfro
     currentPersistentHistoryTokenFromStores(stores: cocoascript.NSArray):cocoascript.NSPersistentHistoryToken;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468911-metadataforpersistentstore
     metadataForPersistentStore(store: cocoascript.NSPersistentStore):cocoascript.NSPersistentStoreCoordinator;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468899-setmetadata
     setMetadata_forPersistentStore(metadata: cocoascript.NSString, store: cocoascript.NSPersistentStore):void;
-    // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightexporter
-    NSCoreDataCoreSpotlightExporter(): cocoascript.const;
-    setNSCoreDataCoreSpotlightExporter(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier
     importStoreWithIdentifier_fromExternalRecordsDirectory_toURL_options_withType_error(storeIdentifier: cocoascript.NSString, externalRecordsURL: cocoascript.NSURL, destinationURL: cocoascript.NSURL, options: cocoascript.NSDictionary, storeType: cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSPersistentStore;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468882-managedobjectidforurirepresentat
     managedObjectIDForURIRepresentation(url: cocoascript.NSURL):cocoascript.NSManagedObjectID;
-    // doc://com.apple.documentation/documentation/coredata/nspersistentstoredidimportubiquitouscontentchangesnotification
-    NSPersistentStoreDidImportUbiquitousContentChangesNotification(): cocoascript.const;
-    setNSPersistentStoreDidImportUbiquitousContentChangesNotification(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468890-unlock
     unlock():void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468775-lock
@@ -979,6 +925,12 @@ declare namespace cocoascript {
 }
 
 declare const NSPersistentStoreCoordinator: cocoascript.NSPersistentStoreCoordinator;
+declare const NSPersistentStoreCoordinatorStoresDidChangeNotification: cocoascript.NSString;
+declare const NSPersistentStoreCoordinatorStoresWillChangeNotification: cocoascript.NSString;
+declare const NSPersistentStoreCoordinatorWillRemoveStoreNotification: cocoascript.NSString;
+declare const NSPersistentHistoryTrackingKey: cocoascript.NSString;
+declare const NSCoreDataCoreSpotlightExporter: cocoascript.NSString;
+declare const NSPersistentStoreDidImportUbiquitousContentChangesNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A description of an attribute of a Core Data entity.
@@ -2140,24 +2092,6 @@ declare namespace cocoascript {
     performCustomValidationForEntityMapping_manager_error(mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsentitymigrationpolicy/1423787-endentitymapping
     endEntityMapping_manager_error(mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
-    // doc://com.apple.documentation/documentation/coredata/nsmigrationmanagerkey
-    NSMigrationManagerKey(): cocoascript.const;
-    setNSMigrationManagerKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsmigrationsourceobjectkey
-    NSMigrationSourceObjectKey(): cocoascript.const;
-    setNSMigrationSourceObjectKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsmigrationdestinationobjectkey
-    NSMigrationDestinationObjectKey(): cocoascript.const;
-    setNSMigrationDestinationObjectKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsmigrationentitymappingkey
-    NSMigrationEntityMappingKey(): cocoascript.const;
-    setNSMigrationEntityMappingKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsmigrationpropertymappingkey
-    NSMigrationPropertyMappingKey(): cocoascript.const;
-    setNSMigrationPropertyMappingKey(): void;
-    // doc://com.apple.documentation/documentation/coredata/nsmigrationentitypolicykey
-    NSMigrationEntityPolicyKey(): cocoascript.const;
-    setNSMigrationEntityPolicyKey(): void;
     //
     alloc():cocoascript.NSEntityMigrationPolicy;
     //
@@ -2166,6 +2100,12 @@ declare namespace cocoascript {
 }
 
 declare const NSEntityMigrationPolicy: cocoascript.NSEntityMigrationPolicy;
+declare const NSMigrationManagerKey: cocoascript.NSString;
+declare const NSMigrationSourceObjectKey: cocoascript.NSString;
+declare const NSMigrationDestinationObjectKey: cocoascript.NSString;
+declare const NSMigrationEntityMappingKey: cocoascript.NSString;
+declare const NSMigrationPropertyMappingKey: cocoascript.NSString;
+declare const NSMigrationEntityPolicyKey: cocoascript.NSString;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coredata/nsentitymappingtype
   type NSEntityMappingType = cocoascript.NSUInteger;

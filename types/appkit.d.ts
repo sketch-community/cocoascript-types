@@ -72,12 +72,6 @@ declare namespace cocoascript {
     setConfigurationFromDictionary(configDict: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nstoolbar/1516947-validatevisibleitems
     validateVisibleItems():void;
-    // doc://com.apple.documentation/documentation/appkit/nstoolbardidremoveitemnotification
-    NSToolbarDidRemoveItemNotification(): cocoascript.NSNotificationName;
-    setNSToolbarDidRemoveItemNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstoolbarwilladditemnotification
-    NSToolbarWillAddItemNotification(): cocoascript.NSNotificationName;
-    setNSToolbarWillAddItemNotification(): void;
     //
     alloc():cocoascript.NSToolbar;
     //
@@ -86,6 +80,8 @@ declare namespace cocoascript {
 }
 
 declare const NSToolbar: cocoascript.NSToolbar;
+declare const NSToolbarDidRemoveItemNotification: cocoascript.NSNotificationName;
+declare const NSToolbarWillAddItemNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An object that provides dynamic contextual controls in the Touch Bar of supported models of MacBook Pro.
@@ -148,9 +144,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1428360-sharedapplication
     sharedApplication(): cocoascript.NSApplication;
     setSharedApplication(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapp
-    NSApp(): cocoascript.NSApplication;
-    setNSApp(): void;
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1428705-delegate
     delegate(): cocoascript.NSApplicationDelegate;
     setDelegate(): void;
@@ -174,9 +167,6 @@ declare namespace cocoascript {
     sendEvent(event: cocoascript.NSEvent):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1428710-postevent
     postEvent_atStart(event: cocoascript.NSEvent, flag: cocoascript.BOOL):void;
-    // doc://com.apple.documentation/documentation/appkit/nseventtrackingrunloopmode
-    NSEventTrackingRunLoopMode(): cocoascript.NSRunLoopMode;
-    setNSEventTrackingRunLoopMode(): void;
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1428366-trytoperform
     tryToPerform_with(action: cocoascript.SEL, object: cocoascript.NSApplication):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1428509-sendaction
@@ -278,48 +268,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1494287-orderedwindows
     orderedWindows(): cocoascript.NSWindow;
     setOrderedWindows(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationdidbecomeactivenotification
-    NSApplicationDidBecomeActiveNotification(): cocoascript.NSNotificationName;
-    setNSApplicationDidBecomeActiveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationdidchangescreenparametersnotification
-    NSApplicationDidChangeScreenParametersNotification(): cocoascript.NSNotificationName;
-    setNSApplicationDidChangeScreenParametersNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationdidfinishlaunchingnotification
-    NSApplicationDidFinishLaunchingNotification(): cocoascript.NSNotificationName;
-    setNSApplicationDidFinishLaunchingNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationdidhidenotification
-    NSApplicationDidHideNotification(): cocoascript.NSNotificationName;
-    setNSApplicationDidHideNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationdidresignactivenotification
-    NSApplicationDidResignActiveNotification(): cocoascript.NSNotificationName;
-    setNSApplicationDidResignActiveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationdidunhidenotification
-    NSApplicationDidUnhideNotification(): cocoascript.NSNotificationName;
-    setNSApplicationDidUnhideNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationdidupdatenotification
-    NSApplicationDidUpdateNotification(): cocoascript.NSNotificationName;
-    setNSApplicationDidUpdateNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationwillbecomeactivenotification
-    NSApplicationWillBecomeActiveNotification(): cocoascript.NSNotificationName;
-    setNSApplicationWillBecomeActiveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationwillfinishlaunchingnotification
-    NSApplicationWillFinishLaunchingNotification(): cocoascript.NSNotificationName;
-    setNSApplicationWillFinishLaunchingNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationwillhidenotification
-    NSApplicationWillHideNotification(): cocoascript.NSNotificationName;
-    setNSApplicationWillHideNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationwillresignactivenotification
-    NSApplicationWillResignActiveNotification(): cocoascript.NSNotificationName;
-    setNSApplicationWillResignActiveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationwillterminatenotification
-    NSApplicationWillTerminateNotification(): cocoascript.NSNotificationName;
-    setNSApplicationWillTerminateNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationwillunhidenotification
-    NSApplicationWillUnhideNotification(): cocoascript.NSNotificationName;
-    setNSApplicationWillUnhideNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsapplicationwillupdatenotification
-    NSApplicationWillUpdateNotification(): cocoascript.NSNotificationName;
-    setNSApplicationWillUpdateNotification(): void;
     //
     alloc():cocoascript.NSApplication;
     //
@@ -328,6 +276,22 @@ declare namespace cocoascript {
 }
 
 declare const NSApplication: cocoascript.NSApplication;
+declare const NSApp: cocoascript.NSApplication;
+declare const NSEventTrackingRunLoopMode: cocoascript.NSRunLoopMode;
+declare const NSApplicationDidBecomeActiveNotification: cocoascript.NSNotificationName;
+declare const NSApplicationDidChangeScreenParametersNotification: cocoascript.NSNotificationName;
+declare const NSApplicationDidFinishLaunchingNotification: cocoascript.NSNotificationName;
+declare const NSApplicationDidHideNotification: cocoascript.NSNotificationName;
+declare const NSApplicationDidResignActiveNotification: cocoascript.NSNotificationName;
+declare const NSApplicationDidUnhideNotification: cocoascript.NSNotificationName;
+declare const NSApplicationDidUpdateNotification: cocoascript.NSNotificationName;
+declare const NSApplicationWillBecomeActiveNotification: cocoascript.NSNotificationName;
+declare const NSApplicationWillFinishLaunchingNotification: cocoascript.NSNotificationName;
+declare const NSApplicationWillHideNotification: cocoascript.NSNotificationName;
+declare const NSApplicationWillResignActiveNotification: cocoascript.NSNotificationName;
+declare const NSApplicationWillTerminateNotification: cocoascript.NSNotificationName;
+declare const NSApplicationWillUnhideNotification: cocoascript.NSNotificationName;
+declare const NSApplicationWillUpdateNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An object that can manipulate and provide information for a single instance of an app.
@@ -599,48 +563,6 @@ declare namespace cocoascript {
     setVoiceOverEnabled(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/3025774-requestauthorizationoftype
     requestAuthorizationOfType_completionHandler(type: cocoascript.NSWorkspaceAuthorizationType, completionHandler: cocoascript.NSError):void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacewilllaunchapplicationnotification
-    NSWorkspaceWillLaunchApplicationNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceWillLaunchApplicationNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacedidlaunchapplicationnotification
-    NSWorkspaceDidLaunchApplicationNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceDidLaunchApplicationNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacedidterminateapplicationnotification
-    NSWorkspaceDidTerminateApplicationNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceDidTerminateApplicationNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacesessiondidbecomeactivenotification
-    NSWorkspaceSessionDidBecomeActiveNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceSessionDidBecomeActiveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacesessiondidresignactivenotification
-    NSWorkspaceSessionDidResignActiveNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceSessionDidResignActiveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacedidmountnotification
-    NSWorkspaceDidMountNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceDidMountNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacewillunmountnotification
-    NSWorkspaceWillUnmountNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceWillUnmountNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacedidunmountnotification
-    NSWorkspaceDidUnmountNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceDidUnmountNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacedidwakenotification
-    NSWorkspaceDidWakeNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceDidWakeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacewillsleepnotification
-    NSWorkspaceWillSleepNotification(): cocoascript.NSNotificationName;
-    setNSWorkspaceWillSleepNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacevolumelocalizednamekey
-    NSWorkspaceVolumeLocalizedNameKey(): cocoascript.const;
-    setNSWorkspaceVolumeLocalizedNameKey(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacevolumeurlkey
-    NSWorkspaceVolumeURLKey(): cocoascript.const;
-    setNSWorkspaceVolumeURLKey(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacevolumeoldlocalizednamekey
-    NSWorkspaceVolumeOldLocalizedNameKey(): cocoascript.const;
-    setNSWorkspaceVolumeOldLocalizedNameKey(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsworkspacevolumeoldurlkey
-    NSWorkspaceVolumeOldURLKey(): cocoascript.const;
-    setNSWorkspaceVolumeOldURLKey(): void;
     //
     alloc():cocoascript.NSWorkspace;
     //
@@ -649,6 +571,20 @@ declare namespace cocoascript {
 }
 
 declare const NSWorkspace: cocoascript.NSWorkspace;
+declare const NSWorkspaceWillLaunchApplicationNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidLaunchApplicationNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidTerminateApplicationNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceSessionDidBecomeActiveNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceSessionDidResignActiveNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidMountNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceWillUnmountNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidUnmountNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceDidWakeNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceWillSleepNotification: cocoascript.NSNotificationName;
+declare const NSWorkspaceVolumeLocalizedNameKey: cocoascript.NSString;
+declare const NSWorkspaceVolumeURLKey: cocoascript.NSString;
+declare const NSWorkspaceVolumeOldLocalizedNameKey: cocoascript.NSString;
+declare const NSWorkspaceVolumeOldURLKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The configuration options to use when opening URLs or launching apps.
@@ -885,12 +821,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nshelpmanager/2870247-contexthelpmodeactive
     contextHelpModeActive(): cocoascript.BOOL;
     setContextHelpModeActive(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscontexthelpmodedidactivatenotification
-    NSContextHelpModeDidActivateNotification(): cocoascript.NSNotificationName;
-    setNSContextHelpModeDidActivateNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscontexthelpmodediddeactivatenotification
-    NSContextHelpModeDidDeactivateNotification(): cocoascript.NSNotificationName;
-    setNSContextHelpModeDidDeactivateNotification(): void;
     //
     alloc():cocoascript.NSHelpManager;
     //
@@ -899,6 +829,8 @@ declare namespace cocoascript {
 }
 
 declare const NSHelpManager: cocoascript.NSHelpManager;
+declare const NSContextHelpModeDidActivateNotification: cocoascript.NSNotificationName;
+declare const NSContextHelpModeDidDeactivateNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A set of methods an app can implement to provide Spotlight for Help for its own custom help data.
@@ -1108,9 +1040,6 @@ declare namespace cocoascript {
     setUserActivity(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1529014-updateuseractivitystate
     updateUserActivityState(activity: cocoascript.NSUserActivity):void;
-    // doc://com.apple.documentation/documentation/uikit/nsuseractivitydocumenturlkey
-    NSUserActivityDocumentURLKey(): cocoascript.const;
-    setNSUserActivityDocumentURLKey(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515190-validateuserinterfaceitem
     validateUserInterfaceItem(item: cocoascript.NSValidatedUserInterfaceItem):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515227-performsynchronousfileaccessusin
@@ -1227,6 +1156,7 @@ declare namespace cocoascript {
 }
 
 declare const NSDocument: cocoascript.NSDocument;
+declare const NSUserActivityDocumentURLKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that manages an app's documents.
@@ -2914,21 +2844,6 @@ declare namespace cocoascript {
     releaseGState():void;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483279-dragimage
     dragImage_at_offset_event_pasteboard_source_slideBack(image: cocoascript.NSImage, viewLocation: cocoascript.NSPoint, initialOffset: cocoascript.NSSize, event: cocoascript.NSEvent, pboard: cocoascript.NSPasteboard, sourceObj: cocoascript.NSView, slideFlag: cocoascript.BOOL):void;
-    // doc://com.apple.documentation/documentation/appkit/nsviewboundsdidchangenotification
-    NSViewBoundsDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSViewBoundsDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsviewfocusdidchangenotification
-    NSViewFocusDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSViewFocusDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsviewframedidchangenotification
-    NSViewFrameDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSViewFrameDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsviewdidupdatetrackingareasnotification
-    NSViewDidUpdateTrackingAreasNotification(): cocoascript.NSNotificationName;
-    setNSViewDidUpdateTrackingAreasNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsviewglobalframedidchangenotification
-    NSViewGlobalFrameDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSViewGlobalFrameDidChangeNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483715-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.NSView;
     // doc://com.apple.documentation/documentation/appkit/nsview/3553226-additionalsafeareainsets
@@ -2992,6 +2907,11 @@ declare namespace cocoascript {
 }
 
 declare const NSView: cocoascript.NSView;
+declare const NSViewBoundsDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSViewFocusDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSViewFrameDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSViewDidUpdateTrackingAreasNotification: cocoascript.NSNotificationName;
+declare const NSViewGlobalFrameDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A high-level interface for manipulating image data.
@@ -3294,15 +3214,6 @@ declare namespace cocoascript {
     controlTextDidEndEditing(obj: cocoascript.NSNotification):void;
     // doc://com.apple.documentation/documentation/appkit/nscontrol/1526876-invalidateintrinsiccontentsizefo
     invalidateIntrinsicContentSizeForCell(cell: cocoascript.NSCell):void;
-    // doc://com.apple.documentation/documentation/appkit/nscontroltextdidbegineditingnotification
-    NSControlTextDidBeginEditingNotification(): cocoascript.NSNotificationName;
-    setNSControlTextDidBeginEditingNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscontroltextdidchangenotification
-    NSControlTextDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSControlTextDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscontroltextdidendeditingnotification
-    NSControlTextDidEndEditingNotification(): cocoascript.NSNotificationName;
-    setNSControlTextDidEndEditingNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nscontrol/1428960-cell
     cell(): cocoascript.NSCell;
     setCell(): void;
@@ -3332,6 +3243,9 @@ declare namespace cocoascript {
 }
 
 declare const NSControl: cocoascript.NSControl;
+declare const NSControlTextDidBeginEditingNotification: cocoascript.NSNotificationName;
+declare const NSControlTextDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSControlTextDidEndEditingNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A mechanism for displaying text or images in a view object without the overhead of a full
@@ -3591,9 +3505,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscell/1529213-userinterfacelayoutdirection
     userInterfaceLayoutDirection(): cocoascript.NSUserInterfaceLayoutDirection;
     setUserInterfaceLayoutDirection(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscontroltintdidchangenotification
-    NSControlTintDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSControlTintDidChangeNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1560876-setentrytype
     setEntryType(type: cocoascript.NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1560897-entrytype
@@ -3622,6 +3533,7 @@ declare namespace cocoascript {
 }
 
 declare const NSCell: cocoascript.NSCell;
+declare const NSControlTintDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An active area inside a control.
@@ -3697,12 +3609,6 @@ declare namespace cocoascript {
     maxPossiblePositionOfDividerAtIndex(dividerIndex: cocoascript.NSInteger):cocoascript.CGFloat;
     // doc://com.apple.documentation/documentation/appkit/nssplitview/1455316-setposition
     setPosition_ofDividerAtIndex(position: cocoascript.CGFloat, dividerIndex: cocoascript.NSInteger):void;
-    // doc://com.apple.documentation/documentation/appkit/nssplitviewwillresizesubviewsnotification
-    NSSplitViewWillResizeSubviewsNotification(): cocoascript.NSNotificationName;
-    setNSSplitViewWillResizeSubviewsNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nssplitviewdidresizesubviewsnotification
-    NSSplitViewDidResizeSubviewsNotification(): cocoascript.NSNotificationName;
-    setNSSplitViewDidResizeSubviewsNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nssplitview/1455275-ispanesplitter
     isPaneSplitter():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/appkit/nssplitview/1455309-setispanesplitter
@@ -3715,6 +3621,8 @@ declare namespace cocoascript {
 }
 
 declare const NSSplitView: cocoascript.NSSplitView;
+declare const NSSplitViewWillResizeSubviewsNotification: cocoascript.NSNotificationName;
+declare const NSSplitViewDidResizeSubviewsNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A view that arranges an array of views horizontally or vertically and updates their placement and sizing when the window size changes.
@@ -4256,15 +4164,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449458-incrementalsearchingenabled
     incrementalSearchingEnabled(): cocoascript.BOOL;
     setIncrementalSearchingEnabled(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstextviewdidchangeselectionnotification
-    NSTextViewDidChangeSelectionNotification(): cocoascript.NSNotificationName;
-    setNSTextViewDidChangeSelectionNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstextviewwillchangenotifyingtextviewnotification
-    NSTextViewWillChangeNotifyingTextViewNotification(): cocoascript.NSNotificationName;
-    setNSTextViewWillChangeNotifyingTextViewNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstextviewdidchangetypingattributesnotification
-    NSTextViewDidChangeTypingAttributesNotification(): cocoascript.NSNotificationName;
-    setNSTextViewDidChangeTypingAttributesNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449489-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.NSTextView;
     // doc://com.apple.documentation/documentation/appkit/nstextview/2544680-allowscharacterpickertouchbarite
@@ -4303,6 +4202,9 @@ declare namespace cocoascript {
 }
 
 declare const NSTextView: cocoascript.NSTextView;
+declare const NSTextViewDidChangeSelectionNotification: cocoascript.NSNotificationName;
+declare const NSTextViewWillChangeNotifyingTextViewNotification: cocoascript.NSNotificationName;
+declare const NSTextViewDidChangeTypingAttributesNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A view that displays OpenGL content in a view.
@@ -4668,9 +4570,6 @@ declare namespace cocoascript {
     setTitle(string: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1527124-synchronizetitleandselecteditem
     synchronizeTitleAndSelectedItem():void;
-    // doc://com.apple.documentation/documentation/appkit/nspopupbuttonwillpopupnotification
-    NSPopUpButtonWillPopUpNotification(): cocoascript.NSNotificationName;
-    setNSPopUpButtonWillPopUpNotification(): void;
     //
     alloc():cocoascript.NSPopUpButton;
     //
@@ -4679,6 +4578,7 @@ declare namespace cocoascript {
 }
 
 declare const NSPopUpButton: cocoascript.NSPopUpButton;
+declare const NSPopUpButtonWillPopUpNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An interface that provides visual feedback to the user about the status of an ongoing task.
@@ -5980,9 +5880,6 @@ declare namespace cocoascript {
     clearStartAnimation():void;
     // doc://com.apple.documentation/documentation/appkit/nsanimation/1524448-clearstopanimation
     clearStopAnimation():void;
-    // doc://com.apple.documentation/documentation/appkit/nsanimationprogressmarknotification
-    NSAnimationProgressMarkNotification(): cocoascript.NSNotificationName;
-    setNSAnimationProgressMarkNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nsanimation/1643460-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.NSAnimation;
     //
@@ -5993,6 +5890,7 @@ declare namespace cocoascript {
 }
 
 declare const NSAnimation: cocoascript.NSAnimation;
+declare const NSAnimationProgressMarkNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An animation of an app's views, limited to changes in frame location and size, and to fade-in and fade-out effects.
@@ -6627,21 +6525,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419485-windowref
     windowRef(): void;
     setWindowRef(): void;
-    // doc://com.apple.documentation/documentation/appkit/1473812-nsbestdepth
-    NSBestDepth(): cocoascript.BOOL;
-    setNSBestDepth(): void;
-    // doc://com.apple.documentation/documentation/appkit/1473660-nsbitsperpixelfromdepth
-    NSBitsPerPixelFromDepth(): cocoascript.NSWindowDepth;
-    setNSBitsPerPixelFromDepth(): void;
-    // doc://com.apple.documentation/documentation/appkit/1473674-nsbitspersamplefromdepth
-    NSBitsPerSampleFromDepth(): cocoascript.NSWindowDepth;
-    setNSBitsPerSampleFromDepth(): void;
-    // doc://com.apple.documentation/documentation/appkit/1473594-nscolorspacefromdepth
-    NSColorSpaceFromDepth(): cocoascript.NSWindowDepth;
-    setNSColorSpaceFromDepth(): void;
-    // doc://com.apple.documentation/documentation/appkit/1473710-nsnumberofcolorcomponents
-    NSNumberOfColorComponents(): cocoascript.NSColorSpaceName;
-    setNSNumberOfColorComponents(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1449574-hasclosebox
     hasCloseBox(): cocoascript.BOOL;
     setHasCloseBox(): void;
@@ -6663,57 +6546,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nswindow/1449577-orderedindex
     orderedIndex(): cocoascript.NSInteger;
     setOrderedIndex(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidbecomekeynotification
-    NSWindowDidBecomeKeyNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidBecomeKeyNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidbecomemainnotification
-    NSWindowDidBecomeMainNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidBecomeMainNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidchangescreennotification
-    NSWindowDidChangeScreenNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidChangeScreenNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidchangescreenprofilenotification
-    NSWindowDidChangeScreenProfileNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidChangeScreenProfileNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdiddeminiaturizenotification
-    NSWindowDidDeminiaturizeNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidDeminiaturizeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidendsheetnotification
-    NSWindowDidEndSheetNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidEndSheetNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidexposenotification
-    NSWindowDidExposeNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidExposeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidminiaturizenotification
-    NSWindowDidMiniaturizeNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidMiniaturizeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidmovenotification
-    NSWindowDidMoveNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidMoveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidresignkeynotification
-    NSWindowDidResignKeyNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidResignKeyNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidresignmainnotification
-    NSWindowDidResignMainNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidResignMainNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidresizenotification
-    NSWindowDidResizeNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidResizeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowdidupdatenotification
-    NSWindowDidUpdateNotification(): cocoascript.NSNotificationName;
-    setNSWindowDidUpdateNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowwillbeginsheetnotification
-    NSWindowWillBeginSheetNotification(): cocoascript.NSNotificationName;
-    setNSWindowWillBeginSheetNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowwillclosenotification
-    NSWindowWillCloseNotification(): cocoascript.NSNotificationName;
-    setNSWindowWillCloseNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowwillminiaturizenotification
-    NSWindowWillMiniaturizeNotification(): cocoascript.NSNotificationName;
-    setNSWindowWillMiniaturizeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nswindowwillmovenotification
-    NSWindowWillMoveNotification(): cocoascript.NSNotificationName;
-    setNSWindowWillMoveNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/2998855-appearancesource
     appearanceSource(): cocoascript.NSAppearanceCustomization;
     setAppearanceSource(): void;
@@ -6762,6 +6594,28 @@ declare namespace cocoascript {
 }
 
 declare const NSWindow: cocoascript.NSWindow;
+declare const NSBestDepth: cocoascript.BOOL;
+declare const NSBitsPerPixelFromDepth: cocoascript.NSWindowDepth;
+declare const NSBitsPerSampleFromDepth: cocoascript.NSWindowDepth;
+declare const NSColorSpaceFromDepth: cocoascript.NSWindowDepth;
+declare const NSNumberOfColorComponents: cocoascript.NSColorSpaceName;
+declare const NSWindowDidBecomeKeyNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidBecomeMainNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidChangeScreenNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidChangeScreenProfileNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidDeminiaturizeNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidEndSheetNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidExposeNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidMiniaturizeNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidMoveNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidResignKeyNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidResignMainNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidResizeNotification: cocoascript.NSNotificationName;
+declare const NSWindowDidUpdateNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillBeginSheetNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillCloseNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillMiniaturizeNotification: cocoascript.NSNotificationName;
+declare const NSWindowWillMoveNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A modal dialog or sheet attached to a document window.
@@ -7146,9 +7000,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopover/1526708-delegate
     delegate(): cocoascript.NSPopoverDelegate;
     setDelegate(): void;
-    // doc://com.apple.documentation/documentation/appkit/nspopoverclosereasonkey
-    NSPopoverCloseReasonKey(): cocoascript.const;
-    setNSPopoverCloseReasonKey(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopover/1526851-init
     init():cocoascript.NSPopover;
     // doc://com.apple.documentation/documentation/appkit/nspopover/1524631-initwithcoder
@@ -7161,6 +7012,7 @@ declare namespace cocoascript {
 }
 
 declare const NSPopover: cocoascript.NSPopover;
+declare const NSPopoverCloseReasonKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A set of optional methods that a popover delegate can implement to provide additional or custom functionality.
@@ -7413,9 +7265,6 @@ declare namespace cocoascript {
     setAlpha(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1532638-changecolor
     changeColor(sender: cocoascript.NSColorPanel):void;
-    // doc://com.apple.documentation/documentation/appkit/nscolorpanelcolordidchangenotification
-    NSColorPanelColorDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSColorPanelColorDidChangeNotification(): void;
     //
     alloc():cocoascript.NSColorPanel;
     //
@@ -7424,6 +7273,7 @@ declare namespace cocoascript {
 }
 
 declare const NSColorPanel: cocoascript.NSColorPanel;
+declare const NSColorPanelColorDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A set of methods that provides a way to add color pickers—custom user interfaces for color selection—to an app’s color panel.
@@ -7895,9 +7745,6 @@ declare namespace cocoascript {
     setInterfaceStyle(interfaceStyle: cocoascript.NSInterfaceStyle):void;
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1555071-interfacestyle
     interfaceStyle():cocoascript.NSInterfaceStyle;
-    // doc://com.apple.documentation/documentation/appkit/nsinterfacestyledefault
-    NSInterfaceStyleDefault(): cocoascript.NSString;
-    setNSInterfaceStyleDefault(): void;
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1526368-begingesturewithevent
     beginGestureWithEvent(event: cocoascript.NSEvent):void;
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1531251-endgesturewithevent
@@ -7945,6 +7792,7 @@ declare namespace cocoascript {
 }
 
 declare const NSResponder: cocoascript.NSResponder;
+declare const NSInterfaceStyleDefault: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that contains information about an input action, such as a mouse click or a key press.
@@ -8376,27 +8224,6 @@ declare namespace cocoascript {
     setMenuRepresentation(menuRep: cocoascript.NSMenu):void;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518252-menurepresentation
     menuRepresentation():cocoascript.NSMenu;
-    // doc://com.apple.documentation/documentation/appkit/nsmenudidadditemnotification
-    NSMenuDidAddItemNotification(): cocoascript.NSNotificationName;
-    setNSMenuDidAddItemNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsmenudidchangeitemnotification
-    NSMenuDidChangeItemNotification(): cocoascript.NSNotificationName;
-    setNSMenuDidChangeItemNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsmenudidbegintrackingnotification
-    NSMenuDidBeginTrackingNotification(): cocoascript.NSNotificationName;
-    setNSMenuDidBeginTrackingNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsmenudidendtrackingnotification
-    NSMenuDidEndTrackingNotification(): cocoascript.NSNotificationName;
-    setNSMenuDidEndTrackingNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsmenudidremoveitemnotification
-    NSMenuDidRemoveItemNotification(): cocoascript.NSNotificationName;
-    setNSMenuDidRemoveItemNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsmenudidsendactionnotification
-    NSMenuDidSendActionNotification(): cocoascript.NSNotificationName;
-    setNSMenuDidSendActionNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsmenuwillsendactionnotification
-    NSMenuWillSendActionNotification(): cocoascript.NSNotificationName;
-    setNSMenuWillSendActionNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1644714-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.NSMenu;
     //
@@ -8407,6 +8234,13 @@ declare namespace cocoascript {
 }
 
 declare const NSMenu: cocoascript.NSMenu;
+declare const NSMenuDidAddItemNotification: cocoascript.NSNotificationName;
+declare const NSMenuDidChangeItemNotification: cocoascript.NSNotificationName;
+declare const NSMenuDidBeginTrackingNotification: cocoascript.NSNotificationName;
+declare const NSMenuDidEndTrackingNotification: cocoascript.NSNotificationName;
+declare const NSMenuDidRemoveItemNotification: cocoascript.NSNotificationName;
+declare const NSMenuDidSendActionNotification: cocoascript.NSNotificationName;
+declare const NSMenuWillSendActionNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A command item in an app menu.
@@ -11129,9 +10963,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1525139-registeredimagerepclasses
     registeredImageRepClasses(): cocoascript.Class;
     setRegisteredImageRepClasses(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsimagerepregistrydidchangenotification
-    NSImageRepRegistryDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSImageRepRegistryDidChangeNotification(): void;
     //
     alloc():cocoascript.NSImageRep;
     //
@@ -11140,6 +10971,7 @@ declare namespace cocoascript {
 }
 
 declare const NSImageRep: cocoascript.NSImageRep;
+declare const NSImageRepRegistryDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An object that renders an image from bitmap data.
@@ -11927,12 +11759,6 @@ declare namespace cocoascript {
     setFill():void;
     // doc://com.apple.documentation/documentation/appkit/nscolor/1531019-setstroke
     setStroke():void;
-    // doc://com.apple.documentation/documentation/appkit/nssystemcolorsdidchangenotification
-    NSSystemColorsDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSSystemColorsDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscontroltintdidchangenotification
-    NSControlTintDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSControlTintDidChangeNotification(): void;
     //
     alloc():cocoascript.NSColor;
     //
@@ -11941,6 +11767,8 @@ declare namespace cocoascript {
 }
 
 declare const NSColor: cocoascript.NSColor;
+declare const NSSystemColorsDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSControlTintDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An ordered list of color objects, identified by keys.
@@ -11977,9 +11805,6 @@ declare namespace cocoascript {
     removeFile():void;
     // doc://com.apple.documentation/documentation/appkit/nscolorlist/1522135-writetofile
     writeToFile(path: cocoascript.NSString):cocoascript.BOOL;
-    // doc://com.apple.documentation/documentation/appkit/nscolorlistdidchangenotification
-    NSColorListDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSColorListDidChangeNotification(): void;
     //
     alloc():cocoascript.NSColorList;
     //
@@ -11988,6 +11813,7 @@ declare namespace cocoascript {
 }
 
 declare const NSColorList: cocoascript.NSColorList;
+declare const NSColorListDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An object that represents a custom color space.
@@ -12406,9 +12232,6 @@ declare namespace cocoascript {
     showPanels():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1579095-setshowpanels
     setShowPanels(flag: cocoascript.BOOL):void;
-    // doc://com.apple.documentation/documentation/appkit/nsprintoperationexistsexception
-    NSPrintOperationExistsException(): cocoascript.NSExceptionName;
-    setNSPrintOperationExistsException(): void;
     //
     alloc():cocoascript.NSPrintOperation;
     //
@@ -12417,6 +12240,7 @@ declare namespace cocoascript {
 }
 
 declare const NSPrintOperation: cocoascript.NSPrintOperation;
+declare const NSPrintOperationExistsException: cocoascript.NSExceptionName;
 declare namespace cocoascript {
   /**
    * An interface to the Cocoa spell-checking service.
@@ -12990,18 +12814,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstext/1529480-delegate
     delegate(): cocoascript.NSTextDelegate;
     setDelegate(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstextdidbegineditingnotification
-    NSTextDidBeginEditingNotification(): cocoascript.NSNotificationName;
-    setNSTextDidBeginEditingNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstextdidchangenotification
-    NSTextDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSTextDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstextdidendeditingnotification
-    NSTextDidEndEditingNotification(): cocoascript.NSNotificationName;
-    setNSTextDidEndEditingNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstextmovementuserinfokey
-    NSTextMovementUserInfoKey(): cocoascript.const;
-    setNSTextMovementUserInfoKey(): void;
     //
     alloc():cocoascript.NSText;
     //
@@ -13010,6 +12822,10 @@ declare namespace cocoascript {
 }
 
 declare const NSText: cocoascript.NSText;
+declare const NSTextDidBeginEditingNotification: cocoascript.NSNotificationName;
+declare const NSTextDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSTextDidEndEditingNotification: cocoascript.NSNotificationName;
+declare const NSTextMovementUserInfoKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A protocol that a text field delegate can use to control its field editor action menu.
@@ -13834,9 +13650,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextinputcontext/1533970-selectedkeyboardinputsource
     selectedKeyboardInputSource(): cocoascript.NSTextInputSourceIdentifier;
     setSelectedKeyboardInputSource(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstextinputcontextkeyboardselectiondidchangenotification
-    NSTextInputContextKeyboardSelectionDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSTextInputContextKeyboardSelectionDidChangeNotification(): void;
     //
     alloc():cocoascript.NSTextInputContext;
     //
@@ -13845,6 +13658,7 @@ declare namespace cocoascript {
 }
 
 declare const NSTextInputContext: cocoascript.NSTextInputContext;
+declare const NSTextInputContextKeyboardSelectionDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A list of alternative strings for a piece of text.
@@ -13861,9 +13675,6 @@ declare namespace cocoascript {
     setAlternativeStrings(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextalternatives/1525721-noteselectedalternativestring
     noteSelectedAlternativeString(alternativeString: cocoascript.NSString):void;
-    // doc://com.apple.documentation/documentation/appkit/nstextalternativesselectedalternativestringnotification
-    NSTextAlternativesSelectedAlternativeStringNotification(): cocoascript.NSNotificationName;
-    setNSTextAlternativesSelectedAlternativeStringNotification(): void;
     //
     alloc():cocoascript.NSTextAlternatives;
     //
@@ -13872,6 +13683,7 @@ declare namespace cocoascript {
 }
 
 declare const NSTextAlternatives: cocoascript.NSTextAlternatives;
+declare const NSTextAlternativesSelectedAlternativeStringNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * The representation of a font in an app.
@@ -13924,12 +13736,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsfont/1535152-verticalfont
     verticalFont(): cocoascript.NSFont;
     setVerticalFont(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsantialiasthresholdchangednotification
-    NSAntialiasThresholdChangedNotification(): cocoascript.NSNotificationName;
-    setNSAntialiasThresholdChangedNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsfontsetchangednotification
-    NSFontSetChangedNotification(): cocoascript.NSNotificationName;
-    setNSFontSetChangedNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfont/3667454-fontwithsize
     fontWithSize(fontSize: cocoascript.CGFloat):cocoascript.NSFont;
     //
@@ -13940,6 +13746,8 @@ declare namespace cocoascript {
 }
 
 declare const NSFont: cocoascript.NSFont;
+declare const NSAntialiasThresholdChangedNotification: cocoascript.NSNotificationName;
+declare const NSFontSetChangedNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * The center of activity for the font-conversion system.
@@ -14304,18 +14112,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdrawer/1438312-parentwindow
     parentWindow(): cocoascript.NSWindow;
     setParentWindow(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsdrawerdidclosenotification
-    NSDrawerDidCloseNotification(): cocoascript.NSNotificationName;
-    setNSDrawerDidCloseNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsdrawerdidopennotification
-    NSDrawerDidOpenNotification(): cocoascript.NSNotificationName;
-    setNSDrawerDidOpenNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsdrawerwillclosenotification
-    NSDrawerWillCloseNotification(): cocoascript.NSNotificationName;
-    setNSDrawerWillCloseNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsdrawerwillopennotification
-    NSDrawerWillOpenNotification(): cocoascript.NSNotificationName;
-    setNSDrawerWillOpenNotification(): void;
     //
     alloc():cocoascript.NSDrawer;
     //
@@ -14324,6 +14120,10 @@ declare namespace cocoascript {
 }
 
 declare const NSDrawer: cocoascript.NSDrawer;
+declare const NSDrawerDidCloseNotification: cocoascript.NSNotificationName;
+declare const NSDrawerDidOpenNotification: cocoascript.NSNotificationName;
+declare const NSDrawerWillCloseNotification: cocoascript.NSNotificationName;
+declare const NSDrawerWillOpenNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An object that handles the measurement and display of a single menu item in its encompassing frame.
@@ -15409,18 +15209,6 @@ declare namespace cocoascript {
     textShouldEndEditing(textObject: cocoascript.NSText):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstableview/1532159-textdidendediting
     textDidEndEditing(notification: cocoascript.NSNotification):void;
-    // doc://com.apple.documentation/documentation/appkit/nstableviewcolumndidmovenotification
-    NSTableViewColumnDidMoveNotification(): cocoascript.NSNotificationName;
-    setNSTableViewColumnDidMoveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstableviewcolumndidresizenotification
-    NSTableViewColumnDidResizeNotification(): cocoascript.NSNotificationName;
-    setNSTableViewColumnDidResizeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstableviewselectiondidchangenotification
-    NSTableViewSelectionDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSTableViewSelectionDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nstableviewselectionischangingnotification
-    NSTableViewSelectionIsChangingNotification(): cocoascript.NSNotificationName;
-    setNSTableViewSelectionIsChangingNotification(): void;
     //
     alloc():cocoascript.NSTableView;
     //
@@ -15429,6 +15217,10 @@ declare namespace cocoascript {
 }
 
 declare const NSTableView: cocoascript.NSTableView;
+declare const NSTableViewColumnDidMoveNotification: cocoascript.NSNotificationName;
+declare const NSTableViewColumnDidResizeNotification: cocoascript.NSNotificationName;
+declare const NSTableViewSelectionDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSTableViewSelectionIsChangingNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A set of methods that you use to manage the behavior of a collection view.
@@ -15726,30 +15518,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsoutlineview/1524564-userinterfacelayoutdirection
     userInterfaceLayoutDirection(): cocoascript.NSUserInterfaceLayoutDirection;
     setUserInterfaceLayoutDirection(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsoutlineviewcolumndidmovenotification
-    NSOutlineViewColumnDidMoveNotification(): cocoascript.NSNotificationName;
-    setNSOutlineViewColumnDidMoveNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsoutlineviewcolumndidresizenotification
-    NSOutlineViewColumnDidResizeNotification(): cocoascript.NSNotificationName;
-    setNSOutlineViewColumnDidResizeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsoutlineviewitemdidcollapsenotification
-    NSOutlineViewItemDidCollapseNotification(): cocoascript.NSNotificationName;
-    setNSOutlineViewItemDidCollapseNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsoutlineviewitemdidexpandnotification
-    NSOutlineViewItemDidExpandNotification(): cocoascript.NSNotificationName;
-    setNSOutlineViewItemDidExpandNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsoutlineviewitemwillcollapsenotification
-    NSOutlineViewItemWillCollapseNotification(): cocoascript.NSNotificationName;
-    setNSOutlineViewItemWillCollapseNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsoutlineviewitemwillexpandnotification
-    NSOutlineViewItemWillExpandNotification(): cocoascript.NSNotificationName;
-    setNSOutlineViewItemWillExpandNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsoutlineviewselectiondidchangenotification
-    NSOutlineViewSelectionDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSOutlineViewSelectionDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsoutlineviewselectionischangingnotification
-    NSOutlineViewSelectionIsChangingNotification(): cocoascript.NSNotificationName;
-    setNSOutlineViewSelectionIsChangingNotification(): void;
     //
     alloc():cocoascript.NSOutlineView;
     //
@@ -15758,6 +15526,14 @@ declare namespace cocoascript {
 }
 
 declare const NSOutlineView: cocoascript.NSOutlineView;
+declare const NSOutlineViewColumnDidMoveNotification: cocoascript.NSNotificationName;
+declare const NSOutlineViewColumnDidResizeNotification: cocoascript.NSNotificationName;
+declare const NSOutlineViewItemDidCollapseNotification: cocoascript.NSNotificationName;
+declare const NSOutlineViewItemDidExpandNotification: cocoascript.NSNotificationName;
+declare const NSOutlineViewItemWillCollapseNotification: cocoascript.NSNotificationName;
+declare const NSOutlineViewItemWillExpandNotification: cocoascript.NSNotificationName;
+declare const NSOutlineViewSelectionDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSOutlineViewSelectionIsChangingNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An interface that displays a hierarchically organized list of data items that can be navigated and selected.
@@ -15968,9 +15744,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407642-rowheight
     rowHeight(): cocoascript.CGFloat;
     setRowHeight(): void;
-    // doc://com.apple.documentation/documentation/appkit/nsbrowsercolumnconfigurationdidchangenotification
-    NSBrowserColumnConfigurationDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSBrowserColumnConfigurationDidChangeNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407743-updatescroller
     updateScroller():void;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407655-scrollviascroller
@@ -15999,6 +15772,7 @@ declare namespace cocoascript {
 }
 
 declare const NSBrowser: cocoascript.NSBrowser;
+declare const NSBrowserColumnConfigurationDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbindinginfokey
   type NSBindingInfoKey = cocoascript.NSString;
@@ -18648,9 +18422,6 @@ declare namespace cocoascript {
     dismissPopUp():void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1530205-performclickwithframe
     performClickWithFrame_inView(frame: cocoascript.NSRect, controlView: cocoascript.NSView):void;
-    // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncellwillpopupnotification
-    NSPopUpButtonCellWillPopUpNotification(): cocoascript.NSNotificationName;
-    setNSPopUpButtonCellWillPopUpNotification(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1644676-initwithcoder
     initWithCoder(coder: cocoascript.NSCoder):cocoascript.NSPopUpButtonCell;
     //
@@ -18661,6 +18432,7 @@ declare namespace cocoascript {
 }
 
 declare const NSPopUpButtonCell: cocoascript.NSPopUpButtonCell;
+declare const NSPopUpButtonCellWillPopUpNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprogressindicatorthickness
   type NSProgressIndicatorThickness = cocoascript.NSUInteger;
@@ -19480,18 +19252,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscombobox/1436697-delegate
     delegate(): cocoascript.NSComboBoxDelegate;
     setDelegate(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscomboboxselectiondidchangenotification
-    NSComboBoxSelectionDidChangeNotification(): cocoascript.NSNotificationName;
-    setNSComboBoxSelectionDidChangeNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscomboboxselectionischangingnotification
-    NSComboBoxSelectionIsChangingNotification(): cocoascript.NSNotificationName;
-    setNSComboBoxSelectionIsChangingNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscomboboxwilldismissnotification
-    NSComboBoxWillDismissNotification(): cocoascript.NSNotificationName;
-    setNSComboBoxWillDismissNotification(): void;
-    // doc://com.apple.documentation/documentation/appkit/nscomboboxwillpopupnotification
-    NSComboBoxWillPopUpNotification(): cocoascript.NSNotificationName;
-    setNSComboBoxWillPopUpNotification(): void;
     //
     alloc():cocoascript.NSComboBox;
     //
@@ -19500,6 +19260,10 @@ declare namespace cocoascript {
 }
 
 declare const NSComboBox: cocoascript.NSComboBox;
+declare const NSComboBoxSelectionDidChangeNotification: cocoascript.NSNotificationName;
+declare const NSComboBoxSelectionIsChangingNotification: cocoascript.NSNotificationName;
+declare const NSComboBoxWillDismissNotification: cocoascript.NSNotificationName;
+declare const NSComboBoxWillPopUpNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/appkit/nscomboboxdatasource
@@ -20829,14 +20593,9 @@ declare namespace cocoascript {
 declare const NSModalResponseStop: cocoascript.NSModalResponse;
 declare const NSModalResponseAbort: cocoascript.NSModalResponse;
 declare namespace cocoascript {
-  /**
-   * Variables of type
-   * doc://com.apple.documentation/documentation/appkit/nsmodalsession
-   */
   interface NSModalSession {
   }
-}
-declare const NSPrintSpoolJob: cocoascript.NSPrintJobDispositionValue;
+}declare const NSPrintSpoolJob: cocoascript.NSPrintJobDispositionValue;
 declare const NSPrintPreviewJob: cocoascript.NSPrintJobDispositionValue;
 declare const NSPrintCancelJob: cocoascript.NSPrintJobDispositionValue;
 declare namespace cocoascript {

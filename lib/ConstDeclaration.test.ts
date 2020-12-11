@@ -7,4 +7,10 @@ describe('ConstDeclaration', () => {
     const decl = ConstDeclaration.initFromTokens('fakeid', getTokens(doc));
     expect(decl.generate()).toMatchSnapshot();
   });
+
+  it('type before const', () => {
+    const doc = require('../documentation/appkit/nsworkspacevolumeurlkey.json')
+    const decl = ConstDeclaration.initFromTokens('fakeid', getTokens(doc));
+    expect(decl.generate()).toMatchSnapshot();
+  });
 });

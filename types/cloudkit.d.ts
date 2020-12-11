@@ -402,9 +402,6 @@ declare namespace cocoascript {
     initWithZoneName(zoneName: cocoascript.NSString):cocoascript.CKRecordZone;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1515207-initwithzoneid
     initWithZoneID(zoneID: cocoascript.CKRecordZoneID):cocoascript.CKRecordZone;
-    // doc://com.apple.documentation/documentation/cloudkit/ckrecordzonedefaultname
-    CKRecordZoneDefaultName(): cocoascript.const;
-    setCKRecordZoneDefaultName(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1514917-zoneid
     zoneID(): cocoascript.CKRecordZoneID;
     setZoneID(): void;
@@ -419,6 +416,7 @@ declare namespace cocoascript {
 }
 
 declare const CKRecordZone: cocoascript.CKRecordZone;
+declare const CKRecordZoneDefaultName: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that identifies a specific version of a record.
@@ -935,12 +933,6 @@ declare namespace cocoascript {
     fetchShareParticipantWithUserRecordID_completionHandler(userRecordID: cocoascript.CKRecordID, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399191-fetchuserrecordidwithcompletionh
     fetchUserRecordIDWithCompletionHandler(completionHandler: cocoascript.NSError):void;
-    // doc://com.apple.documentation/documentation/cloudkit/ckcurrentuserdefaultname
-    CKCurrentUserDefaultName(): cocoascript.const;
-    setCKCurrentUserDefaultName(): void;
-    // doc://com.apple.documentation/documentation/cloudkit/ckownerdefaultname
-    CKOwnerDefaultName(): cocoascript.const;
-    setCKOwnerDefaultName(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399160-fetchalllonglivedoperationidswit
     fetchAllLongLivedOperationIDsWithCompletionHandler(completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399164-fetchlonglivedoperationwithid
@@ -949,9 +941,6 @@ declare namespace cocoascript {
     fetchShareMetadataWithURL_completionHandler(url: cocoascript.NSURL, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/2113667-acceptsharemetadata
     acceptShareMetadata_completionHandler(metadata: cocoascript.CKShareMetadata, completionHandler: cocoascript.NSError):void;
-    // doc://com.apple.documentation/documentation/cloudkit/ckaccountchangednotification
-    CKAccountChangedNotification(): cocoascript.const;
-    setCKAccountChangedNotification(): void;
     //
     alloc():cocoascript.CKContainer;
     //
@@ -960,6 +949,9 @@ declare namespace cocoascript {
 }
 
 declare const CKContainer: cocoascript.CKContainer;
+declare const CKCurrentUserDefaultName: cocoascript.NSString;
+declare const CKOwnerDefaultName: cocoascript.NSString;
+declare const CKAccountChangedNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A conduit for accessing and performing operations on the data of an app container.

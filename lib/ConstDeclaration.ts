@@ -1,5 +1,6 @@
 import { CodeGenerator } from './CodeGenerator';
 import { normalizeType } from './helpers';
+import { ParseError } from './ParseError';
 import { Token } from './types';
 
 export class ConstDeclaration {
@@ -10,7 +11,7 @@ export class ConstDeclaration {
     let name;
     let type;
     while (index < tokens.length) {
-      if (tokens[index].kind === 'typeIdentifier' || tokens[index].kind === 'keyword') {
+      if (tokens[index].kind === 'typeIdentifier' || (tokens[index].kind === 'keyword' && tokens[index].text !== 'const')) {
         type = tokens[index].text;
       }
       if (tokens[index].kind === 'identifier') {
@@ -19,9 +20,9 @@ export class ConstDeclaration {
       index += 1;
     }
     if (!name || !type) {
-      throw new Error(`Parse error ${id}`);
+      throw new ParseError(id);
     }
-    return new ConstDeclaration(id, name, type);
+    return new this(id, name, type);
   }
 
   generate() {

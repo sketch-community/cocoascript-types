@@ -84,9 +84,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsuseractivity/1690596-mapitem
     mapItem(): cocoascript.MKMapItem;
     setMapItem(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsuseractivitytypebrowsingweb
-    NSUserActivityTypeBrowsingWeb(): cocoascript.const;
-    setNSUserActivityTypeBrowsingWeb(): void;
     // doc://com.apple.documentation/documentation/foundation/nsuseractivity/2866826-contextidentifierpath
     contextIdentifierPath(): cocoascript.NSString;
     setContextIdentifierPath(): void;
@@ -113,6 +110,7 @@ declare namespace cocoascript {
 }
 
 declare const NSUserActivity: cocoascript.NSUserActivity;
+declare const NSUserActivityTypeBrowsingWeb: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An iCloud-based container of key-value pairs you use to share data among instances of your app running on a user's connected devices.
@@ -207,18 +205,6 @@ declare namespace cocoascript {
     setHostedViewMaximumAllowedSize(): void;
     // doc://com.apple.documentation/documentation/foundation/nsextensioncontext/2915893-interfaceparametersdescription
     interfaceParametersDescription():cocoascript.NSString;
-    // doc://com.apple.documentation/documentation/foundation/nsextensionhostdidbecomeactivenotification
-    NSExtensionHostDidBecomeActiveNotification(): cocoascript.const;
-    setNSExtensionHostDidBecomeActiveNotification(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsextensionhostwillresignactivenotification
-    NSExtensionHostWillResignActiveNotification(): cocoascript.const;
-    setNSExtensionHostWillResignActiveNotification(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsextensionhostdidenterbackgroundnotification
-    NSExtensionHostDidEnterBackgroundNotification(): cocoascript.const;
-    setNSExtensionHostDidEnterBackgroundNotification(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsextensionhostwillenterforegroundnotification
-    NSExtensionHostWillEnterForegroundNotification(): cocoascript.const;
-    setNSExtensionHostWillEnterForegroundNotification(): void;
     // doc://com.apple.documentation/documentation/foundation/nsextensioncontext/2968488-notificationactions
     notificationActions(): cocoascript.UNNotificationAction;
     setNotificationActions(): void;
@@ -240,6 +226,10 @@ declare namespace cocoascript {
 }
 
 declare const NSExtensionContext: cocoascript.NSExtensionContext;
+declare const NSExtensionHostDidBecomeActiveNotification: cocoascript.NSString;
+declare const NSExtensionHostWillResignActiveNotification: cocoascript.NSString;
+declare const NSExtensionHostDidEnterBackgroundNotification: cocoascript.NSString;
+declare const NSExtensionHostWillEnterForegroundNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The interface an app extension uses to respond to a request from a host app.
@@ -390,9 +380,6 @@ declare namespace cocoascript {
     drawWithRect_options(rect: cocoascript.NSRect, options: cocoascript.NSStringDrawingOptions):void;
     // doc://com.apple.documentation/documentation/foundation/nsattributedstring/1532013-boundingrectwithsize
     boundingRectWithSize_options(size: cocoascript.NSSize, options: cocoascript.NSStringDrawingOptions):cocoascript.NSRect;
-    // doc://com.apple.documentation/documentation/appkit/nsunderlinebywordmask
-    NSUnderlineByWordMask(): cocoascript.NSUInteger;
-    setNSUnderlineByWordMask(): void;
     //
     alloc():cocoascript.NSAttributedString;
     //
@@ -401,6 +388,7 @@ declare namespace cocoascript {
 }
 
 declare const NSAttributedString: cocoascript.NSAttributedString;
+declare const NSUnderlineByWordMask: cocoascript.NSUInteger;
 declare namespace cocoascript {
   /**
    * A mutable string object that also contains attributes (such as visual style, hyperlinks, or accessibility data) associated with various portions of its text content.
@@ -564,15 +552,6 @@ declare namespace cocoascript {
     objectIsForcedForKey(key: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1416306-objectisforcedforkey
     objectIsForcedForKey_inDomain(key: cocoascript.NSString, domain: cocoascript.NSString):cocoascript.BOOL;
-    // doc://com.apple.documentation/documentation/foundation/nsargumentdomain
-    NSArgumentDomain(): cocoascript.const;
-    setNSArgumentDomain(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsglobaldomain
-    NSGlobalDomain(): cocoascript.const;
-    setNSGlobalDomain(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsregistrationdomain
-    NSRegistrationDomain(): cocoascript.const;
-    setNSRegistrationDomain(): void;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1589066-initwithuser
     initWithUser(username: cocoascript.NSString):cocoascript.NSUserDefaults;
     // doc://com.apple.documentation/documentation/foundation/nsuserdefaults/1414005-synchronize
@@ -585,6 +564,9 @@ declare namespace cocoascript {
 }
 
 declare const NSUserDefaults: cocoascript.NSUserDefaults;
+declare const NSArgumentDomain: cocoascript.NSString;
+declare const NSGlobalDomain: cocoascript.NSString;
+declare const NSRegistrationDomain: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that represents the location of a resource, such as an item on a remote server or the path to a local file.
@@ -960,9 +942,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1409048-principalclass
     principalClass(): cocoascript.Class;
     setPrincipalClass(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsloadedclasses
-    NSLoadedClasses(): cocoascript.const;
-    setNSLoadedClasses(): void;
     // doc://com.apple.documentation/documentation/foundation/nsbundle/1415499-executablearchitectures
     executableArchitectures(): cocoascript.NSNumber;
     setExecutableArchitectures(): void;
@@ -985,6 +964,7 @@ declare namespace cocoascript {
 }
 
 declare const NSBundle: cocoascript.NSBundle;
+declare const NSLoadedClasses: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A protocol that objects adopt to provide functional copies of themselves.
@@ -2437,54 +2417,6 @@ declare namespace cocoascript {
     objectZone():cocoascript.NSZone;
     // doc://com.apple.documentation/documentation/foundation/nscoder/1442547-setobjectzone
     setObjectZone(zone: cocoascript.NSZone):void;
-    // doc://com.apple.documentation/documentation/uikit/1624505-cgaffinetransformfromstring
-    CGAffineTransformFromString(): cocoascript.NSString;
-    setCGAffineTransformFromString(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624477-cgpointfromstring
-    CGPointFromString(): cocoascript.NSString;
-    setCGPointFromString(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624508-cgrectfromstring
-    CGRectFromString(): cocoascript.NSString;
-    setCGRectFromString(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624484-cgsizefromstring
-    CGSizeFromString(): cocoascript.NSString;
-    setCGSizeFromString(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624513-cgvectorfromstring
-    CGVectorFromString(): cocoascript.NSString;
-    setCGVectorFromString(): void;
-    // doc://com.apple.documentation/documentation/uikit/2865991-nsdirectionaledgeinsetsfromstrin
-    NSDirectionalEdgeInsetsFromString(): cocoascript.NSString;
-    setNSDirectionalEdgeInsetsFromString(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624525-uiedgeinsetsfromstring
-    UIEdgeInsetsFromString(): cocoascript.NSString;
-    setUIEdgeInsetsFromString(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624509-uioffsetfromstring
-    UIOffsetFromString(): cocoascript.NSString;
-    setUIOffsetFromString(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624474-nsstringfromcgrect
-    NSStringFromCGRect(): cocoascript.CGRect;
-    setNSStringFromCGRect(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624476-nsstringfromcgvector
-    NSStringFromCGVector(): cocoascript.CGVector;
-    setNSStringFromCGVector(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624497-nsstringfromcgaffinetransform
-    NSStringFromCGAffineTransform(): cocoascript.CGAffineTransform;
-    setNSStringFromCGAffineTransform(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624504-nsstringfromcgpoint
-    NSStringFromCGPoint(): cocoascript.CGPoint;
-    setNSStringFromCGPoint(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624514-nsstringfromcgsize
-    NSStringFromCGSize(): cocoascript.CGSize;
-    setNSStringFromCGSize(): void;
-    // doc://com.apple.documentation/documentation/uikit/2865946-nsstringfromdirectionaledgeinset
-    NSStringFromDirectionalEdgeInsets(): cocoascript.NSDirectionalEdgeInsets;
-    setNSStringFromDirectionalEdgeInsets(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624527-nsstringfromuiedgeinsets
-    NSStringFromUIEdgeInsets(): cocoascript.UIEdgeInsets;
-    setNSStringFromUIEdgeInsets(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624491-nsstringfromuioffset
-    NSStringFromUIOffset(): cocoascript.UIOffset;
-    setNSStringFromUIOffset(): void;
     // doc://com.apple.documentation/documentation/foundation/nscoder/3563977-decodearrayofobjectsofclass
     decodeArrayOfObjectsOfClass_forKey(cls: cocoascript.Class, key: cocoascript.NSString):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/foundation/nscoder/3563978-decodearrayofobjectsofclasses
@@ -2501,6 +2433,22 @@ declare namespace cocoascript {
 }
 
 declare const NSCoder: cocoascript.NSCoder;
+declare const CGAffineTransformFromString: cocoascript.NSString;
+declare const CGPointFromString: cocoascript.NSString;
+declare const CGRectFromString: cocoascript.NSString;
+declare const CGSizeFromString: cocoascript.NSString;
+declare const CGVectorFromString: cocoascript.NSString;
+declare const NSDirectionalEdgeInsetsFromString: cocoascript.NSString;
+declare const UIEdgeInsetsFromString: cocoascript.NSString;
+declare const UIOffsetFromString: cocoascript.NSString;
+declare const NSStringFromCGRect: cocoascript.CGRect;
+declare const NSStringFromCGVector: cocoascript.CGVector;
+declare const NSStringFromCGAffineTransform: cocoascript.CGAffineTransform;
+declare const NSStringFromCGPoint: cocoascript.CGPoint;
+declare const NSStringFromCGSize: cocoascript.CGSize;
+declare const NSStringFromDirectionalEdgeInsets: cocoascript.NSDirectionalEdgeInsets;
+declare const NSStringFromUIEdgeInsets: cocoascript.UIEdgeInsets;
+declare const NSStringFromUIOffset: cocoascript.UIOffset;
 declare namespace cocoascript {
   /**
    * A definition of logical conditions used to constrain a search either for a fetch or for in-memory filtering.
@@ -2527,29 +2475,9 @@ declare namespace cocoascript {
 
 declare const NSPredicate: cocoascript.NSPredicate;
 declare namespace cocoascript {
-  /**
-   * A description of the distance between the edges of two rectangles.
-   * doc://com.apple.documentation/documentation/foundation/nsedgeinsets
-   */
   interface NSEdgeInsets {
-    // doc://com.apple.documentation/documentation/foundation/nsedgeinsets/1391185-bottom
-    bottom(): cocoascript.CGFloat;
-    setBottom(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsedgeinsets/1391265-left
-    left(): cocoascript.CGFloat;
-    setLeft(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsedgeinsets/1391102-right
-    right(): cocoascript.CGFloat;
-    setRight(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsedgeinsets/1391236-top
-    top(): cocoascript.CGFloat;
-    setTop(): void;
-    // doc://com.apple.documentation/documentation/foundation/1391130-nsedgeinsetsmake
-    NSEdgeInsetsMake(): cocoascript.CGFloat;
-    setNSEdgeInsetsMake(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   /**
    * A protocol that enables encoding and decoding in a manner that is robust against object substitution attacks.
    * doc://com.apple.documentation/documentation/foundation/nssecurecoding
@@ -2672,9 +2600,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsitemprovider/2921257-preferredpresentationstyle
     preferredPresentationStyle(): cocoascript.UIPreferredPresentationStyle;
     setPreferredPresentationStyle(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsitemprovidererrordomain
-    NSItemProviderErrorDomain(): cocoascript.const;
-    setNSItemProviderErrorDomain(): void;
     // doc://com.apple.documentation/documentation/foundation/nsitemprovider/2909055-teamdata
     teamData(): cocoascript.NSData;
     setTeamData(): void;
@@ -2690,6 +2615,7 @@ declare namespace cocoascript {
 }
 
 declare const NSItemProvider: cocoascript.NSItemProvider;
+declare const NSItemProviderErrorDomain: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The protocol you implement on a class to allow an item provider to create an instance of the class.
@@ -3164,38 +3090,9 @@ declare namespace cocoascript {
 
 declare const NSSet: cocoascript.NSSet;
 declare namespace cocoascript {
-  /**
-   * A structure used to describe a portion of a series, such as characters in a string or objects in an array.
-   * doc://com.apple.documentation/documentation/foundation/nsrange
-   */
   interface NSRange {
-    // doc://com.apple.documentation/documentation/foundation/1413065-nsintersectionrange
-    NSIntersectionRange(): cocoascript.NSRange;
-    setNSIntersectionRange(): void;
-    // doc://com.apple.documentation/documentation/foundation/1417188-nsmakerange
-    NSMakeRange(): cocoascript.NSUInteger;
-    setNSMakeRange(): void;
-    // doc://com.apple.documentation/documentation/foundation/1407494-nsmaxrange
-    NSMaxRange(): cocoascript.NSRange;
-    setNSMaxRange(): void;
-    // doc://com.apple.documentation/documentation/foundation/1408420-nsrangefromstring
-    NSRangeFromString(): cocoascript.NSString;
-    setNSRangeFromString(): void;
-    // doc://com.apple.documentation/documentation/foundation/1415155-nsstringfromrange
-    NSStringFromRange(): cocoascript.NSRange;
-    setNSStringFromRange(): void;
-    // doc://com.apple.documentation/documentation/foundation/1412317-nsunionrange
-    NSUnionRange(): cocoascript.NSRange;
-    setNSUnionRange(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsrange/1459537-length
-    length(): cocoascript.NSUInteger;
-    setLength(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsrange/1459533-location
-    location(): cocoascript.NSUInteger;
-    setLocation(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nstextcheckingtypes
   type NSTextCheckingTypes = cocoascript.uint64_t;
 }
@@ -3813,9 +3710,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsundomanager/1413488-redoactionisdiscardable
     redoActionIsDiscardable(): cocoascript.BOOL;
     setRedoActionIsDiscardable(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsundomanagergroupisdiscardablekey
-    NSUndoManagerGroupIsDiscardableKey(): cocoascript.const;
-    setNSUndoManagerGroupIsDiscardableKey(): void;
     //
     alloc():cocoascript.NSUndoManager;
     //
@@ -3824,6 +3718,7 @@ declare namespace cocoascript {
 }
 
 declare const NSUndoManager: cocoascript.NSUndoManager;
+declare const NSUndoManagerGroupIsDiscardableKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A snapshot of a file at a specific point in time.
@@ -4509,9 +4404,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsthread/1411433-threaddictionary
     threadDictionary(): cocoascript.NSMutableDictionary;
     setThreadDictionary(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsassertionhandlerkey
-    NSAssertionHandlerKey(): cocoascript.const;
-    setNSAssertionHandlerKey(): void;
     // doc://com.apple.documentation/documentation/foundation/nsthread/1414122-name
     name(): cocoascript.NSString;
     setName(): void;
@@ -4534,6 +4426,7 @@ declare namespace cocoascript {
 }
 
 declare const NSThread: cocoascript.NSThread;
+declare const NSAssertionHandlerKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that represents a special condition that interrupts the normal flow of program execution.
@@ -4559,9 +4452,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsexception/1416845-callstacksymbols
     callStackSymbols(): cocoascript.NSString;
     setCallStackSymbols(): void;
-    // doc://com.apple.documentation/documentation/foundation/1416853-nsgetuncaughtexceptionhandler
-    NSGetUncaughtExceptionHandler(): void;
-    setNSGetUncaughtExceptionHandler(): void;
     //
     alloc():cocoascript.NSException;
     //
@@ -4570,6 +4460,7 @@ declare namespace cocoascript {
 }
 
 declare const NSException: cocoascript.NSException;
+declare const NSGetUncaughtExceptionHandler: void;
 declare namespace cocoascript {
   /**
    * The delegate of an
@@ -4994,36 +4885,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642807-homedirectoryforcurrentuser
     homeDirectoryForCurrentUser(): cocoascript.NSURL;
     setHomeDirectoryForCurrentUser(): void;
-    // doc://com.apple.documentation/documentation/foundation/1413045-nshomedirectory
-    NSHomeDirectory(): void;
-    setNSHomeDirectory(): void;
-    // doc://com.apple.documentation/documentation/foundation/1414297-nsusername
-    NSUserName(): void;
-    setNSUserName(): void;
-    // doc://com.apple.documentation/documentation/foundation/1410265-nsfullusername
-    NSFullUserName(): void;
-    setNSFullUserName(): void;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642853-homedirectoryforuser
     homeDirectoryForUser(userName: cocoascript.NSString):cocoascript.NSURL;
-    // doc://com.apple.documentation/documentation/foundation/1413447-nshomedirectoryforuser
-    NSHomeDirectoryForUser(): cocoascript.NSString;
-    setNSHomeDirectoryForUser(): void;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1642996-temporarydirectory
     temporaryDirectory(): cocoascript.NSURL;
     setTemporaryDirectory(): void;
-    // doc://com.apple.documentation/documentation/foundation/1409211-nstemporarydirectory
-    NSTemporaryDirectory(): void;
-    setNSTemporaryDirectory(): void;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407693-urlfordirectory
     URLForDirectory_inDomain_appropriateForURL_create_error(directory: cocoascript.NSSearchPathDirectory, domain: cocoascript.NSSearchPathDomainMask, url: cocoascript.NSURL, shouldCreate: cocoascript.BOOL, error: cocoascript.NSError):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1407726-urlsfordirectory
     URLsForDirectory_inDomains(directory: cocoascript.NSSearchPathDirectory, domainMask: cocoascript.NSSearchPathDomainMask):cocoascript.NSURL;
-    // doc://com.apple.documentation/documentation/foundation/1414224-nssearchpathfordirectoriesindoma
-    NSSearchPathForDirectoriesInDomains(): cocoascript.BOOL;
-    setNSSearchPathForDirectoriesInDomains(): void;
-    // doc://com.apple.documentation/documentation/foundation/1414132-nsopensteprootdirectory
-    NSOpenStepRootDirectory(): void;
-    setNSOpenStepRootDirectory(): void;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412643-containerurlforsecurityapplicati
     containerURLForSecurityApplicationGroupIdentifier(groupIdentifier: cocoascript.NSString):cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413768-contentsofdirectoryaturl
@@ -5133,18 +5003,6 @@ declare namespace cocoascript {
     setCurrentDirectoryPath(): void;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1409917-unmountvolumeaturl
     unmountVolumeAtURL_options_completionHandler(url: cocoascript.NSURL, mask: cocoascript.NSFileManagerUnmountOptions, completionHandler: cocoascript.NSError):void;
-    // doc://com.apple.documentation/documentation/foundation/nsfilemanagerunmountdissentingprocessidentifiererrorkey
-    NSFileManagerUnmountDissentingProcessIdentifierErrorKey(): cocoascript.const;
-    setNSFileManagerUnmountDissentingProcessIdentifierErrorKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/1412112-nsfiletypeforhfstypecode
-    NSFileTypeForHFSTypeCode(): cocoascript.OSType;
-    setNSFileTypeForHFSTypeCode(): void;
-    // doc://com.apple.documentation/documentation/foundation/1415466-nshfstypecodefromfiletype
-    NSHFSTypeCodeFromFileType(): cocoascript.NSString;
-    setNSHFSTypeCodeFromFileType(): void;
-    // doc://com.apple.documentation/documentation/foundation/1414326-nshfstypeoffile
-    NSHFSTypeOfFile(): cocoascript.NSString;
-    setNSHFSTypeOfFile(): void;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1557010-copypath
     copyPath_toPath_handler(src: cocoascript.NSString, dest: cocoascript.NSString, handler: cocoascript.NSFileManager):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsfilemanager/1556999-movepath
@@ -5179,6 +5037,17 @@ declare namespace cocoascript {
 }
 
 declare const NSFileManager: cocoascript.NSFileManager;
+declare const NSHomeDirectory: void;
+declare const NSUserName: void;
+declare const NSFullUserName: void;
+declare const NSHomeDirectoryForUser: cocoascript.NSString;
+declare const NSTemporaryDirectory: void;
+declare const NSSearchPathForDirectoriesInDomains: cocoascript.BOOL;
+declare const NSOpenStepRootDirectory: void;
+declare const NSFileManagerUnmountDissentingProcessIdentifierErrorKey: cocoascript.NSString;
+declare const NSFileTypeForHFSTypeCode: cocoascript.OSType;
+declare const NSHFSTypeCodeFromFileType: cocoascript.NSString;
+declare const NSHFSTypeOfFile: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * Information about standard time conventions associated with a specific geopolitical region.
@@ -7663,549 +7532,6 @@ declare namespace cocoascript {
     valueForAttribute(key: cocoascript.NSString):cocoascript.NSMetadataItem;
     // doc://com.apple.documentation/documentation/foundation/nsmetadataitem/1409934-valuesforattributes
     valuesForAttributes(keys: cocoascript.NSString):cocoascript.NSMetadataItem;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemaudienceskey
-    NSMetadataItemAudiencesKey(): cocoascript.const;
-    setNSMetadataItemAudiencesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemaudiobitratekey
-    NSMetadataItemAudioBitRateKey(): cocoascript.const;
-    setNSMetadataItemAudioBitRateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemaudiochannelcountkey
-    NSMetadataItemAudioChannelCountKey(): cocoascript.const;
-    setNSMetadataItemAudioChannelCountKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemaudioencodingapplicationkey
-    NSMetadataItemAudioEncodingApplicationKey(): cocoascript.const;
-    setNSMetadataItemAudioEncodingApplicationKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemaudiosampleratekey
-    NSMetadataItemAudioSampleRateKey(): cocoascript.const;
-    setNSMetadataItemAudioSampleRateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemaudiotracknumberkey
-    NSMetadataItemAudioTrackNumberKey(): cocoascript.const;
-    setNSMetadataItemAudioTrackNumberKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemauthoraddresseskey
-    NSMetadataItemAuthorAddressesKey(): cocoascript.const;
-    setNSMetadataItemAuthorAddressesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemauthoremailaddresseskey
-    NSMetadataItemAuthorEmailAddressesKey(): cocoascript.const;
-    setNSMetadataItemAuthorEmailAddressesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemauthorskey
-    NSMetadataItemAuthorsKey(): cocoascript.const;
-    setNSMetadataItemAuthorsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemacquisitionmakekey
-    NSMetadataItemAcquisitionMakeKey(): cocoascript.const;
-    setNSMetadataItemAcquisitionMakeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemacquisitionmodelkey
-    NSMetadataItemAcquisitionModelKey(): cocoascript.const;
-    setNSMetadataItemAcquisitionModelKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemalbumkey
-    NSMetadataItemAlbumKey(): cocoascript.const;
-    setNSMetadataItemAlbumKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemaltitudekey
-    NSMetadataItemAltitudeKey(): cocoascript.const;
-    setNSMetadataItemAltitudeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemaperturekey
-    NSMetadataItemApertureKey(): cocoascript.const;
-    setNSMetadataItemApertureKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemappleloopdescriptorskey
-    NSMetadataItemAppleLoopDescriptorsKey(): cocoascript.const;
-    setNSMetadataItemAppleLoopDescriptorsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemappleloopskeyfiltertypekey
-    NSMetadataItemAppleLoopsKeyFilterTypeKey(): cocoascript.const;
-    setNSMetadataItemAppleLoopsKeyFilterTypeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemappleloopsloopmodekey
-    NSMetadataItemAppleLoopsLoopModeKey(): cocoascript.const;
-    setNSMetadataItemAppleLoopsLoopModeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemappleloopsrootkeykey
-    NSMetadataItemAppleLoopsRootKeyKey(): cocoascript.const;
-    setNSMetadataItemAppleLoopsRootKeyKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemapplicationcategorieskey
-    NSMetadataItemApplicationCategoriesKey(): cocoascript.const;
-    setNSMetadataItemApplicationCategoriesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemattributechangedatekey
-    NSMetadataItemAttributeChangeDateKey(): cocoascript.const;
-    setNSMetadataItemAttributeChangeDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfsnamekey
-    NSMetadataItemFSNameKey(): cocoascript.const;
-    setNSMetadataItemFSNameKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemdisplaynamekey
-    NSMetadataItemDisplayNameKey(): cocoascript.const;
-    setNSMetadataItemDisplayNameKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemurlkey
-    NSMetadataItemURLKey(): cocoascript.const;
-    setNSMetadataItemURLKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitempathkey
-    NSMetadataItemPathKey(): cocoascript.const;
-    setNSMetadataItemPathKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfssizekey
-    NSMetadataItemFSSizeKey(): cocoascript.const;
-    setNSMetadataItemFSSizeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfscreationdatekey
-    NSMetadataItemFSCreationDateKey(): cocoascript.const;
-    setNSMetadataItemFSCreationDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfscontentchangedatekey
-    NSMetadataItemFSContentChangeDateKey(): cocoascript.const;
-    setNSMetadataItemFSContentChangeDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitembitspersamplekey
-    NSMetadataItemBitsPerSampleKey(): cocoascript.const;
-    setNSMetadataItemBitsPerSampleKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcfbundleidentifierkey
-    NSMetadataItemCFBundleIdentifierKey(): cocoascript.const;
-    setNSMetadataItemCFBundleIdentifierKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcameraownerkey
-    NSMetadataItemCameraOwnerKey(): cocoascript.const;
-    setNSMetadataItemCameraOwnerKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcitykey
-    NSMetadataItemCityKey(): cocoascript.const;
-    setNSMetadataItemCityKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcodecskey
-    NSMetadataItemCodecsKey(): cocoascript.const;
-    setNSMetadataItemCodecsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcolorspacekey
-    NSMetadataItemColorSpaceKey(): cocoascript.const;
-    setNSMetadataItemColorSpaceKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcommentkey
-    NSMetadataItemCommentKey(): cocoascript.const;
-    setNSMetadataItemCommentKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcomposerkey
-    NSMetadataItemComposerKey(): cocoascript.const;
-    setNSMetadataItemComposerKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcontactkeywordskey
-    NSMetadataItemContactKeywordsKey(): cocoascript.const;
-    setNSMetadataItemContactKeywordsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcontentcreationdatekey
-    NSMetadataItemContentCreationDateKey(): cocoascript.const;
-    setNSMetadataItemContentCreationDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcontentmodificationdatekey
-    NSMetadataItemContentModificationDateKey(): cocoascript.const;
-    setNSMetadataItemContentModificationDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcontenttypekey
-    NSMetadataItemContentTypeKey(): cocoascript.const;
-    setNSMetadataItemContentTypeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcontenttypetreekey
-    NSMetadataItemContentTypeTreeKey(): cocoascript.const;
-    setNSMetadataItemContentTypeTreeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcontributorskey
-    NSMetadataItemContributorsKey(): cocoascript.const;
-    setNSMetadataItemContributorsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcopyrightkey
-    NSMetadataItemCopyrightKey(): cocoascript.const;
-    setNSMetadataItemCopyrightKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcountrykey
-    NSMetadataItemCountryKey(): cocoascript.const;
-    setNSMetadataItemCountryKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcoveragekey
-    NSMetadataItemCoverageKey(): cocoascript.const;
-    setNSMetadataItemCoverageKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemcreatorkey
-    NSMetadataItemCreatorKey(): cocoascript.const;
-    setNSMetadataItemCreatorKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemdateaddedkey
-    NSMetadataItemDateAddedKey(): cocoascript.const;
-    setNSMetadataItemDateAddedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemdeliverytypekey
-    NSMetadataItemDeliveryTypeKey(): cocoascript.const;
-    setNSMetadataItemDeliveryTypeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemdescriptionkey
-    NSMetadataItemDescriptionKey(): cocoascript.const;
-    setNSMetadataItemDescriptionKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemdirectorkey
-    NSMetadataItemDirectorKey(): cocoascript.const;
-    setNSMetadataItemDirectorKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemdownloadeddatekey
-    NSMetadataItemDownloadedDateKey(): cocoascript.const;
-    setNSMetadataItemDownloadedDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemduedatekey
-    NSMetadataItemDueDateKey(): cocoascript.const;
-    setNSMetadataItemDueDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemdurationsecondskey
-    NSMetadataItemDurationSecondsKey(): cocoascript.const;
-    setNSMetadataItemDurationSecondsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemexifgpsversionkey
-    NSMetadataItemEXIFGPSVersionKey(): cocoascript.const;
-    setNSMetadataItemEXIFGPSVersionKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemexifversionkey
-    NSMetadataItemEXIFVersionKey(): cocoascript.const;
-    setNSMetadataItemEXIFVersionKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemeditorskey
-    NSMetadataItemEditorsKey(): cocoascript.const;
-    setNSMetadataItemEditorsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitememailaddresseskey
-    NSMetadataItemEmailAddressesKey(): cocoascript.const;
-    setNSMetadataItemEmailAddressesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemencodingapplicationskey
-    NSMetadataItemEncodingApplicationsKey(): cocoascript.const;
-    setNSMetadataItemEncodingApplicationsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemexecutablearchitectureskey
-    NSMetadataItemExecutableArchitecturesKey(): cocoascript.const;
-    setNSMetadataItemExecutableArchitecturesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemexecutableplatformkey
-    NSMetadataItemExecutablePlatformKey(): cocoascript.const;
-    setNSMetadataItemExecutablePlatformKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemexposuremodekey
-    NSMetadataItemExposureModeKey(): cocoascript.const;
-    setNSMetadataItemExposureModeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemexposureprogramkey
-    NSMetadataItemExposureProgramKey(): cocoascript.const;
-    setNSMetadataItemExposureProgramKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemexposuretimesecondskey
-    NSMetadataItemExposureTimeSecondsKey(): cocoascript.const;
-    setNSMetadataItemExposureTimeSecondsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemexposuretimestringkey
-    NSMetadataItemExposureTimeStringKey(): cocoascript.const;
-    setNSMetadataItemExposureTimeStringKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfnumberkey
-    NSMetadataItemFNumberKey(): cocoascript.const;
-    setNSMetadataItemFNumberKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfindercommentkey
-    NSMetadataItemFinderCommentKey(): cocoascript.const;
-    setNSMetadataItemFinderCommentKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemflashonoffkey
-    NSMetadataItemFlashOnOffKey(): cocoascript.const;
-    setNSMetadataItemFlashOnOffKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfocallength35mmkey
-    NSMetadataItemFocalLength35mmKey(): cocoascript.const;
-    setNSMetadataItemFocalLength35mmKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfocallengthkey
-    NSMetadataItemFocalLengthKey(): cocoascript.const;
-    setNSMetadataItemFocalLengthKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemfontskey
-    NSMetadataItemFontsKey(): cocoascript.const;
-    setNSMetadataItemFontsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsareainformationkey
-    NSMetadataItemGPSAreaInformationKey(): cocoascript.const;
-    setNSMetadataItemGPSAreaInformationKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsdopkey
-    NSMetadataItemGPSDOPKey(): cocoascript.const;
-    setNSMetadataItemGPSDOPKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsdatestampkey
-    NSMetadataItemGPSDateStampKey(): cocoascript.const;
-    setNSMetadataItemGPSDateStampKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsdestbearingkey
-    NSMetadataItemGPSDestBearingKey(): cocoascript.const;
-    setNSMetadataItemGPSDestBearingKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsdestdistancekey
-    NSMetadataItemGPSDestDistanceKey(): cocoascript.const;
-    setNSMetadataItemGPSDestDistanceKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsdestlatitudekey
-    NSMetadataItemGPSDestLatitudeKey(): cocoascript.const;
-    setNSMetadataItemGPSDestLatitudeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsdestlongitudekey
-    NSMetadataItemGPSDestLongitudeKey(): cocoascript.const;
-    setNSMetadataItemGPSDestLongitudeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsdifferentalkey
-    NSMetadataItemGPSDifferentalKey(): cocoascript.const;
-    setNSMetadataItemGPSDifferentalKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsmapdatumkey
-    NSMetadataItemGPSMapDatumKey(): cocoascript.const;
-    setNSMetadataItemGPSMapDatumKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsmeasuremodekey
-    NSMetadataItemGPSMeasureModeKey(): cocoascript.const;
-    setNSMetadataItemGPSMeasureModeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsprocessingmethodkey
-    NSMetadataItemGPSProcessingMethodKey(): cocoascript.const;
-    setNSMetadataItemGPSProcessingMethodKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpsstatuskey
-    NSMetadataItemGPSStatusKey(): cocoascript.const;
-    setNSMetadataItemGPSStatusKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgpstrackkey
-    NSMetadataItemGPSTrackKey(): cocoascript.const;
-    setNSMetadataItemGPSTrackKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemgenrekey
-    NSMetadataItemGenreKey(): cocoascript.const;
-    setNSMetadataItemGenreKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemhasalphachannelkey
-    NSMetadataItemHasAlphaChannelKey(): cocoascript.const;
-    setNSMetadataItemHasAlphaChannelKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemheadlinekey
-    NSMetadataItemHeadlineKey(): cocoascript.const;
-    setNSMetadataItemHeadlineKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemisospeedkey
-    NSMetadataItemISOSpeedKey(): cocoascript.const;
-    setNSMetadataItemISOSpeedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemidentifierkey
-    NSMetadataItemIdentifierKey(): cocoascript.const;
-    setNSMetadataItemIdentifierKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemimagedirectionkey
-    NSMetadataItemImageDirectionKey(): cocoascript.const;
-    setNSMetadataItemImageDirectionKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataiteminformationkey
-    NSMetadataItemInformationKey(): cocoascript.const;
-    setNSMetadataItemInformationKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataiteminstantmessageaddresseskey
-    NSMetadataItemInstantMessageAddressesKey(): cocoascript.const;
-    setNSMetadataItemInstantMessageAddressesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataiteminstructionskey
-    NSMetadataItemInstructionsKey(): cocoascript.const;
-    setNSMetadataItemInstructionsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemisapplicationmanagedkey
-    NSMetadataItemIsApplicationManagedKey(): cocoascript.const;
-    setNSMetadataItemIsApplicationManagedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemisgeneralmidisequencekey
-    NSMetadataItemIsGeneralMIDISequenceKey(): cocoascript.const;
-    setNSMetadataItemIsGeneralMIDISequenceKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemislikelyjunkkey
-    NSMetadataItemIsLikelyJunkKey(): cocoascript.const;
-    setNSMetadataItemIsLikelyJunkKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemkeysignaturekey
-    NSMetadataItemKeySignatureKey(): cocoascript.const;
-    setNSMetadataItemKeySignatureKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemkeywordskey
-    NSMetadataItemKeywordsKey(): cocoascript.const;
-    setNSMetadataItemKeywordsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemkindkey
-    NSMetadataItemKindKey(): cocoascript.const;
-    setNSMetadataItemKindKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemlanguageskey
-    NSMetadataItemLanguagesKey(): cocoascript.const;
-    setNSMetadataItemLanguagesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemlastuseddatekey
-    NSMetadataItemLastUsedDateKey(): cocoascript.const;
-    setNSMetadataItemLastUsedDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemlatitudekey
-    NSMetadataItemLatitudeKey(): cocoascript.const;
-    setNSMetadataItemLatitudeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemlayernameskey
-    NSMetadataItemLayerNamesKey(): cocoascript.const;
-    setNSMetadataItemLayerNamesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemlensmodelkey
-    NSMetadataItemLensModelKey(): cocoascript.const;
-    setNSMetadataItemLensModelKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemlongitudekey
-    NSMetadataItemLongitudeKey(): cocoascript.const;
-    setNSMetadataItemLongitudeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemlyricistkey
-    NSMetadataItemLyricistKey(): cocoascript.const;
-    setNSMetadataItemLyricistKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemmaxaperturekey
-    NSMetadataItemMaxApertureKey(): cocoascript.const;
-    setNSMetadataItemMaxApertureKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemmediatypeskey
-    NSMetadataItemMediaTypesKey(): cocoascript.const;
-    setNSMetadataItemMediaTypesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemmeteringmodekey
-    NSMetadataItemMeteringModeKey(): cocoascript.const;
-    setNSMetadataItemMeteringModeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemmusicalgenrekey
-    NSMetadataItemMusicalGenreKey(): cocoascript.const;
-    setNSMetadataItemMusicalGenreKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemmusicalinstrumentcategorykey
-    NSMetadataItemMusicalInstrumentCategoryKey(): cocoascript.const;
-    setNSMetadataItemMusicalInstrumentCategoryKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemmusicalinstrumentnamekey
-    NSMetadataItemMusicalInstrumentNameKey(): cocoascript.const;
-    setNSMetadataItemMusicalInstrumentNameKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemnamedlocationkey
-    NSMetadataItemNamedLocationKey(): cocoascript.const;
-    setNSMetadataItemNamedLocationKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemnumberofpageskey
-    NSMetadataItemNumberOfPagesKey(): cocoascript.const;
-    setNSMetadataItemNumberOfPagesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemorganizationskey
-    NSMetadataItemOrganizationsKey(): cocoascript.const;
-    setNSMetadataItemOrganizationsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemorientationkey
-    NSMetadataItemOrientationKey(): cocoascript.const;
-    setNSMetadataItemOrientationKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemoriginalformatkey
-    NSMetadataItemOriginalFormatKey(): cocoascript.const;
-    setNSMetadataItemOriginalFormatKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemoriginalsourcekey
-    NSMetadataItemOriginalSourceKey(): cocoascript.const;
-    setNSMetadataItemOriginalSourceKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitempageheightkey
-    NSMetadataItemPageHeightKey(): cocoascript.const;
-    setNSMetadataItemPageHeightKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitempagewidthkey
-    NSMetadataItemPageWidthKey(): cocoascript.const;
-    setNSMetadataItemPageWidthKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemparticipantskey
-    NSMetadataItemParticipantsKey(): cocoascript.const;
-    setNSMetadataItemParticipantsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemperformerskey
-    NSMetadataItemPerformersKey(): cocoascript.const;
-    setNSMetadataItemPerformersKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemphonenumberskey
-    NSMetadataItemPhoneNumbersKey(): cocoascript.const;
-    setNSMetadataItemPhoneNumbersKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitempixelcountkey
-    NSMetadataItemPixelCountKey(): cocoascript.const;
-    setNSMetadataItemPixelCountKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitempixelheightkey
-    NSMetadataItemPixelHeightKey(): cocoascript.const;
-    setNSMetadataItemPixelHeightKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitempixelwidthkey
-    NSMetadataItemPixelWidthKey(): cocoascript.const;
-    setNSMetadataItemPixelWidthKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemproducerkey
-    NSMetadataItemProducerKey(): cocoascript.const;
-    setNSMetadataItemProducerKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemprofilenamekey
-    NSMetadataItemProfileNameKey(): cocoascript.const;
-    setNSMetadataItemProfileNameKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemprojectskey
-    NSMetadataItemProjectsKey(): cocoascript.const;
-    setNSMetadataItemProjectsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitempublisherskey
-    NSMetadataItemPublishersKey(): cocoascript.const;
-    setNSMetadataItemPublishersKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemrecipientaddresseskey
-    NSMetadataItemRecipientAddressesKey(): cocoascript.const;
-    setNSMetadataItemRecipientAddressesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemrecipientemailaddresseskey
-    NSMetadataItemRecipientEmailAddressesKey(): cocoascript.const;
-    setNSMetadataItemRecipientEmailAddressesKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemrecipientskey
-    NSMetadataItemRecipientsKey(): cocoascript.const;
-    setNSMetadataItemRecipientsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemrecordingdatekey
-    NSMetadataItemRecordingDateKey(): cocoascript.const;
-    setNSMetadataItemRecordingDateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemrecordingyearkey
-    NSMetadataItemRecordingYearKey(): cocoascript.const;
-    setNSMetadataItemRecordingYearKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemredeyeonoffkey
-    NSMetadataItemRedEyeOnOffKey(): cocoascript.const;
-    setNSMetadataItemRedEyeOnOffKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemresolutionheightdpikey
-    NSMetadataItemResolutionHeightDPIKey(): cocoascript.const;
-    setNSMetadataItemResolutionHeightDPIKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemresolutionwidthdpikey
-    NSMetadataItemResolutionWidthDPIKey(): cocoascript.const;
-    setNSMetadataItemResolutionWidthDPIKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemrightskey
-    NSMetadataItemRightsKey(): cocoascript.const;
-    setNSMetadataItemRightsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemsecuritymethodkey
-    NSMetadataItemSecurityMethodKey(): cocoascript.const;
-    setNSMetadataItemSecurityMethodKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemspeedkey
-    NSMetadataItemSpeedKey(): cocoascript.const;
-    setNSMetadataItemSpeedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemstarratingkey
-    NSMetadataItemStarRatingKey(): cocoascript.const;
-    setNSMetadataItemStarRatingKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemstateorprovincekey
-    NSMetadataItemStateOrProvinceKey(): cocoascript.const;
-    setNSMetadataItemStateOrProvinceKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemstreamablekey
-    NSMetadataItemStreamableKey(): cocoascript.const;
-    setNSMetadataItemStreamableKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemsubjectkey
-    NSMetadataItemSubjectKey(): cocoascript.const;
-    setNSMetadataItemSubjectKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemtempokey
-    NSMetadataItemTempoKey(): cocoascript.const;
-    setNSMetadataItemTempoKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemtextcontentkey
-    NSMetadataItemTextContentKey(): cocoascript.const;
-    setNSMetadataItemTextContentKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemthemekey
-    NSMetadataItemThemeKey(): cocoascript.const;
-    setNSMetadataItemThemeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemtimesignaturekey
-    NSMetadataItemTimeSignatureKey(): cocoascript.const;
-    setNSMetadataItemTimeSignatureKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemtimestampkey
-    NSMetadataItemTimestampKey(): cocoascript.const;
-    setNSMetadataItemTimestampKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemtitlekey
-    NSMetadataItemTitleKey(): cocoascript.const;
-    setNSMetadataItemTitleKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemtotalbitratekey
-    NSMetadataItemTotalBitRateKey(): cocoascript.const;
-    setNSMetadataItemTotalBitRateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemversionkey
-    NSMetadataItemVersionKey(): cocoascript.const;
-    setNSMetadataItemVersionKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemvideobitratekey
-    NSMetadataItemVideoBitRateKey(): cocoascript.const;
-    setNSMetadataItemVideoBitRateKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemwherefromskey
-    NSMetadataItemWhereFromsKey(): cocoascript.const;
-    setNSMetadataItemWhereFromsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemwhitebalancekey
-    NSMetadataItemWhiteBalanceKey(): cocoascript.const;
-    setNSMetadataItemWhiteBalanceKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataitemisubiquitouskey
-    NSMetadataItemIsUbiquitousKey(): cocoascript.const;
-    setNSMetadataItemIsUbiquitousKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemcontainerdisplaynamekey
-    NSMetadataUbiquitousItemContainerDisplayNameKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemContainerDisplayNameKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemdownloadrequestedkey
-    NSMetadataUbiquitousItemDownloadRequestedKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemDownloadRequestedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemisexternaldocumentkey
-    NSMetadataUbiquitousItemIsExternalDocumentKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemIsExternalDocumentKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemurlinlocalcontainerkey
-    NSMetadataUbiquitousItemURLInLocalContainerKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemURLInLocalContainerKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemhasunresolvedconflictskey
-    NSMetadataUbiquitousItemHasUnresolvedConflictsKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemHasUnresolvedConflictsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemisdownloadedkey
-    NSMetadataUbiquitousItemIsDownloadedKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemIsDownloadedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemisdownloadingkey
-    NSMetadataUbiquitousItemIsDownloadingKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemIsDownloadingKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemisuploadedkey
-    NSMetadataUbiquitousItemIsUploadedKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemIsUploadedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemisuploadingkey
-    NSMetadataUbiquitousItemIsUploadingKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemIsUploadingKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitempercentdownloadedkey
-    NSMetadataUbiquitousItemPercentDownloadedKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemPercentDownloadedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitempercentuploadedkey
-    NSMetadataUbiquitousItemPercentUploadedKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemPercentUploadedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemdownloadingstatuskey
-    NSMetadataUbiquitousItemDownloadingStatusKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemDownloadingStatusKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemdownloadingerrorkey
-    NSMetadataUbiquitousItemDownloadingErrorKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemDownloadingErrorKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemuploadingerrorkey
-    NSMetadataUbiquitousItemUploadingErrorKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemUploadingErrorKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemissharedkey
-    NSMetadataUbiquitousItemIsSharedKey(): cocoascript.const;
-    setNSMetadataUbiquitousItemIsSharedKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousshareditemcurrentuserpermissionskey
-    NSMetadataUbiquitousSharedItemCurrentUserPermissionsKey(): cocoascript.const;
-    setNSMetadataUbiquitousSharedItemCurrentUserPermissionsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousshareditemcurrentuserrolekey
-    NSMetadataUbiquitousSharedItemCurrentUserRoleKey(): cocoascript.const;
-    setNSMetadataUbiquitousSharedItemCurrentUserRoleKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousshareditemmostrecenteditornamecomponentskey
-    NSMetadataUbiquitousSharedItemMostRecentEditorNameComponentsKey(): cocoascript.const;
-    setNSMetadataUbiquitousSharedItemMostRecentEditorNameComponentsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousshareditemownernamecomponentskey
-    NSMetadataUbiquitousSharedItemOwnerNameComponentsKey(): cocoascript.const;
-    setNSMetadataUbiquitousSharedItemOwnerNameComponentsKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemdownloadingstatuscurrent
-    NSMetadataUbiquitousItemDownloadingStatusCurrent(): cocoascript.const;
-    setNSMetadataUbiquitousItemDownloadingStatusCurrent(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemdownloadingstatusdownloaded
-    NSMetadataUbiquitousItemDownloadingStatusDownloaded(): cocoascript.const;
-    setNSMetadataUbiquitousItemDownloadingStatusDownloaded(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousitemdownloadingstatusnotdownloaded
-    NSMetadataUbiquitousItemDownloadingStatusNotDownloaded(): cocoascript.const;
-    setNSMetadataUbiquitousItemDownloadingStatusNotDownloaded(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousshareditempermissionsreadonly
-    NSMetadataUbiquitousSharedItemPermissionsReadOnly(): cocoascript.const;
-    setNSMetadataUbiquitousSharedItemPermissionsReadOnly(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousshareditempermissionsreadwrite
-    NSMetadataUbiquitousSharedItemPermissionsReadWrite(): cocoascript.const;
-    setNSMetadataUbiquitousSharedItemPermissionsReadWrite(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousshareditemroleowner
-    NSMetadataUbiquitousSharedItemRoleOwner(): cocoascript.const;
-    setNSMetadataUbiquitousSharedItemRoleOwner(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmetadataubiquitousshareditemroleparticipant
-    NSMetadataUbiquitousSharedItemRoleParticipant(): cocoascript.const;
-    setNSMetadataUbiquitousSharedItemRoleParticipant(): void;
     //
     alloc():cocoascript.NSMetadataItem;
     //
@@ -8214,42 +7540,191 @@ declare namespace cocoascript {
 }
 
 declare const NSMetadataItem: cocoascript.NSMetadataItem;
+declare const NSMetadataItemAudiencesKey: cocoascript.NSString;
+declare const NSMetadataItemAudioBitRateKey: cocoascript.NSString;
+declare const NSMetadataItemAudioChannelCountKey: cocoascript.NSString;
+declare const NSMetadataItemAudioEncodingApplicationKey: cocoascript.NSString;
+declare const NSMetadataItemAudioSampleRateKey: cocoascript.NSString;
+declare const NSMetadataItemAudioTrackNumberKey: cocoascript.NSString;
+declare const NSMetadataItemAuthorAddressesKey: cocoascript.NSString;
+declare const NSMetadataItemAuthorEmailAddressesKey: cocoascript.NSString;
+declare const NSMetadataItemAuthorsKey: cocoascript.NSString;
+declare const NSMetadataItemAcquisitionMakeKey: cocoascript.NSString;
+declare const NSMetadataItemAcquisitionModelKey: cocoascript.NSString;
+declare const NSMetadataItemAlbumKey: cocoascript.NSString;
+declare const NSMetadataItemAltitudeKey: cocoascript.NSString;
+declare const NSMetadataItemApertureKey: cocoascript.NSString;
+declare const NSMetadataItemAppleLoopDescriptorsKey: cocoascript.NSString;
+declare const NSMetadataItemAppleLoopsKeyFilterTypeKey: cocoascript.NSString;
+declare const NSMetadataItemAppleLoopsLoopModeKey: cocoascript.NSString;
+declare const NSMetadataItemAppleLoopsRootKeyKey: cocoascript.NSString;
+declare const NSMetadataItemApplicationCategoriesKey: cocoascript.NSString;
+declare const NSMetadataItemAttributeChangeDateKey: cocoascript.NSString;
+declare const NSMetadataItemFSNameKey: cocoascript.NSString;
+declare const NSMetadataItemDisplayNameKey: cocoascript.NSString;
+declare const NSMetadataItemURLKey: cocoascript.NSString;
+declare const NSMetadataItemPathKey: cocoascript.NSString;
+declare const NSMetadataItemFSSizeKey: cocoascript.NSString;
+declare const NSMetadataItemFSCreationDateKey: cocoascript.NSString;
+declare const NSMetadataItemFSContentChangeDateKey: cocoascript.NSString;
+declare const NSMetadataItemBitsPerSampleKey: cocoascript.NSString;
+declare const NSMetadataItemCFBundleIdentifierKey: cocoascript.NSString;
+declare const NSMetadataItemCameraOwnerKey: cocoascript.NSString;
+declare const NSMetadataItemCityKey: cocoascript.NSString;
+declare const NSMetadataItemCodecsKey: cocoascript.NSString;
+declare const NSMetadataItemColorSpaceKey: cocoascript.NSString;
+declare const NSMetadataItemCommentKey: cocoascript.NSString;
+declare const NSMetadataItemComposerKey: cocoascript.NSString;
+declare const NSMetadataItemContactKeywordsKey: cocoascript.NSString;
+declare const NSMetadataItemContentCreationDateKey: cocoascript.NSString;
+declare const NSMetadataItemContentModificationDateKey: cocoascript.NSString;
+declare const NSMetadataItemContentTypeKey: cocoascript.NSString;
+declare const NSMetadataItemContentTypeTreeKey: cocoascript.NSString;
+declare const NSMetadataItemContributorsKey: cocoascript.NSString;
+declare const NSMetadataItemCopyrightKey: cocoascript.NSString;
+declare const NSMetadataItemCountryKey: cocoascript.NSString;
+declare const NSMetadataItemCoverageKey: cocoascript.NSString;
+declare const NSMetadataItemCreatorKey: cocoascript.NSString;
+declare const NSMetadataItemDateAddedKey: cocoascript.NSString;
+declare const NSMetadataItemDeliveryTypeKey: cocoascript.NSString;
+declare const NSMetadataItemDescriptionKey: cocoascript.NSString;
+declare const NSMetadataItemDirectorKey: cocoascript.NSString;
+declare const NSMetadataItemDownloadedDateKey: cocoascript.NSString;
+declare const NSMetadataItemDueDateKey: cocoascript.NSString;
+declare const NSMetadataItemDurationSecondsKey: cocoascript.NSString;
+declare const NSMetadataItemEXIFGPSVersionKey: cocoascript.NSString;
+declare const NSMetadataItemEXIFVersionKey: cocoascript.NSString;
+declare const NSMetadataItemEditorsKey: cocoascript.NSString;
+declare const NSMetadataItemEmailAddressesKey: cocoascript.NSString;
+declare const NSMetadataItemEncodingApplicationsKey: cocoascript.NSString;
+declare const NSMetadataItemExecutableArchitecturesKey: cocoascript.NSString;
+declare const NSMetadataItemExecutablePlatformKey: cocoascript.NSString;
+declare const NSMetadataItemExposureModeKey: cocoascript.NSString;
+declare const NSMetadataItemExposureProgramKey: cocoascript.NSString;
+declare const NSMetadataItemExposureTimeSecondsKey: cocoascript.NSString;
+declare const NSMetadataItemExposureTimeStringKey: cocoascript.NSString;
+declare const NSMetadataItemFNumberKey: cocoascript.NSString;
+declare const NSMetadataItemFinderCommentKey: cocoascript.NSString;
+declare const NSMetadataItemFlashOnOffKey: cocoascript.NSString;
+declare const NSMetadataItemFocalLength35mmKey: cocoascript.NSString;
+declare const NSMetadataItemFocalLengthKey: cocoascript.NSString;
+declare const NSMetadataItemFontsKey: cocoascript.NSString;
+declare const NSMetadataItemGPSAreaInformationKey: cocoascript.NSString;
+declare const NSMetadataItemGPSDOPKey: cocoascript.NSString;
+declare const NSMetadataItemGPSDateStampKey: cocoascript.NSString;
+declare const NSMetadataItemGPSDestBearingKey: cocoascript.NSString;
+declare const NSMetadataItemGPSDestDistanceKey: cocoascript.NSString;
+declare const NSMetadataItemGPSDestLatitudeKey: cocoascript.NSString;
+declare const NSMetadataItemGPSDestLongitudeKey: cocoascript.NSString;
+declare const NSMetadataItemGPSDifferentalKey: cocoascript.NSString;
+declare const NSMetadataItemGPSMapDatumKey: cocoascript.NSString;
+declare const NSMetadataItemGPSMeasureModeKey: cocoascript.NSString;
+declare const NSMetadataItemGPSProcessingMethodKey: cocoascript.NSString;
+declare const NSMetadataItemGPSStatusKey: cocoascript.NSString;
+declare const NSMetadataItemGPSTrackKey: cocoascript.NSString;
+declare const NSMetadataItemGenreKey: cocoascript.NSString;
+declare const NSMetadataItemHasAlphaChannelKey: cocoascript.NSString;
+declare const NSMetadataItemHeadlineKey: cocoascript.NSString;
+declare const NSMetadataItemISOSpeedKey: cocoascript.NSString;
+declare const NSMetadataItemIdentifierKey: cocoascript.NSString;
+declare const NSMetadataItemImageDirectionKey: cocoascript.NSString;
+declare const NSMetadataItemInformationKey: cocoascript.NSString;
+declare const NSMetadataItemInstantMessageAddressesKey: cocoascript.NSString;
+declare const NSMetadataItemInstructionsKey: cocoascript.NSString;
+declare const NSMetadataItemIsApplicationManagedKey: cocoascript.NSString;
+declare const NSMetadataItemIsGeneralMIDISequenceKey: cocoascript.NSString;
+declare const NSMetadataItemIsLikelyJunkKey: cocoascript.NSString;
+declare const NSMetadataItemKeySignatureKey: cocoascript.NSString;
+declare const NSMetadataItemKeywordsKey: cocoascript.NSString;
+declare const NSMetadataItemKindKey: cocoascript.NSString;
+declare const NSMetadataItemLanguagesKey: cocoascript.NSString;
+declare const NSMetadataItemLastUsedDateKey: cocoascript.NSString;
+declare const NSMetadataItemLatitudeKey: cocoascript.NSString;
+declare const NSMetadataItemLayerNamesKey: cocoascript.NSString;
+declare const NSMetadataItemLensModelKey: cocoascript.NSString;
+declare const NSMetadataItemLongitudeKey: cocoascript.NSString;
+declare const NSMetadataItemLyricistKey: cocoascript.NSString;
+declare const NSMetadataItemMaxApertureKey: cocoascript.NSString;
+declare const NSMetadataItemMediaTypesKey: cocoascript.NSString;
+declare const NSMetadataItemMeteringModeKey: cocoascript.NSString;
+declare const NSMetadataItemMusicalGenreKey: cocoascript.NSString;
+declare const NSMetadataItemMusicalInstrumentCategoryKey: cocoascript.NSString;
+declare const NSMetadataItemMusicalInstrumentNameKey: cocoascript.NSString;
+declare const NSMetadataItemNamedLocationKey: cocoascript.NSString;
+declare const NSMetadataItemNumberOfPagesKey: cocoascript.NSString;
+declare const NSMetadataItemOrganizationsKey: cocoascript.NSString;
+declare const NSMetadataItemOrientationKey: cocoascript.NSString;
+declare const NSMetadataItemOriginalFormatKey: cocoascript.NSString;
+declare const NSMetadataItemOriginalSourceKey: cocoascript.NSString;
+declare const NSMetadataItemPageHeightKey: cocoascript.NSString;
+declare const NSMetadataItemPageWidthKey: cocoascript.NSString;
+declare const NSMetadataItemParticipantsKey: cocoascript.NSString;
+declare const NSMetadataItemPerformersKey: cocoascript.NSString;
+declare const NSMetadataItemPhoneNumbersKey: cocoascript.NSString;
+declare const NSMetadataItemPixelCountKey: cocoascript.NSString;
+declare const NSMetadataItemPixelHeightKey: cocoascript.NSString;
+declare const NSMetadataItemPixelWidthKey: cocoascript.NSString;
+declare const NSMetadataItemProducerKey: cocoascript.NSString;
+declare const NSMetadataItemProfileNameKey: cocoascript.NSString;
+declare const NSMetadataItemProjectsKey: cocoascript.NSString;
+declare const NSMetadataItemPublishersKey: cocoascript.NSString;
+declare const NSMetadataItemRecipientAddressesKey: cocoascript.NSString;
+declare const NSMetadataItemRecipientEmailAddressesKey: cocoascript.NSString;
+declare const NSMetadataItemRecipientsKey: cocoascript.NSString;
+declare const NSMetadataItemRecordingDateKey: cocoascript.NSString;
+declare const NSMetadataItemRecordingYearKey: cocoascript.NSString;
+declare const NSMetadataItemRedEyeOnOffKey: cocoascript.NSString;
+declare const NSMetadataItemResolutionHeightDPIKey: cocoascript.NSString;
+declare const NSMetadataItemResolutionWidthDPIKey: cocoascript.NSString;
+declare const NSMetadataItemRightsKey: cocoascript.NSString;
+declare const NSMetadataItemSecurityMethodKey: cocoascript.NSString;
+declare const NSMetadataItemSpeedKey: cocoascript.NSString;
+declare const NSMetadataItemStarRatingKey: cocoascript.NSString;
+declare const NSMetadataItemStateOrProvinceKey: cocoascript.NSString;
+declare const NSMetadataItemStreamableKey: cocoascript.NSString;
+declare const NSMetadataItemSubjectKey: cocoascript.NSString;
+declare const NSMetadataItemTempoKey: cocoascript.NSString;
+declare const NSMetadataItemTextContentKey: cocoascript.NSString;
+declare const NSMetadataItemThemeKey: cocoascript.NSString;
+declare const NSMetadataItemTimeSignatureKey: cocoascript.NSString;
+declare const NSMetadataItemTimestampKey: cocoascript.NSString;
+declare const NSMetadataItemTitleKey: cocoascript.NSString;
+declare const NSMetadataItemTotalBitRateKey: cocoascript.NSString;
+declare const NSMetadataItemVersionKey: cocoascript.NSString;
+declare const NSMetadataItemVideoBitRateKey: cocoascript.NSString;
+declare const NSMetadataItemWhereFromsKey: cocoascript.NSString;
+declare const NSMetadataItemWhiteBalanceKey: cocoascript.NSString;
+declare const NSMetadataItemIsUbiquitousKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemContainerDisplayNameKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemDownloadRequestedKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemIsExternalDocumentKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemURLInLocalContainerKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemHasUnresolvedConflictsKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemIsDownloadedKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemIsDownloadingKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemIsUploadedKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemIsUploadingKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemPercentDownloadedKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemPercentUploadedKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemDownloadingStatusKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemDownloadingErrorKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemUploadingErrorKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemIsSharedKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousSharedItemCurrentUserPermissionsKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousSharedItemCurrentUserRoleKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousSharedItemMostRecentEditorNameComponentsKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousSharedItemOwnerNameComponentsKey: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemDownloadingStatusCurrent: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemDownloadingStatusDownloaded: cocoascript.NSString;
+declare const NSMetadataUbiquitousItemDownloadingStatusNotDownloaded: cocoascript.NSString;
+declare const NSMetadataUbiquitousSharedItemPermissionsReadOnly: cocoascript.NSString;
+declare const NSMetadataUbiquitousSharedItemPermissionsReadWrite: cocoascript.NSString;
+declare const NSMetadataUbiquitousSharedItemRoleOwner: cocoascript.NSString;
+declare const NSMetadataUbiquitousSharedItemRoleParticipant: cocoascript.NSString;
 declare namespace cocoascript {
-  /**
-   * A structure representing a base-10 number.
-   * doc://com.apple.documentation/documentation/foundation/nsdecimal
-   */
   interface NSDecimal {
-    // doc://com.apple.documentation/documentation/foundation/1407702-nsdecimalstring
-    NSDecimalString(): cocoascript.id;
-    setNSDecimalString(): void;
-    // doc://com.apple.documentation/documentation/foundation/1408473-nsdecimaladd
-    NSDecimalAdd(): cocoascript.NSRoundingMode;
-    setNSDecimalAdd(): void;
-    // doc://com.apple.documentation/documentation/foundation/1408675-nsdecimalsubtract
-    NSDecimalSubtract(): cocoascript.NSRoundingMode;
-    setNSDecimalSubtract(): void;
-    // doc://com.apple.documentation/documentation/foundation/1409398-nsdecimaldivide
-    NSDecimalDivide(): cocoascript.NSRoundingMode;
-    setNSDecimalDivide(): void;
-    // doc://com.apple.documentation/documentation/foundation/1408890-nsdecimalmultiply
-    NSDecimalMultiply(): cocoascript.NSRoundingMode;
-    setNSDecimalMultiply(): void;
-    // doc://com.apple.documentation/documentation/foundation/1414888-nsdecimalmultiplybypowerof10
-    NSDecimalMultiplyByPowerOf10(): cocoascript.NSRoundingMode;
-    setNSDecimalMultiplyByPowerOf10(): void;
-    // doc://com.apple.documentation/documentation/foundation/1412419-nsdecimalpower
-    NSDecimalPower(): cocoascript.NSRoundingMode;
-    setNSDecimalPower(): void;
-    // doc://com.apple.documentation/documentation/foundation/1410221-nsdecimalnormalize
-    NSDecimalNormalize(): cocoascript.NSRoundingMode;
-    setNSDecimalNormalize(): void;
-    // doc://com.apple.documentation/documentation/foundation/1411143-nsdecimalcompare
-    NSDecimalCompare(): cocoascript.NSDecimal;
-    setNSDecimalCompare(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   /**
    * An object for representing and performing arithmetic on base-10 numbers.
    * doc://com.apple.documentation/documentation/foundation/nsdecimalnumber
@@ -9077,26 +8552,9 @@ declare namespace cocoascript {
 
 declare const NSAutoreleasePool: cocoascript.NSAutoreleasePool;
 declare namespace cocoascript {
-  /**
-   * A type used to identify and manage memory zones.
-   * doc://com.apple.documentation/documentation/foundation/nszone
-   */
   interface NSZone {
-    // doc://com.apple.documentation/documentation/foundation/1539804-nscreatezone
-    NSCreateZone(): cocoascript.BOOL;
-    setNSCreateZone(): void;
-    // doc://com.apple.documentation/documentation/foundation/1539805-nszonefrompointer
-    NSZoneFromPointer(): void;
-    setNSZoneFromPointer(): void;
-    // doc://com.apple.documentation/documentation/foundation/1539799-nszonename
-    NSZoneName(): cocoascript.NSZone;
-    setNSZoneName(): void;
-    // doc://com.apple.documentation/documentation/foundation/1539819-nsdefaultmalloczone
-    NSDefaultMallocZone(): void;
-    setNSDefaultMallocZone(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsxmlparserexternalentityresolvingpolicy
   type NSXMLParserExternalEntityResolvingPolicy = cocoascript.NSUInteger;
 }
@@ -10861,9 +10319,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsclassdescription/1411937-toonerelationshipkeys
     toOneRelationshipKeys(): cocoascript.NSString;
     setToOneRelationshipKeys(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsclassdescriptionneededforclassnotification
-    NSClassDescriptionNeededForClassNotification(): cocoascript.NSNotificationName;
-    setNSClassDescriptionNeededForClassNotification(): void;
     //
     alloc():cocoascript.NSClassDescription;
     //
@@ -10872,6 +10327,7 @@ declare namespace cocoascript {
 }
 
 declare const NSClassDescription: cocoascript.NSClassDescription;
+declare const NSClassDescriptionNeededForClassNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nskeyvaluechange
   type NSKeyValueChange = cocoascript.NSUInteger;
@@ -11117,12 +10573,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsconnection/1478077-delegate
     delegate(): cocoascript.NSConnectionDelegate;
     setDelegate(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsconnectiondiddienotification
-    NSConnectionDidDieNotification(): cocoascript.const;
-    setNSConnectionDidDieNotification(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsconnectiondidinitializenotification
-    NSConnectionDidInitializeNotification(): cocoascript.const;
-    setNSConnectionDidInitializeNotification(): void;
     //
     alloc():cocoascript.NSConnection;
     //
@@ -11131,6 +10581,8 @@ declare namespace cocoascript {
 }
 
 declare const NSConnection: cocoascript.NSConnection;
+declare const NSConnectionDidDieNotification: cocoascript.NSString;
+declare const NSConnectionDidInitializeNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A port that can be used as an endpoint for distributed object connections (or raw messaging).
@@ -13019,39 +12471,6 @@ declare namespace cocoascript {
     status():cocoascript.NSURLHandleStatus;
     // doc://com.apple.documentation/documentation/foundation/nsurlhandle/1589210-writedata
     writeData(data: cocoascript.NSData):cocoascript.BOOL;
-    // doc://com.apple.documentation/documentation/foundation/nsftppropertyactivetransfermodekey
-    NSFTPPropertyActiveTransferModeKey(): cocoascript.NSString;
-    setNSFTPPropertyActiveTransferModeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsftppropertyftpproxy
-    NSFTPPropertyFTPProxy(): cocoascript.NSString;
-    setNSFTPPropertyFTPProxy(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsftppropertyfileoffsetkey
-    NSFTPPropertyFileOffsetKey(): cocoascript.NSString;
-    setNSFTPPropertyFileOffsetKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsftppropertyuserloginkey
-    NSFTPPropertyUserLoginKey(): cocoascript.NSString;
-    setNSFTPPropertyUserLoginKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsftppropertyuserpasswordkey
-    NSFTPPropertyUserPasswordKey(): cocoascript.NSString;
-    setNSFTPPropertyUserPasswordKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nshttppropertyerrorpagedatakey
-    NSHTTPPropertyErrorPageDataKey(): cocoascript.NSString;
-    setNSHTTPPropertyErrorPageDataKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nshttppropertyhttpproxy
-    NSHTTPPropertyHTTPProxy(): cocoascript.NSString;
-    setNSHTTPPropertyHTTPProxy(): void;
-    // doc://com.apple.documentation/documentation/foundation/nshttppropertyredirectionheaderskey
-    NSHTTPPropertyRedirectionHeadersKey(): cocoascript.NSString;
-    setNSHTTPPropertyRedirectionHeadersKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nshttppropertyserverhttpversionkey
-    NSHTTPPropertyServerHTTPVersionKey(): cocoascript.NSString;
-    setNSHTTPPropertyServerHTTPVersionKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nshttppropertystatuscodekey
-    NSHTTPPropertyStatusCodeKey(): cocoascript.NSString;
-    setNSHTTPPropertyStatusCodeKey(): void;
-    // doc://com.apple.documentation/documentation/foundation/nshttppropertystatusreasonkey
-    NSHTTPPropertyStatusReasonKey(): cocoascript.NSString;
-    setNSHTTPPropertyStatusReasonKey(): void;
     //
     alloc():cocoascript.NSURLHandle;
     //
@@ -13060,6 +12479,17 @@ declare namespace cocoascript {
 }
 
 declare const NSURLHandle: cocoascript.NSURLHandle;
+declare const NSFTPPropertyActiveTransferModeKey: cocoascript.NSString;
+declare const NSFTPPropertyFTPProxy: cocoascript.NSString;
+declare const NSFTPPropertyFileOffsetKey: cocoascript.NSString;
+declare const NSFTPPropertyUserLoginKey: cocoascript.NSString;
+declare const NSFTPPropertyUserPasswordKey: cocoascript.NSString;
+declare const NSHTTPPropertyErrorPageDataKey: cocoascript.NSString;
+declare const NSHTTPPropertyHTTPProxy: cocoascript.NSString;
+declare const NSHTTPPropertyRedirectionHeadersKey: cocoascript.NSString;
+declare const NSHTTPPropertyServerHTTPVersionKey: cocoascript.NSString;
+declare const NSHTTPPropertyStatusCodeKey: cocoascript.NSString;
+declare const NSHTTPPropertyStatusReasonKey: cocoascript.NSString;
 declare const NSURLFileResourceTypeNamedPipe: cocoascript.NSURLFileResourceType;
 declare const NSURLFileResourceTypeCharacterSpecial: cocoascript.NSURLFileResourceType;
 declare const NSURLFileResourceTypeDirectory: cocoascript.NSURLFileResourceType;
@@ -13949,32 +13379,9 @@ declare namespace cocoascript {
   type NSUserNotificationActivationType = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-  /**
-   * A structure that defines the three-by-three matrix that performs an affine transform between two coordinate systems.
-   * doc://com.apple.documentation/documentation/foundation/nsaffinetransformstruct
-   */
   interface NSAffineTransformStruct {
-    // doc://com.apple.documentation/documentation/foundation/nsaffinetransformstruct/1416360-m11
-    m11(): cocoascript.CGFloat;
-    setM11(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsaffinetransformstruct/1412409-m12
-    m12(): cocoascript.CGFloat;
-    setM12(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsaffinetransformstruct/1413679-m21
-    m21(): cocoascript.CGFloat;
-    setM21(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsaffinetransformstruct/1410646-m22
-    m22(): cocoascript.CGFloat;
-    setM22(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsaffinetransformstruct/1408491-tx
-    tX(): cocoascript.CGFloat;
-    setTX(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsaffinetransformstruct/1412546-ty
-    tY(): cocoascript.CGFloat;
-    setTY(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   /**
    * An abstract class whose subclasses enumerate collections of objects, such as arrays and dictionaries.
    * doc://com.apple.documentation/documentation/foundation/nsenumerator
@@ -14352,23 +13759,9 @@ declare namespace cocoascript {
   type NSProcessInfoThermalState = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-  /**
-   * Operating system version structure used with
-   * doc://com.apple.documentation/documentation/foundation/nsoperatingsystemversion
-   */
   interface NSOperatingSystemVersion {
-    // doc://com.apple.documentation/documentation/foundation/nsoperatingsystemversion/1414662-majorversion
-    majorVersion(): cocoascript.NSInteger;
-    setMajorVersion(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsoperatingsystemversion/1413801-minorversion
-    minorVersion(): cocoascript.NSInteger;
-    setMinorVersion(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsoperatingsystemversion/1415564-patchversion
-    patchVersion(): cocoascript.NSInteger;
-    setPatchVersion(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsactivityoptions
   type NSActivityOptions = cocoascript.uint64_t;
 }
@@ -14523,14 +13916,9 @@ declare namespace cocoascript {
 }
 declare const NSFileHandleReadCompletionNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-  /**
-   * This defines the structure used as contextual information in the
-   * doc://com.apple.documentation/documentation/foundation/nsfastenumerationstate
-   */
   interface NSFastEnumerationState {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange
    */
@@ -14977,39 +14365,15 @@ declare namespace cocoascript {
   type NSNetServiceOptions = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-  /**
-   * The function pointers used to configure behavior of
-   * doc://com.apple.documentation/documentation/foundation/nsmaptablekeycallbacks
-   */
   interface NSMapTableKeyCallBacks {
-    // doc://com.apple.documentation/documentation/foundation/nsmaptablekeycallbacks/1391410-describe
-    describe(): void;
-    setDescribe(): void;
-    // doc://com.apple.documentation/documentation/foundation/nsmaptablekeycallbacks/1391463-hash
-    hash(): void;
-    setHash(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * Allows successive elements of a map table to be returned each time this structure is passed to
-   * doc://com.apple.documentation/documentation/foundation/nsmapenumerator
-   */
+}declare namespace cocoascript {
   interface NSMapEnumerator {
   }
-}
-declare namespace cocoascript {
-  /**
-   * The function pointers used to configure behavior of
-   * doc://com.apple.documentation/documentation/foundation/nsmaptablevaluecallbacks
-   */
+}declare namespace cocoascript {
   interface NSMapTableValueCallBacks {
-    // doc://com.apple.documentation/documentation/foundation/nsmaptablevaluecallbacks/1391438-describe
-    describe(): void;
-    setDescribe(): void;
   }
-}
-declare const NSIntegerMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
+}declare const NSIntegerMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
 declare const NSIntMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
 declare const NSNonOwnedPointerMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
 declare const NSNonOwnedPointerOrNullMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
@@ -15040,28 +14404,12 @@ declare const NSHashTableCopyIn: cocoascript.NSPointerFunctionsOptions;
 declare const NSHashTableObjectPointerPersonality: cocoascript.NSPointerFunctionsOptions;
 declare const NSHashTableWeakMemory: cocoascript.NSPointerFunctionsOptions;
 declare namespace cocoascript {
-  /**
-   * Allows successive elements of a hash table to be returned each time this structure is passed to
-   * doc://com.apple.documentation/documentation/foundation/nshashenumerator
-   */
   interface NSHashEnumerator {
   }
-}
-declare namespace cocoascript {
-  /**
-   * Defines a structure that contains the function pointers used to configure behavior of
-   * doc://com.apple.documentation/documentation/foundation/nshashtablecallbacks
-   */
+}declare namespace cocoascript {
   interface NSHashTableCallBacks {
-    // doc://com.apple.documentation/documentation/foundation/nshashtablecallbacks/1409730-describe
-    describe(): void;
-    setDescribe(): void;
-    // doc://com.apple.documentation/documentation/foundation/nshashtablecallbacks/1412381-hash
-    hash(): void;
-    setHash(): void;
   }
-}
-declare const NSIntegerHashCallBacks: cocoascript.NSHashTableCallBacks;
+}declare const NSIntegerHashCallBacks: cocoascript.NSHashTableCallBacks;
 declare const NSIntHashCallBacks: cocoascript.NSHashTableCallBacks;
 declare const NSNonOwnedPointerHashCallBacks: cocoascript.NSHashTableCallBacks;
 declare const NSNonRetainedObjectHashCallBacks: cocoascript.NSHashTableCallBacks;
@@ -15082,22 +14430,12 @@ declare namespace cocoascript {
   type NSXPCConnectionOptions = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-  /**
-   * Opaque structure containing endian-independent
-   * doc://com.apple.documentation/documentation/foundation/nsswappeddouble
-   */
   interface NSSwappedDouble {
   }
-}
-declare namespace cocoascript {
-  /**
-   * Opaque type containing an endian-independent
-   * doc://com.apple.documentation/documentation/foundation/nsswappedfloat
-   */
+}declare namespace cocoascript {
   interface NSSwappedFloat {
   }
-}
-declare const NSProgressFileTotalCountKey: cocoascript.NSProgressUserInfoKey;
+}declare const NSProgressFileTotalCountKey: cocoascript.NSProgressUserInfoKey;
 declare const NSProgressFileCompletedCountKey: cocoascript.NSProgressUserInfoKey;
 declare const NSProgressFileAnimationImageOriginalRectKey: cocoascript.NSProgressUserInfoKey;
 declare const NSProgressFileAnimationImageKey: cocoascript.NSProgressUserInfoKey;

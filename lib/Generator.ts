@@ -1,13 +1,13 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import * as fse from 'fs-extra';
 import { InterfaceDeclaration } from './InterfaceDeclaration';
 import { Token } from './types';
 import { TypeDeclaration } from './TypeDeclaration';
 import { UnionTypeDeclaration } from './UnionTypeDeclaration';
 import { ConstDeclaration } from './ConstDeclaration';
+import { StructDeclaration } from './StructDeclaration';
 
-type Declaration = InterfaceDeclaration | TypeDeclaration | UnionTypeDeclaration | ConstDeclaration;
+type Declaration = InterfaceDeclaration | TypeDeclaration | UnionTypeDeclaration | ConstDeclaration | StructDeclaration;
 
 export class Generator {
   typeFiles: Set<string> = new Set();
@@ -66,7 +66,7 @@ export class Generator {
           if (tokens[2].text === 'enum') {
             decl = UnionTypeDeclaration.initFromTokens(doc.identifier.url, tokens);
           } else if (tokens[2].text === 'struct') {
-            decl = InterfaceDeclaration.initFromTokens(doc.identifier.url, doc, tokens);
+            decl = StructDeclaration.initFromTokens(doc.identifier.url, tokens);
           } else {
             decl = TypeDeclaration.initFromTokens(doc.identifier.url, tokens);
           }

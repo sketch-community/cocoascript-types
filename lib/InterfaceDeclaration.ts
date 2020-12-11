@@ -1,7 +1,9 @@
+import { O_DIRECT } from 'constants';
 import * as fs from 'fs';
 import * as path from 'path';
 import { CodeGenerator } from './CodeGenerator';
 import { NAMESPACE } from './constant';
+import { ConstDeclaration } from './ConstDeclaration';
 import { normalizeType } from './helpers';
 import { MethodDeclaration } from './MethodDeclaration';
 import { PropertyDeclaration } from './PropertyDeclaration';
@@ -14,8 +16,9 @@ export class InterfaceDeclaration {
   type: 'interface' | 'protocol';
   identifier: string;
   description: string;
-  inheritsFrom = null;
+  inheritsFrom = undefined;
   properties: Array<MethodDeclaration | PropertyDeclaration> = [];
+  constants: Array<ConstDeclaration> = [];
 
   constructor(id: string, type: InterfaceType, identifier: string, description: string) {
     this.id = id;
@@ -42,10 +45,7 @@ export class InterfaceDeclaration {
     if (doc.topicSections) {
       doc.topicSections.forEach((topic: any) => {
         topic.identifiers.forEach((id: string) => {
-          const property = this.createIdentifier(decl, id);
-          if (property) {
-            decl.properties.push(property);
-          }
+          this.createIdentifier(decl, id);
         });
       });
     }
@@ -68,16 +68,22 @@ export class InterfaceDeclaration {
     const { tokens } = firstSection.declarations[0];
     let index = 0;
     if (tokens[index].text === '- (') {
-      return MethodDeclaration.initFromTokens(doc.identifier.url, clazz, tokens);
+      const method = MethodDeclaration.initFromTokens(doc.identifier.url, clazz, tokens);
+      clazz.properties.push(method);
     }
-    if (tokens[index].text === '@property' || tokens[index].kind === 'typeIdentifier') {
-      return PropertyDeclaration.initFromTokens(doc.identifier.url, tokens);
+    if (tokens[index].text === '@property') {
+      const property = PropertyDeclaration.initFromTokens(doc.identifier.url, tokens);
+      clazz.properties.push(property);
+    }
+    if (tokens[index].kind === 'typeIdentifier') {
+      const constant = ConstDeclaration.initFromTokens(doc.identifier.url, tokens);
+      clazz.constants.push(constant);
     }
   }
 
   generate() {
     const code = new CodeGenerator();
-    code.appendLine(`declare namespace ${NAMESPACE} {`).indent();
+    code.namespace();
     code.appendLine('/**');
     if (this.description) {
       code.appendLine(` * ${this.description}`);
@@ -85,7 +91,7 @@ export class InterfaceDeclaration {
     code.appendLine(` * ${this.id}`);
     code.appendLine(' */');
 
-    code.appendLine(`interface ${this.identifier}${this.inheritsFrom ? ` extends ${this.inheritsFrom} ` : ' '}{`).indent();
+    code.interface(this.identifier, this.inheritsFrom);
     if (this.type === 'interface') {
       const alloc = new MethodDeclaration('', this);
       alloc.identifiers.push({
@@ -102,11 +108,14 @@ export class InterfaceDeclaration {
     this.properties.forEach(property => {
       code.appendLine(property.generate());
     });
-    code.endIndent().appendLine('}')
-    code.endIndent().appendLine('}');
+    code.endInterface();
+    code.endNamespace();
     if (this.type === 'interface') {
       code.appendLine().appendLine(`declare const ${this.identifier}: ${normalizeType(this.identifier)};`)
     }
+    this.constants.forEach(constant => {
+      code.appendLine(constant.generate());
+    });
     code.appendLine();
     return code.toString();
   }

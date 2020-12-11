@@ -435,22 +435,12 @@ declare namespace cocoascript {
   type NSInteger = number;
 }
 declare namespace cocoascript {
-  /**
-   * A pointer to an instance of a class.
-   * doc://com.apple.documentation/documentation/objectivec/id
-   */
   interface id {
   }
-}
-declare namespace cocoascript {
-  /**
-   * An opaque type that represents an Objective-C class.
-   * doc://com.apple.documentation/documentation/objectivec/class
-   */
+}declare namespace cocoascript {
   interface Class {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/objectivec/protocol
    */
@@ -478,54 +468,24 @@ declare const protocol_getName: cocoascript.Protocol;
 declare const property_getName: cocoascript.objc_property_t;
 declare const property_getAttributes: cocoascript.objc_property_t;
 declare namespace cocoascript {
-  /**
-   * An opaque type that represents a method in a class definition.
-   * doc://com.apple.documentation/documentation/objectivec/method
-   */
   interface Method {
   }
-}
-declare namespace cocoascript {
-  /**
-   * An opaque type that represents an instance variable.
-   * doc://com.apple.documentation/documentation/objectivec/ivar
-   */
+}declare namespace cocoascript {
   interface Ivar {
   }
-}
-declare namespace cocoascript {
-  /**
-   * An opaque type that represents a category.
-   * doc://com.apple.documentation/documentation/objectivec/category
-   */
+}declare namespace cocoascript {
   interface Category {
   }
-}
-declare namespace cocoascript {
-  /**
-   * An opaque type that represents an Objective-C declared property.
-   * doc://com.apple.documentation/documentation/objectivec/objc_property_t
-   */
+}declare namespace cocoascript {
   interface objc_property_t {
   }
-}
-declare namespace cocoascript {
-  /**
-   * Defines an opaque type that represents a method selector.
-   * doc://com.apple.documentation/documentation/objectivec/sel
-   */
+}declare namespace cocoascript {
   interface SEL {
   }
-}
-declare namespace cocoascript {
-  /**
-   * Defines a property attribute.
-   * doc://com.apple.documentation/documentation/objectivec/objc_property_attribute_t
-   */
+}declare namespace cocoascript {
   interface objc_property_attribute_t {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/objectivec/bool
   type BOOL = boolean;
 }
@@ -550,30 +510,15 @@ declare namespace cocoascript {
   type objc_hook_lazyClassNamer = cocoascript.Class;
 }
 declare namespace cocoascript {
-  /**
-   * doc://com.apple.documentation/documentation/objectivec/nxhashstate
-   */
   interface NXHashState {
   }
-}
-declare namespace cocoascript {
-  /**
-   * doc://com.apple.documentation/documentation/objectivec/nxhashtable
-   */
+}declare namespace cocoascript {
   interface NXHashTable {
   }
-}
-declare namespace cocoascript {
-  /**
-   * doc://com.apple.documentation/documentation/objectivec/nxhashtableprototype
-   */
+}declare namespace cocoascript {
   interface NXHashTablePrototype {
-    // doc://com.apple.documentation/documentation/objectivec/nxhashtableprototype/1430261-hash
-    hash(): void;
-    setHash(): void;
   }
-}
-declare const NXPtrPrototype: cocoascript.NXHashTablePrototype;
+}declare const NXPtrPrototype: cocoascript.NXHashTablePrototype;
 declare const NXPtrStructKeyPrototype: cocoascript.NXHashTablePrototype;
 declare const NXStrPrototype: cocoascript.NXHashTablePrototype;
 declare const NXStrStructKeyPrototype: cocoascript.NXHashTablePrototype;

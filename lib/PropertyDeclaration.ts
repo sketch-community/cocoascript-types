@@ -23,10 +23,9 @@ export class PropertyDeclaration {
       if (tokens[index].text.includes('readonly')) {
         property.readonly = true;
       }
-      if (tokens[index].kind === 'keyword') {
-        property.type = tokens[index].text;
-      }
-      if (tokens[index].kind === 'typeIdentifier') {
+      if (tokens[index].kind === 'typeIdentifier' ||
+      (tokens[index].kind === 'keyword')
+      ) {
         property.type = tokens[index].text;
       }
       if (tokens[index].kind === 'identifier') {

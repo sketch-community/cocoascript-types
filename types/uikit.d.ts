@@ -72,9 +72,6 @@ declare namespace cocoascript {
     setProximityState(): void;
     // doc://com.apple.documentation/documentation/uikit/uidevice/1620050-playinputclick
     playInputClick():void;
-    // doc://com.apple.documentation/documentation/uikit/1620016-ui_user_interface_idiom
-    UI_USER_INTERFACE_IDIOM(): void;
-    setUI_USER_INTERFACE_IDIOM(): void;
     //
     alloc():cocoascript.UIDevice;
     //
@@ -83,6 +80,7 @@ declare namespace cocoascript {
 }
 
 declare const UIDevice: cocoascript.UIDevice;
+declare const UI_USER_INTERFACE_IDIOM: void;
 declare namespace cocoascript {
   /**
    * An object from a data set type stored in an asset catalog.
@@ -1382,9 +1380,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/3335195-propertylist
     propertyList(): cocoascript.id;
     setPropertyList(): void;
-    // doc://com.apple.documentation/documentation/uikit/uicommandtagshare
-    UICommandTagShare(): cocoascript.const;
-    setUICommandTagShare(): void;
     //
     alloc():cocoascript.UIKeyCommand;
     //
@@ -1393,6 +1388,7 @@ declare namespace cocoascript {
 }
 
 declare const UIKeyCommand: cocoascript.UIKeyCommand;
+declare const UICommandTagShare: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A control for selecting a single value from a continuous range of values.
@@ -2285,9 +2281,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitextfield/1619628-allowseditingtextattributes
     allowsEditingTextAttributes(): cocoascript.BOOL;
     setAllowsEditingTextAttributes(): void;
-    // doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreasonkey
-    UITextFieldDidEndEditingReasonKey(): cocoascript.const;
-    setUITextFieldDidEndEditingReasonKey(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextfield/1619624-borderstyle
     borderStyle(): cocoascript.UITextBorderStyle;
     setBorderStyle(): void;
@@ -2344,6 +2337,7 @@ declare namespace cocoascript {
 }
 
 declare const UITextField: cocoascript.UITextField;
+declare const UITextFieldDidEndEditingReasonKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that coordinates text formatting using the standard Mac font panel.
@@ -2897,9 +2891,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicommand/3175310-propertylist
     propertyList(): cocoascript.id;
     setPropertyList(): void;
-    // doc://com.apple.documentation/documentation/uikit/uicommandtagshare
-    UICommandTagShare(): cocoascript.const;
-    setUICommandTagShare(): void;
     //
     alloc():cocoascript.UICommand;
     //
@@ -2908,6 +2899,7 @@ declare namespace cocoascript {
 }
 
 declare const UICommand: cocoascript.UICommand;
+declare const UICommandTagShare: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An interaction object that you use to display relevant actions for your content.
@@ -3202,21 +3194,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiresponder/3375809-touchbar
     touchBar(): cocoascript.NSTouchBar;
     setTouchBar(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardanimationcurveuserinfokey
-    UIKeyboardAnimationCurveUserInfoKey(): cocoascript.const;
-    setUIKeyboardAnimationCurveUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardanimationdurationuserinfokey
-    UIKeyboardAnimationDurationUserInfoKey(): cocoascript.const;
-    setUIKeyboardAnimationDurationUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardframebeginuserinfokey
-    UIKeyboardFrameBeginUserInfoKey(): cocoascript.const;
-    setUIKeyboardFrameBeginUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardframeenduserinfokey
-    UIKeyboardFrameEndUserInfoKey(): cocoascript.const;
-    setUIKeyboardFrameEndUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardislocaluserinfokey
-    UIKeyboardIsLocalUserInfoKey(): cocoascript.const;
-    setUIKeyboardIsLocalUserInfoKey(): void;
     //
     alloc():cocoascript.UIResponder;
     //
@@ -3225,6 +3202,11 @@ declare namespace cocoascript {
 }
 
 declare const UIResponder: cocoascript.UIResponder;
+declare const UIKeyboardAnimationCurveUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardAnimationDurationUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardFrameBeginUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardFrameEndUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardIsLocalUserInfoKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The centralized point of control and coordination for apps running in iOS.
@@ -3278,9 +3260,6 @@ declare namespace cocoascript {
     openURL_options_completionHandler(url: cocoascript.NSURL, options: cocoascript.UIApplication, completion: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1622952-canopenurl
     canOpenURL(url: cocoascript.NSURL):cocoascript.BOOL;
-    // doc://com.apple.documentation/documentation/uikit/uiapplicationopensettingsurlstring
-    UIApplicationOpenSettingsURLString(): cocoascript.const;
-    setUIApplicationOpenSettingsURLString(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623070-idletimerdisabled
     idleTimerDisabled(): cocoascript.BOOL;
     setIdleTimerDisabled(): void;
@@ -3337,9 +3316,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory
     preferredContentSizeCategory(): cocoascript.UIContentSizeCategory;
     setPreferredContentSizeCategory(): void;
-    // doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey
-    UIContentSizeCategoryNewValueKey(): cocoascript.const;
-    setUIContentSizeCategoryNewValueKey(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623091-supportedinterfaceorientationsfo
     supportedInterfaceOrientationsForWindow(window: cocoascript.UIWindow):cocoascript.UIInterfaceOrientationMask;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva
@@ -3347,12 +3323,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623014-statusbarorientationanimationdur
     statusBarOrientationAnimationDuration(): cocoascript.NSTimeInterval;
     setStatusBarOrientationAnimationDuration(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarorientationuserinfokey
-    UIApplicationStatusBarOrientationUserInfoKey(): cocoascript.const;
-    setUIApplicationStatusBarOrientationUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarframeuserinfokey
-    UIApplicationStatusBarFrameUserInfoKey(): cocoascript.const;
-    setUIApplicationStatusBarFrameUserInfoKey(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1622937-statusbarframe
     statusBarFrame(): cocoascript.CGRect;
     setStatusBarFrame(): void;
@@ -3415,6 +3385,10 @@ declare namespace cocoascript {
 }
 
 declare const UIApplication: cocoascript.UIApplication;
+declare const UIApplicationOpenSettingsURLString: cocoascript.NSString;
+declare const UIContentSizeCategoryNewValueKey: cocoascript.NSString;
+declare const UIApplicationStatusBarOrientationUserInfoKey: cocoascript.NSString;
+declare const UIApplicationStatusBarFrameUserInfoKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The base class for concrete gesture recognizers.
@@ -4104,21 +4078,6 @@ declare namespace cocoascript {
     application_willEncodeRestorableStateWithCoder(application: cocoascript.UIApplication, coder: cocoascript.NSCoder):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623006-application
     application_didDecodeRestorableStateWithCoder(application: cocoascript.UIApplication, coder: cocoascript.NSCoder):void;
-    // doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationbundleversionkey
-    UIApplicationStateRestorationBundleVersionKey(): cocoascript.const;
-    setUIApplicationStateRestorationBundleVersionKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationsystemversionkey
-    UIApplicationStateRestorationSystemVersionKey(): cocoascript.const;
-    setUIApplicationStateRestorationSystemVersionKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationtimestampkey
-    UIApplicationStateRestorationTimestampKey(): cocoascript.const;
-    setUIApplicationStateRestorationTimestampKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationuserinterfaceidiomkey
-    UIApplicationStateRestorationUserInterfaceIdiomKey(): cocoascript.const;
-    setUIApplicationStateRestorationUserInterfaceIdiomKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uistaterestorationviewcontrollerstoryboardkey
-    UIStateRestorationViewControllerStoryboardKey(): cocoascript.const;
-    setUIStateRestorationViewControllerStoryboardKey(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622941-application
     application_handleEventsForBackgroundURLSession_completionHandler(application: cocoascript.UIApplication, identifier: cocoascript.NSString, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622958-application
@@ -4156,6 +4115,11 @@ declare namespace cocoascript {
     setWindow(): void;
   }
 }
+declare const UIApplicationStateRestorationBundleVersionKey: cocoascript.NSString;
+declare const UIApplicationStateRestorationSystemVersionKey: cocoascript.NSString;
+declare const UIApplicationStateRestorationTimestampKey: cocoascript.NSString;
+declare const UIApplicationStateRestorationUserInterfaceIdiomKey: cocoascript.NSString;
+declare const UIStateRestorationViewControllerStoryboardKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object describing the configuration of the status bar.
@@ -4231,9 +4195,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitraitcollection/1771746-preferredcontentsizecategory
     preferredContentSizeCategory(): cocoascript.UIContentSizeCategory;
     setPreferredContentSizeCategory(): void;
-    // doc://com.apple.documentation/documentation/uikit/2877504-uicontentsizecategorycomparetoca
-    UIContentSizeCategoryCompareToCategory(): cocoascript.UIContentSizeCategory;
-    setUIContentSizeCategoryCompareToCategory(): void;
     // doc://com.apple.documentation/documentation/uikit/uitraitcollection/1623506-containstraitsincollection
     containsTraitsInCollection(trait: cocoascript.UITraitCollection):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/uikit/uitraitcollection/3238081-hasdifferentcolorappearancecompa
@@ -4251,6 +4212,7 @@ declare namespace cocoascript {
 }
 
 declare const UITraitCollection: cocoascript.UITraitCollection;
+declare const UIContentSizeCategoryCompareToCategory: cocoascript.UIContentSizeCategory;
 declare namespace cocoascript {
   /**
    * A set of methods that, in conjunction with a presentation controller, determine how to respond to trait changes in your app.
@@ -4397,9 +4359,6 @@ declare namespace cocoascript {
     finishedHandlingError_recovered(error: cocoascript.NSError, recovered: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619993-userinteractionnolongerpermitted
     userInteractionNoLongerPermittedForError(error: cocoascript.NSError):void;
-    // doc://com.apple.documentation/documentation/uikit/nsuseractivitydocumenturlkey
-    NSUserActivityDocumentURLKey(): cocoascript.const;
-    setNSUserActivityDocumentURLKey(): void;
     //
     alloc():cocoascript.UIDocument;
     //
@@ -4408,6 +4367,7 @@ declare namespace cocoascript {
 }
 
 declare const UIDocument: cocoascript.UIDocument;
+declare const NSUserActivityDocumentURLKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A managed document object that integrates with Core Data.
@@ -4727,9 +4687,6 @@ declare namespace cocoascript {
   interface UINib extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner
     instantiateWithOwner_options(ownerOrNil: cocoascript.UINib, optionsOrNil: cocoascript.UINib):cocoascript.NSArray;
-    // doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey
-    UINibProxiedObjectsKey(): cocoascript.const;
-    setUINibProxiedObjectsKey(): void;
     //
     alloc():cocoascript.UINib;
     //
@@ -4738,6 +4695,7 @@ declare namespace cocoascript {
 }
 
 declare const UINib: cocoascript.UINib;
+declare const UINibProxiedObjectsKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The principal class for the Document Picker View Controller extension.
@@ -5717,12 +5675,6 @@ declare namespace cocoascript {
     drawInRect_blendMode_alpha(rect: cocoascript.CGRect, blendMode: cocoascript.CGBlendMode, alpha: cocoascript.CGFloat):void;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624144-drawaspatterninrect
     drawAsPatternInRect(rect: cocoascript.CGRect):void;
-    // doc://com.apple.documentation/documentation/uikit/1624115-uiimagejpegrepresentation
-    UIImageJPEGRepresentation(): cocoascript.CGFloat;
-    setUIImageJPEGRepresentation(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624096-uiimagepngrepresentation
-    UIImagePNGRepresentation(): cocoascript.UIImage;
-    setUIImagePNGRepresentation(): void;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624145-stretchableimagewithleftcapwidth
     stretchableImageWithLeftCapWidth_topCapHeight(leftCapWidth: cocoascript.NSInteger, topCapHeight: cocoascript.NSInteger):cocoascript.UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624148-leftcapwidth
@@ -5739,6 +5691,8 @@ declare namespace cocoascript {
 }
 
 declare const UIImage: cocoascript.UIImage;
+declare const UIImageJPEGRepresentation: cocoascript.CGFloat;
+declare const UIImagePNGRepresentation: cocoascript.UIImage;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uibaselineadjustment
   type UIBaselineAdjustment = cocoascript.NSInteger;
@@ -6785,94 +6739,19 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  /**
-   * Defines a structure that specifies an amount to offset a position.
-   * doc://com.apple.documentation/documentation/uikit/uioffset
-   */
   interface UIOffset {
-    // doc://com.apple.documentation/documentation/uikit/uioffset/1624524-horizontal
-    horizontal(): cocoascript.CGFloat;
-    setHorizontal(): void;
-    // doc://com.apple.documentation/documentation/uikit/uioffset/1624473-vertical
-    vertical(): cocoascript.CGFloat;
-    setVertical(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624515-uioffsetmake
-    UIOffsetMake(): cocoascript.CGFloat;
-    setUIOffsetMake(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624491-nsstringfromuioffset
-    NSStringFromUIOffset(): cocoascript.UIOffset;
-    setNSStringFromUIOffset(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624509-uioffsetfromstring
-    UIOffsetFromString(): cocoascript.NSString;
-    setUIOffsetFromString(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * The inset distances for views.
-   * doc://com.apple.documentation/documentation/uikit/uiedgeinsets
-   */
+}declare namespace cocoascript {
   interface UIEdgeInsets {
-    // doc://com.apple.documentation/documentation/uikit/1624475-uiedgeinsetsmake
-    UIEdgeInsetsMake(): cocoascript.CGFloat;
-    setUIEdgeInsetsMake(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiedgeinsets/1624528-bottom
-    bottom(): cocoascript.CGFloat;
-    setBottom(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiedgeinsets/1624510-left
-    left(): cocoascript.CGFloat;
-    setLeft(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiedgeinsets/1624490-right
-    right(): cocoascript.CGFloat;
-    setRight(): void;
-    // doc://com.apple.documentation/documentation/uikit/uiedgeinsets/1624516-top
-    top(): cocoascript.CGFloat;
-    setTop(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624499-uiedgeinsetsinsetrect
-    UIEdgeInsetsInsetRect(): cocoascript.UIEdgeInsets;
-    setUIEdgeInsetsInsetRect(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624527-nsstringfromuiedgeinsets
-    NSStringFromUIEdgeInsets(): cocoascript.UIEdgeInsets;
-    setNSStringFromUIEdgeInsets(): void;
-    // doc://com.apple.documentation/documentation/uikit/1624525-uiedgeinsetsfromstring
-    UIEdgeInsetsFromString(): cocoascript.NSString;
-    setUIEdgeInsetsFromString(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiaxis
   type UIAxis = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-  /**
-   * Edge insets that take language direction into account.
-   * doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsets
-   */
   interface NSDirectionalEdgeInsets {
-    // doc://com.apple.documentation/documentation/uikit/2867596-nsdirectionaledgeinsetsmake
-    NSDirectionalEdgeInsetsMake(): cocoascript.CGFloat;
-    setNSDirectionalEdgeInsetsMake(): void;
-    // doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsets/2865791-bottom
-    bottom(): cocoascript.CGFloat;
-    setBottom(): void;
-    // doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsets/2866012-leading
-    leading(): cocoascript.CGFloat;
-    setLeading(): void;
-    // doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsets/2865909-top
-    top(): cocoascript.CGFloat;
-    setTop(): void;
-    // doc://com.apple.documentation/documentation/uikit/nsdirectionaledgeinsets/2865833-trailing
-    trailing(): cocoascript.CGFloat;
-    setTrailing(): void;
-    // doc://com.apple.documentation/documentation/uikit/2865946-nsstringfromdirectionaledgeinset
-    NSStringFromDirectionalEdgeInsets(): cocoascript.NSDirectionalEdgeInsets;
-    setNSStringFromDirectionalEdgeInsets(): void;
-    // doc://com.apple.documentation/documentation/uikit/2865991-nsdirectionaledgeinsetsfromstrin
-    NSDirectionalEdgeInsetsFromString(): cocoascript.NSString;
-    setNSDirectionalEdgeInsetsFromString(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge
   type NSDirectionalRectEdge = cocoascript.NSUInteger;
 }
@@ -8297,30 +8176,6 @@ declare namespace cocoascript {
     convertRect_fromWindow(rect: cocoascript.CGRect, window: cocoascript.UIWindow):cocoascript.CGRect;
     // doc://com.apple.documentation/documentation/uikit/uiwindow/1621614-sendevent
     sendEvent(event: cocoascript.UIEvent):void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardanimationcurveuserinfokey
-    UIKeyboardAnimationCurveUserInfoKey(): cocoascript.const;
-    setUIKeyboardAnimationCurveUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardanimationdurationuserinfokey
-    UIKeyboardAnimationDurationUserInfoKey(): cocoascript.const;
-    setUIKeyboardAnimationDurationUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardislocaluserinfokey
-    UIKeyboardIsLocalUserInfoKey(): cocoascript.const;
-    setUIKeyboardIsLocalUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardcenterbeginuserinfokey
-    UIKeyboardCenterBeginUserInfoKey(): cocoascript.const;
-    setUIKeyboardCenterBeginUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardcenterenduserinfokey
-    UIKeyboardCenterEndUserInfoKey(): cocoascript.const;
-    setUIKeyboardCenterEndUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardboundsuserinfokey
-    UIKeyboardBoundsUserInfoKey(): cocoascript.const;
-    setUIKeyboardBoundsUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardframebeginuserinfokey
-    UIKeyboardFrameBeginUserInfoKey(): cocoascript.const;
-    setUIKeyboardFrameBeginUserInfoKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uikeyboardframeenduserinfokey
-    UIKeyboardFrameEndUserInfoKey(): cocoascript.const;
-    setUIKeyboardFrameEndUserInfoKey(): void;
     //
     alloc():cocoascript.UIWindow;
     //
@@ -8329,6 +8184,14 @@ declare namespace cocoascript {
 }
 
 declare const UIWindow: cocoascript.UIWindow;
+declare const UIKeyboardAnimationCurveUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardAnimationDurationUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardIsLocalUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardCenterBeginUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardCenterEndUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardBoundsUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardFrameBeginUserInfoKey: cocoascript.NSString;
+declare const UIKeyboardFrameEndUserInfoKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The background appearance for a popover.
@@ -8967,12 +8830,6 @@ declare namespace cocoascript {
     requestFocusUpdateToEnvironment(environment: cocoascript.UIFocusEnvironment):void;
     // doc://com.apple.documentation/documentation/uikit/uifocussystem/2865914-updatefocusifneeded
     updateFocusIfNeeded():void;
-    // doc://com.apple.documentation/documentation/uikit/uifocusupdateanimationcoordinatorkey
-    UIFocusUpdateAnimationCoordinatorKey(): cocoascript.const;
-    setUIFocusUpdateAnimationCoordinatorKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uifocusupdatecontextkey
-    UIFocusUpdateContextKey(): cocoascript.const;
-    setUIFocusUpdateContextKey(): void;
     //
     alloc():cocoascript.UIFocusSystem;
     //
@@ -8981,6 +8838,8 @@ declare namespace cocoascript {
 }
 
 declare const UIFocusSystem: cocoascript.UIFocusSystem;
+declare const UIFocusUpdateAnimationCoordinatorKey: cocoascript.NSString;
+declare const UIFocusUpdateContextKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that provides information relevant to a specific focus update from one view to another.
@@ -9002,12 +8861,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uifocusupdatecontext/1648967-nextfocuseditem
     nextFocusedItem(): cocoascript.UIFocusItem;
     setNextFocusedItem(): void;
-    // doc://com.apple.documentation/documentation/uikit/uifocusupdateanimationcoordinatorkey
-    UIFocusUpdateAnimationCoordinatorKey(): cocoascript.const;
-    setUIFocusUpdateAnimationCoordinatorKey(): void;
-    // doc://com.apple.documentation/documentation/uikit/uifocusupdatecontextkey
-    UIFocusUpdateContextKey(): cocoascript.const;
-    setUIFocusUpdateContextKey(): void;
     //
     alloc():cocoascript.UIFocusUpdateContext;
     //
@@ -9016,6 +8869,8 @@ declare namespace cocoascript {
 }
 
 declare const UIFocusUpdateContext: cocoascript.UIFocusUpdateContext;
+declare const UIFocusUpdateAnimationCoordinatorKey: cocoascript.NSString;
+declare const UIFocusUpdateContextKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that can become focused.
@@ -11904,9 +11759,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614992-sectionindextrackingbackgroundco
     sectionIndexTrackingBackgroundColor(): cocoascript.UIColor;
     setSectionIndexTrackingBackgroundColor(): void;
-    // doc://com.apple.documentation/documentation/uikit/uitableviewindexsearch
-    UITableViewIndexSearch(): cocoascript.const;
-    setUITableViewIndexSearch(): void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/2891097-hasuncommittedupdates
     hasUncommittedUpdates(): cocoascript.BOOL;
     setHasUncommittedUpdates(): void;
@@ -11961,6 +11813,7 @@ declare namespace cocoascript {
 }
 
 declare const UITableView: cocoascript.UITableView;
+declare const UITableViewIndexSearch: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An abstract base class for generating layout information for a collection view.
@@ -13602,12 +13455,6 @@ declare namespace cocoascript {
     reloadSections(sections: cocoascript.NSIndexSet):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618055-reloaditemsatindexpaths
     reloadItemsAtIndexPaths(indexPaths: cocoascript.NSIndexPath):void;
-    // doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionfooter
-    UICollectionElementKindSectionFooter(): cocoascript.const;
-    setUICollectionElementKindSectionFooter(): void;
-    // doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionheader
-    UICollectionElementKindSectionHeader(): cocoascript.const;
-    setUICollectionElementKindSectionHeader(): void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618022-rememberslastfocusedindexpath
     remembersLastFocusedIndexPath(): cocoascript.BOOL;
     setRemembersLastFocusedIndexPath(): void;
@@ -13619,6 +13466,8 @@ declare namespace cocoascript {
 }
 
 declare const UICollectionView: cocoascript.UICollectionView;
+declare const UICollectionElementKindSectionFooter: cocoascript.NSString;
+declare const UICollectionElementKindSectionHeader: cocoascript.NSString;
 declare const UIPasteboardNameGeneral: cocoascript.UIPasteboardName;
 declare const UIPasteboardOptionLocalOnly: cocoascript.UIPasteboardOption;
 declare const UIPasteboardOptionExpirationDate: cocoascript.UIPasteboardOption;
@@ -15460,12 +15309,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicellaccessory/3600355-reservedlayoutwidth
     reservedLayoutWidth(): cocoascript.CGFloat;
     setReservedLayoutWidth(): void;
-    // doc://com.apple.documentation/documentation/uikit/3600394-uicellaccessorypositionafteracce
-    UICellAccessoryPositionAfterAccessoryOfClass(): cocoascript.Class;
-    setUICellAccessoryPositionAfterAccessoryOfClass(): void;
-    // doc://com.apple.documentation/documentation/uikit/3600395-uicellaccessorypositionbeforeacc
-    UICellAccessoryPositionBeforeAccessoryOfClass(): cocoascript.Class;
-    setUICellAccessoryPositionBeforeAccessoryOfClass(): void;
     //
     alloc():cocoascript.UICellAccessory;
     //
@@ -15474,6 +15317,8 @@ declare namespace cocoascript {
 }
 
 declare const UICellAccessory: cocoascript.UICellAccessory;
+declare const UICellAccessoryPositionAfterAccessoryOfClass: cocoascript.Class;
+declare const UICellAccessoryPositionBeforeAccessoryOfClass: cocoascript.Class;
 declare namespace cocoascript {
   /**
    * A configuration for creating a list layout.
@@ -18752,23 +18597,9 @@ declare namespace cocoascript {
   type UIAttachmentBehaviorType = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-  /**
-   * The range of motion for attached objects.
-   * doc://com.apple.documentation/documentation/uikit/uifloatrange
-   */
   interface UIFloatRange {
-    // doc://com.apple.documentation/documentation/uikit/1621310-uifloatrangemake
-    UIFloatRangeMake(): cocoascript.CGFloat;
-    setUIFloatRangeMake(): void;
-    // doc://com.apple.documentation/documentation/uikit/uifloatrange/1621305-maximum
-    maximum(): cocoascript.CGFloat;
-    setMaximum(): void;
-    // doc://com.apple.documentation/documentation/uikit/uifloatrange/1621300-minimum
-    minimum(): cocoascript.CGFloat;
-    setMinimum(): void;
   }
-}
-declare const UIPageViewControllerOptionInterPageSpacingKey: cocoascript.UIPageViewControllerOptionsKey;
+}declare const UIPageViewControllerOptionInterPageSpacingKey: cocoascript.UIPageViewControllerOptionsKey;
 declare const UIPageViewControllerOptionSpineLocationKey: cocoascript.UIPageViewControllerOptionsKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseractionavailability

@@ -839,18 +839,6 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coreimage/cifeature/1438092-type
     type(): cocoascript.NSString;
     setType(): void;
-    // doc://com.apple.documentation/documentation/coreimage/cifeaturetypeface
-    CIFeatureTypeFace(): cocoascript.const;
-    setCIFeatureTypeFace(): void;
-    // doc://com.apple.documentation/documentation/coreimage/cifeaturetyperectangle
-    CIFeatureTypeRectangle(): cocoascript.const;
-    setCIFeatureTypeRectangle(): void;
-    // doc://com.apple.documentation/documentation/coreimage/cifeaturetypeqrcode
-    CIFeatureTypeQRCode(): cocoascript.const;
-    setCIFeatureTypeQRCode(): void;
-    // doc://com.apple.documentation/documentation/coreimage/cifeaturetypetext
-    CIFeatureTypeText(): cocoascript.const;
-    setCIFeatureTypeText(): void;
     //
     alloc():cocoascript.CIFeature;
     //
@@ -859,6 +847,10 @@ declare namespace cocoascript {
 }
 
 declare const CIFeature: cocoascript.CIFeature;
+declare const CIFeatureTypeFace: cocoascript.NSString;
+declare const CIFeatureTypeRectangle: cocoascript.NSString;
+declare const CIFeatureTypeQRCode: cocoascript.NSString;
+declare const CIFeatureTypeText: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * Information about a face detected in a still or video image.

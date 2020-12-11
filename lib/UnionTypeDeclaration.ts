@@ -32,10 +32,10 @@ export class UnionTypeDeclaration {
 
   generate() {
     const code = new CodeGenerator();
-    code.appendLine(`declare namespace ${NAMESPACE} {`).indent();
+    code.namespace();
     code.appendLine(`// ${this.id}`);
     code.appendLine(`type ${this.identifier} = ${normalizeType(this.alias!)};`)
-    code.endIndent().appendLine('}')
+    code.endNamespace();
     code.appendLine();
     return code.toString();
   }

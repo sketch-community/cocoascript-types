@@ -1,82 +1,28 @@
 declare namespace cocoascript {
-  /**
-   * A structure that contains width and height values.
-   * doc://com.apple.documentation/documentation/coregraphics/cgsize
-   */
   interface CGSize {
-    // doc://com.apple.documentation/documentation/coregraphics/1455274-cgsizecreatedictionaryrepresenta
-    CGSizeCreateDictionaryRepresentation(): cocoascript.CGSize;
-    setCGSizeCreateDictionaryRepresentation(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgsize/1455076-height
-    height(): cocoascript.CGFloat;
-    setHeight(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgsize/1454308-width
-    width(): cocoascript.CGFloat;
-    setWidth(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * A set of components that define a color, with a color space specifying how to interpret them.
-   * doc://com.apple.documentation/documentation/coregraphics/cgcolorref
-   */
+}declare namespace cocoascript {
   interface CGColorRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A profile that specifies how to interpret a color value for display.
-   * doc://com.apple.documentation/documentation/coregraphics/cgcolorspaceref
-   */
+}declare namespace cocoascript {
   interface CGColorSpaceRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgfloat
   type CGFloat = number;
 }
 declare namespace cocoascript {
-  /**
-   * A structure that contains the location and dimensions of a rectangle.
-   * doc://com.apple.documentation/documentation/coregraphics/cgrect
-   */
   interface CGRect {
-    // doc://com.apple.documentation/documentation/coregraphics/cgrect/1454354-origin
-    origin(): cocoascript.CGPoint;
-    setOrigin(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgrect/1455155-size
-    size(): cocoascript.CGSize;
-    setSize(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/1455760-cgrectcreatedictionaryrepresenta
-    CGRectCreateDictionaryRepresentation(): cocoascript.CGRect;
-    setCGRectCreateDictionaryRepresentation(): void;
   }
-}
-declare const kCGColorSpaceExtendedGray: cocoascript.CFStringRef;
+}declare const kCGColorSpaceExtendedGray: cocoascript.CFStringRef;
 declare const kCGColorSpaceExtendedSRGB: cocoascript.CFStringRef;
 declare namespace cocoascript {
-  /**
-   * A bitmap image or image mask.
-   * doc://com.apple.documentation/documentation/coregraphics/cgimageref
-   */
   interface CGImageRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A structure that contains a point in a two-dimensional coordinate system.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpoint
-   */
+}declare namespace cocoascript {
   interface CGPoint {
-    // doc://com.apple.documentation/documentation/coregraphics/cgpoint/1456040-x
-    x(): cocoascript.CGFloat;
-    setX(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpoint/1454718-y
-    y(): cocoascript.CGFloat;
-    setY(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgwindowlevelkey
   type CGWindowLevelKey = number;
 }
@@ -103,14 +49,9 @@ declare namespace cocoascript {
   type CGDisplayBlendFraction = number;
 }
 declare namespace cocoascript {
-  /**
-   * A reference to a display configuration transaction.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdisplayconfigref
-   */
   interface CGDisplayConfigRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgdisplaycount
   type CGDisplayCount = number;
 }
@@ -127,14 +68,9 @@ declare namespace cocoascript {
   type CGDisplayFadeReservationToken = number;
 }
 declare namespace cocoascript {
-  /**
-   * A reference to a display mode object.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdisplaymoderef
-   */
   interface CGDisplayModeRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgdisplayreservationinterval
   type CGDisplayReservationInterval = number;
 }
@@ -155,34 +91,19 @@ declare namespace cocoascript {
   type CGRefreshRate = number;
 }
 declare namespace cocoascript {
-  /**
-   * The distance, in pixel units, that an onscreen region moves.
-   * doc://com.apple.documentation/documentation/coregraphics/cgscreenupdatemovedelta
-   */
   interface CGScreenUpdateMoveDelta {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgwindowlevel
   type CGWindowLevel = number;
 }
 declare namespace cocoascript {
-  /**
-   * A reference to a display stream object.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamref
-   */
   interface CGDisplayStreamRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A reference to frame update’s metadata.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamupdateref
-   */
+}declare namespace cocoascript {
   interface CGDisplayStreamUpdateRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgdisplaystreamframeavailablehandler
   type CGDisplayStreamFrameAvailableHandler = cocoascript.CGDisplayStreamUpdateRef;
 }
@@ -211,14 +132,9 @@ declare namespace cocoascript {
   type CGDisplayStreamFrameStatus = number;
 }
 declare namespace cocoascript {
-  /**
-   * Defines an opaque type that represents a low-level hardware event.
-   * doc://com.apple.documentation/documentation/coregraphics/cgeventref
-   */
   interface CGEventRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgcolorrenderingintent
   type CGColorRenderingIntent = number;
 }
@@ -227,26 +143,16 @@ declare namespace cocoascript {
   type CGBitmapInfo = number;
 }
 declare namespace cocoascript {
-  /**
-   * An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdataproviderref
-   */
   interface CGDataProviderRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgimagealphainfo
   type CGImageAlphaInfo = number;
 }
 declare namespace cocoascript {
-  /**
-   * A Quartz 2D drawing environment.
-   * doc://com.apple.documentation/documentation/coregraphics/cgcontextref
-   */
   interface CGContextRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgglyph
   type CGGlyph = cocoascript.CGFontIndex;
 }
@@ -255,62 +161,18 @@ declare namespace cocoascript {
   type CGPathRef = cocoascript.CGPath;
 }
 declare namespace cocoascript {
-  /**
-   * A structure that contains a two-dimensional vector.
-   * doc://com.apple.documentation/documentation/coregraphics/cgvector
-   */
   interface CGVector {
-    // doc://com.apple.documentation/documentation/coregraphics/cgvector/1454722-dx
-    dx(): cocoascript.CGFloat;
-    setDx(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgvector/1455006-dy
-    dy(): cocoascript.CGFloat;
-    setDy(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * An affine transformation matrix for use in drawing 2D graphics.
-   * doc://com.apple.documentation/documentation/coregraphics/cgaffinetransform
-   */
+}declare namespace cocoascript {
   interface CGAffineTransform {
-    // doc://com.apple.documentation/documentation/coregraphics/cgaffinetransform/1456003-a
-    a(): cocoascript.CGFloat;
-    setA(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgaffinetransform/1454545-b
-    b(): cocoascript.CGFloat;
-    setB(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgaffinetransform/1456339-c
-    c(): cocoascript.CGFloat;
-    setC(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgaffinetransform/1455693-d
-    d(): cocoascript.CGFloat;
-    setD(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgaffinetransform/1456540-tx
-    tx(): cocoascript.CGFloat;
-    setTx(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgaffinetransform/1456442-ty
-    ty(): cocoascript.CGFloat;
-    setTy(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * An object that describes how to convert between color spaces for use by other system services.
-   * doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninforef
-   */
+}declare namespace cocoascript {
   interface CGColorConversionInfoRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A set of character glyphs and layout information for drawing text.
-   * doc://com.apple.documentation/documentation/coregraphics/cgfontref
-   */
+}declare namespace cocoascript {
   interface CGFontRef {
   }
-}
-declare const kCGFontIndexInvalid: cocoascript.CGFontIndex;
+}declare const kCGFontIndexInvalid: cocoascript.CGFontIndex;
 declare const CGSizeZero: cocoascript.CGSize;
 declare const CGRectZero: cocoascript.CGRect;
 declare const kCGPDFContextMediaBox: cocoascript.CFStringRef;
@@ -322,22 +184,12 @@ declare const CGPointZero: cocoascript.CGPoint;
 declare const kCGColorSpaceGenericGrayGamma2_2: cocoascript.CFStringRef;
 declare const kCGColorSpaceSRGB: cocoascript.CFStringRef;
 declare namespace cocoascript {
-  /**
-   * A mutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
-   * doc://com.apple.documentation/documentation/coregraphics/cgmutablepathref
-   */
   interface CGMutablePathRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * An offscreen context for reusing content drawn with Core Graphics.
-   * doc://com.apple.documentation/documentation/coregraphics/cglayerref
-   */
+}declare namespace cocoascript {
   interface CGLayerRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgerror
   type CGError = number;
 }
@@ -376,45 +228,15 @@ declare namespace cocoascript {
   type CGEventSourceKeyboardType = number;
 }
 declare namespace cocoascript {
-  /**
-   * Defines an opaque type that represents the source of a Quartz event.
-   * doc://com.apple.documentation/documentation/coregraphics/cgeventsourceref
-   */
   interface CGEventSourceRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * Defines the structure used to report information about event taps.
-   * doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation
-   */
+}declare namespace cocoascript {
   interface CGEventTapInformation {
-    // doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation/1545758-eventsofinterest
-    eventsOfInterest(): cocoascript.CGEventMask;
-    setEventsOfInterest(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation/1545768-options
-    options(): cocoascript.CGEventTapOptions;
-    setOptions(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation/1545744-processbeingtapped
-    processBeingTapped(): any;
-    setProcessBeingTapped(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation/1545759-tappoint
-    tapPoint(): cocoascript.CGEventTapLocation;
-    setTapPoint(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgeventtapinformation/1545766-tappingprocess
-    tappingProcess(): any;
-    setTappingProcess(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * Defines an opaque type that represents state within the client application that’s associated with an event tap.
-   * doc://com.apple.documentation/documentation/coregraphics/cgeventtapproxy
-   */
+}declare namespace cocoascript {
   interface CGEventTapProxy {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgeventtimestamp
   type CGEventTimestamp = cocoascript.uint64_t;
 }
@@ -508,14 +330,9 @@ declare namespace cocoascript {
 }
 declare const CGRectNull: cocoascript.CGRect;
 declare namespace cocoascript {
-  /**
-   * An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdataconsumerref
-   */
   interface CGDataConsumerRef {
   }
-}
-declare const kCGPDFContextCropBox: cocoascript.CFStringRef;
+}declare const kCGPDFContextCropBox: cocoascript.CFStringRef;
 declare const kCGPDFContextBleedBox: cocoascript.CFStringRef;
 declare const kCGPDFContextTrimBox: cocoascript.CFStringRef;
 declare const kCGPDFContextArtBox: cocoascript.CFStringRef;
@@ -528,14 +345,9 @@ declare namespace cocoascript {
   type CGLineJoin = number;
 }
 declare namespace cocoascript {
-  /**
-   * A type that represents a page in a PDF document.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfpageref
-   */
   interface CGPDFPageRef {
   }
-}
-declare const kCGColorSpaceDisplayP3: cocoascript.CFStringRef;
+}declare const kCGColorSpaceDisplayP3: cocoascript.CFStringRef;
 declare const kCGColorSpaceDisplayP3_HLG: cocoascript.CFStringRef;
 declare const kCGColorSpaceDisplayP3_PQ_EOTF: cocoascript.CFStringRef;
 declare const kCGColorSpaceExtendedLinearDisplayP3: cocoascript.CFStringRef;
@@ -620,20 +432,9 @@ declare namespace cocoascript {
   type CGDataConsumerReleaseInfoCallback = void;
 }
 declare namespace cocoascript {
-  /**
-   * A structure that contains pointers to callback functions that manage the copying of data for a data consumer.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdataconsumercallbacks
-   */
   interface CGDataConsumerCallbacks {
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataconsumercallbacks/1455040-putbytes
-    putBytes(): cocoascript.CGDataConsumerPutBytesCallback;
-    setPutBytes(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataconsumercallbacks/1454472-releaseconsumer
-    releaseConsumer(): cocoascript.CGDataConsumerReleaseInfoCallback;
-    setReleaseConsumer(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgdataprovidergetbytepointercallback
   type CGDataProviderGetBytePointerCallback = void;
 }
@@ -666,46 +467,12 @@ declare namespace cocoascript {
   type CGDataProviderGetBytesAtPositionCallback = cocoascript.size_t;
 }
 declare namespace cocoascript {
-  /**
-   * Defines pointers to client-defined callback functions that manage the sending of data for a direct-access data provider.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdataproviderdirectcallbacks
-   */
   interface CGDataProviderDirectCallbacks {
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataproviderdirectcallbacks/1408292-getbytepointer
-    getBytePointer(): cocoascript.CGDataProviderGetBytePointerCallback;
-    setGetBytePointer(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataproviderdirectcallbacks/1408298-getbytesatposition
-    getBytesAtPosition(): cocoascript.CGDataProviderGetBytesAtPositionCallback;
-    setGetBytesAtPosition(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataproviderdirectcallbacks/1408302-releasebytepointer
-    releaseBytePointer(): cocoascript.CGDataProviderReleaseBytePointerCallback;
-    setReleaseBytePointer(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataproviderdirectcallbacks/1408286-releaseinfo
-    releaseInfo(): cocoascript.CGDataProviderReleaseInfoCallback;
-    setReleaseInfo(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * Defines a structure containing pointers to client-defined callback functions that manage the sending of data for a sequential-access data provider.
-   * doc://com.apple.documentation/documentation/coregraphics/cgdataprovidersequentialcallbacks
-   */
+}declare namespace cocoascript {
   interface CGDataProviderSequentialCallbacks {
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataprovidersequentialcallbacks/1408274-getbytes
-    getBytes(): cocoascript.CGDataProviderGetBytesCallback;
-    setGetBytes(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataprovidersequentialcallbacks/1408306-releaseinfo
-    releaseInfo(): cocoascript.CGDataProviderReleaseInfoCallback;
-    setReleaseInfo(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataprovidersequentialcallbacks/1408300-rewind
-    rewind(): cocoascript.CGDataProviderRewindCallback;
-    setRewind(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgdataprovidersequentialcallbacks/1408272-skipforward
-    skipForward(): cocoascript.CGDataProviderSkipForwardCallback;
-    setSkipForward(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgfontpostscriptformat
   type CGFontPostScriptFormat = number;
 }
@@ -718,66 +485,29 @@ declare namespace cocoascript {
   type CGFunctionReleaseInfoCallback = void;
 }
 declare namespace cocoascript {
-  /**
-   * A general facility for defining and using callback functions.
-   * doc://com.apple.documentation/documentation/coregraphics/cgfunctionref
-   */
   interface CGFunctionRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A structure that contains callbacks needed by a
-   * doc://com.apple.documentation/documentation/coregraphics/cgfunctioncallbacks
-   */
+}declare namespace cocoascript {
   interface CGFunctionCallbacks {
-    // doc://com.apple.documentation/documentation/coregraphics/cgfunctioncallbacks/1390866-evaluate
-    evaluate(): cocoascript.CGFunctionEvaluateCallback;
-    setEvaluate(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgfunctioncallbacks/1390868-releaseinfo
-    releaseInfo(): cocoascript.CGFunctionReleaseInfoCallback;
-    setReleaseInfo(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * A definition for a smooth transition between colors for drawing radial and axial gradient fills.
-   * doc://com.apple.documentation/documentation/coregraphics/cggradientref
-   */
+}declare namespace cocoascript {
   interface CGGradientRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cggradientdrawingoptions
   type CGGradientDrawingOptions = number;
 }
 declare namespace cocoascript {
-  /**
-   * A definition for a smooth transition between colors, controlled by a custom function you provide, for drawing radial and axial gradient fills.
-   * doc://com.apple.documentation/documentation/coregraphics/cgshadingref
-   */
   interface CGShadingRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpathapplierfunction
   type CGPathApplierFunction = cocoascript.CGPathElement;
 }
 declare namespace cocoascript {
-  /**
-   * A data structure that provides information about a path element.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpathelement
-   */
   interface CGPathElement {
-    // doc://com.apple.documentation/documentation/coregraphics/cgpathelement/1411198-points
-    points(): cocoascript.CGPoint;
-    setPoints(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpathelement/1411186-type
-    type(): cocoascript.CGPathElementType;
-    setType(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpathdrawingmode
   type CGPathDrawingMode = number;
 }
@@ -794,76 +524,35 @@ declare namespace cocoascript {
   type CGPatternReleaseInfoCallback = void;
 }
 declare namespace cocoascript {
-  /**
-   * A 2D pattern to be used for drawing graphics paths.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpatternref
-   */
   interface CGPatternRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A structure that holds a version and two callback functions for drawing a custom pattern.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpatterncallbacks
-   */
+}declare namespace cocoascript {
   interface CGPatternCallbacks {
-    // doc://com.apple.documentation/documentation/coregraphics/cgpatterncallbacks/1454736-drawpattern
-    drawPattern(): cocoascript.CGPatternDrawPatternCallback;
-    setDrawPattern(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpatterncallbacks/1455379-releaseinfo
-    releaseInfo(): cocoascript.CGPatternReleaseInfoCallback;
-    setReleaseInfo(): void;
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpatterntiling
   type CGPatternTiling = number;
 }
 declare namespace cocoascript {
-  /**
-   * A document that contains PDF (Portable Document Format) drawing information.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfdocumentref
-   */
   interface CGPDFDocumentRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * An opaque type that encapsulates a PDF array.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfarrayref
-   */
+}declare namespace cocoascript {
   interface CGPDFArrayRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * An opaque type that provides access to the data that describes the appearance of a PDF page.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfcontentstreamref
-   */
+}declare namespace cocoascript {
   interface CGPDFContentStreamRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionaryapplierfunction
   type CGPDFDictionaryApplierFunction = void;
 }
 declare namespace cocoascript {
-  /**
-   * A type that encapsulates a PDF dictionary.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfdictionaryref
-   */
   interface CGPDFDictionaryRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A type that contains information about a PDF object.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfobjectref
-   */
+}declare namespace cocoascript {
   interface CGPDFObjectRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpdfboolean
   type CGPDFBoolean = string;
 }
@@ -884,47 +573,27 @@ declare namespace cocoascript {
   type CGPDFOperatorCallback = void;
 }
 declare namespace cocoascript {
-  /**
-   * A type that stores callback functions for PDF operators.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfoperatortableref
-   */
   interface CGPDFOperatorTableRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpdfbox
   type CGPDFBox = number;
 }
 declare namespace cocoascript {
-  /**
-   * A type used to parse a PDF content stream.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfscannerref
-   */
   interface CGPDFScannerRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A type that represents a PDF stream.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfstreamref
-   */
+}declare namespace cocoascript {
   interface CGPDFStreamRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpdfdataformat
   type CGPDFDataFormat = number;
 }
 declare const CGPDFStringGetBytePtr: cocoascript.CGPDFStringRef;
 declare namespace cocoascript {
-  /**
-   * A data type that represents a string in a PDF document.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpdfstringref
-   */
   interface CGPDFStringRef {
   }
-}
-declare namespace cocoascript {
+}declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpsconverterbegindocumentcallback
   type CGPSConverterBeginDocumentCallback = void;
 }
@@ -953,50 +622,15 @@ declare namespace cocoascript {
   type CGPSConverterReleaseInfoCallback = void;
 }
 declare namespace cocoascript {
-  /**
-   * An opaque data type used to convert PostScript data to PDF data.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpsconverterref
-   */
   interface CGPSConverterRef {
   }
-}
-declare namespace cocoascript {
-  /**
-   * A structure for holding the callbacks provided when you create a PostScript converter object.
-   * doc://com.apple.documentation/documentation/coregraphics/cgpsconvertercallbacks
-   */
+}declare namespace cocoascript {
   interface CGPSConverterCallbacks {
-    // doc://com.apple.documentation/documentation/coregraphics/cgpsconvertercallbacks/1456036-begindocument
-    beginDocument(): cocoascript.CGPSConverterBeginDocumentCallback;
-    setBeginDocument(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpsconvertercallbacks/1454345-beginpage
-    beginPage(): cocoascript.CGPSConverterBeginPageCallback;
-    setBeginPage(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpsconvertercallbacks/1454481-enddocument
-    endDocument(): cocoascript.CGPSConverterEndDocumentCallback;
-    setEndDocument(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpsconvertercallbacks/1454830-endpage
-    endPage(): cocoascript.CGPSConverterEndPageCallback;
-    setEndPage(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpsconvertercallbacks/1455859-notemessage
-    noteMessage(): cocoascript.CGPSConverterMessageCallback;
-    setNoteMessage(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpsconvertercallbacks/1455344-noteprogress
-    noteProgress(): cocoascript.CGPSConverterProgressCallback;
-    setNoteProgress(): void;
-    // doc://com.apple.documentation/documentation/coregraphics/cgpsconvertercallbacks/1455599-releaseinfo
-    releaseInfo(): cocoascript.CGPSConverterReleaseInfoCallback;
-    setReleaseInfo(): void;
   }
-}
-declare namespace cocoascript {
-  /**
-   * doc://com.apple.documentation/documentation/coregraphics/cgdevicecolor
-   */
+}declare namespace cocoascript {
   interface CGDeviceColor {
   }
-}
-declare const kCGDisplayShowDuplicateLowResolutionModes: cocoascript.CFStringRef;
+}declare const kCGDisplayShowDuplicateLowResolutionModes: cocoascript.CFStringRef;
 declare const kCGWindowAlpha: cocoascript.CFStringRef;
 declare const kCGWindowBackingLocationVideoMemory: cocoascript.CFStringRef;
 declare const kCGWindowBounds: cocoascript.CFStringRef;
