@@ -1,0 +1,530 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A utility object for managing a recyclable set of pixel buffer objects."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corevideo"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpool",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2759928,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CVPixelBufferPool",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Video"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corevideo/cvpixelbufferpool"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corevideo/cvpixelbufferpool-77o"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corevideo": {
+      "title": "Core Video",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo",
+      "url": "/documentation/corevideo",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456899-cvpixelbufferpoolcreatepixelbuff": {
+      "title": "CVPixelBufferPoolCreatePixelBufferWithAuxAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456899-cvpixelbufferpoolcreatepixelbuff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456899-cvpixelbufferpoolcreatepixelbuff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new pixel buffer with some auxiliary attributes from the pool."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumberref": {
+      "title": "CFNumberRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfnumberref"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolallocationthresholdkey": {
+      "title": "kCVPixelBufferPoolAllocationThresholdKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolallocationthresholdkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/kcvpixelbufferpoolallocationthresholdkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "When set, the value associated with this key indicates that a new pixel buffer should not be allocated if the pool already has this many or more pixel buffers allocated. This doesn’t prevent buffers that have already been allocated from being recycled. If this key causes "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corevideo/1456899-cvpixelbufferpoolcreatepixelbuff"
+        },
+        {
+          "type": "text",
+          "text": " to fail, it will return "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kCVReturnWouldExceedAllocationThreshold"
+        },
+        {
+          "type": "text",
+          "text": ". (type "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberref"
+        },
+        {
+          "type": "text",
+          "text": ")"
+        }
+      ]
+    },
+    "devLink-1725372": {
+      "identifier": "devLink-1725372",
+      "type": "link",
+      "title": "Core Video Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457094-cvpixelbufferpoolcreate": {
+      "title": "CVPixelBufferPoolCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457094-cvpixelbufferpoolcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457094-cvpixelbufferpoolcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a pixel buffer pool."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456992-cvpixelbufferpoolcreatepixelbuff": {
+      "title": "CVPixelBufferPoolCreatePixelBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456992-cvpixelbufferpoolcreatepixelbuff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456992-cvpixelbufferpoolcreatepixelbuff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a pixel buffer from a pixel buffer pool."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457177-cvpixelbufferpoolflush": {
+      "title": "CVPixelBufferPoolFlush",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457177-cvpixelbufferpoolflush",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457177-cvpixelbufferpoolflush",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Frees as many buffers from the pool as possible."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456983-cvpixelbufferpoolgetattributes": {
+      "title": "CVPixelBufferPoolGetAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456983-cvpixelbufferpoolgetattributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456983-cvpixelbufferpoolgetattributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the pool attributes dictionary for a pixel buffer pool."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457222-cvpixelbufferpoolgetpixelbuffera": {
+      "title": "CVPixelBufferPoolGetPixelBufferAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457222-cvpixelbufferpoolgetpixelbuffera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457222-cvpixelbufferpoolgetpixelbuffera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the attributes of pixel buffers that will be created from this pool."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457235-cvpixelbufferpoolgettypeid": {
+      "title": "CVPixelBufferPoolGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457235-cvpixelbufferpoolgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457235-cvpixelbufferpoolgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the Core Foundation type identifier of the pixel buffer pool type. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1577601-cvpixelbufferpoolretain": {
+      "title": "CVPixelBufferPoolRetain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1577601-cvpixelbufferpoolretain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1577601-cvpixelbufferpoolretain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retains a pixel buffer pool."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1577602-cvpixelbufferpoolrelease": {
+      "title": "CVPixelBufferPoolRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1577602-cvpixelbufferpoolrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1577602-cvpixelbufferpoolrelease",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases a pixel buffer pool."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolref": {
+      "title": "CVPixelBufferPoolRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferpoolref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a pixel buffer pool object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolflushflags": {
+      "title": "CVPixelBufferPoolFlushFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolflushflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferpoolflushflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags to pass to when flushing the pool."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolminimumbuffercountkey": {
+      "title": "kCVPixelBufferPoolMinimumBufferCountKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolminimumbuffercountkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/kcvpixelbufferpoolminimumbuffercountkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum number of buffers allowed in the pixel buffer pool (type "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFNumber"
+        },
+        {
+          "type": "text",
+          "text": "). "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolmaximumbufferagekey": {
+      "title": "kCVPixelBufferPoolMaximumBufferAgeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolmaximumbufferagekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/kcvpixelbufferpoolmaximumbufferagekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The maximum allowable age for a buffer in the pixel buffer pool (type "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFAbsoluteTime"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolfreebuffernotification": {
+      "title": "kCVPixelBufferPoolFreeBufferNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolfreebuffernotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/kcvpixelbufferpoolfreebuffernotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This notification is posted if a buffer becomes available after the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corevideo/1456899-cvpixelbufferpoolcreatepixelbuff"
+        },
+        {
+          "type": "text",
+          "text": " function has failed due to the value of the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolallocationthresholdkey"
+        },
+        {
+          "type": "text",
+          "text": " key. This notification will not be posted by the pool if a value for the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kCVPixelBufferPoolAllocationThresholdKey"
+        },
+        {
+          "type": "text",
+          "text": " key has never been passed to the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CVPixelBufferPoolCreatePixelBufferWithAuxAttributes"
+        },
+        {
+          "type": "text",
+          "text": " function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvbuffer": {
+      "title": "CVBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvbuffer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvbuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract base class that defines how to interact with data buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvimagebuffer": {
+      "title": "CVImageBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvimagebuffer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvimagebuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for managing different types of image data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer": {
+      "title": "CVPixelBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvpixelbuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image buffer that holds pixels in main memory."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpool": {
+      "title": "CVPixelBufferPool",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpool",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvpixelbufferpool",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object for managing a recyclable set of pixel buffer objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelformatdescription": {
+      "title": "CVPixelFormatDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelformatdescription",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvpixelformatdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An API that provides functions and types for defining custom pixel formats."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Pools",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/1457094-cvpixelbufferpoolcreate",
+        "doc://com.apple.documentation/documentation/corevideo/1456992-cvpixelbufferpoolcreatepixelbuff",
+        "doc://com.apple.documentation/documentation/corevideo/1456899-cvpixelbufferpoolcreatepixelbuff"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Flushing Pools",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/1457177-cvpixelbufferpoolflush"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inspecting Pools",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/1456983-cvpixelbufferpoolgetattributes",
+        "doc://com.apple.documentation/documentation/corevideo/1457222-cvpixelbufferpoolgetpixelbuffera",
+        "doc://com.apple.documentation/documentation/corevideo/1457235-cvpixelbufferpoolgettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retaining and Releasing Pools",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/1577601-cvpixelbufferpoolretain",
+        "doc://com.apple.documentation/documentation/corevideo/1577602-cvpixelbufferpoolrelease"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolref",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolflushflags"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolminimumbuffercountkey",
+        "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolmaximumbufferagekey",
+        "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolallocationthresholdkey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Notifications",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/kcvpixelbufferpoolfreebuffernotification"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/cvbuffer",
+        "doc://com.apple.documentation/documentation/corevideo/cvimagebuffer",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelformatdescription"
+      ],
+      "title": "Data Processing",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1725372"
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

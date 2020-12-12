@@ -57,7 +57,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1429202-classforportcoder
     classForPortCoder():cocoascript.Class;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1434307-getuuidwithlength
-    getUUIDWithLength(newLength: cocoascript.unsigned):cocoascript.IOBluetoothSDPUUID;
+    getUUIDWithLength(newLength: number):cocoascript.IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1428786-isequaltouuid
     isEqualToUUID(otherUUID: cocoascript.IOBluetoothSDPUUID):cocoascript.BOOL;
     //
@@ -1711,7 +1711,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcieventmask
-  type BluetoothHCIEventMask = cocoascript.uint64_t;
+  type BluetoothHCIEventMask = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhciextendedinquiryresponsedatatype
@@ -1743,7 +1743,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhciinputcodingformat
-  type BluetoothHCIInputCodingFormat = cocoascript.uint64_t;
+  type BluetoothHCIInputCodingFormat = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhciinputdatapath
@@ -1829,7 +1829,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcioutputcodingformat
-  type BluetoothHCIOutputCodingFormat = cocoascript.uint64_t;
+  type BluetoothHCIOutputCodingFormat = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcioutputdatapath
@@ -1893,7 +1893,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcireceivecodingformat
-  type BluetoothHCIReceiveCodingFormat = cocoascript.uint64_t;
+  type BluetoothHCIReceiveCodingFormat = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcirequestid
@@ -1949,7 +1949,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcitransmitcodingformat
-  type BluetoothHCITransmitCodingFormat = cocoascript.uint64_t;
+  type BluetoothHCITransmitCodingFormat = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcitransmitpowerlevel

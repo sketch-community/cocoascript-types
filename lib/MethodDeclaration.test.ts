@@ -33,5 +33,10 @@ describe('MethodDeclaration', () => {
   it('duplicate params', () => {
     const decl = getDecl('../documentation/uikit/uistepper/1624072-dividerimageforleftsegmentstate.json');
     expect(decl.generate()).toMatchSnapshot();
-  })
+  });
+
+  it('unsigned params', () => {
+    const decl = getDecl('../documentation/appkit/nsbitmapimagerep/1395538-initwithbitmapdataplanes.json');
+    expect(decl.generate()).toMatchSnapshot();
+  });
 });

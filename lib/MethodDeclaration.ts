@@ -9,6 +9,8 @@ interface Identifier {
   paramName?: string;
 }
 
+const keywordBlacklist = ['unsigned', 'const', '_Nullable', '_Null_unspecified', '_Nonnull'];
+
 export class MethodDeclaration {
   id: string;
   interfaceDecl: InterfaceDeclaration;
@@ -34,8 +36,8 @@ export class MethodDeclaration {
         if (tokens[index]) {
           while ((!paramName || !paramType) && tokens[index]) {
             if (
-              (tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) ||
-              (!paramType && tokens[index].kind === 'keyword')
+              tokens[index].kind === 'typeIdentifier' ||
+              (tokens[index].kind === 'keyword' && !keywordBlacklist.includes(tokens[index].text))
             ) {
               paramType = tokens[index].text;
             }

@@ -1,0 +1,606 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Try the different ways to configure the scene's origin inside its view."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/skscene"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skscene/positioning_a_scene_s_origin_within_its_view",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2975503,
+  "kind": "article",
+  "metadata": {
+    "title": "Positioning a Scene's Origin Within its View",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skscene/positioning_a_scene_s_origin_within_its_view"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skscene/positioning_a_scene_s_origin_within_its_view"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene": {
+      "title": "SKScene",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene",
+      "url": "/documentation/spritekit/skscene",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483026-frame": {
+      "title": "frame",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483026-frame",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483026-frame"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position": {
+      "title": "position",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483101-position"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpoint/1454433-zero": {
+      "title": "zero",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpoint/1454433-zero",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgpoint/1454433-zero"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1519864-anchorpoint": {
+      "title": "anchorPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519864-anchorpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1519864-anchorpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The point in the view’s frame that corresponds to the scene’s origin."
+        }
+      ]
+    },
+    "link-media-3020373": {
+      "identifier": "link-media-3020373",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/spritekit/skscene/positioning_a_scene_s_origin_within_its_view#3020373"
+    },
+    "media-3020373": {
+      "identifier": "media-3020373",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 299
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e645e8c6cd/1b33b1c9-6e38-4cf4-b521-85990284bdef.png"
+        }
+      ],
+      "alt": "Diagram showing that the default anchor for a scene is in the lower-left corner of the view",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Default anchor for a scene is in the lower-left corner of the view"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skcameranode": {
+      "title": "SKCameraNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skcameranode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skcameranode"
+    },
+    "link-media-3020376": {
+      "identifier": "link-media-3020376",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/spritekit/skscene/positioning_a_scene_s_origin_within_its_view#3020376"
+    },
+    "media-3020376": {
+      "identifier": "media-3020376",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 302
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e645e8c6cd/2468b252-923d-4517-b2b5-f8cc02089972.png"
+        }
+      ],
+      "alt": "Diagram showing that moving the anchor point to the center of the view is defined by the coordinates 0.5, 0.5.",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moving the anchor point to the center of the view"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1519696-camera": {
+      "title": "camera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519696-camera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1519696-camera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The camera node in the scene that determines what part of the scene’s coordinate space is visible in the view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/positioning_a_scene_s_origin_within_its_view": {
+      "title": "Positioning a Scene's Origin Within its View",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/positioning_a_scene_s_origin_within_its_view",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skscene/positioning_a_scene_s_origin_within_its_view",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Try the different ways to configure the scene's origin inside its view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skscene/1519696-camera",
+        "doc://com.apple.documentation/documentation/spritekit/skscene/1519864-anchorpoint"
+      ],
+      "title": "Configuring the Viewport",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use the scene's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519864-anchorpoint"
+            },
+            {
+              "type": "text",
+              "text": " to orient the default screen position of its nodes. For example, setting the scene's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "anchorPoint"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0,0)"
+            },
+            {
+              "type": "text",
+              "text": " makes child nodes with a position of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0,0)"
+            },
+            {
+              "type": "text",
+              "text": " display at the bottom-left corner of the scene. However, setting the scene's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "anchorPoint"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0.5,0.5)"
+            },
+            {
+              "type": "text",
+              "text": " makes child nodes with a position of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0,0)"
+            },
+            {
+              "type": "text",
+              "text": " display in the center of the scene. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You only use the scene's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "anchorPoint"
+            },
+            {
+              "type": "text",
+              "text": " for scene's that don't have a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519696-camera"
+            },
+            {
+              "type": "text",
+              "text": ". If, however, you set a scene's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "camera"
+            },
+            {
+              "type": "text",
+              "text": ", then the camera drives which portion of the scene is visible at any given time, and the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "anchorPoint"
+            },
+            {
+              "type": "text",
+              "text": " is ignored. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set the Scene's Origin to the Bottom-Left of its View",
+          "anchor": "3020372"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, a scene’s origin is placed in the lower-left corner of the view, as shown in the figure below. A scene initialized with a height of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1024"
+            },
+            {
+              "type": "text",
+              "text": " and a width of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "768"
+            },
+            {
+              "type": "text",
+              "text": " has the origin "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0,0)"
+            },
+            {
+              "type": "text",
+              "text": " in the lower-left corner, and the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(1024,768)"
+            },
+            {
+              "type": "text",
+              "text": " coordinate in the upper-right corner. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483026-frame"
+            },
+            {
+              "type": "text",
+              "text": " property holds "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0,0)-(1024,768)"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A scene’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position"
+            },
+            {
+              "type": "text",
+              "text": " property is ignored by Scene Kit because the scene is always the root node for a node tree. Its default value is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpoint/1454433-zero"
+            },
+            {
+              "type": "text",
+              "text": " and you can’t change it. However, you can move the scene’s origin by setting its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519864-anchorpoint"
+            },
+            {
+              "type": "text",
+              "text": " property. The anchor point is specified in the unit coordinate space and chooses a point in the enclosing view."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3020373",
+              "metadata": {
+                "anchor": "3020373",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Default anchor for a scene is in the lower-left corner of the view"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default value for the anchor point is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpoint/1454433-zero"
+            },
+            {
+              "type": "text",
+              "text": ", which places it at the lower-left corner. The scene’s visible coordinate space is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0,0)"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(width,height)"
+            },
+            {
+              "type": "text",
+              "text": ". The default anchor point is most useful for games that do not scroll a scene’s content."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Center the Scene's Origin Within its View",
+          "anchor": "3020375"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The second-most common anchor point value is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0.5,0.5)"
+            },
+            {
+              "type": "text",
+              "text": ", which centers the scene’s origin in the middle of the view as shown in the figure below. The scene’s visible coordinate space is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(-width/2,-height/2)"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(width/2,height/2)"
+            },
+            {
+              "type": "text",
+              "text": ". Centering the scene on its anchor point is most useful when you want to easily position nodes relative to the center of the screen, such as in a scrolling game. However, this effect is better achieved using a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skcameranode"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3020376",
+              "metadata": {
+                "anchor": "3020376",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Moving the anchor point to the center of the view"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As a result of setting the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "anchorPoint"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "size"
+            },
+            {
+              "type": "text",
+              "text": ", you indirectly set the scene’s frame, which determines the portion of the scene that's visible to the user."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

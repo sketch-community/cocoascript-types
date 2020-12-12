@@ -357,6 +357,7 @@ declare namespace cocoascript {
 }
 
 declare const QCCompositionPickerView: cocoascript.QCCompositionPickerView;
+// doc://com.apple.documentation/documentation/quartz/qccompositionpickerviewdidselectcompositionnotification
 declare const QCCompositionPickerViewDidSelectCompositionNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -565,6 +566,7 @@ declare namespace cocoascript {
 }
 
 declare const QCCompositionRepository: cocoascript.QCCompositionRepository;
+// doc://com.apple.documentation/documentation/quartz/qccompositionrepositorydidupdatenotification
 declare const QCCompositionRepositoryDidUpdateNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -666,7 +668,9 @@ declare namespace cocoascript {
 }
 
 declare const QCView: cocoascript.QCView;
+// doc://com.apple.documentation/documentation/quartz/qcviewdidstartrenderingnotification
 declare const QCViewDidStartRenderingNotification: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/quartz/qcviewdidstoprenderingnotification
 declare const QCViewDidStopRenderingNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -740,8 +744,11 @@ declare namespace cocoascript {
 }
 
 declare const IKFilterBrowserPanel: cocoascript.IKFilterBrowserPanel;
+// doc://com.apple.documentation/documentation/quartz/ikfilterbrowserwillpreviewfilternotification
 declare const IKFilterBrowserWillPreviewFilterNotification: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/quartz/ikfilterbrowserfilterselectednotification
 declare const IKFilterBrowserFilterSelectedNotification: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/quartz/ikfilterbrowserfilterdoubleclicknotification
 declare const IKFilterBrowserFilterDoubleClickNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -1214,6 +1221,7 @@ declare namespace cocoascript {
 }
 
 declare const QCCompositionPickerPanel: cocoascript.QCCompositionPickerPanel;
+// doc://com.apple.documentation/documentation/quartz/qccompositionpickerpaneldidselectcompositionnotification
 declare const QCCompositionPickerPanelDidSelectCompositionNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -1309,7 +1317,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488846-colorspace
     colorSpace():cocoascript.CGColorSpaceRef;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488754-outputimageproviderfrombufferwit
-    outputImageProviderFromBufferWithPixelFormat_pixelsWide_pixelsHigh_baseAddress_bytesPerRow_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, baseAddress: cocoascript.const, rowBytes: cocoascript.NSUInteger, callback: cocoascript.QCPlugInBufferReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
+    outputImageProviderFromBufferWithPixelFormat_pixelsWide_pixelsHigh_baseAddress_bytesPerRow_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, baseAddress: void, rowBytes: cocoascript.NSUInteger, callback: cocoascript.QCPlugInBufferReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488756-outputimageproviderfromtexturewi
     outputImageProviderFromTextureWithPixelFormat_pixelsWide_pixelsHigh_name_flipped_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, name: cocoascript.GLuint, flipped: cocoascript.BOOL, callback: cocoascript.QCPlugInTextureReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488750-compositionurl

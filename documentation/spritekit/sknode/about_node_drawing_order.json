@@ -1,0 +1,963 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Understand how SpriteKit layers your scene's nodes from top to bottom."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/sknode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/sknode/about_node_drawing_order",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2975547,
+  "kind": "article",
+  "metadata": {
+    "title": "About Node Drawing Order",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/sknode/about_node_drawing_order"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/sknode/about_node_drawing_order"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode": {
+      "title": "SKNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode",
+      "url": "/documentation/spritekit/sknode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition": {
+      "title": "zPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483107-zposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The height of the node relative to its parent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position": {
+      "title": "position",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483101-position"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skview/1520215-ignoressiblingorder": {
+      "title": "ignoresSiblingOrder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520215-ignoressiblingorder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skview/1520215-ignoressiblingorder"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "link-media-3044936": {
+      "identifier": "link-media-3044936",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/spritekit/sknode/about_node_drawing_order#3044936"
+    },
+    "media-3044936": {
+      "identifier": "media-3044936",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 639,
+            "height": 398
+          },
+          "url": "https://docs-assets.developer.apple.com/published/acd8d2482a/85faca23-c95e-4a26-82bb-e03c87d42221.png"
+        }
+      ],
+      "alt": "Figure illustrating how depth-only rendering can improve performance",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Depth-only rendering can improve performance"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/about_node_drawing_order#3044940": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/about_node_drawing_order#3044940",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/sknode/about_node_drawing_order#3044940",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interleaving composite nodes"
+        }
+      ]
+    },
+    "link-media-3044935": {
+      "identifier": "link-media-3044935",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/spritekit/sknode/about_node_drawing_order#3044935"
+    },
+    "media-3044935": {
+      "identifier": "media-3044935",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 292
+          },
+          "url": "https://docs-assets.developer.apple.com/published/486e455575/af3d55e2-40eb-473c-9a2f-47377de41b08.png"
+        }
+      ],
+      "alt": "Interleaved node hierarchies using zPosition",
+      "title": "Figure 3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interleaved node hierarchies using "
+        },
+        {
+          "type": "codeVoice",
+          "code": "zPosition"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skcropnode": {
+      "title": "SKCropNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skcropnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skcropnode"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skeffectnode": {
+      "title": "SKEffectNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skeffectnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skeffectnode"
+    },
+    "link-media-2985165": {
+      "identifier": "link-media-2985165",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/spritekit/sknode/about_node_drawing_order#2985165"
+    },
+    "media-2985165": {
+      "identifier": "media-2985165",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 517,
+            "height": 395
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9b1c50ebc0/dbe411be-c8f7-431b-bc00-33e9c430d846.png"
+        }
+      ],
+      "alt": "Diagram showing that parent nodes are drawn before children",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Parents drawn before children"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/about_node_drawing_order": {
+      "title": "About Node Drawing Order",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/about_node_drawing_order",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/sknode/about_node_drawing_order",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Understand how SpriteKit layers your scene's nodes from top to bottom."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition"
+      ],
+      "title": "Configuring Draw Order",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The standard behavior for scene rendering follows a simple pair of rules (as shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-2985165"
+            },
+            {
+              "type": "text",
+              "text": "):"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A parent draws its content before rendering its children."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Children are rendered in the order in which they appear in the child array."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2985165",
+              "metadata": {
+                "anchor": "2985165",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Parents drawn before children"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the figure above, the helicopter body and its components are all children of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sky"
+            },
+            {
+              "type": "text",
+              "text": " node. So the scene renders its content as follows:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene renders itself, clearing its contents to its background color."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene renders the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "sky"
+                    },
+                    {
+                      "type": "text",
+                      "text": " node."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "sky"
+                    },
+                    {
+                      "type": "text",
+                      "text": " node renders its children—the helicopter body and its components—in the order they were added as children."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Draw Order Relative to the Parent Node",
+          "anchor": "3044941"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Maintaining the order of a node’s children can be a lot of work. Instead, you can give each node an explicit height in the scene. You do this by setting a node’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition"
+            },
+            {
+              "type": "text",
+              "text": " property. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " is the node’s height relative to its parent node, much as a node’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position"
+            },
+            {
+              "type": "text",
+              "text": " property represents its x and y position relative to its parent’s position. So you use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " to place a node above or below the parent’s position."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you take "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " into account, here is how the node tree is rendered:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Each node’s global "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "zPosition"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is calculated by recursively adding its "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "zPosition"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to its parent's "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "zPosition"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Nodes are drawn in order from smallest "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "zPosition"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to largest "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "zPosition"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If two nodes share the same "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "zPosition"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", ancestors are rendered first, and siblings are rendered in child order."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Sibling Order Performance",
+          "anchor": "3044939"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SpriteKit uses a deterministic rendering order based on the height nodes and their positions in the node tree. But, because the rendering order is so deterministic, SpriteKit may be unable to apply some rendering optimizations that it might otherwise apply. For example, it might be better if SpriteKit could gather all of the nodes that share the same texture and drawing mode and draw them with a single drawing pass. To enable these sorts of optimizations, you set the view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520215-ignoressiblingorder"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you ignore sibling order, SpriteKit uses the graphics hardware to render the nodes so that they appear sorted by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": ". It sorts nodes into a drawing order that reduces the number of draw calls needed to render the scene. But with this optimized drawing order, you cannot predict the rendering order for nodes that share the same height. The rendering order may change each time a new frame is rendered. In many cases, the drawing order of these nodes is not important. For example, if the nodes are at the same height but do not overlap on screen, they can be drawn in any order."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3044936"
+            },
+            {
+              "type": "text",
+              "text": " shows an example of a tree that uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " to determine the rendering order. In this example, the body of the helicopter is at a height of 100, and its children are rendered relative to its height. The two rotor nodes share the same height but do not overlap."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3044936",
+              "metadata": {
+                "anchor": "3044936",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Depth-only rendering can improve performance"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Interleaved Child Nodes from Different Parents",
+          "anchor": "3044932"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because a child node's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " is added to its parent's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": ", you can interleave child nodes from different parent nodes. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/about_node_drawing_order#3044940"
+            },
+            {
+              "type": "text",
+              "text": " shows code that creates two square parent nodes, each with a circular child node. The first node has a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " of 10 and its child node has a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " of 10. The second node has a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " of 15 and its child node also has a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " of 10. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once added to the scene, the child of the first node has an effective global "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " of 20 and the child of the second node has an effective global "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " of 25, giving an interleaving effect."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func addNodesTo(scene: SKScene,",
+            "                color: SKColor, position: CGPoint,",
+            "                parentZ: CGFloat, childZ: CGFloat) {",
+            "    ",
+            "    let diameter: CGFloat = 250",
+            "    let rect = CGRect(origin: position,",
+            "                      size: CGSize(width: diameter, height: diameter))",
+            "     ",
+            "    let parentNode = SKShapeNode(rect: rect)",
+            "    let childNode = SKShapeNode(ellipseIn: rect.insetBy(dx: 10, dy: 10))",
+            "  ",
+            "    [(parentNode, scene, parentZ), (childNode, parentNode, childZ)].forEach {",
+            "        node, parent, zPosition in",
+            "        ",
+            "        node.fillColor = color",
+            "        node.strokeColor = .white",
+            "        node.zPosition = zPosition",
+            "        ",
+            "        parent.addChild(node)",
+            "    }",
+            "}",
+            "",
+            "  ",
+            "addNodesTo(scene: scene,",
+            "           color: .red,",
+            "           position: CGPoint(x: 300, y: 300),",
+            "           parentZ: 10,",
+            "           childZ: 10)",
+            " ",
+            "addNodesTo(scene: scene,",
+            "           color: .blue,",
+            "           position: CGPoint(x: 350, y: 250),",
+            "           parentZ: 15,",
+            "           childZ: 10)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3044940",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Interleaving composite nodes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "link-media-3044935"
+            },
+            {
+              "type": "text",
+              "text": " shows the resulting scene."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3044935",
+              "metadata": {
+                "anchor": "3044935",
+                "title": "Figure 3",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Interleaved node hierarchies using "
+                  },
+                  {
+                    "type": "codeVoice",
+                    "code": "zPosition"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPosition"
+            },
+            {
+              "type": "text",
+              "text": " is additive across parent-child node relationships, you can use both tree order and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPositions"
+            },
+            {
+              "type": "text",
+              "text": " to determine your scene’s rendering order. When rendering a complex scene, you should disable the sorting behavior and use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "zPositions"
+            },
+            {
+              "type": "text",
+              "text": " of nodes to create a deterministic scene order."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/spritekit/skcropnode"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/spritekit/skeffectnode"
+                },
+                {
+                  "type": "text",
+                  "text": " node classes alter the scene rendering behavior. The children of these nodes are rendered independently as a separate node tree, and the results are rendered into the tree that contains the crop or effect node. For more information, see Working with Other Node Types."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

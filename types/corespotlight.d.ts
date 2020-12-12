@@ -695,9 +695,13 @@ declare namespace cocoascript {
 }
 
 declare const CSSearchableItem: cocoascript.CSSearchableItem;
+// doc://com.apple.documentation/documentation/corespotlight/cssearchableitemactiontype
 declare const CSSearchableItemActionType: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/corespotlight/cssearchableitemactivityidentifier
 declare const CSSearchableItemActivityIdentifier: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/corespotlight/csquerycontinuationactiontype
 declare const CSQueryContinuationActionType: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/corespotlight/cssearchquerystring
 declare const CSSearchQueryString: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -769,7 +773,9 @@ declare namespace cocoascript {
 }
 
 declare const CSSearchQuery: cocoascript.CSSearchQuery;
+// doc://com.apple.documentation/documentation/corespotlight/cssearchquerystring
 declare const CSSearchQueryString: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/corespotlight/csquerycontinuationactiontype
 declare const CSQueryContinuationActionType: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -789,6 +795,7 @@ declare namespace cocoascript {
 }
 
 declare const CSLocalizedString: cocoascript.CSLocalizedString;
+// doc://com.apple.documentation/documentation/corespotlight/corespotlightversionstring
 declare const CoreSpotlightVersionString: string;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corespotlight/csindexerrorcode

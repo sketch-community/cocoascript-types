@@ -1,0 +1,280 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "This is the callback that handles method invocation completion when the method is invoked asynchronously."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/os_services",
+        "doc://com.apple.documentation/documentation/coreservices/os_services/web_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationcallbackprocptr",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1576426,
+  "kind": "symbol",
+  "metadata": {
+    "title": "WSMethodInvocationCallBackProcPtr",
+    "role": "symbol",
+    "roleHeading": "Type Alias",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "deprecatedAt": "10.8",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:@T@WSMethodInvocationCallBackProcPtr",
+    "symbolKind": "tdef"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/wsmethodinvocationcallbackprocptr"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/os_services": {
+      "title": "OS Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/os_services",
+      "url": "/documentation/coreservices/os_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/os_services/web_services": {
+      "title": "Web Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/os_services/web_services",
+      "url": "/documentation/coreservices/os_services/web_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationref": {
+      "title": "WSMethodInvocationRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsmethodinvocationref"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref": {
+      "title": "CFDictionaryRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfdictionaryref"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " (*"
+            },
+            {
+              "kind": "identifier",
+              "text": "WSMethodInvocationCallBackProcPtr"
+            },
+            {
+              "kind": "text",
+              "text": ")("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@WSMethodInvocationRef",
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationref",
+              "text": "WSMethodInvocationRef"
+            },
+            {
+              "kind": "text",
+              "text": " invocation, "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *info, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFDictionaryRef",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref",
+              "text": "CFDictionaryRef"
+            },
+            {
+              "kind": "text",
+              "text": " outRef);"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "invocation",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The method invocation for which this callback handles completion."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "info",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Private callback data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "outRef",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "CFDictionaryRef"
+                },
+                {
+                  "type": "text",
+                  "text": " containing the method invocation result or a fault structure, and optional debug information."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your callback is named MyCompletionCallback, declare it like this:"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Discussion",
+          "anchor": "1681575"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your callback is passed a reference to the invocation just completed, a pointer to private data, and a dictionary that contains the return value or falut for this invocation.  The  callback is responsible for releasing the dictionary when it is  no longer used."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

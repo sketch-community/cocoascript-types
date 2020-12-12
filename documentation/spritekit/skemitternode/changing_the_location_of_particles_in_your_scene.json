@@ -1,0 +1,217 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Set a target node from which SpriteKit creates particles."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skemitternode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2984750,
+  "kind": "article",
+  "metadata": {
+    "title": "Changing the Location of Particles in Your Scene",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skemitternode": {
+      "title": "SKEmitterNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skemitternode",
+      "url": "/documentation/spritekit/skemitternode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene#2984753": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene#2984753",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene#2984753"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene": {
+      "title": "Changing the Location of Particles in Your Scene",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skemitternode/changing_the_location_of_particles_in_your_scene",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set a target node from which SpriteKit creates particles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skemitternode/1398012-targetnode": {
+      "title": "targetNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skemitternode/1398012-targetnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skemitternode/1398012-targetnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The target node that renders the emitter’s particles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skemitternode/1398012-targetnode"
+      ],
+      "title": "Choosing Which Node in the Scene Emits Particles",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the emitter creates particles, the particles are rendered as children of the emitter node. This means that they inherit the characteristics of the emitter node, just like nodes do. For example, if you rotate the emitter node, the positions of all of the generated particles are also rotated. Depending on what effect you are simulating with the emitter, this may not be the correct behavior. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, assume that you are using the emitter node to create the exhaust from a rocket. When the engines are at full burn, a cone of flame should come out the back of the ship. This is easily simulated using particles. But if the particles are rendered relative to the ship, when the ship turns, the exhaust also turns, which doesn't look right. The particles should be generated, but should thereafter be independent of the emitter node. When the emitter node is rotated, new particles get the new orientation, and old particles maintain their old orientation. You make particles independent of the emitter by specifying a target node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to configure a rocket exhaust effect to use a target node. When the custom sprite node class instantiates the exhaust node, it makes the node its child. However, it redirects the particles to the scene."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "- (void) newExhaustNode",
+            "{",
+            "    SKEmitterNode *emitter =  [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@\"exhaust\" ofType:@\"sks\"]];",
+            " ",
+            "// Place the emitter at the rear of the ship.",
+            "   emitter.position = CGPointMake(0,-40);",
+            "   emitter.name = @\"exhaust\";",
+            "// Send the particles to the scene.",
+            "   emitter.targetNode = self.scene;",
+            " ",
+            "   [self addChild:emitter];",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2984753",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When an emitter has a target node, it calculates the position, velocity, and orientation of the particle, exactly as if it were a child of the sprite node. This means that if the ship sprite is rotated, the exhaust orientation is automatically rotated, too. However, at the moment a new particle’s starting values are calculated, the values are transformed into the target node’s coordinate system. Thereafter, they would only be affected by changes to the target node."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

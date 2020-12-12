@@ -1,0 +1,210 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager",
+        "doc://com.apple.documentation/documentation/coreservices/1444405-matching_constants"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/1444405-matching_constants/karmsearchmore",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1444273,
+  "kind": "symbol",
+  "metadata": {
+    "title": "kARMSearchMore",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@Ea@kARMMountVol@kARMSearchMore",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1444405-matching_constants/karmsearchmore"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core": {
+      "title": "Carbon Core",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+      "url": "/documentation/coreservices/carbon_core",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager": {
+      "title": "Alias Manager",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager",
+      "url": "/documentation/coreservices/carbon_core/alias_manager",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444405-matching_constants": {
+      "title": "Matching Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444405-matching_constants",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1444405-matching_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the matching criteria for the alias matching functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "kARMSearchMore"
+            },
+            {
+              "kind": "text",
+              "text": " = 0x00000200"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Perform an exhaustive search for the alias target. On HFS volumes, the exhaustive search uses the File Manager function "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PBCatSearch"
+            },
+            {
+              "type": "text",
+              "text": " to identify candidates with matching creation date, type, and creator. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PBCatSearch"
+            },
+            {
+              "type": "text",
+              "text": " function is available only on HFS volumes and only on systems running version 7.0 or later. On MFS volumes or HFS volumes that do not support "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PBCatSearch"
+            },
+            {
+              "type": "text",
+              "text": ", the exhaustive search makes a series of indexed calls to File Manager functions, using the same search criteria. If you set "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kARMSearchMore"
+            },
+            {
+              "type": "text",
+              "text": " and either or both of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kARMSearch"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kARMSearchRelFirst"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MatchAlias"
+            },
+            {
+              "type": "text",
+              "text": " performs the fast search first."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

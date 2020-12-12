@@ -1,0 +1,900 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/os_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/os_services/web_services",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2934731,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Web Services",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/os_services/web_services"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/os_services": {
+      "title": "OS Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/os_services",
+      "url": "/documentation/coreservices/os_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsdebugincomingbody": {
+      "title": "kWSDebugIncomingBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsdebugincomingbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsdebugincomingbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If this flag is set, the result includes the incoming message body."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsdebugincomingheaders": {
+      "title": "kWSDebugIncomingHeaders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsdebugincomingheaders",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsdebugincomingheaders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If this flag is set, the result includes the incoming message headers."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsdebugoutgoingbody": {
+      "title": "kWSDebugOutgoingBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsdebugoutgoingbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsdebugoutgoingbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If this flag is set, the result includes the outgoing message body."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsdebugoutgoingheaders": {
+      "title": "kWSDebugOutgoingHeaders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsdebugoutgoingheaders",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsdebugoutgoingheaders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If this flag is set, the result includes the outgoing message headers."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsfaultcode": {
+      "title": "kWSFaultCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsfaultcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsfaultcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If the result is a fault, this key returns a CFNumber with the fault code, unless the fault is a network error, in which case this field should be ignored."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsfaultextra": {
+      "title": "kWSFaultExtra",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsfaultextra",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsfaultextra",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If the result is a fault, and the fault is a network error, the key returns a CFDictionary with the network error. This key may also return a CFString, or "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsfaultstring": {
+      "title": "kWSFaultString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsfaultstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsfaultstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If the result is a fault, this key returns a CFString with the fault type. If the fault type is "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSNetworkStreamFaultString"
+        },
+        {
+          "type": "text",
+          "text": ", then the fault is a network error. In the case of a network error, "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSFaultCode"
+        },
+        {
+          "type": "text",
+          "text": " should be ignored, and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSFaultExtra"
+        },
+        {
+          "type": "text",
+          "text": " returns a dictionary indicating the network error."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwshttpextraheaders": {
+      "title": "kWSHTTPExtraHeaders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwshttpextraheaders",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwshttpextraheaders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A CFDictionary of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "{ key (CFString), val (CFString) }"
+        },
+        {
+          "type": "text",
+          "text": " pairs."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwshttpfollowsredirects": {
+      "title": "kWSHTTPFollowsRedirects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwshttpfollowsredirects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwshttpfollowsredirects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A CFBoolean that controls whether the invocation follows redirects (default is false)."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwshttpmessage": {
+      "title": "kWSHTTPMessage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwshttpmessage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwshttpmessage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The message."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwshttpproxy": {
+      "title": "kWSHTTPProxy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwshttpproxy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwshttpproxy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFURLRef"
+        },
+        {
+          "type": "text",
+          "text": " of the SOCKS proxy."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwshttpresponsemessage": {
+      "title": "kWSHTTPResponseMessage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwshttpresponsemessage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwshttpresponsemessage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key used to retrieve the response from the reply dictionary.."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwshttpversion": {
+      "title": "kWSHTTPVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwshttpversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwshttpversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFHTTPMessageRef"
+        },
+        {
+          "type": "text",
+          "text": " version such as “http/1.1”."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationresult": {
+      "title": "kWSMethodInvocationResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsmethodinvocationresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dictionary entry if the invocation result is not a fault.  If you don't know what field to ask for, you can ask for this key.  You can also specify the name of a reply parameter in the invocation using "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSMethodInvocationResultParameterName"
+        },
+        {
+          "type": "text",
+          "text": ". This will add an alias for the given name to the result dictionary so that this key will return the named parameter."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationresultparametername": {
+      "title": "kWSMethodInvocationResultParameterName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationresultparametername",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsmethodinvocationresultparametername",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set this property to create an alias to a parameter to be returned by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSMethodInvocationResult"
+        },
+        {
+          "type": "text",
+          "text": ". Pass in the parameter name as a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFStringRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationtimeoutvalue": {
+      "title": "kWSMethodInvocationTimeoutValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationtimeoutvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsmethodinvocationtimeoutvalue",
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsnetworkstreamfaultstring": {
+      "title": "kWSNetworkStreamFaultString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsnetworkstreamfaultstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsnetworkstreamfaultstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSFaultExtra"
+        },
+        {
+          "type": "text",
+          "text": " is a dictionary, this key returns a CFString from that dictionary for debug purposes."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsrecordnamespaceuri": {
+      "title": "kWSRecordNamespaceURI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsrecordnamespaceuri",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsrecordnamespaceuri",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A  "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFStringRef"
+        },
+        {
+          "type": "text",
+          "text": " containing the namespace."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsrecordparameterorder": {
+      "title": "kWSRecordParameterOrder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsrecordparameterorder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsrecordparameterorder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFArrayRef"
+        },
+        {
+          "type": "text",
+          "text": " of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFStringRefs"
+        },
+        {
+          "type": "text",
+          "text": " containing the parameter names, in order."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsrecordtype": {
+      "title": "kWSRecordType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsrecordtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsrecordtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFStringRef"
+        },
+        {
+          "type": "text",
+          "text": " containing the record type."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwssoap1999protocol": {
+      "title": "kWSSOAP1999Protocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwssoap1999protocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwssoap1999protocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SOAP v1.1 protocol."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwssoap2001protocol": {
+      "title": "kWSSOAP2001Protocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwssoap2001protocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwssoap2001protocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SOAP v1.2 protocol."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwssoapbodyencodingstyle": {
+      "title": "kWSSOAPBodyEncodingStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwssoapbodyencodingstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwssoapbodyencodingstyle",
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwssoapmessageheaders": {
+      "title": "kWSSOAPMessageHeaders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwssoapmessageheaders",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwssoapmessageheaders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFArrayRef"
+        },
+        {
+          "type": "text",
+          "text": " of XML header elements, as "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFStringRefs"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwssoapmethodnamespaceuri": {
+      "title": "kWSSOAPMethodNamespaceURI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwssoapmethodnamespaceuri",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwssoapmethodnamespaceuri",
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwssoapstyledoc": {
+      "title": "kWSSOAPStyleDoc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwssoapstyledoc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwssoapstyledoc",
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwssoapstylerpc": {
+      "title": "kWSSOAPStyleRPC",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwssoapstylerpc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwssoapstylerpc",
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrordomain": {
+      "title": "kWSStreamErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsstreamerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSFaultExtra"
+        },
+        {
+          "type": "text",
+          "text": " is a dictionary, this key returns a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFNumberRef"
+        },
+        {
+          "type": "text",
+          "text": " from that dictionary containing domain number. See "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFStream.h"
+        },
+        {
+          "type": "text",
+          "text": " for domain numbers."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrorerror": {
+      "title": "kWSStreamErrorError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrorerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsstreamerrorerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSFaultExtra"
+        },
+        {
+          "type": "text",
+          "text": " is a dictionary, this key returns a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFNumberRef"
+        },
+        {
+          "type": "text",
+          "text": " from that dictionary containing error number. See "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFStream.h"
+        },
+        {
+          "type": "text",
+          "text": " for error numbers."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrormessage": {
+      "title": "kWSStreamErrorMessage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrormessage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsstreamerrormessage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "If "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kWSFaultExtra"
+        },
+        {
+          "type": "text",
+          "text": " is a dictionary, this key returns a CFString from that dictionary containing the stream error message."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/kwsxmlrpcprotocol": {
+      "title": "kWSXMLRPCProtocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/kwsxmlrpcprotocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/kwsxmlrpcprotocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "XML-RPC protocol."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsclientcontextcopydescriptioncallbackprocptr": {
+      "title": "WSClientContextCopyDescriptionCallBackProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsclientcontextcopydescriptioncallbackprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsclientcontextcopydescriptioncallbackprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This is the callback that copies the information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsclientcontextreleasecallbackprocptr": {
+      "title": "WSClientContextReleaseCallBackProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsclientcontextreleasecallbackprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsclientcontextreleasecallbackprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This is the callback that releases the information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsclientcontextretaincallbackprocptr": {
+      "title": "WSClientContextRetainCallBackProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsclientcontextretaincallbackprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsclientcontextretaincallbackprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This is the callback that retains the information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationcallbackprocptr": {
+      "title": "WSMethodInvocationCallBackProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationcallbackprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsmethodinvocationcallbackprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This is the callback that handles method invocation completion when the method is invoked asynchronously."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationdeserializationprocptr": {
+      "title": "WSMethodInvocationDeserializationProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationdeserializationprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsmethodinvocationdeserializationprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This is an optional callback that handles custom deserialization of a particular data type for a method response."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationref": {
+      "title": "WSMethodInvocationRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsmethodinvocationref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque reference to a web services method invocation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationserializationprocptr": {
+      "title": "WSMethodInvocationSerializationProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationserializationprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsmethodinvocationserializationprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This is an optional callback that handles custom serialization of a particular data type for method invocation."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerdeserializationprocptr": {
+      "title": "WSProtocolHandlerDeserializationProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerdeserializationprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsprotocolhandlerdeserializationprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This is an optional callback that handles custom deserialization of a particular data type for a protocol handler."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerref": {
+      "title": "WSProtocolHandlerRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsprotocolhandlerref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque reference to a web services protocol handler."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerserializationprocptr": {
+      "title": "WSProtocolHandlerSerializationProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerserializationprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wsprotocolhandlerserializationprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This is an optional callback that handles custom serialization of a particular data type for a protocol handler."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/kwsdebugincomingbody",
+        "doc://com.apple.documentation/documentation/coreservices/kwsdebugincomingheaders",
+        "doc://com.apple.documentation/documentation/coreservices/kwsdebugoutgoingbody",
+        "doc://com.apple.documentation/documentation/coreservices/kwsdebugoutgoingheaders",
+        "doc://com.apple.documentation/documentation/coreservices/kwsfaultcode",
+        "doc://com.apple.documentation/documentation/coreservices/kwsfaultextra",
+        "doc://com.apple.documentation/documentation/coreservices/kwsfaultstring",
+        "doc://com.apple.documentation/documentation/coreservices/kwshttpextraheaders",
+        "doc://com.apple.documentation/documentation/coreservices/kwshttpfollowsredirects",
+        "doc://com.apple.documentation/documentation/coreservices/kwshttpmessage",
+        "doc://com.apple.documentation/documentation/coreservices/kwshttpproxy",
+        "doc://com.apple.documentation/documentation/coreservices/kwshttpresponsemessage",
+        "doc://com.apple.documentation/documentation/coreservices/kwshttpversion",
+        "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationresult",
+        "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationresultparametername",
+        "doc://com.apple.documentation/documentation/coreservices/kwsmethodinvocationtimeoutvalue",
+        "doc://com.apple.documentation/documentation/coreservices/kwsnetworkstreamfaultstring",
+        "doc://com.apple.documentation/documentation/coreservices/kwsrecordnamespaceuri",
+        "doc://com.apple.documentation/documentation/coreservices/kwsrecordparameterorder",
+        "doc://com.apple.documentation/documentation/coreservices/kwsrecordtype",
+        "doc://com.apple.documentation/documentation/coreservices/kwssoap1999protocol",
+        "doc://com.apple.documentation/documentation/coreservices/kwssoap2001protocol",
+        "doc://com.apple.documentation/documentation/coreservices/kwssoapbodyencodingstyle",
+        "doc://com.apple.documentation/documentation/coreservices/kwssoapmessageheaders",
+        "doc://com.apple.documentation/documentation/coreservices/kwssoapmethodnamespaceuri",
+        "doc://com.apple.documentation/documentation/coreservices/kwssoapstyledoc",
+        "doc://com.apple.documentation/documentation/coreservices/kwssoapstylerpc",
+        "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrordomain",
+        "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrorerror",
+        "doc://com.apple.documentation/documentation/coreservices/kwsstreamerrormessage",
+        "doc://com.apple.documentation/documentation/coreservices/kwsxmlrpcprotocol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/wsclientcontextcopydescriptioncallbackprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/wsclientcontextreleasecallbackprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/wsclientcontextretaincallbackprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationcallbackprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationdeserializationprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationref",
+        "doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationserializationprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerdeserializationprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerref",
+        "doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerserializationprocptr"
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

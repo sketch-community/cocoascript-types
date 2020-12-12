@@ -1,0 +1,178 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/file_metadata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1658218,
+  "kind": "symbol",
+  "metadata": {
+    "title": "MDImporter",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/file_metadata/mdimporter"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_metadata": {
+      "title": "File Metadata",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_metadata",
+      "url": "/documentation/coreservices/file_metadata",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "devLink-1724796": {
+      "identifier": "devLink-1724796",
+      "type": "link",
+      "title": "Spotlight Overview",
+      "url": "https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MetadataIntro/MetadataIntro.html#//apple_ref/doc/uid/TP40001268"
+    },
+    "devLink-1724795": {
+      "identifier": "devLink-1724795",
+      "type": "link",
+      "title": "Spotlight Importer Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MDImporters/MDImporters.html#//apple_ref/doc/uid/TP40001267"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/importerimportdata": {
+      "title": "ImporterImportData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/importerimportdata",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coreservices/file_metadata/mdimporter/importerimportdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines a pointer toan importer import callback that imports importers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/kmdimportertypeid": {
+      "title": "kMDImporterTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/kmdimportertypeid",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/file_metadata/mdimporter/kmdimportertypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type ID of an importer plug-in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/kmdimporterinterfaceid": {
+      "title": "kMDImporterInterfaceID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/kmdimporterinterfaceid",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/file_metadata/mdimporter/kmdimporterinterfaceid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interface required by a importer plug-in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/importerimportdata"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/kmdimportertypeid",
+        "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/kmdimporterinterfaceid"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1724796",
+        "devLink-1724795"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An MDImporter is responsible for returning the metadata containedwith a file. The Spotlight server is notified when a file is changedand loads the appropriate importer to extract the metadata. An importeris implemented as a CFPlugin."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Learn how the anchor point affects a sprite's position. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2983052,
+  "kind": "article",
+  "metadata": {
+    "title": "Using the Anchor Point to Move a Sprite",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode": {
+      "title": "SKSpriteNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode",
+      "url": "/documentation/spritekit/skspritenode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519877-anchorpoint": {
+      "title": "anchorPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519877-anchorpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skspritenode/1519877-anchorpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines the point in the sprite that corresponds to the node’s position."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position": {
+      "title": "position",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483101-position"
+    },
+    "link-media-2983051": {
+      "identifier": "link-media-2983051",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite#2983051"
+    },
+    "media-2983051": {
+      "identifier": "media-2983051",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 221
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a8a237c3e6/f060c432-b253-4331-b4e3-d98d1bb5f446.png"
+        }
+      ],
+      "alt": "The unit coordinate system",
+      "title": "Figure 1"
+    },
+    "link-media-2983050": {
+      "identifier": "link-media-2983050",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite#2983050"
+    },
+    "media-2983050": {
+      "identifier": "media-2983050",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 499
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a8a237c3e6/347a47af-3ded-49b4-8bd5-e8e460df6927.png"
+        }
+      ],
+      "alt": "Changing a sprite node’s anchor point",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite#2983048": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite#2983048",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite#2983048"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite": {
+      "title": "Using the Anchor Point to Move a Sprite",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skspritenode/using_the_anchor_point_to_move_a_sprite",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how the anchor point affects a sprite's position. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519668-size": {
+      "title": "size",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519668-size",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skspritenode/1519668-size",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The dimensions of the sprite, in points."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/1645445-scaletosize": {
+      "title": "scaleToSize:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1645445-scaletosize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skspritenode/1645445-scaletosize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scales the sprite node to a specified size. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scaleToSize:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519668-size",
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode/1645445-scaletosize",
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519877-anchorpoint"
+      ],
+      "title": "Setting a Sprite's Size and Position",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, the sprite node’s frame—and thus its texture—is centered on its position. However, you might want a different part of the texture to appear at the node’s position; for example, when the game element depicted in the texture is not centered in the texture image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A sprite node’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519877-anchorpoint"
+            },
+            {
+              "type": "text",
+              "text": " determines which point within its frame corresponds to its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position"
+            },
+            {
+              "type": "text",
+              "text": ". Anchor points are specified in the unit coordinate system, shown in the following illustration. The unit coordinate system places the origin at the bottom left corner of the frame and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(1,1)"
+            },
+            {
+              "type": "text",
+              "text": " at the top right corner of the frame. A sprite’s anchor point defaults to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(0.5,0.5)"
+            },
+            {
+              "type": "text",
+              "text": ", which corresponds to the center of the frame."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2983051",
+              "metadata": {
+                "anchor": "2983051",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although you are moving the frame, you do this because you want the corresponding portion of the texture to be centered on the node's position. The following figure shows two pairs of texture images. In the first, the default anchor point centers the texture on the node position. In the second, a point at the top of the image is selected instead. You can see that when the node is rotated, the texture image rotates around this point."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2983050",
+              "metadata": {
+                "anchor": "2983050",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to place the anchor point on the rocket’s nose cone. Usually, you set the anchor point when the sprite node is initialized, because it corresponds to the artwork. However, you can set this property at any time. The frame is immediately updated, and the node onscreen is updated the next time the scene is rendered."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "rocket.anchorPoint = CGPointMake(0.5,1.0);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2983048",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

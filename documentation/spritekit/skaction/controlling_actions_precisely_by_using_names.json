@@ -1,0 +1,354 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Set an action's name property so you can access it later without needing an instance variable."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/skaction"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3109044,
+  "kind": "article",
+  "metadata": {
+    "title": "Controlling Actions Precisely by Using Names",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skaction/controlling_actions_precisely_by_using_names"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skaction/controlling_actions_precisely_by_using_names"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skaction": {
+      "title": "SKAction",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skaction",
+      "url": "/documentation/spritekit/skaction",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names#3109051": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names#3109051",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names#3109051"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483042-runaction": {
+      "title": "runAction:withKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483042-runaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483042-runaction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "runAction:withKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483138-actionforkey": {
+      "title": "actionForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483138-actionforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483138-actionforkey",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "actionForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483076-removeactionforkey": {
+      "title": "removeActionForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483076-removeactionforkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483076-removeactionforkey",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeActionForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names#3109048": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names#3109048",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names#3109048"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names": {
+      "title": "Controlling Actions Precisely by Using Names",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skaction/controlling_actions_precisely_by_using_names",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set an action's name property so you can access it later without needing an instance variable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Normally, you can’t see which actions a node is executing, and if you want to remove actions, you must remove all of them. If you need to see whether a particular action is executing, or if you want to remove a specific action, use named actions. A named action is characterized by a unique string that identifies the action. Using named actions, you can start, remove, find and replace the actions of a node."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create and Run a Named Action",
+          "anchor": "3109049"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code creates and runs a new action identified with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ignition"
+            },
+            {
+              "type": "text",
+              "text": " key."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SKAction *moveNodeRight = [SKAction moveByX:100.0 y:0.0 duration:1.0];",
+            "[spaceship runAction: moveNodeRight withKey:@\"ignition\"];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "3109051",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following key-based methods are available:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483042-runaction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to run the action. If an action with the same key is already executing, it is removed before the new action is added."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483138-actionforkey"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to determine if an action with that key is already running."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483076-removeactionforkey"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to remove the action."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Find and Replace an In-Flight Action",
+          "anchor": "3109050"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code below shows how you use a name to replace an action that's currently running. The code determines where a mouse click occurred and then runs an action that moves a sprite to the click location. The action duration is calculated ahead of time to move the sprite at a fixed speed. Because this code uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483042-runaction"
+            },
+            {
+              "type": "text",
+              "text": ", any previous move that's still executing is stopped and replaced by the new action with the same name."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func mouseDown(with event: NSEvent) {",
+            "\tguard let playerNodeParent = self.playerNode.parent else { return }",
+            "",
+            "\tlet clickPoint = event.location(in: playerNodeParent)",
+            "",
+            "\tlet charPos = playerNode.position",
+            "",
+            "\tlet distance = hypot(clickPoint.x-charPos.x, ",
+            "\t\tclickPoint.y-charPos.y)",
+            "",
+            "\tlet moveToClick = SKAction.move(to: clickPoint, ",
+            "\t\tduration: TimeInterval(distance / characterSpeed))",
+            "",
+            "\tself.playerNode.run(moveToClick, withKey: \"moveToClick\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3109048",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

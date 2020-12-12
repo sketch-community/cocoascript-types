@@ -1,0 +1,262 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use a texture or a shape to mask pixels out of a crop node's children. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skcropnode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skcropnode/cropping_nodes",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2984795,
+  "kind": "article",
+  "metadata": {
+    "title": "Cropping Nodes",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skcropnode/cropping_nodes"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skcropnode/cropping_nodes"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skcropnode": {
+      "title": "SKCropNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skcropnode",
+      "url": "/documentation/spritekit/skcropnode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "link-media-2984794": {
+      "identifier": "link-media-2984794",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/spritekit/skcropnode/cropping_nodes#2984794"
+    },
+    "media-2984794": {
+      "identifier": "media-2984794",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 218,
+            "height": 216
+          },
+          "url": "https://docs-assets.developer.apple.com/published/91a2ed01ca/7058201f-f8a0-4194-aa4c-8e4084e024c0.png"
+        }
+      ],
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skcropnode/1520449-masknode": {
+      "title": "maskNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skcropnode/1520449-masknode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skcropnode/1520449-masknode"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skcropnode/cropping_nodes#2984793": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skcropnode/cropping_nodes#2984793",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skcropnode/cropping_nodes#2984793"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skcropnode/cropping_nodes": {
+      "title": "Cropping Nodes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skcropnode/cropping_nodes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skcropnode/cropping_nodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a texture or a shape to mask pixels out of a crop node's children. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "crop node"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is useful for implementing cockpit views, controls, and other game indicators, as well as any effect where a set of nodes should be drawn only inside a specific part of a scene. The following image shows how a crop node works. It uses the rocket ship art shown on the left as a mask for a sprite drawn as a child of the crop node shown on the right."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2984794",
+              "metadata": {
+                "anchor": "2984794",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The cropped area is specified using a mask. The mask is not a fixed image. The mask is rendered from a node, just like other content in SpriteKit. This means a crop node can use simple masks derived from a piece of artwork, but it can also use more sophisticated masks. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use a crop node, add child nodes as you would for any other node. Then set the crop node’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skcropnode/1520449-masknode"
+            },
+            {
+              "type": "text",
+              "text": " property to point to another node. When the scene is rendered, the crop mask renders its mask node and uses the resulting mask to determine which pixels of its children should be rendered to the parent’s framebuffer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example code below shows a simple use of a mask. This code loads a mask image from a texture in the app bundle. A portion of the scene’s content is then rendered as children of the crop node, using the mask to prevent it from overdrawing the portion of the screen that the game uses to show controls."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SKCropNode *cropNode = [[SKCropNode alloc] init];",
+            "cropNode.maskNode = [[SKSpriteNode alloc] initWithImageNamed:@\"cockpitMask\"];",
+            "[cropNode addChild: sceneContentNode];",
+            "[self addChild:cropNode];",
+            "[self addChild:gameControlNodes];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2984793",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the crop node’s children are rendered, the mask node is first rendered and used to crop the node’s children."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

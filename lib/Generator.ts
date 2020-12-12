@@ -53,7 +53,7 @@ export class Generator {
       const firstSection = doc.primaryContentSections && doc.primaryContentSections[0];
       if (firstSection && firstSection.kind === 'declarations') {
         const tokens: Token[] = firstSection.declarations[0].tokens;
-        if (['@interface', '@protocol'].includes(tokens[0].text)) {
+        if (['@interface', 'interface', '@protocol'].includes(tokens[0].text)) {
           const idToken = tokens.find(t => t.kind === 'identifier');
           if (idToken) {
             const decl = InterfaceDeclaration.initFromTokens(doc.identifier.url, doc, tokens);

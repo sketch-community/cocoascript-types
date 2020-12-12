@@ -80,9 +80,9 @@ declare namespace cocoascript {
     className(): cocoascript.NSString;
     setClassName(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1410291-copyscriptingvalue
-    copyScriptingValue_forKey_withProperties(value: cocoascript.NSObject, key: cocoascript.NSString, properties: cocoascript.NSString):cocoascript.NSObject;
+    copyScriptingValue_forKey_withProperties(value: cocoascript.NSObject, key: cocoascript.NSString, properties: cocoascript.NSObject):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418458-newscriptingobjectofclass
-    newScriptingObjectOfClass_forValueForKey_withContentsValue_properties(objectClass: cocoascript.Class, key: cocoascript.NSString, contentsValue: cocoascript.NSObject, properties: cocoascript.NSString):cocoascript.NSObject;
+    newScriptingObjectOfClass_forValueForKey_withContentsValue_properties(objectClass: cocoascript.Class, key: cocoascript.NSString, contentsValue: cocoascript.NSObject, properties: cocoascript.NSObject):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417254-scriptingproperties
     scriptingProperties(): cocoascript.id;
     setScriptingProperties(): void;
@@ -453,19 +453,33 @@ declare namespace cocoascript {
 }
 
 declare const Protocol: cocoascript.Protocol;
+// doc://com.apple.documentation/documentation/objectivec/1418635-class_getname
 declare const class_getName: cocoascript.Class;
+// doc://com.apple.documentation/documentation/objectivec/1418918-class_getivarlayout
 declare const class_getIvarLayout: cocoascript.Class;
+// doc://com.apple.documentation/documentation/objectivec/1418508-class_getweakivarlayout
 declare const class_getWeakIvarLayout: cocoascript.Class;
+// doc://com.apple.documentation/documentation/objectivec/1418547-object_getclassname
 declare const object_getClassName: cocoascript.id;
+// doc://com.apple.documentation/documentation/objectivec/1418922-ivar_getname
 declare const ivar_getName: cocoascript.Ivar;
+// doc://com.apple.documentation/documentation/objectivec/1418569-ivar_gettypeencoding
 declare const ivar_getTypeEncoding: cocoascript.Ivar;
+// doc://com.apple.documentation/documentation/objectivec/1418488-method_gettypeencoding
 declare const method_getTypeEncoding: cocoascript.Method;
+// doc://com.apple.documentation/documentation/objectivec/1418970-objc_copyimagenames
 declare const objc_copyImageNames: number;
+// doc://com.apple.documentation/documentation/objectivec/1418539-class_getimagename
 declare const class_getImageName: cocoascript.Class;
+// doc://com.apple.documentation/documentation/objectivec/1418485-objc_copyclassnamesforimage
 declare const objc_copyClassNamesForImage: number;
+// doc://com.apple.documentation/documentation/objectivec/1418571-sel_getname
 declare const sel_getName: cocoascript.SEL;
+// doc://com.apple.documentation/documentation/objectivec/1418826-protocol_getname
 declare const protocol_getName: cocoascript.Protocol;
+// doc://com.apple.documentation/documentation/objectivec/1418903-property_getname
 declare const property_getName: cocoascript.objc_property_t;
+// doc://com.apple.documentation/documentation/objectivec/1418909-property_getattributes
 declare const property_getAttributes: cocoascript.objc_property_t;
 declare namespace cocoascript {
   interface Method {
@@ -518,11 +532,19 @@ declare namespace cocoascript {
 }declare namespace cocoascript {
   interface NXHashTablePrototype {
   }
-}declare const NXPtrPrototype: cocoascript.NXHashTablePrototype;
+}// doc://com.apple.documentation/documentation/objectivec/nxptrprototype
+declare const NXPtrPrototype: cocoascript.NXHashTablePrototype;
+// doc://com.apple.documentation/documentation/objectivec/nxptrstructkeyprototype
 declare const NXPtrStructKeyPrototype: cocoascript.NXHashTablePrototype;
+// doc://com.apple.documentation/documentation/objectivec/nxstrprototype
 declare const NXStrPrototype: cocoascript.NXHashTablePrototype;
+// doc://com.apple.documentation/documentation/objectivec/nxstrstructkeyprototype
 declare const NXStrStructKeyPrototype: cocoascript.NXHashTablePrototype;
+// doc://com.apple.documentation/documentation/objectivec/objc_property_attribute_t/1418734-name
 declare const name: string;
+// doc://com.apple.documentation/documentation/objectivec/objc_property_attribute_t/1418797-value
 declare const value: string;
+// doc://com.apple.documentation/documentation/objectivec/nxhashtable/1430264-info
 declare const info: void;
+// doc://com.apple.documentation/documentation/objectivec/nxhashtable/1430270-prototype
 declare const prototype: cocoascript.NXHashTablePrototype;

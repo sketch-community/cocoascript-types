@@ -502,6 +502,7 @@ declare namespace cocoascript {
     sendRequestWithFlag_commandCode_data_completionHandler(flags: cocoascript.NSInteger, commandCode: cocoascript.NSInteger, data: cocoascript.NSData, completionHandler: cocoascript.NSError):void;
   }
 }
+// doc://com.apple.documentation/documentation/corenfc/nfciso15693tagresponseerrorkey
 declare const NFCISO15693TagResponseErrorKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -548,6 +549,7 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corenfc/nfcreadererror
   type NFCReaderError = cocoascript.NSInteger;
 }
+// doc://com.apple.documentation/documentation/corenfc/nfcerrordomain
 declare const NFCErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corenfc/pollingrequestcode

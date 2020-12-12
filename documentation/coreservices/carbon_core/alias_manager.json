@@ -1,0 +1,791 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create and resolve alias records that describe file system objects such as files, directories, and volumes. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1651719,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Alias Manager",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/carbon_core/alias_manager"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core": {
+      "title": "Carbon Core",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+      "url": "/documentation/coreservices/carbon_core",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444389-fsmatchaliasbulk": {
+      "title": "FSMatchAliasBulk",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444389-fsmatchaliasbulk",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444389-fsmatchaliasbulk",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies a list of possible matches for an alias."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl": {
+      "title": "NSURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl"
+    },
+    "devLink-1744786": {
+      "identifier": "devLink-1744786",
+      "type": "link",
+      "title": "Locating Files Using Bookmarks",
+      "url": "https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/AccessingFilesandDirectories/AccessingFilesandDirectories.html#//apple_ref/doc/uid/TP40010672-CH3-SW10"
+    },
+    "devLink-1744715": {
+      "identifier": "devLink-1744715",
+      "type": "link",
+      "title": "File System Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444363-fsnewalias": {
+      "title": "FSNewAlias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444363-fsnewalias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444363-fsnewalias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new alias record, given a target file or directory."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444376-fsnewaliasunicode": {
+      "title": "FSNewAliasUnicode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444376-fsnewaliasunicode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444376-fsnewaliasunicode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new alias record, given the Unicode name and parent directory of the target."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444431-fsnewaliasfrompath": {
+      "title": "FSNewAliasFromPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444431-fsnewaliasfrompath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444431-fsnewaliasfrompath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new alias record, given the pathname of the target file or directory."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444337-fsnewaliasminimal": {
+      "title": "FSNewAliasMinimal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444337-fsnewaliasminimal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444337-fsnewaliasminimal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new minimal alias record, given a target file or directory."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444409-fsnewaliasminimalunicode": {
+      "title": "FSNewAliasMinimalUnicode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444409-fsnewaliasminimalunicode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444409-fsnewaliasminimalunicode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a minimal alias, given the Unicode name and parent directory of the target."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444399-fsupdatealias": {
+      "title": "FSUpdateAlias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444399-fsupdatealias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444399-fsupdatealias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates an alias record for a specified target."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444419-getaliassize": {
+      "title": "GetAliasSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444419-getaliassize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444419-getaliassize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the size of an alias record referenced by a handle."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444380-getaliassizefromptr": {
+      "title": "GetAliasSizeFromPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444380-getaliassizefromptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444380-getaliassizefromptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the size of an alias record referenced by a pointer."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444311-getaliasusertype": {
+      "title": "GetAliasUserType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444311-getaliasusertype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444311-getaliasusertype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the user type for an alias record referenced by a handle."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444428-setaliasusertype": {
+      "title": "SetAliasUserType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444428-setaliasusertype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444428-setaliasusertype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the user type for an alias record referenced by a handle."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444345-getaliasusertypefromptr": {
+      "title": "GetAliasUserTypeFromPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444345-getaliasusertypefromptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444345-getaliasusertypefromptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the user type for the alias record referenced by a pointer."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444309-setaliasusertypewithptr": {
+      "title": "SetAliasUserTypeWithPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444309-setaliasusertypewithptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444309-setaliasusertypewithptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the user type for the alias record referenced by a pointer."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444271-fscopyaliasinfo": {
+      "title": "FSCopyAliasInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444271-fscopyaliasinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444271-fscopyaliasinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns information from an alias handle."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444297-fsresolvealias": {
+      "title": "FSResolveAlias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444297-fsresolvealias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444297-fsresolvealias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "FSRef"
+        },
+        {
+          "type": "text",
+          "text": " to the single most likely target of an alias record."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444279-fsresolvealiaswithmountflags": {
+      "title": "FSResolveAliasWithMountFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444279-fsresolvealiaswithmountflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444279-fsresolvealiaswithmountflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "FSRef"
+        },
+        {
+          "type": "text",
+          "text": " to the target of an alias."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444287-fsfollowfinderalias": {
+      "title": "FSFollowFinderAlias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444287-fsfollowfinderalias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444287-fsfollowfinderalias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves an alias record obtained from a Finder alias file."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444426-fsisaliasfile": {
+      "title": "FSIsAliasFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444426-fsisaliasfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444426-fsisaliasfile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether a file system object is an alias file, a data file, or a folder."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444372-fsresolvealiasfile": {
+      "title": "FSResolveAliasFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444372-fsresolvealiasfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444372-fsresolvealiasfile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves an alias contained in an alias file."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444327-fsresolvealiasfilewithmountflags": {
+      "title": "FSResolveAliasFileWithMountFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444327-fsresolvealiasfilewithmountflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444327-fsresolvealiasfilewithmountflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves an alias contained in an alias file."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/fsaliasfilterprocptr": {
+      "title": "FSAliasFilterProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/fsaliasfilterprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/fsaliasfilterprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines a pointer to an alias filtering callback function that filters out possible targets identified by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/1444389-fsmatchaliasbulk"
+        },
+        {
+          "type": "text",
+          "text": " function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/aliasinfotype": {
+      "title": "AliasInfoType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/aliasinfotype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/aliasinfotype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines the alias record information type used in the index parameter of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "GetAliasInfo"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/aliasrecord": {
+      "title": "AliasRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/aliasrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/aliasrecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an alias record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/fsaliasinfo": {
+      "title": "FSAliasInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/fsaliasinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/fsaliasinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an information block passed to the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "FSCopyAliasInfo"
+        },
+        {
+          "type": "text",
+          "text": " function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/fsaliasinfobitmap": {
+      "title": "FSAliasInfoBitmap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/fsaliasinfobitmap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/fsaliasinfobitmap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returned by the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "FSCopyAliasInfo"
+        },
+        {
+          "type": "text",
+          "text": " function to indicate which fields of the alias information structure contain valid data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444436-volume_mount_options": {
+      "title": "Volume Mount Options",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444436-volume_mount_options",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1444436-volume_mount_options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify how an alias should be resolved."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444405-matching_constants": {
+      "title": "Matching Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444405-matching_constants",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1444405-matching_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the matching criteria for the alias matching functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444395-alias_resource_type": {
+      "title": "Alias Resource Type",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444395-alias_resource_type",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1444395-alias_resource_type",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the file type of an alias resource file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444386-information_type_constants": {
+      "title": "Information Type Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444386-information_type_constants",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1444386-information_type_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "GetAliasInfo"
+        },
+        {
+          "type": "text",
+          "text": " function uses these constants in the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "index"
+        },
+        {
+          "type": "text",
+          "text": " parameter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager": {
+      "title": "Alias Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/alias_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and resolve alias records that describe file system objects such as files, directories, and volumes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager": {
+      "title": "Component Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/component_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Find and use components in your app or add custom components to system-provided services, such as QuickTime and Core Audio. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/file_manager": {
+      "title": "File Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/file_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/file_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with files, folders, and volumes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager": {
+      "title": "Gestalt Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/gestalt_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Investigate the operating environment of your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager": {
+      "title": "Text Encoding Conversion Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handle text encoding conversion between apps and transfer text across different platforms."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "In macOS 10.8 and later, use the bookmark APIs provided by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl"
+        },
+        {
+          "type": "text",
+          "text": " class instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Locating Files Using Bookmarks",
+          "destination": "https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/AccessingFilesandDirectories/AccessingFilesandDirectories.html#//apple_ref/doc/uid/TP40010672-CH3-SW10"
+        },
+        {
+          "type": "text",
+          "text": " in "
+        },
+        {
+          "type": "link",
+          "title": "File System Programming Guide",
+          "destination": "https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating and Updating Alias Records",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1444363-fsnewalias",
+        "doc://com.apple.documentation/documentation/coreservices/1444376-fsnewaliasunicode",
+        "doc://com.apple.documentation/documentation/coreservices/1444431-fsnewaliasfrompath",
+        "doc://com.apple.documentation/documentation/coreservices/1444337-fsnewaliasminimal",
+        "doc://com.apple.documentation/documentation/coreservices/1444409-fsnewaliasminimalunicode",
+        "doc://com.apple.documentation/documentation/coreservices/1444399-fsupdatealias"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Alias Size",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1444419-getaliassize",
+        "doc://com.apple.documentation/documentation/coreservices/1444380-getaliassizefromptr"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting and Setting Alias User Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1444311-getaliasusertype",
+        "doc://com.apple.documentation/documentation/coreservices/1444428-setaliasusertype",
+        "doc://com.apple.documentation/documentation/coreservices/1444345-getaliasusertypefromptr",
+        "doc://com.apple.documentation/documentation/coreservices/1444309-setaliasusertypewithptr"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Resolving and Reading Alias Records",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1444271-fscopyaliasinfo",
+        "doc://com.apple.documentation/documentation/coreservices/1444389-fsmatchaliasbulk",
+        "doc://com.apple.documentation/documentation/coreservices/1444297-fsresolvealias",
+        "doc://com.apple.documentation/documentation/coreservices/1444279-fsresolvealiaswithmountflags"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working With Finder Alias Files",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1444287-fsfollowfinderalias",
+        "doc://com.apple.documentation/documentation/coreservices/1444426-fsisaliasfile",
+        "doc://com.apple.documentation/documentation/coreservices/1444372-fsresolvealiasfile",
+        "doc://com.apple.documentation/documentation/coreservices/1444327-fsresolvealiasfilewithmountflags"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/fsaliasfilterprocptr"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/aliasinfotype",
+        "doc://com.apple.documentation/documentation/coreservices/aliasrecord",
+        "doc://com.apple.documentation/documentation/coreservices/fsaliasinfo"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/fsaliasinfobitmap",
+        "doc://com.apple.documentation/documentation/coreservices/1444436-volume_mount_options",
+        "doc://com.apple.documentation/documentation/coreservices/1444405-matching_constants",
+        "doc://com.apple.documentation/documentation/coreservices/1444395-alias_resource_type",
+        "doc://com.apple.documentation/documentation/coreservices/1444386-information_type_constants"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/file_manager",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager"
+      ],
+      "title": "Managers",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/apple_events",
+        "doc://com.apple.documentation/documentation/coreservices/1527224-apple_event_recording_event_id_c"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/applicationservices",
+        "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager",
+        "doc://com.apple.documentation/documentation/coreservices/1527224-apple_event_recording_event_id_c"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/1527224-apple_event_recording_event_id_c/kaestartrecording",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1443649,
+  "kind": "symbol",
+  "metadata": {
+    "title": "kAEStartRecording",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:@Ea@kAEStartRecording@kAEStartRecording",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1527224-apple_event_recording_event_id_c/kaestartrecording"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/kaestartrecording"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/apple_events": {
+      "title": "Apple Events",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/apple_events",
+      "url": "/documentation/coreservices/apple_events",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1527224-apple_event_recording_event_id_c": {
+      "title": "Apple Event Recording Event ID Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1527224-apple_event_recording_event_id_c",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1527224-apple_event_recording_event_id_c",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify event IDs for events that deal with Apple event recording."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/applicationservices": {
+      "title": "Application Services",
+      "identifier": "doc://com.apple.documentation/documentation/applicationservices",
+      "url": "/documentation/applicationservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager": {
+      "title": "Apple Event Manager",
+      "identifier": "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager",
+      "url": "/documentation/applicationservices/apple_event_manager",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "kAEStartRecording"
+            },
+            {
+              "kind": "text",
+              "text": " = 'reca'"
+            }
+          ],
+          "platforms": [
+            "macOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Event ID for an event by a scripting component to the recording process (or to any running process on the local computer), but handled by the Apple Event Manager. The Apple Event Manager responds by turning on recording and sending a r"
+            },
+            {
+              "type": "codeVoice",
+              "code": "ecordingon"
+            },
+            {
+              "type": "text",
+              "text": " event to all running processes on the local computer. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If sent by process serial number (PSN), this event must be addressed using a real PSN; it should never be sent to an address specified as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kCurrentProcess"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

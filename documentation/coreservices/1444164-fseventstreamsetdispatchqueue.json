@@ -1,0 +1,254 @@
+{
+  "abstract": [],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/file_system_events"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/1444164-fseventstreamsetdispatchqueue",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1444164,
+  "kind": "symbol",
+  "metadata": {
+    "title": "FSEventStreamSetDispatchQueue",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.6",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:@F@FSEventStreamSetDispatchQueue",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1444164-fseventstreamsetdispatchqueue"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1444164-fseventstreamsetdispatchqueue"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_system_events": {
+      "title": "File System Events",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_system_events",
+      "url": "/documentation/coreservices/file_system_events",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/fseventstreamref": {
+      "title": "FSEventStreamRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/fseventstreamref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/fseventstreamref"
+    },
+    "doc://com.apple.documentation/documentation/dispatch/dispatch_queue_t": {
+      "title": "dispatch_queue_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/dispatch/dispatch_queue_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/dispatch/dispatch_queue_t"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "FSEventStreamSetDispatchQueue"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@FSEventStreamRef",
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/fseventstreamref",
+              "text": "FSEventStreamRef"
+            },
+            {
+              "kind": "text",
+              "text": " streamRef, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@dispatch_queue_t",
+              "identifier": "doc://com.apple.documentation/documentation/dispatch/dispatch_queue_t",
+              "text": "dispatch_queue_t"
+            },
+            {
+              "kind": "text",
+              "text": " q);"
+            }
+          ],
+          "platforms": [
+            "macOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "streamRef",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A valid stream."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The dispatch queue to use to receive events (or NULL to to stop receiving events from the stream)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function schedules the stream on the specified dispatch queue. The caller is responsible for ensuring that the stream is scheduled on a dispatch queue and that the queue is started."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If there is a problem scheduling the stream on the queue an error will be returned when you try to Start the stream."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To start receiving events on the stream, call FSEventStreamStart()."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To remove the stream from the queue on which it was scheduled, call FSEventStreamSetDispatchQueue() with a NULL queue parameter or call FSEventStreamInvalidate() which will do the same thing. Note: you must eventually call FSEventStreamInvalidate() and it is an error to call FSEventStreamInvalidate() without having the stream either scheduled on a runloop or a dispatch queue, so do not set the dispatch queue to NULL before calling FSEventStreamInvalidate()."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

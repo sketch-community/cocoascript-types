@@ -27,6 +27,7 @@ export class ConstDeclaration {
 
   generate() {
     const code = new CodeGenerator();
+    code.appendLine(`// ${this.id}`);
     code.appendLine(`declare const ${this.name}: ${normalizeType(this.type)};`)
     code.appendLine();
     return code.toString();

@@ -633,17 +633,21 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clerror
   type CLError = cocoascript.NSInteger;
 }
+// doc://com.apple.documentation/documentation/corelocation/cllocationdistancemax
 declare const CLLocationDistanceMax: cocoascript.CLLocationDistance;
+// doc://com.apple.documentation/documentation/corelocation/kcldistancefilternone
 declare const kCLDistanceFilterNone: cocoascript.CLLocationDistance;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clactivitytype
   type CLActivityType = cocoascript.NSInteger;
 }
+// doc://com.apple.documentation/documentation/corelocation/kclheadingfilternone
 declare const kCLHeadingFilterNone: cocoascript.CLLocationDegrees;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/cldeviceorientation
   type CLDeviceOrientation = number;
 }
+// doc://com.apple.documentation/documentation/corelocation/cltimeintervalmax
 declare const CLTimeIntervalMax: cocoascript.NSTimeInterval;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/cllocationdegrees
@@ -653,13 +657,21 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clgeocodecompletionhandler
   type CLGeocodeCompletionHandler = cocoascript.NSError;
 }
+// doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracybestfornavigation
 declare const kCLLocationAccuracyBestForNavigation: cocoascript.CLLocationAccuracy;
+// doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracybest
 declare const kCLLocationAccuracyBest: cocoascript.CLLocationAccuracy;
+// doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracynearesttenmeters
 declare const kCLLocationAccuracyNearestTenMeters: cocoascript.CLLocationAccuracy;
+// doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracyhundredmeters
 declare const kCLLocationAccuracyHundredMeters: cocoascript.CLLocationAccuracy;
+// doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracykilometer
 declare const kCLLocationAccuracyKilometer: cocoascript.CLLocationAccuracy;
+// doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracythreekilometers
 declare const kCLLocationAccuracyThreeKilometers: cocoascript.CLLocationAccuracy;
+// doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracyreduced
 declare const kCLLocationAccuracyReduced: cocoascript.CLLocationAccuracy;
+// doc://com.apple.documentation/documentation/corelocation/kcllocationcoordinate2dinvalid
 declare const kCLLocationCoordinate2DInvalid: cocoascript.CLLocationCoordinate2D;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clbeaconmajorvalue

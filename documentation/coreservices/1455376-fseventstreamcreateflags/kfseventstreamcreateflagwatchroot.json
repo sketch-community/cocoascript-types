@@ -1,0 +1,156 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/file_system_events",
+        "doc://com.apple.documentation/documentation/coreservices/1455376-fseventstreamcreateflags"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/1455376-fseventstreamcreateflags/kfseventstreamcreateflagwatchroot",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1448056,
+  "kind": "symbol",
+  "metadata": {
+    "title": "kFSEventStreamCreateFlagWatchRoot",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.5",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:@Ea@kFSEventStreamCreateFlagNone@kFSEventStreamCreateFlagWatchRoot",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1455376-fseventstreamcreateflags/kfseventstreamcreateflagwatchroot"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/kfseventstreamcreateflagwatchroot"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_system_events": {
+      "title": "File System Events",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_system_events",
+      "url": "/documentation/coreservices/file_system_events",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1455376-fseventstreamcreateflags": {
+      "title": "FSEventStreamCreateFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1455376-fseventstreamcreateflags",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1455376-fseventstreamcreateflags",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "kFSEventStreamCreateFlagWatchRoot"
+            },
+            {
+              "kind": "text",
+              "text": " = 0x00000004"
+            }
+          ],
+          "platforms": [
+            "macOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Request notifications of changes along the path to the path(s) you're watching. For example, with this flag, if you watch \"/foo/bar\" and it is renamed to \"/foo/bar.old\", you would receive a RootChanged event. The same is true if the directory \"/foo\" were renamed. The event you receive is a special event: the path for the event is the original path you specified, the flag kFSEventStreamEventFlagRootChanged is set and event ID is zero. RootChanged events are useful to indicate that you should rescan a particular hierarchy because it changed completely (as opposed to the things inside of it changing). If you want to track the current location of a directory, it is best to open the directory before creating the stream so that you have a file descriptor for it and can issue an F_GETPATH fcntl() to find the current path."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,2130 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Index and search natural language documents."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/search_kit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1654560,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Search Kit",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/search_kit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/search_kit"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/search_kit#1654733": {
+      "title": "Managing Indexes",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/search_kit#1654733",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/coreservices/search_kit#1654733"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skdocumentref": {
+      "title": "SKDocumentRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skdocumentref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque data type representing a document’s URL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfurlref": {
+      "title": "CFURLRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurlref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfurlref"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1443079-sksearchcreate": {
+      "title": "SKSearchCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1443079-sksearchcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1443079-sksearchcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an asynchronous search object for querying an index, and initiates search."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448608-sksearchfindmatches": {
+      "title": "SKSearchFindMatches",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448608-sksearchfindmatches",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448608-sksearchfindmatches",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extracts search result information from a search object."
+        }
+      ]
+    },
+    "devLink-1724390": {
+      "identifier": "devLink-1724390",
+      "type": "link",
+      "title": "Search Kit Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/SearchKitConcepts/searchKit_intro/searchKit_intro.html#//apple_ref/doc/uid/TP40001071"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1446111-skindexcreatewithurl": {
+      "title": "SKIndexCreateWithURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1446111-skindexcreatewithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1446111-skindexcreatewithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a named index in a file whose location is specified with a CFURL object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1447500-skindexcreatewithmutabledata": {
+      "title": "SKIndexCreateWithMutableData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1447500-skindexcreatewithmutabledata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1447500-skindexcreatewithmutabledata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a named index stored in a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFMutableDataRef"
+        },
+        {
+          "type": "text",
+          "text": " object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1446398-skindexopenwithdata": {
+      "title": "SKIndexOpenWithData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1446398-skindexopenwithdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1446398-skindexopenwithdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens an existing, named index for searching only."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444201-skindexopenwithmutabledata": {
+      "title": "SKIndexOpenWithMutableData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444201-skindexopenwithmutabledata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444201-skindexopenwithmutabledata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens an existing, named index for searching and updating."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449017-skindexopenwithurl": {
+      "title": "SKIndexOpenWithURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449017-skindexopenwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449017-skindexopenwithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens an existing, named index stored in a file whose location is specified with a CFURL object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1442401-skindexclose": {
+      "title": "SKIndexClose",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1442401-skindexclose",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1442401-skindexclose",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Closes an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1442236-skindexgetindextype": {
+      "title": "SKIndexGetIndexType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1442236-skindexgetindextype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1442236-skindexgetindextype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the category of an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1450223-skindexgettypeid": {
+      "title": "SKIndexGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1450223-skindexgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1450223-skindexgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the type identifier for Search Kit indexes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444518-skindexadddocumentwithtext": {
+      "title": "SKIndexAddDocumentWithText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444518-skindexadddocumentwithtext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444518-skindexadddocumentwithtext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a document URL ("
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") object, and the associated document’s textual content, to an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444897-skindexadddocument": {
+      "title": "SKIndexAddDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444897-skindexadddocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444897-skindexadddocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds location information for a file-based document, and the document’s textual content, to an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1450667-skindexflush": {
+      "title": "SKIndexFlush",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1450667-skindexflush",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1450667-skindexflush",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invokes all pending updates associated with an index and commits them to backing store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1443628-skindexcompact": {
+      "title": "SKIndexCompact",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1443628-skindexcompact",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1443628-skindexcompact",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invokes all pending updates associated with an index, compacts the index if compaction is needed, and commits all changes to backing store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449093-skindexgetdocumentcount": {
+      "title": "SKIndexGetDocumentCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449093-skindexgetdocumentcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449093-skindexgetdocumentcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the total number of documents represented in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444628-skindexgetmaximumdocumentid": {
+      "title": "SKIndexGetMaximumDocumentID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444628-skindexgetmaximumdocumentid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444628-skindexgetmaximumdocumentid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the highest-numbered document ID in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444278-skindexgetmaximumtermid": {
+      "title": "SKIndexGetMaximumTermID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444278-skindexgetmaximumtermid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444278-skindexgetmaximumtermid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the highest-numbered term ID in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1446189-skindexdocumentiteratorcreate": {
+      "title": "SKIndexDocumentIteratorCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1446189-skindexdocumentiteratorcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1446189-skindexdocumentiteratorcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an index-based iterator for document URL objects (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") owned by a parent document URL object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1442212-skindexdocumentiteratorcopynext": {
+      "title": "SKIndexDocumentIteratorCopyNext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1442212-skindexdocumentiteratorcopynext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1442212-skindexdocumentiteratorcopynext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the next document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") from an index using a document iterator."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1443022-skindexdocumentiteratorgettypeid": {
+      "title": "SKIndexDocumentIteratorGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1443022-skindexdocumentiteratorgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1443022-skindexdocumentiteratorgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the type identifier for Search Kit document iterators."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1443461-skindexgetanalysisproperties": {
+      "title": "SKIndexGetAnalysisProperties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1443461-skindexgetanalysisproperties",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1443461-skindexgetanalysisproperties",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the text analysis properties of an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449899-skindexmovedocument": {
+      "title": "SKIndexMoveDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449899-skindexmovedocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449899-skindexmovedocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the parent of a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444375-skindexremovedocument": {
+      "title": "SKIndexRemoveDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444375-skindexremovedocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444375-skindexremovedocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") and its children, if any, from an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448935-skindexrenamedocument": {
+      "title": "SKIndexRenameDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448935-skindexrenamedocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448935-skindexrenamedocument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the name of a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448696-skindexsetmaximumbytesbeforeflus": {
+      "title": "SKIndexSetMaximumBytesBeforeFlush",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448696-skindexsetmaximumbytesbeforeflus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448696-skindexsetmaximumbytesbeforeflus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Not recommended. Sets the memory size limit for updates to an index, measured in bytes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1445329-skindexgetmaximumbytesbeforeflus": {
+      "title": "SKIndexGetMaximumBytesBeforeFlush",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1445329-skindexgetmaximumbytesbeforeflus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1445329-skindexgetmaximumbytesbeforeflus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Not recommended. Gets the memory size limit for updates to an index, measured in bytes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1447859-skloaddefaultextractorplugins": {
+      "title": "SKLoadDefaultExtractorPlugIns",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1447859-skloaddefaultextractorplugins",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1447859-skloaddefaultextractorplugins",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells Search Kit to use the Spotlight metadata importers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1442564-skdocumentcreatewithurl": {
+      "title": "SKDocumentCreateWithURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1442564-skdocumentcreatewithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1442564-skdocumentcreatewithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") from a "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurlref"
+        },
+        {
+          "type": "text",
+          "text": " object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1443212-skdocumentcreate": {
+      "title": "SKDocumentCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1443212-skdocumentcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1443212-skdocumentcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") based on a scheme, parent, and name."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449624-skdocumentcopyurl": {
+      "title": "SKDocumentCopyURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449624-skdocumentcopyurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449624-skdocumentcopyurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Builds a "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurlref"
+        },
+        {
+          "type": "text",
+          "text": " object from a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1442657-skdocumentgetname": {
+      "title": "SKDocumentGetName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1442657-skdocumentgetname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1442657-skdocumentgetname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the name of a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444449-skdocumentgetparent": {
+      "title": "SKDocumentGetParent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444449-skdocumentgetparent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444449-skdocumentgetparent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the parent of a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448262-skdocumentgetschemename": {
+      "title": "SKDocumentGetSchemeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448262-skdocumentgetschemename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448262-skdocumentgetschemename",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the scheme name for a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448891-skdocumentgettypeid": {
+      "title": "SKDocumentGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448891-skdocumentgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448891-skdocumentgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the type identifier for Search Kit document URL objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1442760-skindexcopydocumentfordocumentid": {
+      "title": "SKIndexCopyDocumentForDocumentID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1442760-skindexcopydocumentfordocumentid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1442760-skindexcopydocumentfordocumentid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") from an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1445499-skindexcopyinfofordocumentids": {
+      "title": "SKIndexCopyInfoForDocumentIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1445499-skindexcopyinfofordocumentids",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1445499-skindexcopyinfofordocumentids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets document names and parent IDs based on document IDs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1445305-skindexcopydocumentrefsfordocume": {
+      "title": "SKIndexCopyDocumentRefsForDocumentIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1445305-skindexcopydocumentrefsfordocume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1445305-skindexcopydocumentrefsfordocume",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets document URL objects (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") based on document IDs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1443501-skindexcopydocumenturlsfordocume": {
+      "title": "SKIndexCopyDocumentURLsForDocumentIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1443501-skindexcopydocumenturlsfordocume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1443501-skindexcopydocumenturlsfordocume",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets document URLs based on document IDs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448003-skindexcopydocumentidarrayforter": {
+      "title": "SKIndexCopyDocumentIDArrayForTermID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448003-skindexcopydocumentidarrayforter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448003-skindexcopydocumentidarrayforter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains document IDs for documents that contain a given term."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1446868-skindexcopytermidarrayfordocumen": {
+      "title": "SKIndexCopyTermIDArrayForDocumentID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1446868-skindexcopytermidarrayfordocumen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1446868-skindexcopytermidarrayfordocumen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the IDs for the terms of an indexed document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1442802-skindexcopytermstringfortermid": {
+      "title": "SKIndexCopyTermStringForTermID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1442802-skindexcopytermstringfortermid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1442802-skindexcopytermstringfortermid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains a term, specified by ID, from an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448558-skindexgettermidfortermstring": {
+      "title": "SKIndexGetTermIDForTermString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448558-skindexgettermidfortermstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448558-skindexgettermidfortermstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the ID for a term in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444576-skindexsetdocumentproperties": {
+      "title": "SKIndexSetDocumentProperties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444576-skindexsetdocumentproperties",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444576-skindexsetdocumentproperties",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the application-defined properties of a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449500-skindexcopydocumentproperties": {
+      "title": "SKIndexCopyDocumentProperties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449500-skindexcopydocumentproperties",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449500-skindexcopydocumentproperties",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the application-defined properties of an indexed document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1443396-skindexgetdocumentstate": {
+      "title": "SKIndexGetDocumentState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1443396-skindexgetdocumentstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1443396-skindexgetdocumentstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the current indexing state of a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448341-skindexgetdocumenttermcount": {
+      "title": "SKIndexGetDocumentTermCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448341-skindexgetdocumenttermcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448341-skindexgetdocumenttermcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the number of terms for a document in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1447537-skindexgetdocumenttermfrequency": {
+      "title": "SKIndexGetDocumentTermFrequency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1447537-skindexgetdocumenttermfrequency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1447537-skindexgetdocumenttermfrequency",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the number of occurrences of a term in a document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444015-skindexgettermdocumentcount": {
+      "title": "SKIndexGetTermDocumentCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444015-skindexgettermdocumentcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444015-skindexgettermdocumentcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the number of documents containing a given term represented in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444437-skindexgetdocumentid": {
+      "title": "SKIndexGetDocumentID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444437-skindexgetdocumentid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444437-skindexgetdocumentid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the ID of a document URL object (of type "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentref"
+        },
+        {
+          "type": "text",
+          "text": ") in an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1442083-sksearchcancel": {
+      "title": "SKSearchCancel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1442083-sksearchcancel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1442083-sksearchcancel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels an asynchronous search request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448621-sksearchgettypeid": {
+      "title": "SKSearchGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448621-sksearchgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448621-sksearchgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the type identifier for Search Kit search objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1446229-sksummarycreatewithstring": {
+      "title": "SKSummaryCreateWithString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1446229-sksummarycreatewithstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1446229-sksummarycreatewithstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a summary object based on a text string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444767-sksummarygetsentencesummaryinfo": {
+      "title": "SKSummaryGetSentenceSummaryInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444767-sksummarygetsentencesummaryinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444767-sksummarygetsentencesummaryinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets detailed information about a body of text for constructing a custom sentence-based summary string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1447517-sksummarygetparagraphsummaryinfo": {
+      "title": "SKSummaryGetParagraphSummaryInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1447517-sksummarygetparagraphsummaryinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1447517-sksummarygetparagraphsummaryinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets detailed information about a body of text for constructing a custom paragraph-based summary string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1450009-sksummarygetsentencecount": {
+      "title": "SKSummaryGetSentenceCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1450009-sksummarygetsentencecount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1450009-sksummarygetsentencecount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the number of sentences in a summarization object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449304-sksummarygetparagraphcount": {
+      "title": "SKSummaryGetParagraphCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449304-sksummarygetparagraphcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449304-sksummarygetparagraphcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the number of paragraphs in a summarization object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1450287-sksummarycopysentenceatindex": {
+      "title": "SKSummaryCopySentenceAtIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1450287-sksummarycopysentenceatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1450287-sksummarycopysentenceatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a specified sentence from the text in a summarization object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1445711-sksummarycopyparagraphatindex": {
+      "title": "SKSummaryCopyParagraphAtIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1445711-sksummarycopyparagraphatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1445711-sksummarycopyparagraphatindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a specified paragraph from the text in a summarization object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449700-sksummarycopysentencesummarystri": {
+      "title": "SKSummaryCopySentenceSummaryString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449700-sksummarycopysentencesummarystri",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449700-sksummarycopysentencesummarystri",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a text string consisting of a summary with, at most, the requested number of sentences."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449746-sksummarycopyparagraphsummarystr": {
+      "title": "SKSummaryCopyParagraphSummaryString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449746-sksummarycopyparagraphsummarystr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449746-sksummarycopyparagraphsummarystr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a text string consisting of a summary with, at most, the requested number of paragraphs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444796-sksummarygettypeid": {
+      "title": "SKSummaryGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444796-sksummarygettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444796-sksummarygettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the type identifier for Search Kit summarization objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448627-sksearchgroupcreate": {
+      "title": "SKSearchGroupCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448627-sksearchgroupcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448627-sksearchgroupcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a search group as an array of references to indexes."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448615-sksearchgroupcopyindexes": {
+      "title": "SKSearchGroupCopyIndexes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448615-sksearchgroupcopyindexes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448615-sksearchgroupcopyindexes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the indexes for a search group."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448637-sksearchgroupgettypeid": {
+      "title": "SKSearchGroupGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448637-sksearchgroupgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448637-sksearchgroupgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. Use asynchronous searching with SKSearchCreate instead, which does not employ search groups."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448629-sksearchresultscreatewithdocumen": {
+      "title": "SKSearchResultsCreateWithDocuments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448629-sksearchresultscreatewithdocumen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448629-sksearchresultscreatewithdocumen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Finds documents similar to given example documents."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448618-sksearchresultsgetinfoinrange": {
+      "title": "SKSearchResultsGetInfoInRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448618-sksearchresultsgetinfoinrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448618-sksearchresultsgetinfoinrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extracts information from a Search Kit query result."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448612-sksearchresultscopymatchingterms": {
+      "title": "SKSearchResultsCopyMatchingTerms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448612-sksearchresultscopymatchingterms",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448612-sksearchresultscopymatchingterms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the terms in a document that match a query."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448598-sksearchresultsgetcount": {
+      "title": "SKSearchResultsGetCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448598-sksearchresultsgetcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448598-sksearchresultsgetcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the total number of found items in a search."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448603-sksearchresultsgettypeid": {
+      "title": "SKSearchResultsGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448603-sksearchresultsgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448603-sksearchresultsgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the type identifier for Search Kit search results."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1448610-sksearchresultscreatewithquery": {
+      "title": "SKSearchResultsCreateWithQuery",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1448610-sksearchresultscreatewithquery",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1448610-sksearchresultscreatewithquery",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Queries the indexes in a search group."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchresultsfiltercallback": {
+      "title": "SKSearchResultsFilterCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchresultsfiltercallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchresultsfiltercallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. Use "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SKSearchCreate"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SKSearchFindMatches"
+        },
+        {
+          "type": "text",
+          "text": " instead, which do not use a callback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skindexdocumentiteratorref": {
+      "title": "SKIndexDocumentIteratorRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skindexdocumentiteratorref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skindexdocumentiteratorref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque data type representing an index-based document iterator."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skindexref": {
+      "title": "SKIndexRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skindexref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skindexref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque data type representing an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchref": {
+      "title": "SKSearchRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque data type representing an asynchronous search."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksummaryref": {
+      "title": "SKSummaryRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksummaryref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksummaryref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque data type representing summarization information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skdocumentid": {
+      "title": "SKDocumentID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skdocumentid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines an opaque data type representing a lightweight document identifier."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchresultsref": {
+      "title": "SKSearchResultsRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchresultsref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchresultsref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. Use asynchronous searching with SKSearchCreate instead, which does not employ search groups."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchgroupref": {
+      "title": "SKSearchGroupRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchgroupref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchgroupref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. Use asynchronous searching with SKSearchCreate instead, which does not employ search groups."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/search_kit/text_analysis_keys": {
+      "title": "Text Analysis Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/search_kit/text_analysis_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/search_kit/text_analysis_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Each of these constants is an optional key in a Search Kit index’s text analysis properties dictionary. The constant descriptions describe the corresponding values for each of these keys. These keys are declared in the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Analysis.h"
+        },
+        {
+          "type": "text",
+          "text": " header file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate": {
+      "title": "SKDocumentIndexState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skdocumentindexstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The indexing state of a document."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchoptions": {
+      "title": "SKSearchOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the search options available for the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/1443079-sksearchcreate"
+        },
+        {
+          "type": "text",
+          "text": " function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skindextype": {
+      "title": "SKIndexType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skindextype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skindextype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the category of an index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/search_kit/deprecated_text_analysis_keys": {
+      "title": "Deprecated Text Analysis Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/search_kit/deprecated_text_analysis_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/search_kit/deprecated_text_analysis_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search Kit ignores the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kSKLanguageTypes"
+        },
+        {
+          "type": "text",
+          "text": " constant. It determines language directly by document content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchtype": {
+      "title": "SKSearchType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Search Kit ignores the constants in this group. Use asynchronous searching with "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SKSearchCreate"
+        },
+        {
+          "type": "text",
+          "text": " instead, which uses query syntax to determine search type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstateaddpending": {
+      "title": "kSKDocumentStateAddPending",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstateaddpending",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skdocumentindexstate/kskdocumentstateaddpending",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the document is not in the index but will be added after the index is flushed or closed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstatedeletepending": {
+      "title": "kSKDocumentStateDeletePending",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstatedeletepending",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skdocumentindexstate/kskdocumentstatedeletepending",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the document is in the index but will be deleted after the index is flushed or closed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstateindexed": {
+      "title": "kSKDocumentStateIndexed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstateindexed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skdocumentindexstate/kskdocumentstateindexed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the document is indexed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstatenotindexed": {
+      "title": "kSKDocumentStateNotIndexed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstatenotindexed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skdocumentindexstate/kskdocumentstatenotindexed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the document is not indexed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexinverted": {
+      "title": "kSKIndexInverted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexinverted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skindextype/kskindexinverted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies an inverted index, mapping terms to documents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexinvertedvector": {
+      "title": "kSKIndexInvertedVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexinvertedvector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skindextype/kskindexinvertedvector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies an index type with all the capabilities of an inverted and a vector index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexunknown": {
+      "title": "kSKIndexUnknown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexunknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skindextype/kskindexunknown",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies an unknown index type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexvector": {
+      "title": "kSKIndexVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexvector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/skindextype/kskindexvector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies a vector index, mapping documents to terms."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchbooleanranked": {
+      "title": "kSKSearchBooleanRanked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchbooleanranked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchtype/ksksearchbooleanranked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. Specifies a query that can include Boolean operators including "
+        },
+        {
+          "type": "codeVoice",
+          "code": "'|'"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "'&'"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "'!'"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "'('"
+        },
+        {
+          "type": "text",
+          "text": ", and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "')'"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchprefixranked": {
+      "title": "kSKSearchPrefixRanked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchprefixranked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchtype/ksksearchprefixranked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. Specifies a prefix-based search, which matches terms that begin with the query string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchranked": {
+      "title": "kSKSearchRanked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchranked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchtype/ksksearchranked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. Specifies a basic ranked search."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchrequiredranked": {
+      "title": "kSKSearchRequiredRanked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchrequiredranked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/sksearchtype/ksksearchrequiredranked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deprecated. Specifies a query that can include required ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "'+'"
+        },
+        {
+          "type": "text",
+          "text": ") or excluded ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "'-'"
+        },
+        {
+          "type": "text",
+          "text": ") terms."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating, Opening, and Closing Indexes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1446111-skindexcreatewithurl",
+        "doc://com.apple.documentation/documentation/coreservices/1447500-skindexcreatewithmutabledata",
+        "doc://com.apple.documentation/documentation/coreservices/1446398-skindexopenwithdata",
+        "doc://com.apple.documentation/documentation/coreservices/1444201-skindexopenwithmutabledata",
+        "doc://com.apple.documentation/documentation/coreservices/1449017-skindexopenwithurl",
+        "doc://com.apple.documentation/documentation/coreservices/1442401-skindexclose",
+        "doc://com.apple.documentation/documentation/coreservices/1442236-skindexgetindextype",
+        "doc://com.apple.documentation/documentation/coreservices/1450223-skindexgettypeid"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "Search Kit performs its searches not on documents but on its indexes of documents. The functions in this group let your application create memory-based and persistent indexes. Indexes are initially empty. Functions in "
+              },
+              {
+                "type": "reference",
+                "isActive": true,
+                "identifier": "doc://com.apple.documentation/documentation/coreservices/search_kit#1654733"
+              },
+              {
+                "type": "text",
+                "text": " let you add document content to these indexes."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Indexes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1444518-skindexadddocumentwithtext",
+        "doc://com.apple.documentation/documentation/coreservices/1444897-skindexadddocument",
+        "doc://com.apple.documentation/documentation/coreservices/1450667-skindexflush",
+        "doc://com.apple.documentation/documentation/coreservices/1443628-skindexcompact",
+        "doc://com.apple.documentation/documentation/coreservices/1449093-skindexgetdocumentcount",
+        "doc://com.apple.documentation/documentation/coreservices/1444628-skindexgetmaximumdocumentid",
+        "doc://com.apple.documentation/documentation/coreservices/1444278-skindexgetmaximumtermid",
+        "doc://com.apple.documentation/documentation/coreservices/1446189-skindexdocumentiteratorcreate",
+        "doc://com.apple.documentation/documentation/coreservices/1442212-skindexdocumentiteratorcopynext",
+        "doc://com.apple.documentation/documentation/coreservices/1443022-skindexdocumentiteratorgettypeid",
+        "doc://com.apple.documentation/documentation/coreservices/1443461-skindexgetanalysisproperties",
+        "doc://com.apple.documentation/documentation/coreservices/1449899-skindexmovedocument",
+        "doc://com.apple.documentation/documentation/coreservices/1444375-skindexremovedocument",
+        "doc://com.apple.documentation/documentation/coreservices/1448935-skindexrenamedocument",
+        "doc://com.apple.documentation/documentation/coreservices/1448696-skindexsetmaximumbytesbeforeflus",
+        "doc://com.apple.documentation/documentation/coreservices/1445329-skindexgetmaximumbytesbeforeflus"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "The functions in this section let your application add document content to (and remove document content from) indexes, work with memory- and disk-based indexes, and retrieve metadata from indexes."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working With Text Importers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1447859-skloaddefaultextractorplugins"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "Search Kit can import the textual content of file-based documents into indexes using the Spotlight metadata importers."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Documents and Terms",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1442564-skdocumentcreatewithurl",
+        "doc://com.apple.documentation/documentation/coreservices/1443212-skdocumentcreate",
+        "doc://com.apple.documentation/documentation/coreservices/1449624-skdocumentcopyurl",
+        "doc://com.apple.documentation/documentation/coreservices/1442657-skdocumentgetname",
+        "doc://com.apple.documentation/documentation/coreservices/1444449-skdocumentgetparent",
+        "doc://com.apple.documentation/documentation/coreservices/1448262-skdocumentgetschemename",
+        "doc://com.apple.documentation/documentation/coreservices/1448891-skdocumentgettypeid",
+        "doc://com.apple.documentation/documentation/coreservices/1442760-skindexcopydocumentfordocumentid",
+        "doc://com.apple.documentation/documentation/coreservices/1445499-skindexcopyinfofordocumentids",
+        "doc://com.apple.documentation/documentation/coreservices/1445305-skindexcopydocumentrefsfordocume",
+        "doc://com.apple.documentation/documentation/coreservices/1443501-skindexcopydocumenturlsfordocume",
+        "doc://com.apple.documentation/documentation/coreservices/1448003-skindexcopydocumentidarrayforter",
+        "doc://com.apple.documentation/documentation/coreservices/1446868-skindexcopytermidarrayfordocumen",
+        "doc://com.apple.documentation/documentation/coreservices/1442802-skindexcopytermstringfortermid",
+        "doc://com.apple.documentation/documentation/coreservices/1448558-skindexgettermidfortermstring",
+        "doc://com.apple.documentation/documentation/coreservices/1444576-skindexsetdocumentproperties",
+        "doc://com.apple.documentation/documentation/coreservices/1449500-skindexcopydocumentproperties",
+        "doc://com.apple.documentation/documentation/coreservices/1443396-skindexgetdocumentstate",
+        "doc://com.apple.documentation/documentation/coreservices/1448341-skindexgetdocumenttermcount",
+        "doc://com.apple.documentation/documentation/coreservices/1447537-skindexgetdocumenttermfrequency",
+        "doc://com.apple.documentation/documentation/coreservices/1444015-skindexgettermdocumentcount",
+        "doc://com.apple.documentation/documentation/coreservices/1444437-skindexgetdocumentid"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "From Search Kit’s perspective, a document is anything that contains text—an RTF document, a PDF file, a Mail message, an Address Book entry, an Internet URL, the result of a database query, and so on."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "The functions in this section let your application create new document URL objects (SKDocumentRefs), retrieve metadata from documents, get information on document hierarchies, and work with documents and their terms in the context of Search Kit indexes."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Fast Asynchronous Searching",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1443079-sksearchcreate",
+        "doc://com.apple.documentation/documentation/coreservices/1448608-sksearchfindmatches",
+        "doc://com.apple.documentation/documentation/coreservices/1442083-sksearchcancel",
+        "doc://com.apple.documentation/documentation/coreservices/1448621-sksearchgettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working With Summarization",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1446229-sksummarycreatewithstring",
+        "doc://com.apple.documentation/documentation/coreservices/1444767-sksummarygetsentencesummaryinfo",
+        "doc://com.apple.documentation/documentation/coreservices/1447517-sksummarygetparagraphsummaryinfo",
+        "doc://com.apple.documentation/documentation/coreservices/1450009-sksummarygetsentencecount",
+        "doc://com.apple.documentation/documentation/coreservices/1449304-sksummarygetparagraphcount",
+        "doc://com.apple.documentation/documentation/coreservices/1450287-sksummarycopysentenceatindex",
+        "doc://com.apple.documentation/documentation/coreservices/1445711-sksummarycopyparagraphatindex",
+        "doc://com.apple.documentation/documentation/coreservices/1449700-sksummarycopysentencesummarystri",
+        "doc://com.apple.documentation/documentation/coreservices/1449746-sksummarycopyparagraphsummarystr",
+        "doc://com.apple.documentation/documentation/coreservices/1444796-sksummarygettypeid"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "Search Kit’s Summarization functions supplant those in Apple’s Find by Content API."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Legacy Support for Synchronous Searching",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1448627-sksearchgroupcreate",
+        "doc://com.apple.documentation/documentation/coreservices/1448615-sksearchgroupcopyindexes",
+        "doc://com.apple.documentation/documentation/coreservices/1448637-sksearchgroupgettypeid",
+        "doc://com.apple.documentation/documentation/coreservices/1448629-sksearchresultscreatewithdocumen",
+        "doc://com.apple.documentation/documentation/coreservices/1448618-sksearchresultsgetinfoinrange",
+        "doc://com.apple.documentation/documentation/coreservices/1448612-sksearchresultscopymatchingterms",
+        "doc://com.apple.documentation/documentation/coreservices/1448598-sksearchresultsgetcount",
+        "doc://com.apple.documentation/documentation/coreservices/1448603-sksearchresultsgettypeid",
+        "doc://com.apple.documentation/documentation/coreservices/1448610-sksearchresultscreatewithquery"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "Developers should avoid using the functions listed in this section; instead, use the replacement functions that are recommended. Search Kit retains the functions in this section for backward compatibility."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/sksearchresultsfiltercallback"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "Developers should avoid using the callbacks listed in this section; instead, use "
+              },
+              {
+                "type": "reference",
+                "isActive": true,
+                "identifier": "doc://com.apple.documentation/documentation/coreservices/1443079-sksearchcreate"
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "reference",
+                "isActive": true,
+                "identifier": "doc://com.apple.documentation/documentation/coreservices/1448608-sksearchfindmatches"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/skdocumentref",
+        "doc://com.apple.documentation/documentation/coreservices/skindexdocumentiteratorref",
+        "doc://com.apple.documentation/documentation/coreservices/skindexref",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchref",
+        "doc://com.apple.documentation/documentation/coreservices/sksummaryref",
+        "doc://com.apple.documentation/documentation/coreservices/skdocumentid",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchresultsref",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchgroupref"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/search_kit/text_analysis_keys",
+        "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchoptions",
+        "doc://com.apple.documentation/documentation/coreservices/skindextype",
+        "doc://com.apple.documentation/documentation/coreservices/search_kit/deprecated_text_analysis_keys",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchtype",
+        "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstateaddpending",
+        "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstatedeletepending",
+        "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstateindexed",
+        "doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate/kskdocumentstatenotindexed",
+        "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexinverted",
+        "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexinvertedvector",
+        "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexunknown",
+        "doc://com.apple.documentation/documentation/coreservices/skindextype/kskindexvector",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchbooleanranked",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchprefixranked",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchranked",
+        "doc://com.apple.documentation/documentation/coreservices/sksearchtype/ksksearchrequiredranked"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1724390"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Search Kit is a powerful and streamlined C language framework for indexing and searching text in most human languages. It provides fast information retrieval in System Preferences, Address Book, Help Viewer, and Xcode. Apple’s Spotlight technology is built on top of Search Kit to provide content searching in Finder, Mail, and the Spotlight menu. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use Search Kit or Spotlight to provide similar functionality and powerful information-access capabilities within your Mac OS X application. The Search Kit API is appropriate when you want your application to have full control over indexing and searching, and when your focus is file content. Search Kit is thread-safe and works with Cocoa, Carbon, and command-line tools. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Beginning with Mac OS X version 10.4, Search Kit supports phrase searches, prefix/suffix/substring searches, improved Boolean searches, and improved relevance ranking. Search Kit now uses Spotlight’s metadata importers when indexing documents, and takes advantage of any additional importers available on a system. Searching and indexing are much faster with Search Kit’s new asynchronous search APIs. And, starting in Mac OS X v10.4, Search Kit provides a summarization API that supplants Find By Content."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Overview",
+          "anchor": "1680581"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Search Kit is a powerful and streamlined C language framework for indexing and searching text in most human languages. It provides fast information retrieval in System Preferences, Address Book, Help Viewer, and Xcode. Apple’s Spotlight technology is built on top of Search Kit to provide content searching in Finder, Mail, and the Spotlight menu."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use Search Kit or Spotlight to provide similar functionality and powerful information-access capabilities within your Mac app. Search Kit is appropriate when you want your application to have full control over indexing and searching, and when your focus is file content. Search Kit is thread-safe and works with Cocoa and command-line tools."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Search Kit supports phrase searches, prefix/suffix/substring searches, Boolean searches, summarization, and relevance ranking. Search Kit uses Spotlight’s metadata importers when indexing documents and takes advantage of any additional importers available on a system. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

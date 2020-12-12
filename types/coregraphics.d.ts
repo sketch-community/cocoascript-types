@@ -14,7 +14,9 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CGRect {
   }
-}declare const kCGColorSpaceExtendedGray: cocoascript.CFStringRef;
+}// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedgray
+declare const kCGColorSpaceExtendedGray: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedsrgb
 declare const kCGColorSpaceExtendedSRGB: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface CGImageRef {
@@ -26,7 +28,9 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgwindowlevelkey
   type CGWindowLevelKey = number;
 }
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamycbcrmatrix
 declare const kCGDisplayStreamYCbCrMatrix: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/1455530-cgdisplaystreamupdategetrects
 declare const CGDisplayStreamUpdateGetRects: cocoascript.size_t;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgdisplayreconfigurationcallback
@@ -172,16 +176,23 @@ declare namespace cocoascript {
 }declare namespace cocoascript {
   interface CGFontRef {
   }
-}declare const kCGFontIndexInvalid: cocoascript.CGFontIndex;
+}// doc://com.apple.documentation/documentation/coregraphics/kcgfontindexinvalid
+declare const kCGFontIndexInvalid: cocoascript.CGFontIndex;
+// doc://com.apple.documentation/documentation/coregraphics/cgsizezero
 declare const CGSizeZero: cocoascript.CGSize;
+// doc://com.apple.documentation/documentation/coregraphics/cgrectzero
 declare const CGRectZero: cocoascript.CGRect;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextmediabox
 declare const kCGPDFContextMediaBox: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgblendmode
   type CGBlendMode = number;
 }
+// doc://com.apple.documentation/documentation/coregraphics/cgpointzero
 declare const CGPointZero: cocoascript.CGPoint;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacegenericgraygamma2_2
 declare const kCGColorSpaceGenericGrayGamma2_2: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacesrgb
 declare const kCGColorSpaceSRGB: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface CGMutablePathRef {
@@ -197,15 +208,25 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgwindowid
   type CGWindowID = number;
 }
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamsourcerect
 declare const kCGDisplayStreamSourceRect: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamdestinationrect
 declare const kCGDisplayStreamDestinationRect: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreampreserveaspectratio
 declare const kCGDisplayStreamPreserveAspectRatio: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamcolorspace
 declare const kCGDisplayStreamColorSpace: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamminimumframetime
 declare const kCGDisplayStreamMinimumFrameTime: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamshowcursor
 declare const kCGDisplayStreamShowCursor: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamqueuedepth
 declare const kCGDisplayStreamQueueDepth: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamycbcrmatrix_itu_r_709_2
 declare const kCGDisplayStreamYCbCrMatrix_ITU_R_709_2: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamycbcrmatrix_itu_r_601_4
 declare const kCGDisplayStreamYCbCrMatrix_ITU_R_601_4: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgdisplaystreamycbcrmatrix_smpte_240m_1995
 declare const kCGDisplayStreamYCbCrMatrix_SMPTE_240M_1995: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgeventtapcallback
@@ -221,7 +242,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgeventmask
-  type CGEventMask = cocoascript.uint64_t;
+  type CGEventMask = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgeventsourcekeyboardtype
@@ -238,7 +259,7 @@ declare namespace cocoascript {
   }
 }declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgeventtimestamp
-  type CGEventTimestamp = cocoascript.uint64_t;
+  type CGEventTimestamp = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgkeycode
@@ -258,7 +279,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgeventflags
-  type CGEventFlags = cocoascript.uint64_t;
+  type CGEventFlags = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgeventsourcestateid
@@ -316,25 +337,34 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgrectedge
   type CGRectEdge = number;
 }
+// doc://com.apple.documentation/documentation/coregraphics/1454575-cgimagegetdecode
 declare const CGImageGetDecode: cocoascript.CGImageRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgfontindex
-  type CGFontIndex = cocoascript.short;
+  type CGFontIndex = number;
 }
+// doc://com.apple.documentation/documentation/coregraphics/kcgglyphmax
 declare const kCGGlyphMax: cocoascript.CGFontIndex;
+// doc://com.apple.documentation/documentation/coregraphics/kcgfontindexmax
 declare const kCGFontIndexMax: cocoascript.CGFontIndex;
+// doc://com.apple.documentation/documentation/coregraphics/1455930-cgcolorgetcomponents
 declare const CGColorGetComponents: cocoascript.CGColorRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgcolorspacemodel
   type CGColorSpaceModel = number;
 }
+// doc://com.apple.documentation/documentation/coregraphics/cgrectnull
 declare const CGRectNull: cocoascript.CGRect;
 declare namespace cocoascript {
   interface CGDataConsumerRef {
   }
-}declare const kCGPDFContextCropBox: cocoascript.CFStringRef;
+}// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextcropbox
+declare const kCGPDFContextCropBox: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextbleedbox
 declare const kCGPDFContextBleedBox: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontexttrimbox
 declare const kCGPDFContextTrimBox: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextartbox
 declare const kCGPDFContextArtBox: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cglinecap
@@ -347,28 +377,51 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CGPDFPageRef {
   }
-}declare const kCGColorSpaceDisplayP3: cocoascript.CFStringRef;
+}// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacedisplayp3
+declare const kCGColorSpaceDisplayP3: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacedisplayp3_hlg
 declare const kCGColorSpaceDisplayP3_HLG: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacedisplayp3_pq_eotf
 declare const kCGColorSpaceDisplayP3_PQ_EOTF: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedlineardisplayp3
 declare const kCGColorSpaceExtendedLinearDisplayP3: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacelinearsrgb
 declare const kCGColorSpaceLinearSRGB: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedlinearsrgb
 declare const kCGColorSpaceExtendedLinearSRGB: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacelineargray
 declare const kCGColorSpaceLinearGray: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedlineargray
 declare const kCGColorSpaceExtendedLinearGray: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacegenericrgblinear
 declare const kCGColorSpaceGenericRGBLinear: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacegenericcmyk
 declare const kCGColorSpaceGenericCMYK: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacegenericxyz
 declare const kCGColorSpaceGenericXYZ: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacegenericlab
 declare const kCGColorSpaceGenericLab: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceacescglinear
 declare const kCGColorSpaceACESCGLinear: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceadobergb1998
 declare const kCGColorSpaceAdobeRGB1998: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacedcip3
 declare const kCGColorSpaceDCIP3: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceitur_709
 declare const kCGColorSpaceITUR_709: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacerommrgb
 declare const kCGColorSpaceROMMRGB: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceitur_2020
 declare const kCGColorSpaceITUR_2020: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceitur_2020_hlg
 declare const kCGColorSpaceITUR_2020_HLG: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceitur_2020_pq_eotf
 declare const kCGColorSpaceITUR_2020_PQ_EOTF: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceextendedlinearitur_2020
 declare const kCGColorSpaceExtendedLinearITUR_2020: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacegenericrgb
 declare const kCGColorSpaceGenericRGB: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspacegenericgray
 declare const kCGColorSpaceGenericGray: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgcolorconversioninfotransformtype
@@ -410,6 +463,7 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontextreleasedatacallback
   type CGBitmapContextReleaseDataCallback = void;
 }
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorconversionblackpointcompensation
 declare const kCGColorConversionBlackPointCompensation: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cginterpolationquality
@@ -589,6 +643,7 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpdfdataformat
   type CGPDFDataFormat = number;
 }
+// doc://com.apple.documentation/documentation/coregraphics/1455978-cgpdfstringgetbyteptr
 declare const CGPDFStringGetBytePtr: cocoascript.CGPDFStringRef;
 declare namespace cocoascript {
   interface CGPDFStringRef {
@@ -630,29 +685,53 @@ declare namespace cocoascript {
 }declare namespace cocoascript {
   interface CGDeviceColor {
   }
-}declare const kCGDisplayShowDuplicateLowResolutionModes: cocoascript.CFStringRef;
+}// doc://com.apple.documentation/documentation/coregraphics/kcgdisplayshowduplicatelowresolutionmodes
+declare const kCGDisplayShowDuplicateLowResolutionModes: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowalpha
 declare const kCGWindowAlpha: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowbackinglocationvideomemory
 declare const kCGWindowBackingLocationVideoMemory: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowbounds
 declare const kCGWindowBounds: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowisonscreen
 declare const kCGWindowIsOnscreen: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowlayer
 declare const kCGWindowLayer: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowmemoryusage
 declare const kCGWindowMemoryUsage: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowname
 declare const kCGWindowName: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindownumber
 declare const kCGWindowNumber: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowownername
 declare const kCGWindowOwnerName: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowownerpid
 declare const kCGWindowOwnerPID: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowsharingstate
 declare const kCGWindowSharingState: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowstoretype
 declare const kCGWindowStoreType: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgwindowworkspace
 declare const kCGWindowWorkspace: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceitur_2100_hlg
 declare const kCGColorSpaceITUR_2100_HLG: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorspaceitur_2100_pq
 declare const kCGColorSpaceITUR_2100_PQ: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextaccesspermissions
 declare const kCGPDFContextAccessPermissions: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextcreatelinearizedpdf
 declare const kCGPDFContextCreateLinearizedPDF: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextcreatepdfa
 declare const kCGPDFContextCreatePDFA: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfoutlinechildren
 declare const kCGPDFOutlineChildren: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfoutlinedestination
 declare const kCGPDFOutlineDestination: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfoutlinedestinationrect
 declare const kCGPDFOutlineDestinationRect: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfoutlinetitle
 declare const kCGPDFOutlineTitle: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/3042409-cgpdftagtypegetname
 declare const CGPDFTagTypeGetName: cocoascript.CGPDFTagType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgeventerr
@@ -674,30 +753,57 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coregraphics/cgpathapplyblock
   type CGPathApplyBlock = cocoascript.CGPathElement;
 }
+// doc://com.apple.documentation/documentation/coregraphics/cgrectinfinite
 declare const CGRectInfinite: cocoascript.CGRect;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorwhite
 declare const kCGColorWhite: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorblack
 declare const kCGColorBlack: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgcolorclear
 declare const kCGColorClear: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextauthor
 declare const kCGPDFContextAuthor: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextcreator
 declare const kCGPDFContextCreator: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontexttitle
 declare const kCGPDFContextTitle: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextownerpassword
 declare const kCGPDFContextOwnerPassword: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextuserpassword
 declare const kCGPDFContextUserPassword: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextallowsprinting
 declare const kCGPDFContextAllowsPrinting: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextallowscopying
 declare const kCGPDFContextAllowsCopying: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextoutputintent
 declare const kCGPDFContextOutputIntent: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextoutputintents
 declare const kCGPDFContextOutputIntents: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextsubject
 declare const kCGPDFContextSubject: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextkeywords
 declare const kCGPDFContextKeywords: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfcontextencryptionkeylength
 declare const kCGPDFContextEncryptionKeyLength: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfxoutputintentsubtype
 declare const kCGPDFXOutputIntentSubtype: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfxoutputconditionidentifier
 declare const kCGPDFXOutputConditionIdentifier: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfxoutputcondition
 declare const kCGPDFXOutputCondition: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfxregistryname
 declare const kCGPDFXRegistryName: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfxinfo
 declare const kCGPDFXInfo: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgpdfxdestinationoutputprofile
 declare const kCGPDFXDestinationOutputProfile: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/cgaffinetransformidentity
 declare const CGAffineTransformIdentity: cocoascript.CGAffineTransform;
+// doc://com.apple.documentation/documentation/coregraphics/kcgfontvariationaxisname
 declare const kCGFontVariationAxisName: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgfontvariationaxisminvalue
 declare const kCGFontVariationAxisMinValue: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgfontvariationaxismaxvalue
 declare const kCGFontVariationAxisMaxValue: cocoascript.CFStringRef;
+// doc://com.apple.documentation/documentation/coregraphics/kcgfontvariationaxisdefaultvalue
 declare const kCGFontVariationAxisDefaultValue: cocoascript.CFStringRef;

@@ -1,0 +1,216 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Reinterpret a sprite's alpha property to react differently to the objects below it. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2983069,
+  "kind": "article",
+  "metadata": {
+    "title": "Blending a Sprite with Different Interpretations of Alpha",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode": {
+      "title": "SKSpriteNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode",
+      "url": "/documentation/spritekit/skspritenode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519931-blendmode": {
+      "title": "blendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519931-blendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skspritenode/1519931-blendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The blend mode used to draw the sprite into the parent’s framebuffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha#2983065": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha#2983065",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha#2983065"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha": {
+      "title": "Blending a Sprite with Different Interpretations of Alpha",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skspritenode/blending_a_sprite_with_different_interpretations_of_alpha",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reinterpret a sprite's alpha property to react differently to the objects below it. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skblendmode": {
+      "title": "SKBlendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skblendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skblendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The modes that describe how the source and destination pixel colors are used to calculate the new destination color."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519931-blendmode",
+        "doc://com.apple.documentation/documentation/spritekit/skblendmode"
+      ],
+      "title": "Configuring Alpha Blendling",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The final stage of rendering is to blend the sprite’s texture into its destination frame buffer. The default behavior uses the alpha values of the texture to blend the texture with the destination pixels. However, you can use other blend modes when you want to add other special effects to a scene."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You control the sprite’s blending behavior using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1519931-blendmode"
+            },
+            {
+              "type": "text",
+              "text": " property. For example, an additive blend mode is useful to combine multiple sprites together, for effects such as for fire or lighting. The following code shows how to change the blend mode to use an additive blend."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "lightFlareSprite.blendMode = SKBlendModeAdd;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2983065",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

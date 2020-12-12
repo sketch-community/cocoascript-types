@@ -1,0 +1,797 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Change a shape node's appearance by supplying custom shader code."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skshapenode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2975236,
+  "kind": "article",
+  "metadata": {
+    "title": "Controlling Shape Drawing with Shaders",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode": {
+      "title": "SKShapeNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode",
+      "url": "/documentation/spritekit/skshapenode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshader": {
+      "title": "SKShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshader"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647278": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647278",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647278"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647279": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647279",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647279"
+    },
+    "link-media-2647280": {
+      "identifier": "link-media-2647280",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647280"
+    },
+    "media-2647280": {
+      "identifier": "media-2647280",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 122
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a4b548ddc0/0d3d8128-4302-44f9-843c-52e02c6847ef.png"
+        }
+      ],
+      "alt": "Shape node with graduated stroke",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647281": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647281",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647281"
+    },
+    "link-media-2647282": {
+      "identifier": "link-media-2647282",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647282"
+    },
+    "media-2647282": {
+      "identifier": "media-2647282",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 122
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a4b548ddc0/0f98a90b-d379-473e-852e-dd93d1d63716.png"
+        }
+      ],
+      "alt": "Shape node with dashed stroke",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519629-fillshader": {
+      "title": "fillShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519629-fillshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshapenode/1519629-fillshader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A custom shader used to determine the color of the filled portion of the shape node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/1520154-fillcolor": {
+      "title": "fillColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1520154-fillcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshapenode/1520154-fillcolor"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519956-filltexture": {
+      "title": "fillTexture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519956-filltexture",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshapenode/1519956-filltexture"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647283": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647283",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647283"
+    },
+    "link-media-2647284": {
+      "identifier": "link-media-2647284",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders#2647284"
+    },
+    "media-2647284": {
+      "identifier": "media-2647284",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 122
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a4b548ddc0/290c8493-e8b7-4482-a950-a85c03a23f54.png"
+        }
+      ],
+      "alt": "Shape node with checkerboard fill",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519784-strokeshader": {
+      "title": "strokeShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519784-strokeshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshapenode/1519784-strokeshader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A custom shader used to determine the color of the stroked portion of the shape node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders": {
+      "title": "Controlling Shape Drawing with Shaders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skshapenode/controlling_shape_drawing_with_shaders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Change a shape node's appearance by supplying custom shader code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715841-attributevalues": {
+      "title": "attributeValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715841-attributevalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshapenode/2715841-attributevalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The values of each attribute associated with the node's attached shader."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715855-setvalue": {
+      "title": "setValue:forAttributeNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715855-setvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshapenode/2715855-setvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets an attribute value for an attached shader."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValue:forAttributeNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715843-valueforattributenamed": {
+      "title": "valueForAttributeNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715843-valueforattributenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshapenode/2715843-valueforattributenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The value of a shader attribute."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "valueForAttributeNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519784-strokeshader",
+        "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519629-fillshader",
+        "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715841-attributevalues",
+        "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715855-setvalue",
+        "doc://com.apple.documentation/documentation/spritekit/skshapenode/2715843-valueforattributenamed"
+      ],
+      "title": "Customizing Stroking or Fill Drawing",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you want to go beyond the effects provided by a shape node's properties, you can take full control of its stroking or filling by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519784-strokeshader"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519629-fillshader"
+            },
+            {
+              "type": "text",
+              "text": " properties, respectively. To do that, you supply custom OpenGL ES shader code embedded within a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader"
+            },
+            {
+              "type": "text",
+              "text": " object. Custom shaders allow you to create custom effects, such as dashed lines and gradient strokes, and custom fills, such as checkerboards and random patterns. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Customize a Shape Node's Stroke",
+          "anchor": "2647274"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Shape nodes have two additional stroke-related properties that extend the properties defined by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader"
+            },
+            {
+              "type": "text",
+              "text": ":  "
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Symbol declaration"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "float u_path_length;"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Uniform"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The total length of the path, in points."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "float v_path_distance;"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Varying"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The distance along the path, in points."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2647278",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By dividing the distance along the path by the total length of the path, you get the normalized position (between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": ") of each point along a shape node's path and use it to construct the color of each pixel along the shape node's stroke. The following code shows how you create a custom shader to do this:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "void main() {",
+            "    float normalisedPosition = v_path_distance / u_path_length;",
+            "    gl_FragColor = vec4(normalisedPosition, normalisedPosition, 0.0, 1.0);",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2647279",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The generated shape node looks like this:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2647280",
+              "metadata": {
+                "anchor": "2647280",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, by casting both symbols to integers and using the modulo operator, you get the same shape node with a shader that generates a dashed line, as shown in the following code: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "void main() {",
+            "    int stripe = int(u_path_length) / 150;",
+            "    int h = int(v_path_distance) / stripe % 2;",
+            "    gl_FragColor = float4(h);",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2647281",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The generated shape node looks like this:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2647282",
+              "metadata": {
+                "anchor": "2647282",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Customize a Shape Node's Fill",
+          "anchor": "2647275"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You create a custom fill for a shape node by writing shader code and embedding it within an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader"
+            },
+            {
+              "type": "text",
+              "text": " object. Assigning the shader to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519629-fillshader"
+            },
+            {
+              "type": "text",
+              "text": " property overrides the appearance that would otherwise be defined by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1520154-fillcolor"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode/1519956-filltexture"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following shader code demonstrates filling a shape node with a simple checkerboard texture. Inside the shader, the variables "
+            },
+            {
+              "type": "codeVoice",
+              "code": "h"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "v"
+            },
+            {
+              "type": "text",
+              "text": " would, on their own, form horizontal and vertical stripes. The exclusive or operator, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "^"
+            },
+            {
+              "type": "text",
+              "text": ", creates the checkerboard pattern from those stripes. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "void main() {",
+            "    int size = 20;",
+            "    int h = int(v_tex_coord.x * u_texture_size.x) / size % 2;",
+            "    int v = int(v_tex_coord.y * u_texture_size.y) / size % 2;",
+            "    gl_FragColor = float4(v ^ h, v ^ h, v ^ h, 1.0);",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2647283",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The generated shape node looks like this:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2647284",
+              "metadata": {
+                "anchor": "2647284",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

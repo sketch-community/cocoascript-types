@@ -1,0 +1,243 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Defines a data type for a text encoding value."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/textencoding",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1399633,
+  "kind": "symbol",
+  "metadata": {
+    "title": "TextEncoding",
+    "role": "symbol",
+    "roleHeading": "Type Alias",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@T@TextEncoding",
+    "symbolKind": "tdef"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/textencoding"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core": {
+      "title": "Carbon Core",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+      "url": "/documentation/coreservices/carbon_core",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager": {
+      "title": "Text Encoding Conversion Manager",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+      "url": "/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1399639-createtextencoding": {
+      "title": "CreateTextEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1399639-createtextencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1399639-createtextencoding"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "UInt32"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "TextEncoding"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TextEncoding"
+            },
+            {
+              "type": "text",
+              "text": " value is specified by a text encoding base, a text encoding variant, and a text encoding format. You can  obtain a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TextEncoding"
+            },
+            {
+              "type": "text",
+              "text": " value by calling the function "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/1399639-createtextencoding"
+            },
+            {
+              "type": "text",
+              "text": ". When you call this function,  you can provide the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TextEncodingBase"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TextEncodingVariant"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TextEncodingFormat"
+            },
+            {
+              "type": "text",
+              "text": " data types."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TextEncoding"
+            },
+            {
+              "type": "text",
+              "text": " value is used, for example, to identify the encoding of text passed to a text converter. Two "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TextEncoding"
+            },
+            {
+              "type": "text",
+              "text": " values are needed—for source and destination encoding—when calling the Text Encoding Converter or the Unicode Converter to convert text. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

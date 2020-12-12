@@ -1,0 +1,272 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Defines a pointer toan importer import callback that imports importers."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/file_metadata",
+        "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/importerimportdata",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1809091,
+  "kind": "symbol",
+  "metadata": {
+    "title": "ImporterImportData",
+    "role": "pseudoSymbol",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "symbolKind": "tdef"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/file_metadata/mdimporter/importerimportdata"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_metadata": {
+      "title": "File Metadata",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_metadata",
+      "url": "/documentation/coreservices/file_metadata",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter": {
+      "title": "MDImporter",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter",
+      "url": "/documentation/coreservices/file_metadata/mdimporter",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/importerimportdata": {
+      "title": "ImporterImportData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/file_metadata/mdimporter/importerimportdata",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coreservices/file_metadata/mdimporter/importerimportdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines a pointer toan importer import callback that imports importers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "typedef Boolean (* ImporterImportData)"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "void *thisInterface,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "CFMutableDictionaryRef attributes,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "CFStringRef contentTypeUTI,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "CFStringRef pathToFile"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            }
+          ],
+          "platforms": []
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "thisInterface",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The CFPlugin object that is called. This value is passed to the callback function."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "attributes",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A mutable dictionary that you should populate with the metadata key/value pairs. This dictionary is created and passed to the callback function."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "contentTypeUTI",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The content type of the file as a uniform type identifier. This value is passed to the callback function."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pathToFile",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The full path to the file. This value is passed to the callback function."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your callback functionshould return "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": " if the metadatawas successfully returned, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "false"
+            },
+            {
+              "type": "text",
+              "text": " ifthe metadata was not returned."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

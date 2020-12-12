@@ -1,0 +1,967 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Gets a copy of the data for a specified Apple event parameter from an Apple event or an Apple event record."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/apple_events"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/applicationservices",
+        "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/1444069-aegetparamptr",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1444069,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AEGetParamPtr",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@F@AEGetParamPtr",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1444069-aegetparamptr"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1444069-aegetparamptr"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/apple_events": {
+      "title": "Apple Events",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/apple_events",
+      "url": "/documentation/coreservices/apple_events",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/applicationservices": {
+      "title": "Application Services",
+      "identifier": "doc://com.apple.documentation/documentation/applicationservices",
+      "url": "/documentation/applicationservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager": {
+      "title": "Apple Event Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/applicationservices/apple_event_manager"
+    },
+    "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager#1656145": {
+      "title": "Result Codes",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager#1656145",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/applicationservices/apple_event_manager#1656145"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449233-aegetparamdesc": {
+      "title": "AEGetParamDesc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449233-aegetparamdesc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449233-aegetparamdesc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event or an Apple event record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1449998-aesizeofparam": {
+      "title": "AESizeOfParam",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1449998-aesizeofparam",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1449998-aesizeofparam"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1446560-aegetdescdatarange": {
+      "title": "AEGetDescDataRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1446560-aegetdescdatarange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1446560-aegetdescdatarange"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1527206-keyword_parameter_constants": {
+      "title": "Keyword Parameter Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1527206-keyword_parameter_constants",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1527206-keyword_parameter_constants"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1542788-descriptor_type_constants": {
+      "title": "Descriptor Type Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1542788-descriptor_type_constants",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1542788-descriptor_type_constants"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/appleevent": {
+      "title": "AppleEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/appleevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/appleevent"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/aekeyword": {
+      "title": "AEKeyword",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/aekeyword",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/aekeyword"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/desctype": {
+      "title": "DescType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/desctype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/desctype"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1450314-aegetattributedesc": {
+      "title": "AEGetAttributeDesc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1450314-aegetattributedesc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1450314-aegetattributedesc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a copy of the descriptor for a specified Apple event attribute from an Apple event; typically used when your application needs to pass the descriptor on to another function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1445109-aegetattributeptr": {
+      "title": "AEGetAttributePtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1445109-aegetattributeptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1445109-aegetattributeptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a copy of the data for a specified Apple event attribute from an Apple event; typically used when your application needs to work with the data directly."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager/1806211-aegetkeydesc": {
+      "title": "AEGetKeyDesc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager/1806211-aegetkeydesc",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/applicationservices/apple_event_manager/1806211-aegetkeydesc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event record"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager/1806223-aegetkeyptr": {
+      "title": "AEGetKeyPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager/1806223-aegetkeyptr",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/applicationservices/apple_event_manager/1806223-aegetkeyptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a copy of the data for a specified Apple event parameter from an Apple event record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444069-aegetparamptr": {
+      "title": "AEGetParamPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444069-aegetparamptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444069-aegetparamptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets a copy of the data for a specified Apple event parameter from an Apple event or an Apple event record."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1450314-aegetattributedesc",
+        "doc://com.apple.documentation/documentation/coreservices/1445109-aegetattributeptr",
+        "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager/1806211-aegetkeydesc",
+        "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager/1806223-aegetkeyptr",
+        "doc://com.apple.documentation/documentation/coreservices/1449233-aegetparamdesc"
+      ],
+      "title": "Getting Data or Descriptors From Apple Events and Apple Event Records",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@OSErr",
+              "text": "OSErr"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "AEGetParamPtr"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AppleEvent",
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/appleevent",
+              "text": "AppleEvent"
+            },
+            {
+              "kind": "text",
+              "text": " *theAppleEvent, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AEKeyword",
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/aekeyword",
+              "text": "AEKeyword"
+            },
+            {
+              "kind": "text",
+              "text": " theAEKeyword, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DescType",
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/desctype",
+              "text": "DescType"
+            },
+            {
+              "kind": "text",
+              "text": " desiredType, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DescType",
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/desctype",
+              "text": "DescType"
+            },
+            {
+              "kind": "text",
+              "text": " *actualType, "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *dataPtr, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@Size",
+              "text": "Size"
+            },
+            {
+              "kind": "text",
+              "text": " maximumSize, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@Size",
+              "text": "Size"
+            },
+            {
+              "kind": "text",
+              "text": " *actualSize);"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "theAppleEvent",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to the Apple event to get the parameter data from."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "theAEKeyword",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The keyword that specifies the desired Apple event parameter. Some keyword constants are described in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coreservices/1527206-keyword_parameter_constants"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "desiredType",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The desired descriptor type for the copied data. For a list of AppleScript’s predefined descriptor types, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coreservices/1542788-descriptor_type_constants"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If the descriptor specified by the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "theAEKeyword"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter is not of the desired type, "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "AEGetParamPtr"
+                },
+                {
+                  "type": "text",
+                  "text": " attempts to coerce the data to this type. However, if the desired type is "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "typeWildCard"
+                },
+                {
+                  "type": "text",
+                  "text": ", no coercion is performed."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On return, you can determine the actual descriptor type by examining the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "typeCode"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "typeCode",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a descriptor type. On return, specifies the descriptor type of the data pointed to by "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "dataPtr"
+                },
+                {
+                  "type": "text",
+                  "text": ". The returned type is either the same as the type specified by the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "desiredType"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter or, if the desired type was type wildcard, the true type of the descriptor. Specify "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if you do not care about this return value. For a list of AppleScript’s predefined descriptor types, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coreservices/1542788-descriptor_type_constants"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dataPtr",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a buffer, local variable, or other storage location created and disposed of by your application. The size in bytes must be at least as large as the value you pass in the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "maximumSize"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter. On return, contains the parameter data. Specify "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if you do not care about this return value. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "maximumSize",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The maximum length, in bytes, of the expected Apple event parameter data. The "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "AEGetParamPtr"
+                },
+                {
+                  "type": "text",
+                  "text": " function will not return more data than you specify in this parameter."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "actualSize",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a variable of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Size"
+                },
+                {
+                  "type": "text",
+                  "text": ". On return, the length, in bytes, of the data for the specified Apple event parameter. If this value is larger than the value you passed in the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "maximumSize"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter, the buffer pointed to by "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "dataPtr"
+                },
+                {
+                  "type": "text",
+                  "text": " was not large enough to contain all of the data for the parameter, though "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "AEGetParamPtr"
+                },
+                {
+                  "type": "text",
+                  "text": " does not write beyond the end of the buffer. If the buffer was too small, you can resize it and call "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "AEGetParamPtr"
+                },
+                {
+                  "type": "text",
+                  "text": " again. Specify "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if you do not care about this return value."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A result code. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/applicationservices/apple_event_manager#1656145"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You should use this function only to extract data from value descriptors such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeUTF8Text"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because this function allows you to specify a desired type, it can result in coercion. When used correctly, this has the positive effect of returning the data in the desired format. However, it can have side effects you may not be expecting, such as the overhead of calls to coercion handlers. See also the Version Notes section below for possible problems with coercion."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To get Apple event parameter data for your application to use directly, call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AEGetParamPtr"
+            },
+            {
+              "type": "text",
+              "text": ". To get a descriptor for an Apple event parameter to pass on to another Apple Event Manager routine, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/1449233-aegetparamdesc"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before calling "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AEGetParamPtr"
+            },
+            {
+              "type": "text",
+              "text": ", you can call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/1449998-aesizeofparam"
+            },
+            {
+              "type": "text",
+              "text": " function to determine a size for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dataPtr"
+            },
+            {
+              "type": "text",
+              "text": " buffer. However, unless you specify "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeWildCard"
+            },
+            {
+              "type": "text",
+              "text": " for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "desiredType"
+            },
+            {
+              "type": "text",
+              "text": " parameter, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AEGetParamPtr"
+            },
+            {
+              "type": "text",
+              "text": " may coerce the data, which may cause the size of the data to change. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In some cases, you may get improved efficiency extracting information from an Apple event with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/1446560-aegetdescdatarange"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Version-Notes",
+          "anchor": "1770191"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Thread safe starting in OS X v10.2."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the actual parameter you are getting with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AEGetParamPtr"
+            },
+            {
+              "type": "text",
+              "text": " is a record, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AEGetParamPtr"
+            },
+            {
+              "type": "text",
+              "text": " will erroneously allow you to get the parameter as any type at all, when it really should allow only "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeAERecord"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeAEList"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeWildcard"
+            },
+            {
+              "type": "text",
+              "text": ". For other types, it will place raw record data into the designated buffer. With AppleScript 1.1.2, it would then return "
+            },
+            {
+              "type": "codeVoice",
+              "code": "errAECoercionFail"
+            },
+            {
+              "type": "text",
+              "text": ", as expected. With AppleScript 1.3 and later, however, it returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "noErr"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can work around this problem by checking the returned parameter from any call to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AEGetParamPtr"
+            },
+            {
+              "type": "text",
+              "text": ". If the source type is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeAERecord"
+            },
+            {
+              "type": "text",
+              "text": " and the type you asked for was anything other than "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeAERecord"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeAEList"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "typeWildcard"
+            },
+            {
+              "type": "text",
+              "text": ", you should assume the coercion failed."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

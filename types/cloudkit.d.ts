@@ -416,6 +416,7 @@ declare namespace cocoascript {
 }
 
 declare const CKRecordZone: cocoascript.CKRecordZone;
+// doc://com.apple.documentation/documentation/cloudkit/ckrecordzonedefaultname
 declare const CKRecordZoneDefaultName: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -784,8 +785,11 @@ declare namespace cocoascript {
 }
 
 declare const CKAsset: cocoascript.CKAsset;
+// doc://com.apple.documentation/documentation/cloudkit/cksharetypekey
 declare const CKShareTypeKey: cocoascript.CKRecordFieldKey;
+// doc://com.apple.documentation/documentation/cloudkit/cksharetitlekey
 declare const CKShareTitleKey: cocoascript.CKRecordFieldKey;
+// doc://com.apple.documentation/documentation/cloudkit/cksharethumbnailimagedatakey
 declare const CKShareThumbnailImageDataKey: cocoascript.CKRecordFieldKey;
 declare namespace cocoascript {
   /**
@@ -949,8 +953,11 @@ declare namespace cocoascript {
 }
 
 declare const CKContainer: cocoascript.CKContainer;
+// doc://com.apple.documentation/documentation/cloudkit/ckcurrentuserdefaultname
 declare const CKCurrentUserDefaultName: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/cloudkit/ckownerdefaultname
 declare const CKOwnerDefaultName: cocoascript.NSString;
+// doc://com.apple.documentation/documentation/cloudkit/ckaccountchangednotification
 declare const CKAccountChangedNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
@@ -1109,9 +1116,13 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/ckrecordfieldkey
   type CKRecordFieldKey = cocoascript.NSString;
 }
+// doc://com.apple.documentation/documentation/cloudkit/ckrecordparentkey
 declare const CKRecordParentKey: cocoascript.CKRecordFieldKey;
+// doc://com.apple.documentation/documentation/cloudkit/ckrecordsharekey
 declare const CKRecordShareKey: cocoascript.CKRecordFieldKey;
+// doc://com.apple.documentation/documentation/cloudkit/ckrecordtypeshare
 declare const CKRecordTypeShare: cocoascript.CKRecordType;
+// doc://com.apple.documentation/documentation/cloudkit/ckrecordtypeuserrecord
 declare const CKRecordTypeUserRecord: cocoascript.CKRecordType;
 declare namespace cocoascript {
   /**
@@ -1170,6 +1181,7 @@ declare namespace cocoascript {
 }
 
 declare const CKFetchRecordZonesOperation: cocoascript.CKFetchRecordZonesOperation;
+// doc://com.apple.documentation/documentation/cloudkit/ckqueryoperationmaximumresults
 declare const CKQueryOperationMaximumResults: cocoascript.NSUInteger;
 declare namespace cocoascript {
   /**

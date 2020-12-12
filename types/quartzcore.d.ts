@@ -205,7 +205,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410767-removefromsuperlayer
     removeFromSuperlayer():void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410944-insertsublayer
-    insertSublayer_atIndex(layer: cocoascript.CALayer, idx: cocoascript.unsigned):void;
+    insertSublayer_atIndex(layer: cocoascript.CALayer, idx: number):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410840-insertsublayer
     insertSublayer_below(layer: cocoascript.CALayer, sibling: cocoascript.CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410798-insertsublayer
@@ -302,8 +302,11 @@ declare namespace cocoascript {
 }
 
 declare const CALayer: cocoascript.CALayer;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravityresize
 declare const kCAGravityResize: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravityresizeaspect
 declare const kCAGravityResizeAspect: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravityresizeaspectfill
 declare const kCAGravityResizeAspectFill: cocoascript.CALayerContentsGravity;
 declare namespace cocoascript {
   /**
@@ -663,10 +666,15 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercontentsgravity
   type CALayerContentsGravity = cocoascript.NSString;
 }
+// doc://com.apple.documentation/documentation/quartzcore/kcagravitytop
 declare const kCAGravityTop: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravitybottom
 declare const kCAGravityBottom: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravitycenter
 declare const kCAGravityCenter: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravitybottomleft
 declare const kCAGravityBottomLeft: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravitytopleft
 declare const kCAGravityTopLeft: cocoascript.CALayerContentsGravity;
 declare namespace cocoascript {
   /**
@@ -1318,22 +1326,31 @@ declare namespace cocoascript {
 }
 
 declare const CARemoteLayerServer: cocoascript.CARemoteLayerServer;
+// doc://com.apple.documentation/documentation/quartzcore/kcafilterlinear
 declare const kCAFilterLinear: cocoascript.CALayerContentsFilter;
+// doc://com.apple.documentation/documentation/quartzcore/kcafilternearest
 declare const kCAFilterNearest: cocoascript.CALayerContentsFilter;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercontentsfilter
   type CALayerContentsFilter = cocoascript.NSString;
 }
+// doc://com.apple.documentation/documentation/quartzcore/kcagravityleft
 declare const kCAGravityLeft: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravityright
 declare const kCAGravityRight: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravitytopright
 declare const kCAGravityTopRight: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcagravitybottomright
 declare const kCAGravityBottomRight: cocoascript.CALayerContentsGravity;
+// doc://com.apple.documentation/documentation/quartzcore/kcafiltertrilinear
 declare const kCAFilterTrilinear: cocoascript.CALayerContentsFilter;
+// doc://com.apple.documentation/documentation/quartzcore/kcacontentsformatrgba8uint
 declare const kCAContentsFormatRGBA8Uint: cocoascript.CALayerContentsFormat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercontentsformat
   type CALayerContentsFormat = cocoascript.NSString;
 }
+// doc://com.apple.documentation/documentation/quartzcore/catransform3didentity
 declare const CATransform3DIdentity: cocoascript.CATransform3D;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercornercurve
@@ -1411,81 +1428,159 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/cavaluefunctionname
   type CAValueFunctionName = cocoascript.NSString;
 }
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionrotatez
 declare const kCAValueFunctionRotateZ: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionscale
 declare const kCAValueFunctionScale: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctiontranslate
 declare const kCAValueFunctionTranslate: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerpoint
 declare const kCAEmitterLayerPoint: cocoascript.CAEmitterLayerEmitterShape;
+// doc://com.apple.documentation/documentation/quartzcore/kcafillmoderemoved
 declare const kCAFillModeRemoved: cocoascript.CAMediaTimingFillMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcafillmodeforwards
 declare const kCAFillModeForwards: cocoascript.CAMediaTimingFillMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcafillmodebackwards
 declare const kCAFillModeBackwards: cocoascript.CAMediaTimingFillMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcafillmodeboth
 declare const kCAFillModeBoth: cocoascript.CAMediaTimingFillMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcacontentsformatrgba16float
 declare const kCAContentsFormatRGBA16Float: cocoascript.CALayerContentsFormat;
+// doc://com.apple.documentation/documentation/quartzcore/kcacontentsformatgray8uint
 declare const kCAContentsFormatGray8Uint: cocoascript.CALayerContentsFormat;
+// doc://com.apple.documentation/documentation/quartzcore/kcacornercurvecircular
 declare const kCACornerCurveCircular: cocoascript.CALayerCornerCurve;
+// doc://com.apple.documentation/documentation/quartzcore/kcacornercurvecontinuous
 declare const kCACornerCurveContinuous: cocoascript.CALayerCornerCurve;
+// doc://com.apple.documentation/documentation/quartzcore/kcaanimationcubic
 declare const kCAAnimationCubic: cocoascript.CAAnimationCalculationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaanimationcubicpaced
 declare const kCAAnimationCubicPaced: cocoascript.CAAnimationCalculationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaanimationdiscrete
 declare const kCAAnimationDiscrete: cocoascript.CAAnimationCalculationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaanimationlinear
 declare const kCAAnimationLinear: cocoascript.CAAnimationCalculationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaanimationpaced
 declare const kCAAnimationPaced: cocoascript.CAAnimationCalculationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaanimationrotateauto
 declare const kCAAnimationRotateAuto: cocoascript.CAAnimationRotationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaanimationrotateautoreverse
 declare const kCAAnimationRotateAutoReverse: cocoascript.CAAnimationRotationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayeroutline
 declare const kCAEmitterLayerOutline: cocoascript.CAEmitterLayerEmitterMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerpoints
 declare const kCAEmitterLayerPoints: cocoascript.CAEmitterLayerEmitterMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayersurface
 declare const kCAEmitterLayerSurface: cocoascript.CAEmitterLayerEmitterMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayervolume
 declare const kCAEmitterLayerVolume: cocoascript.CAEmitterLayerEmitterMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayercircle
 declare const kCAEmitterLayerCircle: cocoascript.CAEmitterLayerEmitterShape;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayercuboid
 declare const kCAEmitterLayerCuboid: cocoascript.CAEmitterLayerEmitterShape;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerline
 declare const kCAEmitterLayerLine: cocoascript.CAEmitterLayerEmitterShape;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerrectangle
 declare const kCAEmitterLayerRectangle: cocoascript.CAEmitterLayerEmitterShape;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayersphere
 declare const kCAEmitterLayerSphere: cocoascript.CAEmitterLayerEmitterShape;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayeradditive
 declare const kCAEmitterLayerAdditive: cocoascript.CAEmitterLayerRenderMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerbacktofront
 declare const kCAEmitterLayerBackToFront: cocoascript.CAEmitterLayerRenderMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayeroldestfirst
 declare const kCAEmitterLayerOldestFirst: cocoascript.CAEmitterLayerRenderMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayeroldestlast
 declare const kCAEmitterLayerOldestLast: cocoascript.CAEmitterLayerRenderMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerunordered
 declare const kCAEmitterLayerUnordered: cocoascript.CAEmitterLayerRenderMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcagradientlayeraxial
 declare const kCAGradientLayerAxial: cocoascript.CAGradientLayerType;
+// doc://com.apple.documentation/documentation/quartzcore/kcagradientlayerconic
 declare const kCAGradientLayerConic: cocoascript.CAGradientLayerType;
+// doc://com.apple.documentation/documentation/quartzcore/kcagradientlayerradial
 declare const kCAGradientLayerRadial: cocoascript.CAGradientLayerType;
+// doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctiondefault
 declare const kCAMediaTimingFunctionDefault: cocoascript.CAMediaTimingFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctioneasein
 declare const kCAMediaTimingFunctionEaseIn: cocoascript.CAMediaTimingFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctioneaseineaseout
 declare const kCAMediaTimingFunctionEaseInEaseOut: cocoascript.CAMediaTimingFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctioneaseout
 declare const kCAMediaTimingFunctionEaseOut: cocoascript.CAMediaTimingFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctionlinear
 declare const kCAMediaTimingFunctionLinear: cocoascript.CAMediaTimingFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcascrollboth
 declare const kCAScrollBoth: cocoascript.CAScrollLayerScrollMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcascrollhorizontally
 declare const kCAScrollHorizontally: cocoascript.CAScrollLayerScrollMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcascrollnone
 declare const kCAScrollNone: cocoascript.CAScrollLayerScrollMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcascrollvertically
 declare const kCAScrollVertically: cocoascript.CAScrollLayerScrollMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcafillruleevenodd
 declare const kCAFillRuleEvenOdd: cocoascript.CAShapeLayerFillRule;
+// doc://com.apple.documentation/documentation/quartzcore/kcafillrulenonzero
 declare const kCAFillRuleNonZero: cocoascript.CAShapeLayerFillRule;
+// doc://com.apple.documentation/documentation/quartzcore/kcalinecapbutt
 declare const kCALineCapButt: cocoascript.CAShapeLayerLineCap;
+// doc://com.apple.documentation/documentation/quartzcore/kcalinecapround
 declare const kCALineCapRound: cocoascript.CAShapeLayerLineCap;
+// doc://com.apple.documentation/documentation/quartzcore/kcalinecapsquare
 declare const kCALineCapSquare: cocoascript.CAShapeLayerLineCap;
+// doc://com.apple.documentation/documentation/quartzcore/kcalinejoinbevel
 declare const kCALineJoinBevel: cocoascript.CAShapeLayerLineJoin;
+// doc://com.apple.documentation/documentation/quartzcore/kcalinejoinmiter
 declare const kCALineJoinMiter: cocoascript.CAShapeLayerLineJoin;
+// doc://com.apple.documentation/documentation/quartzcore/kcalinejoinround
 declare const kCALineJoinRound: cocoascript.CAShapeLayerLineJoin;
+// doc://com.apple.documentation/documentation/quartzcore/kcaalignmentcenter
 declare const kCAAlignmentCenter: cocoascript.CATextLayerAlignmentMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaalignmentjustified
 declare const kCAAlignmentJustified: cocoascript.CATextLayerAlignmentMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaalignmentleft
 declare const kCAAlignmentLeft: cocoascript.CATextLayerAlignmentMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaalignmentnatural
 declare const kCAAlignmentNatural: cocoascript.CATextLayerAlignmentMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcaalignmentright
 declare const kCAAlignmentRight: cocoascript.CATextLayerAlignmentMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcatruncationend
 declare const kCATruncationEnd: cocoascript.CATextLayerTruncationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcatruncationmiddle
 declare const kCATruncationMiddle: cocoascript.CATextLayerTruncationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcatruncationnone
 declare const kCATruncationNone: cocoascript.CATextLayerTruncationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcatruncationstart
 declare const kCATruncationStart: cocoascript.CATextLayerTruncationMode;
+// doc://com.apple.documentation/documentation/quartzcore/kcatransitionfrombottom
 declare const kCATransitionFromBottom: cocoascript.CATransitionSubtype;
+// doc://com.apple.documentation/documentation/quartzcore/kcatransitionfromleft
 declare const kCATransitionFromLeft: cocoascript.CATransitionSubtype;
+// doc://com.apple.documentation/documentation/quartzcore/kcatransitionfromright
 declare const kCATransitionFromRight: cocoascript.CATransitionSubtype;
+// doc://com.apple.documentation/documentation/quartzcore/kcatransitionfromtop
 declare const kCATransitionFromTop: cocoascript.CATransitionSubtype;
+// doc://com.apple.documentation/documentation/quartzcore/kcatransitionfade
 declare const kCATransitionFade: cocoascript.CATransitionType;
+// doc://com.apple.documentation/documentation/quartzcore/kcatransitionmovein
 declare const kCATransitionMoveIn: cocoascript.CATransitionType;
+// doc://com.apple.documentation/documentation/quartzcore/kcatransitionpush
 declare const kCATransitionPush: cocoascript.CATransitionType;
+// doc://com.apple.documentation/documentation/quartzcore/kcatransitionreveal
 declare const kCATransitionReveal: cocoascript.CATransitionType;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionrotatex
 declare const kCAValueFunctionRotateX: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionrotatey
 declare const kCAValueFunctionRotateY: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionscalex
 declare const kCAValueFunctionScaleX: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionscaley
 declare const kCAValueFunctionScaleY: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionscalez
 declare const kCAValueFunctionScaleZ: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctiontranslatex
 declare const kCAValueFunctionTranslateX: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctiontranslatey
 declare const kCAValueFunctionTranslateY: cocoascript.CAValueFunctionName;
+// doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctiontranslatez
 declare const kCAValueFunctionTranslateZ: cocoascript.CAValueFunctionName;

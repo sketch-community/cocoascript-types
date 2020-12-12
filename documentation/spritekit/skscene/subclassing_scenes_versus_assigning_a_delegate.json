@@ -1,0 +1,311 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use a scene delegate to share app logic across various scenes."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/skscene"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2975117,
+  "kind": "article",
+  "metadata": {
+    "title": "Subclassing Scenes Versus Assigning a Delegate",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene": {
+      "title": "SKScene",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skview/1642774-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1642774-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skview/1642774-delegate"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene#1654455": {
+      "title": "Responding to Frame-Cycle Events",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene#1654455",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/spritekit/skscene#1654455"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscenedelegate": {
+      "title": "SKSceneDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscenedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscenedelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods that, when implemented, allow any class to participate in the SpriteKit render loop callbacks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsresponder/1528245-nextresponder": {
+      "title": "nextResponder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1528245-nextresponder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsresponder/1528245-nextresponder"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate": {
+      "title": "Subclassing Scenes Versus Assigning a Delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a scene delegate to share app logic across various scenes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1520213-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1520213-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1520213-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate to be called during the animation loop. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skscene/1520213-delegate",
+        "doc://com.apple.documentation/documentation/spritekit/skscenedelegate"
+      ],
+      "title": "Configuring a Delegate",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Often, your app subclasses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene"
+            },
+            {
+              "type": "text",
+              "text": " to deliver gameplay. Your subclass usually:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Lays out initial scene content"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Defines app logic that runs every frame"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implements responder methods to handle keyboard, mouse, or touch events"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An alternative pattern is to assign a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1642774-delegate"
+            },
+            {
+              "type": "text",
+              "text": " that handles "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene#1654455"
+            },
+            {
+              "type": "text",
+              "text": " instead. For example, if you make the view controller the delegate for your scene, it can use multiple scenes that share the same "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscenedelegate"
+            },
+            {
+              "type": "text",
+              "text": " implementations. The view controller participates in event handling and so it can respond to user input also."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On macOS, you need to set the window's "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nsresponder/1528245-nextresponder"
+                },
+                {
+                  "type": "text",
+                  "text": " to your app's view controller because by default, the view is the first responder to user input events."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

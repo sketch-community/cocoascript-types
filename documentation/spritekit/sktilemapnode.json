@@ -1,0 +1,961 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A two-dimensional array of images."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1643616,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SKTileMapNode",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.12",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "3.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)SKTileMapNode",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/sktilemapnode"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/sktilemapnode"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position": {
+      "title": "position",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483101-position"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643607-colorblendfactor": {
+      "title": "colorBlendFactor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643607-colorblendfactor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643607-colorblendfactor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Controls the blending between the texture and the tile map object’s "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643601-color"
+        },
+        {
+          "type": "text",
+          "text": ". Values are clamped between zero and one where zero has no color blending and one has the maximum color blending."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643601-color": {
+      "title": "color",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643601-color",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643601-color",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The base color for the tile map. The influence of the color over the tile map node’s textures is controlled by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643607-colorblendfactor"
+        },
+        {
+          "type": "text",
+          "text": ". "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshader": {
+      "title": "SKShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshader"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktileset": {
+      "title": "SKTileSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktileset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktileset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for related tile groups. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition": {
+      "title": "zPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483107-zposition"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483117-physicsbody": {
+      "title": "physicsBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483117-physicsbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483117-physicsbody"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643615-fillwithtilegroup": {
+      "title": "fillWithTileGroup:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643615-fillwithtilegroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643615-fillwithtilegroup",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fillWithTileGroup:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1690935-settilegroup": {
+      "title": "setTileGroup:andTileDefinition:forColumn:row:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1690935-settilegroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1690935-settilegroup",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setTileGroup:andTileDefinition:forColumn:row:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode": {
+      "title": "SKNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/creating_a_tile_map_programmatically": {
+      "title": "Creating a Tile Map Programmatically",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/creating_a_tile_map_programmatically",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/spritekit/sktilemapnode/creating_a_tile_map_programmatically"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643608-anchorpoint": {
+      "title": "anchorPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643608-anchorpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643608-anchorpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines the point in the tile map that corresponds to its "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643594-tilesize": {
+      "title": "tileSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643594-tilesize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643594-tilesize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The size of each tile in points."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643610-tileset": {
+      "title": "tileSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643610-tileset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643610-tileset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The tile set being used by this tile map. The tile map object can only display tiles that exist in this set."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643600-numberofcolumns": {
+      "title": "numberOfColumns",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643600-numberofcolumns",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643600-numberofcolumns",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of columns in the tile map"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643611-numberofrows": {
+      "title": "numberOfRows",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643611-numberofrows",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643611-numberofrows",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of rows in the tile map."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643599-centeroftileatcolumn": {
+      "title": "centerOfTileAtColumn:row:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643599-centeroftileatcolumn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643599-centeroftileatcolumn",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "centerOfTileAtColumn:row:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643617-tilecolumnindexfromposition": {
+      "title": "tileColumnIndexFromPosition:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643617-tilecolumnindexfromposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643617-tilecolumnindexfromposition",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tileColumnIndexFromPosition:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643602-tiledefinitionatcolumn": {
+      "title": "tileDefinitionAtColumn:row:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643602-tiledefinitionatcolumn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643602-tiledefinitionatcolumn",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tileDefinitionAtColumn:row:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643613-tilegroupatcolumn": {
+      "title": "tileGroupAtColumn:row:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643613-tilegroupatcolumn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643613-tilegroupatcolumn",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tileGroupAtColumn:row:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643614-tilerowindexfromposition": {
+      "title": "tileRowIndexFromPosition:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643614-tilerowindexfromposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643614-tilerowindexfromposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the tile map node object’s tile row index for the specified position in points."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tileRowIndexFromPosition:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643595-mapsize": {
+      "title": "mapSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643595-mapsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643595-mapsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The overall size of the tile map. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643618-lightingbitmask": {
+      "title": "lightingBitMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643618-lightingbitmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643618-lightingbitmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mask that defines how the tile map is lit by light nodes in the scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643598-blendmode": {
+      "title": "blendMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643598-blendmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643598-blendmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines the blend mode to use when compositing the tile map over other nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643596-shader": {
+      "title": "shader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643596-shader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/1643596-shader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines a shader which is applied to each tile of the tile map."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715851-attributevalues": {
+      "title": "attributeValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715851-attributevalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/2715851-attributevalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The values of each attribute associated with the node's attached shader."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715852-setvalue": {
+      "title": "setValue:forAttributeNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715852-setvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/2715852-setvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets an attribute value for an attached shader."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValue:forAttributeNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715847-valueforattributenamed": {
+      "title": "valueForAttributeNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715847-valueforattributenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode/2715847-valueforattributenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The value of a shader attribute."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "valueForAttributeNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode": {
+      "title": "SKTileMapNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A two-dimensional array of images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktiledefinition": {
+      "title": "SKTileDefinition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktiledefinition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktiledefinition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single tile that can be repeated in a tile map. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilegroup": {
+      "title": "SKTileGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilegroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilegroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of tiles that collectively define one type of terrain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilegrouprule": {
+      "title": "SKTileGroupRule",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilegrouprule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilegrouprule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rules that describe how various tiles should be placed in a map."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sknode"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Tile Map Programmatically",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/creating_a_tile_map_programmatically"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a tile map manually instead of loading it from an archived "
+        },
+        {
+          "type": "codeVoice",
+          "code": ".sks"
+        },
+        {
+          "type": "text",
+          "text": " file."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Controlling a Tile Map's On-Screen Position Relative to its Origin",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643608-anchorpoint"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reading or Manually Configuring the Tile Map's Size",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643594-tilesize",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643610-tileset",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643600-numberofcolumns",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643611-numberofrows"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Querying the Tile Map's Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643599-centeroftileatcolumn",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643617-tilecolumnindexfromposition",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643602-tiledefinitionatcolumn",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643613-tilegroupatcolumn",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643614-tilerowindexfromposition",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643595-mapsize"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Tinting a Tile Map",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643601-color",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643607-colorblendfactor"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Lighting a Tile Map",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643618-lightingbitmask"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure how a sprite is lit when its near a light node."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring How Alpha Values Blend the Sprite",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643598-blendmode"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Change how a sprite uses its alpha value, such as additive blending, that results in the sprite being brighter than it was before."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Custom Shaders",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643596-shader",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715851-attributevalues",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715852-setvalue",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715847-valueforattributenamed"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktiledefinition",
+        "doc://com.apple.documentation/documentation/spritekit/sktilegroup",
+        "doc://com.apple.documentation/documentation/spritekit/sktilegrouprule",
+        "doc://com.apple.documentation/documentation/spritekit/sktileset"
+      ],
+      "title": "Tiling",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SKTileMapNode"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)SKNode",
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode",
+              "text": "SKNode"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "SKTileMapNode"
+            },
+            {
+              "type": "text",
+              "text": " does the work of laying out predefined tiles in a grid of any size. Typically, you configure 9-slice images (tile groups) in Xcode's SpriteKit scene editor and paint the look of your tile map ahead of time versus configuring the tile map in code. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As with sprite nodes, you can layer tile maps with different blend modes or control it with actions and physics, for example, for the purpose of parallax scrolling. The rendered tile map can be post processed with an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader"
+            },
+            {
+              "type": "text",
+              "text": " to add effects such as motion blur or atmospheric perspective. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A tile map can only render tile definitions that exist within the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/spritekit/sktileset"
+                },
+                {
+                  "type": "text",
+                  "text": " you have provided it. "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A tile map does not expose its tiles as nodes, and therefore you cannot assign individual tiles with a different "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483117-physicsbody"
+                },
+                {
+                  "type": "text",
+                  "text": ". Instead, layer tile map nodes on top of each other at the varying zPositions, and layer invisible "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "SKNodes"
+                },
+                {
+                  "type": "text",
+                  "text": " on top of the tile map node to attach physicsBodies to your tile map node.   "
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To work with a tile map programmatically, you supply "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SKTileMapNode"
+            },
+            {
+              "type": "text",
+              "text": " with a tile set that defines the tile definitions it can render. Then, fill each tile in the tile map with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1643615-fillwithtilegroup"
+            },
+            {
+              "type": "text",
+              "text": " method and set individual tiles with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode/1690935-settilegroup"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

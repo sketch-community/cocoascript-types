@@ -1,0 +1,220 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use proven methods to rapidly create and play back performant particle effects. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skemitternode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skemitternode/optimizing_emitter_node_performance",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2984742,
+  "kind": "article",
+  "metadata": {
+    "title": "Optimizing Emitter Node Performance",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skemitternode/optimizing_emitter_node_performance"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skemitternode/optimizing_emitter_node_performance"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skemitternode": {
+      "title": "SKEmitterNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skemitternode",
+      "url": "/documentation/spritekit/skemitternode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skemitternode/optimizing_emitter_node_performance": {
+      "title": "Optimizing Emitter Node Performance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skemitternode/optimizing_emitter_node_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skemitternode/optimizing_emitter_node_performance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use proven methods to rapidly create and play back performant particle effects. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Particle emitters in SpriteKit are one of the most powerful tools for building visual effects. However, if used incorrectly, particle emitters can be a bottleneck in the design and implementation of your app. Consider the following tips:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use Xcode to create and test your particle effects, then load the archives in your game."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Adjust emitter properties sparingly inside your game code. Typically, you do this to specify properties that cannot be specified in the Xcode inspector or to control properties inside your game logic."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Try to keep the number of onscreen particles to a minimum by creating particle emitters with a low birth rate, and specifying a short lifetime for particles. For example, instead of creating hundreds or thousands of particles per second, reduce the birth rate and increase the size of the particles slightly. Often, you can create effects with fewer particles but the same net visual appearance."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use actions on particles only when there isn’t another solution. Executing actions on individual particles is potentially very expensive, especially if the particle emitter also has a high birth rate."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Assign a target node whenever the particles should be independent of the emitter node after they are spawned. For example, particles should be independent if the emitter node moves or rotates in the scene."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Consider removing a particle emitter from the scene when it is not visible onscreen. Add it just before it becomes visible."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

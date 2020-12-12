@@ -3403,9 +3403,9 @@ declare namespace cocoascript {
    */
   interface INObjectCollection extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inobjectcollection/3552209-initwithitems
-    initWithItems(items: cocoascript.NSArray):cocoascript.INObjectCollection;
+    initWithItems(items: any):cocoascript.INObjectCollection;
     // doc://com.apple.documentation/documentation/sirikit/inobjectcollection/3552210-initwithsections
-    initWithSections(sections: cocoascript.INObjectSection):cocoascript.INObjectCollection;
+    initWithSections(sections: any):cocoascript.INObjectCollection;
     // doc://com.apple.documentation/documentation/sirikit/inobjectcollection/3552208-allitems
     allItems(): any;
     setAllItems(): void;
@@ -3429,7 +3429,7 @@ declare namespace cocoascript {
    */
   interface INObjectSection extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inobjectsection/3552214-initwithtitle
-    initWithTitle_items(title: cocoascript.NSString, items: cocoascript.NSArray):cocoascript.INObjectSection;
+    initWithTitle_items(title: cocoascript.NSString, items: any):cocoascript.INObjectSection;
     // doc://com.apple.documentation/documentation/sirikit/inobjectsection/3552215-items
     items(): any;
     setItems(): void;
@@ -5447,6 +5447,7 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inuihostedviewcontext
   type INUIHostedViewContext = cocoascript.NSUInteger;
 }
+// doc://com.apple.documentation/documentation/sirikit/intentsuiversionstring
 declare const IntentsUIVersionString: string;
 declare namespace cocoascript {
   /**
@@ -8458,6 +8459,7 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inintenterrorcode
   type INIntentErrorCode = cocoascript.NSInteger;
 }
+// doc://com.apple.documentation/documentation/sirikit/intentsversionstring
 declare const IntentsVersionString: string;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/insettaskattributeintentresponsecode
@@ -8507,28 +8509,51 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/ingetcarlockstatusintentresponsecode
   type INGetCarLockStatusIntentResponseCode = cocoascript.NSInteger;
 }
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipbrother
 declare const INPersonRelationshipBrother: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipassistant
 declare const INPersonRelationshipAssistant: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipchild
 declare const INPersonRelationshipChild: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipfather
 declare const INPersonRelationshipFather: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipfriend
 declare const INPersonRelationshipFriend: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipmanager
 declare const INPersonRelationshipManager: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipmother
 declare const INPersonRelationshipMother: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipparent
 declare const INPersonRelationshipParent: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshippartner
 declare const INPersonRelationshipPartner: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipsister
 declare const INPersonRelationshipSister: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipspouse
 declare const INPersonRelationshipSpouse: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipdaughter
 declare const INPersonRelationshipDaughter: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonrelationshipson
 declare const INPersonRelationshipSon: cocoascript.INPersonRelationship;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelhome
 declare const INPersonHandleLabelHome: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelhomefax
 declare const INPersonHandleLabelHomeFax: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabeliphone
 declare const INPersonHandleLabeliPhone: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelmain
 declare const INPersonHandleLabelMain: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelmobile
 declare const INPersonHandleLabelMobile: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelother
 declare const INPersonHandleLabelOther: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelpager
 declare const INPersonHandleLabelPager: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelwork
 declare const INPersonHandleLabelWork: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelworkfax
 declare const INPersonHandleLabelWorkFax: cocoascript.INPersonHandleLabel;
+// doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabelschool
 declare const INPersonHandleLabelSchool: cocoascript.INPersonHandleLabel;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/indailyroutinesituation
@@ -8578,13 +8603,21 @@ declare namespace cocoascript {
 }
 
 declare const INGetReservationDetailsIntentResponse: cocoascript.INGetReservationDetailsIntentResponse;
+// doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortypeccs1
 declare const INCarChargingConnectorTypeCCS1: cocoascript.INCarChargingConnectorType;
+// doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortypeccs2
 declare const INCarChargingConnectorTypeCCS2: cocoascript.INCarChargingConnectorType;
+// doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortypechademo
 declare const INCarChargingConnectorTypeCHAdeMO: cocoascript.INCarChargingConnectorType;
+// doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortypegbtac
 declare const INCarChargingConnectorTypeGBTAC: cocoascript.INCarChargingConnectorType;
+// doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortypegbtdc
 declare const INCarChargingConnectorTypeGBTDC: cocoascript.INCarChargingConnectorType;
+// doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortypej1772
 declare const INCarChargingConnectorTypeJ1772: cocoascript.INCarChargingConnectorType;
+// doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortypemennekes
 declare const INCarChargingConnectorTypeMennekes: cocoascript.INCarChargingConnectorType;
+// doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortypetesla
 declare const INCarChargingConnectorTypeTesla: cocoascript.INCarChargingConnectorType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/invocabularystringtype
@@ -8642,26 +8675,47 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeunsupportedreason
   type INSendPaymentPayeeUnsupportedReason = cocoascript.NSInteger;
 }
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifiercrosstraining
 declare const INWorkoutNameIdentifierCrosstraining: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifiercycle
 declare const INWorkoutNameIdentifierCycle: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierdance
 declare const INWorkoutNameIdentifierDance: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierelliptical
 declare const INWorkoutNameIdentifierElliptical: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierexercise
 declare const INWorkoutNameIdentifierExercise: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierhighintensityintervaltraining
 declare const INWorkoutNameIdentifierHighIntensityIntervalTraining: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierhike
 declare const INWorkoutNameIdentifierHike: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierindoorcycle
 declare const INWorkoutNameIdentifierIndoorcycle: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierindoorrun
 declare const INWorkoutNameIdentifierIndoorrun: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierindoorwalk
 declare const INWorkoutNameIdentifierIndoorwalk: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifiermove
 declare const INWorkoutNameIdentifierMove: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierother
 declare const INWorkoutNameIdentifierOther: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierrower
 declare const INWorkoutNameIdentifierRower: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierrun
 declare const INWorkoutNameIdentifierRun: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifiersit
 declare const INWorkoutNameIdentifierSit: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierstairs
 declare const INWorkoutNameIdentifierStairs: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierstand
 declare const INWorkoutNameIdentifierStand: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifiersteps
 declare const INWorkoutNameIdentifierSteps: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierswim
 declare const INWorkoutNameIdentifierSwim: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifierwalk
 declare const INWorkoutNameIdentifierWalk: cocoascript.INWorkoutNameIdentifier;
+// doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifieryoga
 declare const INWorkoutNameIdentifierYoga: cocoascript.INWorkoutNameIdentifier;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/instartcallcallcapabilityunsupportedreason

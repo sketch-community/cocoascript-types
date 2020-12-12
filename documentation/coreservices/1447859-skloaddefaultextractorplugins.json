@@ -1,0 +1,312 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tells Search Kit to use the Spotlight metadata importers."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/search_kit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/1447859-skloaddefaultextractorplugins",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1447859,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SKLoadDefaultExtractorPlugIns",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.3",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@F@SKLoadDefaultExtractorPlugIns",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1447859-skloaddefaultextractorplugins"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1447859-skloaddefaultextractorplugins"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/search_kit": {
+      "title": "Search Kit",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/search_kit",
+      "url": "/documentation/coreservices/search_kit",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1444897-skindexadddocument": {
+      "title": "SKIndexAddDocument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1444897-skindexadddocument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1444897-skindexadddocument"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1447859-skloaddefaultextractorplugins": {
+      "title": "SKLoadDefaultExtractorPlugIns",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1447859-skloaddefaultextractorplugins",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1447859-skloaddefaultextractorplugins",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells Search Kit to use the Spotlight metadata importers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SKLoadDefaultExtractorPlugIns"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ");"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Spotlight metadata importers determine the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kMDItemTextContent"
+            },
+            {
+              "type": "text",
+              "text": " property for each document passed to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/1444897-skindexadddocument"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Call the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SKLoadDefaultExtractorPlugIns"
+            },
+            {
+              "type": "text",
+              "text": " function once at application launch to tell Search Kit to use the Spotlight metadata importers. The function "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/1444897-skindexadddocument"
+            },
+            {
+              "type": "text",
+              "text": " will then use Spotlight’s importers to extract the text from supported files and place that text into an index, leaving the markup behind."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Version-Notes",
+          "anchor": "1681000"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In versions of macOS prior to OS X v10.4, Search Kit used its own set of default text extractor plug-ins. The file types supported by Search Kit’s default text extractor plug-ins were:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "plaintext"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "PDF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "HTML"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "RTF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Microsoft Word (.doc)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "abstract": [],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/componentresourceextension",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1516509,
+  "kind": "symbol",
+  "metadata": {
+    "title": "ComponentResourceExtension",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@T@ComponentResourceExtension",
+    "symbolKind": "struct"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/componentresourceextension"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core": {
+      "title": "Carbon Core",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+      "url": "/documentation/coreservices/carbon_core",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager": {
+      "title": "Component Manager",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager",
+      "url": "/documentation/coreservices/carbon_core/component_manager",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516650-component_resource_extension_fla": {
+      "title": "Component Resource Extension Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516650-component_resource_extension_fla",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516650-component_resource_extension_fla"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516662-componenticonfamily": {
+      "title": "componentIconFamily",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516662-componenticonfamily",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentresourceextension/1516662-componenticonfamily",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The resource ID of an icon family. You can provide an icon family in addition to the icon provided in the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "componentIcon"
+        },
+        {
+          "type": "text",
+          "text": " field. Note that members of this icon family are not used by the Finder you supply an icon family only so that other components or applications can display your component’s icon in a dialog box if needed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516519-componentregisterflags": {
+      "title": "componentRegisterFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516519-componentregisterflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentresourceextension/1516519-componentregisterflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of flags containing additional registration information. See "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/1516650-component_resource_extension_fla"
+        },
+        {
+          "type": "text",
+          "text": " for the flag values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516636-componentversion": {
+      "title": "componentVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516636-componentversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentresourceextension/1516636-componentversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version number of the component. If you specify the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "componentDoAutoVersion"
+        },
+        {
+          "type": "text",
+          "text": " flag in "
+        },
+        {
+          "type": "codeVoice",
+          "code": "componentRegisterFlags"
+        },
+        {
+          "type": "text",
+          "text": ", the Component Manager must obtain the version number of your component when your component is registered. Either you can provide a version number in your component’s resource, or you can specify a value of 0 for its version number. If you specify 0, the Component Manager sends your component a version request to get the version number of your component."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516662-componenticonfamily",
+        "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516519-componentregisterflags",
+        "doc://com.apple.documentation/documentation/coreservices/componentresourceextension/1516636-componentversion"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "struct"
+            },
+            {
+              "kind": "text",
+              "text": " ComponentResourceExtension {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "ComponentResourceExtension"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can optionally include in your component resource the information defined by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ComponentResourceExtension"
+            },
+            {
+              "type": "text",
+              "text": " data type: "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

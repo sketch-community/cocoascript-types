@@ -1,0 +1,242 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A read-only buffer."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corevideo",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferlockflags"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferlockflags/kcvpixelbufferlock_readonly",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1457186,
+  "kind": "symbol",
+  "metadata": {
+    "title": "kCVPixelBufferLock_ReadOnly",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Core Video"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.12",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@E@CVPixelBufferLockFlags@kCVPixelBufferLock_ReadOnly",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corevideo/cvpixelbufferlockflags/kcvpixelbufferlock_readonly"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corevideo/cvpixelbufferlockflags/1457186-readonly"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corevideo": {
+      "title": "Core Video",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo",
+      "url": "/documentation/corevideo",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer": {
+      "title": "CVPixelBuffer",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer",
+      "url": "/documentation/corevideo/cvpixelbuffer",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferlockflags": {
+      "title": "CVPixelBufferLockFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferlockflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferlockflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The flags to pass to "
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress": {
+      "title": "CVPixelBufferLockBaseAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress": {
+      "title": "CVPixelBufferUnlockBaseAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "kCVPixelBufferLock_ReadOnly"
+            },
+            {
+              "kind": "text",
+              "text": " = 0x00000001"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Set this flag if you don’t plan to modify buffer data while holding the lock. Setting this flag improves performance by preventing Core Video from invalidating  existing caches of the buffer’s contents."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you pass this flag to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress"
+                },
+                {
+                  "type": "text",
+                  "text": " function, you must also pass it to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress"
+                },
+                {
+                  "type": "text",
+                  "text": " function."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

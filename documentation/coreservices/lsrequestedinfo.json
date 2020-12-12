@@ -1,0 +1,402 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The specification that controls which information to obtain about an item."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/launch_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1447404,
+  "kind": "symbol",
+  "metadata": {
+    "title": "LSRequestedInfo",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:@T@LSRequestedInfo",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/lsrequestedinfo"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/lsrequestedinfo"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/launch_services": {
+      "title": "Launch Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/launch_services",
+      "url": "/documentation/coreservices/launch_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsiteminforecord": {
+      "title": "LSItemInfoRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsiteminforecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsiteminforecord"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestextension": {
+      "title": "kLSRequestExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestextension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsrequestedinfo/klsrequestextension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests the item’s filename extension."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequesttypecreator": {
+      "title": "kLSRequestTypeCreator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequesttypecreator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsrequestedinfo/klsrequesttypecreator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests the item’s file type and creator signature."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestbasicflagsonly": {
+      "title": "kLSRequestBasicFlagsOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestbasicflagsonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsrequestedinfo/klsrequestbasicflagsonly",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests all item-information flags that are not application-specific: that is, all except "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kLSItemInfoIsNativeApp"
+        },
+        {
+          "type": "text",
+          "text": " through "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kLSItemInfoAppIsScriptable"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestapptypeflags": {
+      "title": "kLSRequestAppTypeFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestapptypeflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsrequestedinfo/klsrequestapptypeflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests all application-specific item-information flags: that is, "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kLSItemInfoIsNativeApp"
+        },
+        {
+          "type": "text",
+          "text": " through "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kLSItemInfoAppIsScriptable"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestallflags": {
+      "title": "kLSRequestAllFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestallflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsrequestedinfo/klsrequestallflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests all item-information flags."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequesticonandkind": {
+      "title": "kLSRequestIconAndKind",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequesticonandkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsrequestedinfo/klsrequesticonandkind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Not used."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestextensionflagsonly": {
+      "title": "kLSRequestExtensionFlagsOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestextensionflagsonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsrequestedinfo/klsrequestextensionflagsonly",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests only the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kLSItemInfoExtensionIsHidden"
+        },
+        {
+          "type": "text",
+          "text": " item-information flag."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestallinfo": {
+      "title": "kLSRequestAllInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestallinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsrequestedinfo/klsrequestallinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests all available item information."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestextension",
+        "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequesttypecreator",
+        "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestbasicflagsonly",
+        "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestapptypeflags",
+        "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestallflags",
+        "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequesticonandkind",
+        "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestextensionflagsonly",
+        "doc://com.apple.documentation/documentation/coreservices/lsrequestedinfo/klsrequestallinfo"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " LSRequestedInfo : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@OptionBits",
+              "text": "OptionBits"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "LSRequestedInfo"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These flags are passed to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "LSCopyItemInfoForRef"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "LSCopyItemInfoForURL"
+            },
+            {
+              "type": "text",
+              "text": " functions to specify the type of information to be obtained in an item-information record; see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/lsiteminforecord"
+            },
+            {
+              "type": "text",
+              "text": " for a description of this structure."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The specification that defines, by file-system reference, an app to launch, items to open, or both, along with related information."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/launch_services",
+        "doc://com.apple.documentation/documentation/coreservices/launch_services/deprecated_symbols"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1446721,
+  "kind": "symbol",
+  "metadata": {
+    "title": "LSLaunchFSRefSpec",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "10.10",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:@T@LSLaunchFSRefSpec",
+    "symbolKind": "struct"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/lslaunchfsrefspec"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/lslaunchfsrefspec"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/launch_services": {
+      "title": "Launch Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/launch_services",
+      "url": "/documentation/coreservices/launch_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/launch_services/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/launch_services/deprecated_symbols",
+      "url": "/documentation/coreservices/launch_services/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lslaunchflags": {
+      "title": "LSLaunchFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lslaunchflags"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1448321-appref": {
+      "title": "appRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1448321-appref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lslaunchfsrefspec/1448321-appref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A pointer to a file-system reference designatingthe application to launch; see the "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "File Manager Reference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " inthe Carbon File Management Documentation for a description of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "FSRef"
+        },
+        {
+          "type": "text",
+          "text": " datatype. Set this field to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NULL"
+        },
+        {
+          "type": "text",
+          "text": " torequest that each item in the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "itemRefs"
+        },
+        {
+          "type": "text",
+          "text": " arraybe opened in its own preferred application."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1450600-asyncrefcon": {
+      "title": "asyncRefCon",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1450600-asyncrefcon",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lslaunchfsrefspec/1450600-asyncrefcon",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A pointer to an arbitrary application-definedvalue, passed in the Carbon event notifying you of an application’slaunch or termination (if you have registered for such notification).The value of this field can be "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1444360-itemrefs": {
+      "title": "itemRefs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1444360-itemrefs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lslaunchfsrefspec/1444360-itemrefs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of file-system references designatingthe item or items to open. If the value of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "numDocs"
+        },
+        {
+          "type": "text",
+          "text": " is "
+        },
+        {
+          "type": "codeVoice",
+          "code": "0"
+        },
+        {
+          "type": "text",
+          "text": ",this field is ignored and can be set to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1449431-launchflags": {
+      "title": "launchFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1449431-launchflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lslaunchfsrefspec/1449431-launchflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Launch flags specifying how to launch each application(including whether to print or merely open documents); see "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchflags"
+        },
+        {
+          "type": "text",
+          "text": " fora description of these flags."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1450323-numdocs": {
+      "title": "numDocs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1450323-numdocs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lslaunchfsrefspec/1450323-numdocs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of elements in the array specifiedby the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "itemRefs"
+        },
+        {
+          "type": "text",
+          "text": " field.The value of this field can be "
+        },
+        {
+          "type": "codeVoice",
+          "code": "0"
+        },
+        {
+          "type": "text",
+          "text": ",in which case the application designated by "
+        },
+        {
+          "type": "codeVoice",
+          "code": "appRef"
+        },
+        {
+          "type": "text",
+          "text": " islaunched without opening any items."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1445933-passthruparams": {
+      "title": "passThruParams",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1445933-passthruparams",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lslaunchfsrefspec/1445933-passthruparams",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A pointer to an Apple event descriptor that ispassed untouched as an optional parameter, with keyword "
+        },
+        {
+          "type": "codeVoice",
+          "code": "keyAEPropData"
+        },
+        {
+          "type": "text",
+          "text": " ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "'prdt'"
+        },
+        {
+          "type": "text",
+          "text": "),in the Apple event sent to each application launched or activated(whether individual preferred applications or the application designatedby "
+        },
+        {
+          "type": "codeVoice",
+          "code": "appRef"
+        },
+        {
+          "type": "text",
+          "text": "). See the "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AppleEvent Manager Reference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " in the Carbon Interapplication CommunicationDocumentation for a description of the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "AEDesc"
+        },
+        {
+          "type": "text",
+          "text": " datatype. The value of this field can be "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsapplicationparameters": {
+      "title": "LSApplicationParameters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsapplicationparameters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsapplicationparameters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The specification that defines the app, launch flags, and additional parameters that control how an app launches."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec": {
+      "title": "LSLaunchFSRefSpec",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lslaunchfsrefspec",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The specification that defines, by file-system reference, an app to launch, items to open, or both, along with related information."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/lsiteminforecord": {
+      "title": "LSItemInfoRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/lsiteminforecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/lsiteminforecord",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The specification that contains requested information about an item."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1448321-appref",
+        "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1450600-asyncrefcon",
+        "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1444360-itemrefs",
+        "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1449431-launchflags",
+        "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1450323-numdocs",
+        "doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1445933-passthruparams"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/lsapplicationparameters",
+        "doc://com.apple.documentation/documentation/coreservices/lsiteminforecord"
+      ],
+      "title": "Deprecated Structures",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "struct"
+            },
+            {
+              "kind": "text",
+              "text": " LSLaunchFSRefSpec {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "LSLaunchFSRefSpec"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This data type defines a file-based launch specification designating,by file-system reference, an application to launch, items to open,or both. To request that items be opened in a particular application,set "
+            },
+            {
+              "type": "codeVoice",
+              "code": "appRef"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "numDocs"
+            },
+            {
+              "type": "text",
+              "text": ",and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "itemRefs"
+            },
+            {
+              "type": "text",
+              "text": " accordingly.To request that each designated item be opened in its own preferredapplication, set "
+            },
+            {
+              "type": "codeVoice",
+              "code": "appRef"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": ". Torequest that a particular application be launched without openingany documents, set "
+            },
+            {
+              "type": "codeVoice",
+              "code": "appRef"
+            },
+            {
+              "type": "text",
+              "text": " accordinglyand set "
+            },
+            {
+              "type": "codeVoice",
+              "code": "numDocs"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

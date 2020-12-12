@@ -1,0 +1,796 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An image buffer that holds pixels in main memory."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corevideo"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1665102,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CVPixelBuffer",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Video"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corevideo/cvpixelbuffer"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corevideo/cvpixelbuffer-q2e"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corevideo": {
+      "title": "Core Video",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo",
+      "url": "/documentation/corevideo",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress": {
+      "title": "CVPixelBufferLockBaseAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Locks the base address of the pixel buffer. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress": {
+      "title": "CVPixelBufferUnlockBaseAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Unlocks the base address of the pixel buffer. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456731-cvpixelbuffercreatewithplanarbyt": {
+      "title": "CVPixelBufferCreateWithPlanarBytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456731-cvpixelbuffercreatewithplanarbyt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456731-cvpixelbuffercreatewithplanarbyt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a single pixel buffer in planar format for a given size and pixel format containing data specified by a memory location."
+        }
+      ]
+    },
+    "devLink-1725372": {
+      "identifier": "devLink-1725372",
+      "type": "link",
+      "title": "Core Video Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456758-cvpixelbuffercreate": {
+      "title": "CVPixelBufferCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456758-cvpixelbuffercreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456758-cvpixelbuffercreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a single pixel buffer for a given size and pixel format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456979-cvpixelbuffercreatewithbytes": {
+      "title": "CVPixelBufferCreateWithBytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456979-cvpixelbuffercreatewithbytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456979-cvpixelbuffercreatewithbytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a pixel buffer for a given size and pixel format containing data specified by a memory location."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456968-cvpixelbuffercreatewithiosurface": {
+      "title": "CVPixelBufferCreateWithIOSurface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456968-cvpixelbuffercreatewithiosurface",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456968-cvpixelbuffercreatewithiosurface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Call to create a single pixel buffer for a passed-in IOSurface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457115-cvpixelbuffergetbaseaddress": {
+      "title": "CVPixelBufferGetBaseAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457115-cvpixelbuffergetbaseaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457115-cvpixelbuffergetbaseaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the base address of the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456821-cvpixelbuffergetbaseaddressofpla": {
+      "title": "CVPixelBufferGetBaseAddressOfPlane",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456821-cvpixelbuffergetbaseaddressofpla",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456821-cvpixelbuffergetbaseaddressofpla",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the base address of the plane at the specified plane index."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456964-cvpixelbuffergetbytesperrow": {
+      "title": "CVPixelBufferGetBytesPerRow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456964-cvpixelbuffergetbytesperrow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456964-cvpixelbuffergetbytesperrow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of bytes per row of the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456711-cvpixelbuffergetbytesperrowofpla": {
+      "title": "CVPixelBufferGetBytesPerRowOfPlane",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456711-cvpixelbuffergetbytesperrowofpla",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456711-cvpixelbuffergetbytesperrowofpla",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of bytes per row for a plane at the specified index in the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456666-cvpixelbuffergetheight": {
+      "title": "CVPixelBufferGetHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456666-cvpixelbuffergetheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456666-cvpixelbuffergetheight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the height of the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456698-cvpixelbuffergetheightofplane": {
+      "title": "CVPixelBufferGetHeightOfPlane",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456698-cvpixelbuffergetheightofplane",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456698-cvpixelbuffergetheightofplane",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the height of the plane at planeIndex in the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457241-cvpixelbuffergetwidth": {
+      "title": "CVPixelBufferGetWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457241-cvpixelbuffergetwidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457241-cvpixelbuffergetwidth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the width of the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456830-cvpixelbuffergetwidthofplane": {
+      "title": "CVPixelBufferGetWidthOfPlane",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456830-cvpixelbuffergetwidthofplane",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456830-cvpixelbuffergetwidthofplane",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the width of the plane at a given index in the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456805-cvpixelbufferisplanar": {
+      "title": "CVPixelBufferIsPlanar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456805-cvpixelbufferisplanar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456805-cvpixelbufferisplanar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the pixel buffer is planar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456976-cvpixelbuffergetplanecount": {
+      "title": "CVPixelBufferGetPlaneCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456976-cvpixelbuffergetplanecount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456976-cvpixelbuffergetplanecount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns number of planes of the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457195-cvpixelbuffergetdatasize": {
+      "title": "CVPixelBufferGetDataSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457195-cvpixelbuffergetdatasize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457195-cvpixelbuffergetdatasize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the data size for contiguous planes of the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456851-cvpixelbuffergetpixelformattype": {
+      "title": "CVPixelBufferGetPixelFormatType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456851-cvpixelbuffergetpixelformattype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456851-cvpixelbuffergetpixelformattype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the pixel format type of the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457029-cvpixelbuffergetextendedpixels": {
+      "title": "CVPixelBufferGetExtendedPixels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457029-cvpixelbuffergetextendedpixels",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457029-cvpixelbuffergetextendedpixels",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the amount of extended pixel padding in the pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456690-cvpixelbuffergetiosurface": {
+      "title": "CVPixelBufferGetIOSurface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456690-cvpixelbuffergetiosurface",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456690-cvpixelbuffergetiosurface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the IOSurface backing the pixel buffer, or "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NULL"
+        },
+        {
+          "type": "text",
+          "text": " if it is not backed by an IOSurface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457233-cvpixelbuffercreateresolvedattri": {
+      "title": "CVPixelBufferCreateResolvedAttributesDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457233-cvpixelbuffercreateresolvedattri",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457233-cvpixelbuffercreateresolvedattri",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves an array of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFDictionary"
+        },
+        {
+          "type": "text",
+          "text": " objects describing various pixel buffer attributes into a single dictionary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1456800-cvpixelbuffergettypeid": {
+      "title": "CVPixelBufferGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1456800-cvpixelbuffergettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1456800-cvpixelbuffergettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the Core Foundation type identifier of the pixel buffer type. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457265-cvpixelbufferfillextendedpixels": {
+      "title": "CVPixelBufferFillExtendedPixels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457265-cvpixelbufferfillextendedpixels",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457265-cvpixelbufferfillextendedpixels",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fills the extended pixels of the pixel buffer. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1563590-cvpixelbufferretain": {
+      "title": "CVPixelBufferRetain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1563590-cvpixelbufferretain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1563590-cvpixelbufferretain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retains a pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1563589-cvpixelbufferrelease": {
+      "title": "CVPixelBufferRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1563589-cvpixelbufferrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1563589-cvpixelbufferrelease",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases a pixel buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref": {
+      "title": "CVPixelBufferRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a Core Video pixel buffer object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferlockflags": {
+      "title": "CVPixelBufferLockFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferlockflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferlockflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The flags to pass to "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvplanarcomponentinfo": {
+      "title": "CVPlanarComponentInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvplanarcomponentinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvplanarcomponentinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure for describing planar components."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo": {
+      "title": "CVPlanarPixelBufferInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvplanarpixelbufferinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure for describing planar buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo_ycbcrplanar": {
+      "title": "CVPlanarPixelBufferInfo_YCbCrPlanar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo_ycbcrplanar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvplanarpixelbufferinfo_ycbcrplanar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure for describing YCbCr planar buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo_ycbcrbiplanar": {
+      "title": "CVPlanarPixelBufferInfo_YCbCrBiPlanar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo_ycbcrbiplanar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvplanarpixelbufferinfo_ycbcrbiplanar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure for describing YCbCr biplanar buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferreleasebytescallback": {
+      "title": "CVPixelBufferReleaseBytesCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferreleasebytescallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferreleasebytescallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that defines a release callback function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferreleaseplanarbytescallback": {
+      "title": "CVPixelBufferReleasePlanarBytesCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferreleaseplanarbytescallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferreleaseplanarbytescallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines a pointer to a pixel buffer release callback function, which is called when a pixel buffer created by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corevideo/1456731-cvpixelbuffercreatewithplanarbyt"
+        },
+        {
+          "type": "text",
+          "text": " is released. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer/pixel_buffer_attribute_keys": {
+      "title": "Pixel Buffer Attribute Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer/pixel_buffer_attribute_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvpixelbuffer/pixel_buffer_attribute_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The attributes associated with a pixel buffer. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvbuffer": {
+      "title": "CVBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvbuffer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvbuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract base class that defines how to interact with data buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvimagebuffer": {
+      "title": "CVImageBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvimagebuffer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvimagebuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for managing different types of image data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer": {
+      "title": "CVPixelBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvpixelbuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image buffer that holds pixels in main memory."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpool": {
+      "title": "CVPixelBufferPool",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpool",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvpixelbufferpool",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A utility object for managing a recyclable set of pixel buffer objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelformatdescription": {
+      "title": "CVPixelFormatDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelformatdescription",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvpixelformatdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An API that provides functions and types for defining custom pixel formats."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Pixel Buffers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/1456758-cvpixelbuffercreate",
+        "doc://com.apple.documentation/documentation/corevideo/1456979-cvpixelbuffercreatewithbytes",
+        "doc://com.apple.documentation/documentation/corevideo/1456731-cvpixelbuffercreatewithplanarbyt",
+        "doc://com.apple.documentation/documentation/corevideo/1456968-cvpixelbuffercreatewithiosurface"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inspecting Pixel Buffers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/1457115-cvpixelbuffergetbaseaddress",
+        "doc://com.apple.documentation/documentation/corevideo/1456821-cvpixelbuffergetbaseaddressofpla",
+        "doc://com.apple.documentation/documentation/corevideo/1456964-cvpixelbuffergetbytesperrow",
+        "doc://com.apple.documentation/documentation/corevideo/1456711-cvpixelbuffergetbytesperrowofpla",
+        "doc://com.apple.documentation/documentation/corevideo/1456666-cvpixelbuffergetheight",
+        "doc://com.apple.documentation/documentation/corevideo/1456698-cvpixelbuffergetheightofplane",
+        "doc://com.apple.documentation/documentation/corevideo/1457241-cvpixelbuffergetwidth",
+        "doc://com.apple.documentation/documentation/corevideo/1456830-cvpixelbuffergetwidthofplane",
+        "doc://com.apple.documentation/documentation/corevideo/1456805-cvpixelbufferisplanar",
+        "doc://com.apple.documentation/documentation/corevideo/1456976-cvpixelbuffergetplanecount",
+        "doc://com.apple.documentation/documentation/corevideo/1457195-cvpixelbuffergetdatasize",
+        "doc://com.apple.documentation/documentation/corevideo/1456851-cvpixelbuffergetpixelformattype",
+        "doc://com.apple.documentation/documentation/corevideo/1457029-cvpixelbuffergetextendedpixels",
+        "doc://com.apple.documentation/documentation/corevideo/1456690-cvpixelbuffergetiosurface",
+        "doc://com.apple.documentation/documentation/corevideo/1457233-cvpixelbuffercreateresolvedattri",
+        "doc://com.apple.documentation/documentation/corevideo/1456800-cvpixelbuffergettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Modifying Pixel Buffers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/1457265-cvpixelbufferfillextendedpixels",
+        "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress",
+        "doc://com.apple.documentation/documentation/corevideo/1456843-cvpixelbufferunlockbaseaddress"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retaining and Releasing Pixel Buffers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/1563590-cvpixelbufferretain",
+        "doc://com.apple.documentation/documentation/corevideo/1563589-cvpixelbufferrelease"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferlockflags",
+        "doc://com.apple.documentation/documentation/corevideo/cvplanarcomponentinfo",
+        "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo",
+        "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo_ycbcrplanar",
+        "doc://com.apple.documentation/documentation/corevideo/cvplanarpixelbufferinfo_ycbcrbiplanar"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferreleasebytescallback",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferreleaseplanarbytescallback"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer/pixel_buffer_attribute_keys"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corevideo/cvbuffer",
+        "doc://com.apple.documentation/documentation/corevideo/cvimagebuffer",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpool",
+        "doc://com.apple.documentation/documentation/corevideo/cvpixelformatdescription"
+      ],
+      "title": "Data Processing",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1725372"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A Core Video pixel buffer is an image buffer that holds pixels in main memory. Applications generating frames, compressing or decompressing video, or using Core Image can all make use of Core Video pixel buffers. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Toggle between renderers to make sure your shader code compiles in both the Metal and OpenGL environments. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/skshader"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skshader/executing_shaders_in_metal_and_opengl",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2985080,
+  "kind": "article",
+  "metadata": {
+    "title": "Executing Shaders in Metal and OpenGL",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skshader/executing_shaders_in_metal_and_opengl"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skshader/executing_shaders_in_metal_and_opengl"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshader": {
+      "title": "SKShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshader"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skview/requesting_the_opengl_renderer": {
+      "title": "Requesting the OpenGL Renderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/requesting_the_opengl_renderer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skview/requesting_the_opengl_renderer"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshader/executing_shaders_in_metal_and_opengl": {
+      "title": "Executing Shaders in Metal and OpenGL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader/executing_shaders_in_metal_and_opengl",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skshader/executing_shaders_in_metal_and_opengl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Toggle between renderers to make sure your shader code compiles in both the Metal and OpenGL environments. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On devices that support it, the GLSL code you provide to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skshader"
+            },
+            {
+              "type": "text",
+              "text": " is automatically converted to Metal shading language and run on a Metal renderer. On older devices, shader code is run in OpenGL. It's important to be mindful of this for debugging purposes because some issues may appear in one renderer but not the other. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can specify which renderer your device uses—for example, forcing a Metal-enabled device to use SpriteKit's OpenGL renderer for debugging purposes—by adding a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PrefersOpenGL"
+            },
+            {
+              "type": "text",
+              "text": " to your app's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " key with a value of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": ". See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/requesting_the_opengl_renderer"
+            },
+            {
+              "type": "text",
+              "text": " for more information."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To ensure compatibility across all devices, test your shader code with and without the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "PrefersOpenGL"
+                },
+                {
+                  "type": "text",
+                  "text": " key, to be certain it compiles in both environments."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

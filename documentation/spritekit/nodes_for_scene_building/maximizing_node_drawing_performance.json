@@ -1,0 +1,666 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Structure your nodes for maximum performance."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building/maximizing_node_drawing_performance",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2972272,
+  "kind": "article",
+  "metadata": {
+    "title": "Maximizing Node Drawing Performance ",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/nodes_for_scene_building/maximizing_node_drawing_performance"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/nodes_for_scene_building/maximizing_node_drawing_performance"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skview/1520112-showsdrawcount": {
+      "title": "showsDrawCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520112-showsdrawcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skview/1520112-showsdrawcount"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktexture": {
+      "title": "SKTexture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktexture",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktexture"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktexture/1520425-texturewithrect": {
+      "title": "textureWithRect:inTexture:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktexture/1520425-texturewithrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktexture/1520425-texturewithrect",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "textureWithRect:inTexture:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktextureatlas": {
+      "title": "SKTextureAtlas",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktextureatlas",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktextureatlas"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427375-texturenamed": {
+      "title": "textureNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427375-texturenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktextureatlas/1427375-texturenamed",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "textureNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition": {
+      "title": "zPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483107-zposition"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skview/1520215-ignoressiblingorder": {
+      "title": "ignoresSiblingOrder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520215-ignoressiblingorder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skview/1520215-ignoressiblingorder"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skview/1520156-showsnodecount": {
+      "title": "showsNodeCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520156-showsnodecount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skview/1520156-showsnodecount"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skview/1519683-shouldcullnonvisiblenodes": {
+      "title": "shouldCullNonVisibleNodes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1519683-shouldcullnonvisiblenodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skview/1519683-shouldcullnonvisiblenodes"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483119-removefromparent": {
+      "title": "removeFromParent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483119-removefromparent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483119-removefromparent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeFromParent"
+        }
+      ]
+    },
+    "devLink-2911382": {
+      "identifier": "devLink-2911382",
+      "type": "link",
+      "title": "Metal",
+      "url": "https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS10.html#//apple_ref/doc/uid/TP40017084-SW36"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building/maximizing_node_drawing_performance": {
+      "title": "Maximizing Node Drawing Performance ",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building/maximizing_node_drawing_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/nodes_for_scene_building/maximizing_node_drawing_performance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Structure your nodes for maximum performance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode": {
+      "title": "SKSpriteNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skspritenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image or solid color."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skshapenode": {
+      "title": "SKShapeNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skshapenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skshapenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mathematical shape that can be stroked or filled. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skemitternode": {
+      "title": "SKEmitterNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skemitternode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skemitternode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A source of various particle effects. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sklabelnode": {
+      "title": "SKLabelNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sklabelnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sklabelnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A graphical element that draws text. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skvideonode": {
+      "title": "SKVideoNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skvideonode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skvideonode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A graphical element that plays video content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktilemapnode": {
+      "title": "SKTileMapNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktilemapnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktilemapnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A two-dimensional array of images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sk3dnode": {
+      "title": "SK3DNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sk3dnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sk3dnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "3D SceneKit content drawn as a flattened sprite. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode",
+        "doc://com.apple.documentation/documentation/spritekit/skshapenode",
+        "doc://com.apple.documentation/documentation/spritekit/skemitternode",
+        "doc://com.apple.documentation/documentation/spritekit/sklabelnode",
+        "doc://com.apple.documentation/documentation/spritekit/skvideonode",
+        "doc://com.apple.documentation/documentation/spritekit/sktilemapnode",
+        "doc://com.apple.documentation/documentation/spritekit/sk3dnode"
+      ],
+      "title": "Nodes that Draw",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As a high-level graphics framework, you configure your scene by laying out nodes, and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SpriteKit"
+            },
+            {
+              "type": "text",
+              "text": " builds the "
+            },
+            {
+              "type": "link",
+              "title": "Metal",
+              "destination": "https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS10.html#//apple_ref/doc/uid/TP40017084-SW36"
+            },
+            {
+              "type": "text",
+              "text": " draw calls for you that actually render the content. Thus, you have little control over the amount of low-level graphics work that SpriteKit does, but this article gives you hints that can speed up SpriteKit's efforts. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Show Draw Count",
+          "anchor": "2983030"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each draw call is an expensive operation; the more graphical elements you can pack into a single draw, the faster your scene can be rendered, and thus the higher frames per second it can achieve. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can see the number of draw calls it's taking to render your scene live on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SKView"
+            },
+            {
+              "type": "text",
+              "text": " by enabling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520112-showsdrawcount"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In general, all scene nodes can be rendered in a single draw call that came from the same "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktexture"
+            },
+            {
+              "type": "text",
+              "text": ", for example: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Sprite nodes that use the same "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "SKTexture"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Sprite nodes whose texture specifies a subrectangle of the same texture through the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "SKTexture"
+                    },
+                    {
+                      "type": "text",
+                      "text": " "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktexture/1520425-texturewithrect"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In general, all nodes can be rendered in a single draw call that came from the same "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktextureatlas"
+            },
+            {
+              "type": "text",
+              "text": " using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427375-texturenamed"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Node "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483107-zposition"
+                },
+                {
+                  "type": "text",
+                  "text": " impacts draw call count because, generally, nodes at different "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "zPositions"
+                },
+                {
+                  "type": "text",
+                  "text": " must be rendered on a subsequent pass. For example, nodes that overlap each other must be done in separate draw calls. Overlapping nodes at the same "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "zPosition"
+                },
+                {
+                  "type": "text",
+                  "text": " can be rendered in the same draw call if you enable the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "SKView"
+                },
+                {
+                  "type": "text",
+                  "text": " "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520215-ignoressiblingorder"
+                },
+                {
+                  "type": "text",
+                  "text": " property."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For all other SpriteKit nodes that draw, pay attention to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520112-showsdrawcount"
+            },
+            {
+              "type": "text",
+              "text": " statistic  as you develop your app to gain an understanding of which configurations affect draw count. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Show Node Count",
+          "anchor": "2983031"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The number of nodes in your scene relates to the number of draw calls. Therefore, minimizing the number of nodes in your scene is a good practice to keep the draw call count down. Showing the node count in your scene is done through the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SKView"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1520156-showsnodecount"
+            },
+            {
+              "type": "text",
+              "text": " property. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The number of nodes in your scene can also affect performance if you enumerate all of your nodes within the update life cycle. While the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SKView"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1519683-shouldcullnonvisiblenodes"
+            },
+            {
+              "type": "text",
+              "text": " property can prune offscreen nodes out of an issued draw call, SpriteKit must still enumerate all nodes in your scene to figure out which ones are offscreen, and this is an expensive operation. As a result, eliminating offscreen nodes yourself by using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483119-removefromparent"
+            },
+            {
+              "type": "text",
+              "text": " is the fastest way to cull nonvisible nodes. Once a node is removed from the node tree, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SpriteKit"
+            },
+            {
+              "type": "text",
+              "text": " no longer needs to consider whether it's onscreen or offscreen every frame. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

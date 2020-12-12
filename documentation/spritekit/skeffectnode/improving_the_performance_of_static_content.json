@@ -1,0 +1,272 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Flatten a portion of your node hierarchy to a single texture to improve performance."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skeffectnode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skeffectnode/improving_the_performance_of_static_content",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2975416,
+  "kind": "article",
+  "metadata": {
+    "title": "Improving the Performance of Static Content",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skeffectnode/improving_the_performance_of_static_content"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skeffectnode/improving_the_performance_of_static_content"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skeffectnode": {
+      "title": "SKEffectNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skeffectnode",
+      "url": "/documentation/spritekit/skeffectnode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skeffectnode/improving_the_performance_of_static_content": {
+      "title": "Improving the Performance of Static Content",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skeffectnode/improving_the_performance_of_static_content",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skeffectnode/improving_the_performance_of_static_content",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flatten a portion of your node hierarchy to a single texture to improve performance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skeffectnode/1459381-shouldrasterize": {
+      "title": "shouldRasterize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skeffectnode/1459381-shouldrasterize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skeffectnode/1459381-shouldrasterize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the results of rendering the child nodes should be cached."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skeffectnode/1459381-shouldrasterize"
+      ],
+      "title": "Flattening an Effect Node's Child Tree for Performance Improvement",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An effect node normally discards its private framebuffer after rendering is complete. Rendering the content is necessary because it typically changes every frame. However, if the content is static, discarding the rendered framebuffer is unnecessary, and it might make more sense to keep it. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the content of the effect node is static, set the node’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "shouldRasterize"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ". Setting this property causes the following changes in behavior:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The framebuffer is not discarded at the end of rasterization. This also means that more memory is being used by the effect node, and rendering may take slightly longer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When a new frame is rendered, the framebuffer is rendered only if the contents of the effect node’s descendants have changed."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the effect node has a Core Image filter, changes to its properties no longer automatically update the framebuffer. You can force it to be updated by setting the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "shouldRasterize"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use effect nodes to cache static content even when you aren’t applying a filter to the rendered image. This technique can be useful when the contents of a subtree are static and expensive to render."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

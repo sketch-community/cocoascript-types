@@ -1,0 +1,665 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Implement per-frame app logic, such as the scene's update function that's called every frame. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/skscene"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skscene/responding_to_frame-cycle_events",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2975093,
+  "kind": "article",
+  "metadata": {
+    "title": "Responding to Frame-Cycle Events",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skscene/responding_to_frame-cycle_events"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skscene/responding_to_frame-cycle_events"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene": {
+      "title": "SKScene",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1519802-update": {
+      "title": "update:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519802-update",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1519802-update",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells your app to perform any app-specific logic to update your scene. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "update:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1519903-didevaluateactions": {
+      "title": "didEvaluateActions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519903-didevaluateactions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1519903-didevaluateactions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells your app to peform any necessary logic after scene actions are evaluated."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didEvaluateActions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skphysicsbody": {
+      "title": "SKPhysicsBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skphysicsbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skphysicsbody"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skphysicscontactdelegate": {
+      "title": "SKPhysicsContactDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skphysicscontactdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skphysicscontactdelegate"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1519965-didsimulatephysics": {
+      "title": "didSimulatePhysics",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519965-didsimulatephysics",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1519965-didsimulatephysics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells your app to peform any necessary logic after physics simulations are performed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didSimulatePhysics"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1520006-didapplyconstraints": {
+      "title": "didApplyConstraints",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1520006-didapplyconstraints",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1520006-didapplyconstraints",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells your app to peform any necessary logic after constraints are applied."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didApplyConstraints"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1520269-didfinishupdate": {
+      "title": "didFinishUpdate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1520269-didfinishupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1520269-didfinishupdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells your app to peform any necessary logic after the scene has finished all of the steps required to process animations."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didFinishUpdate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscenedelegate": {
+      "title": "SKSceneDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscenedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscenedelegate"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate": {
+      "title": "Subclassing Scenes Versus Assigning a Delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skview/1519705-presentscene": {
+      "title": "presentScene:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1519705-presentscene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skview/1519705-presentscene",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "presentScene:"
+        }
+      ]
+    },
+    "link-media-2975111": {
+      "identifier": "link-media-2975111",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/spritekit/skscene/responding_to_frame-cycle_events#2975111"
+    },
+    "media-2975111": {
+      "identifier": "media-2975111",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 434
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e645e8c6cd/5a042054-44ab-4533-9ef7-b8db1ab60f16.png"
+        }
+      ],
+      "alt": "Diagram showing the sequence of events that compose the scene update lifecycle",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/responding_to_frame-cycle_events": {
+      "title": "Responding to Frame-Cycle Events",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/responding_to_frame-cycle_events",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skscene/responding_to_frame-cycle_events",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement per-frame app logic, such as the scene's update function that's called every frame. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skscene/1519802-update",
+        "doc://com.apple.documentation/documentation/spritekit/skscene/1519903-didevaluateactions",
+        "doc://com.apple.documentation/documentation/spritekit/skscene/1519965-didsimulatephysics",
+        "doc://com.apple.documentation/documentation/spritekit/skscene/1520006-didapplyconstraints",
+        "doc://com.apple.documentation/documentation/spritekit/skscene/1520269-didfinishupdate"
+      ],
+      "title": "Responding to Frame-Cycle Events",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a scene is presented via "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skview/1519705-presentscene"
+            },
+            {
+              "type": "text",
+              "text": ", SpriteKit calls you every frame if you implement any of the functions shown in the following image:  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2975111",
+              "metadata": {
+                "anchor": "2975111",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you don't implement any of the frame-cycle functions, SpriteKit will only render the scene when something within it has changed, improving energy efficiency and allowing your game or app to perform other operations instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Decide Which Events to Implement",
+          "anchor": "3020378"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each time through the rendering loop, the scene’s contents are updated and then rendered. You can’t override the rendering behavior; instead you update the nodes in the scene. However, the scene includes methods you can override to customize scene processing, and you can use actions and physics to alter properties of nodes in the tree. Here are the steps in the rendering loop:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519802-update"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method is called with the time elapsed so far in the simulation. This is the primary place to implement your own in-game simulation, including input handling, artificial intelligence, game scripting, and other similar game logic. Often, you use this method to make changes to nodes or to run actions on nodes."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene processes actions on all the nodes in the tree. It finds any running actions and applies those changes to the tree. In practice, because of custom actions, you can also hook into the action mechanism to call your own code. You cannot directly control the order in which actions are processed or cause the scene to skip actions on certain nodes, except by removing the actions from those nodes or removing the nodes from the tree."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519903-didevaluateactions"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method is called after all actions for the frame have been processed."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene simulates physics on nodes in the tree that have physics bodies. Adding physics to nodes in a scene is described in "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skphysicsbody"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", but the end result of simulating physics is that the position and rotation of nodes in the tree may be adjusted by the physics simulation. Your game can also receive callbacks when physics bodies come into contact with each other. See "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skphysicscontactdelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519965-didsimulatephysics"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method is called after all physics bodies for the frame have been simulated."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene applies any constraints associated with nodes in the scene. Constraints are used to establish relationships in the scene. For example, you can apply a constraint that makes sure a node is always pointed at another node, regardless of how it is moved. By using constraints, you avoid needing to write a lot of custom code in your scene handling."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene calls its "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1520006-didapplyconstraints"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene calls its "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1520269-didfinishupdate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. This is your last chance to make changes to the scene."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene is rendered."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use a Scene Delegate Instead of Subclassing a Scene",
+          "anchor": "2721331"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Subclassing "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene"
+            },
+            {
+              "type": "text",
+              "text": " and overriding frame-cycle functions is a simple way to implement your app's logic, but you avoid subclassing by using a delegate. All of the frame-cycle functions defined by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SKScene"
+            },
+            {
+              "type": "text",
+              "text": " have an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscenedelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol equivalent function. So, if you provide a scene delegate, the delegate's frame-cycle methods are called instead of those on the scene. For example, an iOS app might use a view controller as the scene delegate. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/subclassing_scenes_versus_assigning_a_delegate"
+            },
+            {
+              "type": "text",
+              "text": " for more information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Implement Post-Processing",
+          "anchor": "2721332"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A scene can process the actions on the scene tree in any order. For this reason, if you have tasks that you need to run each frame and you need precise control over when they run, you should use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519903-didevaluateactions"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519965-didsimulatephysics"
+            },
+            {
+              "type": "text",
+              "text": " methods to perform those tasks. Typically, you make changes during post-processing that require the final calculated positions of certain nodes in the tree. Your post-processing can take these positions and perform other useful work on the tree."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

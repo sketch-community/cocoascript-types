@@ -1,0 +1,631 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Scale a sprite using nine-part algorithm."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2983055,
+  "kind": "article",
+  "metadata": {
+    "title": "Resizing a Sprite in Nine Parts",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode": {
+      "title": "SKSpriteNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode",
+      "url": "/documentation/spritekit/skspritenode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483026-frame": {
+      "title": "frame",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483026-frame",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483026-frame"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/1520391-initwithimagenamed": {
+      "title": "initWithImageNamed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1520391-initwithimagenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skspritenode/1520391-initwithimagenamed",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithImageNamed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483087-xscale": {
+      "title": "xScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483087-xscale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483087-xscale"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483046-yscale": {
+      "title": "yScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483046-yscale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483046-yscale"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode": {
+      "title": "SKNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode"
+    },
+    "link-media-2983064": {
+      "identifier": "link-media-2983064",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts#2983064"
+    },
+    "media-2983064": {
+      "identifier": "media-2983064",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 243
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9b8ff0b2d0/9314d4d7-4104-41bd-bc9c-2f472b6e32bf.png"
+        }
+      ],
+      "alt": "A texture is stretched to cover the sprite’s frame",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/1520119-centerrect": {
+      "title": "centerRect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1520119-centerrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skspritenode/1520119-centerrect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enable nine-part stretching of the sprite's texture."
+        }
+      ]
+    },
+    "link-media-2983059": {
+      "identifier": "link-media-2983059",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts#2983059"
+    },
+    "media-2983059": {
+      "identifier": "media-2983059",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 320
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9b8ff0b2d0/a6b3d325-3283-43ca-85d8-048ba548d9ec.png"
+        }
+      ],
+      "alt": "A stretchable button texture",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts#2983057": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts#2983057",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts#2983057"
+    },
+    "link-media-2983056": {
+      "identifier": "link-media-2983056",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts#2983056"
+    },
+    "media-2983056": {
+      "identifier": "media-2983056",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 243
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9b8ff0b2d0/4bf11144-8b2d-4fa8-ac9c-7b37ac3e6fe0.png"
+        }
+      ],
+      "alt": "Applying the button texture to buttons of different sizes",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts": {
+      "title": "Resizing a Sprite in Nine Parts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skspritenode/resizing_a_sprite_in_nine_parts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scale a sprite using nine-part algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/skspritenode/1520119-centerrect"
+      ],
+      "title": "Scaling a Sprite in Nine Parts",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The size of the sprite node’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483026-frame"
+            },
+            {
+              "type": "text",
+              "text": " property is determined by the values of these properties:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The sprite node’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "size"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property holds its base (unscaled) size. When a sprite is initialized using "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1520391-initwithimagenamed"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", the value of this property is initialized to be equal to the size of the supplied image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The base size is then scaled by the sprite’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483087-xscale"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483046-yscale"
+                    },
+                    {
+                      "type": "text",
+                      "text": " properties inherited from the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, if the sprite node’s base size is 32 x 32 pixels and it has an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483087-xscale"
+            },
+            {
+              "type": "text",
+              "text": " value of 1.0 and a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483046-yscale"
+            },
+            {
+              "type": "text",
+              "text": " value of 2.0, the size of its frame is 32 x 64 pixels."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The scaling values of the sprite node’s ancestors in the scene are also used to scale it. This changes the effective size of the sprite without changing its actual frame value. See "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A Node Applies Many of Its Properties to Its Descendants"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a sprite node’s frame is larger than its texture, the texture is stretched to cover its frame. Normally, the texture is stretched uniformly across the frame, as shown in the following figure."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2983064",
+              "metadata": {
+                "anchor": "2983064",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "However, sometimes you want to use sprite nodes to build user interface elements, such as buttons or health indicators. Often, these elements contain fixed-size elements, such as end caps, that should not be stretched. In this case, use a portion of the texture without stretching, and then stretch the remaining part of the texture over the rest of the frame."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sprite’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1520119-centerrect"
+            },
+            {
+              "type": "text",
+              "text": " property, which is specified in unit coordinates of the texture, controls the scaling behavior. The default value is a rectangle that covers the entire texture, which is why the entire texture is stretched across the frame. If you specify a rectangle that only covers a portion of the texture, you create a 3 x 3 grid. Each box in the grid has its own scaling behavior:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The portions of the texture in the four corners of the grid are drawn without any scaling."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The center of the grid is scaled in both dimensions."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The upper- and lower-middle parts are only scaled horizontally."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The left- and right-middle parts are only scaled vertically."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following figure shows a close-up view of a texture you might use to draw a user interface button. The complete texture is 28 x 28 pixels. The corner pieces are each 12 x 12 pixels and the center is 4 x 4 pixels."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2983059",
+              "metadata": {
+                "anchor": "2983059",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how this button sprite would be initialized. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skspritenode/1520119-centerrect"
+            },
+            {
+              "type": "text",
+              "text": " property is computed based on the design of the texture."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SKSpriteNode *button = [SKSpriteNode spriteNodeWithImageNamed:@\"stretchable_button.png\"];",
+            "button.centerRect = CGRectMake(12.0/28.0, 12.0/28.0, 4.0/28.0, 4.0/28.0);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2983057",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following figure shows that the corners remain the same, even when the button is drawn at different sizes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2983056",
+              "metadata": {
+                "anchor": "2983056",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

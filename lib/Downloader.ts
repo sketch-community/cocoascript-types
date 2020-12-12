@@ -1,5 +1,4 @@
 import * as fs from 'fs';
-import * as path from 'path';
 import * as fse from 'fs-extra';
 import * as os from 'os';
 import PromisePool from '@supercharge/promise-pool';
@@ -17,9 +16,11 @@ const INCLUDE_DOCS = [
   'documentation/cloudkit',
   'documentation/app_clips',
   'documentation/coreimage',
+  'documentation/corevideo',
   'documentation/objectivec',
   'documentation/foundation',
   'documentation/iobluetooth',
+  'documentation/coreservices',
   'documentation/corelocation',
   'documentation/coregraphics',
   'documentation/corespotlight',

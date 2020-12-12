@@ -1,0 +1,403 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Web Services Core uses the following enumeration when serializing between Core Foundation and XML types. Because CFTypes are defined at runtime, it isn't always possible to produce a static mapping to a particular CFTypeRef.  This enum and associated API allows for static determination of the expected serialization."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/carbon_core_enumerations"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/wstypeid",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1508429,
+  "kind": "symbol",
+  "metadata": {
+    "title": "WSTypeID",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@T@WSTypeID",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/wstypeid"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core": {
+      "title": "Carbon Core",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+      "url": "/documentation/coreservices/carbon_core",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/carbon_core_enumerations": {
+      "title": "Carbon Core Enumerations",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/carbon_core_enumerations",
+      "url": "/documentation/coreservices/carbon_core/carbon_core_enumerations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsunknowntype": {
+      "title": "eWSUnknownType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsunknowntype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsunknowntype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "No mapping is known for this type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsnulltype": {
+      "title": "eWSNullType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsnulltype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsnulltype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFNullRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsbooleantype": {
+      "title": "eWSBooleanType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsbooleantype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsbooleantype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFBooleanRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsintegertype": {
+      "title": "eWSIntegerType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsintegertype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsintegertype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFNumberRef"
+        },
+        {
+          "type": "text",
+          "text": " for 8, 16, 32 bit integers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdoubletype": {
+      "title": "eWSDoubleType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdoubletype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsdoubletype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFNumberRef"
+        },
+        {
+          "type": "text",
+          "text": " for long, double, or real numbers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsstringtype": {
+      "title": "eWSStringType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsstringtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsstringtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFStringRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdatetype": {
+      "title": "eWSDateType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdatetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsdatetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFDateRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdatatype": {
+      "title": "eWSDataType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdatatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsdatatype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFDataRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsarraytype": {
+      "title": "eWSArrayType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsarraytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsarraytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFArrayRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdictionarytype": {
+      "title": "eWSDictionaryType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdictionarytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/wstypeid/ewsdictionarytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maps to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFDictionaryRef"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsunknowntype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsnulltype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsbooleantype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsintegertype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdoubletype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsstringtype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdatetype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdatatype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsarraytype",
+        "doc://com.apple.documentation/documentation/coreservices/wstypeid/ewsdictionarytype"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " WSTypeID : "
+            },
+            {
+              "kind": "keyword",
+              "text": "unsigned"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "int"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "WSTypeID"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

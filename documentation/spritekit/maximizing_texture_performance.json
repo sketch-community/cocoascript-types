@@ -1,0 +1,305 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Speed up image display and enable more images to be displayed at one time. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/maximizing_texture_performance",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2969673,
+  "kind": "article",
+  "metadata": {
+    "title": "Maximizing Texture Performance",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/maximizing_texture_performance"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/maximizing_texture_performance"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktexture/1519817-preloadtextures": {
+      "title": "preloadTextures:withCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktexture/1519817-preloadtextures",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktexture/1519817-preloadtextures",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "preloadTextures:withCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427385-preloadwithcompletionhandler": {
+      "title": "preloadWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427385-preloadwithcompletionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktextureatlas/1427385-preloadwithcompletionhandler",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "preloadWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktexture": {
+      "title": "SKTexture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktexture",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktexture",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image, decoded on the GPU, that can be used to render various SpriteKit objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sktextureatlas": {
+      "title": "SKTextureAtlas",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sktextureatlas",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sktextureatlas",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of textures optimized for storage and drawing performance. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/maximizing_texture_performance": {
+      "title": "Maximizing Texture Performance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/maximizing_texture_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/maximizing_texture_performance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Speed up image display and enable more images to be displayed at one time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skmutabletexture": {
+      "title": "SKMutableTexture",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skmutabletexture",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skmutabletexture",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A texture whose contents can be dynamically updated."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/spritekit/sktexture",
+        "doc://com.apple.documentation/documentation/spritekit/sktextureatlas",
+        "doc://com.apple.documentation/documentation/spritekit/skmutabletexture"
+      ],
+      "title": "Textures",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use textures and atlases to hold your app's image data, but need to follow recommended practices for the best performance. Because image data can consume much video memory, you should preload textures ahead of time and reuse them where possible. In addition, grouping related textures into an atlas enables them to draw faster. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktexture"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktextureatlas"
+            },
+            {
+              "type": "text",
+              "text": " class references for more information."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Repeat Images with Textures",
+          "anchor": "3020273"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Textures, represented as SKTexture objects, are shared images used to render sprites. Always use textures whenever you need to apply the same image to multiple sprites. Usually you create textures by loading image files stored in your app bundle. However, SpriteKit can also create textures for you at runtime from other sources, including Core Graphics images, or even by rendering a node tree into a texture."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Preload Textures",
+          "anchor": "3020274"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SpriteKit simplifies texture management by handling the lower-level code required to load textures and make them available to the graphics hardware. Texture management is automatically managed by SpriteKit. However, if your game uses a large number of images, you can improve its performance by taking control of parts of the process. Primarily, you do this by telling SpriteKit explicitly to load a texture using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SKTexture"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktexture/1519817-preloadtextures"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SKTextureAtlas"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427385-preloadwithcompletionhandler"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Group Similar Textures in an Atlas",
+          "anchor": "3020272"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A texture atlas is a group of related textures that are used together in your game. For example, you might use a texture atlas to store all of the textures needed to animate a character or all of the tiles needed to render the background of a gameplay level. SpriteKit uses texture atlases to improve rendering performance."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager",
+        "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1471171,
+  "kind": "symbol",
+  "metadata": {
+    "title": "gestaltSystemVersion",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "10.8",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:@Ea@gestaltSystemVersion@gestaltSystemVersion",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core": {
+      "title": "Carbon Core",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+      "url": "/documentation/coreservices/carbon_core",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager": {
+      "title": "Gestalt Manager",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager",
+      "url": "/documentation/coreservices/carbon_core/gestalt_manager",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors": {
+      "title": "System Version Selectors",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1470788-system_version_selectors",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates operating system version information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion": {
+      "title": "gestaltSystemVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion#1966941": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion#1966941",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion#1966941",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Representation of macOS versions for the gestaltSystemVersion selector"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "gestaltSystemVersion"
+            },
+            {
+              "kind": "text",
+              "text": " = 'sysv'"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Indicates the version number of the operating system, with limitations on the values returned."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Never infer the availability of hardware or software features from the value that the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Gestalt"
+                },
+                {
+                  "type": "text",
+                  "text": " function returns when you pass it the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion"
+                },
+                {
+                  "type": "text",
+                  "text": " selector."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In macOS 10.4 and later, the recommended way to get operating system version information is to use the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "gestaltSystemVersionMajor"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "gestaltSystemVersionMinor"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "gestaltSystemVersionBugFix"
+                },
+                {
+                  "type": "text",
+                  "text": " selectors, listed below, in concert. These selectors do not have arbitrary limits on the values returned."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the values of the minor or bug fix revision are larger than 9, then "
+            },
+            {
+              "type": "codeVoice",
+              "code": "gestaltSystemVersion"
+            },
+            {
+              "type": "text",
+              "text": " will substitute the value 9 for them.  For example, when running OS X v10.3.15, this selector returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0x1039"
+            },
+            {
+              "type": "text",
+              "text": ". When running OS X v10.10.5, this selector returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0x1095"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " For macOS, the version representations are as shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/coreservices/1470788-system_version_selectors/gestaltsystemversion#1966941"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "macOS version"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Representation"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "10.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "0x1000"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "10.1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "0x1010"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "10.2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "0x1020"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "10.3"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "0x1030"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "10.4"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "0x1040"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "1966941",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Representation of macOS versions for the gestaltSystemVersion selector"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For systems prior to macOS, the version is represented as four hexadecimal digits in the low-order word of the return value. For example, if your application is running in version 7.0.1, then "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Gestalt"
+            },
+            {
+              "type": "text",
+              "text": " returns the value 0x0701. Ignore the high-order word of the returned value."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Learn the semantics of using a camera in your scene."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/spritekit",
+        "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+        "doc://com.apple.documentation/documentation/spritekit/skcameranode"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/spritekit/skcameranode/getting_started_with_a_camera",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2982847,
+  "kind": "article",
+  "metadata": {
+    "title": "Getting Started with a Camera",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SpriteKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skcameranode/getting_started_with_a_camera"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/spritekit/skcameranode/getting_started_with_a_camera"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/spritekit": {
+      "title": "SpriteKit",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit",
+      "url": "/documentation/spritekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building": {
+      "title": "Nodes for Scene Building",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/nodes_for_scene_building",
+      "url": "/documentation/spritekit/nodes_for_scene_building",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skcameranode": {
+      "title": "SKCameraNode",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skcameranode",
+      "url": "/documentation/spritekit/skcameranode",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1519696-camera": {
+      "title": "camera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519696-camera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1519696-camera"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skscene/1519864-anchorpoint": {
+      "title": "anchorPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519864-anchorpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skscene/1519864-anchorpoint"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483087-xscale": {
+      "title": "xScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483087-xscale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483087-xscale"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483046-yscale": {
+      "title": "yScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483046-yscale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483046-yscale"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483089-zrotation": {
+      "title": "zRotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483089-zrotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483089-zrotation"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skcameranode/getting_started_with_a_camera": {
+      "title": "Getting Started with a Camera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skcameranode/getting_started_with_a_camera",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/spritekit/skcameranode/getting_started_with_a_camera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the semantics of using a camera in your scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "SKCameraNode"
+            },
+            {
+              "type": "text",
+              "text": " defines which portion of a scene is visible on the screen. You must do the following to use a camera: "
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Instantiate a new "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "SKCameraNode"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and set it as the scene's "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519696-camera"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the camera node as a child to the scene."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you don't use a camera in your scene, the scene's "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/spritekit/skscene/1519864-anchorpoint"
+                },
+                {
+                  "type": "text",
+                  "text": " is used to position the scene within the view. "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the camera is a node, you define its position within the scene just like any other node. Actions, physics, and GameplayKit behaviors can also be applied to the camera node. When a scene is rendered using a camera node, the following occur:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The scene is rendered so that the camera node’s origin is placed in the middle of the scene."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The inverse of the camera node’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483087-xscale"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483046-yscale"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483089-zrotation"
+                    },
+                    {
+                      "type": "text",
+                      "text": " properties are applied to all nodes in the scene."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this way, a camera’s position, scale, and rotation always have the opposite effect on how the scene is rendered. For example, if the camera is moved 10 pixels to the right, the scene is rendered as if everything else moved 10 pixels to the left. And similarly, if a camera node has an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483087-xscale"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483046-yscale"
+            },
+            {
+              "type": "text",
+              "text": " of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "2.0"
+            },
+            {
+              "type": "text",
+              "text": ", the scene is rendered as if every distance was half its normal size, effectively  increasing the visible area of the camera’s viewport."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A camera’s descendants are always rendered relative to the camera node’s origin and without applying the camera’s scaling or rotation to them. For example, if your app displays scores or other data floating above the gameplay, the nodes that render these elements should be added as child nodes to the camera."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

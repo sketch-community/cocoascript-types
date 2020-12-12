@@ -1,0 +1,178 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+        "doc://com.apple.documentation/documentation/coreservices/1399907-mac_unicode_text_encoding"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/1399907-mac_unicode_text_encoding/ktextencodingmacunicode",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1399806,
+  "kind": "symbol",
+  "metadata": {
+    "title": "kTextEncodingMacUnicode",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@Ea@kTextEncodingMacUnicode@kTextEncodingMacUnicode",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/1399907-mac_unicode_text_encoding/ktextencodingmacunicode"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core": {
+      "title": "Carbon Core",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+      "url": "/documentation/coreservices/carbon_core",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager": {
+      "title": "Text Encoding Conversion Manager",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+      "url": "/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1399907-mac_unicode_text_encoding": {
+      "title": "Mac Unicode Text Encoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1399907-mac_unicode_text_encoding",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1399907-mac_unicode_text_encoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies a script code that should be handled as a special Mac OS script code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "kTextEncodingMacUnicode"
+            },
+            {
+              "kind": "text",
+              "text": " = 0x7E"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Beginning with Mac OS 8.5, the set of Mac OS script codes has been extended for some Mac OS components to include Unicode. Some of these components have only 7 bits available for script code, so "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kTextEncodingUnicodeDefault"
+            },
+            {
+              "type": "text",
+              "text": " cannot be used to indicate Unicode. Instead, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kTextEncodingMacUnicode"
+            },
+            {
+              "type": "text",
+              "text": " is used as a meta-value to indicate that Unicode handles the script code a special Mac OS script code. The Text Encoding Converter handles this value similar to the way it handles the constant "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kTextEncodingUnicodeDefault"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

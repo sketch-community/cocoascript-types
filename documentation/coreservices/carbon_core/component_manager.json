@@ -1,0 +1,1682 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Find and use components in your app or add custom components to system-provided services, such as QuickTime and Core Audio. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coreservices",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1665444,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Component Manager",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Services"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/carbon_core/component_manager"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/coreservices/carbon_core/component_manager"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/coreservices": {
+      "title": "Core Services",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices",
+      "url": "/documentation/coreservices",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core": {
+      "title": "Carbon Core",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core",
+      "url": "/documentation/coreservices/carbon_core",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "devLink-1695499": {
+      "identifier": "devLink-1695499",
+      "type": "link",
+      "title": "Code Loading Programming Topics",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingCode/LoadingCode.html#//apple_ref/doc/uid/10000052i"
+    },
+    "doc://com.apple.documentation/documentation/audiounit/audio_component_services": {
+      "title": "Audio Component Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/audiounit/audio_component_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/audiounit/audio_component_services"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516515-countcomponents": {
+      "title": "CountComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516515-countcomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516515-countcomponents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of registered components that meet the selection criteria specified by your application. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516552-findnextcomponent": {
+      "title": "FindNextComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516552-findnextcomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516552-findnextcomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the component identifier for the next registered component that meets the selection criteria specified by your application. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516399-getcomponentlistmodseed": {
+      "title": "GetComponentListModSeed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516399-getcomponentlistmodseed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516399-getcomponentlistmodseed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows your application to determine if the list of registered components has changed. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516653-getcomponenttypemodseed": {
+      "title": "GetComponentTypeModSeed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516653-getcomponenttypemodseed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516653-getcomponenttypemodseed",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516484-resolvecomponentalias": {
+      "title": "ResolveComponentAlias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516484-resolvecomponentalias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516484-resolvecomponentalias",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516558-openacomponent": {
+      "title": "OpenAComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516558-openacomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516558-openacomponent",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516360-openadefaultcomponent": {
+      "title": "OpenADefaultComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516360-openadefaultcomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516360-openadefaultcomponent",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516607-opencomponent": {
+      "title": "OpenComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516607-opencomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516607-opencomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens a connection to the component with the component identifier specified by your application."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516523-opendefaultcomponent": {
+      "title": "OpenDefaultComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516523-opendefaultcomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516523-opendefaultcomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens a connection to a registered component of the component type and subtype specified by your application. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516436-closecomponent": {
+      "title": "CloseComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516436-closecomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516436-closecomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Terminates your application’s connection to a component. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516438-getcomponentinfo": {
+      "title": "GetComponentInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516438-getcomponentinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516438-getcomponentinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns to your application the registration information for a component. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516516-getcomponentpublicindstring": {
+      "title": "GetComponentPublicIndString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516516-getcomponentpublicindstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516516-getcomponentpublicindstring",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516336-getcomponentpublicresource": {
+      "title": "GetComponentPublicResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516336-getcomponentpublicresource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516336-getcomponentpublicresource",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516460-getcomponentpublicresourcelist": {
+      "title": "GetComponentPublicResourceList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516460-getcomponentpublicresourcelist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516460-getcomponentpublicresourcelist",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516618-getcomponentinstanceerror": {
+      "title": "GetComponentInstanceError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516618-getcomponentinstanceerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516618-getcomponentinstanceerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns to your application the last error generated by a specific connection to a component."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516529-callcomponentopen": {
+      "title": "CallComponentOpen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516529-callcomponentopen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516529-callcomponentopen",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516604-callcomponentclose": {
+      "title": "CallComponentClose",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516604-callcomponentclose",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516604-callcomponentclose",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516321-callcomponentcando": {
+      "title": "CallComponentCanDo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516321-callcomponentcando",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516321-callcomponentcando",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516489-callcomponentversion": {
+      "title": "CallComponentVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516489-callcomponentversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516489-callcomponentversion",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516385-callcomponentregister": {
+      "title": "CallComponentRegister",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516385-callcomponentregister",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516385-callcomponentregister",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516493-callcomponenttarget": {
+      "title": "CallComponentTarget",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516493-callcomponenttarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516493-callcomponenttarget",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516337-callcomponentunregister": {
+      "title": "CallComponentUnregister",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516337-callcomponentunregister",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516337-callcomponentunregister",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516547-callcomponentdispatch": {
+      "title": "CallComponentDispatch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516547-callcomponentdispatch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516547-callcomponentdispatch",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516346-callcomponentgetmpworkfunction": {
+      "title": "CallComponentGetMPWorkFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516346-callcomponentgetmpworkfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516346-callcomponentgetmpworkfunction",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516354-callcomponentgetpublicresource": {
+      "title": "CallComponentGetPublicResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516354-callcomponentgetpublicresource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516354-callcomponentgetpublicresource",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516422-cssetcomponentsthreadmode": {
+      "title": "CSSetComponentsThreadMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516422-cssetcomponentsthreadmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516422-cssetcomponentsthreadmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets whether or not using thread-unsafe components is allowed in the current thread. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516409-csgetcomponentsthreadmode": {
+      "title": "CSGetComponentsThreadMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516409-csgetcomponentsthreadmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516409-csgetcomponentsthreadmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether using thread-unsafe components is allowed in the current thread. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516579-newcomponentroutineupp": {
+      "title": "NewComponentRoutineUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516579-newcomponentroutineupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516579-newcomponentroutineupp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new universal procedure pointer (UPP) to a component routine callback function."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516654-invokecomponentroutineupp": {
+      "title": "InvokeComponentRoutineUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516654-invokecomponentroutineupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516654-invokecomponentroutineupp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calls your component routine callback function"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516334-disposecomponentroutineupp": {
+      "title": "DisposeComponentRoutineUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516334-disposecomponentroutineupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516334-disposecomponentroutineupp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disposes of the universal procedure pointer (UPP) to a component routine callback function."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516583-newcomponentfunctionupp": {
+      "title": "NewComponentFunctionUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516583-newcomponentfunctionupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516583-newcomponentfunctionupp",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516369-disposecomponentfunctionupp": {
+      "title": "DisposeComponentFunctionUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516369-disposecomponentfunctionupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516369-disposecomponentfunctionupp",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516448-newcomponentmpworkfunctionupp": {
+      "title": "NewComponentMPWorkFunctionUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516448-newcomponentmpworkfunctionupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516448-newcomponentmpworkfunctionupp",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516356-invokecomponentmpworkfunctionupp": {
+      "title": "InvokeComponentMPWorkFunctionUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516356-invokecomponentmpworkfunctionupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516356-invokecomponentmpworkfunctionupp",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516328-disposecomponentmpworkfunctionup": {
+      "title": "DisposeComponentMPWorkFunctionUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516328-disposecomponentmpworkfunctionup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516328-disposecomponentmpworkfunctionup",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516619-newgetmissingcomponentresourceup": {
+      "title": "NewGetMissingComponentResourceUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516619-newgetmissingcomponentresourceup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516619-newgetmissingcomponentresourceup",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516491-invokegetmissingcomponentresourc": {
+      "title": "InvokeGetMissingComponentResourceUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516491-invokegetmissingcomponentresourc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516491-invokegetmissingcomponentresourc",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516414-disposegetmissingcomponentresour": {
+      "title": "DisposeGetMissingComponentResourceUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516414-disposegetmissingcomponentresour",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516414-disposegetmissingcomponentresour",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516537-registercomponent": {
+      "title": "RegisterComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516537-registercomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516537-registercomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a component stored in memory."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516594-registercomponentresource": {
+      "title": "RegisterComponentResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516594-registercomponentresource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516594-registercomponentresource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a component stored in a resource file."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516511-registercomponentresourcefile": {
+      "title": "RegisterComponentResourceFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516511-registercomponentresourcefile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516511-registercomponentresourcefile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers all component resources in the given resource file."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516645-unregistercomponent": {
+      "title": "UnregisterComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516645-unregistercomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516645-unregistercomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a component from the Component Manager’s registration list."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516564-registercomponentfileref": {
+      "title": "RegisterComponentFileRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516564-registercomponentfileref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516564-registercomponentfileref",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516395-registercomponentfilerefentries": {
+      "title": "RegisterComponentFileRefEntries",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516395-registercomponentfilerefentries",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516395-registercomponentfilerefentries",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516603-callcomponentfunction": {
+      "title": "CallComponentFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516603-callcomponentfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516603-callcomponentfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invokes the specified function of your component."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516610-callcomponentfunctionwithstorage": {
+      "title": "CallComponentFunctionWithStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516610-callcomponentfunctionwithstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516610-callcomponentfunctionwithstorage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invokes the specified function of your component. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516344-callcomponentfunctionwithstorage": {
+      "title": "CallComponentFunctionWithStorageProcInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516344-callcomponentfunctionwithstorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516344-callcomponentfunctionwithstorage",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516394-countcomponentinstances": {
+      "title": "CountComponentInstances",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516394-countcomponentinstances",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516394-countcomponentinstances",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the number of open connections being managed by a specified component. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516517-getcomponentinstancestorage": {
+      "title": "GetComponentInstanceStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516517-getcomponentinstancestorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516517-getcomponentinstancestorage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows your component to retrieve a handle to the memory associated with a connection. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516556-setcomponentinstancestorage": {
+      "title": "SetComponentInstanceStorage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516556-setcomponentinstancestorage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516556-setcomponentinstancestorage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows your component to associate memory with a connection. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516663-setcomponentinstanceerror": {
+      "title": "SetComponentInstanceError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516663-setcomponentinstanceerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516663-setcomponentinstanceerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Passes error information to the Component Manager which sets the current error value for the appropriate connection."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516331-getcomponentrefcon": {
+      "title": "GetComponentRefcon",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516331-getcomponentrefcon",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516331-getcomponentrefcon",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the value of the reference constant for your component. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516562-setcomponentrefcon": {
+      "title": "SetComponentRefcon",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516562-setcomponentrefcon",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516562-setcomponentrefcon",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the reference constant for your component."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516643-openacomponentresfile": {
+      "title": "OpenAComponentResFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516643-openacomponentresfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516643-openacomponentresfile",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516550-opencomponentresfile": {
+      "title": "OpenComponentResFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516550-opencomponentresfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516550-opencomponentresfile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows your component to gain access to its resource file. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516319-closecomponentresfile": {
+      "title": "CloseComponentResFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516319-closecomponentresfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516319-closecomponentresfile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Closes the resource file that your component opened previously with the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "OpenComponentResFile"
+        },
+        {
+          "type": "text",
+          "text": " function. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516387-getcomponentresource": {
+      "title": "GetComponentResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516387-getcomponentresource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516387-getcomponentresource",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516616-getcomponentindstring": {
+      "title": "GetComponentIndString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516616-getcomponentindstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516616-getcomponentindstring",
+      "abstract": [],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516373-delegatecomponentcall": {
+      "title": "DelegateComponentCall",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516373-delegatecomponentcall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516373-delegatecomponentcall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows your component to pass on a request to a specified component. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516357-capturecomponent": {
+      "title": "CaptureComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516357-capturecomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516357-capturecomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows your component to capture another component. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516646-uncapturecomponent": {
+      "title": "UncaptureComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516646-uncapturecomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516646-uncapturecomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows your component to uncapture a previously captured component."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516566-setdefaultcomponent": {
+      "title": "SetDefaultComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516566-setdefaultcomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1516566-setdefaultcomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the search order for registered components. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionprocptr": {
+      "title": "ComponentMPWorkFunctionProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentmpworkfunctionprocptr",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentroutineprocptr": {
+      "title": "ComponentRoutineProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentroutineprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentroutineprocptr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines a pointer to your component callback function, which serves as the main entry point into your component and performs the component’s services. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/getmissingcomponentresourceprocptr": {
+      "title": "GetMissingComponentResourceProcPtr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/getmissingcomponentresourceprocptr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/getmissingcomponentresourceprocptr",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentaliasresource": {
+      "title": "ComponentAliasResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentaliasresource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentaliasresource",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager/componentdependencyarray": {
+      "title": "ComponentDependencyArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager/componentdependencyarray",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/coreservices/carbon_core/component_manager/componentdependencyarray",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentdescription": {
+      "title": "ComponentDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentdescription",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentfunctionupp": {
+      "title": "ComponentFunctionUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentfunctionupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentfunctionupp",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentinstancerecord": {
+      "title": "ComponentInstanceRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentinstancerecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentinstancerecord",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionheaderrecord": {
+      "title": "ComponentMPWorkFunctionHeaderRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionheaderrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentmpworkfunctionheaderrecord",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionupp": {
+      "title": "ComponentMPWorkFunctionUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentmpworkfunctionupp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents a type used by the Image Codec API."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentparameters": {
+      "title": "ComponentParameters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentparameters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentparameters",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentplatforminfo": {
+      "title": "ComponentPlatformInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentplatforminfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentplatforminfo",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentplatforminfoarray": {
+      "title": "ComponentPlatformInfoArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentplatforminfoarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentplatforminfoarray",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentrecord": {
+      "title": "ComponentRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentrecord",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentresource": {
+      "title": "ComponentResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentresource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentresource",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentresourceextension": {
+      "title": "ComponentResourceExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentresourceextension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentresourceextension",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentresult": {
+      "title": "ComponentResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Abst_ComponentResult"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/componentroutineupp": {
+      "title": "ComponentRoutineUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/componentroutineupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/componentroutineupp",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/extcomponentresource": {
+      "title": "ExtComponentResource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/extcomponentresource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/extcomponentresource",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/getmissingcomponentresourceupp": {
+      "title": "GetMissingComponentResourceUPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/getmissingcomponentresourceupp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/getmissingcomponentresourceupp",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/registeredcomponentinstancerecord": {
+      "title": "RegisteredComponentInstanceRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/registeredcomponentinstancerecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/registeredcomponentinstancerecord",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/registeredcomponentrecord": {
+      "title": "RegisteredComponentRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/registeredcomponentrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/registeredcomponentrecord",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/resourcespec": {
+      "title": "ResourceSpec",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/resourcespec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/resourcespec",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516454-cmpaliasnoflags": {
+      "title": "cmpAliasNoFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516454-cmpaliasnoflags",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516454-cmpaliasnoflags",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516615-cmpismissing": {
+      "title": "cmpIsMissing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516615-cmpismissing",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516615-cmpismissing",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516650-component_resource_extension_fla": {
+      "title": "Component Resource Extension Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516650-component_resource_extension_fla",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516650-component_resource_extension_fla",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/cscomponentsthreadmode": {
+      "title": "CSComponentsThreadMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/cscomponentsthreadmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/cscomponentsthreadmode",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516532-kanycomponenttype": {
+      "title": "kAnyComponentType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516532-kanycomponenttype",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516532-kanycomponenttype",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516407-kapplemanufacturer": {
+      "title": "kAppleManufacturer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516407-kapplemanufacturer",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516407-kapplemanufacturer",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516368-mpworkflagdowork": {
+      "title": "mpWorkFlagDoWork",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516368-mpworkflagdowork",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516368-mpworkflagdowork",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516576-platform68k": {
+      "title": "platform68k",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516576-platform68k",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516576-platform68k",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516425-platformirixmips": {
+      "title": "platformIRIXmips",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516425-platformirixmips",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516425-platformirixmips",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516405-register_component_resource_flag": {
+      "title": "Register Component Resource flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516405-register_component_resource_flag",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516405-register_component_resource_flag",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516476-request_codes": {
+      "title": "Request Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516476-request_codes",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516476-request_codes",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1516455-set_default_component_flags": {
+      "title": "Set Default Component Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1516455-set_default_component_flags",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/coreservices/1516455-set_default_component_flags",
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/invalidcomponentid": {
+      "title": "invalidComponentID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/invalidcomponentid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1559940-anonymous/invalidcomponentid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invalid component ID."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/validinstancesexist": {
+      "title": "validInstancesExist",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/validinstancesexist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1559940-anonymous/validinstancesexist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This component has open connections."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/componentnotcaptured": {
+      "title": "componentNotCaptured",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/componentnotcaptured",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1559940-anonymous/componentnotcaptured",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This component has not been captured."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/componentdontregister": {
+      "title": "componentDontRegister",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/componentdontregister",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1559940-anonymous/componentdontregister"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/unresolvedcomponentdllerr": {
+      "title": "unresolvedComponentDLLErr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/unresolvedcomponentdllerr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1559940-anonymous/unresolvedcomponentdllerr"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/retrycomponentregistrationerr": {
+      "title": "retryComponentRegistrationErr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/retrycomponentregistrationerr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1559940-anonymous/retrycomponentregistrationerr"
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1560069-anonymous/badcomponentselector": {
+      "title": "badComponentSelector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1560069-anonymous/badcomponentselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1560069-anonymous/badcomponentselector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Component does not support the specified request code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/1560069-anonymous/badcomponentinstance": {
+      "title": "badComponentInstance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/1560069-anonymous/badcomponentinstance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreservices/1560069-anonymous/badcomponentinstance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invalid component  passed to Component Manager."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager": {
+      "title": "Alias Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/alias_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and resolve alias records that describe file system objects such as files, directories, and volumes. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager": {
+      "title": "Component Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/component_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Find and use components in your app or add custom components to system-provided services, such as QuickTime and Core Audio. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/file_manager": {
+      "title": "File Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/file_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/file_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interact with files, folders, and volumes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager": {
+      "title": "Gestalt Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/gestalt_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Investigate the operating environment of your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager": {
+      "title": "Text Encoding Conversion Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coreservices/carbon_core/text_encoding_conversion_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handle text encoding conversion between apps and transfer text across different platforms."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "The Component Manager is deprecated in macOS 10.8 and later. "
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "If your app defines custom components to extend functionality, you can instead create a custom a plug-in to replicate the functionality you need. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Code Loading Programming Topics",
+          "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingCode/LoadingCode.html#//apple_ref/doc/uid/10000052i"
+        },
+        {
+          "type": "text",
+          "text": ". "
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "If your app loads audio units and audio codecs, use Audio Component Services instead. For more information, see "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/audiounit/audio_component_services"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Finding Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516515-countcomponents",
+        "doc://com.apple.documentation/documentation/coreservices/1516552-findnextcomponent",
+        "doc://com.apple.documentation/documentation/coreservices/1516399-getcomponentlistmodseed",
+        "doc://com.apple.documentation/documentation/coreservices/1516653-getcomponenttypemodseed",
+        "doc://com.apple.documentation/documentation/coreservices/1516484-resolvecomponentalias"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Opening and Closing Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516558-openacomponent",
+        "doc://com.apple.documentation/documentation/coreservices/1516360-openadefaultcomponent",
+        "doc://com.apple.documentation/documentation/coreservices/1516607-opencomponent",
+        "doc://com.apple.documentation/documentation/coreservices/1516523-opendefaultcomponent",
+        "doc://com.apple.documentation/documentation/coreservices/1516436-closecomponent"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Information About Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516438-getcomponentinfo",
+        "doc://com.apple.documentation/documentation/coreservices/1516516-getcomponentpublicindstring",
+        "doc://com.apple.documentation/documentation/coreservices/1516336-getcomponentpublicresource",
+        "doc://com.apple.documentation/documentation/coreservices/1516460-getcomponentpublicresourcelist"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Retrieving Component Errors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516618-getcomponentinstanceerror"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calling Component Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516529-callcomponentopen",
+        "doc://com.apple.documentation/documentation/coreservices/1516604-callcomponentclose",
+        "doc://com.apple.documentation/documentation/coreservices/1516321-callcomponentcando",
+        "doc://com.apple.documentation/documentation/coreservices/1516489-callcomponentversion",
+        "doc://com.apple.documentation/documentation/coreservices/1516385-callcomponentregister",
+        "doc://com.apple.documentation/documentation/coreservices/1516493-callcomponenttarget",
+        "doc://com.apple.documentation/documentation/coreservices/1516337-callcomponentunregister",
+        "doc://com.apple.documentation/documentation/coreservices/1516547-callcomponentdispatch",
+        "doc://com.apple.documentation/documentation/coreservices/1516346-callcomponentgetmpworkfunction",
+        "doc://com.apple.documentation/documentation/coreservices/1516354-callcomponentgetpublicresource"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing the Thread Safety Mode",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516422-cssetcomponentsthreadmode",
+        "doc://com.apple.documentation/documentation/coreservices/1516409-csgetcomponentsthreadmode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating and Managing Universal Procedure Pointers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516579-newcomponentroutineupp",
+        "doc://com.apple.documentation/documentation/coreservices/1516654-invokecomponentroutineupp",
+        "doc://com.apple.documentation/documentation/coreservices/1516334-disposecomponentroutineupp",
+        "doc://com.apple.documentation/documentation/coreservices/1516583-newcomponentfunctionupp",
+        "doc://com.apple.documentation/documentation/coreservices/1516369-disposecomponentfunctionupp",
+        "doc://com.apple.documentation/documentation/coreservices/1516448-newcomponentmpworkfunctionupp",
+        "doc://com.apple.documentation/documentation/coreservices/1516356-invokecomponentmpworkfunctionupp",
+        "doc://com.apple.documentation/documentation/coreservices/1516328-disposecomponentmpworkfunctionup",
+        "doc://com.apple.documentation/documentation/coreservices/1516619-newgetmissingcomponentresourceup",
+        "doc://com.apple.documentation/documentation/coreservices/1516491-invokegetmissingcomponentresourc",
+        "doc://com.apple.documentation/documentation/coreservices/1516414-disposegetmissingcomponentresour"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Registering Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516537-registercomponent",
+        "doc://com.apple.documentation/documentation/coreservices/1516594-registercomponentresource",
+        "doc://com.apple.documentation/documentation/coreservices/1516511-registercomponentresourcefile",
+        "doc://com.apple.documentation/documentation/coreservices/1516645-unregistercomponent",
+        "doc://com.apple.documentation/documentation/coreservices/1516564-registercomponentfileref",
+        "doc://com.apple.documentation/documentation/coreservices/1516395-registercomponentfilerefentries"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Dispatching to Component Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516603-callcomponentfunction",
+        "doc://com.apple.documentation/documentation/coreservices/1516610-callcomponentfunctionwithstorage",
+        "doc://com.apple.documentation/documentation/coreservices/1516344-callcomponentfunctionwithstorage"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Component Connections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516394-countcomponentinstances",
+        "doc://com.apple.documentation/documentation/coreservices/1516517-getcomponentinstancestorage",
+        "doc://com.apple.documentation/documentation/coreservices/1516556-setcomponentinstancestorage"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Component Errors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516663-setcomponentinstanceerror"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working With Component Reference Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516331-getcomponentrefcon",
+        "doc://com.apple.documentation/documentation/coreservices/1516562-setcomponentrefcon"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing a Component’s Resource File",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516643-openacomponentresfile",
+        "doc://com.apple.documentation/documentation/coreservices/1516550-opencomponentresfile",
+        "doc://com.apple.documentation/documentation/coreservices/1516319-closecomponentresfile",
+        "doc://com.apple.documentation/documentation/coreservices/1516387-getcomponentresource",
+        "doc://com.apple.documentation/documentation/coreservices/1516616-getcomponentindstring"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calling Other Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516373-delegatecomponentcall"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Capturing Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516357-capturecomponent",
+        "doc://com.apple.documentation/documentation/coreservices/1516646-uncapturecomponent"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Changing the Default Search Order",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516566-setdefaultcomponent"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/componentroutineprocptr",
+        "doc://com.apple.documentation/documentation/coreservices/getmissingcomponentresourceprocptr"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/componentaliasresource",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/component_manager/componentdependencyarray",
+        "doc://com.apple.documentation/documentation/coreservices/componentdescription",
+        "doc://com.apple.documentation/documentation/coreservices/componentfunctionupp",
+        "doc://com.apple.documentation/documentation/coreservices/componentinstancerecord",
+        "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionheaderrecord",
+        "doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionupp",
+        "doc://com.apple.documentation/documentation/coreservices/componentparameters",
+        "doc://com.apple.documentation/documentation/coreservices/componentplatforminfo",
+        "doc://com.apple.documentation/documentation/coreservices/componentplatforminfoarray",
+        "doc://com.apple.documentation/documentation/coreservices/componentrecord",
+        "doc://com.apple.documentation/documentation/coreservices/componentresource",
+        "doc://com.apple.documentation/documentation/coreservices/componentresourceextension",
+        "doc://com.apple.documentation/documentation/coreservices/componentresult",
+        "doc://com.apple.documentation/documentation/coreservices/componentroutineupp",
+        "doc://com.apple.documentation/documentation/coreservices/extcomponentresource",
+        "doc://com.apple.documentation/documentation/coreservices/getmissingcomponentresourceupp",
+        "doc://com.apple.documentation/documentation/coreservices/registeredcomponentinstancerecord",
+        "doc://com.apple.documentation/documentation/coreservices/registeredcomponentrecord",
+        "doc://com.apple.documentation/documentation/coreservices/resourcespec"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1516454-cmpaliasnoflags",
+        "doc://com.apple.documentation/documentation/coreservices/1516615-cmpismissing",
+        "doc://com.apple.documentation/documentation/coreservices/1516650-component_resource_extension_fla",
+        "doc://com.apple.documentation/documentation/coreservices/cscomponentsthreadmode",
+        "doc://com.apple.documentation/documentation/coreservices/1516532-kanycomponenttype",
+        "doc://com.apple.documentation/documentation/coreservices/1516407-kapplemanufacturer",
+        "doc://com.apple.documentation/documentation/coreservices/1516368-mpworkflagdowork",
+        "doc://com.apple.documentation/documentation/coreservices/1516576-platform68k",
+        "doc://com.apple.documentation/documentation/coreservices/1516425-platformirixmips",
+        "doc://com.apple.documentation/documentation/coreservices/1516405-register_component_resource_flag",
+        "doc://com.apple.documentation/documentation/coreservices/1516476-request_codes",
+        "doc://com.apple.documentation/documentation/coreservices/1516455-set_default_component_flags"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Result Codes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/invalidcomponentid",
+        "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/validinstancesexist",
+        "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/componentnotcaptured",
+        "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/componentdontregister",
+        "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/unresolvedcomponentdllerr",
+        "doc://com.apple.documentation/documentation/coreservices/1559940-anonymous/retrycomponentregistrationerr",
+        "doc://com.apple.documentation/documentation/coreservices/1560069-anonymous/badcomponentselector",
+        "doc://com.apple.documentation/documentation/coreservices/1560069-anonymous/badcomponentinstance"
+      ],
+      "discussion": {
+        "kind": "content",
+        "content": [
+          {
+            "type": "paragraph",
+            "inlineContent": [
+              {
+                "type": "text",
+                "text": "The result codes defined by the Component Manager are listed below."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/alias_manager",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/file_manager",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/gestalt_manager",
+        "doc://com.apple.documentation/documentation/coreservices/carbon_core/text_encoding_conversion_manager"
+      ],
+      "title": "Managers",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}
