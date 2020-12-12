@@ -32,10 +32,10 @@ export class TypeDeclaration {
 
   generate() {
     const code = new CodeGenerator();
-    code.namespace();
-    code.appendLine(`// ${this.id}`);
-    code.appendLine(`type ${this.identifier} = ${normalizeType(this.alias!)};`);
-    code.endNamespace();
+    code.namespace(() => {
+      code.appendLine(`// ${this.id}`);
+      code.appendLine(`type ${this.identifier} = ${normalizeType(this.alias!)};`);
+    });
     code.appendLine();
     return code.toString();
   }

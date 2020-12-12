@@ -83,35 +83,34 @@ export class InterfaceDeclaration {
 
   generate() {
     const code = new CodeGenerator();
-    code.namespace();
-    code.appendLine('/**');
-    if (this.description) {
-      code.appendLine(` * ${this.description}`);
-    }
-    code.appendLine(` * ${this.id}`);
-    code.appendLine(' */');
-
-    code.interface(this.identifier, this.inheritsFrom);
-    if (this.type === 'interface') {
-      const alloc = new MethodDeclaration('', this);
-      alloc.identifiers.push({
-        id: 'alloc',
+    code.namespace(() => {
+      code.appendLine('/**');
+      if (this.description) {
+        code.appendLine(` * ${this.description}`);
+      }
+      code.appendLine(` * ${this.id}`);
+      code.appendLine(' */');
+      code.interface(this.identifier, this.inheritsFrom, () => {
+        if (this.type === 'interface') {
+          const alloc = new MethodDeclaration('', this);
+          alloc.identifiers.push({
+            id: 'alloc',
+          });
+          alloc.returnType = 'instancetype';
+          const init = new MethodDeclaration('', this);
+          init.identifiers.push({
+            id: 'init',
+          });
+          init.returnType = 'id';
+          this.properties.push(alloc, init);
+        }
+        this.properties.forEach(property => {
+          code.appendLine(property.generate());
+        });
       });
-      alloc.returnType = 'instancetype';
-      const init = new MethodDeclaration('', this);
-      init.identifiers.push({
-        id: 'init',
-      });
-      init.returnType = 'id';
-      this.properties.push(alloc, init);
-    }
-    this.properties.forEach(property => {
-      code.appendLine(property.generate());
     });
-    code.endInterface();
-    code.endNamespace();
     if (this.type === 'interface') {
-      code.appendLine().appendLine(`declare const ${this.identifier}: ${normalizeType(this.identifier)};`)
+      code.appendLine().appendLine(`declare const ${this.identifier}: ${normalizeType(this.identifier)};`);
     }
     this.constants.forEach(constant => {
       code.appendLine(constant.generate());

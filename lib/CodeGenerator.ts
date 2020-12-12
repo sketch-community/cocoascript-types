@@ -20,22 +20,18 @@ export class CodeGenerator {
     return this;
   }
 
-  namespace() {
+  namespace(body: () => void) {
     this.appendLine(`declare namespace ${NAMESPACE} {`).indent();
-    return this;
-  }
-
-  endNamespace() {
+    body();
     this.endIndent().appendLine('}');
     return this;
   }
 
-  interface(name: string, inheritsFrom?: string) {
+  interface(name: string, inheritsFrom?: string, body?: () => void) {
     this.appendLine(`interface ${name}${inheritsFrom ? ` extends ${inheritsFrom} ` : ' '}{`).indent();
-    return this;
-  }
-
-  endInterface() {
+    if (body) {
+      body();
+    }
     this.endIndent().appendLine('}');
     return this;
   }
