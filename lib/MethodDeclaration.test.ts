@@ -29,4 +29,9 @@ describe('MethodDeclaration', () => {
     const decl = getDecl('../documentation/appkit/nsworkspace/1526144-typeoffile.json');
     expect(decl.generate()).toMatchSnapshot();
   });
+
+  it('duplicate params', () => {
+    const decl = getDecl('../documentation/uikit/uistepper/1624072-dividerimageforleftsegmentstate.json');
+    expect(decl.generate()).toMatchSnapshot();
+  })
 });

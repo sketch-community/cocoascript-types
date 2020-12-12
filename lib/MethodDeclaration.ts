@@ -62,10 +62,13 @@ export class MethodDeclaration {
     code.appendLine(this.identifiers.map(i => i.id).join('_'));
     code.append('(');
     const params: string[] = [];
-    this.identifiers.forEach(identifier => {
+    const usedName: Set<string> = new Set();
+    this.identifiers.forEach((identifier, i) => {
       if (identifier.paramName) {
+        const name = usedName.has(identifier.paramName) ? `${identifier.paramName}${i}` : identifier.paramName;
+        usedName.add(identifier.paramName);
         params.push(
-          `${identifier.paramName}: ${normalizeType(
+          `${name}: ${normalizeType(
             identifier.paramType! === 'id' ? this.interfaceDecl.identifier : identifier.paramType!
           )}`
         );
