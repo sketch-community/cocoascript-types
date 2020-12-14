@@ -63,17 +63,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543245-sharedcertificatepanel
     sharedCertificatePanel():SFCertificatePanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543234-sethelpanchor
-    setHelpAnchor(anchor: string | cocoascript.NSString):void;
+    setHelpAnchor(anchor: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543223-setshowshelp
     setShowsHelp(showsHelp: BOOL):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543225-helpanchor
-    helpAnchor():string | cocoascript.NSString;
+    helpAnchor():string | NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543231-showshelp
     showsHelp():BOOL;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543227-setalternatebuttontitle
-    setAlternateButtonTitle(title: string | cocoascript.NSString):void;
+    setAlternateButtonTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543242-setdefaultbuttontitle
-    setDefaultButtonTitle(title: string | cocoascript.NSString):void;
+    setDefaultButtonTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543239-setpolicies
     setPolicies(policies: SFCertificatePanel):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543232-policies
@@ -107,35 +107,35 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556984-sharedchooseidentitypanel
     sharedChooseIdentityPanel():SFChooseIdentityPanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556990-sethelpanchor
-    setHelpAnchor(anchor: string | cocoascript.NSString):void;
+    setHelpAnchor(anchor: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556992-setshowshelp
     setShowsHelp(showsHelp: BOOL):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556996-helpanchor
-    helpAnchor():string | cocoascript.NSString;
+    helpAnchor():string | NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556997-showshelp
     showsHelp():BOOL;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556993-setalternatebuttontitle
-    setAlternateButtonTitle(title: string | cocoascript.NSString):void;
+    setAlternateButtonTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556989-setdefaultbuttontitle
-    setDefaultButtonTitle(title: string | cocoascript.NSString):void;
+    setDefaultButtonTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556986-setpolicies
     setPolicies(policies: SFChooseIdentityPanel):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556991-policies
     policies():NSArray;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556994-informativetext
-    informativeText():string | cocoascript.NSString;
+    informativeText():string | NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556983-setinformativetext
-    setInformativeText(informativeText: string | cocoascript.NSString):void;
+    setInformativeText(informativeText: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556987-beginsheetforwindow
-    beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_identities_message(docWindow: NSWindow, delegate: SFChooseIdentityPanel, didEndSelector: SEL, contextInfo: void, identities: NSArray, message: string | cocoascript.NSString):void;
+    beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_identities_message(docWindow: NSWindow, delegate: SFChooseIdentityPanel, didEndSelector: SEL, contextInfo: void, identities: NSArray, message: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556982-runmodalforidentities
-    runModalForIdentities_message(identities: NSArray, message: string | cocoascript.NSString):NSInteger;
+    runModalForIdentities_message(identities: NSArray, message: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556981-identity
     identity():SecIdentityRef;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556985-domain
-    domain():string | cocoascript.NSString;
+    domain():string | NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556988-setdomain
-    setDomain(domainString: string | cocoascript.NSString):void;
+    setDomain(domainString: string | NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1514140-chooseidentitypanelshowhelp
     chooseIdentityPanelShowHelp(sender: SFChooseIdentityPanel):BOOL;
     //
@@ -201,13 +201,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518349-sharedcertificatetrustpanel
     sharedCertificateTrustPanel():SFCertificateTrustPanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518350-beginsheetforwindow
-    beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_trust_message(docWindow: NSWindow, delegate: SFCertificateTrustPanel, didEndSelector: SEL, contextInfo: void, trust: SecTrustRef, message: string | cocoascript.NSString):void;
+    beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_trust_message(docWindow: NSWindow, delegate: SFCertificateTrustPanel, didEndSelector: SEL, contextInfo: void, trust: SecTrustRef, message: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518354-runmodalfortrust
-    runModalForTrust_message(trust: SecTrustRef, message: string | cocoascript.NSString):NSInteger;
+    runModalForTrust_message(trust: SecTrustRef, message: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518347-informativetext
-    informativeText():string | cocoascript.NSString;
+    informativeText():string | NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518351-setinformativetext
-    setInformativeText(informativeText: string | cocoascript.NSString):void;
+    setInformativeText(informativeText: string | NSString):void;
     //
     alloc():SFCertificateTrustPanel;
     //
@@ -285,11 +285,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580411-sharedkeychainsavepanel
     sharedKeychainSavePanel():SFKeychainSavePanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580414-setpassword
-    setPassword(password: string | cocoascript.NSString):void;
+    setPassword(password: string | NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580416-beginsheetfordirectory
-    beginSheetForDirectory_file_modalForWindow_modalDelegate_didEndSelector_contextInfo(path: string | cocoascript.NSString, name: string | cocoascript.NSString, docWindow: NSWindow, delegate: SFKeychainSavePanel, didEndSelector: SEL, contextInfo: void):void;
+    beginSheetForDirectory_file_modalForWindow_modalDelegate_didEndSelector_contextInfo(path: string | NSString, name: string | NSString, docWindow: NSWindow, delegate: SFKeychainSavePanel, didEndSelector: SEL, contextInfo: void):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580415-runmodalfordirectory
-    runModalForDirectory_file(path: string | cocoascript.NSString, name: string | cocoascript.NSString):NSInteger;
+    runModalForDirectory_file(path: string | NSString, name: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580417-error
     error():NSError;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580412-keychain

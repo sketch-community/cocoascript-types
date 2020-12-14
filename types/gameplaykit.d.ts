@@ -271,7 +271,7 @@ declare namespace cocoascript {
    */
   interface GKScene extends NSObject {
     // doc://com.apple.documentation/documentation/gameplaykit/gkscene/1640935-scenewithfilenamed
-    sceneWithFileNamed(filename: string | cocoascript.NSString):GKScene;
+    sceneWithFileNamed(filename: string | NSString):GKScene;
     // doc://com.apple.documentation/documentation/gameplaykit/gkscene/1640947-rootnode
     rootNode(): GKSceneRootNodeType;
     setRootNode(): void;
@@ -286,11 +286,11 @@ declare namespace cocoascript {
     graphs(): GKGraph;
     setGraphs(): void;
     // doc://com.apple.documentation/documentation/gameplaykit/gkscene/1640663-removegraph
-    removeGraph(name: string | cocoascript.NSString):void;
+    removeGraph(name: string | NSString):void;
     // doc://com.apple.documentation/documentation/gameplaykit/gkscene/2873253-scenewithfilenamed
-    sceneWithFileNamed_rootNode(filename: string | cocoascript.NSString, rootNode: GKSceneRootNodeType):GKScene;
+    sceneWithFileNamed_rootNode(filename: string | NSString, rootNode: GKSceneRootNodeType):GKScene;
     // doc://com.apple.documentation/documentation/gameplaykit/gkscene/2143063-addgraph
-    addGraph_name(graph: GKGraph, name: string | cocoascript.NSString):void;
+    addGraph_name(graph: GKGraph, name: string | NSString):void;
     //
     alloc():GKScene;
     //

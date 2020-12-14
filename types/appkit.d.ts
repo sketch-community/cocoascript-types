@@ -236,7 +236,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1420818-registeruserinterfaceitemsearchh
     registerUserInterfaceItemSearchHandler(handler: NSUserInterfaceItemSearching):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1420808-searchstring
-    searchString_inUserInterfaceItemString_searchRange_foundRange(searchString: string | cocoascript.NSString, stringToSearch: string | cocoascript.NSString, searchRange: NSRange, foundRange: NSRange):BOOL;
+    searchString_inUserInterfaceItemString_searchRange_foundRange(searchString: string | NSString, stringToSearch: string | NSString, searchRange: NSRange, foundRange: NSRange):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1420820-unregisteruserinterfaceitemsearc
     unregisterUserInterfaceItemSearchHandler(handler: NSUserInterfaceItemSearching):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplication/1500910-showhelp
@@ -321,7 +321,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsrunningapplication/1530730-runningapplicationwithprocesside
     runningApplicationWithProcessIdentifier(pid: any):NSRunningApplication;
     // doc://com.apple.documentation/documentation/appkit/nsrunningapplication/1530798-runningapplicationswithbundleide
-    runningApplicationsWithBundleIdentifier(bundleIdentifier: string | cocoascript.NSString):NSRunningApplication;
+    runningApplicationsWithBundleIdentifier(bundleIdentifier: string | NSString):NSRunningApplication;
     // doc://com.apple.documentation/documentation/appkit/nsrunningapplication/1533604-currentapplication
     currentApplication(): NSRunningApplication;
     setCurrentApplication(): void;
@@ -341,13 +341,13 @@ declare namespace cocoascript {
     hidden(): BOOL;
     setHidden(): void;
     // doc://com.apple.documentation/documentation/appkit/nsrunningapplication/1526751-localizedname
-    localizedName(): string | cocoascript.NSString;
+    localizedName(): string | NSString;
     setLocalizedName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsrunningapplication/1529885-icon
     icon(): NSImage;
     setIcon(): void;
     // doc://com.apple.documentation/documentation/appkit/nsrunningapplication/1529140-bundleidentifier
-    bundleIdentifier(): string | cocoascript.NSString;
+    bundleIdentifier(): string | NSString;
     setBundleIdentifier(): void;
     // doc://com.apple.documentation/documentation/appkit/nsrunningapplication/1535500-bundleurl
     bundleURL(): NSURL;
@@ -432,11 +432,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428424-applicationdidchangescreenparame
     applicationDidChangeScreenParameters(notification: NSNotification):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428364-application
-    application_willContinueUserActivityWithType(application: NSApplication, userActivityType: string | cocoascript.NSString):BOOL;
+    application_willContinueUserActivityWithType(application: NSApplication, userActivityType: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428471-application
     application_continueUserActivity_restorationHandler(application: NSApplication, userActivity: NSUserActivity, restorationHandler: NSUserActivityRestoring):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428613-application
-    application_didFailToContinueUserActivityWithType_error(application: NSApplication, userActivityType: string | cocoascript.NSString, error: NSError):void;
+    application_didFailToContinueUserActivityWithType_error(application: NSApplication, userActivityType: string | NSString, error: NSError):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428457-application
     application_didUpdateUserActivity(application: NSApplication, userActivity: NSUserActivity):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428766-application
@@ -450,21 +450,21 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/2887193-application
     application_openURLs(application: NSApplication, urls: NSURL):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428612-application
-    application_openFile(sender: NSApplication, filename: string | cocoascript.NSString):BOOL;
+    application_openFile(sender: NSApplication, filename: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428459-application
-    application_openFileWithoutUI(sender: NSApplicationDelegate, filename: string | cocoascript.NSString):BOOL;
+    application_openFileWithoutUI(sender: NSApplicationDelegate, filename: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428495-application
-    application_openTempFile(sender: NSApplication, filename: string | cocoascript.NSString):BOOL;
+    application_openTempFile(sender: NSApplication, filename: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428742-application
-    application_openFiles(sender: NSApplication, filenames: string | cocoascript.NSString):void;
+    application_openFiles(sender: NSApplication, filenames: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428491-applicationopenuntitledfile
     applicationOpenUntitledFile(sender: NSApplication):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428444-applicationshouldopenuntitledfil
     applicationShouldOpenUntitledFile(sender: NSApplication):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428520-application
-    application_printFile(sender: NSApplication, filename: string | cocoascript.NSString):BOOL;
+    application_printFile(sender: NSApplication, filename: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428713-application
-    application_printFiles_withSettings_showPrintPanels(application: NSApplication, fileNames: string | cocoascript.NSString, printSettings: NSApplicationDelegate, showPrintPanels: BOOL):NSApplicationPrintReply;
+    application_printFiles_withSettings_showPrintPanels(application: NSApplication, fileNames: string | NSString, printSettings: NSApplicationDelegate, showPrintPanels: BOOL):NSApplicationPrintReply;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428693-application
     application_didDecodeRestorableState(app: NSApplication, coder: NSCoder):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428400-application
@@ -472,7 +472,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/1428362-applicationdidchangeocclusionsta
     applicationDidChangeOcclusionState(notification: NSNotification):void;
     // doc://com.apple.documentation/documentation/appkit/nsapplicationdelegate/3005173-application
-    application_delegateHandlesKey(sender: NSApplication, key: string | cocoascript.NSString):BOOL;
+    application_delegateHandlesKey(sender: NSApplication, key: string | NSString):BOOL;
   }
 }
 declare namespace cocoascript {
@@ -504,27 +504,27 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1524549-activatefileviewerselectingurls
     activateFileViewerSelectingURLs(fileURLs: NSURL):void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1524399-selectfile
-    selectFile_inFileViewerRootedAtPath(fullPath: string | cocoascript.NSString, rootFullPath: string | cocoascript.NSString):BOOL;
+    selectFile_inFileViewerRootedAtPath(fullPath: string | NSString, rootFullPath: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1526144-typeoffile
-    typeOfFile_error(absoluteFilePath: string | cocoascript.NSString, outError: NSError):string | cocoascript.NSString;
+    typeOfFile_error(absoluteFilePath: string | NSString, outError: NSError):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1527222-localizeddescriptionfortype
-    localizedDescriptionForType(typeName: string | cocoascript.NSString):string | cocoascript.NSString;
+    localizedDescriptionForType(typeName: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1535654-preferredfilenameextensionfortyp
-    preferredFilenameExtensionForType(typeName: string | cocoascript.NSString):string | cocoascript.NSString;
+    preferredFilenameExtensionForType(typeName: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1525316-filenameextension
-    filenameExtension_isValidForType(filenameExtension: string | cocoascript.NSString, typeName: string | cocoascript.NSString):BOOL;
+    filenameExtension_isValidForType(filenameExtension: string | NSString, typeName: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1535903-type
-    type_conformsToType(firstTypeName: string | cocoascript.NSString, secondTypeName: string | cocoascript.NSString):BOOL;
+    type_conformsToType(firstTypeName: string | NSString, secondTypeName: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1534053-urlforapplicationwithbundleident
-    URLForApplicationWithBundleIdentifier(bundleIdentifier: string | cocoascript.NSString):NSURL;
+    URLForApplicationWithBundleIdentifier(bundleIdentifier: string | NSString):NSURL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1535102-getinfoforfile
-    getInfoForFile_application_type(fullPath: string | cocoascript.NSString, appName: string | cocoascript.NSString, type: string | cocoascript.NSString):BOOL;
+    getInfoForFile_application_type(fullPath: string | NSString, appName: string | NSString, type: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1533391-urlforapplicationtoopenurl
     URLForApplicationToOpenURL(url: NSURL):NSURL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1526987-getfilesysteminfoforpath
-    getFileSystemInfoForPath_isRemovable_isWritable_isUnmountable_description_type(fullPath: string | cocoascript.NSString, removableFlag: BOOL, writableFlag: BOOL, unmountableFlag: BOOL, description: string | cocoascript.NSString, fileSystemType: string | cocoascript.NSString):BOOL;
+    getFileSystemInfoForPath_isRemovable_isWritable_isUnmountable_description_type(fullPath: string | NSString, removableFlag: BOOL, writableFlag: BOOL, unmountableFlag: BOOL, description: string | NSString, fileSystemType: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1529991-isfilepackageatpath
-    isFilePackageAtPath(fullPath: string | cocoascript.NSString):BOOL;
+    isFilePackageAtPath(fullPath: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1532097-frontmostapplication
     frontmostApplication(): NSRunningApplication;
     setFrontmostApplication(): void;
@@ -535,17 +535,17 @@ declare namespace cocoascript {
     menuBarOwningApplication(): NSRunningApplication;
     setMenuBarOwningApplication(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1528158-iconforfile
-    iconForFile(fullPath: string | cocoascript.NSString):NSImage;
+    iconForFile(fullPath: string | NSString):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1527879-iconforfiletype
-    iconForFileType(fileType: string | cocoascript.NSString):NSImage;
+    iconForFileType(fileType: string | NSString):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1525487-iconforfiles
-    iconForFiles(fullPaths: string | cocoascript.NSString):NSImage;
+    iconForFiles(fullPaths: string | NSString):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/3553230-iconforcontenttype
     iconForContentType(contentType: UTType):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1529882-seticon
-    setIcon_forFile_options(image: NSImage, fullPath: string | cocoascript.NSString, options: NSWorkspaceIconCreationOptions):BOOL;
+    setIcon_forFile_options(image: NSImage, fullPath: string | NSString, options: NSWorkspaceIconCreationOptions):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1527741-unmountandejectdeviceatpath
-    unmountAndEjectDeviceAtPath(path: string | cocoascript.NSString):BOOL;
+    unmountAndEjectDeviceAtPath(path: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1530469-unmountandejectdeviceaturl
     unmountAndEjectDeviceAtURL_error(url: NSURL, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1530635-desktopimageurlforscreen
@@ -555,15 +555,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1530855-desktopimageoptionsforscreen
     desktopImageOptionsForScreen(screen: NSScreen):NSWorkspace;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1532131-showsearchresultsforquerystring
-    showSearchResultsForQueryString(queryString: string | cocoascript.NSString):BOOL;
+    showSearchResultsForQueryString(queryString: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1533953-filelabels
-    fileLabels(): string | cocoascript.NSString;
+    fileLabels(): string | NSString;
     setFileLabels(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1527553-filelabelcolors
     fileLabelColors(): NSColor;
     setFileLabelColors(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1525376-notefilesystemchanged
-    noteFileSystemChanged(path: string | cocoascript.NSString):void;
+    noteFileSystemChanged(path: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1533106-extendpoweroffby
     extendPowerOffBy(requested: NSInteger):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsworkspace/1524656-accessibilitydisplayshoulddiffer
@@ -618,13 +618,13 @@ declare const NSWorkspaceDidWakeNotification: NSNotificationName;
 // doc://com.apple.documentation/documentation/appkit/nsworkspacewillsleepnotification
 declare const NSWorkspaceWillSleepNotification: NSNotificationName;
 // doc://com.apple.documentation/documentation/appkit/nsworkspacevolumelocalizednamekey
-declare const NSWorkspaceVolumeLocalizedNameKey: string | cocoascript.NSString;
+declare const NSWorkspaceVolumeLocalizedNameKey: string | NSString;
 // doc://com.apple.documentation/documentation/appkit/nsworkspacevolumeurlkey
-declare const NSWorkspaceVolumeURLKey: string | cocoascript.NSString;
+declare const NSWorkspaceVolumeURLKey: string | NSString;
 // doc://com.apple.documentation/documentation/appkit/nsworkspacevolumeoldlocalizednamekey
-declare const NSWorkspaceVolumeOldLocalizedNameKey: string | cocoascript.NSString;
+declare const NSWorkspaceVolumeOldLocalizedNameKey: string | NSString;
 // doc://com.apple.documentation/documentation/appkit/nsworkspacevolumeoldurlkey
-declare const NSWorkspaceVolumeOldURLKey: string | cocoascript.NSString;
+declare const NSWorkspaceVolumeOldURLKey: string | NSString;
 declare namespace cocoascript {
   /**
    * The configuration options to use when opening URLs or launching apps.
@@ -661,10 +661,10 @@ declare namespace cocoascript {
     appleEvent(): NSAppleEventDescriptor;
     setAppleEvent(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172708-arguments
-    arguments(): string | cocoascript.NSString;
+    arguments(): string | NSString;
     setArguments(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172711-environment
-    environment(): string | cocoascript.NSString;
+    environment(): string | NSString;
     setEnvironment(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172707-architecture
     architecture(): any;
@@ -702,18 +702,18 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402673-sharingservicenamed
     sharingServiceNamed(serviceName: NSSharingServiceName):NSSharingService;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402614-initwithtitle
-    initWithTitle_image_alternateImage_handler(title: string | cocoascript.NSString, image: NSImage, alternateImage: NSImage, block: void):NSSharingService;
+    initWithTitle_image_alternateImage_handler(title: string | NSString, image: NSImage, alternateImage: NSImage, block: void):NSSharingService;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402681-delegate
     delegate(): NSSharingServiceDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402693-menuitemtitle
-    menuItemTitle(): string | cocoascript.NSString;
+    menuItemTitle(): string | NSString;
     setMenuItemTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402637-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402683-accountname
-    accountName(): string | cocoascript.NSString;
+    accountName(): string | NSString;
     setAccountName(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402646-sharingservicesforitems
     sharingServicesForItems(items: NSArray):NSSharingService;
@@ -722,7 +722,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402669-performwithitems
     performWithItems(items: NSArray):void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402652-recipients
-    recipients(): string | cocoascript.NSString;
+    recipients(): string | NSString;
     setRecipients(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402650-alternateimage
     alternateImage(): NSImage;
@@ -731,13 +731,13 @@ declare namespace cocoascript {
     image(): NSImage;
     setImage(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402626-subject
-    subject(): string | cocoascript.NSString;
+    subject(): string | NSString;
     setSubject(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402707-attachmentfileurls
     attachmentFileURLs(): NSURL;
     setAttachmentFileURLs(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402644-messagebody
-    messageBody(): string | cocoascript.NSString;
+    messageBody(): string | NSString;
     setMessageBody(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservice/1402685-permanentlink
     permanentLink(): NSURL;
@@ -851,7 +851,7 @@ declare namespace cocoascript {
     sharedHelpManager(): NSHelpManager;
     setSharedHelpManager(): void;
     // doc://com.apple.documentation/documentation/appkit/nshelpmanager/1500904-findstring
-    findString_inBook(query: string | cocoascript.NSString, book: NSHelpBookName):void;
+    findString_inBook(query: string | NSString, book: NSHelpBookName):void;
     // doc://com.apple.documentation/documentation/appkit/nshelpmanager/1500908-openhelpanchor
     openHelpAnchor_inBook(anchor: NSHelpAnchorName, book: NSHelpBookName):void;
     // doc://com.apple.documentation/documentation/appkit/nshelpmanager/1500914-registerbooksinbundle
@@ -886,11 +886,11 @@ declare namespace cocoascript {
    */
   interface NSUserInterfaceItemSearching extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsuserinterfaceitemsearching/1420814-localizedtitlesforitem
-    localizedTitlesForItem(item: NSUserInterfaceItemSearching):string | cocoascript.NSString;
+    localizedTitlesForItem(item: NSUserInterfaceItemSearching):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsuserinterfaceitemsearching/1420806-showallhelptopicsforsearchstring
-    showAllHelpTopicsForSearchString(searchString: string | cocoascript.NSString):void;
+    showAllHelpTopicsForSearchString(searchString: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsuserinterfaceitemsearching/1420816-searchforitemswithsearchstring
-    searchForItemsWithSearchString_resultLimit_matchedItemHandler(searchString: string | cocoascript.NSString, resultLimit: NSInteger, handleMatchedItems: NSArray):void;
+    searchForItemsWithSearchString_resultLimit_matchedItemHandler(searchString: string | NSString, resultLimit: NSInteger, handleMatchedItems: NSArray):void;
     // doc://com.apple.documentation/documentation/appkit/nsuserinterfaceitemsearching/1420812-performactionforitem
     performActionForItem(item: NSUserInterfaceItemSearching):void;
   }
@@ -904,39 +904,39 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515181-init
     init():NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515097-initwithcontentsofurl
-    initWithContentsOfURL_ofType_error(url: NSURL, typeName: string | cocoascript.NSString, outError: NSError):NSDocument;
+    initWithContentsOfURL_ofType_error(url: NSURL, typeName: string | NSString, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515041-initforurl
-    initForURL_withContentsOfURL_ofType_error(urlOrNil: NSURL, contentsURL: NSURL, typeName: string | cocoascript.NSString, outError: NSError):NSDocument;
+    initForURL_withContentsOfURL_ofType_error(urlOrNil: NSURL, contentsURL: NSURL, typeName: string | NSString, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515159-initwithtype
-    initWithType_error(typeName: string | cocoascript.NSString, outError: NSError):NSDocument;
+    initWithType_error(typeName: string | NSString, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515216-canconcurrentlyreaddocumentsofty
-    canConcurrentlyReadDocumentsOfType(typeName: string | cocoascript.NSString):BOOL;
+    canConcurrentlyReadDocumentsOfType(typeName: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515144-readfromurl
-    readFromURL_ofType_error(url: NSURL, typeName: string | cocoascript.NSString, outError: NSError):BOOL;
+    readFromURL_ofType_error(url: NSURL, typeName: string | NSString, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515044-readfromfilewrapper
-    readFromFileWrapper_ofType_error(fileWrapper: NSFileWrapper, typeName: string | cocoascript.NSString, outError: NSError):BOOL;
+    readFromFileWrapper_ofType_error(fileWrapper: NSFileWrapper, typeName: string | NSString, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515198-readfromdata
-    readFromData_ofType_error(data: NSData, typeName: string | cocoascript.NSString, outError: NSError):BOOL;
+    readFromData_ofType_error(data: NSData, typeName: string | NSString, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515177-canasynchronouslywritetourl
-    canAsynchronouslyWriteToURL_ofType_forSaveOperation(url: NSURL, typeName: string | cocoascript.NSString, saveOperation: NSSaveOperationType):BOOL;
+    canAsynchronouslyWriteToURL_ofType_forSaveOperation(url: NSURL, typeName: string | NSString, saveOperation: NSSaveOperationType):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515238-unblockuserinteraction
     unblockUserInteraction():void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515076-writetourl
-    writeToURL_ofType_error(url: NSURL, typeName: string | cocoascript.NSString, outError: NSError):BOOL;
+    writeToURL_ofType_error(url: NSURL, typeName: string | NSString, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515150-writesafelytourl
-    writeSafelyToURL_ofType_forSaveOperation_error(url: NSURL, typeName: string | cocoascript.NSString, saveOperation: NSSaveOperationType, outError: NSError):BOOL;
+    writeSafelyToURL_ofType_forSaveOperation_error(url: NSURL, typeName: string | NSString, saveOperation: NSSaveOperationType, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515089-filewrapperoftype
-    fileWrapperOfType_error(typeName: string | cocoascript.NSString, outError: NSError):NSFileWrapper;
+    fileWrapperOfType_error(typeName: string | NSString, outError: NSError):NSFileWrapper;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515205-dataoftype
-    dataOfType_error(typeName: string | cocoascript.NSString, outError: NSError):NSData;
+    dataOfType_error(typeName: string | NSString, outError: NSError):NSData;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515203-writetourl
-    writeToURL_ofType_forSaveOperation_originalContentsURL_error(url: NSURL, typeName: string | cocoascript.NSString, saveOperation: NSSaveOperationType, absoluteOriginalContentsURL: NSURL, outError: NSError):BOOL;
+    writeToURL_ofType_forSaveOperation_originalContentsURL_error(url: NSURL, typeName: string | NSString, saveOperation: NSSaveOperationType, absoluteOriginalContentsURL: NSURL, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515148-savetourl
-    saveToURL_ofType_forSaveOperation_delegate_didSaveSelector_contextInfo(url: NSURL, typeName: string | cocoascript.NSString, saveOperation: NSSaveOperationType, delegate: NSDocument, didSaveSelector: SEL, contextInfo: void):void;
+    saveToURL_ofType_forSaveOperation_delegate_didSaveSelector_contextInfo(url: NSURL, typeName: string | NSString, saveOperation: NSSaveOperationType, delegate: NSDocument, didSaveSelector: SEL, contextInfo: void):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515178-savetourl
-    saveToURL_ofType_forSaveOperation_completionHandler(url: NSURL, typeName: string | cocoascript.NSString, saveOperation: NSSaveOperationType, completionHandler: NSError):void;
+    saveToURL_ofType_forSaveOperation_completionHandler(url: NSURL, typeName: string | NSString, saveOperation: NSSaveOperationType, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515062-fileattributestowritetourl
-    fileAttributesToWriteToURL_ofType_forSaveOperation_originalContentsURL_error(url: NSURL, typeName: string | cocoascript.NSString, saveOperation: NSSaveOperationType, absoluteOriginalContentsURL: NSURL, outError: NSError):NSDocument;
+    fileAttributesToWriteToURL_ofType_forSaveOperation_originalContentsURL_error(url: NSURL, typeName: string | NSString, saveOperation: NSSaveOperationType, absoluteOriginalContentsURL: NSURL, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515038-fileurl
     fileURL(): NSURL;
     setFileURL(): void;
@@ -953,7 +953,7 @@ declare namespace cocoascript {
     draft(): BOOL;
     setDraft(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515121-filetype
-    fileType(): string | cocoascript.NSString;
+    fileType(): string | NSString;
     setFileType(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515091-documentedited
     documentEdited(): BOOL;
@@ -962,17 +962,17 @@ declare namespace cocoascript {
     inViewingMode(): BOOL;
     setInViewingMode(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515104-readabletypes
-    readableTypes(): string | cocoascript.NSString;
+    readableTypes(): string | NSString;
     setReadableTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515236-writabletypes
-    writableTypes(): string | cocoascript.NSString;
+    writableTypes(): string | NSString;
     setWritableTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515072-isnativetype
-    isNativeType(type: string | cocoascript.NSString):BOOL;
+    isNativeType(type: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515186-writabletypesforsaveoperation
-    writableTypesForSaveOperation(saveOperation: NSSaveOperationType):string | cocoascript.NSString;
+    writableTypesForSaveOperation(saveOperation: NSSaveOperationType):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515074-filenameextensionfortype
-    fileNameExtensionForType_saveOperation(typeName: string | cocoascript.NSString, saveOperation: NSSaveOperationType):string | cocoascript.NSString;
+    fileNameExtensionForType_saveOperation(typeName: string | NSString, saveOperation: NSSaveOperationType):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515220-makewindowcontrollers
     makeWindowControllers():void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515179-addwindowcontroller
@@ -999,12 +999,12 @@ declare namespace cocoascript {
     windowForSheet(): NSWindow;
     setWindowForSheet(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515077-displayname
-    displayName(): string | cocoascript.NSString;
+    displayName(): string | NSString;
     setDisplayName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515143-setdisplayname
-    setDisplayName(displayNameOrNil: string | cocoascript.NSString):void;
+    setDisplayName(displayNameOrNil: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515245-defaultdraftname
-    defaultDraftName():string | cocoascript.NSString;
+    defaultDraftName():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/2876345-encoderestorablestatewithcoder
     encodeRestorableStateWithCoder_backgroundQueue(coder: NSCoder, queue: NSOperationQueue):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515106-autosavesinplace
@@ -1020,7 +1020,7 @@ declare namespace cocoascript {
     autosavedContentsFileURL(): NSURL;
     setAutosavedContentsFileURL(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515136-autosavingfiletype
-    autosavingFileType(): string | cocoascript.NSString;
+    autosavingFileType(): string | NSString;
     setAutosavingFileType(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515149-autosavingisimplicitlycancellabl
     autosavingIsImplicitlyCancellable(): BOOL;
@@ -1068,7 +1068,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1526237-restorestatewithcoder
     restoreStateWithCoder(coder: NSCoder):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1526232-restorablestatekeypaths
-    restorableStateKeyPaths(): string | cocoascript.NSString;
+    restorableStateKeyPaths(): string | NSString;
     setRestorableStateKeyPaths(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1526250-invalidaterestorablestate
     invalidateRestorableState():void;
@@ -1082,7 +1082,7 @@ declare namespace cocoascript {
     shouldRunSavePanelWithAccessoryView(): BOOL;
     setShouldRunSavePanelWithAccessoryView(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515240-filetypefromlastrunsavepanel
-    fileTypeFromLastRunSavePanel(): string | cocoascript.NSString;
+    fileTypeFromLastRunSavePanel(): string | NSString;
     setFileTypeFromLastRunSavePanel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515092-filenameextensionwashiddeninlast
     fileNameExtensionWasHiddenInLastRunSavePanel(): BOOL;
@@ -1123,7 +1123,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515237-close
     close():void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515122-reverttocontentsofurl
-    revertToContentsOfURL_ofType_error(url: NSURL, typeName: string | cocoascript.NSString, outError: NSError):BOOL;
+    revertToContentsOfURL_ofType_error(url: NSURL, typeName: string | NSString, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515201-duplicateandreturnerror
     duplicateAndReturnError(outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515226-duplicatedocument
@@ -1190,7 +1190,7 @@ declare namespace cocoascript {
     objectSpecifier(): NSScriptObjectSpecifier;
     setObjectSpecifier(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1500132-lastcomponentoffilename
-    lastComponentOfFileName(): string | cocoascript.NSString;
+    lastComponentOfFileName(): string | NSString;
     setLastComponentOfFileName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocument/1515051-presenterror
     presentError_modalForWindow_delegate_didPresentSelector_contextInfo(error: NSError, window: NSWindow, delegate: NSDocument, didPresentSelector: SEL, contextInfo: void):void;
@@ -1209,7 +1209,7 @@ declare namespace cocoascript {
 
 declare const NSDocument: cocoascript.NSDocument;
 // doc://com.apple.documentation/documentation/uikit/nsuseractivitydocumenturlkey
-declare const NSUserActivityDocumentURLKey: string | cocoascript.NSString;
+declare const NSUserActivityDocumentURLKey: string | NSString;
 declare namespace cocoascript {
   /**
    * An object that manages an app's documents.
@@ -1226,17 +1226,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514939-documentforurl
     documentForURL(url: NSURL):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514982-duplicatedocumentwithcontentsofu
-    duplicateDocumentWithContentsOfURL_copying_displayName_error(url: NSURL, duplicateByCopying: BOOL, displayNameOrNil: string | cocoascript.NSString, outError: NSError):NSDocument;
+    duplicateDocumentWithContentsOfURL_copying_displayName_error(url: NSURL, duplicateByCopying: BOOL, displayNameOrNil: string | NSString, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514992-opendocumentwithcontentsofurl
     openDocumentWithContentsOfURL_display_completionHandler(url: NSURL, displayDocument: BOOL, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1515014-openuntitleddocumentanddisplay
     openUntitledDocumentAndDisplay_error(displayDocument: BOOL, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514930-makedocumentforurl
-    makeDocumentForURL_withContentsOfURL_ofType_error(urlOrNil: NSURL, contentsURL: NSURL, typeName: string | cocoascript.NSString, outError: NSError):NSDocument;
+    makeDocumentForURL_withContentsOfURL_ofType_error(urlOrNil: NSURL, contentsURL: NSURL, typeName: string | NSString, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514949-makedocumentwithcontentsofurl
-    makeDocumentWithContentsOfURL_ofType_error(url: NSURL, typeName: string | cocoascript.NSString, outError: NSError):NSDocument;
+    makeDocumentWithContentsOfURL_ofType_error(url: NSURL, typeName: string | NSString, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514963-makeuntitleddocumentoftype
-    makeUntitledDocumentOfType_error(typeName: string | cocoascript.NSString, outError: NSError):NSDocument;
+    makeUntitledDocumentOfType_error(typeName: string | NSString, outError: NSError):NSDocument;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514935-reopendocumentforurl
     reopenDocumentForURL_withContentsOfURL_display_completionHandler(urlOrNil: NSURL, contentsURL: NSURL, displayDocument: BOOL, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1515003-documents
@@ -1255,24 +1255,24 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514984-removedocument
     removeDocument(document: NSDocument):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514988-documentclassnames
-    documentClassNames(): string | cocoascript.NSString;
+    documentClassNames(): string | NSString;
     setDocumentClassNames(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514986-defaulttype
-    defaultType(): string | cocoascript.NSString;
+    defaultType(): string | NSString;
     setDefaultType(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514947-documentclassfortype
-    documentClassForType(typeName: string | cocoascript.NSString):Class;
+    documentClassForType(typeName: string | NSString):Class;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514937-displaynamefortype
-    displayNameForType(typeName: string | cocoascript.NSString):string | cocoascript.NSString;
+    displayNameForType(typeName: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514946-typeforcontentsofurl
-    typeForContentsOfURL_error(url: NSURL, outError: NSError):string | cocoascript.NSString;
+    typeForContentsOfURL_error(url: NSURL, outError: NSError):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514953-autosavingdelay
     autosavingDelay(): NSTimeInterval;
     setAutosavingDelay(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514995-closealldocumentswithdelegate
     closeAllDocumentsWithDelegate_didCloseAllSelector_contextInfo(delegate: NSDocumentController, didCloseAllSelector: SEL, contextInfo: void):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514940-reviewunsaveddocumentswithalertt
-    reviewUnsavedDocumentsWithAlertTitle_cancellable_delegate_didReviewAllSelector_contextInfo(title: string | cocoascript.NSString, cancellable: BOOL, delegate: NSDocumentController, didReviewAllSelector: SEL, contextInfo: void):void;
+    reviewUnsavedDocumentsWithAlertTitle_cancellable_delegate_didReviewAllSelector_contextInfo(title: string | NSString, cancellable: BOOL, delegate: NSDocumentController, didReviewAllSelector: SEL, contextInfo: void):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514997-newdocument
     newDocument(sender: NSDocumentController):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1515005-opendocument
@@ -1282,11 +1282,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1515001-beginopenpanelwithcompletionhand
     beginOpenPanelWithCompletionHandler(completionHandler: NSURL):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514969-beginopenpanel
-    beginOpenPanel_forTypes_completionHandler(openPanel: NSOpenPanel, inTypes: string | cocoascript.NSString, completionHandler: NSInteger):void;
+    beginOpenPanel_forTypes_completionHandler(openPanel: NSOpenPanel, inTypes: string | NSString, completionHandler: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514960-runmodalopenpanel
-    runModalOpenPanel_forTypes(openPanel: NSOpenPanel, types: string | cocoascript.NSString):NSInteger;
+    runModalOpenPanel_forTypes(openPanel: NSOpenPanel, types: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514942-currentdirectory
-    currentDirectory(): string | cocoascript.NSString;
+    currentDirectory(): string | NSString;
     setCurrentDirectory(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514972-urlsfromrunningopenpanel
     URLsFromRunningOpenPanel():NSURL;
@@ -1311,25 +1311,25 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514994-willpresenterror
     willPresentError(error: NSError):NSError;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514999-documentforfilename
-    documentForFileName(fileName: string | cocoascript.NSString):NSDocumentController;
+    documentForFileName(fileName: string | NSString):NSDocumentController;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514961-fileextensionsfromtype
-    fileExtensionsFromType(typeName: string | cocoascript.NSString):NSArray;
+    fileExtensionsFromType(typeName: string | NSString):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514983-filenamesfromrunningopenpanel
     fileNamesFromRunningOpenPanel():NSArray;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1515010-makeuntitleddocumentoftype
-    makeUntitledDocumentOfType(type: string | cocoascript.NSString):NSDocumentController;
+    makeUntitledDocumentOfType(type: string | NSString):NSDocumentController;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1515012-makedocumentwithcontentsofurl
-    makeDocumentWithContentsOfURL_ofType(url: NSURL, type: string | cocoascript.NSString):NSDocumentController;
+    makeDocumentWithContentsOfURL_ofType(url: NSURL, type: string | NSString):NSDocumentController;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514944-makedocumentwithcontentsoffile
-    makeDocumentWithContentsOfFile_ofType(fileName: string | cocoascript.NSString, type: string | cocoascript.NSString):NSDocumentController;
+    makeDocumentWithContentsOfFile_ofType(fileName: string | NSString, type: string | NSString):NSDocumentController;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514938-opendocumentwithcontentsoffile
-    openDocumentWithContentsOfFile_display(fileName: string | cocoascript.NSString, display: BOOL):NSDocumentController;
+    openDocumentWithContentsOfFile_display(fileName: string | NSString, display: BOOL):NSDocumentController;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514950-opendocumentwithcontentsofurl
     openDocumentWithContentsOfURL_display(url: NSURL, display: BOOL):NSDocumentController;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514951-opendocumentwithcontentsofurl
     openDocumentWithContentsOfURL_display_error(url: NSURL, displayDocument: BOOL, outError: NSError):NSDocumentController;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514978-openuntitleddocumentoftype
-    openUntitledDocumentOfType_display(type: string | cocoascript.NSString, display: BOOL):NSDocumentController;
+    openUntitledDocumentOfType_display(type: string | NSString, display: BOOL):NSDocumentController;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514979-reopendocumentforurl
     reopenDocumentForURL_withContentsOfURL_error(url: NSURL, contentsURL: NSURL, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514989-setshouldcreateui
@@ -1337,7 +1337,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514932-shouldcreateui
     shouldCreateUI():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/1514966-typefromfileextension
-    typeFromFileExtension(fileNameExtensionOrHFSFileType: string | cocoascript.NSString):string | cocoascript.NSString;
+    typeFromFileExtension(fileNameExtensionOrHFSFileType: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsdocumentcontroller/2902308-allowsautomaticsharemenu
     allowsAutomaticShareMenu(): BOOL;
     setAllowsAutomaticShareMenu(): void;
@@ -1364,19 +1364,19 @@ declare namespace cocoascript {
     managedObjectModel(): NSManagedObjectModel;
     setManagedObjectModel(): void;
     // doc://com.apple.documentation/documentation/appkit/nspersistentdocument/1396160-configurepersistentstorecoordina
-    configurePersistentStoreCoordinatorForURL_ofType_modelConfiguration_storeOptions_error(url: NSURL, fileType: string | cocoascript.NSString, configuration: string | cocoascript.NSString, storeOptions: NSPersistentDocument, error: NSError):BOOL;
+    configurePersistentStoreCoordinatorForURL_ofType_modelConfiguration_storeOptions_error(url: NSURL, fileType: string | NSString, configuration: string | NSString, storeOptions: NSPersistentDocument, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspersistentdocument/1396168-persistentstoretypeforfiletype
-    persistentStoreTypeForFileType(fileType: string | cocoascript.NSString):string | cocoascript.NSString;
+    persistentStoreTypeForFileType(fileType: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nspersistentdocument/1396166-readfromurl
-    readFromURL_ofType_error(absoluteURL: NSURL, typeName: string | cocoascript.NSString, error: NSError):BOOL;
+    readFromURL_ofType_error(absoluteURL: NSURL, typeName: string | NSString, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspersistentdocument/1396154-reverttocontentsofurl
-    revertToContentsOfURL_ofType_error(inAbsoluteURL: NSURL, inTypeName: string | cocoascript.NSString, outError: NSError):BOOL;
+    revertToContentsOfURL_ofType_error(inAbsoluteURL: NSURL, inTypeName: string | NSString, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspersistentdocument/1396156-writetourl
-    writeToURL_ofType_forSaveOperation_originalContentsURL_error(absoluteURL: NSURL, typeName: string | cocoascript.NSString, saveOperation: NSSaveOperationType, absoluteOriginalContentsURL: NSURL, error: NSError):BOOL;
+    writeToURL_ofType_forSaveOperation_originalContentsURL_error(absoluteURL: NSURL, typeName: string | NSString, saveOperation: NSSaveOperationType, absoluteOriginalContentsURL: NSURL, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspersistentdocument/1807209-canasynchronouslywritetourl
     ():void;
     // doc://com.apple.documentation/documentation/appkit/nspersistentdocument/1396158-configurepersistentstorecoordina
-    configurePersistentStoreCoordinatorForURL_ofType_error(url: NSURL, fileType: string | cocoascript.NSString, error: NSError):BOOL;
+    configurePersistentStoreCoordinatorForURL_ofType_error(url: NSURL, fileType: string | NSString, error: NSError):BOOL;
     //
     alloc():NSPersistentDocument;
     //
@@ -1439,7 +1439,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1530706-pasteboardbyfilteringdata
     pasteboardByFilteringData_ofType(data: NSData, type: NSPasteboardType):NSPasteboard;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1532744-pasteboardbyfilteringfile
-    pasteboardByFilteringFile(filename: string | cocoascript.NSString):NSPasteboard;
+    pasteboardByFilteringFile(filename: string | NSString):NSPasteboard;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1530088-pasteboardbyfilteringtypesinpast
     pasteboardByFilteringTypesInPasteboard(pboard: NSPasteboard):NSPasteboard;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1531026-pasteboardwithname
@@ -1457,7 +1457,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1530774-setpropertylist
     setPropertyList_forType(plist: NSPasteboard, dataType: NSPasteboardType):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1528225-setstring
-    setString_forType(string: string | cocoascript.NSString, dataType: NSPasteboardType):BOOL;
+    setString_forType(string: string | NSString, dataType: NSPasteboardType):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1524454-readobjectsforclasses
     readObjectsForClasses_options(classArray: Class, options: NSPasteboard):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1529995-pasteboarditems
@@ -1470,11 +1470,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1528588-propertylistfortype
     propertyListForType(dataType: NSPasteboardType):NSPasteboard;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1533566-stringfortype
-    stringForType(dataType: NSPasteboardType):string | cocoascript.NSString;
+    stringForType(dataType: NSPasteboardType):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1526078-availabletypefromarray
     availableTypeFromArray(types: NSPasteboardType):NSPasteboardType;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1533576-canreaditemwithdataconformingtot
-    canReadItemWithDataConformingToTypes(types: string | cocoascript.NSString):BOOL;
+    canReadItemWithDataConformingToTypes(types: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1533360-canreadobjectforclasses
     canReadObjectForClasses_options(classArray: Class, options: NSPasteboard):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1529599-types
@@ -1495,11 +1495,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1533580-addtypes
     addTypes_owner(newTypes: NSPasteboardType, newOwner: NSPasteboard):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1531224-writefilecontents
-    writeFileContents(filename: string | cocoascript.NSString):BOOL;
+    writeFileContents(filename: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1527279-writefilewrapper
     writeFileWrapper(wrapper: NSFileWrapper):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1533575-readfilecontentstype
-    readFileContentsType_toFile(type: NSPasteboardType, filename: string | cocoascript.NSString):string | cocoascript.NSString;
+    readFileContentsType_toFile(type: NSPasteboardType, filename: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nspasteboard/1524779-readfilewrapper
     readFileWrapper():NSFileWrapper;
     //
@@ -1526,13 +1526,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspasteboarditem/1508501-setdata
     setData_forType(data: NSData, type: NSPasteboardType):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboarditem/1508498-setstring
-    setString_forType(string: string | cocoascript.NSString, type: NSPasteboardType):BOOL;
+    setString_forType(string: string | NSString, type: NSPasteboardType):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboarditem/1508494-setpropertylist
     setPropertyList_forType(propertyList: NSPasteboardItem, type: NSPasteboardType):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspasteboarditem/1508496-datafortype
     dataForType(type: NSPasteboardType):NSData;
     // doc://com.apple.documentation/documentation/appkit/nspasteboarditem/1508490-stringfortype
-    stringForType(type: NSPasteboardType):string | cocoascript.NSString;
+    stringForType(type: NSPasteboardType):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nspasteboarditem/1508489-propertylistfortype
     propertyListForType(type: NSPasteboardType):NSPasteboardItem;
     //
@@ -1607,12 +1607,12 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsfilepromiseprovider/1644655-init
     init():NSFilePromiseProvider;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromiseprovider/1644594-initwithfiletype
-    initWithFileType_delegate(fileType: string | cocoascript.NSString, delegate: NSFilePromiseProviderDelegate):NSFilePromiseProvider;
+    initWithFileType_delegate(fileType: string | NSString, delegate: NSFilePromiseProviderDelegate):NSFilePromiseProvider;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromiseprovider/1644726-delegate
     delegate(): NSFilePromiseProviderDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromiseprovider/1644738-filetype
-    fileType(): string | cocoascript.NSString;
+    fileType(): string | NSString;
     setFileType(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromiseprovider/1644255-userinfo
     userInfo(): id;
@@ -1632,7 +1632,7 @@ declare namespace cocoascript {
    */
   interface NSFilePromiseProviderDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsfilepromiseproviderdelegate/2369278-filepromiseprovider
-    filePromiseProvider_fileNameForType(filePromiseProvider: NSFilePromiseProvider, fileType: string | cocoascript.NSString):string | cocoascript.NSString;
+    filePromiseProvider_fileNameForType(filePromiseProvider: NSFilePromiseProvider, fileType: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromiseproviderdelegate/1644244-filepromiseprovider
     filePromiseProvider_writePromiseToURL_completionHandler(filePromiseProvider: NSFilePromiseProvider, url: NSURL, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromiseproviderdelegate/2369279-operationqueueforfilepromiseprov
@@ -1646,15 +1646,15 @@ declare namespace cocoascript {
    */
   interface NSFilePromiseReceiver extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsfilepromisereceiver/1642142-filenames
-    fileNames(): string | cocoascript.NSString;
+    fileNames(): string | NSString;
     setFileNames(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromisereceiver/1642141-filetypes
-    fileTypes(): string | cocoascript.NSString;
+    fileTypes(): string | NSString;
     setFileTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromisereceiver/1642138-receivepromisedfilesatdestinatio
     receivePromisedFilesAtDestination_options_operationQueue_reader(destinationDir: NSURL, options: NSDictionary, operationQueue: NSOperationQueue, reader: NSError):void;
     // doc://com.apple.documentation/documentation/appkit/nsfilepromisereceiver/1642140-readabledraggedtypes
-    readableDraggedTypes(): string | cocoascript.NSString;
+    readableDraggedTypes(): string | NSString;
     setReadableDraggedTypes(): void;
     //
     alloc():NSFilePromiseReceiver;
@@ -1729,7 +1729,7 @@ declare namespace cocoascript {
     editable(): BOOL;
     setEditable(): void;
     // doc://com.apple.documentation/documentation/appkit/nsobjectcontroller/1535467-entityname
-    entityName(): string | cocoascript.NSString;
+    entityName(): string | NSString;
     setEntityName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsobjectcontroller/1524554-fetch
     fetch(sender: NSObjectController):void;
@@ -1876,20 +1876,20 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstreecontroller/1530337-movenodes
     moveNodes_toIndexPath(nodes: NSTreeNode, startingIndexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/appkit/nstreecontroller/1528721-childrenkeypath
-    childrenKeyPath(): string | cocoascript.NSString;
+    childrenKeyPath(): string | NSString;
     setChildrenKeyPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nstreecontroller/1525412-childrenkeypathfornode
-    childrenKeyPathForNode(node: NSTreeNode):string | cocoascript.NSString;
+    childrenKeyPathForNode(node: NSTreeNode):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstreecontroller/1529127-countkeypath
-    countKeyPath(): string | cocoascript.NSString;
+    countKeyPath(): string | NSString;
     setCountKeyPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nstreecontroller/1528109-countkeypathfornode
-    countKeyPathForNode(node: NSTreeNode):string | cocoascript.NSString;
+    countKeyPathForNode(node: NSTreeNode):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstreecontroller/1532164-leafkeypath
-    leafKeyPath(): string | cocoascript.NSString;
+    leafKeyPath(): string | NSString;
     setLeafKeyPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nstreecontroller/1526740-leafkeypathfornode
-    leafKeyPathForNode(node: NSTreeNode):string | cocoascript.NSString;
+    leafKeyPathForNode(node: NSTreeNode):string | NSString;
     //
     alloc():NSTreeController;
     //
@@ -2034,7 +2034,7 @@ declare namespace cocoascript {
     automaticallyRearrangesObjects(): BOOL;
     setAutomaticallyRearrangesObjects(): void;
     // doc://com.apple.documentation/documentation/appkit/nsarraycontroller/1526714-automaticrearrangementkeypaths
-    automaticRearrangementKeyPaths(): string | cocoascript.NSString;
+    automaticRearrangementKeyPaths(): string | NSString;
     setAutomaticRearrangementKeyPaths(): void;
     // doc://com.apple.documentation/documentation/appkit/nsarraycontroller/1526171-didchangearrangementcriteria
     didChangeArrangementCriteria():void;
@@ -2055,19 +2055,19 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontroller/1534070-newobject
     newObject():NSDictionaryControllerKeyValuePair;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontroller/1532944-localizedkeydictionary
-    localizedKeyDictionary(): string | cocoascript.NSString;
+    localizedKeyDictionary(): string | NSString;
     setLocalizedKeyDictionary(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontroller/1524332-localizedkeytable
-    localizedKeyTable(): string | cocoascript.NSString;
+    localizedKeyTable(): string | NSString;
     setLocalizedKeyTable(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontroller/1525172-includedkeys
-    includedKeys(): string | cocoascript.NSString;
+    includedKeys(): string | NSString;
     setIncludedKeys(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontroller/1535356-excludedkeys
-    excludedKeys(): string | cocoascript.NSString;
+    excludedKeys(): string | NSString;
     setExcludedKeys(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontroller/1530444-initialkey
-    initialKey(): string | cocoascript.NSString;
+    initialKey(): string | NSString;
     setInitialKey(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontroller/1535925-initialvalue
     initialValue(): id;
@@ -2090,10 +2090,10 @@ declare namespace cocoascript {
     explicitlyIncluded(): BOOL;
     setExplicitlyIncluded(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontrollerkeyvaluepair/1527207-key
-    key(): string | cocoascript.NSString;
+    key(): string | NSString;
     setKey(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontrollerkeyvaluepair/1531961-localizedkey
-    localizedKey(): string | cocoascript.NSString;
+    localizedKey(): string | NSString;
     setLocalizedKey(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdictionarycontrollerkeyvaluepair/1532277-value
     value(): id;
@@ -2238,7 +2238,7 @@ declare namespace cocoascript {
     destination(): id;
     setDestination(): void;
     // doc://com.apple.documentation/documentation/appkit/nsnibconnector/1387493-label
-    label(): string | cocoascript.NSString;
+    label(): string | NSString;
     setLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsnibconnector/1387484-source
     source(): id;
@@ -2434,7 +2434,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsview/1483797-datawithpdfinsiderect
     dataWithPDFInsideRect(rect: NSRect):NSData;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483753-printjobtitle
-    printJobTitle(): string | cocoascript.NSString;
+    printJobTitle(): string | NSString;
     setPrintJobTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483674-pageheader
     pageHeader(): NSAttributedString;
@@ -2818,9 +2818,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsview/1483791-begindraggingsessionwithitems
     beginDraggingSessionWithItems_event_source(items: NSDraggingItem, event: NSEvent, source: NSDraggingSource):NSDraggingSession;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483600-dragfile
-    dragFile_fromRect_slideBack_event(filename: string | cocoascript.NSString, rect: NSRect, flag: BOOL, event: NSEvent):BOOL;
+    dragFile_fromRect_slideBack_event(filename: string | NSString, rect: NSRect, flag: BOOL, event: NSEvent):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483598-dragpromisedfilesoftypes
-    dragPromisedFilesOfTypes_fromRect_source_slideBack_event(typeArray: string | cocoascript.NSString, rect: NSRect, sourceObject: NSView, flag: BOOL, event: NSEvent):BOOL;
+    dragPromisedFilesOfTypes_fromRect_source_slideBack_event(typeArray: string | NSString, rect: NSRect, sourceObject: NSView, flag: BOOL, event: NSEvent):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483244-shoulddelaywindoworderingforeven
     shouldDelayWindowOrderingForEvent(event: NSEvent):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483305-rectforsmartmagnificationatpoint
@@ -2845,7 +2845,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsview/1483522-removetooltip
     removeToolTip(tag: NSToolTipTag):void;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483541-tooltip
-    toolTip(): string | cocoascript.NSString;
+    toolTip(): string | NSString;
     setToolTip(): void;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483668-addtrackingrect
     addTrackingRect_owner_userData_assumeInside(rect: NSRect, owner: NSView, data: void, flag: BOOL):NSTrackingRectTag;
@@ -2912,7 +2912,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsview/1483591-convertrectfrombase
     convertRectFromBase(rect: NSRect):NSRect;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483585-performmnemonic
-    performMnemonic(string: string | cocoascript.NSString):BOOL;
+    performMnemonic(string: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483250-shoulddrawcolor
     shouldDrawColor():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsview/1483581-allocategstate
@@ -3013,17 +3013,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519884-name
     name():NSImageName;
     // doc://com.apple.documentation/documentation/appkit/nsimage/3622472-imagewithsystemsymbolname
-    imageWithSystemSymbolName_accessibilityDescription(symbolName: string | cocoascript.NSString, description: string | cocoascript.NSString):NSImage;
+    imageWithSystemSymbolName_accessibilityDescription(symbolName: string | NSString, description: string | NSString):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsimage/3656508-imagewithsymbolconfiguration
     imageWithSymbolConfiguration(configuration: NSImageSymbolConfiguration):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519860-imagewithsize
     imageWithSize_flipped_drawingHandler(size: NSSize, drawingHandlerShouldBeCalledWithFlippedContext: BOOL, drawingHandler: NSRect):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519955-initbyreferencingfile
-    initByReferencingFile(fileName: string | cocoascript.NSString):NSImage;
+    initByReferencingFile(fileName: string | NSString):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519990-initbyreferencingurl
     initByReferencingURL(url: NSURL):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519918-initwithcontentsoffile
-    initWithContentsOfFile(fileName: string | cocoascript.NSString):NSImage;
+    initWithContentsOfFile(fileName: string | NSString):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519907-initwithcontentsofurl
     initWithContentsOfURL(url: NSURL):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519941-initwithdata
@@ -3054,10 +3054,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsimage/1520039-caninitwithpasteboard
     canInitWithPasteboard(pasteboard: NSPasteboard):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519988-imagetypes
-    imageTypes(): string | cocoascript.NSString;
+    imageTypes(): string | NSString;
     setImageTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519899-imageunfilteredtypes
-    imageUnfilteredTypes(): string | cocoascript.NSString;
+    imageUnfilteredTypes(): string | NSString;
     setImageUnfilteredTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519911-addrepresentation
     addRepresentation(imageRep: NSImageRep):void;
@@ -3127,7 +3127,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519922-hittestrect
     hitTestRect_withImageDestinationRect_context_hints_flipped(testRectDestSpace: NSRect, imageRectDestSpace: NSRect, context: NSGraphicsContext, hints: NSImage, flipped: BOOL):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519943-accessibilitydescription
-    accessibilityDescription(): string | cocoascript.NSString;
+    accessibilityDescription(): string | NSString;
     setAccessibilityDescription(): void;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519851-layercontentsforcontentsscale
     layerContentsForContentsScale(layerContentsScale: CGFloat):NSImage;
@@ -3137,9 +3137,9 @@ declare namespace cocoascript {
     matchesOnlyOnBestFittingAxis(): BOOL;
     setMatchesOnlyOnBestFittingAxis(): void;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519989-imagefiletypes
-    imageFileTypes():string | cocoascript.NSString;
+    imageFileTypes():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519973-imageunfilteredfiletypes
-    imageUnfilteredFileTypes():string | cocoascript.NSString;
+    imageUnfilteredFileTypes():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519924-imagepasteboardtypes
     imagePasteboardTypes():NSPasteboardType;
     // doc://com.apple.documentation/documentation/appkit/nsimage/1519872-imageunfilteredpasteboardtypes
@@ -3220,7 +3220,7 @@ declare namespace cocoascript {
     objectValue(): id;
     setObjectValue(): void;
     // doc://com.apple.documentation/documentation/appkit/nscontrol/1428950-stringvalue
-    stringValue(): string | cocoascript.NSString;
+    stringValue(): string | NSString;
     setStringValue(): void;
     // doc://com.apple.documentation/documentation/appkit/nscontrol/1428916-attributedstringvalue
     attributedStringValue(): NSAttributedString;
@@ -3364,7 +3364,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscell/1533898-initimagecell
     initImageCell(image: NSImage):NSCell;
     // doc://com.apple.documentation/documentation/appkit/nscell/1530851-inittextcell
-    initTextCell(string: string | cocoascript.NSString):NSCell;
+    initTextCell(string: string | NSString):NSCell;
     // doc://com.apple.documentation/documentation/appkit/nscell/1530936-objectvalue
     objectValue(): id;
     setObjectValue(): void;
@@ -3378,7 +3378,7 @@ declare namespace cocoascript {
     integerValue(): NSInteger;
     setIntegerValue(): void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1530915-stringvalue
-    stringValue(): string | cocoascript.NSString;
+    stringValue(): string | NSString;
     setStringValue(): void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1534765-doublevalue
     doubleValue(): number;
@@ -3467,7 +3467,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscell/1535864-setupfieldeditorattributes
     setUpFieldEditorAttributes(textObj: NSText):NSText;
     // doc://com.apple.documentation/documentation/appkit/nscell/1525561-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1524654-action
     action(): SEL;
@@ -3546,7 +3546,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscell/1524496-resetcursorrect
     resetCursorRect_inView(cellFrame: NSRect, controlView: NSView):void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1532218-keyequivalent
-    keyEquivalent(): string | cocoascript.NSString;
+    keyEquivalent(): string | NSString;
     setKeyEquivalent(): void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1532987-draggingimagecomponentswithframe
     draggingImageComponentsWithFrame_inView(frame: NSRect, view: NSView):NSDraggingImageComponent;
@@ -3619,13 +3619,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscell/1560897-entrytype
     entryType():NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nscell/1560879-isentryacceptable
-    isEntryAcceptable(string: string | cocoascript.NSString):BOOL;
+    isEntryAcceptable(string: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nscell/1560888-setfloatingpointformat
     setFloatingPointFormat_left_right(autoRange: BOOL, leftDigits: NSUInteger, rightDigits: NSUInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1560861-settitlewithmnemonic
-    setTitleWithMnemonic(stringWithAmpersand: string | cocoascript.NSString):void;
+    setTitleWithMnemonic(stringWithAmpersand: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1560878-mnemonic
-    mnemonic():string | cocoascript.NSString;
+    mnemonic():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nscell/1560877-setmnemoniclocation
     setMnemonicLocation(location: NSUInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nscell/1560903-mnemoniclocation
@@ -3981,7 +3981,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449174-inserttext
     insertText(insertString: NSTextView):void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449370-allowedinputsourcelocales
-    allowedInputSourceLocales(): string | cocoascript.NSString;
+    allowedInputSourceLocales(): string | NSString;
     setAllowedInputSourceLocales(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449450-allowsundo
     allowsUndo(): BOOL;
@@ -4156,9 +4156,9 @@ declare namespace cocoascript {
     rangesForUserTextChange(): NSValue;
     setRangesForUserTextChange(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449532-shouldchangetextinrange
-    shouldChangeTextInRange_replacementString(affectedCharRange: NSRange, replacementString: string | cocoascript.NSString):BOOL;
+    shouldChangeTextInRange_replacementString(affectedCharRange: NSRange, replacementString: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449311-shouldchangetextinranges
-    shouldChangeTextInRanges_replacementStrings(affectedRanges: NSValue, replacementStrings: string | cocoascript.NSString):BOOL;
+    shouldChangeTextInRanges_replacementStrings(affectedRanges: NSValue, replacementStrings: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449296-didchangetext
     didChangeText():void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449236-smartinsertdeleteenabled
@@ -4167,11 +4167,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449428-smartdeleterangeforproposedrange
     smartDeleteRangeForProposedRange(proposedCharRange: NSRange):NSRange;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449467-smartinsertafterstringforstring
-    smartInsertAfterStringForString_replacingRange(pasteString: string | cocoascript.NSString, charRangeToReplace: NSRange):string | cocoascript.NSString;
+    smartInsertAfterStringForString_replacingRange(pasteString: string | NSString, charRangeToReplace: NSRange):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449242-smartinsertbeforestringforstring
-    smartInsertBeforeStringForString_replacingRange(pasteString: string | cocoascript.NSString, charRangeToReplace: NSRange):string | cocoascript.NSString;
+    smartInsertBeforeStringForString_replacingRange(pasteString: string | NSString, charRangeToReplace: NSRange):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449544-smartinsertforstring
-    smartInsertForString_replacingRange_beforeString_afterString(pasteString: string | cocoascript.NSString, charRangeToReplace: NSRange, beforeString: string | cocoascript.NSString, afterString: string | cocoascript.NSString):void;
+    smartInsertForString_replacingRange_beforeString_afterString(pasteString: string | NSString, charRangeToReplace: NSRange, beforeString: string | NSString, afterString: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449273-togglesmartinsertdelete
     toggleSmartInsertDelete(sender: NSTextView):void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449430-continuousspellcheckingenabled
@@ -4243,9 +4243,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449359-complete
     complete(sender: NSTextView):void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449405-completionsforpartialwordrange
-    completionsForPartialWordRange_indexOfSelectedItem(charRange: NSRange, index: NSInteger):string | cocoascript.NSString;
+    completionsForPartialWordRange_indexOfSelectedItem(charRange: NSRange, index: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449448-insertcompletion
-    insertCompletion_forPartialWordRange_movement_isFinal(word: string | cocoascript.NSString, charRange: NSRange, movement: NSInteger, flag: BOOL):void;
+    insertCompletion_forPartialWordRange_movement_isFinal(word: string | NSString, charRange: NSRange, movement: NSInteger, flag: BOOL):void;
     // doc://com.apple.documentation/documentation/appkit/nstextview/1449329-rangeforusercompletion
     rangeForUserCompletion(): NSRange;
     setRangeForUserCompletion(): void;
@@ -4399,15 +4399,15 @@ declare namespace cocoascript {
    */
   interface NSButton extends NSControl {
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1644525-checkboxwithtitle
-    checkboxWithTitle_target_action(title: string | cocoascript.NSString, target: NSButton, action: SEL):NSButton;
+    checkboxWithTitle_target_action(title: string | NSString, target: NSButton, action: SEL):NSButton;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1644659-buttonwithimage
     buttonWithImage_target_action(image: NSImage, target: NSButton, action: SEL):NSButton;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1644340-radiobuttonwithtitle
-    radioButtonWithTitle_target_action(title: string | cocoascript.NSString, target: NSButton, action: SEL):NSButton;
+    radioButtonWithTitle_target_action(title: string | NSString, target: NSButton, action: SEL):NSButton;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1644719-buttonwithtitle
-    buttonWithTitle_image_target_action(title: string | cocoascript.NSString, image: NSImage, target: NSButton, action: SEL):NSButton;
+    buttonWithTitle_image_target_action(title: string | NSString, image: NSImage, target: NSButton, action: SEL):NSButton;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1644256-buttonwithtitle
-    buttonWithTitle_target_action(title: string | cocoascript.NSString, target: NSButton, action: SEL):NSButton;
+    buttonWithTitle_target_action(title: string | NSString, target: NSButton, action: SEL):NSButton;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1524983-setbuttontype
     setButtonType(type: NSButtonType):void;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1524817-getperiodicdelay
@@ -4421,7 +4421,7 @@ declare namespace cocoascript {
     hasDestructiveAction(): BOOL;
     setHasDestructiveAction(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1529588-alternatetitle
-    alternateTitle(): string | cocoascript.NSString;
+    alternateTitle(): string | NSString;
     setAlternateTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1524640-attributedtitle
     attributedTitle(): NSAttributedString;
@@ -4430,10 +4430,10 @@ declare namespace cocoascript {
     attributedAlternateTitle(): NSAttributedString;
     setAttributedAlternateTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1524430-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1579931-settitlewithmnemonic
-    setTitleWithMnemonic(stringWithAmpersand: string | cocoascript.NSString):void;
+    setTitleWithMnemonic(stringWithAmpersand: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1530910-sound
     sound(): NSSound;
     setSound(): void;
@@ -4491,7 +4491,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1534156-highlight
     highlight(flag: BOOL):void;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1525368-keyequivalent
-    keyEquivalent(): string | cocoascript.NSString;
+    keyEquivalent(): string | NSString;
     setKeyEquivalent(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbutton/1532670-keyequivalentmodifiermask
     keyEquivalentModifierMask(): NSEventModifierFlags;
@@ -4664,22 +4664,22 @@ declare namespace cocoascript {
     autoenablesItems(): BOOL;
     setAutoenablesItems(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1529500-additemwithtitle
-    addItemWithTitle(title: string | cocoascript.NSString):void;
+    addItemWithTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1532518-additemswithtitles
-    addItemsWithTitles(itemTitles: string | cocoascript.NSString):void;
+    addItemsWithTitles(itemTitles: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1533750-insertitemwithtitle
-    insertItemWithTitle_atIndex(title: string | cocoascript.NSString, index: NSInteger):void;
+    insertItemWithTitle_atIndex(title: string | NSString, index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1534430-removeallitems
     removeAllItems():void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1530675-removeitemwithtitle
-    removeItemWithTitle(title: string | cocoascript.NSString):void;
+    removeItemWithTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1525241-removeitematindex
     removeItemAtIndex(index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1526197-selecteditem
     selectedItem(): NSMenuItem;
     setSelectedItem(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1534038-titleofselecteditem
-    titleOfSelectedItem(): string | cocoascript.NSString;
+    titleOfSelectedItem(): string | NSString;
     setTitleOfSelectedItem(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1534134-indexofselecteditem
     indexOfSelectedItem(): NSInteger;
@@ -4696,7 +4696,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1528181-selectitemwithtag
     selectItemWithTag(tag: NSInteger):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1525666-selectitemwithtitle
-    selectItemWithTitle(title: string | cocoascript.NSString):void;
+    selectItemWithTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1807219-setobjectvalue
     ():void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1535480-menu
@@ -4711,12 +4711,12 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1535860-itematindex
     itemAtIndex(index: NSInteger):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1524908-itemtitleatindex
-    itemTitleAtIndex(index: NSInteger):string | cocoascript.NSString;
+    itemTitleAtIndex(index: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1529271-itemtitles
-    itemTitles(): string | cocoascript.NSString;
+    itemTitles(): string | NSString;
     setItemTitles(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1524680-itemwithtitle
-    itemWithTitle(title: string | cocoascript.NSString):NSMenuItem;
+    itemWithTitle(title: string | NSString):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1535371-lastitem
     lastItem(): NSMenuItem;
     setLastItem(): void;
@@ -4725,7 +4725,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1534140-indexofitemwithtag
     indexOfItemWithTag(tag: NSInteger):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1535406-indexofitemwithtitle
-    indexOfItemWithTitle(title: string | cocoascript.NSString):NSInteger;
+    indexOfItemWithTitle(title: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1533993-indexofitemwithrepresentedobject
     indexOfItemWithRepresentedObject(obj: NSPopUpButton):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1535747-indexofitemwithtarget
@@ -4734,7 +4734,7 @@ declare namespace cocoascript {
     preferredEdge(): NSRectEdge;
     setPreferredEdge(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1535132-settitle
-    setTitle(string: string | cocoascript.NSString):void;
+    setTitle(string: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1807229-setimage
     ():void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbutton/1527124-synchronizetitleandselecteditem
@@ -4829,10 +4829,10 @@ declare namespace cocoascript {
     rowHeight(): CGFloat;
     setRowHeight(): void;
     // doc://com.apple.documentation/documentation/appkit/nsruleeditor/1526737-formattingdictionary
-    formattingDictionary(): string | cocoascript.NSString;
+    formattingDictionary(): string | NSString;
     setFormattingDictionary(): void;
     // doc://com.apple.documentation/documentation/appkit/nsruleeditor/1533323-formattingstringsfilename
-    formattingStringsFilename(): string | cocoascript.NSString;
+    formattingStringsFilename(): string | NSString;
     setFormattingStringsFilename(): void;
     // doc://com.apple.documentation/documentation/appkit/nsruleeditor/1528188-reloadcriteria
     reloadCriteria():void;
@@ -4877,16 +4877,16 @@ declare namespace cocoascript {
     rowClass(): Class;
     setRowClass(): void;
     // doc://com.apple.documentation/documentation/appkit/nsruleeditor/1527020-rowtypekeypath
-    rowTypeKeyPath(): string | cocoascript.NSString;
+    rowTypeKeyPath(): string | NSString;
     setRowTypeKeyPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nsruleeditor/1535242-subrowskeypath
-    subrowsKeyPath(): string | cocoascript.NSString;
+    subrowsKeyPath(): string | NSString;
     setSubrowsKeyPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nsruleeditor/1524761-criteriakeypath
-    criteriaKeyPath(): string | cocoascript.NSString;
+    criteriaKeyPath(): string | NSString;
     setCriteriaKeyPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nsruleeditor/1535572-displayvalueskeypath
-    displayValuesKeyPath(): string | cocoascript.NSString;
+    displayValuesKeyPath(): string | NSString;
     setDisplayValuesKeyPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nsruleeditor/1809287-viewdidmovetowindow
     ():void;
@@ -4924,7 +4924,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/1644010-segmentedcontrolwithimages
     segmentedControlWithImages_trackingMode_target_action(images: NSImage, trackingMode: NSSegmentSwitchTracking, target: NSSegmentedControl, action: SEL):NSSegmentedControl;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/1644011-segmentedcontrolwithlabels
-    segmentedControlWithLabels_trackingMode_target_action(labels: string | cocoascript.NSString, trackingMode: NSSegmentSwitchTracking, target: NSSegmentedControl, action: SEL):NSSegmentedControl;
+    segmentedControlWithLabels_trackingMode_target_action(labels: string | NSString, trackingMode: NSSegmentSwitchTracking, target: NSSegmentedControl, action: SEL):NSSegmentedControl;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/1526285-trackingmode
     trackingMode(): NSSegmentSwitchTracking;
     setTrackingMode(): void;
@@ -4935,9 +4935,9 @@ declare namespace cocoascript {
     segmentCount(): NSInteger;
     setSegmentCount(): void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/1524322-labelforsegment
-    labelForSegment(segment: NSInteger):string | cocoascript.NSString;
+    labelForSegment(segment: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/1533073-setlabel
-    setLabel_forSegment(label: string | cocoascript.NSString, segment: NSInteger):void;
+    setLabel_forSegment(label: string | NSString, segment: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/2887107-setalignment
     setAlignment_forSegment(alignment: NSTextAlignment, segment: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/2887114-alignmentforsegment
@@ -5002,9 +5002,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/2887104-settag
     setTag_forSegment(tag: NSInteger, segment: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/2887101-settooltip
-    setToolTip_forSegment(toolTip: string | cocoascript.NSString, segment: NSInteger):void;
+    setToolTip_forSegment(toolTip: string | NSString, segment: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/2887103-tooltipforsegment
-    toolTipForSegment(segment: NSInteger):string | cocoascript.NSString;
+    toolTipForSegment(segment: NSInteger):string | NSString;
     //
     alloc():NSSegmentedControl;
     //
@@ -5125,9 +5125,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsmatrix/1436479-setstate
     setState_atRow_column(value: NSInteger, row: NSInteger, col: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsmatrix/1436372-settooltip
-    setToolTip_forCell(toolTipString: string | cocoascript.NSString, cell: NSCell):void;
+    setToolTip_forCell(toolTipString: string | NSString, cell: NSCell):void;
     // doc://com.apple.documentation/documentation/appkit/nsmatrix/1436401-tooltipforcell
-    toolTipForCell(cell: NSCell):string | cocoascript.NSString;
+    toolTipForCell(cell: NSCell):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsmatrix/1436399-selectcellatrow
     selectCellAtRow_column(row: NSInteger, col: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsmatrix/1436446-selectcellwithtag
@@ -5327,7 +5327,7 @@ declare namespace cocoascript {
     transparent(): BOOL;
     setTransparent(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbox/1429795-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbox/1429791-titlefont
     titleFont(): NSFont;
@@ -5336,7 +5336,7 @@ declare namespace cocoascript {
     titlePosition(): NSTitlePosition;
     setTitlePosition(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbox/1429800-settitlewithmnemonic
-    setTitleWithMnemonic(stringWithAmpersand: string | cocoascript.NSString):void;
+    setTitleWithMnemonic(stringWithAmpersand: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsbox/1429789-titlecell
     titleCell(): id;
     setTitleCell(): void;
@@ -5404,7 +5404,7 @@ declare namespace cocoascript {
    */
   interface NSViewToolTipOwner extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsviewtooltipowner/3005296-view
-    view_stringForToolTip_point_userData(view: NSView, tag: NSToolTipTag, point: NSPoint, data: void):string | cocoascript.NSString;
+    view_stringForToolTip_point_userData(view: NSView, tag: NSToolTipTag, point: NSPoint, data: void):string | NSString;
   }
 }
 declare namespace cocoascript {
@@ -5420,7 +5420,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1535239-initwithwindownibname
     initWithWindowNibName_owner(windowNibName: NSNibName, owner: NSWindowController):NSWindowController;
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1532584-initwithwindownibpath
-    initWithWindowNibPath_owner(windowNibPath: string | cocoascript.NSString, owner: NSWindowController):NSWindowController;
+    initWithWindowNibPath_owner(windowNibPath: string | NSString, owner: NSWindowController):NSWindowController;
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1535137-loadwindow
     loadWindow():void;
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1534037-showwindow
@@ -5455,7 +5455,7 @@ declare namespace cocoascript {
     windowNibName(): NSNibName;
     setWindowNibName(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1524719-windownibpath
-    windowNibPath(): string | cocoascript.NSString;
+    windowNibPath(): string | NSString;
     setWindowNibPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1528177-shouldcascadewindows
     shouldCascadeWindows(): BOOL;
@@ -5466,7 +5466,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1524667-synchronizewindowtitlewithdocume
     synchronizeWindowTitleWithDocumentName():void;
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1528112-windowtitlefordocumentdisplaynam
-    windowTitleForDocumentDisplayName(displayName: string | cocoascript.NSString):string | cocoascript.NSString;
+    windowTitleForDocumentDisplayName(displayName: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nswindowcontroller/1532552-contentviewcontroller
     contentViewController(): NSViewController;
     setContentViewController(): void;
@@ -5505,7 +5505,7 @@ declare namespace cocoascript {
     view(): NSView;
     setView(): void;
     // doc://com.apple.documentation/documentation/appkit/nsviewcontroller/1434426-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsviewcontroller/1434464-commiteditingwithdelegate
     commitEditingWithDelegate_didCommitSelector_contextInfo(delegate: NSViewController, didCommitSelector: SEL, contextInfo: void):void;
@@ -5796,7 +5796,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstabviewitem/1477523-drawlabel
     drawLabel_inRect(shouldTruncateLabel: BOOL, labelRect: NSRect):void;
     // doc://com.apple.documentation/documentation/appkit/nstabviewitem/1477542-label
-    label(): string | cocoascript.NSString;
+    label(): string | NSString;
     setLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nstabviewitem/1477513-sizeoflabel
     sizeOfLabel(computeMin: BOOL):NSSize;
@@ -5819,7 +5819,7 @@ declare namespace cocoascript {
     tabView(): NSTabView;
     setTabView(): void;
     // doc://com.apple.documentation/documentation/appkit/nstabviewitem/1477515-tooltip
-    toolTip(): string | cocoascript.NSString;
+    toolTip(): string | NSString;
     setToolTip(): void;
     // doc://com.apple.documentation/documentation/appkit/nstabviewitem/1477509-tabviewitemwithviewcontroller
     tabViewItemWithViewController(viewController: NSViewController):NSTabViewItem;
@@ -6286,7 +6286,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419372-framerectforcontentrect
     frameRectForContentRect_styleMask(cRect: NSRect, style: NSWindowStyleMask):NSRect;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419294-minframewidthwithtitle
-    minFrameWidthWithTitle_styleMask(title: string | cocoascript.NSString, style: NSWindowStyleMask):CGFloat;
+    minFrameWidthWithTitle_styleMask(title: string | NSString, style: NSWindowStyleMask):CGFloat;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419108-contentrectforframerect
     contentRectForFrameRect(frameRect: NSRect):NSRect;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419134-framerectforcontentrect
@@ -6657,18 +6657,18 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419603-convertrectfromscreen
     convertRectFromScreen(rect: NSRect):NSRect;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419404-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/3608198-subtitle
-    subtitle(): string | cocoascript.NSString;
+    subtitle(): string | NSString;
     setSubtitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419635-titlevisibility
     titleVisibility(): NSWindowTitleVisibility;
     setTitleVisibility(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419192-settitlewithrepresentedfilename
-    setTitleWithRepresentedFilename(filename: string | cocoascript.NSString):void;
+    setTitleWithRepresentedFilename(filename: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419631-representedfilename
-    representedFilename(): string | cocoascript.NSString;
+    representedFilename(): string | NSString;
     setRepresentedFilename(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419066-representedurl
     representedURL(): NSURL;
@@ -6710,7 +6710,7 @@ declare namespace cocoascript {
     miniwindowImage(): NSImage;
     setMiniwindowImage(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419571-miniwindowtitle
-    miniwindowTitle(): string | cocoascript.NSString;
+    miniwindowTitle(): string | NSString;
     setMiniwindowTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindow/1419088-docktile
     dockTile(): NSDockTile;
@@ -6860,7 +6860,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsalert/1531823-alertwitherror
     alertWithError(error: NSError):NSAlert;
     // doc://com.apple.documentation/documentation/appkit/nsalert/1550982-alertwithmessagetext
-    alertWithMessageText_defaultButton_alternateButton_otherButton_informativeTextWithFormat(message: string | cocoascript.NSString, defaultButton: string | cocoascript.NSString, alternateButton: string | cocoascript.NSString, otherButton: string | cocoascript.NSString, ...format: Array<string | cocoascript.NSString>):NSAlert;
+    alertWithMessageText_defaultButton_alternateButton_otherButton_informativeTextWithFormat(message: string | NSString, defaultButton: string | NSString, alternateButton: string | NSString, otherButton: string | NSString, ...format: Array<string | NSString>):NSAlert;
     // doc://com.apple.documentation/documentation/appkit/nsalert/1526747-layout
     layout():void;
     // doc://com.apple.documentation/documentation/appkit/nsalert/1528506-alertstyle
@@ -6891,10 +6891,10 @@ declare namespace cocoascript {
     showsSuppressionButton(): BOOL;
     setShowsSuppressionButton(): void;
     // doc://com.apple.documentation/documentation/appkit/nsalert/1529629-informativetext
-    informativeText(): string | cocoascript.NSString;
+    informativeText(): string | NSString;
     setInformativeText(): void;
     // doc://com.apple.documentation/documentation/appkit/nsalert/1532498-messagetext
-    messageText(): string | cocoascript.NSString;
+    messageText(): string | NSString;
     setMessageText(): void;
     // doc://com.apple.documentation/documentation/appkit/nsalert/1531688-icon
     icon(): NSImage;
@@ -6903,7 +6903,7 @@ declare namespace cocoascript {
     buttons(): NSButton;
     setButtons(): void;
     // doc://com.apple.documentation/documentation/appkit/nsalert/1524532-addbuttonwithtitle
-    addButtonWithTitle(title: string | cocoascript.NSString):NSButton;
+    addButtonWithTitle(title: string | NSString):NSButton;
     // doc://com.apple.documentation/documentation/appkit/nsalert/1526566-window
     window(): NSWindow;
     setWindow(): void;
@@ -7055,13 +7055,13 @@ declare namespace cocoascript {
    */
   interface NSWindowTab extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nswindowtab/2869746-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindowtab/2869743-attributedtitle
     attributedTitle(): NSAttributedString;
     setAttributedTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindowtab/2869744-tooltip
-    toolTip(): string | cocoascript.NSString;
+    toolTip(): string | NSString;
     setToolTip(): void;
     // doc://com.apple.documentation/documentation/appkit/nswindowtab/2869745-accessoryview
     accessoryView(): NSView;
@@ -7189,7 +7189,7 @@ declare namespace cocoascript {
     maximumReferenceExtendedDynamicRangeColorComponentValue(): CGFloat;
     setMaximumReferenceExtendedDynamicRangeColorComponentValue(): void;
     // doc://com.apple.documentation/documentation/appkit/nsscreen/3228043-localizedname
-    localizedName(): string | cocoascript.NSString;
+    localizedName(): string | NSString;
     setLocalizedName(): void;
     //
     alloc():NSScreen;
@@ -7254,7 +7254,7 @@ declare namespace cocoascript {
 
 declare const NSPopover: cocoascript.NSPopover;
 // doc://com.apple.documentation/documentation/appkit/nspopoverclosereasonkey
-declare const NSPopoverCloseReasonKey: string | cocoascript.NSString;
+declare const NSPopoverCloseReasonKey: string | NSString;
 declare namespace cocoascript {
   /**
    * A set of optional methods that a popover delegate can implement to provide additional or custom functionality.
@@ -7352,19 +7352,19 @@ declare namespace cocoascript {
     URL(): NSURL;
     setURL(): void;
     // doc://com.apple.documentation/documentation/appkit/nssavepanel/1535071-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nssavepanel/1525227-prompt
-    prompt(): string | cocoascript.NSString;
+    prompt(): string | NSString;
     setPrompt(): void;
     // doc://com.apple.documentation/documentation/appkit/nssavepanel/1528581-message
-    message(): string | cocoascript.NSString;
+    message(): string | NSString;
     setMessage(): void;
     // doc://com.apple.documentation/documentation/appkit/nssavepanel/1535411-namefieldlabel
-    nameFieldLabel(): string | cocoascript.NSString;
+    nameFieldLabel(): string | NSString;
     setNameFieldLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nssavepanel/1529299-namefieldstringvalue
-    nameFieldStringValue(): string | cocoascript.NSString;
+    nameFieldStringValue(): string | NSString;
     setNameFieldStringValue(): void;
     // doc://com.apple.documentation/documentation/appkit/nssavepanel/1531279-directoryurl
     directoryURL(): NSURL;
@@ -7376,7 +7376,7 @@ declare namespace cocoascript {
     showsTagField(): BOOL;
     setShowsTagField(): void;
     // doc://com.apple.documentation/documentation/appkit/nssavepanel/1535928-tagnames
-    tagNames(): string | cocoascript.NSString;
+    tagNames(): string | NSString;
     setTagNames(): void;
     // doc://com.apple.documentation/documentation/appkit/nssavepanel/1532626-cancreatedirectories
     canCreateDirectories(): BOOL;
@@ -7421,7 +7421,7 @@ declare namespace cocoascript {
    */
   interface NSOpenSavePanelDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsopensavepaneldelegate/1524630-panel
-    panel_userEnteredFilename_confirmed(sender: NSOpenSavePanelDelegate, filename: string | cocoascript.NSString, okFlag: BOOL):string | cocoascript.NSString;
+    panel_userEnteredFilename_confirmed(sender: NSOpenSavePanelDelegate, filename: string | NSString, okFlag: BOOL):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsopensavepaneldelegate/1533556-panelselectiondidchange
     panelSelectionDidChange(sender: NSOpenSavePanelDelegate):void;
     // doc://com.apple.documentation/documentation/appkit/nsopensavepaneldelegate/1527117-panel
@@ -7449,7 +7449,7 @@ declare namespace cocoascript {
     options(): NSPDFPanelOptions;
     setOptions(): void;
     // doc://com.apple.documentation/documentation/appkit/nspdfpanel/1532720-defaultfilename
-    defaultFileName(): string | cocoascript.NSString;
+    defaultFileName(): string | NSString;
     setDefaultFileName(): void;
     // doc://com.apple.documentation/documentation/appkit/nspdfpanel/1529098-beginsheetwithpdfinfo
     beginSheetWithPDFInfo_modalForWindow_completionHandler(pdfInfo: NSPDFInfo, docWindow: NSWindow, completionHandler: NSInteger):void;
@@ -7468,9 +7468,9 @@ declare namespace cocoascript {
    */
   interface NSPrintPanelAccessorizing {
     // doc://com.apple.documentation/documentation/appkit/nsprintpanelaccessorizing/1490521-localizedsummaryitems
-    localizedSummaryItems():string | cocoascript.NSString;
+    localizedSummaryItems():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsprintpanelaccessorizing/1490516-keypathsforvaluesaffectingprevie
-    keyPathsForValuesAffectingPreview():string | cocoascript.NSString;
+    keyPathsForValuesAffectingPreview():string | NSString;
   }
 }
 declare namespace cocoascript {
@@ -7562,7 +7562,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscolorpickingdefault/1535437-mincontentsize
     minContentSize():NSSize;
     // doc://com.apple.documentation/documentation/appkit/nscolorpickingdefault/1535160-buttontooltip
-    buttonToolTip():string | cocoascript.NSString;
+    buttonToolTip():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nscolorpickingdefault/1535478-alphacontroladdedorremoved
     alphaControlAddedOrRemoved(sender: NSColorPickingDefault):void;
     // doc://com.apple.documentation/documentation/appkit/nscolorpickingdefault/1535866-viewsizechanged
@@ -7598,7 +7598,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscolorpicker/1492389-viewsizechanged
     viewSizeChanged(sender: NSColorPicker):void;
     // doc://com.apple.documentation/documentation/appkit/nscolorpicker/1492404-buttontooltip
-    buttonToolTip(): string | cocoascript.NSString;
+    buttonToolTip(): string | NSString;
     setButtonToolTip(): void;
     // doc://com.apple.documentation/documentation/appkit/nscolorpicker/1492391-mincontentsize
     minContentSize(): NSSize;
@@ -7673,7 +7673,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nssound/1477276-caninitwithpasteboard
     canInitWithPasteboard(pasteboard: NSPasteboard):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nssound/1477274-initwithcontentsoffile
-    initWithContentsOfFile_byReference(path: string | cocoascript.NSString, byRef: BOOL):NSSound;
+    initWithContentsOfFile_byReference(path: string | NSString, byRef: BOOL):NSSound;
     // doc://com.apple.documentation/documentation/appkit/nssound/1477288-initwithcontentsofurl
     initWithContentsOfURL_byReference(url: NSURL, byRef: BOOL):NSSound;
     // doc://com.apple.documentation/documentation/appkit/nssound/1477292-initwithdata
@@ -7698,7 +7698,7 @@ declare namespace cocoascript {
     playbackDeviceIdentifier(): NSSoundPlaybackDeviceIdentifier;
     setPlaybackDeviceIdentifier(): void;
     // doc://com.apple.documentation/documentation/appkit/nssound/1477290-soundunfilteredtypes
-    soundUnfilteredTypes(): string | cocoascript.NSString;
+    soundUnfilteredTypes(): string | NSString;
     setSoundUnfilteredTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nssound/1477318-soundnamed
     soundNamed(name: NSSoundName):NSSound;
@@ -7746,10 +7746,10 @@ declare namespace cocoascript {
     delegate(): NSSpeechRecognizerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechrecognizer/1529757-commands
-    commands(): string | cocoascript.NSString;
+    commands(): string | NSString;
     setCommands(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechrecognizer/1530622-displayedcommandstitle
-    displayedCommandsTitle(): string | cocoascript.NSString;
+    displayedCommandsTitle(): string | NSString;
     setDisplayedCommandsTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechrecognizer/1533405-listensinforegroundonly
     listensInForegroundOnly(): BOOL;
@@ -7814,9 +7814,9 @@ declare namespace cocoascript {
     speaking(): BOOL;
     setSpeaking(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizer/1448378-startspeakingstring
-    startSpeakingString(string: string | cocoascript.NSString):BOOL;
+    startSpeakingString(string: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizer/1448394-startspeakingstring
-    startSpeakingString_toURL(string: string | cocoascript.NSString, url: NSURL):BOOL;
+    startSpeakingString_toURL(string: string | NSString, url: NSURL):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizer/1448492-pausespeakingatboundary
     pauseSpeakingAtBoundary(boundary: NSSpeechBoundary):void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizer/1448505-continuespeaking
@@ -7826,7 +7826,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizer/1448374-stopspeakingatboundary
     stopSpeakingAtBoundary(boundary: NSSpeechBoundary):void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizer/1448500-phonemesfromtext
-    phonemesFromText(text: string | cocoascript.NSString):string | cocoascript.NSString;
+    phonemesFromText(text: string | NSString):string | NSString;
     //
     alloc():NSSpeechSynthesizer;
     //
@@ -7949,7 +7949,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1524690-performkeyequivalent
     performKeyEquivalent(event: NSEvent):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1584388-performmnemonic
-    performMnemonic(string: string | cocoascript.NSString):BOOL;
+    performMnemonic(string: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1527264-flushbufferedkeyevents
     flushBufferedKeyEvents():void;
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1534071-pressurechangewithevent
@@ -7977,7 +7977,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1526253-restorestatewithcoder
     restoreStateWithCoder(coder: NSCoder):void;
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1526242-restorablestatekeypaths
-    restorableStateKeyPaths(): string | cocoascript.NSString;
+    restorableStateKeyPaths(): string | NSString;
     setRestorableStateKeyPaths(): void;
     // doc://com.apple.documentation/documentation/appkit/nsresponder/1526243-invalidaterestorablestate
     invalidateRestorableState():void;
@@ -8058,7 +8058,7 @@ declare namespace cocoascript {
 
 declare const NSResponder: cocoascript.NSResponder;
 // doc://com.apple.documentation/documentation/appkit/nsinterfacestyledefault
-declare const NSInterfaceStyleDefault: string | cocoascript.NSString;
+declare const NSInterfaceStyleDefault: string | NSString;
 declare namespace cocoascript {
   /**
    * An object that contains information about an input action, such as a mouse click or a key press.
@@ -8066,7 +8066,7 @@ declare namespace cocoascript {
    */
   interface NSEvent extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsevent/1533943-keyeventwithtype
-    keyEventWithType_location_modifierFlags_timestamp_windowNumber_context_characters_charactersIgnoringModifiers_isARepeat_keyCode(type: NSEventType, location: NSPoint, flags: NSEventModifierFlags, time: NSTimeInterval, wNum: NSInteger, unusedPassNil: NSGraphicsContext, keys: string | cocoascript.NSString, ukeys: string | cocoascript.NSString, flag: BOOL, code: number):NSEvent;
+    keyEventWithType_location_modifierFlags_timestamp_windowNumber_context_characters_charactersIgnoringModifiers_isARepeat_keyCode(type: NSEventType, location: NSPoint, flags: NSEventModifierFlags, time: NSTimeInterval, wNum: NSInteger, unusedPassNil: NSGraphicsContext, keys: string | NSString, ukeys: string | NSString, flag: BOOL, code: number):NSEvent;
     // doc://com.apple.documentation/documentation/appkit/nsevent/1532495-mouseeventwithtype
     mouseEventWithType_location_modifierFlags_timestamp_windowNumber_context_eventNumber_clickCount_pressure(type: NSEventType, location: NSPoint, flags: NSEventModifierFlags, time: NSTimeInterval, wNum: NSInteger, unusedPassNil: NSGraphicsContext, eNum: NSInteger, cNum: NSInteger, pressure: number):NSEvent;
     // doc://com.apple.documentation/documentation/appkit/nsevent/1535383-enterexiteventwithtype
@@ -8117,10 +8117,10 @@ declare namespace cocoascript {
     keyRepeatInterval(): NSTimeInterval;
     setKeyRepeatInterval(): void;
     // doc://com.apple.documentation/documentation/appkit/nsevent/1534183-characters
-    characters(): string | cocoascript.NSString;
+    characters(): string | NSString;
     setCharacters(): void;
     // doc://com.apple.documentation/documentation/appkit/nsevent/1524605-charactersignoringmodifiers
-    charactersIgnoringModifiers(): string | cocoascript.NSString;
+    charactersIgnoringModifiers(): string | NSString;
     setCharactersIgnoringModifiers(): void;
     // doc://com.apple.documentation/documentation/appkit/nsevent/1528049-arepeat
     ARepeat(): BOOL;
@@ -8292,7 +8292,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsevent/1483105-locationinnode
     locationInNode(node: SKNode):CGPoint;
     // doc://com.apple.documentation/documentation/appkit/nsevent/3242717-charactersbyapplyingmodifiers
-    charactersByApplyingModifiers(modifiers: NSEventModifierFlags):string | cocoascript.NSString;
+    charactersByApplyingModifiers(modifiers: NSEventModifierFlags):string | NSString;
     //
     alloc():NSEvent;
     //
@@ -8395,15 +8395,15 @@ declare namespace cocoascript {
     menuBarHeight(): CGFloat;
     setMenuBarHeight(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518144-initwithtitle
-    initWithTitle(title: string | cocoascript.NSString):NSMenu;
+    initWithTitle(title: string | NSString):NSMenu;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518201-insertitem
     insertItem_atIndex(newItem: NSMenuItem, index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518146-insertitemwithtitle
-    insertItemWithTitle_action_keyEquivalent_atIndex(string: string | cocoascript.NSString, selector: SEL, charCode: string | cocoascript.NSString, index: NSInteger):NSMenuItem;
+    insertItemWithTitle_action_keyEquivalent_atIndex(string: string | NSString, selector: SEL, charCode: string | NSString, index: NSInteger):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518176-additem
     addItem(newItem: NSMenuItem):void;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518181-additemwithtitle
-    addItemWithTitle_action_keyEquivalent(string: string | cocoascript.NSString, selector: SEL, charCode: string | cocoascript.NSString):NSMenuItem;
+    addItemWithTitle_action_keyEquivalent(string: string | NSString, selector: SEL, charCode: string | NSString):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518257-removeitem
     removeItem(item: NSMenuItem):void;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518207-removeitematindex
@@ -8415,7 +8415,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518223-itemwithtag
     itemWithTag(tag: NSInteger):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518248-itemwithtitle
-    itemWithTitle(title: string | cocoascript.NSString):NSMenuItem;
+    itemWithTitle(title: string | NSString):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518218-itematindex
     itemAtIndex(index: NSInteger):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518202-numberofitems
@@ -8427,7 +8427,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518178-indexofitem
     indexOfItem(item: NSMenuItem):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518237-indexofitemwithtitle
-    indexOfItemWithTitle(title: string | cocoascript.NSString):NSInteger;
+    indexOfItemWithTitle(title: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518164-indexofitemwithtag
     indexOfItemWithTag(tag: NSInteger):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518153-indexofitemwithtarget
@@ -8465,7 +8465,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518210-performactionforitematindex
     performActionForItemAtIndex(index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518192-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenu/1518221-minimumwidth
     minimumWidth(): CGFloat;
@@ -8555,7 +8555,7 @@ declare namespace cocoascript {
    */
   interface NSMenuItem extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514858-initwithtitle
-    initWithTitle_action_keyEquivalent(string: string | cocoascript.NSString, selector: SEL, charCode: string | cocoascript.NSString):NSMenuItem;
+    initWithTitle_action_keyEquivalent(string: string | NSString, selector: SEL, charCode: string | NSString):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514863-enabled
     enabled(): BOOL;
     setEnabled(): void;
@@ -8572,7 +8572,7 @@ declare namespace cocoascript {
     action(): SEL;
     setAction(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514805-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514860-attributedtitle
     attributedTitle(): NSAttributedString;
@@ -8613,7 +8613,7 @@ declare namespace cocoascript {
     menu(): NSMenu;
     setMenu(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514842-keyequivalent
-    keyEquivalent(): string | cocoascript.NSString;
+    keyEquivalent(): string | NSString;
     setKeyEquivalent(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514815-keyequivalentmodifiermask
     keyEquivalentModifierMask(): NSEventModifierFlags;
@@ -8623,14 +8623,14 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514803-mnemoniclocation
     mnemonicLocation():NSUInteger;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514851-settitlewithmnemonic
-    setTitleWithMnemonic(stringWithAmpersand: string | cocoascript.NSString):void;
+    setTitleWithMnemonic(stringWithAmpersand: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514852-mnemonic
-    mnemonic():string | cocoascript.NSString;
+    mnemonic():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514811-usesuserkeyequivalents
     usesUserKeyEquivalents(): BOOL;
     setUsesUserKeyEquivalents(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514850-userkeyequivalent
-    userKeyEquivalent(): string | cocoascript.NSString;
+    userKeyEquivalent(): string | NSString;
     setUserKeyEquivalent(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514823-alternate
     alternate(): BOOL;
@@ -8639,7 +8639,7 @@ declare namespace cocoascript {
     indentationLevel(): NSInteger;
     setIndentationLevel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514848-tooltip
-    toolTip(): string | cocoascript.NSString;
+    toolTip(): string | NSString;
     setToolTip(): void;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitem/1514834-representedobject
     representedObject(): id;
@@ -8767,7 +8767,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsstatusitem/1524256-popupstatusitemmenu
     popUpStatusItemMenu(menu: NSMenu):void;
     // doc://com.apple.documentation/documentation/appkit/nsstatusitem/1534494-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsstatusitem/1534223-attributedtitle
     attributedTitle(): NSAttributedString;
@@ -8782,7 +8782,7 @@ declare namespace cocoascript {
     highlightMode(): BOOL;
     setHighlightMode(): void;
     // doc://com.apple.documentation/documentation/appkit/nsstatusitem/1534916-tooltip
-    toolTip(): string | cocoascript.NSString;
+    toolTip(): string | NSString;
     setToolTip(): void;
     // doc://com.apple.documentation/documentation/appkit/nsstatusitem/1531522-view
     view(): NSView;
@@ -8975,7 +8975,7 @@ declare namespace cocoascript {
     showsApplicationBadge(): BOOL;
     setShowsApplicationBadge(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocktile/1524433-badgelabel
-    badgeLabel(): string | cocoascript.NSString;
+    badgeLabel(): string | NSString;
     setBadgeLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdocktile/1527292-display
     display():void;
@@ -9372,7 +9372,7 @@ declare namespace cocoascript {
     visible(): BOOL;
     setVisible(): void;
     // doc://com.apple.documentation/documentation/appkit/nstouchbaritem/2544693-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nstouchbaritem/2544843-viewcontroller
     viewController(): NSViewController;
@@ -9401,7 +9401,7 @@ declare namespace cocoascript {
     delegate(): NSCandidateListTouchBarItemDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/appkit/nscandidatelisttouchbaritem/2544701-setcandidates
-    setCandidates_forSelectedRange_inString(candidates: any, selectedRange: NSRange, originalString: string | cocoascript.NSString):void;
+    setCandidates_forSelectedRange_inString(candidates: any, selectedRange: NSRange, originalString: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nscandidatelisttouchbaritem/2544728-candidates
     candidates(): any;
     setCandidates(): void;
@@ -9423,7 +9423,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscandidatelisttouchbaritem/2544658-updatewithinsertionpointvisibili
     updateWithInsertionPointVisibility(isVisible: BOOL):void;
     // doc://com.apple.documentation/documentation/appkit/nscandidatelisttouchbaritem/2544821-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     //
     alloc():NSCandidateListTouchBarItem;
@@ -9469,7 +9469,7 @@ declare namespace cocoascript {
     action(): SEL;
     setAction(): void;
     // doc://com.apple.documentation/documentation/appkit/nscolorpickertouchbaritem/2544803-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     //
     alloc():NSColorPickerTouchBarItem;
@@ -9492,7 +9492,7 @@ declare namespace cocoascript {
     viewController(): NSViewController;
     setViewController(): void;
     // doc://com.apple.documentation/documentation/appkit/nscustomtouchbaritem/2544770-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     //
     alloc():NSCustomTouchBarItem;
@@ -9533,7 +9533,7 @@ declare namespace cocoascript {
     prioritizedCompressionOptions(): NSUserInterfaceCompressionOptions;
     setPrioritizedCompressionOptions(): void;
     // doc://com.apple.documentation/documentation/appkit/nsgrouptouchbaritem/2544877-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     //
     alloc():NSGroupTouchBarItem;
@@ -9556,7 +9556,7 @@ declare namespace cocoascript {
     collapsedRepresentationImage(): NSImage;
     setCollapsedRepresentationImage(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopovertouchbaritem/2544772-collapsedrepresentationlabel
-    collapsedRepresentationLabel(): string | cocoascript.NSString;
+    collapsedRepresentationLabel(): string | NSString;
     setCollapsedRepresentationLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopovertouchbaritem/2544856-popovertouchbar
     popoverTouchBar(): NSTouchBar;
@@ -9574,7 +9574,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopovertouchbaritem/2544842-makestandardactivatepopovergestu
     makeStandardActivatePopoverGestureRecognizer():NSGestureRecognizer;
     // doc://com.apple.documentation/documentation/appkit/nspopovertouchbaritem/2544684-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     //
     alloc():NSPopoverTouchBarItem;
@@ -9597,7 +9597,7 @@ declare namespace cocoascript {
     buttonImage(): NSImage;
     setButtonImage(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservicepickertouchbaritem/2646971-buttontitle
-    buttonTitle(): string | cocoascript.NSString;
+    buttonTitle(): string | NSString;
     setButtonTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nssharingservicepickertouchbaritem/2560996-enabled
     enabled(): BOOL;
@@ -9623,7 +9623,7 @@ declare namespace cocoascript {
     slider(): NSSlider;
     setSlider(): void;
     // doc://com.apple.documentation/documentation/appkit/nsslidertouchbaritem/2544741-label
-    label(): string | cocoascript.NSString;
+    label(): string | NSString;
     setLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsslidertouchbaritem/2544846-minimumvalueaccessory
     minimumValueAccessory(): NSSliderAccessory;
@@ -9641,7 +9641,7 @@ declare namespace cocoascript {
     action(): SEL;
     setAction(): void;
     // doc://com.apple.documentation/documentation/appkit/nsslidertouchbaritem/2544793-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsslidertouchbaritem/3237220-doublevalue
     doubleValue(): number;
@@ -9674,7 +9674,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsuserinterfacecompressionoptions/2909987-initwithcompressionoptions
     initWithCompressionOptions(options: NSUserInterfaceCompressionOptions):NSUserInterfaceCompressionOptions;
     // doc://com.apple.documentation/documentation/appkit/nsuserinterfacecompressionoptions/2909979-initwithidentifier
-    initWithIdentifier(identifier: string | cocoascript.NSString):NSUserInterfaceCompressionOptions;
+    initWithIdentifier(identifier: string | NSString):NSUserInterfaceCompressionOptions;
     // doc://com.apple.documentation/documentation/appkit/nsuserinterfacecompressionoptions/2909964-initwithcoder
     initWithCoder(coder: NSCoder):NSUserInterfaceCompressionOptions;
     // doc://com.apple.documentation/documentation/appkit/nsuserinterfacecompressionoptions/2909980-hideimagesoption
@@ -9719,9 +9719,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbuttontouchbaritem/3237178-buttontouchbaritemwithidentifier
     buttonTouchBarItemWithIdentifier_image_target_action(identifier: NSTouchBarItemIdentifier, image: NSImage, target: NSButtonTouchBarItem, action: SEL):NSButtonTouchBarItem;
     // doc://com.apple.documentation/documentation/appkit/nsbuttontouchbaritem/3237179-buttontouchbaritemwithidentifier
-    buttonTouchBarItemWithIdentifier_title_image_target_action(identifier: NSTouchBarItemIdentifier, title: string | cocoascript.NSString, image: NSImage, target: NSButtonTouchBarItem, action: SEL):NSButtonTouchBarItem;
+    buttonTouchBarItemWithIdentifier_title_image_target_action(identifier: NSTouchBarItemIdentifier, title: string | NSString, image: NSImage, target: NSButtonTouchBarItem, action: SEL):NSButtonTouchBarItem;
     // doc://com.apple.documentation/documentation/appkit/nsbuttontouchbaritem/3237180-buttontouchbaritemwithidentifier
-    buttonTouchBarItemWithIdentifier_title_target_action(identifier: NSTouchBarItemIdentifier, title: string | cocoascript.NSString, target: NSButtonTouchBarItem, action: SEL):NSButtonTouchBarItem;
+    buttonTouchBarItemWithIdentifier_title_target_action(identifier: NSTouchBarItemIdentifier, title: string | NSString, target: NSButtonTouchBarItem, action: SEL):NSButtonTouchBarItem;
     // doc://com.apple.documentation/documentation/appkit/nsbuttontouchbaritem/3237176-action
     action(): SEL;
     setAction(): void;
@@ -9729,7 +9729,7 @@ declare namespace cocoascript {
     bezelColor(): NSColor;
     setBezelColor(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttontouchbaritem/3237181-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttontouchbaritem/3237182-image
     image(): NSImage;
@@ -9741,7 +9741,7 @@ declare namespace cocoascript {
     target(): id;
     setTarget(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttontouchbaritem/3237185-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     //
     alloc():NSButtonTouchBarItem;
@@ -9759,7 +9759,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237203-pickertouchbaritemwithidentifier
     pickerTouchBarItemWithIdentifier_images_selectionMode_target_action(identifier: NSTouchBarItemIdentifier, images: NSImage, selectionMode: NSPickerTouchBarItemSelectionMode, target: NSPickerTouchBarItem, action: SEL):NSPickerTouchBarItem;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237204-pickertouchbaritemwithidentifier
-    pickerTouchBarItemWithIdentifier_labels_selectionMode_target_action(identifier: NSTouchBarItemIdentifier, labels: string | cocoascript.NSString, selectionMode: NSPickerTouchBarItemSelectionMode, target: NSPickerTouchBarItem, action: SEL):NSPickerTouchBarItem;
+    pickerTouchBarItemWithIdentifier_labels_selectionMode_target_action(identifier: NSTouchBarItemIdentifier, labels: string | NSString, selectionMode: NSPickerTouchBarItemSelectionMode, target: NSPickerTouchBarItem, action: SEL):NSPickerTouchBarItem;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237194-action
     action(): SEL;
     setAction(): void;
@@ -9767,13 +9767,13 @@ declare namespace cocoascript {
     collapsedRepresentationImage(): NSImage;
     setCollapsedRepresentationImage(): void;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237196-collapsedrepresentationlabel
-    collapsedRepresentationLabel(): string | cocoascript.NSString;
+    collapsedRepresentationLabel(): string | NSString;
     setCollapsedRepresentationLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237197-controlrepresentation
     controlRepresentation(): NSPickerTouchBarItemControlRepresentation;
     setControlRepresentation(): void;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237198-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3353055-enabled
     enabled(): BOOL;
@@ -9798,13 +9798,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3353056-isenabledatindex
     isEnabledAtIndex(index: NSInteger):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237201-labelatindex
-    labelAtIndex(index: NSInteger):string | cocoascript.NSString;
+    labelAtIndex(index: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3353057-setenabled
     setEnabled_atIndex(enabled: BOOL, index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237208-setimage
     setImage_atIndex(image: NSImage, index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nspickertouchbaritem/3237209-setlabel
-    setLabel_atIndex(label: string | cocoascript.NSString, index: NSInteger):void;
+    setLabel_atIndex(label: string | NSString, index: NSInteger):void;
     //
     alloc():NSPickerTouchBarItem;
     //
@@ -9826,7 +9826,7 @@ declare namespace cocoascript {
     action(): SEL;
     setAction(): void;
     // doc://com.apple.documentation/documentation/appkit/nssteppertouchbaritem/3334931-customizationlabel
-    customizationLabel(): string | cocoascript.NSString;
+    customizationLabel(): string | NSString;
     setCustomizationLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nssteppertouchbaritem/3334932-increment
     increment(): number;
@@ -9997,7 +9997,7 @@ declare namespace cocoascript {
    */
   interface NSScrubberTextItemView extends NSScrubberItemView {
     // doc://com.apple.documentation/documentation/appkit/nsscrubbertextitemview/2544795-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsscrubbertextitemview/2544844-textfield
     textField(): NSTextField;
@@ -10156,7 +10156,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdraggingsource/1806936-draggingsourceoperationmaskforlo
     ():void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1416082-namesofpromisedfilesdroppedatdes
-    namesOfPromisedFilesDroppedAtDestination(dropDestination: NSURL):string | cocoascript.NSString;
+    namesOfPromisedFilesDroppedAtDestination(dropDestination: NSURL):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsdraggingsource/1806939-ignoremodifierkeyswhiledragging
     ():void;
     // doc://com.apple.documentation/documentation/appkit/nsdraggingsource/1806941-draggedimage
@@ -10311,7 +10311,7 @@ declare namespace cocoascript {
     draggingDestinationWindow(): NSWindow;
     setDraggingDestinationWindow(): void;
     // doc://com.apple.documentation/documentation/appkit/nsdragginginfo/1415980-namesofpromisedfilesdroppedatdes
-    namesOfPromisedFilesDroppedAtDestination(dropDestination: NSURL):string | cocoascript.NSString;
+    namesOfPromisedFilesDroppedAtDestination(dropDestination: NSURL):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsdragginginfo/1416033-numberofvaliditemsfordrop
     numberOfValidItemsForDrop(): NSInteger;
     setNumberOfValidItemsForDrop(): void;
@@ -10374,13 +10374,13 @@ declare namespace cocoascript {
     accessibilityFrame(): NSRect;
     setAccessibilityFrame(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534974-accessibilityhelp
-    accessibilityHelp(): string | cocoascript.NSString;
+    accessibilityHelp(): string | NSString;
     setAccessibilityHelp(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534976-accessibilitylabel
-    accessibilityLabel(): string | cocoascript.NSString;
+    accessibilityLabel(): string | NSString;
     setAccessibilityLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535033-accessibilitytitle
-    accessibilityTitle(): string | cocoascript.NSString;
+    accessibilityTitle(): string | NSString;
     setAccessibilityTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535103-accessibilityvalue
     accessibilityValue(): id;
@@ -10392,7 +10392,7 @@ declare namespace cocoascript {
     accessibilityCriticalValue(): id;
     setAccessibilityCriticalValue(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535023-accessibilityidentifier
-    accessibilityIdentifier(): string | cocoascript.NSString;
+    accessibilityIdentifier(): string | NSString;
     setAccessibilityIdentifier(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535078-accessibilitymaxvalue
     accessibilityMaxValue(): id;
@@ -10413,7 +10413,7 @@ declare namespace cocoascript {
     accessibilityURL(): NSURL;
     setAccessibilityURL(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535113-accessibilityvaluedescription
-    accessibilityValueDescription(): string | cocoascript.NSString;
+    accessibilityValueDescription(): string | NSString;
     setAccessibilityValueDescription(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535032-accessibilitywarningvalue
     accessibilityWarningValue(): id;
@@ -10461,7 +10461,7 @@ declare namespace cocoascript {
     accessibilityRole(): NSAccessibilityRole;
     setAccessibilityRole(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535144-accessibilityroledescription
-    accessibilityRoleDescription(): string | cocoascript.NSString;
+    accessibilityRoleDescription(): string | NSString;
     setAccessibilityRoleDescription(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535070-accessibilitysubrole
     accessibilitySubrole(): NSAccessibilitySubrole;
@@ -10473,10 +10473,10 @@ declare namespace cocoascript {
     accessibilityNumberOfCharacters(): NSInteger;
     setAccessibilityNumberOfCharacters(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535063-accessibilityplaceholdervalue
-    accessibilityPlaceholderValue(): string | cocoascript.NSString;
+    accessibilityPlaceholderValue(): string | NSString;
     setAccessibilityPlaceholderValue(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535038-accessibilityselectedtext
-    accessibilitySelectedText(): string | cocoascript.NSString;
+    accessibilitySelectedText(): string | NSString;
     setAccessibilitySelectedText(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534989-accessibilityselectedtextrange
     accessibilitySelectedTextRange(): NSRange;
@@ -10494,7 +10494,7 @@ declare namespace cocoascript {
     accessibilityVisibleCharacterRange(): NSRange;
     setAccessibilityVisibleCharacterRange(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534940-accessibilitystringforrange
-    accessibilityStringForRange(range: NSRange):string | cocoascript.NSString;
+    accessibilityStringForRange(range: NSRange):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1532250-accessibilityattributedstringfor
     accessibilityAttributedStringForRange(range: NSRange):NSAttributedString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1529273-accessibilityrtfforrange
@@ -10664,13 +10664,13 @@ declare namespace cocoascript {
     accessibilityHorizontalUnits(): NSAccessibilityUnits;
     setAccessibilityHorizontalUnits(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535095-accessibilityhorizontalunitdescr
-    accessibilityHorizontalUnitDescription(): string | cocoascript.NSString;
+    accessibilityHorizontalUnitDescription(): string | NSString;
     setAccessibilityHorizontalUnitDescription(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535011-accessibilityverticalunits
     accessibilityVerticalUnits(): NSAccessibilityUnits;
     setAccessibilityVerticalUnits(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535065-accessibilityverticalunitdescrip
-    accessibilityVerticalUnitDescription(): string | cocoascript.NSString;
+    accessibilityVerticalUnitDescription(): string | NSString;
     setAccessibilityVerticalUnitDescription(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1526401-accessibilitylayoutpointforscree
     accessibilityLayoutPointForScreenPoint(point: NSPoint):NSPoint;
@@ -10708,7 +10708,7 @@ declare namespace cocoascript {
     accessibilityMarkerGroupUIElement(): id;
     setAccessibilityMarkerGroupUIElement(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534968-accessibilitymarkertypedescripti
-    accessibilityMarkerTypeDescription(): string | cocoascript.NSString;
+    accessibilityMarkerTypeDescription(): string | NSString;
     setAccessibilityMarkerTypeDescription(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535037-accessibilitymarkeruielements
     accessibilityMarkerUIElements(): NSArray;
@@ -10723,16 +10723,16 @@ declare namespace cocoascript {
     accessibilityUnits(): NSAccessibilityUnits;
     setAccessibilityUnits(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535094-accessibilityunitdescription
-    accessibilityUnitDescription(): string | cocoascript.NSString;
+    accessibilityUnitDescription(): string | NSString;
     setAccessibilityUnitDescription(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534993-accessibilitydocument
-    accessibilityDocument(): string | cocoascript.NSString;
+    accessibilityDocument(): string | NSString;
     setAccessibilityDocument(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535077-accessibilityedited
     accessibilityEdited(): BOOL;
     setAccessibilityEdited(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535068-accessibilityfilename
-    accessibilityFilename(): string | cocoascript.NSString;
+    accessibilityFilename(): string | NSString;
     setAccessibilityFilename(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534972-accessibilitylinkeduielements
     accessibilityLinkedUIElements(): NSArray;
@@ -10818,7 +10818,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement/1528055-accessibilityframe
     accessibilityFrame():NSRect;
     // doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement/1533707-accessibilityidentifier
-    accessibilityIdentifier():string | cocoascript.NSString;
+    accessibilityIdentifier():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement/1529078-accessibilityparent
     accessibilityParent():NSAccessibilityElement;
     // doc://com.apple.documentation/documentation/appkit/1534023-nsaccessibilityelement/1525133-isaccessibilityfocused
@@ -10832,7 +10832,7 @@ declare namespace cocoascript {
    */
   interface NSAccessibilityButton extends NSAccessibilityElement {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitybutton/1524910-accessibilitylabel
-    accessibilityLabel():string | cocoascript.NSString;
+    accessibilityLabel():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitybutton/1525542-accessibilityperformpress
     accessibilityPerformPress():BOOL;
   }
@@ -10853,7 +10853,7 @@ declare namespace cocoascript {
    */
   interface NSAccessibilityColor {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycolor/3566856-accessibilityname
-    accessibilityName(): string | cocoascript.NSString;
+    accessibilityName(): string | NSString;
     setAccessibilityName(): void;
   }
 }
@@ -10864,7 +10864,7 @@ declare namespace cocoascript {
    */
   interface NSAccessibilityImage extends NSAccessibilityElement {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityimage/1531608-accessibilitylabel
-    accessibilityLabel():string | cocoascript.NSString;
+    accessibilityLabel():string | NSString;
   }
 }
 declare namespace cocoascript {
@@ -10888,7 +10888,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitynavigablestatictext/1527015-accessibilityrangeforline
     accessibilityRangeForLine(lineNumber: NSInteger):NSRange;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitynavigablestatictext/1525402-accessibilitystringforrange
-    accessibilityStringForRange(range: NSRange):string | cocoascript.NSString;
+    accessibilityStringForRange(range: NSRange):string | NSString;
   }
 }
 declare namespace cocoascript {
@@ -10938,7 +10938,7 @@ declare namespace cocoascript {
    */
   interface NSAccessibilitySlider extends NSAccessibilityElement {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider/1530176-accessibilitylabel
-    accessibilityLabel():string | cocoascript.NSString;
+    accessibilityLabel():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider/1534967-accessibilityperformdecrement
     accessibilityPerformDecrement():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityslider/1528478-accessibilityperformincrement
@@ -10956,7 +10956,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitystatictext/1535001-accessibilityattributedstringfor
     accessibilityAttributedStringForRange(range: NSRange):NSAttributedString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitystatictext/1528730-accessibilityvalue
-    accessibilityValue():string | cocoascript.NSString;
+    accessibilityValue():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitystatictext/1532230-accessibilityvisiblecharacterran
     accessibilityVisibleCharacterRange():NSRange;
   }
@@ -10968,7 +10968,7 @@ declare namespace cocoascript {
    */
   interface NSAccessibilityStepper extends NSAccessibilityElement {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitystepper/1528702-accessibilitylabel
-    accessibilityLabel():string | cocoascript.NSString;
+    accessibilityLabel():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitystepper/1525327-accessibilityperformdecrement
     accessibilityPerformDecrement():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitystepper/1533764-accessibilityperformincrement
@@ -10988,7 +10988,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityswitch/1533985-accessibilityperformincrement
     accessibilityPerformIncrement():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityswitch/1533946-accessibilityvalue
-    accessibilityValue():string | cocoascript.NSString;
+    accessibilityValue():string | NSString;
   }
 }
 declare namespace cocoascript {
@@ -11002,9 +11002,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1524744-accessibilitycolumns
     accessibilityColumns():NSArray;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1535017-accessibilityheadergroup
-    accessibilityHeaderGroup():string | cocoascript.NSString;
+    accessibilityHeaderGroup():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1526563-accessibilitylabel
-    accessibilityLabel():string | cocoascript.NSString;
+    accessibilityLabel():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1524262-accessibilityrowheaderuielements
     accessibilityRowHeaderUIElements():NSArray;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitytable/1526672-accessibilityrows
@@ -11027,7 +11027,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationattributekey
-  type NSAccessibilityAnnotationAttributeKey = string | cocoascript.NSString;
+  type NSAccessibilityAnnotationAttributeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityannotationposition
@@ -11042,7 +11042,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1533717-accessibilityaddchildelement
     accessibilityAddChildElement(childElement: NSAccessibilityElement):void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1531178-accessibilityelementwithrole
-    accessibilityElementWithRole_frame_label_parent(role: NSAccessibilityRole, frame: NSRect, label: string | cocoascript.NSString, parent: NSAccessibilityElement):NSAccessibilityElement;
+    accessibilityElementWithRole_frame_label_parent(role: NSAccessibilityRole, frame: NSRect, label: string | NSString, parent: NSAccessibilityElement):NSAccessibilityElement;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilityelement/1569648-accessibilityframeinparentspace
     accessibilityFrameInParentSpace(): NSRect;
     setAccessibilityFrameInParentSpace(): void;
@@ -11068,11 +11068,11 @@ declare namespace cocoascript {
    */
   interface NSAccessibilityCustomAction extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870120-initwithname
-    initWithName_handler(name: string | cocoascript.NSString, handler: void):NSAccessibilityCustomAction;
+    initWithName_handler(name: string | NSString, handler: void):NSAccessibilityCustomAction;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870146-initwithname
-    initWithName_target_selector(name: string | cocoascript.NSString, target: NSObject, selector: SEL):NSAccessibilityCustomAction;
+    initWithName_target_selector(name: string | NSString, target: NSObject, selector: SEL):NSAccessibilityCustomAction;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870118-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction/2870157-handler
     handler(): void;
@@ -11097,7 +11097,7 @@ declare namespace cocoascript {
    */
   interface NSAccessibilityCustomRotor extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876333-initwithlabel
-    initWithLabel_itemSearchDelegate(label: string | cocoascript.NSString, itemSearchDelegate: NSAccessibilityCustomRotorItemSearchDelegate):NSAccessibilityCustomRotor;
+    initWithLabel_itemSearchDelegate(label: string | NSString, itemSearchDelegate: NSAccessibilityCustomRotorItemSearchDelegate):NSAccessibilityCustomRotor;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876299-initwithrotortype
     initWithRotorType_itemSearchDelegate(rotorType: NSAccessibilityCustomRotorType, itemSearchDelegate: NSAccessibilityCustomRotorItemSearchDelegate):NSAccessibilityCustomRotor;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2890783-itemloadingdelegate
@@ -11107,7 +11107,7 @@ declare namespace cocoascript {
     itemSearchDelegate(): NSAccessibilityCustomRotorItemSearchDelegate;
     setItemSearchDelegate(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876331-label
-    label(): string | cocoascript.NSString;
+    label(): string | NSString;
     setLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor/2876321-type
     type(): NSAccessibilityCustomRotorType;
@@ -11126,11 +11126,11 @@ declare namespace cocoascript {
    */
   interface NSAccessibilityCustomRotorItemResult extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2890782-initwithitemloadingtoken
-    initWithItemLoadingToken_customLabel(itemLoadingToken: NSAccessibilityLoadingToken, customLabel: string | cocoascript.NSString):NSAccessibilityCustomRotorItemResult;
+    initWithItemLoadingToken_customLabel(itemLoadingToken: NSAccessibilityLoadingToken, customLabel: string | NSString):NSAccessibilityCustomRotorItemResult;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876308-initwithtargetelement
     initWithTargetElement(targetElement: NSAccessibilityElement):NSAccessibilityCustomRotorItemResult;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876298-customlabel
-    customLabel(): string | cocoascript.NSString;
+    customLabel(): string | NSString;
     setCustomLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2890781-itemloadingtoken
     itemLoadingToken(): NSAccessibilityLoadingToken;
@@ -11158,7 +11158,7 @@ declare namespace cocoascript {
     currentItem(): NSAccessibilityCustomRotorItemResult;
     setCurrentItem(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters/2876328-filterstring
-    filterString(): string | cocoascript.NSString;
+    filterString(): string | NSString;
     setFilterString(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters/2876322-searchdirection
     searchDirection(): NSAccessibilityCustomRotorSearchDirection;
@@ -11200,7 +11200,7 @@ declare namespace cocoascript {
     accessibilityFocusedUIElement(): id;
     setAccessibilityFocusedUIElement(): void;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea/1527051-accessibilitylabel
-    accessibilityLabel():string | cocoascript.NSString;
+    accessibilityLabel():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsaccessibilitylayoutarea/1528883-accessibilityselectedchildren
     accessibilitySelectedChildren():NSArray;
   }
@@ -11217,11 +11217,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityattributename
-  type NSAccessibilityAttributeName = string | cocoascript.NSString;
+  type NSAccessibilityAttributeName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityfontattributekey
-  type NSAccessibilityFontAttributeKey = string | cocoascript.NSString;
+  type NSAccessibilityFontAttributeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityloadingtoken
@@ -11229,31 +11229,31 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientationvalue
-  type NSAccessibilityOrientationValue = string | cocoascript.NSString;
+  type NSAccessibilityOrientationValue = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityparameterizedattributename
-  type NSAccessibilityParameterizedAttributeName = string | cocoascript.NSString;
+  type NSAccessibilityParameterizedAttributeName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityrole
-  type NSAccessibilityRole = string | cocoascript.NSString;
+  type NSAccessibilityRole = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilitysubrole
-  type NSAccessibilitySubrole = string | cocoascript.NSString;
+  type NSAccessibilitySubrole = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulermarkertypevalue
-  type NSAccessibilityRulerMarkerTypeValue = string | cocoascript.NSString;
+  type NSAccessibilityRulerMarkerTypeValue = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityrulerunitvalue
-  type NSAccessibilityRulerUnitValue = string | cocoascript.NSString;
+  type NSAccessibilityRulerUnitValue = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilitysortdirectionvalue
-  type NSAccessibilitySortDirectionValue = string | cocoascript.NSString;
+  type NSAccessibilitySortDirectionValue = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -11280,13 +11280,13 @@ declare namespace cocoascript {
    */
   interface NSImageRep extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1526968-imagerepswithcontentsoffile
-    imageRepsWithContentsOfFile(filename: string | cocoascript.NSString):NSImageRep;
+    imageRepsWithContentsOfFile(filename: string | NSString):NSImageRep;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1535586-imagerepswithpasteboard
     imageRepsWithPasteboard(pasteboard: NSPasteboard):NSImageRep;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1526978-imagerepswithcontentsofurl
     imageRepsWithContentsOfURL(url: NSURL):NSImageRep;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1534589-imagerepwithcontentsoffile
-    imageRepWithContentsOfFile(filename: string | cocoascript.NSString):NSImageRep;
+    imageRepWithContentsOfFile(filename: string | NSString):NSImageRep;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1533918-imagerepwithpasteboard
     imageRepWithPasteboard(pasteboard: NSPasteboard):NSImageRep;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1535840-imagerepwithcontentsofurl
@@ -11300,17 +11300,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1527887-caninitwithpasteboard
     canInitWithPasteboard(pasteboard: NSPasteboard):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1535246-imagetypes
-    imageTypes(): string | cocoascript.NSString;
+    imageTypes(): string | NSString;
     setImageTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1534816-imageunfilteredtypes
-    imageUnfilteredTypes(): string | cocoascript.NSString;
+    imageUnfilteredTypes(): string | NSString;
     setImageUnfilteredTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1532660-imagefiletypes
-    imageFileTypes():string | cocoascript.NSString;
+    imageFileTypes():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1527425-imagepasteboardtypes
     imagePasteboardTypes():NSPasteboardType;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1534890-imageunfilteredfiletypes
-    imageUnfilteredFileTypes():string | cocoascript.NSString;
+    imageUnfilteredFileTypes():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1525257-imageunfilteredpasteboardtypes
     imageUnfilteredPasteboardTypes():NSPasteboardType;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1524374-size
@@ -11348,7 +11348,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1533982-drawinrect
     drawInRect_fromRect_operation_fraction_respectFlipped_hints(dstSpacePortionRect: NSRect, srcSpacePortionRect: NSRect, op: NSCompositingOperation, requestedAlpha: CGFloat, respectContextIsFlipped: BOOL, hints: NSImageRep):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1529342-imagerepclassfortype
-    imageRepClassForType(type: string | cocoascript.NSString):Class;
+    imageRepClassForType(type: string | NSString):Class;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1534272-imagerepclassfordata
     imageRepClassForData(data: NSData):Class;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1525139-registeredimagerepclasses
@@ -11359,7 +11359,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1535027-unregisterimagerepclass
     unregisterImageRepClass(imageRepClass: Class):void;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1535328-imagerepclassforfiletype
-    imageRepClassForFileType(type: string | cocoascript.NSString):Class;
+    imageRepClassForFileType(type: string | NSString):Class;
     // doc://com.apple.documentation/documentation/appkit/nsimagerep/1527017-imagerepclassforpasteboardtype
     imageRepClassForPasteboardType(type: NSPasteboardType):Class;
     //
@@ -11440,7 +11440,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbitmapimagerep/1395513-gettiffcompressiontypes
     getTIFFCompressionTypes_count(list: NSTIFFCompression, numTypes: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsbitmapimagerep/1395548-localizednamefortiffcompressiont
-    localizedNameForTIFFCompressionType(compression: NSTIFFCompression):string | cocoascript.NSString;
+    localizedNameForTIFFCompressionType(compression: NSTIFFCompression):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsbitmapimagerep/1395427-canbecompressedusing
     canBeCompressedUsing(compression: NSTIFFCompression):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsbitmapimagerep/1395478-setcompression
@@ -11589,7 +11589,7 @@ declare namespace cocoascript {
     fileExtensionHidden(): BOOL;
     setFileExtensionHidden(): void;
     // doc://com.apple.documentation/documentation/appkit/nspdfinfo/1525418-tagnames
-    tagNames(): string | cocoascript.NSString;
+    tagNames(): string | NSString;
     setTagNames(): void;
     // doc://com.apple.documentation/documentation/appkit/nspdfinfo/1524848-orientation
     orientation(): NSPaperOrientation;
@@ -12191,13 +12191,13 @@ declare namespace cocoascript {
     catalogNameComponent(): NSColorListName;
     setCatalogNameComponent(): void;
     // doc://com.apple.documentation/documentation/appkit/nscolor/1535351-localizedcatalognamecomponent
-    localizedCatalogNameComponent(): string | cocoascript.NSString;
+    localizedCatalogNameComponent(): string | NSString;
     setLocalizedCatalogNameComponent(): void;
     // doc://com.apple.documentation/documentation/appkit/nscolor/1528278-colornamecomponent
     colorNameComponent(): NSColorName;
     setColorNameComponent(): void;
     // doc://com.apple.documentation/documentation/appkit/nscolor/1527286-localizedcolornamecomponent
-    localizedColorNameComponent(): string | cocoascript.NSString;
+    localizedColorNameComponent(): string | NSString;
     setLocalizedColorNameComponent(): void;
     // doc://com.apple.documentation/documentation/appkit/nscolor/2880315-type
     type(): NSColorType;
@@ -12242,7 +12242,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscolorlist/1522140-initwithname
     initWithName(name: NSColorListName):NSColorList;
     // doc://com.apple.documentation/documentation/appkit/nscolorlist/1522133-initwithname
-    initWithName_fromFile(name: NSColorListName, path: string | cocoascript.NSString):NSColorList;
+    initWithName_fromFile(name: NSColorListName, path: string | NSString):NSColorList;
     // doc://com.apple.documentation/documentation/appkit/nscolorlist/1522127-availablecolorlists
     availableColorLists(): NSColorList;
     setAvailableColorLists(): void;
@@ -12270,7 +12270,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscolorlist/1522132-removefile
     removeFile():void;
     // doc://com.apple.documentation/documentation/appkit/nscolorlist/1522135-writetofile
-    writeToFile(path: string | cocoascript.NSString):BOOL;
+    writeToFile(path: string | NSString):BOOL;
     //
     alloc():NSColorList;
     //
@@ -12344,7 +12344,7 @@ declare namespace cocoascript {
     ICCProfileData(): NSData;
     setICCProfileData(): void;
     // doc://com.apple.documentation/documentation/appkit/nscolorspace/1412072-localizedname
-    localizedName(): string | cocoascript.NSString;
+    localizedName(): string | NSString;
     setLocalizedName(): void;
     // doc://com.apple.documentation/documentation/appkit/nscolorspace/1412099-numberofcolorcomponents
     numberOfColorComponents(): NSInteger;
@@ -12388,9 +12388,9 @@ declare namespace cocoascript {
     options(): NSPrintPanelOptions;
     setOptions(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprintpanel/1490548-defaultbuttontitle
-    defaultButtonTitle():string | cocoascript.NSString;
+    defaultButtonTitle():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsprintpanel/1490525-setdefaultbuttontitle
-    setDefaultButtonTitle(defaultButtonTitle: string | cocoascript.NSString):void;
+    setDefaultButtonTitle(defaultButtonTitle: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsprintpanel/1490537-helpanchor
     helpAnchor(): NSHelpAnchorName;
     setHelpAnchor(): void;
@@ -12479,17 +12479,17 @@ declare namespace cocoascript {
    */
   interface NSPrinter extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525202-printerwithname
-    printerWithName(name: string | cocoascript.NSString):NSPrinter;
+    printerWithName(name: string | NSString):NSPrinter;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525196-printerwithtype
     printerWithType(type: NSPrinterTypeName):NSPrinter;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525209-printernames
-    printerNames(): string | cocoascript.NSString;
+    printerNames(): string | NSString;
     setPrinterNames(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525216-printertypes
     printerTypes(): NSPrinterTypeName;
     setPrinterTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525189-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1524450-type
     type(): NSPrinterTypeName;
@@ -12503,41 +12503,41 @@ declare namespace cocoascript {
     deviceDescription(): id;
     setDeviceDescription(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525200-iskey
-    isKey_inTable(key: string | cocoascript.NSString, table: string | cocoascript.NSString):BOOL;
+    isKey_inTable(key: string | NSString, table: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525217-stringforkey
-    stringForKey_inTable(key: string | cocoascript.NSString, table: string | cocoascript.NSString):string | cocoascript.NSString;
+    stringForKey_inTable(key: string | NSString, table: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525219-stringlistforkey
-    stringListForKey_inTable(key: string | cocoascript.NSString, table: string | cocoascript.NSString):NSArray;
+    stringListForKey_inTable(key: string | NSString, table: string | NSString):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525212-booleanforkey
-    booleanForKey_inTable(key: string | cocoascript.NSString, table: string | cocoascript.NSString):BOOL;
+    booleanForKey_inTable(key: string | NSString, table: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525195-floatforkey
-    floatForKey_inTable(key: string | cocoascript.NSString, table: string | cocoascript.NSString):number;
+    floatForKey_inTable(key: string | NSString, table: string | NSString):number;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525214-intforkey
-    intForKey_inTable(key: string | cocoascript.NSString, table: string | cocoascript.NSString):number;
+    intForKey_inTable(key: string | NSString, table: string | NSString):number;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525198-rectforkey
-    rectForKey_inTable(key: string | cocoascript.NSString, table: string | cocoascript.NSString):NSRect;
+    rectForKey_inTable(key: string | NSString, table: string | NSString):NSRect;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525205-sizeforkey
-    sizeForKey_inTable(key: string | cocoascript.NSString, table: string | cocoascript.NSString):NSSize;
+    sizeForKey_inTable(key: string | NSString, table: string | NSString):NSSize;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525218-statusfortable
-    statusForTable(tableName: string | cocoascript.NSString):NSPrinterTableStatus;
+    statusForTable(tableName: string | NSString):NSPrinterTableStatus;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525206-printerwithname
-    printerWithName_domain_includeUnavailable(name: string | cocoascript.NSString, domain: string | cocoascript.NSString, flag: BOOL):NSPrinter;
+    printerWithName_domain_includeUnavailable(name: string | NSString, domain: string | NSString, flag: BOOL):NSPrinter;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525224-acceptsbinary
     acceptsBinary():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525197-domain
-    domain():string | cocoascript.NSString;
+    domain():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525221-host
-    host():string | cocoascript.NSString;
+    host():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525199-imagerectforpaper
-    imageRectForPaper(paperName: string | cocoascript.NSString):NSRect;
+    imageRectForPaper(paperName: string | NSString):NSRect;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525187-iscolor
     isColor():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525226-isfontavailable
-    isFontAvailable(faceName: string | cocoascript.NSString):BOOL;
+    isFontAvailable(faceName: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525203-isoutputstackinreverseorder
     isOutputStackInReverseOrder():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsprinter/1525210-note
-    note():string | cocoascript.NSString;
+    note():string | NSString;
     //
     alloc():NSPrinter;
     //
@@ -12586,7 +12586,7 @@ declare namespace cocoascript {
     paperName(): NSPrinterPaperName;
     setPaperName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprintinfo/1524573-localizedpapername
-    localizedPaperName(): string | cocoascript.NSString;
+    localizedPaperName(): string | NSString;
     setLocalizedPaperName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprintinfo/1532693-horizontalpagination
     horizontalPagination(): NSPrintingPaginationMode;
@@ -12657,13 +12657,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1524819-epsoperationwithview
     EPSOperationWithView_insideRect_toData_printInfo(view: NSView, rect: NSRect, data: NSMutableData, printInfo: NSPrintInfo):NSPrintOperation;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1530037-epsoperationwithview
-    EPSOperationWithView_insideRect_toPath_printInfo(view: NSView, rect: NSRect, path: string | cocoascript.NSString, printInfo: NSPrintInfo):NSPrintOperation;
+    EPSOperationWithView_insideRect_toPath_printInfo(view: NSView, rect: NSRect, path: string | NSString, printInfo: NSPrintInfo):NSPrintOperation;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1529269-pdfoperationwithview
     PDFOperationWithView_insideRect_toData(view: NSView, rect: NSRect, data: NSMutableData):NSPrintOperation;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1531298-pdfoperationwithview
     PDFOperationWithView_insideRect_toData_printInfo(view: NSView, rect: NSRect, data: NSMutableData, printInfo: NSPrintInfo):NSPrintOperation;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1534130-pdfoperationwithview
-    PDFOperationWithView_insideRect_toPath_printInfo(view: NSView, rect: NSRect, path: string | cocoascript.NSString, printInfo: NSPrintInfo):NSPrintOperation;
+    PDFOperationWithView_insideRect_toPath_printInfo(view: NSView, rect: NSRect, path: string | NSString, printInfo: NSPrintInfo):NSPrintOperation;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1535893-printoperationwithview
     printOperationWithView(view: NSView):NSPrintOperation;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1528557-printoperationwithview
@@ -12698,7 +12698,7 @@ declare namespace cocoascript {
     showsProgressPanel(): BOOL;
     setShowsProgressPanel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1535322-jobtitle
-    jobTitle(): string | cocoascript.NSString;
+    jobTitle(): string | NSString;
     setJobTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1529626-printpanel
     printPanel(): NSPrintPanel;
@@ -12726,9 +12726,9 @@ declare namespace cocoascript {
     canSpawnSeparateThread(): BOOL;
     setCanSpawnSeparateThread(): void;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1579094-jobstylehint
-    jobStyleHint():string | cocoascript.NSString;
+    jobStyleHint():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1579097-setjobstylehint
-    setJobStyleHint(hint: string | cocoascript.NSString):void;
+    setJobStyleHint(hint: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1579098-accessoryview
     accessoryView():NSView;
     // doc://com.apple.documentation/documentation/appkit/nsprintoperation/1579096-setaccessoryview
@@ -12760,18 +12760,18 @@ declare namespace cocoascript {
     sharedSpellCheckerExists(): BOOL;
     setSharedSpellCheckerExists(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1530496-availablelanguages
-    availableLanguages(): string | cocoascript.NSString;
+    availableLanguages(): string | NSString;
     setAvailableLanguages(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1525173-userpreferredlanguages
-    userPreferredLanguages(): string | cocoascript.NSString;
+    userPreferredLanguages(): string | NSString;
     setUserPreferredLanguages(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1534335-automaticallyidentifieslanguages
     automaticallyIdentifiesLanguages(): BOOL;
     setAutomaticallyIdentifiesLanguages(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1535648-language
-    language():string | cocoascript.NSString;
+    language():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1532988-setlanguage
-    setLanguage(language: string | cocoascript.NSString):BOOL;
+    setLanguage(language: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1532806-spellingpanel
     spellingPanel(): NSPanel;
     setSpellingPanel(): void;
@@ -12779,7 +12779,7 @@ declare namespace cocoascript {
     substitutionsPanel(): NSPanel;
     setSubstitutionsPanel(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1525300-updatespellingpanelwithgrammarst
-    updateSpellingPanelWithGrammarString_detail(string: string | cocoascript.NSString, detail: NSSpellChecker):void;
+    updateSpellingPanelWithGrammarString_detail(string: string | NSString, detail: NSSpellChecker):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1531045-updatepanels
     updatePanels():void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1528160-accessoryview
@@ -12789,58 +12789,58 @@ declare namespace cocoascript {
     substitutionsPanelAccessoryViewController(): NSViewController;
     setSubstitutionsPanelAccessoryViewController(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1528008-countwordsinstring
-    countWordsInString_language(stringToCount: string | cocoascript.NSString, language: string | cocoascript.NSString):NSInteger;
+    countWordsInString_language(stringToCount: string | NSString, language: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1532957-checkspellingofstring
-    checkSpellingOfString_startingAt(stringToCheck: string | cocoascript.NSString, startingOffset: NSInteger):NSRange;
+    checkSpellingOfString_startingAt(stringToCheck: string | NSString, startingOffset: NSInteger):NSRange;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1533574-checkspellingofstring
-    checkSpellingOfString_startingAt_language_wrap_inSpellDocumentWithTag_wordCount(stringToCheck: string | cocoascript.NSString, startingOffset: NSInteger, language: string | cocoascript.NSString, wrapFlag: BOOL, tag: NSInteger, wordCount: NSInteger):NSRange;
+    checkSpellingOfString_startingAt_language_wrap_inSpellDocumentWithTag_wordCount(stringToCheck: string | NSString, startingOffset: NSInteger, language: string | NSString, wrapFlag: BOOL, tag: NSInteger, wordCount: NSInteger):NSRange;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1557141-guessesforword
-    guessesForWord(word: string | cocoascript.NSString):NSArray;
+    guessesForWord(word: string | NSString):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1528441-checkgrammarofstring
-    checkGrammarOfString_startingAt_language_wrap_inSpellDocumentWithTag_details(stringToCheck: string | cocoascript.NSString, startingOffset: NSInteger, language: string | cocoascript.NSString, wrapFlag: BOOL, tag: NSInteger, details: NSSpellChecker):NSRange;
+    checkGrammarOfString_startingAt_language_wrap_inSpellDocumentWithTag_details(stringToCheck: string | NSString, startingOffset: NSInteger, language: string | NSString, wrapFlag: BOOL, tag: NSInteger, details: NSSpellChecker):NSRange;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1535739-checkstring
-    checkString_range_types_options_inSpellDocumentWithTag_orthography_wordCount(stringToCheck: string | cocoascript.NSString, range: NSRange, checkingTypes: NSTextCheckingTypes, options: NSSpellChecker, tag: NSInteger, orthography: NSOrthography, wordCount: NSInteger):NSTextCheckingResult;
+    checkString_range_types_options_inSpellDocumentWithTag_orthography_wordCount(stringToCheck: string | NSString, range: NSRange, checkingTypes: NSTextCheckingTypes, options: NSSpellChecker, tag: NSInteger, orthography: NSOrthography, wordCount: NSInteger):NSTextCheckingResult;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1526261-requestcheckingofstring
-    requestCheckingOfString_range_types_options_inSpellDocumentWithTag_completionHandler(stringToCheck: string | cocoascript.NSString, range: NSRange, checkingTypes: NSTextCheckingTypes, options: NSSpellChecker, tag: NSInteger, completionHandler: NSInteger):NSInteger;
+    requestCheckingOfString_range_types_options_inSpellDocumentWithTag_completionHandler(stringToCheck: string | NSString, range: NSRange, checkingTypes: NSTextCheckingTypes, options: NSSpellChecker, tag: NSInteger, completionHandler: NSInteger):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1527419-guessesforwordrange
-    guessesForWordRange_inString_language_inSpellDocumentWithTag(range: NSRange, string: string | cocoascript.NSString, language: string | cocoascript.NSString, tag: NSInteger):string | cocoascript.NSString;
+    guessesForWordRange_inString_language_inSpellDocumentWithTag(range: NSRange, string: string | NSString, language: string | NSString, tag: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1526192-uniquespelldocumenttag
     uniqueSpellDocumentTag():NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1534066-closespelldocumentwithtag
     closeSpellDocumentWithTag(tag: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1531220-ignoreword
-    ignoreWord_inSpellDocumentWithTag(wordToIgnore: string | cocoascript.NSString, tag: NSInteger):void;
+    ignoreWord_inSpellDocumentWithTag(wordToIgnore: string | NSString, tag: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1531488-ignoredwordsinspelldocumentwitht
-    ignoredWordsInSpellDocumentWithTag(tag: NSInteger):string | cocoascript.NSString;
+    ignoredWordsInSpellDocumentWithTag(tag: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1535879-setignoredwords
-    setIgnoredWords_inSpellDocumentWithTag(words: string | cocoascript.NSString, tag: NSInteger):void;
+    setIgnoredWords_inSpellDocumentWithTag(words: string | NSString, tag: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1526688-setwordfieldstringvalue
-    setWordFieldStringValue(string: string | cocoascript.NSString):void;
+    setWordFieldStringValue(string: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1524852-updatespellingpanelwithmisspelle
-    updateSpellingPanelWithMisspelledWord(word: string | cocoascript.NSString):void;
+    updateSpellingPanelWithMisspelledWord(word: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1531406-completionsforpartialwordrange
-    completionsForPartialWordRange_inString_language_inSpellDocumentWithTag(range: NSRange, string: string | cocoascript.NSString, language: string | cocoascript.NSString, tag: NSInteger):string | cocoascript.NSString;
+    completionsForPartialWordRange_inString_language_inSpellDocumentWithTag(range: NSRange, string: string | NSString, language: string | NSString, tag: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1527525-haslearnedword
-    hasLearnedWord(word: string | cocoascript.NSString):BOOL;
+    hasLearnedWord(word: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1525147-unlearnword
-    unlearnWord(word: string | cocoascript.NSString):void;
+    unlearnWord(word: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1557140-forgetword
-    forgetWord(word: string | cocoascript.NSString):void;
+    forgetWord(word: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1534837-learnword
-    learnWord(word: string | cocoascript.NSString):void;
+    learnWord(word: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1532171-userquotesarrayforlanguage
-    userQuotesArrayForLanguage(language: string | cocoascript.NSString):string | cocoascript.NSString;
+    userQuotesArrayForLanguage(language: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1524925-userreplacementsdictionary
-    userReplacementsDictionary(): string | cocoascript.NSString;
+    userReplacementsDictionary(): string | NSString;
     setUserReplacementsDictionary(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1531603-menuforresult
-    menuForResult_string_options_atLocation_inView(result: NSTextCheckingResult, checkedString: string | cocoascript.NSString, options: NSSpellChecker, location: NSPoint, view: NSView):NSMenu;
+    menuForResult_string_options_atLocation_inView(result: NSTextCheckingResult, checkedString: string | NSString, options: NSSpellChecker, location: NSPoint, view: NSView):NSMenu;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1531542-correctionforwordrange
-    correctionForWordRange_inString_language_inSpellDocumentWithTag(range: NSRange, string: string | cocoascript.NSString, language: string | cocoascript.NSString, tag: NSInteger):string | cocoascript.NSString;
+    correctionForWordRange_inString_language_inSpellDocumentWithTag(range: NSRange, string: string | NSString, language: string | NSString, tag: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1524316-showcorrectionindicatoroftype
-    showCorrectionIndicatorOfType_primaryString_alternativeStrings_forStringInRect_view_completionHandler(type: NSCorrectionIndicatorType, primaryString: string | cocoascript.NSString, alternativeStrings: string | cocoascript.NSString, rectOfTypedString: NSRect, view: NSView, completionBlock: string | cocoascript.NSString):void;
+    showCorrectionIndicatorOfType_primaryString_alternativeStrings_forStringInRect_view_completionHandler(type: NSCorrectionIndicatorType, primaryString: string | NSString, alternativeStrings: string | NSString, rectOfTypedString: NSRect, view: NSView, completionBlock: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1535568-recordresponse
-    recordResponse_toCorrection_forWord_language_inSpellDocumentWithTag(response: NSCorrectionResponse, correction: string | cocoascript.NSString, word: string | cocoascript.NSString, language: string | cocoascript.NSString, tag: NSInteger):void;
+    recordResponse_toCorrection_forWord_language_inSpellDocumentWithTag(response: NSCorrectionResponse, correction: string | NSString, word: string | NSString, language: string | NSString, tag: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1535527-dismisscorrectionindicatorforvie
     dismissCorrectionIndicatorForView(view: NSView):void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/2869583-automaticcapitalizationenabled
@@ -12865,13 +12865,13 @@ declare namespace cocoascript {
     automaticTextReplacementEnabled(): BOOL;
     setAutomaticTextReplacementEnabled(): void;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/2561001-deletesautospacebetweenstring
-    deletesAutospaceBetweenString_andString_language(precedingString: string | cocoascript.NSString, followingString: string | cocoascript.NSString, language: string | cocoascript.NSString):BOOL;
+    deletesAutospaceBetweenString_andString_language(precedingString: string | NSString, followingString: string | NSString, language: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1530303-languageforwordrange
-    languageForWordRange_inString_orthography(range: NSRange, string: string | cocoascript.NSString, orthography: NSOrthography):string | cocoascript.NSString;
+    languageForWordRange_inString_orthography(range: NSRange, string: string | NSString, orthography: NSOrthography):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/1792008-preventsautocorrectionbeforestri
-    preventsAutocorrectionBeforeString_language(string: string | cocoascript.NSString, language: string | cocoascript.NSString):BOOL;
+    preventsAutocorrectionBeforeString_language(string: string | NSString, language: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsspellchecker/2560997-requestcandidatesforselectedrang
-    requestCandidatesForSelectedRange_inString_types_options_inSpellDocumentWithTag_completionHandler(selectedRange: NSRange, stringToCheck: string | cocoascript.NSString, checkingTypes: NSTextCheckingTypes, options: NSSpellChecker, tag: NSInteger, completionHandler: NSTextCheckingResult):NSInteger;
+    requestCandidatesForSelectedRange_inString_types_options_inSpellDocumentWithTag_completionHandler(selectedRange: NSRange, stringToCheck: string | NSString, checkingTypes: NSTextCheckingTypes, options: NSSpellChecker, tag: NSInteger, completionHandler: NSTextCheckingResult):NSInteger;
     //
     alloc():NSSpellChecker;
     //
@@ -12909,11 +12909,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextfield/1644658-labelwithattributedstring
     labelWithAttributedString(attributedStringValue: NSAttributedString):NSTextField;
     // doc://com.apple.documentation/documentation/appkit/nstextfield/1644377-labelwithstring
-    labelWithString(stringValue: string | cocoascript.NSString):NSTextField;
+    labelWithString(stringValue: string | NSString):NSTextField;
     // doc://com.apple.documentation/documentation/appkit/nstextfield/1644706-textfieldwithstring
-    textFieldWithString(stringValue: string | cocoascript.NSString):NSTextField;
+    textFieldWithString(stringValue: string | NSString):NSTextField;
     // doc://com.apple.documentation/documentation/appkit/nstextfield/1644543-wrappinglabelwithstring
-    wrappingLabelWithString(stringValue: string | cocoascript.NSString):NSTextField;
+    wrappingLabelWithString(stringValue: string | NSString):NSTextField;
     // doc://com.apple.documentation/documentation/appkit/nstextfield/1399422-selectable
     selectable(): BOOL;
     setSelectable(): void;
@@ -12927,7 +12927,7 @@ declare namespace cocoascript {
     importsGraphics(): BOOL;
     setImportsGraphics(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextfield/1399391-placeholderstring
-    placeholderString(): string | cocoascript.NSString;
+    placeholderString(): string | NSString;
     setPlaceholderString(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextfield/1399387-placeholderattributedstring
     placeholderAttributedString(): NSAttributedString;
@@ -12968,7 +12968,7 @@ declare namespace cocoascript {
     allowsCharacterPickerTouchBarItem(): BOOL;
     setAllowsCharacterPickerTouchBarItem(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextfield/1399411-settitlewithmnemonic
-    setTitleWithMnemonic(stringWithAmpersand: string | cocoascript.NSString):void;
+    setTitleWithMnemonic(stringWithAmpersand: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nstextfield/2539554-automatictextcompletionenabled
     automaticTextCompletionEnabled(): BOOL;
     setAutomaticTextCompletionEnabled(): void;
@@ -13000,9 +13000,9 @@ declare namespace cocoascript {
    */
   interface NSForm extends NSMatrix {
     // doc://com.apple.documentation/documentation/appkit/nsform/1534075-addentry
-    addEntry(title: string | cocoascript.NSString):NSFormCell;
+    addEntry(title: string | NSString):NSFormCell;
     // doc://com.apple.documentation/documentation/appkit/nsform/1531754-insertentry
-    insertEntry_atIndex(title: string | cocoascript.NSString, index: NSInteger):NSFormCell;
+    insertEntry_atIndex(title: string | NSString, index: NSInteger):NSFormCell;
     // doc://com.apple.documentation/documentation/appkit/nsform/1526791-removeentryatindex
     removeEntryAtIndex(index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsform/1533560-setbezeled
@@ -13217,7 +13217,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstext/1525191-initwithframe
     initWithFrame(frameRect: NSRect):NSText;
     // doc://com.apple.documentation/documentation/appkit/nstext/1528601-string
-    string(): string | cocoascript.NSString;
+    string(): string | NSString;
     setString(): void;
     // doc://com.apple.documentation/documentation/appkit/nstext/1535324-backgroundcolor
     backgroundColor(): NSColor;
@@ -13256,7 +13256,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstext/1525846-replacecharactersinrange
     replaceCharactersInRange_withRTFD(range: NSRange, rtfdData: NSData):void;
     // doc://com.apple.documentation/documentation/appkit/nstext/1530589-replacecharactersinrange
-    replaceCharactersInRange_withString(range: NSRange, string: string | cocoascript.NSString):void;
+    replaceCharactersInRange_withString(range: NSRange, string: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nstext/1527642-selectall
     selectAll(sender: NSText):void;
     // doc://com.apple.documentation/documentation/appkit/nstext/1525497-copy
@@ -13308,9 +13308,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstext/1534203-underline
     underline(sender: NSText):void;
     // doc://com.apple.documentation/documentation/appkit/nstext/1532564-readrtfdfromfile
-    readRTFDFromFile(path: string | cocoascript.NSString):BOOL;
+    readRTFDFromFile(path: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstext/1527085-writertfdtofile
-    writeRTFDToFile_atomically(path: string | cocoascript.NSString, flag: BOOL):BOOL;
+    writeRTFDToFile_atomically(path: string | NSString, flag: BOOL):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstext/1528394-rtfdfromrange
     RTFDFromRange(range: NSRange):NSData;
     // doc://com.apple.documentation/documentation/appkit/nstext/1527004-rtffromrange
@@ -13353,7 +13353,7 @@ declare const NSTextDidChangeNotification: NSNotificationName;
 // doc://com.apple.documentation/documentation/appkit/nstextdidendeditingnotification
 declare const NSTextDidEndEditingNotification: NSNotificationName;
 // doc://com.apple.documentation/documentation/appkit/nstextmovementuserinfokey
-declare const NSTextMovementUserInfoKey: string | cocoascript.NSString;
+declare const NSTextMovementUserInfoKey: string | NSString;
 declare namespace cocoascript {
   /**
    * A protocol that a text field delegate can use to control its field editor action menu.
@@ -13377,7 +13377,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449225-undomanagerfortextview
     undoManagerForTextView(view: NSTextView):NSUndoManager;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449411-textview
-    textView_willDisplayToolTip_forCharacterAtIndex(textView: NSTextView, tooltip: string | cocoascript.NSString, characterIndex: NSUInteger):string | cocoascript.NSString;
+    textView_willDisplayToolTip_forCharacterAtIndex(textView: NSTextView, tooltip: string | NSString, characterIndex: NSUInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449194-textview
     textView_URLForContentsOfTextAttachment_atIndex(textView: NSTextView, textAttachment: NSTextAttachment, charIndex: NSUInteger):NSURL;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449227-textview
@@ -13391,9 +13391,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449294-textview
     textView_writeCell_atIndex_toPasteboard_type(view: NSTextView, cell: NSTextAttachmentCell, charIndex: NSUInteger, pboard: NSPasteboard, type: NSPasteboardType):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449325-textview
-    textView_shouldChangeTextInRange_replacementString(textView: NSTextView, affectedCharRange: NSRange, replacementString: string | cocoascript.NSString):BOOL;
+    textView_shouldChangeTextInRange_replacementString(textView: NSTextView, affectedCharRange: NSRange, replacementString: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449206-textview
-    textView_shouldChangeTextInRanges_replacementStrings(textView: NSTextView, affectedRanges: NSValue, replacementStrings: string | cocoascript.NSString):BOOL;
+    textView_shouldChangeTextInRanges_replacementStrings(textView: NSTextView, affectedRanges: NSValue, replacementStrings: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449376-textview
     textView_shouldChangeTypingAttributes_toAttributes(textView: NSTextView, oldTypingAttributes: NSTextViewDelegate, newTypingAttributes: NSTextViewDelegate):NSTextViewDelegate;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449303-textviewdidchangetypingattribute
@@ -13413,7 +13413,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449154-textview
     textView_draggedCell_inRect_event_atIndex(view: NSTextView, cell: NSTextAttachmentCell, rect: NSRect, event: NSEvent, charIndex: NSUInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449260-textview
-    textView_completions_forPartialWordRange_indexOfSelectedItem(textView: NSTextView, words: string | cocoascript.NSString, charRange: NSRange, index: NSInteger):string | cocoascript.NSString;
+    textView_completions_forPartialWordRange_indexOfSelectedItem(textView: NSTextView, words: string | NSString, charRange: NSRange, index: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449339-textview
     textView_willShowSharingServicePicker_forItems(textView: NSTextView, servicePicker: NSSharingServicePicker, items: NSArray):NSSharingServicePicker;
     // doc://com.apple.documentation/documentation/appkit/nstextviewdelegate/1449419-textview
@@ -13515,7 +13515,7 @@ declare namespace cocoascript {
    */
   interface NSTextCheckingClient extends NSTextInputClient {
     // doc://com.apple.documentation/documentation/appkit/nstextcheckingclient/3242719-addannotations
-    addAnnotations_range(annotations: string | cocoascript.NSString, range: NSRange):void;
+    addAnnotations_range(annotations: string | NSString, range: NSRange):void;
     // doc://com.apple.documentation/documentation/appkit/nstextcheckingclient/3242720-annotatedsubstringforproposedran
     annotatedSubstringForProposedRange_actualRange(range: NSRange, actualRange: NSRangePointer):NSAttributedString;
     // doc://com.apple.documentation/documentation/appkit/nstextcheckingclient/3242721-candidatelisttouchbaritem
@@ -13527,7 +13527,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextcheckingclient/3242724-selectandshowrange
     selectAndShowRange(range: NSRange):void;
     // doc://com.apple.documentation/documentation/appkit/nstextcheckingclient/3242725-setannotations
-    setAnnotations_range(annotations: string | cocoascript.NSString, range: NSRange):void;
+    setAnnotations_range(annotations: string | NSString, range: NSRange):void;
     // doc://com.apple.documentation/documentation/appkit/nstextcheckingclient/3242726-viewforrange
     viewForRange_firstRect_actualRange(range: NSRange, firstRect: NSRectPointer, actualRange: NSRangePointer):NSView;
   }
@@ -13953,7 +13953,7 @@ declare namespace cocoascript {
     markerFormat(): NSTextListMarkerFormat;
     setMarkerFormat(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextlist/1532739-markerforitemnumber
-    markerForItemNumber(itemNum: NSInteger):string | cocoascript.NSString;
+    markerForItemNumber(itemNum: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstextlist/1533519-listoptions
     listOptions(): NSTextListOptions;
     setListOptions(): void;
@@ -14052,19 +14052,19 @@ declare namespace cocoascript {
    */
   interface NSGlyphInfo extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsglyphinfo/2887154-glyphinfowithcgglyph
-    glyphInfoWithCGGlyph_forFont_baseString(glyph: CGGlyph, font: NSFont, string: string | cocoascript.NSString):NSGlyphInfo;
+    glyphInfoWithCGGlyph_forFont_baseString(glyph: CGGlyph, font: NSFont, string: string | NSString):NSGlyphInfo;
     // doc://com.apple.documentation/documentation/appkit/nsglyphinfo/2887163-basestring
-    baseString(): string | cocoascript.NSString;
+    baseString(): string | NSString;
     setBaseString(): void;
     // doc://com.apple.documentation/documentation/appkit/nsglyphinfo/2887152-glyphid
     glyphID(): CGGlyph;
     setGlyphID(): void;
     // doc://com.apple.documentation/documentation/appkit/nsglyphinfo/1447116-glyphinfowithcharacteridentifier
-    glyphInfoWithCharacterIdentifier_collection_baseString(cid: NSUInteger, characterCollection: NSCharacterCollection, string: string | cocoascript.NSString):NSGlyphInfo;
+    glyphInfoWithCharacterIdentifier_collection_baseString(cid: NSUInteger, characterCollection: NSCharacterCollection, string: string | NSString):NSGlyphInfo;
     // doc://com.apple.documentation/documentation/appkit/nsglyphinfo/1447124-glyphinfowithglyph
-    glyphInfoWithGlyph_forFont_baseString(glyph: NSGlyph, font: NSFont, string: string | cocoascript.NSString):NSGlyphInfo;
+    glyphInfoWithGlyph_forFont_baseString(glyph: NSGlyph, font: NSFont, string: string | NSString):NSGlyphInfo;
     // doc://com.apple.documentation/documentation/appkit/nsglyphinfo/1447118-glyphinfowithglyphname
-    glyphInfoWithGlyphName_forFont_baseString(glyphName: string | cocoascript.NSString, font: NSFont, string: string | cocoascript.NSString):NSGlyphInfo;
+    glyphInfoWithGlyphName_forFont_baseString(glyphName: string | NSString, font: NSFont, string: string | NSString):NSGlyphInfo;
     // doc://com.apple.documentation/documentation/appkit/nsglyphinfo/1447120-characteridentifier
     characterIdentifier(): NSUInteger;
     setCharacterIdentifier(): void;
@@ -14072,7 +14072,7 @@ declare namespace cocoascript {
     characterCollection(): NSCharacterCollection;
     setCharacterCollection(): void;
     // doc://com.apple.documentation/documentation/appkit/nsglyphinfo/1447132-glyphname
-    glyphName(): string | cocoascript.NSString;
+    glyphName(): string | NSString;
     setGlyphName(): void;
     //
     alloc():NSGlyphInfo;
@@ -14172,7 +14172,7 @@ declare namespace cocoascript {
     acceptsGlyphInfo(): BOOL;
     setAcceptsGlyphInfo(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextinputcontext/1532284-allowedinputsourcelocales
-    allowedInputSourceLocales(): string | cocoascript.NSString;
+    allowedInputSourceLocales(): string | NSString;
     setAllowedInputSourceLocales(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextinputcontext/1534378-activate
     activate():void;
@@ -14191,7 +14191,7 @@ declare namespace cocoascript {
     selectedKeyboardInputSource(): NSTextInputSourceIdentifier;
     setSelectedKeyboardInputSource(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextinputcontext/1526644-localizednameforinputsource
-    localizedNameForInputSource(inputSourceIdentifier: NSTextInputSourceIdentifier):string | cocoascript.NSString;
+    localizedNameForInputSource(inputSourceIdentifier: NSTextInputSourceIdentifier):string | NSString;
     //
     alloc():NSTextInputContext;
     //
@@ -14209,15 +14209,15 @@ declare namespace cocoascript {
    */
   interface NSTextAlternatives extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nstextalternatives/1529445-initwithprimarystring
-    initWithPrimaryString_alternativeStrings(primaryString: string | cocoascript.NSString, alternativeStrings: string | cocoascript.NSString):NSTextAlternatives;
+    initWithPrimaryString_alternativeStrings(primaryString: string | NSString, alternativeStrings: string | NSString):NSTextAlternatives;
     // doc://com.apple.documentation/documentation/appkit/nstextalternatives/1526166-primarystring
-    primaryString(): string | cocoascript.NSString;
+    primaryString(): string | NSString;
     setPrimaryString(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextalternatives/1527585-alternativestrings
-    alternativeStrings(): string | cocoascript.NSString;
+    alternativeStrings(): string | NSString;
     setAlternativeStrings(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextalternatives/1525721-noteselectedalternativestring
-    noteSelectedAlternativeString(alternativeString: string | cocoascript.NSString):void;
+    noteSelectedAlternativeString(alternativeString: string | NSString):void;
     //
     alloc():NSTextAlternatives;
     //
@@ -14235,13 +14235,13 @@ declare namespace cocoascript {
    */
   interface NSFont extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsfont/1525977-fontwithname
-    fontWithName_size(fontName: string | cocoascript.NSString, fontSize: CGFloat):NSFont;
+    fontWithName_size(fontName: string | NSString, fontSize: CGFloat):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1525386-fontwithdescriptor
     fontWithDescriptor_size(fontDescriptor: NSFontDescriptor, fontSize: CGFloat):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1525775-fontwithdescriptor
     fontWithDescriptor_textTransform(fontDescriptor: NSFontDescriptor, textTransform: NSAffineTransform):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1530751-fontwithname
-    fontWithName_matrix(fontName: string | cocoascript.NSString, fontMatrix: CGFloat):NSFont;
+    fontWithName_matrix(fontName: string | NSString, fontMatrix: CGFloat):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1524559-userfontofsize
     userFontOfSize(fontSize: CGFloat):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1531381-userfixedpitchfontofsize
@@ -14308,13 +14308,13 @@ declare namespace cocoascript {
     numberOfGlyphs(): NSUInteger;
     setNumberOfGlyphs(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1531660-displayname
-    displayName(): string | cocoascript.NSString;
+    displayName(): string | NSString;
     setDisplayName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1529585-familyname
-    familyName(): string | cocoascript.NSString;
+    familyName(): string | NSString;
     setFamilyName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1526183-fontname
-    fontName(): string | cocoascript.NSString;
+    fontName(): string | NSString;
     setFontName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfont/1526068-setuserfont
     setUserFont(font: NSFont):void;
@@ -14354,15 +14354,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462388-setfontpanelfactory
     setFontPanelFactory(factoryId: Class):void;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462372-availablefonts
-    availableFonts(): string | cocoascript.NSString;
+    availableFonts(): string | NSString;
     setAvailableFonts(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462323-availablefontfamilies
-    availableFontFamilies(): string | cocoascript.NSString;
+    availableFontFamilies(): string | NSString;
     setAvailableFontFamilies(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462329-availablefontnameswithtraits
-    availableFontNamesWithTraits(someTraits: NSFontTraitMask):string | cocoascript.NSString;
+    availableFontNamesWithTraits(someTraits: NSFontTraitMask):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462316-availablemembersoffontfamily
-    availableMembersOfFontFamily(fam: string | cocoascript.NSString):NSArray;
+    availableMembersOfFontFamily(fam: string | NSString):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462398-setselectedfont
     setSelectedFont_isMultiple(fontObj: NSFont, flag: BOOL):void;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462268-selectedfont
@@ -14374,7 +14374,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462386-sendaction
     sendAction():BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462277-localizednameforfamily
-    localizedNameForFamily_face(family: string | cocoascript.NSString, faceKey: string | cocoascript.NSString):string | cocoascript.NSString;
+    localizedNameForFamily_face(family: string | NSString, faceKey: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462320-addfonttrait
     addFontTrait(sender: NSFontManager):void;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462276-removefonttrait
@@ -14392,9 +14392,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1462311-changefont
     changeFont(sender: NSFontManager):void;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462309-convertfont
-    convertFont_toFace(fontObj: NSFont, typeface: string | cocoascript.NSString):NSFont;
+    convertFont_toFace(fontObj: NSFont, typeface: string | NSString):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462318-convertfont
-    convertFont_toFamily(fontObj: NSFont, family: string | cocoascript.NSString):NSFont;
+    convertFont_toFamily(fontObj: NSFont, family: string | NSString):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462345-convertfont
     convertFont_toHaveTrait(fontObj: NSFont, trait: NSFontTraitMask):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462364-convertfont
@@ -14409,11 +14409,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462274-convertfonttraits
     convertFontTraits(traits: NSFontTraitMask):NSFontTraitMask;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462332-fontwithfamily
-    fontWithFamily_traits_weight_size(family: string | cocoascript.NSString, traits: NSFontTraitMask, weight: NSInteger, size: CGFloat):NSFont;
+    fontWithFamily_traits_weight_size(family: string | NSString, traits: NSFontTraitMask, weight: NSInteger, size: CGFloat):NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462374-traitsoffont
     traitsOfFont(fontObj: NSFont):NSFontTraitMask;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462327-fontnamed
-    fontNamed_hasTraits(fName: string | cocoascript.NSString, someTraits: NSFontTraitMask):BOOL;
+    fontNamed_hasTraits(fName: string | NSString, someTraits: NSFontTraitMask):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462351-weightoffont
     weightOfFont(fontObj: NSFont):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsfontmanager/1462341-enabled
@@ -14454,17 +14454,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469856-fontdescriptorwithfontattributes
     fontDescriptorWithFontAttributes(attributes: NSFontDescriptor):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469942-fontdescriptorwithname
-    fontDescriptorWithName_matrix(fontName: string | cocoascript.NSString, matrix: NSAffineTransform):NSFontDescriptor;
+    fontDescriptorWithName_matrix(fontName: string | NSString, matrix: NSAffineTransform):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469912-fontdescriptorwithname
-    fontDescriptorWithName_size(fontName: string | cocoascript.NSString, size: CGFloat):NSFontDescriptor;
+    fontDescriptorWithName_size(fontName: string | NSString, size: CGFloat):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469991-initwithfontattributes
     initWithFontAttributes(attributes: NSFontDescriptor):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469987-fontdescriptorbyaddingattributes
     fontDescriptorByAddingAttributes(attributes: NSFontDescriptor):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469928-fontdescriptorwithface
-    fontDescriptorWithFace(newFace: string | cocoascript.NSString):NSFontDescriptor;
+    fontDescriptorWithFace(newFace: string | NSString):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469866-fontdescriptorwithfamily
-    fontDescriptorWithFamily(newFamily: string | cocoascript.NSString):NSFontDescriptor;
+    fontDescriptorWithFamily(newFamily: string | NSString):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469983-fontdescriptorwithmatrix
     fontDescriptorWithMatrix(matrix: NSAffineTransform):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469835-fontdescriptorwithsize
@@ -14489,7 +14489,7 @@ declare namespace cocoascript {
     pointSize(): CGFloat;
     setPointSize(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469948-postscriptname
-    postscriptName(): string | cocoascript.NSString;
+    postscriptName(): string | NSString;
     setPostscriptName(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfontdescriptor/1469858-symbolictraits
     symbolicTraits(): NSFontDescriptorSymbolicTraits;
@@ -14574,9 +14574,9 @@ declare namespace cocoascript {
     matchingDescriptors(): NSFontDescriptor;
     setMatchingDescriptors(): void;
     // doc://com.apple.documentation/documentation/appkit/nsfontcollection/1497496-matchingdescriptorsforfamily
-    matchingDescriptorsForFamily(family: string | cocoascript.NSString):NSFontDescriptor;
+    matchingDescriptorsForFamily(family: string | NSString):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontcollection/1497522-matchingdescriptorsforfamily
-    matchingDescriptorsForFamily_options(family: string | cocoascript.NSString, options: NSNumber):NSFontDescriptor;
+    matchingDescriptorsForFamily_options(family: string | NSString, options: NSNumber):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontcollection/1497510-matchingdescriptorswithoptions
     matchingDescriptorsWithOptions(options: NSNumber):NSFontDescriptor;
     // doc://com.apple.documentation/documentation/appkit/nsfontcollection/1497441-querydescriptors
@@ -14641,7 +14641,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1643347-initwithcoder
     initWithCoder(coder: NSCoder):NSFormCell;
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1526669-inittextcell
-    initTextCell(string: string | cocoascript.NSString):NSFormCell;
+    initTextCell(string: string | NSString):NSFormCell;
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1529440-opaque
     opaque(): BOOL;
     setOpaque(): void;
@@ -14649,7 +14649,7 @@ declare namespace cocoascript {
     attributedTitle(): NSAttributedString;
     setAttributedTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1526646-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1525716-titlealignment
     titleAlignment(): NSTextAlignment;
@@ -14664,12 +14664,12 @@ declare namespace cocoascript {
     titleWidth(): CGFloat;
     setTitleWidth(): void;
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1560758-settitlewithmnemonic
-    setTitleWithMnemonic(stringWithAmpersand: string | cocoascript.NSString):void;
+    setTitleWithMnemonic(stringWithAmpersand: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1535914-placeholderattributedstring
     placeholderAttributedString(): NSAttributedString;
     setPlaceholderAttributedString(): void;
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1534043-placeholderstring
-    placeholderString(): string | cocoascript.NSString;
+    placeholderString(): string | NSString;
     setPlaceholderString(): void;
     // doc://com.apple.documentation/documentation/appkit/nsformcell/1527483-preferredtextfieldwidth
     preferredTextFieldWidth(): CGFloat;
@@ -14764,7 +14764,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsmenuitemcell/1641971-initwithcoder
     initWithCoder(coder: NSCoder):NSMenuItemCell;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitemcell/1641970-inittextcell
-    initTextCell(string: string | cocoascript.NSString):NSMenuItemCell;
+    initTextCell(string: string | NSString):NSMenuItemCell;
     // doc://com.apple.documentation/documentation/appkit/nsmenuitemcell/1498871-menuitem
     menuItem(): NSMenuItem;
     setMenuItem(): void;
@@ -14827,11 +14827,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsinputmanager/1412849-image
     image():NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsinputmanager/1412829-initwithname
-    initWithName_host(inputServerName: string | cocoascript.NSString, hostName: string | cocoascript.NSString):NSInputManager;
+    initWithName_host(inputServerName: string | NSString, hostName: string | NSString):NSInputManager;
     // doc://com.apple.documentation/documentation/appkit/nsinputmanager/1412835-language
-    language():string | cocoascript.NSString;
+    language():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsinputmanager/1412819-localizedinputmanagername
-    localizedInputManagerName():string | cocoascript.NSString;
+    localizedInputManagerName():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsinputmanager/1412817-markedtextabandoned
     markedTextAbandoned(cli: NSInputManager):void;
     // doc://com.apple.documentation/documentation/appkit/nsinputmanager/1412846-markedtextselectionchanged
@@ -14864,7 +14864,7 @@ declare namespace cocoascript {
    */
   interface NSInputServer extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsinputserver/1538553-initwithdelegate
-    initWithDelegate_name(delegate: NSInputServer, name: string | cocoascript.NSString):NSInputServer;
+    initWithDelegate_name(delegate: NSInputServer, name: string | NSString):NSInputServer;
     //
     alloc():NSInputServer;
     //
@@ -14966,16 +14966,16 @@ declare namespace cocoascript {
     toolbar(): NSToolbar;
     setToolbar(): void;
     // doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1535127-label
-    label(): string | cocoascript.NSString;
+    label(): string | NSString;
     setLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1525421-palettelabel
-    paletteLabel(): string | cocoascript.NSString;
+    paletteLabel(): string | NSString;
     setPaletteLabel(): void;
     // doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1524627-tooltip
-    toolTip(): string | cocoascript.NSString;
+    toolTip(): string | NSString;
     setToolTip(): void;
     // doc://com.apple.documentation/documentation/appkit/nstoolbaritem/3237225-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nstoolbaritem/1532562-menuformrepresentation
     menuFormRepresentation(): NSMenuItem;
@@ -15054,7 +15054,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstoolbaridentifier
-  type NSToolbarIdentifier = string | cocoascript.NSString;
+  type NSToolbarIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstoolbardisplaymode
@@ -15076,7 +15076,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstouchbaritemidentifier
-  type NSTouchBarItemIdentifier = string | cocoascript.NSString;
+  type NSTouchBarItemIdentifier = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nstouchbaritemidentifierotheritemsproxy
 declare const NSTouchBarItemIdentifierOtherItemsProxy: NSTouchBarItemIdentifier;
@@ -15145,7 +15145,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsslider/1532906-image
     image():NSImage;
     // doc://com.apple.documentation/documentation/appkit/nsslider/1532913-title
-    title():string | cocoascript.NSString;
+    title():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsslider/1532902-titlecell
     titleCell():NSSlider;
     // doc://com.apple.documentation/documentation/appkit/nsslider/1532896-titlecolor
@@ -15153,7 +15153,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsslider/1532907-titlefont
     titleFont():NSFont;
     // doc://com.apple.documentation/documentation/appkit/nsslider/1532915-settitle
-    setTitle(string: string | cocoascript.NSString):void;
+    setTitle(string: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsslider/1532904-settitlecell
     setTitleCell(cell: NSCell):void;
     // doc://com.apple.documentation/documentation/appkit/nsslider/1532911-settitlecolor
@@ -15178,7 +15178,7 @@ declare const NSImageNameTouchBarGoBackTemplate: NSImageName;
 declare const NSImageNameTouchBarGoForwardTemplate: NSImageName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstouchbarcustomizationidentifier
-  type NSTouchBarCustomizationIdentifier = string | cocoascript.NSString;
+  type NSTouchBarCustomizationIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -15190,9 +15190,9 @@ declare namespace cocoascript {
     subitems(): NSToolbarItem;
     setSubitems(): void;
     // doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242763-groupwithitemidentifier
-    groupWithItemIdentifier_images_selectionMode_labels_target_action(itemIdentifier: NSToolbarItemIdentifier, images: NSImage, selectionMode: NSToolbarItemGroupSelectionMode, labels: string | cocoascript.NSString, target: NSToolbarItemGroup, action: SEL):NSToolbarItemGroup;
+    groupWithItemIdentifier_images_selectionMode_labels_target_action(itemIdentifier: NSToolbarItemIdentifier, images: NSImage, selectionMode: NSToolbarItemGroupSelectionMode, labels: string | NSString, target: NSToolbarItemGroup, action: SEL):NSToolbarItemGroup;
     // doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242764-groupwithitemidentifier
-    groupWithItemIdentifier_titles_selectionMode_labels_target_action(itemIdentifier: NSToolbarItemIdentifier, titles: string | cocoascript.NSString, selectionMode: NSToolbarItemGroupSelectionMode, labels: string | cocoascript.NSString, target: NSToolbarItemGroup, action: SEL):NSToolbarItemGroup;
+    groupWithItemIdentifier_titles_selectionMode_labels_target_action(itemIdentifier: NSToolbarItemIdentifier, titles: string | NSString, selectionMode: NSToolbarItemGroupSelectionMode, labels: string | NSString, target: NSToolbarItemGroup, action: SEL):NSToolbarItemGroup;
     // doc://com.apple.documentation/documentation/appkit/nstoolbaritemgroup/3242762-controlrepresentation
     controlRepresentation(): NSToolbarItemGroupControlRepresentation;
     setControlRepresentation(): void;
@@ -15349,7 +15349,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsworkspacedesktopimageoptionkey
-  type NSWorkspaceDesktopImageOptionKey = string | cocoascript.NSString;
+  type NSWorkspaceDesktopImageOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -15509,7 +15509,7 @@ declare const NSAppKitVersionNumber10_14_5: NSAppKitVersion;
 declare const NSAppKitVersionNumber10_15: NSAppKitVersion;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssharingservicename
-  type NSSharingServiceName = string | cocoascript.NSString;
+  type NSSharingServiceName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -15549,19 +15549,19 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsserviceprovidername
-  type NSServiceProviderName = string | cocoascript.NSString;
+  type NSServiceProviderName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nshelpanchorname
-  type NSHelpAnchorName = string | cocoascript.NSString;
+  type NSHelpAnchorName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nshelpbookname
-  type NSHelpBookName = string | cocoascript.NSString;
+  type NSHelpBookName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nshelpmanagercontexthelpkey
-  type NSHelpManagerContextHelpKey = string | cocoascript.NSString;
+  type NSHelpManagerContextHelpKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssaveoperationtype
@@ -15573,15 +15573,15 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardname
-  type NSPasteboardName = string | cocoascript.NSString;
+  type NSPasteboardName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardtype
-  type NSPasteboardType = string | cocoascript.NSString;
+  type NSPasteboardType = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardreadingoptionkey
-  type NSPasteboardReadingOptionKey = string | cocoascript.NSString;
+  type NSPasteboardReadingOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardreadingoptions
@@ -15608,7 +15608,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstableviewdatasource/1527733-tableview
     tableView_acceptDrop_row_dropOperation(tableView: NSTableView, info: NSDraggingInfo, row: NSInteger, dropOperation: NSTableViewDropOperation):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdatasource/1530316-tableview
-    tableView_namesOfPromisedFilesDroppedAtDestination_forDraggedRowsWithIndexes(tableView: NSTableView, dropDestination: NSURL, indexSet: NSIndexSet):string | cocoascript.NSString;
+    tableView_namesOfPromisedFilesDroppedAtDestination_forDraggedRowsWithIndexes(tableView: NSTableView, dropDestination: NSURL, indexSet: NSIndexSet):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdatasource/1532052-tableview
     tableView_validateDrop_proposedRow_proposedDropOperation(tableView: NSTableView, info: NSDraggingInfo, row: NSInteger, dropOperation: NSTableViewDropOperation):NSDragOperation;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdatasource/1525370-tableview
@@ -15985,7 +15985,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegate/1528182-collectionview
     collectionView_writeItemsAtIndexPaths_toPasteboard(collectionView: NSCollectionView, indexPaths: NSIndexPath, pasteboard: NSPasteboard):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegate/1528253-collectionview
-    collectionView_namesOfPromisedFilesDroppedAtDestination_forDraggedItemsAtIndexPaths(collectionView: NSCollectionView, dropURL: NSURL, indexPaths: NSIndexPath):string | cocoascript.NSString;
+    collectionView_namesOfPromisedFilesDroppedAtDestination_forDraggedItemsAtIndexPaths(collectionView: NSCollectionView, dropURL: NSURL, indexPaths: NSIndexPath):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegate/1528175-collectionview
     collectionView_draggingImageForItemsAtIndexPaths_withEvent_offset(collectionView: NSCollectionView, indexPaths: NSIndexPath, event: NSEvent, dragImageOffset: NSPointPointer):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegate/1527718-collectionview
@@ -16005,7 +16005,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegate/1524770-collectionview
     collectionView_writeItemsAtIndexes_toPasteboard(collectionView: NSCollectionView, indexes: NSIndexSet, pasteboard: NSPasteboard):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegate/1528189-collectionview
-    collectionView_namesOfPromisedFilesDroppedAtDestination_forDraggedItemsAtIndexes(collectionView: NSCollectionView, dropURL: NSURL, indexes: NSIndexSet):string | cocoascript.NSString;
+    collectionView_namesOfPromisedFilesDroppedAtDestination_forDraggedItemsAtIndexes(collectionView: NSCollectionView, dropURL: NSURL, indexes: NSIndexSet):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegate/1528138-collectionview
     collectionView_draggingImageForItemsAtIndexes_withEvent_offset(collectionView: NSCollectionView, indexes: NSIndexSet, event: NSEvent, dragImageOffset: NSPointPointer):NSImage;
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewdelegate/1524615-collectionview
@@ -16364,13 +16364,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407570-parentforitemsincolumn
     parentForItemsInColumn(column: NSInteger):NSBrowser;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407731-path
-    path():string | cocoascript.NSString;
+    path():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407751-setpath
-    setPath(path: string | cocoascript.NSString):BOOL;
+    setPath(path: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407727-pathtocolumn
-    pathToColumn(column: NSInteger):string | cocoascript.NSString;
+    pathToColumn(column: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407688-pathseparator
-    pathSeparator(): string | cocoascript.NSString;
+    pathSeparator(): string | NSString;
     setPathSeparator(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407723-addcolumn
     addColumn():void;
@@ -16399,9 +16399,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407764-reloadcolumn
     reloadColumn(column: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407794-titleofcolumn
-    titleOfColumn(column: NSInteger):string | cocoascript.NSString;
+    titleOfColumn(column: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407575-settitle
-    setTitle_ofColumn(string: string | cocoascript.NSString, column: NSInteger):void;
+    setTitle_ofColumn(string: string | NSString, column: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsbrowser/1407735-titled
     titled(): BOOL;
     setTitled(): void;
@@ -16521,19 +16521,19 @@ declare const NSBrowser: cocoascript.NSBrowser;
 declare const NSBrowserColumnConfigurationDidChangeNotification: NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbindinginfokey
-  type NSBindingInfoKey = string | cocoascript.NSString;
+  type NSBindingInfoKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbindingname
-  type NSBindingName = string | cocoascript.NSString;
+  type NSBindingName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbindingoption
-  type NSBindingOption = string | cocoascript.NSString;
+  type NSBindingOption = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsstoryboardname
-  type NSStoryboardName = string | cocoascript.NSString;
+  type NSStoryboardName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsstoryboardcontrollercreator
@@ -16541,15 +16541,15 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsstoryboardsceneidentifier
-  type NSStoryboardSceneIdentifier = string | cocoascript.NSString;
+  type NSStoryboardSceneIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsstoryboardsegueidentifier
-  type NSStoryboardSegueIdentifier = string | cocoascript.NSString;
+  type NSStoryboardSegueIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsnibname
-  type NSNibName = string | cocoascript.NSString;
+  type NSNibName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -16616,15 +16616,15 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsviewfullscreenmodeoptionkey
-  type NSViewFullScreenModeOptionKey = string | cocoascript.NSString;
+  type NSViewFullScreenModeOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsdefinitionoptionkey
-  type NSDefinitionOptionKey = string | cocoascript.NSString;
+  type NSDefinitionOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsdefinitionpresentationtype
-  type NSDefinitionPresentationType = string | cocoascript.NSString;
+  type NSDefinitionPresentationType = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbordertype
@@ -16652,7 +16652,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsimagename
-  type NSImageName = string | cocoascript.NSString;
+  type NSImageName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -16680,7 +16680,7 @@ declare namespace cocoascript {
 declare const NSImageSymbolConfiguration: cocoascript.NSImageSymbolConfiguration;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsimagehintkey
-  type NSImageHintKey = string | cocoascript.NSString;
+  type NSImageHintKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsimagelayoutdirection
@@ -16707,15 +16707,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428873-control
     control_isValidObject(control: NSControl, obj: NSControlTextEditingDelegate):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428941-control
-    control_didFailToValidatePartialString_errorDescription(control: NSControl, string: string | cocoascript.NSString, error: string | cocoascript.NSString):void;
+    control_didFailToValidatePartialString_errorDescription(control: NSControl, string: string | NSString, error: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428883-control
-    control_didFailToFormatString_errorDescription(control: NSControl, string: string | cocoascript.NSString, error: string | cocoascript.NSString):BOOL;
+    control_didFailToFormatString_errorDescription(control: NSControl, string: string | NSString, error: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428865-control
     control_textShouldBeginEditing(control: NSControl, fieldEditor: NSText):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428984-control
     control_textShouldEndEditing(control: NSControl, fieldEditor: NSText):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428925-control
-    control_textView_completions_forPartialWordRange_indexOfSelectedItem(control: NSControl, textView: NSTextView, words: string | cocoascript.NSString, charRange: NSRange, index: NSInteger):string | cocoascript.NSString;
+    control_textView_completions_forPartialWordRange_indexOfSelectedItem(control: NSControl, textView: NSTextView, words: string | NSString, charRange: NSRange, index: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/1428898-control
     control_textView_doCommandBySelector(control: NSControl, textView: NSTextView, commandSelector: SEL):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nscontroltexteditingdelegate/3005176-controltextdidbeginediting
@@ -17000,7 +17000,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssplitviewautosavename
-  type NSSplitViewAutosaveName = string | cocoascript.NSString;
+  type NSSplitViewAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsuserinterfacelayoutorientation
@@ -17147,7 +17147,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsrulerview/1644122-initwithcoder
     initWithCoder(coder: NSCoder):NSRulerView;
     // doc://com.apple.documentation/documentation/appkit/nsrulerview/1534137-registerunitwithname
-    registerUnitWithName_abbreviation_unitToPointsConversionFactor_stepUpCycle_stepDownCycle(unitName: NSRulerViewUnitName, abbreviation: string | cocoascript.NSString, conversionFactor: CGFloat, stepUpCycle: NSNumber, stepDownCycle: NSNumber):void;
+    registerUnitWithName_abbreviation_unitToPointsConversionFactor_stepUpCycle_stepDownCycle(unitName: NSRulerViewUnitName, abbreviation: string | NSString, conversionFactor: CGFloat, stepUpCycle: NSNumber, stepDownCycle: NSNumber):void;
     // doc://com.apple.documentation/documentation/appkit/nsrulerview/1531493-measurementunits
     measurementUnits(): NSRulerViewUnitName;
     setMeasurementUnits(): void;
@@ -17274,15 +17274,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407755-browser
     browser_numberOfChildrenOfItem(browser: NSBrowser, item: NSBrowserDelegate):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407677-browser
-    browser_titleOfColumn(sender: NSBrowser, column: NSInteger):string | cocoascript.NSString;
+    browser_titleOfColumn(sender: NSBrowser, column: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407804-browser
-    browser_shouldTypeSelectForEvent_withCurrentSearchString(browser: NSBrowser, event: NSEvent, searchString: string | cocoascript.NSString):BOOL;
+    browser_shouldTypeSelectForEvent_withCurrentSearchString(browser: NSBrowser, event: NSEvent, searchString: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407762-browser
-    browser_typeSelectStringForRow_inColumn(browser: NSBrowser, row: NSInteger, column: NSInteger):string | cocoascript.NSString;
+    browser_typeSelectStringForRow_inColumn(browser: NSBrowser, row: NSInteger, column: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407553-browser
-    browser_nextTypeSelectMatchFromRow_toRow_inColumn_forString(browser: NSBrowser, startRow: NSInteger, endRow: NSInteger, column: NSInteger, searchString: string | cocoascript.NSString):NSInteger;
+    browser_nextTypeSelectMatchFromRow_toRow_inColumn_forString(browser: NSBrowser, startRow: NSInteger, endRow: NSInteger, column: NSInteger, searchString: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407548-browser
-    browser_selectCellWithString_inColumn(sender: NSBrowser, title: string | cocoascript.NSString, column: NSInteger):BOOL;
+    browser_selectCellWithString_inColumn(sender: NSBrowser, title: string | NSString, column: NSInteger):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407802-browser
     browser_selectRow_inColumn(sender: NSBrowser, row: NSInteger, column: NSInteger):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407660-browser
@@ -17324,7 +17324,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407657-browser
     browser_writeRowsWithIndexes_inColumn_toPasteboard(browser: NSBrowser, rowIndexes: NSIndexSet, column: NSInteger, pasteboard: NSPasteboard):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407624-browser
-    browser_namesOfPromisedFilesDroppedAtDestination_forDraggedRowsWithIndexes_inColumn(browser: NSBrowser, dropDestination: NSURL, rowIndexes: NSIndexSet, column: NSInteger):string | cocoascript.NSString;
+    browser_namesOfPromisedFilesDroppedAtDestination_forDraggedRowsWithIndexes_inColumn(browser: NSBrowser, dropDestination: NSURL, rowIndexes: NSIndexSet, column: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407557-browser
     browser_shouldSizeColumn_forUserResize_toWidth(browser: NSBrowser, columnIndex: NSInteger, forUserResize: BOOL, suggestedWidth: CGFloat):CGFloat;
     // doc://com.apple.documentation/documentation/appkit/nsbrowserdelegate/1407524-browser
@@ -17372,7 +17372,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbrowsercell/1644593-initimagecell
     initImageCell(image: NSImage):NSBrowserCell;
     // doc://com.apple.documentation/documentation/appkit/nsbrowsercell/1644701-inittextcell
-    initTextCell(string: string | cocoascript.NSString):NSBrowserCell;
+    initTextCell(string: string | NSString):NSBrowserCell;
     //
     alloc():NSBrowserCell;
     //
@@ -17643,7 +17643,7 @@ declare namespace cocoascript {
     indexPath(): NSIndexPath;
     setIndexPath(): void;
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewlayoutattributes/1533826-representedelementkind
-    representedElementKind(): string | cocoascript.NSString;
+    representedElementKind(): string | NSString;
     setRepresentedElementKind(): void;
     // doc://com.apple.documentation/documentation/appkit/nscollectionviewlayoutattributes/1532636-frame
     frame(): NSRect;
@@ -17921,7 +17921,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdatasource/1533602-outlineview
     outlineView_itemForPersistentObject(outlineView: NSOutlineView, object: NSOutlineViewDataSource):NSOutlineViewDataSource;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdatasource/1533948-outlineview
-    outlineView_namesOfPromisedFilesDroppedAtDestination_forDraggedItems(outlineView: NSOutlineView, dropDestination: NSURL, items: NSArray):string | cocoascript.NSString;
+    outlineView_namesOfPromisedFilesDroppedAtDestination_forDraggedItems(outlineView: NSOutlineView, dropDestination: NSURL, items: NSArray):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdatasource/1535549-outlineview
     outlineView_numberOfChildrenOfItem(outlineView: NSOutlineView, item: NSOutlineViewDataSource):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdatasource/1531606-outlineview
@@ -17953,13 +17953,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate/1529825-outlineview
     outlineView_shouldCollapseItem(outlineView: NSOutlineView, item: NSOutlineViewDelegate):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate/1526847-outlineview
-    outlineView_typeSelectStringForTableColumn_item(outlineView: NSOutlineView, tableColumn: NSTableColumn, item: NSOutlineViewDelegate):string | cocoascript.NSString;
+    outlineView_typeSelectStringForTableColumn_item(outlineView: NSOutlineView, tableColumn: NSTableColumn, item: NSOutlineViewDelegate):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate/1533321-outlineview
-    outlineView_nextTypeSelectMatchFromItem_toItem_forString(outlineView: NSOutlineView, startItem: NSOutlineViewDelegate, endItem: NSOutlineViewDelegate, searchString: string | cocoascript.NSString):NSOutlineViewDelegate;
+    outlineView_nextTypeSelectMatchFromItem_toItem_forString(outlineView: NSOutlineView, startItem: NSOutlineViewDelegate, endItem: NSOutlineViewDelegate, searchString: string | NSString):NSOutlineViewDelegate;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate/1532941-outlineview
-    outlineView_shouldTypeSelectForEvent_withCurrentSearchString(outlineView: NSOutlineView, event: NSEvent, searchString: string | cocoascript.NSString):BOOL;
+    outlineView_shouldTypeSelectForEvent_withCurrentSearchString(outlineView: NSOutlineView, event: NSEvent, searchString: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate/1527695-outlineview
-    outlineView_toolTipForCell_rect_tableColumn_item_mouseLocation(outlineView: NSOutlineView, cell: NSCell, rect: NSRectPointer, tableColumn: NSTableColumn, item: NSOutlineViewDelegate, mouseLocation: NSPoint):string | cocoascript.NSString;
+    outlineView_toolTipForCell_rect_tableColumn_item_mouseLocation(outlineView: NSOutlineView, cell: NSCell, rect: NSRectPointer, tableColumn: NSTableColumn, item: NSOutlineViewDelegate, mouseLocation: NSPoint):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate/1535118-outlineview
     outlineView_shouldSelectTableColumn(outlineView: NSOutlineView, tableColumn: NSTableColumn):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate/1531075-outlineview
@@ -18079,7 +18079,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1535567-tableview
     tableView_shouldShowCellExpansionForTableColumn_row(tableView: NSTableView, tableColumn: NSTableColumn, row: NSInteger):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1526097-tableview
-    tableView_toolTipForCell_rect_tableColumn_row_mouseLocation(tableView: NSTableView, cell: NSCell, rect: NSRectPointer, tableColumn: NSTableColumn, row: NSInteger, mouseLocation: NSPoint):string | cocoascript.NSString;
+    tableView_toolTipForCell_rect_tableColumn_row_mouseLocation(tableView: NSTableView, cell: NSCell, rect: NSRectPointer, tableColumn: NSTableColumn, row: NSInteger, mouseLocation: NSPoint):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1527305-tableview
     tableView_shouldEditTableColumn_row(tableView: NSTableView, tableColumn: NSTableColumn, row: NSInteger):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1529684-tableview
@@ -18099,11 +18099,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1528567-tableviewselectiondidchange
     tableViewSelectionDidChange(notification: NSNotification):void;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1526347-tableview
-    tableView_shouldTypeSelectForEvent_withCurrentSearchString(tableView: NSTableView, event: NSEvent, searchString: string | cocoascript.NSString):BOOL;
+    tableView_shouldTypeSelectForEvent_withCurrentSearchString(tableView: NSTableView, event: NSEvent, searchString: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1530001-tableview
-    tableView_typeSelectStringForTableColumn_row(tableView: NSTableView, tableColumn: NSTableColumn, row: NSInteger):string | cocoascript.NSString;
+    tableView_typeSelectStringForTableColumn_row(tableView: NSTableView, tableColumn: NSTableColumn, row: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1534757-tableview
-    tableView_nextTypeSelectMatchFromRow_toRow_forString(tableView: NSTableView, startRow: NSInteger, endRow: NSInteger, searchString: string | cocoascript.NSString):NSInteger;
+    tableView_nextTypeSelectMatchFromRow_toRow_forString(tableView: NSTableView, startRow: NSInteger, endRow: NSInteger, searchString: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1534434-tableview
     tableView_shouldReorderColumn_toColumn(tableView: NSTableView, columnIndex: NSInteger, newColumnIndex: NSInteger):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstableviewdelegate/1535732-tableview
@@ -18298,7 +18298,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstablecolumn/1532997-sizetofit
     sizeToFit():void;
     // doc://com.apple.documentation/documentation/appkit/nstablecolumn/1526875-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nstablecolumn/1525137-headercell
     headerCell(): NSTableHeaderCell;
@@ -18316,7 +18316,7 @@ declare namespace cocoascript {
     hidden(): BOOL;
     setHidden(): void;
     // doc://com.apple.documentation/documentation/appkit/nstablecolumn/1524685-headertooltip
-    headerToolTip(): string | cocoascript.NSString;
+    headerToolTip(): string | NSString;
     setHeaderToolTip(): void;
     // doc://com.apple.documentation/documentation/appkit/nstablecolumn/1579360-isresizable
     isResizable():BOOL;
@@ -18344,12 +18344,12 @@ declare namespace cocoascript {
    */
   interface NSTableViewRowAction extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nstableviewrowaction/1401994-rowactionwithstyle
-    rowActionWithStyle_title_handler(style: NSTableViewRowActionStyle, title: string | cocoascript.NSString, handler: NSInteger):NSTableViewRowAction;
+    rowActionWithStyle_title_handler(style: NSTableViewRowActionStyle, title: string | NSString, handler: NSInteger):NSTableViewRowAction;
     // doc://com.apple.documentation/documentation/appkit/nstableviewrowaction/1401982-style
     style(): NSTableViewRowActionStyle;
     setStyle(): void;
     // doc://com.apple.documentation/documentation/appkit/nstableviewrowaction/1401992-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nstableviewrowaction/1401984-backgroundcolor
     backgroundColor(): NSColor;
@@ -18598,11 +18598,11 @@ declare namespace cocoascript {
    */
   interface NSButtonCell extends NSActionCell {
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1589270-alternatemnemonic
-    alternateMnemonic():string | cocoascript.NSString;
+    alternateMnemonic():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1589282-alternatemnemoniclocation
     alternateMnemonicLocation():NSUInteger;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1535382-alternatetitle
-    alternateTitle(): string | cocoascript.NSString;
+    alternateTitle(): string | NSString;
     setAlternateTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1526922-attributedalternatetitle
     attributedAlternateTitle(): NSAttributedString;
@@ -18613,13 +18613,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1589288-setalternatemnemoniclocation
     setAlternateMnemonicLocation(location: NSUInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1589291-setalternatetitlewithmnemonic
-    setAlternateTitleWithMnemonic(stringWithAmpersand: string | cocoascript.NSString):void;
+    setAlternateTitleWithMnemonic(stringWithAmpersand: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1806988-setfont
     ():void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1589263-settitlewithmnemonic
-    setTitleWithMnemonic(stringWithAmpersand: string | cocoascript.NSString):void;
+    setTitleWithMnemonic(stringWithAmpersand: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1535916-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1527064-alternateimage
     alternateImage(): NSImage;
@@ -18635,7 +18635,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1525725-setperiodicdelay
     setPeriodicDelay_interval(delay: number, interval: number):void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1529476-keyequivalent
-    keyEquivalent(): string | cocoascript.NSString;
+    keyEquivalent(): string | NSString;
     setKeyEquivalent(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1531184-keyequivalentfont
     keyEquivalentFont(): NSFont;
@@ -18644,7 +18644,7 @@ declare namespace cocoascript {
     keyEquivalentModifierMask(): NSEventModifierFlags;
     setKeyEquivalentModifierMask(): void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1530713-setkeyequivalentfont
-    setKeyEquivalentFont_size(fontName: string | cocoascript.NSString, fontSize: CGFloat):void;
+    setKeyEquivalentFont_size(fontName: string | NSString, fontSize: CGFloat):void;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1529743-backgroundcolor
     backgroundColor(): NSColor;
     setBackgroundColor(): void;
@@ -18694,7 +18694,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1639152-initimagecell
     initImageCell(image: NSImage):NSButtonCell;
     // doc://com.apple.documentation/documentation/appkit/nsbuttoncell/1639134-inittextcell
-    initTextCell(string: string | cocoascript.NSString):NSButtonCell;
+    initTextCell(string: string | NSString):NSButtonCell;
     //
     alloc():NSButtonCell;
     //
@@ -18756,7 +18756,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsdatepickercell/1643567-initwithcoder
     initWithCoder(coder: NSCoder):NSDatePickerCell;
     // doc://com.apple.documentation/documentation/appkit/nsdatepickercell/1643566-inittextcell
-    initTextCell(string: string | cocoascript.NSString):NSDatePickerCell;
+    initTextCell(string: string | NSString):NSDatePickerCell;
     //
     alloc():NSDatePickerCell;
     //
@@ -18947,7 +18947,7 @@ declare namespace cocoascript {
     menu(): NSMenu;
     setMenu(): void;
     // doc://com.apple.documentation/documentation/appkit/nspathcontrol/1527415-allowedtypes
-    allowedTypes(): string | cocoascript.NSString;
+    allowedTypes(): string | NSString;
     setAllowedTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nspathcontrol/1535047-clickedpathitem
     clickedPathItem(): NSPathControlItem;
@@ -18962,7 +18962,7 @@ declare namespace cocoascript {
     placeholderAttributedString(): NSAttributedString;
     setPlaceholderAttributedString(): void;
     // doc://com.apple.documentation/documentation/appkit/nspathcontrol/1531787-placeholderstring
-    placeholderString(): string | cocoascript.NSString;
+    placeholderString(): string | NSString;
     setPlaceholderString(): void;
     //
     alloc():NSPathControl;
@@ -19003,7 +19003,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspathcell/1525878-mouseexited
     mouseExited_withFrame_inView(event: NSEvent, frame: NSRect, view: NSView):void;
     // doc://com.apple.documentation/documentation/appkit/nspathcell/1524305-allowedtypes
-    allowedTypes(): string | cocoascript.NSString;
+    allowedTypes(): string | NSString;
     setAllowedTypes(): void;
     // doc://com.apple.documentation/documentation/appkit/nspathcell/1524249-pathstyle
     pathStyle(): NSPathStyle;
@@ -19016,7 +19016,7 @@ declare namespace cocoascript {
     placeholderAttributedString(): NSAttributedString;
     setPlaceholderAttributedString(): void;
     // doc://com.apple.documentation/documentation/appkit/nspathcell/1531136-placeholderstring
-    placeholderString(): string | cocoascript.NSString;
+    placeholderString(): string | NSString;
     setPlaceholderString(): void;
     // doc://com.apple.documentation/documentation/appkit/nspathcell/1527481-backgroundcolor
     backgroundColor(): NSColor;
@@ -19101,7 +19101,7 @@ declare namespace cocoascript {
     image(): NSImage;
     setImage(): void;
     // doc://com.apple.documentation/documentation/appkit/nspathcontrolitem/1388293-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     //
     alloc():NSPathControlItem;
@@ -19118,7 +19118,7 @@ declare namespace cocoascript {
    */
   interface NSPopUpButtonCell extends NSMenuItemCell {
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1528591-inittextcell
-    initTextCell_pullsDown(stringValue: string | cocoascript.NSString, pullDown: BOOL):NSPopUpButtonCell;
+    initTextCell_pullsDown(stringValue: string | NSString, pullDown: BOOL):NSPopUpButtonCell;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1529059-menu
     menu(): NSMenu;
     setMenu(): void;
@@ -19141,13 +19141,13 @@ declare namespace cocoascript {
     arrowPosition(): NSPopUpArrowPosition;
     setArrowPosition(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1526296-additemwithtitle
-    addItemWithTitle(title: string | cocoascript.NSString):void;
+    addItemWithTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1530154-additemswithtitles
-    addItemsWithTitles(itemTitles: string | cocoascript.NSString):void;
+    addItemsWithTitles(itemTitles: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1531000-insertitemwithtitle
-    insertItemWithTitle_atIndex(title: string | cocoascript.NSString, index: NSInteger):void;
+    insertItemWithTitle_atIndex(title: string | NSString, index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1530732-removeitemwithtitle
-    removeItemWithTitle(title: string | cocoascript.NSString):void;
+    removeItemWithTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1528201-removeitematindex
     removeItemAtIndex(index: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1534852-removeallitems
@@ -19161,7 +19161,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1532397-indexofitem
     indexOfItem(item: NSMenuItem):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1532244-indexofitemwithtitle
-    indexOfItemWithTitle(title: string | cocoascript.NSString):NSInteger;
+    indexOfItemWithTitle(title: string | NSString):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1527486-indexofitemwithtag
     indexOfItemWithTag(tag: NSInteger):NSInteger;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1525489-indexofitemwithrepresentedobject
@@ -19171,7 +19171,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1525784-itematindex
     itemAtIndex(index: NSInteger):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1534638-itemwithtitle
-    itemWithTitle(title: string | cocoascript.NSString):NSMenuItem;
+    itemWithTitle(title: string | NSString):NSMenuItem;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1535415-lastitem
     lastItem(): NSMenuItem;
     setLastItem(): void;
@@ -19186,9 +19186,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1534888-selectitemwithtag
     selectItemWithTag(tag: NSInteger):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1534289-selectitemwithtitle
-    selectItemWithTitle(title: string | cocoascript.NSString):void;
+    selectItemWithTitle(title: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1528475-settitle
-    setTitle(string: string | cocoascript.NSString):void;
+    setTitle(string: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1533239-selecteditem
     selectedItem(): NSMenuItem;
     setSelectedItem(): void;
@@ -19198,12 +19198,12 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1535190-synchronizetitleandselecteditem
     synchronizeTitleAndSelectedItem():void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1534248-itemtitleatindex
-    itemTitleAtIndex(index: NSInteger):string | cocoascript.NSString;
+    itemTitleAtIndex(index: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1532067-itemtitles
-    itemTitles(): string | cocoascript.NSString;
+    itemTitles(): string | NSString;
     setItemTitles(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1529952-titleofselecteditem
-    titleOfSelectedItem(): string | cocoascript.NSString;
+    titleOfSelectedItem(): string | NSString;
     setTitleOfSelectedItem(): void;
     // doc://com.apple.documentation/documentation/appkit/nspopupbuttoncell/1807220-setimage
     ():void;
@@ -19274,7 +19274,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nspredicateeditorrowtemplate/1401177-initwithcompoundtypes
     initWithCompoundTypes(compoundTypes: NSNumber):NSPredicateEditorRowTemplate;
     // doc://com.apple.documentation/documentation/appkit/nspredicateeditorrowtemplate/1401187-templateswithattributekeypaths
-    templatesWithAttributeKeyPaths_inEntityDescription(keyPaths: string | cocoascript.NSString, entityDescription: NSEntityDescription):NSPredicateEditorRowTemplate;
+    templatesWithAttributeKeyPaths_inEntityDescription(keyPaths: string | NSString, entityDescription: NSEntityDescription):NSPredicateEditorRowTemplate;
     // doc://com.apple.documentation/documentation/appkit/nspredicateeditorrowtemplate/1401185-matchforpredicate
     matchForPredicate(predicate: NSPredicate):number;
     // doc://com.apple.documentation/documentation/appkit/nspredicateeditorrowtemplate/1401193-templateviews
@@ -19380,7 +19380,7 @@ declare namespace cocoascript {
     sendsWholeSearchString(): BOOL;
     setSendsWholeSearchString(): void;
     // doc://com.apple.documentation/documentation/appkit/nssearchfield/1531413-recentsearches
-    recentSearches(): string | cocoascript.NSString;
+    recentSearches(): string | NSString;
     setRecentSearches(): void;
     // doc://com.apple.documentation/documentation/appkit/nssearchfield/1533938-maximumrecents
     maximumRecents(): NSInteger;
@@ -19449,7 +19449,7 @@ declare namespace cocoascript {
     maximumRecents(): NSInteger;
     setMaximumRecents(): void;
     // doc://com.apple.documentation/documentation/appkit/nssearchfieldcell/1399446-recentsearches
-    recentSearches(): string | cocoascript.NSString;
+    recentSearches(): string | NSString;
     setRecentSearches(): void;
     // doc://com.apple.documentation/documentation/appkit/nssearchfieldcell/1399463-recentsautosavename
     recentsAutosaveName(): NSSearchFieldRecentsAutosaveName;
@@ -19457,7 +19457,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nssearchfieldcell/1643723-initwithcoder
     initWithCoder(coder: NSCoder):NSSearchFieldCell;
     // doc://com.apple.documentation/documentation/appkit/nssearchfieldcell/1643722-inittextcell
-    initTextCell(string: string | cocoascript.NSString):NSSearchFieldCell;
+    initTextCell(string: string | NSString):NSSearchFieldCell;
     //
     alloc():NSSearchFieldCell;
     //
@@ -19491,16 +19491,16 @@ declare namespace cocoascript {
    */
   interface NSTextFinderClient extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nstextfinderclient/1529462-string
-    string(): string | cocoascript.NSString;
+    string(): string | NSString;
     setString(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextfinderclient/1529466-stringatindex
-    stringAtIndex_effectiveRange_endsWithSearchBoundary(characterIndex: NSUInteger, outRange: NSRangePointer, outFlag: BOOL):string | cocoascript.NSString;
+    stringAtIndex_effectiveRange_endsWithSearchBoundary(characterIndex: NSUInteger, outRange: NSRangePointer, outFlag: BOOL):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstextfinderclient/1534333-stringlength
     stringLength():NSUInteger;
     // doc://com.apple.documentation/documentation/appkit/nstextfinderclient/1529811-shouldreplacecharactersinranges
-    shouldReplaceCharactersInRanges_withStrings(ranges: NSValue, strings: string | cocoascript.NSString):BOOL;
+    shouldReplaceCharactersInRanges_withStrings(ranges: NSValue, strings: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/appkit/nstextfinderclient/1527702-replacecharactersinrange
-    replaceCharactersInRange_withString(range: NSRange, string: string | cocoascript.NSString):void;
+    replaceCharactersInRange_withString(range: NSRange, string: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nstextfinderclient/1534301-didreplacecharacters
     didReplaceCharacters():void;
     // doc://com.apple.documentation/documentation/appkit/nstextfinderclient/1533766-selectable
@@ -19557,9 +19557,9 @@ declare namespace cocoascript {
     trackingMode(): NSSegmentSwitchTracking;
     setTrackingMode(): void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500213-setlabel
-    setLabel_forSegment(label: string | cocoascript.NSString, segment: NSInteger):void;
+    setLabel_forSegment(label: string | NSString, segment: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500215-labelforsegment
-    labelForSegment(segment: NSInteger):string | cocoascript.NSString;
+    labelForSegment(segment: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500174-setimage
     setImage_forSegment(image: NSImage, segment: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500204-imageforsegment
@@ -19581,9 +19581,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500175-menuforsegment
     menuForSegment(segment: NSInteger):NSMenu;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500186-settooltip
-    setToolTip_forSegment(toolTip: string | cocoascript.NSString, segment: NSInteger):void;
+    setToolTip_forSegment(toolTip: string | NSString, segment: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500183-tooltipforsegment
-    toolTipForSegment(segment: NSInteger):string | cocoascript.NSString;
+    toolTipForSegment(segment: NSInteger):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500181-settag
     setTag_forSegment(tag: NSInteger, segment: NSInteger):void;
     // doc://com.apple.documentation/documentation/appkit/nssegmentedcell/1500207-tagforsegment
@@ -19652,9 +19652,9 @@ declare namespace cocoascript {
     vertical(): BOOL;
     setVertical(): void;
     // doc://com.apple.documentation/documentation/appkit/nsslidercell/1444610-title
-    title():string | cocoascript.NSString;
+    title():string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nsslidercell/1444631-settitle
-    setTitle(string: string | cocoascript.NSString):void;
+    setTitle(string: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsslidercell/1444639-titlecell
     titleCell():NSSliderCell;
     // doc://com.apple.documentation/documentation/appkit/nsslidercell/1444619-settitlecell
@@ -19823,18 +19823,18 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1447147-setwantsnotificationformarkedtex
     setWantsNotificationForMarkedText(flag: BOOL):void;
     // doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1447165-placeholderstring
-    placeholderString(): string | cocoascript.NSString;
+    placeholderString(): string | NSString;
     setPlaceholderString(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1447153-placeholderattributedstring
     placeholderAttributedString(): NSAttributedString;
     setPlaceholderAttributedString(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1447163-allowedinputsourcelocales
-    allowedInputSourceLocales(): string | cocoascript.NSString;
+    allowedInputSourceLocales(): string | NSString;
     setAllowedInputSourceLocales(): void;
     // doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1642277-initwithcoder
     initWithCoder(coder: NSCoder):NSTextFieldCell;
     // doc://com.apple.documentation/documentation/appkit/nstextfieldcell/1642278-inittextcell
-    initTextCell(string: string | cocoascript.NSString):NSTextFieldCell;
+    initTextCell(string: string | NSString):NSTextFieldCell;
     //
     alloc():NSTextFieldCell;
     //
@@ -19931,15 +19931,15 @@ declare namespace cocoascript {
    */
   interface NSTokenFieldDelegate extends NSTextFieldDelegate {
     // doc://com.apple.documentation/documentation/appkit/nstokenfielddelegate/1526020-tokenfield
-    tokenField_displayStringForRepresentedObject(tokenField: NSTokenField, representedObject: NSTokenFieldDelegate):string | cocoascript.NSString;
+    tokenField_displayStringForRepresentedObject(tokenField: NSTokenField, representedObject: NSTokenFieldDelegate):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstokenfielddelegate/1530203-tokenfield
     tokenField_styleForRepresentedObject(tokenField: NSTokenField, representedObject: NSTokenFieldDelegate):NSTokenStyle;
     // doc://com.apple.documentation/documentation/appkit/nstokenfielddelegate/1532474-tokenfield
-    tokenField_completionsForSubstring_indexOfToken_indexOfSelectedItem(tokenField: NSTokenField, substring: string | cocoascript.NSString, tokenIndex: NSInteger, selectedIndex: NSInteger):NSArray;
+    tokenField_completionsForSubstring_indexOfToken_indexOfSelectedItem(tokenField: NSTokenField, substring: string | NSString, tokenIndex: NSInteger, selectedIndex: NSInteger):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nstokenfielddelegate/1524432-tokenfield
-    tokenField_editingStringForRepresentedObject(tokenField: NSTokenField, representedObject: NSTokenFieldDelegate):string | cocoascript.NSString;
+    tokenField_editingStringForRepresentedObject(tokenField: NSTokenField, representedObject: NSTokenFieldDelegate):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstokenfielddelegate/1527909-tokenfield
-    tokenField_representedObjectForEditingString(tokenField: NSTokenField, editingString: string | cocoascript.NSString):NSTokenFieldDelegate;
+    tokenField_representedObjectForEditingString(tokenField: NSTokenField, editingString: string | NSString):NSTokenFieldDelegate;
     // doc://com.apple.documentation/documentation/appkit/nstokenfielddelegate/1524376-tokenfield
     tokenField_shouldAddObjects_atIndex(tokenField: NSTokenField, tokens: NSArray, index: NSUInteger):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nstokenfielddelegate/1529534-tokenfield
@@ -19959,15 +19959,15 @@ declare namespace cocoascript {
    */
   interface NSTokenFieldCellDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nstokenfieldcelldelegate/1523804-tokenfieldcell
-    tokenFieldCell_displayStringForRepresentedObject(tokenFieldCell: NSTokenFieldCell, representedObject: NSTokenFieldCellDelegate):string | cocoascript.NSString;
+    tokenFieldCell_displayStringForRepresentedObject(tokenFieldCell: NSTokenFieldCell, representedObject: NSTokenFieldCellDelegate):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstokenfieldcelldelegate/1523829-tokenfieldcell
     tokenFieldCell_styleForRepresentedObject(tokenFieldCell: NSTokenFieldCell, representedObject: NSTokenFieldCellDelegate):NSTokenStyle;
     // doc://com.apple.documentation/documentation/appkit/nstokenfieldcelldelegate/1523818-tokenfieldcell
-    tokenFieldCell_completionsForSubstring_indexOfToken_indexOfSelectedItem(tokenFieldCell: NSTokenFieldCell, substring: string | cocoascript.NSString, tokenIndex: NSInteger, selectedIndex: NSInteger):NSArray;
+    tokenFieldCell_completionsForSubstring_indexOfToken_indexOfSelectedItem(tokenFieldCell: NSTokenFieldCell, substring: string | NSString, tokenIndex: NSInteger, selectedIndex: NSInteger):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nstokenfieldcelldelegate/1523824-tokenfieldcell
-    tokenFieldCell_editingStringForRepresentedObject(tokenFieldCell: NSTokenFieldCell, representedObject: NSTokenFieldCellDelegate):string | cocoascript.NSString;
+    tokenFieldCell_editingStringForRepresentedObject(tokenFieldCell: NSTokenFieldCell, representedObject: NSTokenFieldCellDelegate):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nstokenfieldcelldelegate/1523795-tokenfieldcell
-    tokenFieldCell_representedObjectForEditingString(tokenFieldCell: NSTokenFieldCell, editingString: string | cocoascript.NSString):NSTokenFieldCellDelegate;
+    tokenFieldCell_representedObjectForEditingString(tokenFieldCell: NSTokenFieldCell, editingString: string | NSString):NSTokenFieldCellDelegate;
     // doc://com.apple.documentation/documentation/appkit/nstokenfieldcelldelegate/1523823-tokenfieldcell
     tokenFieldCell_shouldAddObjects_atIndex(tokenFieldCell: NSTokenFieldCell, tokens: NSArray, index: NSUInteger):NSArray;
     // doc://com.apple.documentation/documentation/appkit/nstokenfieldcelldelegate/1523807-tokenfieldcell
@@ -20077,9 +20077,9 @@ declare namespace cocoascript {
    */
   interface NSComboBoxDataSource extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nscomboboxdatasource/1436733-combobox
-    comboBox_completedString(comboBox: NSComboBox, string: string | cocoascript.NSString):string | cocoascript.NSString;
+    comboBox_completedString(comboBox: NSComboBox, string: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nscomboboxdatasource/1436713-combobox
-    comboBox_indexOfItemWithStringValue(comboBox: NSComboBox, string: string | cocoascript.NSString):NSUInteger;
+    comboBox_indexOfItemWithStringValue(comboBox: NSComboBox, string: string | NSString):NSUInteger;
     // doc://com.apple.documentation/documentation/appkit/nscomboboxdatasource/1436753-combobox
     comboBox_objectValueForItemAtIndex(comboBox: NSComboBox, index: NSInteger):NSComboBoxDataSource;
     // doc://com.apple.documentation/documentation/appkit/nscomboboxdatasource/1436780-numberofitemsincombobox
@@ -20172,7 +20172,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nscomboboxcell/1410280-selectitemwithobjectvalue
     selectItemWithObjectValue(object: NSComboBoxCell):void;
     // doc://com.apple.documentation/documentation/appkit/nscomboboxcell/1410264-completedstring
-    completedString(string: string | cocoascript.NSString):string | cocoascript.NSString;
+    completedString(string: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nscomboboxcell/1410262-completes
     completes(): BOOL;
     setCompletes(): void;
@@ -20190,9 +20190,9 @@ declare namespace cocoascript {
    */
   interface NSComboBoxCellDataSource extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nscomboboxcelldatasource/1410250-comboboxcell
-    comboBoxCell_completedString(comboBoxCell: NSComboBoxCell, uncompletedString: string | cocoascript.NSString):string | cocoascript.NSString;
+    comboBoxCell_completedString(comboBoxCell: NSComboBoxCell, uncompletedString: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/appkit/nscomboboxcelldatasource/1410285-comboboxcell
-    comboBoxCell_indexOfItemWithStringValue(comboBoxCell: NSComboBoxCell, string: string | cocoascript.NSString):NSUInteger;
+    comboBoxCell_indexOfItemWithStringValue(comboBoxCell: NSComboBoxCell, string: string | NSString):NSUInteger;
     // doc://com.apple.documentation/documentation/appkit/nscomboboxcelldatasource/1410258-comboboxcell
     comboBoxCell_objectValueForItemAtIndex(comboBoxCell: NSComboBoxCell, index: NSInteger):NSComboBoxCellDataSource;
     // doc://com.apple.documentation/documentation/appkit/nscomboboxcelldatasource/1410302-numberofitemsincomboboxcell
@@ -20299,7 +20299,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsappearancename
-  type NSAppearanceName = string | cocoascript.NSString;
+  type NSAppearanceName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsanimationcurve
@@ -20311,21 +20311,21 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsviewanimationkey
-  type NSViewAnimationKey = string | cocoascript.NSString;
+  type NSViewAnimationKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsviewanimationeffectname
-  type NSViewAnimationEffectName = string | cocoascript.NSString;
+  type NSViewAnimationEffectName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsanimatablepropertykey
-  type NSAnimatablePropertyKey = string | cocoascript.NSString;
+  type NSAnimatablePropertyKey = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nswindowdidchangebackingpropertiesnotification
 declare const NSWindowDidChangeBackingPropertiesNotification: NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsdevicedescriptionkey
-  type NSDeviceDescriptionKey = string | cocoascript.NSString;
+  type NSDeviceDescriptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nswindowlevel
@@ -20333,11 +20333,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nswindowframeautosavename
-  type NSWindowFrameAutosaveName = string | cocoascript.NSString;
+  type NSWindowFrameAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nswindowpersistableframedescriptor
-  type NSWindowPersistableFrameDescriptor = string | cocoascript.NSString;
+  type NSWindowPersistableFrameDescriptor = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nswindowtoolbarstyle
@@ -20345,7 +20345,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nswindowtabbingidentifier
-  type NSWindowTabbingIdentifier = string | cocoascript.NSString;
+  type NSWindowTabbingIdentifier = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nseventdurationforever
 declare const NSEventDurationForever: NSTimeInterval;
@@ -20439,7 +20439,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsuserinterfaceitemidentifier
-  type NSUserInterfaceItemIdentifier = string | cocoascript.NSString;
+  type NSUserInterfaceItemIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsdisplaygamut
@@ -20455,7 +20455,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspopoverclosereasonvalue
-  type NSPopoverCloseReasonValue = string | cocoascript.NSString;
+  type NSPopoverCloseReasonValue = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspopoverappearance
@@ -20473,7 +20473,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintpanelaccessorysummarykey
-  type NSPrintPanelAccessorySummaryKey = string | cocoascript.NSString;
+  type NSPrintPanelAccessorySummaryKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscolorpanelmode
@@ -20495,11 +20495,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssoundname
-  type NSSoundName = string | cocoascript.NSString;
+  type NSSoundName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssoundplaybackdeviceidentifier
-  type NSSoundPlaybackDeviceIdentifier = string | cocoascript.NSString;
+  type NSSoundPlaybackDeviceIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -20508,7 +20508,7 @@ declare namespace cocoascript {
    */
   interface NSSpeechRecognizerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsspeechrecognizerdelegate/1534211-speechrecognizer
-    speechRecognizer_didRecognizeCommand(sender: NSSpeechRecognizer, command: string | cocoascript.NSString):void;
+    speechRecognizer_didRecognizeCommand(sender: NSSpeechRecognizer, command: string | NSString):void;
   }
 }
 // doc://com.apple.documentation/documentation/appkit/nsvoicegender
@@ -20520,60 +20520,60 @@ declare namespace cocoascript {
    */
   interface NSSpeechSynthesizerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizerdelegate/1448480-speechsynthesizer
-    speechSynthesizer_willSpeakWord_ofString(sender: NSSpeechSynthesizer, characterRange: NSRange, string: string | cocoascript.NSString):void;
+    speechSynthesizer_willSpeakWord_ofString(sender: NSSpeechSynthesizer, characterRange: NSRange, string: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizerdelegate/1448442-speechsynthesizer
     speechSynthesizer_willSpeakPhoneme(sender: NSSpeechSynthesizer, phonemeOpcode: number):void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizerdelegate/1448407-speechsynthesizer
-    speechSynthesizer_didEncounterErrorAtIndex_ofString_message(sender: NSSpeechSynthesizer, characterIndex: NSUInteger, string: string | cocoascript.NSString, message: string | cocoascript.NSString):void;
+    speechSynthesizer_didEncounterErrorAtIndex_ofString_message(sender: NSSpeechSynthesizer, characterIndex: NSUInteger, string: string | NSString, message: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizerdelegate/1448540-speechsynthesizer
-    speechSynthesizer_didEncounterSyncMessage(sender: NSSpeechSynthesizer, message: string | cocoascript.NSString):void;
+    speechSynthesizer_didEncounterSyncMessage(sender: NSSpeechSynthesizer, message: string | NSString):void;
     // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizerdelegate/1448538-speechsynthesizer
     speechSynthesizer_didFinishSpeaking(sender: NSSpeechSynthesizer, finishedSpeaking: BOOL):void;
   }
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechdictionarykey
-  type NSSpeechDictionaryKey = string | cocoascript.NSString;
+  type NSSpeechDictionaryKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechpropertykey
-  type NSSpeechPropertyKey = string | cocoascript.NSString;
+  type NSSpeechPropertyKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechcommanddelimiterkey
-  type NSSpeechCommandDelimiterKey = string | cocoascript.NSString;
+  type NSSpeechCommandDelimiterKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeecherrorkey
-  type NSSpeechErrorKey = string | cocoascript.NSString;
+  type NSSpeechErrorKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechmode
-  type NSSpeechMode = string | cocoascript.NSString;
+  type NSSpeechMode = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechphonemeinfokey
-  type NSSpeechPhonemeInfoKey = string | cocoascript.NSString;
+  type NSSpeechPhonemeInfoKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechstatuskey
-  type NSSpeechStatusKey = string | cocoascript.NSString;
+  type NSSpeechStatusKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizerinfokey
-  type NSSpeechSynthesizerInfoKey = string | cocoascript.NSString;
+  type NSSpeechSynthesizerInfoKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsvoicegendername
-  type NSVoiceGenderName = string | cocoascript.NSString;
+  type NSVoiceGenderName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechsynthesizervoicename
-  type NSSpeechSynthesizerVoiceName = string | cocoascript.NSString;
+  type NSSpeechSynthesizerVoiceName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsvoiceattributekey
-  type NSVoiceAttributeKey = string | cocoascript.NSString;
+  type NSVoiceAttributeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsspeechboundary
@@ -20701,7 +20701,7 @@ declare const NSSquareStatusItemLength: CGFloat;
 declare const NSVariableStatusItemLength: CGFloat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsstatusitemautosavename
-  type NSStatusItemAutosaveName = string | cocoascript.NSString;
+  type NSStatusItemAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstrackingareaoptions
@@ -20721,7 +20721,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstoolbaritemidentifier
-  type NSToolbarItemIdentifier = string | cocoascript.NSString;
+  type NSToolbarItemIdentifier = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nstouchbaritemidentifierfixedspacesmall
 declare const NSTouchBarItemIdentifierFixedSpaceSmall: NSTouchBarItemIdentifier;
@@ -20901,7 +20901,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsdraggingimagecomponentkey
-  type NSDraggingImageComponentKey = string | cocoascript.NSString;
+  type NSDraggingImageComponentKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsdragoperation
@@ -20947,11 +20947,11 @@ declare const NSAccessibilityAnnouncementKey: NSAccessibilityNotificationUserInf
 declare const NSAccessibilityPriorityKey: NSAccessibilityNotificationUserInfoKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationname
-  type NSAccessibilityNotificationName = string | cocoascript.NSString;
+  type NSAccessibilityNotificationName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey
-  type NSAccessibilityNotificationUserInfoKey = string | cocoascript.NSString;
+  type NSAccessibilityNotificationUserInfoKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel
@@ -20969,7 +20969,7 @@ declare const NSAccessibilityAnnotationLabel: NSAccessibilityAnnotationAttribute
 declare const NSAccessibilityAnnotationLocation: NSAccessibilityAnnotationAttributeKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaccessibilityactionname
-  type NSAccessibilityActionName = string | cocoascript.NSString;
+  type NSAccessibilityActionName = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nsaccessibilityhorizontalorientationvalue
 declare const NSAccessibilityHorizontalOrientationValue: NSAccessibilityOrientationValue;
@@ -21479,7 +21479,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbitmapimagereppropertykey
-  type NSBitmapImageRepPropertyKey = string | cocoascript.NSString;
+  type NSBitmapImageRepPropertyKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsimagereploadstatus
@@ -21491,11 +21491,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsgraphicscontextattributekey
-  type NSGraphicsContextAttributeKey = string | cocoascript.NSString;
+  type NSGraphicsContextAttributeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsgraphicscontextrepresentationformatname
-  type NSGraphicsContextRepresentationFormatName = string | cocoascript.NSString;
+  type NSGraphicsContextRepresentationFormatName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsimageinterpolation
@@ -21551,7 +21551,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscolorspacename
-  type NSColorSpaceName = string | cocoascript.NSString;
+  type NSColorSpaceName = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nswhite
 declare const NSWhite: CGFloat;
@@ -21563,7 +21563,7 @@ declare const NSDarkGray: CGFloat;
 declare const NSBlack: CGFloat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscolorlistname
-  type NSColorListName = string | cocoascript.NSString;
+  type NSColorListName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscolorspacemodel
@@ -21571,7 +21571,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintpaneljobstylehint
-  type NSPrintPanelJobStyleHint = string | cocoascript.NSString;
+  type NSPrintPanelJobStyleHint = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintpaneloptions
@@ -21579,11 +21579,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintertypename
-  type NSPrinterTypeName = string | cocoascript.NSString;
+  type NSPrinterTypeName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprinterpapername
-  type NSPrinterPaperName = string | cocoascript.NSString;
+  type NSPrinterPaperName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintertablestatus
@@ -21599,15 +21599,15 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintjobdispositionvalue
-  type NSPrintJobDispositionValue = string | cocoascript.NSString;
+  type NSPrintJobDispositionValue = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintinfosettingkey
-  type NSPrintInfoSettingKey = string | cocoascript.NSString;
+  type NSPrintInfoSettingKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintinfoattributekey
-  type NSPrintInfoAttributeKey = string | cocoascript.NSString;
+  type NSPrintInfoAttributeKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsprintingorientation
@@ -21623,7 +21623,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextcheckingoptionkey
-  type NSTextCheckingOptionKey = string | cocoascript.NSString;
+  type NSTextCheckingOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscorrectionindicatortype
@@ -21717,7 +21717,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextlistmarkerformat
-  type NSTextListMarkerFormat = string | cocoascript.NSString;
+  type NSTextListMarkerFormat = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextlistoptions
@@ -21725,7 +21725,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextcontenttype
-  type NSTextContentType = string | cocoascript.NSString;
+  type NSTextContentType = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscharactercollection
@@ -21737,7 +21737,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextinputsourceidentifier
-  type NSTextInputSourceIdentifier = string | cocoascript.NSString;
+  type NSTextInputSourceIdentifier = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontweight
@@ -21745,11 +21745,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfonttextstyle
-  type NSFontTextStyle = string | cocoascript.NSString;
+  type NSFontTextStyle = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfonttextstyleoptionkey
-  type NSFontTextStyleOptionKey = string | cocoascript.NSString;
+  type NSFontTextStyleOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontaction
@@ -21757,23 +21757,23 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontdescriptorsystemdesign
-  type NSFontDescriptorSystemDesign = string | cocoascript.NSString;
+  type NSFontDescriptorSystemDesign = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontdescriptorattributename
-  type NSFontDescriptorAttributeName = string | cocoascript.NSString;
+  type NSFontDescriptorAttributeName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontdescriptorfeaturekey
-  type NSFontDescriptorFeatureKey = string | cocoascript.NSString;
+  type NSFontDescriptorFeatureKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontdescriptorvariationkey
-  type NSFontDescriptorVariationKey = string | cocoascript.NSString;
+  type NSFontDescriptorVariationKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontdescriptortraitkey
-  type NSFontDescriptorTraitKey = string | cocoascript.NSString;
+  type NSFontDescriptorTraitKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontassetrequestoptions
@@ -21785,7 +21785,7 @@ declare const NSFontCollectionDidChangeNotification: NSNotificationName;
 declare const NSFontCollectionActionKey: NSFontCollectionUserInfoKey;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontcollectionname
-  type NSFontCollectionName = string | cocoascript.NSString;
+  type NSFontCollectionName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontcollectionvisibility
@@ -21793,15 +21793,15 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontcollectionmatchingoptionkey
-  type NSFontCollectionMatchingOptionKey = string | cocoascript.NSString;
+  type NSFontCollectionMatchingOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontcollectionuserinfokey
-  type NSFontCollectionUserInfoKey = string | cocoascript.NSString;
+  type NSFontCollectionUserInfoKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsfontcollectionactiontypekey
-  type NSFontCollectionActionTypeKey = string | cocoascript.NSString;
+  type NSFontCollectionActionTypeKey = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nsmodalresponsestop
 declare const NSModalResponseStop: NSModalResponse;
@@ -21881,7 +21881,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsaboutpaneloptionkey
-  type NSAboutPanelOptionKey = string | cocoascript.NSString;
+  type NSAboutPanelOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -21906,11 +21906,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsworkspacelaunchconfigurationkey
-  type NSWorkspaceLaunchConfigurationKey = string | cocoascript.NSString;
+  type NSWorkspaceLaunchConfigurationKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsworkspacefileoperationname
-  type NSWorkspaceFileOperationName = string | cocoascript.NSString;
+  type NSWorkspaceFileOperationName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -22023,11 +22023,11 @@ declare const NSPasteboardTypeTextFinderOptions: NSPasteboardType;
 declare const NSPasteboardTypeTIFF: NSPasteboardType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardtypefindpanelsearchoptionkey
-  type NSPasteboardTypeFindPanelSearchOptionKey = string | cocoascript.NSString;
+  type NSPasteboardTypeFindPanelSearchOptionKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspasteboardtypetextfinderoptionkey
-  type NSPasteboardTypeTextFinderOptionKey = string | cocoascript.NSString;
+  type NSPasteboardTypeTextFinderOptionKey = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nspasteboardurlreadingcontentsconformtotypeskey
 declare const NSPasteboardURLReadingContentsConformToTypesKey: NSPasteboardReadingOptionKey;
@@ -22043,7 +22043,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstableviewautosavename
-  type NSTableViewAutosaveName = string | cocoascript.NSString;
+  type NSTableViewAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstableviewdraggingdestinationfeedbackstyle
@@ -22075,7 +22075,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscollectionviewsupplementaryelementkind
-  type NSCollectionViewSupplementaryElementKind = string | cocoascript.NSString;
+  type NSCollectionViewSupplementaryElementKind = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscollectionviewdropoperation
@@ -22087,7 +22087,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbrowsercolumnsautosavename
-  type NSBrowserColumnsAutosaveName = string | cocoascript.NSString;
+  type NSBrowserColumnsAutosaveName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsbrowsercolumnresizingtype
@@ -22389,7 +22389,7 @@ declare namespace cocoascript {
 declare const NSPreferredScrollerStyleDidChangeNotification: NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsrulerviewunitname
-  type NSRulerViewUnitName = string | cocoascript.NSString;
+  type NSRulerViewUnitName = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsrulerorientation
@@ -22417,11 +22417,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscollectionviewtransitionlayoutanimatedkey
-  type NSCollectionViewTransitionLayoutAnimatedKey = string | cocoascript.NSString;
+  type NSCollectionViewTransitionLayoutAnimatedKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscollectionviewdecorationelementkind
-  type NSCollectionViewDecorationElementKind = string | cocoascript.NSString;
+  type NSCollectionViewDecorationElementKind = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nscollectionelementkindinteritemgapindicator
 declare const NSCollectionElementKindInterItemGapIndicator: NSCollectionViewSupplementaryElementKind;
@@ -22505,7 +22505,7 @@ declare const NSProgressIndicatorBarStyle: NSProgressIndicatorStyle;
 declare const NSProgressIndicatorSpinningStyle: NSProgressIndicatorStyle;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nsruleeditorpredicatepartkey
-  type NSRuleEditorPredicatePartKey = string | cocoascript.NSString;
+  type NSRuleEditorPredicatePartKey = cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nstextfinderaction
@@ -22525,7 +22525,7 @@ declare const NSSearchFieldRecentsMenuItemTag: NSInteger;
 declare const NSSearchFieldRecentsTitleMenuItemTag: NSInteger;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nssearchfieldrecentsautosavename
-  type NSSearchFieldRecentsAutosaveName = string | cocoascript.NSString;
+  type NSSearchFieldRecentsAutosaveName = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nsslideraccessorywidthdefault
 declare const NSSliderAccessoryWidthDefault: NSSliderAccessoryWidth;
@@ -22541,7 +22541,7 @@ declare const NSBoxSecondary: NSBoxType;
 declare const NSBoxOldStyle: NSBoxType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nspagecontrollerobjectidentifier
-  type NSPageControllerObjectIdentifier = string | cocoascript.NSString;
+  type NSPageControllerObjectIdentifier = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nslayoutprioritydragthatcanresizewindow
 declare const NSLayoutPriorityDragThatCanResizeWindow: NSLayoutPriority;
@@ -23019,7 +23019,7 @@ declare const NSOpenGLCPStateValidation: NSOpenGLContextParameter;
 declare const NSOpenGLCPSurfaceSurfaceVolatile: NSOpenGLContextParameter;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/appkit/nscolorname
-  type NSColorName = string | cocoascript.NSString;
+  type NSColorName = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/appkit/nsunknowncolorspacemodel
 declare const NSUnknownColorSpaceModel: NSColorSpaceModel;

@@ -5,7 +5,7 @@ declare namespace cocoascript {
    */
   interface ABPersonPickerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/addressbook/abpersonpickerdelegate/1395368-personpicker
-    personPicker_didChoosePerson_property_identifier(picker: ABPersonPicker, person: ABPerson, property: string | cocoascript.NSString, identifier: string | cocoascript.NSString):void;
+    personPicker_didChoosePerson_property_identifier(picker: ABPersonPicker, person: ABPerson, property: string | NSString, identifier: string | NSString):void;
     // doc://com.apple.documentation/documentation/addressbook/abpersonpickerdelegate/1395366-personpickerdidclose
     personPickerDidClose(picker: ABPersonPicker):void;
   }
@@ -27,19 +27,19 @@ declare namespace cocoascript {
    */
   interface ABMultiValue extends NSObject {
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458525-primaryidentifier
-    primaryIdentifier():string | cocoascript.NSString;
+    primaryIdentifier():string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458743-identifieratindex
-    identifierAtIndex(index: NSUInteger):string | cocoascript.NSString;
+    identifierAtIndex(index: NSUInteger):string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458700-indexforidentifier
-    indexForIdentifier(identifier: string | cocoascript.NSString):NSUInteger;
+    indexForIdentifier(identifier: string | NSString):NSUInteger;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458668-labelatindex
-    labelAtIndex(index: NSUInteger):string | cocoascript.NSString;
+    labelAtIndex(index: NSUInteger):string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458515-valueatindex
     valueAtIndex(index: NSUInteger):ABMultiValue;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458427-valueforidentifier
-    valueForIdentifier(identifier: string | cocoascript.NSString):ABMultiValue;
+    valueForIdentifier(identifier: string | NSString):ABMultiValue;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458693-labelforidentifier
-    labelForIdentifier(identifier: string | cocoascript.NSString):ABMultiValue;
+    labelForIdentifier(identifier: string | NSString):ABMultiValue;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458752-count
     count():NSUInteger;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458267-propertytype
@@ -65,7 +65,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458494-properties
     properties():NSArray;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458682-typeofproperty
-    typeOfProperty(property: string | cocoascript.NSString):ABPropertyType;
+    typeOfProperty(property: string | NSString):ABPropertyType;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458372-linkedpeople
     linkedPeople():NSArray;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458380-parentgroups
@@ -79,7 +79,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abperson/1392513-setimagedata
     setImageData(data: NSData):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458332-searchelementforproperty
-    searchElementForProperty_label_key_value_comparison(property: string | cocoascript.NSString, label: string | cocoascript.NSString, key: string | cocoascript.NSString, value: ABPerson, comparison: ABSearchComparison):ABSearchElement;
+    searchElementForProperty_label_key_value_comparison(property: string | NSString, label: string | NSString, key: string | NSString, value: ABPerson, comparison: ABSearchComparison):ABSearchElement;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458755-initwithvcardrepresentation
     initWithVCardRepresentation(vCardData: NSData):ABPerson;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458307-vcardrepresentation
@@ -123,17 +123,17 @@ declare namespace cocoascript {
    */
   interface ABMutableMultiValue extends ABMultiValue {
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458374-addvalue
-    addValue_withLabel(value: ABMutableMultiValue, label: string | cocoascript.NSString):string | cocoascript.NSString;
+    addValue_withLabel(value: ABMutableMultiValue, label: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458362-insertvalue
-    insertValue_withLabel_atIndex(value: ABMutableMultiValue, label: string | cocoascript.NSString, index: NSUInteger):string | cocoascript.NSString;
+    insertValue_withLabel_atIndex(value: ABMutableMultiValue, label: string | NSString, index: NSUInteger):string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458689-replacelabelatindex
-    replaceLabelAtIndex_withLabel(index: NSUInteger, label: string | cocoascript.NSString):BOOL;
+    replaceLabelAtIndex_withLabel(index: NSUInteger, label: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458609-replacevalueatindex
     replaceValueAtIndex_withValue(index: NSUInteger, value: ABMutableMultiValue):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458405-removevalueandlabelatindex
     removeValueAndLabelAtIndex(index: NSUInteger):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458716-setprimaryidentifier
-    setPrimaryIdentifier(identifier: string | cocoascript.NSString):BOOL;
+    setPrimaryIdentifier(identifier: string | NSString):BOOL;
     //
     alloc():ABMutableMultiValue;
     //
@@ -165,13 +165,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458403-setme
     setMe(moi: ABPerson):void;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458571-recordforuniqueid
-    recordForUniqueId(uniqueId: string | cocoascript.NSString):ABRecord;
+    recordForUniqueId(uniqueId: string | NSString):ABRecord;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458280-recordclassfromuniqueid
-    recordClassFromUniqueId(uniqueId: string | cocoascript.NSString):string | cocoascript.NSString;
+    recordClassFromUniqueId(uniqueId: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458665-formattedaddressfromdictionary
     formattedAddressFromDictionary(address: NSDictionary):NSAttributedString;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458703-defaultcountrycode
-    defaultCountryCode():string | cocoascript.NSString;
+    defaultCountryCode():string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458447-defaultnameordering
     defaultNameOrdering():NSInteger;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458709-addrecord
@@ -199,9 +199,9 @@ declare namespace cocoascript {
 
 declare const ABAddressBook: cocoascript.ABAddressBook;
 // doc://com.apple.documentation/documentation/addressbook/kabdatabasechangednotification
-declare const kABDatabaseChangedNotification: string | cocoascript.NSString;
+declare const kABDatabaseChangedNotification: string | NSString;
 // doc://com.apple.documentation/documentation/addressbook/kabdatabasechangedexternallynotification
-declare const kABDatabaseChangedExternallyNotification: string | cocoascript.NSString;
+declare const kABDatabaseChangedExternallyNotification: string | NSString;
 declare namespace cocoascript {
   /**
    * An object that represents a group of records in the Address Book database.
@@ -215,7 +215,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427958-properties
     properties():NSArray;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427950-typeofproperty
-    typeOfProperty(property: string | cocoascript.NSString):ABPropertyType;
+    typeOfProperty(property: string | NSString):ABPropertyType;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427932-addmember
     addMember(person: ABPerson):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427940-removemember
@@ -231,11 +231,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427948-subgroups
     subgroups():NSArray;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427942-distributionidentifierforpropert
-    distributionIdentifierForProperty_person(property: string | cocoascript.NSString, person: ABPerson):string | cocoascript.NSString;
+    distributionIdentifierForProperty_person(property: string | NSString, person: ABPerson):string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427936-setdistributionidentifier
-    setDistributionIdentifier_forProperty_person(identifier: string | cocoascript.NSString, property: string | cocoascript.NSString, person: ABPerson):BOOL;
+    setDistributionIdentifier_forProperty_person(identifier: string | NSString, property: string | NSString, person: ABPerson):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427946-searchelementforproperty
-    searchElementForProperty_label_key_value_comparison(property: string | cocoascript.NSString, label: string | cocoascript.NSString, key: string | cocoascript.NSString, value: ABGroup, comparison: ABSearchComparison):ABSearchElement;
+    searchElementForProperty_label_key_value_comparison(property: string | NSString, label: string | NSString, key: string | NSString, value: ABGroup, comparison: ABSearchComparison):ABSearchElement;
     //
     alloc():ABGroup;
     //
@@ -255,20 +255,20 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abrecord/1400517-init
     init():ABRecord;
     // doc://com.apple.documentation/documentation/addressbook/abrecord/1400513-removevalueforproperty
-    removeValueForProperty(property: string | cocoascript.NSString):BOOL;
+    removeValueForProperty(property: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abrecord/1400509-setvalue
-    setValue_forProperty(value: ABRecord, property: string | cocoascript.NSString):BOOL;
+    setValue_forProperty(value: ABRecord, property: string | NSString):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abrecord/1400521-setvalue
-    setValue_forProperty_error(value: ABRecord, property: string | cocoascript.NSString, error: NSError):BOOL;
+    setValue_forProperty_error(value: ABRecord, property: string | NSString, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abrecord/1400523-valueforproperty
-    valueForProperty(property: string | cocoascript.NSString):ABRecord;
+    valueForProperty(property: string | NSString):ABRecord;
     // doc://com.apple.documentation/documentation/addressbook/abrecord/1400519-isreadonly
     isReadOnly():BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abrecord/1400505-displayname
-    displayName(): string | cocoascript.NSString;
+    displayName(): string | NSString;
     setDisplayName(): void;
     // doc://com.apple.documentation/documentation/addressbook/abrecord/1400515-uniqueid
-    uniqueId(): string | cocoascript.NSString;
+    uniqueId(): string | NSString;
     setUniqueId(): void;
     //
     alloc():ABRecord;
@@ -285,18 +285,18 @@ declare namespace cocoascript {
    */
   interface ABPeoplePickerView extends NSView {
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458513-addproperty
-    addProperty(property: string | cocoascript.NSString):void;
+    addProperty(property: string | NSString):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458420-columntitleforproperty
-    columnTitleForProperty(property: string | cocoascript.NSString):string | cocoascript.NSString;
+    columnTitleForProperty(property: string | NSString):string | NSString;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458533-displayedproperty
-    displayedProperty(): string | cocoascript.NSString;
+    displayedProperty(): string | NSString;
     setDisplayedProperty(): void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458322-properties
     properties():NSArray;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458395-removeproperty
-    removeProperty(property: string | cocoascript.NSString):void;
+    removeProperty(property: string | NSString):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458674-setcolumntitle
-    setColumnTitle_forProperty(title: string | cocoascript.NSString, property: string | cocoascript.NSString):void;
+    setColumnTitle_forProperty(title: string | NSString, property: string | NSString):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458445-valueselectionbehavior
     valueSelectionBehavior(): ABPeoplePickerSelectionBehavior;
     setValueSelectionBehavior(): void;
@@ -311,7 +311,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458627-deselectgroup
     deselectGroup(group: ABGroup):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458304-deselectidentifier
-    deselectIdentifier_forPerson(identifier: string | cocoascript.NSString, person: ABPerson):void;
+    deselectIdentifier_forPerson(identifier: string | NSString, person: ABPerson):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458358-deselectrecord
     deselectRecord(record: ABRecord):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458699-selectedgroups
@@ -327,7 +327,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458291-selectgroup
     selectGroup_byExtendingSelection(group: ABGroup, extend: BOOL):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458317-selectidentifier
-    selectIdentifier_forPerson_byExtendingSelection(identifier: string | cocoascript.NSString, person: ABPerson, extend: BOOL):void;
+    selectIdentifier_forPerson_byExtendingSelection(identifier: string | NSString, person: ABPerson, extend: BOOL):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458370-selectrecord
     selectRecord_byExtendingSelection(record: ABRecord, extend: BOOL):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458746-accessoryview
@@ -349,7 +349,7 @@ declare namespace cocoascript {
     target(): id;
     setTarget(): void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458748-autosavename
-    autosaveName(): string | cocoascript.NSString;
+    autosaveName(): string | NSString;
     setAutosaveName(): void;
     //
     alloc():ABPeoplePickerView;
@@ -360,13 +360,13 @@ declare namespace cocoascript {
 
 declare const ABPeoplePickerView: cocoascript.ABPeoplePickerView;
 // doc://com.apple.documentation/documentation/addressbook/abpeoplepickergroupselectiondidchangenotification
-declare const ABPeoplePickerGroupSelectionDidChangeNotification: string | cocoascript.NSString;
+declare const ABPeoplePickerGroupSelectionDidChangeNotification: string | NSString;
 // doc://com.apple.documentation/documentation/addressbook/abpeoplepickernameselectiondidchangenotification
-declare const ABPeoplePickerNameSelectionDidChangeNotification: string | cocoascript.NSString;
+declare const ABPeoplePickerNameSelectionDidChangeNotification: string | NSString;
 // doc://com.apple.documentation/documentation/addressbook/abpeoplepickervalueselectiondidchangenotification
-declare const ABPeoplePickerValueSelectionDidChangeNotification: string | cocoascript.NSString;
+declare const ABPeoplePickerValueSelectionDidChangeNotification: string | NSString;
 // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerdisplayedpropertydidchangenotification
-declare const ABPeoplePickerDisplayedPropertyDidChangeNotification: string | cocoascript.NSString;
+declare const ABPeoplePickerDisplayedPropertyDidChangeNotification: string | NSString;
 declare namespace cocoascript {
   /**
    * An object that provides a view for displaying and editing contacts.

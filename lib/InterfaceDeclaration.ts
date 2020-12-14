@@ -109,7 +109,12 @@ export class InterfaceDeclaration {
       });
     });
     if (this.type === 'interface') {
-      code.appendLine().appendLine(`declare const ${this.identifier}: ${normalizeType(this.identifier, true)};`);
+      code.appendLine().appendLine(
+        `declare const ${this.identifier}: ${normalizeType(this.identifier, {
+          extend: false,
+          withNamespace: true,
+        })};`
+      );
     }
     this.constants.forEach(constant => {
       code.appendLine(constant.generate());

@@ -34,7 +34,9 @@ export class TypeDeclaration {
     const code = new CodeGenerator();
     code.namespace(() => {
       code.appendLine(`// ${this.id}`);
-      code.appendLine(`type ${this.identifier} = ${normalizeType(this.alias!, true)};`);
+      code.appendLine(`type ${this.identifier} = ${normalizeType(this.alias!, {
+        withNamespace: true,
+      })};`);
     });
     code.appendLine();
     return code.toString();

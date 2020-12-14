@@ -46,7 +46,7 @@ declare namespace cocoascript {
    */
   interface NCWidgetSearchViewDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449558-widgetsearch
-    widgetSearch_searchForTerm_maxResults(controller: NCWidgetSearchViewController, searchTerm: string | cocoascript.NSString, max: NSUInteger):void;
+    widgetSearch_searchForTerm_maxResults(controller: NCWidgetSearchViewController, searchTerm: string | NSString, max: NSUInteger):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449548-widgetsearch
     widgetSearch_resultSelected(controller: NCWidgetSearchViewController, object: NCWidgetSearchViewDelegate):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449550-widgetsearchtermcleared
@@ -70,7 +70,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456687-widgetcontroller
     widgetController():NCWidgetController;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456693-sethascontent
-    setHasContent_forWidgetWithBundleIdentifier(flag: BOOL, bundleID: string | cocoascript.NSString):void;
+    setHasContent_forWidgetWithBundleIdentifier(flag: BOOL, bundleID: string | NSString):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456691-defaultwidgetcontroller
     defaultWidgetController():NCWidgetController;
     //
@@ -127,13 +127,13 @@ declare namespace cocoascript {
     delegate(): NCWidgetSearchViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449554-searchdescription
-    searchDescription(): string | cocoascript.NSString;
+    searchDescription(): string | NSString;
     setSearchDescription(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449552-searchresultsplaceholderstring
-    searchResultsPlaceholderString(): string | cocoascript.NSString;
+    searchResultsPlaceholderString(): string | NSString;
     setSearchResultsPlaceholderString(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449556-searchresultkeypath
-    searchResultKeyPath(): string | cocoascript.NSString;
+    searchResultKeyPath(): string | NSString;
     setSearchResultKeyPath(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449551-searchresults
     searchResults(): id;

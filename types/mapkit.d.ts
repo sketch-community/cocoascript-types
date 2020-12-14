@@ -118,11 +118,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451988-deselectannotation
     deselectAnnotation_animated(annotation: MKAnnotation, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/2887124-registerclass
-    registerClass_forAnnotationViewWithReuseIdentifier(viewClass: Class, identifier: string | cocoascript.NSString):void;
+    registerClass_forAnnotationViewWithReuseIdentifier(viewClass: Class, identifier: string | NSString):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/2887123-dequeuereusableannotationviewwit
-    dequeueReusableAnnotationViewWithIdentifier_forAnnotation(identifier: string | cocoascript.NSString, annotation: MKAnnotation):MKAnnotationView;
+    dequeueReusableAnnotationViewWithIdentifier_forAnnotation(identifier: string | NSString, annotation: MKAnnotation):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452672-dequeuereusableannotationviewwit
-    dequeueReusableAnnotationViewWithIdentifier(identifier: string | cocoascript.NSString):MKAnnotationView;
+    dequeueReusableAnnotationViewWithIdentifier(identifier: string | NSString):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452512-viewforannotation
     viewForAnnotation(annotation: MKAnnotation):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452784-overlays
@@ -181,9 +181,9 @@ declare namespace cocoascript {
 
 declare const MKMapView: cocoascript.MKMapView;
 // doc://com.apple.documentation/documentation/mapkit/mkmapviewdefaultannotationviewreuseidentifier
-declare const MKMapViewDefaultAnnotationViewReuseIdentifier: string | cocoascript.NSString;
+declare const MKMapViewDefaultAnnotationViewReuseIdentifier: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mkmapviewdefaultclusterannotationviewreuseidentifier
-declare const MKMapViewDefaultClusterAnnotationViewReuseIdentifier: string | cocoascript.NSString;
+declare const MKMapViewDefaultClusterAnnotationViewReuseIdentifier: string | NSString;
 declare namespace cocoascript {
   /**
    * An interface for associating your content with a specific map location.
@@ -196,10 +196,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/mapkit/mkannotation/1429528-setcoordinate
     setCoordinate(newCoordinate: CLLocationCoordinate2D):void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotation/1429522-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotation/1429520-subtitle
-    subtitle(): string | cocoascript.NSString;
+    subtitle(): string | NSString;
     setSubtitle(): void;
   }
 }
@@ -337,11 +337,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/1452301-initwithcompletion
     initWithCompletion(completion: MKLocalSearchCompletion):MKLocalSearchRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/3235756-initwithnaturallanguagequery
-    initWithNaturalLanguageQuery(naturalLanguageQuery: string | cocoascript.NSString):MKLocalSearchRequest;
+    initWithNaturalLanguageQuery(naturalLanguageQuery: string | NSString):MKLocalSearchRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/3235757-initwithnaturallanguagequery
-    initWithNaturalLanguageQuery_region(naturalLanguageQuery: string | cocoascript.NSString, region: MKCoordinateRegion):MKLocalSearchRequest;
+    initWithNaturalLanguageQuery_region(naturalLanguageQuery: string | NSString, region: MKCoordinateRegion):MKLocalSearchRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/1452353-naturallanguagequery
-    naturalLanguageQuery(): string | cocoascript.NSString;
+    naturalLanguageQuery(): string | NSString;
     setNaturalLanguageQuery(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/1451919-region
     region(): MKCoordinateRegion;
@@ -537,10 +537,10 @@ declare namespace cocoascript {
     isCurrentLocation(): BOOL;
     setIsCurrentLocation(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452339-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452088-phonenumber
-    phoneNumber(): string | cocoascript.NSString;
+    phoneNumber(): string | NSString;
     setPhoneNumber(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452746-url
     url(): NSURL;
@@ -565,7 +565,7 @@ declare namespace cocoascript {
 
 declare const MKMapItem: cocoascript.MKMapItem;
 // doc://com.apple.documentation/documentation/mapkit/mkmapitemtypeidentifier
-declare const MKMapItemTypeIdentifier: string | cocoascript.NSString;
+declare const MKMapItemTypeIdentifier: string | NSString;
 declare namespace cocoascript {
   /**
    * The visual representation of one of your annotation objects.
@@ -573,7 +573,7 @@ declare namespace cocoascript {
    */
   interface MKAnnotationView extends NSView {
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452779-initwithannotation
-    initWithAnnotation_reuseIdentifier(annotation: MKAnnotation, reuseIdentifier: string | cocoascript.NSString):MKAnnotationView;
+    initWithAnnotation_reuseIdentifier(annotation: MKAnnotation, reuseIdentifier: string | NSString):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1827527-initwithcoder
     initWithCoder(aDecoder: NSCoder):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1451907-prepareforreuse
@@ -608,7 +608,7 @@ declare namespace cocoascript {
     calloutOffset(): CGPoint;
     setCalloutOffset(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452060-reuseidentifier
-    reuseIdentifier(): string | cocoascript.NSString;
+    reuseIdentifier(): string | NSString;
     setReuseIdentifier(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452381-setselected
     setSelected_animated(selected: BOOL, animated: BOOL):void;
@@ -645,7 +645,7 @@ declare namespace cocoascript {
     collisionMode(): MKAnnotationViewCollisionMode;
     setCollisionMode(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/2867297-clusteringidentifier
-    clusteringIdentifier(): string | cocoascript.NSString;
+    clusteringIdentifier(): string | NSString;
     setClusteringIdentifier(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/2867294-clusterannotationview
     clusterAnnotationView(): MKAnnotationView;
@@ -659,7 +659,7 @@ declare namespace cocoascript {
 
 declare const MKAnnotationView: cocoascript.MKAnnotationView;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationcalloutinfodidchangenotification
-declare const MKAnnotationCalloutInfoDidChangeNotification: string | cocoascript.NSString;
+declare const MKAnnotationCalloutInfoDidChangeNotification: string | NSString;
 declare namespace cocoascript {
   /**
    * An annotation view that displays a balloon-shaped marker at the designated location.
@@ -670,7 +670,7 @@ declare namespace cocoascript {
     markerTintColor(): UIColor;
     setMarkerTintColor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873817-glyphtext
-    glyphText(): string | cocoascript.NSString;
+    glyphText(): string | NSString;
     setGlyphText(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873823-glyphimage
     glyphImage(): UIImage;
@@ -856,10 +856,10 @@ declare namespace cocoascript {
    */
   interface MKShape extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkshape/1437594-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkshape/1437592-subtitle
-    subtitle(): string | cocoascript.NSString;
+    subtitle(): string | NSString;
     setSubtitle(): void;
     //
     alloc():MKShape;
@@ -885,10 +885,10 @@ declare namespace cocoascript {
     heading(): CLHeading;
     setHeading(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkuserlocation/1452058-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkuserlocation/1452562-subtitle
-    subtitle(): string | cocoascript.NSString;
+    subtitle(): string | NSString;
     setSubtitle(): void;
     //
     alloc():MKUserLocation;
@@ -911,7 +911,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/1451895-initwithcoordinate
     initWithCoordinate_addressDictionary(coordinate: CLLocationCoordinate2D, addressDictionary: MKPlacemark):MKPlacemark;
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/1451952-countrycode
-    countryCode(): string | cocoascript.NSString;
+    countryCode(): string | NSString;
     setCountryCode(): void;
     //
     alloc():MKPlacemark;
@@ -930,10 +930,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/mapkit/mkclusterannotation/2866567-initwithmemberannotations
     initWithMemberAnnotations(memberAnnotations: MKAnnotation):MKClusterAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkclusterannotation/2866569-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkclusterannotation/2866570-subtitle
-    subtitle(): string | cocoascript.NSString;
+    subtitle(): string | NSString;
     setSubtitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkclusterannotation/2866568-memberannotations
     memberAnnotations(): MKAnnotation;
@@ -956,7 +956,7 @@ declare namespace cocoascript {
     delegate(): MKLocalSearchCompleterDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452555-queryfragment
-    queryFragment(): string | cocoascript.NSString;
+    queryFragment(): string | NSString;
     setQueryFragment(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1451923-region
     region(): MKCoordinateRegion;
@@ -1028,7 +1028,7 @@ declare namespace cocoascript {
     geometry(): MKGeoJSONObject;
     setGeometry(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature/3113997-identifier
-    identifier(): string | cocoascript.NSString;
+    identifier(): string | NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature/3113998-properties
     properties(): NSData;
@@ -1238,7 +1238,7 @@ declare const MKMapSnapshotter: cocoascript.MKMapSnapshotter;
 declare const MKMapCameraZoomDefault: CLLocationDistance;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategory
-  type MKPointOfInterestCategory = string | cocoascript.NSString;
+  type MKPointOfInterestCategory = cocoascript.NSString;
 }
 declare namespace cocoascript {
   interface MKCoordinateRegion {
@@ -1257,10 +1257,10 @@ declare namespace cocoascript {
    */
   interface MKLocalSearchCompletion extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1452455-title
-    title(): string | cocoascript.NSString;
+    title(): string | NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1452566-subtitle
-    subtitle(): string | cocoascript.NSString;
+    subtitle(): string | NSString;
     setSubtitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1451935-titlehighlightranges
     titleHighlightRanges(): NSValue;
@@ -1287,9 +1287,9 @@ declare namespace cocoascript {
    */
   interface MKDistanceFormatter extends NSFormatter {
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1451994-stringfromdistance
-    stringFromDistance(distance: CLLocationDistance):string | cocoascript.NSString;
+    stringFromDistance(distance: CLLocationDistance):string | NSString;
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1452766-distancefromstring
-    distanceFromString(distance: string | cocoascript.NSString):CLLocationDistance;
+    distanceFromString(distance: string | NSString):CLLocationDistance;
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1452235-locale
     locale(): NSLocale;
     setLocale(): void;
@@ -1373,25 +1373,25 @@ declare namespace cocoascript {
 
 declare const MKDirectionsRequest: cocoascript.MKDirectionsRequest;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionscamerakey
-declare const MKLaunchOptionsCameraKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsCameraKey: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodedefault
-declare const MKLaunchOptionsDirectionsModeDefault: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeDefault: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodedriving
-declare const MKLaunchOptionsDirectionsModeDriving: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeDriving: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodekey
-declare const MKLaunchOptionsDirectionsModeKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeKey: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodetransit
-declare const MKLaunchOptionsDirectionsModeTransit: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeTransit: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodewalking
-declare const MKLaunchOptionsDirectionsModeWalking: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeWalking: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsmapcenterkey
-declare const MKLaunchOptionsMapCenterKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsMapCenterKey: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsmapspankey
-declare const MKLaunchOptionsMapSpanKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsMapSpanKey: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsmaptypekey
-declare const MKLaunchOptionsMapTypeKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsMapTypeKey: string | NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsshowstraffickey
-declare const MKLaunchOptionsShowsTrafficKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsShowsTrafficKey: string | NSString;
 declare namespace cocoascript {
   /**
    * The route information returned by Apple servers in response to one of your requests for directions.
@@ -1463,10 +1463,10 @@ declare namespace cocoascript {
     steps(): MKRouteStep;
     setSteps(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1452684-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1452359-advisorynotices
-    advisoryNotices(): string | cocoascript.NSString;
+    advisoryNotices(): string | NSString;
     setAdvisoryNotices(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1452405-distance
     distance(): CLLocationDistance;
@@ -1495,10 +1495,10 @@ declare namespace cocoascript {
     polyline(): MKPolyline;
     setPolyline(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroutestep/1452447-instructions
-    instructions(): string | cocoascript.NSString;
+    instructions(): string | NSString;
     setInstructions(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroutestep/1452347-notice
-    notice(): string | cocoascript.NSString;
+    notice(): string | NSString;
     setNotice(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroutestep/1452004-distance
     distance(): CLLocationDistance;
@@ -1576,7 +1576,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/mapkit/mkpointannotation/3235759-initwithcoordinate
     initWithCoordinate(coordinate: CLLocationCoordinate2D):MKPointAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkpointannotation/3235760-initwithcoordinate
-    initWithCoordinate_title_subtitle(coordinate: CLLocationCoordinate2D, title: string | cocoascript.NSString, subtitle: string | cocoascript.NSString):MKPointAnnotation;
+    initWithCoordinate_title_subtitle(coordinate: CLLocationCoordinate2D, title: string | NSString, subtitle: string | NSString):MKPointAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkpointannotation/1452620-coordinate
     coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
@@ -1626,7 +1626,7 @@ declare namespace cocoascript {
    */
   interface MKTileOverlay extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452705-initwithurltemplate
-    initWithURLTemplate(URLTemplate: string | cocoascript.NSString):MKTileOverlay;
+    initWithURLTemplate(URLTemplate: string | NSString):MKTileOverlay;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452108-tilesize
     tileSize(): CGSize;
     setTileSize(): void;
@@ -1643,7 +1643,7 @@ declare namespace cocoascript {
     canReplaceMapContent(): BOOL;
     setCanReplaceMapContent(): void;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452256-urltemplate
-    URLTemplate(): string | cocoascript.NSString;
+    URLTemplate(): string | NSString;
     setURLTemplate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452606-urlfortilepath
     URLForTilePath(path: MKTileOverlayPath):NSURL;

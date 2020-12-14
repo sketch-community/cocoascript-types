@@ -179,43 +179,43 @@ declare namespace cocoascript {
    */
   interface SKUniform extends NSObject {
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455458-uniformwithname
-    uniformWithName(name: string | cocoascript.NSString):SKUniform;
+    uniformWithName(name: string | NSString):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455412-uniformwithname
-    uniformWithName_float(name: string | cocoascript.NSString, value: number):SKUniform;
+    uniformWithName_float(name: string | NSString, value: number):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455472-uniformwithname
-    uniformWithName_floatVector2(name: string | cocoascript.NSString, value: GLKVector2):SKUniform;
+    uniformWithName_floatVector2(name: string | NSString, value: GLKVector2):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455414-uniformwithname
-    uniformWithName_floatVector3(name: string | cocoascript.NSString, value: GLKVector3):SKUniform;
+    uniformWithName_floatVector3(name: string | NSString, value: GLKVector3):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455465-uniformwithname
-    uniformWithName_floatVector4(name: string | cocoascript.NSString, value: GLKVector4):SKUniform;
+    uniformWithName_floatVector4(name: string | NSString, value: GLKVector4):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455463-uniformwithname
-    uniformWithName_floatMatrix2(name: string | cocoascript.NSString, value: GLKMatrix2):SKUniform;
+    uniformWithName_floatMatrix2(name: string | NSString, value: GLKMatrix2):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455402-uniformwithname
-    uniformWithName_floatMatrix3(name: string | cocoascript.NSString, value: GLKMatrix3):SKUniform;
+    uniformWithName_floatMatrix3(name: string | NSString, value: GLKMatrix3):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455446-uniformwithname
-    uniformWithName_floatMatrix4(name: string | cocoascript.NSString, value: GLKMatrix4):SKUniform;
+    uniformWithName_floatMatrix4(name: string | NSString, value: GLKMatrix4):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455470-uniformwithname
-    uniformWithName_texture(name: string | cocoascript.NSString, texture: SKTexture):SKUniform;
+    uniformWithName_texture(name: string | NSString, texture: SKTexture):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455420-initwithname
-    initWithName(name: string | cocoascript.NSString):SKUniform;
+    initWithName(name: string | NSString):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455447-initwithname
-    initWithName_float(name: string | cocoascript.NSString, value: number):SKUniform;
+    initWithName_float(name: string | NSString, value: number):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455444-initwithname
-    initWithName_floatVector2(name: string | cocoascript.NSString, value: GLKVector2):SKUniform;
+    initWithName_floatVector2(name: string | NSString, value: GLKVector2):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455416-initwithname
-    initWithName_floatVector3(name: string | cocoascript.NSString, value: GLKVector3):SKUniform;
+    initWithName_floatVector3(name: string | NSString, value: GLKVector3):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455418-initwithname
-    initWithName_floatVector4(name: string | cocoascript.NSString, value: GLKVector4):SKUniform;
+    initWithName_floatVector4(name: string | NSString, value: GLKVector4):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455431-initwithname
-    initWithName_floatMatrix2(name: string | cocoascript.NSString, value: GLKMatrix2):SKUniform;
+    initWithName_floatMatrix2(name: string | NSString, value: GLKMatrix2):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455462-initwithname
-    initWithName_floatMatrix3(name: string | cocoascript.NSString, value: GLKMatrix3):SKUniform;
+    initWithName_floatMatrix3(name: string | NSString, value: GLKMatrix3):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455429-initwithname
-    initWithName_floatMatrix4(name: string | cocoascript.NSString, value: GLKMatrix4):SKUniform;
+    initWithName_floatMatrix4(name: string | NSString, value: GLKMatrix4):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455452-initwithname
-    initWithName_texture(name: string | cocoascript.NSString, texture: SKTexture):SKUniform;
+    initWithName_texture(name: string | NSString, texture: SKTexture):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455442-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1455440-uniformtype
     uniformType(): SKUniformType;
@@ -245,17 +245,17 @@ declare namespace cocoascript {
     textureValue(): SKTexture;
     setTextureValue(): void;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1645806-initwithname
-    initWithName_matrixFloat2x2(name: string | cocoascript.NSString, value: matrix_float2x2):SKUniform;
+    initWithName_matrixFloat2x2(name: string | NSString, value: matrix_float2x2):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1645799-initwithname
-    initWithName_matrixFloat3x3(name: string | cocoascript.NSString, value: matrix_float3x3):SKUniform;
+    initWithName_matrixFloat3x3(name: string | NSString, value: matrix_float3x3):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1645816-initwithname
-    initWithName_matrixFloat4x4(name: string | cocoascript.NSString, value: matrix_float4x4):SKUniform;
+    initWithName_matrixFloat4x4(name: string | NSString, value: matrix_float4x4):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1645782-initwithname
-    initWithName_vectorFloat2(name: string | cocoascript.NSString, value: vector_float2):SKUniform;
+    initWithName_vectorFloat2(name: string | NSString, value: vector_float2):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1645803-initwithname
-    initWithName_vectorFloat3(name: string | cocoascript.NSString, value: vector_float3):SKUniform;
+    initWithName_vectorFloat3(name: string | NSString, value: vector_float3):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1645808-initwithname
-    initWithName_vectorFloat4(name: string | cocoascript.NSString, value: vector_float4):SKUniform;
+    initWithName_vectorFloat4(name: string | NSString, value: vector_float4):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1645818-matrixfloat2x2value
     matrixFloat2x2Value(): matrix_float2x2;
     setMatrixFloat2x2Value(): void;
@@ -275,17 +275,17 @@ declare namespace cocoascript {
     vectorFloat4Value(): vector_float4;
     setVectorFloat4Value(): void;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1646689-uniformwithname
-    uniformWithName_matrixFloat2x2(name: string | cocoascript.NSString, value: matrix_float2x2):SKUniform;
+    uniformWithName_matrixFloat2x2(name: string | NSString, value: matrix_float2x2):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1646692-uniformwithname
-    uniformWithName_matrixFloat3x3(name: string | cocoascript.NSString, value: matrix_float3x3):SKUniform;
+    uniformWithName_matrixFloat3x3(name: string | NSString, value: matrix_float3x3):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1646694-uniformwithname
-    uniformWithName_matrixFloat4x4(name: string | cocoascript.NSString, value: matrix_float4x4):SKUniform;
+    uniformWithName_matrixFloat4x4(name: string | NSString, value: matrix_float4x4):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1646690-uniformwithname
-    uniformWithName_vectorFloat2(name: string | cocoascript.NSString, value: vector_float2):SKUniform;
+    uniformWithName_vectorFloat2(name: string | NSString, value: vector_float2):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1646691-uniformwithname
-    uniformWithName_vectorFloat3(name: string | cocoascript.NSString, value: vector_float3):SKUniform;
+    uniformWithName_vectorFloat3(name: string | NSString, value: vector_float3):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skuniform/1646693-uniformwithname
-    uniformWithName_vectorFloat4(name: string | cocoascript.NSString, value: vector_float4):SKUniform;
+    uniformWithName_vectorFloat4(name: string | NSString, value: vector_float4):SKUniform;
     //
     alloc():SKUniform;
     //
@@ -301,31 +301,31 @@ declare namespace cocoascript {
    */
   interface SKShader extends NSObject {
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477557-shaderwithfilenamed
-    shaderWithFileNamed(name: string | cocoascript.NSString):SKShader;
+    shaderWithFileNamed(name: string | NSString):SKShader;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477569-shaderwithsource
-    shaderWithSource_uniforms(source: string | cocoascript.NSString, uniforms: SKUniform):SKShader;
+    shaderWithSource_uniforms(source: string | NSString, uniforms: SKUniform):SKShader;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477563-shaderwithsource
-    shaderWithSource(source: string | cocoascript.NSString):SKShader;
+    shaderWithSource(source: string | NSString):SKShader;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477559-shader
     shader():SKShader;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477555-initwithsource
-    initWithSource_uniforms(source: string | cocoascript.NSString, uniforms: SKUniform):SKShader;
+    initWithSource_uniforms(source: string | NSString, uniforms: SKUniform):SKShader;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477571-initwithsource
-    initWithSource(source: string | cocoascript.NSString):SKShader;
+    initWithSource(source: string | NSString):SKShader;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477561-adduniform
     addUniform(uniform: SKUniform):void;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477553-removeuniformnamed
-    removeUniformNamed(name: string | cocoascript.NSString):void;
+    removeUniformNamed(name: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477565-uniforms
     uniforms(): SKUniform;
     setUniforms(): void;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477567-uniformnamed
-    uniformNamed(name: string | cocoascript.NSString):SKUniform;
+    uniformNamed(name: string | NSString):SKUniform;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1645287-attributes
     attributes(): SKAttribute;
     setAttributes(): void;
     // doc://com.apple.documentation/documentation/spritekit/skshader/1477544-source
-    source(): string | cocoascript.NSString;
+    source(): string | NSString;
     setSource(): void;
     //
     alloc():SKShader;
@@ -346,11 +346,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483038-node
     node():SKNode;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483083-nodewithfilenamed
-    nodeWithFileNamed(filename: string | cocoascript.NSString):SKNode;
+    nodeWithFileNamed(filename: string | NSString):SKNode;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483142-initwithcoder
     initWithCoder(aDecoder: NSCoder):SKNode;
     // doc://com.apple.documentation/documentation/spritekit/sknode/3005334-nodewithfilenamed
-    nodeWithFileNamed_securelyWithClasses_andError(filename: string | cocoascript.NSString, classes: Class, error: NSError):SKNode;
+    nodeWithFileNamed_securelyWithClasses_andError(filename: string | NSString, classes: Class, error: NSError):SKNode;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483101-position
     position(): CGPoint;
     setPosition(): void;
@@ -399,14 +399,14 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483111-inparenthierarchy
     inParentHierarchy(parent: SKNode):BOOL;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483136-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483060-childnodewithname
-    childNodeWithName(name: string | cocoascript.NSString):SKNode;
+    childNodeWithName(name: string | NSString):SKNode;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483024-enumeratechildnodeswithname
-    enumerateChildNodesWithName_usingBlock(name: string | cocoascript.NSString, block: BOOL):void;
+    enumerateChildNodesWithName_usingBlock(name: string | NSString, block: BOOL):void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483070-objectforkeyedsubscript
-    objectForKeyedSubscript(name: string | cocoascript.NSString):SKNode;
+    objectForKeyedSubscript(name: string | NSString):SKNode;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483023-alpha
     alpha(): CGFloat;
     setAlpha(): void;
@@ -418,7 +418,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483103-runaction
     runAction_completion(action: SKAction, block: void):void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483042-runaction
-    runAction_withKey(action: SKAction, key: string | cocoascript.NSString):void;
+    runAction_withKey(action: SKAction, key: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483036-speed
     speed(): CGFloat;
     setSpeed(): void;
@@ -426,13 +426,13 @@ declare namespace cocoascript {
     paused(): BOOL;
     setPaused(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483138-actionforkey
-    actionForKey(key: string | cocoascript.NSString):SKAction;
+    actionForKey(key: string | NSString):SKAction;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483081-hasactions
     hasActions():BOOL;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483030-removeallactions
     removeAllActions():void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483076-removeactionforkey
-    removeActionForKey(key: string | cocoascript.NSString):void;
+    removeActionForKey(key: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1483117-physicsbody
     physicsBody(): SKPhysicsBody;
     setPhysicsBody(): void;
@@ -479,22 +479,22 @@ declare namespace cocoascript {
     accessibilityFrame(): CGRect;
     setAccessibilityFrame(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1645041-accessibilityhelp
-    accessibilityHelp(): string | cocoascript.NSString;
+    accessibilityHelp(): string | NSString;
     setAccessibilityHelp(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1645039-accessibilitylabel
-    accessibilityLabel(): string | cocoascript.NSString;
+    accessibilityLabel(): string | NSString;
     setAccessibilityLabel(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1645042-accessibilityparent
     accessibilityParent(): id;
     setAccessibilityParent(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1645036-accessibilityrole
-    accessibilityRole(): string | cocoascript.NSString;
+    accessibilityRole(): string | NSString;
     setAccessibilityRole(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1645035-accessibilityroledescription
-    accessibilityRoleDescription(): string | cocoascript.NSString;
+    accessibilityRoleDescription(): string | NSString;
     setAccessibilityRoleDescription(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1645043-accessibilitysubrole
-    accessibilitySubrole(): string | cocoascript.NSString;
+    accessibilitySubrole(): string | NSString;
     setAccessibilitySubrole(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1645038-accessibilityelement
     accessibilityElement(): BOOL;
@@ -508,9 +508,9 @@ declare namespace cocoascript {
     attributeValues(): SKAttributeValue;
     setAttributeValues(): void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1644180-setvalue
-    setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
+    setValue_forAttributeNamed(value: SKAttributeValue, key: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/sknode/1644182-valueforattributenamed
-    valueForAttributeNamed(key: string | cocoascript.NSString):SKAttributeValue;
+    valueForAttributeNamed(key: string | NSString):SKAttributeValue;
     //
     alloc():SKNode;
     //
@@ -829,9 +829,9 @@ declare namespace cocoascript {
     attributeValues(): SKAttributeValue;
     setAttributeValues(): void;
     // doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715852-setvalue
-    setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
+    setValue_forAttributeNamed(value: SKAttributeValue, key: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/sktilemapnode/2715847-valueforattributenamed
-    valueForAttributeNamed(key: string | cocoascript.NSString):SKAttributeValue;
+    valueForAttributeNamed(key: string | NSString):SKAttributeValue;
     //
     alloc():SKTileMapNode;
     //
@@ -847,7 +847,7 @@ declare namespace cocoascript {
    */
   interface SKTileSet extends NSObject {
     // doc://com.apple.documentation/documentation/spritekit/sktileset/1643819-tilesetnamed
-    tileSetNamed(name: string | cocoascript.NSString):SKTileSet;
+    tileSetNamed(name: string | NSString):SKTileSet;
     // doc://com.apple.documentation/documentation/spritekit/sktileset/1643830-tilesetfromurl
     tileSetFromURL(url: NSURL):SKTileSet;
     // doc://com.apple.documentation/documentation/spritekit/sktileset/1643885-initwithtilegroups
@@ -865,7 +865,7 @@ declare namespace cocoascript {
     defaultTileSize(): CGSize;
     setDefaultTileSize(): void;
     // doc://com.apple.documentation/documentation/spritekit/sktileset/1643888-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/spritekit/sktileset/1643874-tilegroups
     tileGroups(): SKTileGroup;
@@ -895,7 +895,7 @@ declare namespace cocoascript {
     adjacency(): SKTileAdjacencyMask;
     setAdjacency(): void;
     // doc://com.apple.documentation/documentation/spritekit/sktilegrouprule/1643860-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/spritekit/sktilegrouprule/1643823-tiledefinitions
     tileDefinitions(): SKTileDefinition;
@@ -923,7 +923,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/sktilegroup/1643891-tilegroupwithrules
     tileGroupWithRules(rules: SKTileGroupRule):SKTileGroup;
     // doc://com.apple.documentation/documentation/spritekit/sktilegroup/1643893-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/spritekit/sktilegroup/1643867-rules
     rules(): SKTileGroupRule;
@@ -986,7 +986,7 @@ declare namespace cocoascript {
     userData(): NSMutableDictionary;
     setUserData(): void;
     // doc://com.apple.documentation/documentation/spritekit/sktiledefinition/1645779-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/spritekit/sktiledefinition/1645820-placementweight
     placementWeight(): NSUInteger;
@@ -1023,9 +1023,9 @@ declare namespace cocoascript {
    */
   interface SKTextureAtlas extends NSObject {
     // doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427375-texturenamed
-    textureNamed(name: string | cocoascript.NSString):SKTexture;
+    textureNamed(name: string | NSString):SKTexture;
     // doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427381-atlasnamed
-    atlasNamed(name: string | cocoascript.NSString):SKTextureAtlas;
+    atlasNamed(name: string | NSString):SKTextureAtlas;
     // doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427383-atlaswithdictionary
     atlasWithDictionary(properties: SKTextureAtlas):SKTextureAtlas;
     // doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427385-preloadwithcompletionhandler
@@ -1033,9 +1033,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427379-preloadtextureatlases
     preloadTextureAtlases_withCompletionHandler(textureAtlases: SKTextureAtlas, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427377-preloadtextureatlasesnamed
-    preloadTextureAtlasesNamed_withCompletionHandler(atlasNames: string | cocoascript.NSString, completionHandler: SKTextureAtlas):void;
+    preloadTextureAtlasesNamed_withCompletionHandler(atlasNames: string | NSString, completionHandler: SKTextureAtlas):void;
     // doc://com.apple.documentation/documentation/spritekit/sktextureatlas/1427373-texturenames
-    textureNames(): string | cocoascript.NSString;
+    textureNames(): string | NSString;
     setTextureNames(): void;
     //
     alloc():SKTextureAtlas;
@@ -1145,7 +1145,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/skaudionode/1520232-initwithavaudionode
     initWithAVAudioNode(node: AVAudioNode):SKAudioNode;
     // doc://com.apple.documentation/documentation/spritekit/skaudionode/1519678-initwithfilenamed
-    initWithFileNamed(name: string | cocoascript.NSString):SKAudioNode;
+    initWithFileNamed(name: string | NSString):SKAudioNode;
     // doc://com.apple.documentation/documentation/spritekit/skaudionode/1519661-initwithurl
     initWithURL(url: NSURL):SKAudioNode;
     // doc://com.apple.documentation/documentation/spritekit/skaudionode/1520341-initwithcoder
@@ -1210,15 +1210,15 @@ declare namespace cocoascript {
    */
   interface SKAttribute extends NSObject {
     // doc://com.apple.documentation/documentation/spritekit/skattribute/1643431-initwithname
-    initWithName_type(name: string | cocoascript.NSString, type: SKAttributeType):SKAttribute;
+    initWithName_type(name: string | NSString, type: SKAttributeType):SKAttribute;
     // doc://com.apple.documentation/documentation/spritekit/skattribute/1643444-name
-    name(): string | cocoascript.NSString;
+    name(): string | NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/spritekit/skattribute/1643432-type
     type(): SKAttributeType;
     setType(): void;
     // doc://com.apple.documentation/documentation/spritekit/skattribute/1643426-attributewithname
-    attributeWithName_type(name: string | cocoascript.NSString, type: SKAttributeType):SKAttribute;
+    attributeWithName_type(name: string | NSString, type: SKAttributeType):SKAttribute;
     //
     alloc():SKAttribute;
     //
@@ -1537,9 +1537,9 @@ declare namespace cocoascript {
     attributeValues(): SKAttributeValue;
     setAttributeValues(): void;
     // doc://com.apple.documentation/documentation/spritekit/skeffectnode/2715853-setvalue
-    setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
+    setValue_forAttributeNamed(value: SKAttributeValue, key: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/skeffectnode/2715844-valueforattributenamed
-    valueForAttributeNamed(key: string | cocoascript.NSString):SKAttributeValue;
+    valueForAttributeNamed(key: string | NSString):SKAttributeValue;
     // doc://com.apple.documentation/documentation/spritekit/skeffectnode/1459381-shouldrasterize
     shouldRasterize(): BOOL;
     setShouldRasterize(): void;
@@ -1561,9 +1561,9 @@ declare namespace cocoascript {
    */
   interface SKSpriteNode extends SKNode {
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/1520391-initwithimagenamed
-    initWithImageNamed(name: string | cocoascript.NSString):SKSpriteNode;
+    initWithImageNamed(name: string | NSString):SKSpriteNode;
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/1519721-spritenodewithimagenamed
-    spriteNodeWithImageNamed_normalMapped(name: string | cocoascript.NSString, generateNormalMap: BOOL):SKSpriteNode;
+    spriteNodeWithImageNamed_normalMapped(name: string | NSString, generateNormalMap: BOOL):SKSpriteNode;
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/1519942-initwithtexture
     initWithTexture(texture: SKTexture):SKSpriteNode;
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/1520029-initwithtexture
@@ -1571,7 +1571,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/1579717-spritenodewithcolor
     spriteNodeWithColor_size(color: UIColor, size: CGSize):SKSpriteNode;
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/1579718-spritenodewithimagenamed
-    spriteNodeWithImageNamed(name: string | cocoascript.NSString):SKSpriteNode;
+    spriteNodeWithImageNamed(name: string | NSString):SKSpriteNode;
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/1579716-spritenodewithtexture
     spriteNodeWithTexture(texture: SKTexture):SKSpriteNode;
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/1519812-spritenodewithtexture
@@ -1624,9 +1624,9 @@ declare namespace cocoascript {
     attributeValues(): SKAttributeValue;
     setAttributeValues(): void;
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/2715849-setvalue
-    setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
+    setValue_forAttributeNamed(value: SKAttributeValue, key: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/skspritenode/2715846-valueforattributenamed
-    valueForAttributeNamed(key: string | cocoascript.NSString):SKAttributeValue;
+    valueForAttributeNamed(key: string | NSString):SKAttributeValue;
     //
     alloc():SKSpriteNode;
     //
@@ -1793,9 +1793,9 @@ declare namespace cocoascript {
     attributeValues(): SKAttributeValue;
     setAttributeValues(): void;
     // doc://com.apple.documentation/documentation/spritekit/skemitternode/2715854-setvalue
-    setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
+    setValue_forAttributeNamed(value: SKAttributeValue, key: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/skemitternode/2715842-valueforattributenamed
-    valueForAttributeNamed(key: string | cocoascript.NSString):SKAttributeValue;
+    valueForAttributeNamed(key: string | NSString):SKAttributeValue;
     //
     alloc():SKEmitterNode;
     //
@@ -1857,9 +1857,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/skreferencenode/1508366-initwithurl
     initWithURL(url: NSURL):SKReferenceNode;
     // doc://com.apple.documentation/documentation/spritekit/skreferencenode/1508368-referencenodewithfilenamed
-    referenceNodeWithFileNamed(fileName: string | cocoascript.NSString):SKReferenceNode;
+    referenceNodeWithFileNamed(fileName: string | NSString):SKReferenceNode;
     // doc://com.apple.documentation/documentation/spritekit/skreferencenode/1508369-initwithfilenamed
-    initWithFileNamed(fileName: string | cocoascript.NSString):SKReferenceNode;
+    initWithFileNamed(fileName: string | NSString):SKReferenceNode;
     // doc://com.apple.documentation/documentation/spritekit/skreferencenode/1508363-initwithcoder
     initWithCoder(aDecoder: NSCoder):SKReferenceNode;
     // doc://com.apple.documentation/documentation/spritekit/skreferencenode/1508371-resolvereferencenode
@@ -1951,9 +1951,9 @@ declare namespace cocoascript {
     attributeValues(): SKAttributeValue;
     setAttributeValues(): void;
     // doc://com.apple.documentation/documentation/spritekit/skshapenode/2715855-setvalue
-    setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
+    setValue_forAttributeNamed(value: SKAttributeValue, key: string | NSString):void;
     // doc://com.apple.documentation/documentation/spritekit/skshapenode/2715843-valueforattributenamed
-    valueForAttributeNamed(key: string | cocoascript.NSString):SKAttributeValue;
+    valueForAttributeNamed(key: string | NSString):SKAttributeValue;
     //
     alloc():SKShapeNode;
     //
@@ -2267,15 +2267,15 @@ declare namespace cocoascript {
    */
   interface SKLabelNode extends SKNode {
     // doc://com.apple.documentation/documentation/spritekit/sklabelnode/1519917-initwithfontnamed
-    initWithFontNamed(fontName: string | cocoascript.NSString):SKLabelNode;
+    initWithFontNamed(fontName: string | NSString):SKLabelNode;
     // doc://com.apple.documentation/documentation/spritekit/sklabelnode/1576448-labelnodewithfontnamed
-    labelNodeWithFontNamed(fontName: string | cocoascript.NSString):SKLabelNode;
+    labelNodeWithFontNamed(fontName: string | NSString):SKLabelNode;
     // doc://com.apple.documentation/documentation/spritekit/sklabelnode/1519612-labelnodewithtext
-    labelNodeWithText(text: string | cocoascript.NSString):SKLabelNode;
+    labelNodeWithText(text: string | NSString):SKLabelNode;
     // doc://com.apple.documentation/documentation/spritekit/sklabelnode/2865817-labelnodewithattributedtext
     labelNodeWithAttributedText(attributedText: NSAttributedString):SKLabelNode;
     // doc://com.apple.documentation/documentation/spritekit/sklabelnode/1519788-text
-    text(): string | cocoascript.NSString;
+    text(): string | NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/spritekit/sklabelnode/2865816-attributedtext
     attributedText(): NSAttributedString;
@@ -2284,7 +2284,7 @@ declare namespace cocoascript {
     fontColor(): UIColor;
     setFontColor(): void;
     // doc://com.apple.documentation/documentation/spritekit/sklabelnode/1520129-fontname
-    fontName(): string | cocoascript.NSString;
+    fontName(): string | NSString;
     setFontName(): void;
     // doc://com.apple.documentation/documentation/spritekit/sklabelnode/1520208-fontsize
     fontSize(): CGFloat;
@@ -2328,7 +2328,7 @@ declare namespace cocoascript {
    */
   interface SKVideoNode extends SKNode {
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407924-videonodewithfilenamed
-    videoNodeWithFileNamed(videoFile: string | cocoascript.NSString):SKVideoNode;
+    videoNodeWithFileNamed(videoFile: string | NSString):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407920-videonodewithavplayer
     videoNodeWithAVPlayer(player: AVPlayer):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407902-videonodewithurl
@@ -2336,13 +2336,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407900-initwithavplayer
     initWithAVPlayer(player: AVPlayer):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407922-initwithfilenamed
-    initWithFileNamed(videoFile: string | cocoascript.NSString):SKVideoNode;
+    initWithFileNamed(videoFile: string | NSString):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407898-initwithurl
     initWithURL(url: NSURL):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407907-initwithcoder
     initWithCoder(aDecoder: NSCoder):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407918-initwithvideofilenamed
-    initWithVideoFileNamed(videoFile: string | cocoascript.NSString):SKVideoNode;
+    initWithVideoFileNamed(videoFile: string | NSString):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407908-initwithvideourl
     initWithVideoURL(url: NSURL):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407904-anchorpoint
@@ -2356,7 +2356,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407910-pause
     pause():void;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407914-videonodewithvideofilenamed
-    videoNodeWithVideoFileNamed(videoFile: string | cocoascript.NSString):SKVideoNode;
+    videoNodeWithVideoFileNamed(videoFile: string | NSString):SKVideoNode;
     // doc://com.apple.documentation/documentation/spritekit/skvideonode/1407906-videonodewithvideourl
     videoNodeWithVideoURL(videoURL: NSURL):SKVideoNode;
     //

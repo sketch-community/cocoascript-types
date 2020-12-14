@@ -70,5 +70,4 @@ export const shim: Record<string, string> = {
   ICCameraFile: 'any',
   ICDevice: 'any',
   IMP: 'any',
-  NSString: 'string | cocoascript.NSString',
 }
